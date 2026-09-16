@@ -938,5 +938,197 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
         ]
       }
     ]
+  },
+
+  // 8. B.Sc Chemistry (4-Year CBCS)
+  {
+    id: 'bsc-chem',
+    name: 'B.Sc (Hons) Chemistry',
+    shortCode: 'B.Sc Chemistry',
+    stream: 'Science',
+    icon: '🧪',
+    degree: '4-Year FYUGP CBCS',
+    totalSemesters: 8,
+    description: 'Inorganic, Organic and Physical Chemistry core disciplines under Patna Science College & B.N. College.',
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'chem-mjc-1',
+            code: 'MJC-1',
+            name: 'Inorganic Chemistry & Physical Chemistry-I',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://pup.ac.in/syllabus/BSc_Chemistry_Sem1.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 5,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Atomic Structure & Periodic Properties',
+                topics: ['Bohr theory, de Broglie hypothesis, Heisenberg uncertainty, Schrodinger equation, Quantum numbers, Hund rule']
+              },
+              {
+                unitNumber: 2,
+                title: 'Chemical Bonding & Molecular Structure',
+                topics: ['Ionic bond, Born-Haber cycle, VSEPR theory, Hybridization, Molecular orbital theory (MOT) of homonuclear diatomics']
+              }
+            ]
+          },
+          {
+            id: 'chem-lab-1',
+            code: 'MJC-1P',
+            name: 'Inorganic Qualitative Analysis Practical Lab',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 0,
+            internalMarks: 50,
+            pdfUrl: 'https://pup.ac.in/syllabus/BSc_Chem_Lab1.pdf',
+            fileSize: '0.9 MB',
+            pyqCount: 3,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Qualitative Salt Analysis',
+                topics: ['Semi-micro detection of acid and basic radicals (interfering radicals included), Volumetric titrations']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // 9. B.Sc Zoology (4-Year CBCS)
+  {
+    id: 'bsc-zoology',
+    name: 'B.Sc (Hons) Zoology',
+    shortCode: 'B.Sc Zoology',
+    stream: 'Science',
+    icon: '🔬',
+    degree: '4-Year FYUGP CBCS',
+    totalSemesters: 8,
+    description: 'Animal diversity, Cell biology, Genetics, and Physiology at Patna University.',
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'zoo-mjc-1',
+            code: 'MJC-1',
+            name: 'Non-Chordata: Diversity & Evolutionary Biology',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://pup.ac.in/syllabus/BSc_Zoology_Sem1.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 4,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Protozoa, Porifera & Coelenterata',
+                topics: ['Locomotion in Amoeba, Canal system in Sponges, Polymorphism in Siphonophora']
+              },
+              {
+                unitNumber: 2,
+                title: 'Platyhelminthes, Nematoda & Annelida',
+                topics: ['Parasitic adaptations in Fasciola & Taenia, Metamerism in Annelida']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // 10. B.A English (4-Year CBCS)
+  {
+    id: 'ba-english',
+    name: 'B.A. (Hons) English',
+    shortCode: 'B.A English',
+    stream: 'Arts',
+    icon: '📖',
+    degree: '4-Year FYUGP CBCS',
+    totalSemesters: 8,
+    description: 'British Literature, Indian Writing in English, and Classical European Literary Criticism.',
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'eng-mjc-1',
+            code: 'MJC-1',
+            name: 'Indian Classical Literature & Early Poetry',
+            paperType: 'Major (MJC)',
+            credits: 6,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://pup.ac.in/syllabus/BA_English_Sem1.pdf',
+            fileSize: '1.1 MB',
+            pyqCount: 4,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Kalidasa: Abhijnanasakuntalam',
+                topics: ['Dramaturgy, Natyashastra Rasa theory, Translation analysis, Gender and Monarchy']
+              },
+              {
+                unitNumber: 2,
+                title: 'Vyasa: The Mahabharata (The Dicing & The Sequel)',
+                topics: ['Dharma dilemmas, Epic structure, Fate vs Free will in ancient Indian traditions']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // 11. LL.B - Patna Law College
+  {
+    id: 'llb',
+    name: 'LL.B (Patna Law College)',
+    shortCode: 'LL.B (Law)',
+    stream: 'Vocational',
+    icon: '⚖️',
+    degree: '3-Year Law Professional Degree',
+    totalSemesters: 6,
+    description: 'Constitutional Law, Jurisprudence, Criminal Law, and Tort at Patna Law College (Estd. 1909).',
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'llb-101',
+            code: 'LAW-101',
+            name: 'Constitutional Law of India - I',
+            paperType: 'Core Theory',
+            credits: 5,
+            theoryMarks: 80,
+            internalMarks: 20,
+            pdfUrl: 'https://pup.ac.in/syllabus/Patna_Law_College_Sem1.pdf',
+            fileSize: '1.8 MB',
+            pyqCount: 6,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Preamble, Fundamental Rights (Part III)',
+                topics: ['Article 12 Definition of State, Article 14 Right to Equality, Reasonable classification, Articles 19 to 22 Fundamental Freedoms & Life/Liberty']
+              },
+              {
+                unitNumber: 2,
+                title: 'Directive Principles & Constitutional Remedies',
+                topics: ['Articles 36-51 DPSP and Fundamental Duties, Article 32 & 226 Writs (Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo-Warranto)']
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
+

@@ -196,23 +196,10 @@ export default function ApnaUniversityHomePage() {
         onClose={() => setIsCalendarOpen(false)}
       />
 
-      {/* Syllabus & PYQs Flow Interactive Modal */}
+      {/* Syllabus & PYQs Flow Interactive Screen */}
       {isSyllabusViewOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#040d1c]/95 backdrop-blur-md p-2 sm:p-4 animate-in fade-in duration-150">
-          <div className="mx-auto max-w-5xl pt-1 pb-10">
-            {/* Top Bar with Back Button */}
-            <div className="flex items-center justify-between pb-3 px-1 border-b border-blue-900/60 mb-3">
-              <button
-                onClick={() => setIsSyllabusViewOpen(false)}
-                className="flex items-center gap-1.5 rounded-xl border border-cyan-500/50 bg-[#0c2548] px-3.5 py-1.5 text-xs font-black text-cyan-300 hover:bg-[#12386a] transition shadow-md"
-              >
-                <ArrowLeft className="h-4 w-4" /> Back to Student Portal
-              </button>
-              <div className="text-right">
-                <span className="text-[11px] font-bold text-slate-400">PU Academic Session 2024-28</span>
-              </div>
-            </div>
-
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#040b17]/95 backdrop-blur-md p-2 sm:p-4 animate-in fade-in duration-150">
+          <div className="mx-auto max-w-xl pt-2 pb-12">
             <SyllabusFlow
               defaultType={syllabusMode}
               onBackToHome={() => setIsSyllabusViewOpen(false)}
