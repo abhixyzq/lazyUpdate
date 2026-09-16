@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const zoologySyllabus: CourseSyllabus = {
+{
   "id": "bsc-zoology",
   "name": "B.Sc. Zoology (CBCS 4-Year FYUGP)",
   "shortCode": "Zoology",
@@ -2426,10 +2424,5 @@ export const zoologySyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-ZOO.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Zoology.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Zoology.pdf"
-  }
-};
+  ]
+}

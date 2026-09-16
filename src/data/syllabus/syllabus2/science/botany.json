@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const botanySyllabus: CourseSyllabus = {
+{
   "id": "bsc-botany",
   "name": "B.Sc. Botany (CBCS 4-Year FYUGP)",
   "shortCode": "Botany",
@@ -1899,10 +1897,5 @@ export const botanySyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-BOT.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Botany.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Botany.pdf"
-  }
-};
+  ]
+}

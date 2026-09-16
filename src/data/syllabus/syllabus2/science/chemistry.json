@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const chemistrySyllabus: CourseSyllabus = {
+{
   "id": "bsc-chemistry",
   "name": "B.Sc. Chemistry (CBCS 4-Year FYUGP)",
   "shortCode": "Chemistry",
@@ -2146,10 +2144,5 @@ export const chemistrySyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-CHEM.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf"
-  }
-};
+  ]
+}

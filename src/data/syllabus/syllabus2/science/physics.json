@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const physicsSyllabus: CourseSyllabus = {
+{
   "id": "bsc-physics",
   "name": "B.Sc. Physics (CBCS 4-Year FYUGP)",
   "shortCode": "Physics",
@@ -2268,10 +2266,5 @@ export const physicsSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-PHY.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Physics.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Physics.pdf"
-  }
-};
+  ]
+}
