@@ -378,7 +378,7 @@ export const getCourseVectorIcon = (courseId: string, className = 'h-10 w-10'): 
   if (id.includes('bba') || id.includes('manage') || id.includes('business')) {
     return <BBACourseIcon className={className} />;
   }
-  if (id.includes('hist') || id.includes('ai & as') || id.includes('ai-and-as')) {
+  if (id.includes('hist') || id.includes('aih') || id.includes('archaeolog') || id.includes('ai & as') || id.includes('ai-and-as')) {
     return <HistoryCourseIcon className={className} />;
   }
   if (id.includes('pol') || id.includes('civic')) {

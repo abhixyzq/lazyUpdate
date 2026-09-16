@@ -10,7 +10,7 @@ import { SGPACalculatorModal } from '@/components/SGPACalculatorModal';
 import { AttendanceCalcModal } from '@/components/AttendanceCalcModal';
 import { TimeTableModal } from '@/components/TimeTableModal';
 import { HolidaysCalendarModal } from '@/components/HolidaysCalendarModal';
-import { SyllabusFlow } from '@/components/SyllabusFlow';
+import { useRouter } from 'next/navigation';
 import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
 import { CommunityModal } from '@/components/CommunityModal';
 import { SideDrawer } from '@/components/SideDrawer';
@@ -25,13 +25,13 @@ export default function ApnaUniversityHomePage() {
   const [universityTitle, setUniversityTitle] = useState('PATNA UNIVERSITY');
   const [appTitle, setAppTitle] = useState('Lazy PU');
 
+  const router = useRouter();
+
   // Modals state
   const [isSGPAOpen, setIsSGPAOpen] = useState(false);
   const [isAttendanceOpen, setIsAttendanceOpen] = useState(false);
   const [isTimeTableOpen, setIsTimeTableOpen] = useState(false);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-  const [isSyllabusViewOpen, setIsSyllabusViewOpen] = useState(false);
-  const [syllabusMode, setSyllabusMode] = useState<'syllabus' | 'pyq'>('syllabus');
   const [isCommunityOpen, setIsCommunityOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [selectedNotice, setSelectedNotice] = useState<PUNotice | null>(null);
@@ -42,12 +42,10 @@ export default function ApnaUniversityHomePage() {
   const handleAction = (action: ApnaActionType) => {
     switch (action) {
       case 'pyqs':
-        setSyllabusMode('pyq');
-        setIsSyllabusViewOpen(true);
+        router.push('/pyqs');
         break;
       case 'syllabus':
-        setSyllabusMode('syllabus');
-        setIsSyllabusViewOpen(true);
+        router.push('/syllabus');
         break;
       case 'results':
         setIsResultsModalOpen(true);
@@ -113,7 +111,7 @@ export default function ApnaUniversityHomePage() {
           if (tag.includes('CalC')) {
             setIsSGPAOpen(true);
           } else {
-            setIsSyllabusViewOpen(true);
+            router.push('/syllabus');
           }
         }}
       />
@@ -197,17 +195,7 @@ export default function ApnaUniversityHomePage() {
         onClose={() => setIsCalendarOpen(false)}
       />
 
-      {/* Syllabus & PYQs Flow Interactive Screen */}
-      {isSyllabusViewOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#040b17]/95 backdrop-blur-md p-2 sm:p-4 animate-in fade-in duration-150">
-          <div className="mx-auto max-w-xl pt-2 pb-12">
-            <SyllabusFlow
-              defaultType={syllabusMode}
-              onBackToHome={() => setIsSyllabusViewOpen(false)}
-            />
-          </div>
-        </div>
-      )}
+
 
       {/* Results Modal */}
       {isResultsModalOpen && (
