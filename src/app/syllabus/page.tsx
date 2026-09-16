@@ -7,30 +7,78 @@ import { puCompleteSyllabusData, puFacultyList } from '@/data/puSyllabusComplete
 import { getCourseVectorIcon } from '@/components/SyllabusCourseIcons';
 import {
   Search,
-  BookOpen,
   Sparkles,
-  ChevronRight,
   FileDown,
-  GraduationCap,
-  Layers,
 } from 'lucide-react';
 
 export default function SyllabusCoursesPage() {
   const [selectedFaculty, setSelectedFaculty] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  // Filter courses based on faculty and search query
-  const filteredCourses = useMemo(() => {
-    return puCompleteSyllabusData.filter((course) => {
-      const matchesFaculty =
-        selectedFaculty === 'All' || course.faculty === selectedFaculty;
-      const matchesSearch =
-        course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        course.shortCode.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        course.description.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesFaculty && matchesSearch;
-    });
-  }, [selectedFaculty, searchQuery]);
+  // Section config matching official PU faculties
+  const SECTIONS_CONFIG = useMemo(
+    () => [
+      {
+        id: 'Social Science',
+        name: 'Faculty of Social Science',
+        icon: '🏛️',
+      },
+      {
+        id: 'Humanities',
+        name: 'Faculty of Humanities',
+        icon: '📚',
+      },
+      {
+        id: 'Science',
+        name: 'Faculty of Science',
+        icon: '🔬',
+      },
+      {
+        id: 'Commerce',
+        name: 'Faculty of Commerce',
+        icon: '💼',
+      },
+      {
+        id: 'Vocational',
+        name: 'Vocational & Professional Courses',
+        icon: '💻',
+      },
+      {
+        id: 'Common NEP',
+        name: 'Compulsory NEP Modules (AEDP, AEC & MDC)',
+        icon: '🎯',
+      },
+    ],
+    []
+  );
+
+  // Group filtered courses by faculty section
+  const sectionsToDisplay = useMemo(() => {
+    const targetSections =
+      selectedFaculty === 'All'
+        ? SECTIONS_CONFIG
+        : SECTIONS_CONFIG.filter((s) => s.id === selectedFaculty);
+
+    return targetSections
+      .map((sec) => {
+        const courses = puCompleteSyllabusData.filter((c) => {
+          const matchesFaculty = c.faculty === sec.id;
+          const matchesSearch =
+            !searchQuery ||
+            c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            c.shortCode.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            c.description.toLowerCase().includes(searchQuery.toLowerCase());
+          return matchesFaculty && matchesSearch;
+        });
+
+        return {
+          ...sec,
+          badge: `${courses.length} ${courses.length === 1 ? 'Subject' : 'Subjects'}`,
+          courses,
+        };
+      })
+      .filter((sec) => sec.courses.length > 0);
+  }, [selectedFaculty, searchQuery, SECTIONS_CONFIG]);
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-16">
@@ -120,62 +168,54 @@ export default function SyllabusCoursesPage() {
           </a>
         </div>
 
-        {/* Course Cards Grid */}
-        <div className="space-y-2.5">
-          {filteredCourses.length > 0 ? (
-            filteredCourses.map((course) => {
-              const totalPapers = course.semesters.reduce(
-                (sum, s) => sum + s.papers.length,
-                0
-              );
-
-              return (
-                <Link
-                  key={course.id}
-                  href={`/syllabus/${course.id}`}
-                  className="group block rounded-2xl border border-blue-900/80 bg-[#091a36] p-3.5 shadow-md hover:border-cyan-400 hover:bg-[#0c2247] active:scale-98 transition duration-150"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-3 min-w-0">
-                      {/* Course Vector Icon */}
-                      <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md shrink-0 border border-slate-200 group-hover:scale-105 transition">
-                        {getCourseVectorIcon(course.id, 'h-9 w-9')}
-                      </div>
-
-                      {/* Course Info */}
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap mb-0.5">
-                          <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded-md border border-cyan-500/30">
-                            {course.faculty}
-                          </span>
-                          <span className="text-[10px] font-bold text-amber-300 bg-amber-950/60 px-2 py-0.5 rounded-md border border-amber-500/30">
-                            {course.degree}
-                          </span>
-                        </div>
-                        <h3 className="text-sm sm:text-base font-black text-white group-hover:text-cyan-300 transition truncate">
-                          {course.name}
-                        </h3>
-                        <p className="text-[11px] text-slate-400 flex items-center gap-3 mt-1">
-                          <span className="flex items-center gap-1">
-                            <Layers className="h-3 w-3 text-cyan-400" />
-                            {course.totalSemesters} Semesters
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <BookOpen className="h-3 w-3 text-emerald-400" />
-                            {totalPapers} Papers
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Right Arrow */}
-                    <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-900/40 text-cyan-400 border border-blue-800 group-hover:bg-cyan-500 group-hover:text-slate-950 transition shrink-0">
-                      <ChevronRight className="h-4 w-4" />
-                    </div>
+        {/* Section-Wise Course Catalog (Organized in Clean 3-Column Grid) */}
+        <div className="space-y-4">
+          {sectionsToDisplay.length > 0 ? (
+            sectionsToDisplay.map((sec) => (
+              <div
+                key={sec.id}
+                className="rounded-3xl border border-blue-900/80 bg-[#081830] p-3.5 sm:p-4 shadow-xl space-y-3"
+              >
+                {/* Section Header with Icon and Count Badge */}
+                <div className="flex items-center justify-between border-b border-blue-800/60 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-base sm:text-lg">{sec.icon}</span>
+                    <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-white">
+                      {sec.name}
+                    </h3>
                   </div>
-                </Link>
-              );
-            })
+                  <span className="rounded-full border border-cyan-500/30 bg-cyan-950/70 px-2.5 py-0.5 text-[10px] font-bold text-cyan-300">
+                    {sec.badge}
+                  </span>
+                </div>
+
+                {/* 3-Column Grid for courses belonging to this section */}
+                <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+                  {sec.courses.map((course) => (
+                    <Link
+                      key={course.id}
+                      href={`/syllabus/${course.id}`}
+                      className="group flex flex-col items-center justify-center rounded-2xl border border-blue-900/70 bg-[#091b36] p-2.5 sm:p-3 shadow-md hover:border-cyan-400 hover:bg-[#0f284e] active:scale-95 transition duration-150 text-center"
+                    >
+                      {/* Clean White Squircle containing the vector icon */}
+                      <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md transition-all duration-200 group-hover:scale-105 group-hover:shadow-cyan-400/20">
+                        {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
+                      </div>
+
+                      {/* Bold Course Short Code */}
+                      <span className="mt-2 text-center text-xs font-black text-white tracking-tight leading-tight line-clamp-2 max-w-full group-hover:text-cyan-200">
+                        {course.shortCode}
+                      </span>
+
+                      {/* Degree / Type Subtitle */}
+                      <span className="text-[10px] text-slate-400 line-clamp-1 mt-0.5">
+                        {course.degree ? course.degree.split(' ')[0] : course.faculty}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))
           ) : (
             <div className="rounded-2xl border border-dashed border-blue-800/80 bg-[#081830]/80 p-8 text-center">
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/20 text-2xl text-cyan-400 mb-2">
