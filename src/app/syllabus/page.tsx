@@ -5,11 +5,7 @@ import Link from 'next/link';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { puCompleteSyllabusData, puFacultyList } from '@/data/puSyllabusComplete';
 import { getCourseVectorIcon } from '@/components/SyllabusCourseIcons';
-import {
-  Search,
-  Sparkles,
-  FileDown,
-} from 'lucide-react';
+import { Search } from 'lucide-react';
 
 export default function SyllabusCoursesPage() {
   const [selectedFaculty, setSelectedFaculty] = useState<string>('All');
@@ -86,22 +82,6 @@ export default function SyllabusCoursesPage() {
       <SubpageHeader title="PU Syllabus (FYUGP CBCS)" />
 
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
-        
-        {/* Step Indicator */}
-        <div className="flex items-center justify-between px-1 text-xs">
-          <div className="flex items-center gap-2">
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-cyan-400 text-[10px] font-black text-slate-950">
-              1
-            </span>
-            <span className="font-black text-cyan-300 uppercase tracking-wider text-[11px]">
-              Step 1: Choose Your Course
-            </span>
-          </div>
-          <span className="text-[10px] font-bold text-slate-400">
-            {puCompleteSyllabusData.length} Subjects Active
-          </span>
-        </div>
-
         {/* Search Bar */}
         <div className="relative">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
@@ -109,7 +89,7 @@ export default function SyllabusCoursesPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search subject (e.g. History, Economics, Geography)..."
+            placeholder="Search subject (e.g. History, Physics, Economics)..."
             className="w-full rounded-2xl border border-blue-900/80 bg-[#091a36] py-2.5 pl-10 pr-4 text-xs font-semibold text-white placeholder-slate-400 shadow-inner outline-hidden focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition"
           />
           {searchQuery && (
@@ -140,32 +120,6 @@ export default function SyllabusCoursesPage() {
               </button>
             );
           })}
-        </div>
-
-        {/* Important Info Card */}
-        <div className="rounded-2xl border border-blue-800/60 bg-gradient-to-r from-[#0a1e3d] to-[#0d2852] p-3 shadow-lg flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/30 shrink-0">
-              <Sparkles className="h-4 w-4" />
-            </div>
-            <div>
-              <h4 className="text-xs font-black text-white">
-                Raj Bhavan Bihar FYUGP Syllabus
-              </h4>
-              <p className="text-[10px] text-slate-300 leading-tight">
-                Uniform 4-Year CBCS curriculum for Patna University (PU).
-              </p>
-            </div>
-          </div>
-          <a
-            href="https://www.pup.ac.in/UnderGraduateCourse.aspx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 rounded-lg bg-blue-950/80 border border-cyan-500/40 px-2 py-1 text-[10px] font-black text-cyan-300 hover:bg-cyan-500 hover:text-slate-950 transition shrink-0"
-          >
-            <FileDown className="h-3 w-3" />
-            Official
-          </a>
         </div>
 
         {/* Section-Wise Course Catalog (Organized in Clean 3-Column Grid) */}
@@ -230,23 +184,6 @@ export default function SyllabusCoursesPage() {
             </div>
           )}
         </div>
-
-        {/* Special Downloads Footer Card */}
-        <div className="rounded-2xl border border-blue-900/60 bg-[#081830] p-3 text-center space-y-1.5">
-          <p className="text-[11px] text-slate-300">
-            Need Research Methodology or Common NEP papers?
-          </p>
-          <a
-            href="https://www.pup.ac.in/download/research%20methodology%2020231219808584518.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-black text-cyan-300 hover:text-cyan-200 underline"
-          >
-            <FileDown className="h-3.5 w-3.5" />
-            Download Official Research Methodology Syllabus (PDF)
-          </a>
-        </div>
-
       </main>
     </div>
   );

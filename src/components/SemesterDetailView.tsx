@@ -6,17 +6,12 @@ import { CourseSyllabus, SyllabusPaper } from '@/types';
 import {
   ArrowLeft,
   BookOpen,
-  FileDown,
   Share2,
   Table,
-  CheckCircle2,
   Award,
-  Layers,
-  Sparkles,
   ChevronLeft,
   ChevronRight,
-  ExternalLink,
-  Info,
+  ChevronDown,
 } from 'lucide-react';
 
 interface SemesterDetailViewProps {
@@ -77,18 +72,6 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
     return { label: 'Core', bg: 'bg-blue-400/20 text-blue-300 border-blue-500/40' };
   };
 
-  // PDF URL
-  const pdfUrl = useMemo(() => {
-    if (activePaper?.pdfUrl) return activePaper.pdfUrl;
-    if (semesterNumber <= 2 && course.officialPdfs?.sem1_2) {
-      return course.officialPdfs.sem1_2;
-    }
-    if (semesterNumber > 2 && course.officialPdfs?.sem3_8) {
-      return course.officialPdfs.sem3_8;
-    }
-    return course.officialPdfs?.annualHons || '#';
-  }, [activePaper, semesterNumber, course]);
-
   // Dynamic Semester Stats
   const semStats = useMemo(() => {
     const papers = semesterData.papers || [];
@@ -107,7 +90,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
   // WhatsApp Share Handler
   const handleShare = () => {
     if (!activePaper) return;
-    const shareText = `📖 *Patna University Syllabus*\n🎯 *Course:* ${course.name}\n📚 *Semester:* ${getOrdinal(semesterNumber)} Semester\n📝 *Paper:* ${activePaper.code} - ${activePaper.name}\n🔗 *Download Official PDF:* ${pdfUrl}\n\nShared via Lazy PU - Patna University Student Portal`;
+    const shareText = `📖 *Patna University Syllabus*\n🎯 *Course:* ${course.name}\n📚 *Semester:* ${getOrdinal(semesterNumber)} Semester\n📝 *Paper:* ${activePaper.code} - ${activePaper.name}\n\nShared via Lazy PU - Patna University Student Portal`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -261,65 +244,70 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
               </div>
             </div>
 
-            {/* Action Buttons: PDF Download & WhatsApp Share */}
-            <div className="grid grid-cols-2 gap-2">
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 rounded-xl border border-cyan-500/50 bg-gradient-to-r from-cyan-600 to-blue-600 py-2.5 px-3 text-xs font-black text-white shadow-md shadow-cyan-500/20 hover:brightness-110 active:scale-95 transition"
-              >
-                <FileDown className="h-4 w-4 shrink-0" />
-                <span>Download PDF ({activePaper.fileSize || '1.8 MB'})</span>
-              </a>
-
+            {/* Action Buttons: WhatsApp Share */}
+            <div>
               <button
                 onClick={handleShare}
-                className="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-500/50 bg-[#0a3324] py-2.5 px-3 text-xs font-bold text-[#25d366] shadow-sm hover:bg-[#0d422f] active:scale-95 transition"
+                className="w-full flex items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-[#0a2e20] py-2.5 px-3 text-xs font-bold text-emerald-400 hover:bg-[#0e3b2a] active:scale-98 transition"
               >
                 <Share2 className="h-4 w-4 shrink-0" />
-                <span>Share Paper</span>
+                <span>Share Paper Syllabus</span>
               </button>
             </div>
 
-            {/* Units & Topics List */}
+            {/* Units & Topics List (FAQ / Details Accordion Style) */}
             {activePaper.units && activePaper.units.length > 0 ? (
-              <div className="space-y-3 pt-1">
-                <div className="flex items-center justify-between">
+              <div className="space-y-2.5 pt-1">
+                <div className="flex items-center justify-between px-1">
                   <h3 className="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
                     <BookOpen className="h-3.5 w-3.5" />
                     Syllabus Units ({activePaper.units.length})
                   </h3>
-                  <span className="text-[10px] text-slate-400 font-semibold">
-                    Raj Bhavan Bihar Curriculum
+                  <span className="text-[10px] text-slate-400">
+                    Tap to expand topics
                   </span>
                 </div>
 
-                <div className="space-y-2.5">
-                  {activePaper.units.map((unit) => (
-                    <div
+                <div className="space-y-2">
+                  {activePaper.units.map((unit, uIdx) => (
+                    <details
                       key={unit.unitNumber}
-                      className="rounded-2xl border border-blue-900/70 bg-[#06142a] p-3.5 shadow-sm space-y-2"
+                      open={uIdx === 0}
+                      className="group rounded-2xl border border-blue-900/70 bg-[#06142a] p-3.5 shadow-sm transition-all duration-200 open:border-cyan-500/50 open:bg-[#071833]"
                     >
-                      <div className="flex items-start gap-2.5">
-                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-cyan-500/20 text-xs font-black text-cyan-300 border border-cyan-500/30">
-                          {unit.unitNumber}
-                        </span>
-                        <h4 className="text-xs sm:text-sm font-black text-white leading-tight">
-                          Unit {unit.unitNumber}: {unit.title}
-                        </h4>
-                      </div>
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 select-none">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-cyan-500/20 text-xs font-black text-cyan-300 border border-cyan-500/30">
+                            {unit.unitNumber}
+                          </span>
+                          <h4 className="text-xs sm:text-sm font-black text-white group-hover:text-cyan-200 transition truncate">
+                            Unit {unit.unitNumber}: {unit.title}
+                          </h4>
+                        </div>
+
+                        <div className="flex items-center gap-2 shrink-0">
+                          {unit.topics && unit.topics.length > 0 && (
+                            <span className="text-[10px] font-bold text-slate-400 bg-blue-950/60 px-2 py-0.5 rounded-md border border-blue-900/60">
+                              {unit.topics.length} {unit.topics.length === 1 ? 'Topic' : 'Topics'}
+                            </span>
+                          )}
+                          <ChevronDown className="h-4 w-4 text-cyan-400 transition-transform duration-200 group-open:rotate-180" />
+                        </div>
+                      </summary>
 
                       {unit.topics && unit.topics.length > 0 && (
-                        <ul className="space-y-1.5 pl-8 text-[11px] text-slate-300 leading-relaxed list-disc">
-                          {unit.topics.map((topic, tIdx) => (
-                            <li key={tIdx} className="text-slate-300 marker:text-cyan-400">
-                              {topic}
-                            </li>
-                          ))}
-                        </ul>
+                        <div className="mt-3 pt-3 border-t border-blue-900/50">
+                          <ul className="space-y-2 pl-1 text-xs text-slate-300 leading-relaxed">
+                            {unit.topics.map((topic, tIdx) => (
+                              <li key={tIdx} className="flex items-start gap-2">
+                                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shrink-0 mt-1.5" />
+                                <span className="text-slate-200">{topic}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       )}
-                    </div>
+                    </details>
                   ))}
                 </div>
               </div>
@@ -332,27 +320,29 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                     ? 'Research Project / Dissertation — Continuous supervision & thesis viva.'
                     : 'To be selected from University Academic Basket.'}
                 </p>
-                <p className="text-[10px] text-slate-400">
-                  Detailed guidelines and evaluation scheme available in official PDF.
-                </p>
               </div>
             )}
 
-            {/* Recommended Books */}
+            {/* Recommended Books (Collapsible Details Style) */}
             {activePaper.recommendedBooks && activePaper.recommendedBooks.length > 0 && (
-              <div className="rounded-2xl border border-blue-900/60 bg-[#06142a] p-3.5 space-y-2">
-                <h4 className="text-xs font-black uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-                  <Award className="h-3.5 w-3.5 text-amber-400" />
-                  Recommended Reference Books
-                </h4>
-                <ul className="space-y-1 text-[11px] text-slate-300 pl-4 list-disc">
-                  {activePaper.recommendedBooks.map((book, bIdx) => (
-                    <li key={bIdx} className="marker:text-amber-400">
-                      {book}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <details className="group rounded-2xl border border-blue-900/60 bg-[#06142a] p-3.5 shadow-sm transition-all duration-200 open:border-amber-500/40">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-2 select-none">
+                  <span className="text-xs font-black uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
+                    <Award className="h-3.5 w-3.5 text-amber-400" />
+                    Recommended Reference Books ({activePaper.recommendedBooks.length})
+                  </span>
+                  <ChevronDown className="h-3.5 w-3.5 text-amber-400 transition-transform duration-200 group-open:rotate-180" />
+                </summary>
+                <div className="mt-2.5 pt-2.5 border-t border-blue-900/50">
+                  <ul className="space-y-1 text-[11px] text-slate-300 pl-4 list-disc">
+                    {activePaper.recommendedBooks.map((book, bIdx) => (
+                      <li key={bIdx} className="marker:text-amber-400">
+                        {book}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
             )}
           </div>
         ) : (
