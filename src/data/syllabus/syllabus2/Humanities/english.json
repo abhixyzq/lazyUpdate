@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const englishSyllabus: CourseSyllabus = {
+{
   "id": "ba-english",
   "name": "B.A. English (CBCS 4-Year FYUGP)",
   "shortCode": "English",
@@ -1196,10 +1194,5 @@ export const englishSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20English.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English%20-%20Copy%201.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English.pdf"
-  }
-};
+  ]
+}

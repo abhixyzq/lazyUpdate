@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const hindiSyllabus: CourseSyllabus = {
+{
   "id": "ba-hindi",
   "name": "B.A. Hindi (CBCS 4-Year FYUGP)",
   "shortCode": "Hindi",
@@ -1596,10 +1594,5 @@ export const hindiSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Hindi.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Hindi.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Hindi.pdf"
-  }
-};
+  ]
+}

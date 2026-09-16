@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const musicSyllabus: CourseSyllabus = {
+{
   "id": "ba-music",
   "name": "B.A. Music Vocal & Instrumental (CBCS 4-Year FYUGP)",
   "shortCode": "Music",
@@ -1584,9 +1582,5 @@ export const musicSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Music.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Music.pdf"
-  }
-};
+  ]
+}

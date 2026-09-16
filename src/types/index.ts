@@ -65,10 +65,11 @@ export interface SyllabusPaper {
   credits: number;
   theoryMarks: number;
   internalMarks: number;
+  practicalMarks?: number;
   units: SyllabusUnit[];
   recommendedBooks?: string[];
-  pdfUrl: string;
-  fileSize: string;
+  pdfUrl?: string;
+  fileSize?: string;
   pyqCount?: number;
 }
 
@@ -90,6 +91,7 @@ export interface CourseSyllabus {
   totalSemesters: number;
   description: string;
   officialPdfs?: CourseOfficialPdfs;
+  officialPdfLink?: string;
   semesters: {
     semester: number;
     papers: SyllabusPaper[];

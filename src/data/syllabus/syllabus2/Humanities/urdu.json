@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const urduSyllabus: CourseSyllabus = {
+{
   "id": "ba-urdu",
   "name": "B.A. Urdu (CBCS 4-Year FYUGP)",
   "shortCode": "Urdu",
@@ -867,10 +865,5 @@ export const urduSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Urdu.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Urdu.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Urdu.pdf"
-  }
-};
+  ]
+}

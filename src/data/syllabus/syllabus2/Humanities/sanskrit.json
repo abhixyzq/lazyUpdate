@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const sanskritSyllabus: CourseSyllabus = {
+{
   "id": "ba-sanskrit",
   "name": "B.A. Sanskrit (Honours) (CBCS 4-Year FYUGP)",
   "shortCode": "Sanskrit",
@@ -1429,10 +1427,5 @@ export const sanskritSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Sanskrit.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit%20-%20Copy%201.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit.pdf"
-  }
-};
+  ]
+}

@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const philosophySyllabus: CourseSyllabus = {
+{
   "id": "ba-philosophy",
   "name": "B.A. Philosophy (CBCS 4-Year FYUGP)",
   "shortCode": "Philosophy",
@@ -524,10 +522,5 @@ export const philosophySyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Philosophy.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Philosophy.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Philosophy.pdf"
-  }
-};
+  ]
+}

@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const maithiliSyllabus: CourseSyllabus = {
+{
   "id": "ba-maithili",
   "name": "B.A. Maithili (CBCS 4-Year FYUGP)",
   "shortCode": "Maithili",
@@ -1424,10 +1422,5 @@ export const maithiliSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Maithili.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Maithili.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Maithili.pdf"
-  }
-};
+  ]
+}
