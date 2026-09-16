@@ -2412,14 +2412,14 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
 
   {
     id: 'ba-geography',
-    name: 'B.A. Geography (Hons/Subs/Gen)',
+    name: 'B.A. / B.Sc. Geography (CBCS 4-Year FYUGP)',
     shortCode: 'Geography',
     stream: 'Social Science',
     faculty: 'Social Science',
     icon: '🌍',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    degree: '4-Year FYUGP CBCS (NEP-2020)',
     totalSemesters: 8,
-    description: 'Geomorphology, Climatology, Human & Economic Geography, Cartography and GIS at Patna University.',
+    description: 'Official uniform 4-Year B.A. / B.Sc. Geography curriculum approved by Raj Bhavan, Bihar (Ref: Letter No. BSU(UGC)-02/2023-871/GS(I) Dated 09-06-2023). Prepared by Committee of Experts: Prof. (Dr.) Md. Nazim (Head, P.G. Dept. of Geography, Patna University, Patna), Dr. Anoop Kumar Singh (Patliputra University, Patna), and Dr. Usha Singh (J.P. University, Chapra). Total 160 Credits (MJC: 80, MIC: 32, MDC: 9, AEC: 8, SEC: 9, VAC: 6, INT: 4, RP: 12). 70 Marks End-Sem Theory/Practical Exam + 30 Marks CIA. Strictly no OMR sheet.',
     officialPdfs: {
       sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
       sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
@@ -2430,36 +2430,1949 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
         semester: 1,
         papers: [
           {
-            id: 'geo-mjc-1',
-            code: 'MJC-1',
-            name: 'Physical Geography & Geomorphology',
+            id: 'geo-mjc-1-t',
+            code: 'MJC-1 (T)',
+            name: 'Geomorphology (Theory)',
             paperType: 'Major (MJC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.6 MB',
-            recommendedBooks: ['Physical Geography by Savindra Singh', 'Geomorphology by Savindra Singh', 'Principles of Geomorphology by W.D. Thornbury'],
+            fileSize: '1.5 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Savindra Singh (2017), Bhoutik Bhougol, Vashundhara Prakashan, Gorakhpur',
+              'W. D. Thornbury (1968), Principles of Geomorphology, John Wiley & Sons, New York',
+              'P. Dayal, A Text Book of Geomorphology, Rajesh Publication, New Delhi',
+              'E. M. Bridges (1990), World Geomorphology, Cambridge University Press, Cambridge',
+              'Alka Gautam (2007), Bhaukriti Vigyan, Rastogi Publications',
+              'M. Hussain (2002), Fundamentals of Physical Geography, Rawat Publication, Jaipur',
+              'V. S. Kale and A. Gupta (2001), Introduction to Geomorphology, Orient Longman, Hyderabad',
+              'D. R. Khullar (2011), Physical Geography, Kalyani Publishers, New Delhi',
+              'F. J. Monkhouse (2009), Principles of Physical Geography, Platinum Publishers, Kolkata',
+              'A. N. Strahler and A. H. Strahler (2008), Modern Physical Geography, John Wiley & Sons, New York'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Earth Interior & Crustal Dynamics',
-                topics: ['Origin of the Earth, Internal Structure of the Earth (Seismic wave evidence: Crust, Mantle, Core)', 'Wegener Continental Drift Theory, Palaeomagnetism, Seafloor Spreading, Plate Tectonics Theory']
+                title: 'Nature & Scope of Geomorphology & Earth Origin (10 Lectures)',
+                topics: [
+                  'Nature and Scope of Geomorphology and fundamental concepts',
+                  'Origin of the Earth: Gaseous Hypothesis, Binary Star Hypothesis, Nebular Hypothesis of Laplace, Tidal Hypothesis of Jeans & Jeffreys, and Big Bang Theory',
+                  'Internal Structure of the Earth: Crust (Sial, Sima), Mantle (Asthenosphere), Core (Nife), Discontinuities (Conrad, Mohorovicic, Repetti, Gutenberg, Lehmann), and Seismic wave evidence (P-waves, S-waves, shadow zones)'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Endogenetic Forces, Faulting & Folding',
-                topics: ['Earth movements: Orogenic (Mountain building) vs Epeirogenic (Continent building) movements', 'Types of Folds and Faults; Earthquakes: Causes, Types, Seismic scales; Volcanoes: Types, Distribution and Landforms']
+                title: 'Isostasy, Continental Drift & Plate Tectonics (10 Lectures)',
+                topics: [
+                  'Isostasy: Meaning, Concept of George Airy (Uniform density with varying root depth) and Archdeacon Pratt (Varying density with uniform depth of compensation)',
+                  'Alfred Wegener Continental Drift Theory: Evidences (Jigsaw fit, fossil correlation, palaeoclimate, geological similarities) and Mechanism/Criticisms',
+                  'Plate Tectonics Theory: Concept of Lithospheric Plates, Plate Margins & Boundaries (Convergent/Destructive, Divergent/Constructive, Transform/Conservative), Palaeomagnetism, Sea-floor Spreading, and Subduction Zones'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Exogenetic Processes & Weathering',
-                topics: ['Weathering: Physical, Chemical, Biological weathering processes, Mass Movement and Landslides', 'Cycle of Erosion: Geographical Cycle by W.M. Davis, Penck Morphological System analysis']
+                title: 'Mountain Building, Earthquakes & Volcanoes (08 Lectures)',
+                topics: [
+                  'Mountain Building (Orogenesis): Geosynclinal Theory of Leopold Kober (Orogen, Kratogen, Randketten, Zwischengebirge), Thermal Convection Current Theory of Arthur Holmes',
+                  'Earthquakes: Origin, Focus, Epicenter, Types of Seismic Waves (P, S, L waves), Causes, Distribution, and Seismic Scales (Richter Scale & Modified Mercalli Scale)',
+                  'Volcanoes: Classification, Eruptive materials, Global distribution (Circum-Pacific Ring of Fire, Mid-Atlantic Ridge, Alpine-Himalayan belt), and Intrusive (Batholith, Laccolith, Sill, Dyke) and Extrusive landforms'
+                ]
               },
               {
                 unitNumber: 4,
-                title: 'Geomorphic Landforms & Agents',
-                topics: ['Fluvial Landforms: Erosional and Depositional landforms created by running water', 'Glacial, Karst (Limestone topography), and Aeolian (Wind-blown desert) landform evolution']
+                title: 'Geomorphic Processes, Cycles of Erosion & Topographies (12 Lectures)',
+                topics: [
+                  'Geomorphic Processes: Weathering (Mechanical, Chemical, Biological) and Erosion; Mass Movement and Landslides',
+                  'Normal Cycle of Erosion: Geographical Cycle of W. M. Davis (Structure, Process, Stage; Youth, Maturity, Old Age; Peneplain) vs Walther Penck Morphological Analysis (Penck cycle of erosion, Aufsteigende, Gleichformige, Absteigende Entwicklung; Endrumpf)',
+                  'Evolution of Landforms: Glacial Topography (Cirque, U-shaped valley, Hanging valley, Moraines, Horn, Arete), Arid/Aeolian Topography (Yardang, Zeugen, Mushroom rock, Barchans, Seif, Loess), and Karst Topography (Sinkholes, Dolines, Uvalas, Poljes, Stalactites, Stalagmites, Caves, Blind valley)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-1-p',
+            code: 'MJC-1 (P)',
+            name: 'Geomorphology (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'R. L. Singh and Rana P. B. Singh (2020), Elements of Practical Geography, Kalyani Publishers',
+              'J. P. Sharma (1991-92), Prayogik Bhugol (Practical Geography), Rastogi & Company, Meerut',
+              'M. M. P. Sinha & Seema Bala (2017), Uchh Cartography, Rajesh Publication, New Delhi',
+              'A. Sarkar (2015), Practical Geography: A Systematic Approach, Orient Black Swan, New Delhi'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Scale & Identification of Rocks and Minerals (04 Lectures)',
+                topics: [
+                  'Scale and its types: Plain Scale, Comparative Scale, Diagonal Scale, Representative Fraction (R.F.) and Vernier Scale',
+                  'Rocks and Minerals: Physical and Chemical properties, Mohs Scale of Hardness, Cleavage, Lustre, Streak, Specific Gravity',
+                  'Identification of Igneous Rocks (Granite, Basalt, Gabbro, Pegmatite), Sedimentary Rocks (Sandstone, Limestone, Shale, Conglomerate), and Metamorphic Rocks (Marble, Quartzite, Slate, Gneiss, Schist)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Contour Lines, Cross-Sections & Relief Features (08 Lectures)',
+                topics: [
+                  'Contour lines: Contour Interval, Horizontal Equivalent, Characteristics and interpolation of contours',
+                  'Drawing of Cross-Sections and topographical profiles: Serial, Superimposed, Composite, and Projected profiles',
+                  'Representation of Relief features: Plateau, Conical Hill, Ridge, Escarpment, Cliff, V-shaped valley, U-shaped valley, Waterfall, Gorges, and Saddle/Col'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Interpretation of Topographical Maps & Conventional Signs (08 Lectures)',
+                topics: [
+                  'Survey of India (SOI) Topographical Sheets: Grid reference system, Numbering and indexing of toposheets (Million sheets 1:1,000,000, Degree sheets 1:250,000, Half-degree 1:100,000, Quadrant 1:50,000)',
+                  'Conventional signs and symbols used in Survey of India topographical maps',
+                  'Interpretation of Topographical Maps: Physical features (Relief, Drainage network, Slope), Cultural features (Settlement patterns, Transport network, Land use), and preparation of transect charts'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-1-t',
+            code: 'MIC-1 (T)',
+            name: 'Geomorphology (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Savindra Singh, Bhoutik Bhougol, Vashundhara Prakashan, Gorakhpur',
+              'D. R. Khullar, Physical Geography, Kalyani Publishers, New Delhi',
+              'P. Dayal, A Text Book of Geomorphology, Rajesh Publication, New Delhi'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Origin and Internal Structure of the Earth (06 Lectures)',
+                topics: [
+                  'Origin of the Earth: Gaseous Hypothesis of Immanuel Kant, Binary Star Hypothesis of H. N. Russell',
+                  'Internal Structure of the Earth: Crust, Mantle, Core, and Seismic Discontinuities'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Geomorphic Processes & Rocks (06 Lectures)',
+                topics: [
+                  'Geomorphic Processes: Weathering (Mechanical, Chemical, Biological) and Erosion',
+                  'Rocks and its Types: Igneous, Sedimentary, and Metamorphic rocks, origin, characteristics, and classification'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Plate Tectonics, Earthquakes & Volcanoes (08 Lectures)',
+                topics: [
+                  'Plate Tectonics: Lithospheric plates, Plate boundaries, and movements',
+                  'Earthquakes: Causes, Effects, Seismic waves, and Global distribution',
+                  'Volcanoes: Types, Causes, Eruptive materials, and Volcanic Landforms'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-1-p',
+            code: 'MIC-1 (P)',
+            name: 'Geomorphology (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 2,
+            recommendedBooks: [
+              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
+              'J. P. Sharma, Prayogik Bhugol, Rastogi & Company'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Conventional Signs and Symbols (05 Lectures)',
+                topics: [
+                  'Survey of India Conventional signs and symbols (Water bodies, Roads, Railways, Settlements, Forests, Boundaries)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Contour Lines & Relief Features (05 Lectures)',
+                topics: [
+                  'Contour Lines and representation of Relief: Plateau, Conical hill, U-shaped valley, and Waterfall'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mdc-1',
+            code: 'MDC-1',
+            name: 'Multidisciplinary Course 1 (Introductory Basket)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.2 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Multidisciplinary Foundations',
+                topics: ['Introductory multidisciplinary basket course chosen from outside the Department of Social Science to foster holistic and broad-based education under NEP-2020']
+              }
+            ]
+          },
+          {
+            id: 'geo-aec-1',
+            code: 'AEC-1',
+            name: 'MIL (Modern Indian Language - Hindi / English)',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.0 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Language & Communication Skills',
+                topics: ['Grammar, functional Hindi/MIL writing, comprehension, précis, essay writing, and official correspondence']
+              }
+            ]
+          },
+          {
+            id: 'geo-sec-1',
+            code: 'SEC-1',
+            name: 'Skill Enhancement Course 1 (Basket)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.3 MB',
+            recommendedBooks: [
+              'Advance Spreadsheet Tools (Excel & VBA)',
+              'Basic IT Tools & Word Processing',
+              'Creative Writing & Public Speaking',
+              'Digital Marketing & Communication'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Skill Development & Practical Application',
+                topics: ['Course selected from the university SEC-1 Basket: Advance Spreadsheet Tools, Basic IT Tools, Public Speaking in English Language & Leadership, Creative Writing, or Communication in Everyday Life']
+              }
+            ]
+          },
+          {
+            id: 'geo-vac-1',
+            code: 'VAC-1',
+            name: 'Value Added Course 1 (Basket)',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Ayurveda and Nutrition',
+              'Art of Being Happy',
+              'Fit India Protocol & Wellness',
+              'Constitutional Values and Fundamental Duties'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Value Education & Civic Sensibility',
+                topics: ['Course selected from the university VAC-1 Basket: Ayurveda and Nutrition, Art of Being Happy, Fit India, or Constitutional Values and Fundamental Duties']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'geo-mjc-2-t',
+            code: 'MJC-2 (T)',
+            name: 'Climatology and Oceanography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Savindra Singh (2009), Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad',
+              'D. S. Lal (2006), Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad',
+              'H. J. Critchfield (1987), General Climatology, Prentice-Hall of India, New Delhi',
+              'R. G. Barry and R. J. Chorley (1998), Atmosphere, Weather and Climate, Routledge, New York',
+              'R. G. Barry and A. M. Carleton (2001), Synoptic and Dynamic Climatology, Routledge, UK',
+              'F. K. Lutgens, E. J. Tarbuck and D. Tasa (2009), The Atmosphere: An Introduction to Meteorology, Prentice-Hall, NJ',
+              'J. E. Oliver and J. J. Hidore (2002), Climatology: An Atmospheric Science, Pearson Education, New Delhi',
+              'G. T. Trewartha and L. H. Horne (1980), An Introduction to Climate, McGraw-Hill, US',
+              'L. S. Gupta (2000), Jalvayu Vigyan, Hindi Madhyam Karyanvay Nidishalya, Delhi Vishwa Vidhyalaya',
+              'M. Vatal (1986), Bhautik Bhugol, Central Book Depot, Allahabad'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Composition & Structure of Atmosphere, Insolation (08 Lectures)',
+                topics: [
+                  'Composition and Structure of Atmosphere: Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere; Ozone layer and Ionospheric layers',
+                  'Insolation: Solar Radiation, Solar Constant, Factors affecting insolation (Angle of solar rays, duration of daylight, atmospheric transmission, sunspot cycle)',
+                  'Heat Budget of the Earth and Atmosphere, Terrestrial radiation, Atmospheric heating processes (Conduction, Convection, Advection, Radiation), Latitudinal heat balance and greenhouse effect'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Air Masses, Fronts & Cyclones (10 Lectures)',
+                topics: [
+                  'Air Masses: Concept, Source regions, Thermodynamic and Mechanical classification, Properties and atmospheric stability/instability',
+                  'Fronts: Frontogenesis and Frontolysis, Types of Fronts (Warm front, Cold front, Occluded front, Stationary front)',
+                  'Cyclones: Tropical Cyclones (Origin, thermal theory, structure, eye of cyclone, weather conditions, tracks, and distribution - Hurricanes, Typhoons, Cyclones, Willy-willies)',
+                  'Temperate Cyclones (Extra-tropical): Polar Front theory (Bjerknes wave theory), Life cycle, weather changes; Comparison with Tropical Cyclones; Anticyclones'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Classification of Climate & Climatic Change (10 Lectures)',
+                topics: [
+                  'Classification of World Climates: Wladimir Koppen Scheme (Empirical basis, letter symbols A, B, C, D, E, climatic types and global distribution)',
+                  'C. W. Thornthwaite Rational Classification (1931 & 1948 classifications based on Precipitation Effectiveness, Thermal Efficiency, and Potential Evapotranspiration)',
+                  'Climatic Change: Astronomical, geological, and anthropogenic causes; Evidences of climate change (Glacial deposits, Tree rings, Pollen analysis, Ice cores, Historical records); Global warming and international climate agreements'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Relief of Ocean Floor & Salinity of Oceans (12 Lectures)',
+                topics: [
+                  'Relief of the Ocean floor: Continental Shelf, Continental Slope, Continental Rise, Deep Sea Plain (Abyssal Plain), Oceanic Deeps/Trenches, and Submarine Canyons',
+                  'Bottom Relief of the Indian Ocean: Mid-Indian Oceanic Ridge, Chagos-Laccadive Ridge, Ninety East Ridge, Basins and Deeps (Java Trench)',
+                  'Bottom Relief of the Atlantic Ocean: Mid-Atlantic Ridge (Dolphin and Challenger Rise), Basins (North and South Atlantic), Islands, and Trenches (Puerto Rico, Romanche)',
+                  'Factors affecting Salinity of Ocean water: Evaporation, Precipitation, Influx of river water, Freezing/Melting of ice, Atmospheric pressure, and Wind; Horizontal and vertical distribution of salinity'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-2-p',
+            code: 'MJC-2 (P)',
+            name: 'Climatology and Oceanography (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'R. L. Singh and Rana P. B. Singh (2020), Elements of Practical Geography, Kalyani Publishers',
+              'J. P. Sharma (1991-92), Prayogik Bhugol, Rastogi & Company, Meerut',
+              'M. M. P. Sinha & Seema Bala (2017), Uchh Cartography, Rajesh Publication, New Delhi',
+              'A. Sarkar (2015), Practical Geography: A Systematic Approach, Orient Black Swan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Wind Rose, Cyclone and Anticyclone Diagrams (06 Lectures)',
+                topics: [
+                  'Graphical Representation of Wind Rose: Simple Wind Rose, Star Wind Rose, Octagonal Wind Rose, Compound Wind Rose',
+                  'Isobars, Pressure gradient, and Pressure systems',
+                  'Graphical representation and isobaric patterns of Tropical and Temperate Cyclones, Anticyclones, Col, and Trough of low pressure'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Weather Map Interpretation: Climograph & Hythergraph (06 Lectures)',
+                topics: [
+                  'Indian Daily Weather Reports (IDWR): Reading of Weather Maps, Weather signs and symbols used by India Meteorological Department (IMD)',
+                  'Climograph (Griffith Taylor): Construction, axes (Wet-bulb temperature vs Relative humidity), quadrants (Raw, Muggy, Scorching, Keen), and bioclimatic interpretation',
+                  'Hythergraph: Construction (Mean monthly temperature vs Mean monthly rainfall), interpretation of climatic conditions and vegetation suitability'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Meteorological Instruments & Weather Observation (08 Lectures)',
+                topics: [
+                  'Wind Vane: Structure, working principle, and determination of wind direction',
+                  'Cup Anemometer: Structure, measurement of wind speed and velocity',
+                  'Fortin Barometer and Aneroid Barometer: Structure, index correction, and atmospheric pressure measurement',
+                  'Dry and Wet Bulb Thermometer (Mason Hygrometer): Determination of Dew Point, Relative Humidity using hygrometric tables; Maximum and Minimum Thermometers'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-2-t',
+            code: 'MIC-2 (T)',
+            name: 'Climatology and Oceanography (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Savindra Singh, Jalvayu Vigyan, Prayag Pustak Bhavan',
+              'D. S. Lal, Jalvayu Vigyan, Prayag Pustak Bhavan',
+              'H. J. Critchfield, General Climatology, Prentice-Hall'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Atmospheric Composition, Structure & Precipitation (06 Lectures)',
+                topics: [
+                  'Composition and Structure of Atmosphere: Major layers (Troposphere, Stratosphere, Mesosphere, Thermosphere)',
+                  'Atmospheric Moisture, Condensation, Forms of Condensation (Dew, Frost, Fog, Mist), and Precipitation types (Rain, Snow, Sleet, Hail)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Atmospheric Pressure, Winds & Cyclones (06 Lectures)',
+                topics: [
+                  'Atmospheric Pressure Belts (Equatorial low, Subtropical high, Subpolar low, Polar high), Shifting of pressure belts',
+                  'Planetary Winds (Trade winds, Westerlies, Polar easterlies), Periodic winds (Monsoons), Local winds',
+                  'Cyclones: Tropical and Temperate cyclones, origin, features, and weather characteristics'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Oceanic Bottom Relief & Salinity (08 Lectures)',
+                topics: [
+                  'Relief of the Oceanic Bottom: Continental shelf, Continental slope, Deep sea plain, and Oceanic deeps',
+                  'Salinity of Ocean water: Sources of salts, factors governing salinity variations, and distribution of oceanic salinity'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-2-p',
+            code: 'MIC-2 (P)',
+            name: 'Climatology and Oceanography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 2,
+            recommendedBooks: [
+              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
+              'J. P. Sharma, Prayogik Bhugol, Rastogi & Company'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Interpretation of Weather Maps & Wind Rose (05 Lectures)',
+                topics: [
+                  'Interpretation of Indian Daily Weather Maps (IDWR): Isobars, wind direction, cloud cover, and sea condition symbols',
+                  'Construction and interpretation of Simple Wind Rose diagram'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Meteorological Instruments (05 Lectures)',
+                topics: [
+                  'Functions and working mechanisms of Wind Vane, Anemometer, Barometer (Aneroid), and Standard Rain Gauge (Symon Rain Gauge)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mdc-2',
+            code: 'MDC-2',
+            name: 'Multidisciplinary Course 2 (Basket)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.2 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Interdisciplinary Studies',
+                topics: ['Second level multidisciplinary basket course selected from science/commerce/humanities disciplines']
+              }
+            ]
+          },
+          {
+            id: 'geo-aec-2',
+            code: 'AEC-2',
+            name: 'Environmental Science',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.1 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Ecosystems, Pollution & Environmental Conservation',
+                topics: [
+                  'Ecosystem structure and function, ecological succession, energy flow in ecosystem',
+                  'Biodiversity conservation: In-situ and Ex-situ conservation, hot spots of biodiversity',
+                  'Environmental pollution: Air, Water, Soil, Noise, and Solid waste management',
+                  'Global environmental issues: Climate change, Ozone layer depletion, Acid rain; Environmental Protection Act, 1986'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-sec-2',
+            code: 'SEC-2',
+            name: 'Skill Enhancement Course 2 (Basket)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.3 MB',
+            recommendedBooks: [
+              'Big Data Analysis & Hadoop / Spark',
+              'Beginners Course to Calligraphy',
+              'Personality Development & Communication',
+              'पटकथा लेखन (Screenplay Writing)',
+              'Introduction to Cloud Computing (AWS)',
+              'Business Communication'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Professional Skill Enhancement',
+                topics: ['Course selected from the university SEC-2 Basket: Big Data Analysis, Beginners Course to Calligraphy, Personality Development & Communication, पटकथा लेखन, Cloud Computing (AWS), or Business Communication']
+              }
+            ]
+          },
+          {
+            id: 'geo-vac-2',
+            code: 'VAC-2',
+            name: 'Value Added Course 2 (Basket)',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Vedic Mathematics by Rajesh Kumar Thakur',
+              'Yoga: Philosophy and Practice by Swami Satyananda Saraswati',
+              'Panchakosha: Holistic Development of Personality',
+              'Social and Emotional Learning',
+              'Swachh Bharat: Rural and Urban Sanitation'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Values & Holistic Wellness',
+                topics: ['Course selected from the university VAC-2 Basket: Vedic Mathematics, Yoga: Philosophy and Practice, Panchakosha: Holistic Development of Personality, Social and Emotional Learning, or Swachh Bharat']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 3,
+        papers: [
+          {
+            id: 'geo-mjc-3-t',
+            code: 'MJC-3 (T)',
+            name: 'Economic Geography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Prithwish Kumar Roy, Economic Geography: A Study of Resources, New Central Book Agency',
+              'J. W. Alexander, Economic Geography, Prentice-Hall',
+              'K. Siddhartha, Economic Geography: Theories & Processes, Kisalaya Publications',
+              'Savindra Singh and Alka Gautam, Arthik Bhugol, Sharda Pustak Bhawan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Nature, Scope & Classification of Economic Activities',
+                topics: [
+                  'Nature, scope, and significance of Economic Geography; Fundamental concepts of resources and classification',
+                  'Classification of economic activities: Primary, Secondary, Tertiary, Quaternary, and Quinary activities'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Primary Activities: Agriculture, Forestry & Mining',
+                topics: [
+                  'Agricultural typologies: Subsistence, Intensive subsistence, Commercial grain farming, Plantation agriculture, Mixed farming; Von Thunen Agricultural Location Model',
+                  'World distribution and production of major agricultural crops: Rice, Wheat, Cotton, Tea, Coffee, Sugarcane',
+                  'Mineral and Energy resources: Distribution and reserves of Iron Ore, Bauxite, Coal, Petroleum, Natural Gas, and Non-conventional energy sources'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Secondary Activities & Industrial Location Theories',
+                topics: [
+                  'Factors of industrial location: Raw materials, power, labour, transport, market, and capital',
+                  'Alfred Weber Theory of Industrial Location: Isodapanes, Material Index, Agglomerative and deglomerative factors; August Losch Theory of Profit Maximization',
+                  'Major world industrial regions: Manufacturing belts of USA, Western Europe, Japan, and Russian Federation',
+                  'Case studies of Iron & Steel Industry, Cotton Textile Industry, Petrochemical Industry, and High-tech Software Parks'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Tertiary Activities, Transport Networks & International Trade',
+                topics: [
+                  'Transport networks and development: Road, Rail, Inland waterways, Ocean trade routes (Suez Canal, Panama Canal, North Atlantic route)',
+                  'International trade: Changing patterns of world trade, Trade blocs (WTO, EU, ASEAN, NAFTA/USMCA, SAARC), and globalization impacts'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-4-t',
+            code: 'MJC-4 (T)',
+            name: 'Cartograms, Map Projection and Surveying (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
+              'F. J. Monkhouse and H. R. Wilkinson, Maps and Diagrams, Methuen & Co.',
+              'M. M. P. Sinha and Seema Bala, Uchh Cartography, Rajesh Publication'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Cartograms & Thematic Representation',
+                topics: [
+                  'Principles of cartographic representation: Point, Line, and Area symbols',
+                  'Cartograms: Concept, types (value-by-area, contiguous, non-contiguous), Dot maps, Choropleth, Isopleth, Flow maps'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Map Projections: Principles & Mathematical Concepts',
+                topics: [
+                  'Map Projection: Definition, necessity, classification (Azimuthal, Conical, Cylindrical, Conventional; Homolographic, Orthomorphic, Equidistant)',
+                  'Choice of projections for world maps, polar areas, temperate zones, and equatorial belts; Distortion characteristics (Tissot Indicatrix)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Principles of Land Surveying',
+                topics: [
+                  'Surveying: Definition, basic principles (Working from whole to part), Errors and adjustments',
+                  'Instruments and methods of Plane Table Surveying (Radiation, Intersection, Resection, Traversing) and Prismatic Compass Surveying (Whole circle bearing, Reduced bearing, Local attraction)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-4-p',
+            code: 'MJC-4 (P)',
+            name: 'Cartograms, Map Projection and Surveying (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography',
+              'J. P. Sharma, Prayogik Bhugol, Rastogi Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Construction of Map Projections & Field Survey',
+                topics: [
+                  'Mathematical and graphical construction of: Simple Cylindrical Projection, Cylindrical Equal Area Projection, Mercator Projection',
+                  'Conical Projection with one standard parallel, Conical Projection with two standard parallels, Bonne Projection, Polyconic Projection',
+                  'Polar Zenithal Equidistant and Equal Area Projections',
+                  'Field practical: Plane Table Surveying (Radiation and Intersection methods) and Prismatic Compass Traversing with correction for local attraction'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-3-t',
+            code: 'MIC-3 (T)',
+            name: 'Economic Geography (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Prithwish Kumar Roy, Economic Geography, New Central Book Agency',
+              'Savindra Singh, Arthik Bhugol, Sharda Pustak Bhawan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Resources & Agricultural Geography',
+                topics: [
+                  'Concept of Resources, classification and conservation; Agricultural regions and major food crops (Rice, Wheat)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Minerals, Energy & Major Industries',
+                topics: [
+                  'Distribution of Iron ore, Coal, Petroleum; Location factors of Iron & Steel industry and Cotton textile industry'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-3-p',
+            code: 'MIC-3 (P)',
+            name: 'Economic Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 2,
+            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Economic Data Representation',
+                topics: ['Drawing of Dot maps, Proportional circles, and Bar diagrams for crop production and mineral output data']
+              }
+            ]
+          },
+          {
+            id: 'geo-mdc-3',
+            code: 'MDC-3',
+            name: 'Multidisciplinary Course 3 (Basket)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.2 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Advanced Multidisciplinary Exploration',
+                topics: ['Third multidisciplinary basket paper completing the 9-credit MDC requirement under NEP-2020']
+              }
+            ]
+          },
+          {
+            id: 'geo-aec-3',
+            code: 'AEC-3',
+            name: 'Disaster Risk Management',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.1 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Disaster Concepts & Mitigation',
+                topics: [
+                  'Understanding Hazards, Disasters, Vulnerability, and Risk',
+                  'Disaster management cycle: Preparedness, mitigation, emergency response, relief, and rehabilitation',
+                  'Community-based disaster management and role of National Disaster Management Authority (NDMA)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-sec-3',
+            code: 'SEC-3',
+            name: 'Skill Enhancement Course 3 (Basket)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            recommendedBooks: [
+              'Statistical Software Package (SPSS) for Research Analysis',
+              'Prospecting E-waste for Sustainability',
+              'Visual Communication and Photography',
+              'Sustainable Ecotourism and Entrepreneurship',
+              'Graphic Design & 2D/3D Animation'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Advanced Applied Skills',
+                topics: ['Selected from SEC-3 Basket: Statistical Software Package (SPSS), Prospecting E-waste for Sustainability, Visual Communication & Photography, Sustainable Ecotourism & Entrepreneurship, or Graphic Design & Animation']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 4,
+        papers: [
+          {
+            id: 'geo-mjc-5-t',
+            code: 'MJC-5 (T)',
+            name: 'Human Geography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Majid Husain, Human Geography, Rawat Publications, Jaipur',
+              'Alka Gautam, Manav Bhugol, Sharda Pustak Bhawan, Allahabad',
+              'K. Siddhartha, Human Geography: Landscape of Human Activities, Kisalaya Publications',
+              'H. Robinson, Human Geography, Macdonald and Evans'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Nature, Scope & Philosophy of Human Geography',
+                topics: [
+                  'Nature, scope, and development of Human Geography; Branches of Human Geography',
+                  'Man-Environment Relationship: Environmental Determinism (Friedrich Ratzel, Ellen Churchill Semple), Possibilism (Paul Vidal de la Blache, Lucien Febvre), Neo-Determinism / Stop-and-Go Determinism (Griffith Taylor), and Probabilism'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'World Population Distribution, Growth & Dynamics',
+                topics: [
+                  'World population distribution, density, and growth patterns; Factors influencing population distribution',
+                  'Theories of population: Malthusian Theory of Population, Demographic Transition Theory (Notestein, Thompson) and its stages',
+                  'Migration: Types, causes (push and pull factors), consequences; Ravenstein Laws of Migration and Everett Lee Migration Model'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Human Races, Cultural Realms & Tribal Societies',
+                topics: [
+                  'Human Races: Biological traits, criteria for racial classification (Skin color, hair form, cephalic index, nasal index), Major races of the world (Caucasoid, Mongoloid, Negroid, Australoid)',
+                  'Cultural Realms of the World; Language and Religious distributions',
+                  'Habitat, Economy, and Society of selected tribes: Eskimo (Inuit), Pygmy, Bushman, Masai; Indian tribes: Santhal, Gond, Bhil, and Tharu'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Settlement Geography: Rural & Urban Systems',
+                topics: [
+                  'Rural Settlements: Types (Compact, Semi-compact, Hamleted, Dispersed) and morphological patterns (Linear, Circular, Radial, Rectangular)',
+                  'Urban Settlements: Evolution, urbanization trends, morphology of urban centers; Theories of urban structure: Concentric Zone Model (Burgess), Sector Model (Hoyt), Multiple Nuclei Model (Harris & Ullman)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-6-t',
+            code: 'MJC-6 (T)',
+            name: 'Geography of India and Bihar (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.7 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'D. R. Khullar, India: A Comprehensive Geography, Kalyani Publishers',
+              'R. C. Tiwari, Geography of India, Prayag Pustak Bhawan, Allahabad',
+              'Enayat Ahmad, Bihar: A Physical, Economic and Regional Geography, Ranchi University',
+              'S. P. Singh & R. P. Singh, Regional Geography of Bihar, Rajesh Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Physical & Climatic Framework of India',
+                topics: [
+                  'Physiographic divisions of India: Northern Mountains (Himalayas), Great Northern Plains, Peninsular Plateau, Coastal Plains, and Islands',
+                  'Drainage systems: Himalayan rivers (Indus, Ganga, Brahmaputra) vs Peninsular rivers (Godavari, Krishna, Cauvery, Narmada, Tapi)',
+                  'Climate of India: Mechanism of Indian Monsoons (Jet Streams, El Nino, Southern Oscillation - ENSO), Seasons, and Climatic regions of India (Koppen and Stamp classifications)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Natural Resources, Agriculture & Industries of India',
+                topics: [
+                  'Soils of India: Types, distribution, soil erosion, and conservation',
+                  'Natural vegetation: Forest types, distribution, deforestation, and National Forest Policy',
+                  'Agriculture: Green Revolution, White Revolution, major crops (Wheat, Rice, Sugarcane, Tea, Cotton), and Agro-climatic zones of India',
+                  'Industrial development: Locational factors and distribution of Iron & Steel, Cotton Textiles, Petroleum Refining, and Automobile industries; Industrial clusters of India'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Physiography, Drainage & Climate of Bihar',
+                topics: [
+                  'Physical framework of Bihar: Terai region, North Bihar Plains, South Bihar Plains, and Southern Plateau fringe',
+                  'Drainage system of Bihar: Ganga and its tributaries (Gandak, Burhi Gandak, Kosi - Sorrow of Bihar, Bagmati, Kamla-Balan, Son, Punpun, Falgu)',
+                  'Climate of Bihar: Temperature, seasonal rainfall distribution; Flood hazards in North Bihar and Drought hazards in South Bihar: causes, impacts, and management'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Economy, Resources & Demography of Bihar',
+                topics: [
+                  'Agriculture in Bihar: Cropping pattern, Rice, Maize, Wheat, Pulses, Sugarcane, Jute, and Makhana cultivation',
+                  'Mineral and Industrial status of Bihar post-bifurcation: Agro-based industries (Sugar, Food processing, Dairy, Jute) and tourism potential',
+                  'Demography of Bihar: Population density, growth rate, sex ratio, literacy, rural-urban composition, and out-migration dynamics'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-7-t',
+            code: 'MJC-7 (T)',
+            name: 'Statistical Methods in Geography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
+              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
+              'S. Gregory, Statistical Methods and the Geographer, Longman'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Geographical Data & Measures of Central Tendency',
+                topics: [
+                  'Geographical Data: Spatial and Attribute data, Discrete and Continuous series, Scales of measurement (Nominal, Ordinal, Interval, Ratio)',
+                  'Measures of Central Tendency: Mean (Arithmetic, Geometric, Harmonic), Median, Mode; Spatial mean and center of gravity of geographic distributions'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Measures of Dispersion & Skewness',
+                topics: [
+                  'Measures of Dispersion: Range, Mean Deviation, Quartile Deviation, Standard Deviation, and Variance; Coefficient of Variation (CV) in spatial rainfall and crop variability analysis',
+                  'Measures of Skewness and Kurtosis in geographic distributions'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Correlation & Bivariate Regression',
+                topics: [
+                  'Bivariate Analysis: Scatter Diagram, Karl Pearson Product Moment Correlation Coefficient, Spearman Rank Correlation Coefficient',
+                  'Linear Regression: Principle of Least Squares, Regression equations (Y on X, X on Y), Regression line and residuals in geographic studies'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-7-p',
+            code: 'MJC-7 (P)',
+            name: 'Statistical Methods in Geography (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Aslam Mahmood, Statistical Methods in Geographical Studies',
+              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Computation of Statistical Parameters',
+                topics: [
+                  'Computation of Mean, Median, and Mode for grouped and ungrouped spatial data (Rainfall, Population density, Crop yield)',
+                  'Calculation of Standard Deviation, Quartile Deviation, and Coefficient of Variation for regional disparity analysis'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Correlation, Regression & Graphing',
+                topics: [
+                  'Calculation of Pearson Correlation Coefficient (r) and Spearman Rank Correlation (rho) for variables such as fertilizer use vs crop yield, irrigation vs production',
+                  'Fitting linear regression line by least squares method and graphical plotting of residuals'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-4-t',
+            code: 'MIC-4 (T)',
+            name: 'Population Geography (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'R. C. Chandna, Geography of Population, Kalyani Publishers',
+              'J. I. Clarke, Population Geography, Pergamon Press'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Population Distribution & Dynamics',
+                topics: [
+                  'Nature and scope of Population Geography; World population distribution, density, and growth factors; Demographic Transition Theory'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Population Composition & Migration',
+                topics: [
+                  'Age and sex composition, Literacy, Rural-urban ratio; Migration: Causes, types, and socio-economic consequences'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-4-p',
+            code: 'MIC-4 (P)',
+            name: 'Population Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 2,
+            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Demographic Diagrams & Pyramids',
+                topics: [
+                  'Construction of Age-Sex Pyramids (Expansive, Constrictive, Stationary)',
+                  'Mapping population density using Choropleth technique and drawing population growth curve'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-aec-4',
+            code: 'AEC-4',
+            name: 'NCC / NSS / NGOs / Social Service / Scout and Guide / Sports',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.0 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Community Service & Experiential Leadership',
+                topics: ['Field engagement, community service, social leadership, disaster relief drills, youth empowerment activities under NCC/NSS/Sports']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 5,
+        papers: [
+          {
+            id: 'geo-mjc-8-t',
+            code: 'MJC-8 (T)',
+            name: 'Environmental Geography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Savindra Singh, Environmental Geography, Prayag Pustak Bhawan, Allahabad',
+              'Alka Gautam, Environmental Geography, Sharda Pustak Bhawan',
+              'H. M. Saxena, Environmental Geography, Rawat Publications',
+              'I. G. Simmons, Earth, Air and Water: Resources and Environment, Edward Arnold'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Concepts of Ecology, Ecosystem & Environment',
+                topics: [
+                  'Nature, scope, and significance of Environmental Geography; Components of Environment',
+                  'Ecosystem: Concept, structure (biotic and abiotic components), function, food chain, food web, trophic levels, ecological pyramids, and biogeochemical cycles (Carbon, Nitrogen, Hydrological cycles)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Environmental Degradation & Pollution',
+                topics: [
+                  'Environmental Degradation: Natural and anthropogenic causes; Soil degradation and desertification',
+                  'Pollution: Air, water, noise, and radioactive pollution; Source, impacts, and control strategies; Solid and electronic waste management'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Global Environmental Issues & Climate Agreements',
+                topics: [
+                  'Global warming and climate change, Ozone depletion in stratosphere, Acid rain, Sea-level rise',
+                  'Loss of biodiversity: Extinction of species, deforestation, threats to wildlife, and in-situ / ex-situ conservation',
+                  'International conferences and protocols: Stockholm Conference (1972), Rio Earth Summit (1992), Kyoto Protocol (1997), Paris Climate Accord (2015), COP summits'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Environmental Management & Sustainable Development',
+                topics: [
+                  'Sustainable Development: Concept, historical background (Brundtland Commission Report 1987), Sustainable Development Goals (SDGs 2030)',
+                  'Environmental Impact Assessment (EIA): Concept, stages, methodologies, and significance in Indian developmental planning',
+                  'Environmental laws and policies in India: Water Act 1974, Air Act 1981, Wildlife Protection Act 1972, Forest Conservation Act 1980, Environment Protection Act 1986'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-9-t',
+            code: 'MJC-9 (T)',
+            name: 'Cartographic Techniques (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
+              'F. J. Monkhouse and H. R. Wilkinson, Maps and Diagrams, Methuen',
+              'M. M. P. Sinha and Seema Bala, Uchh Cartography, Rajesh Publication'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Evolution & Principles of Cartography',
+                topics: [
+                  'Evolution of Cartography as a scientific discipline; Cartography as a communication system; Types and classification of maps',
+                  'Base map preparation, compilation, generalizations, map design, and typography'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Thematic Mapping & Cartographic Representation',
+                topics: [
+                  'Thematic maps: Principles, data types, Choropleth mapping (Class interval selection methods: Equal interval, Quantile, Natural breaks), Dasymetric mapping, Isopleth mapping, Dot method'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Digital Cartography & Modern Mapping Systems',
+                topics: [
+                  'Shift from analog to digital cartography; Spatial data models; Coordinate reference systems (WGS84, UTM); Computer-assisted cartography'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-9-p',
+            code: 'MJC-9 (P)',
+            name: 'Cartographic Techniques (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography',
+              'J. P. Sharma, Prayogik Bhugol, Rastogi Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Thematic Map Construction',
+                topics: [
+                  'Preparation of Choropleth map for population density and literacy distribution using equal intervals and standard deviation methods',
+                  'Preparation of Dot map for rural population distribution and Isopleth map for rainfall/temperature distribution'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Statistical Cartograms & Flow Maps',
+                topics: [
+                  'Construction of Proportional Circles, Spheres, Divided Rectangles, and Pie diagrams for land use and sectoral workforce',
+                  'Construction of Traffic Flow Maps and Migration Flow Diagrams'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-5-t1',
+            code: 'MIC-5 (T)',
+            name: 'Human Geography (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Majid Husain, Human Geography, Rawat Publications',
+              'Alka Gautam, Manav Bhugol, Sharda Pustak Bhawan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Scope & Man-Environment Interactions',
+                topics: [
+                  'Nature and scope of Human Geography; Environmental Determinism, Possibilism, and Neo-Determinism',
+                  'Major human races of the world and their distribution; Indian tribal groups (Santhal, Gond)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Settlement Systems',
+                topics: [
+                  'Rural settlement types and patterns; Urban settlement morphology and functional classification of towns'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-5-t2',
+            code: 'MIC-5 (T) / MIC-6 (T)',
+            name: 'Geography of India and Bihar (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'D. R. Khullar, India: A Comprehensive Geography',
+              'S. P. Singh & R. P. Singh, Regional Geography of Bihar'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Physical & Economic Framework of India & Bihar',
+                topics: [
+                  'Physiographic divisions and drainage of India; Indian Monsoon and agriculture',
+                  'Physiography and drainage of Bihar; Flood and drought problems in Bihar; Major agro-industries of Bihar'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-int-1',
+            code: 'INT-1',
+            name: 'Summer Internship / Community Project',
+            paperType: 'Internship',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.1 MB',
+            pyqCount: 3,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Internship & Field Training',
+                topics: [
+                  'Mandatory 4-credit summer internship or field placement with government planning bodies, urban local bodies, GIS organizations, environmental NGOs, or community survey centers',
+                  'Submission of detailed Internship Project Report and Viva-Voce examination'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 6,
+        papers: [
+          {
+            id: 'geo-mjc-10-t',
+            code: 'MJC-10 (T)',
+            name: 'Evolution of Geographical Thought (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Majid Husain, Evolution of Geographical Thought, Rawat Publications, Jaipur',
+              'R. D. Dikshit, Geographical Thought: A Contextual History of Ideas, Prentice-Hall of India',
+              'S. Adhikari, Fundamentals of Geographical Thought, Orient BlackSwan',
+              'David Harvey, Explanation in Geography, Edward Arnold'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Early Geographical Thought: Classical Antiquity & Middle Ages',
+                topics: [
+                  'Contributions of Greek Geographers: Homer, Thales, Anaximander, Hecataeus, Herodotus, Eratosthenes (measurement of earth circumference), Hipparchus, and Posidonius',
+                  'Contributions of Roman Geographers: Strabo (Geographia) and Ptolemy (Almagest, Guide to Geography)',
+                  'The Dark Age in Europe and Arab Geographers: Al-Balkhi, Al-Masudi, Al-Biruni (Kitab al-Hind), Al-Idrisi, Ibn Battuta, and Ibn Khaldun (Muqaddimah)',
+                  'Age of Exploration and Discoveries: Prince Henry the Navigator, Columbus, Vasco da Gama, Magellan; Revival of scientific geography (Bernhard Varenius - Geographia Generalis, Immanuel Kant)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Foundations of Modern Geography: German & French Schools',
+                topics: [
+                  'Classical period of Modern Geography: Alexander von Humboldt (Cosmos) and Carl Ritter (Erdkunde) - Comparative Geography, Unity in Diversity',
+                  'German School: Friedrich Ratzel (Anthropogeographie, Politische Geographie, Lebensraum), Ferdinand von Richthofen, Alfred Hettner (Chorology)',
+                  'French School: Paul Vidal de la Blache (Tableau de la Geographie de la France, Possibilism, Genre de vie), Jean Brunhes, Emmanuel de Martonne'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'British & American Schools & Dualisms in Geography',
+                topics: [
+                  'British School: Halford J. Mackinder (Heartland Theory), Patrick Geddes, A. J. Herbertson (Natural regions)',
+                  'American School: William Morris Davis, Ellen Churchill Semple, Ellsworth Huntington (Climatic determinism), Carl O. Sauer (Cultural Landscape), Richard Hartshorne (The Nature of Geography - Areal Differentiation)',
+                  'Dualisms and Dichotomies in Geography: Systematic (General) vs Regional Geography; Physical vs Human Geography; Determinism vs Possibilism; Idiographic vs Nomothetic approaches'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Quantitative Revolution & Modern Paradigms',
+                topics: [
+                  'Quantitative Revolution in Geography: Fred K. Schaefer critique of Hartshorne; Application of spatial analysis, models, and statistical techniques; Model building (Peter Haggett, Richard Chorley)',
+                  'Reactions to Positivism: Behavioural Geography, Humanistic Geography (Yi-Fu Tuan, Anne Buttimer), Radical and Marxist Geography (David Harvey), Feminist Geography, and Post-modernism in Geography'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-11-t',
+            code: 'MJC-11 (T)',
+            name: 'Research Methodology and Field Work',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
+              'C. R. Kothari, Research Methodology: Methods and Techniques, New Age International',
+              'H. N. Misra and V. P. Singh, Research Methodology in Geography, Rawat Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Research Design & Formulation of Problems',
+                topics: [
+                  'Scientific Research in Geography: Nature, types (Pure vs Applied, Qualitative vs Quantitative, Exploratory, Descriptive, Explanatory)',
+                  'Identification and formulation of research problem; Literature review; Framing research objectives and hypotheses'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Data Collection & Sampling Methods',
+                topics: [
+                  'Types and sources of data: Primary data vs Secondary data; Spatial data sources (Census, NSSO, IMD, Survey of India, Satellite data)',
+                  'Sampling techniques: Probability sampling (Simple random, Systematic, Stratified, Cluster) vs Non-probability sampling (Purposive, Quota, Snowball); Sample size determination'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Field Survey Techniques & Questionnaire Design',
+                topics: [
+                  'Field methods: Observation, Household socioeconomic survey, Focus group discussions (FGD), Key informant interviews; Designing of questionnaires and schedules',
+                  'Field survey ethics, spatial sampling in rural and urban environments'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Report Writing & Academic Ethics',
+                topics: [
+                  'Data analysis, interpretation, thematic mapping, and synthesis; Structure of a geographical research report / dissertation',
+                  'Citation and Referencing styles (APA, Harvard); Plagiarism rules, UGC guidelines on research integrity and academic writing'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-12-t',
+            code: 'MJC-12 (T)',
+            name: 'Remote Sensing and GIS (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Thomas M. Lillesand, Ralph W. Kiefer and Jonathan W. Chipman, Remote Sensing and Image Interpretation, John Wiley & Sons',
+              'Paul A. Longley, Michael F. Goodchild, David J. Maguire, David W. Rhind, Geographic Information Systems and Science, Wiley',
+              'Kang-tsung Chang, Introduction to Geographic Information Systems, McGraw-Hill',
+              'Basudeb Bhatta, Remote Sensing and GIS, Oxford University Press'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Principles of Remote Sensing & EMR',
+                topics: [
+                  'Remote Sensing: Definition, components, history, and development; Advantages and limitations',
+                  'Electromagnetic Radiation (EMR): Electromagnetic spectrum, Atmospheric windows, Interaction of EMR with atmosphere (Scattering - Rayleigh, Mie, Non-selective; Absorption) and earth surface features (Spectral reflectance curve of vegetation, soil, and water)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Platforms, Sensors & Image Interpretation',
+                topics: [
+                  'Platforms: Airborne vs Spaceborne platforms; Orbits: Geostationary vs Sun-synchronous orbits',
+                  'Sensors: Active vs Passive sensors; Resolutions in Remote Sensing: Spatial, Spectral, Radiometric, and Temporal resolution',
+                  'Major satellite systems: LANDSAT, SPOT, IRS (LISS-III, LISS-IV, Cartosat), Sentinel; Elements of visual image interpretation (Tone, Texture, Pattern, Shape, Size, Shadow, Association)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Geographical Information System (GIS) Fundamentals',
+                topics: [
+                  'GIS: Definition, components (Hardware, Software, Data, People, Methods), and functions; Coordinate systems and Map projections in GIS (WGS84, UTM)',
+                  'Spatial Data Models: Raster Data Model (pixels, grid cells) vs Vector Data Model (points, lines, polygons); Attributes and Relational Database Management Systems (RDBMS)',
+                  'Global Positioning System (GPS): Segments (Space, Control, User), working principle of trilateration, and applications in spatial data collection'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-12-p',
+            code: 'MJC-12 (P)',
+            name: 'Remote Sensing and GIS (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Kang-tsung Chang, Introduction to Geographic Information Systems, McGraw-Hill',
+              'Basudeb Bhatta, Remote Sensing and GIS, Oxford University Press'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Visual Satellite Image Interpretation',
+                topics: [
+                  'Visual interpretation of False Color Composite (FCC) satellite imagery (IRS/LANDSAT/Sentinel) for land use/land cover mapping using tracing and overlay method'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'GIS Software Hands-on (QGIS / ArcGIS)',
+                topics: [
+                  'Georeferencing of scanned topographical sheets / satellite imagery using Ground Control Points (GCPs)',
+                  'Digitization: Creation of point, line, and polygon shapefiles / layers (roads, drainage, settlements, administrative boundaries)',
+                  'Attribute data entry, table joining, query building, and thematic map layout design with scale bar, north arrow, and legend'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-6-p',
+            code: 'MIC-6 (P)',
+            name: 'Geography of India and Bihar (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 2,
+            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Regional Mapping of Bihar and India',
+                topics: ['Mapping drainage basins of Bihar, flood vulnerable zones, and cropping intensity maps of Bihar districts']
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-7-t',
+            code: 'MIC-7 (T)',
+            name: 'Regional Planning and Development (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'R. P. Misra, Regional Planning: Concepts, Techniques, Policies and Case Studies, Concept Publishing',
+              'K. V. Sundaram, Urban and Regional Planning in India, Vikas Publishing'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Concepts of Region & Regional Disparities',
+                topics: [
+                  'Concept of Region, types (Formal, Functional, Planning regions); Regional disparities in India and planning strategies for backward regions (Drought prone, Hill, and Tribal area planning)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Theories of Regional Growth',
+                topics: [
+                  'Growth Pole Theory of Francois Perroux; Cumulative Causation Theory of Gunnar Myrdal; Five Year Plans and NITI Aayog initiatives in India'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 7,
+        papers: [
+          {
+            id: 'geo-mjc-13-t',
+            code: 'MJC-13 (T)',
+            name: 'Regional Planning and Development (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'R. P. Misra, K. V. Sundaram and V. L. S. Prakasa Rao, Regional Development Planning in India: A New Strategy, Vikas Publishing',
+              'John Friedmann and William Alonso, Regional Development and Planning: A Reader, MIT Press',
+              'K. V. Sundaram, Geography and Planning, Concept Publishing, New Delhi',
+              'Alka Gautam, Regional Planning and Development, Sharda Pustak Bhawan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Concept of Region, Regionalism & Typologies',
+                topics: [
+                  'Concept of Region and Space in Geography; Regionalism vs Nationalism; Evolution of regional planning',
+                  'Classification of Regions: Formal (Homogeneous), Functional (Nodal), and Planning (Administrative) regions; Hierarchy of planning regions (Macro, Meso, Micro)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Theories & Models of Regional Development',
+                topics: [
+                  'Theories of Regional Development: Growth Pole Theory of Francois Perroux and its spatial modification by Jacques Boudeville',
+                  'Cumulative Causation Model of Gunnar Myrdal (Spread effects vs Backwash effects)',
+                  'Core-Periphery Model of John Friedmann; Polarization and Trickle-down theory of Albert O. Hirschman',
+                  'Export Base Model and Sector Theory of Colin Clark'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Regional Disparities & Planning Experience in India',
+                topics: [
+                  'Regional disparities in India: Indicators of regional imbalance (Economic, Infrastructure, Social well-being)',
+                  'Planning strategies in India: Multilevel planning (National, State, District, Block, and Panchayat levels; 73rd and 74th Constitutional Amendments)',
+                  'Target Area Programs: Command Area Development Program (CADP), Drought Prone Area Program (DPAP), Desert Development Program (DDP), Hill Area Development Program (HADP), Tribal Area Development Program (TADP)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Institutional Framework & Case Studies',
+                topics: [
+                  'From Planning Commission to NITI Aayog: Vision, structural changes, Aspirational Districts Programme (ADP)',
+                  'Regional planning case studies: Damodar Valley Corporation (DVC), National Capital Region (NCR), and Backward Region Planning in Bihar'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-14-t',
+            code: 'MJC-14 (T)',
+            name: 'Social Geography (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'Aijazuddin Ahmad, Social Geography, Rawat Publications, Jaipur',
+              'John Eyles, Social Geography in International Perspective, Croom Helm',
+              'D. M. Smith, Where the Grass is Greener: Living in an Unequal World, Penguin Books',
+              'R. D. Tata, Social Geography of India, Concept Publishing'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Nature, Scope & Evolution of Social Geography',
+                topics: [
+                  'Nature, scope, and development of Social Geography; Relationship with Sociology and Anthropology; Philosophical approaches (Positivist, Welfare, Radical, Humanistic)',
+                  'Concept of Social Space, Social Structure, and Social Processes'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Social Diversity: Caste, Tribe, Religion & Language in India',
+                topics: [
+                  'Social differentiation and diversity in India: Caste system (Origin, spatial distribution, caste-based occupational segregation, changes post-independence)',
+                  'Tribes in India: Spatial distribution, classification (L. P. Vidyarthi), tribal assimilation and integration issues',
+                  'Linguistic diversity: Major language families of India (Indo-Aryan, Dravidian, Austro-Asiatic, Tibeto-Burman) and linguistic reorganization of states',
+                  'Religious diversity: Distribution of major religious communities in India and minority geography'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Social Well-being, Quality of Life & Spatial Justice',
+                topics: [
+                  'Social Well-being: Concept, indicators of quality of life (Housing, Health, Education, Income, Nutrition)',
+                  'Human Development Index (HDI) and Multidimensional Poverty Index (MPI): Methodology and spatial disparities in India and Bihar',
+                  'Spatial Justice: Access to healthcare, educational infrastructure, public amenities, and gender disparities in society'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Social Change, Modernization & Spatial Segregation',
+                topics: [
+                  'Social Change and Modernization in India: Sanskritization, Westernization, and Urbanization',
+                  'Social segregation in Indian cities: Ghettos, Slums, Gated communities, and spatial exclusion of marginalized communities'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-15-t',
+            code: 'MJC-15 (T)',
+            name: 'Disaster Management (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Savindra Singh, Disaster Management, Pravalika Publications, Allahabad',
+              'R. B. Singh, Natural Hazards and Disaster Management, Rawat Publications',
+              'National Disaster Management Division, Disaster Management in India, Ministry of Home Affairs, New Delhi',
+              'D. C. Dhameja, Disaster Management: Emerging Challenges and Solutions, Allied Publishers'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Concepts of Hazard, Disaster, Vulnerability & Risk',
+                topics: [
+                  'Disaster concepts: Hazard (Natural vs Anthropogenic), Disaster, Vulnerability (Physical, Socio-economic, Environmental), Capacity, and Risk assessment (Risk = Hazard x Vulnerability / Capacity)',
+                  'Classification of Disasters: Geophysical, Hydrological, Meteorological, Climatological, Biological, and Technological disasters'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Major Disasters in India: Causes, Consequences & Zones',
+                topics: [
+                  'Floods: Causes, flood frequency, flood inundation mapping; Floods in Bihar (Kosi, Gandak, Bagmati plains) and mitigation',
+                  'Droughts: Meteorological, Hydrological, and Agricultural droughts; Drought Prone areas in India and Southern Bihar',
+                  'Earthquakes: Seismic zoning map of India, structural vulnerability, and earthquake resistant building codes',
+                  'Tropical Cyclones: Bay of Bengal cyclones, storm surges, coastal vulnerability, and cyclone warning systems in India',
+                  'Landslides and Avalanches: Factors, Landslide Hazard Zonation (LHZ) in Himalayan and Western Ghats regions'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Disaster Management Cycle & Mitigation Strategies',
+                topics: [
+                  'Disaster Management Cycle: Pre-disaster phase (Prevention, Mitigation, Preparedness, Early warning systems), During-disaster phase (Evacuation, Search and Rescue, Emergency relief), Post-disaster phase (Damage assessment, Rehabilitation, Reconstruction, Building Back Better)',
+                  'Structural vs Non-structural mitigation measures'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Institutional Framework & Community Preparedness',
+                topics: [
+                  'Disaster Management Act 2005: National Disaster Management Authority (NDMA), State Disaster Management Authority (SDMA), District Disaster Management Authority (DDMA), National Disaster Response Force (NDRF)',
+                  'Community-Based Disaster Management (CBDM): Indigenous knowledge, community contingency plans, role of youth, NGOs, and civil society; Sendai Framework for Disaster Risk Reduction (2015-2030)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mjc-15-p',
+            code: 'MJC-15 (P)',
+            name: 'Disaster Management (Practical)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Savindra Singh, Disaster Management, Pravalika Publications',
+              'R. B. Singh, Disaster Management and Risk Reduction, Rawat Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Disaster Risk Mapping & Vulnerability Profiling',
+                topics: [
+                  'Mapping of Seismic Hazard Zones of India using GIS/manual techniques',
+                  'Preparation of Flood Hazard Zonation Map of Bihar using historical flood level data and toposheets',
+                  'Drought vulnerability mapping and preparation of Drought Index (Standardized Precipitation Index - SPI)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Disaster Preparedness Plan & Mock Drill Report',
+                topics: [
+                  'Preparation of Institutional / Village Disaster Management Plan (VDMP)',
+                  'Participation in emergency mock drill, first aid training, and preparation of a detailed Field Hazard Assessment Report'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-8-p',
+            code: 'MIC-8 (P)',
+            name: 'Statistical Methods in Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 3,
+            recommendedBooks: ['Aslam Mahmood, Statistical Methods in Geographical Studies'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Statistical Calculations for Geographical Analysis',
+                topics: [
+                  'Calculation of Mean, Median, Mode, Standard Deviation, and Spearman Rank Correlation for regional socioeconomic data'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-9-t',
+            code: 'MIC-9 (T)',
+            name: 'Environmental Geography (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Savindra Singh, Environmental Geography, Prayag Pustak Bhawan',
+              'Alka Gautam, Environmental Geography, Sharda Pustak Bhawan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Ecosystem & Biodiversity',
+                topics: [
+                  'Ecosystem concepts, components, and food web; Biodiversity hotspots and conservation measures in India'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Pollution & Sustainable Development',
+                topics: [
+                  'Major forms of pollution (Air, Water, Soil); Global warming and climate change; Sustainable Development Goals (SDGs)'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 8,
+        papers: [
+          {
+            id: 'geo-mjc-16-t',
+            code: 'MJC-16 (T)',
+            name: 'Research Methodology (Theory)',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
+              'C. R. Kothari, Research Methodology: Methods and Techniques, New Age International',
+              'H. N. Misra and V. P. Singh, Research Methodology in Geography, Rawat Publications',
+              'Stephen Flowerdew and David Martin, Methods in Human Geography: A Guide for Students Doing a Research Project, Prentice Hall'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Advanced Research Philosophy & Epistemology',
+                topics: [
+                  'Philosophical foundations of Geographical Research: Positivism, Critical Rationalism, Realism, Hermeneutics, and Phenomenological research',
+                  'Inductive vs Deductive approaches; Theory construction, conceptual models, and hypothesis testing'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Advanced Sampling & Parametric / Non-Parametric Tests',
+                topics: [
+                  'Sampling designs for spatial and regional research; Standard error of mean and proportion',
+                  'Hypothesis testing: Formulation of Null (H0) and Alternative (H1) hypotheses; Type I and Type II errors; Level of significance (alpha)',
+                  'Parametric tests: Student t-test (One-sample, Two-sample, Paired), F-test, Analysis of Variance (One-way and Two-way ANOVA)',
+                  'Non-parametric tests: Chi-Square (test of goodness of fit, test of independence of attributes), Mann-Whitney U-test'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Multivariate Analysis & Spatial Modeling',
+                topics: [
+                  'Multiple Regression Analysis: Equation, partial regression coefficients, Coefficient of Multiple Determination (R-squared), Multicollinearity problems',
+                  'Introduction to Factor Analysis, Principal Component Analysis (PCA) for regional composite index calculation',
+                  'Spatial autocorrelation and Moran I statistic in spatial analysis'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Thesis Structuring, Academic Ethics & Research Publication',
+                topics: [
+                  'Writing a research proposal and dissertation; Chapterization, presenting maps, tables, graphs, and statistical models',
+                  'Research ethics: Informed consent, confidentiality, avoiding fabrication, falsification, and plagiarism (Turnitin / Urkund norms)',
+                  'UGC Consortium for Academic and Research Ethics (UGC-CARE) list, peer review process, and publishing research papers'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-rp-1',
+            code: 'RP-1',
+            name: 'Research Project / Dissertation',
+            paperType: 'Research Project',
+            credits: 12,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.8 MB',
+            pyqCount: 5,
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Field Research, Data Synthesis & Dissertation Submission',
+                topics: [
+                  'Comprehensive 12-credit independent research dissertation under faculty guidance on a chosen topic in Geomorphology, Climatology, Environmental Geography, Urban Planning, Agricultural Disparities, Social Geography, or GIS application',
+                  'Extensive field work, empirical data collection, geospatial mapping, statistical hypothesis testing, and complete thesis drafting',
+                  'Formal presentation and Viva-Voce defense before the External University Board of Examiners'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-9-p',
+            code: 'MIC-9 (P)',
+            name: 'Environmental Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 2,
+            recommendedBooks: ['Savindra Singh, Environmental Geography'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Environmental Quality Assessment',
+                topics: [
+                  'Calculation and mapping of Air Quality Index (AQI), Water Quality testing parameters (pH, TDS, Turbidity) in local water bodies'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-10-t',
+            code: 'MIC-10 (T)',
+            name: 'Remote Sensing and GIS (Theory - Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Thomas M. Lillesand, Remote Sensing and Image Interpretation',
+              'Basudeb Bhatta, Remote Sensing and GIS'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Remote Sensing Principles',
+                topics: [
+                  'Principles of Remote Sensing, EMR interaction with atmosphere and earth surfaces; Sensor resolutions; Visual image interpretation elements'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'GIS Components & Spatial Data',
+                topics: [
+                  'GIS hardware, software, data components; Raster and Vector data models; Applications of GIS in environmental and regional planning'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-10-p',
+            code: 'MIC-10 (P)',
+            name: 'Remote Sensing and GIS (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 2,
+            recommendedBooks: ['Basudeb Bhatta, Remote Sensing and GIS'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'GIS Digitization & Map Layout',
+                topics: [
+                  'Georeferencing of toposheets, creation of point/line/polygon vector layers, and map export with title and scale in QGIS'
+                ]
               }
             ]
           }
@@ -2467,7 +4380,6 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
       }
     ]
   },
-
   {
     id: 'ba-psychology',
     name: 'B.A. Psychology (Hons/Subs/Gen)',
