@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { X, Send, MessageCircle, CheckCircle, BellRing, Users, ShieldCheck } from 'lucide-react';
+import { X, CheckCircle, BellRing, Users, ShieldCheck } from 'lucide-react';
+import { WhatsAppIcon, TelegramIcon } from './OfficialBrandIcons';
 
 interface CommunityModalProps {
   isOpen: boolean;
@@ -33,8 +34,8 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
 
         {/* Header */}
         <div className="text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-emerald-500 to-green-600 text-white shadow-md shadow-emerald-500/20">
-            <MessageCircle className="h-6 w-6 fill-current" />
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#082017] border border-emerald-500/40 text-white shadow-lg">
+            <WhatsAppIcon className="h-9 w-9 shrink-0" />
           </div>
           <h3 className="mt-3 text-lg font-black tracking-tight text-slate-900 dark:text-white">
             Join Patna University WhatsApp Community
@@ -70,8 +71,8 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
             className="flex items-center justify-between rounded-xl bg-[#25D366] px-4 py-3 font-bold text-white shadow-md hover:bg-[#20ba5a] active:scale-98 transition group"
           >
             <div className="flex items-center gap-3">
-              <div className="rounded-lg bg-white/20 p-1.5">
-                <MessageCircle className="h-5 w-5 fill-current" />
+              <div className="rounded-xl bg-white/20 p-1">
+                <WhatsAppIcon className="h-6 w-6 shrink-0" />
               </div>
               <div className="text-left">
                 <div className="text-sm font-extrabold leading-tight">Join PU WhatsApp Channel</div>
@@ -91,8 +92,8 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
             className="flex items-center justify-between rounded-xl bg-[#229ED9] px-4 py-3 font-bold text-white shadow-md hover:bg-[#1f8fc4] active:scale-98 transition group"
           >
             <div className="flex items-center gap-3">
-              <div className="rounded-lg bg-white/20 p-1.5">
-                <Send className="h-5 w-5 fill-current" />
+              <div className="rounded-xl bg-white/20 p-1">
+                <TelegramIcon className="h-6 w-6 shrink-0" />
               </div>
               <div className="text-left">
                 <div className="text-sm font-extrabold leading-tight">Join Telegram Channel</div>

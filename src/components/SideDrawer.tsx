@@ -15,6 +15,7 @@ import {
   ChevronRight,
   GraduationCap
 } from 'lucide-react';
+import { WhatsAppIcon, TelegramIcon } from './OfficialBrandIcons';
 import { puCollegesData } from '@/data/puColleges';
 
 interface SideDrawerProps {
@@ -177,7 +178,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                 className="flex w-full items-center justify-between rounded-xl border border-emerald-900/50 bg-[#0a271d] px-3 py-2.5 font-bold text-[#25d366] hover:border-emerald-400 transition"
               >
                 <div className="flex items-center gap-2.5">
-                  <MessageCircle className="h-4 w-4 text-[#25d366]" />
+                  <WhatsAppIcon className="h-4 w-4 shrink-0" />
                   <span>Join WhatsApp Channel</span>
                 </div>
                 <span className="text-[10px] bg-emerald-950 px-2 py-0.5 rounded text-emerald-400 font-black">
@@ -193,7 +194,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                 className="flex w-full items-center justify-between rounded-xl border border-blue-900/50 bg-[#0a2244] px-3 py-2.5 font-bold text-[#29b6f6] hover:border-cyan-400 transition"
               >
                 <div className="flex items-center gap-2.5">
-                  <Send className="h-4 w-4 text-[#29b6f6]" />
+                  <TelegramIcon className="h-4 w-4 shrink-0" />
                   <span>Join Telegram Study Group</span>
                 </div>
                 <span className="text-[10px] bg-blue-950 px-2 py-0.5 rounded text-blue-300 font-black">

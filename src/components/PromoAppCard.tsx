@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Play } from 'lucide-react';
+import { GooglePlayIcon } from './OfficialBrandIcons';
 
 interface PromoAppCardProps {
   onDownloadApp: () => void;
@@ -68,13 +69,13 @@ export const PromoAppCard: React.FC<PromoAppCardProps> = ({
           ))}
         </div>
 
-        {/* Golden Action Button */}
+        {/* Golden Action Button with Authentic Google Play Store Icon */}
         <div className="mt-3 pt-1">
           <button
             onClick={onDownloadApp}
-            className="flex w-full items-center justify-center gap-2 rounded-2xl border border-amber-400/80 bg-[#16233d] py-2.5 px-4 text-xs font-black text-amber-300 shadow-sm hover:bg-amber-400/10 active:scale-98 transition"
+            className="flex w-full items-center justify-center gap-2.5 rounded-2xl border border-amber-400/80 bg-[#16233d] py-2.5 px-4 text-xs font-black text-amber-300 shadow-sm hover:bg-amber-400/10 active:scale-98 transition"
           >
-            <Play className="h-3.5 w-3.5 fill-current text-amber-400" />
+            <GooglePlayIcon className="h-4 w-4 shrink-0" />
             <span>Download Apna GATE app</span>
           </button>
         </div>
