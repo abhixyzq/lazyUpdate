@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const geographySyllabus: CourseSyllabus = {
+{
   "id": "ba-geography",
   "name": "B.A. / B.Sc. Geography (CBCS 4-Year FYUGP)",
   "shortCode": "Geography",
@@ -10,6 +8,7 @@ export const geographySyllabus: CourseSyllabus = {
   "degree": "4-Year FYUGP CBCS",
   "totalSemesters": 8,
   "description": "Official 4-Year FYUGP CBCS uniform syllabus for Geography approved by Raj Bhavan Bihar for Patna University. Includes Major (MJC), Minor (MIC), Multidisciplinary (MDC), Ability Enhancement (AEC), Skill Enhancement (SEC), Value Added (VAC), Internship, and Research Project papers.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
   "semesters": [
     {
       "semester": 1,
@@ -69,10 +68,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh Savindra(2017),Bhoutik Bhougol ,Vashundhara Prakashan,Gorakhpur.",
             "Strahler A. N.and Strahler A.H.(2008), Modern Physical Geography,John Wiley & Sons, New York.",
             "Thornbury W. D.,(1968),Principles of Geomorphology, John Wiley & Sons, New York."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-1",
@@ -119,10 +115,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh Savindra(2017), Bhoutik Bhougol ,Vashundhara Prakashan,Gorakhpur.",
             "Strahler A. N.and Strahler A.H.(2008), Modern Physical Geography,John Wiley & Sons, New York.",
             "Thornbury W. D.,(1968), Principles of Geomorphology, John Wiley & Sons, New York."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mdc-1",
@@ -133,10 +126,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "geo-aec-1",
@@ -206,10 +196,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Business English, Pearson, 2008.",
             "Language, Literature and Creativity, Orient Blackswan, 2013.",
             "Language through Literature (forthcoming) ed. Dr. Gauri Mishra, Dr Ranjana Kaul, Dr Brati Biswas"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-sec-1",
@@ -251,10 +238,7 @@ export const geographySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -315,10 +299,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Lal, D. S., (2006) Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad.",
             "Vatal, M., (1986) Bhautik Bhugol, Central Book Depot, Allahabad.",
             "Singh, S. (2009): Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-2-p",
@@ -356,10 +337,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Sharma J.P., (1991-92) Prayogik Bhugol (Practical Geography) Rastogi & Company Meerut.",
             "Sinha, MMP & Bala, Seema (2017) Uech Cartography, Rajesh Publication, New Delhi.",
             "Sarkar, A (2015) Practical Geography: A Systematic Approach, Orient Black Swan Private Ltd. New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-2",
@@ -406,10 +384,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Lal, D S., (2006) Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad.",
             "Vatal, M., (1986) Bhautik Bhugol, Central Book Depot, Allahabad.",
             "Singh, S (2009): Jalvayu Vigyan, Prayag Pustak Bhavan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-2-p",
@@ -441,10 +416,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Sharma J.P., (1991-92) Prayogik Bhugol (Practical Geography) Rastogi & Company Meerut.",
             "Sinha, MMP & Bala, Seema (2017) Uech Cartography, Rajesh Publication, New Delhi.",
             "Sarkar, A (2015) Practical Geography: A Systematic Approach, Orient Black Swan Private Ltd. New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mdc-2",
@@ -455,10 +427,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "geo-aec-2",
@@ -540,10 +509,7 @@ export const geographySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "geo-sec-2",
@@ -585,10 +551,7 @@ export const geographySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -648,10 +611,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Jatt B.C., (2020) Aathik Bhugol.. Mallik Book Company Jaypur.",
             "Gautam Alka., (2022) Aarthik bhugol ke mool tatv. sarda pustak bhawan, prayagraj.",
             "Maurya S.D., Aarthik Bhugol., Pravallika Publication."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-4",
@@ -708,10 +668,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh R L & Singh Rana P B, (1991) Prayogtmak Bhugol ke Mool Tatva, Kalyani Publishers, New Delhi.",
             "Sharma, J P (2010) Prayogtmak Bhugol ki Rooprekha, Rastogi Publications, Meerut.",
             "Singh, R L & Dutta, P K (2012) Prayogatmak Bhugol, Central Book Depot, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-4-p",
@@ -764,10 +721,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh R L & Singh Rana P B, (1991) Prayogtmak Bhugol ke Mool Tatva, Kalyani Publishers, New Delhi.",
             "Sharma, J P (2010) Prayogtmak Bhugol ki Rooprekha, Rastogi Publications, Meerut.",
             "Singh, R L & Dutta, P K (2012) Prayogatmak Bhugol, Central Book Depot, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-3",
@@ -811,10 +765,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Jatt B.C., (2020) Aathik Bhugol.. Mallik Book Company Jaypur.",
             "Gautam Alka., (2022) Aarthik bhugol ke mool tatv, Sharda Pustak Bhawan, Prayagraj.",
             "Maurya S.D., Aarthik Bhugol., Pravalka Publication."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-3-p",
@@ -856,10 +807,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Robinson A. H., (2009) Elements of Cartography, John Wiley and Sons, New York.",
             "Sharma J. P., (2010) Pravagic Bhugol, Rastogi Publishers, Meerut.",
             "Singh R. L. and Singh R. P. B., (1999) Elements of Practical Geography, Kalyani Publishers. New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mdc-3",
@@ -870,10 +818,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "geo-aec-3",
@@ -947,10 +892,7 @@ export const geographySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "geo-sec-3",
@@ -996,10 +938,7 @@ export const geographySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1069,10 +1008,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Short, R.J. 2017. Human Geography: A Short Introduction, 2nd ed, Oxford University Press.",
             "Sing, R.Y. 2009, A Geography of Settlements, Rawat Publications.",
             "Census of India, Tribes (2011), https://censusindia.gov.in/census.website/"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-6",
@@ -1130,10 +1066,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Sinha, V.N.P. et.al., (2013), Bihar: Land, People and Economy, Rajesh Publication, New Delhi",
             "Sinha, V.N.P. et.al., (2014), Bihar Ka Bhugol, Rajesh Publication, New Delhi",
             "Sharma, Nandeshwar (2007), Bihar ki BhaugoalikSamishksha, Vasundhara Prakashan, Gorakhpur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-7",
@@ -1187,10 +1120,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Spiegel M. R.: Statistics, Schaum's Outline Series.",
             "Yeates M., (1974) An Introduction to Quantitative Analysis in Human Geography, McGraw Hill, New York.",
             "Shinha, Indira (2007) Sankhyikibhugol. Discovery Publishing House, New Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-7-p",
@@ -1240,10 +1170,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Spiegel M. R.: Statistics, Schaum's Outline Series.",
             "Yeates M., (1974) An Introduction to Quantitative Analysis in Human Geography, McGraw Hill, New York.",
             "Shinha, Indira (2007) Sankhyikibhugol. Discovery Publishing House, New Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-4",
@@ -1297,10 +1224,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Panda, B. P., (1988) JanasankyaBhugol, M P Hindi Granth Academy, Bhopal.",
             "Maurya, S. D., (2009) JanasankyaBhugol, Sharda Putak Bhawan, Allahabad.",
             "Chandna, R. C., (2006) JanasankhyaBhugol, Kalyani Publishers, Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-4-p",
@@ -1347,10 +1271,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Sarkar, A. (2015) Practical geography: A Systematic Approach. Orient Black Swan Private Ltd., New Delhi.",
             "Singh, L R & Singh R (1977): Manchitra or PryaogatamekBhugol, Central Book, Depot, Allahabad.",
             "Bhopal Singh R L and Dutta P K (2012) PrayogatamaBhugol, Central Book Depot, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-aec-4",
@@ -1407,10 +1328,7 @@ export const geographySyllabus: CourseSyllabus = {
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in English)",
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in Hindi)",
             "DGNCC Cadet's Hand Book - Specialised Subjects - Army, Navy and Air Wing"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-vac-1",
@@ -1421,10 +1339,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1489,10 +1404,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh, M., Singh, R.B. and Hassan, M.I. (Eds.) (2014) Climate change and biodiversity: Proceedings of IGU Rohtak Conference, Volume 1. Advances in Geographical and Environmental Studies, Springer",
             "Singh, R.B. (1998) Ecological Techniques and Approaches to Vulnerable Environment, New Delhi, Oxford & IBH Pub..",
             "Singh, Savindra 2001. ParyavaranBhugol, PrayagPustakBhaan, Allahabad. (in Hindi)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-9",
@@ -1548,10 +1460,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh R L & Singh Rana P B, (1991) PrayogtmakBhugolkeMoolTatva, Kalyani Publishers, New Delhi.",
             "Sharma, J P (2010) PrayogtmakBhugolkiRooprekha, Rastogi Publications, Meerut.",
             "Singh, R L & Dutta, P K (2012) PrayogatmakBhugol, Central Book Depot, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-9-p",
@@ -1598,10 +1507,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh R L & Singh Rana P B, (1991) PrayogtmakBhugolkeMoolTatva, Kalyani Publishers, New Delhi.",
             "Sharma, J P (2010) PrayogtmakBhugolkiRooprekha, Rastogi Publications, Meerut.",
             "Singh, R L & Dutta, P K (2012) PrayogatmakBhugol, Central Book Depot, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-5",
@@ -1657,10 +1563,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Short, R.J. 2017. Human Geography: A Short Introduction, 2nd ed, Oxford University Press.",
             "Sing, R.Y. 2009, A Geography of Settlements, Rawat Publications.",
             "Census of India, Tribes (2011), https://censusindia.gov.in/census.website/"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-int-1",
@@ -1671,10 +1574,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1734,10 +1634,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Kaushik, S.D., (2012) Bhauqoolik Vichardhara Avam Vidhitantra, Rastogi Publication, Meerut.",
             "Martin Geoffrey J., (2005) All Possible Worlds: A History of Geographical Ideas, Oxford.",
             "Soja, Edward (1989) Post-modern Geographies, Verso, London. Reprinted 1997: Rawat Publ., Jaipur and New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-11",
@@ -1789,10 +1686,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Special Issue on \"Doing Fieldwork\" The Geographical Review 91:1-2(2001).",
             "Stoddard R. H., (1982) Field Techniques and Research Methods in Geography, Kendall/Hunt.",
             "Wolcott, H. (1995) The Art of Fieldwork. Alta Mira Press, Walnut Creek, CA."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-12",
@@ -1844,10 +1738,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Wolf P. R. and Dewitt B. A., (2000) Elements of Photogrammetry: With Applications in GIS, McGraw- Hill.",
             "Sarkar, A. (2015) Practical geography: A systematic approach. Orient Black Swan Private Ltd., New Delhi.",
             "Chauniyal, D.D. (2010) Sudur Samvedanevam Bhogolik Suchana Pranali, Sharda Pustak Bhawan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-12-p",
@@ -1897,10 +1788,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Wolf P. R. and Dewitt B. A., (2000) Elements of Photogrammetry: With Applications in GIS, McGraw-Hill.",
             "Sarkar, A. (2015) Practical geography: A systematic approach. Orient Black Swan Private Ltd., New Delhi.",
             "Chauniyal, D.D. (2010) Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-7",
@@ -1954,10 +1842,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Peet R., (1999) Theories of Development, The Guilford Press, New York.",
             "UNDP (2001-04) Human Development Report, Oxford University Press, New York.",
             "World Bank (2001-05) World Development Report, Oxford University Press, New York."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-8",
@@ -2007,10 +1892,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Spiegel M. R.: Statistics, Schaum's Outline Series.",
             "Yeates M., (1974) An Introduction to Quantitative Analysis in Human Geography, McGraw Hill, New York.",
             "Shinha, Indira (2007) Sankhyiki bhugol. Discovery Publishing House, New Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -2068,10 +1950,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Peet R., (1999) Theories of Development, The Guilford Press, New York.",
             "UNDP (2001-04) Human Development Report, Oxford University Press, New York.",
             "World Bank (2001-05) World Development Report, Oxford University Press, New York."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-14",
@@ -2123,10 +2002,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Smith S. J., Pain R., Marston S. A., Jones J. P., (2009) The SAGE Handbook of Social Geographies, Sage Publications.",
             "Sopher, David (1980): An Exploration of India, Cornell University Press, Ithaca",
             "Valentine G., (2001) Social Geographies: Space and Society, Prentice Hall."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-15",
@@ -2175,10 +2051,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Sinha, A. (2001). Disaster Management: Lessons Drawn and Strategies for Future, New United Press, New Delhi.",
             "Stoltman, J.P. et al. (2004) International Perspectives on Natural Disasters, Kluwer Academic Publications. Dordrecht.",
             "Singh Jagbir (2007) \"Disaster Management Future Challenges and Opportunities\", 2007. Publisher- I.K. International Pvt. Ltd. S-25, Green Park Extension, Uphaar Cinema Market, New Delhi, India (www.ikbooks.com)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mjc-15-p",
@@ -2220,10 +2093,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh Jagbir (2007) Disaster Management Future Challenges and Opportunities. Publisher- I.K. International Pvt. Ltd. S-25, Green Park Extension, Uphaar Cinema Market, New Delhi, India (www.ikbooks.com).",
             "Singh, R. B. (ed.), (2006) Natural Hazards and Disaster Management: Vulnerability and Mitigation, Rawat Publications, New Delhi.",
             "Sinha, A. (2001). Disaster Management: Lessons Drawn and Strategies for Future, New United Press, New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-9",
@@ -2280,10 +2150,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh, M., Singh, R.B. and Hassan, M.I. (Eds.) (2014) Climate change and biodiversity: Proceedings of IGU Rohtak Conference, Volume 1. Advances in Geographical and Environmental Studies, Springer",
             "Singh, R.B. (1998) Ecological Techniques and Approaches to Vulnerable Environment, New Delhi, Oxford & IBH Pub..",
             "Singh, Savindra 2001. ParyavaranBhugol, PrayagPustakBhawn, Allahabad. (in Hindi)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-9-p",
@@ -2328,10 +2195,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Singh, M., Singh, R.B. and Hassan, M.I. (Eds.) (2014) Climate change and biodiversity: Proceedings of IGU Rohtak Conference, Volume 1. Advances in Geographical and Environmental Studies, Springer",
             "Singh, R.B. (1998)Ecological Techniques and Approaches to Vulnerable Environment, New Delhi, Oxford & IBH Pub..",
             "Singh, Savindra 2001. ParyavaranBhugol, PrayagPustakBhawan, Allahabad. (in Hindi)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-vac-2",
@@ -2342,10 +2206,7 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -2402,10 +2263,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Smith S. J., Pain R., Marston S. A., Jones J. P., (2009) The SAGE Handbook of Social Geographies, Sage Publications.",
             "Sopher, David (1980): An Exploration of India, Cornell University Press, Ithaca",
             "Valentine G., (2001) Social Geographies: Space and Society, Prentice Hall."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-10",
@@ -2457,10 +2315,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Wolf P. R. and Dewitt B. A., (2000) Elements of Photogrammetry: With Applications in GIS, McGraw- Hill.",
             "Sarkar, A. (2015) Practical geography: A systematic approach. Orient Black Swan Private Ltd., New Delhi.",
             "Chauniyal, D.D. (2010) Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-mic-10-p",
@@ -2510,10 +2365,7 @@ export const geographySyllabus: CourseSyllabus = {
             "Wolf P. R. and Dewitt B. A., (2000) Elements of Photogrammetry: With Applications in GIS, McGraw-Hill.",
             "Sarkar, A. (2015) Practical geography: A systematic approach. Orient Black Swan Private Ltd., New Delhi.",
             "Chauniyal, D.D. (2010) Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan, Allahabad."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "geo-rp-1",
@@ -2524,17 +2376,9 @@ export const geographySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/Geography.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf"
-  }
-};
+  ]
+}

@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const sociologySyllabus: CourseSyllabus = {
+{
   "id": "ba-sociology",
   "name": "B.A. Sociology (CBCS 4-Year FYUGP)",
   "shortCode": "Sociology",
@@ -10,6 +8,7 @@ export const sociologySyllabus: CourseSyllabus = {
   "degree": "4-Year FYUGP CBCS",
   "totalSemesters": 8,
   "description": "Official 4-Year FYUGP CBCS uniform syllabus for Sociology approved by Raj Bhavan Bihar for Patna University. Includes Major (MJC), Minor (MIC), Multidisciplinary (MDC), Ability Enhancement (AEC), Skill Enhancement (SEC), Value Added (VAC), Internship, and Research Project papers.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
   "semesters": [
     {
       "semester": 1,
@@ -76,10 +75,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Haralambos & Holborn; Sociology: Themes and Perspective; Harper Collins Publisher India Ltd. Noida",
             "J.P. Singh; समाजशास्त्रीय अवधारणाएँ एवं सिद्धांत; PHI Learning Private Limited, Delhi",
             "Jyoti Sidana; समाजशास्त्र एक मूल्यांकनात्मक परिचय; Rawat Publications, Jaipur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-1",
@@ -128,10 +124,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "P. Gisbert; Fundamentals of Sociology; Orient Blackswan Pvt. Ltd., New Delhi.",
             "J.P. Singh; समाजशास्त्रीय अवधारणाएँ एवं सिद्धांत; PHI Learning Private Limited, Delhi",
             "Jyoti Sidana; समाजशास्त्र एक मूल्यांकनात्मक परिचय; Rawat Publications, Jaipur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mdc-1",
@@ -142,10 +135,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-aec-1",
@@ -215,10 +205,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Business English, Pearson, 2008.",
             "Language, Literature and Creativity, Orient Blackswan, 2013.",
             "Language through Literature (forthcoming) ed. Dr. Gauri Mishra, Dr Ranjana Kaul, Dr Brati Biswas"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-sec-1",
@@ -260,10 +247,7 @@ export const sociologySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-vac-1",
@@ -274,10 +258,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -345,10 +326,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Nadeem Hasnain; Indian Society and Culture, McGraw Hill Education India, Noida",
             "Ahuja Ram; भारतीय सामाजिक व्यवस्था; राजत पब्लिकेशन्स, जयपुर एवं नईदिल्ली।",
             "K.L. Sharma; भारतीय समाज; एनसीसीईआरएटी, नई दिल्ली।."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-2",
@@ -405,10 +383,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "S.L. Doshi & P.C. Jain; Indian Society; National Publishing House, Jaipur",
             "Ahuja Ram; भारतीय सामाजिक व्यवस्था; रावत पब्लिकेशन्स, जयपुर एवं नईदिल्ली।",
             "K.L. Sharma; भारतीय समाज; एनसीडेडआरटी, नई दिल्ली।"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mdc-2",
@@ -419,10 +394,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-aec-2",
@@ -504,10 +476,7 @@ export const sociologySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-sec-2",
@@ -549,10 +518,7 @@ export const sociologySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-vac-2",
@@ -563,10 +529,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -635,10 +598,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Haralambos&Holborn; Sociology; Themes and Perspective; Harper Collins Publisher India Ltd. Noida",
             "J.P. Singh; समाज शास्त्रीय अवधारणाएँ एवं फिरांत; PHI Learning Private Limited, Delhi",
             "Jyoti Sidana; समाजशास्त्र एक मूल्यांकनात्मक परिचय; Rawat Publications, Jaipur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-4",
@@ -698,10 +658,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Nadeem Hasnain; Indian Society and Culture; McGraw Hill Education India, Noida",
             "Ahuja Ram; maratiya samajikavarsh; varatpavikshakshank, jaypurv pavanukdilak",
             "K.L. Sharma; maratiya samajik; puropishidhshakshank, nukdilak"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-3",
@@ -755,10 +712,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Haralambos & Holborn; Sociology: Themes and Perspective; Harper Collins Publisher India Ltd. Noida",
             "J.P. Singh; सामाज शास्त्रीय अवदारणाएं एवं प्रज्ञात; PHI Learning Private Limited, Delhi",
             "Jyoti Sidana; समाजशास्त्र एक मूल्यांकनात्मक परिचय; Rawat Publications, Jaipur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mdc-3",
@@ -769,10 +723,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-aec-3",
@@ -846,10 +797,7 @@ export const sociologySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "soc-sec-3",
@@ -895,10 +843,7 @@ export const sociologySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -966,10 +911,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Shashi Sharma; राजनीतिक सामाजिक क्षेत्री चपरेखा; PHI Learning Pvt. Ltd., New Delhi",
             "Ishwar Singh Chouhan & Srinath Sharma; राजनीतिक सामाजिक क्षेत्री चपरेखा; SBP Publishing House, Agra",
             "Purkhrar Jain & B.I. Fadia; राजनीतिक सामाजिक क्षेत्री चपरेखा; Sahitya Bhawan, Agra"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-6",
@@ -1030,10 +972,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "O.P. Dahma: yaiy yaiy yaiy yaiy yaiy yaiy yaiy y",
             "Ravindranath Mukherjee & Bharat Aggraval; yaiy yaiy yaiy yaiy yaiy yaiy yaiy y",
             "Gopal Krishna Aggraval; yaiy yaiy yaiy yaiy yaiy yaiy yaiy y"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-7",
@@ -1091,10 +1030,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Walby, Sylvia: Gender, Class and Stratification - Towards a new approach, A Sociological Reader: Rout ledge, London",
             "Kandiyoti, Deniz: Bargaining with Patriarchy in Judith Lorber and Susan AFarrel (Eds.). Social Construction of Gender: Sage Publication, New Delhi.",
             "R.K. Rastogi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-4",
@@ -1153,10 +1089,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Nadeem Hasnain; Indian Society and Culture; McGraw Hill Education India, Noida",
             "Ahuja Ram; भारतीय सामाजिकव्यवस्था; रावतपब्लिकेशन, जयपुर एवंनईदिल्ली।",
             "K.L. Sharma; भारतीय सामाज; सोसीडेडिअरटी, नईदिल्ली।"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-aec-4",
@@ -1213,10 +1146,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in English)",
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in Hindi)",
             "DGNCC Cadet's Hand Book - Specialised Subjects - Army, Navy and Air Wing"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-vac-3",
@@ -1227,10 +1157,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1297,10 +1224,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "जी. के. अग्रवाल- अपराधशास्त्र",
             "एम.एल. गुप्ता एण्ड शर्मा-अपराधशास्त्र",
             "एस.डी. सिंह- अपराधशास्त्र"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-5",
@@ -1352,10 +1276,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Shashi Sharma; सरजन-पितकसमाजशास्त्र की रूपरेखा; PHI Learning Pvt. Ltd., New Delhi",
             "Ishwar Singh Chouhan & Srinath Sharma; सरजन-पितकसमाजशास्त्र; SBPD Publishing House, Agra",
             "Purkharaj Jain & B.L. Fadia; सरजन-पितकसमाजशास्त्र; Sahitya Bhawan, Agra"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-int-1",
@@ -1366,10 +1287,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1438,10 +1356,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Ravindra Nath Mukherjee & Bharat Agrawal, सामाजिकस्वरूप: SBPD Publication, Agra",
             "Haralambos and Holborn: Sociology themes & Perspectives",
             "George Ritzer: Sociological Theory."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-11",
@@ -1502,10 +1417,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "P.C. Jain & S.L. Doshi; प्रमुख समाजशास्त्रीय विचारक; Rawat Publication, Jaipur",
             "Mujtaba Hussain (Ed.); समाजशास्त्रीय विचारक; Orient Blackswan Pvt. Ltd., Hyderabad",
             "J.P. Singh; समाजशास्त्रीय अवधरणाएँ एवं सिद्धांत; PHI Pvt. Ltd., New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-12",
@@ -1567,10 +1479,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Dr. Agrawal G.K. and Dr. Pandey S.S.; समाप्तिक शोष; Sahitya Bhawan Publishers and Distributors Pvt. Ltd. Agra",
             "Alan Bryman; Social Research Methods 7th ed.",
             "रणा सुनील कुमार सिंह - सामाजिक शोष की पद्धति"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-7",
@@ -1621,10 +1530,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Walby, Sylvia: Gender, Class and Stratification - Towards a new approach, A Sociological Reader; Rout ledge, London",
             "Kandiyoti, Deniz: Bargaining with Patriarchy in Judith Lorber and Susan AFarrel (Eds.). Social Construction of Gender; Sage Publication, New Delhi.",
             "R.K. Rastogi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-8",
@@ -1682,10 +1588,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Sherif and Sherif; An Outline of Social Psychology; Harper and Bros, New York",
             "Rajendra Kumar Sharma; Social Psychology; Atlantic Publisher & Distributor, New Delhi",
             "Ravindra Nath Mukherjee & Bharat Aggrawal; सामाजिक मनोविज्ञान; SBPD Publication, Agra"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -1757,10 +1660,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "श्यामदार सिंह : आधुनिक समाजशास्त्र के सिद्धान्त, सपना अशोक प्रकाशन, बनारस",
             "B.K. Nangla Indian Social Thought (Also available in Hindi)",
             "M.N. Srinivas Social Change in modern India"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-14",
@@ -1818,10 +1718,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "S.R. Bajpai; समाप्तिक अनुसंधान : Kitab Ghar, Kanpur",
             "G.K Aggarwal and S.S Pandey; समाप्तिक शोष; Sahitya Bhawan Publishers and Distributors Pvt. Ltd.; Agra",
             "रणा सनील कुमार सिंह-समाप्तिक शोष की पद्धति।"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mjc-15",
@@ -1882,10 +1779,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "V.C. Sinha & Pushpa Rani; जनाफिकी के रिहारत; Mayur Paperbacks, Noida",
             "J.P. Mishra; जनाफिकी; Sahitya Bhawan Publications, Agra.",
             "D.S. Baghel & Kiran Baghel; जनाफिकी; Vivek Publication, Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-9",
@@ -1940,10 +1834,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "E. Kathleen Gough; 'The Nayars and the Definition of Marriage', in The Journal of the Royal Anthropological Institute of Great Britain and Ireland; 89:23-24",
             "Robin Foxs; 'ancient and the Vai; Madhya Pradesh Hindi Granth Academy, Bhopal",
             "Shobhita Jain; 'ancient and the Vai; Madhya Pradesh Hindi Granth Academy, Bhopal"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-vac-4",
@@ -1954,10 +1845,7 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -2024,10 +1912,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Nadim Hasnain; انجنايي هارتر; Jawahar Publishers and Distributors, New Delhi. (also available in English)",
             "Mukherjee Ravindra Nath; سامانجمانغسارز جي كوبرسا; Vivek Prakashan, Jawahar Nagar, Delhi",
             "Ramnath Sharma & Rajendra Kumar Sharma; مانغسارز; Atlantic Publishing & Distributors, New Delhi (also available in English)"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-mic-10",
@@ -2081,10 +1966,7 @@ export const sociologySyllabus: CourseSyllabus = {
             "Ravindra Nath Mukherjee & Bharat Aggrawal, सामाजिकस्वराज्य: SBPD Publication, Agra",
             "Haralambos & Holborn: Sociology: Themes & perspectives.",
             "Sociological Theory George Ritzer"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "soc-rp-1",
@@ -2095,17 +1977,9 @@ export const sociologySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/Sociology.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sociology.pdf"
-  }
-};
+  ]
+}

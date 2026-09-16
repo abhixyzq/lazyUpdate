@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const historySyllabus: CourseSyllabus = {
+{
   "id": "ba-history",
   "name": "B.A. History (CBCS 4-Year FYUGP)",
   "shortCode": "History",
@@ -10,6 +8,7 @@ export const historySyllabus: CourseSyllabus = {
   "degree": "4-Year FYUGP CBCS",
   "totalSemesters": 8,
   "description": "Official 4-Year FYUGP CBCS uniform syllabus for History approved by Raj Bhavan Bihar for Patna University. Includes Major (MJC), Minor (MIC), Multidisciplinary (MDC), Ability Enhancement (AEC), Skill Enhancement (SEC), Value Added (VAC), Internship, and Research Project papers.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
   "semesters": [
     {
       "semester": 1,
@@ -95,10 +94,7 @@ export const historySyllabus: CourseSyllabus = {
             "Will Durant: The Story of civilization, five communication, US, Jan. 1993(11 Vol)",
             "Zekuthial Ginsburg: New light on our Numerals.",
             "R.K. Mookherjee: The Fundamental Unity of India"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-1",
@@ -109,10 +105,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-mdc-1",
@@ -123,10 +116,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-aec-1",
@@ -196,10 +186,7 @@ export const historySyllabus: CourseSyllabus = {
             "Business English, Pearson, 2008.",
             "Language, Literature and Creativity, Orient Blackswan, 2013.",
             "Language through Literature (forthcoming) ed. Dr. Gauri Mishra, Dr Ranjana Kaul, Dr Brati Biswas"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-sec-1",
@@ -241,10 +228,7 @@ export const historySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-vac-1",
@@ -255,10 +239,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -339,10 +320,7 @@ export const historySyllabus: CourseSyllabus = {
             "Trever, A. Albert: History of Ancient Civilization Harcourt, Brace, 1936",
             "Wells, H.G: The Outline of History, George Newness Revised Edition 1971",
             "Sharma, Manoj: History of World Civilization, Anmol Pub, New Delhi, 2005"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-2",
@@ -408,10 +386,7 @@ export const historySyllabus: CourseSyllabus = {
             "Trever, A. Albert: History of Ancient Civilization Harcourt, Brace, 1936.",
             "Wells, H.G: The Outline of History, George Newness Revised Edition 1971.",
             "Sharma, Manoj: History of World Civilization, Anmol Pub, New Delhi, 2005"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mdc-2",
@@ -422,10 +397,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-aec-2",
@@ -507,10 +479,7 @@ export const historySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-sec-2",
@@ -552,10 +521,7 @@ export const historySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-vac-2",
@@ -566,10 +532,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -660,10 +623,7 @@ export const historySyllabus: CourseSyllabus = {
             "Singh, Upinder: A history of Ancient and Early Medieval India, from Stone Age to early Medieval India. 2008, Pearson, New Delhi.",
             "Thapar, Romila: Early India from the Beginnings to 1300, London, 2002",
             "Kumar, Ashutosh: Magadh ki Prachin Sanskriti Evam Parampara, Prachya Prakashan, Patna, 2017"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-4",
@@ -749,10 +709,7 @@ export const historySyllabus: CourseSyllabus = {
             "Singh Heeralal And Ram Vriksh Singh: 2011 Adhunik Europe ka Itihas",
             "The Cambridge: Economic History of Europe Vol I to Iv",
             "Inderpal Vimal: Adhunik Europe (1453-1789), Agra, Laxmi Narayan Agrawal"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-3",
@@ -834,10 +791,7 @@ export const historySyllabus: CourseSyllabus = {
             "Singh, Kripa Shankar: Rigveda, Harrappa Sabyata and Sanskritic Nirantara, Kitab Ghar publication, New Delhi, 2007",
             "Singh, Upinder: A history of Ancient and Early Medieval India, from Stone Age to early Medieval India. 2008, Pearson, New Delhi.",
             "Thapar, Romila: Early India from the Beginnings to 1300, London, 2002"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mdc-3",
@@ -848,10 +802,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-aec-3",
@@ -925,10 +876,7 @@ export const historySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-sec-3",
@@ -974,10 +922,7 @@ export const historySyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1060,10 +1005,7 @@ export const historySyllabus: CourseSyllabus = {
             "Tripathi, R.S: History of Kannauj to the Moslem conquest, 1986.",
             "Vaidya, C.V.: Early History of Rajputs (750 to 1000 A.D), Reprint, Gyanbooks, New Delhi, 2019.",
             "Vaidya, C.V: History of Medieval Hindu India, Reprint, Gyanbooks, New Delhi, 2018."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-6",
@@ -1166,10 +1108,7 @@ export const historySyllabus: CourseSyllabus = {
             "Joll,James: Europe 1870 se, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi",
             "Gupta ,Parthsarthi: Britain ka Iithas, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi",
             "Saxena ,Banarasi Prasad: America ka Iithas, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-7",
@@ -1263,10 +1202,7 @@ export const historySyllabus: CourseSyllabus = {
             "Mittal Dr. SatishChandr:Bharat ka Sankhipit Itihasa, Suruchi Prakaskan, 2014",
             "Ahmad Imtiaz Madhyakalin Bharat : Ek Sarvekshan",
             "Jha,A.C.Jha, Dilli Sultanate: Ek Sarvekshan"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-4",
@@ -1342,10 +1278,7 @@ export const historySyllabus: CourseSyllabus = {
             "Singh Heeralal Aud Ram Vriksh Singh: 2011, Adhunik Europe ka Itihas",
             "The Cambridge: Economic History of Europe Vol I to Iv",
             "Inderpal Vimal: Adhunik Europe (1453-1789)"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-aec-4",
@@ -1402,10 +1335,7 @@ export const historySyllabus: CourseSyllabus = {
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in English)",
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in Hindi)",
             "DGNCC Cadet's Hand Book - Specialised Subjects - Army, Navy and Air Wing"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -1491,10 +1421,7 @@ export const historySyllabus: CourseSyllabus = {
             "Henry Kitchell Webster : Early European History",
             "Jules Michelet, Mary Charlotte, Mair Simpson : A summary of Modern history",
             "Joll James: Europe Since 1870"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-9",
@@ -1590,10 +1517,7 @@ export const historySyllabus: CourseSyllabus = {
             "Sarkar Sumit : Modern India 1885-1947",
             "Metcalf Thomas : Ideologies of the Raj",
             "Thompson & Garret : Rise and Fulfillment of British Rule in India"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-5",
@@ -1668,10 +1592,7 @@ export const historySyllabus: CourseSyllabus = {
             "Tripathi, R.S: History of Kannauj to the Moselm conquest, 1986.",
             "Vaidya, C.V.: Early History of Rajputs (750 to 1000 A.D), Reprint, Gyanbooks, New Delhi, 2019.",
             "Vaidya, C.V: History of Medieval Hindu India, Reprint, Gyanbooks, New Delhi, 2018."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-6",
@@ -1767,10 +1688,7 @@ export const historySyllabus: CourseSyllabus = {
             "Joll, James: Europe 1870 se, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi",
             "Gupta, Parhsharthi: Britain ka Ithas, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi",
             "Saxena, Banarasi Prasad: America ka Ithas, Hindi Madhyam Karyanvayan Nideshalaya, New Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-int-1",
@@ -1781,10 +1699,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1872,10 +1787,7 @@ export const historySyllabus: CourseSyllabus = {
             "Mehrotra S.R: The Emergence of Indian National congress",
             "Chandra Bipan and Others: Freedom Struggle",
             "Delanty Gerard & Kumar Krishna, Nations & Nationalism"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-11",
@@ -1963,10 +1875,7 @@ export const historySyllabus: CourseSyllabus = {
             "Taylor, A.J.P.: The Origins of the Second World War",
             "Thompson, David: Europe Since Napoleon",
             "V.P. Menon: The Story of Integration of the Indian States"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-12",
@@ -2050,10 +1959,7 @@ export const historySyllabus: CourseSyllabus = {
             "Varadara Raman: Glimpses of Indian Heritage, Popular Prakashan Private Ltd., Bombay, 1989",
             "Varapande, M.L.: History of Indian Folk Theatre (Lok Ranga Panorama of Indian Folk Theatre) Abhinav Publications,1992",
             "Vasudev V.: Fairs and Festivals, Incredible India series, 2007"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-7",
@@ -2125,10 +2031,7 @@ export const historySyllabus: CourseSyllabus = {
             "Shrivastava Nripendra Kumar, Process of Urbanisation of Bihar during the Medieval Period, Janki Publication, Patna, 2014",
             "Shrivasta Ashivadi Lal, Delhi Sultanat, (Hindi)",
             "Chandra Satish, Madhyakalin Bharat, Bhag-1"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-8",
@@ -2199,10 +2102,7 @@ export const historySyllabus: CourseSyllabus = {
             "Grosvenor, Edwin A Contemporary History of the World New York and Boston T.Y Crowell & Co. 1899",
             "Webster Henry Kitchell : Early European History",
             "Miochelet Jules, Mary Charlotte, Mair Simpson : A summary of Modern history"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -2290,10 +2190,7 @@ export const historySyllabus: CourseSyllabus = {
             "Pandey Dhanpati, Motilal Banarasidas: Adhunik Asia ka Itihas (1997). Publication, Varanasi.",
             "Virake Heald M., Translated by Kumari Mishra Purva Asia Ka Adhunik Itihas (1994), Uttar Pradesh Hindi Sansthan, Lucknow.",
             "Upadhyay Vidyanand: Dakshin Purva Asia Ka Rajneeti Itihas (1987), Bihar Hindi Granth."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mjc-14",
@@ -2304,10 +2201,7 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "his-mjc-15",
@@ -2386,10 +2280,7 @@ export const historySyllabus: CourseSyllabus = {
             "Chakravartey Somnath: Interpreting Rock Art in India, A holistic and Cognitive Approach",
             "Wakankar V.S: Painted Rock shelters of India",
             "Raymond William: Communication, Culture & Media"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-9",
@@ -2476,10 +2367,7 @@ export const historySyllabus: CourseSyllabus = {
             "Sarkar Sumit : Modern India 1885-1947",
             "Metealf Thomas : Ideologies of the Raj",
             "Thompson & Garret : Rise and Fulfillment of British Rule in India"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -2562,10 +2450,7 @@ export const historySyllabus: CourseSyllabus = {
             "Shrivastava Nripendra Kr., History of Bihar",
             "Shrivastava Nripendra Kr., Process of Urbanization of Bihar During the Medieval Period, Janaki Publication, Patna",
             "Jha Aditya Chandra (ed), Researches in the History and Culture of Bihar"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-mic-10",
@@ -2638,10 +2523,7 @@ export const historySyllabus: CourseSyllabus = {
             "Mehrotra S.R: The Emergence of Indian National congress",
             "Chandra Bipan and Others: Freedom Struggle",
             "Delanty Gerard & Kumar Krishna, Nations & Nationalism"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "his-rp-1",
@@ -2652,17 +2534,9 @@ export const historySyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/History.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-History.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/UG-PG-Syllabus/History.pdf"
-  }
-};
+  ]
+}

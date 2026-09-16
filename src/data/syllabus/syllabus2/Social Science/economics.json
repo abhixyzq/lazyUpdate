@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const economicsSyllabus: CourseSyllabus = {
+{
   "id": "ba-economics",
   "name": "B.A. Economics (CBCS 4-Year FYUGP)",
   "shortCode": "Economics",
@@ -10,6 +8,7 @@ export const economicsSyllabus: CourseSyllabus = {
   "degree": "4-Year FYUGP CBCS",
   "totalSemesters": 8,
   "description": "Official 4-Year FYUGP CBCS uniform syllabus for Economics approved by Raj Bhavan Bihar for Patna University. Includes Major (MJC), Minor (MIC), Multidisciplinary (MDC), Ability Enhancement (AEC), Skill Enhancement (SEC), Value Added (VAC), Internship, and Research Project papers.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
   "semesters": [
     {
       "semester": 1,
@@ -69,10 +68,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill (India), 2009",
             "Jhingan, M. L., Microeconomics, Vrinda Publication, Delhi.",
             "Ahuja, H. L., Principles of Microeconomics, S. Chand & Co. Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-1",
@@ -113,10 +109,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Hal R. Varian, Intermediate Microeconomics, a Modern Approach, W.W. Norton and Company/Affiliated East-West Press (India), 8th edition, 2010. The workbook by Varian and Bergstrom may be used for problems.",
             "Jhingan, M. L., Microeconomics, Vrinda Publication, Delhi.",
             "Ahuja, H. L., Principles of Microeconomics, S. Chand & Co. Delhi"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mdc-1",
@@ -157,10 +150,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Karl E. Case and Ray C. Fair, Principles of Economics, Pearson Education Inc., 8th Edition, 2007.",
             "N. Gregory Mankiw, Economics: Principles and Applications, India edition by South-western, a part of Cengage Learning, Cengage Learning India Private Limited, 4th edition, 2007.",
             "Joseph E. Stiglitz and Carl E. Walsh, Economics, W.W. Norton & Company, Inc., New York, International Student Edition, 4th Edition, 2007."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-aec-1",
@@ -230,10 +220,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Business English, Pearson, 2008.",
             "Language, Literature and Creativity, Orient Blackswan, 2013.",
             "Language through Literature (forthcoming) ed. Dr. Gauri Mishra, Dr Ranjana Kaul, Dr Brati Biswas"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-sec-1",
@@ -275,10 +262,7 @@ export const economicsSyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -338,10 +322,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Monga, G. S., Mathematics and Statistics for Economists, Vikas Publishing House, New Delhi",
             "Mehta, B. C. & G. M. K. Madnani, Mathematics for Economists, Sultan Chand & Sons, Delhi, Agra",
             "Sachdeva, S., Quantitative Techniques, Lukshmi Narain Agarwal Publication"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-2",
@@ -386,10 +367,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Sachdeva, S., Quantitative Techniques, Lukshmi Narain Agarwal Publication",
             "Allen, R. G. D., Mathematical Analysis for Economists, Macmillan Press, London",
             "Yamane, Taro, Mathematics for Economists, Prentice Hall of India, New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mdc-2",
@@ -434,10 +412,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009.",
             "Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition, 2005.",
             "Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-aec-2",
@@ -519,10 +494,7 @@ export const economicsSyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "eco-sec-2",
@@ -564,10 +536,7 @@ export const economicsSyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-          "fileSize": "1.8 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -617,10 +586,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009.",
             "Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition, 2005.",
             "Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-4",
@@ -669,10 +635,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "John E. Freund, Mathematical Statistics, Prentice Hall, 1992.",
             "Gupta S.P, Statistical Methods, S.Chand & Sons, New Delhi.",
             "Richard J. Larsen and Morris L. Marx, An Introduction to Mathematical Statistics and its Applications, Prentice Hall, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-3",
@@ -717,10 +680,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009.",
             "Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition, 2005.",
             "Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mdc-3",
@@ -731,10 +691,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "eco-aec-3",
@@ -808,10 +765,7 @@ export const economicsSyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         },
         {
           "id": "eco-sec-3",
@@ -857,10 +811,7 @@ export const economicsSyllabus: CourseSyllabus = {
               ]
             }
           ],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -909,10 +860,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Hal R. Varian, Intermediate Microeconomics, a Modern Approach, W.W. Norton and Company/Affiliated East-West Press (India), 8th edition, 2010. The workbook by Varian and Bergstrom may be used for problems.",
             "C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning (India), 2010.",
             "B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill (India), 2009"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-6",
@@ -957,10 +905,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th Edition, 2011.",
             "Errol D'Souza, Macroeconomics, Pearson Education, 2009",
             "Paul R. Krugman, Maurice Obstfeld and Marc Melitz, International Economics, Pearson Education Asia, 9th edition, 2012."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-7",
@@ -1015,10 +960,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Kunal Sen, 2010, Trade, Foreign Direct Investment and Industrial Transformation in India, in Premachandra Athukorala, editor, The Rise of Asia, Routledge",
             "Dipak Mazumdar and Sandeep Sarkar, 2009, The Employment Problem in India and the Phenomenon of the Missing Middle, Indian Journal of Labour Economics.",
             "J. Dennis Rajakumar, 2011, Size and Growth of Private Corporate Sector in Indian Manufacturing, Economic and Political Weekly, April."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-4",
@@ -1067,10 +1009,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "John E. Freund, Mathematical Statistics, Prentice Hall, 1992.",
             "Gupta S.P, Statistical Methods, S. Chand & Sons, New Delhi.",
             "Richard J. Larsen and Morris L. Marx, An Introduction to Mathematical Statistics and its Applications, Prentice Hall, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-aec-4",
@@ -1127,10 +1066,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in English)",
             "DGNCC Cadet's Hand Book - Common Subjects - All Wings (in Hindi)",
             "DGNCC Cadet's Hand Book - Specialised Subjects - Army, Navy and Air Wing"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-vac-1",
@@ -1141,10 +1077,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1193,10 +1126,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "A. Ahsan, C. Pages and T. Roy, 2008, \"Legislation, Enforcement and Adjudication in Indian Labour Markets: Origins, Consequences and the Way Forward, in D. Mazumdar and S. Sarkar, editors, Globalization, Labour Markets and Inequality in India, Routledge.",
             "Dipak Mazumdar and Sandeep Sarkar, 2009, \"The Employment Problem in India and the Phenomenon of the Missing Middle, Indian Journal of Labour Economics.",
             "J. Dennis Rajakumar, 2011, \"Size and Growth of Private Corporate Sector in Indian Manufacturing, Economic and Political Weekly, April."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-9",
@@ -1253,10 +1183,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Report of the 14th Finance Commission, 2015-20.",
             "Economic Survey, Government of India (Latest).",
             "State Finances: A Study of Budgets, Reserve Bank of India (Latest)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-5",
@@ -1298,10 +1225,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Hal R. Varian, Intermediate Microeconomics, a Modern Approach, W.W. Norton and Company/Affiliated East-West Press (India), 8th edition, 2010. The workbook by Varian and Bergstrom may be used for problems.",
             "C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning (India), 2010.",
             "B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill (India), 2009"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-6",
@@ -1346,10 +1270,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th Edition, 2011.",
             "Errol D'Souza, Macroeconomics, Pearson Education, 2009.",
             "Paul R. Krugman, Maurice Obstfeld and Marc Melitz, International Economics, Pearson Education Asia, 9th edition, 2012."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-int-1",
@@ -1360,10 +1281,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1414,10 +1332,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "recommendedBooks": [
             "Paul Krugman, Maurice Obstfeld, and Marc Melitz, International Economics: Theory and Policy, Addison-Wesley (Pearson Education Indian Edition), 9th edition, 2012.",
             "Dominick Salvatore, International Economics: Trade and Finance, John Wiley International Student Edition, 10th edition, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-11",
@@ -1475,10 +1390,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Reetika Khera, 2011, India's Public Distribution System: Utilisation and Impact, Journal of Development Studies.",
             "Aniruddha Krishna and Devendra Bajpai, 2011, Lineal Spread and Radial Dissipation: Experiencing Growth in Rural India, 1992-2005, Economic and Political Weekly, September.",
             "Kaushik Basu and A. Maertens, eds, 2013, Oxford Companion to Economics, Oxford University Press."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-12",
@@ -1522,10 +1434,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Gerald M. Meier, Leading Issues in Economic Development, Sixth Edition, OUP",
             "A.P. Thirlwall, Economics of Development, Palgrave Macmillan, 9th Edition.",
             "M. L. Taneja & R.M. Myer, Economics of Development & Planning, Vishal Publishing Co. Jalandhar-Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-7",
@@ -1567,10 +1476,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Rakesh Mohan, 2010, India's Financial Sector and Monetary Policy Reforms, in Shankar Acharya and Rakesh Mohan, editors, India's Economy: Performances and Challenges: Development and Participation, Oxford University Press.",
             "Pulapre Balakrishnan, Ramesh Golait and Pankaj Kumar, 2008, Agricultural Growth in India Since 1991, RBI DEAP Study no. 27.",
             "Kunal Sen, 2010, Trade, Foreign Direct Investment and Industrial Transformation in India, in Premachandra Athukorala, editor, The Rise of Asia, Routledge."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-8",
@@ -1614,10 +1520,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "A. Ahsan, C. Pages and T. Roy, 2008, \"Legislation, Enforcement and Adjudication in Indian Labour Markets: Origins, Consequences and the Way Forward, in D. Mazumdar and S. Sarkar, editors, Globalization, Labour Markets and Inequality in India, Routledge.",
             "Dipak Mazumdar and Sandeep Sarkar, 2009, \"The Employment Problem in India and the Phenomenon of the Missing Middle, Indian Journal of Labour Economics.",
             "J. Dennis Rajakumar, 2011, \"Size and Growth of Private Corporate Sector in Indian Manufacturing, Economic and Political Weekly, April."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         }
       ]
     },
@@ -1696,10 +1599,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Allen, R.G.D. (1974), Mathematical Analysis for Economists, Mac Millian Press and ELBS, London.",
             "Dowling, E.T. (1992), Mathematical Economics 2nd Edition, Mac Graw Hill, New York.",
             "Yamune, Taro (1975) Mathematics for Economists, Prentice Hall of India, New Delhi."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-14",
@@ -1764,10 +1664,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "N. Jadhav, Monetary Policy, Financial Stability and Central Banking in India, Macmillan, 2006.",
             "R.B.I. - Report of the Working Group: Money Supply Analytics and Methodology of Compilation, 1998.",
             "R.B.I. Bulletin, Annual Report and Report on Currency and Finance (latest)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mjc-15",
@@ -1777,52 +1674,8 @@ export const economicsSyllabus: CourseSyllabus = {
           "credits": 6,
           "theoryMarks": 70,
           "internalMarks": 30,
-          "units": [
-            {
-              "unitNumber": 1,
-              "title": "Foundations of Social Science Research",
-              "topics": [
-                "Meaning, Objectives, Motivation and Types of Research: Pure vs Applied, Descriptive vs Analytical, Quantitative vs Qualitative",
-                "Research Process: Identification and formulation of research problem, literature review, conceptual framework",
-                "Formulation of Hypotheses: Null and Alternative hypotheses, Type I and Type II errors"
-              ]
-            },
-            {
-              "unitNumber": 2,
-              "title": "Research Design and Data Collection",
-              "topics": [
-                "Research Designs: Exploratory, Descriptive, Diagnostic and Experimental designs",
-                "Primary Data Collection Methods: Questionnaire design, schedules, structured interviews, observation and case studies",
-                "Secondary Data Sources in India: Census of India, NSSO, NFHS, government reports and academic archives"
-              ]
-            },
-            {
-              "unitNumber": 3,
-              "title": "Sampling Design and Statistical Analysis",
-              "topics": [
-                "Census vs Sample Survey; Sampling error vs Non-sampling error; Probability vs Non-probability sampling",
-                "Data classification, tabulation and graphical representation",
-                "Parametric and Non-parametric tests: Introduction to t-test, z-test, ANOVA and Chi-square test"
-              ]
-            },
-            {
-              "unitNumber": 4,
-              "title": "Report Writing and Academic Integrity",
-              "topics": [
-                "Structure of an academic research thesis / dissertation, referencing styles (APA, MLA, Chicago), citation rules",
-                "Research Ethics: Plagiarism, UGC guidelines on academic integrity, software tools for similarity detection"
-              ]
-            }
-          ],
-          "recommendedBooks": [
-            "C. R. Kothari & Gaurav Garg, Research Methodology: Methods and Techniques, New Age International",
-            "W. G. Cochran, Sampling Techniques, John Wiley & Sons",
-            "Ranjit Kumar, Research Methodology: A Step-by-Step Guide for Beginners, Sage Publications",
-            "Ram Ahuja, Research Methods, Rawat Publications, Jaipur"
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "units": [],
+          "recommendedBooks": []
         },
         {
           "id": "eco-mic-9",
@@ -1879,10 +1732,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "Report of the 14th Finance Commission, 2015-20.",
             "Economic Survey, Government of India (Latest).",
             "State Finances: A Study of Budgets, Reserve Bank of India (Latest)."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-vac-2",
@@ -1893,10 +1743,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     },
@@ -1947,10 +1794,7 @@ export const economicsSyllabus: CourseSyllabus = {
             "William, Jack, Principles of Health Economics for Developing Countries, World Bank Institute Development Studies, 1999.",
             "World Development Report, Investing in Health, the World Bank, 1993.",
             "Ronald G., Ehrenberg and Robert S., Smith, Modern Labor Economics: Theory and Public Policy, Addison Wesley, 2005."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-mic-10",
@@ -1996,10 +1840,7 @@ export const economicsSyllabus: CourseSyllabus = {
           "recommendedBooks": [
             "Paul Krugman, Maurice Obstfeld, and Marc Melitz, International Economics: Theory and Policy, Addison-Wesley (Pearson Education Indian Edition), 9th edition, 2012.",
             "Dominick Salvatore, International Economics: Trade and Finance, John Wiley International Student Edition, 10th edition, 2011."
-          ],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          ]
         },
         {
           "id": "eco-rp-1",
@@ -2010,17 +1851,9 @@ export const economicsSyllabus: CourseSyllabus = {
           "theoryMarks": 70,
           "internalMarks": 30,
           "units": [],
-          "recommendedBooks": [],
-          "pdfUrl": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf",
-          "fileSize": "2.4 MB",
-          "pyqCount": 4
+          "recommendedBooks": []
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "annualHons": "https://www.pup.ac.in/download/Economics.pdf",
-    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf"
-  }
-};
+  ]
+}
