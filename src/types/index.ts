@@ -41,7 +41,15 @@ export interface PUNotice {
   officialPdfUrl?: string;
 }
 
-export type StreamType = 'Science' | 'Arts' | 'Commerce' | 'Vocational' | 'PG';
+export type StreamType =
+  | 'Science'
+  | 'Social Science'
+  | 'Humanities'
+  | 'Commerce'
+  | 'Vocational'
+  | 'Common NEP'
+  | 'Arts'
+  | 'PG';
 
 export interface SyllabusUnit {
   unitNumber: number;
@@ -64,15 +72,24 @@ export interface SyllabusPaper {
   pyqCount?: number;
 }
 
+export interface CourseOfficialPdfs {
+  sem1_2?: string;
+  sem3_8?: string;
+  annualHons?: string;
+  otherPdfs?: { label: string; url: string }[];
+}
+
 export interface CourseSyllabus {
   id: string;
   name: string;
   shortCode: string;
   stream: StreamType;
+  faculty?: 'Social Science' | 'Science' | 'Humanities' | 'Commerce' | 'Vocational' | 'Common NEP';
   icon: string;
   degree: string; // e.g. "4-Year FYUGP CBCS" or "3-Year Professional"
   totalSemesters: number;
   description: string;
+  officialPdfs?: CourseOfficialPdfs;
   semesters: {
     semester: number;
     papers: SyllabusPaper[];

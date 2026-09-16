@@ -226,6 +226,125 @@ export const GenericAcademicIcon: React.FC<{ className?: string }> = ({ classNam
   </svg>
 );
 
+// 14. Economics (Market Growth Bars & Currency Symbol)
+export const EconomicsCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    {/* Background card */}
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#0284c7" stroke="#0369a1" strokeWidth="2.5" />
+    <path d="M14 44H50" stroke="#bae6fd" strokeWidth="2" strokeLinecap="round" />
+    {/* Bar chart bars */}
+    <rect x="16" y="32" width="6" height="12" rx="1.5" fill="#facc15" />
+    <rect x="25" y="24" width="6" height="20" rx="1.5" fill="#38bdf8" />
+    <rect x="34" y="18" width="6" height="26" rx="1.5" fill="#4ade80" />
+    <rect x="43" y="28" width="6" height="16" rx="1.5" fill="#f472b6" />
+    {/* Trend arrow */}
+    <path d="M16 28L28 18L36 24L48 14" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M42 14H48V20" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+// 15. Geography (Globe with Longitude/Latitude & Compass)
+export const GeographyCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    {/* Globe circle */}
+    <circle cx="32" cy="30" r="20" fill="#0284c7" stroke="#0369a1" strokeWidth="2.5" />
+    <ellipse cx="32" cy="30" rx="10" ry="20" stroke="#38bdf8" strokeWidth="1.8" />
+    <line x1="12" y1="30" x2="52" y2="30" stroke="#38bdf8" strokeWidth="1.8" />
+    <line x1="15" y1="20" x2="49" y2="20" stroke="#38bdf8" strokeWidth="1.5" />
+    <line x1="15" y1="40" x2="49" y2="40" stroke="#38bdf8" strokeWidth="1.5" />
+    {/* Stand */}
+    <path d="M12 30C12 42 22 50 32 50" stroke="#d97706" strokeWidth="3" strokeLinecap="round" />
+    <path d="M24 54H40" stroke="#78350f" strokeWidth="4" strokeLinecap="round" />
+    <circle cx="32" cy="50" r="2.5" fill="#b45309" />
+  </svg>
+);
+
+// 16. Psychology (Brain Waves & Mind Balance)
+export const PsychologyCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    {/* Brain shape */}
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#8b5cf6" stroke="#6d28d9" strokeWidth="2.5" />
+    <path
+      d="M26 22C24 18 18 20 18 26C16 28 16 34 20 36C18 39 20 44 26 44C27 44 28 43 29 42C30 43 31 44 32 44C33 44 34 43 35 42C36 43 37 44 38 44C44 44 46 39 44 36C48 34 48 28 46 26C46 20 40 18 38 22C36 20 34 20 32 21C30 20 28 20 26 22Z"
+      fill="#fdf2f8"
+      stroke="#db2777"
+      strokeWidth="2"
+    />
+    <path d="M32 22V42" stroke="#db2777" strokeWidth="1.5" />
+    {/* Idea Spark */}
+    <circle cx="32" cy="14" r="2" fill="#facc15" />
+  </svg>
+);
+
+// 17. Sociology (Community People Connections)
+export const SociologyCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#0d9488" stroke="#0f766e" strokeWidth="2.5" />
+    {/* Center person */}
+    <circle cx="32" cy="24" r="5" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.5" />
+    <path d="M23 42C23 37 27 34 32 34C37 34 41 37 41 42" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+    {/* Left person */}
+    <circle cx="18" cy="28" r="4" fill="#a7f3d0" stroke="#059669" strokeWidth="1.5" />
+    <path d="M12 44C12 40 15 38 18 38C20 38 22 39 23 41" stroke="#a7f3d0" strokeWidth="2" strokeLinecap="round" />
+    {/* Right person */}
+    <circle cx="46" cy="28" r="4" fill="#a7f3d0" stroke="#059669" strokeWidth="1.5" />
+    <path d="M41 41C42 39 44 38 46 38C49 38 52 40 52 44" stroke="#a7f3d0" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+);
+
+// 18. Hindi / Sanskrit (Devanagari Akshar Scroll)
+export const HindiSanskritCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="10" y="8" width="44" height="48" rx="6" fill="#ea580c" stroke="#c2410c" strokeWidth="2.5" />
+    <rect x="14" y="12" width="36" height="40" rx="3" fill="#fff7ed" />
+    <text x="21" y="38" fontSize="24" fontWeight="bold" fill="#9a3412" fontFamily="serif">अ</text>
+  </svg>
+);
+
+// 19. Urdu / Persian (Calligraphic Scroll)
+export const UrduPersianCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="10" y="8" width="44" height="48" rx="6" fill="#15803d" stroke="#166534" strokeWidth="2.5" />
+    <rect x="14" y="12" width="36" height="40" rx="3" fill="#f0fdf4" />
+    <text x="23" y="38" fontSize="24" fontWeight="bold" fill="#14532d" fontFamily="serif">اردو</text>
+  </svg>
+);
+
+// 20. Music (Musical Notes & Instrument)
+export const MusicCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#d946ef" stroke="#c026d3" strokeWidth="2.5" />
+    {/* Music Note */}
+    <circle cx="24" cy="40" r="5" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.5" />
+    <circle cx="42" cy="34" r="5" fill="#fef08a" stroke="#ca8a04" strokeWidth="1.5" />
+    <line x1="28" y1="40" x2="28" y2="20" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+    <line x1="46" y1="34" x2="46" y2="14" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+    <polygon points="28,20 46,14 46,19 28,25" fill="#ffffff" />
+  </svg>
+);
+
+// 21. Sports / MDC Sports Science (Trophy & Medal)
+export const SportsCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#f59e0b" stroke="#d97706" strokeWidth="2.5" />
+    {/* Trophy Cup */}
+    <path d="M22 18H42V28C42 34 37 38 32 38C27 38 22 34 22 28V18Z" fill="#fef3c7" stroke="#b45309" strokeWidth="2" />
+    <path d="M22 22H16C16 26 18 29 22 29" stroke="#b45309" strokeWidth="2" />
+    <path d="M42 22H48C48 26 46 29 42 29" stroke="#b45309" strokeWidth="2" />
+    <rect x="30" y="38" width="4" height="6" fill="#b45309" />
+    <rect x="24" y="44" width="16" height="4" rx="1.5" fill="#78350f" />
+  </svg>
+);
+
+// 22. Common NEP / AEC / MDC (Star Modules)
+export const CommonNEPCourseIcon: React.FC<{ className?: string }> = ({ className = 'h-10 w-10' }) => (
+  <svg viewBox="0 0 64 64" className={className} xmlns="http://www.w3.org/2000/svg" fill="none">
+    <rect x="8" y="10" width="48" height="44" rx="8" fill="#6366f1" stroke="#4f46e5" strokeWidth="2.5" />
+    {/* Star / Shield */}
+    <polygon points="32,16 36,26 47,26 38,33 42,43 32,37 22,43 26,33 17,26 28,26" fill="#fde047" stroke="#ca8a04" strokeWidth="1.5" />
+  </svg>
+);
+
 // Helper function to pick the exact course icon
 export const getCourseVectorIcon = (courseId: string, className = 'h-10 w-10'): React.ReactNode => {
   const id = courseId.toLowerCase();
@@ -241,19 +360,40 @@ export const getCourseVectorIcon = (courseId: string, className = 'h-10 w-10'): 
   if (id.includes('chem')) {
     return <ChemistryCourseIcon className={className} />;
   }
-  if (id.includes('bcom') || id.includes('account') || id.includes('commerce')) {
+  if (id.includes('econo')) {
+    return <EconomicsCourseIcon className={className} />;
+  }
+  if (id.includes('geog')) {
+    return <GeographyCourseIcon className={className} />;
+  }
+  if (id.includes('psych')) {
+    return <PsychologyCourseIcon className={className} />;
+  }
+  if (id.includes('socio')) {
+    return <SociologyCourseIcon className={className} />;
+  }
+  if (id.includes('bcom') || id.includes('account') || id.includes('commerce') || id.includes('hrm') || id.includes('marketing')) {
     return <CommerceCourseIcon className={className} />;
   }
   if (id.includes('bba') || id.includes('manage') || id.includes('business')) {
     return <BBACourseIcon className={className} />;
   }
-  if (id.includes('hist')) {
+  if (id.includes('hist') || id.includes('ai & as') || id.includes('ai-and-as')) {
     return <HistoryCourseIcon className={className} />;
   }
   if (id.includes('pol') || id.includes('civic')) {
     return <PolSciCourseIcon className={className} />;
   }
-  if (id.includes('eng') || id.includes('lit')) {
+  if (id.includes('sanskrit') || id.includes('hindi') || id.includes('maithili')) {
+    return <HindiSanskritCourseIcon className={className} />;
+  }
+  if (id.includes('urdu') || id.includes('persian') || id.includes('bengali')) {
+    return <UrduPersianCourseIcon className={className} />;
+  }
+  if (id.includes('music')) {
+    return <MusicCourseIcon className={className} />;
+  }
+  if (id.includes('eng') || id.includes('lit') || id.includes('philosophy')) {
     return <EnglishCourseIcon className={className} />;
   }
   if (id.includes('zoo') || id.includes('bio')) {
@@ -265,10 +405,16 @@ export const getCourseVectorIcon = (courseId: string, className = 'h-10 w-10'): 
   if (id.includes('law') || id.includes('llb')) {
     return <LawCourseIcon className={className} />;
   }
+  if (id.includes('sport') || id.includes('nss') || id.includes('ncc')) {
+    return <SportsCourseIcon className={className} />;
+  }
+  if (id.includes('aec') || id.includes('mdc') || id.includes('aedp')) {
+    return <CommonNEPCourseIcon className={className} />;
+  }
   return <GenericAcademicIcon className={className} />;
 };
 
-// 14. Exact Book Icon for the Semester Buttons (Inspired by Image 2)
+// Exact Book Icon for the Semester Buttons
 export const SemesterBookIcon: React.FC<{ className?: string }> = ({ className = 'h-7 w-7' }) => (
   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-lime-300 p-1.5 shadow-md">
     <svg viewBox="0 0 24 24" className={className} fill="none" stroke="#064e3b" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
