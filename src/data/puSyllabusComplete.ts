@@ -2419,7 +2419,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
     icon: '🌍',
     degree: '4-Year FYUGP CBCS (NEP-2020)',
     totalSemesters: 8,
-    description: 'Official uniform 4-Year B.A. / B.Sc. Geography curriculum approved by Raj Bhavan, Bihar (Ref: Letter No. BSU(UGC)-02/2023-871/GS(I) Dated 09-06-2023). Prepared by Committee of Experts: Prof. (Dr.) Md. Nazim (Head, P.G. Dept. of Geography, Patna University, Patna), Dr. Anoop Kumar Singh (Patliputra University, Patna), and Dr. Usha Singh (J.P. University, Chapra). Total 160 Credits (MJC: 80, MIC: 32, MDC: 9, AEC: 8, SEC: 9, VAC: 6, INT: 4, RP: 12). 70 Marks End-Sem Theory/Practical Exam + 30 Marks CIA. Strictly no OMR sheet.',
+    description: 'Official uniform 4-Year B.A. / B.Sc. Geography curriculum approved by Governor Secretariat / Raj Bhavan, Bihar (Ref: Letter No. BSU(UGC)-02/2023-871/GS(I) Dated 09-06-2023 for Sem I-II & BSU(UGC)-02/2023-1457/GS(I) Dated 14-09-2023 for Sem III-VIII). Prepared by State Committee of Experts chaired by Prof. (Dr.) R.B.P. Singh (Former Vice-Chancellor, Patna University), Prof. (Dr.) Md. Nazim (Head, P.G. Dept. of Geography, Patna University), Dr. Anoop Kumar Singh (Patliputra University), Prof. (Dr.) Usha Singh (J.P. University, Chapra), Prof. Bibha Singh (Gaya College), Md Raiyaj Ansari (R.K. College, Madhubani), Prof. Narendra Singh (VKSU Ara), Prof. Ram Pravesh Yadav (BRABU), Dr. Ganesh Prasad (BNMU), Dr. Sunil Kumar Singh (LNMU), and Dr. Vidya Yadav (COCAS Patna). Total 160 Credits (MJC: 80, MIC: 32, MDC: 9, AEC: 8, SEC: 9, VAC: 6, INT: 4, RP: 12). 70 Marks End-Sem Exam + 30 Marks CIA. Strictly no OMR sheet.',
     officialPdfs: {
       sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
       sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
@@ -3001,45 +3001,48 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.6 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'Prithwish Kumar Roy, Economic Geography: A Study of Resources, New Central Book Agency',
-              'J. W. Alexander, Economic Geography, Prentice-Hall',
-              'K. Siddhartha, Economic Geography: Theories & Processes, Kisalaya Publications',
-              'Savindra Singh and Alka Gautam, Arthik Bhugol, Sharda Pustak Bhawan'
+              'Alexander J.W., (1963) Economic Geography, Prentice-Hall Inc., Englewood Cliffs, New Jersey',
+              'Coe N. M., Kelly P. F. and Yeung H. W., (2007) Economic Geography: A Contemporary Introduction, Wiley-Blackwell',
+              'Combes P., Mayer T. and Thisse J. F., (2008) Economic Geography: The Integration of Regions and Nations, Princeton University Press',
+              'Wheeler J. O., (1998) Economic Geography, Wiley',
+              'Bagchi-Sen S. and Smith H. L., (2006) Economic Geography: Past, Present and Future, Taylor and Francis',
+              'Singh K.N. & Jagdish Singh (2020), Aarthik Bhugol ke Mool Tatva, Prayag Publication',
+              'Jatt B.C., (2020) Aathik Bhugol, Malik Book Company, Jaipur',
+              'Gautam Alka., (2022) Aarthik bhugol ke mool tatv, Sharda Pustak Bhawan, Prayagraj',
+              'Maurya S.D., Aarthik Bhugol, Pravalika Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Nature, Scope & Classification of Economic Activities',
+                title: 'Meaning, Scope & Classification of Economic Activities (12 Lectures)',
                 topics: [
-                  'Nature, scope, and significance of Economic Geography; Fundamental concepts of resources and classification',
-                  'Classification of economic activities: Primary, Secondary, Tertiary, Quaternary, and Quinary activities'
+                  'Meaning and Scope of Economic Geography: Definition, approach, and significance',
+                  'Concept and Classification of Economic Activities: Primary, Secondary, Tertiary, Quaternary, and Quinary activities'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Primary Activities: Agriculture, Forestry & Mining',
+                title: 'Locational Theory of Agriculture & Farming Types (12 Lectures)',
                 topics: [
-                  'Agricultural typologies: Subsistence, Intensive subsistence, Commercial grain farming, Plantation agriculture, Mixed farming; Von Thunen Agricultural Location Model',
-                  'World distribution and production of major agricultural crops: Rice, Wheat, Cotton, Tea, Coffee, Sugarcane',
-                  'Mineral and Energy resources: Distribution and reserves of Iron Ore, Bauxite, Coal, Petroleum, Natural Gas, and Non-conventional energy sources'
+                  'Locational Theory of Agriculture by J. H. Von Thunen: Assumptions, concentric zones, economic rent, and modern modifications',
+                  'Major farming typologies: Intensive Subsistence Farming, Commercial Grain Farming, and Dairy Farming'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Secondary Activities & Industrial Location Theories',
+                title: 'Industrial Location Theory & Major World Industries (14 Lectures)',
                 topics: [
-                  'Factors of industrial location: Raw materials, power, labour, transport, market, and capital',
-                  'Alfred Weber Theory of Industrial Location: Isodapanes, Material Index, Agglomerative and deglomerative factors; August Losch Theory of Profit Maximization',
-                  'Major world industrial regions: Manufacturing belts of USA, Western Europe, Japan, and Russian Federation',
-                  'Case studies of Iron & Steel Industry, Cotton Textile Industry, Petrochemical Industry, and High-tech Software Parks'
+                  'Industrial Location Theory of Alfred Weber: Least Cost Theory, Material Index, Isodapanes, Agglomeration and Deglomeration forces',
+                  'Distribution, locational factors, and trends of Major Industries: Iron and Steel Industry, Cotton Textile Industry, Automobile Industry, and Information Technology (IT) Industry'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Tertiary Activities, Transport Networks & International Trade',
+                title: 'Oceanic Routes, International Trade, WTO & SEZ (12 Lectures)',
                 topics: [
-                  'Transport networks and development: Road, Rail, Inland waterways, Ocean trade routes (Suez Canal, Panama Canal, North Atlantic route)',
-                  'International trade: Changing patterns of world trade, Trade blocs (WTO, EU, ASEAN, NAFTA/USMCA, SAARC), and globalization impacts'
+                  'Major Oceanic Routes: Strategic and commercial significance of Suez Canal and Panama Canal routes',
+                  'International Trade: Patterns of world trade, World Trade Organization (WTO) principles and impact on developing economies',
+                  'Special Economic Zones (SEZ): Concept, objectives, development, and role in regional economic growth in India'
                 ]
               }
             ]
@@ -3056,33 +3059,48 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
-              'F. J. Monkhouse and H. R. Wilkinson, Maps and Diagrams, Methuen & Co.',
-              'M. M. P. Sinha and Seema Bala, Uchh Cartography, Rajesh Publication'
+              'Anson R. and Ormelling F. J., (1994) Basic Cartography Vol. Pergamon Press',
+              'Gupta K.K. and Tyagi, V. C., (1992) Working with Map, Survey of India, DST, New Delhi',
+              'Maltiyar K. K. & Maltiyar S. R., (2019) Concept of Cartography, Remote Sensing and GIS, Rajesh publication',
+              'Mishra R.P. and Ramesh, A., (1989) Fundamentals of Cartography, Concept, New Delhi',
+              'Monkhouse F. J. and Wilkinson H. R., (1973) Maps and Diagrams, Methuen, London',
+              'Robinson A. H., (2009) Elements of Cartography, John Wiley and Sons, New York',
+              'Sharma J. P., (2010) Prayogic Bhugol, Rastogi Publishers, Meerut',
+              'Singh R. L. and Singh R. P. B., (1999) Elements of Practical Geography, Kalyani Publishers',
+              'Sinha M.M. P., (2017) Ucch Cartography, Rajesh Publication, New Delhi',
+              'Sarkar, A. (2015) Practical Geography: A Systematic Approach, Orient Black Swan'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Cartograms & Thematic Representation',
+                title: 'Nature and Scope of Cartography & Bar Diagrams (06 Lectures)',
                 topics: [
-                  'Principles of cartographic representation: Point, Line, and Area symbols',
-                  'Cartograms: Concept, types (value-by-area, contiguous, non-contiguous), Dot maps, Choropleth, Isopleth, Flow maps'
+                  'Nature and Scope of Cartography: Science and art of map making, cartographic conventions',
+                  'Bar Diagrams: Types (Simple, Compound, Multiple, Percentage) and their geographical uses'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Map Projections: Principles & Mathematical Concepts',
+                title: 'Maps & Distribution Maps (08 Lectures)',
                 topics: [
-                  'Map Projection: Definition, necessity, classification (Azimuthal, Conical, Cylindrical, Conventional; Homolographic, Orthomorphic, Equidistant)',
-                  'Choice of projections for world maps, polar areas, temperate zones, and equatorial belts; Distortion characteristics (Tissot Indicatrix)'
+                  'Map and its Types: General purpose maps, thematic maps, cadastral and topographical maps',
+                  'Distribution Maps: Dot Method, Choropleth Method, and Isopleth Method (principles, construction, and limitations)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Principles of Land Surveying',
+                title: 'Map Projection: Concept & Classification (08 Lectures)',
                 topics: [
-                  'Surveying: Definition, basic principles (Working from whole to part), Errors and adjustments',
-                  'Instruments and methods of Plane Table Surveying (Radiation, Intersection, Resection, Traversing) and Prismatic Compass Surveying (Whole circle bearing, Reduced bearing, Local attraction)'
+                  'Map Projection: Concept, mathematical principles, necessity, and general properties',
+                  'Classification of Map Projections: Based on developable surfaces (Cylindrical, Conical, Zenithal), source of light (Gnomonic, Stereographic, Orthographic), and qualities (Homolographic, Orthomorphic, Equidistant)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Surveying: Concept, Types & Significance (08 Lectures)',
+                topics: [
+                  'Surveying: Concept, fundamental principles (Working from whole to part, fixing new stations)',
+                  'Types and classification of surveying: Triangulation, traversing, leveling; Significance in geographical fieldwork'
                 ]
               }
             ]
@@ -3099,18 +3117,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography',
-              'J. P. Sharma, Prayogik Bhugol, Rastogi Publications'
+              'Singh R. L. and Singh R. P. B., Elements of Practical Geography, Kalyani Publishers',
+              'Sharma J. P., Prayogik Bhugol ki Rooprekha, Rastogi Publications',
+              'Sinha M.M.P., Ucch Cartography, Rajesh Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Construction of Map Projections & Field Survey',
+                title: 'Diagrams & Choropleth (03 Lectures)',
                 topics: [
-                  'Mathematical and graphical construction of: Simple Cylindrical Projection, Cylindrical Equal Area Projection, Mercator Projection',
-                  'Conical Projection with one standard parallel, Conical Projection with two standard parallels, Bonne Projection, Polyconic Projection',
-                  'Polar Zenithal Equidistant and Equal Area Projections',
-                  'Field practical: Plane Table Surveying (Radiation and Intersection methods) and Prismatic Compass Traversing with correction for local attraction'
+                  'Construction of Bar Diagram (Simple, Multiple, Compound), Pie Diagram, and Choropleth Map for socioeconomic data'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Map Projections Construction (04 Lectures)',
+                topics: [
+                  'Graphical and mathematical construction of Simple Conical Projection with One Standard Parallel',
+                  'Cylindrical Equidistant Projection',
+                  'Polar Zenithal Equidistant Projection'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Prismatic Compass Survey (03 Lectures)',
+                topics: [
+                  'Prismatic Compass Survey: Instrument handling, Open Traverse and Closed Traverse surveying',
+                  'Calculation of bearings (W.C.B., R.B.), detection and correction of Local Attraction, graphical adjustment of closing error'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Record of Practical Work & Viva-Voce',
+                topics: [
+                  'Maintenance of practical record notebook, viva-voce examination on surveying and projections'
                 ]
               }
             ]
@@ -3127,22 +3167,30 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'Prithwish Kumar Roy, Economic Geography, New Central Book Agency',
-              'Savindra Singh, Arthik Bhugol, Sharda Pustak Bhawan'
+              'Alexander J.W., Economic Geography, Prentice-Hall',
+              'Singh K.N. & Jagdish Singh, Aarthik Bhugol ke Mool Tatva, Prayag Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Resources & Agricultural Geography',
+                title: 'Scope & Economic Activities (08 Lectures)',
                 topics: [
-                  'Concept of Resources, classification and conservation; Agricultural regions and major food crops (Rice, Wheat)'
+                  'Meaning and Scope of Economic Geography; Concept and Classification of Economic Activities: Primary, Secondary, and Tertiary'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Minerals, Energy & Major Industries',
+                title: 'Farming Types & Major Industries (06 Lectures)',
                 topics: [
-                  'Distribution of Iron ore, Coal, Petroleum; Location factors of Iron & Steel industry and Cotton textile industry'
+                  'Intensive Subsistence Farming and Commercial Grain Farming',
+                  'Major Industries: Iron and Steel Industry, Cotton Textile Industry'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'International Trade, WTO & SEZ (06 Lectures)',
+                topics: [
+                  'International Trade and WTO; Special Economic Zone (SEZ)'
                 ]
               }
             ]
@@ -3158,12 +3206,29 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
             fileSize: '1.4 MB',
             pyqCount: 2,
-            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            recommendedBooks: [
+              'Singh R. L. and Singh Rana P. B., Elements of Practical Geography, Kalyani Publishers'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Economic Data Representation',
-                topics: ['Drawing of Dot maps, Proportional circles, and Bar diagrams for crop production and mineral output data']
+                title: 'Scale, R.F. and Maps (05 Lectures)',
+                topics: [
+                  'Scale, Representative Fraction (R.F.), and types of maps'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Diagrams & Conical Projection (05 Lectures)',
+                topics: [
+                  'Diagrams: Bar diagram and Pie diagram',
+                  'Map Projection: Simple Conical Projection with One Standard Parallel'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Record of Practical Work & Viva-voce',
+                topics: ['Maintenance of practical file and viva-voce']
               }
             ]
           },
@@ -3180,8 +3245,8 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Advanced Multidisciplinary Exploration',
-                topics: ['Third multidisciplinary basket paper completing the 9-credit MDC requirement under NEP-2020']
+                title: 'Advanced Multidisciplinary Studies',
+                topics: ['Third multidisciplinary basket paper chosen from approved university basket to complete 9 credits of MDC under NEP-2020']
               }
             ]
           },
@@ -3198,11 +3263,10 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Disaster Concepts & Mitigation',
+                title: 'Disaster Concepts & Community Resilience',
                 topics: [
-                  'Understanding Hazards, Disasters, Vulnerability, and Risk',
-                  'Disaster management cycle: Preparedness, mitigation, emergency response, relief, and rehabilitation',
-                  'Community-based disaster management and role of National Disaster Management Authority (NDMA)'
+                  'Hazards, Disasters, Vulnerability, and Risk; Disaster management cycle (Mitigation, Preparedness, Response, Recovery)',
+                  'Role of NDMA, SDRF, and community-based disaster risk reduction'
                 ]
               }
             ]
@@ -3220,14 +3284,14 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             recommendedBooks: [
               'Statistical Software Package (SPSS) for Research Analysis',
               'Prospecting E-waste for Sustainability',
-              'Visual Communication and Photography',
-              'Sustainable Ecotourism and Entrepreneurship',
+              'Visual Communication & Photography',
+              'Sustainable Ecotourism & Entrepreneurship',
               'Graphic Design & 2D/3D Animation'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Advanced Applied Skills',
+                title: 'Applied Professional Skills',
                 topics: ['Selected from SEC-3 Basket: Statistical Software Package (SPSS), Prospecting E-waste for Sustainability, Visual Communication & Photography, Sustainable Ecotourism & Entrepreneurship, or Graphic Design & Animation']
               }
             ]
@@ -3249,44 +3313,50 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.6 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'Majid Husain, Human Geography, Rawat Publications, Jaipur',
-              'Alka Gautam, Manav Bhugol, Sharda Pustak Bhawan, Allahabad',
-              'K. Siddhartha, Human Geography: Landscape of Human Activities, Kisalaya Publications',
-              'H. Robinson, Human Geography, Macdonald and Evans'
+              'Chandna R.C. 2022, Geography of Population, Kalyani Publishers',
+              'Hassan, M. I. (2005) Population Geography, Rawat Publication, Jaipur',
+              'Fouberg, E.H., Nash, A.B., Murphy, A.B., de Blij, H., (2015) Human Geography: People, Place, and Culture, Wiley',
+              'Ghosh S. (1998) An Introduction to Settlement Geography, Sangam Books Ltd',
+              'Knox, P.L., Marston, S.A. (2014) Human Geography, Places and Regions in Global Context, Pearson Education',
+              'Rubenstein J.M., (2018) Contemporary Human Geography, Pearson',
+              'Sing, R.Y. (2009) A Geography of Settlements, Rawat Publications',
+              'Census of India, Tribes (2011)'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Nature, Scope & Philosophy of Human Geography',
+                title: 'Human Geography: Concepts & Paradigms (15 Lectures)',
                 topics: [
-                  'Nature, scope, and development of Human Geography; Branches of Human Geography',
-                  'Man-Environment Relationship: Environmental Determinism (Friedrich Ratzel, Ellen Churchill Semple), Possibilism (Paul Vidal de la Blache, Lucien Febvre), Neo-Determinism / Stop-and-Go Determinism (Griffith Taylor), and Probabilism'
+                  'Human Geography: Definition, Nature, and Scope; Fundamental Concepts in Human Geography',
+                  'Contemporary relevance of Environmental Determinism (Ratzel, Semple), Possibilism (Vidal de la Blache, Febvre), and Neo-Determinism (Griffith Taylor Stop-and-Go Determinism)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'World Population Distribution, Growth & Dynamics',
+                title: 'Population Dynamics & Migration (15 Lectures)',
                 topics: [
-                  'World population distribution, density, and growth patterns; Factors influencing population distribution',
-                  'Theories of population: Malthusian Theory of Population, Demographic Transition Theory (Notestein, Thompson) and its stages',
-                  'Migration: Types, causes (push and pull factors), consequences; Ravenstein Laws of Migration and Everett Lee Migration Model'
+                  'Population: Composition, Growth, Density, and Spatial Distribution of world population',
+                  'Theories of Population: Malthusian Population Theory, Demographic Transition Theory and its stages',
+                  'Migration: Causes (push and pull factors), Types (Internal, International, Forced, Voluntary), and socioeconomic consequences'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Human Races, Cultural Realms & Tribal Societies',
+                title: 'Races, Tribes & Socio-Cultural Patterns (10 Lectures)',
                 topics: [
-                  'Human Races: Biological traits, criteria for racial classification (Skin color, hair form, cephalic index, nasal index), Major races of the world (Caucasoid, Mongoloid, Negroid, Australoid)',
-                  'Cultural Realms of the World; Language and Religious distributions',
-                  'Habitat, Economy, and Society of selected tribes: Eskimo (Inuit), Pygmy, Bushman, Masai; Indian tribes: Santhal, Gond, Bhil, and Tharu'
+                  'Human Races: Concept, physical criteria of racial classification, and world distribution',
+                  'Major Tribal Groups of India and Bihar (Santhal, Gond, Oraon, Tharu, Munda) with reference to Census data',
+                  'Geography of Religion and Language distribution in India and the world'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Settlement Geography: Rural & Urban Systems',
+                title: 'Settlements & Urbanization (10 Lectures)',
                 topics: [
-                  'Rural Settlements: Types (Compact, Semi-compact, Hamleted, Dispersed) and morphological patterns (Linear, Circular, Radial, Rectangular)',
-                  'Urban Settlements: Evolution, urbanization trends, morphology of urban centers; Theories of urban structure: Concentric Zone Model (Burgess), Sector Model (Hoyt), Multiple Nuclei Model (Harris & Ullman)'
+                  'Rural Settlements: Types (Compact, Semi-compact, Dispersed) and Morphological Patterns (Linear, Circular, Rectangular, Checkerboard)',
+                  'Urban Settlements: Classification based on Function and Size',
+                  'Walter Christaller Central Place Theory: Principles of Marketing (k=3), Transport (k=4), and Administration (k=7)',
+                  'Trends and Patterns of Urbanization in India and World'
                 ]
               }
             ]
@@ -3303,47 +3373,50 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.7 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'D. R. Khullar, India: A Comprehensive Geography, Kalyani Publishers',
-              'R. C. Tiwari, Geography of India, Prayag Pustak Bhawan, Allahabad',
-              'Enayat Ahmad, Bihar: A Physical, Economic and Regional Geography, Ranchi University',
-              'S. P. Singh & R. P. Singh, Regional Geography of Bihar, Rajesh Publications'
+              'Deshpande C. D., 1992: India: A Regional Interpretation, ICSSR, New Delhi',
+              'Sharma, T. C. 2003: India - Economic and Commercial Geography, Vikas Publ., New Delhi',
+              'Singh R. L., 1971: India: A Regional Geography, National Geographical Society of India',
+              'Singh, Jagdish 2003: India - A Comprehensive & Systematic Geography, Gyanodaya Prakashan, Gorakhpur',
+              'Spate O. H. K. and Learmonth A. T. A., 1967: India and Pakistan: A General and Regional Geography, Methuen',
+              'Sinha, V.N.P. et al., (2013), Bihar: Land, People and Economy, Rajesh Publication, New Delhi',
+              'Sinha, V.N.P. et al., (2014), Bihar Ka Bhugol, Rajesh Publication, New Delhi',
+              'Sharma, Nandeshwar (2007), Bihar ki Bhaugoalik Samiksha, Vasundhara Prakashan, Gorakhpur'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Physical & Climatic Framework of India',
+                title: 'Relief, Structure & Drainage of India (12 Lectures)',
                 topics: [
-                  'Physiographic divisions of India: Northern Mountains (Himalayas), Great Northern Plains, Peninsular Plateau, Coastal Plains, and Islands',
-                  'Drainage systems: Himalayan rivers (Indus, Ganga, Brahmaputra) vs Peninsular rivers (Godavari, Krishna, Cauvery, Narmada, Tapi)',
-                  'Climate of India: Mechanism of Indian Monsoons (Jet Streams, El Nino, Southern Oscillation - ENSO), Seasons, and Climatic regions of India (Koppen and Stamp classifications)'
+                  'India: Relief, geological structure, and physiographic divisions (Himalayas, Northern Plains, Peninsular Shield, Coastal Plains, Islands)',
+                  'Major Drainage Systems: Himalayan Rivers (Ganga, Brahmaputra, Indus) vs Peninsular Rivers (Godavari, Krishna, Cauvery, Mahanadi, Narmada, Tapi)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Natural Resources, Agriculture & Industries of India',
+                title: 'Climate, Soils & Natural Vegetation of India (12 Lectures)',
                 topics: [
-                  'Soils of India: Types, distribution, soil erosion, and conservation',
-                  'Natural vegetation: Forest types, distribution, deforestation, and National Forest Policy',
-                  'Agriculture: Green Revolution, White Revolution, major crops (Wheat, Rice, Sugarcane, Tea, Cotton), and Agro-climatic zones of India',
-                  'Industrial development: Locational factors and distribution of Iron & Steel, Cotton Textiles, Petroleum Refining, and Automobile industries; Industrial clusters of India'
+                  'Climate of India: Origin and Mechanism of Indian Monsoon (Thermal concept, Jet streams, Tibetan Plateau heating, ENSO/El Nino)',
+                  'Soil Types of India: ICAR classification (Alluvial, Black, Red, Laterite, Desert soils), distribution, and conservation',
+                  'Natural Vegetation: Forest types, ecological characteristics, spatial distribution, and National Forest Policy'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Physiography, Drainage & Climate of Bihar',
+                title: 'Minerals, Power Resources & Selected Industries (12 Lectures)',
                 topics: [
-                  'Physical framework of Bihar: Terai region, North Bihar Plains, South Bihar Plains, and Southern Plateau fringe',
-                  'Drainage system of Bihar: Ganga and its tributaries (Gandak, Burhi Gandak, Kosi - Sorrow of Bihar, Bagmati, Kamla-Balan, Son, Punpun, Falgu)',
-                  'Climate of Bihar: Temperature, seasonal rainfall distribution; Flood hazards in North Bihar and Drought hazards in South Bihar: causes, impacts, and management'
+                  'Types of Natural Resources; Distribution and reserves of Minerals: Iron Ore, Manganese, Mica',
+                  'Power Resources: Coal, Petroleum, and Hydro Power',
+                  'Selected Industries of India: Iron and Steel, Cotton Textile, Sugar, Automobile, and Information Technology (IT) Industry'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Economy, Resources & Demography of Bihar',
+                title: 'Geography of Bihar (14 Lectures)',
                 topics: [
-                  'Agriculture in Bihar: Cropping pattern, Rice, Maize, Wheat, Pulses, Sugarcane, Jute, and Makhana cultivation',
-                  'Mineral and Industrial status of Bihar post-bifurcation: Agro-based industries (Sugar, Food processing, Dairy, Jute) and tourism potential',
-                  'Demography of Bihar: Population density, growth rate, sex ratio, literacy, rural-urban composition, and out-migration dynamics'
+                  'Structure and Physiography of Bihar (North Bihar Plains, South Bihar Plains, Southern Hilly rim)',
+                  'Important Rivers of Bihar (Ganga, Kosi, Gandak, Son, Burhi Gandak, Punpun), Problems and management of Floods and Droughts',
+                  'Population of Bihar: Growth, Density, Spatial Distribution, Literacy, Sex Ratio',
+                  'Trends and Patterns of Urbanization in Bihar'
                 ]
               }
             ]
@@ -3360,33 +3433,47 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
-              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
-              'S. Gregory, Statistical Methods and the Geographer, Longman'
+              'Mahmood A., (1977) Statistical Methods in Geographical Studies, Concept',
+              'Sarkar, A. (2013) Quantitative Geography: Techniques and Presentations, Orient Black Swan',
+              'Ebdon D., (1977) Statistics in Geography: A Practical Approach',
+              'Hammond P. and McCullagh P. S., (1978) Quantitative Techniques in Geography: An Introduction, Oxford University Press',
+              'Pal S. K., (1998) Statistics for Geoscientists, Tata McGraw Hill, New Delhi',
+              'Sinha, Indira (2007) Sankhyiki Bhugol, Discovery Publishing House, New Delhi'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Geographical Data & Measures of Central Tendency',
+                title: 'Use of Data in Geography (08 Lectures)',
                 topics: [
-                  'Geographical Data: Spatial and Attribute data, Discrete and Continuous series, Scales of measurement (Nominal, Ordinal, Interval, Ratio)',
-                  'Measures of Central Tendency: Mean (Arithmetic, Geometric, Harmonic), Median, Mode; Spatial mean and center of gravity of geographic distributions'
+                  'Significance of Statistical Methods in Geography',
+                  'Sources and Types of Geographical Data: Primary and Secondary, Spatial and Attribute data',
+                  'Scales of Measurement: Nominal, Ordinal, Interval, and Ratio scales'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Measures of Dispersion & Skewness',
+                title: 'Measures of Central Tendency & Dispersion (08 Lectures)',
                 topics: [
-                  'Measures of Dispersion: Range, Mean Deviation, Quartile Deviation, Standard Deviation, and Variance; Coefficient of Variation (CV) in spatial rainfall and crop variability analysis',
-                  'Measures of Skewness and Kurtosis in geographic distributions'
+                  'Measures of Central Tendency: Mean, Median, Mode - Concepts, Mathematical Properties, and Calculations',
+                  'Measures of Dispersion: Range, Mean Deviation, Standard Deviation, and Quartile Deviation'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Correlation & Bivariate Regression',
+                title: 'Sampling Methods in Geography (06 Lectures)',
                 topics: [
-                  'Bivariate Analysis: Scatter Diagram, Karl Pearson Product Moment Correlation Coefficient, Spearman Rank Correlation Coefficient',
-                  'Linear Regression: Principle of Least Squares, Regression equations (Y on X, X on Y), Regression line and residuals in geographic studies'
+                  'Sampling in Geographic Studies: Concept, necessity, and sample size',
+                  'Types of Sampling: Probability Sampling (Simple Random, Systematic, Stratified, Cluster) vs Non-Probability Sampling (Purposive, Quota, Snowball)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Correlation & Regression Analysis (08 Lectures)',
+                topics: [
+                  'Correlation: Meaning and Types; Scatter Diagram method',
+                  'Karl Pearson Product Moment Coefficient of Correlation',
+                  'Spearman Rank Correlation Coefficient',
+                  'Linear Regression Analysis: Bivariate regression equations and line of best fit'
                 ]
               }
             ]
@@ -3403,25 +3490,39 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Aslam Mahmood, Statistical Methods in Geographical Studies',
-              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography'
+              'Mahmood A., Statistical Methods in Geographical Studies',
+              'Sarkar, A., Quantitative Geography: Techniques and Presentations',
+              'Sinha, Indira, Sankhyiki Bhugol'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Computation of Statistical Parameters',
+                title: 'Central Tendency & Centro-Graphic Techniques (06 Lectures)',
                 topics: [
-                  'Computation of Mean, Median, and Mode for grouped and ungrouped spatial data (Rainfall, Population density, Crop yield)',
-                  'Calculation of Standard Deviation, Quartile Deviation, and Coefficient of Variation for regional disparity analysis'
+                  'Measurement and calculation of Mean, Median, and Mode from grouped and ungrouped geographic data',
+                  'Centro-Graphic Techniques: Construction of Histogram and Frequency Polygon'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Correlation, Regression & Graphing',
+                title: 'Measures of Dispersion (06 Lectures)',
                 topics: [
-                  'Calculation of Pearson Correlation Coefficient (r) and Spearman Rank Correlation (rho) for variables such as fertilizer use vs crop yield, irrigation vs production',
-                  'Fitting linear regression line by least squares method and graphical plotting of residuals'
+                  'Computation of Range, Mean Deviation, Standard Deviation, and Quartile Deviation for spatial rainfall, temperature, and crop yield data'
                 ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Correlation & Scatter Diagram (08 Lectures)',
+                topics: [
+                  'Computation of Karl Pearson Coefficient of Correlation (r)',
+                  'Spearman Rank Correlation (rho) for geographical variables',
+                  'Plotting of Scatter Diagram and fitting the trend line'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['Submission of practical record book and viva-voce examination']
               }
             ]
           },
@@ -3437,22 +3538,38 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.3 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'R. C. Chandna, Geography of Population, Kalyani Publishers',
-              'J. I. Clarke, Population Geography, Pergamon Press'
+              'Chandna R. C. and Sidhu M. S., (1980) An Introduction to Population Geography, Kalyani Publishers',
+              'Clarke J. I., (1965) Population Geography, Pergamon Press, Oxford',
+              'Bhende A. and Kanitkar T., (2000) Principles of Population Studies, Himalaya Publishing House',
+              'Maurya, S. D., (2009) Janasankhya Bhugol, Sharda Pustak Bhawan, Allahabad'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Population Distribution & Dynamics',
+                title: 'Scope & Data Sources (06 Lectures)',
                 topics: [
-                  'Nature and scope of Population Geography; World population distribution, density, and growth factors; Demographic Transition Theory'
+                  'Population Geography: Meaning, Nature and Scope; Types and Sources of Population Data (Census, Sample surveys, Vital registration system); Population Studies and Demography'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Population Composition & Migration',
+                title: 'Population Dynamics (04 Lectures)',
                 topics: [
-                  'Age and sex composition, Literacy, Rural-urban ratio; Migration: Causes, types, and socio-economic consequences'
+                  'Population Dynamics: Fertility, Mortality, and Migration - Causes and effects'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Population Composition (04 Lectures)',
+                topics: [
+                  'Population Composition: Age-Sex Structure, Rural and Urban Composition, Occupational Structure, Literacy, Religion and Language'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Contemporary Population Issues (06 Lectures)',
+                topics: [
+                  'Contemporary Population Issues: Aging Population, Declining Sex Ratio, Declining Fertility, Invisible Population and Population Policies in India'
                 ]
               }
             ]
@@ -3468,15 +3585,36 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
             fileSize: '1.3 MB',
             pyqCount: 2,
-            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            recommendedBooks: [
+              'Gupta K. K. and Tyagi V. C., Working with Maps, Survey of India',
+              'Singh R. L. and Singh R. P. B., Elements of Practical Geography, Kalyani Publishers'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Demographic Diagrams & Pyramids',
+                title: 'Population Distribution (04 Lectures)',
                 topics: [
-                  'Construction of Age-Sex Pyramids (Expansive, Constrictive, Stationary)',
-                  'Mapping population density using Choropleth technique and drawing population growth curve'
+                  'Population Distribution: Age-Sex Pyramid, Dot Method, and Choropleth Map'
                 ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Population Projection (04 Lectures)',
+                topics: [
+                  'Methods of Population Projection; Calculation of Doubling Time of Population'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Data Representation (02 Lectures)',
+                topics: [
+                  'Representation of Population Data: Bar diagram and Pie Diagram'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Records and Viva-Voce',
+                topics: ['Submission of practical file and viva-voce']
               }
             ]
           },
@@ -3493,8 +3631,8 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Community Service & Experiential Leadership',
-                topics: ['Field engagement, community service, social leadership, disaster relief drills, youth empowerment activities under NCC/NSS/Sports']
+                title: 'Experiential Social Service & Leadership',
+                topics: ['Active field engagement in community health, social service, environmental cleanup, NCC parade, NSS camps, or university sports']
               }
             ]
           }
@@ -3515,44 +3653,52 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.6 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'Savindra Singh, Environmental Geography, Prayag Pustak Bhawan, Allahabad',
-              'Alka Gautam, Environmental Geography, Sharda Pustak Bhawan',
-              'H. M. Saxena, Environmental Geography, Rawat Publications',
-              'I. G. Simmons, Earth, Air and Water: Resources and Environment, Edward Arnold'
+              'Singh, Savindra 2001, Paryavaran Bhugol, Prayag Pustak Bhawan, Allahabad',
+              'Chandna R. C., (2002) Environmental Geography, Kalyani, Ludhiana',
+              'Cunningham W. P. and Cunningham M. A., (2004) Principles of Environmental Science, Tata McGraw Hill',
+              'Goudie A., (2001) The Nature of the Environment, Blackwell, Oxford',
+              'Mal, Suraj and Singh, R.B. (Eds.) (2009) Biogeography and Biodiversity, Rawat Publication',
+              'Miller G. T., (2004) Environmental Science: Working with the Earth, Thomson Brooks/Cole',
+              'MoEF, (2006) National Environmental Policy-2006, Government of India',
+              'Odum, E. P. et al, (2005) Fundamentals of Ecology, Cengage Learning India',
+              'UNEP, (2007) Global Environment Outlook: GEO4'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Concepts of Ecology, Ecosystem & Environment',
+                title: 'Concepts, Biodiversity & Ecosystems (12 Lectures)',
                 topics: [
-                  'Nature, scope, and significance of Environmental Geography; Components of Environment',
-                  'Ecosystem: Concept, structure (biotic and abiotic components), function, food chain, food web, trophic levels, ecological pyramids, and biogeochemical cycles (Carbon, Nitrogen, Hydrological cycles)'
+                  'Environmental Geography: Meaning and concept; Environmental degradation',
+                  'Bio-diversity: Hot Spots of Biodiversity, Heat Island phenomenon',
+                  'Components of Environment and their inter-relationship',
+                  'Concepts and Types of Eco-system, Ecological Balance, and Bio-energy Cycle'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Environmental Degradation & Pollution',
+                title: 'Environmental Pollution & Standards (12 Lectures)',
                 topics: [
-                  'Environmental Degradation: Natural and anthropogenic causes; Soil degradation and desertification',
-                  'Pollution: Air, water, noise, and radioactive pollution; Source, impacts, and control strategies; Solid and electronic waste management'
+                  'Environmental Pollution: Air pollution, Water pollution, Noise pollution, Sound pollution, and their remedial measures',
+                  'International standard of Drinking Water (WHO/BIS parameters)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Global Environmental Issues & Climate Agreements',
+                title: 'Degradation, Natural Disasters & Management (14 Lectures)',
                 topics: [
-                  'Global warming and climate change, Ozone depletion in stratosphere, Acid rain, Sea-level rise',
-                  'Loss of biodiversity: Extinction of species, deforestation, threats to wildlife, and in-situ / ex-situ conservation',
-                  'International conferences and protocols: Stockholm Conference (1972), Rio Earth Summit (1992), Kyoto Protocol (1997), Paris Climate Accord (2015), COP summits'
+                  'Environmental Degradation: Causes and impacts',
+                  'Natural Disasters: Drought, Flood, and Earthquake causes, impact, and mitigation',
+                  'Environmental Pollution: Air Pollution, Water Pollution, Environmental management, laws, and policies'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Environmental Management & Sustainable Development',
+                title: 'Waste Management, Hazards & Environmental Laws (12 Lectures)',
                 topics: [
-                  'Sustainable Development: Concept, historical background (Brundtland Commission Report 1987), Sustainable Development Goals (SDGs 2030)',
-                  'Environmental Impact Assessment (EIA): Concept, stages, methodologies, and significance in Indian developmental planning',
-                  'Environmental laws and policies in India: Water Act 1974, Air Act 1981, Wildlife Protection Act 1972, Forest Conservation Act 1980, Environment Protection Act 1986'
+                  'Sewage disposal and solid waste management',
+                  'Cleaning of rivers (Namami Gange and Yamuna Action Plan)',
+                  'Natural hazards and disasters: Radiation hazards, Gas leak disasters (Bhopal gas tragedy), Acid rain',
+                  'Environmental Laws and Acts in India'
                 ]
               }
             ]
@@ -3569,31 +3715,50 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'R. L. Singh, Elements of Practical Geography, Kalyani Publishers',
-              'F. J. Monkhouse and H. R. Wilkinson, Maps and Diagrams, Methuen',
-              'M. M. P. Sinha and Seema Bala, Uchh Cartography, Rajesh Publication'
+              'Anson, R. and Ormelling, F. J., Basic Cartography, Pergamon Press',
+              'Gupta, K.K. and Tyagi, V. C., Working with Map, Survey of India',
+              'Maltiyar K. K. & Maltiyar S. R., Concept of Cartography, Remote Sensing and GIS, Rajesh publication',
+              'Mishra, R.P. and Ramesh, A., Fundamentals of Cartography, Concept',
+              'Monkhouse, F. J. and Wilkinson H. R., Maps and Diagrams, Methuen',
+              'Robinson, A. H., Elements of Cartography, John Wiley and Sons',
+              'Sharma J. P., Prayogic Bhugol, Rastogi Publishers',
+              'Singh R. L. and Singh R. P. B., Elements of Practical Geography, Kalyani Publishers',
+              'Sinha M.M. P., Ucch Cartography, Rajesh Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Evolution & Principles of Cartography',
+                title: 'Nature of Cartography & Graphical Scales (08 Lectures)',
                 topics: [
-                  'Evolution of Cartography as a scientific discipline; Cartography as a communication system; Types and classification of maps',
-                  'Base map preparation, compilation, generalizations, map design, and typography'
+                  'Nature and Scope of Cartography; Scale - Concept, Types, and Application',
+                  'Graphical Construction of Simple Scale, Comparative Scale, and Diagonal Scale'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Thematic Mapping & Cartographic Representation',
+                title: 'Weather Maps & Forecasting Technology (08 Lectures)',
                 topics: [
-                  'Thematic maps: Principles, data types, Choropleth mapping (Class interval selection methods: Equal interval, Quantile, Natural breaks), Dasymetric mapping, Isopleth mapping, Dot method'
+                  'Weather Map: Difference between Climate and Weather, Significance of weather maps',
+                  'Study and Interpretation of Daily Weather Maps; Cloud types and symbols',
+                  'Methods of interpretation of daily weather maps, Development of weather forecasting technology (Satellite meteorology, Radar, IMD models)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Digital Cartography & Modern Mapping Systems',
+                title: 'Map Projections Construction & Properties (08 Lectures)',
                 topics: [
-                  'Shift from analog to digital cartography; Spatial data models; Coordinate reference systems (WGS84, UTM); Computer-assisted cartography'
+                  'Map Projections: Concept, Classification, and Properties',
+                  'Graphical Construction and Properties of Cylindrical Equidistant and Cylindrical Equal Area Projection',
+                  'Conical Projection with One Standard Parallel and Two Standard Parallels',
+                  'Zenithal Equidistant Projection and Zenithal Equal Area Projection'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Topographical Maps of India (06 Lectures)',
+                topics: [
+                  'Topographical Map: Development of topographical mapping in India; Maps of Survey of India (SOI)',
+                  'Methods of study of Topographical maps; Interpretation of relief, drainage, vegetation, settlements, and communications'
                 ]
               }
             ]
@@ -3610,30 +3775,38 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'R. L. Singh and Rana P. B. Singh, Elements of Practical Geography',
-              'J. P. Sharma, Prayogik Bhugol, Rastogi Publications'
+              'Singh R. L. and Singh Rana P. B., Elements of Practical Geography, Kalyani Publishers',
+              'Sharma, J P, Prayogtmak Bhugol ki Rooprekha, Rastogi Publications',
+              'Sinha, M.M. P., Ucch Cartography, Rajesh Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Thematic Map Construction',
+                title: 'Scales Construction (15 Lectures)',
                 topics: [
-                  'Preparation of Choropleth map for population density and literacy distribution using equal intervals and standard deviation methods',
-                  'Preparation of Dot map for rural population distribution and Isopleth map for rainfall/temperature distribution'
+                  'Nature and Scope of Cartography; Scale - Concept and Application',
+                  'Construction of Simple Scale, Comparative Scale, and Diagonal Scale (Metric and British units)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Statistical Cartograms & Flow Maps',
+                title: 'Topographical Maps & Map Projections (15 Lectures)',
                 topics: [
-                  'Construction of Proportional Circles, Spheres, Divided Rectangles, and Pie diagrams for land use and sectoral workforce',
-                  'Construction of Traffic Flow Maps and Migration Flow Diagrams'
+                  'Study and Interpretation of Survey of India Topographical Maps',
+                  'Construction of Map Projections: Cylindrical Equidistant, Cylindrical Equal Area Projection',
+                  'Conical Projection with One and Two Standard Parallels',
+                  'Zenithal Equidistant and Zenithal Equal Area Projection'
                 ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['Submission of completed Cartography practical file and viva-voce']
               }
             ]
           },
           {
-            id: 'geo-mic-5-t1',
+            id: 'geo-mic-5-t',
             code: 'MIC-5 (T)',
             name: 'Human Geography (Theory - Minor)',
             paperType: 'Minor (MIC)',
@@ -3644,30 +3817,39 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.3 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'Majid Husain, Human Geography, Rawat Publications',
-              'Alka Gautam, Manav Bhugol, Sharda Pustak Bhawan'
+              'Bergwan, Edward E., Human Geography, Prentice Hall',
+              'Chandna R.C., Geography of Population, Kalyani Publishers',
+              'Hassan, M. I., Population Geography, Rawat Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Scope & Man-Environment Interactions',
+                title: 'Definition & Paradigms (06 Lectures)',
                 topics: [
-                  'Nature and scope of Human Geography; Environmental Determinism, Possibilism, and Neo-Determinism',
-                  'Major human races of the world and their distribution; Indian tribal groups (Santhal, Gond)'
+                  'Human Geography: Definition, Nature and Scope; Environmental Determinism, Possibilism, and Neo-Determinism'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Settlement Systems',
+                title: 'Population Dynamics & Migration (12 Lectures)',
                 topics: [
-                  'Rural settlement types and patterns; Urban settlement morphology and functional classification of towns'
+                  'Population Composition, Growth, Density and Distribution (World)',
+                  'Population Theory of Malthus; Demographic Transition Theory',
+                  'Migration: Types, Causes, and Consequences'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Settlements & Urbanization (12 Lectures)',
+                topics: [
+                  'Types and Pattern of Rural Settlements; Classification of Urban Settlements based on Function and Size; Trends and Patterns of Urbanization'
                 ]
               }
             ]
           },
           {
-            id: 'geo-mic-5-t2',
-            code: 'MIC-5 (T) / MIC-6 (T)',
+            id: 'geo-mic-5-p',
+            code: 'MIC-5 (P) / MIC-6 (T)',
             name: 'Geography of India and Bihar (Theory - Minor)',
             paperType: 'Minor (MIC)',
             credits: 2,
@@ -3677,16 +3859,36 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'D. R. Khullar, India: A Comprehensive Geography',
-              'S. P. Singh & R. P. Singh, Regional Geography of Bihar'
+              'Deshpande C. D., India: A Regional Interpretation, ICSSR',
+              'Sinha, V.N.P. et al., Bihar Ka Bhugol, Rajesh Publication'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Physical & Economic Framework of India & Bihar',
+                title: 'Relief & Drainage of India (06 Lectures)',
                 topics: [
-                  'Physiographic divisions and drainage of India; Indian Monsoon and agriculture',
-                  'Physiography and drainage of Bihar; Flood and drought problems in Bihar; Major agro-industries of Bihar'
+                  'India: Relief and Structure; Major Drainage System: Himalayan and Peninsular rivers'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Climate & Vegetation of India (04 Lectures)',
+                topics: [
+                  'Climate: Origin and Mechanism of Monsoon; Types of Soils and Natural Vegetation'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Agro-Based Industries (04 Lectures)',
+                topics: [
+                  'Agricultural Industry: Jute, Cotton, Sugar, and Paper Industry'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Geography of Bihar (06 Lectures)',
+                topics: [
+                  'Geography of Bihar: Structure and Physiography, Population Growth and Distribution, Agricultural Regions, Flood and Drought hazards'
                 ]
               }
             ]
@@ -3694,7 +3896,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-int-1',
             code: 'INT-1',
-            name: 'Summer Internship / Community Project',
+            name: 'Summer Internship / Community Survey Project',
             paperType: 'Internship',
             credits: 4,
             theoryMarks: 70,
@@ -3705,10 +3907,10 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Internship & Field Training',
+                title: 'Field Internship & Training Report',
                 topics: [
-                  'Mandatory 4-credit summer internship or field placement with government planning bodies, urban local bodies, GIS organizations, environmental NGOs, or community survey centers',
-                  'Submission of detailed Internship Project Report and Viva-Voce examination'
+                  'Field training / internship with GIS institutes, environmental agencies, urban local bodies (Patna Municipal Corporation / Urban Planning), or disaster authorities',
+                  'Preparation and submission of Internship Project Report and evaluation through Viva-Voce'
                 ]
               }
             ]
@@ -3730,46 +3932,52 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.6 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'Majid Husain, Evolution of Geographical Thought, Rawat Publications, Jaipur',
-              'R. D. Dikshit, Geographical Thought: A Contextual History of Ideas, Prentice-Hall of India',
-              'S. Adhikari, Fundamentals of Geographical Thought, Orient BlackSwan',
-              'David Harvey, Explanation in Geography, Edward Arnold'
+              'Adhikari, S., (2015) Fundamental of Geographical Thoughts, Orient Black Swan, New Delhi',
+              'Dikshit R. D., (1997) Geographical Thought: A Contextual History of Ideas, Prentice-Hall India',
+              'Hartshorne R., (1959) Perspectives on the Nature of Geography, Rand McNally and Co.',
+              'Husain Majid, (2014) Evolution of Geographical Thought, Rawat Publ., Jaipur and New Delhi',
+              'Johnston R. J., (1997) Geography and Geographers, Anglo-American Human Geography since 1945, Arnold, London',
+              'Kaushik, S.D., (2012) Bhaugolik Vichardhara Avam Vidhitantra, Rastogi Publication, Meerut',
+              'Martin Geoffrey J., (2005) All Possible Worlds: A History of Geographical Ideas, Oxford',
+              'Soja, Edward (1989) Post-modern Geographies, Verso / Rawat Publ.'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Early Geographical Thought: Classical Antiquity & Middle Ages',
+                title: 'Meaning & Relation of Geography with Other Sciences (10 Lectures)',
                 topics: [
-                  'Contributions of Greek Geographers: Homer, Thales, Anaximander, Hecataeus, Herodotus, Eratosthenes (measurement of earth circumference), Hipparchus, and Posidonius',
-                  'Contributions of Roman Geographers: Strabo (Geographia) and Ptolemy (Almagest, Guide to Geography)',
-                  'The Dark Age in Europe and Arab Geographers: Al-Balkhi, Al-Masudi, Al-Biruni (Kitab al-Hind), Al-Idrisi, Ibn Battuta, and Ibn Khaldun (Muqaddimah)',
-                  'Age of Exploration and Discoveries: Prince Henry the Navigator, Columbus, Vasco da Gama, Magellan; Revival of scientific geography (Bernhard Varenius - Geographia Generalis, Immanuel Kant)'
+                  'Meaning and Definition of Geography: Space, place, and environment',
+                  'Relation of Geography with Other Sciences (Natural Sciences and Social Sciences)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Foundations of Modern Geography: German & French Schools',
+                title: 'Contributions of Classical & Modern Geographers (15 Lectures)',
                 topics: [
-                  'Classical period of Modern Geography: Alexander von Humboldt (Cosmos) and Carl Ritter (Erdkunde) - Comparative Geography, Unity in Diversity',
-                  'German School: Friedrich Ratzel (Anthropogeographie, Politische Geographie, Lebensraum), Ferdinand von Richthofen, Alfred Hettner (Chorology)',
-                  'French School: Paul Vidal de la Blache (Tableau de la Geographie de la France, Possibilism, Genre de vie), Jean Brunhes, Emmanuel de Martonne'
+                  'Ancient Classical Geographers: Eratosthenes, Ptolemy, Strabo',
+                  'Arab Geographers: Al-Idrisi, Al-Masudi (Kitab Murad al-Dhahab)',
+                  'Founders of Modern Geography: Alexander von Humboldt (Cosmos) and Carl Ritter (Erdkunde)',
+                  'German and French Schools: Friedrich Ratzel, Paul Vidal de la Blache',
+                  'British Geographer: Halford J. Mackinder (Heartland Theory)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'British & American Schools & Dualisms in Geography',
+                title: 'Dualism & Dichotomies in Geography (10 Lectures)',
                 topics: [
-                  'British School: Halford J. Mackinder (Heartland Theory), Patrick Geddes, A. J. Herbertson (Natural regions)',
-                  'American School: William Morris Davis, Ellen Churchill Semple, Ellsworth Huntington (Climatic determinism), Carl O. Sauer (Cultural Landscape), Richard Hartshorne (The Nature of Geography - Areal Differentiation)',
-                  'Dualisms and Dichotomies in Geography: Systematic (General) vs Regional Geography; Physical vs Human Geography; Determinism vs Possibilism; Idiographic vs Nomothetic approaches'
+                  'Dualisms in Geography: Physical Geography vs Human Geography',
+                  'Environmental Determinism vs Possibilism and Neo-Determinism',
+                  'Systematic Geography vs Regional Geography'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Quantitative Revolution & Modern Paradigms',
+                title: 'Methodological Developments & Paradigms (15 Lectures)',
                 topics: [
-                  'Quantitative Revolution in Geography: Fred K. Schaefer critique of Hartshorne; Application of spatial analysis, models, and statistical techniques; Model building (Peter Haggett, Richard Chorley)',
-                  'Reactions to Positivism: Behavioural Geography, Humanistic Geography (Yi-Fu Tuan, Anne Buttimer), Radical and Marxist Geography (David Harvey), Feminist Geography, and Post-modernism in Geography'
+                  'Concept and Methodological Development in Geography',
+                  'Quantitative Revolution in Geography: Models and statistical spatial analysis',
+                  'Behaviouralism in Geography',
+                  'Applied Geography and Contemporary Trends'
                 ]
               }
             ]
@@ -3786,41 +3994,49 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
-              'C. R. Kothari, Research Methodology: Methods and Techniques, New Age International',
-              'H. N. Misra and V. P. Singh, Research Methodology in Geography, Rawat Publications'
+              'Creswell J., (1994) Research Design: Qualitative and Quantitative Approaches, Sage Publications',
+              'Dikshit, R. D. (2003) The Art and Science of Geography: Integrated Readings, Prentice-Hall of India',
+              'Kothari C.R., (2004) Research Methodology Methods and Techniques, New Age: New Delhi',
+              'Mukherjee, Neela, (1993) Participatory Rural Appraisal: Methodology and Application, Concept Publs.',
+              'Mukherjee, Neela (2002) Participatory Learning and Action: with 100 Field Methods, Concept Publs.',
+              'Robinson A., (1998) Writing Empirical Research Reports, Los Angeles',
+              'Stoddard R. H., (1982) Field Techniques and Research Methods in Geography, Kendall/Hunt',
+              'Wolcott, H. (1995) The Art of Fieldwork, Alta Mira Press'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Research Design & Formulation of Problems',
+                title: 'Research Concepts, Hypothesis & Techniques (12 Lectures)',
                 topics: [
-                  'Scientific Research in Geography: Nature, types (Pure vs Applied, Qualitative vs Quantitative, Exploratory, Descriptive, Explanatory)',
-                  'Identification and formulation of research problem; Literature review; Framing research objectives and hypotheses'
+                  'Research: Meaning, Nature, and Types',
+                  'Formulation of Hypothesis; Testing of hypothesis',
+                  'Research Methodology: Merits and demerits of Quantitative and Qualitative techniques'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Data Collection & Sampling Methods',
+                title: 'Field Survey Techniques & Sampling (10 Lectures)',
                 topics: [
-                  'Types and sources of data: Primary data vs Secondary data; Spatial data sources (Census, NSSO, IMD, Survey of India, Satellite data)',
-                  'Sampling techniques: Probability sampling (Simple random, Systematic, Stratified, Cluster) vs Non-probability sampling (Purposive, Quota, Snowball); Sample size determination'
+                  'Field Techniques: Merits, Demerits, and Selection criteria',
+                  'Data collection methods: Observation method, Questionnaire method, Schedule method, and Personal Interview method',
+                  'Sampling and its Types: Probability and Non-probability sampling techniques'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Field Survey Techniques & Questionnaire Design',
+                title: 'Case Study Method of Research (08 Lectures)',
                 topics: [
-                  'Field methods: Observation, Household socioeconomic survey, Focus group discussions (FGD), Key informant interviews; Designing of questionnaires and schedules',
-                  'Field survey ethics, spatial sampling in rural and urban environments'
+                  'Case Study Method of Research: Definition, nature, and significance',
+                  'Field Tools and instrumentation used in geographical field studies'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Report Writing & Academic Ethics',
+                title: 'Field Report Writing & Bibliography (10 Lectures)',
                 topics: [
-                  'Data analysis, interpretation, thematic mapping, and synthesis; Structure of a geographical research report / dissertation',
-                  'Citation and Referencing styles (APA, Harvard); Plagiarism rules, UGC guidelines on research integrity and academic writing'
+                  'Field Report: Aims and Objectives of study',
+                  'Data Analysis, Interpretation, Cartographic presentation, and Report Writing',
+                  'Referencing and Bibliography styles'
                 ]
               }
             ]
@@ -3837,36 +4053,49 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Thomas M. Lillesand, Ralph W. Kiefer and Jonathan W. Chipman, Remote Sensing and Image Interpretation, John Wiley & Sons',
-              'Paul A. Longley, Michael F. Goodchild, David J. Maguire, David W. Rhind, Geographic Information Systems and Science, Wiley',
-              'Kang-tsung Chang, Introduction to Geographic Information Systems, McGraw-Hill',
-              'Basudeb Bhatta, Remote Sensing and GIS, Oxford University Press'
+              'Campbell J. B., (2007) Introduction to Remote Sensing, Guilford Press',
+              'Jensen J. R., (2004) Introductory Digital Image Processing, Prentice Hall',
+              'Joseph, G. (2005) Fundamentals of Remote Sensing, Universities Press',
+              'Lillesand T. M., Kiefer R. W. and Chipman J. W., (2004) Remote Sensing and Image Interpretation, Wiley',
+              'Maltiyar K. K. & Maltiyar S. R., Concept of Cartography, Remote Sensing and GIS, Rajesh publication',
+              'Nag P. and Kudra, M., (1998) Digital Remote Sensing, Concept, New Delhi',
+              'Rees W. G., (2001) Physical Principles of Remote Sensing, Cambridge University Press',
+              'Chauniyal, D.D. (2010) Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Principles of Remote Sensing & EMR',
+                title: 'Concepts & History of Remote Sensing (07 Lectures)',
                 topics: [
-                  'Remote Sensing: Definition, components, history, and development; Advantages and limitations',
-                  'Electromagnetic Radiation (EMR): Electromagnetic spectrum, Atmospheric windows, Interaction of EMR with atmosphere (Scattering - Rayleigh, Mie, Non-selective; Absorption) and earth surface features (Spectral reflectance curve of vegetation, soil, and water)'
+                  'Remote Sensing: Basic Concept, Historic Development, and Significance',
+                  'Elements and characteristics of Satellite Imageries'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Platforms, Sensors & Image Interpretation',
+                title: 'Stages of Remote Sensing & EMR Interaction (07 Lectures)',
                 topics: [
-                  'Platforms: Airborne vs Spaceborne platforms; Orbits: Geostationary vs Sun-synchronous orbits',
-                  'Sensors: Active vs Passive sensors; Resolutions in Remote Sensing: Spatial, Spectral, Radiometric, and Temporal resolution',
-                  'Major satellite systems: LANDSAT, SPOT, IRS (LISS-III, LISS-IV, Cartosat), Sentinel; Elements of visual image interpretation (Tone, Texture, Pattern, Shape, Size, Shadow, Association)'
+                  'Process and Stages of Remote Sensing',
+                  'Electromagnetic Spectrum (EMR): Divisions, bands, and atmospheric windows',
+                  'Interaction of EMR with Earth Surface Features: Spectral reflectance of vegetation, water, and soil'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Geographical Information System (GIS) Fundamentals',
+                title: 'Sensors, Platforms & Applications (06 Lectures)',
                 topics: [
-                  'GIS: Definition, components (Hardware, Software, Data, People, Methods), and functions; Coordinate systems and Map projections in GIS (WGS84, UTM)',
-                  'Spatial Data Models: Raster Data Model (pixels, grid cells) vs Vector Data Model (points, lines, polygons); Attributes and Relational Database Management Systems (RDBMS)',
-                  'Global Positioning System (GPS): Segments (Space, Control, User), working principle of trilateration, and applications in spatial data collection'
+                  'Sensors: Active and Passive sensors, Scanning systems',
+                  'Platforms: Airborne and Spaceborne platforms; Satellite orbits',
+                  'Applications of Remote Sensing in resource mapping and disaster monitoring'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Geographic Information System (GIS) (10 Lectures)',
+                topics: [
+                  'GIS: Definition, Basic Elements, Functions, and Uses',
+                  'Spatial Data Structure: Raster and Vector Data Structures; Attributes and Topology',
+                  'Applications of GIS in spatial analysis and urban planning'
                 ]
               }
             ]
@@ -3883,25 +4112,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Kang-tsung Chang, Introduction to Geographic Information Systems, McGraw-Hill',
-              'Basudeb Bhatta, Remote Sensing and GIS, Oxford University Press'
+              'Lillesand, Kiefer and Chipman, Remote Sensing and Image Interpretation, Wiley',
+              'Maltiyar K. K. & Maltiyar S. R., Concept of Cartography, Remote Sensing and GIS',
+              'Chauniyal, D.D., Sudur Samvedan evam Bhogolik Suchana Pranali'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Visual Satellite Image Interpretation',
+                title: 'Geo-referencing & Aerial Photos (06 Lectures)',
                 topics: [
-                  'Visual interpretation of False Color Composite (FCC) satellite imagery (IRS/LANDSAT/Sentinel) for land use/land cover mapping using tracing and overlay method'
+                  'Geo-referencing of scanned maps using Ground Control Points (GCPs)',
+                  'Aerial Photo Interpretation: Stereoscopic viewing and visual recognition of physical and cultural features'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'GIS Software Hands-on (QGIS / ArcGIS)',
+                title: 'Vector Layer Creation (06 Lectures)',
                 topics: [
-                  'Georeferencing of scanned topographical sheets / satellite imagery using Ground Control Points (GCPs)',
-                  'Digitization: Creation of point, line, and polygon shapefiles / layers (roads, drainage, settlements, administrative boundaries)',
-                  'Attribute data entry, table joining, query building, and thematic map layout design with scale bar, north arrow, and legend'
+                  'Creating Point, Line, and Polygon Shapefiles in GIS environment (QGIS / ArcGIS)',
+                  'On-screen Digitization and editing of spatial features'
                 ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Spatial Analysis & Thematic Mapping (08 Lectures)',
+                topics: [
+                  'Creating Point Data from coordinate tables (CSV / Excel)',
+                  'Buffer Analysis (proximity analysis)',
+                  'Creating Choropleth Map in GIS; Satellite Image Classification and Visual Interpretation'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['GIS laboratory record notebook and viva-voce examination']
               }
             ]
           },
@@ -3916,12 +4160,37 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
             fileSize: '1.3 MB',
             pyqCount: 2,
-            recommendedBooks: ['R. L. Singh, Elements of Practical Geography'],
+            recommendedBooks: [
+              'Singh R. L. and Singh R. P. B., Elements of Practical Geography',
+              'Sarkar, A., Practical Geography: A Systematic Approach'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Regional Mapping of Bihar and India',
-                topics: ['Mapping drainage basins of Bihar, flood vulnerable zones, and cropping intensity maps of Bihar districts']
+                title: 'Bar & Pie Diagrams, Band Graph (04 Lectures)',
+                topics: [
+                  'Bar Diagrams: Simple, Multiple, and Compound',
+                  'Pie Diagram and Band Graph for Indian and Bihar demographic/economic data'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Statistical Data Presentation (04 Lectures)',
+                topics: [
+                  'Graphical Presentation: Age-Sex Pyramid, Dot Method, and Proportionate Circle Diagram'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Toposheet Interpretation (02 Lectures)',
+                topics: [
+                  'Toposheet: Interpretation of Physical and Cultural Features on Survey of India 1:50,000 maps'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['Submission of practical record file and viva-voce']
               }
             ]
           },
@@ -3937,23 +4206,88 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'R. P. Misra, Regional Planning: Concepts, Techniques, Policies and Case Studies, Concept Publishing',
-              'K. V. Sundaram, Urban and Regional Planning in India, Vikas Publishing'
+              'Friedmann J. and Alonso W. (1975) Regional Policy - Readings in Theory and Applications, MIT Press',
+              'Gore C. G., (1984) Regions in Question, Methuen, London',
+              'Blij H. J. De, Geography: Regions and Concepts, John Wiley and Sons'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Concepts of Region & Regional Disparities',
+                title: 'Concept of Region & Need for Planning (11 Lectures)',
                 topics: [
-                  'Concept of Region, types (Formal, Functional, Planning regions); Regional disparities in India and planning strategies for backward regions (Drought prone, Hill, and Tribal area planning)'
+                  'Concept of Region, Types of Regions (Formal, Functional, Planning)',
+                  'Need for Regional Planning and balanced regional development'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Theories of Regional Growth',
+                title: 'Indicators of Development & Regional Disparity (09 Lectures)',
                 topics: [
-                  'Growth Pole Theory of Francois Perroux; Cumulative Causation Theory of Gunnar Myrdal; Five Year Plans and NITI Aayog initiatives in India'
+                  'Indicators of Development (Economic, Social, Infrastructure)',
+                  'Regional Disparity in India: Trends and spatial patterns'
                 ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Growth Pole Model & Problem Regions (12 Lectures)',
+                topics: [
+                  'Growth Pole Model of Francois Perroux',
+                  'Concept of PURA (Provision of Urban Amenities to Rural Areas)',
+                  'Planning for Problem Regions: Hilly Regions and Flood Prone Regions'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Multilevel Planning & Rural Connectivity (08 Lectures)',
+                topics: [
+                  'Multilevel Planning; Panchayati Raj Institutions',
+                  'Prime Minister Gramin Sadak Yojana (PMGSY) and rural development'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-8-p',
+            code: 'MIC-8 (P)',
+            name: 'Statistical Methods in Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Mahmood A., Statistical Methods in Geographical Studies, Concept',
+              'Sarkar, A., Quantitative Geography: Techniques and Presentations'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Central Tendency & Graphs (06 Lectures)',
+                topics: [
+                  'Measurement of Central Tendency: Mean, Median, Mode',
+                  'Centro-Graphic Techniques: Histogram and Frequency Polygon'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Measures of Dispersion (06 Lectures)',
+                topics: [
+                  'Measures of Dispersion: Range, Mean Deviation, Standard Deviation, Quartile Deviation'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Correlation & Regression (08 Lectures)',
+                topics: [
+                  'Karl Pearson Coefficient of Correlation, Spearman Rank Correlation, Scatter Diagram, and Regression Analysis'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['Practical file evaluation and viva-voce']
               }
             ]
           }
@@ -3974,45 +4308,54 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.6 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'R. P. Misra, K. V. Sundaram and V. L. S. Prakasa Rao, Regional Development Planning in India: A New Strategy, Vikas Publishing',
-              'John Friedmann and William Alonso, Regional Development and Planning: A Reader, MIT Press',
-              'K. V. Sundaram, Geography and Planning, Concept Publishing, New Delhi',
-              'Alka Gautam, Regional Planning and Development, Sharda Pustak Bhawan'
+              'Friedmann J. and Alonso W. (1975) Regional Policy - Readings in Theory and Applications, MIT Press',
+              'Gore C. G., (1984) Regions in Question: Space, Development Theory and Regional Policy, Methuen',
+              'Haynes J., (2008) Development Studies, Polity Short Introduction Series',
+              'Johnson E. A. J., (1970) The Organization of Space in Developing Countries, MIT Press',
+              'Peet R., (1999) Theories of Development, The Guilford Press, New York',
+              'UNDP (2001-04) Human Development Report, Oxford University Press',
+              'World Bank, World Development Report, Oxford University Press',
+              'Blij H. J. De, (1971) Geography: Regions and Concepts, John Wiley and Sons',
+              'Claval P.I., (1998) An Introduction to Regional Geography, Blackwell Publishers'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Concept of Region, Regionalism & Typologies',
+                title: 'Concept of Region, Regional Hierarchy & Planning Need (10 Lectures)',
                 topics: [
-                  'Concept of Region and Space in Geography; Regionalism vs Nationalism; Evolution of regional planning',
-                  'Classification of Regions: Formal (Homogeneous), Functional (Nodal), and Planning (Administrative) regions; Hierarchy of planning regions (Macro, Meso, Micro)'
+                  'Concept of Region: Definition, space, and boundary characteristics',
+                  'Types of Regions: Formal (Homogeneous), Functional (Nodal), and Planning Regions',
+                  'Regional Hierarchy (Macro, Meso, Micro planning regions)',
+                  'Need for Regional Planning in developing economies'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Theories & Models of Regional Development',
+                title: 'Indicators, Disparities & Regionalization (15 Lectures)',
                 topics: [
-                  'Theories of Regional Development: Growth Pole Theory of Francois Perroux and its spatial modification by Jacques Boudeville',
-                  'Cumulative Causation Model of Gunnar Myrdal (Spread effects vs Backwash effects)',
-                  'Core-Periphery Model of John Friedmann; Polarization and Trickle-down theory of Albert O. Hirschman',
-                  'Export Base Model and Sector Theory of Colin Clark'
+                  'Indicators of Development: Economic, social, and infrastructural indices',
+                  'Regional Disparity in India: Inter-state and intra-state disparities',
+                  'Planning Region: Characteristics and requisites of an Ideal Planning Region',
+                  'Regionalization: Concept, principles, and quantitative/qualitative Methods of Delineation'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Regional Disparities & Planning Experience in India',
+                title: 'Planning of Remote & Problem Regions (10 Lectures)',
                 topics: [
-                  'Regional disparities in India: Indicators of regional imbalance (Economic, Infrastructure, Social well-being)',
-                  'Planning strategies in India: Multilevel planning (National, State, District, Block, and Panchayat levels; 73rd and 74th Constitutional Amendments)',
-                  'Target Area Programs: Command Area Development Program (CADP), Drought Prone Area Program (DPAP), Desert Development Program (DDP), Hill Area Development Program (HADP), Tribal Area Development Program (TADP)'
+                  'Planning of Remote and Problem Regions: Hilly Regions Development Programs',
+                  'Tribal Region Planning: Socio-cultural preservation and economic integration',
+                  'Flood Prone Region Planning: Case of North Bihar Plains flood mitigation and management'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Institutional Framework & Case Studies',
+                title: 'Models of Regional Planning & Decentralization (15 Lectures)',
                 topics: [
-                  'From Planning Commission to NITI Aayog: Vision, structural changes, Aspirational Districts Programme (ADP)',
-                  'Regional planning case studies: Damodar Valley Corporation (DVC), National Capital Region (NCR), and Backward Region Planning in Bihar'
+                  'Models of Regional Planning: Growth Pole Model of Francois Perroux and its spatial application',
+                  'Rostow Model of Stages of Economic Growth',
+                  'Concept of PURA (Provision of Urban Amenities to Rural Areas)',
+                  'Public participation in regional planning and the role of Panchayati Raj System (73rd Constitutional Amendment)'
                 ]
               }
             ]
@@ -4020,54 +4363,52 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-mjc-14-t',
             code: 'MJC-14 (T)',
-            name: 'Social Geography (Theory)',
+            name: 'Research Methodology (Theory)',
             paperType: 'Major (MJC)',
             credits: 5,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
-            fileSize: '1.6 MB',
+            fileSize: '1.5 MB',
             pyqCount: 5,
             recommendedBooks: [
-              'Aijazuddin Ahmad, Social Geography, Rawat Publications, Jaipur',
-              'John Eyles, Social Geography in International Perspective, Croom Helm',
-              'D. M. Smith, Where the Grass is Greener: Living in an Unequal World, Penguin Books',
-              'R. D. Tata, Social Geography of India, Concept Publishing'
+              'Creswell J., Research Design: Qualitative and Quantitative Approaches, Sage',
+              'Kothari C.R., Research Methodology: Methods and Techniques, New Age',
+              'Mahmood A., Statistical Methods in Geographical Studies, Concept',
+              'Misra H. N. and Singh V. P., Research Methodology in Geography, Rawat Publications'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Nature, Scope & Evolution of Social Geography',
+                title: 'Scientific Research & Design in Geography (12 Lectures)',
                 topics: [
-                  'Nature, scope, and development of Social Geography; Relationship with Sociology and Anthropology; Philosophical approaches (Positivist, Welfare, Radical, Humanistic)',
-                  'Concept of Social Space, Social Structure, and Social Processes'
+                  'Foundations of Geographical Research: Pure vs Applied research, Exploratory, Descriptive, and Explanatory designs',
+                  'Formulation of Research Problem, Literature Review, and Framing of Research Objectives and Hypotheses'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Social Diversity: Caste, Tribe, Religion & Language in India',
+                title: 'Sampling Design & Hypothesis Testing (12 Lectures)',
                 topics: [
-                  'Social differentiation and diversity in India: Caste system (Origin, spatial distribution, caste-based occupational segregation, changes post-independence)',
-                  'Tribes in India: Spatial distribution, classification (L. P. Vidyarthi), tribal assimilation and integration issues',
-                  'Linguistic diversity: Major language families of India (Indo-Aryan, Dravidian, Austro-Asiatic, Tibeto-Burman) and linguistic reorganization of states',
-                  'Religious diversity: Distribution of major religious communities in India and minority geography'
+                  'Advanced Spatial Sampling: Probability and non-probability sampling; Sampling errors and standard error of mean',
+                  'Hypothesis Testing: Formulation of Null (H0) and Alternative (H1) hypotheses; Parametric vs Non-parametric tests (t-test, Chi-square test, ANOVA)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Social Well-being, Quality of Life & Spatial Justice',
+                title: 'Multivariate Analysis & Spatial Models (14 Lectures)',
                 topics: [
-                  'Social Well-being: Concept, indicators of quality of life (Housing, Health, Education, Income, Nutrition)',
-                  'Human Development Index (HDI) and Multidimensional Poverty Index (MPI): Methodology and spatial disparities in India and Bihar',
-                  'Spatial Justice: Access to healthcare, educational infrastructure, public amenities, and gender disparities in society'
+                  'Multiple Regression Analysis and Residuals mapping in geography',
+                  'Principal Component Analysis (PCA) and Factor Analysis for Regional Composite Index calculation',
+                  'Spatial autocorrelation and pattern analysis'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Social Change, Modernization & Spatial Segregation',
+                title: 'Dissertation Structuring & Academic Integrity (12 Lectures)',
                 topics: [
-                  'Social Change and Modernization in India: Sanskritization, Westernization, and Urbanization',
-                  'Social segregation in Indian cities: Ghettos, Slums, Gated communities, and spatial exclusion of marginalized communities'
+                  'Structure of geographical research report / dissertation; Presentation of maps, diagrams, tables',
+                  'Referencing styles (APA, Harvard), Ethics in Research, Plagiarism guidelines and UGC-CARE norms'
                 ]
               }
             ]
@@ -4084,45 +4425,53 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Savindra Singh, Disaster Management, Pravalika Publications, Allahabad',
-              'R. B. Singh, Natural Hazards and Disaster Management, Rawat Publications',
-              'National Disaster Management Division, Disaster Management in India, Ministry of Home Affairs, New Delhi',
-              'D. C. Dhameja, Disaster Management: Emerging Challenges and Solutions, Allied Publishers'
+              'Government of India. (1997) Vulnerability Atlas of India, BMTPC, Ministry of Urban Development',
+              'Kapur, A. (2010) Vulnerable India: A Geographical Study of Disasters, Sage Publication',
+              'Modh, S. (2010) Managing Natural Disaster: Hydrological, Marine and Geological Disasters, Macmillan',
+              'Singh, R.B. (2005) Risk Assessment and Vulnerability Analysis, IGNOU, New Delhi',
+              'Singh, R. B. (ed.), (2006) Natural Hazards and Disaster Management: Vulnerability and Mitigation, Rawat Publications',
+              'Sinha, A. (2001) Disaster Management: Lessons Drawn and Strategies for Future, New United Press',
+              'Stoltman, J.P. et al. (2004) International Perspectives on Natural Disasters, Kluwer Academic',
+              'Singh Jagbir (2007) Disaster Management: Future Challenges and Opportunities, I.K. International'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Concepts of Hazard, Disaster, Vulnerability & Risk',
+                title: 'Disasters: Definition, Concepts & Risk (10 Lectures)',
                 topics: [
-                  'Disaster concepts: Hazard (Natural vs Anthropogenic), Disaster, Vulnerability (Physical, Socio-economic, Environmental), Capacity, and Risk assessment (Risk = Hazard x Vulnerability / Capacity)',
-                  'Classification of Disasters: Geophysical, Hydrological, Meteorological, Climatological, Biological, and Technological disasters'
+                  'Disasters: Definition, Concepts, and distinction between Hazards and Disasters',
+                  'Classification and Principles of Disaster Management',
+                  'Components of Disaster Management; Risk and Vulnerability Assessment of disasters'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Major Disasters in India: Causes, Consequences & Zones',
+                title: 'Natural Disasters in India (10 Lectures)',
                 topics: [
-                  'Floods: Causes, flood frequency, flood inundation mapping; Floods in Bihar (Kosi, Gandak, Bagmati plains) and mitigation',
-                  'Droughts: Meteorological, Hydrological, and Agricultural droughts; Drought Prone areas in India and Southern Bihar',
-                  'Earthquakes: Seismic zoning map of India, structural vulnerability, and earthquake resistant building codes',
-                  'Tropical Cyclones: Bay of Bengal cyclones, storm surges, coastal vulnerability, and cyclone warning systems in India',
-                  'Landslides and Avalanches: Factors, Landslide Hazard Zonation (LHZ) in Himalayan and Western Ghats regions'
+                  'Natural Disasters in India: Causes, Impact, and Spatial Distribution',
+                  'Floods in India (with special reference to North Bihar rivers - Kosi, Gandak, Bagmati)',
+                  'Droughts: Meteorological, Hydrological, and Agricultural droughts (South Bihar and Peninsular plateau)',
+                  'Earthquakes: Seismic zoning of India, structural damages, and vulnerability',
+                  'Tropical Cyclones: Bay of Bengal cyclones and coastal surge impacts'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Disaster Management Cycle & Mitigation Strategies',
+                title: 'Human Induced Disasters (10 Lectures)',
                 topics: [
-                  'Disaster Management Cycle: Pre-disaster phase (Prevention, Mitigation, Preparedness, Early warning systems), During-disaster phase (Evacuation, Search and Rescue, Emergency relief), Post-disaster phase (Damage assessment, Rehabilitation, Reconstruction, Building Back Better)',
-                  'Structural vs Non-structural mitigation measures'
+                  'Human Induced Disasters: Technological and Industrial Disasters',
+                  'Moral Disasters, Stampedes, and Urban Hazards',
+                  'Fire Disasters, Road and Railway Accidents: Responsible causes, systemic failures, and impacts'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Institutional Framework & Community Preparedness',
+                title: 'Response, Mitigation & Institutional Framework (10 Lectures)',
                 topics: [
-                  'Disaster Management Act 2005: National Disaster Management Authority (NDMA), State Disaster Management Authority (SDMA), District Disaster Management Authority (DDMA), National Disaster Response Force (NDRF)',
-                  'Community-Based Disaster Management (CBDM): Indigenous knowledge, community contingency plans, role of youth, NGOs, and civil society; Sendai Framework for Disaster Risk Reduction (2015-2030)'
+                  'Response and Mitigation to Disasters: Pre-disaster Preparedness, Early Warning Systems',
+                  'Role of Institutional Bodies: National Disaster Management Authority (NDMA), National Institute of Disaster Management (NIDM), SDRF',
+                  'Indigenous Knowledge and Community-Based Disaster Management (CBDM)',
+                  "Do's and Don'ts during and post disasters; Disaster warning mechanisms"
                 ]
               }
             ]
@@ -4139,47 +4488,32 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Savindra Singh, Disaster Management, Pravalika Publications',
-              'R. B. Singh, Disaster Management and Risk Reduction, Rawat Publications'
+              'Government of India, Vulnerability Atlas of India',
+              'Singh, R. B., Natural Hazards and Disaster Management, Rawat Publications',
+              'Sinha, A., Disaster Management: Lessons Drawn and Strategies for Future'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Disaster Risk Mapping & Vulnerability Profiling',
+                title: 'Field Work & Project Report on Specific Disasters (10 Lectures)',
                 topics: [
-                  'Mapping of Seismic Hazard Zones of India using GIS/manual techniques',
-                  'Preparation of Flood Hazard Zonation Map of Bihar using historical flood level data and toposheets',
-                  'Drought vulnerability mapping and preparation of Drought Index (Standardized Precipitation Index - SPI)'
+                  'Field Work and Preparation of Project Report on any one disaster topic:',
+                  'Natural: Flood, Drought, Earthquake, or Riverbank Erosion',
+                  'Human Induced: Fire Hazards, Electric Short Circuits, Bursting of domestic Gas Cylinder, Chemical Disasters, Industrial Accidents, Road-Rail Accidents, or Municipal Solid Waste problems'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Disaster Preparedness Plan & Mock Drill Report',
+                title: 'Mapping of Natural Disasters in India (10 Lectures)',
                 topics: [
-                  'Preparation of Institutional / Village Disaster Management Plan (VDMP)',
-                  'Participation in emergency mock drill, first aid training, and preparation of a detailed Field Hazard Assessment Report'
+                  'Cartographic mapping and analysis of Natural Disasters in India: Causes, impact, and distribution of Flood zones, Drought vulnerability, Earthquake seismic zones, and Cyclone tracks'
                 ]
-              }
-            ]
-          },
-          {
-            id: 'geo-mic-8-p',
-            code: 'MIC-8 (P)',
-            name: 'Statistical Methods in Geography (Practical - Minor)',
-            paperType: 'Practical / Lab',
-            credits: 2,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
-            fileSize: '1.3 MB',
-            pyqCount: 3,
-            recommendedBooks: ['Aslam Mahmood, Statistical Methods in Geographical Studies'],
-            units: [
+              },
               {
-                unitNumber: 1,
-                title: 'Statistical Calculations for Geographical Analysis',
+                unitNumber: 3,
+                title: 'Project Report Evaluation & Viva-Voce',
                 topics: [
-                  'Calculation of Mean, Median, Mode, Standard Deviation, and Spearman Rank Correlation for regional socioeconomic data'
+                  'End Semester Examination (ESE 70 marks): 40 marks Written Test on practical syllabus + 30 marks Viva-Voce on the submitted Field Project Report'
                 ]
               }
             ]
@@ -4196,23 +4530,75 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'Savindra Singh, Environmental Geography, Prayag Pustak Bhawan',
-              'Alka Gautam, Environmental Geography, Sharda Pustak Bhawan'
+              'Chandna R. C., Environmental Geography, Kalyani, Ludhiana',
+              'Singh S., Environmental Geography, Prayag Pustak Bhawan, Allahabad',
+              'Singh, Savindra, Paryavaran Bhugol'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Ecosystem & Biodiversity',
+                title: 'Ecology & Ecosystems (08 Lectures)',
                 topics: [
-                  'Ecosystem concepts, components, and food web; Biodiversity hotspots and conservation measures in India'
+                  'Environmental Geography: Meaning and Scope, Ecology and Eco-system, Terrestrial and Aquatic Eco-systems'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Pollution & Sustainable Development',
+                title: 'Environmental Pollution & Standards (08 Lectures)',
                 topics: [
-                  'Major forms of pollution (Air, Water, Soil); Global warming and climate change; Sustainable Development Goals (SDGs)'
+                  'Environmental Pollution: Air pollution, Water pollution, Noise pollution, Soil pollution, and remedial measures; International standards of drinking water'
                 ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Environmental Crisis & Global Issues (08 Lectures)',
+                topics: [
+                  'Environmental Crisis: Causes and mitigation; Major global issues with special reference to India: Ozone layer depletion, Natural disasters (Drought, Flood)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'River Cleaning, Water Contamination & Hazards (06 Lectures)',
+                topics: [
+                  'Cleaning of rivers, Contamination of groundwater (Arsenic and Fluoride in Bihar/Bengal), Natural hazards and disasters, Radiation hazards, Acid rain'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'geo-mic-9-p',
+            code: 'MIC-9 (P)',
+            name: 'Environmental Geography (Practical - Minor)',
+            paperType: 'Practical / Lab',
+            credits: 1,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+            fileSize: '1.3 MB',
+            pyqCount: 2,
+            recommendedBooks: [
+              'Singh, Savindra, Paryavaran Bhugol',
+              'Singh R. L., Elements of Practical Geography'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Weather Diagrams & Analysis (05 Lectures)',
+                topics: [
+                  'Interpretation of Weather Maps, Hythergraph, Climograph, and Wind Rose diagram'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Fieldwork on Local Environmental Issues (05 Lectures)',
+                topics: [
+                  'Field work and Preparation of Project Report on local environmental issues (Water quality, solid waste dumping, pollution hotspots)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Record of Practical Work & Viva-Voce',
+                topics: ['Submission of practical record notebook and viva-voce examination']
               }
             ]
           }
@@ -4224,55 +4610,59 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-mjc-16-t',
             code: 'MJC-16 (T)',
-            name: 'Research Methodology (Theory)',
+            name: 'Social Geography (Theory)',
             paperType: 'Major (MJC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
             fileSize: '1.5 MB',
-            pyqCount: 4,
+            pyqCount: 5,
             recommendedBooks: [
-              'Aslam Mahmood, Statistical Methods in Geographical Studies, Rajesh Publications',
-              'C. R. Kothari, Research Methodology: Methods and Techniques, New Age International',
-              'H. N. Misra and V. P. Singh, Research Methodology in Geography, Rawat Publications',
-              'Stephen Flowerdew and David Martin, Methods in Human Geography: A Guide for Students Doing a Research Project, Prentice Hall'
+              'Ahmed A., (1999) Social Geography, Rawat Publications',
+              'Casino V. J. D. Jr., (2009) Social Geography: A Critical Introduction, Wiley Blackwell',
+              'Cater J. and Jones T., (2000) Social Geography: An Introduction to Contemporary Issues, Hodder Arnold',
+              'Smith D. M., (1977) Human Geography: A Welfare Approach, Edward Arnold, London',
+              'Smith D. M., (1994) Geography and Social Justice, Blackwell, Oxford',
+              'Smith S. J., Pain R., Marston S. A., Jones J. P., (2009) The SAGE Handbook of Social Geographies',
+              'Sopher, David (1980): An Exploration of India, Cornell University Press, Ithaca',
+              'Valentine G., (2001) Social Geographies: Space and Society, Prentice Hall'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Advanced Research Philosophy & Epistemology',
+                title: 'Social Geography & Migration Dynamics (10 Lectures)',
                 topics: [
-                  'Philosophical foundations of Geographical Research: Positivism, Critical Rationalism, Realism, Hermeneutics, and Phenomenological research',
-                  'Inductive vs Deductive approaches; Theory construction, conceptual models, and hypothesis testing'
+                  'Social Geography: Concept, Nature, and Scope',
+                  'Social Space and Social Relations',
+                  'Migration: Social Causes and Consequences; Out-migration patterns in Bihar and impacts on family structures'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Advanced Sampling & Parametric / Non-Parametric Tests',
+                title: 'Social Categories & Spatial Distribution (10 Lectures)',
                 topics: [
-                  'Sampling designs for spatial and regional research; Standard error of mean and proportion',
-                  'Hypothesis testing: Formulation of Null (H0) and Alternative (H1) hypotheses; Type I and Type II errors; Level of significance (alpha)',
-                  'Parametric tests: Student t-test (One-sample, Two-sample, Paired), F-test, Analysis of Variance (One-way and Two-way ANOVA)',
-                  'Non-parametric tests: Chi-Square (test of goodness of fit, test of independence of attributes), Mann-Whitney U-test'
+                  'Social Categories in India: Caste, Religion, and Race',
+                  'Spatial distribution of Caste groups and social segregation',
+                  'Religious diversity and linguistic distribution in India'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Multivariate Analysis & Spatial Modeling',
+                title: 'Welfare, Social Wellbeing & Social Infrastructure (10 Lectures)',
                 topics: [
-                  'Multiple Regression Analysis: Equation, partial regression coefficients, Coefficient of Multiple Determination (R-squared), Multicollinearity problems',
-                  'Introduction to Factor Analysis, Principal Component Analysis (PCA) for regional composite index calculation',
-                  'Spatial autocorrelation and Moran I statistic in spatial analysis'
+                  'Geography of Welfare and Social Wellbeing: Concept and Components',
+                  'Healthcare facilities and disparities',
+                  'Housing and Living conditions; Educational attainment - Concepts, access, and regional problems'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Thesis Structuring, Academic Ethics & Research Publication',
+                title: 'Inclusion, Exclusion, Slums & Social Planning (10 Lectures)',
                 topics: [
-                  'Writing a research proposal and dissertation; Chapterization, presenting maps, tables, graphs, and statistical models',
-                  'Research ethics: Informed consent, confidentiality, avoiding fabrication, falsification, and plagiarism (Turnitin / Urkund norms)',
-                  'UGC Consortium for Academic and Research Ethics (UGC-CARE) list, peer review process, and publishing research papers'
+                  'Geography of Social Inclusion and Exclusion; Spatial Marginalization',
+                  'Slums and Urban Poverty; Social Conflicts and Communal Tension',
+                  'Social Planning in India: Welfare schemes, affirmative action, and inclusive development'
                 ]
               }
             ]
@@ -4291,33 +4681,11 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Field Research, Data Synthesis & Dissertation Submission',
+                title: 'Field Research, Geospatial Analysis & Dissertation Submission',
                 topics: [
-                  'Comprehensive 12-credit independent research dissertation under faculty guidance on a chosen topic in Geomorphology, Climatology, Environmental Geography, Urban Planning, Agricultural Disparities, Social Geography, or GIS application',
-                  'Extensive field work, empirical data collection, geospatial mapping, statistical hypothesis testing, and complete thesis drafting',
-                  'Formal presentation and Viva-Voce defense before the External University Board of Examiners'
-                ]
-              }
-            ]
-          },
-          {
-            id: 'geo-mic-9-p',
-            code: 'MIC-9 (P)',
-            name: 'Environmental Geography (Practical - Minor)',
-            paperType: 'Practical / Lab',
-            credits: 1,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
-            fileSize: '1.3 MB',
-            pyqCount: 2,
-            recommendedBooks: ['Savindra Singh, Environmental Geography'],
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Environmental Quality Assessment',
-                topics: [
-                  'Calculation and mapping of Air Quality Index (AQI), Water Quality testing parameters (pH, TDS, Turbidity) in local water bodies'
+                  'Comprehensive 12-credit independent research dissertation under faculty supervisor guidance on a chosen empirical problem in Geomorphology, Climatology, Environmental Geography, Regional Planning, Social Geography, or RS & GIS Application',
+                  'Field data collection, questionnaire survey, spatial data mapping, statistical analysis, hypothesis verification, and formal thesis presentation',
+                  'Viva-Voce defense before the University Board of External and Internal Examiners'
                 ]
               }
             ]
@@ -4334,22 +4702,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 3,
             recommendedBooks: [
-              'Thomas M. Lillesand, Remote Sensing and Image Interpretation',
-              'Basudeb Bhatta, Remote Sensing and GIS'
+              'Campbell J. B., Introduction to Remote Sensing, Guilford Press',
+              'Jensen J. R., Introductory Digital Image Processing, Prentice Hall',
+              'Joseph, G., Fundamentals of Remote Sensing, United Press India',
+              'Lillesand T. M., Kiefer R. W. and Chipman J. W., Remote Sensing and Image Interpretation, Wiley',
+              'Maltiyar K. K. & Maltiyar S. R., Concept of Cartography, Remote Sensing and GIS, Rajesh publication',
+              'Chauniyal, D.D., Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Remote Sensing Principles',
+                title: 'Remote Sensing Concepts & Development (07 Lectures)',
                 topics: [
-                  'Principles of Remote Sensing, EMR interaction with atmosphere and earth surfaces; Sensor resolutions; Visual image interpretation elements'
+                  'Remote Sensing: Meaning and Concepts, Historic Development, Significance, and Utility of Remote Sensing'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'GIS Components & Spatial Data',
+                title: 'EMR Spectrum & Reflectance (07 Lectures)',
                 topics: [
-                  'GIS hardware, software, data components; Raster and Vector data models; Applications of GIS in environmental and regional planning'
+                  'Electromagnetic Spectrum, Types of Spectrums, Atmospheric Windows, Reflectance, and Spectral Signatures'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Sensors, Platforms & Applications (07 Lectures)',
+                topics: [
+                  'Sensors, Platforms (Airborne, Spaceborne), and Applications of Remote Sensing in land and water monitoring'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'GIS: Definition, Elements & Applications (09 Lectures)',
+                topics: [
+                  'Geographic Information System (GIS): Definition, Basic Functions and Uses, Basic Elements of GIS, Spatial Analysis, and Applications of GIS'
                 ]
               }
             ]
@@ -4365,14 +4751,37 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
             fileSize: '1.3 MB',
             pyqCount: 2,
-            recommendedBooks: ['Basudeb Bhatta, Remote Sensing and GIS'],
+            recommendedBooks: [
+              'Lillesand T. M., Kiefer R. W. and Chipman J. W., Remote Sensing and Image Interpretation, Wiley',
+              'Maltiyar K. K. & Maltiyar S. R., Concept of Cartography, Remote Sensing and GIS, Rajesh publication',
+              'Chauniyal, D.D., Sudur Samvedan evam Bhogolik Suchana Pranali, Sharda Pustak Bhawan'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'GIS Digitization & Map Layout',
+                title: 'Aerial Photo Interpretation (03 Lectures)',
                 topics: [
-                  'Georeferencing of toposheets, creation of point/line/polygon vector layers, and map export with title and scale in QGIS'
+                  'Aerial Photo Interpretation: Elements of Visual Interpretation (Tone, texture, pattern, shadow, size, shape)'
                 ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Satellite Image Interpretation (03 Lectures)',
+                topics: [
+                  'Satellite Image Interpretation, False Color Composite (FCC) analysis, Introduction to Digital Image Processing'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Geo-Referencing & Digitization Procedure (04 Lectures)',
+                topics: [
+                  'Procedure of Geo-referencing of maps and On-screen Digitization of point, line, and polygon features in GIS'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Practical Record and Viva-Voce',
+                topics: ['GIS practical exercise record file and viva-voce']
               }
             ]
           }
