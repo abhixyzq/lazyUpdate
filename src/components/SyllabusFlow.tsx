@@ -17,6 +17,16 @@ import {
   Share2,
   Table,
   ExternalLink,
+  Award,
+  BookOpen,
+  CheckCircle2,
+  FileText,
+  Info,
+  Layers,
+  Sparkles,
+  HelpCircle,
+  Clock,
+  Check,
 } from 'lucide-react';
 
 interface SyllabusFlowProps {
@@ -42,6 +52,21 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
   const [selectedSemester, setSelectedSemester] = useState<number>(1);
   const [activeSubjectId, setActiveSubjectId] = useState<string>('bca-101');
   const [isCreditsTableOpen, setIsCreditsTableOpen] = useState(false);
+  const [creditTableTab, setCreditTableTab] = useState<'current' | 'framework' | 'exam'>('current');
+
+  // Helper for colored paper type badges
+  const getPaperTypeBadge = (paperType: string) => {
+    if (paperType.includes('Major')) return { label: 'Major', bg: 'bg-amber-400/20 text-amber-300 border-amber-500/40' };
+    if (paperType.includes('Minor')) return { label: 'Minor', bg: 'bg-emerald-400/20 text-emerald-300 border-emerald-500/40' };
+    if (paperType.includes('Multidisciplinary')) return { label: 'MDC', bg: 'bg-purple-400/20 text-purple-300 border-purple-500/40' };
+    if (paperType.includes('Ability')) return { label: 'AEC', bg: 'bg-pink-400/20 text-pink-300 border-pink-500/40' };
+    if (paperType.includes('Skill')) return { label: 'SEC', bg: 'bg-cyan-400/20 text-cyan-300 border-cyan-500/40' };
+    if (paperType.includes('Value Added')) return { label: 'VAC', bg: 'bg-orange-400/20 text-orange-300 border-orange-500/40' };
+    if (paperType.includes('Internship')) return { label: 'Internship', bg: 'bg-teal-400/20 text-teal-300 border-teal-500/40' };
+    if (paperType.includes('Research')) return { label: 'Research', bg: 'bg-indigo-400/20 text-indigo-300 border-indigo-500/40' };
+    if (paperType.includes('Practical')) return { label: 'Practical', bg: 'bg-sky-400/20 text-sky-300 border-sky-500/40' };
+    return { label: 'Core', bg: 'bg-blue-400/20 text-blue-300 border-blue-500/40' };
+  };
 
   // Sections configuration matching official PU structure
   const sectionsToDisplay = useMemo(() => {
@@ -134,6 +159,21 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
     }
     return currentCourse.officialPdfs?.annualHons || '#';
   }, [activePaper, selectedSemester, currentCourse]);
+
+  // Dynamic Semester Credits and Marks Stats
+  const semCreditsStats = useMemo(() => {
+    const papers = currentSemesterData.papers || [];
+    const totalCredits = papers.reduce((sum, p) => sum + (p.credits || 0), 0);
+    const totalTheory = papers.reduce((sum, p) => sum + (p.theoryMarks || 0), 0);
+    const totalInternal = papers.reduce((sum, p) => sum + (p.internalMarks || 0), 0);
+    return {
+      totalCredits,
+      totalTheory,
+      totalInternal,
+      grandTotal: totalTheory + totalInternal,
+      paperCount: papers.length,
+    };
+  }, [currentSemesterData]);
 
   // WhatsApp Share
   const handleShare = () => {
@@ -476,42 +516,384 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
             </p>
           </div>
 
-          {/* Credits Table Collapsible */}
-          <div className="rounded-2xl border border-blue-900/80 bg-[#091b36] overflow-hidden shadow-md">
+          {/* Upgraded Interactive Credits & Examination Structure Table */}
+          <div className="rounded-3xl border border-blue-800/80 bg-gradient-to-b from-[#0a1e3d] to-[#07162c] overflow-hidden shadow-2xl transition-all">
+            {/* Header Trigger */}
             <button
               onClick={() => setIsCreditsTableOpen(!isCreditsTableOpen)}
-              className="flex w-full items-center justify-between p-3 text-xs sm:text-sm font-black text-cyan-400 hover:bg-blue-950/40 transition"
+              className="flex w-full items-center justify-between p-3.5 sm:p-4 text-left hover:bg-blue-900/30 transition group"
             >
-              <span className="flex items-center gap-1.5">
-                <Table className="h-4 w-4" /> Credits & Marks Distribution
-              </span>
-              <ChevronDown
-                className={`h-4 w-4 text-cyan-400 transition-transform duration-200 ${
-                  isCreditsTableOpen ? 'rotate-180' : ''
-                }`}
-              />
+              <div className="flex items-center gap-2.5 sm:gap-3">
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-600/30 border border-cyan-400/30 text-cyan-300 shadow-inner shrink-0 group-hover:scale-105 transition">
+                  <Table className="h-5 w-5" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-xs sm:text-sm font-black text-white group-hover:text-cyan-300 transition">
+                      Credits & Examination Structure
+                    </span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-bold">
+                      CBCS NEP-2020
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mt-0.5">
+                    {getOrdinal(selectedSemester)} Sem: <span className="text-cyan-300 font-bold">{semCreditsStats.paperCount} Papers</span> • <span className="text-amber-300 font-bold">{semCreditsStats.totalCredits} Credits</span> • <span className="text-emerald-300 font-bold">{semCreditsStats.grandTotal} Marks</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 shrink-0">
+                <div className="hidden sm:flex items-center gap-1 text-[11px] font-bold text-cyan-300">
+                  <span>{isCreditsTableOpen ? 'Hide Details' : 'View Full Table'}</span>
+                </div>
+                <div className="h-7 w-7 rounded-xl bg-blue-950 border border-blue-800 flex items-center justify-center text-cyan-300 group-hover:border-cyan-400 transition">
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-300 ${
+                      isCreditsTableOpen ? 'rotate-180 text-cyan-300' : 'text-slate-400'
+                    }`}
+                  />
+                </div>
+              </div>
             </button>
 
+            {/* Collapsible Content */}
             {isCreditsTableOpen && (
-              <div className="p-3 pt-0 text-xs border-t border-blue-900/60 space-y-2 bg-[#061426]">
-                <div className="grid grid-cols-3 gap-2 text-center pt-2">
-                  <div className="p-2 rounded-xl bg-blue-950/80 border border-blue-900">
-                    <div className="text-[10px] text-slate-400">Total Credits</div>
-                    <div className="text-sm font-black text-white">20 - 22</div>
+              <div className="p-3.5 sm:p-4 pt-0 border-t border-blue-900/60 space-y-3.5 bg-[#051326] animate-in fade-in duration-200">
+                
+                {/* 1. Quick Stats Metric Cards */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3">
+                  <div className="p-2.5 rounded-2xl bg-[#091f3e] border border-blue-800/80 shadow-xs">
+                    <div className="text-[10px] uppercase font-bold text-slate-400">Semester Papers</div>
+                    <div className="text-base sm:text-lg font-black text-white mt-0.5 flex items-center gap-1.5">
+                      <BookOpen className="h-4 w-4 text-cyan-400" />
+                      {semCreditsStats.paperCount} Subjects
+                    </div>
                   </div>
-                  <div className="p-2 rounded-xl bg-blue-950/80 border border-blue-900">
-                    <div className="text-[10px] text-slate-400">End-Sem Marks</div>
-                    <div className="text-sm font-black text-cyan-300">70 / Paper</div>
+
+                  <div className="p-2.5 rounded-2xl bg-[#091f3e] border border-blue-800/80 shadow-xs">
+                    <div className="text-[10px] uppercase font-bold text-slate-400">Total Credits</div>
+                    <div className="text-base sm:text-lg font-black text-amber-300 mt-0.5 flex items-center gap-1.5">
+                      <Award className="h-4 w-4 text-amber-400" />
+                      {semCreditsStats.totalCredits} Credits
+                    </div>
                   </div>
-                  <div className="p-2 rounded-xl bg-blue-950/80 border border-blue-900">
-                    <div className="text-[10px] text-slate-400">Internal Marks</div>
-                    <div className="text-sm font-black text-amber-300">30 / Paper</div>
+
+                  <div className="p-2.5 rounded-2xl bg-[#091f3e] border border-blue-800/80 shadow-xs">
+                    <div className="text-[10px] uppercase font-bold text-slate-400">End-Sem (ESE)</div>
+                    <div className="text-base sm:text-lg font-black text-cyan-300 mt-0.5 flex items-center gap-1.5">
+                      <FileText className="h-4 w-4 text-cyan-400" />
+                      70 / Paper
+                    </div>
+                  </div>
+
+                  <div className="p-2.5 rounded-2xl bg-[#091f3e] border border-blue-800/80 shadow-xs">
+                    <div className="text-[10px] uppercase font-bold text-slate-400">Internal (CIA)</div>
+                    <div className="text-base sm:text-lg font-black text-emerald-300 mt-0.5 flex items-center gap-1.5">
+                      <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+                      30 / Paper
+                    </div>
                   </div>
                 </div>
+
+                {/* 2. Interactive Navigation Tabs */}
+                <div className="flex rounded-2xl bg-[#08172c] p-1 border border-blue-900/80 gap-1">
+                  <button
+                    onClick={() => setCreditTableTab('current')}
+                    className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 ${
+                      creditTableTab === 'current'
+                        ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                        : 'text-slate-400 hover:text-white hover:bg-blue-950/50'
+                    }`}
+                  >
+                    <span>📋 {getOrdinal(selectedSemester)} Sem Papers</span>
+                  </button>
+
+                  <button
+                    onClick={() => setCreditTableTab('framework')}
+                    className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 ${
+                      creditTableTab === 'framework'
+                        ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                        : 'text-slate-400 hover:text-white hover:bg-blue-950/50'
+                    }`}
+                  >
+                    <span>🏛️ 4-Year CBCS (160 Cr)</span>
+                  </button>
+
+                  <button
+                    onClick={() => setCreditTableTab('exam')}
+                    className={`flex-1 py-1.5 px-2 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 ${
+                      creditTableTab === 'exam'
+                        ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                        : 'text-slate-400 hover:text-white hover:bg-blue-950/50'
+                    }`}
+                  >
+                    <span>📝 Exam (70+30)</span>
+                  </button>
+                </div>
+
+                {/* TAB 1: CURRENT SEMESTER PAPERS TABLE */}
+                {creditTableTab === 'current' && (
+                  <div className="space-y-2">
+                    <div className="rounded-2xl border border-blue-900/80 overflow-hidden bg-[#07172e]">
+                      <div className="overflow-x-auto">
+                        <table className="w-full text-left border-collapse text-xs">
+                          <thead>
+                            <tr className="border-b border-blue-800/80 bg-[#0a2347] text-cyan-200">
+                              <th className="py-2.5 px-3 font-black">Paper Code & Type</th>
+                              <th className="py-2.5 px-3 font-black">Subject Title</th>
+                              <th className="py-2.5 px-3 font-black text-center">Credits</th>
+                              <th className="py-2.5 px-3 font-black text-right">Marks (ESE + CIA)</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-blue-900/50 text-slate-300">
+                            {currentSemesterData.papers.map((p) => {
+                              const isActive = activePaper?.id === p.id;
+                              const badge = getPaperTypeBadge(p.paperType);
+
+                              return (
+                                <tr
+                                  key={p.id}
+                                  onClick={() => setActiveSubjectId(p.id)}
+                                  className={`cursor-pointer transition-colors ${
+                                    isActive
+                                      ? 'bg-cyan-500/15 text-white font-bold'
+                                      : 'hover:bg-blue-900/30'
+                                  }`}
+                                >
+                                  <td className="py-2.5 px-3 whitespace-nowrap">
+                                    <div className="flex items-center gap-1.5">
+                                      <span className="font-black text-white">{p.code}</span>
+                                      <span className={`text-[9px] px-1.5 py-0.5 rounded-md border font-extrabold ${badge.bg}`}>
+                                        {badge.label}
+                                      </span>
+                                    </div>
+                                  </td>
+                                  <td className="py-2.5 px-3">
+                                    <div className="font-medium truncate max-w-[200px] sm:max-w-[260px] text-slate-200">
+                                      {p.name}
+                                    </div>
+                                  </td>
+                                  <td className="py-2.5 px-3 text-center whitespace-nowrap">
+                                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-black text-[11px] border border-amber-400/30">
+                                      {p.credits} Cr
+                                    </span>
+                                  </td>
+                                  <td className="py-2.5 px-3 text-right whitespace-nowrap">
+                                    <span className="text-cyan-300 font-bold">{p.theoryMarks}</span>
+                                    <span className="text-slate-500 mx-1">+</span>
+                                    <span className="text-amber-300 font-bold">{p.internalMarks}</span>
+                                    <span className="text-slate-500 mx-1">=</span>
+                                    <span className="text-white font-black">{p.theoryMarks + p.internalMarks}</span>
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                          <tfoot>
+                            <tr className="bg-[#0a2347]/90 border-t border-cyan-500/40 text-xs font-black">
+                              <td className="py-2.5 px-3 text-cyan-300" colSpan={2}>
+                                Semester Total ({semCreditsStats.paperCount} Papers)
+                              </td>
+                              <td className="py-2.5 px-3 text-center text-amber-300">
+                                {semCreditsStats.totalCredits} Credits
+                              </td>
+                              <td className="py-2.5 px-3 text-right text-emerald-300">
+                                {semCreditsStats.grandTotal} Marks
+                              </td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                    <p className="text-[10px] text-slate-400 italic text-center">
+                      💡 Click any paper row to instantly view its prescribed Units & Topics below.
+                    </p>
+                  </div>
+                )}
+
+                {/* TAB 2: 4-YEAR CBCS DEGREE FRAMEWORK (160 CREDITS) */}
+                {creditTableTab === 'framework' && (
+                  <div className="space-y-2.5 text-xs">
+                    <div className="rounded-2xl border border-blue-900/80 bg-[#081830] p-3 space-y-2">
+                      <div className="flex items-center justify-between border-b border-blue-900/60 pb-2">
+                        <span className="font-black text-amber-300 flex items-center gap-1.5">
+                          <Layers className="h-4 w-4 text-amber-400" />
+                          Official Bihar 4-Year CBCS Degree Framework
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-black">
+                          Total 160 Credits
+                        </span>
+                      </div>
+
+                      <div className="space-y-1.5 pt-1">
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">1. Major Core Courses (MJC-1 to MJC-16)</span>
+                            <span className="text-[10px] text-slate-400">16 Courses across Semesters I to VIII</span>
+                          </div>
+                          <span className="text-amber-300 font-black text-xs px-2 py-0.5 rounded-md bg-amber-400/10 border border-amber-400/20">
+                            80 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">2. Minor Courses (MIC-1 to MIC-10)</span>
+                            <span className="text-[10px] text-slate-400">10 Courses across Semesters I to VIII</span>
+                          </div>
+                          <span className="text-emerald-300 font-black text-xs px-2 py-0.5 rounded-md bg-emerald-400/10 border border-emerald-400/20">
+                            32 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">3. Multidisciplinary Courses (MDC-1 to MDC-3)</span>
+                            <span className="text-[10px] text-slate-400">3 Courses in Semesters I, II, III</span>
+                          </div>
+                          <span className="text-purple-300 font-black text-xs px-2 py-0.5 rounded-md bg-purple-400/10 border border-purple-400/20">
+                            09 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">4. Ability Enhancement Courses (AEC-1 to AEC-4)</span>
+                            <span className="text-[10px] text-slate-400">MIL (Hindi/Urdu/Eng), EVS, Disaster Mgmt, Sports/NSS</span>
+                          </div>
+                          <span className="text-pink-300 font-black text-xs px-2 py-0.5 rounded-md bg-pink-400/10 border border-pink-400/20">
+                            08 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">5. Skill Enhancement Courses (SEC-1 to SEC-3)</span>
+                            <span className="text-[10px] text-slate-400">IT Tools, Big Data, SPSS, Presentation, AWS, etc.</span>
+                          </div>
+                          <span className="text-cyan-300 font-black text-xs px-2 py-0.5 rounded-md bg-cyan-400/10 border border-cyan-400/20">
+                            09 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">6. Value Added Courses (VAC-1 to VAC-2)</span>
+                            <span className="text-[10px] text-slate-400">Constitutional Values, Ayurveda, Swachh Bharat, Fit India</span>
+                          </div>
+                          <span className="text-orange-300 font-black text-xs px-2 py-0.5 rounded-md bg-orange-400/10 border border-orange-400/20">
+                            06 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">7. Summer Internship (INT-1)</span>
+                            <span className="text-[10px] text-slate-400">4-Week Institutional Internship in Semester V</span>
+                          </div>
+                          <span className="text-teal-300 font-black text-xs px-2 py-0.5 rounded-md bg-teal-400/10 border border-teal-400/20">
+                            04 Credits
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between p-2 rounded-xl bg-[#0c234a]/80 border border-blue-800/60">
+                          <div>
+                            <span className="font-black text-white block">8. Research Project / Dissertation (RP-1)</span>
+                            <span className="text-[10px] text-slate-400">Independent Dissertation under Faculty Guide in Sem VIII</span>
+                          </div>
+                          <span className="text-indigo-300 font-black text-xs px-2 py-0.5 rounded-md bg-indigo-400/10 border border-indigo-400/20">
+                            12 Credits
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Degree Exit Options Banner */}
+                      <div className="mt-3 p-2.5 rounded-xl bg-blue-950/70 border border-cyan-500/30 text-[11px] text-slate-300 space-y-1">
+                        <span className="font-black text-cyan-300 block">🎓 Multiple Entry & Exit Options (NEP 2020):</span>
+                        <ul className="list-disc pl-4 space-y-0.5 text-[10px] text-slate-300">
+                          <li><b className="text-white">1st Year Exit (40 Credits):</b> Under Graduate Certificate</li>
+                          <li><b className="text-white">2nd Year Exit (80 Credits):</b> Under Graduate Diploma</li>
+                          <li><b className="text-white">3rd Year Exit (120 Credits):</b> Bachelor Degree</li>
+                          <li><b className="text-white">4th Year Complete (160 Credits):</b> Bachelor Degree with Honours / Research</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* TAB 3: OFFICIAL EXAM & EVALUATION PATTERN */}
+                {creditTableTab === 'exam' && (
+                  <div className="space-y-3 text-xs">
+                    <div className="rounded-2xl border border-blue-900/80 bg-[#081830] p-3 sm:p-3.5 space-y-3">
+                      <div>
+                        <div className="flex items-center justify-between border-b border-blue-900/60 pb-2">
+                          <span className="font-black text-cyan-300 flex items-center gap-1.5">
+                            <Clock className="h-4 w-4 text-cyan-400" />
+                            End-Semester Examination (ESE - 70 Marks)
+                          </span>
+                          <span className="text-[10px] font-bold text-slate-400">3 Hours Duration</span>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2.5">
+                          <div className="p-2.5 rounded-xl bg-[#092244] border border-blue-800">
+                            <span className="text-[10px] font-bold text-amber-300 block uppercase">Part - A (Compulsory)</span>
+                            <div className="text-sm font-black text-white mt-1">10 × 2 = 20 Marks</div>
+                            <p className="text-[10px] text-slate-400 mt-0.5">Objective / Multiple Choice Questions (All Compulsory)</p>
+                          </div>
+
+                          <div className="p-2.5 rounded-xl bg-[#092244] border border-blue-800">
+                            <span className="text-[10px] font-bold text-cyan-300 block uppercase">Part - B (Short Answer)</span>
+                            <div className="text-sm font-black text-white mt-1">4 × 5 = 20 Marks</div>
+                            <p className="text-[10px] text-slate-400 mt-0.5">Answer any 4 out of 6 short answer questions</p>
+                          </div>
+
+                          <div className="p-2.5 rounded-xl bg-[#092244] border border-blue-800">
+                            <span className="text-[10px] font-bold text-emerald-300 block uppercase">Part - C (Long Answer)</span>
+                            <div className="text-sm font-black text-white mt-1">3 × 10 = 30 Marks</div>
+                            <p className="text-[10px] text-slate-400 mt-0.5">Answer any 3 out of 5 descriptive long answer questions</p>
+                          </div>
+                        </div>
+
+                        {/* Strict OMR Rule */}
+                        <div className="mt-2.5 p-2 rounded-xl bg-red-950/40 border border-red-800/60 text-[11px] text-red-300 flex items-center gap-2">
+                          <span className="text-base shrink-0">⚠️</span>
+                          <span><b>Strict University Regulation:</b> Examinations shall strictly NOT be held on OMR Sheets. Answers must be written in official answer booklets.</span>
+                        </div>
+                      </div>
+
+                      {/* Continuous Internal Assessment (CIA - 30 Marks) */}
+                      <div className="border-t border-blue-900/60 pt-2.5">
+                        <div className="flex items-center justify-between pb-1.5">
+                          <span className="font-black text-amber-300 flex items-center gap-1.5">
+                            <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                            Continuous Internal Assessment (CIA - 30 Marks)
+                          </span>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+                          <div className="p-2 rounded-xl bg-[#071933] border border-blue-900 text-center">
+                            <div className="text-xs font-black text-white">15 Marks</div>
+                            <div className="text-[10px] text-slate-400">Written Mid-Term Test</div>
+                          </div>
+
+                          <div className="p-2 rounded-xl bg-[#071933] border border-blue-900 text-center">
+                            <div className="text-xs font-black text-white">10 Marks</div>
+                            <div className="text-[10px] text-slate-400">Seminar / Presentation / Quiz</div>
+                          </div>
+
+                          <div className="p-2 rounded-xl bg-[#071933] border border-blue-900 text-center">
+                            <div className="text-xs font-black text-white">05 Marks</div>
+                            <div className="text-[10px] text-slate-400">Attendance & Conduct</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
               </div>
             )}
           </div>
-
           {/* Subjects Selection Container */}
           <div className="rounded-3xl border border-blue-900/80 bg-[#091a36] p-4 shadow-xl space-y-3">
             
