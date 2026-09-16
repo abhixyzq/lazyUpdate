@@ -43,10 +43,58 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
   const [activeSubjectId, setActiveSubjectId] = useState<string>('bca-101');
   const [isCreditsTableOpen, setIsCreditsTableOpen] = useState(false);
 
-  // Filtered Courses by selected faculty
-  const filteredCourses = useMemo(() => {
-    if (selectedFaculty === 'All') return puCompleteSyllabusData;
-    return puCompleteSyllabusData.filter((c) => c.faculty === selectedFaculty);
+  // Sections configuration matching official PU structure
+  const sectionsToDisplay = useMemo(() => {
+    const SECTIONS_CONFIG = [
+      {
+        id: 'Social Science',
+        name: 'Faculty of Social Science',
+        icon: '🏛️',
+        badge: '7 Subjects',
+      },
+      {
+        id: 'Science',
+        name: 'Faculty of Science',
+        icon: '🔬',
+        badge: '5 Subjects',
+      },
+      {
+        id: 'Humanities',
+        name: 'Faculty of Humanities',
+        icon: '📚',
+        badge: '9 Subjects',
+      },
+      {
+        id: 'Commerce',
+        name: 'Faculty of Commerce',
+        icon: '💼',
+        badge: '5 Groups',
+      },
+      {
+        id: 'Vocational',
+        name: 'Vocational & Professional Courses',
+        icon: '💻',
+        badge: '3 Degrees',
+      },
+      {
+        id: 'Common NEP',
+        name: 'Compulsory NEP Modules (AEDP, AEC & MDC)',
+        icon: '🎯',
+        badge: '11 Modules',
+      },
+    ];
+
+    const targetSections =
+      selectedFaculty === 'All'
+        ? SECTIONS_CONFIG
+        : SECTIONS_CONFIG.filter((s) => s.id === selectedFaculty);
+
+    return targetSections
+      .map((sec) => ({
+        ...sec,
+        courses: puCompleteSyllabusData.filter((c) => c.faculty === sec.id),
+      }))
+      .filter((sec) => sec.courses.length > 0);
   }, [selectedFaculty]);
 
   // Selected Course
@@ -206,35 +254,58 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
             </div>
           </div>
 
-          {/* Clean 3-Column Grid of Course Cards */}
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
-            {filteredCourses.map((course) => (
-              <button
-                key={course.id}
-                onClick={() => {
-                  setSelectedCourseId(course.id);
-                  setSelectedSemester(1);
-                  const firstP = course.semesters[0]?.papers[0];
-                  if (firstP) setActiveSubjectId(firstP.id);
-                  setStep('semesters');
-                }}
-                className="group flex flex-col items-center justify-center rounded-2xl border border-blue-900/70 bg-[#091b36] p-2.5 sm:p-3 shadow-md hover:border-cyan-400 hover:bg-[#0f284e] active:scale-95 transition duration-150"
+          {/* Section-Wise Course Catalog (Organized by Faculty/Stream) */}
+          <div className="space-y-4">
+            {sectionsToDisplay.map((sec) => (
+              <div
+                key={sec.id}
+                className="rounded-3xl border border-blue-900/80 bg-[#081830] p-3.5 sm:p-4 shadow-xl space-y-3"
               >
-                {/* Clean White Squircle containing the vector icon */}
-                <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md transition-all duration-200 group-hover:scale-105 group-hover:shadow-cyan-400/20">
-                  {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
+                {/* Section Header with Icon and Count Badge */}
+                <div className="flex items-center justify-between border-b border-blue-800/60 pb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-base sm:text-lg">{sec.icon}</span>
+                    <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-white">
+                      {sec.name}
+                    </h3>
+                  </div>
+                  <span className="rounded-full border border-cyan-500/30 bg-cyan-950/70 px-2.5 py-0.5 text-[10px] font-bold text-cyan-300">
+                    {sec.badge}
+                  </span>
                 </div>
 
-                {/* Bold Course Short Code */}
-                <span className="mt-2 text-center text-xs font-black text-white tracking-tight leading-tight line-clamp-2 max-w-full group-hover:text-cyan-200">
-                  {course.shortCode}
-                </span>
+                {/* 3-Column Grid for courses belonging to this section */}
+                <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
+                  {sec.courses.map((course) => (
+                    <button
+                      key={course.id}
+                      onClick={() => {
+                        setSelectedCourseId(course.id);
+                        setSelectedSemester(1);
+                        const firstP = course.semesters[0]?.papers[0];
+                        if (firstP) setActiveSubjectId(firstP.id);
+                        setStep('semesters');
+                      }}
+                      className="group flex flex-col items-center justify-center rounded-2xl border border-blue-900/70 bg-[#091b36] p-2.5 sm:p-3 shadow-md hover:border-cyan-400 hover:bg-[#0f284e] active:scale-95 transition duration-150"
+                    >
+                      {/* Clean White Squircle containing the vector icon */}
+                      <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md transition-all duration-200 group-hover:scale-105 group-hover:shadow-cyan-400/20">
+                        {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
+                      </div>
 
-                {/* Degree / Type Subtitle */}
-                <span className="text-[10px] text-slate-400 line-clamp-1 mt-0.5">
-                  {course.faculty || course.stream}
-                </span>
-              </button>
+                      {/* Bold Course Short Code */}
+                      <span className="mt-2 text-center text-xs font-black text-white tracking-tight leading-tight line-clamp-2 max-w-full group-hover:text-cyan-200">
+                        {course.shortCode}
+                      </span>
+
+                      {/* Degree / Type Subtitle */}
+                      <span className="text-[10px] text-slate-400 line-clamp-1 mt-0.5">
+                        {course.degree ? course.degree.split(' ')[0] : course.faculty}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
