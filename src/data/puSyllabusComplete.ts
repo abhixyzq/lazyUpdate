@@ -670,67 +670,143 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-aec-1',
             code: 'AEC-1',
-            name: 'MIL (Modern Indian Language - Hindi / English / Urdu)',
+            name: 'MIL (Modern Indian Language - हिन्दी भाषा और सम्प्रेषण / English Communication)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
             fileSize: '950 KB',
-            recommendedBooks: ['Karyalayi Bhasha aur Sampreshan - Patna University Course Book'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Language & Communication Principles',
+                title: 'भाषा और सम्प्रेषण के सिद्धांत (Theory & Forms of Communication)',
                 topics: [
-                  'Nature, process and components of communication; Verbal, Non-verbal and written modes',
-                  'Official letter writing, drafting, noting, précis writing and comprehension'
+                  'सम्प्रेषण की परिभाषा, स्वरूप, प्रक्रिया, अवयव और महत्व (Nature and Process of Communication)',
+                  'सम्प्रेषण के विविध प्रकार: मौखिक सम्प्रेषण, लिखित सम्प्रेषण, अमौखिक/आंगिक सम्प्रेषण (Verbal, Non-Verbal & Body Language)',
+                  'सम्प्रेषण की प्रमुख बाधाएँ (Barriers to Effective Communication) और उनका व्यावहारिक निवारण',
+                  'प्रभावशाली सम्प्रेषण के 7 Cs (Seven Cs of Effective Communication)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'कार्यालयी हिन्दी एवं व्यावहारिक पत्राचार (Official Correspondence & Drafting)',
+                topics: [
+                  'कार्यालयी पत्राचार का स्वरूप: सरकारी पत्र (Official Letter), अर्ध-सरकारी पत्र (D.O. Letter), ज्ञापन (Memo), परिपत्र (Circular)',
+                  'टिप्पण (Official Noting) और प्रारूपण (Drafting) के नियम, प्रविधि एवं प्रारूप लेखन अभ्यास',
+                  'संक्षेपण (Précis Writing) के अनिवार्य नियम एवं पल्लवन (Elaboration of Thoughts) की विधि',
+                  'प्रेस विज्ञप्ति (Press Release) एवं कार्यालय आदेश (Office Order) का प्रारूप'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'भाषिक शुद्धता एवं व्यावहारिक व्याकरण (Applied Grammar & Vocabulary)',
+                topics: [
+                  'देवनागरी लिपि तथा हिन्दी वर्तनी के मानक नियम (केन्द्रीय हिन्दी निदेशालय के मानक नियम)',
+                  'वाक्य रचना, वाक्य शुद्धि (पदक्रम एवं अन्विति दोष), मुहावरे एवं लोकोक्तियाँ का व्यावहारिक प्रयोग',
+                  'प्रशासनिक एवं पारिभाषिक शब्दावली (Administrative Terminology: अंग्रेजी से हिन्दी अनुवाद एवं प्रयोग)',
+                  'वैकल्पिक अंग्रेजी मॉड्यूल: Reading comprehension, précis writing, official email & report writing'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'कार्यालयी हिन्दी – डॉ. रामकिशोर शर्मा, लोकभारती प्रकाशन, प्रयागराज',
+              'व्यावहारिक हिन्दी एवं रचना – डॉ. हरिमोहन, वाणी प्रकाशन, नई दिल्ली',
+              'सामान्य हिन्दी एवं सम्प्रेषण कौशल – पटना विश्वविद्यालय पाठ्यक्रम संकलन',
+              'English Communication: Fluency and Writing Skills – Cambridge University Press'
             ]
           },
           {
             id: 'eco-sec-1',
             code: 'SEC-1',
-            name: 'Skill Enhancement Course 1 (Spreadsheet Tools / IT / Public Speaking)',
+            name: 'Skill Enhancement Course 1 (Spreadsheet Tools / IT / रचनात्मक लेखन)',
             paperType: 'Skill Enhancement (SEC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '1.1 MB',
-            recommendedBooks: ['Advance Spreadsheet Tools & IT Applications, Wiley / Microsoft Press'],
+            fileSize: '1.2 MB',
+            pyqCount: 3,
             units: [
               {
                 unitNumber: 1,
-                title: 'Practical Skill Competencies',
+                title: 'ऑप्शन A: Advance Spreadsheet Tools (Excel Data Modeling)',
                 topics: [
-                  'Select from: Advance Spreadsheet Tools, Basic IT Tools, Public Speaking & Leadership, Creative Writing, Communication in Everyday Life',
-                  'Hands-on laboratory exercises, data analysis and practical demonstrations'
+                  'Templates, Efficiency, and Risk (Standard Deviation, Variance, Coefficient of Variation), Data Validation rules',
+                  'Advanced Functions: VLOOKUP, XLOOKUP, INDEX-MATCH, Nested IF, Array Formulae (Frequency, Mode)',
+                  'What-if-analysis: Goal-seek, Data tables, and Scenario Manager; Pivot Tables, Slicers, and Timelines',
+                  'Data Analysis ToolPak: Descriptive Statistics, Moving averages, Histogram, Covariance, Correlation, Regression'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Basic IT Tools & Cyber Hygiene (सूचना प्रौद्योगिकी)',
+                topics: [
+                  'Computer architecture, OS commands, Cloud storage (Google Drive, OneDrive, Digilocker)',
+                  'Word processing, professional report formatting, presentations and slide transitions',
+                  'Cyber hygiene: Passwords, two-factor authentication, phishing prevention, digital identity protection'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: रचनात्मक लेखन (Creative Writing in Hindi)',
+                topics: [
+                  'अभिव्यक्ति के विविध क्षेत्र: साहित्य, पत्रकारिता, विज्ञापन, भाषण एवं शब्द-अर्थ मीमांसा',
+                  'भाषा भंगिमा: औपचारिक-अनौपचारिक, मौखिक-लिखित, मानक भाषिक संदर्भ एवं वाक्य शुद्धि',
+                  'कथा-साहित्य, नाट्य-साहित्य, फीचर, साक्षात्कार और इलेक्ट्रॉनिक माध्यम के लिए पटकथा/संवाद लेखन'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Michael Alexander, Excel 2016 Power Programming with VBA, Wiley',
+              'Wayne Winston, Microsoft Excel Data Analysis and Business Modeling, PHI',
+              'साहित्य चिंतनः रचनात्मक आयाम – डॉ० रघुवंश',
+              'कथा-पटकथा – मन्नू भंडारी, वाणी प्रकाशन'
             ]
           },
           {
             id: 'eco-vac-1',
             code: 'VAC-1',
-            name: 'Value Added Course 1 (Constitutional Values / Ayurveda / Swachh Bharat)',
+            name: 'Value Added Course 1 (Constitutional Values / Ayurveda & Nutrition / Art of Being Happy)',
             paperType: 'Value Added (VAC)',
-            credits: 3,
+            credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '1.2 MB',
-            recommendedBooks: ['Constitutional Values & Fundamental Duties, LexisNexis / Govt. of India'],
+            fileSize: '1.1 MB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Ethics, Heritage & Life Values',
+                title: 'ऑप्शन A: Constitutional Values & Fundamental Duties (संवैधानिक मूल्य)',
                 topics: [
-                  'Select from: Constitutional Values & Fundamental Duties, Ayurveda and Nutrition, Art of Being Happy, Digital Empowerment, Financial Literacy, Swachh Bharat, Fit India',
-                  'Social engagement, community awareness surveys and ethical reflection'
+                  'The Constitution of India: Preamble, Federal Republic, Rule of Law, Separation of Powers, Secularism and Sarva Dharma Sambhava',
+                  'Constitutional Values: Justice (Social, Economic, Political), Liberty, Equality, and Fraternity',
+                  'Fundamental Duties (Article 51A): Sovereignty, unity and integrity of India; Scientific temper, environmental protection'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Ayurveda and Nutrition (आयुर्वेद एवं पोषण)',
+                topics: [
+                  'Introduction to Ayurveda: Tridosha (Vata, Pitta, Kapha), Dhatus, and Concept of Agni',
+                  'Dietetics in Ayurveda: Ahara (food) classification, seasonal diet (Ritucharya), daily regimen (Dinacharya)',
+                  'Nutritional disorders, gut health, lifestyle disorders (diabetes, obesity, hypertension) and Ayurvedic prevention'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Art of Being Happy (प्रसन्नता की कला)',
+                topics: [
+                  'Human Happiness: Philosophical traditions (Vedantic insights, Buddhism, Greek ethics)',
+                  'Psychological perspectives: Positive psychology, gratitude, mindfulness, emotional resilience',
+                  'Harmonious coexistence with self, family, community, and nature'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Durga Das Basu, Introduction to the Constitution of India, LexisNexis',
+              'Dr. Vasant Lad, The Complete Book of Ayurvedic Home Remedies, Harmony Books',
+              'The Constitution of India, Bare Act, Govt. of India'
             ]
           }
         ]
@@ -899,67 +975,146 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-aec-2',
             code: 'AEC-2',
-            name: 'Environmental Science',
+            name: 'Environmental Science (पर्यावरण विज्ञान)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '950 KB',
-            recommendedBooks: ['Environmental Studies by Erach Bharucha, UGC'],
+            fileSize: '1.1 MB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Ecosystems & Environmental Conservation',
+                title: 'Ecosystems, Natural Resources & Biodiversity (पारिस्थितिकी एवं जैव विविधता)',
                 topics: [
-                  'Ecosystem structure and function; Renewable and non-renewable natural resources',
-                  'Biodiversity conservation, pollution control, climate change, and environmental legislation in India'
+                  'Concept, structure and functions of ecosystem; Energy flow, food chains, food webs and ecological succession',
+                  'Renewable and non-renewable natural resources: Forest, Water, Land, and Clean Energy resources (Solar, Wind)',
+                  'Biodiversity: Genetic, Species, and Ecosystem diversity; Hotspots of biodiversity; In-situ and Ex-situ conservation',
+                  'Threats to biodiversity: Habitat loss, poaching of wildlife, human-wildlife conflicts'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Environmental Pollution, Climate Change & Waste Management (प्रदूषण एवं जलवायु परिवर्तन)',
+                topics: [
+                  'Types, causes, effects and control of Air, Water, Soil, Noise, and Thermal pollution',
+                  'Solid waste management: Municipal solid waste, E-waste, and Biomedical waste management protocols',
+                  'Global environmental issues: Climate change, Global warming, Greenhouse effect, Acid rain, Ozone layer depletion',
+                  'Disaster management protocols for floods, droughts, cyclones and landslides'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Environmental Policies, Laws & Sustainable Development (पर्यावरण कानून एवं सतत विकास)',
+                topics: [
+                  'Concept of Sustainable Development: UN Sustainable Development Goals (SDGs 2030)',
+                  'Environmental Protection Act 1986, Air Act 1981, Water Act 1974, Wildlife Protection Act 1972',
+                  'Environmental movements in India: Chipko, Silent Valley, Narmada Bachao; Role of traditional knowledge',
+                  'Field work: Visit to a local polluted site, ecosystem documentation, or clean campus audit'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Textbook of Environmental Studies for Undergraduate Courses – Erach Bharucha, Orient BlackSwan / UGC',
+              'Environmental Studies: From Crisis to Cure – R. Rajagopalan, Oxford University Press',
+              'पर्यावरण अध्ययन – डॉ. एस. के. पचौरी, विकास पब्लिशिंग हाउस, नई दिल्ली'
             ]
           },
           {
             id: 'eco-sec-2',
             code: 'SEC-2',
-            name: 'Skill Enhancement Course 2 (Big Data / AWS / Calligraphy / Personality)',
+            name: 'Skill Enhancement Course 2 (पटकथा लेखन / रंगमंच / Big Data Analytics)',
             paperType: 'Skill Enhancement (SEC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '1.1 MB',
-            recommendedBooks: ['Big Data Analytics, Hadoop & Spark, Wiley / Packt'],
+            fileSize: '1.2 MB',
+            pyqCount: 3,
             units: [
               {
                 unitNumber: 1,
-                title: 'Technical & Practical Skill Modules',
+                title: 'ऑप्शन A: पटकथा लेखन (Screenplay Writing)',
                 topics: [
-                  'Select from: Big Data Analysis, Beginners Course to Calligraphy, Introduction to Cloud Computing (AWS), Personality Development & Communication, Business Communication, पटकथा लेखन',
-                  'Hands-on implementation and laboratory exercises'
+                  'पटकथा लेखन का परिचय, मूल तत्व, संरचना और तकनीकी शब्दावली (Slugline, Action, Character, Dialogue, Transition)',
+                  'पटकथा लेखन में शोध (Research), चरित्र निर्माण, थ्री-एक्ट और फाइव-एक्ट संरचना',
+                  'वेबसीरीज, लघु फिल्म (Short Film), वृत्तचित्र (Documentary) और विज्ञापन फिल्म लेखन',
+                  'पटकथा का पाठ, समालोचनात्मक विश्लेषण एवं किसी मूल विचार को स्क्रीनप्ले में विकसित करने का अभ्यास'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: रंगमंच (Theatre & Dramatic Arts)',
+                topics: [
+                  'भरत मुनि कृत नाट्यशास्त्र (रस/नाट्य सिद्धांत) एवं हिन्दी का पारंपरिक व लोक रंगमंच',
+                  'प्रस्तुति-प्रक्रिया: आलेख चयन, पात्र चयन, दृश्य-परिकल्पना (प्रकाश, संगीत, वेशभूषा) एवं पूर्वाभ्यास (Rehearsal)',
+                  'अभिनय के चार प्रकार: वाचिक (Vachika), आंगिक (Angika), आहार्य (Aharya), सात्विक (Sattvika)',
+                  'थिएटर गेम्स, आशु अभिनय (Improvisation), संवाद-वाचन, मंच प्रबंधन (Stage Management) एवं ब्रोशर-निर्माण'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Big Data Analytics & Cloud Computing (AWS)',
+                topics: [
+                  'Understanding Big Data platform, 5Vs of Big Data, Hadoop Distributed File System (HDFS) and MapReduce',
+                  'Apache Spark architecture, in-memory computing, resilient distributed datasets (RDDs)',
+                  'Cloud computing fundamentals (AWS EC2, S3, RDS), virtualization, containerization basics'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'पटकथा कैसे लिखें: राजेंद्र पांडेय – वाणी प्रकाशन, दिल्ली',
+              'पटकथा लेखन : एक परिचय – मनोहर श्याम जोशी – राजकमल प्रकाशन',
+              'संक्षिप्त नाट्यशास्त्रम् – राधावल्लभ त्रिपाठी, वाणी प्रकाशन',
+              'पारंपरिक भारतीय रंगमंच – कपिला वात्स्यायन, NBT',
+              'Seema Acharya, Big Data Analytics, Wiley'
             ]
           },
           {
             id: 'eco-vac-2',
             code: 'VAC-2',
-            name: 'Value Added Course 2 (SEL / Gandhi / Panchakosha / Sports)',
+            name: 'Value Added Course 2 (भारतीय भक्ति परंपरा और मानव मूल्य / Yoga: Philosophy & Practice)',
             paperType: 'Value Added (VAC)',
-            credits: 3,
+            credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '1.1 MB',
-            recommendedBooks: ['Holistic Education & Ethics, University Publication'],
+            fileSize: '1.2 MB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Holistic Personality & Social Awareness',
+                title: 'ऑप्शन A: भारतीय भक्ति परंपरा और मानव मूल्य (Bhakti Tradition)',
                 topics: [
-                  'Select from: Social and Emotional Learning (SEL), Gandhi and Education, Panchakosha: Holistic Development of Personality, Sports for Life, Vedic Mathematics',
-                  'Experiential learning, community field visits and reflective projects'
+                  'भारतीय भक्ति परंपरा: अर्थ, दार्शनिक अवधारणा, विभिन्न संप्रदाय और सिद्धांत (शैव, वैष्णव, शाक्त, निर्गुण, सगुण)',
+                  'भारत की सांस्कृतिक एकता और भक्ति आंदोलन का अखिल भारतीय स्वरूप (उत्तर से दक्षिण, पूर्व से पश्चिम)',
+                  'प्रमुख भक्त संत एवं उनके विचार: कबीर, तुलसी, सूर, मीराबाई, रैदास, गुरु नानक, त्यागराज, तुकाराम, नामदेव, नरसिंह मेहता, चैतन्य महाप्रभु, ललद्यद, शंकरदेव',
+                  'मानव मूल्य, सामाजिक समरसता, करुणा, सेवा एवं वर्तमान समय में भक्ति की प्रासंगिकता (सर्वे एवं प्रोजेक्ट वर्क)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Yoga: Philosophy and Practice (योग: दर्शन एवं अभ्यास)',
+                topics: [
+                  'History and philosophy of Yoga; Significance of Asana, Pranayama, and Dhyana (Meditation)',
+                  'Patanjali Yogasutras: Asthanga Yoga (Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana, Samadhi)',
+                  'Chakras and energy centres; Surya Namaskara, selected Asanas and Nadishodhana Pranayama exercises'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Swachh Bharat & Community Service (स्वच्छ भारत)',
+                topics: [
+                  'Swachhata mission: History of hygiene and sanitation in India; Gandhi on cleanliness and dignity of labour',
+                  'Solid waste segregation, composting, rural and urban sanitation infrastructure, ODF protocols',
+                  'Community mobilization: Swachhata Pakhwada rallies, campus cleanups, and public awareness surveys'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'भारतीय साहित्य का समेकित इतिहास – डॉ. नगेंद्र, हिंदी माध्यम कार्यान्वयन निदेशालय, दिल्ली विश्वविद्यालय',
+              'भक्ति आंदोलन और भक्ति काव्य – शिव कुमार मिश्र, इलाहाबाद',
+              'Asanas, Pranayama and Mudra Bandh – Swami Satyananda Saraswati, Bihar Yoga Bharati, Munger',
+              'Patanjali Yogasutras – Commentary by Swami Vivekananda'
             ]
           }
         ]
@@ -1178,23 +1333,49 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-aec-3',
             code: 'AEC-3',
-            name: 'Disaster Risk Management',
+            name: 'Disaster Risk Management (आपदा जोखिम प्रबंधन)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
-            fileSize: '900 KB',
-            recommendedBooks: ['Disaster Management in India, Ministry of Home Affairs / NDMA'],
+            fileSize: '950 KB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Disaster Types & Mitigation Protocols',
+                title: 'Hazards, Disasters & Vulnerability Profile (आपदा एवं जोखिम की अवधारणा)',
                 topics: [
-                  'Natural and man-made disasters (floods, earthquakes, cyclones, industrial accidents)',
-                  'Disaster management cycle: prevention, mitigation, preparedness, relief, and rehabilitation in India (NDMA/SDRF guidelines)'
+                  'Hazards, Disasters, Vulnerability, and Risk: Definitions, classifications, and causal mechanisms',
+                  'Natural disasters in India: Floods (विशेषकर उत्तरी बिहार की कोशी, गंडक बाढ़ समस्या), Droughts, Earthquakes, Cyclones, Heatwaves',
+                  'Man-made & technological disasters: Chemical leaks, industrial fires, urban stampedes, transport accidents, epidemics',
+                  'Vulnerability assessment: Socio-economic, geographical, and infrastructural vulnerability'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Disaster Management Cycle & Institutional Architecture (आपदा प्रबंधन चक्र एवं कानून)',
+                topics: [
+                  'Disaster management cycle: Pre-disaster prevention & mitigation; Early warning dissemination systems',
+                  'During-disaster response: Search, rescue, evacuation, emergency triage, and relief distribution',
+                  'Post-disaster recovery: Rehabilitation, reconstruction, damage assessment, psychosocial support, and Build Back Better',
+                  'Institutional framework in India: Disaster Management Act 2005, NDMA, SDMA (Bihar SDMA), NDRF, SDRF, and Civil Defence'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Community-Based Disaster Management & First Aid Protocols (सामुदायिक आपदा तैयारी)',
+                topics: [
+                  'Role of community, youth, NCC/NSS volunteers, and Panchayati Raj Institutions (PRIs) in disaster risk reduction',
+                  'First aid protocols: Cardiopulmonary Resuscitation (CPR), hemorrhage/bleeding control, fracture splinting, burn management',
+                  'Disaster mock drills, evacuation route mapping, emergency response plans for schools and colleges',
+                  'Technological tools in disaster management: Remote sensing, GIS, GPS, and disaster management mobile apps (Sachet, Mausam)'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Disaster Management in India – Ministry of Home Affairs, Government of India',
+              'Disaster Management: Concepts and Approaches – Harsh K. Gupta, Universities Press',
+              'आपदा प्रबंधन – डॉ. अनुज कुमार सिंह एवं डॉ. आर. के. शर्मा, रावत पब्लिकेशंस'
             ]
           },
           {
@@ -2635,67 +2816,143 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-aec-1',
             code: 'AEC-1',
-            name: 'MIL (Modern Indian Language - Hindi / English)',
+            name: 'MIL (Modern Indian Language - हिन्दी भाषा और सम्प्रेषण / English Communication)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.0 MB',
+            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
+            fileSize: '950 KB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Language & Communication Skills',
-                topics: ['Grammar, functional Hindi/MIL writing, comprehension, précis, essay writing, and official correspondence']
+                title: 'भाषा और सम्प्रेषण के सिद्धांत (Theory & Forms of Communication)',
+                topics: [
+                  'सम्प्रेषण की परिभाषा, स्वरूप, प्रक्रिया, अवयव और महत्व (Nature and Process of Communication)',
+                  'सम्प्रेषण के विविध प्रकार: मौखिक सम्प्रेषण, लिखित सम्प्रेषण, अमौखिक/आंगिक सम्प्रेषण (Verbal, Non-Verbal & Body Language)',
+                  'सम्प्रेषण की प्रमुख बाधाएँ (Barriers to Effective Communication) और उनका व्यावहारिक निवारण',
+                  'प्रभावशाली सम्प्रेषण के 7 Cs (Seven Cs of Effective Communication)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'कार्यालयी हिन्दी एवं व्यावहारिक पत्राचार (Official Correspondence & Drafting)',
+                topics: [
+                  'कार्यालयी पत्राचार का स्वरूप: सरकारी पत्र (Official Letter), अर्ध-सरकारी पत्र (D.O. Letter), ज्ञापन (Memo), परिपत्र (Circular)',
+                  'टिप्पण (Official Noting) और प्रारूपण (Drafting) के नियम, प्रविधि एवं प्रारूप लेखन अभ्यास',
+                  'संक्षेपण (Précis Writing) के अनिवार्य नियम एवं पल्लवन (Elaboration of Thoughts) की विधि',
+                  'प्रेस विज्ञप्ति (Press Release) एवं कार्यालय आदेश (Office Order) का प्रारूप'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'भाषिक शुद्धता एवं व्यावहारिक व्याकरण (Applied Grammar & Vocabulary)',
+                topics: [
+                  'देवनागरी लिपि तथा हिन्दी वर्तनी के मानक नियम (केन्द्रीय हिन्दी निदेशालय के मानक नियम)',
+                  'वाक्य रचना, वाक्य शुद्धि (पदक्रम एवं अन्विति दोष), मुहावरे एवं लोकोक्तियाँ का व्यावहारिक प्रयोग',
+                  'प्रशासनिक एवं पारिभाषिक शब्दावली (Administrative Terminology: अंग्रेजी से हिन्दी अनुवाद एवं प्रयोग)',
+                  'वैकल्पिक अंग्रेजी मॉड्यूल: Reading comprehension, précis writing, official email & report writing'
+                ]
               }
+            ],
+            recommendedBooks: [
+              'कार्यालयी हिन्दी – डॉ. रामकिशोर शर्मा, लोकभारती प्रकाशन, प्रयागराज',
+              'व्यावहारिक हिन्दी एवं रचना – डॉ. हरिमोहन, वाणी प्रकाशन, नई दिल्ली',
+              'सामान्य हिन्दी एवं सम्प्रेषण कौशल – पटना विश्वविद्यालय पाठ्यक्रम संकलन',
+              'English Communication: Fluency and Writing Skills – Cambridge University Press'
             ]
           },
           {
             id: 'geo-sec-1',
             code: 'SEC-1',
-            name: 'Skill Enhancement Course 1 (Basket)',
+            name: 'Skill Enhancement Course 1 (Spreadsheet Tools / IT / रचनात्मक लेखन)',
             paperType: 'Skill Enhancement (SEC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.3 MB',
-            recommendedBooks: [
-              'Advance Spreadsheet Tools (Excel & VBA)',
-              'Basic IT Tools & Word Processing',
-              'Creative Writing & Public Speaking',
-              'Digital Marketing & Communication'
-            ],
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            pyqCount: 3,
             units: [
               {
                 unitNumber: 1,
-                title: 'Skill Development & Practical Application',
-                topics: ['Course selected from the university SEC-1 Basket: Advance Spreadsheet Tools, Basic IT Tools, Public Speaking in English Language & Leadership, Creative Writing, or Communication in Everyday Life']
+                title: 'ऑप्शन A: Advance Spreadsheet Tools (Excel Data Modeling)',
+                topics: [
+                  'Templates, Efficiency, and Risk (Standard Deviation, Variance, Coefficient of Variation), Data Validation rules',
+                  'Advanced Functions: VLOOKUP, XLOOKUP, INDEX-MATCH, Nested IF, Array Formulae (Frequency, Mode)',
+                  'What-if-analysis: Goal-seek, Data tables, and Scenario Manager; Pivot Tables, Slicers, and Timelines',
+                  'Data Analysis ToolPak: Descriptive Statistics, Moving averages, Histogram, Covariance, Correlation, Regression'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Basic IT Tools & Cyber Hygiene (सूचना प्रौद्योगिकी)',
+                topics: [
+                  'Computer architecture, OS commands, Cloud storage (Google Drive, OneDrive, Digilocker)',
+                  'Word processing, professional report formatting, presentations and slide transitions',
+                  'Cyber hygiene: Passwords, two-factor authentication, phishing prevention, digital identity protection'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: रचनात्मक लेखन (Creative Writing in Hindi)',
+                topics: [
+                  'अभिव्यक्ति के विविध क्षेत्र: साहित्य, पत्रकारिता, विज्ञापन, भाषण एवं शब्द-अर्थ मीमांसा',
+                  'भाषा भंगिमा: औपचारिक-अनौपचारिक, मौखिक-लिखित, मानक भाषिक संदर्भ एवं वाक्य शुद्धि',
+                  'कथा-साहित्य, नाट्य-साहित्य, फीचर, साक्षात्कार और इलेक्ट्रॉनिक माध्यम के लिए पटकथा/संवाद लेखन'
+                ]
               }
+            ],
+            recommendedBooks: [
+              'Michael Alexander, Excel 2016 Power Programming with VBA, Wiley',
+              'Wayne Winston, Microsoft Excel Data Analysis and Business Modeling, PHI',
+              'साहित्य चिंतनः रचनात्मक आयाम – डॉ० रघुवंश',
+              'कथा-पटकथा – मन्नू भंडारी, वाणी प्रकाशन'
             ]
           },
           {
             id: 'geo-vac-1',
             code: 'VAC-1',
-            name: 'Value Added Course 1 (Basket)',
+            name: 'Value Added Course 1 (Constitutional Values / Ayurveda & Nutrition / Art of Being Happy)',
             paperType: 'Value Added (VAC)',
-            credits: 3,
+            credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.1 MB',
-            recommendedBooks: [
-              'Ayurveda and Nutrition',
-              'Art of Being Happy',
-              'Fit India Protocol & Wellness',
-              'Constitutional Values and Fundamental Duties'
-            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Value Education & Civic Sensibility',
-                topics: ['Course selected from the university VAC-1 Basket: Ayurveda and Nutrition, Art of Being Happy, Fit India, or Constitutional Values and Fundamental Duties']
+                title: 'ऑप्शन A: Constitutional Values & Fundamental Duties (संवैधानिक मूल्य)',
+                topics: [
+                  'The Constitution of India: Preamble, Federal Republic, Rule of Law, Separation of Powers, Secularism and Sarva Dharma Sambhava',
+                  'Constitutional Values: Justice (Social, Economic, Political), Liberty, Equality, and Fraternity',
+                  'Fundamental Duties (Article 51A): Sovereignty, unity and integrity of India; Scientific temper, environmental protection'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Ayurveda and Nutrition (आयुर्वेद एवं पोषण)',
+                topics: [
+                  'Introduction to Ayurveda: Tridosha (Vata, Pitta, Kapha), Dhatus, and Concept of Agni',
+                  'Dietetics in Ayurveda: Ahara (food) classification, seasonal diet (Ritucharya), daily regimen (Dinacharya)',
+                  'Nutritional disorders, gut health, lifestyle disorders (diabetes, obesity, hypertension) and Ayurvedic prevention'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Art of Being Happy (प्रसन्नता की कला)',
+                topics: [
+                  'Human Happiness: Philosophical traditions (Vedantic insights, Buddhism, Greek ethics)',
+                  'Psychological perspectives: Positive psychology, gratitude, mindfulness, emotional resilience',
+                  'Harmonious coexistence with self, family, community, and nature'
+                ]
               }
+            ],
+            recommendedBooks: [
+              'Durga Das Basu, Introduction to the Constitution of India, LexisNexis',
+              'Dr. Vasant Lad, The Complete Book of Ayurvedic Home Remedies, Harmony Books',
+              'The Constitution of India, Bare Act, Govt. of India'
             ]
           }
         ]
@@ -2913,75 +3170,146 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-aec-2',
             code: 'AEC-2',
-            name: 'Environmental Science',
+            name: 'Environmental Science (पर्यावरण विज्ञान)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.1 MB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Ecosystems, Pollution & Environmental Conservation',
+                title: 'Ecosystems, Natural Resources & Biodiversity (पारिस्थितिकी एवं जैव विविधता)',
                 topics: [
-                  'Ecosystem structure and function, ecological succession, energy flow in ecosystem',
-                  'Biodiversity conservation: In-situ and Ex-situ conservation, hot spots of biodiversity',
-                  'Environmental pollution: Air, Water, Soil, Noise, and Solid waste management',
-                  'Global environmental issues: Climate change, Ozone layer depletion, Acid rain; Environmental Protection Act, 1986'
+                  'Concept, structure and functions of ecosystem; Energy flow, food chains, food webs and ecological succession',
+                  'Renewable and non-renewable natural resources: Forest, Water, Land, and Clean Energy resources (Solar, Wind)',
+                  'Biodiversity: Genetic, Species, and Ecosystem diversity; Hotspots of biodiversity; In-situ and Ex-situ conservation',
+                  'Threats to biodiversity: Habitat loss, poaching of wildlife, human-wildlife conflicts'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Environmental Pollution, Climate Change & Waste Management (प्रदूषण एवं जलवायु परिवर्तन)',
+                topics: [
+                  'Types, causes, effects and control of Air, Water, Soil, Noise, and Thermal pollution',
+                  'Solid waste management: Municipal solid waste, E-waste, and Biomedical waste management protocols',
+                  'Global environmental issues: Climate change, Global warming, Greenhouse effect, Acid rain, Ozone layer depletion',
+                  'Disaster management protocols for floods, droughts, cyclones and landslides'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Environmental Policies, Laws & Sustainable Development (पर्यावरण कानून एवं सतत विकास)',
+                topics: [
+                  'Concept of Sustainable Development: UN Sustainable Development Goals (SDGs 2030)',
+                  'Environmental Protection Act 1986, Air Act 1981, Water Act 1974, Wildlife Protection Act 1972',
+                  'Environmental movements in India: Chipko, Silent Valley, Narmada Bachao; Role of traditional knowledge',
+                  'Field work: Visit to a local polluted site, ecosystem documentation, or clean campus audit'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Textbook of Environmental Studies for Undergraduate Courses – Erach Bharucha, Orient BlackSwan / UGC',
+              'Environmental Studies: From Crisis to Cure – R. Rajagopalan, Oxford University Press',
+              'पर्यावरण अध्ययन – डॉ. एस. के. पचौरी, विकास पब्लिशिंग हाउस, नई दिल्ली'
             ]
           },
           {
             id: 'geo-sec-2',
             code: 'SEC-2',
-            name: 'Skill Enhancement Course 2 (Basket)',
+            name: 'Skill Enhancement Course 2 (पटकथा लेखन / रंगमंच / Big Data Analytics)',
             paperType: 'Skill Enhancement (SEC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.3 MB',
-            recommendedBooks: [
-              'Big Data Analysis & Hadoop / Spark',
-              'Beginners Course to Calligraphy',
-              'Personality Development & Communication',
-              'पटकथा लेखन (Screenplay Writing)',
-              'Introduction to Cloud Computing (AWS)',
-              'Business Communication'
-            ],
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            pyqCount: 3,
             units: [
               {
                 unitNumber: 1,
-                title: 'Professional Skill Enhancement',
-                topics: ['Course selected from the university SEC-2 Basket: Big Data Analysis, Beginners Course to Calligraphy, Personality Development & Communication, पटकथा लेखन, Cloud Computing (AWS), or Business Communication']
+                title: 'ऑप्शन A: पटकथा लेखन (Screenplay Writing)',
+                topics: [
+                  'पटकथा लेखन का परिचय, मूल तत्व, संरचना और तकनीकी शब्दावली (Slugline, Action, Character, Dialogue, Transition)',
+                  'पटकथा लेखन में शोध (Research), चरित्र निर्माण, थ्री-एक्ट और फाइव-एक्ट संरचना',
+                  'वेबसीरीज, लघु फिल्म (Short Film), वृत्तचित्र (Documentary) और विज्ञापन फिल्म लेखन',
+                  'पटकथा का पाठ, समालोचनात्मक विश्लेषण एवं किसी मूल विचार को स्क्रीनप्ले में विकसित करने का अभ्यास'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: रंगमंच (Theatre & Dramatic Arts)',
+                topics: [
+                  'भरत मुनि कृत नाट्यशास्त्र (रस/नाट्य सिद्धांत) एवं हिन्दी का पारंपरिक व लोक रंगमंच',
+                  'प्रस्तुति-प्रक्रिया: आलेख चयन, पात्र चयन, दृश्य-परिकल्पना (प्रकाश, संगीत, वेशभूषा) एवं पूर्वाभ्यास (Rehearsal)',
+                  'अभिनय के चार प्रकार: वाचिक (Vachika), आंगिक (Angika), आहार्य (Aharya), सात्विक (Sattvika)',
+                  'थिएटर गेम्स, आशु अभिनय (Improvisation), संवाद-वाचन, मंच प्रबंधन (Stage Management) एवं ब्रोशर-निर्माण'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Big Data Analytics & Cloud Computing (AWS)',
+                topics: [
+                  'Understanding Big Data platform, 5Vs of Big Data, Hadoop Distributed File System (HDFS) and MapReduce',
+                  'Apache Spark architecture, in-memory computing, resilient distributed datasets (RDDs)',
+                  'Cloud computing fundamentals (AWS EC2, S3, RDS), virtualization, containerization basics'
+                ]
               }
+            ],
+            recommendedBooks: [
+              'पटकथा कैसे लिखें: राजेंद्र पांडेय – वाणी प्रकाशन, दिल्ली',
+              'पटकथा लेखन : एक परिचय – मनोहर श्याम जोशी – राजकमल प्रकाशन',
+              'संक्षिप्त नाट्यशास्त्रम् – राधावल्लभ त्रिपाठी, वाणी प्रकाशन',
+              'पारंपरिक भारतीय रंगमंच – कपिला वात्स्यायन, NBT',
+              'Seema Acharya, Big Data Analytics, Wiley'
             ]
           },
           {
             id: 'geo-vac-2',
             code: 'VAC-2',
-            name: 'Value Added Course 2 (Basket)',
+            name: 'Value Added Course 2 (भारतीय भक्ति परंपरा और मानव मूल्य / Yoga: Philosophy & Practice)',
             paperType: 'Value Added (VAC)',
-            credits: 3,
+            credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.1 MB',
-            recommendedBooks: [
-              'Vedic Mathematics by Rajesh Kumar Thakur',
-              'Yoga: Philosophy and Practice by Swami Satyananda Saraswati',
-              'Panchakosha: Holistic Development of Personality',
-              'Social and Emotional Learning',
-              'Swachh Bharat: Rural and Urban Sanitation'
-            ],
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Values & Holistic Wellness',
-                topics: ['Course selected from the university VAC-2 Basket: Vedic Mathematics, Yoga: Philosophy and Practice, Panchakosha: Holistic Development of Personality, Social and Emotional Learning, or Swachh Bharat']
+                title: 'ऑप्शन A: भारतीय भक्ति परंपरा और मानव मूल्य (Bhakti Tradition)',
+                topics: [
+                  'भारतीय भक्ति परंपरा: अर्थ, दार्शनिक अवधारणा, विभिन्न संप्रदाय और सिद्धांत (शैव, वैष्णव, शाक्त, निर्गुण, सगुण)',
+                  'भारत की सांस्कृतिक एकता और भक्ति आंदोलन का अखिल भारतीय स्वरूप (उत्तर से दक्षिण, पूर्व से पश्चिम)',
+                  'प्रमुख भक्त संत एवं उनके विचार: कबीर, तुलसी, सूर, मीराबाई, रैदास, गुरु नानक, त्यागराज, तुकाराम, नामदेव, नरसिंह मेहता, चैतन्य महाप्रभु, ललद्यद, शंकरदेव',
+                  'मानव मूल्य, सामाजिक समरसता, करुणा, सेवा एवं वर्तमान समय में भक्ति की प्रासंगिकता (सर्वे एवं प्रोजेक्ट वर्क)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'ऑप्शन B: Yoga: Philosophy and Practice (योग: दर्शन एवं अभ्यास)',
+                topics: [
+                  'History and philosophy of Yoga; Significance of Asana, Pranayama, and Dhyana (Meditation)',
+                  'Patanjali Yogasutras: Asthanga Yoga (Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana, Samadhi)',
+                  'Chakras and energy centres; Surya Namaskara, selected Asanas and Nadishodhana Pranayama exercises'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'ऑप्शन C: Swachh Bharat & Community Service (स्वच्छ भारत)',
+                topics: [
+                  'Swachhata mission: History of hygiene and sanitation in India; Gandhi on cleanliness and dignity of labour',
+                  'Solid waste segregation, composting, rural and urban sanitation infrastructure, ODF protocols',
+                  'Community mobilization: Swachhata Pakhwada rallies, campus cleanups, and public awareness surveys'
+                ]
               }
+            ],
+            recommendedBooks: [
+              'भारतीय साहित्य का समेकित इतिहास – डॉ. नगेंद्र, हिंदी माध्यम कार्यान्वयन निदेशालय, दिल्ली विश्वविद्यालय',
+              'भक्ति आंदोलन और भक्ति काव्य – शिव कुमार मिश्र, इलाहाबाद',
+              'Asanas, Pranayama and Mudra Bandh – Swami Satyananda Saraswati, Bihar Yoga Bharati, Munger',
+              'Patanjali Yogasutras – Commentary by Swami Vivekananda'
             ]
           }
         ]
@@ -3253,22 +3581,49 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'geo-aec-3',
             code: 'AEC-3',
-            name: 'Disaster Risk Management',
+            name: 'Disaster Risk Management (आपदा जोखिम प्रबंधन)',
             paperType: 'Ability Enhancement (AEC)',
             credits: 2,
             theoryMarks: 70,
             internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
-            fileSize: '1.1 MB',
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '950 KB',
             units: [
               {
                 unitNumber: 1,
-                title: 'Disaster Concepts & Community Resilience',
+                title: 'Hazards, Disasters & Vulnerability Profile (आपदा एवं जोखिम की अवधारणा)',
                 topics: [
-                  'Hazards, Disasters, Vulnerability, and Risk; Disaster management cycle (Mitigation, Preparedness, Response, Recovery)',
-                  'Role of NDMA, SDRF, and community-based disaster risk reduction'
+                  'Hazards, Disasters, Vulnerability, and Risk: Definitions, classifications, and causal mechanisms',
+                  'Natural disasters in India: Floods (विशेषकर उत्तरी बिहार की कोशी, गंडक बाढ़ समस्या), Droughts, Earthquakes, Cyclones, Heatwaves',
+                  'Man-made & technological disasters: Chemical leaks, industrial fires, urban stampedes, transport accidents, epidemics',
+                  'Vulnerability assessment: Socio-economic, geographical, and infrastructural vulnerability'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Disaster Management Cycle & Institutional Architecture (आपदा प्रबंधन चक्र एवं कानून)',
+                topics: [
+                  'Disaster management cycle: Pre-disaster prevention & mitigation; Early warning dissemination systems',
+                  'During-disaster response: Search, rescue, evacuation, emergency triage, and relief distribution',
+                  'Post-disaster recovery: Rehabilitation, reconstruction, damage assessment, psychosocial support, and Build Back Better',
+                  'Institutional framework in India: Disaster Management Act 2005, NDMA, SDMA (Bihar SDMA), NDRF, SDRF, and Civil Defence'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Community-Based Disaster Management & First Aid Protocols (सामुदायिक आपदा तैयारी)',
+                topics: [
+                  'Role of community, youth, NCC/NSS volunteers, and Panchayati Raj Institutions (PRIs) in disaster risk reduction',
+                  'First aid protocols: Cardiopulmonary Resuscitation (CPR), hemorrhage/bleeding control, fracture splinting, burn management',
+                  'Disaster mock drills, evacuation route mapping, emergency response plans for schools and colleges',
+                  'Technological tools in disaster management: Remote sensing, GIS, GPS, and disaster management mobile apps (Sachet, Mausam)'
                 ]
               }
+            ],
+            recommendedBooks: [
+              'Disaster Management in India – Ministry of Home Affairs, Government of India',
+              'Disaster Management: Concepts and Approaches – Harsh K. Gupta, Universities Press',
+              'आपदा प्रबंधन – डॉ. अनुज कुमार सिंह एवं डॉ. आर. के. शर्मा, रावत पब्लिकेशंस'
             ]
           },
           {
