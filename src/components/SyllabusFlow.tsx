@@ -124,11 +124,14 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
 
   // Selected Course
   const currentCourse = useMemo(() => {
-    return puCompleteSyllabusData.find((c) => c.id === selectedCourseId) || puCompleteSyllabusData[0];
+    return puCompleteSyllabusData.find((c) => c.id === selectedCourseId) || puCompleteSyllabusData[0] || null;
   }, [selectedCourseId]);
 
   // Selected Semester Data
   const currentSemesterData = useMemo(() => {
+    if (!currentCourse || !currentCourse.semesters) {
+      return { semester: 1, papers: [] };
+    }
     const sem = currentCourse.semesters.find((s) => s.semester === selectedSemester);
     return sem || currentCourse.semesters[0] || { semester: 1, papers: [] };
   }, [currentCourse, selectedSemester]);
@@ -151,13 +154,13 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
   // Determine appropriate PDF URL for active paper
   const activePaperPdfUrl = useMemo(() => {
     if (activePaper?.pdfUrl) return activePaper.pdfUrl;
-    if (selectedSemester <= 2 && currentCourse.officialPdfs?.sem1_2) {
+    if (selectedSemester <= 2 && currentCourse?.officialPdfs?.sem1_2) {
       return currentCourse.officialPdfs.sem1_2;
     }
-    if (selectedSemester > 2 && currentCourse.officialPdfs?.sem3_8) {
+    if (selectedSemester > 2 && currentCourse?.officialPdfs?.sem3_8) {
       return currentCourse.officialPdfs.sem3_8;
     }
-    return currentCourse.officialPdfs?.annualHons || '#';
+    return currentCourse?.officialPdfs?.annualHons || '#';
   }, [activePaper, selectedSemester, currentCourse]);
 
   // Dynamic Semester Credits and Marks Stats
@@ -178,10 +181,35 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
   // WhatsApp Share
   const handleShare = () => {
     if (!activePaper) return;
-    const shareText = `📖 *Patna University Syllabus*\n🎯 *Course:* ${currentCourse.name}\n📚 *Semester:* ${selectedSemester}th Semester\n📝 *Paper:* ${activePaper.code} - ${activePaper.name}\n🔗 *Download Official PDF:* ${activePaperPdfUrl}\n\nShared via Lazy PU - Patna University Student Portal`;
+    const courseName = currentCourse?.name || 'Patna University Course';
+    const shareText = `📖 *Patna University Syllabus*\n🎯 *Course:* ${courseName}\n📚 *Semester:* ${selectedSemester}th Semester\n📝 *Paper:* ${activePaper.code} - ${activePaper.name}\n🔗 *Download Official PDF:* ${activePaperPdfUrl}\n\nShared via Lazy PU - Patna University Student Portal`;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
     window.open(whatsappUrl, '_blank');
   };
+
+  if (puCompleteSyllabusData.length === 0) {
+    return (
+      <div className="w-full max-w-xl mx-auto space-y-4 pt-4 text-white pb-6">
+        <div className="rounded-3xl border border-blue-900/80 bg-[#081830] p-8 text-center shadow-xl space-y-4">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-3xl text-cyan-400">
+            📚
+          </div>
+          <h2 className="text-xl font-black text-white">सिलेबस डेटाबेस खाली है</h2>
+          <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+            पुराने और असत्यापित डेटा को पूरी तरह हटा दिया गया है। जैसे ही आप नए और प्रमाणित विषयों का डेटा प्रदान करेंगे, वे यहाँ सीधे उपलब्ध हो जाएँगे।
+          </p>
+          <div className="pt-2">
+            <button
+              onClick={onBackToHome}
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-xs font-black text-white shadow-lg shadow-cyan-500/20 hover:scale-105 active:scale-95 transition"
+            >
+              होम पेज पर लौटें
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-xl mx-auto space-y-3.5 text-white pb-6">
@@ -347,6 +375,18 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                 </div>
               </div>
             ))}
+
+            {sectionsToDisplay.length === 0 && (
+              <div className="rounded-3xl border border-blue-900/80 bg-[#081830] p-8 text-center shadow-xl space-y-3">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-3xl">
+                  📚
+                </div>
+                <h3 className="text-base font-bold text-white">सिलेबस डेटाबेस खाली है</h3>
+                <p className="text-xs text-slate-300 max-w-sm mx-auto leading-relaxed">
+                  सत्यापित और प्रामाणिक सिलेबस जोड़ने के लिए डेटाबेस तैयार है। जैसे ही आप विषयवार नया डेटा प्रदान करेंगे, वह यहाँ लाइव अपडेट हो जाएगा।
+                </p>
+              </div>
+            )}
           </div>
         </div>
       )}
