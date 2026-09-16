@@ -1,0 +1,96 @@
+<svg width="1440" height="2000" viewBox="0 0 1440 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Deep Navy Background Gradient -->
+    <linearGradient id="deepNavyBg" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#040b17" />
+      <stop offset="25%" stop-color="#061224" />
+      <stop offset="50%" stop-color="#081830" />
+      <stop offset="75%" stop-color="#061326" />
+      <stop offset="100%" stop-color="#030812" />
+    </linearGradient>
+
+    <!-- Ambient Center Light Radial Glow -->
+    <radialGradient id="ambientGlowTop" cx="50%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#0f3468" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#081a38" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#040b17" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ambientGlowMid" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#0d2e5c" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#06162f" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#040b17" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- High Tech Fine Dot Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#00d2ff" fill-opacity="0.08" />
+    </pattern>
+
+    <!-- Structural Grid Pattern -->
+    <pattern id="structGrid" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#103261" stroke-width="0.75" stroke-opacity="0.22" />
+    </pattern>
+  </defs>
+
+  <!-- 1. Base Dark Background Fills -->
+  <rect width="1440" height="2000" fill="url(#deepNavyBg)" />
+  <rect width="1440" height="2000" fill="url(#ambientGlowTop)" />
+  <rect width="1440" height="2000" fill="url(#ambientGlowMid)" />
+
+  <!-- 2. Subtle Geometric Grid Overlay -->
+  <rect width="1440" height="2000" fill="url(#structGrid)" />
+  <rect width="1440" height="2000" fill="url(#dotGrid)" />
+
+  <!-- 3. Topographic Wave Contour Lines Structure (Like Apna BEU screenshot) -->
+  
+  <!-- Group 1: Upper Topographic Flow (Y: 50 - 450) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M -100 140 C 200 60, 450 200, 720 130 C 990 60, 1220 180, 1540 100" stroke="#163f77" stroke-width="1.8" stroke-opacity="0.55" />
+    <path d="M -100 185 C 210 105, 460 245, 720 175 C 980 105, 1230 225, 1540 145" stroke="#194684" stroke-width="1.6" stroke-opacity="0.48" />
+    <path d="M -100 230 C 220 150, 470 290, 720 220 C 970 150, 1240 270, 1540 190" stroke="#1b4d91" stroke-width="1.5" stroke-opacity="0.42" />
+    <path d="M -100 275 C 230 195, 480 335, 720 265 C 960 195, 1250 315, 1540 235" stroke="#163f77" stroke-width="1.3" stroke-opacity="0.36" />
+    <path d="M -100 320 C 240 240, 490 380, 720 310 C 950 240, 1260 360, 1540 280" stroke="#133869" stroke-width="1.2" stroke-opacity="0.3" />
+    <path d="M -100 365 C 250 285, 500 425, 720 355 C 940 285, 1270 405, 1540 325" stroke="#102e56" stroke-width="1.0" stroke-opacity="0.25" />
+  </g>
+
+  <!-- Group 2: Mid-Elevation Topographic Curves (Y: 480 - 950) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M -100 520 C 280 420, 420 620, 750 510 C 1080 400, 1180 600, 1540 480" stroke="#1b4d91" stroke-width="2.0" stroke-opacity="0.5" />
+    <path d="M -100 570 C 290 470, 430 670, 750 560 C 1070 450, 1190 650, 1540 530" stroke="#174480" stroke-width="1.7" stroke-opacity="0.44" />
+    <path d="M -100 620 C 300 520, 440 720, 750 610 C 1060 500, 1200 700, 1540 580" stroke="#143c72" stroke-width="1.5" stroke-opacity="0.38" />
+    <path d="M -100 670 C 310 570, 450 770, 750 660 C 1050 550, 1210 750, 1540 630" stroke="#113361" stroke-width="1.3" stroke-opacity="0.32" />
+    <path d="M -100 720 C 320 620, 460 820, 750 710 C 1040 600, 1220 800, 1540 680" stroke="#0e2a52" stroke-width="1.1" stroke-opacity="0.26" />
+    <path d="M -100 770 C 330 670, 470 870, 750 760 C 1030 650, 1230 850, 1540 730" stroke="#0b2242" stroke-width="1.0" stroke-opacity="0.2" />
+  </g>
+
+  <!-- Group 3: Lower Depth Waved Structure (Y: 1000 - 1500) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M -100 1060 C 220 980, 520 1140, 780 1050 C 1040 960, 1260 1120, 1540 1020" stroke="#194684" stroke-width="1.8" stroke-opacity="0.46" />
+    <path d="M -100 1110 C 230 1030, 530 1190, 780 1100 C 1030 1010, 1270 1170, 1540 1070" stroke="#163e75" stroke-width="1.6" stroke-opacity="0.4" />
+    <path d="M -100 1160 C 240 1080, 540 1240, 780 1150 C 1020 1060, 1280 1220, 1540 1120" stroke="#133566" stroke-width="1.4" stroke-opacity="0.34" />
+    <path d="M -100 1210 C 250 1130, 550 1290, 780 1200 C 1010 1110, 1290 1270, 1540 1170" stroke="#102d56" stroke-width="1.2" stroke-opacity="0.28" />
+    <path d="M -100 1260 C 260 1180, 560 1340, 780 1250 C 1000 1160, 1300 1320, 1540 1220" stroke="#0e264a" stroke-width="1.0" stroke-opacity="0.22" />
+  </g>
+
+  <!-- Group 4: Deep Base Flow (Y: 1520 - 1950) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M -100 1560 C 350 1480, 480 1680, 800 1590 C 1120 1500, 1210 1700, 1540 1580" stroke="#163f77" stroke-width="1.6" stroke-opacity="0.4" />
+    <path d="M -100 1610 C 360 1530, 490 1730, 800 1640 C 1110 1550, 1220 1750, 1540 1630" stroke="#133769" stroke-width="1.4" stroke-opacity="0.32" />
+    <path d="M -100 1660 C 370 1580, 500 1780, 800 1690 C 1100 1600, 1230 1800, 1540 1680" stroke="#102e57" stroke-width="1.2" stroke-opacity="0.25" />
+    <path d="M -100 1710 C 380 1630, 510 1830, 800 1740 C 1090 1650, 1240 1850, 1540 1730" stroke="#0d2547" stroke-width="1.0" stroke-opacity="0.2" />
+  </g>
+
+  <!-- 4. Technological Coordinates & Crosshairs for Structural Feel -->
+  <g stroke="#00d2ff" stroke-opacity="0.25" stroke-width="1">
+    <!-- Top Left Crosshair -->
+    <path d="M 60 90 L 76 90 M 68 82 L 68 98" />
+    <!-- Top Right Crosshair -->
+    <path d="M 1364 90 L 1380 90 M 1372 82 L 1372 98" />
+    <!-- Mid Center Crosshair -->
+    <path d="M 712 950 L 728 950 M 720 942 L 720 958" />
+    <!-- Lower Left Crosshair -->
+    <path d="M 60 1850 L 76 1850 M 68 1842 L 68 1858" />
+    <!-- Lower Right Crosshair -->
+    <path d="M 1364 1850 L 1380 1850 M 1372 1842 L 1372 1858" />
+  </g>
+</svg>
