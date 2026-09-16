@@ -136,7 +136,7 @@ export default function SyllabusCoursesPage() {
                     : 'bg-[#0f2347] text-slate-300 border border-blue-900/60 hover:bg-[#152e59] hover:text-white'
                 }`}
               >
-                {fac.name} {fac.count !== '0 Subjects' && fac.count !== '0 Groups' && fac.count !== '0 Courses' && fac.count !== '0 Modules' ? `(${fac.count.split(' ')[0]})` : ''}
+                {fac.name} {!fac.count.startsWith('0') ? `(${fac.count.split(' ')[0]})` : ''}
               </button>
             );
           })}

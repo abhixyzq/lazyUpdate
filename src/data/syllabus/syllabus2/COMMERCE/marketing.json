@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const bcomMarketingSyllabus: CourseSyllabus = {
+{
   "id": "bcom-marketing",
   "name": "B.Com. Marketing (CBCS 4-Year FYUGP)",
   "shortCode": "BCMK",
@@ -1521,9 +1519,5 @@ export const bcomMarketingSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%201.pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%202.pdf"
-  }
-};
+  ]
+}

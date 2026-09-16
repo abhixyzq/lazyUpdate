@@ -1,5 +1,8 @@
 import { CourseSyllabus } from '@/types';
 import { aihArchaeologySyllabus } from './aihArchaeology';
+import { bcomAccountingFinanceSyllabus } from './bcom-accounting-finance';
+import { bcomHrmSyllabus } from './bcom-hrm';
+import { bcomMarketingSyllabus } from './bcom-marketing';
 import { economicsSyllabus } from './economics';
 import { englishSyllabus } from './english';
 import { geographySyllabus } from './geography';
@@ -16,6 +19,9 @@ import { urduSyllabus } from './urdu';
 
 export {
   aihArchaeologySyllabus,
+  bcomAccountingFinanceSyllabus,
+  bcomHrmSyllabus,
+  bcomMarketingSyllabus,
   economicsSyllabus,
   englishSyllabus,
   geographySyllabus,
@@ -32,11 +38,11 @@ export {
 };
 
 export const puFacultyList = [
-  { id: 'All', name: 'All Sections', count: '14 Subjects' },
+  { id: 'All', name: 'All Sections', count: '17 Subjects' },
   { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
   { id: 'Humanities', name: 'Humanities', count: '7 Subjects' },
+  { id: 'Commerce', name: 'Commerce', count: '3 Groups' },
   { id: 'Science', name: 'Science', count: '0 Subjects' },
-  { id: 'Commerce', name: 'Commerce', count: '0 Groups' },
   { id: 'Vocational', name: 'Vocational & Law', count: '0 Courses' },
   { id: 'Common NEP', name: 'AEC & MDC', count: '0 Modules' },
 ] as const;
@@ -72,5 +78,11 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   maithiliSyllabus,
   philosophySyllabus,
   musicSyllabus,
+
+  // Faculty of Commerce (3 Groups)
+  bcomAccountingFinanceSyllabus,
+  bcomHrmSyllabus,
+  bcomMarketingSyllabus,
 ];
+
 

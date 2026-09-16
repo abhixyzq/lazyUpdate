@@ -1,6 +1,4 @@
-import { CourseSyllabus } from '@/types';
-
-export const bcomHrmSyllabus: CourseSyllabus = {
+{
   "id": "bcom-hrm",
   "name": "B.Com. Human Resource Management (CBCS 4-Year FYUGP)",
   "shortCode": "BCHRM",
@@ -1481,9 +1479,5 @@ export const bcomHrmSyllabus: CourseSyllabus = {
         }
       ]
     }
-  ],
-  "officialPdfs": {
-    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Human%20Resourse%20management).pdf",
-    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(HRM)%20-%20Copy%201.pdf"
-  }
-};
+  ]
+}
