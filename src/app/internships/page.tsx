@@ -43,11 +43,7 @@ export default function InternshipsPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Student Internships Portal"
-        badge="CAREER & PLACEMENTS"
-        subtitle="PM Internship Scheme, AICTE & PU Placement Drives"
-      />
+      <SubpageHeader title="Internships" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

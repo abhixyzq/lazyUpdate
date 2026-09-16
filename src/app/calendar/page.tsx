@@ -31,11 +31,7 @@ export default function CalendarPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Holidays & Calendar"
-        badge="SESSION 2024-25"
-        subtitle="Official PU Holidays, Vacations & Academic Milestones"
-      />
+      <SubpageHeader title="Calendar" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

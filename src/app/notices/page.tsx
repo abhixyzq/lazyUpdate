@@ -24,11 +24,7 @@ export default function NoticesPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Patna University Notices"
-        badge="OFFICIAL CIRCULARS"
-        subtitle="Admissions, Examination Schedules & Circulars"
-      />
+      <SubpageHeader title="PU Notice" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         {/* Urgent Live Alert */}

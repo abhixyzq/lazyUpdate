@@ -7,11 +7,7 @@ import { ShieldAlert, PhoneCall, ExternalLink, ShieldCheck, AlertCircle } from '
 export default function AntiRaggingPage() {
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Anti-Ragging & Helpline"
-        badge="ZERO TOLERANCE"
-        subtitle="24x7 UGC Toll-Free Helpline, Undertaking & PU Proctorial Board"
-      />
+      <SubpageHeader title="Anti-Ragging" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

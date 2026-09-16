@@ -19,11 +19,7 @@ export default function ExtrasPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Colleges & Extra Resources"
-        badge="PATNA UNIVERSITY"
-        subtitle="Constituent Colleges, Portals & Student Community"
-      />
+      <SubpageHeader title="Extras" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

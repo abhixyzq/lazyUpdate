@@ -60,11 +60,7 @@ export default function SGPAPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="SGPA & CGPA Calculator"
-        badge="CBCS 10-POINT SCALE"
-        subtitle="Credits Weighted Grade Point Average"
-      />
+      <SubpageHeader title="SGPA CalC" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

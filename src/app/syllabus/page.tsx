@@ -10,11 +10,7 @@ export default function SyllabusPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Syllabus Hub"
-        badge="NEP 2020 CBCS"
-        subtitle="Department-wise units, papers & marks"
-      />
+      <SubpageHeader title="Syllabus" />
 
       <main className="mx-auto max-w-xl px-3 pt-3">
         <SyllabusFlow

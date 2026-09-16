@@ -54,11 +54,7 @@ export default function ScholarshipsPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="Scholarships & Financial Aid"
-        badge="GOVERNMENT GRANTS"
-        subtitle="PMS Online, National Scholarships & Kanya Utthan"
-      />
+      <SubpageHeader title="Scholarships" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         

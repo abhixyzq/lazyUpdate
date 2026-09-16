@@ -10,11 +10,7 @@ export default function PYQsPage() {
 
   return (
     <div className="min-h-screen bg-transparent text-white pb-12">
-      <SubpageHeader
-        title="PYQs Archive"
-        badge="PAST PAPERS"
-        subtitle="Patna University End-Sem Question Papers"
-      />
+      <SubpageHeader title="PYQs" />
 
       <main className="mx-auto max-w-xl px-3 pt-3">
         <SyllabusFlow
