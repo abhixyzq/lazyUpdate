@@ -1,13 +1,13 @@
 import { CourseSyllabus, StreamType } from '@/types';
 
 export const puFacultyList = [
-  { id: 'All', name: 'All Courses', count: '30+ Courses' },
+  { id: 'All', name: 'All Sections', count: '6 Sections' },
   { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
   { id: 'Science', name: 'Science', count: '5 Subjects' },
   { id: 'Humanities', name: 'Humanities', count: '9 Subjects' },
   { id: 'Commerce', name: 'Commerce', count: '5 Groups' },
   { id: 'Vocational', name: 'Vocational & Law', count: '3 Courses' },
-  { id: 'Common NEP', name: 'AEC, MDC & AEDP', count: '12 Modules' },
+  { id: 'Common NEP', name: 'AEC & MDC', count: '11 Modules' },
 ] as const;
 
 export const puSpecialSyllabusDownloads = [
@@ -59,27 +59,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.2 MB',
             pyqCount: 5,
-            recommendedBooks: ['Programming in ANSI C by E. Balagurusamy', 'Let Us C by Yashavant Kanetkar'],
+            recommendedBooks: ['Programming in ANSI C by E. Balagurusamy', 'Let Us C by Yashavant Kanetkar', 'The C Programming Language by Kernighan & Ritchie'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Introduction to Algorithms & C Fundamentals',
-                topics: ['Flowcharts, Pseudo-code, Compilation Process', 'Data Types, Identifiers, Keywords, Literals', 'Operators: Arithmetic, Relational, Logical, Bitwise, Ternary']
+                title: 'Algorithms & C Fundamentals',
+                topics: ['Flowcharts, Pseudo-code, Compilation Process, Pre-processor directives', 'Data Types, Identifiers, Keywords, Literals, Constants, Variables', 'Operators: Arithmetic, Relational, Logical, Bitwise, Assignment, Ternary']
               },
               {
                 unitNumber: 2,
-                title: 'Control Structures & Iteration',
-                topics: ['Decision making: if-else, nested if, switch-case', 'Loops: while, do-while, for loops', 'Jump statements: break, continue, goto']
+                title: 'Control Flow & Iteration',
+                topics: ['Decision making statements: if-else, nested if, switch-case statements', 'Looping structures: while loop, do-while loop, for loops, nested loops', 'Jump statements: break, continue, goto, return statements']
               },
               {
                 unitNumber: 3,
-                title: 'Arrays, Strings & Functions',
-                topics: ['1D and 2D Arrays, Matrix Operations', 'String Handling functions: strlen, strcpy, strcat, strcmp', 'User Defined Functions, Call by Value vs Reference, Recursion']
+                title: 'Arrays, Strings & Modular Functions',
+                topics: ['Single and Multi-dimensional Arrays, Matrix Addition and Multiplication', 'String manipulation functions: strlen, strcpy, strcat, strcmp, strrev', 'User Defined Functions, Call by Value vs Call by Reference, Recursion']
               },
               {
                 unitNumber: 4,
-                title: 'Pointers, Structures & File Handling',
-                topics: ['Pointer arithmetic, Double pointers, Dynamic Memory Allocation (malloc, calloc, free)', 'Structures vs Unions, Typedef, Array of structures', 'File modes: fopen, fclose, fprintf, fscanf, fgetc, fputc']
+                title: 'Pointers, Structures & File Management',
+                topics: ['Pointer concept, Pointer arithmetic, Dynamic Memory Allocation (malloc, calloc, realloc, free)', 'Structures vs Unions, Typedef, Nested structures, Array of structures', 'File operations: fopen, fclose, fprintf, fscanf, fgets, fputs, fseek']
               }
             ]
           },
@@ -94,17 +94,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Physics.pdf',
             fileSize: '1.5 MB',
             pyqCount: 4,
-            recommendedBooks: ['Digital Logic and Computer Design by M. Morris Mano'],
+            recommendedBooks: ['Digital Logic and Computer Design by M. Morris Mano', 'Computer System Architecture by Morris Mano'],
             units: [
               {
                 unitNumber: 1,
                 title: 'Number Systems & Boolean Algebra',
-                topics: ['Binary, Octal, Hexadecimal conversions, 1s and 2s Complement', 'Logic Gates: AND, OR, NOT, NAND, NOR, XOR, XNOR', 'Boolean Laws, De Morgan Theorems, Karnaugh Maps (K-Map up to 4 variables)']
+                topics: ['Binary, Octal, Decimal, Hexadecimal conversions, 1s and 2s Complements', 'Logic Gates: AND, OR, NOT, NAND, NOR, XOR, XNOR truth tables', 'Boolean Algebra Theorems, De Morgan Laws, K-Map minimization (up to 4 variables)']
               },
               {
                 unitNumber: 2,
-                title: 'Combinational & Sequential Circuits',
-                topics: ['Adders & Subtractors (Half and Full)', 'Multiplexers, Demultiplexers, Encoders, Decoders', 'Flip-Flops: SR, JK, Master-Slave JK, D, T Flip-Flops, Registers & Counters']
+                title: 'Combinational Logic Circuits',
+                topics: ['Half Adder, Full Adder, Half Subtractor, Full Subtractor', 'Multiplexers (MUX), Demultiplexers (DEMUX), Encoders, Priority Encoders, Decoders', 'Binary Parallel Adder and BCD Adder']
+              },
+              {
+                unitNumber: 3,
+                title: 'Sequential Logic & Storage Elements',
+                topics: ['Latches vs Flip-Flops: SR, JK, Master-Slave JK, D, and T Flip-Flops', 'Clocked Sequential circuits, State tables, State diagrams', 'Shift Registers (SISO, SIPO, PISO, PIPO) and Synchronous/Asynchronous Counters']
+              },
+              {
+                unitNumber: 4,
+                title: 'CPU Organization & Memory Hierarchy',
+                topics: ['General Register Organization, Stack Organization, Instruction formats, Addressing modes', 'Memory Hierarchy: Cache Memory, Main Memory, Virtual Memory, Cache mapping techniques']
               }
             ]
           },
@@ -119,23 +129,34 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.1 MB',
             pyqCount: 4,
+            recommendedBooks: ['Discrete Mathematics by Kenneth H. Rosen', 'Higher Engineering Mathematics by B.S. Grewal'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Set Theory & Matrices',
-                topics: ['Sets, Relations, Functions, Equivalence Relations', 'Matrix Algebra, Determinants, Rank of Matrix, Inverse', 'Eigenvalues and Eigenvectors, Cayley-Hamilton Theorem']
+                title: 'Set Theory, Relations & Functions',
+                topics: ['Sets, Venn diagrams, Cartesian products, Relations, Types of relations, Equivalence relations', 'Functions: Injective, Surjective, Bijective functions, Composition of functions, Inverses']
               },
               {
                 unitNumber: 2,
-                title: 'Differential Calculus & Logic',
-                topics: ['Successive Differentiation, Leibnitz Theorem', 'Maclaurin and Taylor Series expansions', 'Propositional Logic, Truth Tables, Tautology']
+                title: 'Matrix Algebra & Determinants',
+                topics: ['Matrix operations, Determinants properties, Rank of a matrix, Consistency of linear equations', 'Eigenvalues and Eigenvectors, Cayley-Hamilton Theorem and matrix inverse computation']
+              },
+              {
+                unitNumber: 3,
+                title: 'Differential Calculus & Series',
+                topics: ['Successive differentiation, Leibnitz theorem, Partial derivatives, Euler theorem', 'Taylor and Maclaurin series expansions of single variable functions']
+              },
+              {
+                unitNumber: 4,
+                title: 'Mathematical Logic & Boolean Structures',
+                topics: ['Propositional logic, Truth tables, Tautologies, Contradictions, Logical equivalences', 'Predicates, Quantifiers (Universal and Existential), Rules of inference']
               }
             ]
           },
           {
             id: 'bca-105',
             code: 'BCA-105',
-            name: 'C Programming & Digital Lab',
+            name: 'C Programming & Digital Electronics Lab',
             paperType: 'Practical / Lab',
             credits: 2,
             theoryMarks: 40,
@@ -145,8 +166,13 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'C Programming Experiments',
-                topics: ['Implementation of sorting and searching algorithms', 'Matrix manipulation and file processing programs', 'Verification of logic gates and half/full adders on breadboard']
+                title: 'C Programming Practical Experiments',
+                topics: ['Execution of linear and binary search, bubble sort, selection sort in C', 'Matrix arithmetic and dynamic memory string parsing exercises', 'File reading, writing and record maintenance programs']
+              },
+              {
+                unitNumber: 2,
+                title: 'Digital Hardware Lab Experiments',
+                topics: ['Verification of basic logic gates (AND, OR, NOT, NAND, NOR) on trainer kit', 'Realization of Half Adder and Full Adder using NAND gates', 'Implementation of Flip-Flop circuits and modulo-N ripple counters']
               }
             ]
           }
@@ -165,16 +191,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.4 MB',
+            recommendedBooks: ['Data Structures Through C in Depth by S.K. Srivastava', 'Classic Data Structures by D. Samanta'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Linear Data Structures',
-                topics: ['Stacks, Queues, Circular Queues, Infix to Postfix conversion', 'Singly, Doubly, and Circular Linked Lists operations']
+                title: 'Linear Data Structures - Stacks & Queues',
+                topics: ['Stack operations (Push, Pop), Infix to Postfix conversion and Postfix evaluation', 'Queue, Circular Queue, Double Ended Queue (Deque), Priority Queue implementation']
               },
               {
                 unitNumber: 2,
-                title: 'Non-Linear Data Structures & Trees',
-                topics: ['Binary Trees, BST traversal (Inorder, Preorder, Postorder)', 'AVL Trees, Graph representations (BFS, DFS, Dijkstra Algorithm)']
+                title: 'Linked Lists',
+                topics: ['Singly Linked List: Insertion, Deletion, Reversal, Search operations', 'Doubly Linked List and Circular Linked List applications, Polynomial representation']
+              },
+              {
+                unitNumber: 3,
+                title: 'Non-Linear Structures - Trees',
+                topics: ['Binary Trees, Complete Binary Tree, Binary Search Tree (BST) operations', 'Tree Traversals: Inorder, Preorder, Postorder, Level Order; AVL Trees balancing']
+              },
+              {
+                unitNumber: 4,
+                title: 'Graphs & Sorting Algorithms',
+                topics: ['Graph representations: Adjacency Matrix, Adjacency List; BFS and DFS traversals', 'Dijkstra shortest path algorithm, Kruskal and Prim Minimum Spanning Tree algorithms', 'Sorting: Quick Sort, Merge Sort, Heap Sort analysis and comparisons']
               }
             ]
           }
@@ -193,11 +230,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.3 MB',
+            recommendedBooks: ['Java: The Complete Reference by Herbert Schildt'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Core Java & OOP Concepts',
-                topics: ['Encapsulation, Inheritance, Polymorphism, Interfaces', 'Exception Handling, Multithreading, Java Collections Framework']
+                title: 'OOP Paradigms & Java Architecture',
+                topics: ['Classes, Objects, Encapsulation, Inheritance, Polymorphism, Abstraction', 'JVM, JRE, JDK, Bytecode, Primitive types, Garbage Collection']
+              },
+              {
+                unitNumber: 2,
+                title: 'Inheritance, Packages & Interfaces',
+                topics: ['Subclasses, Method Overriding, super keyword, final keyword, Abstract classes', 'Packages creation, Access protection, Interfaces and Multiple Inheritance implementation']
+              },
+              {
+                unitNumber: 3,
+                title: 'Exception Handling & Multithreading',
+                topics: ['try, catch, throw, throws, finally blocks, User-defined Custom Exceptions', 'Thread lifecycle, Creating threads (Thread class vs Runnable), Thread synchronization']
+              },
+              {
+                unitNumber: 4,
+                title: 'Java Collections Framework & I/O',
+                topics: ['ArrayList, LinkedList, HashSet, HashMap, Iterator, Comparable vs Comparator', 'File I/O Streams, Byte Streams, Character Streams, Serialization']
               }
             ]
           }
@@ -216,11 +269,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.5 MB',
+            recommendedBooks: ['Database System Concepts by Silberschatz, Korth & Sudarshan'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Relational Model & Normalization',
-                topics: ['ER Modeling, Relational Algebra, SQL queries and joins', '1NF, 2NF, 3NF, BCNF, Transaction Management and ACID properties']
+                title: 'DBMS Architecture & ER Modeling',
+                topics: ['Data Abstraction, Data Independence, Three-Schema Architecture, DBMS vs File system', 'Entity-Relationship (ER) model, Entity sets, Relationship sets, Constraints, Weak entities']
+              },
+              {
+                unitNumber: 2,
+                title: 'Relational Model & Relational Algebra',
+                topics: ['Relational data structure, Integrity constraints (Primary key, Foreign key, Check, Unique)', 'Relational Algebra: Selection, Projection, Union, Set Difference, Cartesian product, Joins']
+              },
+              {
+                unitNumber: 3,
+                title: 'SQL & Database Normalization',
+                topics: ['DDL, DML, DCL, TCL queries, Aggregate functions, Nested subqueries, Group By, Having', 'Functional Dependencies, 1NF, 2NF, 3NF, BCNF Normal forms, Lossless decomposition']
+              },
+              {
+                unitNumber: 4,
+                title: 'Transactions, Concurrency & Recovery',
+                topics: ['Transaction concept, ACID Properties, Serializability, Schedule types', 'Concurrency control: Two-Phase Locking (2PL), Deadlock handling, Write-Ahead Logging']
               }
             ]
           }
@@ -239,11 +308,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.2 MB',
+            recommendedBooks: ['Operating System Concepts by Galvin', 'Web Technologies by Uttam K. Roy'],
             units: [
               {
                 unitNumber: 1,
-                title: 'OS Architecture & Scheduling',
-                topics: ['Process Scheduling, Deadlocks, Virtual Memory, Paging', 'HTML5, CSS3, JavaScript, Client-Server model']
+                title: 'Process Management & CPU Scheduling',
+                topics: ['Process states, PCB, Context switching, Inter-process communication', 'Scheduling criteria, FCFS, SJF, Priority, Round Robin scheduling algorithms']
+              },
+              {
+                unitNumber: 2,
+                title: 'Deadlocks & Memory Management',
+                topics: ['Deadlock characterization, Prevention, Avoidance (Banker algorithm), Detection', 'Contiguous memory allocation, Paging, Segmentation, Virtual Memory, Page replacement algorithms']
+              },
+              {
+                unitNumber: 3,
+                title: 'Client-Side Web Technologies',
+                topics: ['HTML5 semantic tags, Forms, Canvas, CSS3 Flexbox and Grid layouts, Responsive design', 'JavaScript DOM manipulation, Event handling, ES6 features (Arrow functions, Promises)']
+              },
+              {
+                unitNumber: 4,
+                title: 'Server-Side Web & Web Security',
+                topics: ['Client-server model, HTTP/HTTPS protocols, RESTful APIs basics', 'Sessions, Cookies, Cross-Site Scripting (XSS), SQL Injection defense basics']
               }
             ]
           }
@@ -255,18 +340,34 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'bca-601',
             code: 'BCA-601',
-            name: 'Major Capstone Project & Software Engineering',
+            name: 'Software Engineering & Capstone Project',
             paperType: 'Core Theory',
             credits: 6,
             theoryMarks: 50,
             internalMarks: 50,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Mathematics.pdf',
             fileSize: '1.0 MB',
+            recommendedBooks: ['Software Engineering by Roger S. Pressman'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Software Development Life Cycle',
-                topics: ['Agile vs Waterfall, Requirements Specification (SRS), System Design', 'Testing (Unit, Integration, Black/White box), Deployment']
+                title: 'Software Process Models',
+                topics: ['SDLC, Waterfall Model, Incremental Model, RAD Model, Agile Methodology, Scrum Framework']
+              },
+              {
+                unitNumber: 2,
+                title: 'Requirements Engineering & System Design',
+                topics: ['Feasibility study, Requirements elicitation, SRS documentation (IEEE standards)', 'Modular design, Cohesion and Coupling, Data Flow Diagrams (DFD), UML diagrams']
+              },
+              {
+                unitNumber: 3,
+                title: 'Software Testing Strategies',
+                topics: ['Unit Testing, Integration Testing, System Testing, Acceptance Testing', 'Black-Box Testing (Equivalence partitioning, BVA), White-Box Testing (Basis path testing)']
+              },
+              {
+                unitNumber: 4,
+                title: 'Capstone Project Viva & Documentation',
+                topics: ['Full-stack system implementation, Database schema design, API integration', 'Final viva voce, Code walkthrough, Technical report submission and presentation']
               }
             ]
           }
@@ -304,11 +405,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
             fileSize: '1.2 MB',
+            recommendedBooks: ['Principles of Management by Koontz & O Donnell', 'Management by Robbins & Coulter'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Introduction to Management',
-                topics: ['Evolution of Management Thought: Taylor, Fayol, Mayo', 'Planning, Strategic Planning, MBO (Management by Objectives)']
+                title: 'Management Foundations & Evolution',
+                topics: ['Concept, Nature, Scope and Functions of Management, Management vs Administration', 'Evolution of management thought: Classical (Taylor, Fayol), Neo-Classical (Hawthorne experiments), Modern systems approach']
+              },
+              {
+                unitNumber: 2,
+                title: 'Planning & Decision Making',
+                topics: ['Nature and purpose of planning, Planning steps, Types of plans, Management by Objectives (MBO)', 'Decision making process, Rationality in decision making, Decision making under certainty and risk']
+              },
+              {
+                unitNumber: 3,
+                title: 'Organizing & Staffing',
+                topics: ['Formal vs Informal organizations, Span of control, Centralization vs Decentralization', 'Departmentation, Delegation of authority, Principles of effective staffing and recruitment']
+              },
+              {
+                unitNumber: 4,
+                title: 'Directing, Leadership & Control',
+                topics: ['Motivation theories (Maslow, Herzberg, McGregor), Leadership styles (Autocratic, Democratic, Laissez-faire)', 'Communication process, Barriers to communication, Controlling process and budgetary control techniques']
               }
             ]
           }
@@ -329,7 +446,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
     totalSemesters: 6,
     description: 'Constitutional Law, Jurisprudence, Criminal Law, and Tort at Patna Law College (Estd. 1909).',
     officialPdfs: {
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20%20AI%20&%20AS.pdf',
+      annualHons: 'https://www.pup.ac.in/download/Political%20Science.pdf',
     },
     semesters: [
       {
@@ -345,11 +462,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 20,
             pdfUrl: 'https://www.pup.ac.in/download/Political%20Science.pdf',
             fileSize: '1.8 MB',
+            recommendedBooks: ['Constitution of India by V.N. Shukla', 'Introduction to the Constitution of India by D.D. Basu', 'Constitutional Law of India by J.N. Pandey'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Preamble & Fundamental Rights',
-                topics: ['Article 12 Definition of State, Article 14 Right to Equality', 'Articles 19 to 22 Fundamental Freedoms & Life/Liberty', 'Article 32 & 226 Writs']
+                title: 'Preamble, Citizenship & Definition of State',
+                topics: ['Salient features of Indian Constitution, Nature of Indian Federalism, Preamble significance', 'Article 12 Definition of State, Article 13 Judicial Review and Doctrine of Severability / Eclipse']
+              },
+              {
+                unitNumber: 2,
+                title: 'Right to Equality & Fundamental Freedoms',
+                topics: ['Article 14 Equality before Law and Equal Protection, Reasonable Classification doctrine', 'Articles 15-18 Non-discrimination and Abolition of Untouchability/Titles', 'Article 19 Six Fundamental Freedoms and Reasonable Restrictions']
+              },
+              {
+                unitNumber: 3,
+                title: 'Right to Life, Personal Liberty & Religious Freedoms',
+                topics: ['Article 20 Protection in respect of conviction (Ex-post facto, Double jeopardy, Self-incrimination)', 'Article 21 Right to Life and Personal Liberty, Procedure Established by Law vs Due Process of Law', 'Articles 25-28 Freedom of Religion and Secularism']
+              },
+              {
+                unitNumber: 4,
+                title: 'Directive Principles & Constitutional Remedies',
+                topics: ['Articles 36-51 Directive Principles of State Policy (DPSP) and relationship with Fundamental Rights', 'Article 51A Fundamental Duties', 'Article 32 & 226 Writs: Habeas Corpus, Mandamus, Prohibition, Quo-Warranto, Certiorari']
               }
             ]
           }
@@ -390,27 +523,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.4 MB',
-            recommendedBooks: ['Principles of Microeconomics by N. Gregory Mankiw', 'Microeconomic Theory by Hal Varian'],
+            recommendedBooks: ['Principles of Microeconomics by N. Gregory Mankiw', 'Microeconomic Theory by Hal Varian', 'Principles of Microeconomics by H.L. Ahuja'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Exploring the Subject Matter of Economics',
-                topics: ['Scope and method of Economics; the economic problem: scarcity and choice', 'Opportunity cost, production possibility frontier, positive vs normative economics']
+                title: 'Exploring Scarcity, Choice & Methodology',
+                topics: ['Scope and nature of Economics; the fundamental economic problem: scarcity and choice', 'Opportunity cost, Production Possibility Frontier (PPF), Positive vs Normative Economics, Market vs Command economies']
               },
               {
                 unitNumber: 2,
-                title: 'Supply and Demand: How Markets Work',
-                topics: ['Determinants of demand and supply, market equilibrium and shifts', 'Elasticity of demand: price, income and cross elasticity, consumer surplus and producer surplus']
+                title: 'Demand, Supply & Market Equilibrium',
+                topics: ['Law of Demand, Determinants of demand, Market demand curve shifts vs movements', 'Law of Supply, Market equilibrium determination, Effects of taxes and subsidies', 'Elasticity of Demand: Price, Income, Cross elasticity methods; Consumer and Producer surplus']
               },
               {
                 unitNumber: 3,
-                title: 'Theory of Consumer Behavior',
-                topics: ['Cardinal utility approach; Ordinal utility approach: Indifference curve analysis, budget line, consumer equilibrium', 'Income and Substitution effects (Slutsky and Hicksian approaches)']
+                title: 'Consumer Behavior & Demand Theory',
+                topics: ['Cardinal Utility Approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility', 'Ordinal Utility Approach: Indifference Curves properties, Budget Line, Consumer equilibrium', 'Price Effect decomposition: Substitution Effect and Income Effect (Slutsky and Hicksian approaches)']
               },
               {
                 unitNumber: 4,
-                title: 'Production and Costs',
-                topics: ['Production function, Law of variable proportions, Returns to scale', 'Short-run and long-run cost curves, economies and diseconomies of scale']
+                title: 'Production & Cost Analysis',
+                topics: ['Production Function with one variable input: Law of Variable Proportions (Total, Marginal, Average product)', 'Production with two variable inputs: Isoquants, Isocost line, Producer equilibrium, Returns to Scale', 'Short-run and Long-run cost curves: Fixed, Variable, Marginal and Average costs, Economies of Scale']
               }
             ]
           }
@@ -429,58 +562,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.4 MB',
+            recommendedBooks: ['Macroeconomics by Richard T. Froyen', 'Macroeconomics by N. Gregory Mankiw', 'Principles of Macroeconomics by H.L. Ahuja'],
             units: [
               {
                 unitNumber: 1,
-                title: 'National Income Accounting',
-                topics: ['Concepts of GDP, GNP, NNP, Real vs Nominal GDP', 'Measurement methods: Product, Income, and Expenditure methods']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-geography',
-    name: 'B.A. Geography (Hons/Subs/Gen)',
-    shortCode: 'Geography',
-    stream: 'Social Science',
-    faculty: 'Social Science',
-    icon: '🌍',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Geomorphology, Climatology, Human & Economic Geography, Cartography and GIS at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
-      annualHons: 'https://www.pup.ac.in/download/Geography.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'geo-mjc-1',
-            code: 'MJC-1',
-            name: 'Physical Geography & Geomorphology',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
-            fileSize: '1.6 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Earth Interior and Crustal Movement',
-                topics: ['Origin of the Earth, Structure of Earth interior, Wegener Continental Drift Theory, Plate Tectonics']
+                title: 'National Income Accounting & Concepts',
+                topics: ['Scope of Macroeconomics, Circular flow of income in two, three, and four sector economies', 'National Income Aggregates: GDP, GNP, NDP, NNP at Market Price and Factor Cost', 'Real vs Nominal GDP, GDP Deflator, Measurement methods: Value Added, Income, and Expenditure methods']
               },
               {
                 unitNumber: 2,
-                title: 'Geomorphic Processes & Landforms',
-                topics: ['Weathering and Mass Wasting; Fluvial, Glacial, Aeolian and Karst landform cycles (Davis & Penck)']
+                title: 'Classical & Keynesian Employment Theories',
+                topics: ['Classical Theory of Output and Employment, Say Law of Markets, Wage-Price flexibility', 'Keynesian critique of classical economics, Concept of Effective Demand, Aggregate Demand and Supply']
+              },
+              {
+                unitNumber: 3,
+                title: 'Consumption, Savings & Investment Multiplier',
+                topics: ['Consumption Function: Average and Marginal Propensity to Consume (APC, MPC), Keynes Psychological Law', 'Investment Function: Autonomous and Induced investment, Marginal Efficiency of Capital (MEC)', 'The Investment Multiplier: Working, Assumptions, Leakages, and the Acceleration principle']
+              },
+              {
+                unitNumber: 4,
+                title: 'Money, Banking & Inflation',
+                topics: ['Functions of Money, Demand for Money (Classical, Cambridge, and Keynesian Liquidity Preference theory)', 'Credit Creation by Commercial Banks, Monetary Policy tools of RBI (Repo rate, CRR, SLR, Open market operations)', 'Inflation: Demand-pull and Cost-push inflation, Causes, Effects, and the Philips Curve tradeoff']
               }
             ]
           }
@@ -511,23 +613,34 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'his-mjc-1',
             code: 'MJC-1',
-            name: 'Idea of Bharat & Early Indian Civilization',
+            name: 'Idea of Bharat & Ancient Indian History (Earliest Times to 550 CE)',
             paperType: 'Major (MJC)',
             credits: 6,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-History.pdf',
             fileSize: '1.2 MB',
+            recommendedBooks: ["India's Ancient Past by R.S. Sharma", "A History of Ancient and Early Medieval India by Upinder Singh", "The Wonder That Was India by A.L. Basham"],
             units: [
               {
                 unitNumber: 1,
-                title: 'The Concept of Bharatvarsha',
-                topics: ['Understanding of Bharatvarsha, Indian Knowledge System (IKS), Vedas, Epics, Puranas, Buddhist & Jain literature']
+                title: 'Concept of Bharatvarsha & Historical Sources',
+                topics: ['Understanding of Bharatvarsha, Indian Knowledge System (IKS), Geographical horizons in ancient texts', 'Archaeological Sources: Inscriptions, Numismatics, Monuments; Literary Sources: Vedic, Epic, Puranic, Buddhist, Jain']
               },
               {
                 unitNumber: 2,
-                title: 'Harappan Civilization & Vedic Culture',
-                topics: ['Origin, extent, town planning, economy, religion and decline of Harappan Culture, Early and Later Vedic society']
+                title: 'Prehistory, Harappan Civilization & Vedic Culture',
+                topics: ['Paleolithic, Mesolithic and Neolithic tools and subsistence patterns in the Indian subcontinent', 'Harappan Civilization: Origin, extent, urban planning, craft specialization, trade, religion and theories of decline', 'Vedic Age: Early Vedic society, economy, polity; Later Vedic transition, Painted Grey Ware (PGW), Iron age']
+              },
+              {
+                unitNumber: 3,
+                title: 'State Formation, Mahajanapadas & Religious Reform',
+                topics: ['Territorial state formation, Sixteen Mahajanapadas, Rise of Magadha hegemony under Bimbisara and Ajatashatru', 'Socio-economic background of 6th century BCE: Emergence of Jainism (Mahavira) and Buddhism (Gautama Buddha)']
+              },
+              {
+                unitNumber: 4,
+                title: 'Mauryan Imperialism & The Classical Gupta Age',
+                topics: ['The Mauryan Empire: Chandragupta Maurya, Ashoka Dhamma and rock edicts, Centralized administration, Decline', 'Post-Mauryan polities: Kushanas (Kanishka) and Satavahanas; Indo-Roman trade and Gandhara/Mathura art', 'The Gupta Dynasty: Expansion under Samudragupta and Chandragupta II, Administrative structure, Culture, Art and Literature']
               }
             ]
           }
@@ -565,16 +678,85 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Political-Sc.pdf',
             fileSize: '1.3 MB',
+            recommendedBooks: ['An Introduction to Political Theory by O.P. Gauba', 'Political Theory: An Introduction by Andrew Heywood', 'Principles of Political Science by A.C. Kapoor'],
             units: [
               {
                 unitNumber: 1,
-                title: 'What is Politics & Political Theory',
-                topics: ['Meaning, nature and significance of Political Theory; Normative, Historical and Empirical approaches']
+                title: 'What is Political Theory & Approaches',
+                topics: ['Meaning, nature, and significance of Political Theory; Politics vs Political Science', 'Normative, Historical, Behavioral, Post-Behavioral, and Feminist approaches to political inquiry']
               },
               {
                 unitNumber: 2,
-                title: 'Core Political Concepts',
-                topics: ['Liberty: Negative and Positive; Equality: Formal and Substantive; Justice: Distributive justice (Rawls)']
+                title: 'The State & Theories of Sovereignty',
+                topics: ['Concept of State: Elements of State; Theories of Origin: Divine Right, Social Contract (Hobbes, Locke, Rousseau), Historical, Marxist', 'Concept of Sovereignty: Monistic Austinian theory vs Pluralist critique, Challenges to state sovereignty in globalization']
+              },
+              {
+                unitNumber: 3,
+                title: 'Core Concepts: Liberty, Equality & Justice',
+                topics: ['Liberty: Negative vs Positive Liberty (Isaiah Berlin), Freedom as Autonomy', 'Equality: Formal, Substantive, Equality of Opportunity vs Equality of Outcome, Affirmative Action', 'Justice: Procedural vs Distributive Justice, John Rawls Theory of Justice and Fairness']
+              },
+              {
+                unitNumber: 4,
+                title: 'Rights, Democracy & Citizenship',
+                topics: ['Theories of Rights: Natural Rights, Legal Rights, Historical Rights, Human Rights declarations', 'Democracy: Direct vs Indirect, Liberal Democracy, Participatory Democracy, Deliberative Democracy', 'Citizenship: Universal citizenship, Multicultural citizenship, Civil Society and the State']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 'ba-geography',
+    name: 'B.A. Geography (Hons/Subs/Gen)',
+    shortCode: 'Geography',
+    stream: 'Social Science',
+    faculty: 'Social Science',
+    icon: '🌍',
+    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    totalSemesters: 8,
+    description: 'Geomorphology, Climatology, Human & Economic Geography, Cartography and GIS at Patna University.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+      sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Geography.pdf',
+      annualHons: 'https://www.pup.ac.in/download/Geography.pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'geo-mjc-1',
+            code: 'MJC-1',
+            name: 'Physical Geography & Geomorphology',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Georaphy.pdf',
+            fileSize: '1.6 MB',
+            recommendedBooks: ['Physical Geography by Savindra Singh', 'Geomorphology by Savindra Singh', 'Principles of Geomorphology by W.D. Thornbury'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Earth Interior & Crustal Dynamics',
+                topics: ['Origin of the Earth, Internal Structure of the Earth (Seismic wave evidence: Crust, Mantle, Core)', 'Wegener Continental Drift Theory, Palaeomagnetism, Seafloor Spreading, Plate Tectonics Theory']
+              },
+              {
+                unitNumber: 2,
+                title: 'Endogenetic Forces, Faulting & Folding',
+                topics: ['Earth movements: Orogenic (Mountain building) vs Epeirogenic (Continent building) movements', 'Types of Folds and Faults; Earthquakes: Causes, Types, Seismic scales; Volcanoes: Types, Distribution and Landforms']
+              },
+              {
+                unitNumber: 3,
+                title: 'Exogenetic Processes & Weathering',
+                topics: ['Weathering: Physical, Chemical, Biological weathering processes, Mass Movement and Landslides', 'Cycle of Erosion: Geographical Cycle by W.M. Davis, Penck Morphological System analysis']
+              },
+              {
+                unitNumber: 4,
+                title: 'Geomorphic Landforms & Agents',
+                topics: ['Fluvial Landforms: Erosional and Depositional landforms created by running water', 'Glacial, Karst (Limestone topography), and Aeolian (Wind-blown desert) landform evolution']
               }
             ]
           }
@@ -612,16 +794,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Phychology%20-%20Copy%201.pdf',
             fileSize: '1.5 MB',
+            recommendedBooks: ['Psychology by Baron & Misra', 'Introduction to Psychology by Morgan, King, Weisz & Schopler'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Introduction to Psychology',
-                topics: ['Nature and scope of Psychology, methods of Psychology: Experimental, Observation, Case Study']
+                title: 'Introduction & Biological Foundations',
+                topics: ['Nature, Scope, and Evolution of Psychology as a Science; Modern perspectives in Psychology', 'Methods of psychological research: Experimental, Observational, Survey, and Case Study methods', 'Structure and function of Neurons, Synaptic transmission, Central Nervous System and Brain anatomy']
               },
               {
                 unitNumber: 2,
-                title: 'Perception, Learning and Memory',
-                topics: ['Attention and Perceptual processes; Classical and Operant Conditioning; Multi-store model of Memory']
+                title: 'Perceptual Processes & Attention',
+                topics: ['Sensation vs Perception, Absolute and Difference Thresholds, Signal Detection Theory', 'Gestalt Principles of Perceptual Organization, Depth perception cues, Perceptual constancies', 'Selective Attention, Divided Attention, Factors influencing attention']
+              },
+              {
+                unitNumber: 3,
+                title: 'Learning & Conditioning',
+                topics: ['Classical Conditioning (Pavlov): Extinction, Spontaneous Recovery, Stimulus Generalization and Discrimination', 'Operant Conditioning (Skinner): Positive and Negative Reinforcement, Schedules of reinforcement, Punishment', 'Cognitive learning: Insight learning (Kohler), Observational learning (Bandura Social Learning Theory)']
+              },
+              {
+                unitNumber: 4,
+                title: 'Memory Systems & Forgetting',
+                topics: ['Atkinson-Shiffrin Multi-Store Model: Sensory Memory, Short-Term Memory (STM), Long-Term Memory (LTM)', 'Working Memory Model (Baddeley), Episodic vs Semantic Memory, Procedural Memory', 'Theories of Forgetting: Trace Decay theory, Interference theory (Proactive and Retroactive), Retrieval failure']
               }
             ]
           }
@@ -659,16 +852,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Sociology.pdf',
             fileSize: '1.3 MB',
+            recommendedBooks: ['Sociology: Themes and Perspectives by Haralambos & Holborn', 'Sociology by Anthony Giddens', 'An Introduction to Sociology by Vidya Bhushan & D.R. Sachdeva'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Nature and Scope of Sociology',
-                topics: ['Origin and emergence of Sociology; Relationship with other social sciences; Sociological Imagination']
+                title: 'Nature & Emergence of Sociology',
+                topics: ['Origin of Sociology, Historical context (Enlightenment, French Revolution, Industrial Revolution)', 'Subject matter and scope of Sociology, Relationship of Sociology with Economics, History, and Anthropology', 'Sociological Imagination (C. Wright Mills)']
               },
               {
                 unitNumber: 2,
-                title: 'Basic Concepts of Sociology',
-                topics: ['Society, Community, Association, Social Structure, Status and Role, Culture and Socialization']
+                title: 'Fundamental Concepts of Society',
+                topics: ['Society, Community, Association, Institution: Definitions, Characteristics, and Interrelationships', 'Social Structure and Function, Status and Role, Role conflict, Role set']
+              },
+              {
+                unitNumber: 3,
+                title: 'Culture, Socialization & Social Control',
+                topics: ['Culture: Material vs Non-Material Culture, Cultural Lag (Ogburn), Ethnocentrism, Cultural Relativism', 'Socialization: Concept, Agencies of socialization (Family, Peer groups, School, Mass Media), Stages of socialization', 'Social Control: Formal and Informal means of social control, Conformity and Deviance']
+              },
+              {
+                unitNumber: 4,
+                title: 'Social Stratification & Social Change',
+                topics: ['Concept of Social Stratification, Forms of stratification: Estate, Caste, and Class', 'Theories of Stratification: Functionalist (Davis-Moore) and Conflict (Karl Marx, Max Weber)', 'Social Change: Factors of social change (Technological, Demographic, Cultural, Economic), Evolution vs Progress']
               }
             ]
           }
@@ -706,617 +910,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-AI-and-AS.pdf',
             fileSize: '1.2 MB',
+            recommendedBooks: ['Indian Epigraphy by D.C. Sircar', 'Coins of India by C.J. Brown', 'Ancient India by V.D. Mahajan'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Archaeological and Literary Sources',
-                topics: ['Inscriptions (Ashokan Edicts), Coins (Punch-marked, Gupta Gold coins), Monuments, Indigenous & Foreign accounts']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 3. FACULTY OF HUMANITIES
-  // =========================================================================
-  {
-    id: 'ba-english',
-    name: 'B.A. English (Hons/Subs/Gen)',
-    shortCode: 'English',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '📖',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'British Literature, Indian Classical Literature in English, Literary Criticism and Linguistics at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English%20-%20Copy%201.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/English.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20English.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'eng-mjc-1',
-            code: 'MJC-1',
-            name: 'Indian Classical Literature & Early Poetry',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English%20-%20Copy%201.pdf',
-            fileSize: '1.1 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Kalidasa: Abhijnanasakuntalam',
-                topics: ['Dramaturgy, Natyashastra Rasa theory, Translation analysis, Gender and Monarchy']
+                title: 'Archaeological Methods & Sources',
+                topics: ['Excavation and Exploration methods, Stratigraphy, Radio-carbon Dating (C-14)', 'Major archaeological sites in Bihar: Nalanda, Vaishali, Rajgir, Kumhrar (Patliputra)']
               },
               {
                 unitNumber: 2,
-                title: 'Vyasa: The Mahabharata (The Dicing & The Sequel)',
-                topics: ['Dharma dilemmas, Epic structure, Fate vs Free will in ancient Indian traditions']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-hindi',
-    name: 'B.A. Hindi (Hons/Subs/Gen)',
-    shortCode: 'Hindi',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: 'अ',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Hindi Sahitya ka Itihas, Kavya, Katha Sahitya, aur Bhasha Vigyan at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Hindi.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Hindi.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Hindi.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'hin-mjc-1',
-            code: 'MJC-1',
-            name: 'Hindi Sahitya ka Itihas (Aadikal evam Madhyakal)',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Hindi.pdf',
-            fileSize: '1.3 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Hindi Sahitya ka Kaal-Vibhajan aur Aadikal',
-                topics: ['Aadikal ki prishthbhumi, Siddh aur Nath sahitya, Raso kavya parampara']
+                title: 'Indian Epigraphy & Inscriptions',
+                topics: ['Origin of Brahmi and Kharosthi scripts; Ashokan Edicts: Major Rock Edicts, Pillar Edicts, Historical importance', 'Besnagar Garuda Pillar inscription, Hathigumpha inscription of Kharavela, Allahabad Pillar inscription of Samudragupta']
               },
               {
-                unitNumber: 2,
-                title: 'Bhakti Kaal aur Riti Kaal',
-                topics: ['Nirgun evam Sagun bhakti dhara: Kabir, Jayasi, Surdas, Tulsidas, Riti-Baddha aur Riti-Mukt kavi']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-sanskrit',
-    name: 'B.A. Sanskrit (Hons/Subs/Gen)',
-    shortCode: 'Sanskrit',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '🕉️',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Vedic Literature, Classical Sanskrit Poetry, Paninian Grammar, and Darshan at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit%20-%20Copy%201.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Sanskrit.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'san-mjc-1',
-            code: 'MJC-1',
-            name: 'Classical Sanskrit Literature & Vyakarana',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit%20-%20Copy%201.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Raghuvamsham & Kiratarjuniyam',
-                topics: ['Selected cantos from Mahakavi Kalidasa and Bharavi, Subhashita Sangraha']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-urdu',
-    name: 'B.A. Urdu (Hons/Subs/Gen)',
-    shortCode: 'Urdu',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '✒️',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Urdu Ghazal, Nazm, Dastan, Drama, and History of Urdu Literature at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Urdu.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Urdu.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Urdu.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'urd-mjc-1',
-            code: 'MJC-1',
-            name: 'Urdu Zaban-o-Adab ki Tareekh',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Urdu.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Urdu Zaban ka Aaghaz-o-Irtiqa',
-                topics: ['Deccan mein Urdu adab ki ibtida, Dabistan-e-Delhi aur Dabistan-e-Lucknow']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-philosophy',
-    name: 'B.A. Philosophy (Hons/Subs/Gen)',
-    shortCode: 'Philosophy',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '💭',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Indian and Western Epistemology, Metaphysics, Ethics, and Logic at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Philosophy.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Philosophy.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Philosophy.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'phi-mjc-1',
-            code: 'MJC-1',
-            name: 'Indian Epistemology & Metaphysics',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Philosophy.pdf',
-            fileSize: '1.3 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Vedic and Heterodox Systems',
-                topics: ['Carvaka Epistemology, Jain Syadvada, Buddhist Pratityasamutpada & Kshanikavada']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-maithili',
-    name: 'B.A. Maithili (Hons/Subs/Gen)',
-    shortCode: 'Maithili',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '📜',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Vidyapati Padavali, Pracheen evam Aadhunik Maithili Sahitya at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Maithili.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Maithili.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Maithili.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mai-mjc-1',
-            code: 'MJC-1',
-            name: 'Pracheen Maithili Kavya & Vidyapati',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Maithili.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Mahakavi Vidyapati Padavali',
-                topics: ['Shringar Padavali, Nachari evam Maheshvani, Mithila sanskriti']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-music',
-    name: 'B.A. Music (4 Years CBCS)',
-    shortCode: 'Music',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '🎵',
-    degree: '4-Year FYUGP CBCS',
-    totalSemesters: 8,
-    description: 'Hindustani Classical Vocal & Instrumental, Raga Theory and Tala System at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Music.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Music.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mus-mjc-1',
-            code: 'MJC-1',
-            name: 'Hindustani Classical Music & Tala Theory',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Music.pdf',
-            fileSize: '1.1 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Fundamental Principles of Sangeet',
-                topics: ['Nada, Shruti, Swara, Saptak, Thaat, Raga Lakshana, Teental, Ektal']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-persian',
-    name: 'B.A. Persian (4 Years CBCS)',
-    shortCode: 'Persian',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '📖',
-    degree: '4-Year FYUGP CBCS',
-    totalSemesters: 8,
-    description: 'Classical Persian Poetry (Saadi, Hafez) and Indo-Persian Historiography at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Persian.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Persian.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'per-mjc-1',
-            code: 'MJC-1',
-            name: 'Classical Persian Prose & Grammar',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Persian.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Gulistan-e-Saadi & Persian Grammar',
-                topics: ['Selected stories from Gulistan chapter 1, Dastur-e-Zaban-e-Farsi']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'ba-bengali',
-    name: 'Bengali (4 Years CBCS Course)',
-    shortCode: 'Bengali',
-    stream: 'Humanities',
-    faculty: 'Humanities',
-    icon: '📚',
-    degree: '4-Year FYUGP CBCS',
-    totalSemesters: 8,
-    description: 'Bengali Sahitya: Rabindranath Tagore, Kazi Nazrul Islam, and Modern Bengali Drama at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Bangli.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/syllabus/Bangali.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'ben-mjc-1',
-            code: 'MJC-1',
-            name: 'History of Bengali Literature & Early Poetry',
-            paperType: 'Major (MJC)',
-            credits: 6,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Bangli.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Charyapada & Mangalkavya',
-                topics: ['Origin of Bengali Language, Vaishnava Padavali, Chaitanya Charitamrita']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 4. FACULTY OF COMMERCE
-  // =========================================================================
-  {
-    id: 'bcom-acc',
-    name: 'B.Com Accounting & Finance',
-    shortCode: 'Accounting & Finance',
-    stream: 'Commerce',
-    faculty: 'Commerce',
-    icon: '📊',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Financial Accounting, Corporate Accounting, Cost & Management Accounting, Auditing & Taxation at Vanijya Mahavidyalaya.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Accounting%20&%20Finance).pdf',
-      annualHons: 'https://www.pup.ac.in/download/B.COM%20ACC.%20HONS.%20PART-II%20HONS..pdf',
-      otherPdfs: [
-        { label: 'B.Com Part-III Hons PDF', url: 'https://www.pup.ac.in/download/B.COM%20ACC.%20HONS.%20PART-III%20HONS.pdf' }
-      ]
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'com-mjc-1',
-            code: 'MJC-1',
-            name: 'Financial Accounting',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
-            fileSize: '1.7 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Theoretical Framework & Accounting Standards',
-                topics: ['Accounting Principles, GAAP, Ind AS & IFRS framework, Depreciation Accounting']
+                unitNumber: 3,
+                title: 'Ancient Indian Numismatics (Coins)',
+                topics: ['Origin of coinage in India, Punch-Marked Coins (PMC): Typology and symbols', 'Indo-Greek coinage innovations, Kushana Gold and Copper coins, Gupta Gold Dinars (Artistic and economic aspects)']
               },
               {
-                unitNumber: 2,
-                title: 'Partnership Accounts & Dissolution',
-                topics: ['Admission, Retirement and Death of a Partner, Dissolution of Partnership firm, Garner vs Murray rule']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'bcom-hrm',
-    name: 'B.Com Human Resource Management (HRM)',
-    shortCode: 'B.Com (HRM)',
-    stream: 'Commerce',
-    faculty: 'Commerce',
-    icon: '💼',
-    degree: '4-Year FYUGP CBCS',
-    totalSemesters: 8,
-    description: 'Human Resource Management, Industrial Relations, Labor Laws, and Organizational Dynamics at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Human%20Resourse%20management).pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(HRM)%20-%20Copy%201.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'hrm-mjc-1',
-            code: 'MJC-1',
-            name: 'Human Resource Management Fundamentals',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Human%20Resourse%20management).pdf',
-            fileSize: '1.4 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'HR Planning, Recruitment & Selection',
-                topics: ['Job Analysis, Job Description, Recruitment sources, Selection testing and interviews']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'bcom-marketing',
-    name: 'B.Com Marketing (4 Years CBCS)',
-    shortCode: 'B.Com (Marketing)',
-    stream: 'Commerce',
-    faculty: 'Commerce',
-    icon: '📣',
-    degree: '4-Year FYUGP CBCS',
-    totalSemesters: 8,
-    description: 'Consumer Behavior, Digital Marketing, Retail Management, Brand Strategy at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%201.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%202.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mkt-mjc-1',
-            code: 'MJC-1',
-            name: 'Principles of Marketing & Market Research',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%201.pdf',
-            fileSize: '1.4 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Marketing Mix & Consumer Insights',
-                topics: ['4 Ps of Marketing, Market Segmentation, Targeting and Positioning (STP), Consumer Buying Process']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'bcom-corporate',
-    name: 'B.Com Corporate Administration Group',
-    shortCode: 'Corporate Admin',
-    stream: 'Commerce',
-    faculty: 'Commerce',
-    icon: '🏢',
-    degree: '3-Year Annual (Hons)',
-    totalSemesters: 3,
-    description: 'Company Law, Secretarial Practice, and Corporate Governance at Patna University.',
-    officialPdfs: {
-      annualHons: 'https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-II%20HONS.pdf',
-      otherPdfs: [
-        { label: 'Part-III Hons Corporate Admin', url: 'https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-III%20HONS.pdf' }
-      ]
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'corp-p2',
-            code: 'PART-II',
-            name: 'Corporate Secretarial Practice & Governance',
-            paperType: 'Core Theory',
-            credits: 4,
-            theoryMarks: 100,
-            internalMarks: 0,
-            pdfUrl: 'https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-II%20HONS.pdf',
-            fileSize: '1.1 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Company Administration',
-                topics: ['Role of Company Secretary, Board of Directors, Meetings and Resolutions under Companies Act']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'bcom-business-env',
-    name: 'B.Com Business Environment Group',
-    shortCode: 'Business Env',
-    stream: 'Commerce',
-    faculty: 'Commerce',
-    icon: '🌐',
-    degree: 'Part-I, II, III Annual (Hons)',
-    totalSemesters: 3,
-    description: 'Macro Environment, Industrial Policy, EXIM, and Monetary Policy at Patna University.',
-    officialPdfs: {
-      annualHons: 'https://www.pup.ac.in/download/B.%20COM.%20BUSINESS%20ENVIRONMENT%20HONS.%20G.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'benv-p1',
-            code: 'PART-I/II/III',
-            name: 'Indian Business Environment',
-            paperType: 'Core Theory',
-            credits: 4,
-            theoryMarks: 100,
-            internalMarks: 0,
-            pdfUrl: 'https://www.pup.ac.in/download/B.%20COM.%20BUSINESS%20ENVIRONMENT%20HONS.%20G.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Economic Environment of Business',
-                topics: ['LPG reforms, NITI Aayog policies, Monetary and Fiscal policies in India']
+                unitNumber: 4,
+                title: 'Indigenous & Foreign Literary Accounts',
+                topics: ['Vedic and Epic traditions; Buddhist Tipitaka and Jatakas; Jain Agamas', 'Foreign travelers accounts: Megasthenes (Indica), Fa-Hien, Hiuen Tsang (Xuanzang), Al-Biruni (Kitab-ul-Hind)']
               }
             ]
           }
@@ -1326,7 +940,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   },
 
   // =========================================================================
-  // 5. FACULTY OF SCIENCE
+  // 3. FACULTY OF SCIENCE
   // =========================================================================
   {
     id: 'bsc-physics',
@@ -1357,16 +971,84 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Physics.pdf',
             fileSize: '1.8 MB',
+            recommendedBooks: ['Mechanics by D.S. Mathur', 'Vector Analysis by Murray Spiegel', 'Mathematical Physics by H.K. Dass'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Vector Calculus & Coordinate Systems',
-                topics: ['Gradient, Divergence, Curl, Line, Surface, Volume Integrals, Gauss Divergence Theorem, Stokes Theorem']
+                title: 'Vector Calculus & Orthogonal Coordinates',
+                topics: ['Gradient of a scalar field, Divergence and Curl of a vector field, Physical interpretations', 'Line, Surface and Volume integrals; Gauss Divergence Theorem, Green Theorem, Stokes Theorem', 'Orthogonal Curvilinear Coordinates: Scale factors, expressions for gradient, divergence, curl, and Laplacian in Cylindrical and Spherical coordinates']
               },
               {
                 unitNumber: 2,
-                title: 'Mechanics & Special Relativity',
-                topics: ['Rotational Motion, Moment of Inertia, Michelson-Morley experiment, Lorentz Transformations, Mass-Energy equivalence']
+                title: 'Particle Mechanics & Rotational Dynamics',
+                topics: ['Newton laws of motion, Conservation of linear momentum and mechanical energy, Centre of mass frame', 'Rotational motion of rigid bodies: Angular momentum, Torque, Moment of Inertia, Parallel and Perpendicular axes theorems', 'Calculation of Moment of Inertia for circular disc, solid cylinder, solid sphere, spherical shell']
+              },
+              {
+                unitNumber: 3,
+                title: 'Gravitation & Central Force Fields',
+                topics: ['Newton Law of Gravitation, Gravitational field and potential, Potential due to a uniform spherical shell and solid sphere', 'Two-body problem, Central force motion, Kepler Laws of Planetary Motion derivation, Geosynchronous and polar satellites']
+              },
+              {
+                unitNumber: 4,
+                title: 'Special Theory of Relativity',
+                topics: ['Inertial frames of reference, Galilean transformation and its failure, Michelson-Morley experiment', 'Postulates of Special Relativity, Lorentz Transformations, Length Contraction, Time Dilation, Relativistic addition of velocities', 'Variation of mass with velocity, Mass-energy equivalence relation ($E = mc^2$)']
+              }
+            ]
+          },
+          {
+            id: 'phy-lab-1',
+            code: 'MJC-1 (P)',
+            name: 'Mechanics & General Physics Lab',
+            paperType: 'Practical / Lab',
+            credits: 2,
+            theoryMarks: 40,
+            internalMarks: 60,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Physics.pdf',
+            fileSize: '1.2 MB',
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Mechanics Experiments',
+                topics: ['Determination of acceleration due to gravity (g) using Kater Reversible Pendulum and Bar Pendulum', 'Determination of Moment of Inertia of a flywheel and Rigidity Modulus using Torsional Pendulum', 'Measurement of Young Modulus by Cantilever bending method']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'phy-mjc-2',
+            code: 'MJC-2',
+            name: 'Electricity & Magnetism',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Physics.pdf',
+            fileSize: '1.6 MB',
+            recommendedBooks: ['Introduction to Electrodynamics by David J. Griffiths', 'Electricity and Magnetism by Mahajan & Rangwala'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Electrostatics & Dielectrics',
+                topics: ['Coulomb Law, Electric field, Gauss Law and its applications (Line, sheet, sphere), Electrostatic potential', 'Poisson and Laplace equations, Capacitance of parallel plate capacitor, Dielectric polarization, Clausius-Mossotti equation']
+              },
+              {
+                unitNumber: 2,
+                title: 'Magnetostatics & Magnetic Fields in Matter',
+                topics: ['Biot-Savart Law and its applications (Straight wire, circular loop), Ampere Circuital Law, Magnetic vector potential', 'Magnetic materials: Diamagnetism, Paramagnetism, Ferromagnetism, Hysteresis B-H curve']
+              },
+              {
+                unitNumber: 3,
+                title: 'Electromagnetic Induction & Transients',
+                topics: ['Faraday Law of Electromagnetic Induction, Lenz Law, Self and Mutual Inductance, Inductance of solenoids and coils', 'Transient currents: Growth and decay of current in LR, CR, and LCR electrical circuits']
+              },
+              {
+                unitNumber: 4,
+                title: 'Maxwell Equations & Electromagnetic Waves',
+                topics: ['Displacement current, Maxwell equations in differential and integral forms, Poynting vector and Poynting Theorem', 'Wave equation for electromagnetic waves in free space, Transverse nature of EM waves, Wave velocity']
               }
             ]
           }
@@ -1397,23 +1079,73 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'mat-mjc-1',
             code: 'MJC-1',
-            name: 'Calculus & Analytical Geometry',
+            name: 'Calculus & Analytical Geometry (2D & 3D)',
             paperType: 'Major (MJC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYGU-Mathematics.pdf',
             fileSize: '1.5 MB',
+            recommendedBooks: ['Differential Calculus by Shanti Narayan & P.K. Mittal', 'Analytical Geometry of Three Dimensions by Shanti Narayan', 'Calculus by Gorakh Prasad'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Differential Calculus',
-                topics: ['Successive Differentiation, Leibnitz Rule, Curvature, Asymptotes, Singular Points, Curve Tracing']
+                title: 'Differential Calculus & Series Expansions',
+                topics: ['Successive differentiation, nth derivative of standard functions, Leibnitz Theorem for product of functions', 'Maclaurin and Taylor series expansions of functions, Indeterminate forms and L-Hospital Rule', 'Asymptotes of Cartesian and Polar curves, Curvature, Radius of curvature, Center of curvature']
               },
               {
                 unitNumber: 2,
-                title: 'Analytical Solid Geometry (3D)',
-                topics: ['Planes, Straight Lines, Shortest distance, Sphere, Cone, Cylinder, Central Conicoids']
+                title: 'Functions of Several Variables & Partial Differentiation',
+                topics: ['Partial derivatives of first and higher orders, Homogeneous functions, Euler Theorem on homogeneous functions', 'Total differential, Chain rule, Jacobians and their properties, Maxima and Minima of functions of two variables']
+              },
+              {
+                unitNumber: 3,
+                title: 'Analytical Geometry of Two Dimensions (2D)',
+                topics: ['General equation of second degree and classification of conics (Parabola, Ellipse, Hyperbola)', 'Polar coordinates: Polar equation of a conic, Equations of chords, tangents, and normals in polar coordinates']
+              },
+              {
+                unitNumber: 4,
+                title: 'Analytical Geometry of Three Dimensions (3D)',
+                topics: ['Rectangular Cartesian coordinates in 3D space, Direction cosines and direction ratios', 'Equations of a Plane and a Straight Line, Shortest distance between two skew lines', 'Sphere: General equation, Plane section of a sphere, Tangent plane; Equations of Cone and Cylinder']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'mat-mjc-2',
+            code: 'MJC-2',
+            name: 'Algebra & Real Analysis',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYGU-Mathematics.pdf',
+            fileSize: '1.5 MB',
+            recommendedBooks: ['Elements of Real Analysis by Shanti Narayan & M.D. Raisinghania', 'Higher Algebra by Hall & Knight', 'Mathematical Analysis by S.C. Malik & Savita Arora'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Set Theory & Theory of Equations',
+                topics: ['Equivalence relations, Partial order relations, Equivalence classes, Partition of a set', 'Theory of Equations: Fundamental theorem of algebra, Relation between roots and coefficients, Symmetric functions of roots, Cardan solution of cubic equations']
+              },
+              {
+                unitNumber: 2,
+                title: 'Real Number System & Sequences',
+                topics: ['Axiomatic property of real numbers, Supremum and Infimum, Archimedean property, Density of rationals', 'Sequences: Bounded sequences, Convergent sequences, Cauchy sequences, Bolzano-Weierstrass Theorem']
+              },
+              {
+                unitNumber: 3,
+                title: 'Infinite Series Convergence Tests',
+                topics: ['Infinite series of positive terms, Cauchy convergence criterion, Comparison tests', 'D-Alembert Ratio Test, Cauchy Root Test, Raabe Test, Logarithmic Test', 'Alternating series: Leibnitz Test, Absolute and Conditional convergence']
+              },
+              {
+                unitNumber: 4,
+                title: 'Continuity & Differentiability Theorems',
+                topics: ['Limits of functions, Continuous functions, Intermediate Value Theorem, Uniform continuity', 'Differentiability: Rolle Theorem, Lagrange Mean Value Theorem, Cauchy Mean Value Theorem and geometric interpretations']
               }
             ]
           }
@@ -1451,16 +1183,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf',
             fileSize: '1.7 MB',
+            recommendedBooks: ['Concise Inorganic Chemistry by J.D. Lee', 'Principles of Physical Chemistry by Puri, Sharma & Pathania', 'Inorganic Chemistry by Huheey'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Atomic Structure & Chemical Bonding',
-                topics: ['Bohr Theory, de Broglie, Heisenberg Uncertainty, VSEPR, Molecular Orbital Theory for homonuclear and heteronuclear molecules']
+                title: 'Atomic Structure & Quantum Mechanics',
+                topics: ['Bohr model and limitations, Sommerfeld extension, de Broglie matter waves, Heisenberg Uncertainty Principle', 'Schrödinger wave equation: Radial and angular wave functions, Quantum numbers, Pauli Exclusion Principle, Hund Rule, Aufbau Principle']
               },
               {
                 unitNumber: 2,
-                title: 'Gaseous State & Chemical Kinetics',
-                topics: ['Kinetic theory of gases, Van der Waals equation, Order and Molecularity of reactions, Arrhenius equation']
+                title: 'Chemical Bonding & Molecular Architecture',
+                topics: ['Ionic Bonding: Lattice energy, Born-Haber cycle, Born-Lande equation, Fajan rules and polarization effects', 'Covalent Bonding: Valence Bond Theory (VBT), Hybridization ($sp, sp^2, sp^3, dsp^2, sp^3d, sp^3d^2$), VSEPR Theory for shapes of molecules ($H_2O, NH_3, SF_4, XeF_4$)', 'Molecular Orbital Theory (MOT): LCAO method, MO diagrams for $H_2, N_2, O_2, CO, NO$']
+              },
+              {
+                unitNumber: 3,
+                title: 'Gaseous State & Kinetic Theory',
+                topics: ['Postulates of Kinetic Molecular Theory of gases, Derivation of gas pressure, Maxwell-Boltzmann distribution of molecular speeds', 'Deviation of real gases from ideal behavior, van der Waals equation of state, Critical constants, Liquefaction of gases']
+              },
+              {
+                unitNumber: 4,
+                title: 'Chemical Kinetics & Catalysis',
+                topics: ['Rate of reaction, Factors affecting rate, Order and Molecularity of reactions', 'Integrated rate equations for Zero, First, and Second order reactions, Half-life period determination', 'Temperature dependence of reaction rates: Arrhenius equation, Activation energy, Collision theory of bimolecular reactions, Homogeneous and Heterogeneous catalysis']
               }
             ]
           }
@@ -1491,18 +1234,34 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'bot-mjc-1',
             code: 'MJC-1',
-            name: 'Microbiology, Algae, Fungi & Archegoniate',
+            name: 'Microbiology, Phycology & Mycology',
             paperType: 'Major (MJC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Botany.pdf',
             fileSize: '1.6 MB',
+            recommendedBooks: ['Botany for Degree Students: Algae by B.R. Vashishta', 'Microbiology and Plant Pathology by P.D. Sharma'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Viruses & Bacteria',
-                topics: ['Structure and replication of bacteriophages, General account of Archaebacteria and Eubacteria']
+                title: 'Microbiology (Viruses & Bacteria)',
+                topics: ['Discovery, general characteristics, and classification of Viruses; Structure of TMV and T4 Bacteriophage, Lytic and Lysogenic cycles', 'Bacteria: General structure, Gram-positive and Gram-negative cell walls, Reproduction (Transformation, Transduction, Conjugation)']
+              },
+              {
+                unitNumber: 2,
+                title: 'Phycology (Algae Diversity)',
+                topics: ['General characteristics, pigment diversity, and economic importance of Algae', 'Morphology, reproduction and life cycles of: Chlamydomonas, Oedogonium, Chara (Green algae), Ectocarpus (Brown algae), Polysiphonia (Red algae)']
+              },
+              {
+                unitNumber: 3,
+                title: 'Mycology (Fungi Diversity)',
+                topics: ['General characteristics, nutrition, and classification of Fungi', 'Life history, morphology, and reproduction of: Albugo (Oomycetes), Rhizopus, Penicillium, Puccinia graminis (Rust of wheat), Agaricus (Mushroom)']
+              },
+              {
+                unitNumber: 4,
+                title: 'Lichens & Common Plant Diseases',
+                topics: ['Lichens: Structural types (Crustose, Foliose, Fruticose), Symbiotic relationship, Ecological role', 'Plant Pathology: Symptoms, causal organism, and control of Citrus Canker, Late Blight of Potato, and Loose Smut of Wheat']
               }
             ]
           }
@@ -1540,11 +1299,27 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Zoology.pdf',
             fileSize: '1.6 MB',
+            recommendedBooks: ['Invertebrate Zoology by R.L. Kotpal', 'Invertebrate Zoology by Barnes', 'Invertebrates by Ruppert & Barnes'],
             units: [
               {
                 unitNumber: 1,
-                title: 'Protozoa, Porifera & Coelenterata',
-                topics: ['Locomotion in Amoeba, Canal system in Sponges, Polymorphism in Siphonophora']
+                title: 'Protista, Porifera & Coelenterata',
+                topics: ['General characteristics and classification of Protista; Locomotion in Amoeba, Paramecium conjugation', 'Porifera: Canal systems in Sponges (Ascon, Sycon, Leucon types), Spicules and skeleton', 'Coelenterata: Metagenesis in Obelia, Polymorphism in Siphonophora, Coral reef formation']
+              },
+              {
+                unitNumber: 2,
+                title: 'Platyhelminthes & Nemathelminthes',
+                topics: ['General characteristics and parasitic adaptations in Helminthes', 'Life cycle and pathogenesis of Fasciola hepatica (Liver fluke) and Taenia solium (Tapeworm)', 'Nematoda: Life cycle, transmission, and control of Ascaris lumbricoides and Wuchereria bancrofti']
+              },
+              {
+                unitNumber: 3,
+                title: 'Annelida & Arthropoda',
+                topics: ['Annelida: Metamerism, Excretion via Nephridia in Earthworm and Leech', 'Arthropoda: Vision in insects (Compound eye, mosaic vision), Respiratory organs in Crustacea (Prawn) and Arachnida (Scorpion)', 'Metamorphosis in insects and its hormonal control']
+              },
+              {
+                unitNumber: 4,
+                title: 'Mollusca & Echinodermata',
+                topics: ['Mollusca: Torsion and Detorsion in Gastropoda (Pila), Respiration in Unio (Freshwater mussel)', 'Echinodermata: Water vascular system in Asterias (Starfish), Bipinnaria and Pluteus larval forms and evolutionary affinities']
               }
             ]
           }
@@ -1554,8 +1329,286 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   },
 
   // =========================================================================
-  // 6. COMPULSORY NEP MODULES (AEDP, AEC & MDC)
+  // 4. FACULTY OF HUMANITIES
   // =========================================================================
+  {
+    id: 'ba-english',
+    name: 'B.A. English (Hons/Subs/Gen)',
+    shortCode: 'English',
+    stream: 'Humanities',
+    faculty: 'Humanities',
+    icon: '📖',
+    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    totalSemesters: 8,
+    description: 'British Literature, Indian Classical Literature in English, Literary Criticism and Linguistics at Patna University.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English%20-%20Copy%201.pdf',
+      sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/English.pdf',
+      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20English.pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'eng-mjc-1',
+            code: 'MJC-1',
+            name: 'Indian Classical Literature & Early Poetry',
+            paperType: 'Major (MJC)',
+            credits: 6,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/English%20-%20Copy%201.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Kalidasa: The Loom of Time by Chandra Rajan', 'The Mahabharata by J.A.B. van Buitenen', 'The Interior Landscape by A.K. Ramanujan'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Classical Sanskrit Drama - Abhijnanasakuntalam',
+                topics: ['Kalidasa: Abhijnanasakuntalam (The Recognition of Sakuntala), Translation analysis', 'Natyashastra dramaturgy, Rasa theory (Sringara, Karuna), Gender and Dharma in classical court drama']
+              },
+              {
+                unitNumber: 2,
+                title: 'Indian Epics - Vyasa Mahabharata',
+                topics: ['Vyasa: The Mahabharata - The Dicing (Dyuta Parva) and The Sequel (Anudyuta Parva)', 'Dilemmas of Dharma, Fate vs Free Will, Draupadi questioning of the Kuru assembly']
+              },
+              {
+                unitNumber: 3,
+                title: 'Classical Sanskrit Comedy - Mrichchhakatika',
+                topics: ['Sudraka: Mrichchhakatika (The Little Clay Cart) - Social structure in Ujjayini', 'The courtesan Vasantasena, Charudatta, Prakrit vs Sanskrit speech distribution as social markers']
+              },
+              {
+                unitNumber: 4,
+                title: 'Tamil Sangam Literature - Cilappatikaram',
+                topics: ['Ilango Adigal: The Book of Vanci from Cilappatikaram (The Tale of an Anklet)', 'Sangam poetics (Akam and Puram genres), Kannaki wrath and chastity as heroic virtue']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 'ba-hindi',
+    name: 'B.A. Hindi (Hons/Subs/Gen)',
+    shortCode: 'Hindi',
+    stream: 'Humanities',
+    faculty: 'Humanities',
+    icon: 'अ',
+    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    totalSemesters: 8,
+    description: 'Hindi Sahitya ka Itihas, Kavya, Katha Sahitya, aur Bhasha Vigyan at Patna University.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Hindi.pdf',
+      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Hindi.pdf',
+      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-%20Hindi.pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'hin-mjc-1',
+            code: 'MJC-1',
+            name: 'Hindi Sahitya ka Itihas (Aadikal evam Madhyakal)',
+            paperType: 'Major (MJC)',
+            credits: 6,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Hindi.pdf',
+            fileSize: '1.3 MB',
+            recommendedBooks: ['Hindi Sahitya ka Itihas by Acharya Ramchandra Shukla', 'Hindi Sahitya ka Itihas by Dr. Nagendra', 'Hindi Sahitya: Udbhav aur Vikas by Hazari Prasad Dwivedi'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Aadikal: Prishthbhumi evam Pravrittiyan',
+                topics: ['Hindi Sahitya ke itihas-lekhan ki parampara, Kaal-vibhajan aur Naamkaran', 'Aadikal ki rajnitik, samajik, evam dharmik prishthbhumi; Siddh aur Nath sahitya, Jain sahitya', 'Raso kavya parampara: Prithviraj Raso ki pramanikta evam visheshataen']
+              },
+              {
+                unitNumber: 2,
+                title: 'Bhaktikaal: Nirgun Bhakti Dhara',
+                topics: ['Bhaktikaal ka udbhav aur samajik sandarbh; Bhakti kavya ki samanya pravrittiyan', 'Jnanashrayi Shakha (Sant Kavya): Kabir ki samajik chetna, rahasyavad, evam bhasha-shaili', 'Premashrayi Shakha (Sufi Kavya): Malik Muhammad Jayasi ka Padmavat, Sufi premakhyan parampara']
+              },
+              {
+                unitNumber: 3,
+                title: 'Bhaktikaal: Sagun Bhakti Dhara',
+                topics: ['Krishna Bhakti Shakha: Ashtachhap kavi, Surdas ka Vatsalya evam Bhramargeet saar', 'Ram Bhakti Shakha: Tulsidas ka Ramcharitmanas, Samanvaya-bhavana, kavya-shilp']
+              },
+              {
+                unitNumber: 4,
+                title: 'Ritikaal: Sahityik Dharayein evam Kavi',
+                topics: ['Ritikaal ki samajik-rajnitik prishthbhumi, Ritikavya ka naamkaran evam pravrittiyan', 'Riti-Baddha kavya (Keshavdas, Chintamani), Riti-Siddha kavya (Bihari ke dohe), Riti-Mukt kavya (Ghananand ki prem-vyanjana)']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 5. FACULTY OF COMMERCE
+  // =========================================================================
+  {
+    id: 'bcom-acc',
+    name: 'B.Com Accounting & Finance',
+    shortCode: 'Accounting & Finance',
+    stream: 'Commerce',
+    faculty: 'Commerce',
+    icon: '📊',
+    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    totalSemesters: 8,
+    description: 'Financial Accounting, Corporate Accounting, Cost & Management Accounting, Auditing & Taxation at Vanijya Mahavidyalaya.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
+      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Accounting%20&%20Finance).pdf',
+      annualHons: 'https://www.pup.ac.in/download/B.COM%20ACC.%20HONS.%20PART-II%20HONS..pdf',
+      otherPdfs: [
+        { label: 'B.Com Part-III Hons PDF', url: 'https://www.pup.ac.in/download/B.COM%20ACC.%20HONS.%20PART-III%20HONS.pdf' }
+      ]
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'com-mjc-1',
+            code: 'MJC-1',
+            name: 'Financial Accounting',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
+            fileSize: '1.7 MB',
+            recommendedBooks: ['Financial Accounting by J.R. Monga', 'Advanced Accounts by M.C. Shukla & T.S. Grewal', 'Financial Accounting by P.C. Tulsian'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Accounting Framework & Principles',
+                topics: ['Theoretical framework, Accounting Concepts, Conventions, GAAP, Ind AS & IFRS introduction', 'Accounting cycle from Journal to Trial Balance, Capital vs Revenue expenditures, Depreciation Accounting methods']
+              },
+              {
+                unitNumber: 2,
+                title: 'Special Accounting Entities',
+                topics: ['Branch Accounts: Debtors method, Stock and Debtors method, Independent branches reconciliation', 'Departmental Accounts: Allocation of common expenses, Inter-departmental transfers at cost and invoice price', 'Consignment Accounts: Valuation of unsold stock, Normal and Abnormal losses']
+              },
+              {
+                unitNumber: 3,
+                title: 'Partnership Accounts - Admission & Retirement',
+                topics: ['Partnership fundamentals, Profit and Loss Appropriation, Goodwill valuation (Average, Super profit, Capitalization)', 'Admission of a partner: Revaluation of assets, Adjustment of capitals', 'Retirement and Death of a partner: Calculation of Gaining ratio, Settlement of executor account']
+              },
+              {
+                unitNumber: 4,
+                title: 'Partnership Dissolution & Insolvency',
+                topics: ['Dissolution of a partnership firm, Realization Account preparation, Piecemeal distribution of cash', 'Insolvency of partners: Application of Garner vs Murray Rule, Insolvency of all partners']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'com-mjc-2',
+            code: 'MJC-2',
+            name: 'Business Law',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-B.Com-in-Accounting-and-Finance.pdf',
+            fileSize: '1.4 MB',
+            recommendedBooks: ['Elements of Mercantile Law by N.D. Kapoor', 'Business Law by M.C. Kuchhal'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Indian Contract Act 1872 - Fundamentals',
+                topics: ['Meaning and essentials of a valid contract, Proposal/Offer and Acceptance rules, Revocation', 'Capacity to contract (Minor agreements), Free Consent (Coercion, Undue Influence, Fraud, Misrepresentation, Mistake), Consideration']
+              },
+              {
+                unitNumber: 2,
+                title: 'Performance & Breach of Contract',
+                topics: ['Void and Illegal agreements, Contingent contracts, Quasi-contracts', 'Performance of contract, Discharge of contract by agreement, impossibility, and breach; Remedies for breach of contract and damages']
+              },
+              {
+                unitNumber: 3,
+                title: 'Special Contracts - Indemnity, Bailment & Agency',
+                topics: ['Contract of Indemnity vs Guarantee, Rights of Surety, Discharge of Surety', 'Bailment: Duties and rights of Bailor and Bailee, Pledge by non-owners', 'Contract of Agency: Creation, Rights and duties of Agent, Personal liability of Agent']
+              },
+              {
+                unitNumber: 4,
+                title: 'Sale of Goods Act & Consumer Protection',
+                topics: ['Sale of Goods Act 1930: Contract of Sale vs Agreement to Sell, Conditions and Warranties, Doctrine of Caveat Emptor', 'Transfer of property in goods, Rights of Unpaid Seller, Consumer Protection Act 2019 basic provisions']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 6. COMPULSORY NEP MODULES (AEC, MDC & AEDP)
+  // =========================================================================
+  {
+    id: 'aec-hindi',
+    name: 'Hindi Communication (AEC-1)',
+    shortCode: 'AEC Hindi',
+    stream: 'Common NEP',
+    faculty: 'Common NEP',
+    icon: '🗣️',
+    degree: 'Ability Enhancement Compulsory Course',
+    totalSemesters: 2,
+    description: 'Compulsory Ability Enhancement Hindi Communication course for CBCS Semesters at Patna University.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'aec-hin-1',
+            code: 'AEC-1',
+            name: 'Hindi Bhasha aur Sampreshan (Communication)',
+            paperType: 'Value Added (VAC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
+            fileSize: '950 KB',
+            recommendedBooks: ['Karyalayi Hindi by Dr. Ramkishore Sharma', 'Vyavaharik Hindi by Dr. Harimohan'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Bhasha aur Sampreshan ke Siddhant',
+                topics: ['Sampreshan ki paribhasha, prakriya, avayav aur mahatva', 'Sampreshan ke vividh roop: Maukikh sampreshan, likhit sampreshan, gair-shabdik sampreshan', 'Sampreshan ki badhayein aur unka nivaran']
+              },
+              {
+                unitNumber: 2,
+                title: 'Karyalayi Hindi evam Patrachar',
+                topics: ['Karyalayi patrachar ke roop: Sarkari patra, Ardh-sarkari patra, Gyapan, Paripatra', 'Tippan (Noting) aur Praroopan (Drafting) ke niyam evam abhyas', 'Sankshepan (Précis writing) aur Pallavan (Elaboration) ki vidhi']
+              },
+              {
+                unitNumber: 3,
+                title: 'Bhashik Shuddhata evam Vyavaharik Vyakaran',
+                topics: ['Hindi vartani ke manak niyam, Vartani ki samanya ashuddhiyan aur sanshodhan', 'Vakya-shuddhi: Ling, vachan, karak, aur kriya sambandhi trutiyan', 'Pari-bhashik shabdavali: Prashasanik aur takniki shabdon ka prayog']
+              },
+              {
+                unitNumber: 4,
+                title: 'Vyavaharik Lekhan evam Anuvad',
+                topics: ['Anuvad ki paribhasha, anuvad ke bhed aur prayojan', 'Angrezi se Hindi anuvad ka abhyas, Media lekhan aur press release taiyar karna', 'Bhashan koushal, Samvaad evam Sakshatkar (Interview) techniques']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
   {
     id: 'aedp',
     name: '4-Year Apprenticeship-Embedded Degree Program (AEDP)',
@@ -1587,8 +1640,8 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             units: [
               {
                 unitNumber: 1,
-                title: 'Apprenticeship Curriculum & Work-Based Learning',
-                topics: ['Skill alignment with Sector Skill Councils, On-the-job training protocols, Assessment and certification']
+                title: 'Apprenticeship Framework & Sector Skills',
+                topics: ['NEP 2020 Apprenticeship mandates, National Apprenticeship Training Scheme (NATS) integration', 'On-the-job training modules, Workplace ethics, Industry logbook maintenance and evaluation']
               }
             ]
           }
@@ -1596,406 +1649,1343 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
       }
     ]
   },
-
   {
-    id: 'aec-hindi',
-    name: 'Hindi Communication (AEC-1)',
-    shortCode: 'AEC Hindi',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🗣️',
-    degree: 'Ability Enhancement Compulsory Course',
-    totalSemesters: 2,
-    description: 'Compulsory Ability Enhancement Hindi Communication course for CBCS Semesters at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
-    },
-    semesters: [
+  "id": "ba-philosophy",
+  "name": "B.A. Philosophy (Hons/Subs/Gen)",
+  "shortCode": "PHIL",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "🧘",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Classical Indian & Western philosophical thought, metaphysics, epistemology, and ethical systems.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Philosophy.pdf",
+    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Philosophy.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Philosophy.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "phil-mjc-1",
+          "code": "MJC-1",
+          "name": "Classical Indian Epistemology & Metaphysics",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Philosophy.pdf",
+          "fileSize": "1.2 MB",
+          "pyqCount": 4,
+          "recommendedBooks": [
+            "An Introduction to Indian Philosophy by Chatterjee & Datta",
+            "A Critical Survey of Indian Philosophy by C.D. Sharma",
+            "Bhartiya Darshan by Baldev Upadhyaya"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to Indian Philosophy & Vedic Thought",
+              "topics": [
+                "Nature, scope, and distinctive characteristics of Indian Philosophy",
+                "Classification into Astika (Orthodox) and Nastika (Heterodox) schools",
+                "Basic concepts: Rta, Rna, Dharma, Karma, Samsara, and Moksha"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Carvaka, Jaina & Buddhist Epistemology",
+              "topics": [
+                "Carvaka Materialism: Epistemology (Pratyaksa as sole Pramana), rejection of Anumana and Sabda",
+                "Jainism: Syadvada, Anekantavada, and Theory of Jiva & Ajiva",
+                "Buddhism: Four Noble Truths, Pratityasamutpada, Kshanikavada, and Nairatmyavada"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Nyaya-Vaisesika Realism",
+              "topics": [
+                "Nyaya Epistemology: Four Pramanas (Pratyaksa, Anumana, Upamana, Sabda)",
+                "Nature and forms of Vyapti, Hetvabhasa (fallacies of inference)",
+                "Vaisesika Metaphysics: Padartha theory (Dravya, Guna, Karma, Samanya, Visesa, Samavaya, Abhava)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Sankhya-Yoga & Advaita Vedanta",
+              "topics": [
+                "Sankhya Dualism: Purusa and Prakrti, Satkaryavada (Parinamavada), Theory of Evolution",
+                "Yoga System: Astanga Yoga (Eightfold Path) and concept of Isvara",
+                "Advaita Vedanta of Shankara: Nirguna Brahman, Vivartavada, Maya, Avidya, and levels of reality (Sattatraya)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-sanskrit",
+  "name": "B.A. Sanskrit (Hons/Subs/Gen)",
+  "shortCode": "SKT",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "📜",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Classical Sanskrit grammar (Panini Vyakarana), Vedic literature, and Sanskrit poetics & dramaturgy.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Sanskrit.pdf",
+    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit%20-%20Copy%201.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "skt-mjc-1",
+          "code": "MJC-1",
+          "name": "Classical Sanskrit Poetry & Laghusiddhanta Kaumudi",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Sanskrit%20-%20Copy%201.pdf",
+          "fileSize": "1.4 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Raghuvamsham (Canto I) by Kalidasa with Mallinatha commentary",
+            "Laghusiddhanta Kaumudi by Varadaraja",
+            "Sanskrit Sahitya ka Itihas by Baldev Upadhyaya"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Raghuvamsham of Kalidasa (Canto I)",
+              "topics": [
+                "Study of Raghuvamsham Canto 1 (Verses 1 to 25): Textual translation and grammatical notes",
+                "Characteristics of Raghu dynasty kings and ideal kingship depicted by Kalidasa",
+                "Poetic imagery, Upama Kalidasasya, and metre analysis"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Kiratarjuniyam of Bharavi (Canto I)",
+              "topics": [
+                "Textual study of Kiratarjuniyam Canto 1 (Verses 1 to 25)",
+                "Character of Vanechara, statecraft, and political ethics in ancient India",
+                "Bharaveh Arthagauravam: evaluation of Bharavi style and diction"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Sanskrit Grammar: Samjna & Sandhi Prakarana",
+              "topics": [
+                "Laghusiddhanta Kaumudi: Samjna Sutras (Halantyam, Upadese Ajanunasika It, Tulyasya Prayatnam Savarnam)",
+                "Ac Sandhi (Vowel Sandhi): Yan, Guna, Vriddhi, Dirgha, Ayadi Sutras",
+                "Hal Sandhi (Consonant) and Visarga Sandhi rules with sutra applications"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "History of Classical Sanskrit Literature",
+              "topics": [
+                "Origin and development of Mahakavya tradition: Ashvaghosha, Kalidasa, Bharavi, Magha, Sriharsa",
+                "Historical kavyas and lyric poetry (Gitikavya: Meghaduta, Ritusamhara, Gitagovinda)",
+                "Sanskrit translation rules from Hindi/English into Sanskrit"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-urdu",
+  "name": "B.A. Urdu (Hons/Subs/Gen)",
+  "shortCode": "URDU",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "🖋️",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Classical Urdu Ghazal, Nazm, Qasida, Masnavi, and history of Urdu prose from Fort William College to modern era.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Urdu.pdf",
+    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Urdu.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Urdu.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "urdu-mjc-1",
+          "code": "MJC-1",
+          "name": "Urdu Ghazal and History of Classical Urdu Poetry",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Urdu.pdf",
+          "fileSize": "1.3 MB",
+          "pyqCount": 4,
+          "recommendedBooks": [
+            "Tareekh-e-Adab-e-Urdu by Noorul Hasan Naqvi",
+            "Urdu Ghazal by Dr. Yusuf Husain Khan",
+            "Diwan-e-Ghalib with Commentary"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Form and Evolution of Urdu Ghazal",
+              "topics": [
+                "Definition, structural components (Matla, Maqta, Radif, Qafia, Behr), and aesthetics of Ghazal",
+                "Dabistan-e-Delhi (Delhi School) vs Dabistan-e-Lucknow (Lucknow School) characteristics",
+                "Sufism and philosophical themes in classical Urdu poetry"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Classical Masters: Wali Deccani & Mir Taqi Mir",
+              "topics": [
+                "Wali Deccani: Role in popularizing Urdu ghazal in North India, selected ghazals",
+                "Mir Taqi Mir: Khuda-e-Sukhan, pathos, lyricism, language simplicity, selected ghazals"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Mirza Asadullah Khan Ghalib & Momin Khan Momin",
+              "topics": [
+                "Mirza Ghalib: Philosophical depth, intellectual inquiry, innovative diction, selected ghazals",
+                "Momin: Delicate romantic sentiments, political undercurrents, subtlety of expression"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Rhetoric (Ilm-e-Bayan) & Prosody",
+              "topics": [
+                "Sanaye Badaye: Tashbeeh (Simile), Istiara (Metaphor), Talmeeh (Allusion), Tazad (Antithesis)",
+                "Husn-e-Taaleel and Tajahul-e-Arifana",
+                "Textual explanation and critical appreciation of prescribed couplets"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-maithili",
+  "name": "B.A. Maithili (Hons/Subs/Gen)",
+  "shortCode": "MAITH",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "🪶",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Mithila literature, Vidyapati padavali, ancient scripts (Tirhuta), and contemporary Maithili poetry.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-%20Maithili.pdf",
+    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Maithili.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Maithili.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "maith-mjc-1",
+          "code": "MJC-1",
+          "name": "Prachin Evam Madhyakalin Maithili Padya (Vidyapati)",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Maithili.pdf",
+          "fileSize": "1.1 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Vidyapati Padavali by Dr. Umesh Mishra",
+            "Maithili Sahityak Itihas by Dr. Jayakanta Mishra",
+            "Varna Ratnakara of Jyotirishwara Thakur"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Origin and Linguistic Heritage of Maithili",
+              "topics": [
+                "Origin of Maithili from Magadhi Prakrit, genealogical classification of Eastern Indo-Aryan languages",
+                "Tirhuta (Mithilakshara) and Kaithi scripts: historic usage and epigraphical evidence",
+                "Early Maithili prose: Varna Ratnakara by Jyotirishwara Thakur"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Vidyapati: Kavya-Saundarya & Bhakti",
+              "topics": [
+                "Mahakavi Vidyapati: Life, patronage in Oinwar dynasty, and poetic genius",
+                "Shringara Padavali: Radha-Krishna prem, Vasant Varnan, and Nayika-Bheda",
+                "Bhakti and Nachari: Shiva, Durga, and Ganga devotional poetry"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Madhyakalin Maithili Kavya: Govindadas & Chanda Jha",
+              "topics": [
+                "Govindadas Bhajanamrit: Padavali tradition and influence on Vaishnava literature of Bengal & Assam",
+                "Kavishwar Chanda Jha: Ramayana in Maithili, reviving Mithila literary Renaissance",
+                "Language structure, idioms, and prosody of middle Maithili"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Vyakarana & Nibandha",
+              "topics": [
+                "Maithili Vyakaran: Karaka, Samasa, Sandhi, and Verb inflection systems",
+                "Essay writing on Mithila art (Madhubani painting), folk traditions, and festivals"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-music",
+  "name": "B.A. Music (Hons/Subs/Gen)",
+  "shortCode": "MUS",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "🎵",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Hindustani Classical Music, Raga theory, Tala systems, Natyashastra, and vocal/instrumental practice.",
+  "officialPdfs": {
+    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Music.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Music.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mus-mjc-1",
+          "code": "MJC-1",
+          "name": "Theory of Indian Music & Fundamental Ragas",
+          "paperType": "Core Theory",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Music.pdf",
+          "fileSize": "1.2 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Sangeet Visharad by Vasant",
+            "Bhatkhande Sangeet Shastra by V.N. Bhatkhande",
+            "Dhwani aur Sangeet by Prof. Lalit Kishore Singh"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Concepts of Sound & Nada",
+              "topics": [
+                "Definition of Sangeet (Gayan, Vadan, Nritya)",
+                "Nada: Characteristics of Nada (Nada-Bheda, Pitch, Intensity, Timber)",
+                "Shruti: 22 Shrutis and their allocation to seven Shuddha Swaras"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Saptak, Thaat & Raga Systems",
+              "topics": [
+                "Saptak (Mandra, Madhya, Taar), Vikrit Swaras (Komal, Teevra)",
+                "Thaat system of Pt. V.N. Bhatkhande: 10 Thaats and rules for Raga classification",
+                "Raga Lakshanas: Vadi, Samvadi, Anuvadi, Vivadi, Varjit Swaras, Aroha, Avaroha, Pakad"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Tala System & Notation Method",
+              "topics": [
+                "Concepts of Tala, Matra, Laya (Vilambit, Madhya, Drut), Tali, Khali, Vibhag, Sam",
+                "Detailed study and notation of: Teentala, Dadra, Keharwa, Roopak, and Ektala",
+                "Bhatkhande and Paluskar Swaralipi (Notation) systems comparison"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Study of Prescribed Ragas & Gharanas",
+              "topics": [
+                "Detailed theoretical knowledge of Raga Yaman, Raga Bilawal, Raga Bhairav, and Raga Kafi",
+                "Introduction to Gharana tradition in Hindustani music: Gwalior, Agra, Kirana Gharana",
+                "Life sketches of Pt. Vishnu Narayan Bhatkhande and Pt. Vishnu Digambar Paluskar"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-persian",
+  "name": "B.A. Persian (Hons/Subs/Gen)",
+  "shortCode": "PERS",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "🕌",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Classical Persian prose and poetry, Indo-Persian historiography, and works of Saadi, Hafiz, and Amir Khusrau.",
+  "officialPdfs": {
+    "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Persian.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Persian.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "pers-mjc-1",
+          "code": "MJC-1",
+          "name": "Classical Persian Prose & Gulistan of Saadi",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Persian.pdf",
+          "fileSize": "1.2 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Gulistan-e-Saadi (Chapters 1 & 2)",
+            "A History of Persian Literature by E.G. Browne",
+            "Dastoor-e-Zaban-e-Farsi (Persian Grammar)"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Classical Persian Prose: Gulistan-e-Saadi",
+              "topics": [
+                "Study of Sheikh Saadi Shirazi: Life, moral philosophy, and mastery in prose",
+                "Gulistan: Chapter 1 (On the Manners of Kings) - Selected stories with textual translation",
+                "Moral ethics, aphorisms, and pedagogical maxims in Saadi works"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Indo-Persian Literature: Amir Khusrau",
+              "topics": [
+                "Hazrat Amir Khusrau: Life, contribution to Persian and Hindavi literature",
+                "Study of selected ghazals and mathnavis of Amir Khusrau",
+                "Sabk-e-Hindi (Indian Style) of Persian poetry: genesis and characteristics"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Persian Grammar & Translation",
+              "topics": [
+                "Nouns, Pronouns, Adjectives, Prepositions, and Conjunctions in Persian",
+                "Tenses (Mazi, Haal, Mustaqbil) and conjugation of common infinitives (Masadir)",
+                "Translation of simple sentences from Persian into Urdu/Hindi/English and vice versa"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "History of Persian Literature during Samanid & Ghaznavid Eras",
+              "topics": [
+                "Renaissance of Persian language under Samanids: Rudaki and early poets",
+                "Ghaznavid period: Firdausi and Shahnameh as national epic of Iran",
+                "Short notes on prominent Persian courts in medieval Bihar and Bengal"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ba-bengali",
+  "name": "B.A. Bengali (Hons/Subs/Gen)",
+  "shortCode": "BEN",
+  "stream": "Arts",
+  "faculty": "Humanities",
+  "icon": "📖",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Charyapada, Mangalkavya, Vaishnava Padavali, Bengal Renaissance, Rabindranath Tagore, and modern Bengali fiction.",
+  "officialPdfs": {
+    "sem1_2": "https://www.pup.ac.in/download/public_html/download/syllabus/Bangli.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/syllabus/Bangali.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "ben-mjc-1",
+          "code": "MJC-1",
+          "name": "History of Bengali Literature (Ancient & Medieval) & Poetry",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/Bangli.pdf",
+          "fileSize": "1.2 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Bangla Sahityer Itihas by Sukumar Sen",
+            "Charyapada (Selected Padas) by Haraprasad Shastri",
+            "Sanchayita by Rabindranath Tagore"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Ancient Period: Charyapada & Early Bengali",
+              "topics": [
+                "Discovery of Charyagiti Poshavali by Haraprasad Shastri at Royal Nepal Library",
+                "Language of Charyapada (Sandhya Bhasha), social conditions of early Bengal",
+                "Buddhist Sahajiya cult and religious philosophy of Siddhacharyas"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Medieval Period: Sri Krishna Kirtana & Vaishnava Padavali",
+              "topics": [
+                "Badu Chandidas and Sri Krishna Kirtana Kavya",
+                "Vaishnava Padavali literature: Vidyapati, Chandidas, Jnanadas, and Govindadas",
+                "Chaitanya Mahaprabhu and Gaudiya Vaishnavism impact on Bengali thought"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Mangalkavya Tradition & Translation Literature",
+              "topics": [
+                "Manasamangal (Vijay Gupta) and Chandimangal (Mukundaram Chakrabarti)",
+                "Krittivasi Ramayana and Kashiram Das Mahabharata: adaptation and popularity",
+                "Bharatchandra Ray and Annadamangal: end of medieval era"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Rabindranath Tagore & Bengal Renaissance",
+              "topics": [
+                "Impact of Western education and 19th Century Bengal Renaissance",
+                "Selected poems of Rabindranath Tagore from Naivedya and Balaka",
+                "Bengali Prosody (Chhanda) and Rhetoric (Alankara): Aksharbritto, Matrabritto"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "bcom-hrm",
+  "name": "B.Com Human Resource Management",
+  "shortCode": "BCOM-HRM",
+  "stream": "Commerce",
+  "faculty": "Commerce",
+  "icon": "👥",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Talent acquisition, organizational behavior, industrial relations, labor laws, and employee performance appraisal.",
+  "officialPdfs": {
+    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Human%20Resourse%20management).pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(HRM)%20-%20Copy%201.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "hrm-mjc-1",
+          "code": "MJC-1",
+          "name": "Human Resource Management Fundamentals",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Human%20Resourse%20management).pdf",
+          "fileSize": "1.4 MB",
+          "pyqCount": 4,
+          "recommendedBooks": [
+            "Human Resource Management by K. Aswathappa",
+            "Personnel Management by C.B. Mamoria",
+            "Human Resource Management by Gary Dessler"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of HRM & Workforce Planning",
+              "topics": [
+                "HRM: Concept, nature, scope, objectives, importance, and evolution from personnel management",
+                "Functions of HRM: Managerial vs Operative functions",
+                "Human Resource Planning (HRP): Process, forecasting demand & supply of labor, factors affecting HRP"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Job Analysis, Recruitment & Selection",
+              "topics": [
+                "Job Analysis: Job Description (JD) and Job Specification (JS), job design methods",
+                "Recruitment: Internal vs External sources, modern e-recruitment practices",
+                "Selection: Scientific selection process, psychometric tests, interview techniques, reference checks"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Training, Development & Career Management",
+              "topics": [
+                "Training Needs Analysis (TNA), difference between Training and Development",
+                "Methods of Training: On-the-Job (OJT, apprenticeship, mentoring) vs Off-the-Job (lectures, simulation, vestibule)",
+                "Evaluation of training programs: Kirkpatrick Four-Level Model"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Performance Appraisal & Compensation",
+              "topics": [
+                "Performance Appraisal: Traditional vs Modern methods (MBO, 360-degree appraisal, BARS)",
+                "Compensation Management: Wage concepts (Minimum, Fair, Living wage), incentive systems",
+                "Employee Grievance Handling and Disciplinary procedures in Indian industry"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "bcom-marketing",
+  "name": "B.Com Marketing",
+  "shortCode": "BCOM-MKT",
+  "stream": "Commerce",
+  "faculty": "Commerce",
+  "icon": "📊",
+  "degree": "4-Year CBCS Degree",
+  "totalSemesters": 8,
+  "description": "Principles of marketing, consumer behavior, STP strategy, product life cycle, digital & brand marketing.",
+  "officialPdfs": {
+    "sem1_2": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%201.pdf",
+    "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%202.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mkt-mjc-1",
+          "code": "MJC-1",
+          "name": "Principles of Marketing Management",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Commerce%20(Marketing)%20-%20Copy%201.pdf",
+          "fileSize": "1.3 MB",
+          "pyqCount": 4,
+          "recommendedBooks": [
+            "Marketing Management by Philip Kotler & Kevin Keller",
+            "Marketing Management by C.N. Sontakki",
+            "Principles of Marketing by V.S. Ramaswamy & S. Namakumari"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Marketing Philosophy & Environment",
+              "topics": [
+                "Marketing: Meaning, nature, scope, importance, core concepts (Needs, Wants, Demand, Value, Satisfaction)",
+                "Evolution of Marketing Concepts: Production, Product, Selling, Marketing, and Holistic Marketing concept",
+                "Marketing Environment: Micro environment (Company, Suppliers, Intermediaries, Customers, Competitors) and Macro environment (PESTLE)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Consumer Behavior & Market Segmentation (STP)",
+              "topics": [
+                "Consumer Buying Process: Problem recognition, information search, evaluation, purchase decision, post-purchase behavior",
+                "Factors influencing consumer behavior: Cultural, social, personal, psychological factors",
+                "Market Segmentation: Bases of segmentation (Geographic, Demographic, Psychographic, Behavioral), Targeting, Positioning (STP strategy)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Product & Pricing Decisions",
+              "topics": [
+                "Product concept, classification of consumer & industrial products, Product Mix dimensions",
+                "Product Life Cycle (PLC): Stages and marketing strategies across stages, New Product Development (NPD) process",
+                "Branding, Packaging, and Labeling decisions",
+                "Pricing: Objectives, factors influencing price determination, pricing methods (Cost-based, Demand-based, Competition-based, Skimming, Penetration)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Distribution & Promotion Mix",
+              "topics": [
+                "Channels of Distribution: Types of channels, channel levels, functions of intermediaries, channel conflict resolution",
+                "Physical Distribution & Logistics management fundamentals",
+                "Promotion Mix: Advertising, Personal Selling, Sales Promotion, Public Relations, Direct & Digital Marketing"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "bcom-corp-admin",
+  "name": "B.Com Corporate Administration Group",
+  "shortCode": "BCOM-CORP",
+  "stream": "Commerce",
+  "faculty": "Commerce",
+  "icon": "🏛️",
+  "degree": "Annual / CBCS Course",
+  "totalSemesters": 6,
+  "description": "Corporate governance, secretarial practice, company meetings, capital market regulation, and administrative law.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-II%20HONS.pdf",
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'aec-hin-1',
-            code: 'AEC-1',
-            name: 'Hindi Bhasha aur Sampreshan',
-            paperType: 'Value Added (VAC)',
-            credits: 2,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
-            fileSize: '950 KB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Bhasha aur Sampreshan ke Siddhant',
-                topics: ['Sampreshan ki paribhasha, prakriya, praroop; Patrakarita, Report-lekhan, Samvaad koushal']
-              }
-            ]
-          }
-        ]
+        "label": "Part-III Hons Corporate Admin",
+        "url": "https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-III%20HONS.pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "corp-101",
+          "code": "Paper-I",
+          "name": "Company Law & Secretarial Practice",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/B.COM%20CORPORATE%20ADMIN.%20GROUP%20HONS.%20PART-II%20HONS.pdf",
+          "fileSize": "1.1 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Company Law and Secretarial Practice by N.D. Kapoor",
+            "Corporate Administration by Dr. S.C. Kuchhal"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Incorporation & Charter Documents",
+              "topics": [
+                "Companies Act 2013: Types of companies (One Person Company, Private, Public, Producer Company)",
+                "Memorandum of Association (MoA): Clauses and alteration procedures, Doctrine of Ultra Vires",
+                "Articles of Association (AoA): Doctrine of Indoor Management and Constructive Notice"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Corporate Finance & Securities",
+              "topics": [
+                "Prospectus: Types (Red Herring, Shelf, Abridged), misstatements in prospectus and liabilities",
+                "Share Capital: Equity, Preference, Sweat equity, ESOPs, Bonus shares, Right issue",
+                "Debentures, Charges and registration of charges with RoC"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Company Management & Board Meetings",
+              "topics": [
+                "Directors: Appointment, qualifications, DIN, disqualifications, duties, and liabilities",
+                "Independent Directors and Key Managerial Personnel (KMP): Role of Company Secretary",
+                "Board Meetings, Quorum, Resolution types (Ordinary, Special, Board resolutions), Minutes of meetings"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Annual General Meetings & Corporate Governance",
+              "topics": [
+                "Shareholders Meetings: AGM, EGM, statutory requirements, Notice, Proxy, Voting methods (E-voting)",
+                "Corporate Governance principles: SEBI (LODR) regulations, Audit Committee, CSR obligations"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'aec-urdu',
-    name: 'Urdu Communication (AEC-1)',
-    shortCode: 'AEC Urdu',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '✒️',
-    degree: 'Ability Enhancement Compulsory Course',
-    totalSemesters: 2,
-    description: 'Compulsory Ability Enhancement Urdu Communication course for CBCS Semesters at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Urdu%20(AEC-1).pdf',
-    },
-    semesters: [
+  "id": "bcom-business-env",
+  "name": "B.Com Business Environment Group",
+  "shortCode": "BCOM-ENV",
+  "stream": "Commerce",
+  "faculty": "Commerce",
+  "icon": "🌐",
+  "degree": "Annual / CBCS Course",
+  "totalSemesters": 6,
+  "description": "Macro-economic policies, monetary & fiscal reforms, industrial policy, EXIM policy, and globalization impact.",
+  "officialPdfs": {
+    "annualHons": "https://www.pup.ac.in/download/B.%20COM.%20BUSINESS%20ENVIRONMENT%20HONS.%20G.pdf"
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "benv-101",
+          "code": "Paper-I",
+          "name": "Indian & Global Business Environment",
+          "paperType": "Core Theory",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/B.%20COM.%20BUSINESS%20ENVIRONMENT%20HONS.%20G.pdf",
+          "fileSize": "1.2 MB",
+          "pyqCount": 3,
+          "recommendedBooks": [
+            "Business Environment by Francis Cherunilam",
+            "Economic Environment of Business by K. Aswathappa"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Elements of Business Environment",
+              "topics": [
+                "Significance and nature of Business Environment: Internal vs External dimensions",
+                "Economic systems: Capitalism, Socialism, Mixed Economy in India",
+                "Interactions between business and socio-cultural environment"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Indian Economic Policies & Reforms",
+              "topics": [
+                "Industrial Policy Resolutions: 1991 New Economic Policy (LPG: Liberalization, Privatization, Globalization)",
+                "Monetary Policy of RBI: Repo, Reverse Repo, CRR, SLR, inflation management",
+                "Fiscal Policy: Union Budget, public debt, GST framework and center-state financial relations"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Regulatory Institutions & Consumer Protection",
+              "topics": [
+                "Competition Commission of India (CCI) and prevention of anti-competitive agreements",
+                "Consumer Protection Act 2019: Consumer rights, redressal commissions (District, State, National)",
+                "Role of SEBI, IRDAI, and NITI Aayog in economic development"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Global Trade & Multilateral Institutions",
+              "topics": [
+                "Foreign Trade Policy of India: EXIM trends, Foreign Direct Investment (FDI) inflows",
+                "WTO, IMF, World Bank: Functions and implications for developing economies",
+                "Make in India, Atmanirbhar Bharat, and PLI (Production Linked Incentive) initiatives"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "aec-english",
+  "name": "English Communication (AEC-2)",
+  "shortCode": "AEC-ENG",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "🗣️",
+  "degree": "Compulsory NEP Ability Course",
+  "totalSemesters": 2,
+  "description": "Language proficiency, public speaking, business writing, reading comprehension, and professional email etiquette.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'aec-urd-1',
-            code: 'AEC-1',
-            name: 'Urdu Communication Skills & Translation',
-            paperType: 'Value Added (VAC)',
-            credits: 2,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Urdu%20(AEC-1).pdf',
-            fileSize: '900 KB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Tarjuma Nigari aur Tauseeq',
-                topics: ['Translation methods, Letter writing, Media and official drafting in Urdu']
-              }
-            ]
-          }
-        ]
+        "label": "AEC English Module",
+        "url": "https://www.pup.ac.in/download/syllabus/FYUG-English.pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 2,
+      "papers": [
+        {
+          "id": "aec-eng-101",
+          "code": "AEC-2",
+          "name": "English Communication & Soft Skills",
+          "paperType": "Core Theory",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-English.pdf",
+          "fileSize": "1.0 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "Technical Communication by Meenakshi Raman & Sangeeta Sharma",
+            "Contemporary English Grammar by David Green"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to the Essentials of Communication",
+              "topics": [
+                "Process and cycle of communication: Sender, Encoding, Message, Channel, Receiver, Decoding, Feedback",
+                "Barriers to effective communication (Physical, Semantic, Psychological, Cross-cultural)",
+                "7 Cs of effective communication (Clarity, Conciseness, Concreteness, Correctness, Consideration, Completeness, Courtesy)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Reading & Listening Comprehension",
+              "topics": [
+                "Active Listening vs Passive Hearing, note-taking strategies",
+                "Reading techniques: Skimming, scanning, intensive reading, critical analysis",
+                "Summarizing and precis writing from unseen academic passages"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Oral Communication & Presentation Skills",
+              "topics": [
+                "Verbal vs Non-verbal communication: Kinesics (body language), Proxemics, Paralanguage",
+                "Public speaking, preparing multimedia presentations, handling Q&A sessions",
+                "Group Discussions (GD) and Job Interview techniques"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Professional & Business Writing",
+              "topics": [
+                "Formal letter writing: Official representations, inquiries, complaints",
+                "Curriculum Vitae (CV) / Resume preparation and cover letter drafting",
+                "Email etiquette, drafting notices, agenda, and minutes of official meetings"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'aec-sports',
-    name: 'Sports & Physical Education (AEC)',
-    shortCode: 'AEC Sports',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🏃',
-    degree: 'Ability Enhancement Course',
-    totalSemesters: 2,
-    description: 'Sports, Physical Fitness, Yoga, and Health Education curriculum at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Sports.pdf',
-    },
-    semesters: [
+  "id": "mdc-ecommerce",
+  "name": "E-Commerce (MDC)",
+  "shortCode": "MDC-ECOM",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "🛒",
+  "degree": "Multidisciplinary Course",
+  "totalSemesters": 3,
+  "description": "Online business models (B2B, B2C), payment gateways, cybersecurity, digital marketing, and UPI ecosystems.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'aec-spt-1',
-            code: 'AEC-SPORTS',
-            name: 'Physical Fitness, Wellness and Sports Values',
-            paperType: 'Value Added (VAC)',
-            credits: 2,
-            theoryMarks: 50,
-            internalMarks: 50,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Sports.pdf',
-            fileSize: '1.1 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Fundamentals of Fitness and Nutrition',
-                topics: ['Physical fitness components, Balanced diet, Sports injuries and First Aid']
-              }
-            ]
-          }
-        ]
+        "label": "E-Commerce Official Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/E-Commerce.pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mdc-ecom-1",
+          "code": "MDC-1",
+          "name": "Fundamentals of E-Commerce & Digital Business",
+          "paperType": "Core Theory",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/E-Commerce.pdf",
+          "fileSize": "1.1 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "E-Commerce: Business, Technology, Society by Kenneth C. Laudon",
+            "Electronic Commerce by Gary P. Schneider"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to E-Commerce Framework",
+              "topics": [
+                "Definition, scope, drivers, advantages, and limitations of E-Commerce",
+                "Comparison of Traditional Commerce vs Electronic Commerce",
+                "E-Commerce business models: B2B, B2C, C2C, C2B, G2C, and Hyperlocal commerce"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Technology Infrastructure & Payment Systems",
+              "topics": [
+                "Web infrastructure: Web servers, domain registration, SSL certificates, cloud hosting",
+                "Electronic Payment Systems: Credit/Debit cards, Net banking, Payment Gateways (Razorpay, Paytm)",
+                "Digital Wallets and UPI (Unified Payments Interface) architecture in India"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Security, Privacy & Cyber Law",
+              "topics": [
+                "E-commerce security threats: Phishing, hacking, sniffing, malware, ransomware",
+                "Security solutions: Encryption (Symmetric & Asymmetric), Digital Signatures, Firewalls",
+                "Information Technology (IT) Act 2000: Key cybercrime provisions and legal framework"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Online Marketing & Supply Chain Logistics",
+              "topics": [
+                "Search Engine Optimization (SEO), Social Media Marketing (SMM), and Content Marketing",
+                "Order fulfillment process, inventory management, reverse logistics, and customer relationship management (CRM)"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'aec-nss',
-    name: 'NSS - National Service Scheme (AEC)',
-    shortCode: 'AEC NSS',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🤝',
-    degree: 'Ability Enhancement Course',
-    totalSemesters: 2,
-    description: 'Community Engagement, Social Leadership, and National Service at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/NSS.pdf',
-    },
-    semesters: [
+  "id": "mdc-appliances",
+  "name": "Electrical & Electronic Appliances (MDC)",
+  "shortCode": "MDC-ELEC",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "⚡",
+  "degree": "Multidisciplinary Skill Course",
+  "totalSemesters": 3,
+  "description": "Working principles, household wiring, safety fuses, inverters, solar panels, and smart appliances maintenance.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'aec-nss-1',
-            code: 'AEC-NSS',
-            name: 'National Service Scheme & Community Development',
-            paperType: 'Value Added (VAC)',
-            credits: 2,
-            theoryMarks: 50,
-            internalMarks: 50,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/NSS.pdf',
-            fileSize: '880 KB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'NSS Philosophy and Social Service',
-                topics: ['History of NSS, Youth leadership, Health, hygiene, literacy and tree plantation campaigns']
-              }
-            ]
-          }
-        ]
+        "label": "Electrical Appliances Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/Acquaintance%20of%20Electrical%20and%20Electronic%20Appliances.pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mdc-elec-1",
+          "code": "MDC-1",
+          "name": "Acquaintance of Electrical & Electronic Appliances",
+          "paperType": "Core Theory",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/Acquaintance%20of%20Electrical%20and%20Electronic%20Appliances.pdf",
+          "fileSize": "1.0 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "Basic Electrical and Electronics Engineering by B.L. Theraja",
+            "Modern Domestic Appliances by K.B. Bhatia"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Electrical Quantities & Safety Measures",
+              "topics": [
+                "Basic electrical units: Voltage, Current, Resistance, Power, Energy (kWh measurement)",
+                "AC vs DC power supply, single phase vs three phase distribution in households",
+                "Electrical safety: Fuses, MCB (Miniature Circuit Breaker), ELCB, Earthing, and shock prevention"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Heating & Motor Driven Domestic Appliances",
+              "topics": [
+                "Heating appliances: Electric iron, water heater (geyser), electric kettle, room heater",
+                "Working principle of electric motors in household equipment: Ceiling fans, mixer grinder, washing machines",
+                "Troubleshooting common electrical motor and heating faults"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Refrigeration, Air Conditioning & Lighting",
+              "topics": [
+                "Principles of vapor compression refrigeration: Refrigerator and Air Conditioner (AC) components",
+                "Inverter AC vs Non-Inverter AC technology, star ratings (BEE energy efficiency)",
+                "Lighting systems: Incandescent bulbs, CFL, LED lighting, driver circuits"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Power Backup & Renewable Systems",
+              "topics": [
+                "Inverter and UPS systems: Batteries (Lead-acid, Tubular, Lithium-ion), maintenance and charging cycles",
+                "Rooftop Solar PV systems: Solar panels, charge controllers, grid-tied vs off-grid inverters",
+                "Digital Multimeter operation: Voltage, resistance, and continuity testing"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'aec-ncc',
-    name: 'NCC - National Cadet Corps (AEC)',
-    shortCode: 'AEC NCC',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🎖️',
-    degree: 'Ability Enhancement Course',
-    totalSemesters: 2,
-    description: 'Discipline, Leadership, National Defense, and Drill training at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/NCC.pdf',
-    },
-    semesters: [
+  "id": "mdc-ethics",
+  "name": "Ethics (MDC)",
+  "shortCode": "MDC-ETH",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "⚖️",
+  "degree": "Multidisciplinary Course",
+  "totalSemesters": 3,
+  "description": "Human values, moral philosophy, professional ethics, bioethics, environmental ethics, and anti-corruption.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'aec-ncc-1',
-            code: 'AEC-NCC',
-            name: 'National Cadet Corps Drill & Leadership',
-            paperType: 'Value Added (VAC)',
-            credits: 2,
-            theoryMarks: 50,
-            internalMarks: 50,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/NCC.pdf',
-            fileSize: '950 KB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Defense Awareness and Drill',
-                topics: ['Armed forces structure, National integration, Map reading, Field craft']
-              }
-            ]
-          }
-        ]
+        "label": "Ethics Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/Ethics%20(Semester%20I%20to%20III).pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mdc-eth-1",
+          "code": "MJC-1",
+          "name": "Foundations of Human Values & Moral Ethics",
+          "paperType": "Core Theory",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/Ethics%20(Semester%20I%20to%20III).pdf",
+          "fileSize": "1.0 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "Ethics: Theory and Contemporary Issues by Barbara MacKinnon",
+            "A Foundation Course in Human Values and Professional Ethics by R.R. Gaur"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Nature of Ethics & Human Values",
+              "topics": [
+                "Definition, scope, and branches of Ethics (Normative, Meta-ethics, Applied ethics)",
+                "Concept of Morality vs Legality, right vs good, virtue vs vice",
+                "Universal human values: Truth, compassion, righteousness, peace, non-violence"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Major Western & Eastern Ethical Frameworks",
+              "topics": [
+                "Deontological Ethics: Immanuel Kant Categorical Imperative",
+                "Teleological / Consequentialist Ethics: Utilitarianism of Jeremy Bentham and J.S. Mill",
+                "Indian Ethical Heritage: Purusharthas (Dharma, Artha, Kama, Moksha), Nishkama Karma of Bhagavad Gita"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Professional & Work Ethics",
+              "topics": [
+                "Core attributes: Integrity, honesty, objectivity, transparency, accountability, and whistleblowing",
+                "Conflict of interest in public and private institutions",
+                "Code of conduct for teachers, civil servants, researchers, and corporate executives"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Applied & Contemporary Ethical Issues",
+              "topics": [
+                "Environmental Ethics: Climate justice, anthropocentrism vs ecocentrism, intergenerational equity",
+                "Bioethics: Genetic engineering, cloning, euthanasia debates",
+                "Cyber Ethics: Privacy in digital age, surveillance capitalism, and AI ethics"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'mdc-sports-science',
-    name: 'MDC Sports Science',
-    shortCode: 'MDC Sports Sci',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🏅',
-    degree: 'Multidisciplinary Course (MDC)',
-    totalSemesters: 3,
-    description: 'Kinesiology, Exercise Physiology, and Biomechanics across disciplines at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Sports%20Science.pdf',
-    },
-    semesters: [
+  "id": "mdc-sports-science",
+  "name": "Sports Science & Physical Wellness (MDC)",
+  "shortCode": "MDC-SPO",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "🏃",
+  "degree": "Multidisciplinary Course",
+  "totalSemesters": 3,
+  "description": "Exercise physiology, sports nutrition, biomechanics, injury prevention, yoga, and mental health.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'mdc-spt-1',
-            code: 'MDC-1',
-            name: 'Introduction to Sports Science & Kinesiology',
-            paperType: 'Multidisciplinary (MDC)',
-            credits: 3,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Sports%20Science.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Exercise Physiology & Body Mechanics',
-                topics: ['Cardiovascular response to exercise, Muscle contraction, Energy systems, Sports nutrition']
-              }
-            ]
-          }
-        ]
+        "label": "Sports Science Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/Sports%20Science.pdf"
+      },
+      {
+        "label": "Sports Activity Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/Sports.pdf"
       }
     ]
   },
-
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mdc-spo-1",
+          "code": "MDC-1",
+          "name": "Foundations of Sports Science & Physical Fitness",
+          "paperType": "Core Theory",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/Sports%20Science.pdf",
+          "fileSize": "1.0 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "Textbook of Sports Medicine and Physiology by K.J. Cooper",
+            "Light on Yoga by B.K.S. Iyengar"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Physical Fitness & Body Composition",
+              "topics": [
+                "Components of Physical Fitness: Health-related (Cardiorespiratory endurance, muscular strength, flexibility, BMI) vs Skill-related fitness",
+                "Body Mass Index (BMI) calculation, body fat percentage, and posture assessment",
+                "Hypokinetic diseases: Obesity, hypertension, diabetes and preventive role of exercise"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Exercise Physiology & Biomechanics",
+              "topics": [
+                "Cardiovascular and respiratory adaptations to regular physical exercise",
+                "Energy systems in sports: ATP-CP system, Anaerobic Glycolysis, Aerobic respiration",
+                "Basic biomechanics: Newton laws applied to sports movements, center of gravity, balance"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Sports Nutrition & Doping Prevention",
+              "topics": [
+                "Balanced diet for athletes: Carbohydrate loading, protein requirements, micronutrients, hydration strategies",
+                "Ergogenic aids: Natural supplements vs banned performance enhancing drugs (WADA / NADA guidelines)",
+                "Health hazards of anabolic steroids, stimulants, and blood doping"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Sports Injuries, First Aid & Yoga for Wellness",
+              "topics": [
+                "Common sports injuries: Sprain, strain, contusion, dislocation, fracture",
+                "Immediate management: P.R.I.C.E. protocol (Protection, Rest, Ice, Compression, Elevation)",
+                "Yogic practices: Asanas, Pranayama (Anulom-Vilom, Kapalbhati), meditation for stress management"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   {
-    id: 'mdc-appliances',
-    name: 'MDC Electrical & Electronic Appliances',
-    shortCode: 'MDC Appliances',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🔌',
-    degree: 'Multidisciplinary Course (MDC)',
-    totalSemesters: 3,
-    description: 'Operation, safety, maintenance, and power troubleshooting of modern appliances.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Acquaintance%20of%20Electrical%20and%20Electronic%20Appliances.pdf',
-    },
-    semesters: [
+  "id": "aec-nss-ncc",
+  "name": "NSS & NCC Youth Leadership (AEC)",
+  "shortCode": "AEC-NSS",
+  "stream": "Common NEP",
+  "faculty": "Common NEP",
+  "icon": "🎖️",
+  "degree": "Compulsory Value / Ability Course",
+  "totalSemesters": 2,
+  "description": "National Service Scheme, National Cadet Corps, disaster management, community health, and national integration.",
+  "officialPdfs": {
+    "otherPdfs": [
       {
-        semester: 1,
-        papers: [
-          {
-            id: 'mdc-app-1',
-            code: 'MDC-1',
-            name: 'Acquaintance of Electrical and Electronic Appliances',
-            paperType: 'Multidisciplinary (MDC)',
-            credits: 3,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Acquaintance%20of%20Electrical%20and%20Electronic%20Appliances.pdf',
-            fileSize: '1.3 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Domestic Electrical Safety & Principles',
-                topics: ['Earthing, Fuses, MCB, Transformers, Multimeter testing, Working of inverters and UPS']
-              }
-            ]
-          }
-        ]
+        "label": "NSS Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/NSS.pdf"
+      },
+      {
+        "label": "NCC Syllabus PDF",
+        "url": "https://www.pup.ac.in/download/public_html/download/syllabus/NCC.pdf"
       }
     ]
   },
-
-  {
-    id: 'mdc-glimpses',
-    name: 'MDC Glimpses (Semester I to III)',
-    shortCode: 'MDC Glimpses',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '✨',
-    degree: 'Multidisciplinary Course (MDC)',
-    totalSemesters: 3,
-    description: 'Interdisciplinary survey covering science, philosophy, and cultural milestones.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Glimpses%20Semester%20I%20to%20III.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mdc-glm-1',
-            code: 'MDC-1',
-            name: 'Glimpses of Indian Heritage & Scientific Progress',
-            paperType: 'Multidisciplinary (MDC)',
-            credits: 3,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Glimpses%20Semester%20I%20to%20III.pdf',
-            fileSize: '1.1 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Heritage and Scientific Milestones',
-                topics: ['Ancient Indian mathematics, Astronomy (Aryabhata), Metallurgy, Sustainable living']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'mdc-ecommerce',
-    name: 'MDC E-Commerce',
-    shortCode: 'MDC E-Commerce',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '🛒',
-    degree: 'Multidisciplinary Course (MDC)',
-    totalSemesters: 3,
-    description: 'Digital Business, Payment Gateways, Supply Chain, and Cyber Laws at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/E-Commerce.pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mdc-ecom-1',
-            code: 'MDC-1',
-            name: 'E-Commerce Infrastructure & Digital Business',
-            paperType: 'Multidisciplinary (MDC)',
-            credits: 3,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/E-Commerce.pdf',
-            fileSize: '1.2 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'E-Commerce Framework & Models',
-                topics: ['B2B, B2C, C2C models, Payment Gateways (UPI, Cards), SSL security, Consumer protection online']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    id: 'mdc-ethics',
-    name: 'MDC Ethics (Semester I to III)',
-    shortCode: 'MDC Ethics',
-    stream: 'Common NEP',
-    faculty: 'Common NEP',
-    icon: '⚖️',
-    degree: 'Multidisciplinary Course (MDC)',
-    totalSemesters: 3,
-    description: 'Human Values, Professional Ethics, Morality, and Social Responsibility at Patna University.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/public_html/download/syllabus/Ethics%20(Semester%20I%20to%20III).pdf',
-    },
-    semesters: [
-      {
-        semester: 1,
-        papers: [
-          {
-            id: 'mdc-eth-1',
-            code: 'MDC-1',
-            name: 'Foundations of Human Values & Professional Ethics',
-            paperType: 'Multidisciplinary (MDC)',
-            credits: 3,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Ethics%20(Semester%20I%20to%20III).pdf',
-            fileSize: '1.0 MB',
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Values, Morality & Ethical Decision Making',
-                topics: ['Truth, Compassion, Non-violence, Integrity, Whistleblowing, Conflict of Interest in workplace']
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "aec-nss-1",
+          "code": "AEC-1",
+          "name": "National Service Scheme & Community Engagement",
+          "paperType": "Core Theory",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "pdfUrl": "https://www.pup.ac.in/download/public_html/download/syllabus/NSS.pdf",
+          "fileSize": "1.0 MB",
+          "pyqCount": 2,
+          "recommendedBooks": [
+            "NSS Manual by Ministry of Youth Affairs & Sports",
+            "Youth in Community Service by Dr. B.K. Sharma"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "NSS Genesis, Philosophy & Organizational Structure",
+              "topics": [
+                "History, philosophy, aims, and objectives of National Service Scheme (NSS motto: Not Me But You)",
+                "NSS badge, symbol (Rath Wheel of Konark Sun Temple), and NSS song",
+                "Administrative hierarchy: Ministry of Youth Affairs, State Liaison Cell, University Advisory Committee"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Community Survey & Village Adoption Programs",
+              "topics": [
+                "Participatory Rural Appraisal (PRA) techniques and needs identification in adopted slum/village",
+                "Planning and organizing Regular Activities (120 hours/year) and Special Camping Programs (7 days)",
+                "Documentation and report writing of outreach interventions"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Health, Hygiene, Sanitation & Environment",
+              "topics": [
+                "Swachh Bharat Abhiyan: Solid and liquid waste management, open defecation eradication",
+                "Blood donation promotion, organ donation awareness, and immunization campaigns",
+                "Afforestation, tree plantation, and water conservation (Jal Jeevan Hariyali Mission)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Disaster Management & National Youth Policy",
+              "topics": [
+                "Types of disasters: Floods (Bihar context), earthquakes, fires, epidemics",
+                "Disaster Preparedness: Search & rescue operations, first-aid administration, relief camps",
+                "National Youth Policy, citizenship values, and communal harmony promotion"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
 ];
 
 export const puStreamsList = puFacultyList;
