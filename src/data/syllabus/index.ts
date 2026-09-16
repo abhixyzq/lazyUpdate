@@ -1,4 +1,5 @@
 import { CourseSyllabus } from '@/types';
+import { aihArchaeologySyllabus } from './aihArchaeology';
 import { economicsSyllabus } from './economics';
 import { geographySyllabus } from './geography';
 import { historySyllabus } from './history';
@@ -7,6 +8,7 @@ import { politicalScienceSyllabus } from './politicalScience';
 import { sociologySyllabus } from './sociology';
 
 export {
+  aihArchaeologySyllabus,
   economicsSyllabus,
   geographySyllabus,
   historySyllabus,
@@ -16,8 +18,8 @@ export {
 };
 
 export const puFacultyList = [
-  { id: 'All', name: 'All Sections', count: '6 Subjects' },
-  { id: 'Social Science', name: 'Social Science', count: '6 Subjects' },
+  { id: 'All', name: 'All Sections', count: '7 Subjects' },
+  { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
   { id: 'Science', name: 'Science', count: '0 Subjects' },
   { id: 'Humanities', name: 'Humanities', count: '0 Subjects' },
   { id: 'Commerce', name: 'Commerce', count: '0 Groups' },
@@ -40,6 +42,7 @@ export const puStreamsList = puFacultyList;
 // Verified authentic 4-Year FYUGP CBCS Patna University syllabus data
 export const puCompleteSyllabusData: CourseSyllabus[] = [
   historySyllabus,
+  aihArchaeologySyllabus,
   politicalScienceSyllabus,
   economicsSyllabus,
   geographySyllabus,
