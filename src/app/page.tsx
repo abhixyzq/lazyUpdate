@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { ApnaHeader } from '@/components/ApnaHeader';
 import { AlertStrip } from '@/components/AlertStrip';
 import { UniversityGridSection, ApnaActionType } from '@/components/UniversityGridSection';
@@ -132,40 +133,40 @@ export default function ApnaUniversityHomePage() {
 
           <div className="grid grid-cols-3 gap-2 text-xs">
             {/* 1. Internships */}
-            <button
-              onClick={() => setActiveImportantLink('internships')}
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-cyan-400 hover:bg-[#16305e] active:scale-95 transition group"
+            <Link
+              href="/internships"
+              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-cyan-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
             >
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-500/20 text-cyan-300 border border-cyan-500/30 mb-1.5 group-hover:scale-105 transition">
                 <Briefcase className="h-4 w-4" />
               </div>
               <span className="text-[11px] font-black text-white">Internships</span>
               <span className="text-[9px] text-cyan-400/80 font-semibold mt-0.5">PM & AICTE</span>
-            </button>
+            </Link>
 
             {/* 2. Scholarships */}
-            <button
-              onClick={() => setActiveImportantLink('scholarships')}
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-emerald-400 hover:bg-[#16305e] active:scale-95 transition group"
+            <Link
+              href="/scholarships"
+              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-emerald-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
             >
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-1.5 group-hover:scale-105 transition">
                 <Award className="h-4 w-4" />
               </div>
               <span className="text-[11px] font-black text-white">Scholarships</span>
               <span className="text-[9px] text-emerald-400/80 font-semibold mt-0.5">PMS & NSP</span>
-            </button>
+            </Link>
 
             {/* 3. Anti-Ragging */}
-            <button
-              onClick={() => setActiveImportantLink('antiragging')}
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-rose-400 hover:bg-[#16305e] active:scale-95 transition group"
+            <Link
+              href="/antiragging"
+              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-rose-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
             >
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-1.5 group-hover:scale-105 transition">
                 <ShieldAlert className="h-4 w-4" />
               </div>
               <span className="text-[11px] font-black text-white">Anti-Ragging</span>
               <span className="text-[9px] text-rose-400/80 font-semibold mt-0.5">UGC Helpline</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -14,6 +14,8 @@ import {
 } from './ApnaIcons';
 import { TelegramIcon, WhatsAppIcon } from './OfficialBrandIcons';
 
+import Link from 'next/link';
+
 export type ApnaActionType =
   | 'pyqs'
   | 'syllabus'
@@ -27,7 +29,7 @@ export type ApnaActionType =
 
 interface UniversityGridSectionProps {
   universityTitle?: string;
-  onSelectAction: (action: ApnaActionType) => void;
+  onSelectAction?: (action: ApnaActionType) => void;
   onTelegram: () => void;
   onWhatsApp: () => void;
 }
@@ -39,15 +41,15 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
   onWhatsApp,
 }) => {
   const cards = [
-    { id: 'pyqs' as ApnaActionType, label: 'PYQs', icon: <PYQsIcon /> },
-    { id: 'syllabus' as ApnaActionType, label: 'Syllabus', icon: <SyllabusIcon /> },
-    { id: 'results' as ApnaActionType, label: 'Results', icon: <ResultsIcon /> },
-    { id: 'notice' as ApnaActionType, label: 'PU Notice', icon: <NoticeIcon /> },
-    { id: 'attendance' as ApnaActionType, label: 'Attendance', icon: <AttendanceIcon /> },
-    { id: 'sgpa' as ApnaActionType, label: 'SGPA CalC', icon: <CalculatorIcon /> },
-    { id: 'timetable' as ApnaActionType, label: 'Time Table', icon: <TimeTableIcon /> },
-    { id: 'extras' as ApnaActionType, label: 'Extras', icon: <ExtrasIcon /> },
-    { id: 'calendar' as ApnaActionType, label: 'Calendar', icon: <CalendarIcon /> },
+    { id: 'pyqs' as ApnaActionType, label: 'PYQs', href: '/pyqs', icon: <PYQsIcon /> },
+    { id: 'syllabus' as ApnaActionType, label: 'Syllabus', href: '/syllabus', icon: <SyllabusIcon /> },
+    { id: 'results' as ApnaActionType, label: 'Results', href: '/results', icon: <ResultsIcon /> },
+    { id: 'notice' as ApnaActionType, label: 'PU Notice', href: '/notices', icon: <NoticeIcon /> },
+    { id: 'attendance' as ApnaActionType, label: 'Attendance', href: '/attendance', icon: <AttendanceIcon /> },
+    { id: 'sgpa' as ApnaActionType, label: 'SGPA CalC', href: '/sgpa', icon: <CalculatorIcon /> },
+    { id: 'timetable' as ApnaActionType, label: 'Time Table', href: '/timetable', icon: <TimeTableIcon /> },
+    { id: 'extras' as ApnaActionType, label: 'Extras', href: '/extras', icon: <ExtrasIcon /> },
+    { id: 'calendar' as ApnaActionType, label: 'Calendar', href: '/calendar', icon: <CalendarIcon /> },
   ];
 
   return (
@@ -61,12 +63,13 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
           </h2>
         </div>
 
-        {/* The Exact 3x3 Card Grid */}
+        {/* The Exact 3x3 Card Grid - Dedicated Routes */}
         <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
           {cards.map((card) => (
-            <button
+            <Link
               key={card.id}
-              onClick={() => onSelectAction(card.id)}
+              href={card.href}
+              onClick={() => onSelectAction?.(card.id)}
               className="group flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 sm:p-3 shadow-md hover:border-cyan-400 hover:bg-[#162e5c] active:scale-95 transition duration-150"
             >
               {/* Polished White Squircle with Illustrated Icon */}
@@ -78,7 +81,7 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
               <span className="mt-2 text-xs sm:text-sm font-black text-white tracking-tight truncate max-w-full">
                 {card.label}
               </span>
-            </button>
+            </Link>
           ))}
         </div>
 
