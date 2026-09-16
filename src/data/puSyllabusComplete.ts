@@ -503,7 +503,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
     icon: '📈',
     degree: '4-Year FYUGP CBCS (NEP-2020)',
     totalSemesters: 8,
-    description: 'Official Patna University B.A. Economics syllabus approved by Raj Bhavan Bihar (BSU(UGC)-02/2023-871/GS(I)). Signed by Dr. Benoy Kumar Lal (Dept. of Economics, Patna University). Covers MJC-1 to MJC-16, MIC-1 to MIC-10, SEC & VAC baskets with 70+30 marking pattern.',
+    description: 'Official uniform 4-Year B.A. Economics curriculum approved by Governor Secretariat, Bihar (Memo no. BSU(UGC) 02/2023-1457 GS(I) Dated 14.09.2023 & BSU(UGC)-02/2023-871/GS(I)). Prepared by Committee of Experts including Prof. (Dr.) B. K. Lal, Dr. Siddharth Bhardwaj, Dr. Manoj Prabhakar (Patna University), Prof. Umesh Prasad, Prof. Rashmi Akhoury (PPU) and VKSU, LNMU, TMBU, MU professors. Total 160 Credits (70 End-Sem + 30 CIA). Strictly no OMR sheet.',
     officialPdfs: {
       sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
       sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
@@ -547,14 +547,14 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
               },
               {
                 unitNumber: 2,
-                title: 'Supply, Demand & Consumer Behaviour (25 Lectures)',
+                title: 'Supply, Demand & Consumer Behaviour (25 Lectures: 18 + 7)',
                 topics: [
-                  'Concept and types of demand, determinants of individual demand and supply; demand and demand function',
+                  'Concept and types of demand, determinants of individual demand/supply; demand and demand function',
                   'Theory of demand and law of demand and supply, exceptions to law of demand',
-                  'Demand-supply schedule and curve; demand for complementary and substitute goods; market versus individual demand/supply; shifts in curve; equilibrium',
-                  'Elasticity of demand and supply: price, income and cross elasticity, determinants, measurement and practical applications; static and dynamic demand; consumer surplus',
-                  'The theory of Consumer Behaviour: Cardinal utility analysis (Law of Diminishing Marginal Utility & Equi-Marginal Utility)',
-                  'Ordinal utility analysis: Indifference curves, properties, budget constraint, consumer equilibrium, income and substitution effects'
+                  'Demand supply schedule and demand/supply curve; demand for complementary and substitute goods, market versus individual demand/supply',
+                  'Shifts in the demand/supply curve, demand and supply together',
+                  'Elasticity of demand and supply: determinants, measurement and application, static and dynamic demand, consumer surplus',
+                  'The theory of Consumer Behaviour: Cardinal and Ordinal utility analysis'
                 ]
               },
               {
@@ -562,10 +562,10 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 title: 'The Firm and Market Structure (25 Lectures)',
                 topics: [
                   'Nature of firm, organizing economic activity in a firm; Objective of a firm: Profit maximization vs sales maximization',
-                  'Introduction to basic idea of equilibrium of a firm; conditions for producers equilibrium in short run and long run for firm and industry: total and marginal approach',
-                  'Basic idea of market, concept and types of cost and revenue: total, average and marginal curves and relations',
-                  'Classification of markets, time element in market (very short period, short period, long period)',
-                  'Characteristics and pricing under Perfect Competition, Monopoly, Monopolistic Competition, and Oligopoly with real-world examples'
+                  'Introduction to basic idea of equilibrium of a firm, condition for producers equilibrium in short run and long run for firm and industry: total and marginal approach',
+                  'Basic idea of market, concept and types of cost and revenue: total, average and marginal concept',
+                  'Classification of market, time element in market',
+                  'Characteristics of Different Market Structures along with relevant examples (Perfect Competition, Monopoly, Monopolistic Competition, Oligopoly)'
                 ]
               },
               {
@@ -575,8 +575,8 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                   'Labour market: Basic concepts, derived demand, productivity of an input',
                   'Marginal productivity of labour, Marginal Revenue Product (MRP), Value of Marginal Product (VMP)',
                   'Demand for labour, backward bending supply curve of labour',
-                  'Tax policy and labour supply, labour force participation rate',
-                  'Determination of wage rate in a perfectly competitive labour market; Collective bargaining and minimum wage determination'
+                  'Tax policy and labour supply, labour force participation',
+                  'Determination of wage rate in a perfectly competitive labour market'
                 ]
               }
             ]
@@ -584,7 +584,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-1',
             code: 'MIC-1',
-            name: 'Introductory Microeconomics (Minor)',
+            name: 'Introductory Microeconomics',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
@@ -611,9 +611,9 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 title: 'Supply and Demand (18 Lectures)',
                 topics: [
                   'Concept and types of demand, determinants of individual demand/supply; demand and demand function',
-                  'Theory of demand, law of demand and supply, exceptions to law of demand',
-                  'Demand-supply schedule and curves; complementary and substitute goods, market vs individual demand/supply',
-                  'Shifts in demand/supply curves, market equilibrium, elasticity of demand and supply: determinants, measurement, consumer surplus'
+                  'Theory of demand and law of demand and supply, exceptions to law of demand',
+                  'Demand supply schedule and demand/supply curve; complementary and substitute goods, market versus individual demand/supply',
+                  'Shifts in demand/supply curve, demand and supply together, elasticity of demand and supply: determinants, measurement, consumer surplus'
                 ]
               },
               {
@@ -622,7 +622,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 topics: [
                   'Cardinal Approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility, Consumer Equilibrium',
                   'Ordinal Approach: Indifference Curve – meaning and properties of indifference curve',
-                  'Consumers Equilibrium with the help of Indifference curve analysis'
+                  'Consumers Equilibrium with the help of Indifference curve'
                 ]
               }
             ]
@@ -630,21 +630,39 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mdc-1',
             code: 'MDC-1',
-            name: 'Multidisciplinary Course 1 (Basket Option)',
+            name: 'Introductory Microeconomics (Multidisciplinary)',
             paperType: 'Multidisciplinary (MDC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '800 KB',
-            recommendedBooks: ['Interdisciplinary Studies Basket as prescribed by Patna University'],
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Karl E. Case and Ray C. Fair, Principles of Economics, Pearson Education Inc., 8th Edition',
+              'N. Gregory Mankiw, Economics: Principles and Applications, Cengage Learning, 4th edition',
+              'Joseph E. Stiglitz and Carl E. Walsh, Economics, W.W. Norton & Company, Inc., 4th Edition'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Interdisciplinary Fundamentals',
+                title: 'Exploring the Subject Matter of Economics (10 Lectures)',
                 topics: [
-                  'Course chosen from the approved Multidisciplinary Basket outside Social Sciences (Faculty of Science / Humanities / Commerce)',
-                  'Foundational concepts, cross-disciplinary methodology and applications'
+                  'Definition of Economics, Need, Scope and Methods of Economics, Nature and subject matter of Economics, Problem of scarcity and choice, Central Problems of Economy'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Supply and Demand (18 Lectures)',
+                topics: [
+                  'Concept and types of demand, determinants of individual demand/supply; demand and demand function, theory of demand and law of demand and supply; exceptions to law of demand, demand/supply schedule and curve; complementary and substitute goods, shifts in curve, elasticity of demand and supply, consumer surplus'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'The Theory of Consumer Behaviour (12 Lectures)',
+                topics: [
+                  'Cardinal approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility, Consumer Equilibrium',
+                  'Ordinal Approach: Indifference Curve - meaning and properties, Consumers Equilibrium with the help of Indifference curve'
                 ]
               }
             ]
@@ -746,10 +764,10 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 title: 'Preliminaries (20 Lectures)',
                 topics: [
                   'Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products',
-                  'Functions and their Properties: domain, codomain, range, one-to-one, onto and inverse functions',
-                  'Number System: real numbers, rational, irrational, and complex numbers',
+                  'Functions and their Properties',
+                  'Number System',
                   'Basic idea of Permutation and Combination',
-                  'Progression: Arithmetic, Geometric and Harmonic Progression (AP, GP, HP) and their economic applications'
+                  'Progression: Arithmetic, Geometric and Harmonic Progression (AP, GP, HP)'
                 ]
               },
               {
@@ -764,22 +782,19 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
               },
               {
                 unitNumber: 3,
-                title: 'Rules of Differentiation & Economic Applications (20 Lectures)',
+                title: 'Rules of Differentiation (20 Lectures)',
                 topics: [
                   'Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions',
-                  'Chain Rule, Implicit differentiation, Logarithmic differentiation',
-                  'Second and higher order derivatives and curvature of curves',
-                  'Applications of differentiation in Economics: Marginal Cost (MC), Marginal Revenue (MR), Average Cost (AC), Elasticity of Demand, Revenue maximization'
+                  'Second and higher order derivatives',
+                  'Applications of differentiation in Economics (Marginal Cost, Marginal Revenue, Elasticity of Demand)'
                 ]
               },
               {
                 unitNumber: 4,
                 title: 'Single-Variable Optimization (15 Lectures)',
                 topics: [
-                  'Conditions for Maxima and Minima: First-order necessary conditions, Second-order sufficient conditions',
-                  'Points of inflection and concavity/convexity of functions',
-                  'Simple applications of maxima and minima in economics – Profit maximization and net revenue maximization',
-                  'Cost minimization: Short-run and long-run cost optimization under single variable inputs'
+                  'Conditions for Maxima and Minima',
+                  'Simple applications of maxima and minima in economics – maximization of profit / net revenue, cost minimization'
                 ]
               }
             ]
@@ -787,7 +802,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-2',
             code: 'MIC-2',
-            name: 'Mathematical Methods in Economics (Minor)',
+            name: 'Mathematical Methods in Economics',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
@@ -810,7 +825,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                   'Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products',
                   'Functions and their Properties, Number System',
                   'Basic idea of Permutation and Combination',
-                  'Progression: Arithmetic, Geometric and Harmonic Progression (AP, GP, HP)'
+                  'Progression: Arithmetic, Geometric and Harmonic Progression'
                 ]
               },
               {
@@ -824,7 +839,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
               },
               {
                 unitNumber: 3,
-                title: 'Rules of Differentiation & Economic Applications (12 Lectures)',
+                title: 'Rules of Differentiation & Applications (12 Lectures)',
                 topics: [
                   'Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions',
                   'Second and higher order derivatives',
@@ -836,21 +851,47 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mdc-2',
             code: 'MDC-2',
-            name: 'Multidisciplinary Course 2 (Basket Option)',
+            name: 'Introductory Macroeconomics (Multidisciplinary)',
             paperType: 'Multidisciplinary (MDC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
-            fileSize: '800 KB',
-            recommendedBooks: ['Interdisciplinary Studies Basket as prescribed by Patna University'],
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Dornbusch, Fischer and Startz, Macroeconomics, McGraw Hill, 11th edition',
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition',
+              'Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition',
+              'Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Interdisciplinary Applications',
+                title: 'Introduction to Macroeconomics and National Income Accounting (15 Lectures)',
                 topics: [
-                  'Course selected from the university basket of Multidisciplinary Courses',
-                  'Interdisciplinary perspectives, analytical tools and real-world case studies'
+                  'Origin and Roots of Macroeconomics, Need and relevance, Scope of the Subject, Macroeconomic concerns and issues, Role of Government',
+                  'Components of Macroeconomics, methodology, Circular flow of Income',
+                  'Concepts of National Income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income, personal disposable income',
+                  'Approaches to calculating GDP: Nominal and real GDP, Green GDP'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Money and Banking (15 Lectures)',
+                topics: [
+                  'Functions of money; quantity theory of money',
+                  'Central banking: history, objectives, functions, relevance, performance, tools of monetary policy',
+                  'Concept and history of commercial banking - functions, distribution of assets and credit creation'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'The Closed Economy in the Short Run (10 Lectures)',
+                topics: [
+                  'Classical and Keynesian systems; simple classical system of output and employment',
+                  'Keynesian model of income determination, concept of multipliers',
+                  'Relevance and limitations of Keynesian economics to developing economy'
                 ]
               }
             ]
@@ -938,46 +979,48 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition',
-              'Richard T. Froyen, Macroeconomics: Theories and Policies, Pearson Education',
-              'H. L. Ahuja, Macroeconomics: Theory and Policy, S. Chand & Co., Delhi'
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition, 2010',
+              'Dornbusch, Fischer and Startz, Macroeconomics, McGraw Hill, 11th edition, 2010',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009',
+              'Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition, 2005',
+              'Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition, 2011'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'National Income Accounting & Concepts',
+                title: 'Introduction to Macroeconomics and National Income Accounting (15 Lectures)',
                 topics: [
-                  'Scope and subject matter of Macroeconomics; Circular flow of income in two, three and four sector models',
-                  'Concepts of GDP, GNP, NDP, NNP at market price and factor cost; Personal income and disposable personal income',
-                  'Real vs Nominal GDP, GDP Deflator, Measurement methods: Value added, Income, and Expenditure methods; Green GDP'
+                  'The Origin and Roots of Macroeconomics, Need and relevance, Scope of the Subject, Macroeconomic concerns and issues, Role of Government',
+                  'Components of Macroeconomics, methodology, Circular flow of Income',
+                  'Concepts of National income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income and personal disposable income',
+                  'Approaches to calculating GDP: Nominal and real GDP, Green GDP'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Classical & Keynesian Systems',
+                title: 'Money and Banking (15 Lectures)',
                 topics: [
-                  'Classical theory of output and employment, Says Law of Markets, wage-price flexibility, quantity theory of money',
-                  'Keynesian critique of classical economics, principle of effective demand, aggregate demand and aggregate supply functions',
-                  'Underemployment equilibrium, consumption function (APC, MPC), Keynes Psychological Law of Consumption'
+                  'Functions of money; quantity theory of money',
+                  'Central banking: history, objectives, functions, relevance, performance, tools of monetary policy',
+                  'Concept and history of commercial banking - functions, distribution of assets and credit creation'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Investment, Multiplier & Financial Markets',
+                title: 'Classical and Keynesian Systems (15 Lectures)',
                 topics: [
-                  'Investment function: autonomous and induced investment, Marginal Efficiency of Capital (MEC) and interest rate',
-                  'Investment Multiplier: working, dynamic multiplier, leakages, and acceleration principle',
-                  'Money and liquidity preference theory: transaction, precautionary, and speculative demand for money'
+                  'Classical and Keynesian systems; simple classical system of output and employment',
+                  'Keynesian model of income determination, concept of multipliers (investment multiplier, balanced budget multiplier)',
+                  'Relevance and limitations of Keynesian economics to developing economy'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'IS-LM Model & Inflation',
+                title: 'IS-LM Model and Policy Effects (15 Lectures)',
                 topics: [
-                  'Goods market equilibrium and the IS curve (derivation and shifts)',
-                  'Money market equilibrium and the LM curve (derivation and shifts)',
-                  'Simultaneous equilibrium in goods and money markets; Effectiveness of monetary and fiscal policies',
-                  'Inflation: Demand-pull vs Cost-push inflation, Philips Curve, stagflation and inflation targeting'
+                  'Goods market equilibrium and the IS curve; Money market equilibrium and the LM curve',
+                  'Joint determination of income and interest rate; Monetary and Fiscal policy multipliers',
+                  'Crowding out effect; Relative effectiveness of monetary and fiscal policies'
                 ]
               }
             ]
@@ -994,45 +1037,47 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'S. C. Gupta & V. K. Kapoor, Fundamentals of Mathematical Statistics, Sultan Chand & Sons',
-              'S. P. Gupta, Statistical Methods, Sultan Chand & Sons, New Delhi',
-              'G. S. Monga, Mathematics and Statistics for Economists, Vikas Publishing'
+              'Jay L. Devore, Probability and Statistics for Engineers, Cengage Learning, 2010',
+              'John E. Freund, Mathematical Statistics, Prentice Hall, 1992',
+              'Gupta S.P, Statistical Methods, S. Chand & Sons, New Delhi',
+              'Richard J. Larsen and Morris L. Marx, An Introduction to Mathematical Statistics and its Applications, Prentice Hall, 2011'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Measures of Central Tendency and Dispersion',
+                title: 'Basic Statistics (20 Lectures)',
                 topics: [
-                  'Collection, organization and presentation of economic data; Frequency distributions and histograms',
-                  'Measures of central tendency: Mean, Median, Mode, Geometric Mean, Harmonic Mean',
-                  'Measures of dispersion: Range, Quartile Deviation, Mean Deviation, Standard Deviation, Variance, Coefficient of Variation, Skewness and Kurtosis'
+                  'Measures of Central Tendency: Mean, Median, Mode, Geometric Mean, Harmonic Mean',
+                  'Measures of Dispersion: Mean Deviation, Quartile Deviation, Standard Deviation',
+                  'Moments, Skewness, Kurtosis, Gini coefficient, Lorenz Curve',
+                  'Bivariate Frequency Distribution: Simple Correlation and Linear Regression Analysis'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Correlation and Regression Analysis',
+                title: 'Index Number (10 Lectures)',
                 topics: [
-                  'Bivariate data, Scatter diagram, Karl Pearsons coefficient of correlation, Spearmans rank correlation',
-                  'Linear regression: Regression lines of Y on X and X on Y, Method of Least Squares, Regression coefficients and their properties',
-                  'Standard error of estimate, Coefficient of determination (R-squared)'
+                  'Concept of Index Number, Laspeyres, Paasches and Fishers Ideal Index Number',
+                  'Tests for Ideal Index Number (Time Reversal Test, Factor Reversal Test)',
+                  'Problems in Construction of Index Number; Applications: Cost of living index Number (CPI)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Index Numbers & Time Series Analysis',
+                title: 'Concept of Probability and Probability Distribution (15 Lectures)',
                 topics: [
-                  'Index numbers: Laspeyres, Paasches, and Fishers ideal index; Tests of adequacy (time reversal, factor reversal)',
-                  'Consumer Price Index (CPI), Wholesale Price Index (WPI), Deflating time series',
-                  'Components of time series: Secular trend, seasonal variation, cyclical fluctuation, irregular variation; Moving average and least squares trend fitting'
+                  'Sample space and events; probability axioms and properties; Concept of random variable',
+                  'Addition and Multiplication Theorem, Conditional Probability and Bayes Theorem',
+                  'Probability Distributions: Binomial, Poisson and Normal Distribution - properties, mean and variance'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Probability and Sampling Theory',
+                title: 'Sampling Theory and Estimation (5 Lectures)',
                 topics: [
-                  'Basic probability concepts: addition and multiplication theorems, conditional probability, Bayes theorem',
-                  'Probability distributions: Binomial, Poisson, and Normal distribution with economic applications',
-                  'Concepts of population and sample; Sampling methods (random vs non-random), standard error of sample mean'
+                  'Concept of Sampling, Methods of Sampling, Types of Sampling',
+                  'Concept and properties of an estimator (Unbiasedness, Consistency, Efficiency, Sufficiency)',
+                  'Point and Interval Estimation'
                 ]
               }
             ]
@@ -1040,38 +1085,48 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-3',
             code: 'MIC-3',
-            name: 'Introductory Macroeconomics (Minor)',
+            name: 'Introductory Macroeconomics',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            pyqCount: 2,
-            recommendedBooks: ['N. Gregory Mankiw, Macroeconomics', 'H. L. Ahuja, Macroeconomics, S. Chand'],
+            pyqCount: 3,
+            recommendedBooks: [
+              'Dornbusch, Fischer and Startz, Macroeconomics, McGraw Hill, 11th edition, 2010',
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition, 2010',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009',
+              'Richard T. Froyen, Macroeconomics, Pearson Education Asia, 2nd edition, 2005',
+              'Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th edition, 2011'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'National Income Accounting',
+                title: 'Introduction to Macroeconomics and National Income Accounting (15 Lectures)',
                 topics: [
-                  'Concepts of GDP, GNP, NDP, NNP; Circular flow of income in two and three sector economies',
-                  'Measurement of National Income: product, income and expenditure methods'
+                  'Origin and Roots of Macroeconomics, Need and relevance, Scope of the Subject, Macroeconomic concerns and issues, Role of Government',
+                  'Components of Macroeconomics, methodology, Circular flow of Income',
+                  'Concepts of National Income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income, personal disposable income',
+                  'Approaches to calculating GDP: Nominal and real GDP, Green GDP'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Classical & Keynesian Employment Theory',
+                title: 'Money and Banking (15 Lectures)',
                 topics: [
-                  'Says Law of Markets, Classical quantity theory of money',
-                  'Keynesian aggregate demand and aggregate supply, effective demand principle, consumption function and investment multiplier'
+                  'Functions of money; quantity theory of money',
+                  'Central banking: history, objectives, functions, relevance, performance, tools of monetary policy',
+                  'Concept and history of commercial banking - functions, distribution of assets and credit creation'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Money, Banking and Inflation',
+                title: 'Classical and Keynesian Systems (10 Lectures)',
                 topics: [
-                  'Functions of money, Credit creation by commercial banks, Central Bank monetary policy instruments',
-                  'Inflation: concepts, causes, and anti-inflationary measures'
+                  'Classical and Keynesian systems; simple classical system of output and employment',
+                  'Keynesian model of income determination, concept of multipliers',
+                  'Relevance and limitations of Keynesian economics to developing economy'
                 ]
               }
             ]
@@ -1079,19 +1134,44 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mdc-3',
             code: 'MDC-3',
-            name: 'Multidisciplinary Course 3 (Basket Option)',
+            name: 'Indian Economy (Multidisciplinary)',
             paperType: 'Multidisciplinary (MDC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
-            fileSize: '800 KB',
-            recommendedBooks: ['Approved Interdisciplinary Basket at Patna University'],
+            fileSize: '1.2 MB',
+            recommendedBooks: [
+              'Shankar Acharya and Rakesh Mohan, Indias Economy: Performances and Challenges, OUP, 2010',
+              'Pulapre Balakrishnan, Ramesh Golait and Pankaj Kumar, Agricultural Growth in India Since 1991, RBI',
+              'Kunal Sen, Trade, Foreign Direct Investment and Industrial Transformation in India, Routledge, 2010'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Cross-Disciplinary Analysis',
-                topics: ['Final elective from the University Multidisciplinary Basket for Semester-3']
+                title: 'Economic Development since Independence (10 Lectures)',
+                topics: [
+                  'Characteristics of Indian Economy, Main features of the economy at independence',
+                  'Structural change, growth and development under different policy regimes—goals, constraints, institutions and policy framework',
+                  'Assessment of sectoral performance, sustainability and regional contrasts; structural change, trends of savings and investment'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Indian Agriculture, Industry and Service Sector (20 Lectures)',
+                topics: [
+                  'Importance of Agriculture in Indian economy, Problems in Indian Agriculture and solutions, Govt efforts for upliftment, Land Reforms, Green and Rainbow Revolution',
+                  'Industrial policies in India since independence, Importance of small scale industries in India, problems, remedies, industrial sickness in India',
+                  'Services Sector: growth and present status; Foreign Trade in India - Composition and Direction'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Bihar Economy (10 Lectures)',
+                topics: [
+                  'Demographic features, Poverty and Unemployment, Growth and problems of Farm sector',
+                  'Development of Industrial sector, Major policy initiatives for development of Bihar'
+                ]
               }
             ]
           },
@@ -1155,44 +1235,37 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton, 8th edition',
-              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning',
-              'H. L. Ahuja, Advanced Economic Theory (Microeconomic Analysis), S. Chand & Co.'
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton / Affiliated East-West Press, 8th edition, 2010',
+              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning (India), 2010',
+              'B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill (India), 2009'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Advanced Consumer Choice & Duality',
+                title: 'Ordinal Utility Analysis (20 Lectures)',
                 topics: [
-                  'Preferences, utility maximization, indirect utility function, expenditure function and Hicksian demands',
-                  'Slutsky equation: substitution effect, income effect, and endowment income effect; Compensated demand curves',
-                  'Samuelsons Revealed Preference Theory (WARP and SARP); Choice under uncertainty: von Neumann-Morgenstern expected utility'
+                  'Concept, Assumptions, Tools: Indifference curve and Budget line',
+                  'Income effect, substitution effect and price effect for normal and inferior goods, Slutsky equation and Hicksian Substitution effect',
+                  'Revealed preference theory, deriving demand theorem from the Revealed Preference Hypothesis and critical appraisal of Revealed Preference Hypothesis',
+                  'Revision of Demand Theory: weak and strong ordering; Recent developments in Demand Theory'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Advanced Theory of Production',
+                title: 'Production, Costs and Revenue Analysis (20 Lectures)',
                 topics: [
-                  'Production functions with two variable inputs; Marginal Rate of Technical Substitution (MRTS)',
-                  'Elasticity of substitution; Properties of Cobb-Douglas and CES production functions',
-                  'Returns to scale and homogeneous production functions; Technical progress: Hicks-neutral and Harrod-neutral'
+                  'Production with one and more variable inputs; law of variable proportions, returns-to-scale, optimum factor combination, Production possibility curve, elasticity of substitution',
+                  'Traditional and Modern approaches to cost; Behaviour of Cost and Revenue curves under different market conditions, Internal and external economies and diseconomies of scale',
+                  'Concept, assumptions, characteristics and types of Production function with examples, estimation and their applications: Homogeneous, Linear Homogeneous and Cobb-Douglas Production Function, Production function and technological change'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Cost Minimization & Duality in Production',
+                title: 'Perfect Competition and Monopoly (20 Lectures)',
                 topics: [
-                  'Cost minimization problem and conditional factor demand functions',
-                  'Short-run and long-run cost functions: Total, Average, and Marginal costs; Envelope theorem',
-                  'Shephards Lemma and expansion path'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'Competitive Market Equilibrium',
-                topics: [
-                  'Short-run and long-run equilibrium of the firm and industry under Perfect Competition',
-                  'Constant, increasing and decreasing cost industries; Welfare effects of taxes, subsidies, and price controls'
+                  'Review of perfect competition: features, price and output determination under perfect competition in short and long run, total and marginal approach',
+                  'Monopoly: features, conditions for existence of monopoly, price and output determination under monopoly',
+                  'Measurement of the degree of monopoly power, pricing with market power; price discrimination; government policies towards monopoly and competition'
                 ]
               }
             ]
@@ -1209,43 +1282,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Dornbusch, Fischer & Startz, Macroeconomics, McGraw Hill, 11th edition',
-              'Olivier Blanchard, Macroeconomics, Pearson Education, 7th edition',
-              'Errol D Souza, Macroeconomics, Pearson Education'
+              'Dornbusch, Fischer and Startz, Macroeconomics, McGraw Hill, 11th edition, 2010',
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition, 2010',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009',
+              'Steven M. Sheffrin, Rational Expectations, Cambridge University Press, 2nd edition, 1996',
+              'Andrew B. Abel and Ben S. Bernanke, Macroeconomics, Pearson Education, Inc., 7th Edition, 2011',
+              'Errol D Souza, Macroeconomics, Pearson Education, 2009',
+              'Paul R. Krugman, Maurice Obstfeld and Marc Melitz, International Economics, Pearson Education Asia, 9th edition, 2012'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Aggregate Demand and Aggregate Supply',
+                title: 'The Closed Economy in the Short Run (20 Lectures)',
                 topics: [
-                  'Derivation of Aggregate Demand curve from IS-LM model',
-                  'Aggregate Supply curve in short-run and long-run (Sticky wage model, Worker-misperception model, Sticky price model)',
-                  'Macroeconomic equilibrium and adjustments to demand and supply shocks'
+                  'Classical Macroeconomics: Money, prices and interest',
+                  'Keynesian system: money, interest and income, IS-LM model, policy effects',
+                  'Analysis of Business Cycle: phases of business cycle, theories of business cycle: Hawtrey, Keynes, Samuelson, and Hicks'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Inflation, Unemployment and Expectations',
+                title: 'Inflation, Unemployment and Expectations (20 Lectures)',
                 topics: [
-                  'The Phillips Curve tradeoff between inflation and unemployment',
-                  'Natural Rate of Unemployment hypothesis (Friedman and Phelps)',
-                  'Adaptive expectations vs Rational expectations; Lucas Critique; Sacrifices ratio'
+                  'Inflation: its types and causes; cost of inflation, the Fisher effect',
+                  'Unemployment: concept, types, measurement and effect on different sections of society',
+                  'Phillips curve, Adaptive and Rational expectation hypothesis, policy implications'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Open Economy Macroeconomics',
+                title: 'Open Economy Models (20 Lectures)',
                 topics: [
-                  'Balance of payments: Current account and capital account; Nominal and real exchange rates; Purchasing Power Parity (PPP)',
-                  'The Mundell-Fleming Model under fixed vs floating exchange rates: Perfect capital mobility and policy effectiveness'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'Microfoundations of Macroeconomics',
-                topics: [
-                  'Consumption theories: Life Cycle Hypothesis (Modigliani), Permanent Income Hypothesis (Friedman)',
-                  'Investment theories: Accelerator principle, Tobins q theory; Money demand: Baumol-Tobin cash balance model'
+                  'Short-run open economy models; Mundell-Fleming Model',
+                  'Exchange rate determination; Purchasing Power Parity (PPP); Asset market approach',
+                  'Dornbuschs Overshooting Model; monetary approach to balance of payments; international financial markets'
                 ]
               }
             ]
@@ -1262,45 +1332,47 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Uma Kapila, Indian Economy: Performance and Policies, Academic Foundation',
-              'Ramesh Singh, Indian Economy, McGraw Hill Education',
-              'Bimal Jalan, The Indian Economy: Problems and Prospects, Penguin'
+              'Shankar Acharya and Rakesh Mohan, Indias Economy: Performances and Challenges, Oxford University Press, 2010',
+              'Pulapre Balakrishnan, Ramesh Golait and Pankaj Kumar, Agricultural Growth in India Since 1991, RBI DEAP Study no. 27, 2008',
+              'Kunal Sen, Trade, Foreign Direct Investment and Industrial Transformation in India, Routledge, 2010',
+              'Dipak Mazumdar and Sandeep Sarkar, The Employment Problem in India and the Phenomenon of the Missing Middle, IJLE, 2009',
+              'J. Dennis Rajakumar, Size and Growth of Private Corporate Sector in Indian Manufacturing, EPW, 2011'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Economic Development since Independence',
+                title: 'Economic Development since Independence (10 Lectures)',
                 topics: [
-                  'Colonial legacy and structure of Indian economy at independence',
-                  'Planning era: Nehru-Mahalanobis strategy, Five-Year Plans performance and achievements',
-                  'Economic crisis of 1991 and transition to New Economic Policy (LPG: Liberalisation, Privatisation, Globalisation)'
+                  'Characteristics of Indian Economy, Main features of the economy at independence',
+                  'Structural change, growth and development under different policy regimes—goals, constraints, institutions and policy framework',
+                  'Assessment of sectoral performance, sustainability and regional contrasts; structural change, trends of savings and investment'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Agriculture and Rural Sector',
+                title: 'Indian Agriculture (15 Lectures)',
                 topics: [
-                  'Role of agriculture in Indian economy; Land reforms, Green Revolution and post-Green Revolution scenario',
-                  'Agricultural marketing, Minimum Support Price (MSP), Public Distribution System (PDS) and Food Security',
-                  'Agricultural finance, Kisan Credit Card (KCC), rural indebtedness and farmer distress'
+                  'Importance of Agriculture in Indian economy, Problems in Indian Agriculture and their possible solutions, Efforts by Government for upliftment',
+                  'Trends in Agricultural growth and Productivity; Land Reforms; Green and Rainbow Revolution',
+                  'Agricultural Marketing; Agricultural Price Policy; Food Security in India; status, prospect and problem of food processing in India'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Industry and Infrastructure',
+                title: 'Indian Industry and Services Sector (15 Lectures)',
                 topics: [
-                  'Industrial policy resolutions (1956, 1991); Public Sector Enterprises (PSEs) and Disinvestment policy',
-                  'Micro, Small and Medium Enterprises (MSMEs): role, growth and challenges',
-                  'Make in India, Production Linked Incentive (PLI) scheme; Infrastructure: power, transport, logistics, and digital infrastructure'
+                  'Industrial policies in India since independence, Importance of small scale industries, problems, remedies, industrial sickness in India',
+                  'Labour issues and social security; Services Sector: growth and present state of IT, hospitality and financial sector in India',
+                  'Fiscal and Financial Sector Reforms in India; Foreign Trade in India - Composition and Direction'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Services, External Sector & Bihar Economy',
+                title: 'Bihar Economy (20 Lectures)',
                 topics: [
-                  'Growth and composition of services sector (IT, banking, tourism, telecom)',
-                  'Foreign trade trends, Foreign Direct Investment (FDI), Foreign Portfolio Investment (FPI), Forex reserves',
-                  'Economy of Bihar: Growth trends, agrarian base, industrial backwardness, human development, and special state status issues'
+                  'General features of the economy, performance, major challenges and causes of backwardness in different sectors',
+                  'Human Resource Development - Concept and Emerging Issues, Policies for unemployment',
+                  'Migration - Dimension and its impact; Policies and Programmes of the State Government for development of different sectors'
                 ]
               }
             ]
@@ -1308,7 +1380,7 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-4',
             code: 'MIC-4',
-            name: 'Statistical Methods in Economics (Minor)',
+            name: 'Statistical Methods in Economics',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
@@ -1316,22 +1388,28 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
             pyqCount: 2,
-            recommendedBooks: ['S. P. Gupta, Statistical Methods, Sultan Chand', 'G. S. Monga, Statistics for Economists'],
+            recommendedBooks: [
+              'Gupta S.P, Statistical Methods, S. Chand & Sons, New Delhi',
+              'Jay L. Devore, Probability and Statistics for Engineers, Cengage Learning, 2010',
+              'John E. Freund, Mathematical Statistics, Prentice Hall, 1992',
+              'Richard J. Larsen and Morris L. Marx, An Introduction to Mathematical Statistics, Prentice Hall, 2011'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Central Tendency & Dispersion',
-                topics: ['Mean, Median, Mode; Standard Deviation, Variance, and Coefficient of Variation']
+                title: 'Basic Concepts of Statistics & Applications',
+                topics: [
+                  'Measures of central tendency: Mean, Median, Mode; Measures of dispersion: Standard Deviation, Variance',
+                  'Correlation and simple regression analysis; Index numbers'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Correlation and Regression',
-                topics: ['Karl Pearsons Correlation, Rank Correlation, Simple Linear Regression equations']
-              },
-              {
-                unitNumber: 3,
-                title: 'Index Numbers & Time Series',
-                topics: ['Laspeyres, Paasche and Fisher Index Numbers; Trend estimation using Moving Averages']
+                title: 'Concept of Probability and Distributions',
+                topics: [
+                  'Sample space, events, probability rules, addition and multiplication theorems',
+                  'Binomial, Poisson and Normal distributions - properties and basic applications'
+                ]
               }
             ]
           },
@@ -1375,44 +1453,35 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             pyqCount: 4,
             recommendedBooks: [
               'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton',
-              'Robert Gibbons, Game Theory for Applied Economists, Princeton University Press',
-              'A. Koutsoyiannis, Modern Microeconomics, Macmillan'
+              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning',
+              'B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Monopoly and Price Discrimination',
+                title: 'Imperfect Markets (20 Lectures)',
                 topics: [
-                  'Monopoly equilibrium, monopoly power (Learner index), Deadweight loss of monopoly',
-                  'Price Discrimination: First, Second, and Third-degree price discrimination, Two-part tariffs and peak-load pricing',
-                  'Natural monopoly and government regulation: marginal cost pricing vs average cost pricing'
+                  'Monopolistic Competition: features, short-run and long-run equilibrium, excess capacity',
+                  'Oligopoly: Cournot duopoly, Bertrand model, Stackelberg model, Kinked Demand Curve hypothesis',
+                  'Collusive oligopoly: Cartels and Price Leadership'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Imperfect Competition and Oligopoly',
+                title: 'Pricing of Factors & Distribution Theory (20 Lectures)',
                 topics: [
-                  'Monopolistic Competition: Chamberlinian tangency solution, excess capacity theorem',
-                  'Oligopoly without collusion: Cournot duopoly, Bertrand price competition, Stackelberg leadership model',
-                  'Kinked Demand Curve hypothesis (Sweezy model); Collusive oligopoly: Cartels and Price Leadership'
+                  'Factor pricing under perfect and imperfect competition; Marginal Productivity Theory of Distribution',
+                  'Marginal Revenue Product (MRP) and Value of Marginal Product (VMP); Eulers Product Exhaustion Theorem',
+                  'Theories of Rent (Ricardian, Modern), Interest (Liquidity Preference, Loanable Funds), and Profit (Knight, Schumpeter)'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Introduction to Game Theory',
+                title: 'General Equilibrium, Efficiency and Welfare (20 Lectures)',
                 topics: [
-                  'Normal form games: Players, Strategies, Payoffs; Dominant strategy equilibrium',
-                  'Nash Equilibrium: Pure and mixed strategies; Prisoners Dilemma and Battle of the Sexes',
-                  'Extensive form games: Game trees, information sets, backward induction, subgame perfect equilibrium'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'General Equilibrium & Welfare Economics',
-                topics: [
-                  'General equilibrium in pure exchange: Edgeworth box, Pareto optimality, contract curve',
-                  'General equilibrium with production: Production Possibility Frontier and Grand Utility Possibility Frontier',
-                  'First and Second Fundamental Theorems of Welfare Economics; Market failure: externalities and public goods'
+                  'Partial vs General Equilibrium; Walrasian General Equilibrium System',
+                  'Pareto Optimality conditions in consumption, production and exchange; Edgeworth Box diagram',
+                  'First and Second Fundamental Theorems of Welfare Economics; Externalities and Public Goods; Market failure and remedies'
                 ]
               }
             ]
@@ -1429,45 +1498,48 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Richard A. Musgrave & Peggy B. Musgrave, Public Finance in Theory and Practice, McGraw-Hill',
-              'Harvey S. Rosen & Ted Gayer, Public Finance, McGraw-Hill, 10th edition',
-              'H. L. Bhatia, Public Finance, Vikas Publishing House'
+              'J. Hindriks, G. Myles, Intermediate Public Economics, MIT Press, 2006',
+              'H. Rosen, T. Gayer, Public Finance, 9th edition, McGraw-Hill/Irwin, 2009',
+              'Joseph E. Stiglitz, Economics of the Public Sector, W.W. Norton & Company, 3rd edition, 2000',
+              'R. A. Musgrave and P. B. Musgrave, Public Finance in Theory & Practice, McGraw Hill Publications, 5th edition, 1989',
+              'Harvey Rosen, Public Finance, McGraw Hill Publications, 7th edition, 2005',
+              'A. Ghosh and C. Ghosh, Public Finance, PHI Learning, 2014'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Principles of Public Finance & Market Failure',
+                title: 'Introduction to Public Finance (20 Lectures)',
                 topics: [
-                  'Nature and scope of Public Finance; Fiscal functions: Allocation, Distribution, and Stabilization',
-                  'Pure Public Goods vs Private Goods, Free rider problem; Externalities and Pigouvian corrective taxation',
-                  'Principle of Maximum Social Advantage (Dalton and Musgrave)'
+                  'Public Finance: Meaning, Nature, Scope and Importance; difference between Private and Public Finance',
+                  'Principle of Maximum Social Advantage; Role of State in Public Finance',
+                  'Fiscal functions of State: Allocation, Distribution, Economic Growth and Stabilisation'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Public Revenue and Taxation',
+                title: 'Sources of Revenue (14 Lectures)',
                 topics: [
-                  'Sources of public revenue: Tax and non-tax revenue; Direct vs Indirect taxes',
-                  'Canons of taxation; Impact, incidence and shifting of taxation (Marshall-Edgeworth approaches)',
-                  'Goods and Services Tax (GST) in India: structure, GST Council, compensation cess and federal implications'
+                  'Taxes, loans, grants and aid – meaning and types, canons/principles of taxation',
+                  'Problem of justice in taxes, incidence of taxation, taxable capacity',
+                  'Impact of taxation & tax evasion; characteristics of Indian tax system, defects & steps of reform'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Public Expenditure and Public Debt',
+                title: 'Public Expenditure and Debt (14 Lectures)',
                 topics: [
-                  'Wagner Law of Increasing State Activity, Wiseman-Peacock hypothesis, Critical limit hypothesis',
-                  'Causes of growth of public expenditure in India; Evaluation of public expenditure: Cost-Benefit Analysis',
-                  'Public Debt: Internal vs External debt, burden of public debt, debt redemption methods, FRBM Act'
+                  'Principle of Public Expenditure',
+                  'Principle of Public Debt and its Methods of Redemption',
+                  'Effects of Public Expenditure on Production and Distribution; Public Debt in India'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Fiscal Policy, Budget & Federal Finance',
+                title: 'Public Finance in India (12 Lectures)',
                 topics: [
-                  'Fiscal policy instruments: Counter-cyclical fiscal policy, automatic stabilizers',
-                  'Union Budget of India: Revenue deficit, Fiscal deficit, Primary deficit; Gender budgeting',
-                  'Fiscal Federalism in India: Vertical and horizontal fiscal imbalances; Recommendations of the latest Finance Commission'
+                  'Sources of Revenue of Central Government, State Government and Local Bodies',
+                  'Concept and Types of Budget, Fiscal Deficit, Deficit Financing and Deficit Budget',
+                  'Financial relation between Central and State; Finance Commission; Fiscal Policy'
                 ]
               }
             ]
@@ -1475,58 +1547,90 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-5',
             code: 'MIC-5',
-            name: 'Intermediate Microeconomics 1 (Minor)',
+            name: 'Intermediate Microeconomics 1',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Hal R. Varian, Intermediate Microeconomics', 'H. L. Ahuja, Advanced Microeconomics'],
+            pyqCount: 2,
+            recommendedBooks: [
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton / East-West Press, 8th edition, 2010',
+              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning, 2010',
+              'B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill, 2009'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Advanced Consumer Theory',
-                topics: ['Preferences, budget line, Slutsky substitution and income effects, Revealed Preference Theory']
+                title: 'Ordinal Utility Analysis (15 Lectures)',
+                topics: [
+                  'Concept, Assumptions, Tools: Indifference curve and Budget line, income effect, substitution effect and price effect for normal and inferior goods',
+                  'Slutsky Equation and Hicksian Substitution Effect',
+                  'Revealed preference theory'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Production & Costs',
-                topics: ['Isoquants, MRTS, Cobb-Douglas production function, Long-run cost curves, Economies of scale']
+                title: 'Production, Costs and Revenue Analysis (15 Lectures)',
+                topics: [
+                  'Production with one and more variable inputs; law of variable proportion, returns to scale, optimum factor combination, PPC, elasticity of substitution',
+                  'Traditional and Modern approaches to cost; Behaviour of Cost and Revenue curves under different market conditions, economies and diseconomies of scale',
+                  'Concept, assumptions and characteristics of different types of Production function: Linear and Cobb-Douglas Production Function'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Perfect Competition Equilibrium',
-                topics: ['Short-run and long-run industry equilibrium, Producer surplus, Deadweight loss']
+                title: 'Perfect Competition and Monopoly (10 Lectures)',
+                topics: [
+                  'Review of perfect competition: features, price and output determination in short and long run, total and marginal approach',
+                  'Monopoly: features, conditions for existence of monopoly, price and output determination under monopoly, price discrimination'
+                ]
               }
             ]
           },
           {
             id: 'eco-mic-6',
             code: 'MIC-6',
-            name: 'Intermediate Macroeconomics (Minor)',
+            name: 'Intermediate Macroeconomics',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Dornbusch & Fischer, Macroeconomics', 'Errol D Souza, Macroeconomics'],
+            pyqCount: 2,
+            recommendedBooks: [
+              'Dornbusch, Fischer and Startz, Macroeconomics, McGraw Hill, 11th edition, 2010',
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition, 2010',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, Inc., 5th edition, 2009',
+              'Errol D Souza, Macroeconomics, Pearson Education, 2009',
+              'Paul R. Krugman, Maurice Obstfeld and Marc Melitz, International Economics, Pearson, 9th edition, 2012'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'IS-LM & Aggregate Demand',
-                topics: ['Goods market equilibrium (IS), Money market equilibrium (LM), Aggregate Demand derivation']
+                title: 'The Closed Economy Macroeconomics',
+                topics: [
+                  'Classical Macroeconomics: Money, prices and interest; Keynesian system: money, interest and income',
+                  'IS-LM model, policy effects; Analysis of Business cycle: phases of business cycle, theories: Hawtrey, Keynes, Samuelson, and Hicks'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Inflation and Unemployment',
-                topics: ['Short-run and long-run Phillips Curve, Adaptive vs Rational expectations, Stagflation']
+                title: 'Inflation, Unemployment and Expectations',
+                topics: [
+                  'Inflation: its types and causes; cost of inflation',
+                  'Unemployment: concept, types, measurement and effect on different sections of society; Phillips curve, policy implications'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Open Economy & Policy',
-                topics: ['Balance of Payments, Exchange rates, Monetary and fiscal policy effectiveness']
+                title: 'The Open Economy Macroeconomics',
+                topics: [
+                  'Short-run open economy models; Mundell-Fleming Model',
+                  'Exchange Rate: concept, types and theories of determination'
+                ]
               }
             ]
           },
@@ -1569,44 +1673,42 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Dominick Salvatore, International Economics: Trade and Finance, John Wiley & Sons, 11th edition',
-              'Paul R. Krugman, Maurice Obstfeld & Marc Melitz, International Economics, Pearson',
-              'Bo Sodersten & Geoffrey Reed, International Economics, Macmillan'
+              'Paul R. Krugman, Maurice Obstfeld, and Marc Melitz, International Economics: Theory and Policy, Addison-Wesley / Pearson, 9th edition, 2012',
+              'Dominick Salvatore, International Economics: Trade and Finance, John Wiley International Student Edition, 10th edition, 2011'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Classical and Neoclassical Trade Theories',
+                title: 'Theories of International Trade (15 Lectures)',
                 topics: [
-                  'Mercantilist views on trade; Adam Smiths Absolute Advantage theory; Ricardian Comparative Advantage theory',
-                  'Opportunity cost approach (Haberler); Offer curves and Terms of Trade (Net barter, gross barter, income terms of trade)',
-                  'Heckscher-Ohlin Factor Endowment theory, Leontief Paradox, Stolper-Samuelson and Rybczynski theorems'
+                  'Absolute and Comparative advantage, Opportunity cost theory',
+                  'Ricardian and Heckscher-Ohlin Model, Leontiefs Paradox',
+                  'Immiserising Growth and the Transfer Problem'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Trade Policy & Protectionism',
+                title: 'Instruments of Trade Policy & Protection (10 Lectures)',
                 topics: [
-                  'Free Trade vs Protection; Instruments of trade policy: Tariffs (specific and ad-valorem), Quotas, Subsidies',
-                  'Partial and general equilibrium effects of a tariff in small and large countries; Nominal vs Effective rate of protection',
-                  'Non-tariff barriers, dumping, export subsidies; Bilateralism, Regional Trade Agreements (RTAs), and WTO multilateral trade rules'
+                  'Nature and scope of International Economics, trade surpluses and deficits, terms of trade, Gains from trade',
+                  'Trade barriers (quantitative and qualitative): tariffs, subsidies and quotas',
+                  'Free trade vs protection: case for free trade, case for protection'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Balance of Payments and Exchange Rates',
+                title: 'Exchange Rate and Balance of Payments (18 Lectures)',
                 topics: [
-                  'Structure of Balance of Payments accounts; Disequilibrium in BOP: Causes and correction mechanisms',
-                  'Elasticity Approach (Marshall-Lerner condition), Absorption Approach, Monetary Approach to BOP',
-                  'Foreign Exchange Market: Spot and Forward rates, Hedging, Speculation, Arbitrage; Purchasing Power Parity (PPP)'
+                  'Concept and types of Exchange rate, Theories of Exchange rate determination, fixed vs flexible exchange rate, factors affecting exchange rate',
+                  'Market for foreign exchange, Balance of Payment (BoP) accounting, components: current and capital account',
+                  'Disequilibrium of BoP: causes and methods of correction, Adjustment mechanisms, Internal and external balance, Elasticity, Absorption and Monetary Approach to BoP'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'International Monetary Systems',
+                title: 'International Institutions (7 Lectures)',
                 topics: [
-                  'Evolution of international monetary system: Gold Standard, Bretton Woods System, and Floating rates regime',
-                  'International Monetary Fund (IMF), World Bank (IBRD), Asian Development Bank (ADB) and international liquidity (SDRs)'
+                  'WTO, IMF, World Bank, ADB, New Development Bank: Objectives, principles and functions'
                 ]
               }
             ]
@@ -1623,44 +1725,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Uma Kapila, Indian Economy Since Independence, Academic Foundation',
-              'Government of India, Economic Survey (Latest Edition), Ministry of Finance',
-              'NITI Aayog Strategy for New India @ 75'
+              'Jean Dreze and Amartya Sen, An Uncertain Glory: India and its Contradictions, Princeton University Press, 2013',
+              'Pulapre Balakrishnan, The Recovery of India: Economic Growth in the Nehru Era, EPW, 2007',
+              'Rakesh Mohan, Growth Record of Indian Economy: 1950-2008, EPW, 2008',
+              'S. L. Shetty, Indias Savings Performance since the Advent of Planning, 2007',
+              'Himanshu, Towards New Poverty Lines for India / Employment Trends in India, EPW',
+              'Kaushik Basu and A. Maertens, eds., Oxford Companion to Economics, Oxford University Press, 2013'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Growth, Poverty and Inequality',
+                title: 'Dimensions of Economic Development (20 Lectures)',
                 topics: [
-                  'Macroeconomic performance and growth trends in Indian GDP post-2000',
-                  'Poverty measurement in India: Tendulkar and Rangarajan committee methodologies; Multidimensional Poverty Index (MPI)',
-                  'Income and wealth inequality trends, Gini coefficient in India; Employment trends, Periodic Labour Force Survey (PLFS), jobless growth'
+                  'Growth distribution and structural change with respect to gender and regional contrast',
+                  'MDG, SDG, Sustainable development, Inclusive growth and Financial Inclusion',
+                  'Capital formation and technological development'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Monetary, Financial and Fiscal Issues',
+                title: 'Issues in Indian Economic Policy (25 Lectures)',
                 topics: [
-                  'Monetary Policy Framework Agreement in India: Flexible Inflation Targeting (4±2%), Monetary Policy Committee (MPC)',
-                  'Banking crisis: Non-Performing Assets (NPAs), Insolvency and Bankruptcy Code (IBC), Bank mergers and privatization',
-                  'Fiscal consolidation, quality of public expenditure, revenue buoyancy, and sovereign debt sustainability'
+                  'Human resource development: Education and Health',
+                  'Population growth and Economic development, Demographic trends and issues, Demographic dividend',
+                  'Unemployment, Poverty and Inequality',
+                  'Macroeconomic stabilization: Trade, Fiscal and Monetary policy',
+                  'Infrastructure development in India; Environmental issues in India'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Digital Economy and Agrarian Crisis',
+                title: 'Indias Foreign Trade (15 Lectures)',
                 topics: [
-                  'Digital India: UPI revolution, digital payments, FinTech platforms and financial inclusion (PMJDY)',
-                  'Agricultural reforms, e-NAM, farmer producer organisations (FPOs), climate change impact on Indian farming',
-                  'Labour market reforms: Four Labour Codes, gig economy and platform workers social security'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'External Sector and Bihar State Development',
-                topics: [
-                  'Indias foreign trade agreements (FTAs), foreign exchange reserve management, Current Account Deficit (CAD)',
-                  'Bihar Economy: Recent economic growth, agricultural roadmap, infrastructure development, migration and remittances'
+                  'Volume and Trend of Foreign Trade in India, EXIM Policy assessment, Indias balance of payment',
+                  'Globalisation and its impact on Indian Economy, WTO and India'
                 ]
               }
             ]
@@ -1677,45 +1775,40 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
+              'Michael P. Todaro, Economic Development, International Student Edition, Addison-Wesley',
               'Debraj Ray, Development Economics, Oxford University Press',
-              'Michael P. Todaro & Stephen C. Smith, Economic Development, Pearson Education',
-              'A. P. Thirlwall, Economics of Development, Palgrave Macmillan'
+              'Gerald M. Meir, Leading Issues in Economic Development, 6th Edition, OUP',
+              'A. P. Thirlwall, Economics of Development, Palgrave Macmillan, 9th Edition',
+              'M. L. Taneja & R. M. Myer, Economics of Development & Planning, Vishal Publishing Co.'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Conceptions of Development',
+                title: 'Growth and Development (20 Lectures)',
                 topics: [
-                  'Economic Growth vs Economic Development; Amartya Sens Capability Approach',
-                  'Measuring development: Human Development Index (HDI), Gender Inequality Index (GII), Happy Planet Index',
-                  'Poverty lines, Headcount ratio, Poverty Gap Index, Foster-Greer-Thorbecke (FGT) measure; Lorenz curve and Gini coefficient'
+                  'Concept of Economic Growth, Economic Development, Economic Progress and Economic Welfare, Measurement of Economic Growth, Factors of Growth',
+                  'Historical experience of development (Stages of Growth; late industrialization; structural analysis)',
+                  'Poverty and inequality (conceptual issues and measurement; capabilities and entitlements, policies for poverty reduction)',
+                  'State and the market (market failure; government failure; conflict versus complementarity)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Theories of Economic Growth',
+                title: 'Determinants of Development (20 Lectures)',
                 topics: [
-                  'Harrod-Domar growth model: Knife-edge equilibrium and capital-output ratio',
-                  'Solow Neoclassical Growth Model: Steady state, technological progress, golden rule of capital accumulation',
-                  'Endogenous Growth Theories: Role of human capital, R&D, and knowledge spillovers (Romer and Lucas models)'
+                  'Capital and technical progress (role of capital, capital output ratio; resource allocation; pattern of capital formation; technology and unemployment; choice of techniques)',
+                  'Labour and employment issues (population growth; demographic transition; human resource development, surplus labour, disguised unemployment, informal sector; rural-urban migration)',
+                  'The Environment and Sustainable development; Non-Renewable resources'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Structural Transformation & Dual Economy Models',
+                title: 'Theories of Growth and Development (20 Lectures)',
                 topics: [
-                  'Arthur Lewis Two-Sector Model of Unlimited Supplies of Labour',
-                  'Ranis-Fei Model; Harris-Todaro Model of Rural-Urban Migration and urban unemployment',
-                  'Balanced vs Unbalanced growth strategies: Rosentein-Rodans Big Push, Nurkses balanced growth, Hirschmans unbalanced growth'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'Institutions, Environment and Sustainable Development',
-                topics: [
-                  'Role of institutions, property rights, and governance in development (Acemoglu-Robinson thesis)',
-                  'Sustainable Development: Environmental Kuznets Curve (EKC), Common Property Resources, Coase Theorem',
-                  'Financing development: Foreign aid, FDI, Microfinance, and UN Sustainable Development Goals (SDGs)'
+                  'Balanced and Unbalanced Growth',
+                  'Big Push Theory',
+                  'Harrod-Domar Model of Growth',
+                  'Kaldors Model of Growth'
                 ]
               }
             ]
@@ -1723,58 +1816,83 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-7',
             code: 'MIC-7',
-            name: 'Indian Economy (Minor)',
+            name: 'Indian Economy',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Uma Kapila, Indian Economy', 'Ramesh Singh, Indian Economy'],
+            recommendedBooks: [
+              'Shankar Acharya and Rakesh Mohan, Indias Economy: Performances and Challenges, OUP',
+              'Pulapre Balakrishnan et al., Agricultural Growth in India Since 1991, RBI',
+              'Kunal Sen, Trade, FDI and Industrial Transformation in India, Routledge'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Structure & Planning in India',
-                topics: ['Characteristics of Indian economy, 1991 Economic Reforms (LPG), NITI Aayog']
+                title: 'Economic Development since Independence (10 Lectures)',
+                topics: [
+                  'Characteristics of Indian Economy, Main features at independence',
+                  'Structural change, growth and development under different policy regimes—goals, constraints, institutions and policy framework; trends of savings and investment'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Agriculture and Industry',
-                topics: ['Green revolution, MSP and food security; MSME policy, Make in India']
+                title: 'Indian Agriculture, Industry and Service Sector (20 Lectures)',
+                topics: [
+                  'Importance of Agriculture in Indian economy, Problems and solutions, Govt efforts, Land Reforms, Green and Rainbow Revolution',
+                  'Industrial policies since independence, Small scale industries, problems, remedies, industrial sickness; Services Sector growth; Foreign Trade'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Key Challenges & Bihar Economy',
-                topics: ['Poverty, unemployment, inflation; Structure of Bihar economy and growth performance']
+                title: 'Bihar Economy (10 Lectures)',
+                topics: [
+                  'Demographic features, Poverty and Unemployment, Growth and problems of Farm sector, Development of Industrial sector, Major policy initiatives'
+                ]
               }
             ]
           },
           {
             id: 'eco-mic-8',
             code: 'MIC-8',
-            name: 'Intermediate Microeconomics 2 (Minor)',
+            name: 'Intermediate Microeconomics 2',
             paperType: 'Minor (MIC)',
             credits: 3,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Hal R. Varian, Microeconomics', 'A. Koutsoyiannis, Modern Microeconomics'],
+            recommendedBooks: [
+              'Hal R. Varian, Intermediate Microeconomics, W.W. Norton, 8th edition',
+              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning',
+              'B. Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Monopoly & Price Discrimination',
-                topics: ['Monopoly equilibrium, Deadweight loss, Price discrimination types']
+                title: 'Imperfect Markets (15 Lectures)',
+                topics: [
+                  'Common features of imperfect markets, price and output determination in monopolistic competition',
+                  'Approaches to price and output determination under Oligopoly: Cournot duopoly model, collusive oligopoly: cartel and price leadership, kinked demand curve'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Oligopoly & Game Theory',
-                topics: ['Cournot model, Kinked demand curve, Prisoners dilemma and Nash equilibrium']
+                title: 'Distribution Theory - Pricing of Factors (10 Lectures)',
+                topics: [
+                  'Concepts of factor productivity, Marginal Revenue Product (MRP) and Value of Marginal Product (VMP)',
+                  'Pricing of factors in perfect and imperfect market, Marginal productivity theory of distribution, Eulers theorem, theories of rent, interest and profit'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Welfare Economics',
-                topics: ['Pareto optimality, Edgeworth box, First and Second Welfare theorems']
+                title: 'General Equilibrium, Efficiency and Welfare (15 Lectures)',
+                topics: [
+                  'Concept of Partial and General Equilibrium, Welfare concept, Walrasian General Equilibrium',
+                  'Conditions of Pareto Optimality, perfect competition and Pareto Optimality, Externalities in production and consumption, Public Goods, causes and correction of market failure'
+                ]
               }
             ]
           }
@@ -1795,44 +1913,67 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.5 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Damodar N. Gujarati & Dawn C. Porter, Basic Econometrics, McGraw Hill',
-              'Alpha C. Chiang & Kevin Wainwright, Fundamental Methods of Mathematical Economics, McGraw Hill',
-              'J. Johnston & J. DiNardo, Econometric Methods, McGraw Hill'
+              'Jay L. Devore, Probability and Statistics for Engineers, Cengage Learning, 2010',
+              'John E. Freund, Mathematical Statistics, Prentice Hall, 1992',
+              'Gupta S.P, Statistical Methods, S. Chand & Sons, New Delhi',
+              'Richard J. Larsen and Morris L. Marx, Mathematical Statistics and its Applications, Prentice Hall, 2011',
+              'K. Sydsaeter and P. Hammond, Mathematics for Economic Analysis, Pearson, 2002',
+              'G. S. Monga, Mathematics and Statistics for Economists, Vikas Publishing House',
+              'A. C. Chiang, Fundamental Methods of Mathematical Economics, McGraw Hill',
+              'R. G. D. Allen, Mathematical Analysis for Economists, Macmillan Press',
+              'Taro Yamane, Mathematics for Economists, Prentice Hall of India'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Linear Programming and Input-Output Analysis',
+                title: 'Integration (10 Lectures)',
                 topics: [
-                  'Linear Programming: Formulation, graphical solution, Simplex method, Duality theorem and shadow prices',
-                  'Economic applications of Linear Programming: Diet problem, transportation problem, optimal product mix',
-                  'Leontief Input-Output Analysis: Open and closed models, Hawkins-Simon conditions, technology matrix and multiplier effects'
+                  'Concept and Methods of Integration – Integration by Substitution, Integration by Transformation & Integration by Parts',
+                  'Application of Integration in Economics (Consumer surplus, Producer surplus, Total cost from marginal cost, Total revenue from marginal revenue)'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Classical Linear Regression Model (CLRM)',
+                title: 'Functions of Several Real Variables (6 Lectures)',
                 topics: [
-                  'Simple linear regression: Ordinary Least Squares (OLS) estimation, assumptions of CLRM, Gauss-Markov theorem (BLUE properties)',
-                  'Hypothesis testing: t-test for regression coefficients, F-test for overall significance, R-squared and Adjusted R-squared',
-                  'Multiple linear regression: Matrix approach, partial regression coefficients and interpretation'
+                  'Technique of Partial Differentiation; Second Order Partial Derivatives; Cross Partial Derivatives; Applications of Partial Derivatives in Demand, Utility and Production Analysis',
+                  'Technique of Total Differentials; Second order Total Differentials; Derivatives of Implicit Functions'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Econometric Violations and Remedial Measures',
+                title: 'Multi-Variable Optimization (8 Lectures)',
                 topics: [
-                  'Multicollinearity: Consequences, detection (VIF, tolerance), and remedies',
-                  'Heteroscedasticity: Consequences, detection (Breusch-Pagan, Whites test), and remedies (Weighted Least Squares)',
-                  'Autocorrelation: Consequences, Durbin-Watson d-statistic, detection and remedies (Cochrane-Orcutt procedure)'
+                  'Maxima and Minima of a Function of two or more than two Variables – Hessian Determinants',
+                  'Unconstrained Optimization and Constrained Optimization with Equality Constraints – Use of Lagrange Multiplier',
+                  'Applications of Unconstrained and Constrained Optimization in Economics – Equilibrium of Firm under Pure Competition'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Dummy Variables and Model Specification',
+                title: 'Linear Algebra (8 Lectures)',
                 topics: [
-                  'Qualitative explanatory variables: Dummy variable trap, seasonal analysis, structural break (Chow test)',
-                  'Model specification errors: Omission of relevant variable, inclusion of irrelevant variable, measurement errors'
+                  'Basic Concepts of Vector, Types of Vector, Addition of Vectors, Scalar Product of Two Vectors',
+                  'Matrix and Determinants: Types of Matrices, Addition and Subtraction of Matrices, Multiplication of two Matrices',
+                  'Transpose and Inverse of a Matrix, Rank of a matrix, Determinant and its Properties, Solution of Simultaneous Equation Models (Cramers Rule)'
+                ]
+              },
+              {
+                unitNumber: 5,
+                title: 'Linear Programming, Input-Output Model and Game Theory (16 Lectures)',
+                topics: [
+                  'Introduction to linear programming, formulation of linear programming problem, concept of duality, solution of linear programming through graphical method',
+                  'Input-output analysis: meaning and basic concept',
+                  'Game theory: concepts, strategies—dominant strategy, saddle point, zero-sum game'
+                ]
+              },
+              {
+                unitNumber: 6,
+                title: 'Correlation, Regression and Time Series Analysis (12 Lectures)',
+                topics: [
+                  'Partial and Multiple Correlation',
+                  'Partial and Multiple Regression',
+                  'Time Series Analysis: Components of Time Series and Measurement of Trends'
                 ]
               }
             ]
@@ -1840,64 +1981,9 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mjc-14',
             code: 'MJC-14',
-            name: 'Banking and Financial Institutions',
-            paperType: 'Major (MJC)',
-            credits: 5,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
-            fileSize: '1.5 MB',
-            pyqCount: 4,
-            recommendedBooks: [
-              'L. M. Bhole & Jitendra Mahakud, Financial Institutions and Markets, McGraw Hill Education',
-              'M. Y. Khan, Indian Financial System, McGraw Hill Education',
-              'Frederic S. Mishkin, The Economics of Money, Banking and Financial Markets, Pearson'
-            ],
-            units: [
-              {
-                unitNumber: 1,
-                title: 'Financial System & Central Banking',
-                topics: [
-                  'Structure and components of Indian Financial System; Functions of financial markets: Money market vs Capital market',
-                  'Reserve Bank of India (RBI): Organization, functions, monetary policy framework, Quantitative (Repo, Reverse Repo, CRR, SLR) and Qualitative credit controls',
-                  'Transmission mechanism of monetary policy in India'
-                ]
-              },
-              {
-                unitNumber: 2,
-                title: 'Commercial Banking and Asset-Liability Management',
-                topics: [
-                  'Theories of banking: Commercial loan theory, Shiftability theory, Anticipated income theory',
-                  'Process of multiple credit creation and credit multiplier; Balance sheet of commercial banks: Liquidity vs Profitability dilemma',
-                  'Basel Accords (Basel I, II, III): Capital Adequacy Ratio (CAR), Non-Performing Assets (NPAs) management, Prompt Corrective Action (PCA)'
-                ]
-              },
-              {
-                unitNumber: 3,
-                title: 'Non-Banking Financial Intermediaries & Development Banks',
-                topics: [
-                  'Development Financial Institutions (DFIs): IDBI, IFCI, SIDBI, NABARD, EXIM Bank',
-                  'Non-Banking Financial Companies (NBFCs): Classification, systemic importance, and RBI regulatory framework',
-                  'Mutual funds, Insurance sector (IRDAI), Pension funds (PFRDA)'
-                ]
-              },
-              {
-                unitNumber: 4,
-                title: 'Capital Markets & Financial Innovations',
-                topics: [
-                  'Primary market: IPOs, FPOs, Rights issues; Secondary market: Stock exchanges (BSE, NSE), SEBI regulations',
-                  'Financial derivatives: Forwards, Futures, Options and Swaps',
-                  'Digital Banking and FinTech: Internet banking, Mobile banking, Payment banks, Small finance banks, CBDC (e-Rupee)'
-                ]
-              }
-            ]
-          },
-          {
-            id: 'eco-mjc-15',
-            code: 'MJC-15',
             name: 'Research Methodology',
             paperType: 'Major (MJC)',
-            credits: 6,
+            credits: 5,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/research%20methodology%2020231219808584518.pdf',
@@ -1923,16 +2009,15 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 title: 'Research Design and Data Collection',
                 topics: [
                   'Research designs: Exploratory, Descriptive, and Experimental designs',
-                  'Primary data collection methods: Questionnaire design, schedules, structured interviews, observation, focus group discussions',
-                  'Secondary data sources in India: NSSO, CSO, Census of India, RBI publications, CMIE data, NFHS, and Economic Survey'
+                  'Primary data collection methods: Questionnaire design, schedules, structured interviews, observation',
+                  'Secondary data sources in India: NSSO, CSO, Census of India, RBI publications, CMIE, NFHS, Economic Survey'
                 ]
               },
               {
                 unitNumber: 3,
                 title: 'Sampling Design and Statistical Testing',
                 topics: [
-                  'Census vs Sample survey; Principles of sampling, Sampling error vs Non-sampling error',
-                  'Probability sampling: Simple random, Stratified, Systematic, Cluster sampling; Non-probability sampling methods',
+                  'Census vs Sample survey; Sampling error vs Non-sampling error; Probability vs Non-probability sampling',
                   'Parametric tests (t-test, z-test, ANOVA) and Non-parametric tests (Chi-square test, Mann-Whitney U test)'
                 ]
               },
@@ -1940,9 +2025,75 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
                 unitNumber: 4,
                 title: 'Report Writing and Academic Integrity',
                 topics: [
-                  'Structure of an academic thesis/dissertation: Preliminary pages, main text, bibliography, appendices',
-                  'Referencing styles: APA, MLA, Chicago; Citation rules, footnotes, endnotes',
-                  'Research ethics: Plagiarism, UGC guidelines on academic integrity, software tools for similarity detection (Turnitin, Urkund)'
+                  'Structure of an academic thesis/dissertation, referencing styles (APA, MLA, Chicago), citation rules',
+                  'Research ethics: Plagiarism, UGC guidelines on academic integrity, software tools for similarity detection'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-15',
+            code: 'MJC-15',
+            name: 'Banking and Financial Institutions',
+            paperType: 'Major (MJC)',
+            credits: 6,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'F. S. Mishkin and S. G. Eakins, Financial Markets and Institutions, Pearson Education, 6th edition, 2009',
+              'F. J. Fabozzi, F. Modigliani, F. J. Jones, M. G. Ferri, Foundations of Financial Markets and Institutions, Pearson, 2009',
+              'M. R. Baye and D. W. Jansen, Money, Banking and Financial Markets, AITBS, 1996',
+              'L. M. Bhole and J. Mahakud, Financial Institutions and Markets, Tata McGraw Hill, 5th edition, 2011',
+              'M. Y. Khan, Indian Financial System, Tata McGraw Hill, 7th edition, 2011',
+              'N. Jadhav, Monetary Policy, Financial Stability and Central Banking in India, Macmillan, 2006'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Money (20 Lectures)',
+                topics: [
+                  'Money: Kinds, Functions and Significance, Monetary Standards: Metallic Standard, Gold Standard and Paper Standard',
+                  'Value of money, Measurement of changes in the value of money',
+                  'Demand for Money: The Classical Approach, Keynesian Approach',
+                  'Supply of Money: Definitions—Determinants of Money Supply—High Powered Money and Money Multiplier—Indian Currency system'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Financial Institutions, Markets, Instruments and Financial Innovations (15 Lectures)',
+                topics: [
+                  'Role of financial markets and institutions; problem of asymmetric information—adverse selection and moral hazard; financial crises',
+                  'Money and capital markets: organization, structure and reforms in India; role of financial derivatives and other innovations'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Interest Rates (10 Lectures)',
+                topics: [
+                  'Determination of interest rates; sources of interest rate differentials',
+                  'Theories of term structure of interest rates; interest rates in India'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Banking System (15 Lectures)',
+                topics: [
+                  'Commercial banking: Nature; structure; functions: The process of credit creation—purpose and limitations',
+                  'Pre-requisites of a sound commercial banking system; Liabilities and assets of Banks',
+                  'ATM - Internet Banking - Core banking; A Critical Appraisal of the Progress of Commercial Banking after Nationalization; Recent Reforms in Banking Sector in India'
+                ]
+              },
+              {
+                unitNumber: 5,
+                title: 'Central Banking and Monetary Policy (20 Lectures)',
+                topics: [
+                  'Role of central banks in developed and developing countries; Functions of a central bank',
+                  'Role and functions of the Reserve Bank of India (RBI)',
+                  'Methods of credit control: Quantitative—bank rate, repo rate, open market operations, variable reserve ratio (CRR/SLR); Selective methods',
+                  'Objectives and limitations of monetary policy; NPAs, Recent changes in monetary policy of India'
                 ]
               }
             ]
@@ -1950,29 +2101,56 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-9',
             code: 'MIC-9',
-            name: 'Public Finance (Minor)',
+            name: 'Public Finance',
             paperType: 'Minor (MIC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Musgrave & Musgrave, Public Finance', 'H. L. Bhatia, Public Finance'],
+            recommendedBooks: [
+              'J. Hindriks, G. Myles: Intermediate Public Economics, MIT Press, 2006',
+              'H. Rosen, T. Gayer: Public Finance, 9th edition, McGraw-Hill/Irwin, 2009',
+              'Joseph E. Stiglitz, Economics of the Public Sector, W.W. Norton & Company, 2000',
+              'R.A. Musgrave and P.B. Musgrave, Public Finance in Theory & Practice, McGraw Hill, 1989',
+              'Harvey Rosen, Public Finance, McGraw Hill Publications, 2005',
+              'A. Ghosh and C. Ghosh: Public Finance, PHI Learning, 2014'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Principles of Public Finance',
-                topics: ['Public vs Private goods, Principle of Maximum Social Advantage, Market failure']
+                title: 'Introduction to Public Finance (15 Lectures)',
+                topics: [
+                  'Public Finance: Meaning, Nature, Scope and Importance; difference between Private and Public Finance',
+                  'Principle of Maximum Social Advantage; Role of State in Public Finance',
+                  'Fiscal functions of State: Allocation, Distribution, Economic Growth and Stabilisation'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Taxation & Public Expenditure',
-                topics: ['Direct vs Indirect taxes, GST in India, Cannons of taxation, Wagners Law']
+                title: 'Sources of Revenue (10 Lectures)',
+                topics: [
+                  'Taxes, loans, grants and aid - meaning and types, canons/principles of taxation, problem of justice in taxes, incidence of taxation, taxable capacity',
+                  'Characteristics of Indian tax system'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Budget, Public Debt & Federal Finance',
-                topics: ['Deficit concepts (Fiscal, Revenue), Public debt management, Finance Commission']
+                title: 'Public Expenditure and Debt (10 Lectures)',
+                topics: [
+                  'Principle of Public Expenditure',
+                  'Principle of Public Debt and its Methods of Redemption',
+                  'Effects of Public Expenditure on Production and Distribution; Public Debt in India'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Public Finance in India (15 Lectures)',
+                topics: [
+                  'Sources of Revenue of Central Government, State Government and Local Bodies',
+                  'Concept and Types of Budget, Fiscal Deficit, Deficit Financing and Deficit Budget',
+                  'Financial relation between Central and State; Finance Commission; Fiscal Policy'
+                ]
               }
             ]
           }
@@ -1993,45 +2171,43 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             fileSize: '1.4 MB',
             pyqCount: 4,
             recommendedBooks: [
-              'Sherman Folland, Allen C. Goodman & Miron Stano, The Economics of Health and Health Care, Routledge',
-              'Dominic J. Brewer & Patrick J. McEwan, Economics of Education, Academic Press',
-              'Mark Blaug, An Introduction to the Economics of Education, Penguin'
+              'William Jack, Principles of Health Economics for Developing Countries, World Bank Institute Development Studies, 1999',
+              'World Development Report, Investing in Health, the World Bank, 1993',
+              'Ronald G. Ehrenberg and Robert S. Smith, Modern Labor Economics: Theory and Public Policy, Addison Wesley, 2005'
             ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Economics of Health: Theoretical Foundations',
+                title: 'Role of Health, Hygiene and Education in Human Resource Development (10 Lectures)',
                 topics: [
-                  'Health as an economic good; Grossmans demand for health capital model',
-                  'Market failure in healthcare: Asymmetric information, adverse selection, moral hazard, physician-induced demand',
-                  'Economic burden of disease: DALYs, QALYs, and Cost-Effectiveness Analysis (CEA)'
+                  'Importance in poverty alleviation; health and education outcomes and their relationship with macroeconomic performance',
+                  'Importance of Hygiene'
                 ]
               },
               {
                 unitNumber: 2,
-                title: 'Healthcare Financing & Policy in India',
+                title: 'Microeconomic Foundations of Health Economics (15 Lectures)',
                 topics: [
-                  'Healthcare financing models: Out-of-pocket expenditure, universal health coverage, social health insurance',
-                  'Health policy in India: National Health Mission (NHM), Ayushman Bharat (PM-JAY), Jan Aushadhi Yojana',
-                  'Healthcare infrastructure challenges in Bihar and interstate disparities'
+                  'Demand for health; uncertainty and health insurance market; alternative insurance mechanisms',
+                  'Market failure and rationale for public intervention; equity and inequality',
+                  'Costing, cost effectiveness and cost-benefit analysis (CEA & CBA); burden of disease'
                 ]
               },
               {
                 unitNumber: 3,
-                title: 'Economics of Education: Human Capital Theory',
+                title: 'Health Sector in India: An Overview (10 Lectures)',
                 topics: [
-                  'Education as consumption and investment; Human Capital Theory (Schultz, Becker, Mincer earnings function)',
-                  'Signalling and screening hypothesis (Spence)',
-                  'Rates of return to education: Private vs Social returns; Cost-benefit analysis in education'
+                  'Health outcomes; health systems; health financing',
+                  'Mental Health in India: Concept and issues'
                 ]
               },
               {
                 unitNumber: 4,
-                title: 'Educational Policy & NEP-2020 in India',
+                title: 'Education Sector in India: An Overview (15 Lectures)',
                 topics: [
-                  'Structure of education in India: Primary, secondary, higher, and vocational education',
-                  'Right to Education (RTE) Act; Gender and socio-economic disparities in educational attainment',
-                  'National Education Policy (NEP-2020): Goals, restructuring, financing, and higher education reforms'
+                  'Literacy rates, school participation, school quality measures',
+                  'Rate of return to education: private and social; quality of education',
+                  'Signaling or human capital; theories of discrimination'
                 ]
               }
             ]
@@ -2039,29 +2215,51 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mic-10',
             code: 'MIC-10',
-            name: 'International Economics (Minor)',
+            name: 'International Economics',
             paperType: 'Minor (MIC)',
             credits: 4,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
             fileSize: '1.2 MB',
-            recommendedBooks: ['Dominick Salvatore, International Economics', 'Krugman & Obstfeld, International Economics'],
+            recommendedBooks: [
+              'Paul R. Krugman, Maurice Obstfeld, and Marc Melitz, International Economics: Theory and Policy, Pearson, 9th edition, 2012',
+              'Dominick Salvatore, International Economics: Trade and Finance, John Wiley International Student Edition, 10th edition, 2011'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Theories of International Trade',
-                topics: ['Absolute advantage, Comparative advantage, Heckscher-Ohlin model, Terms of Trade']
+                title: 'Introduction to International Economics (15 Lectures)',
+                topics: [
+                  'Nature and scope of International Economics, trade surpluses and deficits, the economic basis of trade, terms of trade, Gains from trade',
+                  'Instruments of trade policy and their impact on international trade, trade barriers (quantitative and qualitative): tariffs, subsidies and quotas',
+                  'Free trade vs protection: case for free trade, case for protection'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Trade Policy & Protection',
-                topics: ['Tariffs, Quotas, Non-tariff barriers, Free trade vs Protectionism, WTO']
+                title: 'Theories of International Trade (10 Lectures)',
+                topics: [
+                  'Absolute and Comparative advantage, Opportunity cost theory',
+                  'Ricardian and Heckscher-Ohlin Model, Leontiefs Paradox',
+                  'Immiserising Growth and the Transfer Problem'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Balance of Payments & IMF',
-                topics: ['BOP structure, Exchange rate regimes (fixed vs flexible), IMF and World Bank']
+                title: 'Exchange Rate and BoP (18 Lectures)',
+                topics: [
+                  'Concept and types of Exchange rate, Theories of Exchange rate determination, fixed vs flexible exchange rate, factors affecting exchange rate, impact on economy',
+                  'Market for foreign exchange, Review of Balance of Payment (BoP) accounting, components: current and capital account',
+                  'Disequilibrium of BoP: causes and methods of correction, Adjustment mechanisms, Internal and external balance, Elasticity, Absorption and Monetary Approach to BoP'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'International Institutions (7 Lectures)',
+                topics: [
+                  'WTO, IMF, World Bank, ADB, New Development Bank: Objectives, principles and functions'
+                ]
               }
             ]
           },
