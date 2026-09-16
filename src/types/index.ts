@@ -61,7 +61,7 @@ export interface SyllabusPaper {
   id: string;
   code: string; // e.g. 'MJC-1', 'BCA-101'
   name: string;
-  paperType: 'Major (MJC)' | 'Minor (MIC)' | 'Multidisciplinary (MDC)' | 'Skill Enhancement (SEC)' | 'Value Added (VAC)' | 'Core Theory' | 'Practical / Lab';
+  paperType: 'Major (MJC)' | 'Minor (MIC)' | 'Multidisciplinary (MDC)' | 'Ability Enhancement (AEC)' | 'Skill Enhancement (SEC)' | 'Value Added (VAC)' | 'Core Theory' | 'Practical / Lab' | 'Internship' | 'Research Project';
   credits: number;
   theoryMarks: number;
   internalMarks: number;

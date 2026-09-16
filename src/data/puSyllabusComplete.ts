@@ -496,14 +496,14 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   // =========================================================================
   {
     id: 'ba-economics',
-    name: 'B.A. Economics (Hons/Subs/Gen)',
+    name: 'B.A. Economics (CBCS 4-Year FYUGP)',
     shortCode: 'Economics',
     stream: 'Social Science',
     faculty: 'Social Science',
     icon: '📈',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
+    degree: '4-Year FYUGP CBCS (NEP-2020)',
     totalSemesters: 8,
-    description: 'Microeconomics, Macroeconomics, Indian Economy, Econometrics & Mathematical Methods at Patna University.',
+    description: 'Official Patna University B.A. Economics syllabus approved by Raj Bhavan Bihar (BSU(UGC)-02/2023-871/GS(I)). Signed by Dr. Benoy Kumar Lal (Dept. of Economics, Patna University). Covers MJC-1 to MJC-16, MIC-1 to MIC-10, SEC & VAC baskets with 70+30 marking pattern.',
     officialPdfs: {
       sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
       sem3_8: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
@@ -518,32 +518,200 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
             code: 'MJC-1',
             name: 'Introductory Microeconomics',
             paperType: 'Major (MJC)',
-            credits: 4,
+            credits: 6,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.4 MB',
-            recommendedBooks: ['Principles of Microeconomics by N. Gregory Mankiw', 'Microeconomic Theory by Hal Varian', 'Principles of Microeconomics by H.L. Ahuja'],
+            pyqCount: 5,
+            recommendedBooks: [
+              'Karl E. Case and Ray C. Fair, Principles of Microeconomics, Pearson Education Inc.',
+              'N. Gregory Mankiw, Economics: Principles and Applications, Cengage Learning India Private Limited, 4th edition, 2007',
+              'Joseph E. Stiglitz and Carl E. Walsh, Economics, W.W. Norton & Company, Inc., 4th Edition, 2007',
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton / Affiliated East-West Press, 8th edition, 2010',
+              'Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning (India), 2010',
+              'Douglas Bernheim and Michael D. Whinston, Microeconomics, Tata McGraw-Hill (India), 2009',
+              'M. L. Jhingan, Microeconomics, Vrinda Publication, Delhi',
+              'H. L. Ahuja, Principles of Microeconomics, S. Chand & Co., Delhi'
+            ],
             units: [
               {
                 unitNumber: 1,
-                title: 'Exploring Scarcity, Choice & Methodology',
-                topics: ['Scope and nature of Economics; the fundamental economic problem: scarcity and choice', 'Opportunity cost, Production Possibility Frontier (PPF), Positive vs Normative Economics, Market vs Command economies']
+                title: 'Exploring the Subject Matter of Economics (10 Lectures)',
+                topics: [
+                  'Definition of Economics, Need, Scope and Methods of Economics',
+                  'Nature and subject matter of Economics',
+                  'Problem of scarcity and choice, Central Problems of Economy (What, How, and For Whom to produce)',
+                  'Positive vs Normative Economics; Deductive and Inductive methods'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Demand, Supply & Market Equilibrium',
-                topics: ['Law of Demand, Determinants of demand, Market demand curve shifts vs movements', 'Law of Supply, Market equilibrium determination, Effects of taxes and subsidies', 'Elasticity of Demand: Price, Income, Cross elasticity methods; Consumer and Producer surplus']
+                title: 'Supply, Demand & Consumer Behaviour (25 Lectures)',
+                topics: [
+                  'Concept and types of demand, determinants of individual demand and supply; demand and demand function',
+                  'Theory of demand and law of demand and supply, exceptions to law of demand',
+                  'Demand-supply schedule and curve; demand for complementary and substitute goods; market versus individual demand/supply; shifts in curve; equilibrium',
+                  'Elasticity of demand and supply: price, income and cross elasticity, determinants, measurement and practical applications; static and dynamic demand; consumer surplus',
+                  'The theory of Consumer Behaviour: Cardinal utility analysis (Law of Diminishing Marginal Utility & Equi-Marginal Utility)',
+                  'Ordinal utility analysis: Indifference curves, properties, budget constraint, consumer equilibrium, income and substitution effects'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Consumer Behavior & Demand Theory',
-                topics: ['Cardinal Utility Approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility', 'Ordinal Utility Approach: Indifference Curves properties, Budget Line, Consumer equilibrium', 'Price Effect decomposition: Substitution Effect and Income Effect (Slutsky and Hicksian approaches)']
+                title: 'The Firm and Market Structure (25 Lectures)',
+                topics: [
+                  'Nature of firm, organizing economic activity in a firm; Objective of a firm: Profit maximization vs sales maximization',
+                  'Introduction to basic idea of equilibrium of a firm; conditions for producers equilibrium in short run and long run for firm and industry: total and marginal approach',
+                  'Basic idea of market, concept and types of cost and revenue: total, average and marginal curves and relations',
+                  'Classification of markets, time element in market (very short period, short period, long period)',
+                  'Characteristics and pricing under Perfect Competition, Monopoly, Monopolistic Competition, and Oligopoly with real-world examples'
+                ]
               },
               {
                 unitNumber: 4,
-                title: 'Production & Cost Analysis',
-                topics: ['Production Function with one variable input: Law of Variable Proportions (Total, Marginal, Average product)', 'Production with two variable inputs: Isoquants, Isocost line, Producer equilibrium, Returns to Scale', 'Short-run and Long-run cost curves: Fixed, Variable, Marginal and Average costs, Economies of Scale']
+                title: 'The Markets for the Factors of Production (20 Lectures)',
+                topics: [
+                  'Labour market: Basic concepts, derived demand, productivity of an input',
+                  'Marginal productivity of labour, Marginal Revenue Product (MRP), Value of Marginal Product (VMP)',
+                  'Demand for labour, backward bending supply curve of labour',
+                  'Tax policy and labour supply, labour force participation rate',
+                  'Determination of wage rate in a perfectly competitive labour market; Collective bargaining and minimum wage determination'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-1',
+            code: 'MIC-1',
+            name: 'Introductory Microeconomics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton, 8th edition',
+              'M. L. Jhingan, Microeconomics, Vrinda Publication, Delhi',
+              'H. L. Ahuja, Principles of Microeconomics, S. Chand & Co., Delhi'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Exploring the Subject Matter of Economics (10 Lectures)',
+                topics: [
+                  'Definition of Economics, Need, Scope and Methods of Economics',
+                  'Nature and subject matter of Economics, Problem of scarcity and choice, Central Problems of Economy'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Supply and Demand (18 Lectures)',
+                topics: [
+                  'Concept and types of demand, determinants of individual demand/supply; demand and demand function',
+                  'Theory of demand, law of demand and supply, exceptions to law of demand',
+                  'Demand-supply schedule and curves; complementary and substitute goods, market vs individual demand/supply',
+                  'Shifts in demand/supply curves, market equilibrium, elasticity of demand and supply: determinants, measurement, consumer surplus'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'The Theory of Consumer Behaviour (12 Lectures)',
+                topics: [
+                  'Cardinal Approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility, Consumer Equilibrium',
+                  'Ordinal Approach: Indifference Curve – meaning and properties of indifference curve',
+                  'Consumers Equilibrium with the help of Indifference curve analysis'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mdc-1',
+            code: 'MDC-1',
+            name: 'Multidisciplinary Course 1 (Basket Option)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '800 KB',
+            recommendedBooks: ['Interdisciplinary Studies Basket as prescribed by Patna University'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Interdisciplinary Fundamentals',
+                topics: [
+                  'Course chosen from the approved Multidisciplinary Basket outside Social Sciences (Faculty of Science / Humanities / Commerce)',
+                  'Foundational concepts, cross-disciplinary methodology and applications'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-aec-1',
+            code: 'AEC-1',
+            name: 'MIL (Modern Indian Language - Hindi / English / Urdu)',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/public_html/download/syllabus/Hindi%20%20(AEC-1).pdf',
+            fileSize: '950 KB',
+            recommendedBooks: ['Karyalayi Bhasha aur Sampreshan - Patna University Course Book'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Language & Communication Principles',
+                topics: [
+                  'Nature, process and components of communication; Verbal, Non-verbal and written modes',
+                  'Official letter writing, drafting, noting, précis writing and comprehension'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-sec-1',
+            code: 'SEC-1',
+            name: 'Skill Enhancement Course 1 (Spreadsheet Tools / IT / Public Speaking)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Advance Spreadsheet Tools & IT Applications, Wiley / Microsoft Press'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Practical Skill Competencies',
+                topics: [
+                  'Select from: Advance Spreadsheet Tools, Basic IT Tools, Public Speaking & Leadership, Creative Writing, Communication in Everyday Life',
+                  'Hands-on laboratory exercises, data analysis and practical demonstrations'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-vac-1',
+            code: 'VAC-1',
+            name: 'Value Added Course 1 (Constitutional Values / Ayurveda / Swachh Bharat)',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Constitutional Values & Fundamental Duties, LexisNexis / Govt. of India'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Ethics, Heritage & Life Values',
+                topics: [
+                  'Select from: Constitutional Values & Fundamental Duties, Ayurveda and Nutrition, Art of Being Happy, Digital Empowerment, Financial Literacy, Swachh Bharat, Fit India',
+                  'Social engagement, community awareness surveys and ethical reflection'
+                ]
               }
             ]
           }
@@ -555,34 +723,1371 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
           {
             id: 'eco-mjc-2',
             code: 'MJC-2',
-            name: 'Introductory Macroeconomics',
+            name: 'Mathematical Methods in Economics',
             paperType: 'Major (MJC)',
-            credits: 4,
+            credits: 6,
             theoryMarks: 70,
             internalMarks: 30,
             pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
             fileSize: '1.4 MB',
-            recommendedBooks: ['Macroeconomics by Richard T. Froyen', 'Macroeconomics by N. Gregory Mankiw', 'Principles of Macroeconomics by H.L. Ahuja'],
+            pyqCount: 5,
+            recommendedBooks: [
+              'K. Sydsaeter and P. Hammond, Mathematics for Economic Analysis, Pearson Educational Asia, Delhi, 2002',
+              'A. C. Chiang, Fundamental Methods of Mathematical Economics, McGraw Hill, New York',
+              'R. G. D. Allen, Mathematical Analysis for Economists, Macmillan Press, London',
+              'Taro Yamane, Mathematics for Economists, Prentice Hall of India, New Delhi',
+              'G. S. Monga, Mathematics and Statistics for Economists, Vikas Publishing House, New Delhi',
+              'B. C. Mehta & G. M. K. Madnani, Mathematics for Economists, Sultan Chand & Sons, Delhi, Agra',
+              'S. Sachdeva, Quantitative Techniques, Lukshmi Narain Agarwal Publication'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Preliminaries (20 Lectures)',
+                topics: [
+                  'Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products',
+                  'Functions and their Properties: domain, codomain, range, one-to-one, onto and inverse functions',
+                  'Number System: real numbers, rational, irrational, and complex numbers',
+                  'Basic idea of Permutation and Combination',
+                  'Progression: Arithmetic, Geometric and Harmonic Progression (AP, GP, HP) and their economic applications'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Functions of One Variable (25 Lectures)',
+                topics: [
+                  'Graphs; Elementary types of Functions: Quadratic, Polynomial, Power, Exponential and Logarithmic Functions',
+                  'Sequences and Series: Convergence and Divergence, Algebraic Properties and Applications',
+                  'Continuous Functions: Characteristics and Properties of Continuous Functions, Convergence and Divergence',
+                  'Limit of a Function: Method to Evaluate the Limit of Algebraic, Logarithmic and Exponential Functions'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Rules of Differentiation & Economic Applications (20 Lectures)',
+                topics: [
+                  'Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions',
+                  'Chain Rule, Implicit differentiation, Logarithmic differentiation',
+                  'Second and higher order derivatives and curvature of curves',
+                  'Applications of differentiation in Economics: Marginal Cost (MC), Marginal Revenue (MR), Average Cost (AC), Elasticity of Demand, Revenue maximization'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Single-Variable Optimization (15 Lectures)',
+                topics: [
+                  'Conditions for Maxima and Minima: First-order necessary conditions, Second-order sufficient conditions',
+                  'Points of inflection and concavity/convexity of functions',
+                  'Simple applications of maxima and minima in economics – Profit maximization and net revenue maximization',
+                  'Cost minimization: Short-run and long-run cost optimization under single variable inputs'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-2',
+            code: 'MIC-2',
+            name: 'Mathematical Methods in Economics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'G. S. Monga, Mathematics and Statistics for Economists, Vikas Publishing House, New Delhi',
+              'B. C. Mehta & G. M. K. Madnani, Mathematics for Economists, Sultan Chand & Sons, Delhi',
+              'S. Sachdeva, Quantitative Techniques, Lukshmi Narain Agarwal Publication',
+              'R. G. D. Allen, Mathematical Analysis for Economists, Macmillan Press, London',
+              'Taro Yamane, Mathematics for Economists, Prentice Hall of India, New Delhi'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Preliminaries (16 Lectures)',
+                topics: [
+                  'Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products',
+                  'Functions and their Properties, Number System',
+                  'Basic idea of Permutation and Combination',
+                  'Progression: Arithmetic, Geometric and Harmonic Progression (AP, GP, HP)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Functions of One Variable (12 Lectures)',
+                topics: [
+                  'Graphs; Elementary types of Functions: Quadratic, Polynomial, Power, Exponential and Logarithmic Functions',
+                  'Sequences and Series: Convergence and Divergence, Algebraic Properties and Applications',
+                  'Limit of a Function: Method to Evaluate the Limit of Algebraic, Logarithmic and Exponential Functions'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Rules of Differentiation & Economic Applications (12 Lectures)',
+                topics: [
+                  'Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions',
+                  'Second and higher order derivatives',
+                  'Simple applications of differentiation in Economics – Concept of Marginal Cost, Marginal Revenue and Elasticity of Demand'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mdc-2',
+            code: 'MDC-2',
+            name: 'Multidisciplinary Course 2 (Basket Option)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '800 KB',
+            recommendedBooks: ['Interdisciplinary Studies Basket as prescribed by Patna University'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Interdisciplinary Applications',
+                topics: [
+                  'Course selected from the university basket of Multidisciplinary Courses',
+                  'Interdisciplinary perspectives, analytical tools and real-world case studies'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-aec-2',
+            code: 'AEC-2',
+            name: 'Environmental Science',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '950 KB',
+            recommendedBooks: ['Environmental Studies by Erach Bharucha, UGC'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Ecosystems & Environmental Conservation',
+                topics: [
+                  'Ecosystem structure and function; Renewable and non-renewable natural resources',
+                  'Biodiversity conservation, pollution control, climate change, and environmental legislation in India'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-sec-2',
+            code: 'SEC-2',
+            name: 'Skill Enhancement Course 2 (Big Data / AWS / Calligraphy / Personality)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Big Data Analytics, Hadoop & Spark, Wiley / Packt'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Technical & Practical Skill Modules',
+                topics: [
+                  'Select from: Big Data Analysis, Beginners Course to Calligraphy, Introduction to Cloud Computing (AWS), Personality Development & Communication, Business Communication, पटकथा लेखन',
+                  'Hands-on implementation and laboratory exercises'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-vac-2',
+            code: 'VAC-2',
+            name: 'Value Added Course 2 (SEL / Gandhi / Panchakosha / Sports)',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Holistic Education & Ethics, University Publication'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Holistic Personality & Social Awareness',
+                topics: [
+                  'Select from: Social and Emotional Learning (SEL), Gandhi and Education, Panchakosha: Holistic Development of Personality, Sports for Life, Vedic Mathematics',
+                  'Experiential learning, community field visits and reflective projects'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 3,
+        papers: [
+          {
+            id: 'eco-mjc-3',
+            code: 'MJC-3',
+            name: 'Introductory Macroeconomics',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'N. Gregory Mankiw, Macroeconomics, Worth Publishers, 7th edition',
+              'Richard T. Froyen, Macroeconomics: Theories and Policies, Pearson Education',
+              'H. L. Ahuja, Macroeconomics: Theory and Policy, S. Chand & Co., Delhi'
+            ],
             units: [
               {
                 unitNumber: 1,
                 title: 'National Income Accounting & Concepts',
-                topics: ['Scope of Macroeconomics, Circular flow of income in two, three, and four sector economies', 'National Income Aggregates: GDP, GNP, NDP, NNP at Market Price and Factor Cost', 'Real vs Nominal GDP, GDP Deflator, Measurement methods: Value Added, Income, and Expenditure methods']
+                topics: [
+                  'Scope and subject matter of Macroeconomics; Circular flow of income in two, three and four sector models',
+                  'Concepts of GDP, GNP, NDP, NNP at market price and factor cost; Personal income and disposable personal income',
+                  'Real vs Nominal GDP, GDP Deflator, Measurement methods: Value added, Income, and Expenditure methods; Green GDP'
+                ]
               },
               {
                 unitNumber: 2,
-                title: 'Classical & Keynesian Employment Theories',
-                topics: ['Classical Theory of Output and Employment, Say Law of Markets, Wage-Price flexibility', 'Keynesian critique of classical economics, Concept of Effective Demand, Aggregate Demand and Supply']
+                title: 'Classical & Keynesian Systems',
+                topics: [
+                  'Classical theory of output and employment, Says Law of Markets, wage-price flexibility, quantity theory of money',
+                  'Keynesian critique of classical economics, principle of effective demand, aggregate demand and aggregate supply functions',
+                  'Underemployment equilibrium, consumption function (APC, MPC), Keynes Psychological Law of Consumption'
+                ]
               },
               {
                 unitNumber: 3,
-                title: 'Consumption, Savings & Investment Multiplier',
-                topics: ['Consumption Function: Average and Marginal Propensity to Consume (APC, MPC), Keynes Psychological Law', 'Investment Function: Autonomous and Induced investment, Marginal Efficiency of Capital (MEC)', 'The Investment Multiplier: Working, Assumptions, Leakages, and the Acceleration principle']
+                title: 'Investment, Multiplier & Financial Markets',
+                topics: [
+                  'Investment function: autonomous and induced investment, Marginal Efficiency of Capital (MEC) and interest rate',
+                  'Investment Multiplier: working, dynamic multiplier, leakages, and acceleration principle',
+                  'Money and liquidity preference theory: transaction, precautionary, and speculative demand for money'
+                ]
               },
               {
                 unitNumber: 4,
-                title: 'Money, Banking & Inflation',
-                topics: ['Functions of Money, Demand for Money (Classical, Cambridge, and Keynesian Liquidity Preference theory)', 'Credit Creation by Commercial Banks, Monetary Policy tools of RBI (Repo rate, CRR, SLR, Open market operations)', 'Inflation: Demand-pull and Cost-push inflation, Causes, Effects, and the Philips Curve tradeoff']
+                title: 'IS-LM Model & Inflation',
+                topics: [
+                  'Goods market equilibrium and the IS curve (derivation and shifts)',
+                  'Money market equilibrium and the LM curve (derivation and shifts)',
+                  'Simultaneous equilibrium in goods and money markets; Effectiveness of monetary and fiscal policies',
+                  'Inflation: Demand-pull vs Cost-push inflation, Philips Curve, stagflation and inflation targeting'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-4',
+            code: 'MJC-4',
+            name: 'Statistical Methods in Economics',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'S. C. Gupta & V. K. Kapoor, Fundamentals of Mathematical Statistics, Sultan Chand & Sons',
+              'S. P. Gupta, Statistical Methods, Sultan Chand & Sons, New Delhi',
+              'G. S. Monga, Mathematics and Statistics for Economists, Vikas Publishing'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Measures of Central Tendency and Dispersion',
+                topics: [
+                  'Collection, organization and presentation of economic data; Frequency distributions and histograms',
+                  'Measures of central tendency: Mean, Median, Mode, Geometric Mean, Harmonic Mean',
+                  'Measures of dispersion: Range, Quartile Deviation, Mean Deviation, Standard Deviation, Variance, Coefficient of Variation, Skewness and Kurtosis'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Correlation and Regression Analysis',
+                topics: [
+                  'Bivariate data, Scatter diagram, Karl Pearsons coefficient of correlation, Spearmans rank correlation',
+                  'Linear regression: Regression lines of Y on X and X on Y, Method of Least Squares, Regression coefficients and their properties',
+                  'Standard error of estimate, Coefficient of determination (R-squared)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Index Numbers & Time Series Analysis',
+                topics: [
+                  'Index numbers: Laspeyres, Paasches, and Fishers ideal index; Tests of adequacy (time reversal, factor reversal)',
+                  'Consumer Price Index (CPI), Wholesale Price Index (WPI), Deflating time series',
+                  'Components of time series: Secular trend, seasonal variation, cyclical fluctuation, irregular variation; Moving average and least squares trend fitting'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Probability and Sampling Theory',
+                topics: [
+                  'Basic probability concepts: addition and multiplication theorems, conditional probability, Bayes theorem',
+                  'Probability distributions: Binomial, Poisson, and Normal distribution with economic applications',
+                  'Concepts of population and sample; Sampling methods (random vs non-random), standard error of sample mean'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-3',
+            code: 'MIC-3',
+            name: 'Introductory Macroeconomics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            pyqCount: 2,
+            recommendedBooks: ['N. Gregory Mankiw, Macroeconomics', 'H. L. Ahuja, Macroeconomics, S. Chand'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'National Income Accounting',
+                topics: [
+                  'Concepts of GDP, GNP, NDP, NNP; Circular flow of income in two and three sector economies',
+                  'Measurement of National Income: product, income and expenditure methods'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Classical & Keynesian Employment Theory',
+                topics: [
+                  'Says Law of Markets, Classical quantity theory of money',
+                  'Keynesian aggregate demand and aggregate supply, effective demand principle, consumption function and investment multiplier'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Money, Banking and Inflation',
+                topics: [
+                  'Functions of money, Credit creation by commercial banks, Central Bank monetary policy instruments',
+                  'Inflation: concepts, causes, and anti-inflationary measures'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mdc-3',
+            code: 'MDC-3',
+            name: 'Multidisciplinary Course 3 (Basket Option)',
+            paperType: 'Multidisciplinary (MDC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '800 KB',
+            recommendedBooks: ['Approved Interdisciplinary Basket at Patna University'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Cross-Disciplinary Analysis',
+                topics: ['Final elective from the University Multidisciplinary Basket for Semester-3']
+              }
+            ]
+          },
+          {
+            id: 'eco-aec-3',
+            code: 'AEC-3',
+            name: 'Disaster Risk Management',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '900 KB',
+            recommendedBooks: ['Disaster Management in India, Ministry of Home Affairs / NDMA'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Disaster Types & Mitigation Protocols',
+                topics: [
+                  'Natural and man-made disasters (floods, earthquakes, cyclones, industrial accidents)',
+                  'Disaster management cycle: prevention, mitigation, preparedness, relief, and rehabilitation in India (NDMA/SDRF guidelines)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-sec-3',
+            code: 'SEC-3',
+            name: 'Skill Enhancement Course 3 (SPSS / Personal Finance / Communication)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Statistical Software Package (SPSS) / Personal Financial Planning'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Specialized Practical Application',
+                topics: [
+                  'Select from: Statistical Software Package (SPSS), Personal Financial Planning, Visual Communication & Photography, Communication in Professional Life, रंगमंच, रचनात्मक लेखन'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 4,
+        papers: [
+          {
+            id: 'eco-mjc-5',
+            code: 'MJC-5',
+            name: 'Intermediate Microeconomics 1',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton, 8th edition',
+              'C. Snyder and W. Nicholson, Fundamentals of Microeconomics, Cengage Learning',
+              'H. L. Ahuja, Advanced Economic Theory (Microeconomic Analysis), S. Chand & Co.'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Advanced Consumer Choice & Duality',
+                topics: [
+                  'Preferences, utility maximization, indirect utility function, expenditure function and Hicksian demands',
+                  'Slutsky equation: substitution effect, income effect, and endowment income effect; Compensated demand curves',
+                  'Samuelsons Revealed Preference Theory (WARP and SARP); Choice under uncertainty: von Neumann-Morgenstern expected utility'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Advanced Theory of Production',
+                topics: [
+                  'Production functions with two variable inputs; Marginal Rate of Technical Substitution (MRTS)',
+                  'Elasticity of substitution; Properties of Cobb-Douglas and CES production functions',
+                  'Returns to scale and homogeneous production functions; Technical progress: Hicks-neutral and Harrod-neutral'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Cost Minimization & Duality in Production',
+                topics: [
+                  'Cost minimization problem and conditional factor demand functions',
+                  'Short-run and long-run cost functions: Total, Average, and Marginal costs; Envelope theorem',
+                  'Shephards Lemma and expansion path'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Competitive Market Equilibrium',
+                topics: [
+                  'Short-run and long-run equilibrium of the firm and industry under Perfect Competition',
+                  'Constant, increasing and decreasing cost industries; Welfare effects of taxes, subsidies, and price controls'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-6',
+            code: 'MJC-6',
+            name: 'Intermediate Macroeconomics',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Dornbusch, Fischer & Startz, Macroeconomics, McGraw Hill, 11th edition',
+              'Olivier Blanchard, Macroeconomics, Pearson Education, 7th edition',
+              'Errol D Souza, Macroeconomics, Pearson Education'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Aggregate Demand and Aggregate Supply',
+                topics: [
+                  'Derivation of Aggregate Demand curve from IS-LM model',
+                  'Aggregate Supply curve in short-run and long-run (Sticky wage model, Worker-misperception model, Sticky price model)',
+                  'Macroeconomic equilibrium and adjustments to demand and supply shocks'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Inflation, Unemployment and Expectations',
+                topics: [
+                  'The Phillips Curve tradeoff between inflation and unemployment',
+                  'Natural Rate of Unemployment hypothesis (Friedman and Phelps)',
+                  'Adaptive expectations vs Rational expectations; Lucas Critique; Sacrifices ratio'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Open Economy Macroeconomics',
+                topics: [
+                  'Balance of payments: Current account and capital account; Nominal and real exchange rates; Purchasing Power Parity (PPP)',
+                  'The Mundell-Fleming Model under fixed vs floating exchange rates: Perfect capital mobility and policy effectiveness'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Microfoundations of Macroeconomics',
+                topics: [
+                  'Consumption theories: Life Cycle Hypothesis (Modigliani), Permanent Income Hypothesis (Friedman)',
+                  'Investment theories: Accelerator principle, Tobins q theory; Money demand: Baumol-Tobin cash balance model'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-7',
+            code: 'MJC-7',
+            name: 'Indian Economy',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Uma Kapila, Indian Economy: Performance and Policies, Academic Foundation',
+              'Ramesh Singh, Indian Economy, McGraw Hill Education',
+              'Bimal Jalan, The Indian Economy: Problems and Prospects, Penguin'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Economic Development since Independence',
+                topics: [
+                  'Colonial legacy and structure of Indian economy at independence',
+                  'Planning era: Nehru-Mahalanobis strategy, Five-Year Plans performance and achievements',
+                  'Economic crisis of 1991 and transition to New Economic Policy (LPG: Liberalisation, Privatisation, Globalisation)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Agriculture and Rural Sector',
+                topics: [
+                  'Role of agriculture in Indian economy; Land reforms, Green Revolution and post-Green Revolution scenario',
+                  'Agricultural marketing, Minimum Support Price (MSP), Public Distribution System (PDS) and Food Security',
+                  'Agricultural finance, Kisan Credit Card (KCC), rural indebtedness and farmer distress'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Industry and Infrastructure',
+                topics: [
+                  'Industrial policy resolutions (1956, 1991); Public Sector Enterprises (PSEs) and Disinvestment policy',
+                  'Micro, Small and Medium Enterprises (MSMEs): role, growth and challenges',
+                  'Make in India, Production Linked Incentive (PLI) scheme; Infrastructure: power, transport, logistics, and digital infrastructure'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Services, External Sector & Bihar Economy',
+                topics: [
+                  'Growth and composition of services sector (IT, banking, tourism, telecom)',
+                  'Foreign trade trends, Foreign Direct Investment (FDI), Foreign Portfolio Investment (FPI), Forex reserves',
+                  'Economy of Bihar: Growth trends, agrarian base, industrial backwardness, human development, and special state status issues'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-4',
+            code: 'MIC-4',
+            name: 'Statistical Methods in Economics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            pyqCount: 2,
+            recommendedBooks: ['S. P. Gupta, Statistical Methods, Sultan Chand', 'G. S. Monga, Statistics for Economists'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Central Tendency & Dispersion',
+                topics: ['Mean, Median, Mode; Standard Deviation, Variance, and Coefficient of Variation']
+              },
+              {
+                unitNumber: 2,
+                title: 'Correlation and Regression',
+                topics: ['Karl Pearsons Correlation, Rank Correlation, Simple Linear Regression equations']
+              },
+              {
+                unitNumber: 3,
+                title: 'Index Numbers & Time Series',
+                topics: ['Laspeyres, Paasche and Fisher Index Numbers; Trend estimation using Moving Averages']
+              }
+            ]
+          },
+          {
+            id: 'eco-aec-4',
+            code: 'AEC-4',
+            name: 'NCC / NSS / NGOs / Social Service / Sports',
+            paperType: 'Ability Enhancement (AEC)',
+            credits: 2,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '850 KB',
+            recommendedBooks: ['National Cadet Corps & National Service Scheme Handbooks, Govt. of India'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Community Engagement & Service',
+                topics: [
+                  'Community development fieldwork, blood donation drives, literacy campaigns, disaster relief volunteering',
+                  'Sportsmanship, physical fitness, teamwork, and leadership development'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 5,
+        papers: [
+          {
+            id: 'eco-mjc-8',
+            code: 'MJC-8',
+            name: 'Intermediate Microeconomics 2',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Hal R. Varian, Intermediate Microeconomics: A Modern Approach, W.W. Norton',
+              'Robert Gibbons, Game Theory for Applied Economists, Princeton University Press',
+              'A. Koutsoyiannis, Modern Microeconomics, Macmillan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Monopoly and Price Discrimination',
+                topics: [
+                  'Monopoly equilibrium, monopoly power (Learner index), Deadweight loss of monopoly',
+                  'Price Discrimination: First, Second, and Third-degree price discrimination, Two-part tariffs and peak-load pricing',
+                  'Natural monopoly and government regulation: marginal cost pricing vs average cost pricing'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Imperfect Competition and Oligopoly',
+                topics: [
+                  'Monopolistic Competition: Chamberlinian tangency solution, excess capacity theorem',
+                  'Oligopoly without collusion: Cournot duopoly, Bertrand price competition, Stackelberg leadership model',
+                  'Kinked Demand Curve hypothesis (Sweezy model); Collusive oligopoly: Cartels and Price Leadership'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Introduction to Game Theory',
+                topics: [
+                  'Normal form games: Players, Strategies, Payoffs; Dominant strategy equilibrium',
+                  'Nash Equilibrium: Pure and mixed strategies; Prisoners Dilemma and Battle of the Sexes',
+                  'Extensive form games: Game trees, information sets, backward induction, subgame perfect equilibrium'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'General Equilibrium & Welfare Economics',
+                topics: [
+                  'General equilibrium in pure exchange: Edgeworth box, Pareto optimality, contract curve',
+                  'General equilibrium with production: Production Possibility Frontier and Grand Utility Possibility Frontier',
+                  'First and Second Fundamental Theorems of Welfare Economics; Market failure: externalities and public goods'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-9',
+            code: 'MJC-9',
+            name: 'Public Finance',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Richard A. Musgrave & Peggy B. Musgrave, Public Finance in Theory and Practice, McGraw-Hill',
+              'Harvey S. Rosen & Ted Gayer, Public Finance, McGraw-Hill, 10th edition',
+              'H. L. Bhatia, Public Finance, Vikas Publishing House'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Principles of Public Finance & Market Failure',
+                topics: [
+                  'Nature and scope of Public Finance; Fiscal functions: Allocation, Distribution, and Stabilization',
+                  'Pure Public Goods vs Private Goods, Free rider problem; Externalities and Pigouvian corrective taxation',
+                  'Principle of Maximum Social Advantage (Dalton and Musgrave)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Public Revenue and Taxation',
+                topics: [
+                  'Sources of public revenue: Tax and non-tax revenue; Direct vs Indirect taxes',
+                  'Canons of taxation; Impact, incidence and shifting of taxation (Marshall-Edgeworth approaches)',
+                  'Goods and Services Tax (GST) in India: structure, GST Council, compensation cess and federal implications'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Public Expenditure and Public Debt',
+                topics: [
+                  'Wagner Law of Increasing State Activity, Wiseman-Peacock hypothesis, Critical limit hypothesis',
+                  'Causes of growth of public expenditure in India; Evaluation of public expenditure: Cost-Benefit Analysis',
+                  'Public Debt: Internal vs External debt, burden of public debt, debt redemption methods, FRBM Act'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Fiscal Policy, Budget & Federal Finance',
+                topics: [
+                  'Fiscal policy instruments: Counter-cyclical fiscal policy, automatic stabilizers',
+                  'Union Budget of India: Revenue deficit, Fiscal deficit, Primary deficit; Gender budgeting',
+                  'Fiscal Federalism in India: Vertical and horizontal fiscal imbalances; Recommendations of the latest Finance Commission'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-5',
+            code: 'MIC-5',
+            name: 'Intermediate Microeconomics 1 (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Hal R. Varian, Intermediate Microeconomics', 'H. L. Ahuja, Advanced Microeconomics'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Advanced Consumer Theory',
+                topics: ['Preferences, budget line, Slutsky substitution and income effects, Revealed Preference Theory']
+              },
+              {
+                unitNumber: 2,
+                title: 'Production & Costs',
+                topics: ['Isoquants, MRTS, Cobb-Douglas production function, Long-run cost curves, Economies of scale']
+              },
+              {
+                unitNumber: 3,
+                title: 'Perfect Competition Equilibrium',
+                topics: ['Short-run and long-run industry equilibrium, Producer surplus, Deadweight loss']
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-6',
+            code: 'MIC-6',
+            name: 'Intermediate Macroeconomics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Dornbusch & Fischer, Macroeconomics', 'Errol D Souza, Macroeconomics'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'IS-LM & Aggregate Demand',
+                topics: ['Goods market equilibrium (IS), Money market equilibrium (LM), Aggregate Demand derivation']
+              },
+              {
+                unitNumber: 2,
+                title: 'Inflation and Unemployment',
+                topics: ['Short-run and long-run Phillips Curve, Adaptive vs Rational expectations, Stagflation']
+              },
+              {
+                unitNumber: 3,
+                title: 'Open Economy & Policy',
+                topics: ['Balance of Payments, Exchange rates, Monetary and fiscal policy effectiveness']
+              }
+            ]
+          },
+          {
+            id: 'eco-int-1',
+            code: 'INT-1',
+            name: 'Summer Internship',
+            paperType: 'Internship',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '800 KB',
+            recommendedBooks: ['Institutional / Industrial Internship Guidelines, Patna University'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Fieldwork, Industry Placement & Report',
+                topics: [
+                  '4-week internship with financial institutions, commercial banks, NGOs, research organizations or government departments',
+                  'Preparation of internship project report, mentor evaluation, viva-voce and presentation'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 6,
+        papers: [
+          {
+            id: 'eco-mjc-10',
+            code: 'MJC-10',
+            name: 'International Economics',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Dominick Salvatore, International Economics: Trade and Finance, John Wiley & Sons, 11th edition',
+              'Paul R. Krugman, Maurice Obstfeld & Marc Melitz, International Economics, Pearson',
+              'Bo Sodersten & Geoffrey Reed, International Economics, Macmillan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Classical and Neoclassical Trade Theories',
+                topics: [
+                  'Mercantilist views on trade; Adam Smiths Absolute Advantage theory; Ricardian Comparative Advantage theory',
+                  'Opportunity cost approach (Haberler); Offer curves and Terms of Trade (Net barter, gross barter, income terms of trade)',
+                  'Heckscher-Ohlin Factor Endowment theory, Leontief Paradox, Stolper-Samuelson and Rybczynski theorems'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Trade Policy & Protectionism',
+                topics: [
+                  'Free Trade vs Protection; Instruments of trade policy: Tariffs (specific and ad-valorem), Quotas, Subsidies',
+                  'Partial and general equilibrium effects of a tariff in small and large countries; Nominal vs Effective rate of protection',
+                  'Non-tariff barriers, dumping, export subsidies; Bilateralism, Regional Trade Agreements (RTAs), and WTO multilateral trade rules'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Balance of Payments and Exchange Rates',
+                topics: [
+                  'Structure of Balance of Payments accounts; Disequilibrium in BOP: Causes and correction mechanisms',
+                  'Elasticity Approach (Marshall-Lerner condition), Absorption Approach, Monetary Approach to BOP',
+                  'Foreign Exchange Market: Spot and Forward rates, Hedging, Speculation, Arbitrage; Purchasing Power Parity (PPP)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'International Monetary Systems',
+                topics: [
+                  'Evolution of international monetary system: Gold Standard, Bretton Woods System, and Floating rates regime',
+                  'International Monetary Fund (IMF), World Bank (IBRD), Asian Development Bank (ADB) and international liquidity (SDRs)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-11',
+            code: 'MJC-11',
+            name: 'Contemporary Issues in Indian Economy',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Uma Kapila, Indian Economy Since Independence, Academic Foundation',
+              'Government of India, Economic Survey (Latest Edition), Ministry of Finance',
+              'NITI Aayog Strategy for New India @ 75'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Growth, Poverty and Inequality',
+                topics: [
+                  'Macroeconomic performance and growth trends in Indian GDP post-2000',
+                  'Poverty measurement in India: Tendulkar and Rangarajan committee methodologies; Multidimensional Poverty Index (MPI)',
+                  'Income and wealth inequality trends, Gini coefficient in India; Employment trends, Periodic Labour Force Survey (PLFS), jobless growth'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Monetary, Financial and Fiscal Issues',
+                topics: [
+                  'Monetary Policy Framework Agreement in India: Flexible Inflation Targeting (4±2%), Monetary Policy Committee (MPC)',
+                  'Banking crisis: Non-Performing Assets (NPAs), Insolvency and Bankruptcy Code (IBC), Bank mergers and privatization',
+                  'Fiscal consolidation, quality of public expenditure, revenue buoyancy, and sovereign debt sustainability'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Digital Economy and Agrarian Crisis',
+                topics: [
+                  'Digital India: UPI revolution, digital payments, FinTech platforms and financial inclusion (PMJDY)',
+                  'Agricultural reforms, e-NAM, farmer producer organisations (FPOs), climate change impact on Indian farming',
+                  'Labour market reforms: Four Labour Codes, gig economy and platform workers social security'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'External Sector and Bihar State Development',
+                topics: [
+                  'Indias foreign trade agreements (FTAs), foreign exchange reserve management, Current Account Deficit (CAD)',
+                  'Bihar Economy: Recent economic growth, agricultural roadmap, infrastructure development, migration and remittances'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-12',
+            code: 'MJC-12',
+            name: 'Development Economics',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Debraj Ray, Development Economics, Oxford University Press',
+              'Michael P. Todaro & Stephen C. Smith, Economic Development, Pearson Education',
+              'A. P. Thirlwall, Economics of Development, Palgrave Macmillan'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Conceptions of Development',
+                topics: [
+                  'Economic Growth vs Economic Development; Amartya Sens Capability Approach',
+                  'Measuring development: Human Development Index (HDI), Gender Inequality Index (GII), Happy Planet Index',
+                  'Poverty lines, Headcount ratio, Poverty Gap Index, Foster-Greer-Thorbecke (FGT) measure; Lorenz curve and Gini coefficient'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Theories of Economic Growth',
+                topics: [
+                  'Harrod-Domar growth model: Knife-edge equilibrium and capital-output ratio',
+                  'Solow Neoclassical Growth Model: Steady state, technological progress, golden rule of capital accumulation',
+                  'Endogenous Growth Theories: Role of human capital, R&D, and knowledge spillovers (Romer and Lucas models)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Structural Transformation & Dual Economy Models',
+                topics: [
+                  'Arthur Lewis Two-Sector Model of Unlimited Supplies of Labour',
+                  'Ranis-Fei Model; Harris-Todaro Model of Rural-Urban Migration and urban unemployment',
+                  'Balanced vs Unbalanced growth strategies: Rosentein-Rodans Big Push, Nurkses balanced growth, Hirschmans unbalanced growth'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Institutions, Environment and Sustainable Development',
+                topics: [
+                  'Role of institutions, property rights, and governance in development (Acemoglu-Robinson thesis)',
+                  'Sustainable Development: Environmental Kuznets Curve (EKC), Common Property Resources, Coase Theorem',
+                  'Financing development: Foreign aid, FDI, Microfinance, and UN Sustainable Development Goals (SDGs)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-7',
+            code: 'MIC-7',
+            name: 'Indian Economy (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Uma Kapila, Indian Economy', 'Ramesh Singh, Indian Economy'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Structure & Planning in India',
+                topics: ['Characteristics of Indian economy, 1991 Economic Reforms (LPG), NITI Aayog']
+              },
+              {
+                unitNumber: 2,
+                title: 'Agriculture and Industry',
+                topics: ['Green revolution, MSP and food security; MSME policy, Make in India']
+              },
+              {
+                unitNumber: 3,
+                title: 'Key Challenges & Bihar Economy',
+                topics: ['Poverty, unemployment, inflation; Structure of Bihar economy and growth performance']
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-8',
+            code: 'MIC-8',
+            name: 'Intermediate Microeconomics 2 (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Hal R. Varian, Microeconomics', 'A. Koutsoyiannis, Modern Microeconomics'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Monopoly & Price Discrimination',
+                topics: ['Monopoly equilibrium, Deadweight loss, Price discrimination types']
+              },
+              {
+                unitNumber: 2,
+                title: 'Oligopoly & Game Theory',
+                topics: ['Cournot model, Kinked demand curve, Prisoners dilemma and Nash equilibrium']
+              },
+              {
+                unitNumber: 3,
+                title: 'Welfare Economics',
+                topics: ['Pareto optimality, Edgeworth box, First and Second Welfare theorems']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 7,
+        papers: [
+          {
+            id: 'eco-mjc-13',
+            code: 'MJC-13',
+            name: 'Advanced Quantitative Methods',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Damodar N. Gujarati & Dawn C. Porter, Basic Econometrics, McGraw Hill',
+              'Alpha C. Chiang & Kevin Wainwright, Fundamental Methods of Mathematical Economics, McGraw Hill',
+              'J. Johnston & J. DiNardo, Econometric Methods, McGraw Hill'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Linear Programming and Input-Output Analysis',
+                topics: [
+                  'Linear Programming: Formulation, graphical solution, Simplex method, Duality theorem and shadow prices',
+                  'Economic applications of Linear Programming: Diet problem, transportation problem, optimal product mix',
+                  'Leontief Input-Output Analysis: Open and closed models, Hawkins-Simon conditions, technology matrix and multiplier effects'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Classical Linear Regression Model (CLRM)',
+                topics: [
+                  'Simple linear regression: Ordinary Least Squares (OLS) estimation, assumptions of CLRM, Gauss-Markov theorem (BLUE properties)',
+                  'Hypothesis testing: t-test for regression coefficients, F-test for overall significance, R-squared and Adjusted R-squared',
+                  'Multiple linear regression: Matrix approach, partial regression coefficients and interpretation'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Econometric Violations and Remedial Measures',
+                topics: [
+                  'Multicollinearity: Consequences, detection (VIF, tolerance), and remedies',
+                  'Heteroscedasticity: Consequences, detection (Breusch-Pagan, Whites test), and remedies (Weighted Least Squares)',
+                  'Autocorrelation: Consequences, Durbin-Watson d-statistic, detection and remedies (Cochrane-Orcutt procedure)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Dummy Variables and Model Specification',
+                topics: [
+                  'Qualitative explanatory variables: Dummy variable trap, seasonal analysis, structural break (Chow test)',
+                  'Model specification errors: Omission of relevant variable, inclusion of irrelevant variable, measurement errors'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-14',
+            code: 'MJC-14',
+            name: 'Banking and Financial Institutions',
+            paperType: 'Major (MJC)',
+            credits: 5,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.5 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'L. M. Bhole & Jitendra Mahakud, Financial Institutions and Markets, McGraw Hill Education',
+              'M. Y. Khan, Indian Financial System, McGraw Hill Education',
+              'Frederic S. Mishkin, The Economics of Money, Banking and Financial Markets, Pearson'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Financial System & Central Banking',
+                topics: [
+                  'Structure and components of Indian Financial System; Functions of financial markets: Money market vs Capital market',
+                  'Reserve Bank of India (RBI): Organization, functions, monetary policy framework, Quantitative (Repo, Reverse Repo, CRR, SLR) and Qualitative credit controls',
+                  'Transmission mechanism of monetary policy in India'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Commercial Banking and Asset-Liability Management',
+                topics: [
+                  'Theories of banking: Commercial loan theory, Shiftability theory, Anticipated income theory',
+                  'Process of multiple credit creation and credit multiplier; Balance sheet of commercial banks: Liquidity vs Profitability dilemma',
+                  'Basel Accords (Basel I, II, III): Capital Adequacy Ratio (CAR), Non-Performing Assets (NPAs) management, Prompt Corrective Action (PCA)'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Non-Banking Financial Intermediaries & Development Banks',
+                topics: [
+                  'Development Financial Institutions (DFIs): IDBI, IFCI, SIDBI, NABARD, EXIM Bank',
+                  'Non-Banking Financial Companies (NBFCs): Classification, systemic importance, and RBI regulatory framework',
+                  'Mutual funds, Insurance sector (IRDAI), Pension funds (PFRDA)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Capital Markets & Financial Innovations',
+                topics: [
+                  'Primary market: IPOs, FPOs, Rights issues; Secondary market: Stock exchanges (BSE, NSE), SEBI regulations',
+                  'Financial derivatives: Forwards, Futures, Options and Swaps',
+                  'Digital Banking and FinTech: Internet banking, Mobile banking, Payment banks, Small finance banks, CBDC (e-Rupee)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mjc-15',
+            code: 'MJC-15',
+            name: 'Research Methodology',
+            paperType: 'Major (MJC)',
+            credits: 6,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/research%20methodology%2020231219808584518.pdf',
+            fileSize: '1.6 MB',
+            pyqCount: 5,
+            recommendedBooks: [
+              'C. R. Kothari & Gaurav Garg, Research Methodology: Methods and Techniques, New Age International',
+              'W. G. Cochran, Sampling Techniques, John Wiley & Sons',
+              'Ranjit Kumar, Research Methodology: A Step-by-Step Guide for Beginners, Sage Publications'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Foundations of Economic Research',
+                topics: [
+                  'Meaning, objectives, motivation and types of research: Pure vs Applied, Descriptive vs Analytical, Quantitative vs Qualitative',
+                  'Research process: Identification and formulation of research problem, literature review, conceptual framework',
+                  'Formulation of hypotheses: Null and Alternative hypotheses, Type I and Type II errors'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Research Design and Data Collection',
+                topics: [
+                  'Research designs: Exploratory, Descriptive, and Experimental designs',
+                  'Primary data collection methods: Questionnaire design, schedules, structured interviews, observation, focus group discussions',
+                  'Secondary data sources in India: NSSO, CSO, Census of India, RBI publications, CMIE data, NFHS, and Economic Survey'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Sampling Design and Statistical Testing',
+                topics: [
+                  'Census vs Sample survey; Principles of sampling, Sampling error vs Non-sampling error',
+                  'Probability sampling: Simple random, Stratified, Systematic, Cluster sampling; Non-probability sampling methods',
+                  'Parametric tests (t-test, z-test, ANOVA) and Non-parametric tests (Chi-square test, Mann-Whitney U test)'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Report Writing and Academic Integrity',
+                topics: [
+                  'Structure of an academic thesis/dissertation: Preliminary pages, main text, bibliography, appendices',
+                  'Referencing styles: APA, MLA, Chicago; Citation rules, footnotes, endnotes',
+                  'Research ethics: Plagiarism, UGC guidelines on academic integrity, software tools for similarity detection (Turnitin, Urkund)'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-9',
+            code: 'MIC-9',
+            name: 'Public Finance (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Musgrave & Musgrave, Public Finance', 'H. L. Bhatia, Public Finance'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Principles of Public Finance',
+                topics: ['Public vs Private goods, Principle of Maximum Social Advantage, Market failure']
+              },
+              {
+                unitNumber: 2,
+                title: 'Taxation & Public Expenditure',
+                topics: ['Direct vs Indirect taxes, GST in India, Cannons of taxation, Wagners Law']
+              },
+              {
+                unitNumber: 3,
+                title: 'Budget, Public Debt & Federal Finance',
+                topics: ['Deficit concepts (Fiscal, Revenue), Public debt management, Finance Commission']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 8,
+        papers: [
+          {
+            id: 'eco-mjc-16',
+            code: 'MJC-16',
+            name: 'Economics of Health and Education',
+            paperType: 'Major (MJC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Sherman Folland, Allen C. Goodman & Miron Stano, The Economics of Health and Health Care, Routledge',
+              'Dominic J. Brewer & Patrick J. McEwan, Economics of Education, Academic Press',
+              'Mark Blaug, An Introduction to the Economics of Education, Penguin'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Economics of Health: Theoretical Foundations',
+                topics: [
+                  'Health as an economic good; Grossmans demand for health capital model',
+                  'Market failure in healthcare: Asymmetric information, adverse selection, moral hazard, physician-induced demand',
+                  'Economic burden of disease: DALYs, QALYs, and Cost-Effectiveness Analysis (CEA)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Healthcare Financing & Policy in India',
+                topics: [
+                  'Healthcare financing models: Out-of-pocket expenditure, universal health coverage, social health insurance',
+                  'Health policy in India: National Health Mission (NHM), Ayushman Bharat (PM-JAY), Jan Aushadhi Yojana',
+                  'Healthcare infrastructure challenges in Bihar and interstate disparities'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Economics of Education: Human Capital Theory',
+                topics: [
+                  'Education as consumption and investment; Human Capital Theory (Schultz, Becker, Mincer earnings function)',
+                  'Signalling and screening hypothesis (Spence)',
+                  'Rates of return to education: Private vs Social returns; Cost-benefit analysis in education'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Educational Policy & NEP-2020 in India',
+                topics: [
+                  'Structure of education in India: Primary, secondary, higher, and vocational education',
+                  'Right to Education (RTE) Act; Gender and socio-economic disparities in educational attainment',
+                  'National Education Policy (NEP-2020): Goals, restructuring, financing, and higher education reforms'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'eco-mic-10',
+            code: 'MIC-10',
+            name: 'International Economics (Minor)',
+            paperType: 'Minor (MIC)',
+            credits: 4,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/UG-PG-Syllabus/Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: ['Dominick Salvatore, International Economics', 'Krugman & Obstfeld, International Economics'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Theories of International Trade',
+                topics: ['Absolute advantage, Comparative advantage, Heckscher-Ohlin model, Terms of Trade']
+              },
+              {
+                unitNumber: 2,
+                title: 'Trade Policy & Protection',
+                topics: ['Tariffs, Quotas, Non-tariff barriers, Free trade vs Protectionism, WTO']
+              },
+              {
+                unitNumber: 3,
+                title: 'Balance of Payments & IMF',
+                topics: ['BOP structure, Exchange rate regimes (fixed vs flexible), IMF and World Bank']
+              }
+            ]
+          },
+          {
+            id: 'eco-rp-1',
+            code: 'RP-1',
+            name: 'Research Project / Dissertation',
+            paperType: 'Research Project',
+            credits: 12,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/research%20methodology%2020231219808584518.pdf',
+            fileSize: '1.5 MB',
+            recommendedBooks: [
+              'Dissertation & Research Guidelines, Department of Economics, Patna University',
+              'C. R. Kothari, Research Methodology'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Independent Research & Dissertation Formulation',
+                topics: [
+                  'Formulation of independent research topic under assigned faculty guide in Department of Economics, Patna University',
+                  'Field investigation, empirical data collection, data entry and econometric analysis using statistical packages',
+                  'Preparation and formal submission of dissertation (minimum 60-80 pages) followed by University Viva-Voce defense'
+                ]
               }
             ]
           }
@@ -2986,6 +4491,637 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
     }
   ]
 },
+
+{
+    id: 'sec-basket',
+    name: 'Skill Enhancement Courses (SEC Basket - NEP 2020)',
+    shortCode: 'SEC Basket',
+    stream: 'Common NEP',
+    faculty: 'Common NEP',
+    icon: '⚡',
+    degree: 'CBCS Compulsory Skill Enhancement Courses',
+    totalSemesters: 3,
+    description: 'Official uniform Skill Enhancement Courses (SEC) for 4-Year UG Programmes across Arts, Science, and Commerce approved by Raj Bhavan Bihar for Patna University.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'sec-excel',
+            code: 'SEC-1 (Option A)',
+            name: 'Advance Spreadsheet Tools',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            pyqCount: 4,
+            recommendedBooks: [
+              'Michael Alexander & Dick Kusleika, Excel 2016 Power Programming with VBA, Wiley',
+              'Chandan Sengupta, Financial Analysis and Modelling Using Excel and VBA, Wiley Student Edition',
+              'Wayne Winston, MS Excel 2016 Data Analysis & Business Modelling, PHI'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Excel Advanced Techniques',
+                topics: [
+                  'Templates, Efficiency, and Risk (Standard Deviation, Variance, Coefficient of Variation), Data Validation',
+                  'Functions and Power functions, Array Formulae (Frequency Distribution, mode.mult, mode.sngl), Tables, Advanced Range Names',
+                  'What-if-analysis: Goal-seek, Data tables, and Scenario Manager; Data Analysis ToolPak: Descriptive Statistics, Moving averages, Histogram, Covariance, Correlation, Regression',
+                  'Solver Add-in: Problem solving using Solver (optimal product mix, workforce scheduling, transportation, capital budgeting); Integration with MS Word, Outlook, PowerPoint, Access, Power BI'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Excel Interactivity and Automation',
+                topics: [
+                  'Index and Match, Offset, Dynamic Charting, Database functions, Text functions, Error functions: IfError, IsError, Aggregate, Circular Reference, Formula Auditing',
+                  'Form Controls (Button, Combo, Check box, Spinner, List, Option), Visual Basic (basic syntax)',
+                  'Recording Macros, Absolute and relative macros, editing macros, Sub and Function procedures',
+                  'Working with Loops: Do_while loop, For_Next loop; Creating User Forms: Message Box, Input Box, If_Then_Else'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Introduction to VBA',
+                topics: [
+                  'Conditional Formatting, Charts that Inspire (Waterfall, Column, Line, Combo, Thermometer, Scatter, Histogram), Sparklines',
+                  'Worksheet Automation using Macros: Creating new functions using macros, command buttons, user interactivity'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Data Analysis and Decision-Making',
+                topics: [
+                  'Working with External Data, Advanced Uses of PivotTables, PowerPivot, Reporting with PowerPivot, Power Query, Dashboards',
+                  'Creating spreadsheets for Loan and Lease statements, Ratio Analysis, Payroll Accounting, Capital Budgeting (NPV & IRR), Portfolio Management, Breakeven & Sensitivity Analysis'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'sec-it-tools',
+            code: 'SEC-1 (Option B)',
+            name: 'Basic IT Tools',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'E. Swinford et al., Microsoft Office Professional 2013, O Reilly Media',
+              'W. Wang, Office 2019 For Dummies, Wiley',
+              'J. Lambert, Microsoft Word 2019 Step by Step, Pearson Education'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Introduction to Spreadsheets',
+                topics: [
+                  'Worksheets and workbooks: moving, copying, inserting, deleting, renaming worksheets, controlling views, naming cells',
+                  'Exchanging data using clipboard, object linking and embedding (OLE); Printing and protecting worksheets',
+                  'Absolute, relative and mixed cell referencing, inbuilt formulas (mathematical, statistical, text, lookup, date/time, financial)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Data Analysis in Spreadsheets',
+                topics: [
+                  'Consolidating worksheets and workbooks using formulae; Charts and sparklines graphics',
+                  'PivotTables: creating, formatting, modifying, calculated fields/items, pivot table charts and reports',
+                  'Introduction to recording and execution of macros'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Word Processing',
+                topics: [
+                  'Document creation, formatting, paragraph indents, tabs, alignment, spacing, borders and page setup',
+                  'Working with tables, table math, newspaper columns, indexes, table of contents, spell check, thesaurus',
+                  'Bookmarks, captions, cross-referencing, hyperlinks, Mail Merge, linking and embedding'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Databases (MS Access)',
+                topics: [
+                  'Database terminology, objects, tables, data types, field properties, primary keys, relationships & integrity rules',
+                  'Queries: Select, Make Table, Append, Delete, Cross Tab, Update, Parameterized, table joins',
+                  'Forms: bound/unbound controls, subforms; Reports: header/footer, sorting, grouping, sub-reports'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'sec-digital-mktg',
+            code: 'SEC-1 (Option C)',
+            name: 'Digital Marketing',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: [
+              'Ian Dodson, The Art of Digital Marketing, John Wiley & Sons',
+              'Kotler, Kartajaya & Setiawan, Marketing 4.0: Moving from Traditional to Digital, Wiley'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Marketing in the Digital World',
+                topics: [
+                  'Digital vs traditional marketing, Intent-based (SEO, Search Ads), Brand-based (Display Ads), Community-based (Social Media)',
+                  'Customer Value Journey: 5As Framework, online consumer behavior'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Content and Email Marketing',
+                topics: [
+                  'Developing content marketing strategies; Email marketing types, campaigns and best practices'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Social Media & Search Engine Marketing (SEM / SEO)',
+                topics: [
+                  'Social media strategy on Facebook, LinkedIn, YouTube; Display advertising formats and budgeting',
+                  'Search Engine Optimization (SEO): On-page keyword research, site structure, sitemaps; Off-page link building',
+                  'Search Advertising (PPC): Google Ads setup, targeting, bidding strategies, keyword selection, ad extensions'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'sec-bigdata',
+            code: 'SEC-2 (Option A)',
+            name: 'Big Data Analytics',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.4 MB',
+            pyqCount: 3,
+            recommendedBooks: [
+              'Seema Acharya & Subhasini Chellappan, Big Data Analytics, Wiley, 2015',
+              'Tom White, Hadoop: The Definitive Guide, O Reilly, 4th Edition',
+              'Mike Frampton, Mastering Apache Spark, Packt Publishing'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Fundamentals of Big Data Analysis',
+                topics: [
+                  'Characteristics of Big Data (Volume, Velocity, Variety, Veracity, Value), Analytical Architecture, Challenges in Big Data Analytics'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Hadoop Framework & MapReduce',
+                topics: [
+                  'Hadoop 1 vs Hadoop 2, Daemons, HDFS Commands, MapReduce programming paradigm, Map-side and Reduce-side joins, Pipelining'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'HDFS & Ingestion Tools',
+                topics: [
+                  'HDFS concepts, CLI, Data flow, Ingest with Flume and Sqoop, Hadoop archives, Compression, Serialization, Avro data structures'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Spark Framework & Practical Analytics',
+                topics: [
+                  'Writing Spark applications in Scala, Python, R, Java; Word count MapReduce, Time-temperature statistics, K-means clustering'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'sec-personality',
+            code: 'SEC-2 (Option B)',
+            name: 'Personality Development and Communication',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Kushal Jin, Business Communication, VK India',
+              'Krishnamacharyulu & Ramakrishnan Lalitha, Personality Development, Himalaya Publishing'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Process of Communication & Modes',
+                topics: [
+                  'Verbal, Written, and Visual communication, Signs and Symbols, Silence as a mode of communication, Cross-cultural communication'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Presentations, Cues & Reporting',
+                topics: [
+                  'Business presentations, Non-verbal cues, Audio-visual aids, Report writing, Circulars and Memos'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Interpersonal Dynamics & Leadership',
+                topics: [
+                  'Barriers to communication, Body language, Listening skills, Emotional intelligence, Team building, Conflict management'
+                ]
+              },
+              {
+                unitNumber: 4,
+                title: 'Negotiation & Selling Skills',
+                topics: [
+                  'Negotiation strategies, Selling skills (to customers, superiors, peer groups), Strategic selling'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'sec-cloud-aws',
+            code: 'SEC-2 (Option C)',
+            name: 'Introduction to Cloud Computing (AWS)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.0 MB',
+            recommendedBooks: ['AWS Certified Solutions Architect Official Study Guide, Sybex / Wiley'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Cloud Computing & AWS Console',
+                topics: ['Cloud computing models (IaaS, PaaS, SaaS), AWS Management Console, Availability Zones, Global Infrastructure']
+              },
+              {
+                unitNumber: 2,
+                title: 'Compute Services (EC2)',
+                topics: ['Amazon EC2 instances, instance types, AMIs, Key Pairs, Security Groups and Elastic IPs']
+              },
+              {
+                unitNumber: 3,
+                title: 'Storage & Databases',
+                topics: ['Amazon S3 bucket storage, Amazon RDS relational database, Amazon DynamoDB NoSQL database, Deployment project']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 3,
+        papers: [
+          {
+            id: 'sec-spss',
+            code: 'SEC-3 (Option A)',
+            name: 'Statistical Software Package (SPSS)',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.3 MB',
+            recommendedBooks: [
+              'Lawrence S. Meyers et al., Performing Data Analysis using IBM SPSS, Wiley',
+              'Darren George & Paul Mallery, SPSS for Windows Step by Step'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Data Management & Descriptive Statistics',
+                topics: ['Data entry, variable definitions, recoding, computing new variables, descriptive statistics, frequencies, cross-tabulation']
+              },
+              {
+                unitNumber: 2,
+                title: 'Hypothesis Testing for Means',
+                topics: ['One-sample t-test, Independent samples t-test, Paired samples t-test, One-way and Two-way ANOVA with post-hoc tests']
+              },
+              {
+                unitNumber: 3,
+                title: 'Testing for Association & Regression',
+                topics: ['Chi-square test of independence, Pearson and Spearman correlation coefficients, Simple and Multiple Linear Regression']
+              }
+            ]
+          },
+          {
+            id: 'sec-fin-plan',
+            code: 'SEC-3 (Option B)',
+            name: 'Personal Financial Planning',
+            paperType: 'Skill Enhancement (SEC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Monika Halan, Lets Talk Money, HarperCollins',
+              'Indian Institute of Banking & Finance, Introduction to Financial Planning, Taxmann'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Financial Goals & Budgeting',
+                topics: ['Financial goals, steps in financial planning, budgeting, time value of money, savings benefits and financial discipline']
+              },
+              {
+                unitNumber: 2,
+                title: 'Investment & Insurance Planning',
+                topics: ['Asset classes, risk-return trade-off, mutual funds, gold bonds, fixed income, equity, life and health insurance coverage']
+              },
+              {
+                unitNumber: 3,
+                title: 'Personal Tax Planning & Retirement',
+                topics: ['Tax brackets, Sec 115BAC vs old regime, deductions, pension plans in India, reverse mortgage, estate planning']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    id: 'vac-basket',
+    name: 'Value Added Courses (VAC Basket - NEP 2020)',
+    shortCode: 'VAC Basket',
+    stream: 'Common NEP',
+    faculty: 'Common NEP',
+    icon: '🌸',
+    degree: 'CBCS Compulsory Value Added Courses',
+    totalSemesters: 2,
+    description: 'Official uniform Value Added Courses (VAC) approved by Raj Bhavan Bihar for Patna University students promoting ethics, constitutional values, wellness, and holistic personality.',
+    officialPdfs: {
+      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+    },
+    semesters: [
+      {
+        semester: 1,
+        papers: [
+          {
+            id: 'vac-constitution',
+            code: 'VAC-1 (Option A)',
+            name: 'Constitutional Values and Fundamental Duties',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: [
+              'Durga Das Basu, Introduction to the Constitution of India, LexisNexis, 26th edn',
+              'Preamble and Fundamental Duties (Article 51A), Constitution of India'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'The Constitution of India – An Introduction',
+                topics: [
+                  'Federal Republic, Rule of Law, Separation of Powers',
+                  'Sovereignty, Socialism, Democracy, Secularism and Sarva Dharma Sama Bhava'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Constitutional Values',
+                topics: [
+                  'Justice: Social, Political, Economic',
+                  'Liberty: Thought, Expression, Belief, Faith, Worship',
+                  'Equality: Equality before law & equal application of laws; Fraternity: Dignity, Unity and Integrity'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Fundamental Duties',
+                topics: [
+                  'Ancient Indian notions of righteousness and duty consciousness',
+                  'Fundamental Duties: Article 51A [(a) to (k)]; Legal status and judicial approach towards Fundamental Duties'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'vac-ayurveda',
+            code: 'VAC-1 (Option B)',
+            name: 'Ayurveda and Nutrition',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.2 MB',
+            recommendedBooks: [
+              'S. Rastogi, Ayurvedic Science of Food and Nutrition, Springer',
+              'FSSAI Regulations on Ayurveda Aahar Regulations 2022'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Introduction to Ayurvedic Nutrition',
+                topics: [
+                  'Ayurveda and Indian food cultures, Nutrition and lifestyle transition, Regional food traditions of India'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Basic Principles of Food & Nutrition in Ayurveda',
+                topics: [
+                  'Concept of Doshas (Vata, Pitta, Kapha) and assessment, Ahara vidhi visheshayaatana, FSSAI regulations on Ayurvedic Aahar'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Ayurvedic Diets & Lifestyle',
+                topics: [
+                  'Principles of Diet: Sattvic, Rajasic, and Tamasic foods, Incompatible foods (Viruddha Ahara), Pathya and Apathya, Dincharya and Ritucharya'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'vac-digital',
+            code: 'VAC-1 (Option C)',
+            name: 'Digital Empowerment',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.0 MB',
+            recommendedBooks: [
+              'Rodney Jones & Christoph Hafner, Understanding Digital Literacies, Routledge',
+              'David Sutton, Cybersecurity: A Practitioners Guide, BCS'
+            ],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Digital Inclusion & Digital India',
+                topics: [
+                  'Needs and challenges, Vision of Digital India: DigiLocker, E-Hospitals, e-Pathshala, BHIM, e-Kranti',
+                  'Public utility portals: RTI, Health, Finance, Income Tax e-filing, National Scholarship Portal'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Safe & Secure Cyberspace',
+                topics: [
+                  'Online security, privacy, threats: Data breaches, cyber attacks, Blockchain technology, Govt of India cybersecurity initiatives'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Ethical Issues in Digital World',
+                topics: [
+                  'Netiquettes, ethics in digital communication, ethics in cyberspace, cyber hygiene'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'vac-happy',
+            code: 'VAC-1 (Option D)',
+            name: 'Art of Being Happy',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.0 MB',
+            recommendedBooks: ['C.R. Snyder et al., Positive Psychology, Sage Publication'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Human Ecology & Happiness',
+                topics: ['Definitions, environmental and social factors, physical/emotional well-being, hormonal basis, coping with stress']
+              },
+              {
+                unitNumber: 2,
+                title: 'Indological Theories & Global Perspectives',
+                topics: ['Panchakosha perspective, idea of self and other, cross-cultural happiness, Happiness Index and India rankings']
+              }
+            ]
+          }
+        ]
+      },
+      {
+        semester: 2,
+        papers: [
+          {
+            id: 'vac-swachh',
+            code: 'VAC-2 (Option A)',
+            name: 'Swachh Bharat',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Swachh Bharat Mission Operational Guidelines, Ministry of Jal Shakti, GoI'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Introduction to Swachh Bharat Abhiyan',
+                topics: [
+                  'Gandhian philosophy of cleanliness, SBA phases, hygiene, sanitation, sustainable waste management, citizen responsibilities (Swachhagrahis)'
+                ]
+              },
+              {
+                unitNumber: 2,
+                title: 'Rural and Urban Sanitation',
+                topics: [
+                  'Open Defecation Free (ODF) and ODF Plus village models, solid and liquid waste management, garbage-free cities, clean institution audits'
+                ]
+              },
+              {
+                unitNumber: 3,
+                title: 'Community Mobilization & Fieldwork',
+                topics: [
+                  'Attitudinal change, operational challenges, monitoring, Swachhata Pakhwada rallies, cleanliness drives and internships'
+                ]
+              }
+            ]
+          },
+          {
+            id: 'vac-fit-india',
+            code: 'VAC-2 (Option B)',
+            name: 'Fit India',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.1 MB',
+            recommendedBooks: ['Wener W.K. Hoeger, Fitness and Wellness, Cengage Learning', 'Fit India Protocol, MoYAS'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Physical Activity Protocol & Yoga',
+                topics: ['Fit India protocol, aerobic workout, walking, Yoga asanas and Pranayama, Cooper test']
+              },
+              {
+                unitNumber: 2,
+                title: 'Health Related Fitness & Nutrition',
+                topics: ['Muscular strength, body composition, BMI calculation, waist-hip ratio, healthy eating plate and caloric balance']
+              },
+              {
+                unitNumber: 3,
+                title: 'Psycho-Physiological Wellness',
+                topics: ['Sports psychology, DASS depression-anxiety-stress scale, self-esteem, group games and intramural activities']
+              }
+            ]
+          },
+          {
+            id: 'vac-panchakosha',
+            code: 'VAC-2 (Option C)',
+            name: 'Panchakosha: Holistic Development of Personality',
+            paperType: 'Value Added (VAC)',
+            credits: 3,
+            theoryMarks: 70,
+            internalMarks: 30,
+            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Economics.pdf',
+            fileSize: '1.0 MB',
+            recommendedBooks: ['Taitiriyopanishad Verses and Indian Personality Theories'],
+            units: [
+              {
+                unitNumber: 1,
+                title: 'Elements of Human Personality',
+                topics: ['Five koshas: Annamaya, Pranamaya, Manomaya, Vijnanamaya, and Anandamaya; Mental and physical health dimensions']
+              },
+              {
+                unitNumber: 2,
+                title: 'Body, Mind & Intellect Cultivation',
+                topics: ['Pancha Karmendriyas, balanced nutrition, Pranayama, Antahkarana, controlling the Mana, discretion and decision making']
+              },
+              {
+                unitNumber: 3,
+                title: 'Experience of Bliss & Self-Realisation',
+                topics: ['Anandamaya Kosha, experience of Sat-Chit-Ananda, meditation and mindfulness practices']
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
 ];
 
 export const puStreamsList = puFacultyList;
