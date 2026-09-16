@@ -1155,55 +1155,1729 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   },
 
   {
-    id: 'bsc-chemistry',
-    name: 'B.Sc. Chemistry (Hons/Subs/Gen)',
-    shortCode: 'Chemistry',
-    stream: 'Science',
-    faculty: 'Science',
-    icon: '🧪',
-    degree: '4-Year FYUGP CBCS / 3-Year Annual',
-    totalSemesters: 8,
-    description: 'Inorganic, Organic, and Physical Chemistry at Patna Science College & BN College.',
-    officialPdfs: {
-      sem1_2: 'https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf',
-      sem3_8: 'https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf',
-      annualHons: 'https://www.pup.ac.in/download/UG%20SYLLABUS-CHEM.pdf',
+    "id": "bsc-chemistry",
+    "name": "B.Sc. Chemistry (Hons/Subs/Gen)",
+    "shortCode": "Chemistry",
+    "stream": "Science",
+    "faculty": "Science",
+    "icon": "🧪",
+    "degree": "4-Year FYUGP CBCS Degree",
+    "totalSemesters": 8,
+    "description": "Complete 8-Semester UGC NEP-2020 curriculum: Inorganic, Organic, Physical, Analytical, Polymer, Green Chemistry & Research.",
+    "officialPdfs": {
+      "sem1_2": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
+      "sem3_8": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+      "annualHons": "https://www.pup.ac.in/download/UG%20SYLLABUS-CHEM.pdf"
     },
-    semesters: [
+    "semesters": [
       {
-        semester: 1,
-        papers: [
+        "semester": 1,
+        "papers": [
           {
-            id: 'chm-mjc-1',
-            code: 'MJC-1',
-            name: 'Inorganic & Physical Chemistry - I',
-            paperType: 'Major (MJC)',
-            credits: 4,
-            theoryMarks: 70,
-            internalMarks: 30,
-            pdfUrl: 'https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf',
-            fileSize: '1.7 MB',
-            recommendedBooks: ['Concise Inorganic Chemistry by J.D. Lee', 'Principles of Physical Chemistry by Puri, Sharma & Pathania', 'Inorganic Chemistry by Huheey'],
-            units: [
+            "id": "chm-mj-1",
+            "code": "MJ-1",
+            "name": "Basic Chemistry - I",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "pyqCount": 4,
+            "recommendedBooks": [
+              "Lee, J.D. Concise Inorganic Chemistry, Wiley, 5th Ed.",
+              "Douglas, B.E., McDaniel, D.H., Alexander, J.J., Concepts & Models of Inorganic Chemistry, John Wiley & Sons",
+              "Atkins, P.W. and De Paula, J. Physical Chemistry, Oxford University Press",
+              "Miessler, G.L. & Donald, A. Tarr, Inorganic Chemistry, Pearson"
+            ],
+            "units": [
               {
-                unitNumber: 1,
-                title: 'Atomic Structure & Quantum Mechanics',
-                topics: ['Bohr model and limitations, Sommerfeld extension, de Broglie matter waves, Heisenberg Uncertainty Principle', 'Schrödinger wave equation: Radial and angular wave functions, Quantum numbers, Pauli Exclusion Principle, Hund Rule, Aufbau Principle']
+                "unitNumber": 1,
+                "title": "Atomic Structure (15 Classes)",
+                "topics": [
+                  "Recapitulation of theory of atomic structure; Wave mechanics: de Broglie equation, Heisenberg Uncertainty Principle and its significance",
+                  "Schrödinger wave equation, significance of ψ and ψ²; Eigen values and eigen functions; Quantum numbers and their significance",
+                  "Normalized, orthogonal and orthonormal wave functions; Sign of wave functions; Radial and angular wave functions for hydrogen atom",
+                  "Radial and angular distribution curves; Shapes of s, p, d and f orbitals; Contour boundary and probability diagrams",
+                  "Pauli Exclusion Principle, Hund rule of maximum multiplicity, Aufbau principle and its limitations, Variation of orbital energy with atomic number"
+                ]
               },
               {
-                unitNumber: 2,
-                title: 'Chemical Bonding & Molecular Architecture',
-                topics: ['Ionic Bonding: Lattice energy, Born-Haber cycle, Born-Lande equation, Fajan rules and polarization effects', 'Covalent Bonding: Valence Bond Theory (VBT), Hybridization ($sp, sp^2, sp^3, dsp^2, sp^3d, sp^3d^2$), VSEPR Theory for shapes of molecules ($H_2O, NH_3, SF_4, XeF_4$)', 'Molecular Orbital Theory (MOT): LCAO method, MO diagrams for $H_2, N_2, O_2, CO, NO$']
+                "unitNumber": 2,
+                "title": "Periodicity of Elements (15 Classes)",
+                "topics": [
+                  "The long form of periodic table and classification of elements in s, p, d and f blocks",
+                  "Effective nuclear charge, shielding or screening effect, Slater rules, variation of effective nuclear charge in periodic table",
+                  "Atomic (Covalent, van der Waals and Metallic) radii; Ionic (octahedral and tetrahedral) and crystal radii",
+                  "Ionization enthalpy, Successive ionization enthalpies and factors affecting ionization enthalpy; Applications of ionization enthalpy",
+                  "Electron gain enthalpy, trends of electron gain enthalpy in periodic table",
+                  "Electronegativity and its scale: Pauling, Mulliken, Allred-Rochow scales; Applications, bond order and hybridization, Sanderson electron density ratio",
+                  "Variable electrovalency, Inert pair effect"
+                ]
               },
               {
-                unitNumber: 3,
-                title: 'Gaseous State & Kinetic Theory',
-                topics: ['Postulates of Kinetic Molecular Theory of gases, Derivation of gas pressure, Maxwell-Boltzmann distribution of molecular speeds', 'Deviation of real gases from ideal behavior, van der Waals equation of state, Critical constants, Liquefaction of gases']
+                "unitNumber": 3,
+                "title": "Kinetic Molecular Model of a Gas (7 Classes)",
+                "topics": [
+                  "Postulates of kinetic theory of gases and derivation of the kinetic gas equation",
+                  "Collision frequency, collision diameter, mean free path and viscosity of gases (temperature and pressure dependence)",
+                  "Relation between mean free path and coefficient of viscosity, calculation of σ from η",
+                  "Maxwell distribution and its use in evaluating molecular velocities (average, root mean square and most probable) and average kinetic energy",
+                  "Law of equi-partition of energy, degrees of freedom and molecular basis of heat capacities"
+                ]
               },
               {
-                unitNumber: 4,
-                title: 'Chemical Kinetics & Catalysis',
-                topics: ['Rate of reaction, Factors affecting rate, Order and Molecularity of reactions', 'Integrated rate equations for Zero, First, and Second order reactions, Half-life period determination', 'Temperature dependence of reaction rates: Arrhenius equation, Activation energy, Collision theory of bimolecular reactions, Homogeneous and Heterogeneous catalysis']
+                "unitNumber": 4,
+                "title": "Behaviour of Real Gases (8 Classes)",
+                "topics": [
+                  "Deviations from ideal gas behaviour, compressibility factor (Z) and its variation with pressure for different gases; Causes of deviation",
+                  "van der Waals equation of state: its derivation and application in explaining real gas behaviour; Virial form of equation, Boyle temperature",
+                  "Isotherms of real gases and comparison with van der Waals isotherms, continuity of states",
+                  "Critical state, critical and van der Waals constants, law of corresponding states"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-1-lab",
+            "code": "MJ-1 Lab",
+            "name": "Chemistry Practical - MJ 1 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "recommendedBooks": [
+              "Mendham, J., Vogel's Quantitative Chemical Analysis, Pearson",
+              "Svehla, G., Vogel's Qualitative Inorganic Analysis, Pearson"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Titrimetric Analysis & Acid-Base Titrations",
+                "topics": [
+                  "Calibration and use of volumetric apparatus; Preparation of solutions of different Molarity/Normality of titrants",
+                  "Standardization of Potassium permanganate solution using oxalic acid",
+                  "Standardization of sodium hydroxide solution using supplied sulphuric acid solution",
+                  "Standardization of sodium carbonate solution using HCl acid solution"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Surface Tension of Liquids",
+                "topics": [
+                  "Determination of surface tension using stalagmometer (drop formation method)"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 2,
+        "papers": [
+          {
+            "id": "chm-mj-2",
+            "code": "MJ-2",
+            "name": "Basic Chemistry - II",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "pyqCount": 4,
+            "recommendedBooks": [
+              "Morrison, R.T. & Boyd, R.N., Organic Chemistry, Pearson",
+              "Pine, S.H., Organic Chemistry, McGraw Hill",
+              "Carey, F.A., Organic Chemistry, Tata McGraw Hill",
+              "Clayden, J., Greeves, N., Warren, S., Organic Chemistry, Oxford University Press"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Basics of Organic Chemistry (15 Classes)",
+                "topics": [
+                  "Recapitulation of Classification and Nomenclature; Electronic Displacements: Inductive and electromeric effects, resonance and mesomeric effects, hyperconjugation and their applications",
+                  "Dipole moment; Organic acids and bases and their relative strengths",
+                  "Homolytic and Heterolytic fission with suitable examples; Electrophiles and Nucleophiles",
+                  "Reaction Intermediates: Generation, shapes, stability and reactions of carbocations, carbanions, free radicals, carbenes, nitrenes and benzyne"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Stereochemistry (15 Classes)",
+                "topics": [
+                  "Concept of asymmetry and dissymmetry, Fischer, Newman and Sawhorse projection formulae and their interconversions",
+                  "Geometrical isomerism: cis-trans and syn-anti isomerism, E/Z notations with C.I.P. rules",
+                  "Optical Isomerism: Optical activity, specific rotation, chirality/asymmetry, enantiomers, molecules with two or more chiral-centres, diastereoisomers, meso structures",
+                  "Racemic mixtures and resolution; Relative and absolute configuration: D/L and R/S designations"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Solid State (10 Classes)",
+                "topics": [
+                  "Nature of the solid state, law of constancy of interfacial angles, law of rational indices, Miller indices",
+                  "Elementary ideas of symmetry, symmetry elements and symmetry operations, qualitative idea of point and space groups, 7 crystal systems and 14 Bravais lattices",
+                  "X-ray diffraction, Bragg law, rotating crystal method and powder pattern method",
+                  "Analysis of powder diffraction patterns of NaCl, CsCl and KCl; Defects in crystals, glasses and liquid crystals"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Liquid State (5 Classes)",
+                "topics": [
+                  "Structure and physical properties of liquids; Vapour pressure, surface tension, viscosity (temperature dependence)",
+                  "Effect of addition of various solutes on surface tension"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-2-lab",
+            "code": "MJ-2 Lab",
+            "name": "Chemistry Practical - MJ 2 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/syllabus/FYUG-Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "recommendedBooks": [
+              "Mann, F.G. & Saunders, B.C., Practical Organic Chemistry, Pearson",
+              "Furniss, B.S., Vogel's Practical Organic Chemistry, Pearson"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Calibration & Crystallization",
+                "topics": [
+                  "Checking the calibration of the thermometer",
+                  "Purification of organic compounds by crystallization using water, alcohol, and alcohol-water solvents"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Physical Constants & Viscometry",
+                "topics": [
+                  "Determination of melting points and boiling points of organic compounds (using Kjeldahl method and electrical apparatus); Effect of impurity and % error",
+                  "Determination of viscosity of given liquid by Ostwald viscometer"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 3,
+        "papers": [
+          {
+            "id": "chm-mj-3",
+            "code": "MJ-3",
+            "name": "Physical Chemistry I",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Atkins, P.W. & De Paula, J., Physical Chemistry, Oxford University Press",
+              "Castellan, G.W., Physical Chemistry, Narosa",
+              "Mortimer, R.G., Physical Chemistry, Elsevier"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Chemical Equilibria (8 Classes)",
+                "topics": [
+                  "Reversible and irreversible reactions, Equilibrium and equilibrium constant: Kp, Kc, and Kx and relation between them",
+                  "Dependence of equilibrium constant on temperature (Kirchhoff equation); Le Chatelier Principle and its applications",
+                  "Relation between equilibrium constant and standard free energy change; Homogeneous and heterogeneous equilibria"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Ionic Equilibria (20 Classes)",
+                "topics": [
+                  "Strong and weak electrolytes, degree of ionization, factors affecting degree of ionization, Ostwald dilution law",
+                  "Ionization constant of mono-, di- and tri-protic acids, ionic product of water, pH and pH scale, pH of strong and weak acids and bases",
+                  "Common ion effect, Buffer solutions and types, pH of buffer solutions (Henderson equation), buffer capacity and applications",
+                  "Solubility and solubility product in analytical chemistry; Hydrolysis of salts, degree of hydrolysis, hydrolysis constants, pH of salt solutions, Theory of indicators"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Conductance (10 Classes)",
+                "topics": [
+                  "Arrhenius theory of electrolytic dissociation; Specific, equivalent and molar conductivity and their variation with dilution",
+                  "Molar conductivity at infinite dilution; Kohlrausch law of independent migration of ions",
+                  "Debye-Hückel-Onsager equation, Wien effect, Debye-Falkenhagen effect, Walden rules",
+                  "Ionic velocities, mobilities and their determinations, transference numbers (Hittorf and Moving Boundary methods)",
+                  "Applications: degree of dissociation of weak electrolytes, Kw, solubility product, conductometric titrations, hydrolysis constants"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Molecular Symmetry (7 Classes)",
+                "topics": [
+                  "Symmetry operations and symmetry elements: Identity, Proper rotation axis, Plane of symmetry, Inversion center, Improper rotation axis",
+                  "Matrix representation of symmetry elements; Point groups and classification of molecules",
+                  "Multiplication tables of C2v and C3v point groups"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-3-lab",
+            "code": "MJ-3 Lab",
+            "name": "Chemistry Practical - MJ 3 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Conductometric Titrations & pH-metry",
+                "topics": [
+                  "Conductometric titration of strong acid vs strong base and AgNO3 vs KCl",
+                  "Effect on pH of addition of HCl/NaOH to solutions of acetic acid and sodium acetate; Buffer preparation",
+                  "Determination of strength of unknown HCl with NaOH using pH-meter; Dissociation constant of weak acid potentiometrically"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-4",
+            "code": "MJ-4",
+            "name": "Inorganic Chemistry I",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Lee, J.D., Concise Inorganic Chemistry, Wiley",
+              "Douglas, B.E., McDaniel, D.H., Alexander, J.J., Concepts & Models of Inorganic Chemistry",
+              "Miessler, G.L. & Tarr, D.A., Inorganic Chemistry, Pearson"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Ionic Bond (6 Classes)",
+                "topics": [
+                  "General characteristics, size effects, radius ratio rule and its limitations; Packing of ions in crystals",
+                  "Born-Landé equation with derivation, expression for lattice energy, Madelung constant, Born-Haber cycle and applications, Solvation energy"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Covalent Bond & Weak Forces (24 Classes)",
+                "topics": [
+                  "Lewis structure, VSEPR Theory, shapes of simple molecules and ions containing lone and bond pairs; Valence Bond Theory (Heitler-London)",
+                  "Hybridization (sp, sp2, sp3, dsp2, sp3d, sp3d2), Bent rule, Resonance and resonance energy",
+                  "Molecular Orbital Theory (MOT): MO diagrams of N2, O2, C2, B2, F2, CO, NO and ions; HCl, BeF2, CO2, HCHO (s-p mixing)",
+                  "Fajan rules, polarizing power and polarizability; Dipole moment and % ionic character",
+                  "Weak Molecular Forces: van der Waals, dipole-dipole, Lennard-Jones 6-12 formula, hydrogen bonding effects on MP, BP, solubility"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Metallic Bond (5 Classes)",
+                "topics": [
+                  "Qualitative idea of free electron model, Valence bond model and molecular orbital (band) model; Conductors, Semiconductors, Insulators"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Inorganic Polymers (10 Classes)",
+                "topics": [
+                  "Types of inorganic polymers, comparison with organic polymers; Synthesis, structure and applications of silicones and siloxanes",
+                  "Borazines, silicates, phosphazenes, and polysulphates"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-4-lab",
+            "code": "MJ-4 Lab",
+            "name": "Chemistry Practical - MJ 4 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Inorganic Volumetric Analysis",
+                "topics": [
+                  "Estimation of Na2CO3 and NaHCO3 present together in a mixture",
+                  "Estimation of free alkali present in soaps/detergents",
+                  "Estimation of Fe(II) and oxalic acid using standardized KMnO4",
+                  "Estimation of Fe(II) with K2Cr2O7 using internal and external indicators; Iodometric estimation of Cu in CuSO4"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 4,
+        "papers": [
+          {
+            "id": "chm-mj-5",
+            "code": "MJ-5",
+            "name": "Indian Knowledge System (IKS) in Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.3 MB",
+            "recommendedBooks": [
+              "A History of Hindu Chemistry by P.C. Ray, Bengal Chemical & Pharmaceutical Works",
+              "Science and Technology in Ancient Indian Text by Bal Ram Singh, Girish Nath & Umesh Kumar Singh"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Introduction of Indian Knowledge System (5 Classes)",
+                "topics": [
+                  "Meaning, definition and scope of IKS; Vocabulary and classification of IKS",
+                  "Vedas, Upanishads and Darshan: Philosophical foundation of IKS; Interdisciplinary approach and sources of Indian traditional knowledge",
+                  "Holistic and integral world view of Indian tradition"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "History of Metallurgy in India (10 Classes)",
+                "topics": [
+                  "Melting, Smelting, Roasting, Design of furnaces, Distillation techniques in ancient India",
+                  "Use of Copper (Tambra), Bronze (Kansya), Brass, Iron (Louh), Zinc (Yashad), Gold (Swarna), Silver (Rajat), Mercury (Parad), Arsenic (Sankhya)",
+                  "Wootz Steel, Damascus Steel, and the Aranmula Mirror"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "General Principles of Metallurgy (10 Classes)",
+                "topics": [
+                  "Redox equations, Standard Electrode Potential and applications to inorganic reactions; Occurrence of metals",
+                  "Ellingham diagrams for reduction of metal oxides using carbon or carbon monoxide as reducing agent",
+                  "Electrolytic Reduction, Hydrometallurgy; Purification methods: Kroll, Parting, van Arkel-de Boer, Mond process, Zone refining"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Chemistry of Aliphatic and Alicyclic Hydrocarbons (20 Classes)",
+                "topics": [
+                  "Alkanes: Wurtz, Wurtz-Fittig, Corey-House synthesis; Free radical halogenation mechanism, reactivity and selectivity",
+                  "Alkenes and Alkynes: Preparation by E1, E2, E1cb elimination reactions; Saytzeff and Hofmann eliminations",
+                  "Electrophilic additions: Markovnikov / Anti-Markovnikov addition, oxymercuration-demercuration, hydroboration-oxidation, ozonolysis, Diels-Alder reaction",
+                  "Cycloalkanes and stability: Baeyer strain theory, Conformational analysis of ethane, n-butane, and cyclohexane"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-5-lab",
+            "code": "MJ-5 Lab",
+            "name": "Chemistry Practical - MJ 5 Lab (IKS Fieldwork)",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "IKS Chemical Heritage Fieldwork",
+                "topics": [
+                  "Visit to libraries to document 5 components of IKS in chemistry",
+                  "Visit to monumental historical sites with chemical and metallurgical perspectives",
+                  "Identification of medicinal plants in tribal areas used traditionally"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-6",
+            "code": "MJ-6",
+            "name": "Organic Chemistry I",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Morrison, R.T. & Boyd, R.N., Organic Chemistry, Pearson",
+              "Pine, S.H., Organic Chemistry, McGraw Hill",
+              "Clayden, J., Greeves, N., Warren, S., Organic Chemistry, Oxford University Press"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Chemistry of Aromatic Hydrocarbons (8 Classes)",
+                "topics": [
+                  "Aromaticity: Hückel rule, aromatic character of arenes",
+                  "Electrophilic aromatic substitution: Halogenation, nitration, sulphonation and Friedel-Crafts alkylation/acylation mechanisms",
+                  "Directive influence of substituent groups, activating/deactivating groups, ortho/para ratio"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Chemistry of Halogenated Hydrocarbons (12 Classes)",
+                "topics": [
+                  "Alkyl halides: Methods of preparation, nucleophilic substitution: SN1, SN2 and SNi mechanisms, stereochemical aspects and solvent effects",
+                  "Nucleophilicity vs basicity, nucleophilic substitution vs elimination",
+                  "Aryl halides: Preparation, nucleophilic aromatic substitution: SNAr1, SNAr2, and Benzyne mechanism; Relative reactivity of halides"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Alcohols (10 Classes)",
+                "topics": [
+                  "Preparation, properties and relative reactivity of 1°, 2°, 3° alcohols; Bouveault-Blanc reduction",
+                  "Dihydric alcohols: Preparation and oxidative cleavage by periodic acid and lead tetraacetate; Pinacol-Pinacolone rearrangement",
+                  "Trihydric alcohols: Glycerol synthesis and chemical reactions"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Phenols, Ethers and Epoxides (15 Classes)",
+                "topics": [
+                  "Phenols: Preparation, properties, acidity and substituent effects, ring substitutions; Reimer-Tiemann, Kolbe-Schmidt, Fries and Claisen rearrangements",
+                  "Ethers and Epoxides: Cleavage with acids; Ring opening of epoxides with nucleophiles, ammonia derivatives, and LiAlH4 (regioselectivity)"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-6-lab",
+            "code": "MJ-6 Lab",
+            "name": "Chemistry Practical - MJ 6 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Organic Analysis & Preparations",
+                "topics": [
+                  "Detection of extra elements and functional groups in organic compounds",
+                  "Paper chromatography of amino acids and sugars; TLC separation of o- and p-nitrophenol",
+                  "Synthesis of Aspirin and Bromination of Phenol"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-7",
+            "code": "MJ-7",
+            "name": "Physical Chemistry II",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Atkins, P.W. & De Paula, J., Physical Chemistry, Oxford University Press",
+              "Castellan, G.W., Physical Chemistry, Narosa",
+              "Mortimer, R.G., Physical Chemistry, Elsevier"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Introduction to Thermodynamics (10 Classes)",
+                "topics": [
+                  "System, surroundings, intensive and extensive properties, state and path functions, types of processes",
+                  "Zeroth law, First law: Concept of heat (q), work (w), internal energy (U), enthalpy (H), Cp - Cv = R derivation",
+                  "Calculations of q, w, U and H for reversible, irreversible and free expansion of ideal and van der Waals gases"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Thermochemistry (10 Classes)",
+                "topics": [
+                  "Enthalpy of reactions, factors affecting enthalpy, temperature effect (Kirchhoff equations) and pressure",
+                  "Enthalpy of formation, combustion and applications; Bond dissociation energy and resonance energy from thermochemical data"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Second Law of Thermodynamics (15 Classes)",
+                "topics": [
+                  "Limitations of first law and need for second law, Carnot theorem and cycle, thermodynamic scale of temperature",
+                  "Concept of entropy (S), molecular and statistical interpretation; Entropy calculations for reversible and irreversible processes and gas mixing"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Colloidal Chemistry (10 Classes)",
+                "topics": [
+                  "Lyophilic and lyophobic colloids, preparation, purification and properties of colloidal solutions",
+                  "Optical, Brownian movement, electrical properties: electrical double layer, Zeta potential, electrophoresis, electro-osmosis",
+                  "Coagulation, Hardy-Schulze law, Protection of colloids, Gold number, Emulsions, Micelles, CMC, Surfactants"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-7-lab",
+            "code": "MJ-7 Lab",
+            "name": "Chemistry Practical - MJ 7 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Calorimetry & Colloids",
+                "topics": [
+                  "Determination of water equivalent of calorimeter and enthalpy of solution of KNO3",
+                  "Determination of enthalpy of neutralization (strong acid vs strong base and weak acid vs strong base)",
+                  "Preparation of colloidal sol of Arsenic Sulphide"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 5,
+        "papers": [
+          {
+            "id": "chm-mj-8",
+            "code": "MJ-8",
+            "name": "Inorganic Chemistry - II",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Lee, J.D., Concise Inorganic Chemistry, ELBS",
+              "Douglas, B.E., McDaniel, D.H., Alexander, J.J., Concepts & Models of Inorganic Chemistry",
+              "Cotton, F.A. & Wilkinson, G., Advanced Inorganic Chemistry, Wiley"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Chemistry of s and p Block Elements (15 Classes)",
+                "topics": [
+                  "Inert pair effect, relative stability of oxidation states, diagonal relationship, anomalous behavior of first member; Allotropy and catenation",
+                  "Hydrides: ionic, covalent, interstitial; Basic beryllium acetate and nitrate",
+                  "Boron compounds: Boric acid, borates, boron nitrides, diborane, carboranes; Silanes",
+                  "Oxides and oxoacids of N, P, Cl; Per-oxo acids of S, interhalogen compounds, polyhalide ions, pseudo-halogens"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Noble Gases (7 Classes)",
+                "topics": [
+                  "Occurrence, separation, rationalization of inertness, Clathrates",
+                  "Preparation and properties of XeF2, XeF4, XeF6; Bonding (VB and MO treatment) and shapes of noble gas compounds (VSEPR)"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Coordination Chemistry I (18 Classes)",
+                "topics": [
+                  "Werner theory, Sidgwick electronic concept, EAN rule, Valence Bond Theory (inner/outer orbital complexes)",
+                  "Crystal Field Theory (CFT): d-orbital splitting in octahedral and tetrahedral complexes, 10 Dq, pairing energy, CFSE, Jahn-Teller distortion",
+                  "Spectrochemical series, Ligand field theory qualitative aspects, MO diagrams of complexes with and without π-bonding"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Coordination Chemistry II (5 Classes)",
+                "topics": [
+                  "IUPAC nomenclature of coordination compounds; Isomerism: Structural, Geometrical and Optical isomerism",
+                  "Stereochemistry of complexes with coordination number 4 and 6; Chelate effect"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-8-lab",
+            "code": "MJ-8 Lab",
+            "name": "Chemistry Practical - MJ 8 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Inorganic Preparations",
+                "topics": [
+                  "Preparation of Potassium trioxalatochromate(III)",
+                  "Preparation of Hexaamminecobalt(III) chloride",
+                  "Preparation of Potash alum or Chrome alum"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-9",
+            "code": "MJ-9",
+            "name": "Organic Chemistry - II",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Peter Sykes, A Guide Book to Mechanism in Organic Chemistry, Longman",
+              "Morrison, R.T., Boyd, R.N., Organic Chemistry, Pearson",
+              "Clayden, J., Greeves, N., Warren, S., Organic Chemistry, Oxford University Press"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Carbonyl Compounds (15 Classes)",
+                "topics": [
+                  "Nucleophilic additions and addition-elimination reactions; Aldol, Benzoin, Knoevenagel, Claisen-Schmidt, Perkin, Cannizzaro, Wittig reactions",
+                  "Beckmann and Benzil-Benzilic acid rearrangements; Haloform reaction, α-substitution",
+                  "Reductions and Oxidations: Clemmensen, Wolff-Kishner, LiAlH4, NaBH4, MPV reduction; Tests for carbonyl groups (2,4-DNP)"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Active Methylene Compounds (10 Classes)",
+                "topics": [
+                  "Keto-enol tautomerism; Synthesis and synthetic applications of diethyl malonate (malonic ester) and ethyl acetoacetate (acetoacetic ester)"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Carboxylic Acids (10 Classes)",
+                "topics": [
+                  "Reactions of monocarboxylic acids: Arndt-Eistert, HVZ, Schmidt rearrangement, relative strengths",
+                  "Dicarboxylic, hydroxy and unsaturated acids: Succinic, phthalic, lactic, malic, tartaric, citric, maleic and fumaric acids"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Derivatives of Carboxylic Acids (10 Classes)",
+                "topics": [
+                  "Acid chlorides, anhydrides, esters, amides; Nucleophilic acyl substitution mechanisms (acidic and alkaline hydrolysis)",
+                  "Claisen condensation, Dieckmann and Reformatsky reactions, Hofmann bromamide degradation, Curtius rearrangement"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-9-lab",
+            "code": "MJ-9 Lab",
+            "name": "Chemistry Practical - MJ 9 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Organic Preparations & Recrystallization",
+                "topics": [
+                  "Oxidation of ethanol/isopropanol (Iodoform test)",
+                  "Bromination and nitration of acetanilide (conventional and green approaches)",
+                  "Semicarbazone derivative preparation, Aldol condensation, Benzil-Benzilic acid rearrangement"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-10",
+            "code": "MJ-10",
+            "name": "Physical Chemistry - III",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Atkins, P.W. & De Paula, J., Physical Chemistry, Oxford University Press",
+              "Castellan, G.W., Physical Chemistry, Narosa",
+              "Levine, I.N., Physical Chemistry, Tata McGraw Hill"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Third Law of Thermodynamics (5 Classes)",
+                "topics": [
+                  "Nernst heat theorem and origin of Third Law; Residual entropy, absolute entropy calculation of molecules using Third Law"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Free Energy Functions (10 Classes)",
+                "topics": [
+                  "Gibbs (G) and Helmholtz (A) free energy; Criteria of spontaneity and equilibrium",
+                  "Gibbs-Helmholtz equation, Maxwell relations, thermodynamic equations of state, Clausius-Clapeyron equation"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Partial Molar Quantities (10 Classes)",
+                "topics": [
+                  "Partial molar volume and free energy; Chemical potential (μ) and variation with T and P; Gibbs-Duhem equation",
+                  "Chemical potential of ideal gas mixtures, thermodynamic functions of mixing"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Electrochemical Cells (20 Classes)",
+                "topics": [
+                  "Electrode potentials, reference electrodes (SHE, Calomel), Nernst equation, Galvanic and concentration cells",
+                  "Liquid junction potential, salt bridge, measurement of EMF; Determination of ΔG, ΔH, ΔS, Keq, solubility product and pH",
+                  "Potentiometric titrations (acid-base and redox)"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-10-lab",
+            "code": "MJ-10 Lab",
+            "name": "Chemistry Practical - MJ 10 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Phase Systems & Potentiometry",
+                "topics": [
+                  "Critical solution temperature (CST) and composition of phenol-water system; Effect of impurities",
+                  "EMF determination of Galvanic cell using potentiometer",
+                  "Potentiometric titrations: Strong/weak acids vs strong base, K2Cr2O7 vs Mohr salt"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-11",
+            "code": "MJ-11",
+            "name": "Molecular Spectroscopy",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Banwell, C.N. & McCash, E.M., Fundamentals of Molecular Spectroscopy, Tata McGraw Hill",
+              "Silverstein, R.M., Spectrometric Identification of Organic Compounds, John Wiley",
+              "Kaur, H., Spectroscopy, Pragati Prakashan"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Introduction & Microwave Spectroscopy (5 Classes)",
+                "topics": [
+                  "Interaction of EM radiation, Born-Oppenheimer approximation, signal-to-noise ratio, resolving power",
+                  "Rotational spectroscopy: Rigid diatomic rotator, selection rules, energy levels, Jmax, bond length determination, non-rigid rotator"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Infrared & Raman Spectroscopy (20 Classes)",
+                "topics": [
+                  "Vibrational spectroscopy: Harmonic oscillator, force constants, anharmonicity, Morse potential, fundamental frequencies, overtones, P Q R branches, FTIR",
+                  "Functional group and fingerprint regions; IR spectra of alkanes, alkenes, alcohols, carbonyls",
+                  "Raman spectroscopy: Classical and quantum theories, Stokes and anti-Stokes lines, Rule of mutual exclusion"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "UV-Visible Spectroscopy (10 Classes)",
+                "topics": [
+                  "Franck-Condon principle, electronic transitions, singlet/triplet states, fluorescence and phosphorescence",
+                  "Chromophore, auxochrome, bathochromic/hypsochromic shifts; Woodward-Fieser rules for dienes and α,β-unsaturated carbonyls"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "NMR Spectroscopy (1H and 13C NMR) (10 Classes)",
+                "topics": [
+                  "Theory of NMR, chemical shift, factors affecting chemical shift, spin-spin coupling, splitting of signals, Nuclear Overhauser Effect (NOE)"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-11-lab",
+            "code": "MJ-11 Lab",
+            "name": "Chemistry Practical - MJ 11 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Colorimetry & Semimicro Analysis",
+                "topics": [
+                  "Verification of Beer-Lambert Law and concentration determination of unknown dyes/metal ions colorimetrically",
+                  "Qualitative semimicro analysis of mixtures containing 3 anions and 3 cations with interfering radicals"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 6,
+        "papers": [
+          {
+            "id": "chm-mj-12",
+            "code": "MJ-12",
+            "name": "Inorganic Chemistry - III",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Lee, J.D., Concise Inorganic Chemistry, ELBS",
+              "Cotton, F.A. & Wilkinson, G., Advanced Inorganic Chemistry, Wiley",
+              "Huheey, J.E., Inorganic Chemistry, Prentice Hall"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Transition Elements & Important Compounds (20 Classes)",
+                "topics": [
+                  "General characteristics: electronic configuration, colour, variable valency, magnetic and catalytic properties, complexation",
+                  "Stability of oxidation states, Latimer and Ebsworth diagrams; Chemistry of 3d metals (Cr, Fe, Co, Ni, Cu); Peroxo compounds of Cr, KMnO4, K2Cr2O7, Nitroprusside"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Lanthanides and Actinides (10 Classes)",
+                "topics": [
+                  "Electronic configuration, oxidation states, color, spectra and magnetic behavior; Lanthanide contraction and consequences",
+                  "Separation of lanthanides (ion-exchange method) and actinides"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Organometallic Compounds (10 Classes)",
+                "topics": [
+                  "Classification based on bond type, hapticity of ligands; 18-electron rule for metal carbonyls",
+                  "Synthesis, structures (VBT and MO), and π-acceptor bonding with synergic effect in metal carbonyls"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Organic Reagents in Inorganic Analysis (5 Classes)",
+                "topics": [
+                  "Role and applications of DMG, 8-Hydroxyquinoline, Cupferron, α-Nitroso-β-Naphthol, EDTA, 2,4-DNP"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-12-lab",
+            "code": "MJ-12 Lab",
+            "name": "Chemistry Practical - MJ 12 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Spectrophotometry & Complexometric Analysis",
+                "topics": [
+                  "UV-Vis absorbance spectra of KMnO4 and K2Cr2O7; Determination of λmax and transition energy",
+                  "Gravimetric and complexometric estimation of Ni using DMG, Co using α-Nitroso-β-Naphthol, Cu using CuSCN, and Water hardness by EDTA"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-13",
+            "code": "MJ-13",
+            "name": "Organic Chemistry - III",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Morrison, R.T. & Boyd, R.N., Organic Chemistry, Pearson",
+              "Acheson, R.M., Introduction to the Chemistry of Heterocyclic Compounds, John Wiley",
+              "Bansal, R.K., Heterocyclic Chemistry, New Age"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Nitrogen Containing Functional Groups (10 Classes)",
+                "topics": [
+                  "Nitro compounds, nitriles, isonitriles; Amines: Basicity trends, Gabriel phthalimide synthesis, Carbylamine reaction, Hofmann exhaustive methylation",
+                  "Distinction of 1°, 2°, 3° amines using Hinsberg reagent and HNO2; Diazonium salts preparation and synthetic applications"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Polynuclear Hydrocarbons (5 Classes)",
+                "topics": [
+                  "Structure, synthesis, structural elucidation and reactions of Naphthalene, Phenanthrene and Anthracene"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Heterocyclic Compounds (15 Classes)",
+                "topics": [
+                  "Aromaticity and synthesis of Furan, Pyrrole (Paal-Knorr, Knorr), Thiophene, Pyridine (Hantzsch synthesis)",
+                  "Indole (Fischer, Madelung synthesis), Quinoline (Skraup, Friedländer), Isoquinoline (Bischler-Napieralski)"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Alkaloids & Terpenoids (15 Classes)",
+                "topics": [
+                  "Natural occurrence, isolation, Hofmann degradation; Structural elucidation of Nicotine, Atropine, Papaverine",
+                  "Isoprene and special isoprene rule; Structure, synthesis and industrial uses of Citral, α-Terpineol, Camphor"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-13-lab",
+            "code": "MJ-13 Lab",
+            "name": "Chemistry Practical - MJ 13 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Preparations & Natural Products Isolation",
+                "topics": [
+                  "Preparation of methyl orange dye; Extraction of caffeine from tea leaves",
+                  "Analysis of carbohydrates (aldoses vs ketoses, reducing vs non-reducing sugars)",
+                  "Synthesis of acetanilide from aniline"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-14",
+            "code": "MJ-14",
+            "name": "Physical Chemistry - IV",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Atkins, P.W. & De Paula, J., Physical Chemistry, Oxford University Press",
+              "Castellan, G.W., Physical Chemistry, Narosa",
+              "Levine, I.N., Physical Chemistry, Tata McGraw Hill"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Phase Equilibria (10 Classes)",
+                "topics": [
+                  "Gibbs Phase Rule derivation for reactive and nonreactive systems; Clausius-Clapeyron equation",
+                  "One-component systems (H2O, S, CO2); Two-component solid-liquid systems: Eutectic, congruent/incongruent melting, solid solutions; Nernst distribution law"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Chemical Kinetics (15 Classes)",
+                "topics": [
+                  "Order and molecularity, differential and integral rate laws for zero, 1st, 2nd and fractional order reactions; Temperature dependence (Arrhenius equation)",
+                  "Kinetics of opposing, parallel, and consecutive reactions; Collision theory and activated complex theory of reaction rates"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Surface Chemistry and Catalysis (15 Classes)",
+                "topics": [
+                  "Physisorption and Chemisorption; Freundlich, Langmuir (derivation), BET isotherm (multilayer adsorption)",
+                  "Homogeneous and heterogeneous catalysis, enzyme catalysis (Michaelis-Menten mechanism), acid-base catalysis"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Photochemistry (5 Classes)",
+                "topics": [
+                  "Laws of photochemistry, quantum yield, Jablonski diagram (fluorescence, phosphorescence, intersystem crossing)",
+                  "Photochemical kinetics (H2-Br2 reaction), photosensitization, quenching, chemiluminescence"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-14-lab",
+            "code": "MJ-14 Lab",
+            "name": "Chemistry Practical - MJ 14 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Kinetics & Polarimetry",
+                "topics": [
+                  "Rate constant of first-order acid hydrolysis of ester by HCl",
+                  "Kinetics of Iodide-persulphate reaction by initial rate method",
+                  "Saponification of ethyl acetate; Specific rotation determination by polarimetry"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-15",
+            "code": "MJ-15",
+            "name": "Bio-Organic and Bio-Inorganic Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Lippard, S.J. & Berg, J.M., Principles of Bioinorganic Chemistry",
+              "Nelson, D.L. & Cox, M.M., Lehninger Principles of Biochemistry, W.H. Freeman",
+              "Huheey, J.E., Inorganic Chemistry, Prentice Hall"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Bio-Inorganic Chemistry (10 Classes)",
+                "topics": [
+                  "Role of metal ions in biology: Na+/K+ pump, Mg2+ in chlorophyll, Ca2+ in blood clotting, bones",
+                  "Carbonic anhydrase, carboxypeptidase; Metal toxicity (Hg, Pb, Cd, As) and chelation therapy; Iron storage and transport (Haemoglobin, Myoglobin)"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Carbohydrates (15 Classes)",
+                "topics": [
+                  "Classification; Monosaccharides: Constitution and configuration of glucose and fructose, mutarotation, osazone formation, Haworth projections",
+                  "Killiani-Fischer synthesis, Ruff degradation, interconversions of aldoses and ketoses"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Amino Acids, Peptides and Proteins (10 Classes)",
+                "topics": [
+                  "Zwitterions, isoelectric point, electrophoresis; Peptide primary structure determination (end group analysis)",
+                  "Solid-phase peptide synthesis; Primary, secondary, tertiary, quaternary protein structures and denaturation"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Nucleic Acids & Co-Enzymes (10 Classes)",
+                "topics": [
+                  "Nucleosides, nucleotides, structure of DNA and RNA, double helix, genetic code, replication, transcription, translation",
+                  "Co-enzymes (NAD+, NADP+, FAD, Coenzyme A); Enzyme immobilization techniques and applications"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-15-lab",
+            "code": "MJ-15 Lab",
+            "name": "Chemistry Practical - MJ 15 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Biochemical Qualitative Assays",
+                "topics": [
+                  "Ninhydrin test (α-amino acids), Biuret test (peptide bond), Xanthoproteic test (aromatic amino acids)",
+                  "Millon test (phenolic OH), Sakaguchi test (Arginine), Hopkins-Cole test (Tryptophan)",
+                  "Nitroprusside test (-SH group), Osazone formation test for carbohydrates"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 7,
+        "papers": [
+          {
+            "id": "chm-mj-16",
+            "code": "MJ-16",
+            "name": "Research Methodology",
+            "paperType": "Major (MJC)",
+            "credits": 4,
+            "theoryMarks": 75,
+            "internalMarks": 25,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "recommendedBooks": [
+              "Dean, J.R., Practical Skills in Chemistry, Prentice Hall",
+              "Hibbert, D.B. & Gooding, J.J., Data Analysis for Chemistry, Oxford University Press",
+              "Harris, D.C., Quantitative Chemical Analysis, W.H. Freeman"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Scope of Research (6 Lectures)",
+                "topics": [
+                  "Research process: Problem definition, literature review, hypothesis formulation, experimental design, data collection and analysis, reporting"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Literature Survey & Databases (12 Lectures)",
+                "topics": [
+                  "Primary, secondary, tertiary sources; Digital databases: Google Scholar, Scopus, SciFinder; Boolean & proximity search techniques",
+                  "Research metrics: Impact factor, h-index, i10-index, Altmetrics, citation indices"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Scientific Communication & Thesis Writing (12 Lectures)",
+                "topics": [
+                  "Technical documents: Research papers, reviews, short communications, patents, thesis layout and chapter plans",
+                  "Chemical structure drawing (ChemDraw), referencing styles (APA, ACS), reference managers (Mendeley, Zotero), oral presentations"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Research Ethics, Plagiarism & IPR (10 Lectures)",
+                "topics": [
+                  "COPE guidelines, conflict of interest, plagiarism detection tools (Turnitin, Urkund)",
+                  "Intellectual Property Rights (IPR), patents, copyrights, trademarks, TRIPS compliance"
+                ]
+              },
+              {
+                "unitNumber": 5,
+                "title": "Statistical Analysis for Chemists (10 Lectures)",
+                "topics": [
+                  "Data processing, hypothesis testing, t-test, F-test, chi-square test, ANOVA, regression and correlation using Excel/Origin/SPSS"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-17",
+            "code": "MJ-17",
+            "name": "Green Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.3 MB",
+            "recommendedBooks": [
+              "Ahluwalia, V.K. & Kidwai, M.R., New Trends in Green Chemistry, Anamaya Publishers",
+              "Anastas, P.T. & Warner, J.C., Green Chemistry: Theory and Practice, Oxford University Press",
+              "Prasad, R.K., Quantum Mechanics, Wiley Eastern"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Principles & Metrics of Green Chemistry (15 Classes)",
+                "topics": [
+                  "Twelve principles of green chemistry with real-world industrial cases",
+                  "Green metrics: atom economy, E-factor, reaction mass efficiency; Water and ionic liquids as green solvents"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Catalysis & Non-traditional Methodologies (10 Classes)",
+                "topics": [
+                  "Solid acid/base catalysis, phase transfer catalysis, biocatalysis; Microwave synthesis, sonochemistry, photochemistry, multi-component reactions"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Green Synthesis & Nanomaterials (5 Classes)",
+                "topics": [
+                  "Designing green synthesis routes, green nanoscience and biosynthesis of nanoparticles"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Elementary Quantum Mechanics (15 Classes)",
+                "topics": [
+                  "Postulates of Quantum Mechanics, Hermitian operators, Schrödinger wave equation for particle in 1D and 3D boxes, degeneracy, zero-point energy, H-atom wavefunctions"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-17-lab",
+            "code": "MJ-17 Lab",
+            "name": "Chemistry Practical - MJ 17 Lab (Green Chemistry)",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Green Chemical Preparations",
+                "topics": [
+                  "Acetanilide and adipic acid green synthesis; Base-catalysed aldol synthesis of dibenzalacetone",
+                  "Solventless aldol condensation, green Diels-Alder [4+2] cycloaddition, microwave-assisted Knoevenagel reaction"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-18",
+            "code": "MJ-18",
+            "name": "Polymer Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Billmeyer, F.W., Textbook of Polymer Science, Wiley",
+              "Gowariker, V.R., Viswanathan, N.V., Sreedhar, J., Polymer Science, New Age",
+              "Odian, G., Principles of Polymerization, John Wiley"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Polymeric Structure & Properties (15 Classes)",
+                "topics": [
+                  "Linear, branched, crosslinked polymers; Molecular weights (Mn, Mw, Mv) and polydispersity index (PDI)",
+                  "Crystallinity, glass transition temperature (Tg) and melting temperature (Tm); Volumetric and PVT properties"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Polymerization Chemistry (10 Classes)",
+                "topics": [
+                  "Bulk, solution, suspension, and emulsion polymerization techniques; Ziegler-Natta stereospecific catalysts and metallocenes"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Characterization of Polymers (5 Classes)",
+                "topics": [
+                  "Molecular weight determination by light scattering, osmometry, viscometry, Gel Permeation Chromatography (GPC); Spectroscopy (FTIR, NMR)"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Frontier Areas: Conducting & Biodegradable Polymers (15 Classes)",
+                "topics": [
+                  "Conducting polymers: Polyanilines, polyacetylenes, polythiophenes; Biodegradable polymers: PLA, PGA, PHA, cellulose derivatives in biomedical devices",
+                  "Rubber vulcanization and synthetic fibres (polyamides, PVC)"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-18-lab",
+            "code": "MJ-18 Lab",
+            "name": "Chemistry Practical - MJ 18 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Polymer Syntheses & Characterization",
+                "topics": [
+                  "Free radical solution polymerization of styrene/MMA; Preparation of phenol-formaldehyde resin",
+                  "Molecular weight determination by Ostwald/Ubbelohde viscometry; Ion-exchange resin capacity"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-amj-1",
+            "code": "AMJ-1",
+            "name": "Advanced Inorganic Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 4,
+            "theoryMarks": 75,
+            "internalMarks": 25,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Shriver & Atkins, Inorganic Chemistry, Oxford University Press",
+              "Cotton, F.A. & Wilkinson, G., Advanced Inorganic Chemistry, John Wiley",
+              "Huheey, J.E., Inorganic Chemistry, Harper & Row"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Nuclear Chemistry (20 Classes)",
+                "topics": [
+                  "Nuclear stability: Mass defect, binding energy, N/P ratio, liquid drop model, shell model; Fission, fusion, tracer techniques, GM counter, radiation safety"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Metal-Ligand Equilibria in Solution (15 Classes)",
+                "topics": [
+                  "Stepwise and overall stability constants, chelate and macrocyclic effects; Job method and Bjerrum spectrophotometric determination"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Metal π-Complexes (10 Classes)",
+                "topics": [
+                  "Metal carbonyls and nitrosyls, vibrational spectra, dinitrogen and dioxygen complexes, tertiary phosphine ligands"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Organometallics (Zeise Salt, Ferrocene, Metal Alkyls) (15 Classes)",
+                "topics": [
+                  "Zeise salt preparation and structure; Metal alkyls (methyl lithium tetramer, trialkyl aluminium dimer, Ziegler-Natta catalysis); Ferrocene structure and aromatic reactions"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-rc-1",
+            "code": "RC-1",
+            "name": "Research Proposal - Planning & Techniques",
+            "paperType": "Major (MJC)",
+            "credits": 4,
+            "theoryMarks": 50,
+            "internalMarks": 25,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.2 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Research Proposal Framework & Literature Review",
+                "topics": [
+                  "Formulating origin of problem, background backdrop, identifying knowledge gap, research questions and objectives"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Key Proposal Methodologies & Sampling",
+                "topics": [
+                  "Hypothesis formulation, sampling techniques, master chart preparation, statistical instruments, delimitations of study"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Dissertation Layout & Referencing Scheme",
+                "topics": [
+                  "Chapterization plan: Introduction, Review of literature, Methodology, Data analysis, Findings; Bibliography and citation formats"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "semester": 8,
+        "papers": [
+          {
+            "id": "chm-mj-19",
+            "code": "MJ-19",
+            "name": "Analytical Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Mendham, J., Vogel's Quantitative Chemical Analysis, Pearson",
+              "Skoog, D.A., Holler, F.J., Principles of Instrumental Analysis, Cengage",
+              "Christian, G.D., Analytical Chemistry, John Wiley"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Qualitative and Quantitative Data Analysis (5 Classes)",
+                "topics": [
+                  "Sampling, evaluation of analytical data, errors, precision, accuracy, F-test, Q-test, t-test, rejection of data, confidence intervals"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Spectroscopy (UV-Vis & IR) (15 Classes)",
+                "topics": [
+                  "Beer-Lambert validity; IR instrumentation, sample handling, isotope effects; UV-Vis quantitative metal estimation, Job method of continuous variation"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Thermal & Electroanalytical Methods (10 Classes)",
+                "topics": [
+                  "Thermogravimetry (TG and DTG), Ca and Mg estimation; Potentiometric and conductometric titrations, pKa determinations"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Separation Techniques & Chromatography (15 Classes)",
+                "topics": [
+                  "Solvent extraction: Batch, continuous, counter-current mechanisms; Chromatography: LC, GLC, TLC, HPLC, elution and displacement development"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-19-lab",
+            "code": "MJ-19 Lab",
+            "name": "Chemistry Practical - MJ 19 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Chromatography, Extractions & Spectrophotometry",
+                "topics": [
+                  "Paper chromatographic separation of Fe3+, Al3+, Cr3+ and glucose/fructose; TLC of plant extracts",
+                  "Solvent extraction of Ni-DMG complex; Flame photometry of Na, Ca, Li in drinks",
+                  "Soil pH, BOD, COD, and dissolved oxygen determination in water samples"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-20",
+            "code": "MJ-20",
+            "name": "Nanochemistry",
+            "paperType": "Major (MJC)",
+            "credits": 3,
+            "theoryMarks": 60,
+            "internalMarks": 15,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Rao, C.N.R., Muller, A., Cheetham, A.K., The Chemistry of Nanomaterials, Wiley-VCH",
+              "Cao, G., Nanostructures and Nanomaterials, Imperial College Press",
+              "Pradeep, T., Textbook of Nanoscience and Nanotechnology, Tata McGraw Hill"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Introduction to Nanoscience (10 Classes)",
+                "topics": [
+                  "Nanostructures and nanomaterials classification (clusters, colloids, nanoparticles, wires, tubes, quantum dots); Surface-to-volume ratio calculations"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Nanomaterials & Carbon Nanotubes (10 Classes)",
+                "topics": [
+                  "Gold and silver metallic nanoparticles, carbon nanotubes (SWCNT, MWCNT), inorganic nanowires and nanocomposites"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Size Dependent Properties & Confinement (5 Classes)",
+                "topics": [
+                  "Quantum confinement, electronic and optical properties, blue shift and red shift, magnetic and catalytic properties"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Synthesis of Nanomaterials (10 Classes)",
+                "topics": [
+                  "Top-down and bottom-up approaches, self-assembly, solvothermal processes, 1D architectural control"
+                ]
+              },
+              {
+                "unitNumber": 5,
+                "title": "Material Characterization Techniques (10 Classes)",
+                "topics": [
+                  "Electron microscopy (SEM, TEM), XRD diffraction patterns, photoelectron spectroscopy (XPS), Zeta-potential; Environmental remediation applications"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-mj-20-lab",
+            "code": "MJ-20 Lab",
+            "name": "Chemistry Practical - MJ 20 Lab",
+            "paperType": "Practical / Lab",
+            "credits": 1,
+            "theoryMarks": 25,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.0 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Nanoparticle Syntheses & Characterization",
+                "topics": [
+                  "Preparation of gold and silver metallic nanoparticles",
+                  "Synthesis and characterization of ZnO nanoparticles and bimetallic systems"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-amj-2",
+            "code": "AMJ-2",
+            "name": "Advanced Organic Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 4,
+            "theoryMarks": 75,
+            "internalMarks": 25,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Jerry March, Advanced Organic Chemistry, John Wiley",
+              "Carey, F.A. & Sundberg, R.J., Advanced Organic Chemistry, Plenum",
+              "Nasipuri, D., Stereochemistry of Organic Compounds, New Age"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Enzymes & Inhibition Kinetics (15 Classes)",
+                "topics": [
+                  "Enzyme classification, mechanism of action (trypsin model), competitive, uncompetitive, and non-competitive inhibition"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Bio-Energetics & Metabolism (15 Classes)",
+                "topics": [
+                  "Calorific value of food; ATP currency, glycolysis, fermentation, Krebs cycle; Metabolic interrelationships of proteins, fats, carbs"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Reagents in Organic Synthesis (15 Classes)",
+                "topics": [
+                  "Triacetoxyborohydride, Lead tetraacetate, PIDA, DCC, DMDO oxidation, DMSO (Swern), SeO2, PCC, OsO4, BuLi, Grignard, 9-BBN"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Supramolecular Chemistry (15 Classes)",
+                "topics": [
+                  "Host-guest compounds, crown ethers, cryptands, lock-and-key analogy, chelate effect, preorganisation, non-covalent interactions"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-amj-3",
+            "code": "AMJ-3",
+            "name": "Advanced Physical Chemistry",
+            "paperType": "Major (MJC)",
+            "credits": 4,
+            "theoryMarks": 75,
+            "internalMarks": 25,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.4 MB",
+            "recommendedBooks": [
+              "Atkins, P.W. & De Paula, J., Physical Chemistry, Oxford University Press",
+              "McQuarrie, D.A., Molecular Thermodynamics, Viva Books",
+              "Levine, I.N., Physical Chemistry, Tata McGraw Hill"
+            ],
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Vectors & Operators in Quantum Chemistry (15 Classes)",
+                "topics": [
+                  "Scalar and vector products; Linear, Hermitian operators, setting up momentum and angular momentum operators, Ladder operators"
+                ]
+              },
+              {
+                "unitNumber": 2,
+                "title": "Matrix Algebra & Group Theory (20 Classes)",
+                "topics": [
+                  "Matrix algebra: Unitary, orthogonal, Hermitian matrices, similarity transformation, diagonalization, Point groups of molecules"
+                ]
+              },
+              {
+                "unitNumber": 3,
+                "title": "Fugacity and Activity (5 Classes)",
+                "topics": [
+                  "Fugacity, fugacity coefficient and determination, Activity and activity coefficients"
+                ]
+              },
+              {
+                "unitNumber": 4,
+                "title": "Statistical Thermodynamics & Dipole Moments (20 Classes)",
+                "topics": [
+                  "Thermodynamic probability, Maxwell-Boltzmann, Bose-Einstein, Fermi-Dirac statistics, Bose-Einstein condensation",
+                  "Dipole moment, Mossotti-Clausius equation, Diamagnetism, Paramagnetism, Ferromagnetism"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "chm-rc-2",
+            "code": "RC-2",
+            "name": "Research Dissertation & Project Thesis",
+            "paperType": "Major (MJC)",
+            "credits": 8,
+            "theoryMarks": 200,
+            "internalMarks": 0,
+            "pdfUrl": "https://www.pup.ac.in/download/public_html/download/UG-PG-Syllabus/Chemistry.pdf",
+            "fileSize": "1.5 MB",
+            "units": [
+              {
+                "unitNumber": 1,
+                "title": "Research Project, Experimental Investigation & Defense",
+                "topics": [
+                  "Literature review, laboratory experimental methodology, data analysis and interpretation",
+                  "Project Thesis submission (100 Marks), Synopsis Assessment (50 Marks), and Comprehensive Viva-Voce Defense (50 Marks)"
+                ]
               }
             ]
           }
