@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { useTheme } from '@/context/ThemeContext';
-import { Sun, Moon, ChevronDown, GraduationCap, MessageCircle, Share2 } from 'lucide-react';
+import { Sun, Moon, ChevronDown, GraduationCap, Share2 } from 'lucide-react';
+import { WhatsAppIcon } from './OfficialBrandIcons';
 
 interface AppHeaderProps {
   currentUniversity: string;
   onOpenUniversityModal: () => void;
-  onOpenCommunityModal: () => void;
+  onOpenCommunityModal?: () => void;
 }
 
 export const AppHeader: React.FC<AppHeaderProps> = ({
@@ -56,15 +57,17 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
 
         {/* Right Actions */}
         <div className="flex items-center gap-2">
-          {/* Join WhatsApp Button */}
-          <button
-            onClick={onOpenCommunityModal}
+          {/* Join WhatsApp Direct Link */}
+          <a
+            href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 rounded-lg bg-[#25D366] px-2.5 py-1.5 text-xs font-bold text-white shadow-xs hover:bg-[#20ba59] active:scale-95 transition"
-            title="Join Patna University WhatsApp Group"
+            title="Join Patna University WhatsApp Channel"
           >
-            <MessageCircle className="h-3.5 w-3.5 fill-current" />
+            <WhatsAppIcon className="h-4 w-4" />
             <span className="hidden sm:inline">PU WhatsApp</span>
-          </button>
+          </a>
 
           {/* Dark / Light Mode Toggle */}
           <button

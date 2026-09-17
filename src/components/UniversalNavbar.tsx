@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { SideDrawer } from './SideDrawer';
-import { CommunityModal } from './CommunityModal';
 
 interface UniversalNavbarProps {
   pageTitle?: string;
@@ -16,7 +15,6 @@ export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
   onOpenMenu,
 }) => {
   const [internalDrawerOpen, setInternalDrawerOpen] = useState(false);
-  const [isCommunityOpen, setIsCommunityOpen] = useState(false);
 
   const handleMenuClick = () => {
     if (onOpenMenu) {
@@ -59,19 +57,13 @@ export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
         </div>
       </header>
 
-      {/* Built-in Drawer & Community Modal for subpages */}
+      {/* Built-in Drawer for subpages */}
       {!onOpenMenu && (
-        <>
-          <SideDrawer
-            isOpen={internalDrawerOpen}
-            onClose={() => setInternalDrawerOpen(false)}
-            onOpenCommunity={() => setIsCommunityOpen(true)}
-          />
-          <CommunityModal
-            isOpen={isCommunityOpen}
-            onClose={() => setIsCommunityOpen(false)}
-          />
-        </>
+        <SideDrawer
+          isOpen={internalDrawerOpen}
+          onClose={() => setInternalDrawerOpen(false)}
+          onOpenCommunity={() => window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank')}
+        />
       )}
     </>
   );

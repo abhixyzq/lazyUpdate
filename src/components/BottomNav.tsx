@@ -8,7 +8,7 @@ export type MainTabType = 'updates' | 'syllabus' | 'results' | 'community';
 interface BottomNavProps {
   activeTab: MainTabType;
   setActiveTab: (tab: MainTabType) => void;
-  onOpenCommunity: () => void;
+  onOpenCommunity?: () => void;
   onOpenDrawer: () => void;
 }
 
@@ -49,7 +49,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({
 
       {/* 3. Messages / WhatsApp */}
       <button
-        onClick={onOpenCommunity}
+        onClick={onOpenCommunity || (() => window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank'))}
         className="flex flex-col items-center justify-center flex-1 py-1 text-slate-400 hover:text-indigo-600 dark:text-slate-500 dark:hover:text-indigo-400 transition"
       >
         <MessageSquare className="h-5 w-5 stroke-2" />

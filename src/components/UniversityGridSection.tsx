@@ -31,14 +31,12 @@ interface UniversityGridSectionProps {
   universityTitle?: string;
   onSelectAction?: (action: ApnaActionType) => void;
   onInstagram?: () => void;
-  onWhatsApp: () => void;
+  onWhatsApp?: () => void;
 }
 
 export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
   universityTitle = 'PATNA UNIVERSITY',
   onSelectAction,
-  onInstagram,
-  onWhatsApp,
 }) => {
   const cards = [
     { id: 'pyqs' as ApnaActionType, label: 'PYQs', href: '/pyqs', icon: <PYQsIcon /> },
@@ -99,13 +97,15 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
           </a>
 
           {/* Authentic Official WhatsApp Logo */}
-          <button
-            onClick={onWhatsApp}
+          <a
+            href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 py-2.5 px-3 text-xs font-bold text-emerald-800 shadow-xs hover:bg-emerald-100 active:scale-98 transition"
           >
             <WhatsAppIcon className="h-4 w-4 shrink-0" />
             <span>WhatsApp Channel</span>
-          </button>
+          </a>
         </div>
 
       </div>

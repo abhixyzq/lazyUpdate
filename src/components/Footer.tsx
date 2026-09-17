@@ -1,10 +1,11 @@
 'use client';
 
 import React from 'react';
-import { ExternalLink, Send, MessageCircle, ShieldCheck } from 'lucide-react';
+import { ExternalLink, Send, ShieldCheck } from 'lucide-react';
+import { WhatsAppIcon } from './OfficialBrandIcons';
 
 interface FooterProps {
-  onOpenCommunity: () => void;
+  onOpenCommunity?: () => void;
   onOpenUniversityModal: () => void;
 }
 
@@ -40,12 +41,14 @@ export const Footer: React.FC<FooterProps> = ({
               Dedicated, lightning-fast notice and study resource portal for Patna University students. Direct official circulars, zero spam.
             </p>
             <div className="flex items-center gap-2 pt-1">
-              <button
-                onClick={onOpenCommunity}
-                className="flex items-center gap-1 rounded-lg bg-[#25D366] px-2.5 py-1 text-[11px] font-bold text-white shadow-2xs hover:bg-[#20ba59]"
+              <a
+                href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 rounded-lg bg-[#25D366] px-2.5 py-1 text-[11px] font-bold text-white shadow-2xs hover:bg-[#20ba59] active:scale-95 transition"
               >
-                <MessageCircle className="h-3.5 w-3.5" /> PU WhatsApp
-              </button>
+                <WhatsAppIcon className="h-3.5 w-3.5" /> PU WhatsApp
+              </a>
               <button
                 onClick={onOpenUniversityModal}
                 className="flex items-center gap-1 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-2.5 py-1 text-[11px] font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100"

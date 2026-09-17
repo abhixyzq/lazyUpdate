@@ -11,7 +11,6 @@ import { TimeTableModal } from '@/components/TimeTableModal';
 import { HolidaysCalendarModal } from '@/components/HolidaysCalendarModal';
 import { useRouter } from 'next/navigation';
 import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
-import { CommunityModal } from '@/components/CommunityModal';
 import { SideDrawer } from '@/components/SideDrawer';
 import { ImportantLinksModal, ImportantLinkCategory } from '@/components/ImportantLinksModal';
 
@@ -31,7 +30,6 @@ export default function ApnaUniversityHomePage() {
   const [isAttendanceOpen, setIsAttendanceOpen] = useState(false);
   const [isTimeTableOpen, setIsTimeTableOpen] = useState(false);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-  const [isCommunityOpen, setIsCommunityOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [selectedNotice, setSelectedNotice] = useState<PUNotice | null>(null);
   const [activeImportantLink, setActiveImportantLink] = useState<ImportantLinkCategory | null>(null);
@@ -91,15 +89,13 @@ export default function ApnaUniversityHomePage() {
       {/* 2. Golden Alert / Notification Strip */}
       <AlertStrip
         text={`Join ${appTitle} whatsapp channel for latest circulars & dates... more`}
-        onJoin={() => setIsCommunityOpen(true)}
+        onJoin={() => window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank')}
       />
 
       {/* 3. Main University Section Container with 3x3 Grid & Social Buttons */}
       <UniversityGridSection
         universityTitle={universityTitle}
         onSelectAction={handleAction}
-        onInstagram={() => setIsCommunityOpen(true)}
-        onWhatsApp={() => setIsCommunityOpen(true)}
       />
 
       {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
@@ -188,12 +184,6 @@ export default function ApnaUniversityHomePage() {
         onClose={() => setSelectedNotice(null)}
       />
 
-      {/* Community WhatsApp / Instagram Modal */}
-      <CommunityModal
-        isOpen={isCommunityOpen}
-        onClose={() => setIsCommunityOpen(false)}
-      />
-
       {/* Important Links (Internships, Scholarships, Anti-Ragging) Modal */}
       <ImportantLinksModal
         category={activeImportantLink}
@@ -209,7 +199,7 @@ export default function ApnaUniversityHomePage() {
           setIsDrawerOpen(false);
         }}
         onOpenCommunity={() => {
-          setIsCommunityOpen(true);
+          window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank');
           setIsDrawerOpen(false);
         }}
       />
