@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { ApnaHeader } from '@/components/ApnaHeader';
 import { AlertStrip } from '@/components/AlertStrip';
 import { UniversityGridSection, ApnaActionType } from '@/components/UniversityGridSection';
-import { PromoAppCard } from '@/components/PromoAppCard';
 import { SGPACalculatorModal } from '@/components/SGPACalculatorModal';
 import { AttendanceCalcModal } from '@/components/AttendanceCalcModal';
 import { TimeTableModal } from '@/components/TimeTableModal';
@@ -104,19 +103,7 @@ export default function ApnaUniversityHomePage() {
         onWhatsApp={() => setIsCommunityOpen(true)}
       />
 
-      {/* 4. Secondary Promo Card: Apna GATE / AI Practice */}
-      <PromoAppCard
-        onDownloadApp={() => setIsCommunityOpen(true)}
-        onSelectTag={(tag) => {
-          if (tag.includes('CalC')) {
-            setIsSGPAOpen(true);
-          } else {
-            router.push('/syllabus');
-          }
-        }}
-      />
-
-      {/* 5. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
+      {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
       <div className="mx-auto max-w-xl px-3 pt-3">
         <div className="rounded-3xl border border-blue-900/80 bg-[#091a36] p-3.5 sm:p-4 shadow-xl">
           <div className="flex items-center justify-between pb-2.5 px-1 border-b border-blue-900/50 mb-2.5">
