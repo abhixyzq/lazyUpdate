@@ -1,0 +1,2152 @@
+{
+  "id": "bsc-statistics",
+  "name": "B.Sc. Statistics (CBCS 4-Year FYUGP)",
+  "shortCode": "Statistics",
+  "stream": "Science",
+  "faculty": "Science",
+  "icon": "📊",
+  "degree": "4-Year FYUGP CBCS",
+  "totalSemesters": 8,
+  "description": "Proposed course structure and uniform syllabus of Bachelor of Art/Science- Statistics based on CBCS for 4-year undergraduate courses in Universities of Bihar, as per UGC regulations and NEP 2020. Submitted to Raj Bhavan, Bihar.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "stat-mjc-1",
+          "code": "MJC-1",
+          "name": "Descriptive Statistics (वर्णनात्मक सांख्यिकी)",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Statistical Methods: Definition and scope of Statistics, concepts of population and sample.",
+                "Data: quantitative and qualitative, variables, frequency and non frequency.",
+                "Scales of measurement: nominal, ordinal, interval and ratio.",
+                "Presentation of data: tabular and graphical including histogram, ogives and box plot."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Measures of Central Tendency: mathematical and positional, their relative merits and demerits.",
+                "Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation.",
+                "Moments, absolute moments, factorial moments, skewness and kurtosis, Sheppard's corrections."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Bivariate data: Definition, scatter diagram, Karl Pearson product moment correlation coefficient and its properties, rank correlation, partial and multiple correlation (3 variables only).",
+                "Simple linear regression, properties of regression coefficients, principle of least squares and fitting of polynomials and exponential curves."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Theory of Attributes: Notations, Dichotomy, classes & class frequency, consistency of data and its conditions of independence of attributes, criterion of independence, Association of attributes, Yule's coefficient of association."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Miller, Irwin and Miller, Marylees (2006): John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Mood, A.M. Graybill, F.A. and Boes, D.C. (2007): Introduction to the Theory of Statistics, Tata McGraw-Hill Pub. Co. Ltd.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mjc-1-p",
+          "code": "MJC-1 (P)",
+          "name": "Descriptive Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-1 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 1 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-1",
+          "code": "MIC-1",
+          "name": "Introduction to Statistics (सांख्यिकी का परिचय)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Statistical Methods: Definition and scope of Statistics, concepts of population and sample. Data: quantitative and qualitative, variables, frequency and non frequency. Scales of measurement- nominal, ordinal, Presentation of data: tabular and graphical including histogram, and ogives."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Measures of Central Tendency: mathematical and positional. Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation. Moments, skewness and kurtosis."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Bivariate data: Definition, scatter diagram, Karl Pearson product moment correlation coefficient and its properties, rank correlation."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Simple linear regression, properties of regression coefficients, principle of least square."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Miller, Irwin and Miller, Marylees (2006): John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Mood, A.M. Graybill, F.A. and Boes, D.C. (2007): Introduction to the Theory of Statistics, Tata McGraw-Hill Pub. Co. Ltd.",
+            "Gupta, S.C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mic-1-p",
+          "code": "MIC-1 (P)",
+          "name": "Introduction to Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-1 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 1 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mdc-1",
+          "code": "MDC-1",
+          "name": "Basics of Statistics (सांख्यिकी की मूल बातें)",
+          "paperType": "Multidisciplinary (MDC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Definition and scope of Statistics, concepts of population and sample. Data: quantitative and qualitative, variables, frequency and non-frequency. Presentation of data: tabular and graphical including bar, line diagram and pie chart."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Histogram and ogives. Measures of Central Tendency: mean, median, mode, geometric and harmonic mean and their properties."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation, Moments, skewness and kurtosis"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Bivariate data: Scatter diagram, Karl Pearson product moment correlation coefficient and its properties. Simple linear regression."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Miller, Irwin and Miller, Marylees (2006): John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Mood, A.M. Graybill, F.A. and Boes, D.C. (2007): Introduction to the Theory of Statistics, Tata McGraw-Hill Pub. Co. Ltd.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mdc-1-p",
+          "code": "MDC-1 (P)",
+          "name": "Basics of Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MDC-1 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MDC- 1 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-aec-1",
+          "code": "AEC-1",
+          "name": "MIL (select from the basket)",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-sec-1",
+          "code": "SEC-1",
+          "name": "Skill Enhancement Course (select from the basket)",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-vac-1",
+          "code": "VAC-1",
+          "name": "Value Added Course (select from the basket)",
+          "paperType": "Value Added (VAC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "papers": [
+        {
+          "id": "stat-mjc-2",
+          "code": "MJC-2",
+          "name": "Theory of Probability (प्रायिकता का सिद्धांत)",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Probability: Introduction, random experiments, sample space, events and algebra of events.",
+                "Definitions of Probability - classical, statistical, and axiomatic., laws of addition and multiplication, independence and mutual independence of events, theorem of total probability, conditional probability, Baye's theorem and its applications."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f) and cumulative density function (c.d.f) with illustrations and properties of random variables, univariate transformations with illustrations.",
+                "Two dimensional random variables: discrete and continuous type, joint, marginal, and conditional p.m.f, p.d.f., and c.d.f., independence of variables, bivariate transformations with illustrations."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Mathematical Expectation and Generating Functions: Expectation of univariate and bivariate random variables and its properties.",
+                "Moments, moment generating function (m.g.f) and characteristic function (c.f.), Uniqueness and inversion theorems (without proof) along with applications, Conditional expectation."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Standard probability distributions: Binomial, Poisson, geometric, negative binomial, hyper-geometric, uniform, normal, exponential, Cauchy, beta and gamma along with their properties."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Hogg, R.V., Tanis, E.A. and Rao J.M. (2009): Probability and Statistical Inference, Pearson Education, New Delhi.",
+            "Miller, Irwin and Miller, Marylees (2006): John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Myer, P.L. (1970): Introductory Probability and Statistical Applications, Oxford & IBH Publishing, New Delhi",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mjc-2-p",
+          "code": "MJC-2 (P)",
+          "name": "Theory of Probability - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-2 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 2 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-2",
+          "code": "MIC-2",
+          "name": "Probability Theory and Probability Distributions (प्रायिकता सिद्धांत और प्रायिकता वितरण)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Probability: Introduction, random experiments, sample space, events and algebra of events. Definitions of Probability - classical, statistical, and axiomatic, laws of addition and multiplication, independence and conditional probability"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f), cumulative density function (c.d.f), and its properties, univariate transformations with illustrations."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Expectation of random variable with properties and moments, moment generating function (m.g.f) and characteristic function (c.f)."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Standard probability distributions: Binomial, Poisson, geometric, uniform, normal, exponential, and gamma along with their properties."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Hogg, R.V., Tanis, E.A. and Rao J.M. (2009), Probability and Statistical Inference, Pearson Education, New Delhi.",
+            "Miller, Irwin and Miller, Marylees (2006), John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Myer, P.L. (1970), Introductory Probability and Statistical Applications, Oxford & IBH Publishing, New Delhi",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mic-2-p",
+          "code": "MIC-2 (P)",
+          "name": "Probability Theory and Probability Distributions - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-2 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 2 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mdc-2",
+          "code": "MDC-2",
+          "name": "Introductory Probability (प्रारंभिक प्रायिकता)",
+          "paperType": "Multidisciplinary (MDC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Probability: Introduction, random experiments, sample space, events and algebra of events. Definitions of Probability - classical, statistical, and axiomatic, laws of addition and multiplication, independence and conditional probability"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f), cumulative density function (c.d.f), and its properties."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Expectation of random variable with properties and moments, moment generating function (m.g.f)."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Standard probability distributions: Binomial, Poisson, normal distribution and its properties."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Hogg, R.V., Tanis, E.A. and Rao J.M. (2009), Probability and Statistical Inference, Pearson Education, New Delhi.",
+            "Miller, Irwin and Miller, Marylees (2006), John E. Freund's Mathematical Statistics with Applications, Pearson Education, Asia.",
+            "Myer, P.L. (1970), Introductory Probability and Statistical Applications, Oxford & IBH Publishing, New Delhi",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mdc-2-p",
+          "code": "MDC-2 (P)",
+          "name": "Introductory Probability - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MDC-2 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MDC- 2 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-aec-2",
+          "code": "AEC-2",
+          "name": "Environmental Science",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Unit 1: Introduction to environmental studies",
+              "topics": [
+                "Multidisciplinary nature of environmental studies Scope and importance; Concept of sustainability and sustainable development."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Unit 2: Ecosystems",
+              "topics": [
+                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession. Case studies of the following ecosystems: a) Forest ecosystem b) Grassland ecosystem c) Desert ecosystem d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Unit 3: Natural Resources: Renewable and Non-renewable Resources",
+              "topics": [
+                "Land resources and land-use change; Land degradation, soil erosion and desertification.",
+                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations.",
+                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems.",
+                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity.",
+                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Unit 4: Biodiversity and Conservation",
+              "topics": [
+                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots.",
+                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions.",
+                "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity.",
+                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value."
+              ]
+            },
+            {
+              "unitNumber": 5,
+              "title": "Unit 5: Environmental Pollution",
+              "topics": [
+                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Nuclear hazards and human health risks",
+                "Solid waste management: Control measures of urban and industrial waste.",
+                "Pollution case studies"
+              ]
+            },
+            {
+              "unitNumber": 6,
+              "title": "Unit 6: Environmental Policies & Practices",
+              "topics": [
+                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act. International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD).",
+                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context."
+              ]
+            },
+            {
+              "unitNumber": 7,
+              "title": "Unit 7: Human Communities and the Environment",
+              "topics": [
+                "Human population growth: Impacts on environment, human health and welfare.",
+                "Resettlement and rehabilitation of project affected persons; case studies.",
+                "Disaster management: floods, earthquake, cyclones and landslides.",
+                "Water conservation, rain water harvesting, watershed management.",
+                "Wasteland reclamation.",
+                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan.",
+                "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-sec-2",
+          "code": "SEC-2",
+          "name": "Skill Enhancement Course (select from the basket)",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-vac-2",
+          "code": "VAC-2",
+          "name": "Value Added Course (select from the basket)",
+          "paperType": "Value Added (VAC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "papers": [
+        {
+          "id": "stat-mjc-3",
+          "code": "MJC-3",
+          "name": "Numerical Analysis & Sampling Distribution (संख्यात्मक विश्लेषण और नमूनाकरण वितरण)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Finite difference: Different types of operators and their properties, fundamental theorem of finite differences, missing terms (equal intervals), factorial notation.",
+                "Assumptions and uses of interpolation. Gregory Newton's Forward and Backward Interpolation formula for equal intervals."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Interpolation with arguments at unequal intervals divided differences Δ, theorems on divided differences, Newton's divided difference formula, Lagrange's interpolation formula."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Parameter and statistic, sampling distribution of a statistics, standard errors of sample mean, sample variance and sample proportion.",
+                "Null and alternative hypotheses, level of significance, Type I and Type II errors and critical region.",
+                "Large sample tests, Test of proportion, mean and standard deviation (For one and two-sample)."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Exact sampling distribution: Definition and derivation of p.d.f. of χ2, Student's t and Fishers F-distribution, with their mean, variance, m.g.f., and cumulant generating function, additive property and limiting form of χ2, t, F distribution.",
+                "Relationship between them and their applications."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Saxena, H. C. (2010): Calculus of finite differences, S. Chand & Sons, New Delhi.",
+            "Sastery S.S.(2012): Introductory Methods of Numerical Analysis, Prentice Hall of India"
+          ]
+        },
+        {
+          "id": "stat-mjc-3-p",
+          "code": "MJC-3 (P)",
+          "name": "Numerical Analysis & Sampling Distribution - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-3 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 3 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-4",
+          "code": "MJC-4",
+          "name": "Real Analysis and Matrices (वास्तविक विश्लेषण और आव्यूह)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Real Analysis: Representation of real numbers as points on the line and the set of real numbers as complete ordered field. Bounded and unbounded sets, neighborhood sand limit points, Superimum and infimum, open and closed sets, sequences and their convergence.",
+                "Infinite series, positive termed series and their convergence, Comparison test, D'Alembert's ratio test, Cauchy's nth root test, Raabe's test."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Review of limit, continuity and differentiability, uniform Continuity and boundedness of a function. Rolle's and Lagrange's Mean Value theorems.",
+                "Taylor's theorem with lagrange's and Cauchy's form of remainder (without proof). Taylor's and Maclaurin's series expansions."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Different types of Matrices. Algebra of Matrices. Adjoint and inverse of a Matrix, different ways of finding inverse, partitioning, characteristic equation and Calay-Hamilton theorem."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Elementary row and column operations. Elementary matrices, equivalent matrices, rank of a matrix, invariance of rank through elementary row/column operations, rank of sum and product of matrices and related theorems. Solution of a system of linear equations."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Mallk, S. C. and Arora S. (1994): Mathematical Analysis, Wiley eastern Limited, New Age International limited, New Delhi.",
+            "Narayan, S.(1987): A Course of Mathematical Analysis, S. Chand & co.(Pvt.) Ltd., New Delhi.",
+            "Narayan, S and Mittal, P.K. (2010): A textbook of Matrices, S. Chand & Sons, New Delhi.",
+            "Vasishtha, A.R., and Vasishtha A.K.(1991): Matrices, Krishna Prakashan Media."
+          ]
+        },
+        {
+          "id": "stat-mjc-4-p",
+          "code": "MJC-4 (P)",
+          "name": "Real Analysis and Matrices - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-4 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 4 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-3",
+          "code": "MIC-3",
+          "name": "Introductory Numerical Analysis & Sampling Distribution (प्रारंभिक संख्यात्मक विश्लेषण और नमूनाकरण वितरण)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Finite difference: Forward difference operation Δ, The shift operator E, properties of operator Δ and E. Assumptions and uses of interpolation. Gregory Newton's Forward and Backward Interpolation formula for equal intervals."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Interpolation with arguments at unequal intervals divided differences Δ, divided differences table, Newton's divided difference formula, Lagrange's interpolation formula"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "General Quadrature Formula for equidistant ordinates, Trapezoidal Rule, Simpson's one-third rule, Simpson's three-eight rule."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Exact sampling distribution: Definition of χ2, Student's t and Fishers F-distribution, mean, variance, and m.g.f., of χ2, t, F distribution."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Saxena, H. C. (2010): Calculus of finite differences, S. Chand & Sons, New Delhi.",
+            "Sastry S.S.(2012): Introductory Methods of Numerical Analysis, Prentice Hall of India."
+          ]
+        },
+        {
+          "id": "stat-mic-3-p",
+          "code": "MIC-3 (P)",
+          "name": "Introductory Numerical Analysis & Sampling Distribution - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-3 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 3 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mdc-3",
+          "code": "MDC-3",
+          "name": "Basics of Sampling Distribution and Test of Significance (नमूनाकरण वितरण और महत्व के परीक्षण की मूल बातें)",
+          "paperType": "Multidisciplinary (MDC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Population and Sample, Parameter and statistic, sampling distribution of a statistic, sampling distribution of sample mean, standard errors of sample mean, sample variance and sample proportion.",
+                "Null and alternative hypotheses, level of significance, Type I and Type II errors and critical region."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Large sample tests, standard normal variate, testing of mean and proportion, testing of difference of two mean and two proportion."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Exact sampling distribution: χ2, Student's t and Fishers F-distribution and their mean and variance."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Application of Exact sampling distributions: testing of one sample mean, two sample mean, pair t-test, testing of variance and goodness of fit."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Saxena, H. C. (2010): Calculus of finite differences, S. Chand & Sons, New Delhi.",
+            "Sastery S.S.(2012): Introductory Methods of Numerical Analysis, Prentice Hall of India."
+          ]
+        },
+        {
+          "id": "stat-mdc-3-p",
+          "code": "MDC-3 (P)",
+          "name": "Basics of Sampling Distribution and Test of Significance - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MDC-3 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MDC- 3 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-sec-3",
+          "code": "SEC-3",
+          "name": "Skill Enhancement Course (select from the basket)",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-aec-3",
+          "code": "AEC-3",
+          "name": "Disaster Risk Management",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction on Disaster Different Types of Disaster",
+              "topics": [
+                "A) Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
+                "B) Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc. Causes, effects and practical examples for all disasters."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Risk and Vulnerability Analysis",
+              "topics": [
+                "1. Risk : Its concept and analysis",
+                "2. Risk Reduction",
+                "3. Vulnerability : Its concept and analysis",
+                "4. Strategic Development for Vulnerability Reduction"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Disaster Preparedness and Response Preparedness",
+              "topics": [
+                "1. Disaster Preparedness: Concept and Nature",
+                "2. Disaster Preparedness Plan",
+                "3. Prediction, Early Warnings and Safety Measures of Disaster.",
+                "4. Role of Information, Education, Communication, and Training,",
+                "5. Role of Government, International and NGO Bodies.",
+                "6. Role of IT in Disaster Preparedness",
+                "7. Role of Engineers on Disaster Management."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Response",
+              "topics": [
+                "1. Disaster Response: Introduction",
+                "2. Disaster Response Plan",
+                "3. Communication, Participation, and Activation of Emergency Preparedness Plan",
+                "4. Search, Rescue, Evacuation and Logistic Management",
+                "5. Role of Government, International and NGO Bodies",
+                "6. Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
+                "7. Relief and Recovery",
+                "8. Medical Health Response to Different Disasters",
+                "10. Role of Educational Institute."
+              ]
+            },
+            {
+              "unitNumber": 5,
+              "title": "Rehabilitation, Reconstruction and Recovery",
+              "topics": [
+                "1. Reconstruction and Rehabilitation as a Means of Development.",
+                "2. Damage Assessment",
+                "3. Post Disaster effects and Remedial Measures.",
+                "4. Creation of Long-term Job Opportunities and Livelihood Options,",
+                "5. Disaster Resistant House Construction",
+                "6. Sanitation and Hygiene",
+                "7. Education and Awareness,",
+                "8. Dealing with Victims' Psychology,",
+                "9. Long-term Counter Disaster Planning"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "papers": [
+        {
+          "id": "stat-mjc-5",
+          "code": "MJC-5",
+          "name": "Statistical Inference (सांख्यिकीय अनुमान)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Estimation: Problem of estimation, Properties of a good estimator - unbiasedness, consistency, efficiency and sufficiency.",
+                "Factorization theorem. Cramer-Rao inequality and MVB estimators (statement and applications), Minimum variance unbiased estimator (MVUE), Rao-Blackwell theorem."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Methods of Estimation: Method of moments, method of maximum likelihood and minimum chi square, properties of maximum likelihood estimators and minimum chi square (without proof)."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Confidence interval: Confidence interval for mean, proportion and variance.",
+                "Bayesian Estimation: Loss function, prior distribution, Bayes theorem, posterior distributions, Bayes risk, Bayes principle, Bayes estimators."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Testing of hypothesis: Null and alternative hypotheses, simple and composite hypotheses.",
+                "Type-I and Type-II errors, critical region, level of significance, size and power of a test, best critical region, most powerful test, uniformly most powerful test, Neyman Pearson Lemma (statement and applications to construct most powerful test).",
+                "Likelihood ratio test, properties of likelihood ratio tests (without proof)."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Rohatgi V. K. and Saleh, A.K. Md. E (2009): An Introduction to Probability and Statistics, John Wiley and Sons.",
+            "Mood A.M, Graybill F.A. and Boes D.C.: Introduction to the Theory of Statistics, McGraw Hill."
+          ]
+        },
+        {
+          "id": "stat-mjc-5-p",
+          "code": "MJC-5 (P)",
+          "name": "Statistical Inference - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-5 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 5 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-6",
+          "code": "MJC-6",
+          "name": "Non- Parametric and Sequential Analysis (गैर-पैरामीट्रिक और अनुक्रमिक विश्लेषण)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Nonparametric Tests: Introduction and Concept, advantages of Non-parametric tests over parametric tests. Concept of a distribution free statistic."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Single sample and two samples Nonparametric tests: Wald-Wolfzman Run test, Test for randomness based on total number of runs, Sign tests, Median test, Mann-Whitney U-test."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Sequential Analysis: Sequential probability ratio test (SPRT) for simple vs simple hypotheses. Fundamental relations among α, β, A and B, determination of A and B in practice."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Wald's fundamental identity and the derivation of operating characteristics (OC) and average sample number (ASN) functions, examples based on normal, Poisson, binomial and exponential distributions."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Rohatgi V. K. and Saleh, A.K. Md. E (2009): An Introduction to Probability and Statistics, John Wiley and Sons.",
+            "Mood A.M., Graybill F.A. and Ross D.C.: Introduction to the Theory of Statistics, McGraw Hill."
+          ]
+        },
+        {
+          "id": "stat-mjc-6-p",
+          "code": "MJC-6 (P)",
+          "name": "Non- Parametric and Sequential Analysis - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-6 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 6 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-7",
+          "code": "MJC-7",
+          "name": "Demography & Vital Statistics (जनसांख्यिकी और महत्वपूर्ण सांख्यिकी)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Population Theories: Coverage and content errors in demographic data, use of balancing equations and Chandrasekharan-Deming formula to check completeness of registration data.",
+                "Adjustment of age data, use of Myer and UN indices, Population composition, dependency ratio."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Introduction and sources of collecting data on vital statistics, errors in census and registration data.",
+                "Measurement of population, rate and ratio of vital events.",
+                "Measurements of Mortality: Crude Death Rate (CDR), Specific Death Rate (SDR), Infant Mortality, Rate (IMR) and Standardized Death Rates."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Stationary and Stable population, Central Mortality Rates and Force of Mortality.",
+                "Life(Mortality) Tables: Assumption, description, construction of Life Tables and Uses of Life Tables."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Abridged Life Tables; Concept and construction of abridged life tables by Reed-Merrell method, Greville's method and King's Method.",
+                "Measurements of Fertility: Crude Birth Rate (CBR), General Fertility Rate (GFR), Specific Fertility Rate (SFR) and Total Fertility Rate (TFR).",
+                "Measurement of Population Growth: Crude rates of natural increase, Pearl's Vital Index, Gross Reproduction Rate (GRR) and Net Reproduction Rate (NNR)."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. II, The World Press, Kolkata.",
+            "Mukhopadhyay P. (1999): Applied Statistics, Books and Allied (P) Ltd.",
+            "Biswas, S. (1988): Stochastic Processes in Demography & Application, Wiley Eastern Ltd."
+          ]
+        },
+        {
+          "id": "stat-mjc-7-p",
+          "code": "MJC-7 (P)",
+          "name": "Demography & Vital Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-7 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 7 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-4",
+          "code": "MIC-4",
+          "name": "Introduction to Statistical Inference (सांख्यिकीय अनुमान का परिचय)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Introduction of Statistical inference, Estimation: Problem of estimation, Properties of a good estimator - unbiasedness, consistency, efficiency and sufficiency.",
+                "Methods of Estimation: Method of moments, method of maximum likelihood, properties of maximum likelihood estimators (without proof)."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Testing of hypothesis: Null and alternative hypotheses, simple and composite hypotheses, Type-I and Type-II errors, critical region, level of significance, size and power of a test, best critical region"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Test based on t-distribution, Test of single mean, difference of two means, paired t-test, test for sample correlation coefficient.",
+                "Test based on chi square-distribution and F distribution for the equality of two population variance."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Non-Parametric tests: Sign test for median, Sign test for symmetry, Wilcoxon two-sample test."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Rohatgi V. K. and Saleh, A.K. Md. E (2009): An Introduction to Probability and Statistics, John Wiley and Sons.",
+            "Mood A.M, Graybill F.A. and Boes D.C: Introduction to the Theory of Statistics, McGraw Hill."
+          ]
+        },
+        {
+          "id": "stat-mic-4-p",
+          "code": "MIC-4 (P)",
+          "name": "Introduction to Statistical Inference - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-4 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 4 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-aec-4",
+          "code": "AEC-4",
+          "name": "NCC/NSS/NGOs/Social Service/ Scout and Guide/Sports",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "papers": [
+        {
+          "id": "stat-mjc-8",
+          "code": "MJC-8",
+          "name": "Survey Sampling & Indian Official Statistics (सर्वेक्षण नमूनाकरण और भारतीय आधिकारिक सांख्यिकी)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Concept of population and sample, complete enumeration versus sampling, sampling and non-sampling errors.",
+                "Types of sampling: non-probability and probability sampling, basic principle of sample survey, simple random sampling with and without replacement, definition and procedure of selecting a sample, estimates of: population mean, total and proportion, variances of these estimates, estimates of their variances and sample size determination."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Stratified random sampling: Technique, estimates of population mean and total, variances of these estimates, proportional and optimum allocations and their comparison with SRS,",
+                "Systematic Sampling: Technique, estimates of population mean and total, variances of these estimates (N=nxk). Comparison of systematic sampling with SRS and stratified sampling."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Ratio and regression method of estimation, estimate of population mean and total (of SRS of large size) and its variance.",
+                "Cluster sampling (equal clusters only) estimation of population mean and its variance, comparison (with and without randomly formed clusters). Relative efficiency of cluster sampling with SRS in terms of intra class correlation."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Present official statistical system in India, Method of collection of official statistics, their reliability and limitations.",
+                "Principle publications containing data on the topics such as population, industry and finance. Various official agencies responsible for data collection and their main function."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Cochran W.G. (1984): Sampling Techniques, Wiley Eastern.",
+            "Sukhatme, P.V., Sukhatme, B.V. Sukhatme, S. Aso, C. (1984). Sampling Theories of Survey With Application, IOWA State University Press and Indian Society of Agricultural Statistics.",
+            "Sen Amartya (2003): Poverty and Famines, Oxford University PLess, New Delhi.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mjc-8-p",
+          "code": "MJC-8 (P)",
+          "name": "Survey Sampling & Indian Official Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-8 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 8 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-9",
+          "code": "MJC-9",
+          "name": "Statistical Computing using C and R (C और R का उपयोग करके सांख्यिकीय कंप्यूटिंग)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Components of C language, structure of a C program, Data types, variable declaration, Local, Global, Parametric variables, Assignment of Variables, Numeric, Character, Real and String constants, Different operators, Basic input/output."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Control statements: conditional statements, if - else, nesting of if - else, else if ladder, switch statements, loops in c, for, while, do - while loops, break, continue, exit ( ), goto and label declarations, One dimensional two dimensional and multidimensional arrays. Storage classes: Automatic variables, External variables, Static variables."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Functions: classification of functions, functions definition and declaration, assessing a function, return statement, parameter passing in functions. Pointers (concept only).",
+                "Structure: Definition and declaration; structure (initialization) comparison of structure variable; Array of structures: array within structures, structures within structures, passing structures to functions; Unions accessing a union member, union of structure, initialization of a union variable, uses of union. Introduction to linked list."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "R language: Basics of R, naming a data object, R is a functional language, creation of data objects including vectors, factors, matrices, list and data frames. Extraction from a data object.",
+                "Data Visualization: Grammar of graphics, ggplot2, scatter plot, line graphs, histograms, boxplots, bar plots, density plots. Statistics Methods and techniques in R."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Dalagurusamy, E. Programming in ANSI C, 6th Edition, Tata McGraw Hill.",
+            "Dalgaard P.. Introductory Statistics with R, Springer",
+            "Braun W J, and Murdoch D J: A First Course in Statistical Programming with R. Cambridge University Press. New York."
+          ]
+        },
+        {
+          "id": "stat-mjc-9-p",
+          "code": "MJC-9 (P)",
+          "name": "Statistical Computing using C and R - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-9 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 9 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-5",
+          "code": "MIC-5",
+          "name": "Introduction to Survey Sampling and Indian Official Statistics (सर्वेक्षण नमूनाकरण और भारतीय आधिकारिक सांख्यिकी का परिचय)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Concept of population and sample, complete enumeration versus sampling, sampling and non-sampling errors. Types of sampling: non-probability and probability sampling, basic principle of sample survey, simple random sampling with and without replacement."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Stratified random sampling: Technique, estimates of population mean and total, variances of these estimates, proportional and optimum allocations."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Systematic Sampling: Technique, estimates of population mean and total, Comparison of systematic sampling with SRS and stratified sampling. Cluster sampling"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Present official statistical system in India, Method of collection of official statistics, their reliability and limitations."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Cochran W.G. (1984): Sampling Techniques, Wiley Eastern.",
+            "Sukhatme, P.V., Sukhatme, B.V. Sukhatme, S. Asok, C. (1984). Sampling Theories of Survey With Application, IOWA State University Press and Indian Society of Agricultural Statistics.",
+            "Sen Amartya (2003): Poverty and Famines, Oxford University PLess, New Delhi.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mic-5-p",
+          "code": "MIC-5 (P)",
+          "name": "Introduction to Survey Sampling and Indian Official Statistics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-5 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 5 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-6",
+          "code": "MIC-6",
+          "name": "Basics of Statistical Computing Using C and R (C और R का उपयोग करके सांख्यिकीय कंप्यूटिंग की मूल बातें)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Components of C language, structure of a C program, Data types, variable declaration, Local, Global, Parametric variables, Assignment of Variables, Numeric, Character, Real and String constants, Different operators, Basic input/output."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Control statements: conditional statements, if - else, nesting of if - else, switch statements, loops in c, for, while, do - while loops, break, continue, exit ( ), goto and label declarations, One dimensional two dimensional."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Functions: classification of functions, functions definition and declaration, assessing a function, return statement. Pointers (concept only). Structure: Definition and declaration; structure (initialization) comparison of structure variable."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "R language: Basics of R, naming a data object, creation of data objects including vectors, matrices, list and data frames. Extraction from a data object.",
+                "Data Visualization: Grammar of graphics, scatter plot, line graphs, histograms, boxplots, bar plots; Statistics Methods and techniques in R."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Balagurusamy, E. Programming in ANSI C, 6th Edition, Tata McGraw Hill.",
+            "Dalgaard P.. Introductory Statistics with R, Springer",
+            "Braun W J, and Murdoch D J: A First Course in Statistical Programming with R. Cambridge University Press. New York."
+          ]
+        },
+        {
+          "id": "stat-mic-6-p",
+          "code": "MIC-6 (P)",
+          "name": "Basics of Statistical Computing Using C and R - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-6 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 6 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-int-1",
+          "code": "INT-1",
+          "name": "Internship",
+          "paperType": "Internship",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "papers": [
+        {
+          "id": "stat-mjc-10",
+          "code": "MJC-10",
+          "name": "Linear Models (रैखिक मॉडल)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Gauss-Markov set-up: Theory of linear estimation, Estimability of linear parametric functions, Method of least squares, Gauss-Markov theorem, Estimation of error variance."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Regression analysis: Simple regression analysis, Estimation and hypothesis testing in case of simple and multiple regression models, Concept of model matrix and its use in estimation."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Analysis of variance: Definitions of fixed, random and mixed effect models, analysis of variance and covariance in one-way classified data for fixed effect models, analysis of variance and covariance in two-way classified data with one observation per cell for fixed effect models."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Model checking: Prediction from a fitted model, Violation of usual assumptions concerning normality, Homoscedasticity and collinearity, Diagnostics using quantile-quantile plots, Ridge Regression."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Weisberg, S. (2005): Applied Linear Regression. Wiley.",
+            "Wu, C. F. J. And Hamada, M. (2009): Experiments, Analysis, and Parameter Design Optimization, John Wiley.",
+            "Renchner, A. C. And Schaalje, G. B. (2008): Linear Models in Statistics, John Wiley and Sons.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mjc-10-p",
+          "code": "MJC-10 (P)",
+          "name": "Linear Models - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-10 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 10 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-11",
+          "code": "MJC-11",
+          "name": "Design of Experiments (प्रयोगों का डिजाइन)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Experimental designs: Role, historical perspective, terminology, experimental error, basic principles- Randomization, replication, local control and uniformity trials"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Analysis of Variance for one way and Two Way Classification.",
+                "Basic designs: Completely Randomized Design (CRD), Randomized Block Design (RBD), Latin Square Design (LSD)- layout, model and statistical analysis and relative efficiency. Missing Plot techniques."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Factorial experiments: advantages, notations and concepts, 2^2, 2^3 ... 2^n factorial experiments, design and analysis. Split Plot Design and Strip Plot Design."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Total and Partial confounding for 2^n (n≤5).",
+                "Analysis of covariance. Analysis of non-orthogonal data. Analysis of missing data."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Cochran, W.G. and Cox, G.M. (1959): Experimental Design. Asia Publishing House.",
+            "Das, M.N. and Giri, N.C. (1986): Design and Analysis of Experiments. Wiley Eastern Ltd.",
+            "Goon, A.M., Gupta, M.K. and Dasgupta, B. (2005): Fundamentals of Statistics. Vol. II, World Press, Kolkata.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mjc-11-p",
+          "code": "MJC-11 (P)",
+          "name": "Design of Experiments - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-11 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 11 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-12",
+          "code": "MJC-12",
+          "name": "Index number & Time Series Analysis (सूचकांक संख्या और समय श्रृंखला विश्लेषण)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Meaning of Index Numbers, Problems in the construction of index numbers, Types of index number, Different formulae, Test of Index numbers, Base shifting and splicing of index numbers, Uses of Index Numbers."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Introduction to times series data, application of time series to various fields, Components of a times series, Decomposition of a time series.",
+                "Trend: Estimation of trend by free hand curve method, method of semi averages, fitting various mathematical curves, and growth curves, Method of moving averages."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Effect of elimination of trend on other components of the time series.",
+                "Seasonal Component: Estimation of seasonal component by Method of simple averages, Ratio to Trend, Ratio to Moving Averages, Depersonalization.",
+                "Cyclic Component: Harmonic Analysis,"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Moving-average (MA) process and Autoregressive (AR) process of orders one and two, Estimation of the parameters of AR (1) and AR (2) - Yule-Walker equations.",
+                "Random Component: Variate component method.",
+                "Forecasting: Exponential smoothing methods, Short term forecasting methods, Stationary Time series: Weak stationarity, autocorrelation function and correlogram of moving average"
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. II, The World Press, Kolkata.",
+            "Kendall M.G. (1976): Time Series, Charles Griffin.",
+            "Chatfield C. (1980): The Analysis of Time Series - An Introduction, Chapman & Hall."
+          ]
+        },
+        {
+          "id": "stat-mjc-12-p",
+          "code": "MJC-12 (P)",
+          "name": "Index number & Time Series Analysis - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-12 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 12 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-7",
+          "code": "MIC-7",
+          "name": "Introduction to Design of Experiments (प्रयोगों के डिजाइन का परिचय)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Experimental designs: Role, historical perspective, terminology, experimental error, basic principles- Randomization, replication and local control."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Analysis of variance for one way and two-way analysis. Fixed and Random effect Model."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Basic designs: Completely Randomized Design (CRD), Randomized Block Design (RBD), Latin Square Design (LSD)- layout, model and statistical analysis."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Factorial experiments: advantages, notations and concepts, 2^2, 2^3 ... 2^n factorial experiments, design and analysis."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Cochran, W.G. and Cox, G.M. (1959): Experimental Design. Asia Publishing House.",
+            "Das, M.N. and Giri, N.C. (1986): Design and Analysis of Experiments. Wiley Eastern Ltd.",
+            "Goon, A.M., Gupta, M.K. and Dasgupta, B. (2005): Fundamentals of Statistics. Vol. II, World Press, Kolkata.",
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi."
+          ]
+        },
+        {
+          "id": "stat-mic-7-p",
+          "code": "MIC-7 (P)",
+          "name": "Introduction to Design of Experiments - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-7 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 7 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-8",
+          "code": "MIC-8",
+          "name": "Basics of Index Number and Time series Analysis (सूचकांक संख्या और समय श्रृंखला विश्लेषण की मूल बातें)",
+          "paperType": "Minor (MIC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Meaning of Index Numbers, Problems in the construction of index numbers, Types of index number, Different formulae, Uses of Index Numbers."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Introduction to times series data, application of time series to various fields, Components of a times series, Decomposition of a time series."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Trend: Estimation of trend by free hand curve method, method of semi averages, fitting various mathematical curves, and growth curves"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Seasonal Component: Estimation of seasonal component by Method of simple averages, Ratio to Trend. Cyclic Component: Harmonic Analysis, Random Component: Variate component method."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Applied Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. II, The World Press, Kolkata.",
+            "Kendall M.G. (1976): Time Series, Charles Griffin.",
+            "Chatfield C. (1980): The Analysis of Time Series -An Introduction, Chapman & Hall."
+          ]
+        },
+        {
+          "id": "stat-mic-8-p",
+          "code": "MIC-8 (P)",
+          "name": "Basics of Index Number and Time series Analysis - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-8 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 8 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "papers": [
+        {
+          "id": "stat-mjc-13",
+          "code": "MJC-13",
+          "name": "Statistical Quality Control (सांख्यिकीय गुणवत्ता नियंत्रण)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Quality: Definition, dimensions of quality, chance and assignable Causes of quality variation. Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Control charts for variables: X-bar & R-chart, X-bar & s-chart.",
+                "Control charts for attributes: np-chart, p-chart, c-chart and u-chart.",
+                "Comparison between control charts for variables and control charts for attributes.",
+                "Analysis of patterns on control chart, estimation of process capability."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Acceptance sampling plan: Principle of acceptance sampling plans. Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation, use and interpretation of Dodge and Romig's sampling inspection plan tables"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Introduction to Six-Sigma: Overview of Six Sigma, Lean Manufacturing and Total Quality Management (TQM). Organizational Structure and Six Sigma training plans- Selection Criteria for Six-Sigma roles and training plans. Voice of customers (VOC): Importance and VOC data collection."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Montgomery, D. C. (2009): Introduction to Statistical Quality Control, Wiley India Pvt. Ltd.",
+            "Montgomery, D. C. and Runger, G.C. (2008): Applied Statistics and Probability for Engineers, 3rd Edition reprint, Wiley India Pvt. Ltd."
+          ]
+        },
+        {
+          "id": "stat-mjc-13-p",
+          "code": "MJC-13 (P)",
+          "name": "Statistical Quality Control - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-13 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 13 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-14",
+          "code": "MJC-14",
+          "name": "Research Methodology (शोध पद्धति)",
+          "paperType": "Major (MJC)",
+          "credits": 5,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mjc-15",
+          "code": "MJC-15",
+          "name": "Multivariate Analysis (बहुभिन्नराशीय विश्लेषण)",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Bivariate Normal Distribution (BVN): p.d.f. of BVN, properties of BVN, marginal and conditional p.d.f. of BVN.",
+                "Multivariate Data: Random Vector: Probability mass/density functions, Distribution function, Mean vector & Dispersion matrix, Marginal & Conditional distributions"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Multivariate Normal distribution and its properties. Sampling distribution for mean vector and variance-covariance matrix. Multiple and partial correlation coefficient and their properties."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Random sampling from multivariate normal distribution, Maximum likelihood estimators of parameters, Distribution of sample mean vector."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Applications of Multivariate Analysis: Discriminant Analysis, Principal Components Analysis and Factor Analysis"
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Anderson, T.W. (2003): An Introduction to Multivariate Statistical Analysis, John Wiley.",
+            "Muirhead, R.J. (1982): Aspects of Multivariate Statistical Theory, John Wiley.",
+            "Kshirsagar, A.M. (1972): Multivariate Analysis, Marcel Dekker.",
+            "Johnson, R.A. and Wichern, D.W. (2007): Applied Multivariate Analysis, Pearson & Prentice Hall."
+          ]
+        },
+        {
+          "id": "stat-mjc-15-p",
+          "code": "MJC-15 (P)",
+          "name": "Multivariate Analysis - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-15 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 15 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-9",
+          "code": "MIC-9",
+          "name": "Introduction to Statistical Quality Control (सांख्यिकीय गुणवत्ता नियंत्रण का परिचय)",
+          "paperType": "Minor (MIC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Quality: Definition, dimensions of quality, chance and assignable Causes of quality variation. Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Control charts for variables: X-bar & R-chart, X-bar & s-chart. Control charts for attributes: np-chart, p-chart, c-chart and u-chart."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Comparison between control charts for variables and control charts for attributes. Analysis of patterns on control chart, estimation of process capability."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Acceptance sampling plan: Principle of acceptance sampling plans. Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gupta, S. C. and Kapoor, V. K. (2020): Fundamentals of Mathematical Statistics, S. Chand & Sons, New Delhi.",
+            "Goon A.M., Gupta M.K. and Dasgupta B. (2002): Fundamentals of Statistics, Vol. I & II, The World Press, Kolkata.",
+            "Montgomery, D. C. (2009): Introduction to Statistical Quality Control, Wiley India Pvt. Ltd.",
+            "Montgomery, D. C. and Runger, G.C. (2008): Applied Statistics and Probability for Engineers, 3rd Edition reprint, Wiley India Pvt. Ltd."
+          ]
+        },
+        {
+          "id": "stat-mic-9-p",
+          "code": "MIC-9 (P)",
+          "name": "Introduction to Statistical Quality Control - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-9 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 9 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "papers": [
+        {
+          "id": "stat-mjc-16",
+          "code": "MJC-16",
+          "name": "Operations Research (संचालन अनुसंधान)",
+          "paperType": "Major (MJC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Convex sets and their properties, Introduction to linear programming problem, solution by graphical method. Simplex method, optimality and unboundedness, artificial variables, two-phase method, Big-M method. Duality, formulation of the dual problem, primal-dual relationships, economic interpretation of the dual"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Transportation problem and its mathematical formulation, north-west-corner method, least cost method and Vogel approximation method for determination of initial basic solution, algorithm for solving transportation problem. Transportation problem as a linear programming problem."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Assignment problem and its mathematical formulation, Hungarian method for solving assignment problem. Assignment problem as a linear programming problem."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Game theory: Rectangular game, pure and mixed strategies, minimax-maximin principle, solution to rectangular game using graphical method, dominance and modified dominance property to reduce the game matrix and solution to rectangular game with mixed strategy."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Hadley, G.,(2002): Linear Programming, Narosa Publishing House, New Delhi.",
+            "Talia, H.A., (2006). Operations Research, An Introduction, Prentice-Hall India.",
+            "Sharma, S.D., (2014): Operations Research, Theory and Application.",
+            "Swarup, K., Gupta, P.K. and Mohan, M.(2019): Operations Research, Sultan Chund und Sun."
+          ]
+        },
+        {
+          "id": "stat-mjc-16-p",
+          "code": "MJC-16 (P)",
+          "name": "Operations Research - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MJC-16 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MJC- 16 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-mic-10",
+          "code": "MIC-10",
+          "name": "Introductory Operations research (प्रारंभिक संचालन अनुसंधान)",
+          "paperType": "Minor (MIC)",
+          "credits": 3,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Convex sets and their properties, Introduction to linear programming problem, solution by graphical method."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Simplex method, optimality and unboundedness, artificial variables, two-phase method, Big-M method."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Duality, formulation of the dual problem, primal-dual relationships, economic interpretation of the dual."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Transportation and Assignment problem and its mathematical formulation."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Hadley, G., (2002): Linear Programming, Narosa Publishing House, New Delhi.",
+            "Taha, H.A., (2006): Operations Research, An Introduction, Prentice- Hall India.",
+            "Sharma, S.D., (2014): Operations Research, Theory and Application.",
+            "Swarup, K., Gupta, P.K. and Mohan, M.(2019): Operations Research, Sultan Chand and Sons"
+          ]
+        },
+        {
+          "id": "stat-mic-10-p",
+          "code": "MIC-10 (P)",
+          "name": "Introductory Operations research - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 1,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Practical Based on Unit 1, 2, 3, and 4 of MIC-10 (T)",
+              "topics": [
+                "Practical Based on Unit 1, 2, 3, and 4 of MIC- 10 (T)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "stat-rp-1",
+          "code": "RP-1",
+          "name": "Research Project/Dissertation",
+          "paperType": "Research Project",
+          "credits": 12,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [],
+          "recommendedBooks": []
+        }
+      ]
+    }
+  ]
+}

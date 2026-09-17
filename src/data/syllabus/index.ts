@@ -19,6 +19,7 @@ import { politicalScienceSyllabus } from './politicalScience';
 import { psychologySyllabus } from './psychology';
 import { sanskritSyllabus } from './sanskrit';
 import { sociologySyllabus } from './sociology';
+import { statisticsSyllabus } from './statistics';
 import { urduSyllabus } from './urdu';
 import { zoologySyllabus } from './zoology';
 
@@ -43,15 +44,16 @@ export {
   psychologySyllabus,
   sanskritSyllabus,
   sociologySyllabus,
+  statisticsSyllabus,
   urduSyllabus,
   zoologySyllabus,
 };
 
 export const puFacultyList = [
-  { id: 'All', name: 'All Sections', count: '22 Subjects' },
+  { id: 'All', name: 'All Sections', count: '23 Subjects' },
   { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
   { id: 'Humanities', name: 'Humanities', count: '7 Subjects' },
-  { id: 'Science', name: 'Science', count: '5 Subjects' },
+  { id: 'Science', name: 'Science', count: '6 Subjects' },
   { id: 'Commerce', name: 'Commerce', count: '3 Groups' },
   { id: 'Vocational', name: 'Vocational & Law', count: '0 Courses' },
   { id: 'Common NEP', name: 'AEC & MDC', count: '0 Modules' },
@@ -89,10 +91,11 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   philosophySyllabus,
   musicSyllabus,
 
-  // Faculty of Science (5 Subjects)
+  // Faculty of Science (6 Subjects)
   physicsSyllabus,
   chemistrySyllabus,
   mathematicsSyllabus,
+  statisticsSyllabus,
   botanySyllabus,
   zoologySyllabus,
 
