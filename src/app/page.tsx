@@ -17,7 +17,7 @@ import { ImportantLinksModal, ImportantLinkCategory } from '@/components/Importa
 
 import { puNoticesData } from '@/data/puNotices';
 import { PUNotice } from '@/types';
-import { X, Award, ExternalLink, ArrowLeft, Briefcase, ShieldAlert, Link2 } from 'lucide-react';
+import { Link2, Briefcase, Award, ShieldAlert } from 'lucide-react';
 
 export default function ApnaUniversityHomePage() {
   // Active university title (default Patna University, switchable)
@@ -34,7 +34,6 @@ export default function ApnaUniversityHomePage() {
   const [isCommunityOpen, setIsCommunityOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [selectedNotice, setSelectedNotice] = useState<PUNotice | null>(null);
-  const [isResultsModalOpen, setIsResultsModalOpen] = useState(false);
   const [activeImportantLink, setActiveImportantLink] = useState<ImportantLinkCategory | null>(null);
 
   // Handle clicks on any of the 9 cards
@@ -47,7 +46,7 @@ export default function ApnaUniversityHomePage() {
         router.push('/syllabus');
         break;
       case 'results':
-        setIsResultsModalOpen(true);
+        router.push('/results');
         break;
       case 'notice':
         setSelectedNotice(puNoticesData[0]);
@@ -182,58 +181,6 @@ export default function ApnaUniversityHomePage() {
         onClose={() => setIsCalendarOpen(false)}
       />
 
-
-
-      {/* Results Modal */}
-      {isResultsModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-xs animate-in fade-in duration-150"
-          onClick={() => setIsResultsModalOpen(false)}
-        >
-          <div
-            className="relative w-full max-w-md rounded-3xl border border-blue-900 bg-[#0a1b38] p-5 sm:p-6 shadow-2xl text-white text-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setIsResultsModalOpen(false)}
-              className="absolute right-4 top-4 rounded-full p-1 text-slate-400 hover:text-white"
-            >
-              <X className="h-5 w-5" />
-            </button>
-
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/20 text-3xl border border-emerald-500/40 mb-3">
-              📊
-            </div>
-
-            <h3 className="text-base font-black text-white">Direct Results & GradeSheets</h3>
-            <p className="text-xs text-slate-300 mt-1">
-              Check SGPA digital marksheet with direct roll number lookup without server crashing.
-            </p>
-
-            <div className="mt-5 space-y-2.5">
-              <a
-                href="https://pup.ac.in/umis/results"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-[#00f0aa] py-2.5 text-xs font-black text-[#052b22] hover:bg-[#00d898]"
-              >
-                <span>Server 1: UMIS Result Portal</span>
-                <ExternalLink className="h-4 w-4" />
-              </a>
-
-              <a
-                href="https://pup.ac.in/umis/results"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl border border-cyan-500/50 bg-[#0c2752] py-2.5 text-xs font-black text-cyan-200 hover:bg-[#123368]"
-              >
-                <span>Server 2: Fast Roll Number Lookup</span>
-                <ExternalLink className="h-4 w-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Notice Detail Sheet */}
       <NoticeDetailSheet
