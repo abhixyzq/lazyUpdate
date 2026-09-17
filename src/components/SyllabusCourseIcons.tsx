@@ -246,10 +246,10 @@ export const SportsCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' })
   </div>
 );
 
-// 28. Common NEP / AEC / MDC: Graduation Cap
+// 28. Common NEP / AEC / MDC: Graduation Cap & Official Mascot
 export const CommonNEPCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' }) => (
-  <div className="flex h-full w-full items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
-    <GraduationCap className={className} strokeWidth={2.2} />
+  <div className="flex h-full w-full items-center justify-center rounded-xl bg-amber-50/50 p-0.5">
+    <img src="/lazy-pu-logo.png" alt="Lazy PU Mascot" className={`${className} object-contain`} />
   </div>
 );
 
