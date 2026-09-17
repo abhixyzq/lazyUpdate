@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { X, CheckCircle, BellRing, Users, ShieldCheck } from 'lucide-react';
-import { WhatsAppIcon, TelegramIcon } from './OfficialBrandIcons';
+import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 
 interface CommunityModalProps {
   isOpen: boolean;
@@ -84,24 +84,24 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
             </span>
           </a>
 
-          {/* Telegram Secondary */}
+          {/* Instagram Secondary */}
           <a
-            href="https://t.me/lazyupdate_pu"
+            href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between rounded-xl bg-[#229ED9] px-4 py-3 font-bold text-white shadow-md hover:bg-[#1f8fc4] active:scale-98 transition group"
+            className="flex items-center justify-between rounded-xl bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] px-4 py-3 font-bold text-white shadow-md hover:opacity-95 active:scale-98 transition group"
           >
             <div className="flex items-center gap-3">
               <div className="rounded-xl bg-white/20 p-1">
-                <TelegramIcon className="h-6 w-6 shrink-0" />
+                <InstagramIcon className="h-6 w-6 shrink-0" />
               </div>
               <div className="text-left">
-                <div className="text-sm font-extrabold leading-tight">Join Telegram Channel</div>
-                <div className="text-[11px] text-blue-100 font-normal">Official Circular PDFs & Discussions</div>
+                <div className="text-sm font-extrabold leading-tight">Follow on Instagram</div>
+                <div className="text-[11px] text-pink-100 font-normal">Campus Updates, Reels & Exam Dates</div>
               </div>
             </div>
             <span className="rounded bg-white/25 px-2 py-0.5 text-xs font-black uppercase">
-              Join
+              Follow
             </span>
           </a>
         </div>

@@ -12,7 +12,7 @@ import {
   ExtrasIcon,
   CalendarIcon,
 } from './ApnaIcons';
-import { TelegramIcon, WhatsAppIcon } from './OfficialBrandIcons';
+import { InstagramIcon, WhatsAppIcon } from './OfficialBrandIcons';
 
 import Link from 'next/link';
 
@@ -30,14 +30,14 @@ export type ApnaActionType =
 interface UniversityGridSectionProps {
   universityTitle?: string;
   onSelectAction?: (action: ApnaActionType) => void;
-  onTelegram: () => void;
+  onInstagram?: () => void;
   onWhatsApp: () => void;
 }
 
 export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
   universityTitle = 'PATNA UNIVERSITY',
   onSelectAction,
-  onTelegram,
+  onInstagram,
   onWhatsApp,
 }) => {
   const cards = [
@@ -87,14 +87,16 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
 
         {/* Dual Social Pill Action Buttons */}
         <div className="grid grid-cols-2 gap-2 pt-3 mt-1">
-          {/* Authentic Official Telegram Logo */}
-          <button
-            onClick={onTelegram}
-            className="flex items-center justify-center gap-2 rounded-xl border border-sky-200 bg-sky-50 py-2.5 px-3 text-xs font-bold text-sky-700 shadow-xs hover:bg-sky-100 active:scale-98 transition"
+          {/* Authentic Official Instagram Logo */}
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center gap-2 rounded-xl border border-pink-200 bg-pink-50/70 py-2.5 px-3 text-xs font-bold text-pink-700 shadow-xs hover:bg-pink-100 active:scale-98 transition"
           >
-            <TelegramIcon className="h-4 w-4 shrink-0" />
-            <span>Telegram Group</span>
-          </button>
+            <InstagramIcon className="h-4 w-4 shrink-0" />
+            <span>Instagram</span>
+          </a>
 
           {/* Authentic Official WhatsApp Logo */}
           <button

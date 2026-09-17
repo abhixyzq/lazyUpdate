@@ -3,7 +3,7 @@
 import React from 'react';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { puCollegesData } from '@/data/puColleges';
-import { TelegramIcon, WhatsAppIcon } from '@/components/OfficialBrandIcons';
+import { InstagramIcon, WhatsAppIcon } from '@/components/OfficialBrandIcons';
 import { ExternalLink, Building2, Globe, Heart, Mail, Share2, ShieldCheck } from 'lucide-react';
 
 export default function ExtrasPage() {
@@ -92,7 +92,7 @@ export default function ExtrasPage() {
           </div>
         </div>
 
-        {/* Student Community & WhatsApp / Telegram */}
+        {/* Student Community & WhatsApp / Instagram */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-3">
           <h3 className="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider">
             Student Community Channels
@@ -113,15 +113,15 @@ export default function ExtrasPage() {
             </a>
 
             <a
-              href="https://telegram.org"
+              href="https://instagram.com"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2.5 rounded-2xl border border-sky-200 bg-sky-50/80 p-3 text-xs font-bold hover:bg-sky-100/70 transition shadow-2xs"
+              className="flex items-center gap-2.5 rounded-2xl border border-pink-200 bg-pink-50/80 p-3 text-xs font-bold hover:bg-pink-100/70 transition shadow-2xs"
             >
-              <TelegramIcon className="h-5 w-5 shrink-0" />
+              <InstagramIcon className="h-5 w-5 shrink-0" />
               <div>
-                <div className="text-xs font-black text-sky-950">Telegram</div>
-                <div className="text-[10px] text-sky-800 font-semibold">Join Group</div>
+                <div className="text-xs font-black text-slate-900">Instagram</div>
+                <div className="text-[10px] text-pink-700 font-semibold">Follow Page</div>
               </div>
             </a>
           </div>

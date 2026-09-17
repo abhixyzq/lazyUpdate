@@ -98,7 +98,7 @@ export default function ApnaUniversityHomePage() {
       <UniversityGridSection
         universityTitle={universityTitle}
         onSelectAction={handleAction}
-        onTelegram={() => setIsCommunityOpen(true)}
+        onInstagram={() => setIsCommunityOpen(true)}
         onWhatsApp={() => setIsCommunityOpen(true)}
       />
 
@@ -188,7 +188,7 @@ export default function ApnaUniversityHomePage() {
         onClose={() => setSelectedNotice(null)}
       />
 
-      {/* Community WhatsApp / Telegram Modal */}
+      {/* Community WhatsApp / Instagram Modal */}
       <CommunityModal
         isOpen={isCommunityOpen}
         onClose={() => setIsCommunityOpen(false)}

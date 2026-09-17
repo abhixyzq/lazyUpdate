@@ -1,22 +1,19 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   X,
-  Building2,
-  ExternalLink,
-  MessageCircle,
-  Send,
   Share2,
   CheckCircle2,
-  Mail,
-  Info,
   ShieldCheck,
+  MessageSquareHeart,
+  Star,
   ChevronRight,
-  GraduationCap
+  Info,
+  Heart,
 } from 'lucide-react';
-import { WhatsAppIcon, TelegramIcon } from './OfficialBrandIcons';
-import { puCollegesData } from '@/data/puColleges';
+import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 
 interface SideDrawerProps {
   isOpen: boolean;
@@ -28,11 +25,8 @@ interface SideDrawerProps {
 export const SideDrawer: React.FC<SideDrawerProps> = ({
   isOpen,
   onClose,
-  onSelectCollege,
-  onOpenCommunity,
 }) => {
   const [copiedShare, setCopiedShare] = useState(false);
-  const [feedbackSent, setFeedbackSent] = useState(false);
 
   if (!isOpen) return null;
 
@@ -41,14 +35,14 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
       navigator
         .share({
           title: 'Lazy PU - Patna University Student Portal',
-          text: 'Check Patna University Syllabus, PYQs, Notices, Attendance & SGPA Calculator on Lazy PU!',
-          url: window.location.origin,
+          text: 'Check Patna University Syllabus, Notices, Attendance & SGPA Calculator on Lazy PU!',
+          url: typeof window !== 'undefined' ? window.location.origin : '',
         })
         .catch(() => {});
     } else if (typeof navigator !== 'undefined') {
       navigator.clipboard.writeText(window.location.origin);
       setCopiedShare(true);
-      setTimeout(() => setCopiedShare(false), 2000);
+      setTimeout(() => setCopiedShare(false), 2200);
     }
   };
 
@@ -56,14 +50,14 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
     <div className="fixed inset-0 z-50 flex">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/80 backdrop-blur-xs animate-in fade-in duration-200"
+        className="fixed inset-0 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
         onClick={onClose}
       />
 
       {/* Drawer Panel - Clean Light Mode */}
       <div className="relative z-10 flex h-full w-[85%] max-w-sm flex-col bg-white border-r border-slate-200 text-slate-900 shadow-2xl animate-in slide-in-from-left duration-200">
         
-        {/* Drawer Header with Logo & Identity */}
+        {/* 1. Header with Logo & Close */}
         <div className="relative border-b border-slate-100 bg-slate-50/80 p-5">
           <button
             onClick={onClose}
@@ -77,174 +71,176 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             <img
               src="/lazy-pu-logo.png"
               alt="Lazy PU Logo"
-              className="h-14 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
             <div>
-              <span className="inline-block rounded-md bg-blue-50 border border-blue-200 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-blue-700">
-                Official Student Portal
-              </span>
-              <p className="mt-1 text-xs text-slate-800 font-bold">
-                Patna University
-              </p>
-              <p className="text-[10px] text-slate-500">
-                No Login Required • Open Access
+              <h2 className="text-sm font-black text-slate-900 leading-tight">
+                Lazy PU
+              </h2>
+              <p className="text-[11px] font-semibold text-slate-500">
+                Patna University Companion
               </p>
             </div>
           </div>
         </div>
 
-        {/* Drawer Content */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 space-y-5 text-xs">
+        {/* 2. Drawer Scrollable Body */}
+        <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4 text-xs">
           
-          {/* Section 1: Constituent Colleges */}
+          {/* Socials: WhatsApp Channel & Instagram */}
           <div>
-            <div className="flex items-center justify-between mb-2 px-1">
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 flex items-center gap-1.5">
-                <Building2 className="h-3.5 w-3.5 text-blue-600" />
-                CONSTITUENT COLLEGES
-              </span>
-              <span className="text-[10px] font-bold text-slate-400">
-                PU Campuses
-              </span>
-            </div>
-
-            <div className="space-y-1">
-              {puCollegesData.filter(c => c.id !== 'all').map((college) => (
-                <button
-                  key={college.id}
-                  onClick={() => {
-                    if (onSelectCollege) onSelectCollege(college.id);
-                    onClose();
-                  }}
-                  className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2 text-left font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:shadow-xs transition group"
-                >
-                  <div className="truncate pr-2">
-                    <div className="text-xs text-slate-900 truncate">{college.name}</div>
-                    <div className="text-[10px] text-blue-600 font-semibold">{college.tag}</div>
-                  </div>
-                  <ChevronRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-blue-600 shrink-0 transition" />
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Section 2: Official University Portals */}
-          <div>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 px-1 mb-2 block">
-              OFFICIAL PU PORTALS
-            </span>
-
-            <div className="space-y-1">
-              <a
-                href="https://pup.ac.in"
-                target="_blank"
-                rel="noreferrer"
-                className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:text-slate-900 transition"
-              >
-                <div className="flex items-center gap-2.5">
-                  <ExternalLink className="h-3.5 w-3.5 text-blue-600" />
-                  <span>Patna University (pup.ac.in)</span>
-                </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-              </a>
-
-              <a
-                href="https://pup.ac.in/umis"
-                target="_blank"
-                rel="noreferrer"
-                className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:text-slate-900 transition"
-              >
-                <div className="flex items-center gap-2.5">
-                  <GraduationCap className="h-3.5 w-3.5 text-blue-600" />
-                  <span>UMIS Admit Card & Exam Portal</span>
-                </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-              </a>
-            </div>
-          </div>
-
-          {/* Section 3: Community & Socials */}
-          <div>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 px-1 mb-2 block">
-              STUDENT COMMUNITY
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1 mb-2 block">
+              COMMUNITY & SOCIALS
             </span>
 
             <div className="space-y-1.5">
-              <button
-                onClick={() => {
-                  if (onOpenCommunity) onOpenCommunity();
-                  onClose();
-                }}
-                className="flex w-full items-center justify-between rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 font-bold text-emerald-800 hover:bg-emerald-100 transition"
-              >
-                <div className="flex items-center gap-2.5">
-                  <WhatsAppIcon className="h-4 w-4 shrink-0" />
-                  <span>Join WhatsApp Channel</span>
-                </div>
-                <span className="text-[10px] bg-emerald-100 px-2 py-0.5 rounded text-emerald-800 font-black">
-                  Join
-                </span>
-              </button>
-
-              <button
-                onClick={() => {
-                  if (onOpenCommunity) onOpenCommunity();
-                  onClose();
-                }}
-                className="flex w-full items-center justify-between rounded-xl border border-sky-200 bg-sky-50 px-3 py-2.5 font-bold text-sky-800 hover:bg-sky-100 transition"
-              >
-                <div className="flex items-center gap-2.5">
-                  <TelegramIcon className="h-4 w-4 shrink-0" />
-                  <span>Join Telegram Study Group</span>
-                </div>
-                <span className="text-[10px] bg-sky-100 px-2 py-0.5 rounded text-sky-800 font-black">
-                  Join
-                </span>
-              </button>
-
-              <button
-                onClick={handleShareApp}
-                className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 font-bold text-slate-800 hover:bg-white transition"
-              >
-                <div className="flex items-center gap-2.5">
-                  {copiedShare ? (
-                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  ) : (
-                    <Share2 className="h-4 w-4 text-blue-600" />
-                  )}
-                  <span>{copiedShare ? 'App Link Copied!' : 'Share App with Friends'}</span>
-                </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-              </button>
-            </div>
-          </div>
-
-          {/* Section 4: Support & About */}
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3 space-y-2">
-            <div className="flex items-center gap-1.5 text-slate-800 font-bold text-[11px]">
-              <Info className="h-3.5 w-3.5 text-blue-600" />
-              <span>About Lazy PU</span>
-            </div>
-            <p className="text-[10px] text-slate-500 leading-relaxed">
-              Lazy PU is an open-access student companion platform built to help Patna University students access circulars, CBCS syllabi, and academic tools without login barriers.
-            </p>
-            <div className="pt-1 flex items-center justify-between text-[10px] text-slate-500 border-t border-slate-200/80">
-              <span>Need help or PYQs?</span>
+              {/* WhatsApp Channel */}
               <a
-                href="mailto:support@lazyupdate.tech"
-                className="text-blue-600 hover:underline font-bold flex items-center gap-1"
+                href="https://whatsapp.com/channel/0029Va9xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-between rounded-2xl border border-emerald-200/90 bg-emerald-50/70 px-3.5 py-2.5 font-bold text-emerald-950 hover:bg-emerald-100/70 transition shadow-2xs group"
               >
-                <Mail className="h-3 w-3" /> Contact Us
+                <div className="flex items-center gap-3">
+                  <WhatsAppIcon className="h-5 w-5 shrink-0" />
+                  <div className="text-left">
+                    <div className="text-xs font-black text-emerald-950">WhatsApp Channel</div>
+                    <div className="text-[10px] text-emerald-700 font-normal">Official circulars & alerts</div>
+                  </div>
+                </div>
+                <span className="text-[10px] bg-emerald-200/60 text-emerald-900 px-2 py-0.5 rounded-full font-black">
+                  Join
+                </span>
+              </a>
+
+              {/* Instagram Page */}
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-between rounded-2xl border border-pink-200/90 bg-pink-50/60 px-3.5 py-2.5 font-bold text-slate-900 hover:bg-pink-100/60 transition shadow-2xs group"
+              >
+                <div className="flex items-center gap-3">
+                  <InstagramIcon className="h-5 w-5 shrink-0" />
+                  <div className="text-left">
+                    <div className="text-xs font-black text-slate-900">Instagram</div>
+                    <div className="text-[10px] text-pink-700 font-normal">Campus updates & reels</div>
+                  </div>
+                </div>
+                <span className="text-[10px] bg-pink-200/60 text-pink-900 px-2 py-0.5 rounded-full font-black">
+                  Follow
+                </span>
               </a>
             </div>
           </div>
 
+          {/* Quick Actions & Links */}
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1 mb-2 block">
+              SUPPORT & POLICIES
+            </span>
+
+            <div className="space-y-1.5">
+              {/* Write a Review Button */}
+              <Link
+                href="/feedback"
+                onClick={onClose}
+                className="flex w-full items-center justify-between rounded-2xl border border-amber-200/80 bg-amber-50/60 px-3.5 py-2.5 font-bold text-slate-800 hover:bg-amber-100/60 transition shadow-2xs group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                    <Star className="h-4 w-4 fill-amber-400 text-amber-500" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-black text-slate-900">Write a Review</div>
+                    <div className="text-[10px] text-amber-700 font-normal">Rate your experience ★★★★★</div>
+                  </div>
+                </div>
+                <ChevronRight className="h-4 w-4 text-amber-500 group-hover:translate-x-0.5 transition" />
+              </Link>
+
+              {/* Feedback Page Link */}
+              <Link
+                href="/feedback"
+                onClick={onClose}
+                className="flex w-full items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 px-3.5 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white transition shadow-2xs group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-blue-100/70 text-blue-600">
+                    <MessageSquareHeart className="h-4 w-4" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-black text-slate-900">Feedback & Suggestions</div>
+                    <div className="text-[10px] text-slate-500 font-normal">Report bug or request syllabus</div>
+                  </div>
+                </div>
+                <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition" />
+              </Link>
+
+              {/* App Share Button */}
+              <button
+                onClick={handleShareApp}
+                className="flex w-full items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 px-3.5 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white transition shadow-2xs group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-emerald-100/70 text-emerald-600">
+                    {copiedShare ? (
+                      <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                    ) : (
+                      <Share2 className="h-4 w-4 text-emerald-600" />
+                    )}
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-black text-slate-900">
+                      {copiedShare ? 'App Link Copied!' : 'Share App'}
+                    </div>
+                    <div className="text-[10px] text-slate-500 font-normal">
+                      {copiedShare ? 'Paste & share with friends' : 'Share Lazy PU with classmates'}
+                    </div>
+                  </div>
+                </div>
+                <span className="text-[10px] bg-slate-200/70 text-slate-700 px-2 py-0.5 rounded-full font-bold">
+                  {copiedShare ? 'Copied' : 'Share'}
+                </span>
+              </button>
+
+              {/* Privacy Policy and Disclaimer */}
+              <Link
+                href="/privacy"
+                onClick={onClose}
+                className="flex w-full items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 px-3.5 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white transition shadow-2xs group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-purple-100/70 text-purple-600">
+                    <ShieldCheck className="h-4 w-4" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs font-black text-slate-900">Privacy Policy & Disclaimer</div>
+                    <div className="text-[10px] text-slate-500 font-normal">Open-access & non-affiliation terms</div>
+                  </div>
+                </div>
+                <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition" />
+              </Link>
+            </div>
+          </div>
+
+          {/* 3. About Section (Chhota Sa) */}
+          <div className="rounded-2xl border border-slate-200/80 bg-slate-50/90 p-3.5 space-y-1.5 shadow-2xs">
+            <div className="flex items-center gap-1.5 text-slate-900 font-black text-xs">
+              <Info className="h-3.5 w-3.5 text-blue-600 shrink-0" />
+              <span>About Lazy PU</span>
+            </div>
+            <p className="text-[11px] text-slate-600 leading-relaxed">
+              Lazy PU is an independent open-access student platform for Patna University students. It provides direct access to FYUGP CBCS syllabi, notices, attendance planner & SGPA tools without any login barriers.
+            </p>
+          </div>
+
         </div>
 
-        {/* Drawer Footer */}
-        <div className="border-t border-slate-100 p-3 bg-slate-50 text-center">
-          <p className="text-[10px] font-bold text-slate-500">
-            Lazy PU v2.0 • Made with ❤️ for PU Students
+        {/* 4. Drawer Footer */}
+        <div className="border-t border-slate-100 p-3.5 bg-slate-50 text-center">
+          <p className="text-[11px] font-bold text-slate-500 flex items-center justify-center gap-1">
+            Lazy PU v2.0 • Made with <Heart className="h-3 w-3 fill-rose-500 text-rose-500 inline" /> for PU Students
           </p>
         </div>
 
