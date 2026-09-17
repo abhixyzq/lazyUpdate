@@ -100,7 +100,7 @@ export default function ExtrasPage() {
 
           <div className="grid grid-cols-2 gap-2.5">
             <a
-              href="https://whatsapp.com"
+              href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2.5 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-3 text-xs font-bold hover:bg-emerald-100/70 transition shadow-2xs"
@@ -113,7 +113,7 @@ export default function ExtrasPage() {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/_lazypu"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2.5 rounded-2xl border border-pink-200 bg-pink-50/80 p-3 text-xs font-bold hover:bg-pink-100/70 transition shadow-2xs"
@@ -121,7 +121,7 @@ export default function ExtrasPage() {
               <InstagramIcon className="h-5 w-5 shrink-0" />
               <div>
                 <div className="text-xs font-black text-slate-900">Instagram</div>
-                <div className="text-[10px] text-pink-700 font-semibold">Follow Page</div>
+                <div className="text-[10px] text-pink-700 font-semibold">@_lazypu</div>
               </div>
             </a>
           </div>

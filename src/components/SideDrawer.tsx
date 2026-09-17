@@ -96,7 +96,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             <div className="space-y-1.5">
               {/* WhatsApp Channel */}
               <a
-                href="https://whatsapp.com/channel/0029Va9xyz"
+                href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex w-full items-center justify-between rounded-2xl border border-emerald-200/90 bg-emerald-50/70 px-3.5 py-2.5 font-bold text-emerald-950 hover:bg-emerald-100/70 transition shadow-2xs group"
@@ -115,7 +115,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
 
               {/* Instagram Page */}
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/_lazypu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex w-full items-center justify-between rounded-2xl border border-pink-200/90 bg-pink-50/60 px-3.5 py-2.5 font-bold text-slate-900 hover:bg-pink-100/60 transition shadow-2xs group"
@@ -124,7 +124,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   <InstagramIcon className="h-5 w-5 shrink-0" />
                   <div className="text-left">
                     <div className="text-xs font-black text-slate-900">Instagram</div>
-                    <div className="text-[10px] text-pink-700 font-normal">Campus updates & reels</div>
+                    <div className="text-[10px] text-pink-700 font-normal">Campus updates & reels • @_lazypu</div>
                   </div>
                 </div>
                 <span className="text-[10px] bg-pink-200/60 text-pink-900 px-2 py-0.5 rounded-full font-black">

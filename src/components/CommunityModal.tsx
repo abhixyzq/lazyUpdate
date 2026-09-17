@@ -65,7 +65,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
         <div className="mt-5 space-y-2.5">
           {/* WhatsApp Primary */}
           <a
-            href="https://chat.whatsapp.com/invite/lazyupdate-pu"
+            href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between rounded-xl bg-[#25D366] px-4 py-3 font-bold text-white shadow-md hover:bg-[#20ba5a] active:scale-98 transition group"
@@ -76,7 +76,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
               </div>
               <div className="text-left">
                 <div className="text-sm font-extrabold leading-tight">Join PU WhatsApp Channel</div>
-                <div className="text-[11px] text-emerald-100 font-normal">Instant Alerts • 8,400+ PU Students</div>
+                <div className="text-[11px] text-emerald-100 font-normal">Instant Alerts • Official PU Circulars</div>
               </div>
             </div>
             <span className="rounded bg-white/25 px-2 py-0.5 text-xs font-black uppercase">
@@ -86,7 +86,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
 
           {/* Instagram Secondary */}
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/_lazypu"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between rounded-xl bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] px-4 py-3 font-bold text-white shadow-md hover:opacity-95 active:scale-98 transition group"
@@ -97,7 +97,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
               </div>
               <div className="text-left">
                 <div className="text-sm font-extrabold leading-tight">Follow on Instagram</div>
-                <div className="text-[11px] text-pink-100 font-normal">Campus Updates, Reels & Exam Dates</div>
+                <div className="text-[11px] text-pink-100 font-normal">Campus Updates, Reels & Exam Dates • @_lazypu</div>
               </div>
             </div>
             <span className="rounded bg-white/25 px-2 py-0.5 text-xs font-black uppercase">

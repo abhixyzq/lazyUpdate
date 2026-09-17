@@ -89,13 +89,13 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
         <div className="grid grid-cols-2 gap-2 pt-3 mt-1">
           {/* Authentic Official Instagram Logo */}
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/_lazypu"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 rounded-xl border border-pink-200 bg-pink-50/70 py-2.5 px-3 text-xs font-bold text-pink-700 shadow-xs hover:bg-pink-100 active:scale-98 transition"
           >
             <InstagramIcon className="h-4 w-4 shrink-0" />
-            <span>Instagram</span>
+            <span>Instagram (@_lazypu)</span>
           </a>
 
           {/* Authentic Official WhatsApp Logo */}
