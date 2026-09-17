@@ -55,42 +55,42 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg rounded-3xl border border-blue-900 bg-[#0a1b38] p-5 sm:p-6 shadow-2xl text-white max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-lg rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-2xl text-slate-900 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-full p-1 text-slate-400 hover:text-white"
+          className="absolute right-4 top-4 rounded-full p-1 text-slate-400 hover:text-slate-700"
         >
           <X className="h-5 w-5" />
         </button>
 
         {/* Title */}
         <div className="flex items-center gap-2.5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 border border-emerald-200">
             <Calculator className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-base font-black text-white">SGPA & CGPA Calculator</h3>
-            <p className="text-[11px] text-cyan-300">4-Year CBCS Patna University / BEU Grading</p>
+            <h3 className="text-base font-black text-slate-900">SGPA & CGPA Calculator</h3>
+            <p className="text-[11px] text-slate-500">4-Year CBCS Patna University / BEU Grading</p>
           </div>
         </div>
 
         {/* Big SGPA Result Banner */}
-        <div className="mt-4 rounded-2xl border border-cyan-500/40 bg-gradient-to-br from-[#0c2b5c] to-[#081e42] p-4 text-center">
-          <span className="text-xs font-bold text-cyan-300 uppercase tracking-widest">Calculated SGPA</span>
-          <div className="text-4xl font-black text-[#00f2a9] my-1">{sgpa}</div>
-          <p className="text-xs font-semibold text-slate-300">
-            Equivalent Percentage: <span className="text-white font-bold">{percentage}%</span> • Credits: {totalCredits}
+        <div className="mt-4 rounded-2xl border border-blue-200 bg-blue-50/70 p-4 text-center">
+          <span className="text-xs font-bold text-blue-700 uppercase tracking-widest">Calculated SGPA</span>
+          <div className="text-4xl font-black text-slate-900 my-1">{sgpa}</div>
+          <p className="text-xs font-semibold text-slate-600">
+            Equivalent Percentage: <span className="text-slate-900 font-bold">{percentage}%</span> • Credits: {totalCredits}
           </p>
         </div>
 
         {/* Subjects Table */}
         <div className="mt-4 space-y-2 max-h-56 overflow-y-auto pr-1">
-          {subjects.map((sub, index) => (
+          {subjects.map((sub) => (
             <div
               key={sub.id}
-              className="flex items-center justify-between gap-2 rounded-xl bg-[#11264c] p-2.5 border border-blue-900/60 text-xs"
+              className="flex items-center justify-between gap-2 rounded-xl bg-slate-50 p-2.5 border border-slate-200 text-xs"
             >
               <div className="flex-1 min-w-0">
                 <input
@@ -100,17 +100,17 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
                     const val = e.target.value;
                     setSubjects(subjects.map((s) => (s.id === sub.id ? { ...s, name: val } : s)));
                   }}
-                  className="w-full bg-transparent font-bold text-white focus:outline-none truncate"
+                  className="w-full bg-transparent font-bold text-slate-800 focus:outline-none truncate"
                 />
               </div>
 
               {/* Credit Selector */}
               <div className="flex items-center gap-1 shrink-0">
-                <span className="text-[10px] text-slate-400 font-bold">Credit:</span>
+                <span className="text-[10px] text-slate-500 font-bold">Credit:</span>
                 <select
                   value={sub.credit}
                   onChange={(e) => updateSubject(sub.id, 'credit', Number(e.target.value))}
-                  className="rounded-lg bg-[#0a1832] px-2 py-1 text-xs font-bold text-cyan-300 border border-blue-800"
+                  className="rounded-lg bg-white px-2 py-1 text-xs font-bold text-slate-800 border border-slate-200"
                 >
                   <option value={1}>1</option>
                   <option value={2}>2</option>
@@ -122,11 +122,11 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
 
               {/* Grade Selector */}
               <div className="flex items-center gap-1 shrink-0">
-                <span className="text-[10px] text-slate-400 font-bold">Grade:</span>
+                <span className="text-[10px] text-slate-500 font-bold">Grade:</span>
                 <select
                   value={sub.gradePoint}
                   onChange={(e) => updateSubject(sub.id, 'gradePoint', Number(e.target.value))}
-                  className="rounded-lg bg-[#0a1832] px-2 py-1 text-xs font-bold text-emerald-300 border border-blue-800"
+                  className="rounded-lg bg-white px-2 py-1 text-xs font-bold text-slate-800 border border-slate-200"
                 >
                   <option value={10}>O (10)</option>
                   <option value={9}>A+ (9)</option>
@@ -140,7 +140,7 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
 
               <button
                 onClick={() => removeSubject(sub.id)}
-                className="text-slate-500 hover:text-red-400 p-1"
+                className="text-slate-400 hover:text-red-500 p-1 transition"
                 title="Remove"
               >
                 <Trash2 className="h-4 w-4" />
@@ -153,14 +153,14 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
         <div className="mt-3 flex items-center justify-between gap-2">
           <button
             onClick={addSubject}
-            className="flex items-center gap-1 rounded-xl border border-blue-700 bg-[#0e2752] px-3.5 py-2 text-xs font-bold text-cyan-300 hover:bg-[#13356e]"
+            className="flex items-center gap-1 rounded-xl border border-slate-200 bg-slate-100 px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition"
           >
             <Plus className="h-4 w-4" /> Add Subject
           </button>
 
           <button
             onClick={onClose}
-            className="rounded-xl bg-[#00f0aa] px-5 py-2 text-xs font-black text-[#052b22] hover:bg-[#00d898]"
+            className="rounded-xl bg-slate-900 px-5 py-2 text-xs font-black text-white hover:bg-slate-800 transition shadow-xs"
           >
             Done
           </button>

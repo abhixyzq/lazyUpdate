@@ -47,7 +47,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="icon" href="/icon.png" />
       </head>
-      <body className="min-h-screen bg-[#f8fafc] text-slate-900 dark:bg-[#090d16] dark:text-slate-100 transition-colors selection:bg-blue-600 selection:text-white flex flex-col antialiased">
+      <body className="min-h-screen bg-[#f8fafc] text-slate-900 transition-colors selection:bg-blue-600 selection:text-white flex flex-col antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

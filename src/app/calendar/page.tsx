@@ -30,21 +30,21 @@ export default function CalendarPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-transparent text-white pb-12">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-12">
       <SubpageHeader title="Calendar" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         
         {/* Next Big Vacation Banner */}
-        <div className="rounded-3xl border border-amber-500/40 bg-gradient-to-r from-[#261502] to-[#1a0f02] p-4 sm:p-5 shadow-xl space-y-2">
-          <div className="flex items-center gap-2 text-amber-400">
+        <div className="rounded-3xl border border-amber-200 bg-amber-50/80 p-4 sm:p-5 shadow-xs space-y-2">
+          <div className="flex items-center gap-2 text-amber-700">
             <PartyPopper className="h-5 w-5" />
             <span className="text-xs font-black uppercase tracking-wider">Next Upcoming Major Holidays</span>
           </div>
-          <h2 className="text-base sm:text-lg font-black text-white">
+          <h2 className="text-base sm:text-lg font-black text-slate-900">
             Durga Puja, Diwali & Chhath Puja Vacation
           </h2>
-          <p className="text-xs text-amber-200/90 leading-relaxed">
+          <p className="text-xs text-amber-950/80 leading-relaxed">
             University departments and colleges will remain closed for the grand festival season as per Patna University Gazette notification.
           </p>
         </div>
@@ -53,20 +53,20 @@ export default function CalendarPage() {
         <div className="flex gap-2">
           <button
             onClick={() => setActiveTab('holidays')}
-            className={`flex-1 rounded-xl py-2 px-3 text-xs font-black transition ${
+            className={`flex-1 rounded-xl py-2 px-3 text-xs font-bold transition ${
               activeTab === 'holidays'
-                ? 'border border-cyan-400 bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md'
-                : 'border border-blue-900/60 bg-[#07162d] text-slate-400 hover:text-white'
+                ? 'border border-slate-900 bg-slate-900 text-white shadow-xs font-black'
+                : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300'
             }`}
           >
             PU Holidays List ({holidays.length})
           </button>
           <button
             onClick={() => setActiveTab('academic')}
-            className={`flex-1 rounded-xl py-2 px-3 text-xs font-black transition ${
+            className={`flex-1 rounded-xl py-2 px-3 text-xs font-bold transition ${
               activeTab === 'academic'
-                ? 'border border-cyan-400 bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md'
-                : 'border border-blue-900/60 bg-[#07162d] text-slate-400 hover:text-white'
+                ? 'border border-slate-900 bg-slate-900 text-white shadow-xs font-black'
+                : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300'
             }`}
           >
             Academic Milestones
@@ -79,18 +79,18 @@ export default function CalendarPage() {
             {holidays.map((h, idx) => (
               <div
                 key={idx}
-                className="flex items-center justify-between rounded-2xl border border-blue-900/70 bg-[#091a36] p-3.5 shadow-md hover:border-cyan-500/50 transition"
+                className="flex items-center justify-between rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-xs hover:border-slate-300 transition"
               >
                 <div>
-                  <h3 className="text-xs sm:text-sm font-black text-white">{h.name}</h3>
-                  <div className="flex items-center gap-2 mt-1 text-[11px] text-slate-400">
-                    <span className="text-cyan-300 font-bold">{h.dates}</span>
+                  <h3 className="text-xs sm:text-sm font-black text-slate-900">{h.name}</h3>
+                  <div className="flex items-center gap-2 mt-1 text-[11px] text-slate-500">
+                    <span className="text-blue-700 font-bold">{h.dates}</span>
                     <span>•</span>
-                    <span className="text-slate-400">{h.type}</span>
+                    <span>{h.type}</span>
                   </div>
                 </div>
 
-                <span className="rounded-xl bg-blue-950 px-2.5 py-1 text-xs font-black text-amber-300 border border-blue-800 shrink-0">
+                <span className="rounded-xl bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-800 border border-amber-200 shrink-0">
                   {h.days}
                 </span>
               </div>
@@ -101,20 +101,20 @@ export default function CalendarPage() {
             {milestones.map((m, idx) => (
               <div
                 key={idx}
-                className="flex items-center justify-between rounded-2xl border border-blue-900/70 bg-[#091a36] p-3.5 shadow-md hover:border-cyan-500/50 transition"
+                className="flex items-center justify-between rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-xs hover:border-slate-300 transition"
               >
                 <div>
-                  <h3 className="text-xs sm:text-sm font-black text-white">{m.event}</h3>
-                  <span className="text-[11px] text-cyan-300 font-bold block mt-0.5">{m.date}</span>
+                  <h3 className="text-xs sm:text-sm font-black text-slate-900">{m.event}</h3>
+                  <span className="text-[11px] text-blue-700 font-bold block mt-0.5">{m.date}</span>
                 </div>
 
                 <span
-                  className={`rounded-xl px-2.5 py-1 text-[10px] font-black border shrink-0 ${
+                  className={`rounded-xl px-2.5 py-1 text-[10px] font-bold border shrink-0 ${
                     m.status === 'Completed'
-                      ? 'border-emerald-500/50 bg-emerald-500/20 text-emerald-300'
+                      ? 'border-emerald-200 bg-emerald-50 text-emerald-800'
                       : m.status === 'Active'
-                      ? 'border-cyan-500/50 bg-cyan-500/20 text-cyan-300'
-                      : 'border-slate-700 bg-slate-800/60 text-slate-400'
+                      ? 'border-blue-200 bg-blue-50 text-blue-800'
+                      : 'border-slate-200 bg-slate-100 text-slate-600'
                   }`}
                 >
                   {m.status}

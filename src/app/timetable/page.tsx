@@ -58,7 +58,7 @@ export default function TimeTablePage() {
   const filtered = schedules.filter((s) => selectedType === 'all' || s.type === selectedType);
 
   return (
-    <div className="min-h-screen bg-transparent text-white pb-12">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-12">
       <SubpageHeader title="Time Table" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
@@ -73,10 +73,10 @@ export default function TimeTablePage() {
             <button
               key={tab.id}
               onClick={() => setSelectedType(tab.id)}
-              className={`flex-1 rounded-xl py-2 px-3 text-xs font-black transition ${
+              className={`flex-1 rounded-xl py-2 px-3 text-xs font-bold transition ${
                 selectedType === tab.id
-                  ? 'border border-cyan-400 bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md'
-                  : 'border border-blue-900/60 bg-[#07162d] text-slate-400 hover:text-white'
+                  ? 'border border-slate-900 bg-slate-900 text-white shadow-xs font-black'
+                  : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300'
               }`}
             >
               {tab.label}
@@ -89,31 +89,35 @@ export default function TimeTablePage() {
           {filtered.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-3xl border border-blue-900/80 bg-[#091a36] p-4 sm:p-5 shadow-xl space-y-3"
+              className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-3"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <span className="rounded-md bg-blue-950 px-2 py-0.5 text-[10px] font-black text-cyan-300 border border-blue-800 uppercase">
+                  <span className={`rounded-md px-2 py-0.5 text-[10px] font-black uppercase border ${
+                    item.type === 'exam'
+                      ? 'bg-rose-50 text-rose-700 border-rose-200'
+                      : 'bg-blue-50 text-blue-700 border-blue-200'
+                  }`}>
                     {item.type === 'exam' ? 'Examination Routine' : 'Class Routine'}
                   </span>
-                  <h3 className="text-sm sm:text-base font-black text-white mt-1.5 leading-snug">
+                  <h3 className="text-sm sm:text-base font-black text-slate-900 mt-1.5 leading-snug">
                     {item.course}
                   </h3>
-                  <span className="text-xs text-amber-300 font-bold">{item.batch}</span>
+                  <span className="text-xs text-amber-800 font-medium">{item.batch}</span>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-blue-900/70 bg-[#051326] p-3 text-xs space-y-2 text-slate-300">
+              <div className="rounded-2xl border border-slate-200/80 bg-slate-50/80 p-3 text-xs space-y-2 text-slate-700">
                 <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4 text-cyan-400 shrink-0" />
+                  <Calendar className="h-4 w-4 text-slate-500 shrink-0" />
                   <span><b>Dates:</b> {item.dates}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-cyan-400 shrink-0" />
+                  <Clock className="h-4 w-4 text-slate-500 shrink-0" />
                   <span><b>Shift & Timing:</b> {item.timing}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-cyan-400 shrink-0" />
+                  <MapPin className="h-4 w-4 text-slate-500 shrink-0" />
                   <span><b>Exam Centers:</b> {item.centers}</span>
                 </div>
               </div>
@@ -123,7 +127,7 @@ export default function TimeTablePage() {
                   href={item.pdfUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 rounded-xl bg-cyan-600 py-2.5 text-center text-xs font-black text-white hover:bg-cyan-500 transition flex items-center justify-center gap-1.5 shadow-md"
+                  className="flex-1 rounded-xl bg-slate-900 hover:bg-slate-800 py-2.5 text-center text-xs font-black text-white transition flex items-center justify-center gap-1.5 shadow-xs"
                 >
                   <FileDown className="h-4 w-4" /> Download Official Schedule PDF
                 </a>

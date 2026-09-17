@@ -27,24 +27,24 @@ export const HolidaysCalendarModal: React.FC<HolidaysCalendarModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-md rounded-3xl border border-blue-900 bg-[#0a1b38] p-5 sm:p-6 shadow-2xl text-white"
+        className="relative w-full max-w-md rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-2xl text-slate-900"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-full p-1 text-slate-400 hover:text-white"
+          className="absolute right-4 top-4 rounded-full p-1 text-slate-400 hover:text-slate-700"
         >
           <X className="h-5 w-5" />
         </button>
 
         {/* Title */}
         <div className="flex items-center gap-2.5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-orange-500/20 text-orange-400 border border-orange-500/40">
+          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 border border-orange-200">
             <CalIcon className="h-5 w-5" />
           </div>
           <div>
-            <h3 className="text-base font-black text-white">University Holidays List</h3>
-            <p className="text-[11px] text-cyan-300">Official Patna University & Bihar Govt List</p>
+            <h3 className="text-base font-black text-slate-900">University Holidays List</h3>
+            <p className="text-[11px] text-slate-500">Official Patna University & Bihar Govt List</p>
           </div>
         </div>
 
@@ -53,13 +53,13 @@ export const HolidaysCalendarModal: React.FC<HolidaysCalendarModalProps> = ({
           {holidays.map((h, i) => (
             <div
               key={i}
-              className="flex items-center justify-between p-3 rounded-2xl border border-blue-900/60 bg-[#11264c]"
+              className="flex items-center justify-between p-3 rounded-2xl border border-slate-200 bg-slate-50/70"
             >
               <div>
-                <h4 className="font-black text-white">{h.occasion}</h4>
-                <p className="text-[11px] text-slate-300 mt-0.5">{h.dates}</p>
+                <h4 className="font-black text-slate-900">{h.occasion}</h4>
+                <p className="text-[11px] text-slate-500 mt-0.5">{h.dates}</p>
               </div>
-              <span className="rounded-xl bg-orange-500/20 border border-orange-500/40 px-2.5 py-1 text-[10px] font-black text-orange-300">
+              <span className="rounded-xl bg-orange-50 border border-orange-200 px-2.5 py-1 text-[10px] font-black text-orange-800">
                 {h.days}
               </span>
             </div>
@@ -69,7 +69,7 @@ export const HolidaysCalendarModal: React.FC<HolidaysCalendarModalProps> = ({
         <div className="mt-5">
           <button
             onClick={onClose}
-            className="w-full rounded-xl bg-[#00f0aa] py-2.5 text-xs font-black text-[#052b22] hover:bg-[#00d898]"
+            className="w-full rounded-xl border border-slate-200 bg-slate-100 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-200 transition"
           >
             Close
           </button>

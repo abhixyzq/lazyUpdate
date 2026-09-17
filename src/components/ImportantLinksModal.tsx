@@ -22,8 +22,8 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
         return {
           title: 'Student Internships & Placement Hub',
           badge: 'Government & Top Corporates',
-          badgeColor: 'border-cyan-500/40 bg-cyan-950/60 text-cyan-300',
-          icon: <Briefcase className="h-5 w-5 text-cyan-400" />,
+          badgeColor: 'border-blue-200 bg-blue-50 text-blue-700',
+          icon: <Briefcase className="h-4 w-4 text-blue-600" />,
           description: 'Official verified internship schemes and career opportunities for Patna University undergraduate & postgraduate students.',
           links: [
             {
@@ -55,8 +55,8 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
         return {
           title: 'Scholarship Schemes & Financial Aid',
           badge: 'Bihar & Central Govt Aid',
-          badgeColor: 'border-emerald-500/40 bg-emerald-950/60 text-emerald-300',
-          icon: <Award className="h-5 w-5 text-emerald-400" />,
+          badgeColor: 'border-emerald-200 bg-emerald-50 text-emerald-800',
+          icon: <Award className="h-4 w-4 text-emerald-700" />,
           description: 'Apply for government fee reimbursements, post-matric stipends, and student welfare incentives.',
           links: [
             {
@@ -95,8 +95,8 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
         return {
           title: 'Anti-Ragging Cell & Helpline',
           badge: 'Zero Tolerance Policy',
-          badgeColor: 'border-rose-500/40 bg-rose-950/60 text-rose-300',
-          icon: <ShieldAlert className="h-5 w-5 text-rose-400" />,
+          badgeColor: 'border-rose-200 bg-rose-50 text-rose-700',
+          icon: <ShieldAlert className="h-4 w-4 text-rose-600" />,
           description: 'Ragging is a criminal offense punishable under UGC regulations & IPC. Patna University maintains a strict zero-tolerance campus.',
           helpline: '1800-180-5522',
           helplineText: 'National 24x7 Toll-Free Anti-Ragging Helpline (Call anytime in case of harassment or ragging)',
@@ -132,18 +132,18 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-150"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/40 backdrop-blur-xs animate-in fade-in duration-150"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg rounded-3xl border border-blue-900 bg-[#07172e] p-5 sm:p-6 shadow-2xl text-white max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-lg rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-2xl text-slate-900 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute right-4 top-4 rounded-full p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white transition"
+          className="absolute right-4 top-4 rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition"
         >
           <X className="h-5 w-5" />
         </button>
@@ -151,36 +151,36 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
         {/* Header */}
         <div className="space-y-1.5 pr-6">
           <div className="flex items-center gap-2">
-            <span className={`inline-flex items-center gap-1 rounded-lg px-2.5 py-0.5 text-[11px] font-black border ${details.badgeColor}`}>
+            <span className={`inline-flex items-center gap-1 rounded-lg px-2.5 py-0.5 text-[11px] font-bold border ${details.badgeColor}`}>
               {details.icon}
               <span>{details.badge}</span>
             </span>
           </div>
-          <h3 className="text-lg sm:text-xl font-black text-white tracking-tight">
+          <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
             {details.title}
           </h3>
-          <p className="text-xs text-slate-300 leading-relaxed">
+          <p className="text-xs text-slate-600 leading-relaxed">
             {details.description}
           </p>
         </div>
 
         {/* Special Helpline Banner for Anti-Ragging */}
         {'helpline' in details && details.helpline && (
-          <div className="mt-4 rounded-2xl border border-rose-500/50 bg-gradient-to-r from-rose-950/60 to-red-950/40 p-3.5 flex items-center justify-between gap-3 shadow-md">
+          <div className="mt-4 rounded-2xl border border-rose-200 bg-rose-50/80 p-3.5 flex items-center justify-between gap-3 shadow-xs">
             <div className="space-y-0.5">
-              <span className="text-[10px] font-black tracking-wider uppercase text-rose-300">
+              <span className="text-[10px] font-bold tracking-wider uppercase text-rose-700">
                 24x7 TOLL-FREE HELPLINE
               </span>
-              <div className="text-lg font-black text-white tracking-wider">
+              <div className="text-lg font-black text-slate-900 tracking-wider">
                 {details.helpline}
               </div>
-              <p className="text-[10px] text-slate-300">
+              <p className="text-[10px] text-slate-500">
                 {details.helplineText}
               </p>
             </div>
             <a
               href={`tel:${details.helpline}`}
-              className="flex items-center gap-1.5 rounded-xl bg-rose-600 px-3.5 py-2 text-xs font-black text-white hover:bg-rose-500 active:scale-95 transition shrink-0 shadow-md"
+              className="flex items-center gap-1.5 rounded-xl bg-rose-600 px-3.5 py-2 text-xs font-black text-white hover:bg-rose-700 active:scale-95 transition shrink-0 shadow-xs"
             >
               <PhoneCall className="h-3.5 w-3.5" /> Call Now
             </a>
@@ -192,27 +192,27 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
           {details.links.map((link, idx) => (
             <div
               key={idx}
-              className="rounded-2xl border border-blue-900/70 bg-[#0a1f3d] p-3.5 space-y-2 hover:border-cyan-500/50 transition shadow-sm"
+              className="rounded-2xl border border-slate-200/80 bg-slate-50/80 p-3.5 space-y-2 hover:border-slate-300 transition shadow-2xs"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <div className="flex items-center gap-2">
-                    <h4 className="text-xs sm:text-sm font-black text-white">
+                    <h4 className="text-xs sm:text-sm font-black text-slate-900">
                       {link.name}
                     </h4>
                     {link.isHot && (
-                      <span className="rounded-md bg-amber-500/20 px-1.5 py-0.5 text-[9px] font-black text-amber-300 border border-amber-500/40">
+                      <span className="rounded-md bg-amber-50 px-1.5 py-0.5 text-[9px] font-bold text-amber-800 border border-amber-200">
                         Active
                       </span>
                     )}
                   </div>
-                  <span className="text-[10px] font-bold text-cyan-400">
+                  <span className="text-[10px] font-semibold text-blue-700">
                     {link.tag}
                   </span>
                 </div>
               </div>
 
-              <p className="text-xs text-slate-300 leading-normal">
+              <p className="text-xs text-slate-600 leading-normal">
                 {link.description}
               </p>
 
@@ -221,7 +221,7 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
                   href={link.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-1 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-1.5 text-xs font-black text-white hover:from-blue-500 hover:to-cyan-500 shadow-md active:scale-95 transition"
+                  className="flex items-center gap-1 rounded-xl bg-slate-900 hover:bg-slate-800 px-3 py-1.5 text-xs font-black text-white shadow-xs active:scale-95 transition"
                 >
                   <span>{link.actionLabel}</span>
                   <ExternalLink className="h-3 w-3" />
@@ -232,7 +232,7 @@ export const ImportantLinksModal: React.FC<ImportantLinksModalProps> = ({
         </div>
 
         {/* Disclaimer Footer */}
-        <div className="mt-4 pt-3 border-t border-blue-900/60 text-center text-[11px] text-slate-400">
+        <div className="mt-4 pt-3 border-t border-slate-200 text-center text-[11px] text-slate-500">
           Official Bihar & Government of India student portals • Powered by Lazy PU
         </div>
       </div>

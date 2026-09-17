@@ -77,7 +77,7 @@ export default function SyllabusCoursesPage() {
   }, [selectedFaculty, searchQuery, SECTIONS_CONFIG]);
 
   return (
-    <div className="min-h-screen bg-transparent text-white pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
       {/* 1. Top Subpage Header */}
       <SubpageHeader title="PU Syllabus (FYUGP CBCS)" />
 
@@ -90,12 +90,12 @@ export default function SyllabusCoursesPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search subject (e.g. History, Physics, Economics)..."
-            className="w-full rounded-2xl border border-blue-900/80 bg-[#091a36] py-2.5 pl-10 pr-4 text-xs font-semibold text-white placeholder-slate-400 shadow-inner outline-hidden focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition"
+            className="w-full rounded-2xl border border-slate-200/90 bg-white py-2.5 pl-10 pr-4 text-xs font-semibold text-slate-900 placeholder-slate-400 shadow-xs outline-hidden focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400 hover:text-white"
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[10px] font-black text-slate-400 hover:text-slate-700"
             >
               Clear
             </button>
@@ -112,8 +112,8 @@ export default function SyllabusCoursesPage() {
                 onClick={() => setSelectedFaculty(fac.id)}
                 className={`whitespace-nowrap rounded-xl px-3 py-1.5 text-xs font-black transition-all duration-150 shrink-0 ${
                   isSelected
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20 scale-102 border border-cyan-300/40'
-                    : 'bg-[#0f2347] text-slate-300 border border-blue-900/60 hover:bg-[#152e59] hover:text-white'
+                    ? 'bg-slate-900 text-white shadow-xs scale-102 border border-slate-800'
+                    : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 hover:text-slate-900'
                 }`}
               >
                 {fac.name} {!fac.count.startsWith('0') ? `(${fac.count.split(' ')[0]})` : ''}
@@ -128,17 +128,17 @@ export default function SyllabusCoursesPage() {
             sectionsToDisplay.map((sec) => (
               <div
                 key={sec.id}
-                className="rounded-3xl border border-blue-900/80 bg-[#081830] p-3.5 sm:p-4 shadow-xl space-y-3"
+                className="rounded-3xl border border-slate-200/90 bg-white p-3.5 sm:p-4 shadow-sm space-y-3"
               >
                 {/* Section Header with Icon and Count Badge */}
-                <div className="flex items-center justify-between border-b border-blue-800/60 pb-2">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-base sm:text-lg">{sec.icon}</span>
-                    <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-white">
+                    <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider text-slate-900">
                       {sec.name}
                     </h3>
                   </div>
-                  <span className="rounded-full border border-cyan-500/30 bg-cyan-950/70 px-2.5 py-0.5 text-[10px] font-bold text-cyan-300">
+                  <span className="rounded-full border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-[10px] font-bold text-blue-700">
                     {sec.badge}
                   </span>
                 </div>
@@ -149,20 +149,20 @@ export default function SyllabusCoursesPage() {
                     <Link
                       key={course.id}
                       href={`/syllabus/${course.id}`}
-                      className="group flex flex-col items-center justify-center rounded-2xl border border-blue-900/70 bg-[#091b36] p-2.5 sm:p-3 shadow-md hover:border-cyan-400 hover:bg-[#0f284e] active:scale-95 transition duration-150 text-center"
+                      className="group flex flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 sm:p-3 shadow-xs hover:border-blue-400 hover:bg-white hover:shadow-md active:scale-95 transition duration-150 text-center"
                     >
                       {/* Clean White Squircle containing the vector icon */}
-                      <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md transition-all duration-200 group-hover:scale-105 group-hover:shadow-cyan-400/20">
+                      <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-xs p-1.5 transition-all duration-200 group-hover:scale-105 group-hover:shadow-blue-500/10">
                         {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
                       </div>
 
                       {/* Bold Course Short Code */}
-                      <span className="mt-2 text-center text-xs font-black text-white tracking-tight leading-tight line-clamp-2 max-w-full group-hover:text-cyan-200">
+                      <span className="mt-2 text-center text-xs font-black text-slate-900 tracking-tight leading-tight line-clamp-2 max-w-full group-hover:text-blue-600">
                         {course.shortCode}
                       </span>
 
                       {/* Degree / Type Subtitle */}
-                      <span className="text-[10px] text-slate-400 line-clamp-1 mt-0.5">
+                      <span className="text-[10px] text-slate-500 line-clamp-1 mt-0.5">
                         {course.degree ? course.degree.split(' ')[0] : course.faculty}
                       </span>
                     </Link>
@@ -171,14 +171,14 @@ export default function SyllabusCoursesPage() {
               </div>
             ))
           ) : (
-            <div className="rounded-2xl border border-dashed border-blue-800/80 bg-[#081830]/80 p-8 text-center">
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/20 text-2xl text-cyan-400 mb-2">
+            <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center">
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-2xl text-slate-500 mb-2">
                 🔍
               </div>
-              <h4 className="text-sm font-black text-white">
+              <h4 className="text-sm font-black text-slate-900">
                 No subjects found
               </h4>
-              <p className="text-xs text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 Try searching with a different keyword or selecting &quot;All&quot;.
               </p>
             </div>

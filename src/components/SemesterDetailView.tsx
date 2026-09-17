@@ -52,24 +52,24 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
   // Paper Type Badge Helper
   const getPaperTypeBadge = (paperType: string) => {
     if (paperType.includes('Major'))
-      return { label: 'Major', bg: 'bg-amber-400/20 text-amber-300 border-amber-500/40' };
+      return { label: 'Major', bg: 'bg-amber-50 text-amber-800 border-amber-200' };
     if (paperType.includes('Minor'))
-      return { label: 'Minor', bg: 'bg-emerald-400/20 text-emerald-300 border-emerald-500/40' };
+      return { label: 'Minor', bg: 'bg-emerald-50 text-emerald-800 border-emerald-200' };
     if (paperType.includes('Multidisciplinary'))
-      return { label: 'MDC', bg: 'bg-purple-400/20 text-purple-300 border-purple-500/40' };
+      return { label: 'MDC', bg: 'bg-purple-50 text-purple-800 border-purple-200' };
     if (paperType.includes('Ability'))
-      return { label: 'AEC', bg: 'bg-pink-400/20 text-pink-300 border-pink-500/40' };
+      return { label: 'AEC', bg: 'bg-pink-50 text-pink-800 border-pink-200' };
     if (paperType.includes('Skill'))
-      return { label: 'SEC', bg: 'bg-cyan-400/20 text-cyan-300 border-cyan-500/40' };
+      return { label: 'SEC', bg: 'bg-blue-50 text-blue-800 border-blue-200' };
     if (paperType.includes('Value Added'))
-      return { label: 'VAC', bg: 'bg-orange-400/20 text-orange-300 border-orange-500/40' };
+      return { label: 'VAC', bg: 'bg-orange-50 text-orange-800 border-orange-200' };
     if (paperType.includes('Internship'))
-      return { label: 'Internship', bg: 'bg-teal-400/20 text-teal-300 border-teal-500/40' };
+      return { label: 'Internship', bg: 'bg-teal-50 text-teal-800 border-teal-200' };
     if (paperType.includes('Research'))
-      return { label: 'Research', bg: 'bg-indigo-400/20 text-indigo-300 border-indigo-500/40' };
+      return { label: 'Research', bg: 'bg-indigo-50 text-indigo-800 border-indigo-200' };
     if (paperType.includes('Practical'))
-      return { label: 'Practical', bg: 'bg-sky-400/20 text-sky-300 border-sky-500/40' };
-    return { label: 'Core', bg: 'bg-blue-400/20 text-blue-300 border-blue-500/40' };
+      return { label: 'Practical', bg: 'bg-sky-50 text-sky-800 border-sky-200' };
+    return { label: 'Core', bg: 'bg-slate-100 text-slate-800 border-slate-200' };
   };
 
   // Dynamic Semester Stats
@@ -99,27 +99,27 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
   const nextSem = semesterNumber < course.totalSemesters ? semesterNumber + 1 : null;
 
   return (
-    <div className="min-h-screen bg-transparent text-white pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
       {/* 1. Subpage Sticky Header */}
-      <header className="sticky top-0 z-40 border-b border-blue-900/60 bg-[#07172e]/95 backdrop-blur-md px-3 py-3">
+      <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/95 backdrop-blur-md px-3 py-3">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
           <Link
             href={`/syllabus/${course.id}`}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-900/40 text-cyan-300 border border-blue-800/80 hover:bg-cyan-500 hover:text-slate-950 transition active:scale-95 shrink-0"
+            className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 hover:text-slate-900 transition active:scale-95 shrink-0"
           >
             <ArrowLeft className="h-4 w-4" />
           </Link>
           <div className="text-center min-w-0 flex-1">
-            <h1 className="text-sm font-black text-white truncate">
+            <h1 className="text-sm font-black text-slate-900 truncate">
               {course.shortCode} • {getOrdinal(semesterNumber)} Sem
             </h1>
-            <p className="text-[10px] font-bold text-cyan-400 truncate">
+            <p className="text-[10px] font-bold text-blue-600 truncate">
               {course.name}
             </p>
           </div>
           <Link
             href={`/syllabus/${course.id}`}
-            className="rounded-xl border border-blue-800/60 bg-[#0f2347] px-2.5 py-1.5 text-[11px] font-bold text-slate-300 hover:text-white hover:bg-[#152e59] transition shrink-0"
+            className="rounded-xl border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-[11px] font-bold text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition shrink-0"
           >
             Semesters
           </Link>
@@ -129,38 +129,38 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
         
         {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-400 px-1 overflow-x-auto scrollbar-none whitespace-nowrap">
-          <Link href="/syllabus" className="hover:text-cyan-300 transition">
+        <div className="flex items-center gap-1.5 text-[11px] font-bold text-slate-500 px-1 overflow-x-auto scrollbar-none whitespace-nowrap">
+          <Link href="/syllabus" className="hover:text-slate-900 transition">
             Syllabus
           </Link>
           <span>/</span>
-          <Link href={`/syllabus/${course.id}`} className="hover:text-cyan-300 transition truncate max-w-[120px]">
+          <Link href={`/syllabus/${course.id}`} className="hover:text-slate-900 transition truncate max-w-[120px]">
             {course.shortCode}
           </Link>
           <span>/</span>
-          <span className="text-cyan-400 font-black">
+          <span className="text-blue-600 font-black">
             {getOrdinal(semesterNumber)} Semester
           </span>
         </div>
 
         {/* Semester Stats Bar */}
-        <div className="rounded-2xl border border-blue-800/80 bg-gradient-to-r from-[#0a1e3d] to-[#07172e] p-3 shadow-lg">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-3 shadow-sm">
           <div className="grid grid-cols-4 gap-2 text-center">
-            <div className="rounded-xl bg-blue-950/60 border border-blue-900/60 py-1 px-1.5">
-              <span className="text-[9px] text-slate-400 block font-semibold">Credits</span>
-              <span className="text-xs sm:text-sm font-black text-amber-300">{semStats.totalCredits} Cr</span>
+            <div className="rounded-xl bg-slate-50 border border-slate-200/80 py-1.5 px-1.5">
+              <span className="text-[9px] text-slate-500 block font-semibold">Credits</span>
+              <span className="text-xs sm:text-sm font-black text-amber-700">{semStats.totalCredits} Cr</span>
             </div>
-            <div className="rounded-xl bg-blue-950/60 border border-blue-900/60 py-1 px-1.5">
-              <span className="text-[9px] text-slate-400 block font-semibold">Theory</span>
-              <span className="text-xs sm:text-sm font-black text-white">{semStats.totalTheory} M</span>
+            <div className="rounded-xl bg-slate-50 border border-slate-200/80 py-1.5 px-1.5">
+              <span className="text-[9px] text-slate-500 block font-semibold">Theory</span>
+              <span className="text-xs sm:text-sm font-black text-slate-900">{semStats.totalTheory} M</span>
             </div>
-            <div className="rounded-xl bg-blue-950/60 border border-blue-900/60 py-1 px-1.5">
-              <span className="text-[9px] text-slate-400 block font-semibold">Internal CIA</span>
-              <span className="text-xs sm:text-sm font-black text-cyan-300">{semStats.totalInternal} M</span>
+            <div className="rounded-xl bg-slate-50 border border-slate-200/80 py-1.5 px-1.5">
+              <span className="text-[9px] text-slate-500 block font-semibold">Internal CIA</span>
+              <span className="text-xs sm:text-sm font-black text-blue-700">{semStats.totalInternal} M</span>
             </div>
-            <div className="rounded-xl bg-blue-950/60 border border-blue-900/60 py-1 px-1.5">
-              <span className="text-[9px] text-slate-400 block font-semibold">Papers</span>
-              <span className="text-xs sm:text-sm font-black text-emerald-300">{semStats.paperCount}</span>
+            <div className="rounded-xl bg-slate-50 border border-slate-200/80 py-1.5 px-1.5">
+              <span className="text-[9px] text-slate-500 block font-semibold">Papers</span>
+              <span className="text-xs sm:text-sm font-black text-emerald-700">{semStats.paperCount}</span>
             </div>
           </div>
         </div>
@@ -168,12 +168,12 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         {/* Paper Selector Tabs */}
         <div className="space-y-2">
           <div className="flex items-center justify-between px-1">
-            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-500">
               Select Paper in this Semester:
             </span>
             <button
               onClick={() => setIsCreditsTableOpen(!isCreditsTableOpen)}
-              className="text-[10px] font-bold text-cyan-400 hover:text-cyan-300 underline flex items-center gap-1"
+              className="text-[10px] font-bold text-blue-600 hover:text-blue-700 underline flex items-center gap-1"
             >
               <Table className="h-3 w-3" />
               Credit Scheme
@@ -191,17 +191,17 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                   onClick={() => setActivePaperId(paper.id)}
                   className={`flex flex-col items-start rounded-xl px-3 py-2 text-left transition-all duration-150 shrink-0 border ${
                     isSelected
-                      ? 'bg-gradient-to-br from-[#123060] to-[#0d2247] border-cyan-400 shadow-md shadow-cyan-500/20 scale-102 ring-1 ring-cyan-400'
-                      : 'bg-[#081830] border-blue-900/80 hover:bg-[#0e2547] text-slate-300'
+                      ? 'bg-blue-50 border-blue-500 shadow-xs scale-102 ring-1 ring-blue-500 text-blue-950'
+                      : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
                   }`}
                 >
                   <div className="flex items-center gap-1.5">
-                    <span className="text-xs font-black text-white">{paper.code}</span>
+                    <span className="text-xs font-black text-slate-900">{paper.code}</span>
                     <span className={`text-[8px] font-black px-1.5 py-0.2 rounded border ${badge.bg}`}>
                       {badge.label}
                     </span>
                   </div>
-                  <span className="text-[10px] font-medium text-slate-400 truncate max-w-[130px] mt-0.5">
+                  <span className="text-[10px] font-medium text-slate-500 truncate max-w-[130px] mt-0.5">
                     {paper.name}
                   </span>
                 </button>
@@ -212,11 +212,11 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
 
         {/* Active Paper Detailed View */}
         {activePaper ? (
-          <div className="rounded-3xl border border-blue-800/80 bg-[#091a36] p-4 shadow-xl space-y-4 animate-in fade-in duration-150">
+          <div className="rounded-3xl border border-slate-200/90 bg-white p-4 shadow-sm space-y-4 animate-in fade-in duration-150">
             {/* Paper Header */}
-            <div className="border-b border-blue-900/60 pb-3 space-y-2">
+            <div className="border-b border-slate-100 pb-3 space-y-2">
               <div className="flex items-center justify-between gap-2 flex-wrap">
-                <span className="text-xs font-black uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-lg border border-cyan-500/40">
+                <span className="text-xs font-black uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-lg border border-blue-200">
                   {activePaper.code}
                 </span>
                 <span
@@ -226,21 +226,21 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                 >
                   {activePaper.paperType}
                 </span>
-                <span className="text-[10px] font-black text-amber-300 bg-amber-950/60 px-2 py-0.5 rounded-md border border-amber-500/30">
+                <span className="text-[10px] font-black text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
                   {activePaper.credits} Credits
                 </span>
               </div>
 
-              <h2 className="text-base sm:text-lg font-black text-white leading-snug">
+              <h2 className="text-base sm:text-lg font-black text-slate-900 leading-snug">
                 {activePaper.name}
               </h2>
 
-              <div className="flex items-center gap-3 text-xs text-slate-300 pt-1">
-                <span>Theory: <strong className="text-white">{activePaper.theoryMarks} M</strong></span>
+              <div className="flex items-center gap-3 text-xs text-slate-600 pt-1">
+                <span>Theory: <strong className="text-slate-900">{activePaper.theoryMarks} M</strong></span>
                 <span>•</span>
-                <span>CIA Internal: <strong className="text-cyan-300">{activePaper.internalMarks} M</strong></span>
+                <span>CIA Internal: <strong className="text-blue-700">{activePaper.internalMarks} M</strong></span>
                 <span>•</span>
-                <span>Total: <strong className="text-emerald-300">{activePaper.theoryMarks + activePaper.internalMarks} M</strong></span>
+                <span>Total: <strong className="text-emerald-700">{activePaper.theoryMarks + activePaper.internalMarks} M</strong></span>
               </div>
             </div>
 
@@ -248,7 +248,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             <div>
               <button
                 onClick={handleShare}
-                className="w-full flex items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-[#0a2e20] py-2.5 px-3 text-xs font-bold text-emerald-400 hover:bg-[#0e3b2a] active:scale-98 transition"
+                className="w-full flex items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 py-2.5 px-3 text-xs font-bold text-emerald-800 hover:bg-emerald-100 active:scale-98 transition shadow-xs"
               >
                 <Share2 className="h-4 w-4 shrink-0" />
                 <span>Share Paper Syllabus</span>
@@ -259,11 +259,11 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             {activePaper.units && activePaper.units.length > 0 ? (
               <div className="space-y-2.5 pt-1">
                 <div className="flex items-center justify-between px-1">
-                  <h3 className="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                    <BookOpen className="h-3.5 w-3.5" />
+                  <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-1.5">
+                    <BookOpen className="h-3.5 w-3.5 text-blue-600" />
                     Syllabus Units ({activePaper.units.length})
                   </h3>
-                  <span className="text-[10px] text-slate-400">
+                  <span className="text-[10px] text-slate-500">
                     Tap to expand topics
                   </span>
                 </div>
@@ -273,35 +273,35 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                     <details
                       key={unit.unitNumber}
                       open={uIdx === 0}
-                      className="group rounded-2xl border border-blue-900/70 bg-[#06142a] p-3.5 shadow-sm transition-all duration-200 open:border-cyan-500/50 open:bg-[#071833]"
+                      className="group rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3.5 shadow-xs transition-all duration-200 open:border-slate-300 open:bg-white open:shadow-xs"
                     >
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 select-none">
                         <div className="flex items-center gap-2.5 min-w-0">
-                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-cyan-500/20 text-xs font-black text-cyan-300 border border-cyan-500/30">
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-xs font-black text-blue-700 border border-blue-200">
                             {unit.unitNumber}
                           </span>
-                          <h4 className="text-xs sm:text-sm font-black text-white group-hover:text-cyan-200 transition truncate">
+                          <h4 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition truncate">
                             Unit {unit.unitNumber}: {unit.title}
                           </h4>
                         </div>
 
                         <div className="flex items-center gap-2 shrink-0">
                           {unit.topics && unit.topics.length > 0 && (
-                            <span className="text-[10px] font-bold text-slate-400 bg-blue-950/60 px-2 py-0.5 rounded-md border border-blue-900/60">
+                            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
                               {unit.topics.length} {unit.topics.length === 1 ? 'Topic' : 'Topics'}
                             </span>
                           )}
-                          <ChevronDown className="h-4 w-4 text-cyan-400 transition-transform duration-200 group-open:rotate-180" />
+                          <ChevronDown className="h-4 w-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 group-open:text-slate-700" />
                         </div>
                       </summary>
 
                       {unit.topics && unit.topics.length > 0 && (
-                        <div className="mt-3 pt-3 border-t border-blue-900/50">
-                          <ul className="space-y-2 pl-1 text-xs text-slate-300 leading-relaxed">
+                        <div className="mt-3 pt-3 border-t border-slate-100">
+                          <ul className="space-y-2 pl-1 text-xs text-slate-700 leading-relaxed">
                             {unit.topics.map((topic, tIdx) => (
                               <li key={tIdx} className="flex items-start gap-2">
-                                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shrink-0 mt-1.5" />
-                                <span className="text-slate-200">{topic}</span>
+                                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0 mt-1.5" />
+                                <span className="text-slate-800">{topic}</span>
                               </li>
                             ))}
                           </ul>
@@ -312,8 +312,8 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                 </div>
               </div>
             ) : (
-              <div className="rounded-2xl border border-blue-900/70 bg-[#06142a] p-4 text-center text-xs text-slate-400 space-y-1">
-                <p className="font-semibold text-slate-300">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center text-xs text-slate-500 space-y-1">
+                <p className="font-semibold text-slate-700">
                   {activePaper.paperType === 'Internship'
                     ? 'Summer Internship Paper — Practical evaluation / project viva.'
                     : activePaper.paperType === 'Research Project'
@@ -325,18 +325,18 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
 
             {/* Recommended Books (Collapsible Details Style) */}
             {activePaper.recommendedBooks && activePaper.recommendedBooks.length > 0 && (
-              <details className="group rounded-2xl border border-blue-900/60 bg-[#06142a] p-3.5 shadow-sm transition-all duration-200 open:border-amber-500/40">
+              <details className="group rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3.5 shadow-xs transition-all duration-200 open:border-amber-300 open:bg-white">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-2 select-none">
-                  <span className="text-xs font-black uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-                    <Award className="h-3.5 w-3.5 text-amber-400" />
+                  <span className="text-xs font-black uppercase tracking-wider text-amber-800 flex items-center gap-1.5">
+                    <Award className="h-3.5 w-3.5 text-amber-600" />
                     Recommended Reference Books ({activePaper.recommendedBooks.length})
                   </span>
-                  <ChevronDown className="h-3.5 w-3.5 text-amber-400 transition-transform duration-200 group-open:rotate-180" />
+                  <ChevronDown className="h-3.5 w-3.5 text-amber-600 transition-transform duration-200 group-open:rotate-180" />
                 </summary>
-                <div className="mt-2.5 pt-2.5 border-t border-blue-900/50">
-                  <ul className="space-y-1 text-[11px] text-slate-300 pl-4 list-disc">
+                <div className="mt-2.5 pt-2.5 border-t border-slate-100">
+                  <ul className="space-y-1 text-[11px] text-slate-700 pl-4 list-disc">
                     {activePaper.recommendedBooks.map((book, bIdx) => (
-                      <li key={bIdx} className="marker:text-amber-400">
+                      <li key={bIdx} className="marker:text-amber-500">
                         {book}
                       </li>
                     ))}
@@ -346,22 +346,22 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             )}
           </div>
         ) : (
-          <div className="rounded-2xl border border-blue-900 bg-[#081830] p-6 text-center text-xs text-slate-400">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center text-xs text-slate-500">
             No papers found for this semester.
           </div>
         )}
 
         {/* Credit Structure Modal / Drawer */}
         {isCreditsTableOpen && (
-          <div className="rounded-2xl border border-cyan-500/40 bg-[#081830] p-4 shadow-xl space-y-3 animate-in fade-in duration-150">
-            <div className="flex items-center justify-between border-b border-blue-900/60 pb-2">
-              <h4 className="text-xs font-black uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
+          <div className="rounded-2xl border border-blue-200 bg-white p-4 shadow-xl space-y-3 animate-in fade-in duration-150">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+              <h4 className="text-xs font-black uppercase tracking-wider text-blue-700 flex items-center gap-1.5">
                 <Table className="h-4 w-4" />
                 Semester {semesterNumber} Credit Breakdown
               </h4>
               <button
                 onClick={() => setIsCreditsTableOpen(false)}
-                className="text-[10px] font-bold text-slate-400 hover:text-white"
+                className="text-[10px] font-bold text-slate-400 hover:text-slate-700"
               >
                 Close ✕
               </button>
@@ -370,7 +370,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             <div className="overflow-x-auto text-xs">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="border-b border-blue-900/80 text-[10px] uppercase text-slate-400">
+                  <tr className="border-b border-slate-200 text-[10px] uppercase text-slate-500">
                     <th className="py-1.5 px-2">Code</th>
                     <th className="py-1.5 px-2">Type</th>
                     <th className="py-1.5 px-2 text-center">Cr</th>
@@ -378,21 +378,21 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                     <th className="py-1.5 px-2 text-center">CIA</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-blue-950/60 text-[11px]">
+                <tbody className="divide-y divide-slate-100 text-[11px]">
                   {semesterData.papers.map((p) => (
-                    <tr key={p.id} className="hover:bg-blue-950/40">
-                      <td className="py-1.5 px-2 font-black text-white">{p.code}</td>
-                      <td className="py-1.5 px-2 text-slate-300">{p.paperType}</td>
-                      <td className="py-1.5 px-2 text-center font-bold text-amber-300">{p.credits}</td>
-                      <td className="py-1.5 px-2 text-center text-slate-300">{p.theoryMarks}</td>
-                      <td className="py-1.5 px-2 text-center text-cyan-300">{p.internalMarks}</td>
+                    <tr key={p.id} className="hover:bg-slate-50">
+                      <td className="py-1.5 px-2 font-black text-slate-900">{p.code}</td>
+                      <td className="py-1.5 px-2 text-slate-600">{p.paperType}</td>
+                      <td className="py-1.5 px-2 text-center font-bold text-amber-700">{p.credits}</td>
+                      <td className="py-1.5 px-2 text-center text-slate-700">{p.theoryMarks}</td>
+                      <td className="py-1.5 px-2 text-center text-blue-700">{p.internalMarks}</td>
                     </tr>
                   ))}
-                  <tr className="border-t border-cyan-500/40 font-black text-white">
+                  <tr className="border-t border-slate-300 font-black text-slate-900">
                     <td className="py-2 px-2" colSpan={2}>Total Semester</td>
-                    <td className="py-2 px-2 text-center text-amber-300">{semStats.totalCredits}</td>
+                    <td className="py-2 px-2 text-center text-amber-700">{semStats.totalCredits}</td>
                     <td className="py-2 px-2 text-center">{semStats.totalTheory}</td>
-                    <td className="py-2 px-2 text-center text-cyan-300">{semStats.totalInternal}</td>
+                    <td className="py-2 px-2 text-center text-blue-700">{semStats.totalInternal}</td>
                   </tr>
                 </tbody>
               </table>
@@ -405,9 +405,9 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           {prevSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${prevSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-blue-800/80 bg-[#091a36] px-3.5 py-2 text-xs font-bold text-slate-300 hover:text-white hover:border-cyan-400 transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 hover:text-slate-900 hover:border-slate-300 shadow-xs transition"
             >
-              <ChevronLeft className="h-3.5 w-3.5 text-cyan-400" />
+              <ChevronLeft className="h-3.5 w-3.5 text-blue-600" />
               <span>{getOrdinal(prevSem)} Semester</span>
             </Link>
           ) : (
@@ -417,10 +417,10 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           {nextSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${nextSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-blue-800/80 bg-[#091a36] px-3.5 py-2 text-xs font-bold text-slate-300 hover:text-white hover:border-cyan-400 transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 hover:text-slate-900 hover:border-slate-300 shadow-xs transition"
             >
               <span>{getOrdinal(nextSem)} Semester</span>
-              <ChevronRight className="h-3.5 w-3.5 text-cyan-400" />
+              <ChevronRight className="h-3.5 w-3.5 text-blue-600" />
             </Link>
           ) : (
             <div />
@@ -431,7 +431,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         <div className="pt-2 text-center">
           <Link
             href={`/syllabus/${course.id}`}
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-400 hover:text-white transition"
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-900 transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to {course.shortCode} Semesters

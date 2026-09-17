@@ -80,7 +80,7 @@ export default function ApnaUniversityHomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent text-white pb-12">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-12">
       
       {/* 1. Top Navbar Header */}
       <ApnaHeader
@@ -104,13 +104,13 @@ export default function ApnaUniversityHomePage() {
 
       {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
       <div className="mx-auto max-w-xl px-3 pt-3">
-        <div className="rounded-3xl border border-blue-900/80 bg-[#091a36] p-3.5 sm:p-4 shadow-xl">
-          <div className="flex items-center justify-between pb-2.5 px-1 border-b border-blue-900/50 mb-2.5">
-            <h3 className="text-xs sm:text-sm font-black tracking-widest text-[#00d2ff] uppercase flex items-center gap-1.5">
-              <Link2 className="h-3.5 w-3.5 text-cyan-400" />
+        <div className="rounded-3xl border border-slate-200/90 bg-white p-3.5 sm:p-4 shadow-sm">
+          <div className="flex items-center justify-between pb-2.5 px-1 border-b border-slate-100 mb-2.5">
+            <h3 className="text-xs sm:text-sm font-black tracking-widest text-slate-900 uppercase flex items-center gap-1.5">
+              <Link2 className="h-3.5 w-3.5 text-blue-600" />
               IMPORTANT LINKS
             </h3>
-            <span className="text-[10px] font-bold text-slate-400">
+            <span className="text-[10px] font-bold text-slate-500">
               Govt & University Portals
             </span>
           </div>
@@ -119,37 +119,37 @@ export default function ApnaUniversityHomePage() {
             {/* 1. Internships */}
             <Link
               href="/internships"
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-cyan-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
+              className="flex flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 font-bold hover:border-blue-400 hover:bg-white hover:shadow-xs active:scale-95 transition group text-center"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-500/20 text-cyan-300 border border-cyan-500/30 mb-1.5 group-hover:scale-105 transition">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 border border-blue-200 mb-1.5 group-hover:scale-105 transition">
                 <Briefcase className="h-4 w-4" />
               </div>
-              <span className="text-[11px] font-black text-white">Internships</span>
-              <span className="text-[9px] text-cyan-400/80 font-semibold mt-0.5">PM & AICTE</span>
+              <span className="text-[11px] font-black text-slate-800">Internships</span>
+              <span className="text-[9px] text-blue-600 font-semibold mt-0.5">PM & AICTE</span>
             </Link>
 
             {/* 2. Scholarships */}
             <Link
               href="/scholarships"
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-emerald-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
+              className="flex flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 font-bold hover:border-emerald-400 hover:bg-white hover:shadow-xs active:scale-95 transition group text-center"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-1.5 group-hover:scale-105 transition">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 mb-1.5 group-hover:scale-105 transition">
                 <Award className="h-4 w-4" />
               </div>
-              <span className="text-[11px] font-black text-white">Scholarships</span>
-              <span className="text-[9px] text-emerald-400/80 font-semibold mt-0.5">PMS & NSP</span>
+              <span className="text-[11px] font-black text-slate-800">Scholarships</span>
+              <span className="text-[9px] text-emerald-600 font-semibold mt-0.5">PMS & NSP</span>
             </Link>
 
             {/* 3. Anti-Ragging */}
             <Link
               href="/antiragging"
-              className="flex flex-col items-center justify-center rounded-2xl border border-blue-800/60 bg-[#12264c] p-2.5 font-bold hover:border-rose-400 hover:bg-[#16305e] active:scale-95 transition group text-center"
+              className="flex flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 font-bold hover:border-rose-400 hover:bg-white hover:shadow-xs active:scale-95 transition group text-center"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-1.5 group-hover:scale-105 transition">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-rose-50 text-rose-600 border border-rose-200 mb-1.5 group-hover:scale-105 transition">
                 <ShieldAlert className="h-4 w-4" />
               </div>
-              <span className="text-[11px] font-black text-white">Anti-Ragging</span>
-              <span className="text-[9px] text-rose-400/80 font-semibold mt-0.5">UGC Helpline</span>
+              <span className="text-[11px] font-black text-slate-800">Anti-Ragging</span>
+              <span className="text-[9px] text-rose-600 font-semibold mt-0.5">UGC Helpline</span>
             </Link>
           </div>
         </div>

@@ -28,7 +28,7 @@ export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full bg-[#071328] px-4 py-3 sm:px-6 shadow-md border-b border-blue-950/60">
+      <header className="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md px-4 py-3 sm:px-6 shadow-xs border-b border-slate-200/90">
         <div className="mx-auto flex max-w-xl items-center justify-between">
           
           {/* Left: Official Lazy PU Mascot Logo Sticker */}
@@ -42,16 +42,16 @@ export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
 
           {/* Middle: Page Name in crisp, centered, high-contrast bold typography */}
           <div className="text-center px-2 flex-1 overflow-hidden">
-            <h1 className="text-base sm:text-lg font-black tracking-tight text-white truncate">
+            <h1 className="text-base sm:text-lg font-black tracking-tight text-slate-900 truncate">
               {pageTitle}
             </h1>
           </div>
 
-          {/* Right: Hamburger Menu in rounded dark-blue card */}
+          {/* Right: Hamburger Menu in rounded clean light card */}
           <button
             onClick={handleMenuClick}
             aria-label="Open Menu"
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-blue-600/50 bg-[#0d2248] text-white hover:bg-[#122e62] active:scale-95 transition"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-100/80 text-slate-700 hover:bg-slate-200 hover:text-slate-900 active:scale-95 transition"
           >
             <Menu className="h-5 w-5 stroke-[2.5]" />
           </button>

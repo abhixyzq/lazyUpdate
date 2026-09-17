@@ -60,15 +60,15 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
         onClick={onClose}
       />
 
-      {/* Drawer Panel - Dark Midnight Blue Theme */}
-      <div className="relative z-10 flex h-full w-[85%] max-w-sm flex-col bg-[#061326] border-r border-blue-900/80 text-white shadow-2xl animate-in slide-in-from-left duration-200">
+      {/* Drawer Panel - Clean Light Mode */}
+      <div className="relative z-10 flex h-full w-[85%] max-w-sm flex-col bg-white border-r border-slate-200 text-slate-900 shadow-2xl animate-in slide-in-from-left duration-200">
         
         {/* Drawer Header with Logo & Identity */}
-        <div className="relative border-b border-blue-900/70 bg-gradient-to-b from-[#0a1e3b] to-[#07162d] p-5">
+        <div className="relative border-b border-slate-100 bg-slate-50/80 p-5">
           <button
             onClick={onClose}
             aria-label="Close menu"
-            className="absolute top-4 right-4 rounded-xl border border-blue-800/80 bg-[#0c2447] p-1.5 text-slate-400 hover:bg-[#123363] hover:text-white transition"
+            className="absolute top-4 right-4 rounded-xl border border-slate-200 bg-white p-1.5 text-slate-500 hover:bg-slate-100 hover:text-slate-900 transition"
           >
             <X className="h-5 w-5" />
           </button>
@@ -80,13 +80,13 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
               className="h-14 w-auto object-contain"
             />
             <div>
-              <span className="inline-block rounded-md bg-cyan-950 border border-cyan-800/80 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-cyan-300">
+              <span className="inline-block rounded-md bg-blue-50 border border-blue-200 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-blue-700">
                 Official Student Portal
               </span>
-              <p className="mt-1 text-xs text-slate-300 font-bold">
+              <p className="mt-1 text-xs text-slate-800 font-bold">
                 Patna University
               </p>
-              <p className="text-[10px] text-slate-400">
+              <p className="text-[10px] text-slate-500">
                 No Login Required • Open Access
               </p>
             </div>
@@ -99,11 +99,11 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
           {/* Section 1: Constituent Colleges */}
           <div>
             <div className="flex items-center justify-between mb-2 px-1">
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 flex items-center gap-1.5">
-                <Building2 className="h-3.5 w-3.5 text-cyan-400" />
+              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 flex items-center gap-1.5">
+                <Building2 className="h-3.5 w-3.5 text-blue-600" />
                 CONSTITUENT COLLEGES
               </span>
-              <span className="text-[10px] font-bold text-slate-500">
+              <span className="text-[10px] font-bold text-slate-400">
                 PU Campuses
               </span>
             </div>
@@ -116,13 +116,13 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                     if (onSelectCollege) onSelectCollege(college.id);
                     onClose();
                   }}
-                  className="flex w-full items-center justify-between rounded-xl border border-blue-900/40 bg-[#07162d] px-3 py-2 text-left font-bold text-slate-200 hover:border-cyan-500/60 hover:bg-[#0c2347] transition group"
+                  className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2 text-left font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:shadow-xs transition group"
                 >
                   <div className="truncate pr-2">
-                    <div className="text-xs text-white truncate">{college.name}</div>
-                    <div className="text-[10px] text-cyan-400/80 font-semibold">{college.tag}</div>
+                    <div className="text-xs text-slate-900 truncate">{college.name}</div>
+                    <div className="text-[10px] text-blue-600 font-semibold">{college.tag}</div>
                   </div>
-                  <ChevronRight className="h-3.5 w-3.5 text-slate-500 group-hover:text-cyan-400 shrink-0 transition" />
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400 group-hover:text-blue-600 shrink-0 transition" />
                 </button>
               ))}
             </div>
@@ -130,7 +130,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
 
           {/* Section 2: Official University Portals */}
           <div>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1 mb-2 block">
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 px-1 mb-2 block">
               OFFICIAL PU PORTALS
             </span>
 
@@ -139,33 +139,33 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                 href="https://pup.ac.in"
                 target="_blank"
                 rel="noreferrer"
-                className="flex w-full items-center justify-between rounded-xl border border-blue-900/40 bg-[#07162d] px-3 py-2.5 font-bold text-slate-200 hover:border-blue-500 hover:text-white transition"
+                className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:text-slate-900 transition"
               >
                 <div className="flex items-center gap-2.5">
-                  <ExternalLink className="h-3.5 w-3.5 text-blue-400" />
+                  <ExternalLink className="h-3.5 w-3.5 text-blue-600" />
                   <span>Patna University (pup.ac.in)</span>
                 </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-500" />
+                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
               </a>
 
               <a
                 href="https://pup.ac.in/umis"
                 target="_blank"
                 rel="noreferrer"
-                className="flex w-full items-center justify-between rounded-xl border border-blue-900/40 bg-[#07162d] px-3 py-2.5 font-bold text-slate-200 hover:border-blue-500 hover:text-white transition"
+                className="flex w-full items-center justify-between rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2.5 font-bold text-slate-800 hover:border-blue-400 hover:bg-white hover:text-slate-900 transition"
               >
                 <div className="flex items-center gap-2.5">
-                  <GraduationCap className="h-3.5 w-3.5 text-cyan-400" />
+                  <GraduationCap className="h-3.5 w-3.5 text-blue-600" />
                   <span>UMIS Admit Card & Exam Portal</span>
                 </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-500" />
+                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
               </a>
             </div>
           </div>
 
           {/* Section 3: Community & Socials */}
           <div>
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 px-1 mb-2 block">
+            <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 px-1 mb-2 block">
               STUDENT COMMUNITY
             </span>
 
@@ -175,13 +175,13 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   if (onOpenCommunity) onOpenCommunity();
                   onClose();
                 }}
-                className="flex w-full items-center justify-between rounded-xl border border-emerald-900/50 bg-[#0a271d] px-3 py-2.5 font-bold text-[#25d366] hover:border-emerald-400 transition"
+                className="flex w-full items-center justify-between rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 font-bold text-emerald-800 hover:bg-emerald-100 transition"
               >
                 <div className="flex items-center gap-2.5">
                   <WhatsAppIcon className="h-4 w-4 shrink-0" />
                   <span>Join WhatsApp Channel</span>
                 </div>
-                <span className="text-[10px] bg-emerald-950 px-2 py-0.5 rounded text-emerald-400 font-black">
+                <span className="text-[10px] bg-emerald-100 px-2 py-0.5 rounded text-emerald-800 font-black">
                   Join
                 </span>
               </button>
@@ -191,48 +191,48 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   if (onOpenCommunity) onOpenCommunity();
                   onClose();
                 }}
-                className="flex w-full items-center justify-between rounded-xl border border-blue-900/50 bg-[#0a2244] px-3 py-2.5 font-bold text-[#29b6f6] hover:border-cyan-400 transition"
+                className="flex w-full items-center justify-between rounded-xl border border-sky-200 bg-sky-50 px-3 py-2.5 font-bold text-sky-800 hover:bg-sky-100 transition"
               >
                 <div className="flex items-center gap-2.5">
                   <TelegramIcon className="h-4 w-4 shrink-0" />
                   <span>Join Telegram Study Group</span>
                 </div>
-                <span className="text-[10px] bg-blue-950 px-2 py-0.5 rounded text-blue-300 font-black">
+                <span className="text-[10px] bg-sky-100 px-2 py-0.5 rounded text-sky-800 font-black">
                   Join
                 </span>
               </button>
 
               <button
                 onClick={handleShareApp}
-                className="flex w-full items-center justify-between rounded-xl border border-blue-900/50 bg-[#081a34] px-3 py-2.5 font-bold text-white hover:border-cyan-400 transition"
+                className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 font-bold text-slate-800 hover:bg-white transition"
               >
                 <div className="flex items-center gap-2.5">
                   {copiedShare ? (
-                    <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
                   ) : (
-                    <Share2 className="h-4 w-4 text-cyan-400" />
+                    <Share2 className="h-4 w-4 text-blue-600" />
                   )}
                   <span>{copiedShare ? 'App Link Copied!' : 'Share App with Friends'}</span>
                 </div>
-                <ChevronRight className="h-3.5 w-3.5 text-slate-500" />
+                <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
               </button>
             </div>
           </div>
 
           {/* Section 4: Support & About */}
-          <div className="rounded-2xl border border-blue-900/50 bg-[#081830] p-3 space-y-2">
-            <div className="flex items-center gap-1.5 text-slate-300 font-bold text-[11px]">
-              <Info className="h-3.5 w-3.5 text-cyan-400" />
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3 space-y-2">
+            <div className="flex items-center gap-1.5 text-slate-800 font-bold text-[11px]">
+              <Info className="h-3.5 w-3.5 text-blue-600" />
               <span>About Lazy PU</span>
             </div>
-            <p className="text-[10px] text-slate-400 leading-relaxed">
+            <p className="text-[10px] text-slate-500 leading-relaxed">
               Lazy PU is an open-access student companion platform built to help Patna University students access circulars, CBCS syllabi, and academic tools without login barriers.
             </p>
-            <div className="pt-1 flex items-center justify-between text-[10px] text-slate-400 border-t border-blue-900/40">
+            <div className="pt-1 flex items-center justify-between text-[10px] text-slate-500 border-t border-slate-200/80">
               <span>Need help or PYQs?</span>
               <a
                 href="mailto:support@lazyupdate.tech"
-                className="text-cyan-400 hover:underline font-bold flex items-center gap-1"
+                className="text-blue-600 hover:underline font-bold flex items-center gap-1"
               >
                 <Mail className="h-3 w-3" /> Contact Us
               </a>
@@ -242,8 +242,8 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
         </div>
 
         {/* Drawer Footer */}
-        <div className="border-t border-blue-900/70 p-3 bg-[#040e1c] text-center">
-          <p className="text-[10px] font-bold text-slate-400">
+        <div className="border-t border-slate-100 p-3 bg-slate-50 text-center">
+          <p className="text-[10px] font-bold text-slate-500">
             Lazy PU v2.0 • Made with ❤️ for PU Students
           </p>
         </div>

@@ -34,7 +34,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
 
         {/* Header */}
         <div className="text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#082017] border border-emerald-500/40 text-white shadow-lg">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 border border-emerald-200 text-white shadow-xs">
             <WhatsAppIcon className="h-9 w-9 shrink-0" />
           </div>
           <h3 className="mt-3 text-lg font-black tracking-tight text-slate-900 dark:text-white">
