@@ -153,7 +153,7 @@ export default function SyllabusCoursesPage() {
                     >
                       {/* Clean White Squircle containing the vector icon */}
                       <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-xs p-1.5 transition-all duration-200 group-hover:scale-105 group-hover:shadow-blue-500/10">
-                        {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
+                        {getCourseVectorIcon(course.id, 'h-7 w-7 sm:h-8 sm:w-8')}
                       </div>
 
                       {/* Bold Course Short Code */}

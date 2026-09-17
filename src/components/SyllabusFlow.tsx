@@ -230,7 +230,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
           >
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md shrink-0">
-                {getCourseVectorIcon(currentCourse.id, 'h-9 w-9')}
+                {getCourseVectorIcon(currentCourse.id, 'h-6 w-6')}
               </div>
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider text-cyan-400 block">
@@ -358,7 +358,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                     >
                       {/* Clean White Squircle containing the vector icon */}
                       <div className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white p-1.5 shadow-md transition-all duration-200 group-hover:scale-105 group-hover:shadow-cyan-400/20">
-                        {getCourseVectorIcon(course.id, 'h-9 w-9 sm:h-10 sm:w-10')}
+                        {getCourseVectorIcon(course.id, 'h-7 w-7 sm:h-8 sm:w-8')}
                       </div>
 
                       {/* Bold Course Short Code */}

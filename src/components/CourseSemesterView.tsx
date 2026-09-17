@@ -56,8 +56,8 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
         {/* Course Hero Card (Clean) */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-4 shadow-sm">
           <div className="flex items-center gap-3.5">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-50 p-2 shadow-xs shrink-0 border border-slate-200">
-              {getCourseVectorIcon(course.id, 'h-10 w-10')}
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-50 p-1.5 shadow-xs shrink-0 border border-slate-200">
+              {getCourseVectorIcon(course.id, 'h-7 w-7 sm:h-8 sm:w-8')}
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2 flex-wrap mb-1">
