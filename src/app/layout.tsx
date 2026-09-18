@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { CapacitorInit } from '@/components/CapacitorInit';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -49,7 +50,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className="min-h-screen bg-[#f8fafc] text-slate-900 transition-colors selection:bg-blue-600 selection:text-white flex flex-col antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <CapacitorInit />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
