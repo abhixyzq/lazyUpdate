@@ -22,6 +22,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            assets {
+                exclude '**/downloads/**'
+                exclude '**/*.apk'
+            }
+        }
+    }
 }
 
 repositories {
