@@ -3,20 +3,15 @@
 import React, { useState, useMemo } from 'react';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { puHolidays2026, puCalendarMeta, PUHoliday } from '@/data/puHolidays2026';
+import { InteractiveMonthCalendar } from '@/components/InteractiveMonthCalendar';
 import {
   Calendar as CalendarIcon,
-  PartyPopper,
   Search,
-  CheckCircle2,
-  Sparkles,
-  GraduationCap,
-  Clock,
   Info,
-  ChevronRight,
 } from 'lucide-react';
 
 export default function CalendarPage() {
-  const [activeTab, setActiveTab] = useState<'holidays' | 'academic'>('holidays');
+  const [activeTab, setActiveTab] = useState<'holidays' | 'monthView'>('holidays');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMonth, setSelectedMonth] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -34,15 +29,6 @@ export default function CalendarPage() {
     { id: 'अक्टूबर', label: 'Oct' },
     { id: 'नवम्बर', label: 'Nov' },
     { id: 'दिसम्बर', label: 'Dec' },
-  ];
-
-  const milestones = [
-    { event: 'Odd Semester (Sem 1, 3, 5) Classes Start', date: '01 July 2026', status: 'Completed' },
-    { event: 'Mid-Semester CIA Test & Assignment Submission', date: 'September 2026', status: 'Active' },
-    { event: 'Odd Semester Form Filling (Without Late Fee)', date: '15 Sept - 30 Sept 2026', status: 'Active' },
-    { event: 'Odd Semester End-Term Examinations', date: 'October - November 2026', status: 'Upcoming' },
-    { event: 'Even Semester (Sem 2, 4, 6) Commencement', date: '02 January 2027', status: 'Upcoming' },
-    { event: 'Even Semester Examinations & Degree Award', date: 'May - June 2027', status: 'Upcoming' },
   ];
 
   const filteredHolidays = useMemo(() => {
@@ -124,22 +110,27 @@ export default function CalendarPage() {
                 : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300'
             }`}
           >
-            Holidays List ({puHolidays2026.length})
+            📋 Holiday List ({puHolidays2026.length})
           </button>
           <button
-            onClick={() => setActiveTab('academic')}
+            onClick={() => setActiveTab('monthView')}
             className={`flex-1 rounded-xl py-2 px-3 text-xs font-bold transition ${
-              activeTab === 'academic'
+              activeTab === 'monthView'
                 ? 'border border-slate-900 bg-slate-900 text-white shadow-xs font-black'
                 : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300'
             }`}
           >
-            Academic Milestones
+            📅 Monthly Grid
           </button>
         </div>
 
-        {/* Holidays View */}
-        {activeTab === 'holidays' ? (
+        {/* 1. Monthly Grid View */}
+        {activeTab === 'monthView' && (
+          <InteractiveMonthCalendar />
+        )}
+
+        {/* 2. Holidays List View */}
+        {activeTab === 'holidays' && (
           <div className="space-y-3">
             {/* Search Bar */}
             <div className="relative">
@@ -250,33 +241,6 @@ export default function CalendarPage() {
                 हस्ताक्षर: {puCalendarMeta.registrar}
               </div>
             </div>
-          </div>
-        ) : (
-          /* Academic Milestones View */
-          <div className="space-y-2.5">
-            {milestones.map((m, idx) => (
-              <div
-                key={idx}
-                className="flex items-center justify-between rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-xs hover:border-slate-300 transition"
-              >
-                <div>
-                  <h3 className="text-xs sm:text-sm font-black text-slate-900">{m.event}</h3>
-                  <span className="text-[11px] text-blue-700 font-bold block mt-0.5">{m.date}</span>
-                </div>
-
-                <span
-                  className={`rounded-xl px-2.5 py-1 text-[10px] font-bold border shrink-0 ${
-                    m.status === 'Completed'
-                      ? 'border-emerald-200 bg-emerald-50 text-emerald-800'
-                      : m.status === 'Active'
-                      ? 'border-blue-200 bg-blue-50 text-blue-800'
-                      : 'border-slate-200 bg-slate-100 text-slate-600'
-                  }`}
-                >
-                  {m.status}
-                </span>
-              </div>
-            ))}
           </div>
         )}
       </main>

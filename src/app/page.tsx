@@ -59,7 +59,7 @@ export default function ApnaUniversityHomePage() {
         setIsTimeTableOpen(true);
         break;
       case 'calendar':
-        setIsCalendarOpen(true);
+        router.push('/calendar');
         break;
       case 'extras':
         setIsDrawerOpen(true);

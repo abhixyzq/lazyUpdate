@@ -82,7 +82,7 @@ export const HolidaysCalendarModal: React.FC<HolidaysCalendarModalProps> = ({
             onClick={onClose}
             className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 py-2.5 text-xs font-black text-white transition shadow-xs"
           >
-            <span>View All 38 Holidays & Month Filter</span>
+            <span>Open Real Calendar & 2026 Grid 📅</span>
             <ChevronRight className="h-4 w-4" />
           </Link>
           <button
