@@ -6,7 +6,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Lazy PU | Patna University Student Portal',
   description:
-    'Ultra-fast, mobile-first Patna University portal. Direct links for UG 4-Year CBCS Admissions, Exam Forms, Semester Results, Syllabus, and Previous Year Question Papers (PYQs).',
+    'Ultra-fast, mobile-first Patna University portal. Direct links for UG Admissions, Exam Forms, Semester Results, Syllabus, and Previous Year Question Papers (PYQs).',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'B.N. College',
     'Magadh Mahila College',
     'Vanijya Mahavidyalaya',
-    'PU UG CBCS Result',
+    'PU UG Result',
     'PU Exam Form 2026',
     'PU Syllabus PDF',
     'PU Previous Year Question Papers',

@@ -16,7 +16,7 @@ export const TimeTableModal: React.FC<TimeTableModalProps> = ({
 
   const schedules = [
     {
-      course: 'UG 4-Year CBCS Semester-2 Examination Routine 2026',
+      course: 'UG Semester-2 Examination Routine 2026',
       dates: '14 Oct 2026 - 28 Oct 2026',
       timing: '10:00 AM - 01:00 PM (Shift 1)',
       centers: 'Patna Science College & B.N. College Centers',

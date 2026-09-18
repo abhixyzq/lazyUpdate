@@ -107,12 +107,20 @@ export const AttendanceCalcModal: React.FC<AttendanceCalcModalProps> = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 space-y-2">
+          <a
+            href="/attendance"
+            onClick={onClose}
+            className="flex items-center justify-center gap-1.5 w-full rounded-2xl bg-blue-600 py-2.5 text-xs font-black text-white hover:bg-blue-700 transition shadow-md shadow-blue-500/20"
+          >
+            <span>Open Full Attendance Manager</span>
+            <Sparkles className="h-3.5 w-3.5" />
+          </a>
           <button
             onClick={onClose}
-            className="w-full rounded-xl bg-slate-900 py-2.5 text-xs font-black text-white hover:bg-slate-800 transition"
+            className="w-full rounded-2xl border border-slate-200 py-2 text-xs font-bold text-slate-600 hover:bg-slate-50 transition"
           >
-            Done
+            Close
           </button>
         </div>
 

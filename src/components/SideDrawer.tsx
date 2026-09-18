@@ -231,7 +231,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
               <span>About Lazy PU</span>
             </div>
             <p className="text-[11px] text-slate-600 leading-relaxed">
-              Lazy PU is an independent open-access student platform for Patna University students. It provides direct access to FYUGP CBCS syllabi, notices, attendance planner & SGPA tools without any login barriers.
+              Lazy PU is an independent open-access student platform for Patna University students. It provides direct access to syllabi, notices, attendance planner & SGPA tools without any login barriers.
             </p>
           </div>
 

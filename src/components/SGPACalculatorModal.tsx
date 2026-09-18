@@ -85,7 +85,7 @@ export const SGPACalculatorModal: React.FC<SGPACalculatorModalProps> = ({
           </div>
           <div>
             <h3 className="text-base font-black text-slate-900">SGPA & CGPA Calculator</h3>
-            <p className="text-[11px] text-slate-500">4-Year CBCS Patna University / BEU Grading</p>
+            <p className="text-[11px] text-slate-500">Patna University Grading Scale</p>
           </div>
         </div>
 

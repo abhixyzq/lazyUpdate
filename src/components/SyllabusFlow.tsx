@@ -435,7 +435,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                   >
                     <div className="overflow-hidden">
                       <div className="truncate text-[11px] text-cyan-200">SEM-1 & 2 Syllabus</div>
-                      <div className="text-[10px] text-slate-400">4-Year CBCS Course</div>
+                      <div className="text-[10px] text-slate-400">Official PDF</div>
                     </div>
                     <FileDown className="h-4 w-4 text-cyan-400 shrink-0 ml-1 group-hover:scale-110 transition" />
                   </a>
@@ -450,7 +450,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                   >
                     <div className="overflow-hidden">
                       <div className="truncate text-[11px] text-cyan-200">SEM-3 to 8 Syllabus</div>
-                      <div className="text-[10px] text-slate-400">4-Year CBCS Course</div>
+                      <div className="text-[10px] text-slate-400">Official PDF</div>
                     </div>
                     <FileDown className="h-4 w-4 text-cyan-400 shrink-0 ml-1 group-hover:scale-110 transition" />
                   </a>
@@ -573,7 +573,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                       Credits & Examination Structure
                     </span>
                     <span className="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-bold">
-                      CBCS NEP-2020
+                      Exam Structure
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-400 mt-0.5">
@@ -656,7 +656,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                         : 'text-slate-400 hover:text-white hover:bg-blue-950/50'
                     }`}
                   >
-                    <span>🏛️ 4-Year CBCS (160 Cr)</span>
+                    <span>🏛️ Degree Framework (160 Cr)</span>
                   </button>
 
                   <button
@@ -758,7 +758,7 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                       <div className="flex items-center justify-between border-b border-blue-900/60 pb-2">
                         <span className="font-black text-amber-300 flex items-center gap-1.5">
                           <Layers className="h-4 w-4 text-amber-400" />
-                          Official Bihar 4-Year CBCS Degree Framework
+                          Official Bihar Degree Framework
                         </span>
                         <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-black">
                           Total 160 Credits

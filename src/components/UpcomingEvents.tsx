@@ -37,7 +37,7 @@ export const UpcomingEvents: React.FC<UpcomingEventsProps> = ({
       weekday: 'Wed',
       dateBadgeBg: 'bg-[#f3e8ff] dark:bg-purple-950/60',
       dateTextColor: 'text-[#7c3aed] dark:text-purple-300',
-      title: 'UG 4-Year CBCS 2nd Sem Exam Form Filling',
+      title: 'UG 2nd Sem Exam Form Filling',
       time: '10:00 AM - 05:00 PM (Last Day Without Late Fee)',
       venue: 'Online UMIS Student Portal',
       status: 'Closing Soon',

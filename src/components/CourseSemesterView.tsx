@@ -40,7 +40,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
               {course.shortCode} Syllabus
             </h1>
             <p className="text-[10px] font-bold text-blue-600 truncate">
-              {course.degree}
+              {course.name}
             </p>
           </div>
           <Link
@@ -65,7 +65,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
                   {course.faculty}
                 </span>
                 <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
-                  {course.degree}
+                  {course.totalSemesters} Semesters
                 </span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-slate-900 leading-tight truncate">

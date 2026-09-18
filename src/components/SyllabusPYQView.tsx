@@ -54,13 +54,13 @@ export const SyllabusPYQView: React.FC = () => {
               Syllabus & Previous Year Question Papers (PYQs)
             </h1>
             <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-2xl">
-              Official 4-Year CBCS syllabi and past semester examination question papers for B.A., B.Sc, B.Com, BCA & BBA with 1-click PDF download.
+              Official syllabi and past semester examination question papers for B.A., B.Sc, B.Com, BCA & BBA with 1-click PDF download.
             </p>
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
             <span className="rounded-xl bg-purple-600 px-3 py-1.5 text-xs font-black text-white shadow-xs">
-              4-Year CBCS Updated
+              Updated Syllabi
             </span>
           </div>
         </div>
@@ -170,7 +170,7 @@ export const SyllabusPYQView: React.FC = () => {
                       : 'bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300'
                   }`}
                 >
-                  {item.type === 'pyq' ? `PYQ ${item.year || ''}` : 'CBCS Syllabus'}
+                  {item.type === 'pyq' ? `PYQ ${item.year || ''}` : 'Syllabus'}
                 </span>
               </div>
 

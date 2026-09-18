@@ -79,7 +79,7 @@ export default function SyllabusCoursesPage() {
   return (
     <div className="min-h-screen bg-transparent text-slate-900 pb-16">
       {/* 1. Top Subpage Header */}
-      <SubpageHeader title="PU Syllabus (FYUGP CBCS)" />
+      <SubpageHeader title="PU Syllabus" />
 
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
         {/* Search Bar */}
@@ -163,7 +163,7 @@ export default function SyllabusCoursesPage() {
 
                       {/* Degree / Type Subtitle */}
                       <span className="text-[10px] text-slate-500 line-clamp-1 mt-0.5">
-                        {course.degree ? course.degree.split(' ')[0] : course.faculty}
+                        {course.faculty}
                       </span>
                     </Link>
                   ))}

@@ -32,7 +32,7 @@ export default function ResultsPage() {
               Results Portal Coming Soon
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Patna University ke 4-Year FYUGP CBCS aur regular semester results ke direct roll-number marksheet lookup aur instant SGPA calculation par kaam chal raha hai.
+              Patna University ke semester results ke direct roll-number marksheet lookup aur instant SGPA calculation par kaam chal raha hai.
             </p>
           </div>
 

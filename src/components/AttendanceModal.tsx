@@ -36,7 +36,7 @@ export const AttendanceModal: React.FC<AttendanceModalProps> = ({ isOpen, onClos
               75% Attendance Tracker
             </h3>
             <p className="text-[11px] text-slate-500 dark:text-slate-400">
-              Patna University CBCS Semester Rule
+              Patna University Semester Rule
             </p>
           </div>
         </div>

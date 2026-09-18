@@ -10,7 +10,7 @@ export default function TimeTablePage() {
   const schedules = [
     {
       type: 'exam',
-      course: 'UG 4-Year CBCS Semester-2 Examination Routine',
+      course: 'UG Semester-2 Examination Routine',
       batch: 'Session 2024-28 (Regular & Backlog)',
       dates: '14 Oct 2026 - 28 Oct 2026',
       timing: '10:00 AM - 01:00 PM (Shift 1)',

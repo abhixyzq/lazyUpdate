@@ -44,7 +44,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
             Patna Science College • B.Sc Mathematics (Hons)
           </p>
           <span className="inline-block mt-1.5 rounded-full bg-indigo-100 px-3 py-0.5 text-[10px] font-black text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300">
-            Roll No: 24PSC1089 • Sem-2 CBCS
+            Roll No: 24PSC1089 • Sem-2
           </span>
         </div>
 
@@ -56,7 +56,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
           </div>
           <div className="flex items-center justify-between py-1 border-b border-slate-200/60 dark:border-slate-800">
             <span className="text-slate-400 font-medium">Academic Session</span>
-            <span className="font-bold text-slate-800 dark:text-slate-200">2024 - 2028 (4-Yr CBCS)</span>
+            <span className="font-bold text-slate-800 dark:text-slate-200">2024 - 2028</span>
           </div>
           <div className="flex items-center justify-between py-1">
             <span className="text-slate-400 font-medium">Registration Status</span>

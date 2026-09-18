@@ -6,14 +6,12 @@ import {
   SyllabusIcon,
   ResultsIcon,
   NoticeIcon,
-  AttendanceIcon,
   CalculatorIcon,
   TimeTableIcon,
-  ExtrasIcon,
   CalendarIcon,
 } from './ApnaIcons';
 import { InstagramIcon, WhatsAppIcon } from './OfficialBrandIcons';
-
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 export type ApnaActionType =
@@ -21,10 +19,8 @@ export type ApnaActionType =
   | 'syllabus'
   | 'results'
   | 'notice'
-  | 'attendance'
   | 'sgpa'
   | 'timetable'
-  | 'extras'
   | 'calendar';
 
 interface UniversityGridSectionProps {
@@ -43,11 +39,8 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
     { id: 'syllabus' as ApnaActionType, label: 'Syllabus', href: '/syllabus', icon: <SyllabusIcon /> },
     { id: 'results' as ApnaActionType, label: 'Results', href: '/results', icon: <ResultsIcon /> },
     { id: 'notice' as ApnaActionType, label: 'PU Notice', href: '/notices', icon: <NoticeIcon /> },
-    { id: 'attendance' as ApnaActionType, label: 'Attendance', href: '/attendance', icon: <AttendanceIcon /> },
     { id: 'sgpa' as ApnaActionType, label: 'SGPA CalC', href: '/sgpa', icon: <CalculatorIcon /> },
     { id: 'timetable' as ApnaActionType, label: 'Time Table', href: '/timetable', icon: <TimeTableIcon /> },
-    { id: 'extras' as ApnaActionType, label: 'Extras', href: '/extras', icon: <ExtrasIcon /> },
-    { id: 'calendar' as ApnaActionType, label: 'Calendar', href: '/calendar', icon: <CalendarIcon /> },
   ];
 
   return (
@@ -61,7 +54,7 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
           </h2>
         </div>
 
-        {/* The Exact 3x3 Card Grid - Dedicated Routes */}
+        {/* 6 Primary Cards (2x3 Grid) */}
         <div className="grid grid-cols-3 gap-2.5 sm:gap-3">
           {cards.map((card) => (
             <Link
@@ -81,6 +74,33 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
               </span>
             </Link>
           ))}
+        </div>
+
+        {/* Wide Academic Calendar Banner Card */}
+        <div className="mt-2.5 sm:mt-3">
+          <Link
+            href="/calendar"
+            onClick={() => onSelectAction?.('calendar')}
+            className="group flex items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3 sm:p-3.5 shadow-xs hover:border-blue-400 hover:bg-white hover:shadow-md active:scale-95 transition duration-150"
+          >
+            <div className="flex items-center gap-3">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white border border-slate-200 shadow-xs p-1 transition-all duration-200 group-hover:scale-105 group-hover:border-blue-300">
+                <CalendarIcon />
+              </div>
+              <div className="text-left">
+                <div className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition">
+                  Academic Calendar & Holidays
+                </div>
+                <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">
+                  Official PU 2026 exam schedule, events & holiday list
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-1 rounded-full bg-blue-50 border border-blue-200/60 px-2.5 py-1 text-[10px] font-bold text-blue-700 shrink-0">
+              <span className="hidden sm:inline">View</span>
+              <ChevronRight className="h-3.5 w-3.5" />
+            </div>
+          </Link>
         </div>
 
         {/* Dual Social Pill Action Buttons */}

@@ -196,9 +196,9 @@ export default function SGPAPage() {
           </div>
         </div>
 
-        {/* CBCS Grading Key Table */}
+        {/* PU Grading Key Table */}
         <div className="rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4 text-xs text-slate-700 space-y-2">
-          <span className="font-bold text-slate-900 block text-xs">📊 PU CBCS 10-Point Grade Scale:</span>
+          <span className="font-bold text-slate-900 block text-xs">📊 PU 10-Point Grade Scale:</span>
           <div className="grid grid-cols-4 gap-1.5 text-[11px] text-center">
             <div className="p-1.5 rounded-lg bg-white border border-slate-200 text-slate-800"><b>O</b> = 10 pts</div>
             <div className="p-1.5 rounded-lg bg-white border border-slate-200 text-slate-800"><b>A+</b> = 9 pts</div>

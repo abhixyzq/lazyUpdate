@@ -119,7 +119,7 @@ export const QuickAccessGrid: React.FC<QuickAccessGridProps> = ({
     {
       id: 'syllabus',
       title: 'Syllabus',
-      subtitle: '4-Year CBCS',
+      subtitle: 'All Subjects',
       icon: <BookOpen className="h-5 w-5 text-[#ea580c]" />,
       iconBg: 'bg-[#fff7ed]',
     },

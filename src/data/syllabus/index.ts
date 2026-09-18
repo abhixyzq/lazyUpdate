@@ -49,6 +49,30 @@ export {
   zoologySyllabus,
 };
 
+const cleanCourseText = (str: string): string => {
+  return str
+    .replace(/\s*\((?:CBCS\s*)?(?:4-Year\s*)?(?:FYUGP\s*)?[^)]*\)/gi, '')
+    .replace(/\s*CBCS\s*4-Year\s*FYUGP/gi, '')
+    .replace(/\s*4-Year\s*FYUGP\s*CBCS/gi, '')
+    .replace(/\s*FYUGP\s*CBCS/gi, '')
+    .replace(/\s*CBCS/gi, '')
+    .replace(/\s*FYUGP/gi, '')
+    .replace(/\s*4-Year/gi, '')
+    .trim();
+};
+
+const sanitizeCourse = (course: CourseSyllabus): CourseSyllabus => ({
+  ...course,
+  name: cleanCourseText(course.name),
+  degree: 'Undergraduate',
+  description: course.description
+    ? course.description
+        .replace(/4-Year\s*FYUGP\s*CBCS\s*/gi, '')
+        .replace(/FYUGP\s*CBCS\s*/gi, '')
+        .replace(/CBCS\s*/gi, '')
+    : '',
+});
+
 export const puFacultyList = [
   { id: 'All', name: 'All Sections', count: '23 Subjects' },
   { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
@@ -63,7 +87,7 @@ export const puSpecialSyllabusDownloads = [
   {
     title: 'MJC-14 / MJC-15 Research Methodology (Social Science & Humanities)',
     faculty: 'Social Science',
-    degree: '4-Year FYUGP CBCS (Sem 7)',
+    degree: 'Semester 7',
     url: 'https://www.pup.ac.in/download/research%20methodology%2020231219808584518.pdf',
     badge: 'Official PDF'
   }
@@ -71,8 +95,8 @@ export const puSpecialSyllabusDownloads = [
 
 export const puStreamsList = puFacultyList;
 
-// Verified authentic 4-Year FYUGP CBCS Patna University syllabus data
-export const puCompleteSyllabusData: CourseSyllabus[] = [
+// Verified authentic Patna University syllabus data
+const rawSyllabusData: CourseSyllabus[] = [
   // Faculty of Social Science (7 Subjects)
   historySyllabus,
   aihArchaeologySyllabus,
@@ -104,6 +128,9 @@ export const puCompleteSyllabusData: CourseSyllabus[] = [
   bcomHrmSyllabus,
   bcomMarketingSyllabus,
 ];
+
+export const puCompleteSyllabusData: CourseSyllabus[] = rawSyllabusData.map(sanitizeCourse);
+
 
 
 

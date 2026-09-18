@@ -6,13 +6,13 @@ import { ApnaHeader } from '@/components/ApnaHeader';
 import { AlertStrip } from '@/components/AlertStrip';
 import { UniversityGridSection, ApnaActionType } from '@/components/UniversityGridSection';
 import { SGPACalculatorModal } from '@/components/SGPACalculatorModal';
-import { AttendanceCalcModal } from '@/components/AttendanceCalcModal';
 import { TimeTableModal } from '@/components/TimeTableModal';
 import { HolidaysCalendarModal } from '@/components/HolidaysCalendarModal';
 import { useRouter } from 'next/navigation';
 import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
 import { SideDrawer } from '@/components/SideDrawer';
 import { ImportantLinksModal, ImportantLinkCategory } from '@/components/ImportantLinksModal';
+import { DownloadAppSection } from '@/components/DownloadAppSection';
 
 import { puNoticesData } from '@/data/puNotices';
 import { PUNotice } from '@/types';
@@ -27,7 +27,6 @@ export default function ApnaUniversityHomePage() {
 
   // Modals state
   const [isSGPAOpen, setIsSGPAOpen] = useState(false);
-  const [isAttendanceOpen, setIsAttendanceOpen] = useState(false);
   const [isTimeTableOpen, setIsTimeTableOpen] = useState(false);
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -49,9 +48,6 @@ export default function ApnaUniversityHomePage() {
       case 'notice':
         setSelectedNotice(puNoticesData[0]);
         break;
-      case 'attendance':
-        setIsAttendanceOpen(true);
-        break;
       case 'sgpa':
         setIsSGPAOpen(true);
         break;
@@ -60,9 +56,6 @@ export default function ApnaUniversityHomePage() {
         break;
       case 'calendar':
         router.push('/calendar');
-        break;
-      case 'extras':
-        setIsDrawerOpen(true);
         break;
     }
   };
@@ -98,7 +91,10 @@ export default function ApnaUniversityHomePage() {
         onSelectAction={handleAction}
       />
 
-      {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
+      {/* 4. Download App Section */}
+      <DownloadAppSection appTitle={appTitle} />
+
+      {/* 5. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
       <div className="mx-auto max-w-xl px-3 pt-3">
         <div className="rounded-3xl border border-slate-200/90 bg-white p-3.5 sm:p-4 shadow-sm">
           <div className="flex items-center justify-between pb-2.5 px-1 border-b border-slate-100 mb-2.5">
@@ -157,12 +153,6 @@ export default function ApnaUniversityHomePage() {
       <SGPACalculatorModal
         isOpen={isSGPAOpen}
         onClose={() => setIsSGPAOpen(false)}
-      />
-
-      {/* Attendance Calculator Modal */}
-      <AttendanceCalcModal
-        isOpen={isAttendanceOpen}
-        onClose={() => setIsAttendanceOpen(false)}
       />
 
       {/* Time Table Routine Modal */}

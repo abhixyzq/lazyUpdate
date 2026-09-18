@@ -32,7 +32,7 @@ export default function PYQsPage() {
               PYQs Coming Soon
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Patna University ke 4-Year FYUGP CBCS aur Annual Semester Exams ke verified previous year question papers digitize aur format kiye ja rahe hain.
+              Patna University ke semester exams ke verified previous year question papers digitize aur format kiye ja rahe hain.
             </p>
           </div>
 

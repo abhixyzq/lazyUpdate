@@ -8,7 +8,7 @@ import { ExternalLink, Building2, Globe, Heart, Mail, Share2, ShieldCheck } from
 
 export default function ExtrasPage() {
   const handleShareApp = () => {
-    const text = `🌟 Lazy PU - The complete open-access student portal for Patna University!\nAccess CBCS Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Circulars.\nCheck it out here: ${window.location.origin}`;
+    const text = `🌟 Lazy PU - The complete open-access student portal for Patna University!\nAccess Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Circulars.\nCheck it out here: ${window.location.origin}`;
     if (navigator.share) {
       navigator.share({ title: 'Lazy PU Portal', text, url: window.location.origin });
     } else {
