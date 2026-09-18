@@ -89,7 +89,7 @@ export default function ApnaUniversityHomePage() {
       {/* 2. Golden Alert / Notification Strip */}
       <AlertStrip
         text={`Join ${appTitle} whatsapp channel for latest circulars & dates... more`}
-        onJoin={() => window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank')}
+        href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
       />
 
       {/* 3. Main University Section Container with 3x3 Grid & Social Buttons */}

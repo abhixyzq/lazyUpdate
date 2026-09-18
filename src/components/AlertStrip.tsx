@@ -3,13 +3,15 @@
 import React from 'react';
 
 interface AlertStripProps {
-  onJoin: () => void;
+  onJoin?: () => void;
+  href?: string;
   text?: string;
   universityName?: string;
 }
 
 export const AlertStrip: React.FC<AlertStripProps> = ({
   onJoin,
+  href,
   text = 'Join Lazy PU whatsapp channel for latest notices & circulars... more',
 }) => {
   return (
@@ -28,13 +30,24 @@ export const AlertStrip: React.FC<AlertStripProps> = ({
           </p>
         </div>
 
-        {/* Right: Sleek 'Join Now' Button */}
-        <button
-          onClick={onJoin}
-          className="shrink-0 rounded-xl bg-slate-900 px-3.5 py-1.5 font-black text-xs text-white hover:bg-slate-800 active:scale-95 transition shadow-xs"
-        >
-          Join Now
-        </button>
+        {/* Right: Sleek 'Join Now' Button / Link */}
+        {href ? (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 rounded-xl bg-slate-900 px-3.5 py-1.5 font-black text-xs text-white hover:bg-slate-800 active:scale-95 transition shadow-xs"
+          >
+            Join Now
+          </a>
+        ) : (
+          <button
+            onClick={onJoin}
+            className="shrink-0 rounded-xl bg-slate-900 px-3.5 py-1.5 font-black text-xs text-white hover:bg-slate-800 active:scale-95 transition shadow-xs"
+          >
+            Join Now
+          </button>
+        )}
 
       </div>
     </div>
