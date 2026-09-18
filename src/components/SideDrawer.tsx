@@ -286,7 +286,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                 >
                   <div className="flex items-center gap-2.5 text-[11px]">
                     <Download className="h-3.5 w-3.5 text-slate-500" />
-                    <span>Download APK directly (23.5 MB)</span>
+                    <span>Download APK directly (24.8 MB)</span>
                   </div>
                   <span className="text-[10px] text-slate-400 font-medium">.apk</span>
                 </a>
