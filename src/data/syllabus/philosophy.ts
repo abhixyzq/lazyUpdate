@@ -28,43 +28,58 @@ export const philosophySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Subject-Matter and Branches of Logic",
               "topics": [
-                "1. Subject-Matter and Branches of Logic",
-                "2. Nature and classification of Term, Proposition and Argument",
-                "3. Truth and Validity."
+                "1",
+                "Subject-Matter and Branches of Logic",
+                "2",
+                "Nature and classification of Term",
+                "Proposition and Argument",
+                "3",
+                "Truth and Validity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Symbolisation of Propositions",
               "topics": [
-                "1. Symbolisation of Propositions.",
-                "2. A. Statement and statement forms",
-                "B. Argument and argument forms.",
-                "3. Test of Truth and Validity through truth table."
+                "1",
+                "Symbolisation of Propositions",
+                "2",
+                "A",
+                "Statement and statement forms",
+                "B",
+                "Argument and argument forms",
+                "3",
+                "Test of Truth and Validity through truth table"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Categorical Propositions",
               "topics": [
-                "1. Classification of Categorical Propositions according to Quality and Quantity",
-                "2. Distribution of Terms and Square of opposition",
-                "3. Immediate Inference: Conversion and Obversion"
+                "1",
+                "Classification of Categorical Propositions according to Quality and Quantity",
+                "2",
+                "Distribution of Terms and Square of opposition",
+                "3",
+                "Immediate Inference: Conversion and Obversion"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Categorical Syllogism",
               "topics": [
-                "1. Categorical Syllogism",
-                "2. Syllogistic Rules and Fallacies"
+                "1",
+                "Categorical Syllogism",
+                "2",
+                "Syllogistic Rules and Fallacies"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Bullen Interpretation of Propositions",
               "topics": [
-                "1. Bullen Interpretation of Propositions: Venn Diagram Technique of Testing the Validity of Syllogism"
+                "1",
+                "Bullen Interpretation of Propositions: Venn Diagram Technique of Testing the Validity of Syllogism"
               ]
             }
           ],
@@ -93,26 +108,35 @@ export const philosophySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Subject-Matter and Branches of Logic",
               "topics": [
-                "1. Subject-Matter and Branches of Logic",
-                "2. Nature and classification of Term, Proposition and Argument",
-                "3. Truth and Validity."
+                "1",
+                "Subject-Matter and Branches of Logic",
+                "2",
+                "Nature and classification of Term",
+                "Proposition and Argument",
+                "3",
+                "Truth and Validity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Categorical Propositions",
               "topics": [
-                "1. Classification of Categorical Propositions according to Quality and Quantity",
-                "2. Distribution of Terms and Square of opposition",
-                "3. Immediate Inference: Conversion and Obversion"
+                "1",
+                "Classification of Categorical Propositions according to Quality and Quantity",
+                "2",
+                "Distribution of Terms and Square of opposition",
+                "3",
+                "Immediate Inference: Conversion and Obversion"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Categorical Syllogism",
               "topics": [
-                "1. Categorical Syllogism",
-                "2. Syllogistic Rules and Fallacies"
+                "1",
+                "Categorical Syllogism",
+                "2",
+                "Syllogistic Rules and Fallacies"
               ]
             }
           ],
@@ -146,41 +170,60 @@ export const philosophySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature and Scope of Scientific Method",
               "topics": [
-                "1. Nature and Scope of Scientific Method",
-                "2. Postulates of Induction.",
-                "3. Explanations: Scientific and Unscientific"
+                "1",
+                "Nature and Scope of Scientific Method",
+                "2",
+                "Postulates of Induction",
+                "3",
+                "Explanations: Scientific and Unscientific"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Analogy and Mill's Methods",
               "topics": [
-                "1. Analogy",
-                "2. Mill's Experimental Methods."
+                "1",
+                "Analogy",
+                "2",
+                "Mill's Experimental Methods"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Hypothesis",
               "topics": [
-                "1. Nature and scope of hypothesis in scientific method",
-                "2. Classification of hypothesis",
-                "3. Conditions of hypothesis",
-                "4. Proofs of hypothesis"
+                "1",
+                "Nature and scope of hypothesis in scientific method",
+                "2",
+                "Classification of hypothesis",
+                "3",
+                "Conditions of hypothesis",
+                "4",
+                "Proofs of hypothesis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Statistical Methods",
               "topics": [
-                "1. Nature and need of Statistical Methods",
-                "2. General Method:",
-                "A. Collection of data.",
-                "B. Tabulation of data.",
-                "C. Average-Mean, Median, Mode and Deviation.",
-                "D. Correlation.",
-                "3. Personal Equation.",
-                "4. Probable errors in Statistical Methods."
+                "1",
+                "Nature and need of Statistical Methods",
+                "2",
+                "General Method",
+                "A",
+                "Collection of data",
+                "B",
+                "Tabulation of data",
+                "C",
+                "Average-Mean",
+                "Median",
+                "Mode and Deviation",
+                "D",
+                "Correlation",
+                "3",
+                "Personal Equation",
+                "4",
+                "Probable errors in Statistical Methods"
               ]
             }
           ],
@@ -206,27 +249,36 @@ export const philosophySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature and Scope of Scientific Method",
               "topics": [
-                "1. Nature and Scope of Scientific Method",
-                "2. Postulates of Induction.",
-                "3. Explanations: Scientific and Unscientific"
+                "1",
+                "Nature and Scope of Scientific Method",
+                "2",
+                "Postulates of Induction",
+                "3",
+                "Explanations: Scientific and Unscientific"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Analogy and Mill's Methods",
               "topics": [
-                "1. Analogy",
-                "2. Mill's Experimental Methods."
+                "1",
+                "Analogy",
+                "2",
+                "Mill's Experimental Methods"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Hypothesis",
               "topics": [
-                "1. Nature and scope of hypothesis in scientific method",
-                "2. Classification of hypothesis",
-                "3. Conditions of hypothesis",
-                "4. Proofs of hypothesis"
+                "1",
+                "Nature and scope of hypothesis in scientific method",
+                "2",
+                "Classification of hypothesis",
+                "3",
+                "Conditions of hypothesis",
+                "4",
+                "Proofs of hypothesis"
               ]
             }
           ],

@@ -27,7 +27,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature and Scope of Geomorphology, Origin of the Earth",
               "topics": [
-                "Nebular, Tidal and Big Bang Theory",
+                "Nebular",
+                "Tidal and Big Bang Theory",
                 "Internal Structure of the Earth"
               ]
             },
@@ -54,7 +55,8 @@ export const geographySyllabus: CourseSyllabus = {
               "topics": [
                 "Weathering and Erosion",
                 "Normal Cycle of Erosion-Davis and Penck",
-                "Evolution of Landforms:- Glacial, Arid and Karst Topography"
+                "Evolution of Landforms:- Glacial",
+                "Arid and Karst Topography"
               ]
             }
           ],
@@ -87,7 +89,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Origin of the Earth and Internal Structure",
               "topics": [
-                "Origin of the Earth-Gaseous Hypothesis, Binary Star Hypothesis",
+                "Origin of the Earth-Gaseous Hypothesis",
+                "Binary Star Hypothesis",
                 "Internal Structure of the Earth"
               ]
             },
@@ -161,8 +164,10 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -182,7 +187,8 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -195,7 +201,9 @@ export const geographySyllabus: CourseSyllabus = {
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -282,7 +290,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Air Masses, Fronts and Cyclones",
               "topics": [
-                "Air Masses and Fronts- Concepts, Classification and Properties",
+                "Air Masses and Fronts- Concepts",
+                "Classification and Properties",
                 "Tropical and Temperate Cyclones"
               ]
             },
@@ -298,7 +307,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Relief of the Ocean floor and Salinity",
               "topics": [
-                "Relief of the Ocean floor: Continental Shelf, Slope and Deep Sea Plain",
+                "Relief of the Ocean floor: Continental Shelf",
+                "Slope and Deep Sea Plain",
                 "Bottom Relief of Indian and Atlantic Ocean",
                 "Factors of Salinity of Oceans"
               ]
@@ -333,7 +343,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Graphical Representation of Wind Rose, Cyclone and Anticyclone",
               "topics": [
-                "Graphical Representation of Wind Rose, Cyclone and Anticyclone"
+                "Graphical Representation of Wind Rose",
+                "Cyclone and Anticyclone"
               ]
             },
             {
@@ -347,7 +358,9 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Meteorological Instruments",
               "topics": [
-                "Functions of Wind Vane and Anemometer, Barometer, Dry and Wet Bulb Thermometer"
+                "Functions of Wind Vane and Anemometer",
+                "Barometer",
+                "Dry and Wet Bulb Thermometer"
               ]
             }
           ],
@@ -432,7 +445,9 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Functions of Weather Instruments",
               "topics": [
-                "Functions of Wind Vane, Anemometer, Barometer and Rain Gauge"
+                "Functions of Wind Vane",
+                "Anemometer",
+                "Barometer and Rain Gauge"
               ]
             }
           ],
@@ -474,43 +489,84 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -520,22 +576,38 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -608,7 +680,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and Scope of Economic Geography",
               "topics": [
-                "Concept and Classification of Economic Activities- Primary, Secondary and Tertiary"
+                "Concept and Classification of Economic Activities- Primary",
+                "Secondary and Tertiary"
               ]
             },
             {
@@ -616,7 +689,8 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Locational Theory of Agriculture",
               "topics": [
                 "Locational Theory of Agriculture (Von Thunen)",
-                "Intensive Subsistence Farming, Commercial Grain Farming and Dairy Farming"
+                "Intensive Subsistence Farming",
+                "Commercial Grain Farming and Dairy Farming"
               ]
             },
             {
@@ -624,7 +698,10 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Industrial Location Theory",
               "topics": [
                 "Industrial Location Theory (Weber)",
-                "Major Industries - Iron and Steel, Cotton Textile, Automobile Industry and Information Technology"
+                "Major Industries",
+                "Iron and Steel",
+                "Cotton Textile",
+                "Automobile Industry and Information Technology"
               ]
             },
             {
@@ -675,21 +752,26 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Map and its Types, Distribution Maps",
               "topics": [
                 "Map and its Types",
-                "Distribution Maps - Dot, Choropleth and Isopleth"
+                "Distribution Maps",
+                "Dot",
+                "Choropleth and Isopleth"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Map Projection",
               "topics": [
-                "Map Projection : Concept, Classification and Properties"
+                "Map Projection : Concept",
+                "Classification and Properties"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Surveying",
               "topics": [
-                "Surveying - Concept, Types and its significance"
+                "Surveying",
+                "Concept",
+                "Types and its significance"
               ]
             }
           ],
@@ -726,14 +808,17 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Bar Diagram, Pie Diagram and Choropleth",
               "topics": [
-                "Bar Diagram, Pie Diagram and Choropleth"
+                "Bar Diagram",
+                "Pie Diagram and Choropleth"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Map Projection",
               "topics": [
-                "Simpal Conical One Standard Parallel, Cylindrical Equidistant Projection, Zenithal Equidistant Projection"
+                "Simpal Conical One Standard Parallel",
+                "Cylindrical Equidistant Projection",
+                "Zenithal Equidistant Projection"
               ]
             },
             {
@@ -782,7 +867,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and Scope of Economic Geography",
               "topics": [
-                "Concept and Classification of Economic Activities- Primary, Secondary and Tertiary"
+                "Concept and Classification of Economic Activities- Primary",
+                "Secondary and Tertiary"
               ]
             },
             {
@@ -790,7 +876,9 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Agriculture and Industries",
               "topics": [
                 "Intensive Subsistence Farming and Commercial Grain Farming",
-                "Major Industries - Iron and Steel, Cotton Textile Industry"
+                "Major Industries",
+                "Iron and Steel",
+                "Cotton Textile Industry"
               ]
             },
             {
@@ -836,8 +924,10 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Diagrams and Map Projection",
               "topics": [
-                "Diagrams – Bar diagram and Pie diagram",
-                "Map Projection – Simpal Conical"
+                "Diagrams",
+                "Bar diagram and Pie diagram",
+                "Map Projection",
+                "Simpal Conical"
               ]
             },
             {
@@ -888,9 +978,19 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -909,9 +1009,13 @@ export const geographySyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -922,9 +1026,13 @@ export const geographySyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -1020,15 +1128,19 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Human Geography: Definition, Nature and Scope",
               "topics": [
                 "Fundamental Concepts in Human Geography",
-                "Contemporary relevance of Determinism, Possibilism and Neo-Determinism"
+                "Contemporary relevance of Determinism",
+                "Possibilism and Neo-Determinism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Population",
               "topics": [
-                "Population Composition, Growth, Density and Distribution (World)",
-                "Malthus Population theory, Demographic Transition Theory",
+                "Population Composition",
+                "Growth",
+                "Density and Distribution (World)",
+                "Malthus Population theory",
+                "Demographic Transition Theory",
                 "Migration: Causes and types"
               ]
             },
@@ -1037,7 +1149,8 @@ export const geographySyllabus: CourseSyllabus = {
               "title": "Races and Tribes",
               "topics": [
                 "Major Tribal Groups of India and Bihar",
-                "Race, Religion and Language"
+                "Race",
+                "Religion and Language"
               ]
             },
             {
@@ -1097,24 +1210,35 @@ export const geographySyllabus: CourseSyllabus = {
               "topics": [
                 "Climate: Origin and Mechanism of Monsoon",
                 "Soil Types and Distribution",
-                "Natural Vegetation: Types, Characteristics, and Distribution"
+                "Natural Vegetation: Types",
+                "Characteristics, and Distribution"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mineral and Industries",
               "topics": [
-                "Types of Natural resource, Distribution of Minerals-Iron ore, Manganese, Mica",
-                "Power resource -Coal, Petroleum and Hydro Power",
-                "Selected Industries: Iron and steel, Cotton textile and Sugar, Automobile and Information Technology"
+                "Types of Natural resource",
+                "Distribution of Minerals-Iron ore",
+                "Manganese",
+                "Mica",
+                "Power resource -Coal",
+                "Petroleum and Hydro Power",
+                "Selected Industries: Iron and steel",
+                "Cotton textile and Sugar",
+                "Automobile and Information Technology"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Geography of Bihar",
               "topics": [
-                "Structure and Physiography, Important Rivers of Bihar, Problems of Flood and Drought",
-                "Population: Growth, Density and Distribution, Trends of Urbanization"
+                "Structure and Physiography",
+                "Important Rivers of Bihar",
+                "Problems of Flood and Drought",
+                "Population: Growth",
+                "Density and Distribution",
+                "Trends of Urbanization"
               ]
             }
           ],
@@ -1148,14 +1272,19 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Use of Data in Geography",
               "topics": [
-                "Significance of Statistical Methods in Geography, Sources and Types of Data, Scale of Measurement"
+                "Significance of Statistical Methods in Geography",
+                "Sources and Types of Data",
+                "Scale of Measurement"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Measures of Central Tendency and Dispersion",
               "topics": [
-                "Measures of Central Tendency: Mean, Median, Mode - Concept and Properties",
+                "Measures of Central Tendency: Mean",
+                "Median",
+                "Mode",
+                "Concept and Properties",
                 "Measures of Dispersion"
               ]
             },
@@ -1163,14 +1292,16 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Sampling Methods",
               "topics": [
-                "Types of Sampling - Probability & Non-Probability Sampling"
+                "Types of Sampling",
+                "Probability & Non-Probability Sampling"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Correlation and Regression",
               "topics": [
-                "Correlation: Mean and Types -Karl Pearson's Coefficient of Correlation, Spearman's Rank Correlation Coefficient and Scatter Diagram",
+                "Correlation: Mean and Types -Karl Pearson's Coefficient of Correlation",
+                "Spearman's Rank Correlation Coefficient and Scatter Diagram",
                 "Regression Analysis"
               ]
             }
@@ -1205,21 +1336,27 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Measurement of Central Tendency",
               "topics": [
-                "Mean, Median, Mode and Centro-Graphic Techniques-Histogram and Frequency Polygon"
+                "Mean",
+                "Median",
+                "Mode and Centro-Graphic Techniques-Histogram and Frequency Polygon"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Measures of dispersion",
               "topics": [
-                "Range, Mean Deviation, Standard Deviation, Quartile Deviation"
+                "Range",
+                "Mean Deviation",
+                "Standard Deviation",
+                "Quartile Deviation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Correlation",
               "topics": [
-                "Karl Pearson's Coefficient of Correlation, Spearman's Rank Correlation and Scatter Diagram"
+                "Karl Pearson's Coefficient of Correlation",
+                "Spearman's Rank Correlation and Scatter Diagram"
               ]
             },
             {
@@ -1266,21 +1403,29 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Population Dynamics",
               "topics": [
-                "Fertility, Mortality and Migration-Causes and effects"
+                "Fertility",
+                "Mortality and Migration-Causes and effects"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Population Composition",
               "topics": [
-                "Age-Sex Structure, Rural and Urban Composition, Occupational Structure, Literacy, Religion and Language"
+                "Age-Sex Structure",
+                "Rural and Urban Composition",
+                "Occupational Structure",
+                "Literacy",
+                "Religion and Language"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Contemporary Population Issues",
               "topics": [
-                "Aging Population, Declining Sex Ratio, Declining Fertility, Invisible Population and Population Policies"
+                "Aging Population",
+                "Declining Sex Ratio",
+                "Declining Fertility",
+                "Invisible Population and Population Policies"
               ]
             }
           ],
@@ -1315,14 +1460,17 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Population Distribution",
               "topics": [
-                "Age-Sex Pyramid, Dot Method, Choropleth Map"
+                "Age-Sex Pyramid",
+                "Dot Method",
+                "Choropleth Map"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Methods of Population Projection",
               "topics": [
-                "Methods of Population Projection, Doubling Time of Population"
+                "Methods of Population Projection",
+                "Doubling Time of Population"
               ]
             },
             {
@@ -1365,7 +1513,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1444,15 +1593,24 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Environmental Geography: meaning and concept",
               "topics": [
-                "Environmental Geography: meaning and concept, Environmental degradation, Bio-diversity: Hot Spots, Heat island",
-                "Components of environment and their inter-relationship, Concepts and types of Eco-system, Ecological balance, Bio-energy Cycle"
+                "Environmental Geography: meaning and concept",
+                "Environmental degradation",
+                "Bio-diversity: Hot Spots",
+                "Heat island",
+                "Components of environment and their inter-relationship",
+                "Concepts and types of Eco-system",
+                "Ecological balance",
+                "Bio-energy Cycle"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Environmental pollution",
               "topics": [
-                "Air pollution, Water pollution, Noise pollution, Sound pollution, and their remedial measures",
+                "Air pollution",
+                "Water pollution",
+                "Noise pollution",
+                "Sound pollution, and their remedial measures",
                 "International standard of Drinking water"
               ]
             },
@@ -1460,8 +1618,11 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Environmental Degradation",
               "topics": [
-                "Causes and Impacts, Natural disaster Drought, Flood and Earthquake",
-                "Environmental Pollution: Air Pollution, Water Pollution",
+                "Causes and Impacts",
+                "Natural disaster Drought",
+                "Flood and Earthquake",
+                "Environmental Pollution: Air Pollution",
+                "Water Pollution",
                 "Environmental management and policies"
               ]
             },
@@ -1469,8 +1630,12 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Sewage disposal, Cleaning of rivers",
               "topics": [
-                "Sewage disposal, Cleaning of rivers",
-                "Natural hazards and disasters, Radiation hazards, Gas leak, Acid rain",
+                "Sewage disposal",
+                "Cleaning of rivers",
+                "Natural hazards and disasters",
+                "Radiation hazards",
+                "Gas leak",
+                "Acid rain",
                 "Environmental laws"
               ]
             }
@@ -1507,29 +1672,43 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature and Scope of Cartography, Scale",
               "topics": [
-                "Nature and Scope of Cartography, Scale- Concept and Application, Graphical Construction of Simple, Comparative and Diagonal Scales"
+                "Nature and Scope of Cartography",
+                "Scale- Concept and Application",
+                "Graphical Construction of Simple",
+                "Comparative and Diagonal Scales"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Weather Map",
               "topics": [
-                "Difference between Climate and Weather, Significance of weather maps, Study and Interpretation of Weather Maps",
-                "Cloud types, Methods of interpretation of daily weather maps, Development of weather forecasting technology"
+                "Difference between Climate and Weather",
+                "Significance of weather maps",
+                "Study and Interpretation of Weather Maps",
+                "Cloud types",
+                "Methods of interpretation of daily weather maps",
+                "Development of weather forecasting technology"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Map Projections",
               "topics": [
-                "Concept, Classification and Properties, Graphical Construction of Cylindrical Equidistant and Equal AreaProjection, Conical Projection with One and Two Standard Parallels, Zenithal Equi-Distant and Equal Area Projection"
+                "Concept",
+                "Classification and Properties",
+                "Graphical Construction of Cylindrical Equidistant and Equal AreaProjection",
+                "Conical Projection with One and Two Standard Parallels",
+                "Zenithal Equi-Distant and Equal Area Projection"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Topographical Map",
               "topics": [
-                "Development of topographical mapping in India, Maps of Survey of India, Methods of study of the Topographical maps, Interpretation of Topographical Maps"
+                "Development of topographical mapping in India",
+                "Maps of Survey of India",
+                "Methods of study of the Topographical maps",
+                "Interpretation of Topographical Maps"
               ]
             }
           ],
@@ -1566,15 +1745,21 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature and Scope of Cartography, Scale",
               "topics": [
-                "Nature and Scope of Cartography, Scale- Concept and Application, Construction of Simple, Comparative and Diagonal Scales"
+                "Nature and Scope of Cartography",
+                "Scale- Concept and Application",
+                "Construction of Simple",
+                "Comparative and Diagonal Scales"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Topographical Map and Map Projection",
               "topics": [
-                "Topographical Map – Study and Interpretation of Topographical Maps",
-                "Map Projection: Cylindrical Equidistant and Equal Area Projection, Conical Projection with One and Two Standard Parallels, Zenithal Equi-Distant and Equal Area Projection"
+                "Topographical Map",
+                "Study and Interpretation of Topographical Maps",
+                "Map Projection: Cylindrical Equidistant and Equal Area Projection",
+                "Conical Projection with One and Two Standard Parallels",
+                "Zenithal Equi-Distant and Equal Area Projection"
               ]
             },
             {
@@ -1616,17 +1801,21 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Human Geography: Definition, Nature and Scope",
               "topics": [
-                "Determinism, Possibility and Neo Determinism"
+                "Determinism",
+                "Possibility and Neo Determinism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Population",
               "topics": [
-                "Population Composition, Growth, Density and Distribution (World)",
+                "Population Composition",
+                "Growth",
+                "Density and Distribution (World)",
                 "Population Theory of Malthus",
                 "Demographic Transition Theory",
-                "Migration: Types, Causes and Consequences"
+                "Migration: Types",
+                "Causes and Consequences"
               ]
             },
             {
@@ -1694,7 +1883,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and Definition of Geography",
               "topics": [
-                "Meaning and Definition of Geography, Relation of Geography with Other Sciences"
+                "Meaning and Definition of Geography",
+                "Relation of Geography with Other Sciences"
               ]
             },
             {
@@ -1708,14 +1898,19 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Dualism in Geography",
               "topics": [
-                "Physical Vs Human Geography, Determinism Vs Possiblism, Neo-Determinism, Systematic Vs Regional"
+                "Physical Vs Human Geography",
+                "Determinism Vs Possiblism",
+                "Neo-Determinism",
+                "Systematic Vs Regional"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Concept and Methodological development in Geography",
               "topics": [
-                "Quantitative Revolution, Behaviouralism, Applied Geography"
+                "Quantitative Revolution",
+                "Behaviouralism",
+                "Applied Geography"
               ]
             }
           ],
@@ -1752,14 +1947,19 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Research - Meaning and its Types",
               "topics": [
-                "Hypothesis, Research Methodology: Merits and demerits of Quantitative and Qualitative techniques"
+                "Hypothesis",
+                "Research Methodology: Merits and demerits of Quantitative and Qualitative techniques"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Field Techniques",
               "topics": [
-                "Merits, Demerits and Selection; Observation, Questionnaire, Schedule and Interview Method",
+                "Merits",
+                "Demerits and Selection",
+                "Observation",
+                "Questionnaire",
+                "Schedule and Interview Method",
                 "Sampling and its Types"
               ]
             },
@@ -1767,14 +1967,18 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Case Study Method of Research",
               "topics": [
-                "Definition, Nature and Field Tools"
+                "Definition",
+                "Nature and Field Tools"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Field Report",
               "topics": [
-                "Aims and Objectives, Data Analysis, Interpretation and Report Writing. Bibliography"
+                "Aims and Objectives",
+                "Data Analysis",
+                "Interpretation and Report Writing",
+                "Bibliography"
               ]
             }
           ],
@@ -1807,28 +2011,37 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Remote Sensing",
               "topics": [
-                "Basic Concept, Historic Development and Significance, Elements of Satellite Imageries"
+                "Basic Concept",
+                "Historic Development and Significance",
+                "Elements of Satellite Imageries"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Process and Stages of Remote Sensing",
               "topics": [
-                "Electromagnetic Spectrum, Interaction of EMR with Earth Surface Features"
+                "Electromagnetic Spectrum",
+                "Interaction of EMR with Earth Surface Features"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sensors and Platforms",
               "topics": [
-                "Sensors and their Types; Platforms; Application of Remote Sensing"
+                "Sensors and their Types",
+                "Platforms",
+                "Application of Remote Sensing"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Geographic Information System (GIS)",
               "topics": [
-                "Definition, Basic Elements, Functions and Uses, Raster and Vector data Structure, Application of GIS"
+                "Definition",
+                "Basic Elements",
+                "Functions and Uses",
+                "Raster and Vector data Structure",
+                "Application of GIS"
               ]
             }
           ],
@@ -1862,21 +2075,26 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Geo-referencing, Aerial Photo Interpretation",
               "topics": [
-                "Geo-referencing, Aerial Photo Interpretation"
+                "Geo-referencing",
+                "Aerial Photo Interpretation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Creating Point, Line and Shape files",
               "topics": [
-                "Creating Point, Line and Shape files"
+                "Creating Point",
+                "Line and Shape files"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Creating Point Data from table; Creating Buffer, Choropleth Map, Satellite Image Classification and Interpretation",
               "topics": [
-                "Creating Point Data from table; Creating Buffer, Choropleth Map, Satellite Image Classification and Interpretation"
+                "Creating Point Data from table",
+                "Creating Buffer",
+                "Choropleth Map",
+                "Satellite Image Classification and Interpretation"
               ]
             },
             {
@@ -1915,7 +2133,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Concept of Region, Types of Regions",
               "topics": [
-                "Concept of Region, Types of Regions",
+                "Concept of Region",
+                "Types of Regions",
                 "Need for Regional Planning"
               ]
             },
@@ -1930,7 +2149,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Growth Pole Model of Perroux; Concept of PURA",
               "topics": [
-                "Growth Pole Model of Perroux; Concept of PURA",
+                "Growth Pole Model of Perroux",
+                "Concept of PURA",
                 "Planning Regions: Hilly Regions and Flood Prone Regions"
               ]
             },
@@ -1938,7 +2158,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Multilevel Planning",
               "topics": [
-                "Multilevel Planning; Panchayati Raj Institutions",
+                "Multilevel Planning",
+                "Panchayati Raj Institutions",
                 "Prime Ministers Gramin Sadak Yojna"
               ]
             }
@@ -1972,21 +2193,28 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Measurement of Central Tendency",
               "topics": [
-                "Mean, Median, Mode and Centro-Graphic Techniques-Histogram and Frequency Polygon"
+                "Mean",
+                "Median",
+                "Mode and Centro-Graphic Techniques-Histogram and Frequency Polygon"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Measures of dispersion",
               "topics": [
-                "Range, Mean Deviation, Standard Deviation, Quartile Deviation"
+                "Range",
+                "Mean Deviation",
+                "Standard Deviation",
+                "Quartile Deviation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Correlation",
               "topics": [
-                "Karl Pearson's Coefficient of Correlation, Spearman's Rank Correlation and Scatter Diagram; Regression Analysis"
+                "Karl Pearson's Coefficient of Correlation",
+                "Spearman's Rank Correlation and Scatter Diagram",
+                "Regression Analysis"
               ]
             },
             {
@@ -2030,7 +2258,8 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Concept of Region, Types of Regions",
               "topics": [
-                "Regional Hierarchy, Need for Regional Planning"
+                "Regional Hierarchy",
+                "Need for Regional Planning"
               ]
             },
             {
@@ -2045,15 +2274,19 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Planning of Remote and Problem Regions",
               "topics": [
-                "Hilly Regions, Tribal Region and Flood Prone Region"
+                "Hilly Regions",
+                "Tribal Region and Flood Prone Region"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Model of Regional Planning",
               "topics": [
-                "Growth Pole Model of Perroux, Rostow's Model",
-                "Concept of PIIRA; Public participation in regional Planning; Panchayati Raj System"
+                "Growth Pole Model of Perroux",
+                "Rostow's Model",
+                "Concept of PIIRA",
+                "Public participation in regional Planning",
+                "Panchayati Raj System"
               ]
             }
           ],
@@ -2086,28 +2319,34 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Social Geography: Concept, Nature and Scope",
               "topics": [
-                "Social Geography: Concept, Nature and Scope, Migration: Causes and Consequences"
+                "Social Geography: Concept",
+                "Nature and Scope",
+                "Migration: Causes and Consequences"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Social Categories",
               "topics": [
-                "Caste, Religion, Race - their Spatial distribution"
+                "Caste, Religion, Race",
+                "Their Spatial distribution"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Geography of Welfare and Social Wellbeing",
               "topics": [
-                "Concept and Components, Healthcare, Housing and Education –Concept and Problems"
+                "Concept and Components",
+                "Healthcare",
+                "Housing and Education –Concept and Problems"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Geography of Social Inclusion and Exclusion",
               "topics": [
-                "Slums & Social Conflicts, Social Planning India"
+                "Slums & Social Conflicts",
+                "Social Planning India"
               ]
             }
           ],
@@ -2141,28 +2380,41 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Disasters: Definition and Concepts",
               "topics": [
-                "Hazards and Disasters, Classification and Principles of disaster management, Components of disaster management, Risk and Vulnerability of disaster"
+                "Hazards and Disasters",
+                "Classification and Principles of disaster management",
+                "Components of disaster management",
+                "Risk and Vulnerability of disaster"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Natural Disasters in India: Causes, Impact and Distribution",
               "topics": [
-                "Flood, Drought, Earthquake and Cyclone"
+                "Flood",
+                "Drought",
+                "Earthquake and Cyclone"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Human Induced Disasters",
               "topics": [
-                "Technological and Industrial disasters, Moral disasters, Fire, Road Accidents; their responsible Causes and Impact"
+                "Technological and Industrial disasters",
+                "Moral disasters",
+                "Fire",
+                "Road Accidents",
+                "Their responsible Causes and Impact"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Response and Mitigation to Disasters",
               "topics": [
-                "Mitigation and Preparedness, NDMA and NIDM; Indigenous Knowledge and Community-Based Disaster Management; Do's and Don'ts During and Post Disasters, Disaster Warning System"
+                "Mitigation and Preparedness",
+                "NDMA and NIDM",
+                "Indigenous Knowledge and Community-Based Disaster Management",
+                "Do's and Don'ts During and Post Disasters",
+                "Disaster Warning System"
               ]
             }
           ],
@@ -2193,14 +2445,27 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Field Work and Preparation of Project Report",
               "topics": [
-                "Flood, Drought, Earthquake, Erosion by rivers, Human Induced Disasters: Fire Hazards, Electric shorts, Bursting of domestic Gas Cylinder, Chemical disasters, Industrial accidents, Road – Rail accidents, Problem of solid Waste"
+                "Flood",
+                "Drought",
+                "Earthquake",
+                "Erosion by rivers",
+                "Human Induced Disasters: Fire Hazards",
+                "Electric shorts",
+                "Bursting of domestic Gas Cylinder",
+                "Chemical disasters",
+                "Industrial accidents",
+                "Road",
+                "Rail accidents",
+                "Problem of solid Waste"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Natural Disasters in India: Causes, Impact and Distribution",
               "topics": [
-                "Flood, Drought, Earthquake and Cyclone"
+                "Flood",
+                "Drought",
+                "Earthquake and Cyclone"
               ]
             },
             {
@@ -2238,14 +2503,18 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Environmental Geography: Meaning and Scope",
               "topics": [
-                "Ecology and Eco-system, Terrestrial and Aquatic Eco-system"
+                "Ecology and Eco-system",
+                "Terrestrial and Aquatic Eco-system"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Environmental pollution",
               "topics": [
-                "Air pollution, Water pollution, Noise pollution, Soil pollution, and their remedial measures",
+                "Air pollution",
+                "Water pollution",
+                "Noise pollution",
+                "Soil pollution, and their remedial measures",
                 "International standard of Drinking water"
               ]
             },
@@ -2253,16 +2522,21 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Environmental crisis",
               "topics": [
-                "Causes and mitigation, Major global Environmental issues with special reference to India: Ozone layer Depletion",
-                "Natural disasters: Drought, Flood"
+                "Causes and mitigation",
+                "Major global Environmental issues with special reference to India: Ozone layer Depletion",
+                "Natural disasters: Drought",
+                "Flood"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Cleaning of rivers, Contamination of water",
               "topics": [
-                "Cleaning of rivers, Contamination of water: Arsenic and Fluorides",
-                "Natural hazards and disasters, Radiation Hazards, Acid rain"
+                "Cleaning of rivers",
+                "Contamination of water: Arsenic and Fluorides",
+                "Natural hazards and disasters",
+                "Radiation Hazards",
+                "Acid rain"
               ]
             }
           ],
@@ -2298,7 +2572,10 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Interpretation of Weather map, Hythegraph, Climograph, Wind Rose",
               "topics": [
-                "Interpretation of Weather map, Hythegraph, Climograph, Wind Rose"
+                "Interpretation of Weather map",
+                "Hythegraph",
+                "Climograph",
+                "Wind Rose"
               ]
             },
             {
@@ -2372,21 +2649,25 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Social Categories",
               "topics": [
-                "Caste, Religion, Race - their Spatial distribution"
+                "Caste, Religion, Race",
+                "Their Spatial distribution"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Geography of Welfare and Social Wellbeing",
               "topics": [
-                "Concept and Components, Healthcare, Housing and Education –Concept and Problems"
+                "Concept and Components",
+                "Healthcare",
+                "Housing and Education –Concept and Problems"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Geography of Social Inclusion and Exclusion",
               "topics": [
-                "Slums & Social Conflicts, Social Planning India"
+                "Slums & Social Conflicts",
+                "Social Planning India"
               ]
             }
           ],
@@ -2420,28 +2701,35 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Remote Sensing. Meaning and Concepts",
               "topics": [
-                "Historic Development, Significance and Utility of Remote Sensing"
+                "Historic Development",
+                "Significance and Utility of Remote Sensing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Electromagnetic Spectrum",
               "topics": [
-                "Types of Spectrums, Reflectance and Spectral Signature"
+                "Types of Spectrums",
+                "Reflectance and Spectral Signature"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sensors, Platforms, Application of Remote Sensing",
               "topics": [
-                "Sensors, Platforms, Application of Remote Sensing"
+                "Sensors",
+                "Platforms",
+                "Application of Remote Sensing"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Geographic Information System (GIS)",
               "topics": [
-                "Definition. Basic Functions and Uses, Basic Elements of GIS, Application of GIS"
+                "Definition",
+                "Basic Functions and Uses",
+                "Basic Elements of GIS",
+                "Application of GIS"
               ]
             }
           ],
@@ -2475,14 +2763,16 @@ export const geographySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Aerial Photo Interpretation, Elements of Interpretations",
               "topics": [
-                "Aerial Photo Interpretation, Elements of Interpretations"
+                "Aerial Photo Interpretation",
+                "Elements of Interpretations"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Satellite Image Interpretation, Digital Image Processing",
               "topics": [
-                "Satellite Image Interpretation, Digital Image Processing"
+                "Satellite Image Interpretation",
+                "Digital Image Processing"
               ]
             },
             {

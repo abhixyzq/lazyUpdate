@@ -27,35 +27,47 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "What is Politics: Theorizing the 'Political'",
               "topics": [
-                "Meaning, nature and scope of Political Science",
-                "Growth of Political Science as a Discipline: Traditionalism, Behaviouralism and Post-Behaviouralism",
-                "State of Political Theory Today; Decline or Resurgence."
+                "Meaning",
+                "Nature and scope of Political Science",
+                "Growth of Political Science as a Discipline: Traditionalism",
+                "Behaviouralism and Post-Behaviouralism",
+                "State of Political Theory Today",
+                "Decline or Resurgence"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Schools of Political Theory",
               "topics": [
-                "Liberal, Marxist and Socialist and Anarchist."
+                "Liberal",
+                "Marxist and Socialist and Anarchist"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Approaches to Political Theory",
               "topics": [
-                "Normative, Historical, Legal and Institutional and Empirical",
-                "State, Elements, Origin and Development",
-                "Sovereignty, Meaning, Schools: Monism and Pluralism",
+                "Normative",
+                "Historical",
+                "Legal and Institutional and Empirical",
+                "State",
+                "Elements",
+                "Origin and Development",
+                "Sovereignty",
+                "Meaning",
+                "Schools: Monism and Pluralism",
                 "Liberty and Equality",
                 "Justice and Rights",
-                "Democracy: Meaning, Types; Direct and Indirect and theories and Related Debates."
+                "Democracy: Meaning, Types",
+                "Direct and Indirect and theories and Related Debates"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Critical and contemporary perspectives in political theory",
               "topics": [
-                "Feminism and Post-Modernism, Environmentalism and Neo-liberalism."
+                "Feminism and Post-Modernism",
+                "Environmentalism and Neo-liberalism"
               ]
             }
           ],
@@ -91,23 +103,31 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning, nature and scope of Political Science",
               "topics": [
-                "Growth of Political Science as a Discipline: Traditionalism, Behaviouralism and Post-Behaviouralism"
+                "Growth of Political Science as a Discipline: Traditionalism",
+                "Behaviouralism and Post-Behaviouralism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Schools of Political Theory",
               "topics": [
-                "Liberal, Marxist and Socialist and Anarchist."
+                "Liberal",
+                "Marxist and Socialist and Anarchist"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Approaches to Political Theory",
               "topics": [
-                "Normative, Historical, Legal and Institutional.",
-                "State, Elements, Origin and Development",
-                "Sovereignty, Meaning, Schools: Monism and Pluralism",
+                "Normative",
+                "Historical",
+                "Legal and Institutional",
+                "State",
+                "Elements",
+                "Origin and Development",
+                "Sovereignty",
+                "Meaning",
+                "Schools: Monism and Pluralism",
                 "Liberty and Equality",
                 "Justice and Rights"
               ]
@@ -116,7 +136,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Democracy",
               "topics": [
-                "Meaning, Types; Direct and Indirect and theories and Related Debates."
+                "Meaning, Types",
+                "Direct and Indirect and theories and Related Debates"
               ]
             }
           ],
@@ -171,8 +192,10 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -192,7 +215,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -205,7 +229,9 @@ export const politicalScienceSyllabus: CourseSyllabus = {
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -298,10 +324,12 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "The Constituent Assembly and the Making of the Constitution",
               "topics": [
-                "Making of the Constitution, Debates in the Constituent Assembly",
+                "Making of the Constitution",
+                "Debates in the Constituent Assembly",
                 "Philosophy and Preamble of the Constitution",
                 "Salient features of the Constitution",
-                "Fundamental Rights, Duties and Directive Principles"
+                "Fundamental Rights",
+                "Duties and Directive Principles"
               ]
             },
             {
@@ -310,14 +338,16 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Legislature: Parliament",
                 "Executive: President and Prime Minister",
-                "The Judiciary: Appointment of Judges in High Courts and the Supreme Court, Power and Functions of High Courts and the Supreme Court."
+                "The Judiciary: Appointment of Judges in High Courts and the Supreme Court",
+                "Power and Functions of High Courts and the Supreme Court"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Dynamics of the Constitution-1",
               "topics": [
-                "Amendment Procedure, Major Constitutional Amendments",
+                "Amendment Procedure",
+                "Major Constitutional Amendments",
                 "Unitary and Federal Features of the Indian Constitution",
                 "Centre-State Relations",
                 "Election Commission and Electoral Reforms",
@@ -328,7 +358,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Dynamics of the Constitution-2",
               "topics": [
-                "Political Parties; National and Regional Parties",
+                "Political Parties",
+                "National and Regional Parties",
                 "Governor and Chief Minister",
                 "Changing Role of the Governor",
                 "Local-Self Government"
@@ -367,7 +398,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Preamble of the Constitution",
                 "Salient features of the Constitution",
-                "Fundamental Rights, Duties and Directive Principles"
+                "Fundamental Rights",
+                "Duties and Directive Principles"
               ]
             },
             {
@@ -376,14 +408,14 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Legislature: Parliament",
                 "Executive: President and Prime Minister",
-                "Powers and Functions of High Courts and the Supreme Court."
+                "Powers and Functions of High Courts and the Supreme Court"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Dynamics of the Constitution-1",
               "topics": [
-                "Amendment Procedures.",
+                "Amendment Procedures",
                 "Unitary and Federal Features of the Indian Constitution",
                 "Emergency provisions in the Constitution"
               ]
@@ -430,43 +462,84 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -476,22 +549,38 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -587,7 +676,9 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Concept of Rights",
               "topics": [
-                "Natural Rights; Moral and Legal Rights; Human Rights"
+                "Natural Rights",
+                "Moral and Legal Rights",
+                "Human Rights"
               ]
             },
             {
@@ -603,8 +694,11 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Concept of Justice",
               "topics": [
-                "Procedural justice; Distributive Justice; Global Justice",
-                "Power, Authority and Legitimacy"
+                "Procedural justice",
+                "Distributive Justice",
+                "Global Justice",
+                "Power",
+                "Authority and Legitimacy"
               ]
             },
             {
@@ -659,7 +753,11 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Elections in India",
               "topics": [
                 "Issues and Challenges",
-                "Determinants of Voting Behaviour: Caste, Class, Gender, Religion, Language and Factions",
+                "Determinants of Voting Behaviour: Caste",
+                "Class",
+                "Gender",
+                "Religion",
+                "Language and Factions",
                 "Election Commission of India"
               ]
             },
@@ -667,7 +765,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Regionalism in Indian Politics",
               "topics": [
-                "The politics of secession, accommodation and insurgencies."
+                "The politics of secession",
+                "Accommodation and insurgencies"
               ]
             },
             {
@@ -681,7 +780,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Mainstreaming of the marginalized sections of the Society",
               "topics": [
-                "Affirmative action through constitutional provisions, legislative action and policies."
+                "Affirmative action through constitutional provisions",
+                "Legislative action and policies"
               ]
             },
             {
@@ -728,21 +828,26 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Concept of Liberty and Rights",
               "topics": [
                 "Concept of Liberty: Positive & Negative",
-                "Concept of Rights: Natural Rights, Moral and Legal Rights; Human Rights"
+                "Concept of Rights: Natural Rights",
+                "Moral and Legal Rights",
+                "Human Rights"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Concept of Equality",
               "topics": [
-                "Types of Equality, Equality of Opportunity; Political Equality"
+                "Types of Equality",
+                "Equality of Opportunity",
+                "Political Equality"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Concept of Justice",
               "topics": [
-                "Procedural justice; Distributive Justice"
+                "Procedural justice",
+                "Distributive Justice"
               ]
             },
             {
@@ -797,9 +902,19 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -818,9 +933,13 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -831,9 +950,13 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -928,27 +1051,36 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Comparative Politics: Meaning, Nature and Scope",
               "topics": [
-                "Constitutionalism; Elements and Features"
+                "Constitutionalism",
+                "Elements and Features"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Historical context of modern government",
               "topics": [
-                "Capitalism: Meaning, Evolution and Relevance",
-                "Socialism: Meaning, Growth and Development",
-                "Colonialism, Anti-colonialism, Decolonization: Meaning and Process"
+                "Capitalism: Meaning",
+                "Evolution and Relevance",
+                "Socialism: Meaning",
+                "Growth and Development",
+                "Colonialism",
+                "Anti-colonialism",
+                "Decolonization: Meaning and Process"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Themes for comparative analysis",
               "topics": [
-                "A Comparative study of Institutional Developments in the following Countries:",
-                "a. Britain",
-                "b. United States of America",
-                "c. Switzerland",
-                "d. People's Republic of China"
+                "A Comparative study of Institutional Developments in the following Countries",
+                "A",
+                "Britain",
+                "B",
+                "United States of America",
+                "C",
+                "Switzerland",
+                "D",
+                "People's Republic of China"
               ]
             }
           ],
@@ -987,17 +1119,22 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "New Public Administration",
               "topics": [
-                "Meaning, Nature and Importance",
-                "New Public Management, Impact of Globalization on Public Administration"
+                "Meaning",
+                "Nature and Importance",
+                "New Public Management",
+                "Impact of Globalization on Public Administration"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Theories of Administration",
               "topics": [
-                "Classical Theory, (Fayol, Urwick and Gulick, Elton Mayo)",
-                "Scientific Management Theory, (F.W.Taylor)",
-                "Bureaucratic Theory, (Max Weber)",
+                "Classical Theory",
+                "(Fayol, Urwick and Gulick, Elton Mayo)",
+                "Scientific Management Theory",
+                "(F.W.Taylor)",
+                "Bureaucratic Theory",
+                "(Max Weber)",
                 "Ecological Approach (Fred W. Riggs)",
                 "Rational Decision Making (Herbert Simon)"
               ]
@@ -1006,14 +1143,16 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Financial Administration",
               "topics": [
-                "Meaning and Principles of Sound Budget, CAG"
+                "Meaning and Principles of Sound Budget",
+                "CAG"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Integrity in Administration",
               "topics": [
-                "Redressal of Citizen's Grievances, Ombudsman and Lokayukta"
+                "Redressal of Citizen's Grievances",
+                "Ombudsman and Lokayukta"
               ]
             }
           ],
@@ -1047,7 +1186,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Studying International Relations",
               "topics": [
-                "International Relations: Meaning, Nature & Scope",
+                "International Relations: Meaning",
+                "Nature & Scope",
                 "History of IR: Emergence of the International State System",
                 "Post-Westphalian International Order"
               ]
@@ -1076,7 +1216,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "topics": [
                 "Rise of Nazism/Fascism",
                 "World War II: Causes and Consequences",
-                "Cold War: Meaning, Origin and its Different Phases",
+                "Cold War: Meaning",
+                "Origin and its Different Phases",
                 "Emergence of the Third World"
               ]
             },
@@ -1087,7 +1228,9 @@ export const politicalScienceSyllabus: CourseSyllabus = {
                 "Collapse of the USSR and the End of the Cold War",
                 "Post-Cold War Developments- US Unilateralism",
                 "Rise of China: Challenge to US Hegemony",
-                "Towards a Multipolar World Order: Emergence of Other Power Centres - India, Russia and European Union"
+                "Towards a Multipolar World Order: Emergence of Other Power Centres",
+                "India",
+                "Russia and European Union"
               ]
             }
           ],
@@ -1132,7 +1275,12 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Determinants of Voting Behaviour",
               "topics": [
-                "Caste, Class, Gender, Religion, Language and Factions; Election Commission of India"
+                "Caste",
+                "Class",
+                "Gender",
+                "Religion",
+                "Language and Factions",
+                "Election Commission of India"
               ]
             },
             {
@@ -1192,7 +1340,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1271,21 +1420,23 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Approaches to Studying Comparative Politics and Political Process",
               "topics": [
-                "System Approach, Structural-Functional Approach"
+                "System Approach",
+                "Structural-Functional Approach"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Electoral System",
               "topics": [
-                "Meaning, Types and Working with special reference to India and USA"
+                "Meaning",
+                "Types and Working with special reference to India and USA"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Party System",
               "topics": [
-                "Historical contexts of emergence of the party system and types of parties with special reference to democratic and socialist regimes."
+                "Historical contexts of emergence of the party system and types of parties with special reference to democratic and socialist regimes"
               ]
             },
             {
@@ -1293,7 +1444,7 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Nation-state",
               "topics": [
                 "Meaning and Development",
-                "Nation and State debates."
+                "Nation and State debates"
               ]
             },
             {
@@ -1344,37 +1495,50 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Public Policy",
               "topics": [
-                "Meaning, Characteristics and Models; Public Policy Process in India"
+                "Meaning",
+                "Characteristics and Models",
+                "Public Policy Process in India"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Decentralization",
               "topics": [
-                "Meaning, Significance, Approaches and Types; Local Self Governance: Rural and Urban."
+                "Meaning",
+                "Significance",
+                "Approaches and Types",
+                "Local Self Governance: Rural and Urban"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Budget",
               "topics": [
-                "Concept and Significance; Various Approaches and Types of Budgeting. Budget Cycle in India."
+                "Concept and Significance",
+                "Various Approaches and Types of Budgeting",
+                "Budget Cycle in India"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Citizen and Administration Interface",
               "topics": [
-                "Public Service Delivery; Redressal of Public Grievances; RTI; Lokpal; Citizens' Charter and E – Governance."
+                "Public Service Delivery",
+                "Redressal of Public Grievances",
+                "RTI",
+                "Lokpal",
+                "Citizens' Charter and E",
+                "Governance"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Social Welfare Administration",
               "topics": [
-                "Concept and Approaches of Social Welfare; Social Welfare Policies;",
-                "Education: (a) Right to Education;",
-                "(b) Health: Ayushman Bharat Yojna;",
+                "Concept and Approaches of Social Welfare",
+                "Social Welfare Policies",
+                "Education: (a) Right to Education",
+                "(b) Health: Ayushman Bharat Yojna",
                 "(c) Food: Right to Food security (NFSA - 2013)",
                 "(d) Employment: MNREGA",
                 "(e) PM-Kisan Samman Nidhi"
@@ -1411,7 +1575,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Comparative Politics: Meaning, Nature and Scope",
               "topics": [
-                "Comparative Politics: Meaning, Nature and Scope"
+                "Comparative Politics: Meaning",
+                "Nature and Scope"
               ]
             },
             {
@@ -1432,10 +1597,13 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Themes for comparative analysis",
               "topics": [
-                "A comparative study of Development of Constitution in the following Countries:",
-                "a. Britain",
-                "b. United States of America",
-                "c. Switzerland"
+                "A comparative study of Development of Constitution in the following Countries",
+                "A",
+                "Britain",
+                "B",
+                "United States of America",
+                "C",
+                "Switzerland"
               ]
             }
           ],
@@ -1467,15 +1635,19 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Public Administration: Meaning, Nature and Scope",
               "topics": [
-                "Difference between Private and Public Administration; New Public Administration, New Public Management"
+                "Difference between Private and Public Administration",
+                "New Public Administration",
+                "New Public Management"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Theories of Administration",
               "topics": [
-                "Classical Theory, (Fayol, Urwick and Gulick, Elton Mayo)",
-                "Scientific Management Theory, (F.W.Taylor)",
+                "Classical Theory",
+                "(Fayol, Urwick and Gulick, Elton Mayo)",
+                "Scientific Management Theory",
+                "(F.W.Taylor)",
                 "Ecological Approach (Fred W. Riggs)"
               ]
             },
@@ -1483,14 +1655,16 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Financial Administration",
               "topics": [
-                "Meaning and Principles of Sound Budget, CAG"
+                "Meaning and Principles of Sound Budget",
+                "CAG"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Integrity in Administration",
               "topics": [
-                "Redressal of Citizen's Grievances, Ombudsman and Lokayukta"
+                "Redressal of Citizen's Grievances",
+                "Ombudsman and Lokayukta"
               ]
             }
           ],
@@ -1559,17 +1733,22 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "India's Evolving Global Relations and Geopolitical Challenges",
               "topics": [
                 "India's Soft Power Policy",
-                "India's Relation with USA, Russia, and China",
-                "India and its Neighbors: Pakistan, Sri Lanka, and Bangladesh"
+                "India's Relation with USA",
+                "Russia, and China",
+                "India and its Neighbors: Pakistan",
+                "Sri Lanka, and Bangladesh"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Contemporary Global Issues",
               "topics": [
-                "Multilateral Organisation: SCO, G20 and QUAD",
-                "(C) Proliferation of Nuclear Weapons : NPT, CTBT",
-                "(D) International Terrorism : Cross Border Terrorism Non State Actors and State Terrorism, Post 9/11 Developments"
+                "Multilateral Organisation: SCO",
+                "G20 and QUAD",
+                "(C) Proliferation of Nuclear Weapons : NPT",
+                "CTBT",
+                "(D) International Terrorism : Cross Border Terrorism Non State Actors and State Terrorism",
+                "Post 9/11 Developments"
               ]
             },
             {
@@ -1637,14 +1816,18 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Thomas Acquinas",
               "topics": [
-                "Theory of law, As representative of Medieval Political Thought"
+                "Theory of law",
+                "As representative of Medieval Political Thought"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Machiavelli",
               "topics": [
-                "Pragmatic Policies, Religion, Republicanism, Morality and Statecraft"
+                "Pragmatic Policies",
+                "Religion",
+                "Republicanism",
+                "Morality and Statecraft"
               ]
             }
           ],
@@ -1677,7 +1860,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Political System in Ancient India",
               "topics": [
-                "Vedic Institutions: Sabha, Samiti and Vidath",
+                "Vedic Institutions: Sabha",
+                "Samiti and Vidath",
                 "Political Philosophy in Mahabharat: Shanti Parva"
               ]
             },
@@ -1706,7 +1890,9 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Realist Tradition in Ancient India",
               "topics": [
-                "Kautilya's Theory of State, Saptang, Mandal and Foreign Policy"
+                "Kautilya's Theory of State",
+                "Saptang",
+                "Mandal and Foreign Policy"
               ]
             }
           ],
@@ -1741,7 +1927,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Studying International Relations",
               "topics": [
-                "International Relations: Meaning, Nature & Scope",
+                "International Relations: Meaning",
+                "Nature & Scope",
                 "History of IR: Emergence of the International State System"
               ]
             },
@@ -1767,7 +1954,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "An Overview of Twentieth Century IR History-1",
               "topics": [
                 "World War II: Causes and Consequences",
-                "Cold War: Meaning, Origin and its Different Phases"
+                "Cold War: Meaning",
+                "Origin and its Different Phases"
               ]
             },
             {
@@ -1820,14 +2008,15 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Electoral System",
               "topics": [
-                "Meaning, Types and Working with special reference to India and USA"
+                "Meaning",
+                "Types and Working with special reference to India and USA"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Nation-state",
               "topics": [
-                "Nation and State debates."
+                "Nation and State debates"
               ]
             },
             {
@@ -1881,36 +2070,54 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Thomas Hobbes",
               "topics": [
-                "Human Nature, State of Nature, Social Contract, Leviathan"
+                "Human Nature",
+                "State of Nature",
+                "Social Contract",
+                "Leviathan"
               ]
             },
             {
               "unitNumber": 2,
               "title": "John Locke",
               "topics": [
-                "Human Nature, Law of Nature, Natural Rights, Civil Society, Theory of Property, State."
+                "Human Nature",
+                "Law of Nature",
+                "Natural Rights",
+                "Civil Society",
+                "Theory of Property",
+                "State"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Jean Jacques Rousseau",
               "topics": [
-                "Social Contract, General Will, State, Nature of Sovereignty."
+                "Social Contract",
+                "General Will",
+                "State",
+                "Nature of Sovereignty"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Jeremy Bentham and John Stuart Mill",
               "topics": [
-                "Jeremy Bentham: Positive Laws, Utilitarianism",
-                "John Stuart Mill: Liberty, Democracy and Representation"
+                "Jeremy Bentham: Positive Laws",
+                "Utilitarianism",
+                "John Stuart Mill: Liberty",
+                "Democracy and Representation"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Karl Marx",
               "topics": [
-                "Historical Materialism, Dialectical Materialism, Class Struggle, Alienation, Communism, Revolution."
+                "Historical Materialism",
+                "Dialectical Materialism",
+                "Class Struggle",
+                "Alienation",
+                "Communism",
+                "Revolution"
               ]
             }
           ],
@@ -1968,7 +2175,8 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Political Philosophy of Sri Aurobindo, Vivekananda, Pandita Ramabai",
               "topics": [
                 "Political Philosophy of Sri Aurobindo",
-                "Vivekananda: Cultural Nationalism, Ideal Society",
+                "Vivekananda: Cultural Nationalism",
+                "Ideal Society",
                 "Pandita Ramabai: Gender"
               ]
             },
@@ -1977,15 +2185,20 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "title": "Ambedkar and Lohia",
               "topics": [
                 "Ambedkar: Social Justice and Nation-Building",
-                "Lohia: Four Piller State, Idea of Sapta Kranti"
+                "Lohia: Four Piller State",
+                "Idea of Sapta Kranti"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gandhi, Deen Dayal Upadhyay, Nehru",
               "topics": [
-                "Gandhi: Truth, Non-violence, Swadeshi, Swaraj & Relevance in Modern age",
-                "Deen Dayal Upadhyay: Integral Humanism, Antyodaya",
+                "Gandhi: Truth",
+                "Non-violence",
+                "Swadeshi",
+                "Swaraj & Relevance in Modern age",
+                "Deen Dayal Upadhyay: Integral Humanism",
+                "Antyodaya",
                 "Nehru: Secularism & Socialism"
               ]
             },
@@ -1993,9 +2206,12 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "M.N. Roy, Veer Savarkar, Jai Prakash Narayan",
               "topics": [
-                "M.N. Roy: Radical Humanism",
-                "Veer Savarkar: Hindutva, Swaraj and Swadharma",
-                "Jai Prakash Narayan: Political and Social Ideas, Idea of 'Sampoorna Kranti'"
+                "N",
+                "Roy: Radical Humanism",
+                "Veer Savarkar: Hindutva",
+                "Swaraj and Swadharma",
+                "Jai Prakash Narayan: Political and Social Ideas",
+                "Idea of 'Sampoorna Kranti'"
               ]
             }
           ],
@@ -2026,37 +2242,46 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Public Policy",
               "topics": [
-                "Meaning, Characteristics and Models; Public Policy Process in India"
+                "Meaning",
+                "Characteristics and Models",
+                "Public Policy Process in India"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Decentralization",
               "topics": [
-                "Meaning, Significance, Approaches; Local Self Governance: Rural and Urban."
+                "Meaning, Significance, Approaches",
+                "Local Self Governance: Rural and Urban"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Budget",
               "topics": [
-                "Concept and Significance; Budgetary Process in India."
+                "Concept and Significance",
+                "Budgetary Process in India"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Citizen Centric Administration",
               "topics": [
-                "Public Service Delivery; Redressal of Public Grievances; RTI; Lokpal; Citizens' Charter and E – Governance."
+                "Public Service Delivery",
+                "Redressal of Public Grievances",
+                "RTI",
+                "Lokpal",
+                "Citizens' Charter and E",
+                "Governance"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Social Welfare Administration and Policies",
               "topics": [
-                "Right to Education;",
-                "Health: Ayushman Bharat Yojna;",
-                "Food: Right to Food security;",
+                "Right to Education",
+                "Health: Ayushman Bharat Yojna",
+                "Food: Right to Food security",
                 "Employment: MNREGA",
                 "PM-Kisan Samman Nidhi"
               ]
@@ -2112,32 +2337,41 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Political Sociology: Meaning, Nature and Scope",
               "topics": [
-                "Difference between Political Sociology and Sociology of Politics."
+                "Difference between Political Sociology and Sociology of Politics"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Political Socialization, Culture and Participation",
               "topics": [
-                "Political Socialization: Meaning, Nature, Types and Agencies",
+                "Political Socialization: Meaning",
+                "Nature",
+                "Types and Agencies",
                 "Political Culture: Meaning and Classification",
-                "Political Participation: Meaning, Nature, Forms and Variables, Political Apathy"
+                "Political Participation: Meaning",
+                "Nature",
+                "Forms and Variables",
+                "Political Apathy"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Political Development and Underdevelopment",
               "topics": [
-                "Meaning, Characteristics and Lucian Pye's views",
-                "Political Modernization: Meaning, Features and Agencies"
+                "Meaning",
+                "Characteristics and Lucian Pye's views",
+                "Political Modernization: Meaning",
+                "Features and Agencies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Political Recruitment, Leadership and Elite",
               "topics": [
-                "Political Recruitment: Meaning, Nature and Kinds",
-                "Political Leadership: Characteristics, Accountability and Efficacy",
+                "Political Recruitment: Meaning",
+                "Nature and Kinds",
+                "Political Leadership: Characteristics",
+                "Accountability and Efficacy",
                 "Political Elite: Meaning and Theories",
                 "Political Communication"
               ]
@@ -2169,17 +2403,23 @@ export const politicalScienceSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "India's Evolving Global Relations and Geopolitical Challenges",
               "topics": [
-                "India's Relation with USA, Russia, and China",
-                "India and its Neighbors: Pakistan, Sri Lanka, Nepal and Bangladesh"
+                "India's Relation with USA",
+                "Russia, and China",
+                "India and its Neighbors: Pakistan",
+                "Sri Lanka",
+                "Nepal and Bangladesh"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Contemporary Global Issues",
               "topics": [
-                "Multilateral Organisation: SCO, G20 and QUAD",
-                "(C)Proliferation of Nuclear Weapons: NPT, CTBT",
-                "(D) International Terrorism: Cross Border Terrorism Non State Actors and State Terrorism, Post 9/11 Developments"
+                "Multilateral Organisation: SCO",
+                "G20 and QUAD",
+                "(C)Proliferation of Nuclear Weapons: NPT",
+                "CTBT",
+                "(D) International Terrorism: Cross Border Terrorism Non State Actors and State Terrorism",
+                "Post 9/11 Developments"
               ]
             },
             {

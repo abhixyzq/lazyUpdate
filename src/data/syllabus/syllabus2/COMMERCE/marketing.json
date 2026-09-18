@@ -26,42 +26,90 @@
               "unitNumber": 1,
               "title": "Principles of Management",
               "topics": [
-                "Management - Meaning and Characteristics",
+                "Management",
+                "Meaning and Characteristics",
                 "Fayol's 14 Principles of Management",
-                "Levels of Management Importance of Management, Arts and Science of Management - Skills of Management",
-                "Scientific Management - meaning, objectives, relevance and criticism"
+                "Levels of Management Importance of Management",
+                "Arts and Science of Management",
+                "Skills of Management",
+                "Scientific Management",
+                "Meaning",
+                "Objectives",
+                "Relevance and criticism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Functions of Management: Planning and Organizing",
               "topics": [
-                "Planning - Meaning, Characteristics, Types of Plans, Advantages and Disadvantages - Approaches to Planning - Management by Objectives (MBO) - Steps in MBO - Benefits - Weaknesses",
-                "Organizing - Process of Organizing; Principles of Organisation - Formal and Informal Organisations - Line, Staff Organisations, Line and Staff Conflicts. Functional Organisation; Span of Management - Meaning - Determining Span - Factors influencing the Span of Supervision"
+                "Planning",
+                "Meaning",
+                "Characteristics",
+                "Types of Plans",
+                "Advantages and Disadvantages",
+                "Approaches to Planning",
+                "Management by Objectives (MBO)",
+                "Steps in MBO",
+                "Benefits",
+                "Weaknesses",
+                "Organizing",
+                "Process of Organizing",
+                "Principles of Organisation",
+                "Formal and Informal Organisations",
+                "Line",
+                "Staff Organisations",
+                "Line and Staff Conflicts",
+                "Functional Organisation",
+                "Span of Management",
+                "Meaning",
+                "Determining Span",
+                "Factors influencing the Span of Supervision"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Functions of Management: Authority and Coordination",
               "topics": [
-                "Meaning of Authority, Power, responsibility and accountability - Delegation of Authority - Decentralization of Authority",
-                "Definition, importance, process, and principles of Coordination techniques of Effective Coordination"
+                "Meaning of Authority",
+                "Power",
+                "Responsibility and accountability",
+                "Delegation of Authority",
+                "Decentralization of Authority",
+                "Definition",
+                "Importance",
+                "Process, and principles of Coordination techniques of Effective Coordination"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Functions of Management: Control and Communication",
               "topics": [
-                "Control-Meaning, Relationship between planning and control, Steps in Control - Types (post, current, and pre-control). Requirements for effective control",
-                "Communication-purpose, process, formal and informal communication, barriers to effective communication and overcoming these barriers"
+                "Control-Meaning",
+                "Relationship between planning and control",
+                "Steps in Control",
+                "Types (post, current, and pre-control)",
+                "Requirements for effective control",
+                "Communication-purpose",
+                "Process",
+                "Formal and informal communication",
+                "Barriers to effective communication and overcoming these barriers"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Functions of Management: Motivation and Leadership",
               "topics": [
-                "Motivation- Meaning, importance, major motivation theories- Maslow's need hierarchy theory, Herzberg's two-factors theory, Vroom's Expectation Theory, extrinsic and intrinsic motivation",
-                "Leadership- meaning, theories, essential qualities, global leadership attributes, practicing leadership"
+                "Motivation- Meaning",
+                "Importance",
+                "Major motivation theories- Maslow's need hierarchy theory",
+                "Herzberg's two-factors theory",
+                "Vroom's Expectation Theory",
+                "Extrinsic and intrinsic motivation",
+                "Leadership- meaning",
+                "Theories",
+                "Essential qualities",
+                "Global leadership attributes",
+                "Practicing leadership"
               ]
             }
           ],
@@ -90,23 +138,34 @@
               "unitNumber": 1,
               "title": "Fundamentals of Marketing",
               "topics": [
-                "Meaning, Concept, Importance, Functions of Marketing",
-                "Marketing and Selling, Modern Marketing Concept, Relationship Marketing"
+                "Meaning",
+                "Concept",
+                "Importance",
+                "Functions of Marketing",
+                "Marketing and Selling",
+                "Modern Marketing Concept",
+                "Relationship Marketing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Market Segmentation",
               "topics": [
-                "Meaning, Objectives and Importance of Market Segmentation",
-                "Basis of Market Segmentation, Marketing Strategy-Segmentation, Targeting and Positioning"
+                "Meaning",
+                "Objectives and Importance of Market Segmentation",
+                "Basis of Market Segmentation",
+                "Marketing Strategy-Segmentation",
+                "Targeting and Positioning"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Marketing Mix",
               "topics": [
-                "Meaning, Elements of Marketing mix Product, Price, Promotion and Place",
+                "Meaning",
+                "Elements of Marketing mix Product",
+                "Price",
+                "Promotion and Place",
                 "New Product Development Process",
                 "Reasons for failure of new product development"
               ]
@@ -180,23 +239,34 @@
               "unitNumber": 1,
               "title": "Fundamentals of Marketing",
               "topics": [
-                "Meaning, Concept, Importance, Functions of Marketing",
-                "Marketing and Selling, Modern Marketing Concept, Relationship Marketing"
+                "Meaning",
+                "Concept",
+                "Importance",
+                "Functions of Marketing",
+                "Marketing and Selling",
+                "Modern Marketing Concept",
+                "Relationship Marketing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Market Segmentation",
               "topics": [
-                "Meaning, Objectives and Importance of Market Segmentation",
-                "Basis of Market Segmentation, Marketing Strategy-Segmentation, Targeting and Positioning"
+                "Meaning",
+                "Objectives and Importance of Market Segmentation",
+                "Basis of Market Segmentation",
+                "Marketing Strategy-Segmentation",
+                "Targeting and Positioning"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Marketing Mix",
               "topics": [
-                "Meaning, Elements of Marketing mix Product, Price, Promotion and Place",
+                "Meaning",
+                "Elements of Marketing mix Product",
+                "Price",
+                "Promotion and Place",
                 "New Product Development Process",
                 "Reasons for failure of new product development"
               ]
@@ -205,7 +275,8 @@
               "unitNumber": 4,
               "title": "Marketing Environment",
               "topics": [
-                "Meaning, Importance of Marketing Environment",
+                "Meaning",
+                "Importance of Marketing Environment",
                 "Micro and Macro Environment and their types",
                 "Methods of Sales for casting"
               ]
@@ -214,9 +285,12 @@
               "unitNumber": 5,
               "title": "Marketing Information System",
               "topics": [
-                "Meaning, Concept and importance",
+                "Meaning",
+                "Concept and importance",
                 "Types and Components of Marketing information system",
-                "Consumer behaviour, factors influencing consumer behavior, Buying Decision Process"
+                "Consumer behaviour",
+                "Factors influencing consumer behavior",
+                "Buying Decision Process"
               ]
             }
           ],
@@ -241,9 +315,12 @@
               "unitNumber": 1,
               "title": "Introduction to Advertising",
               "topics": [
-                "Communication Process, Information Response Hierarchy Models-AIDA Model & Hierarchy of Effects Model",
-                "Advertising Importance, types and objectives",
-                "DAGMAR Approach, Target audience selection-basis methods of setting of Advertising Budget"
+                "Communication Process",
+                "Information Response Hierarchy Models-AIDA Model & Hierarchy of Effects Model",
+                "Advertising Importance",
+                "Types and objectives",
+                "DAGMAR Approach",
+                "Target audience selection-basis methods of setting of Advertising Budget"
               ]
             },
             {
@@ -258,7 +335,8 @@
               "unitNumber": 3,
               "title": "Advertising Effectiveness and Institutional Framework",
               "topics": [
-                "Rationale of measuring advertising effectiveness communication and sales Effect, Pre and Post testing Techniques",
+                "Rationale of measuring advertising effectiveness communication and sales Effect",
+                "Pre and Post testing Techniques",
                 "Advertising Agency: Role types and selection",
                 "Ethical and legal aspects of advertising Role of Advertising Standards Council of India (ASCI)"
               ]
@@ -334,37 +412,51 @@
               "title": "Evolution of Sales Management",
               "topics": [
                 "Nature and Role of Sales Management",
-                "Sales Strategies: Relationship Strategy: Hard Sale Vs. Soft Sale Strategy, Setting Personal selling objective"
+                "Sales Strategies: Relationship Strategy: Hard Sale Vs. Soft Sale Strategy",
+                "Setting Personal selling objective"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sales Training Program",
               "topics": [
-                "Role of a trainer: Training Method: Designing sales training program, Motivating Sales Personnel, Financial Compensation Methods, Nonfinancial Methods",
-                "Sales Meeting, Sales Contests: Managerial Evaluation of Contest"
+                "Role of a trainer: Training Method: Designing sales training program",
+                "Motivating Sales Personnel",
+                "Financial Compensation Methods",
+                "Nonfinancial Methods",
+                "Sales Meeting",
+                "Sales Contests: Managerial Evaluation of Contest"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sales Organization",
               "topics": [
-                "Sole Organization Concepts Structures Procedure: Types; Methods",
-                "Territories Size: Allocation: Designing Allocating Sales Efforts, Sales Information System Planning: Reports, Evaluation of Sales Force. Process"
+                "Sole Organization Concepts Structures Procedure: Types",
+                "Methods",
+                "Territories Size: Allocation: Designing Allocating Sales Efforts",
+                "Sales Information System Planning: Reports",
+                "Evaluation of Sales Force",
+                "Process"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Marketing Channel",
               "topics": [
-                "Importance, Structure: Flow, Wholesaling: Functions: Classification;"
+                "Importance",
+                "Structure: Flow",
+                "Wholesaling: Functions: Classification"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Designing Channel System",
               "topics": [
-                "Channel Design, Channel Planning Selecting Channel Partners: Change Training Motivating: Evaluating Channel Management Use of Power: Channel Confet Channel Information System: Elements: Purpose, Channel Performance Evaluation. International Channels: Mode of Entry Decision"
+                "Channel Design",
+                "Channel Planning Selecting Channel Partners: Change Training Motivating: Evaluating Channel Management Use of Power: Channel Confet Channel Information System: Elements: Purpose",
+                "Channel Performance Evaluation",
+                "International Channels: Mode of Entry Decision"
               ]
             }
           ],
@@ -390,35 +482,53 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Communication Process, Advertising as a tool of communication; Meaning, nature and importance of advertising: Types of advertising, Advertising objectives"
+                "Communication Process",
+                "Advertising as a tool of communication",
+                "Meaning",
+                "Nature and importance of advertising: Types of advertising",
+                "Advertising objectives"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Media Decisions",
               "topics": [
-                "Major media types and their characteristics, Internet as an advertising media- merits and demerit Factors influencing media choice; media selection, media scheduling. Advertising through the Internet- media devices"
+                "Major media types and their characteristics",
+                "Internet as an advertising media- merits and demerit Factors influencing media choice",
+                "Media selection",
+                "Media scheduling",
+                "Advertising through the Internet- media devices"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Message Development",
               "topics": [
-                "Advertising appeals, Advertising copy and elements, Essential of Message Developme Preparing ads for different Media- Video Advertising: Television & YouTube, Audio Chann Radio & Podcast Advertising. Newspapers, Print & Digital Publications (Magazines), Out-Of-Ho Advertising, Social Media"
+                "Advertising appeals",
+                "Advertising copy and elements",
+                "Essential of Message Developme Preparing ads for different Media- Video Advertising: Television & YouTube",
+                "Audio Chann Radio & Podcast Advertising",
+                "Newspapers",
+                "Print & Digital Publications (Magazines)",
+                "Out-Of-Ho Advertising",
+                "Social Media"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Advertising Agency",
               "topics": [
-                "Role and types of advertising agencies, Selection of advertising agency; S and Ethical aspects of advertising in India"
+                "Role and types of advertising agencies",
+                "Selection of advertising agency",
+                "S and Ethical aspects of advertising in India"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Role of Advertisement",
               "topics": [
-                "Role of Advertisement in business and society, Advertising Standard Council of India(ASCI): Practical Component (Credit/Hours)"
+                "Role of Advertisement in business and society",
+                "Advertising Standard Council of India(ASCI): Practical Component (Credit/Hours)"
               ]
             }
           ],
@@ -446,23 +556,32 @@
               "title": "Evolution of Sales Management",
               "topics": [
                 "Nature and Role of Sales Management",
-                "Sales Strategies: Relationship Strategy: Hard Sale Vs. Soft Sale Strategy, Setting Personal selling objective"
+                "Sales Strategies: Relationship Strategy: Hard Sale Vs. Soft Sale Strategy",
+                "Setting Personal selling objective"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sales Training Program",
               "topics": [
-                "Role of a trainer: Training Method: Designing sales training program, Motivating Sales Personnel, Financial Compensation Methods, Nonfinancial Methods",
-                "Sales Meeting, Sales Contests: Managerial Evaluation of Contest"
+                "Role of a trainer: Training Method: Designing sales training program",
+                "Motivating Sales Personnel",
+                "Financial Compensation Methods",
+                "Nonfinancial Methods",
+                "Sales Meeting",
+                "Sales Contests: Managerial Evaluation of Contest"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sales Organization",
               "topics": [
-                "Sole Organization Concepts Structures Procedure: Types; Methods",
-                "Territories Size: Allocation: Designing Allocating Sales Efforts, Sales Information System Planning: Reports, Evaluation of Sales Force. Process"
+                "Sole Organization Concepts Structures Procedure: Types",
+                "Methods",
+                "Territories Size: Allocation: Designing Allocating Sales Efforts",
+                "Sales Information System Planning: Reports",
+                "Evaluation of Sales Force",
+                "Process"
               ]
             }
           ],
@@ -539,36 +658,65 @@
               "unitNumber": 1,
               "title": "Understanding Marketing and Marketing Process",
               "topics": [
-                "Marketing Concepts, Nature and Scope of Marketing, Marketing Mix, Marketing Environment, Strategic Planning and Marketing Process, Organizing and Implementing Marketing in the Organization",
-                "Services Marketing: Concept, Definition, Characteristics with Special Emphasis on Tourism Services"
+                "Marketing Concepts",
+                "Nature and Scope of Marketing",
+                "Marketing Mix",
+                "Marketing Environment",
+                "Strategic Planning and Marketing Process",
+                "Organizing and Implementing Marketing in the Organization",
+                "Services Marketing: Concept",
+                "Definition",
+                "Characteristics with Special Emphasis on Tourism Services"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Developing Marketing Opportunities and Strategies",
               "topics": [
-                "Marketing Information Systems and Marketing Research, Consumer Markets and Consumer Behaviour, Business Markets and Buyer Behaviour, Market Segmentation - Targeting and Positioning for competitive Advantage"
+                "Marketing Information Systems and Marketing Research",
+                "Consumer Markets and Consumer Behaviour",
+                "Business Markets and Buyer Behaviour",
+                "Market Segmentation",
+                "Targeting and Positioning for competitive Advantage"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Developing the Tourism Marketing Mix",
               "topics": [
-                "Managing the Product/Service, Product Decisions- Product Line, Product Mix, Product Life Cycle, New Product Development, Branding and Packaging Decisions, Pricing Products Pricing Considerations and Approaches. Pricing Strategies and Methods"
+                "Managing the Product/Service",
+                "Product Decisions- Product Line",
+                "Product Mix",
+                "Product Life Cycle",
+                "New Product Development",
+                "Branding and Packaging Decisions",
+                "Pricing Products Pricing Considerations and Approaches",
+                "Pricing Strategies and Methods"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Distribution Channel and Logistics Management",
               "topics": [
-                "Channel Selection, Cooperation and conflict Management, Promotion Decision, Promotion Mix: Advertising, Sales Promotion, Selling & Publicity; Additional P's of tourism services Personal"
+                "Channel Selection",
+                "Cooperation and conflict Management",
+                "Promotion Decision",
+                "Promotion Mix: Advertising",
+                "Sales Promotion",
+                "Selling & Publicity",
+                "Additional P's of tourism services Personal"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Issues in Marketing",
               "topics": [
-                "Global Marketing, Direct Marketing, Marketing on the Web, Green Marketing, Social Responsibility and marketing Ethics, Consumerism and Legal Issues"
+                "Global Marketing",
+                "Direct Marketing",
+                "Marketing on the Web",
+                "Green Marketing",
+                "Social Responsibility and marketing Ethics",
+                "Consumerism and Legal Issues"
               ]
             }
           ],
@@ -595,35 +743,49 @@
               "unitNumber": 1,
               "title": "Rural Marketing",
               "topics": [
-                "Rural Marketing - Concept. Nature and Scope, Importance, Rural Vs Urban Marketing Rural Marketing Environment, Emerging Rural Markets After Globalisation"
+                "Rural Marketing",
+                "Concept",
+                "Nature and Scope",
+                "Importance",
+                "Rural Vs Urban Marketing Rural Marketing Environment",
+                "Emerging Rural Markets After Globalisation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Rural Consumer",
               "topics": [
-                "Rural Consumer Characteristics, Attitudes and Behaviour, Buying Patterns and influences. Segmenting Rural Markets"
+                "Rural Consumer Characteristics",
+                "Attitudes and Behaviour",
+                "Buying Patterns and influences",
+                "Segmenting Rural Markets"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Rural Marketing Strategies",
               "topics": [
-                "Rural Marketing Strategies Product Planning for Rural Markets, Quality and Size, Pricing Decisions, Packaging and Branding Decisions"
+                "Rural Marketing Strategies Product Planning for Rural Markets",
+                "Quality and Size",
+                "Pricing Decisions",
+                "Packaging and Branding Decisions"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Promotion and Distribution in Rural markets",
               "topics": [
-                "Promotion and Distribution in Rural markets, Distribution Channels and Logistics in Rural markets"
+                "Promotion and Distribution in Rural markets",
+                "Distribution Channels and Logistics in Rural markets"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Input and Output Marketing",
               "topics": [
-                "Input and Output Marketing Agricultural Marketing System and Practices, Problems in Agricultural Marketing, Role of government in Marketing of Agricultural Products Cooperative Marketing"
+                "Input and Output Marketing Agricultural Marketing System and Practices",
+                "Problems in Agricultural Marketing",
+                "Role of government in Marketing of Agricultural Products Cooperative Marketing"
               ]
             }
           ],
@@ -648,35 +810,47 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Importance of Services Sector, Nature and Types of Service, Difference Between Service and Goods, Marketing. Environment for Services Indian Marketing Scenario"
+                "Importance of Services Sector",
+                "Nature and Types of Service",
+                "Difference Between Service and Goods",
+                "Marketing",
+                "Environment for Services Indian Marketing Scenario"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Services Marketing Mix",
               "topics": [
-                "Need for Expanded Marketing Mix. Product Mix, Promotion Mix, and Distribution Mix of Services, Additional three P's Process, Physical Evidence and Attractions and Management of Marketing people"
+                "Need for Expanded Marketing Mix",
+                "Product Mix",
+                "Promotion Mix, and Distribution Mix of Services",
+                "Additional three P's Process",
+                "Physical Evidence and Attractions and Management of Marketing people"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Marketing Segmentation and Selection",
               "topics": [
-                "Marketing Segmentation and Selection; Service Market Segmentation; Targeting and Positioning"
+                "Marketing Segmentation and Selection",
+                "Service Market Segmentation",
+                "Targeting and Positioning"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Marketing of profit Making Service Organizations",
               "topics": [
-                "Marketing of profit Making Service Organizations - Bank, Insurance, Hotel and Tourism"
+                "Marketing of profit Making Service Organizations",
+                "Bank, Insurance, Hotel and Tourism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Marketing of Non- Profit Service Organisations",
               "topics": [
-                "Marketing of Non- Profit Service Organizations Education, Health and Political Services"
+                "Marketing of Non- Profit Service Organizations Education",
+                "Health and Political Services"
               ]
             }
           ],
@@ -715,7 +889,8 @@
               "unitNumber": 3,
               "title": "Consumer Motivation",
               "topics": [
-                "The concepts of motivation, Maslow's Theory of Motivation: Role of Motives in Guiding Behaviour: Involvement of Consumer"
+                "The concepts of motivation",
+                "Maslow's Theory of Motivation: Role of Motives in Guiding Behaviour: Involvement of Consumer"
               ]
             }
           ],
@@ -782,21 +957,26 @@
               "unitNumber": 3,
               "title": "Consumer Motivation",
               "topics": [
-                "The concepts of motivation, Maslow's Theory of Motivation: Role of Motives in Guiding Behaviour: Involvement of Consumer"
+                "The concepts of motivation",
+                "Maslow's Theory of Motivation: Role of Motives in Guiding Behaviour: Involvement of Consumer"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Influence of Culture on Consumer Behaviour",
               "topics": [
-                "Concept of Culture: The measurement of Culture; Indian Core Values: Cultural aspects of emerging markets"
+                "Concept of Culture: The measurement of Culture",
+                "Indian Core Values: Cultural aspects of emerging markets"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Business, Applications to Consumer Behaviour",
               "topics": [
-                "Consumer Behaviour: The Computer Age- Changing Indian Consumer Behaviour- Drivers of Change. Changing Consumer Trends, Rural Consumer Behaviour, New Consumption Patterns"
+                "Consumer Behaviour: The Computer Age- Changing Indian Consumer Behaviour- Drivers of Change",
+                "Changing Consumer Trends",
+                "Rural Consumer Behaviour",
+                "New Consumption Patterns"
               ]
             }
           ],
@@ -825,35 +1005,56 @@
               "unitNumber": 1,
               "title": "Digital Marketing",
               "topics": [
-                "Introduction to Digital Marketing: Meaning and Definition of Digital Marketing. Need of Digital Marketing, Digital Marketing Platforms, Email Marketing Importance of email marketing, email Marketing platforms"
+                "Introduction to Digital Marketing: Meaning and Definition of Digital Marketing",
+                "Need of Digital Marketing",
+                "Digital Marketing Platforms",
+                "Email Marketing Importance of email marketing",
+                "Email Marketing platforms"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Search Engine Optimization (SEO)",
               "topics": [
-                "SEO Importance and Its Growth in recent years, Ecosystem of a search Engine, SEO Tools: Google Webmaster Tools"
+                "SEO Importance and Its Growth in recent years",
+                "Ecosystem of a search Engine",
+                "SEO Tools: Google Webmaster Tools"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Social Media Marketing (SMM) & Web Analytics",
               "topics": [
-                "Social Media Marketing (SMM) Facebook Marketing, Twitter Marketing, Linkedin Marketing, Google plus Marketing. YouTube Marketing, Pinterest Marketing, Snapchat Marketing, Instagram Marketing. Social Media Automation Tools, Social Media Ad Specs"
+                "Social Media Marketing (SMM) Facebook Marketing",
+                "Twitter Marketing",
+                "Linkedin Marketing",
+                "Google plus Marketing",
+                "YouTube Marketing",
+                "Pinterest Marketing",
+                "Snapchat Marketing",
+                "Instagram Marketing",
+                "Social Media Automation Tools",
+                "Social Media Ad Specs"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Youtube Advertising (Video Ads) & Conversions",
               "topics": [
-                "Youtube Advertising (Video Ads): Youtube advertising, Creating youtube campaigns. Choose the audience for video ads. Instream ads. Invideo ads. In-search ads, In-display ads"
+                "Youtube Advertising (Video Ads): Youtube advertising",
+                "Creating youtube campaigns",
+                "Choose the audience for video ads",
+                "Instream ads",
+                "Invideo ads",
+                "In-search ads, In-display ads"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Web Analysis",
               "topics": [
-                "Analysing the behaviour of visitorsto a websitethrough reportbased on traffic sources, referring sites page view and conversion rates of the website"
+                "Analysing the behaviour of visitorsto a websitethrough reportbased on traffic sources",
+                "Referring sites page view and conversion rates of the website"
               ]
             }
           ],
@@ -878,21 +1079,32 @@
               "unitNumber": 1,
               "title": "Rural Marketing",
               "topics": [
-                "Rural Marketing - Concept. Nature and Scope, Importance, Rural Vs Urban Marketing Rural Marketing Environment, Emerging Rural Markets After Globalisation"
+                "Rural Marketing",
+                "Concept",
+                "Nature and Scope",
+                "Importance",
+                "Rural Vs Urban Marketing Rural Marketing Environment",
+                "Emerging Rural Markets After Globalisation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Rural Consumer",
               "topics": [
-                "Rural Consumer Characteristics, Attitudes and Behaviour, Buying Patterns and influences. Segmenting Rural Markets"
+                "Rural Consumer Characteristics",
+                "Attitudes and Behaviour",
+                "Buying Patterns and influences",
+                "Segmenting Rural Markets"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Rural Marketing Strategies",
               "topics": [
-                "Rural Marketing Strategies Product Planning for Rural Markets, Quality and Size, Pricing Decisions, Packaging and Branding Decisions"
+                "Rural Marketing Strategies Product Planning for Rural Markets",
+                "Quality and Size",
+                "Pricing Decisions",
+                "Packaging and Branding Decisions"
               ]
             }
           ],
@@ -917,21 +1129,41 @@
               "unitNumber": 1,
               "title": "Understanding Marketing and Marketing Process",
               "topics": [
-                "Marketing Concepts, Nature and Scope of Marketing, Marketing Mix, Marketing Environment, Strategic Planning and Marketing Process, Organizing and Implementing Marketing in the Organization. Services Marketing: Concept, Definition, Characteristics with Special Emphasis on Tourism Services"
+                "Marketing Concepts",
+                "Nature and Scope of Marketing",
+                "Marketing Mix",
+                "Marketing Environment",
+                "Strategic Planning and Marketing Process",
+                "Organizing and Implementing Marketing in the Organization",
+                "Services Marketing: Concept",
+                "Definition",
+                "Characteristics with Special Emphasis on Tourism Services"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Developing Marketing Opportunities and Strategies",
               "topics": [
-                "Marketing Information Systems and Marketing Research, Consumer Markets and Consumer Behaviour, Business Markets and Buyer Behaviour, Market Segmentation - Targeting and Positioning for competitive Advantage"
+                "Marketing Information Systems and Marketing Research",
+                "Consumer Markets and Consumer Behaviour",
+                "Business Markets and Buyer Behaviour",
+                "Market Segmentation",
+                "Targeting and Positioning for competitive Advantage"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Developing the Tourism Marketing Mix",
               "topics": [
-                "Managing the Product/Service, Product Decisions - Product Line, Product Mix, Product Life Cycle, New Product Development, Branding and Packaging Decisions, Pricing Products Pricing Considerations and Approaches. Pricing Strategies and Methods"
+                "Managing the Product/Service",
+                "Product Decisions",
+                "Product Line",
+                "Product Mix",
+                "Product Life Cycle",
+                "New Product Development",
+                "Branding and Packaging Decisions",
+                "Pricing Products Pricing Considerations and Approaches",
+                "Pricing Strategies and Methods"
               ]
             }
           ],
@@ -963,28 +1195,41 @@
               "unitNumber": 1,
               "title": "Introduction to Event Management",
               "topics": [
-                "Event-Meaning Importance and Types of Events, Analysis of Event, Event Management Meaning, Decision Makers and their Roles and Responsibilities, 5 C's of Event Management"
+                "Event-Meaning Importance and Types of Events",
+                "Analysis of Event",
+                "Event Management Meaning",
+                "Decision Makers and their Roles and Responsibilities",
+                "5 C's of Event Management"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Event Management Planning and Procedure",
               "topics": [
-                "Establishing of Policies & Procedures, Steps in Planning the event, Principles of Event Management, Permissions and Licenses from Government and Local Authorities"
+                "Establishing of Policies & Procedures",
+                "Steps in Planning the event",
+                "Principles of Event Management",
+                "Permissions and Licenses from Government and Local Authorities"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Conduct of an Event",
               "topics": [
-                "Preparing a Planning Schedule, Steps in Organizing an event. Assigning Responsibility. Event Safety and Security, Conducting the Event-Checklist (Pre during and post event check list), Communication-channels of communications for different types of events"
+                "Preparing a Planning Schedule",
+                "Steps in Organizing an event",
+                "Assigning Responsibility",
+                "Event Safety and Security",
+                "Conducting the Event-Checklist (Pre during and post event check list)",
+                "Communication-channels of communications for different types of events"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Budgeting of Event",
               "topics": [
-                "Preparation of Event Budget-items of expenditure for various events, managing the event budget"
+                "Preparation of Event Budget-items of expenditure for various events",
+                "Managing the event budget"
               ]
             },
             {
@@ -1017,35 +1262,48 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature, Definition and Scope of International Marketing. Domestic vs international marketing, marketing strategy of MNCs"
+                "Nature",
+                "Definition and Scope of International Marketing",
+                "Domestic vs international marketing",
+                "Marketing strategy of MNCs"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Product planning for International Market",
               "topics": [
-                "Product planning for International Market Product Mix, Branding, Packaging, quality issues, After Sales Services"
+                "Product planning for International Market Product Mix",
+                "Branding",
+                "Packaging",
+                "Quality issues",
+                "After Sales Services"
               ]
             },
             {
               "unitNumber": 3,
               "title": "International Pricing",
               "topics": [
-                "International Pricing- Factors influencing international Price, Pricing process and Methods"
+                "International Pricing- Factors influencing international Price",
+                "Pricing process and Methods"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Promotion and Distribution",
               "topics": [
-                "Promotion and Distribution Methods of international Promotion, Advertising, International distribution channels"
+                "Promotion and Distribution Methods of international Promotion",
+                "Advertising",
+                "International distribution channels"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Export policy and practices in India",
               "topics": [
-                "Export policy and practices in India-Exim policy. Trends in Indian Foreign Trade, Export pricing. Export Finance"
+                "Export policy and practices in India-Exim policy",
+                "Trends in Indian Foreign Trade",
+                "Export pricing",
+                "Export Finance"
               ]
             }
           ],
@@ -1070,35 +1328,66 @@
               "unitNumber": 1,
               "title": "Nature and Scope of Managerial Economics",
               "topics": [
-                "Definition of Economics - Important concept of Economics - Basic Economic problem - Relationship between Micro and Macro economics - Managerial Economics - Nature and Scope - Objectives of the Firm"
+                "Definition of Economics",
+                "Important concept of Economics",
+                "Basic Economic problem",
+                "Relationship between Micro and Macro economics",
+                "Managerial Economics",
+                "Nature and Scope",
+                "Objectives of the Firm"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Theory of Consumer behavior",
               "topics": [
-                "Managerial Utility Analysis indifference curve and analysis Meaning of Demand - Law of Demand - Types of Demand - Determinants of demand - Elasticity of Demand - Demand Forecasting"
+                "Managerial Utility Analysis indifference curve and analysis Meaning of Demand",
+                "Law of Demand",
+                "Types of Demand",
+                "Determinants of demand",
+                "Elasticity of Demand",
+                "Demand Forecasting"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Production and Cost Analysis",
               "topics": [
-                "Law of returns to scale and Economics of scale - Cost analysis - different cost concepts - Cost - output relationship - Short run and long run - Revenue curves of firms - Supply Analysis"
+                "Law of returns to scale and Economics of scale",
+                "Cost analysis",
+                "Different cost concepts",
+                "Cost",
+                "Output relationship",
+                "Short run and long run",
+                "Revenue curves of firms",
+                "Supply Analysis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pricing Methods and Strategies",
               "topics": [
-                "Objectives - Factors - General Considerations of Pricing - Methods of pricing - Role of Government - Dual pricing - price Discrimination"
+                "Objectives",
+                "Factors",
+                "General Considerations of Pricing",
+                "Methods of pricing",
+                "Role of Government",
+                "Dual pricing",
+                "Price Discrimination"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Market forms",
               "topics": [
-                "Market structure - Basis of Market classification - Output determination - Perfect Competition - Monopoly - Monopolistic Competition - Duopoly - Oligopoly"
+                "Market structure",
+                "Basis of Market classification",
+                "Output determination",
+                "Perfect Competition",
+                "Monopoly",
+                "Monopolistic Competition",
+                "Duopoly",
+                "Oligopoly"
               ]
             }
           ],
@@ -1125,21 +1414,31 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Importance of Services Sector, Nature and Types of Service, Difference Between Service and Goods, Marketing. Environment for Services Marketing Indian Scenario"
+                "Importance of Services Sector",
+                "Nature and Types of Service",
+                "Difference Between Service and Goods",
+                "Marketing",
+                "Environment for Services Marketing Indian Scenario"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Services Marketing Mix",
               "topics": [
-                "Need for Expanded Marketing Mix. Product Mix, Promotion Mix, and Distribution Mix of Services, Additional three P's Process, Physical Evidence and Attractions and Management of Marketing people"
+                "Need for Expanded Marketing Mix",
+                "Product Mix",
+                "Promotion Mix, and Distribution Mix of Services",
+                "Additional three P's Process",
+                "Physical Evidence and Attractions and Management of Marketing people"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Marketing Segmentation and Selection",
               "topics": [
-                "Marketing Segmentation and Selection; Service Market Segmentation; Targeting and Positioning"
+                "Marketing Segmentation and Selection",
+                "Service Market Segmentation",
+                "Targeting and Positioning"
               ]
             }
           ],
@@ -1164,21 +1463,36 @@
               "unitNumber": 1,
               "title": "Digital Marketing",
               "topics": [
-                "Introduction to Digital Marketing: Meaning and Definition of Digital Marketing. Need of Digital Marketing, Digital Marketing Platforms, Email Marketing Importance of email marketing, email Marketing platforms"
+                "Introduction to Digital Marketing: Meaning and Definition of Digital Marketing",
+                "Need of Digital Marketing",
+                "Digital Marketing Platforms",
+                "Email Marketing Importance of email marketing",
+                "Email Marketing platforms"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Search Engine Optimization (SEO)",
               "topics": [
-                "SEO Importance and Its Growth in recent years, Ecosystem of a search Engine, SEO Tools: Google Webmaster Tools"
+                "SEO Importance and Its Growth in recent years",
+                "Ecosystem of a search Engine",
+                "SEO Tools: Google Webmaster Tools"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Social Media Marketing (SMM) & Web Analytics",
               "topics": [
-                "Social Media Marketing (SMM) Facebook Marketing, Twitter Marketing, Linkedin Marketing, Google plus Marketing. YouTube Marketing, Pinterest Marketing, Snapchat Marketing, Instagram Marketing. Social Media Automation Tools, Social Media Ad Specs"
+                "Social Media Marketing (SMM) Facebook Marketing",
+                "Twitter Marketing",
+                "Linkedin Marketing",
+                "Google plus Marketing",
+                "YouTube Marketing",
+                "Pinterest Marketing",
+                "Snapchat Marketing",
+                "Instagram Marketing",
+                "Social Media Automation Tools",
+                "Social Media Ad Specs"
               ]
             }
           ],
@@ -1208,37 +1522,71 @@
               "unitNumber": 1,
               "title": "Contract Act, 1872",
               "topics": [
-                "Concept and Essentials of Contract, Classification of Contract, offer and Acceptance, Capacity of Parties",
-                "Consideration, Free Consent, Legality of Objects, Void Agreements, Discharge of Contracts, Indemnity and Guarantee, Contract of Bailment, Pledge, Agency"
+                "Concept and Essentials of Contract",
+                "Classification of Contract",
+                "Offer and Acceptance",
+                "Capacity of Parties",
+                "Consideration",
+                "Free Consent",
+                "Legality of Objects",
+                "Void Agreements",
+                "Discharge of Contracts",
+                "Indemnity and Guarantee",
+                "Contract of Bailment",
+                "Pledge",
+                "Agency"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sale of Goods Act, 1930",
               "topics": [
-                "Contract of Sale, Meaning and Difference Between Sale and Agreement to Sell, Conditions and Warranties, Transfer of Property and Goods, Unpaid Seller and His Rights"
+                "Contract of Sale",
+                "Meaning and Difference Between Sale and Agreement to Sell",
+                "Conditions and Warranties",
+                "Transfer of Property and Goods",
+                "Unpaid Seller and His Rights"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Negotiable Instrument Act, 1881",
               "topics": [
-                "Concept and Features of Negotiable Instrument, Promissory Note, Bills of Exchange and Cheque, Holder and Holder in Due Course, Dishonour and Discharge of Negotiable instrument",
-                "Consumer Protection Act, 1986: Salient Features, Definition of consumer, Grievance Redressal Machinery"
+                "Concept and Features of Negotiable Instrument",
+                "Promissory Note",
+                "Bills of Exchange and Cheque",
+                "Holder and Holder in Due Course",
+                "Dishonour and Discharge of Negotiable instrument",
+                "Consumer Protection Act",
+                "1986: Salient Features",
+                "Definition of consumer",
+                "Grievance Redressal Machinery"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Limited Liability Partnership (LLP) Act, 2008",
               "topics": [
-                "Salient Features of LLP, Difference between LLP and Partnership, LLP and Company, LLP Agreement, Nature of LLP, Partners and Designated Partners, Registration Process of LLP, Conversion to LLP, Winding up and Dissolution"
+                "Salient Features of LLP",
+                "Difference between LLP and Partnership",
+                "LLP and Company",
+                "LLP Agreement",
+                "Nature of LLP",
+                "Partners and Designated Partners",
+                "Registration Process of LLP",
+                "Conversion to LLP",
+                "Winding up and Dissolution"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Indian Companies' Act, 2013",
               "topics": [
-                "Concept of Company, Formation of Company, Prospectus of Company, Share and Share Capital, Meeting of Company"
+                "Concept of Company",
+                "Formation of Company",
+                "Prospectus of Company",
+                "Share and Share Capital",
+                "Meeting of Company"
               ]
             }
           ],
@@ -1263,37 +1611,71 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "meaning of research: scope of business research, purpose of research- exploration, description, explanation, unit of analysis- individual, organization, groups and data series, conception, construct, attributes, variables and hypothesis"
+                "Meaning of research: scope of business research",
+                "Purpose of research- exploration",
+                "Description",
+                "Explanation",
+                "Unit of analysis- individual",
+                "Organization",
+                "Groups and data series",
+                "Conception",
+                "Construct",
+                "Attributes",
+                "Variables and hypothesis"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Research Process",
               "topics": [
-                "An overview; problem identification and definition, selection of basic research methods, field study, laboratory study, survey method, observational method, existing data based research"
+                "An overview",
+                "Problem identification and definition",
+                "Selection of basic research methods",
+                "Field study",
+                "Laboratory study",
+                "Survey method",
+                "Observational method",
+                "Existing data based research"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Data Collection Tools and Data Processing",
               "topics": [
-                "Questionnaire and Observation, Questionnaire Design, Process of Collecting Primary Data and Secondary Data, Interviews and Processing of Research Data Editing, Coding, Classification and Tabulation",
-                "Analysis of Data- Basic Data Analysis, Descriptive Statistics, Hypothesis Testing"
+                "Questionnaire and Observation",
+                "Questionnaire Design",
+                "Process of Collecting Primary Data and Secondary Data",
+                "Interviews and Processing of Research Data Editing",
+                "Coding",
+                "Classification and Tabulation",
+                "Analysis of Data- Basic Data Analysis",
+                "Descriptive Statistics",
+                "Hypothesis Testing"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Sampling Design and Measurement Techniques",
               "topics": [
-                "The Sampling Design Process; Types of Sample Design Probability and Non-probability Sampling Design Size of Sample, Sampling Errors: Concept of Measurement and Scaling, Important Scaling Techniques Comparative and Non-comparative Viability and Validity of Measurement"
+                "The Sampling Design Process",
+                "Types of Sample Design Probability and Non-probability Sampling Design Size of Sample",
+                "Sampling Errors: Concept of Measurement and Scaling",
+                "Important Scaling Techniques Comparative and Non-comparative Viability and Validity of Measurement"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Report preparation",
               "topics": [
-                "Meaning, types and layout of research report; steps in report writing, citation, bibliography and annexure in report, JEL classification",
-                "Brief Introduction to ‘R’, SPSS, MS Excel"
+                "Meaning",
+                "Types and layout of research report",
+                "Steps in report writing",
+                "Citation",
+                "Bibliography and annexure in report",
+                "JEL classification",
+                "Brief Introduction to ‘R’",
+                "SPSS",
+                "MS Excel"
               ]
             }
           ],
@@ -1317,35 +1699,63 @@
               "unitNumber": 1,
               "title": "Introduction to the Companies Act 1956 and 2013",
               "topics": [
-                "Definition of Company, its nature and Kinds- Formation of Company and its stages. Company documents, Memorandum of Association, Article of Association and Prospectus. Alteration of Memorandum and Article of Association, Doctrine of constructive notice and doctrine of indoor Management"
+                "Definition of Company, its nature and Kinds- Formation of Company and its stages",
+                "Company documents",
+                "Memorandum of Association",
+                "Article of Association and Prospectus",
+                "Alteration of Memorandum and Article of Association",
+                "Doctrine of constructive notice and doctrine of indoor Management"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Share Capital",
               "topics": [
-                "Definition of share, shares and stock Types of shares, Types of share capital, Issue of Shares at premium and discount. Right issue, Issue of Bonus shares, Share Certificate, Share Warrant"
+                "Definition of share",
+                "Shares and stock Types of shares",
+                "Types of share capital",
+                "Issue of Shares at premium and discount",
+                "Right issue",
+                "Issue of Bonus shares",
+                "Share Certificate",
+                "Share Warrant"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Members, Shareholders and Board of Directors",
               "topics": [
-                "Meaning of member and shareholders, Distinguish between member and Shareholders. Methods of becoming a member. Rights and Liabilities of Members, Termination of membership. Board of Directors and their Right, Duties and Liabilities"
+                "Meaning of member and shareholders",
+                "Distinguish between member and Shareholders",
+                "Methods of becoming a member",
+                "Rights and Liabilities of Members",
+                "Termination of membership",
+                "Board of Directors and their Right",
+                "Duties and Liabilities"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Meetings and Resolutions",
               "topics": [
-                "Meaning of meeting, Types of meeting, Board Meeting, Shareholders Meeting- Statutory meeting, Annual General Meeting, Extra Ordinary General Meeting, Class Meeting. Types of Resolutions"
+                "Meaning of meeting",
+                "Types of meeting",
+                "Board Meeting",
+                "Shareholders Meeting- Statutory meeting",
+                "Annual General Meeting",
+                "Extra Ordinary General Meeting",
+                "Class Meeting",
+                "Types of Resolutions"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Winding up of a Company",
               "topics": [
-                "Meaning, Modes of Winding up. Appointment of official liquidator. Powers and Duties of liquidator"
+                "Meaning",
+                "Modes of Winding up",
+                "Appointment of official liquidator",
+                "Powers and Duties of liquidator"
               ]
             }
           ],
@@ -1373,21 +1783,33 @@
               "unitNumber": 1,
               "title": "Introduction to Event Management",
               "topics": [
-                "Event- Meaning Importance and Types of event, Analysis of Event, Event Managerial Meaning, Decision Makers and their Roles and Responsibilities, 5 C's of Event Management"
+                "Event- Meaning Importance and Types of event",
+                "Analysis of Event",
+                "Event Managerial Meaning",
+                "Decision Makers and their Roles and Responsibilities",
+                "5 C's of Event Management"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Event Management Planning and Procedure",
               "topics": [
-                "Establishing of Policies & Procedures, Steps in Planning the event, Principles of Event Management, Permissions and Licenses from Government and Local Authority"
+                "Establishing of Policies & Procedures",
+                "Steps in Planning the event",
+                "Principles of Event Management",
+                "Permissions and Licenses from Government and Local Authority"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Conduct of an Event",
               "topics": [
-                "Preparing a Planning Schedule, Steps in Organizing an event. Assigning Responsibility. Event Safety and Security, Conducting the Event-Checklist (Pre during and post event check list), Communication-channels of communications for different types of events"
+                "Preparing a Planning Schedule",
+                "Steps in Organizing an event",
+                "Assigning Responsibility",
+                "Event Safety and Security",
+                "Conducting the Event-Checklist (Pre during and post event check list)",
+                "Communication-channels of communications for different types of events"
               ]
             }
           ],
@@ -1418,7 +1840,11 @@
               "unitNumber": 1,
               "title": "Introduction to Business Communication",
               "topics": [
-                "Characteristics of Effective Organizational Communication, Basic Forms of Communication, Process of Communication, Principles of Effective Business Communication, 7 C's"
+                "Characteristics of Effective Organizational Communication",
+                "Basic Forms of Communication",
+                "Process of Communication",
+                "Principles of Effective Business Communication",
+                "7 C's"
               ]
             },
             {
@@ -1432,21 +1858,46 @@
               "unitNumber": 3,
               "title": "Channels of Communications",
               "topics": [
-                "Formal, Informal, Rumour and informal communication Networks, Group Discussion, Paper Presentation, Speech, Debate, Quiz, Electronic Presentation"
+                "Formal",
+                "Informal",
+                "Rumour and informal communication Networks",
+                "Group Discussion",
+                "Paper Presentation",
+                "Speech",
+                "Debate",
+                "Quiz",
+                "Electronic Presentation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Forms of Business Communication",
               "topics": [
-                "Written Communication, Oral Communication, Non verbal Communication, Technology of Business Communication, Peculiarities of Communication in Indian Organizations, Conflict Management"
+                "Written Communication",
+                "Oral Communication",
+                "Non verbal Communication",
+                "Technology of Business Communication",
+                "Peculiarities of Communication in Indian Organizations",
+                "Conflict Management"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Conduct of Meeting",
               "topics": [
-                "Agenda, Notice, Notes, Minutes, Office Memorandum, Office Orders, Press Release, Business Letter Writing- Need, functions & Kinds, Layout of letter writing, Types of letter writing, Report writing- Problems, Organization and techniques of writing"
+                "Agenda",
+                "Notice",
+                "Notes",
+                "Minutes",
+                "Office Memorandum",
+                "Office Orders",
+                "Press Release",
+                "Business Letter Writing- Need",
+                "Functions & Kinds",
+                "Layout of letter writing",
+                "Types of letter writing",
+                "Report writing- Problems",
+                "Organization and techniques of writing"
               ]
             }
           ],
@@ -1472,21 +1923,29 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature, Definition and Scope of International Marketing. Domestic vs international marketing, marketing strategy of MNCs"
+                "Nature",
+                "Definition and Scope of International Marketing",
+                "Domestic vs international marketing",
+                "Marketing strategy of MNCs"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Product planning for International Market",
               "topics": [
-                "Product planning for International Market -Product Mix, Branding, Packaging, quality issues, After Sales Services"
+                "Product planning for International Market -Product Mix",
+                "Branding",
+                "Packaging",
+                "Quality issues",
+                "After Sales Services"
               ]
             },
             {
               "unitNumber": 3,
               "title": "International Pricing",
               "topics": [
-                "International Pricing- Factors influencing international Price, Pricing process and Methods"
+                "International Pricing- Factors influencing international Price",
+                "Pricing process and Methods"
               ]
             }
           ],

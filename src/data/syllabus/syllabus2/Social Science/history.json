@@ -30,14 +30,24 @@
                 "Understanding of Bharatvarsha",
                 "Eternity of synonyms Bharat",
                 "Indian concept of time and space",
-                "The glory of Indian Literature: Ved, Vedanga, Upanishads, Epics, Jain and Buddhist Literature, Smriti, Puranas Etc."
+                "The glory of Indian Literature: Ved",
+                "Vedanga",
+                "Upanishads",
+                "Epics",
+                "Jain and Buddhist Literature",
+                "Smriti",
+                "Puranas Etc"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Indian Knowledge Tradition, Art and Culture",
               "topics": [
-                "Evolution of Script and language: Brahmi, Kharoshiti; Sanskrit, Pali, Prakrit & Abhatt etc.",
+                "Evolution of Script and language: Brahmi",
+                "Kharoshiti",
+                "Sanskrit",
+                "Pali",
+                "Prakrit & Abhatt etc",
                 "Salient features of Indian Art & Culture",
                 "Indian education system",
                 "The Ethics & Social Value System"
@@ -48,7 +58,9 @@
               "title": "Dharma, Philosophy and Vasudhaiva Kutumbakam",
               "topics": [
                 "Indian perception of Dharma and Darshan",
-                "The concept of Vasudhaiva Kutumbakam: Man, Family, Society and world",
+                "The concept of Vasudhaiva Kutumbakam: Man",
+                "Family",
+                "Society and world",
                 "Polity and governance: Concept of Janpada & Local Administration (Gram Swarajya)"
               ]
             },
@@ -66,8 +78,10 @@
               "title": "Indian economic traditions",
               "topics": [
                 "Indian economic thoughts",
-                "Concept of land, forest and agriculture",
-                "Industry, inland trade & commerce",
+                "Concept of land",
+                "Forest and agriculture",
+                "Industry",
+                "Inland trade & commerce",
                 "Maritime Trade"
               ]
             }
@@ -141,8 +155,10 @@
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -162,7 +178,8 @@
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -175,7 +192,9 @@
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -260,20 +279,34 @@
               "title": "History of Early World Civilization",
               "topics": [
                 "Survey of Sources: Early & Medieval World Civilization",
-                "Egyptian Civilization, Political development, Art, Architecture and Religion",
-                "Mesopotamia Civilization: Sumerian, Babylonian and Assyrian: Society, Religion, Law, Art & Architecture, Administration and Education.",
-                "Chinese Civilization: Polity, Society, Science and Technology.",
-                "Persian Civilization: Political, Social and Economic Condition."
+                "Egyptian Civilization",
+                "Political development",
+                "Art",
+                "Architecture and Religion",
+                "Mesopotamia Civilization: Sumerian",
+                "Babylonian and Assyrian: Society",
+                "Religion",
+                "Law",
+                "Art & Architecture",
+                "Administration and Education",
+                "Chinese Civilization: Polity",
+                "Society",
+                "Science and Technology",
+                "Persian Civilization: Political",
+                "Social and Economic Condition"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Classical Greece",
               "topics": [
-                "Homer Age: Evolution of classical Greece.",
+                "Homer Age: Evolution of classical Greece",
                 "Athens, Sparta",
                 "Greece: Persian war and the Peloponnesian war",
-                "The Pericles Age in Greece, growth of state and society, development of Science, Art and Philosophy."
+                "The Pericles Age in Greece",
+                "Growth of state and society",
+                "Development of Science",
+                "Art and Philosophy"
               ]
             },
             {
@@ -281,29 +314,30 @@
               "title": "Roman Empire",
               "topics": [
                 "Origin of Rome",
-                "Rise and Evolution: Roman Republic and Roman law.",
-                "Expansion of Rome.",
-                "Imperial Age in Rome."
+                "Rise and Evolution: Roman Republic and Roman law",
+                "Expansion of Rome",
+                "Imperial Age in Rome"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rise of Christianity and Islam",
               "topics": [
-                "Rise, establishment and growth of Christianity",
-                "The Barbarian invasion and the fall of western empire.",
-                "Birth and expansion of Islam and its impact.",
-                "The Arab civilization and its contribution."
+                "Rise",
+                "Establishment and growth of Christianity",
+                "The Barbarian invasion and the fall of western empire",
+                "Birth and expansion of Islam and its impact",
+                "The Arab civilization and its contribution"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Early Medieval Europe",
               "topics": [
-                "Crusades and their impact on Europe.",
-                "Rise and growth of European Feudalism and its decline.",
-                "Commercialism and its impact.",
-                "Religion and Society in Pre-Medieval Europe."
+                "Crusades and their impact on Europe",
+                "Rise and growth of European Feudalism and its decline",
+                "Commercialism and its impact",
+                "Religion and Society in Pre-Medieval Europe"
               ]
             }
           ],
@@ -335,41 +369,54 @@
               "unitNumber": 1,
               "title": "History of Early World Civilization",
               "topics": [
-                "Egyptian Civilization, Political development, Art, Architecture and Religion",
-                "Mesopotamia Civilization: Sumerian, Babylonian and Assyrian: Society, Religion, Law, Art & Architecture, Administration and Education."
+                "Egyptian Civilization",
+                "Political development",
+                "Art",
+                "Architecture and Religion",
+                "Mesopotamia Civilization: Sumerian",
+                "Babylonian and Assyrian: Society",
+                "Religion",
+                "Law",
+                "Art & Architecture",
+                "Administration and Education"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Classical Greece",
               "topics": [
-                "Homer Age: Evolution of classical Greece.",
-                "The Pericles Age in Greece, growth of state and society, development of Science, Art and Philosophy"
+                "Homer Age: Evolution of classical Greece",
+                "The Pericles Age in Greece",
+                "Growth of state and society",
+                "Development of Science",
+                "Art and Philosophy"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Roman Empire",
               "topics": [
-                "Origin, Rise and Evolution of Roman Republic",
-                "Imperial Age in Rome."
+                "Origin",
+                "Rise and Evolution of Roman Republic",
+                "Imperial Age in Rome"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rise of Christianity and Islam",
               "topics": [
-                "Rise, establishment and growth of Christianity",
-                "Birth and expansion of Islam and its impact.",
-                "The Arab civilization and its contribution."
+                "Rise",
+                "Establishment and growth of Christianity",
+                "Birth and expansion of Islam and its impact",
+                "The Arab civilization and its contribution"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Early Medieval Europe",
               "topics": [
-                "Crusades and their impact on Europe.",
-                "Rise and growth of European Feudalism and its decline."
+                "Crusades and their impact on Europe",
+                "Rise and growth of European Feudalism and its decline"
               ]
             }
           ],
@@ -413,43 +460,84 @@
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -459,22 +547,38 @@
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -552,20 +656,29 @@
               "unitNumber": 1,
               "title": "Sources, Historiography and Prehistoric India",
               "topics": [
-                "Sources: Scientific Literature, Regional Languages and Religious Literature of Ancient Indian History up to 550 C.E.",
-                "A survey of Prehistoric India: Palaeolithic, Mesolithic, Neolithic and Chalcolithic Cultures.",
-                "The Indus – Saraswati Civilization, Debate on the relationship of Indus, Saraswati Civilization and Vedic Civilization.",
-                "Significant features of Indus-Saraswati Civilization, its continuity, fall and survival of Saraswati Civilization"
+                "Sources: Scientific Literature",
+                "Regional Languages and Religious Literature of Ancient Indian History up to 550 C.E",
+                "A survey of Prehistoric India: Palaeolithic",
+                "Mesolithic",
+                "Neolithic and Chalcolithic Cultures",
+                "The Indus",
+                "Saraswati Civilization",
+                "Debate on the relationship of Indus",
+                "Saraswati Civilization and Vedic Civilization",
+                "Significant features of Indus-Saraswati Civilization, its continuity",
+                "Fall and survival of Saraswati Civilization"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Aryan Civilization",
               "topics": [
-                "Origin of Aryans and Homeland in India, Myths of Aryan Invasion: Various theories,",
-                "Vedic Cultures: Early Vedic and Post-Vedic Literature and Vedic Polity, Society and Economy",
-                "Vedic Religion and Philosophy.",
-                "Epic Literature and Culture: Problem of Dating and Historicity of the Epics."
+                "Origin of Aryans and Homeland in India",
+                "Myths of Aryan Invasion: Various theories",
+                "Vedic Cultures: Early Vedic and Post-Vedic Literature and Vedic Polity",
+                "Society and Economy",
+                "Vedic Religion and Philosophy",
+                "Epic Literature and Culture: Problem of Dating and Historicity of the Epics"
               ]
             },
             {
@@ -573,9 +686,18 @@
               "title": "India from Sixth Century BCE to Mauryan Age",
               "topics": [
                 "Sources",
-                "India in the Sixth Century BCE Mahajanpada, Republic and Growth of Urban Centers, Rise of Magadhan Imperialism.",
-                "Religious Systems in the 6th century BCE, Buddhism and Jainism.",
-                "The Maurya Empire, Chandragupta Maurya, Mauryan administration, Ashok and Ashoka's Dhamma. Mauryan Society, Fall of Mauryan Empire. Greek Invasion and its Impact"
+                "India in the Sixth Century BCE Mahajanpada",
+                "Republic and Growth of Urban Centers",
+                "Rise of Magadhan Imperialism",
+                "Religious Systems in the 6th century BCE",
+                "Buddhism and Jainism",
+                "The Maurya Empire",
+                "Chandragupta Maurya",
+                "Mauryan administration",
+                "Ashok and Ashoka's Dhamma",
+                "Mauryan Society",
+                "Fall of Mauryan Empire",
+                "Greek Invasion and its Impact"
               ]
             },
             {
@@ -583,9 +705,11 @@
               "title": "Post Mauryan Age",
               "topics": [
                 "Sources",
-                "Reorganization of Republic in Post Mauryan Age.",
-                "Indo-Greek, Saka, Kushan, Shunga, Kharvela, Satvahanas: Society and Culture, Art, Architecture and Coinage.",
-                "Sangam Age: Sangam Literature, Society, Culture and Foreign Trade in Post Mauryan Age."
+                "Reorganization of Republic in Post Mauryan Age",
+                "Indo-Greek, Saka, Kushan, Shunga, Kharvela, Satvahanas: Society and Culture, Art, Architecture and Coinage",
+                "Sangam Age: Sangam Literature",
+                "Society",
+                "Culture and Foreign Trade in Post Mauryan Age"
               ]
             },
             {
@@ -593,9 +717,10 @@
               "title": "Imperial Guptas",
               "topics": [
                 "Sources",
-                "Imperial Guptas and their Contemporaries.",
+                "Imperial Guptas and their Contemporaries",
                 "Gupta Administration",
-                "Gupta Art, Architecture, Religion. Literature and Development of Science and Technology."
+                "Gupta Art, Architecture, Religion",
+                "Literature and Development of Science and Technology"
               ]
             },
             {
@@ -639,19 +764,25 @@
               "title": "Beginning of Modern Europe",
               "topics": [
                 "Decline of Feudalism and its Consequences",
-                "Renaissance: Causes, Phases, Development of Art, Architecture and Literature, New discourse on Renaissance.",
-                "Reformation movement in Europe and Counter Reformation, Religious Warfare: The Thirty Years War,",
-                "Geographical Discoveries: Its impact on economy,"
+                "Renaissance: Causes",
+                "Phases",
+                "Development of Art",
+                "Architecture and Literature",
+                "New discourse on Renaissance",
+                "Reformation movement in Europe and Counter Reformation",
+                "Religious Warfare: The Thirty Years War",
+                "Geographical Discoveries: Its impact on economy"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Absolutism in Europe",
               "topics": [
-                "Growth of Absolute Monarchy in Spain and France.",
+                "Growth of Absolute Monarchy in Spain and France",
                 "Absolute Monarchy in Britain and Struggle with Parliament",
-                "Absolutism in Austria and Russia, Conflict in Germany",
-                "Emergence of Nation-State in Europe."
+                "Absolutism in Austria and Russia",
+                "Conflict in Germany",
+                "Emergence of Nation-State in Europe"
               ]
             },
             {
@@ -661,7 +792,8 @@
                 "Feudal Economy and its impact",
                 "Growth of Mercantilism in European Nations",
                 "Development of Capitalism in Europe: Theory of Karl Marx",
-                "Industrial Revolution: Causes, Growth and Impact"
+                "Industrial Revolution: Causes",
+                "Growth and Impact"
               ]
             },
             {
@@ -680,7 +812,8 @@
               "topics": [
                 "The Glorious Revolution in England: Causes and Nature",
                 "Impact of Glorious Revolution on other European Countries",
-                "French Revolution (1789): Causes, Phases and Impact",
+                "French Revolution (1789): Causes",
+                "Phases and Impact",
                 "French Revolution New Discourses"
               ]
             }
@@ -724,9 +857,13 @@
               "unitNumber": 1,
               "title": "Sources, Historiography and Prehistoric India",
               "topics": [
-                "Sources of Ancient Indian History up to 550 C.E.",
-                "A survey of Prehistoric India: Palaeolithic, Mesolithic, Neolithic and Chalcolithic Cultures.",
-                "The Indus – Saraswati Civilization, A debate for resurgence.",
+                "Sources of Ancient Indian History up to 550 C.E",
+                "A survey of Prehistoric India: Palaeolithic",
+                "Mesolithic",
+                "Neolithic and Chalcolithic Cultures",
+                "The Indus",
+                "Saraswati Civilization",
+                "A debate for resurgence",
                 "Significant features of Indus-Saraswati Civilization, its continuity and decline"
               ]
             },
@@ -734,10 +871,10 @@
               "unitNumber": 2,
               "title": "Aryan Civilization",
               "topics": [
-                "Origin of Aryans and their Homeland in India.",
+                "Origin of Aryans and their Homeland in India",
                 "Vedic Age: Society and Economy",
-                "Vedic Religion and Philosophy.",
-                "Epic literature (Ramayan and Mahabharata)."
+                "Vedic Religion and Philosophy",
+                "Epic literature (Ramayan and Mahabharata)"
               ]
             },
             {
@@ -745,27 +882,32 @@
               "title": "India from Sixth Century BCE to Mauryan Age",
               "topics": [
                 "Mahajanapada",
-                "Republic in Ancient India.",
+                "Republic in Ancient India",
                 "Magadhan Imperialism",
-                "Buddhism and Jainism."
+                "Buddhism and Jainism"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Post Mauryan Age",
               "topics": [
-                "The Maurya Empire, Chandragupta Maurya, Ashoka and Ashoka's Dhamma. Fall of Mauryan Empire.",
-                "Indo-Greek, Saka, Kushan, Shunga, Kharvela, Satavahanas: Society and Culture, Art, Architecture and Coinage.",
-                "Sangam Age: Sangam Literature, Society and Culture"
+                "The Maurya Empire",
+                "Chandragupta Maurya",
+                "Ashoka and Ashoka's Dhamma",
+                "Fall of Mauryan Empire",
+                "Indo-Greek, Saka, Kushan, Shunga, Kharvela, Satavahanas: Society and Culture, Art, Architecture and Coinage",
+                "Sangam Age: Sangam Literature",
+                "Society and Culture"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Imperial Guptas",
               "topics": [
-                "Imperial Guptas and their Contemporaries.",
+                "Imperial Guptas and their Contemporaries",
                 "Gupta Administration",
-                "Gupta Art, Architecture, Religion. Literature and Development of Science and Technology."
+                "Gupta Art, Architecture, Religion",
+                "Literature and Development of Science and Technology"
               ]
             },
             {
@@ -817,9 +959,19 @@
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -838,9 +990,13 @@
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -851,9 +1007,13 @@
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -944,15 +1104,17 @@
               "topics": [
                 "Decline of Gupta Power",
                 "Huna Invasion and its impact",
-                "Dynasty of Pushyabhuti and Kanyakubja with reference to Harsha and contemporary State, Society and Culture.",
-                "Origin of Rajput: Various theories."
+                "Dynasty of Pushyabhuti and Kanyakubja with reference to Harsha and contemporary State",
+                "Society and Culture",
+                "Origin of Rajput: Various theories"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Decentralization and Emergence of Regional Power",
               "topics": [
-                "Rajputs: Origin, Emergence and Decline",
+                "Rajputs: Origin",
+                "Emergence and Decline",
                 "Tripartite Struggle",
                 "Establishment of Muslim Rule in North India",
                 "Muslim Rule in Delhi and the Impact of Muslim Rule on India"
@@ -962,20 +1124,44 @@
               "unitNumber": 3,
               "title": "Regional Powers of South and Deccan",
               "topics": [
-                "Chalukyas of Vatapi; Origin history, Art and Architecture.",
-                "Rashtrakutas of Manyakhet: History, Expansionist Policy, Religion, Art and Architecture.",
-                "Cholas of Kanchi: History, Administration, Art and Architecture.",
-                "Other Regional Powers: Pallava, Pandya, Chera, Kakatiya, Ganga, Kadamba and Sinhala (Sri Lanka)"
+                "Chalukyas of Vatapi",
+                "Origin history",
+                "Art and Architecture",
+                "Rashtrakutas of Manyakhet: History",
+                "Expansionist Policy",
+                "Religion",
+                "Art and Architecture",
+                "Cholas of Kanchi: History",
+                "Administration",
+                "Art and Architecture",
+                "Other Regional Powers: Pallava",
+                "Pandya",
+                "Chera",
+                "Kakatiya",
+                "Ganga",
+                "Kadamba and Sinhala (Sri Lanka)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Decline of Rajputs",
               "topics": [
-                "North Western India: Dynasties of Kashmir; Sindh; Arab Invasion; Hindu Shahi and Nepal and their political and cultural achievements.",
-                "Central India: Maakhiries, Pratihars, Gahadwals, Chahman, Chandela, Kalachuri, Parmara and their Political and Cultural Achievements.",
-                "South Western India: Chalukya and Solanki and their Political and Cultural Achievements.",
-                "North Eastern India: Palas, Senas of Bengal; Dynasties of Kalinga and Other Region; Dynasty of Kalinga and their Political and Cultural Achievements."
+                "North Western India: Dynasties of Kashmir",
+                "Sindh",
+                "Arab Invasion",
+                "Hindu Shahi and Nepal and their political and cultural achievements",
+                "Central India: Maakhiries",
+                "Pratihars",
+                "Gahadwals",
+                "Chahman",
+                "Chandela",
+                "Kalachuri",
+                "Parmara and their Political and Cultural Achievements",
+                "South Western India: Chalukya and Solanki and their Political and Cultural Achievements",
+                "North Eastern India: Palas",
+                "Senas of Bengal",
+                "Dynasties of Kalinga and Other Region",
+                "Dynasty of Kalinga and their Political and Cultural Achievements"
               ]
             },
             {
@@ -984,8 +1170,10 @@
               "topics": [
                 "Disintegration of Political Power",
                 "Society and Religion in Early-Medieval India",
-                "Fine Arts in Early-Medieval India: Architecture, Sculpture, Paintings.",
-                "Emergence and Spread of the Bhakti movement in India."
+                "Fine Arts in Early-Medieval India: Architecture",
+                "Sculpture",
+                "Paintings",
+                "Emergence and Spread of the Bhakti movement in India"
               ]
             }
           ],
@@ -1023,7 +1211,8 @@
                 "Rise of Napoleon and spread of French Imperialism",
                 "Reforms of Napoleon as First Consul",
                 "Downfall of Napoleon",
-                "Age of Reactionism, Congress of Vienna and its Significance",
+                "Age of Reactionism",
+                "Congress of Vienna and its Significance",
                 "Revolutions of 1830 and 1848: Causes and Consequences"
               ]
             },
@@ -1031,17 +1220,21 @@
               "unitNumber": 2,
               "title": "Rise of New Nations",
               "topics": [
-                "Unification of Germany under Bismarck.",
-                "Unification of Italy: Role of Cavour, Mazzini and Garibaldi",
-                "Russia & Problems of Eastern Nationalities."
+                "Unification of Germany under Bismarck",
+                "Unification of Italy: Role of Cavour",
+                "Mazzini and Garibaldi",
+                "Russia & Problems of Eastern Nationalities"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Capitalist Industrialization & Socio-Economic Transformation",
               "topics": [
-                "Process of Capitalist development in Industry & Agriculture in Britain, France, Germany and Russia.",
-                "New Social Classes: Bourgeoisie, Proletariat, and Peasantry",
+                "Process of Capitalist development in Industry & Agriculture in Britain",
+                "France",
+                "Germany and Russia",
+                "New Social Classes: Bourgeoisie",
+                "Proletariat, and Peasantry",
                 "Rise of Socialism and Growth of New Capitalism",
                 "Imperialism and its impact"
               ]
@@ -1050,7 +1243,8 @@
               "unitNumber": 4,
               "title": "International Relations: New Era & the Concept of Balance of Power.",
               "topics": [
-                "Congress of Berlin, Creation of Alliance under Bismarck",
+                "Congress of Berlin",
+                "Creation of Alliance under Bismarck",
                 "The decline of Ottoman Empire and emergence of Modern Turkey under Mustafa Kamal Pasha",
                 "Third French Republic: its Problems and Foreign policy",
                 "Communism in Russia: The Bolshevik Revolution"
@@ -1124,8 +1318,13 @@
               "title": "Medieval India",
               "topics": [
                 "Important sources of Medieval Indian History",
-                "Early Turks, Khalji revolution, and Tughlaqs, Invasion of Timur",
-                "Ruling Dynasties of Assam, Rajput States (Mewar and Marwar), Orissa, Kashmir",
+                "Early Turks",
+                "Khalji revolution, and Tughlaqs",
+                "Invasion of Timur",
+                "Ruling Dynasties of Assam",
+                "Rajput States (Mewar and Marwar)",
+                "Orissa",
+                "Kashmir",
                 "Vijayanagara Empire"
               ]
             },
@@ -1135,29 +1334,47 @@
               "topics": [
                 "Afghan Rule: Lodis and Surs",
                 "India on the Eve of Babur's Invasion",
-                "Establishment and Re-establishment of Mughal Rule, Hemu Vikramaditya, Rana Pratap, Rani Durgavati, Chand Bibi",
-                "Expansion of the Mughal Empire, Administration: Theory of State, Land Revenue System, Jagirdari and Mansabdari system"
+                "Establishment and Re-establishment of Mughal Rule",
+                "Hemu Vikramaditya",
+                "Rana Pratap",
+                "Rani Durgavati",
+                "Chand Bibi",
+                "Expansion of the Mughal Empire",
+                "Administration: Theory of State",
+                "Land Revenue System",
+                "Jagirdari and Mansabdari system"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Aurangzeb, Shivaji and Other Powers",
               "topics": [
-                "Aurangzeb, Extent and Disintegration of Mughal Empire",
+                "Aurangzeb",
+                "Extent and Disintegration of Mughal Empire",
                 "Resistance of Mewar and Marwar",
-                "Rise of Marathas under Shivaji, Maratha Administration, Concept of Hindu Pad Padshahi",
-                "Resistance of Sikhs, Jats, Satnamis and Bundelas"
+                "Rise of Marathas under Shivaji",
+                "Maratha Administration",
+                "Concept of Hindu Pad Padshahi",
+                "Resistance of Sikhs",
+                "Jats",
+                "Satnamis and Bundelas"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Society and Economy",
               "topics": [
-                "Hindu Society: Caste and Occupational groups, Education, Customs and Traditions",
-                "Muslim Society: Divisions and Occupational groups; Lifestyle, Education, Customs and Tradition.",
-                "Condition of Peasants, Artisans and Women",
-                "Condition of Agriculture and Industry.",
-                "Development of Trade and Commerce."
+                "Hindu Society: Caste and Occupational groups",
+                "Education",
+                "Customs and Traditions",
+                "Muslim Society: Divisions and Occupational groups",
+                "Lifestyle",
+                "Education",
+                "Customs and Tradition",
+                "Condition of Peasants",
+                "Artisans and Women",
+                "Condition of Agriculture and Industry",
+                "Development of Trade and Commerce"
               ]
             },
             {
@@ -1165,9 +1382,13 @@
               "title": "Religion and Culture",
               "topics": [
                 "Bhakti movement",
-                "Sufism, Sikhism and Other Sects in South India, Bengal and Kashmir",
+                "Sufism",
+                "Sikhism and Other Sects in South India",
+                "Bengal and Kashmir",
                 "Development of Language and Literature",
-                "Development of Science and Technology, Architecture, Painting and Classical Music."
+                "Development of Science and Technology",
+                "Architecture",
+                "Painting and Classical Music"
               ]
             }
           ],
@@ -1218,14 +1439,18 @@
               "title": "Beginning of Modern Europe",
               "topics": [
                 "Decline of Feudalism and its consequences",
-                "Renaissance: Causes, Phases, Development of Art, Architecture and Literature, New discourse on Renaissance."
+                "Renaissance: Causes",
+                "Phases",
+                "Development of Art",
+                "Architecture and Literature",
+                "New discourse on Renaissance"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Absolutism in Europe",
               "topics": [
-                "Growth of Absolute Monarchy in Spain and France.",
+                "Growth of Absolute Monarchy in Spain and France",
                 "Absolute Monarchy in Britain and Struggle with Parliament"
               ]
             },
@@ -1293,7 +1518,8 @@
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1355,7 +1581,8 @@
               "unitNumber": 1,
               "title": "1919 A New World Order",
               "topics": [
-                "Formation of the League of Nations: Organizations, Achievements & Failures",
+                "Formation of the League of Nations: Organizations",
+                "Achievements & Failures",
                 "Formation of ICJ & ILO",
                 "New Imperialism: Mandate System",
                 "Democracies between the wars"
@@ -1397,8 +1624,8 @@
               "topics": [
                 "French quest for security: Locarno Pact-1925",
                 "Causes and Consequences of Second World War",
-                "U.N.O its Organization and Achievements",
-                "Cold War and Emergence of New Bi-Polar world."
+                "N.O its Organization and Achievements",
+                "Cold War and Emergence of New Bi-Polar world"
               ]
             }
           ],
@@ -1457,7 +1684,8 @@
               "title": "Expansion of East India Company's Rule",
               "topics": [
                 "Arrival of European companies: Rivalry for Control",
-                "Ascendancy of English East India Company: Battle of Buxar and Plassey; Their effects",
+                "Ascendancy of English East India Company: Battle of Buxar and Plassey",
+                "Their effects",
                 "Territorial Expansion of East India Company 1765-1813 (From ring fence to Subordinate isolation)",
                 "Territorial Expansion of East India Company 1813-1856"
               ]
@@ -1466,9 +1694,14 @@
               "unitNumber": 4,
               "title": "Administration of East India Company",
               "topics": [
-                "Economic Policies- Agriculture, Trade, Banking, Land revenue",
-                "Administrative Apparatus under East India Company with special reference to Education, Communication and judicial policy",
-                "Theories of Cultural Ascendency: Utilitarianism, Evangelicals and White Men Burden Theory",
+                "Economic Policies- Agriculture",
+                "Trade",
+                "Banking",
+                "Land revenue",
+                "Administrative Apparatus under East India Company with special reference to Education",
+                "Communication and judicial policy",
+                "Theories of Cultural Ascendency: Utilitarianism",
+                "Evangelicals and White Men Burden Theory",
                 "Response of Indian Society and Socio-Religious Reform Movements"
               ]
             },
@@ -1476,9 +1709,11 @@
               "unitNumber": 5,
               "title": "Resistance to Colonial Power",
               "topics": [
-                "Peasant Revolts in the 19th Century: Deccan, Indigo and Tabula",
+                "Peasant Revolts in the 19th Century: Deccan",
+                "Indigo and Tabula",
                 "Tribal Revolts: Bhil, Kol, Santhal, Gond and others",
-                "First War of Independence: Causes, Nature",
+                "First War of Independence: Causes",
+                "Nature",
                 "Main Leaders and People's Resistance in 1857 and Geographical Areas"
               ]
             }
@@ -1533,8 +1768,8 @@
               "title": "Emergence of New Powers and Age of Decentralization",
               "topics": [
                 "Huna Invasion and its impact",
-                "Harsha the Last Hindu Ruler of Ancient India.",
-                "Origin of Rajput: Various theories."
+                "Harsha the Last Hindu Ruler of Ancient India",
+                "Origin of Rajput: Various theories"
               ]
             },
             {
@@ -1550,20 +1785,29 @@
               "unitNumber": 3,
               "title": "Regional Powers of South and Deccan",
               "topics": [
-                "Chalukyas of Vatapi : A brief History.",
-                "Rashtrakutas of Manyakhete : A brief History.",
-                "Cholas of Kanchi: A brief History.",
-                "Other Reli gional Powers: Pallava, Pandya, Chera: A brief History."
+                "Chalukyas of Vatapi : A brief History",
+                "Rashtrakutas of Manyakhete : A brief History",
+                "Cholas of Kanchi: A brief History",
+                "Other Reli gional Powers: Pallava",
+                "Pandya",
+                "Chera: A brief History"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Decline of Rajputs",
               "topics": [
-                "North Western India: Dynasties of Kashmir; Sindh; Arab Invasion;",
-                "Central India: Pratihars, Gahadwals, Chahman, Chandelari, Parmara and their Political and cultural achievements.",
-                "South Western India: Chalukya and their political and cultural achievements.",
-                "North Eastern India: Palas, Senas of Bengal;"
+                "North Western India: Dynasties of Kashmir",
+                "Sindh",
+                "Arab Invasion",
+                "Central India: Pratihars",
+                "Gahadwals",
+                "Chahman",
+                "Chandelari",
+                "Parmara and their Political and cultural achievements",
+                "South Western India: Chalukya and their political and cultural achievements",
+                "North Eastern India: Palas",
+                "Senas of Bengal"
               ]
             },
             {
@@ -1571,8 +1815,10 @@
               "title": "Culture of Early-Medieval India",
               "topics": [
                 "Society and Religion in Early-Medieval India",
-                "Fine Arts in Early-Medieval India: Architecture, Sculpture, Paintings.",
-                "Emergence and Spread of the Bhakti movement in India."
+                "Fine Arts in Early-Medieval India: Architecture",
+                "Sculpture",
+                "Paintings",
+                "Emergence and Spread of the Bhakti movement in India"
               ]
             }
           ],
@@ -1616,8 +1862,9 @@
               "unitNumber": 2,
               "title": "Rise of New Nations",
               "topics": [
-                "Unification of Germany under Bismarck.",
-                "Unification of Italy: Role of Cavour, Mazzini and Garibaldi"
+                "Unification of Germany under Bismarck",
+                "Unification of Italy: Role of Cavour",
+                "Mazzini and Garibaldi"
               ]
             },
             {
@@ -1633,7 +1880,7 @@
               "unitNumber": 4,
               "title": "International Relations: New Era & the Concept of Balance of Power.",
               "topics": [
-                "Congress of Berlin,",
+                "Congress of Berlin",
                 "Communism in Russia: The Bolshevik Revolution"
               ]
             },
@@ -1719,8 +1966,8 @@
               "unitNumber": 1,
               "title": "Rise of Mass Nationalism",
               "topics": [
-                "Debates on 1857 and Its Impact on British Policies.",
-                "Factors leading to growth of Nationalism in India & Social Background of Indian Nationalism.",
+                "Debates on 1857 and Its Impact on British Policies",
+                "Factors leading to growth of Nationalism in India & Social Background of Indian Nationalism",
                 "Formation of early political organizations",
                 "Congress- Moderates & Extremists"
               ]
@@ -1729,10 +1976,15 @@
               "unitNumber": 2,
               "title": "From Swadeshi to Home Rule",
               "topics": [
-                "Economic Nationalism, Idea of Swadeshi, Swadeshi Movement & Congress Split at Surat",
+                "Economic Nationalism",
+                "Idea of Swadeshi",
+                "Swadeshi Movement & Congress Split at Surat",
                 "Idea & formation of Muslim league: Demands and Early Programs",
-                "First World War: Lucknow Pact, Home Rule Movement",
-                "Entry of Gandhi: Regional Movements, Rowlatt Satyagraha, Khilafat Issue",
+                "First World War: Lucknow Pact",
+                "Home Rule Movement",
+                "Entry of Gandhi: Regional Movements",
+                "Rowlatt Satyagraha",
+                "Khilafat Issue",
                 "Indian Council Act of 1909 & Government of India Act 1919"
               ]
             },
@@ -1741,17 +1993,24 @@
               "title": "Mass Movements of Congress & Alternative Ideologies",
               "topics": [
                 "Non-Cooperation Movement and Swarajists",
-                "Revolutionary Movement, Trial of Bhagat Singh, Rise of Leftist Ideology",
-                "Simon Commission, Nehru Report and Civil Disobedience Movement",
-                "Tripuri crisis. Issues and Ideas of Subhash Chand Bose, Quit India Movement"
+                "Revolutionary Movement",
+                "Trial of Bhagat Singh",
+                "Rise of Leftist Ideology",
+                "Simon Commission",
+                "Nehru Report and Civil Disobedience Movement",
+                "Tripuri crisis",
+                "Issues and Ideas of Subhash Chand Bose",
+                "Quit India Movement"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rise of Peasant, Workers, Tribals' Movement",
               "topics": [
-                "Peasant Issues since 1919, formation of Regional Peasant Associations and all India Kisan Sabha, Role of Madan Mohan Malviya & Sahjanand Saraswati.",
-                "Rise of Industrial Worker Class, its issues and Formation of Trade Unions.",
+                "Peasant Issues since 1919",
+                "Formation of Regional Peasant Associations and all India Kisan Sabha",
+                "Role of Madan Mohan Malviya & Sahjanand Saraswati",
+                "Rise of Industrial Worker Class, its issues and Formation of Trade Unions",
                 "Colonial Policies & Tribal Issues (1857-1947)- Birsa Munda Ulgulan and Tana Bhagat Movement",
                 "Government of India Act 1935"
               ]
@@ -1761,9 +2020,12 @@
               "title": "Road to Partition Independence",
               "topics": [
                 "Challenges of Communalism (1942-1947)",
-                "Role of INA, INA Trials & RIN Mutiny",
-                "Constitutional Formulas: Wavell Plan, Cripps and Cabinet Mission",
-                "Mountbatten plan, Circumstances leading to Partition & Independence",
+                "Role of INA",
+                "INA Trials & RIN Mutiny",
+                "Constitutional Formulas: Wavell Plan",
+                "Cripps and Cabinet Mission",
+                "Mountbatten plan",
+                "Circumstances leading to Partition & Independence",
                 "Nationalist Movement in Princely states"
               ]
             }
@@ -1802,19 +2064,38 @@
               "unitNumber": 1,
               "title": "The Impact of Colonialism and National Movement",
               "topics": [
-                "Impact of Colonialism on Political, Social, Economic System and Cultural Values.",
-                "National Movements after Independence: Its significance, Value and Legacy",
-                "Partition and Independence of India: Role of Congress & Communists, Hindu Mahasabha and others",
-                "Integration of Princely States; special discussion on Hyderabad, Junagarh and Jammu & Kashmir"
+                "Impact of Colonialism on Political",
+                "Social",
+                "Economic System and Cultural Values",
+                "National Movements after Independence: Its significance",
+                "Value and Legacy",
+                "Partition and Independence of India: Role of Congress & Communists",
+                "Hindu Mahasabha and others",
+                "Integration of Princely States",
+                "Special discussion on Hyderabad",
+                "Junagarh and Jammu & Kashmir"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Indian Constitution and Consolidation as a Nation",
               "topics": [
-                "Definition of Bharat (India) as 'Shaswat Rashtra' and Framing of Indian Constitution - Constituent Assembly - Draft Committee Report - declaration of Indian Constitution, Role of Dr. B.R. Ambedkar, Indian constitution - Basic Features and Institutions.",
-                "The Linguistic Reorganization of the States, Regionalism and Regional inequality",
-                "India's Relations with Neighbouring countries; Pakistan, China, Nepal, Sri Lanka, Afghanistan and Myanmar.",
+                "Definition of Bharat (India) as 'Shaswat Rashtra' and Framing of Indian Constitution",
+                "Constituent Assembly",
+                "Draft Committee Report",
+                "Declaration of Indian Constitution",
+                "Role of Dr. B.R",
+                "Ambedkar",
+                "Indian constitution",
+                "Basic Features and Institutions",
+                "The Linguistic Reorganization of the States",
+                "Regionalism and Regional inequality",
+                "India's Relations with Neighbouring countries",
+                "Pakistan",
+                "China",
+                "Nepal",
+                "Sri Lanka",
+                "Afghanistan and Myanmar",
                 "Evolution and Development of Parliamentary Democracy"
               ]
             },
@@ -1822,18 +2103,30 @@
               "unitNumber": 3,
               "title": "Developments in India since independence",
               "topics": [
-                "Politics in the States: Tamil Nadu, Andhra Pradesh, Assam, West Bengal and Jammu & Kashmir, the Punjab crisis.",
-                "Development of Science, Technology and Modern Education System & Policies.",
-                "Industrial Policy; Emergence of Public Sector Enterprises",
-                "Social Justice; Law & Politics for the upliftment of the weaker sections and tribal issues."
+                "Politics in the States: Tamil Nadu",
+                "Andhra Pradesh",
+                "Assam",
+                "West Bengal and Jammu & Kashmir",
+                "The Punjab crisis",
+                "Development of Science",
+                "Technology and Modern Education System & Policies",
+                "Industrial Policy",
+                "Emergence of Public Sector Enterprises",
+                "Social Justice",
+                "Law & Politics for the upliftment of the weaker sections and tribal issues"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Socio-Economic development since independence",
               "topics": [
-                "Indian Economic development - industrialization, liberalization and globalization.",
-                "Land Reforms: Zamindari Abolition and Tenancy Reforms, Ceiling and the Bhoodan Movement, Cooperatives and an Overview, Agriculture Growth and the Green Revolution and Agrarian Struggles Since Independence."
+                "Indian Economic development",
+                "Industrialization",
+                "Liberalization and globalization",
+                "Land Reforms: Zamindari Abolition and Tenancy Reforms",
+                "Ceiling and the Bhoodan Movement",
+                "Cooperatives and an Overview",
+                "Agriculture Growth and the Green Revolution and Agrarian Struggles Since Independence"
               ]
             }
           ],
@@ -1890,19 +2183,25 @@
               "unitNumber": 1,
               "title": "Indian Cultural Heritage: An Introduction",
               "topics": [
-                "Meaning, Concept and Historical Background of Cultural Heritage",
-                "Types of Indian Cultural Heritage: Tangible, intangible Oral and Living traditions.",
-                "Significance of Cultural Heritage in Human life.",
-                "Impact and significance of geography on Indian culture."
+                "Meaning",
+                "Concept and Historical Background of Cultural Heritage",
+                "Types of Indian Cultural Heritage: Tangible",
+                "Intangible Oral and Living traditions",
+                "Significance of Cultural Heritage in Human life",
+                "Impact and significance of geography on Indian culture"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Fairs Festivals, Rituals: Ethnic Indian Cultural Construct",
               "topics": [
-                "Concepts, Significance and types (Religious, folk, Animals, Monsoon): Historical background and some major fairs of India",
+                "Concepts",
+                "Significance and types (Religious, folk, Animals, Monsoon): Historical background and some major fairs of India",
                 "Concepts, Significance, types and some major Festivals of India: Buddha Poornima, Diwali, Dusshera, Holi, Onam, Pongal Guru Parb, Eid-UI-Fitr, Navroz, Swatantra Diwas",
-                "Meanings, concepts, significance and importance of Ritual in human life, Types of Ritual: An Introduction (Nature Worship, Domestic Worship, Samskara);",
+                "Meanings",
+                "Concepts",
+                "Significance and importance of Ritual in human life",
+                "Types of Ritual: An Introduction (Nature Worship, Domestic Worship, Samskara)",
                 "Concepts of Tirthas: Some important Tirthas of India (Amarath, Haridwar, Vrindavan, Pushkar, Prayag, Dwarka, Puri, Rameshwaram, Guruvayur, Kashi, Ayodhya)"
               ]
             },
@@ -1910,32 +2209,69 @@
               "unitNumber": 3,
               "title": "Legends, Narratives and Cultural Ethos",
               "topics": [
-                "Meaning, significance, forms and tradition of legends and their historical background in India.",
-                "Ramayana and Mahabharata: Tradition of Cultural Heritage;",
-                "Ancient Indian fables of ethical and moral values: Panchtantra, Jataka.",
-                "Nature, Culture and Environment in India; Tiller relationship; Environment and Environmental consciousness in Indian ethos and philosophy."
+                "Meaning",
+                "Significance",
+                "Forms and tradition of legends and their historical background in India",
+                "Ramayana and Mahabharata: Tradition of Cultural Heritage",
+                "Ancient Indian fables of ethical and moral values: Panchtantra",
+                "Jataka",
+                "Nature",
+                "Culture and Environment in India",
+                "Tiller relationship",
+                "Environment and Environmental consciousness in Indian ethos and philosophy"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Traditional Performing Art",
               "topics": [
-                "The source of performing Indian classical Art: Bharat Natya Shashtra, Works of Kalidas & Bhasa",
-                "Indian Classical Dances as Cultural Dances: Bharatnatyam, Katthak,",
-                "Kuchipudi, Kathakali etc.",
-                "Folk dances and theatre: Regional variation, some important folk dances, Garba, Ghoomar, Lavani, Changlo, Giddha,Kalbelia etc.",
-                "Oral Tradition and performing Arts- Bhajan, Katha, Sankirtan, Harikatha, Vedic Chants, Gurbani (Gurugranth) as Intangible Cultural Heritage."
+                "The source of performing Indian classical Art: Bharat Natya Shashtra",
+                "Works of Kalidas & Bhasa",
+                "Indian Classical Dances as Cultural Dances: Bharatnatyam",
+                "Katthak",
+                "Kuchipudi, Kathakali etc",
+                "Folk dances and theatre: Regional variation",
+                "Some important folk dances",
+                "Garba",
+                "Ghoomar",
+                "Lavani",
+                "Changlo",
+                "Giddha",
+                "Kalbelia etc",
+                "Oral Tradition and performing Arts- Bhajan",
+                "Katha",
+                "Sankirtan",
+                "Harikatha",
+                "Vedic Chants",
+                "Gurbani (Gurugranth) as Intangible Cultural Heritage"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Architecture and Built Heritage",
               "topics": [
-                "Meaning, Definition and Ideas of Built Heritage: Brief survey of Shelter, pit dwellings, Rock Alignments,",
+                "Meaning",
+                "Definition and Ideas of Built Heritage: Brief survey of Shelter",
+                "Pit dwellings",
+                "Rock Alignments",
                 "Memorials, Shrines, Water tanks, Garden",
-                "Significance and Contribution of Architecture and Built Heritage in Cultural Life of India.",
-                "Some important Monuments of India Shore Temple (Mahabalipuram), Ajanta-Ellora, Bhimbetka, Sarnath, Nalanda, Sanchi, Konark, Khajuraho,",
-                "Some important historical monument: Hampi, Vijayanagar, Chittorgargh Fort & Kirti Stambh, Taj mahal, Golden Temple, Red fort, Amber fort, Hazratbal,"
+                "Significance and Contribution of Architecture and Built Heritage in Cultural Life of India",
+                "Some important Monuments of India Shore Temple (Mahabalipuram)",
+                "Ajanta-Ellora",
+                "Bhimbetka",
+                "Sarnath",
+                "Nalanda",
+                "Sanchi",
+                "Konark",
+                "Khajuraho",
+                "Some important historical monument: Hampi",
+                "Vijayanagar",
+                "Chittorgargh Fort & Kirti Stambh",
+                "Taj mahal",
+                "Golden Temple",
+                "Red fort",
+                "Amber fort",
+                "Hazratbal"
               ]
             }
           ],
@@ -1976,7 +2312,8 @@
               "topics": [
                 "Important sources of Medieval Indian History",
                 "Early Turks, Khaljis, and Tughlaqs, Invasion of Timur",
-                "Vijayanagara Empire: Administration, Society and Economy"
+                "Vijayanagara Empire: Administration",
+                "Society and Economy"
               ]
             },
             {
@@ -1993,7 +2330,8 @@
               "title": "Aurangzeb, Shivaji and Other Powers",
               "topics": [
                 "Rise of Marathas under Shivaji",
-                "Maratha Administration, Concept of Hindu Pad Padshahi",
+                "Maratha Administration",
+                "Concept of Hindu Pad Padshahi",
                 "Aurangzeb and Decline of the Mughal empire"
               ]
             },
@@ -2001,8 +2339,13 @@
               "unitNumber": 4,
               "title": "Society and Economy",
               "topics": [
-                "Hindu Society and Muslim Society, Divisions and Occupational groups, Education, Position of Women",
-                "Development of Agriculture, Trade and Commerce, Process of Urbanisation"
+                "Hindu Society and Muslim Society",
+                "Divisions and Occupational groups",
+                "Education",
+                "Position of Women",
+                "Development of Agriculture",
+                "Trade and Commerce",
+                "Process of Urbanisation"
               ]
             },
             {
@@ -2010,7 +2353,8 @@
               "title": "Rellglon and Culture",
               "topics": [
                 "Bhakti and Sufi movement",
-                "Development of Literature, Art and Architecture"
+                "Development of Literature",
+                "Art and Architecture"
               ]
             }
           ],
@@ -2046,7 +2390,8 @@
               "unitNumber": 1,
               "title": "A New World Order",
               "topics": [
-                "Formation of the League of Nations: Organizations, Achievements & Failures",
+                "Formation of the League of Nations: Organizations",
+                "Achievements & Failures",
                 "Formation of ICJ & ILO"
               ]
             },
@@ -2080,7 +2425,7 @@
               "title": "Quest for security and road to Second World War",
               "topics": [
                 "Causes and Consequences of Second World War",
-                "U.N.O its Organization and Achievements"
+                "N.O its Organization and Achievements"
               ]
             }
           ],
@@ -2122,30 +2467,32 @@
               "unitNumber": 1,
               "title": "Rise of Nationalities & Cultures",
               "topics": [
-                "Geographical Outline of Asia & Concept of Resurgence.",
-                "Historical Development of China & Japan.",
-                "Rise of Nationalities in West & Central Asia.",
-                "History & Culture of South East Asia."
+                "Geographical Outline of Asia & Concept of Resurgence",
+                "Historical Development of China & Japan",
+                "Rise of Nationalities in West & Central Asia",
+                "History & Culture of South East Asia"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Resistance & Resurgence of Japan",
               "topics": [
-                "Crisis & Challenges: Opium Wars and opening of Japan.",
-                "National Identity and Japan's Meiji Restoration, 1868-1894.",
-                "Rise of Imperial Japan in the beginning of 20th Century.",
-                "Rise of Japan as World Power 1919-1939."
+                "Crisis & Challenges: Opium Wars and opening of Japan",
+                "National Identity and Japan's Meiji Restoration",
+                "1868-1894",
+                "Rise of Imperial Japan in the beginning of 20th Century",
+                "Rise of Japan as World Power 1919-1939"
               ]
             },
             {
               "unitNumber": 3,
               "title": "East Asia in the Age of Imperialism and Nationalism, 1868-1945",
               "topics": [
-                "China's reaction to imperialism; the nationalist movement 1911-1927.",
-                "Chinese search for identity 1930-1947.",
-                "Age of Chinese domination 1947-1990.",
-                "Prosperity and Growth of China."
+                "China's reaction to imperialism",
+                "The nationalist movement 1911-1927",
+                "Chinese search for identity 1930-1947",
+                "Age of Chinese domination 1947-1990",
+                "Prosperity and Growth of China"
               ]
             },
             {
@@ -2153,19 +2500,23 @@
               "title": "Asia and its resistance to Cold War",
               "topics": [
                 "Communism and East Asia",
-                "Cold War and Korea.",
-                "Occupation, Reconstruction, and Prosperity in Japan 1945-1970",
-                "The Resistance in Vietnam."
+                "Cold War and Korea",
+                "Occupation",
+                "Reconstruction, and Prosperity in Japan 1945-1970",
+                "The Resistance in Vietnam"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Emerging trends and emergence of ideologies in West Asia",
               "topics": [
-                "Nationalism: Arab, Iranian and Turkish.",
-                "Emergence of Mohammad Ali Pasha and his reforms.",
-                "Disputes: Arab-Israel, Iran-Iraq, Ethnic-Sectarian Conflict.",
-                "The Changing political and strategic environment: Regional and Global Implications."
+                "Nationalism: Arab",
+                "Iranian and Turkish",
+                "Emergence of Mohammad Ali Pasha and his reforms",
+                "Disputes: Arab-Israel",
+                "Iran-Iraq",
+                "Ethnic-Sectarian Conflict",
+                "The Changing political and strategic environment: Regional and Global Implications"
               ]
             }
           ],
@@ -2216,20 +2567,42 @@
               "unitNumber": 1,
               "title": "Communication: Concept and History",
               "topics": [
-                "Communication: Definition, Concept, Elements & Scope.",
-                "Types of communication: Formal and Informal, Verbal and Non-Verbal, Oral and Graphic.",
-                "Different Process, Functions, Theories and Philosophy of Communication.",
-                "History of Communication: A Brief Survey, Primitives, Petroglyphs, Pictogram, Ideograms, Writing, Printing."
+                "Communication: Definition",
+                "Concept",
+                "Elements & Scope",
+                "Types of communication: Formal and Informal",
+                "Verbal and Non-Verbal",
+                "Oral and Graphic",
+                "Different Process",
+                "Functions",
+                "Theories and Philosophy of Communication",
+                "History of Communication: A Brief Survey",
+                "Primitives",
+                "Petroglyphs",
+                "Pictogram",
+                "Ideograms",
+                "Writing",
+                "Printing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Means of Communication",
               "topics": [
-                "Art as means of Communication: Painting, Sculpture, Symbols, Signals",
-                "Folk and Community Communication: Folk songs, Folklore, Folk craft, Legends.",
-                "Performing Art as effective Communication: Dance, Drama, Theatre, Puppetry, and Storytelling.",
-                "Changing dimensions of Communication in Modern times. Basic Knowledge of new means of Communication: Telephone/Phonograph/Radio/Television/Fax/Mobile/Computer/Internet/ Digital."
+                "Art as means of Communication: Painting",
+                "Sculpture",
+                "Symbols",
+                "Signals",
+                "Folk and Community Communication: Folk songs",
+                "Folklore",
+                "Folk craft",
+                "Legends",
+                "Performing Art as effective Communication: Dance",
+                "Drama",
+                "Theatre",
+                "Puppetry, and Storytelling",
+                "Changing dimensions of Communication in Modern times",
+                "Basic Knowledge of new means of Communication: Telephone/Phonograph/Radio/Television/Fax/Mobile/Computer/Internet/ Digital"
               ]
             },
             {
@@ -2237,8 +2610,8 @@
               "title": "Writing and Language as Communication",
               "topics": [
                 "Inscription as a source of Communication",
-                "Evolution of Printing in India.",
-                "History of Newspaper in India.",
+                "Evolution of Printing in India",
+                "History of Newspaper in India",
                 "An Introduction of the History of Advertisement"
               ]
             },
@@ -2246,19 +2619,31 @@
               "unitNumber": 4,
               "title": "History of the Ideas of Communication in India",
               "topics": [
-                "History of the Communication in India: Narad, Krishana, Buddha, Shankar, Vivekananda and Gandhi.",
-                "Literature as communicators in India: Myth and legends, Natyashastra, Meghdoot, Panchtantra, Gurugranth Sahib, Ramcharita Manas.",
-                "Live examples of Visual arts in India: Bhitti chitra, Rock Art and Potteries."
+                "History of the Communication in India: Narad",
+                "Krishana",
+                "Buddha",
+                "Shankar",
+                "Vivekananda and Gandhi",
+                "Literature as communicators in India: Myth and legends",
+                "Natyashastra",
+                "Meghdoot",
+                "Panchtantra",
+                "Gurugranth Sahib",
+                "Ramcharita Manas",
+                "Live examples of Visual arts in India: Bhitti chitra",
+                "Rock Art and Potteries"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Museum & Archive Communication",
               "topics": [
-                "Museum and archives as a source of historical and cultural communication.",
-                "Museum: Artifacts, Galleries, Exhibition and outreach programme.",
-                "Monument as a living Museum.",
-                "Case study of any Art Museum."
+                "Museum and archives as a source of historical and cultural communication",
+                "Museum: Artifacts",
+                "Galleries",
+                "Exhibition and outreach programme",
+                "Monument as a living Museum",
+                "Case study of any Art Museum"
               ]
             }
           ],
@@ -2312,7 +2697,8 @@
               "unitNumber": 3,
               "title": "Expansion of East India Company's Rule",
               "topics": [
-                "Ascendancy of English East India Company: Battle of Buxar and Plassey; Their effects",
+                "Ascendancy of English East India Company: Battle of Buxar and Plassey",
+                "Their effects",
                 "Territorial Expansion of East India Company1765-1856"
               ]
             },
@@ -2320,7 +2706,10 @@
               "unitNumber": 4,
               "title": "Administration of East India Company",
               "topics": [
-                "Economic Policies- Agriculture, Trade, Banking, Land revenue",
+                "Economic Policies- Agriculture",
+                "Trade",
+                "Banking",
+                "Land revenue",
                 "Response of Indian Society and socio-religious reform movements"
               ]
             },
@@ -2329,7 +2718,8 @@
               "title": "Resistance to Colonial Power",
               "topics": [
                 "Tribal Revolts: Bhil, Kol, Santhal, Gond and others",
-                "First War of Independence: Causes, Nature"
+                "First War of Independence: Causes",
+                "Nature"
               ]
             }
           ],
@@ -2389,7 +2779,11 @@
               "topics": [
                 "Historical Geography of Bihar: From Pre-Historic times to 1200",
                 "Bihar during Sultanate and Mughal period",
-                "Bihar's role in Indian Freedom Struggle: Revolt of 1857, Champaran Satyagraha, Non-Cooperation Movement, Civil Disobedience Movement, Quit India Movement",
+                "Bihar's role in Indian Freedom Struggle: Revolt of 1857",
+                "Champaran Satyagraha",
+                "Non-Cooperation Movement",
+                "Civil Disobedience Movement",
+                "Quit India Movement",
                 "Creation and Reorganization of Modern Bihar: 1912, 1935, 2000"
               ]
             },
@@ -2397,20 +2791,52 @@
               "unitNumber": 2,
               "title": "Art and Architecture",
               "topics": [
-                "Art and Architecture in Bihar: Mauryan, Gupta, Post Gupta, Delhi Sultanate and Mughals",
-                "Buddhist Sculptures, Ashoka Pillars and Pala Art",
-                "Patna Kalam, Manjusha Painting, Madhubani Painting",
-                "Historical monuments of Bihar: Barabar Caves, Vaishali Stupa, Nalanda Mahavihara, Mahabodhi Temple, Tomb of Sher Shah Suri, Golghar,"
+                "Art and Architecture in Bihar: Mauryan",
+                "Gupta",
+                "Post Gupta",
+                "Delhi Sultanate and Mughals",
+                "Buddhist Sculptures",
+                "Ashoka Pillars and Pala Art",
+                "Patna Kalam",
+                "Manjusha Painting",
+                "Madhubani Painting",
+                "Historical monuments of Bihar: Barabar Caves",
+                "Vaishali Stupa",
+                "Nalanda Mahavihara",
+                "Mahabodhi Temple",
+                "Tomb of Sher Shah Suri",
+                "Golghar"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Cultural History",
               "topics": [
-                "Folk Dances and Folk Tales: Jhijhiya, Jat-Jutin, Sama Chakwa, Jhumar, Vidyapati Nach, Puja Aarti, Domkach, Kathghorwa, Nach, Kajree, Launda Nach, Bldesiya,",
-                "Festival and Fairs: Chatta Puja, Shravani Mela, Sonepur Cattle Mela, Mukar Sankranti, Pritrapaksha Mela, Rajgir Mahotsava",
-                "Religious Sects: Buddhism, Jainism, Sufism",
-                "Educational Institutions: Nalanda, Vikramshila, Mithila School of Education, Udaipur"
+                "Folk Dances and Folk Tales: Jhijhiya",
+                "Jat-Jutin",
+                "Sama Chakwa",
+                "Jhumar",
+                "Vidyapati Nach",
+                "Puja Aarti",
+                "Domkach",
+                "Kathghorwa",
+                "Nach",
+                "Kajree",
+                "Launda Nach",
+                "Bldesiya",
+                "Festival and Fairs: Chatta Puja",
+                "Shravani Mela",
+                "Sonepur Cattle Mela",
+                "Mukar Sankranti",
+                "Pritrapaksha Mela",
+                "Rajgir Mahotsava",
+                "Religious Sects: Buddhism",
+                "Jainism",
+                "Sufism",
+                "Educational Institutions: Nalanda",
+                "Vikramshila",
+                "Mithila School of Education",
+                "Udaipur"
               ]
             },
             {
@@ -2418,7 +2844,8 @@
               "title": "Socio-Economic History",
               "topics": [
                 "Panji Prabandha of Mithila",
-                "Agriculture, Craft and Industry",
+                "Agriculture",
+                "Craft and Industry",
                 "Trade and Commerce",
                 "Urbanization"
               ]
@@ -2428,8 +2855,17 @@
               "title": "Great Personalities of Bihar",
               "topics": [
                 "Janak, Jeevak, Yajnavalkya, Maitreyi, Gargi",
-                "Mandan Mishra, Jyotireshwar, Chandeshwar, Vidyapati, , Sant Dariya Saheb,",
-                "Babu Kunwar Singh, Yogendra Shukla, Baikuntha Shukla, Rajendra Prasad, Mazharul Haque, Jaiprakash Narayan, Jagjivan Ram, Siyaram Singh, Veer Chand Patel, Dashrath Manjhi and Yamuna Karjee"
+                "Mandan Mishra, Jyotireshwar, Chandeshwar, Vidyapati, , Sant Dariya Saheb",
+                "Babu Kunwar Singh",
+                "Yogendra Shukla",
+                "Baikuntha Shukla",
+                "Rajendra Prasad",
+                "Mazharul Haque",
+                "Jaiprakash Narayan",
+                "Jagjivan Ram",
+                "Siyaram Singh",
+                "Veer Chand Patel",
+                "Dashrath Manjhi and Yamuna Karjee"
               ]
             }
           ],
@@ -2465,7 +2901,7 @@
               "unitNumber": 1,
               "title": "Rise of Mass Nationalism",
               "topics": [
-                "Factors leading to growth of Nationalism in India & Social Background of Indian Nationalism.",
+                "Factors leading to growth of Nationalism in India & Social Background of Indian Nationalism",
                 "Congress- Moderates & Extremists"
               ]
             },
@@ -2473,9 +2909,13 @@
               "unitNumber": 2,
               "title": "From Swadeshi to Home Rule",
               "topics": [
-                "Economic Nationalism, Idea of Swadeshi, Swadeshi Movement & Congress Split at Surat",
+                "Economic Nationalism",
+                "Idea of Swadeshi",
+                "Swadeshi Movement & Congress Split at Surat",
                 "Idea & formation of Muslim league",
-                "Entry of Gandhi: Regional Movements, Rowlatt Satyagraha, Khilafat Issue"
+                "Entry of Gandhi: Regional Movements",
+                "Rowlatt Satyagraha",
+                "Khilafat Issue"
               ]
             },
             {
@@ -2483,24 +2923,30 @@
               "title": "Mass Movements of Congress & Alternative Ideologies",
               "topics": [
                 "Non Cooperation Movement",
-                "Simon Commission, Nehru Report and Civil Disobedience Movement",
-                "Tripuri crisis: Issues and Ideas of Subhash Chand Bose, Quit India movement."
+                "Simon Commission",
+                "Nehru Report and Civil Disobedience Movement",
+                "Tripuri crisis: Issues and Ideas of Subhash Chand Bose",
+                "Quit India movement"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rise of Peasant, Workers, Tribals' Movement",
               "topics": [
-                "Peasant Issues since 1919, formation of Regional Peasant Associations and all India Kisan Sabha, Role of Madan mohan Malviya & Sahjanand Saraswati.",
-                "Rise of Industrial Worker Class, its issues and Formation of Trade Unions."
+                "Peasant Issues since 1919",
+                "Formation of Regional Peasant Associations and all India Kisan Sabha",
+                "Role of Madan mohan Malviya & Sahjanand Saraswati",
+                "Rise of Industrial Worker Class, its issues and Formation of Trade Unions"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Road to Partition Independence",
               "topics": [
-                "Constitutional Formulas: Wavell Plan, Cripps and Cabinet Mission",
-                "Mountbatten plan, Circumstances leading to Partition & Independence"
+                "Constitutional Formulas: Wavell Plan",
+                "Cripps and Cabinet Mission",
+                "Mountbatten plan",
+                "Circumstances leading to Partition & Independence"
               ]
             }
           ],

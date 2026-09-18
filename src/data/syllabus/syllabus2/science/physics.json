@@ -26,29 +26,54 @@
               "unitNumber": 1,
               "title": "Concept of Differentiation & Integration (विभेदन और समाकलन की अवधारणा)",
               "topics": [
-                "Differential calculus: Geometric Meaning of derivative; Maxima & Minima; Approximation of derivative; Partial Differentiation, Approximation using Taylor and Binomial series.",
-                "Integral Calculus: Geometric Meaning of integration, order and degree of differential equation, Solution of First order (homogeneous & Non-homogeneous), Integrating Factor, Exact and Inexact Differentials, D-operator & Solution of Second order Differential Equation."
+                "Differential calculus: Geometric Meaning of derivative",
+                "Maxima & Minima",
+                "Approximation of derivative",
+                "Partial Differentiation",
+                "Approximation using Taylor and Binomial series",
+                "Integral Calculus: Geometric Meaning of integration",
+                "Order and degree of differential equation",
+                "Solution of First order (homogeneous & Non-homogeneous)",
+                "Integrating Factor",
+                "Exact and Inexact Differentials",
+                "D-operator & Solution of Second order Differential Equation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Vector Algebra & Vector Calculus (सदिश बीजगणित और सदिश कलन)",
               "topics": [
-                "Vector Triple Products & their significance; concept of scalar & vector fields, Gradient of scalar, Divergence & Curl of vectors and their physical applications in Physics (e.g. Equation of continuity, Euler's equation of motion, Bernoulli's theorem, Fourier heat flow, Poisson's and Laplace's equation in a gravitational field, Gauss's law of in Electrostatic, etc.)."
+                "Vector Triple Products & their significance",
+                "Concept of scalar & vector fields",
+                "Gradient of scalar",
+                "Divergence & Curl of vectors and their physical applications in Physics (e.g. Equation of continuity, Euler's equation of motion, Bernoulli's theorem, Fourier heat flow, Poisson's and Laplace's equation in a gravitational field, Gauss's law of in Electrostatic, etc.)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Fundamentals of Dynamics (गतिकी की मूल बातें)",
               "topics": [
-                "Inertial and Non-Inertial Frame of Reference, Rotating frame of Reference, Centrifugal and Coriolis Forces with their applications (Effect on value of 'g', On path of freely falling body, Geo-physical effect); Foucault pendulum, Direct proof of rotation of Earth."
+                "Inertial and Non-Inertial Frame of Reference",
+                "Rotating frame of Reference",
+                "Centrifugal and Coriolis Forces with their applications (Effect on value of 'g', On path of freely falling body, Geo-physical effect)",
+                "Foucault pendulum",
+                "Direct proof of rotation of Earth"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Centre-of-Mass Frame and Central Forces (द्रव्यमान केंद्र फ्रेम और केंद्रीय बल)",
               "topics": [
-                "Lab frame & Centre of Mass frame, Two dimensional collision in physical problems, Relation connecting Scattering angle, Recoil angle, final velocities in C-frame & L-frame, Cross section & Rutherford scattering, Central forces and their equations.; General Equation of central orbit, Kepler's law of Planetary motion, Artificial satellite."
+                "Lab frame & Centre of Mass frame",
+                "Two dimensional collision in physical problems",
+                "Relation connecting Scattering angle",
+                "Recoil angle",
+                "Final velocities in C-frame & L-frame",
+                "Cross section & Rutherford scattering",
+                "Central forces and their equations",
+                "General Equation of central orbit",
+                "Kepler's law of Planetary motion",
+                "Artificial satellite"
               ]
             }
           ],
@@ -78,17 +103,20 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Elementary measuring apparatus - Use of Vernier calliper, Screw guage and Spherometer.",
-                "To determine least Count of (i) Travelling Microscope (ii) Spectrometer (iii) Polarizer.",
+                "Elementary measuring apparatus",
+                "Use of Vernier calliper",
+                "Screw guage and Spherometer",
+                "To determine least Count of (i) Travelling Microscope (ii) Spectrometer (iii) Polarizer",
                 "To Evaluate value of 'g' using Bar Pendulum",
                 "To Evaluate value of 'g' using Kater's Pendulum",
-                "To Verify Conservation of linear Momentum using curved track apparatus.",
+                "To Verify Conservation of linear Momentum using curved track apparatus",
                 "To Determine Young's modulus of Elasticity by Flexure of Beam",
                 "To Determine Elastic constants for the material of a wire by Searle's method",
                 "To Determine Surface Tension by method of ripples/use of Capillary tube",
-                "To Determine Co-efficient of Viscosity of liquid by Stokes method/Poiseuille's method of flow of water through Capillary.",
-                "To study the motion of spring-mass system and to evaluate spring constant/value of 'g'.",
-                "To evaluate average error, standard deviation, and percentage error in measurement of focal length of a concave mirror/Convex lens."
+                "To Determine Co-efficient of Viscosity of liquid by Stokes method/Poiseuille's method of flow of water through Capillary",
+                "To study the motion of spring-mass system and to evaluate spring constant/value of 'g'",
+                "To evaluate average error",
+                "Standard deviation, and percentage error in measurement of focal length of a concave mirror/Convex lens"
               ]
             }
           ],
@@ -113,16 +141,29 @@
               "unitNumber": 1,
               "title": "Introduction to Calculus & Vector (कलन और सदिश का परिचय)",
               "topics": [
-                "Differential calculus: Geometric Meaning of derivative; Maxima & Minima; Approximation of derivative; Partial Differentiation.",
-                "Integral Calculus: Geometric Meaning of integration, order and degree of differential equation, Solution of First order (homogeneous & Non-homogeneous), Integrating Factor, Exact and Inexact Differentials.",
-                "Recapitulation of Vectors, Vector Algebra involving two and three vectors, Introduction to Gradient, Divergence, Curl of Vectors with their physical significance."
+                "Differential calculus: Geometric Meaning of derivative",
+                "Maxima & Minima",
+                "Approximation of derivative",
+                "Partial Differentiation",
+                "Integral Calculus: Geometric Meaning of integration",
+                "Order and degree of differential equation",
+                "Solution of First order (homogeneous & Non-homogeneous)",
+                "Integrating Factor",
+                "Exact and Inexact Differentials",
+                "Recapitulation of Vectors",
+                "Vector Algebra involving two and three vectors",
+                "Introduction to Gradient",
+                "Divergence",
+                "Curl of Vectors with their physical significance"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Fundamentals of Dynamics (गतिकी की मूल बातें)",
               "topics": [
-                "Inertial and Non-Inertial Frame of Reference, Rotating frame, Fictitious Forces- Centrifugal and Coriolis Forces with their applications (Effect on value of 'g', On path of freely falling body)",
+                "Inertial and Non-Inertial Frame of Reference",
+                "Rotating frame",
+                "Fictitious Forces- Centrifugal and Coriolis Forces with their applications (Effect on value of 'g', On path of freely falling body)",
                 "Introduction to special theory of relativity & its postulates"
               ]
             }
@@ -150,16 +191,18 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Elementary measuring apparatus - Use of Vernier calliper, Screw guage and Spherometer.",
-                "To determine least Count of (i) Travelling Microscope (ii) Spectrometer (iii) Polarizer.",
+                "Elementary measuring apparatus",
+                "Use of Vernier calliper",
+                "Screw guage and Spherometer",
+                "To determine least Count of (i) Travelling Microscope (ii) Spectrometer (iii) Polarizer",
                 "To Evaluate value of 'g' using Bar Pendulum",
                 "To Evaluate value of 'g' using Kater's Pendulum",
-                "To Verify Conservation of linear Momentum using curved track apparatus.",
+                "To Verify Conservation of linear Momentum using curved track apparatus",
                 "To Determine Young's modulus of Elasticity by Flexure of Beam",
                 "To Determine Elastic constants for the material of a wire by Searle's method",
                 "To Determine Surface Tension by method of ripples/use of Capillary tube",
-                "To Determine Co-efficient of Viscosity of liquid by Stokes method/Poiseuille's method of flow of water through Capillary.",
-                "To study the motion of spring-mass system and to evaluate spring constant/value of 'g'."
+                "To Determine Co-efficient of Viscosity of liquid by Stokes method/Poiseuille's method of flow of water through Capillary",
+                "To study the motion of spring-mass system and to evaluate spring constant/value of 'g'"
               ]
             }
           ],
@@ -184,21 +227,38 @@
               "unitNumber": 1,
               "title": "Climate Science (जलवायु विज्ञान)",
               "topics": [
-                "Atmospheric science as multidisciplinary science, physical and dynamical metrology weather climate variables, and their difference. Surface weather station weather forecasting, Greenhouse effect, Physics of Climate change and Climate model"
+                "Atmospheric science as multidisciplinary science",
+                "Physical and dynamical metrology weather climate variables, and their difference",
+                "Surface weather station weather forecasting",
+                "Greenhouse effect",
+                "Physics of Climate change and Climate model"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Applications of Physics (भौतिकी के अनुप्रयोग)",
               "topics": [
-                "Application in Agriculture, Agro Physics, Agro ecosystem, Soil Physics, Food preservation, Physics behind medical imaging, LASER - Surgery."
+                "Application in Agriculture",
+                "Agro Physics",
+                "Agro ecosystem",
+                "Soil Physics",
+                "Food preservation",
+                "Physics behind medical imaging",
+                "LASER",
+                "Surgery"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Energy Sources (ऊर्जा स्रोत)",
               "topics": [
-                "Energy Sources- Importance of Renewable energy; solar energy, hydro thermal energy, Geothermal Energy, Hydrogen based Fuel, CNG, Energy Harvesting"
+                "Energy Sources- Importance of Renewable energy",
+                "Solar energy",
+                "Hydro thermal energy",
+                "Geothermal Energy",
+                "Hydrogen based Fuel",
+                "CNG",
+                "Energy Harvesting"
               ]
             }
           ],
@@ -228,21 +288,36 @@
               "unitNumber": 1,
               "title": "Life and work of Indian Scientists- I (भारतीय वैज्ञानिकों का जीवन और कार्य - I)",
               "topics": [
-                "Dr. C.V. Raman (Raman effect & Indian Academy of Science), Homi Jahangir Bhabha (Indian Nuclear Programme & Atomic Energy Commission), Sir Jagdish Chandra Bose (Radio-wave optics & Bose Institute), Dr. Vikram Sarabhai (Indian Space Program & Physical Research Laboratory), Satendra Nath Bose (Bose Einstein work), Dr. Prafull Chandra Mahalanobis (Statistician, I.S.I)"
+                "Dr. C.V",
+                "Raman (Raman effect & Indian Academy of Science)",
+                "Homi Jahangir Bhabha (Indian Nuclear Programme & Atomic Energy Commission)",
+                "Sir Jagdish Chandra Bose (Radio-wave optics & Bose Institute)",
+                "Dr. Vikram Sarabhai (Indian Space Program & Physical Research Laboratory)",
+                "Satendra Nath Bose (Bose Einstein work)",
+                "Dr. Prafull Chandra Mahalanobis (Statistician, I.S.I)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Life and work of Indian Scientists- II (भारतीय वैज्ञानिकों का जीवन और कार्य - II)",
               "topics": [
-                "M.G.K Menon (KGF Particle, TIFR), M.S. Swaminathan (Green Revolution, Agriculture Research), Shanti Swaroop Bhatnagar (colloid chemistry & CSIR), Bidhan Chandra Roy (National Doctor's Day) Verghese Kurien (White Revolution)"
+                "G.K Menon (KGF Particle, TIFR)",
+                "S",
+                "Swaminathan (Green Revolution, Agriculture Research)",
+                "Shanti Swaroop Bhatnagar (colloid chemistry & CSIR)",
+                "Bidhan Chandra Roy (National Doctor's Day) Verghese Kurien (White Revolution)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Indian Women in Science (विज्ञान में भारतीय महिलाएं)",
               "topics": [
-                "Janaki Ammal (Da Botanical Survey of India), Asima Chatterjee (Phyto Chemistry), Rajeshwari Chatterjee (1st Electrical & Communication energy Engineer), Dr. Kamale Solonie (1st Ph.D. holder), Anand Bai Gopal Roy Joshi (1st Women Physician), Dr. Indra Hinduja (In-Vitro fertilisation)"
+                "Janaki Ammal (Da Botanical Survey of India)",
+                "Asima Chatterjee (Phyto Chemistry)",
+                "Rajeshwari Chatterjee (1st Electrical & Communication energy Engineer)",
+                "Dr. Kamale Solonie (1st Ph.D. holder)",
+                "Anand Bai Gopal Roy Joshi (1st Women Physician)",
+                "Dr. Indra Hinduja (In-Vitro fertilisation)"
               ]
             }
           ],
@@ -268,28 +343,49 @@
               "unitNumber": 1,
               "title": "Basics of Oscillations (दोलन की मूल बातें)",
               "topics": [
-                "Idea of S.H.M., its differential equation and solutions, Energy in S.H.M, Two body oscillation, coupled Pendulum: Normal modes of vibration, Compound Pendulum, Free, Damped and Forced Oscillations, Transient and steady states, Electrical Oscillations Resonance: Sharpness of Resonance and Quality factor."
+                "Idea of S.H.M., its differential equation and solutions",
+                "Energy in S.H.M",
+                "Two body oscillation",
+                "Coupled Pendulum: Normal modes of vibration",
+                "Compound Pendulum",
+                "Free",
+                "Damped and Forced Oscillations",
+                "Transient and steady states",
+                "Electrical Oscillations Resonance: Sharpness of Resonance and Quality factor"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Superposition of Oscillations (दोलनों का अध्यारोपण)",
               "topics": [
-                "Addition of two S.H.Ms: Concept of Lissajou Figure, its Geometrical Composition & Application, Stationary waves as combination of oscillations (Waves in a linear bounded medium), Vibration of string and Sonometer."
+                "Addition of two S.H.Ms: Concept of Lissajou Figure, its Geometrical Composition & Application",
+                "Stationary waves as combination of oscillations (Waves in a linear bounded medium)",
+                "Vibration of string and Sonometer"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Wave Motion (तरंग गति)",
               "topics": [
-                "Wave front, Equation of Wave Motion, Superposition of two Harmonic waves: Interference, Beats & combination of tones, pressure, energy and intensity in wave propation, musical instruments."
+                "Wave front",
+                "Equation of Wave Motion",
+                "Superposition of two Harmonic waves: Interference",
+                "Beats & combination of tones",
+                "Pressure",
+                "Energy and intensity in wave propation",
+                "Musical instruments"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Sound Waves (ध्वनि तरंगें)",
               "topics": [
-                "Sound wave: Preparation and speed of sound (Accoustic) waves in media, speed in air: Newton's formula & Laplace Correction. Characteristics of Musical sounds & their analysis, Musical scale & consonance, Sound recording and reproduction, Accoustic of Buildings."
+                "Sound wave: Preparation and speed of sound (Accoustic) waves in media",
+                "Speed in air: Newton's formula & Laplace Correction",
+                "Characteristics of Musical sounds & their analysis",
+                "Musical scale & consonance",
+                "Sound recording and reproduction",
+                "Accoustic of Buildings"
               ]
             }
           ],
@@ -317,15 +413,20 @@
               "title": "Practical Experiments",
               "topics": [
                 "To determine frequency of Tuning Fork using Sonometer / verify laws of transverse vibration of stretched string",
-                "To determine frequency of Tuning Fork using Electrically maintained Melde's apparatus.",
-                "To determine the frequency of A.C.Mains using a sonometer and an electromagnet.",
-                "To Find the Speed of sound in the materials of given rod with a Kundt's tube / Quincks tube.",
+                "To determine frequency of Tuning Fork using Electrically maintained Melde's apparatus",
+                "To determine the frequency of A.C.Mains using a sonometer and an electromagnet",
+                "To Find the Speed of sound in the materials of given rod with a Kundt's tube / Quincks tube",
                 "To determine Speed of Ultrasonic waves in any given liquid (e.g. Kerosene)",
-                "To study motion of Spring - Mass System.",
-                "To study the directional characteristic of Microphone using signal Generator, Amplifier, microphone, multimedia & C.R.O.",
-                "To determine the damping constant, relaxation time and quality factor of damped mechanical oscillator using simple Pendulum with bobs of different material (Aluminium, Brass, Wood etc.)",
-                "To determine torsional constant using Torsional Pendulum.",
-                "To determine speed of sound using Resonance column Apparatus."
+                "To study motion of Spring",
+                "Mass System",
+                "To study the directional characteristic of Microphone using signal Generator",
+                "Amplifier",
+                "Microphone",
+                "Multimedia & C.R.O",
+                "To determine the damping constant",
+                "Relaxation time and quality factor of damped mechanical oscillator using simple Pendulum with bobs of different material (Aluminium, Brass, Wood etc.)",
+                "To determine torsional constant using Torsional Pendulum",
+                "To determine speed of sound using Resonance column Apparatus"
               ]
             }
           ],
@@ -349,14 +450,22 @@
               "unitNumber": 1,
               "title": "Oscillations (दोलन)",
               "topics": [
-                "Idea of S.H.M, Free, Damped & Forced Oscillation, Superposition of two collinear and Perpendicular Simple Harmonic motion, Concept of Lissajou Figure & Stationary Waves."
+                "Idea of S.H.M",
+                "Free",
+                "Damped & Forced Oscillation",
+                "Superposition of two collinear and Perpendicular Simple Harmonic motion",
+                "Concept of Lissajou Figure & Stationary Waves"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Waves (तरंगें)",
               "topics": [
-                "Waves Characteristic of Wave Motion, Sound Wave, Equation of Plane Progressive Waves, Speed of sound (Newton's & Laplace Formula), Energy Transport & Intensity of Waves."
+                "Waves Characteristic of Wave Motion",
+                "Sound Wave",
+                "Equation of Plane Progressive Waves",
+                "Speed of sound (Newton's & Laplace Formula)",
+                "Energy Transport & Intensity of Waves"
               ]
             }
           ],
@@ -382,15 +491,23 @@
               "title": "Practical Experiments",
               "topics": [
                 "To determine frequency of Tuning Fork Using Sonometer / verify laws of transverse vibration of stretched string",
-                "To determine frequency of Tuning Fork using Electrically maintained Melde's apparatus.",
-                "To determine the frequency of A. C. Mains using a sonometer and an electromagnet.",
-                "To find the speed of sound in the materials of given rod with a Kundt's tube / Quincke's tube.",
+                "To determine frequency of Tuning Fork using Electrically maintained Melde's apparatus",
+                "To determine the frequency of A",
+                "C",
+                "Mains using a sonometer and an electromagnet",
+                "To find the speed of sound in the materials of given rod with a Kundt's tube / Quincke's tube",
                 "To determine speed of ultrasonic waves in a given liquid (e.g. Kerosene)",
-                "To study motion of spring - mass system and find g.",
-                "To study the directional characteristic of Microphone using signal Generator, Amplifier, microphone, multimedia & C. R. O.",
-                "To determine the damping constant, relaxation time and quality factor of damped simple pendulum with bobs of different material (Aluminum, Brass, Wood, etc.)",
-                "To determine torsional constant using a Torsional Pendulum.",
-                "To determine speed of sound using Resonance column Apparatus."
+                "To study motion of spring",
+                "Mass system and find g",
+                "To study the directional characteristic of Microphone using signal Generator",
+                "Amplifier",
+                "Microphone",
+                "Multimedia & C",
+                "R",
+                "To determine the damping constant",
+                "Relaxation time and quality factor of damped simple pendulum with bobs of different material (Aluminum, Brass, Wood, etc.)",
+                "To determine torsional constant using a Torsional Pendulum",
+                "To determine speed of sound using Resonance column Apparatus"
               ]
             }
           ],
@@ -414,21 +531,41 @@
               "unitNumber": 1,
               "title": "Elements of Crystallography (क्रिस्टलोग्राफी के तत्व)",
               "topics": [
-                "Unit cell, Lattice and Basis, Symmetry operation for a two dimensional crystal, Two and Three dimensional Bravais lattice. Reciprocal lattice, Lattice constant crystal plane and Miller indices, Inter planner spacing, Simple crystal structure - hcp, fcc, bcc SC diamond and Cesium Chloride Structure."
+                "Unit cell",
+                "Lattice and Basis",
+                "Symmetry operation for a two dimensional crystal",
+                "Two and Three dimensional Bravais lattice",
+                "Reciprocal lattice",
+                "Lattice constant crystal plane and Miller indices",
+                "Inter planner spacing",
+                "Simple crystal structure",
+                "Hcp, fcc, bcc SC diamond and Cesium Chloride Structure"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Crystal Type and Crystal Binding (क्रिस्टल प्रकार और क्रिस्टल बंधन)",
               "topics": [
-                "Ionic Crystal. Covalent crystal, Metal crystal, Molecular crystal. Hydrogen bonded crystal Calculation of BE in different type of crystals, Crystal of in inert gases."
+                "Ionic Crystal",
+                "Covalent crystal",
+                "Metal crystal",
+                "Molecular crystal",
+                "Hydrogen bonded crystal Calculation of BE in different type of crystals",
+                "Crystal of in inert gases"
               ]
             },
             {
               "unitNumber": 3,
               "title": "X-Ray Diffraction (एक्स-रे विवर्तन)",
               "topics": [
-                "Diffraction, Braggs law, Diffraction methods, Scattering by electrons, atoms. Laue, Bragg and Ewald Work on X-ray diffraction, Indexing of X-ray diffraction"
+                "Diffraction",
+                "Braggs law",
+                "Diffraction methods",
+                "Scattering by electrons",
+                "Atoms",
+                "Laue",
+                "Bragg and Ewald Work on X-ray diffraction",
+                "Indexing of X-ray diffraction"
               ]
             }
           ],
@@ -447,15 +584,40 @@
               "unitNumber": 1,
               "title": "Concept of Web Development",
               "topics": [
-                "A brief Introduction to the Web Development: Computer Networks, Internet, URL (Uniform Resource Locator), Internet Service Provider, Intranet, Extranet, Various Components of Web Development, Static v/s Dynamic Web pages, Introduction to HTML, CSS and Javascript"
+                "A brief Introduction to the Web Development: Computer Networks",
+                "Internet",
+                "URL (Uniform Resource Locator)",
+                "Internet Service Provider",
+                "Intranet",
+                "Extranet",
+                "Various Components of Web Development",
+                "Static v/s Dynamic Web pages",
+                "Introduction to HTML",
+                "CSS and Javascript"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Dynamic Webpage Development",
               "topics": [
-                "Cascading Style Sheet: CSS, Defining Style with HTML Tags, Features of StyleSheet, Style Properties, Style Classes, External Style Sheet",
-                "JavaScript: Introduction to JavaScript: Writing First Java Script, External Java Script, Variables: Rules for variable names, Declaring the variable, assign a value to a variable, Scope of variable, Using Operators, Control Statements, JavaScript loops, JavaScript Functions: Defining a Function, returning value from function, User define function."
+                "Cascading Style Sheet: CSS",
+                "Defining Style with HTML Tags",
+                "Features of StyleSheet",
+                "Style Properties",
+                "Style Classes",
+                "External Style Sheet",
+                "JavaScript: Introduction to JavaScript: Writing First Java Script",
+                "External Java Script",
+                "Variables: Rules for variable names",
+                "Declaring the variable",
+                "Assign a value to a variable",
+                "Scope of variable",
+                "Using Operators",
+                "Control Statements",
+                "JavaScript loops",
+                "JavaScript Functions: Defining a Function",
+                "Returning value from function",
+                "User define function"
               ]
             }
           ],
@@ -478,21 +640,35 @@
               "unitNumber": 1,
               "title": "History of Science (विज्ञान का इतिहास)",
               "topics": [
-                "Origin and outline of historiography of science, Ancient Indian science from Vedic age to pre-independence Era, Indian contribution to Technology."
+                "Origin and outline of historiography of science",
+                "Ancient Indian science from Vedic age to pre-independence Era",
+                "Indian contribution to Technology"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Science in Post Independence era (स्वतंत्रता के बाद के युग में विज्ञान)",
               "topics": [
-                "Development of science In post Independence era, Indian contribution to Science and Technology in the field of Atomic energy, Dairy technology, Agriculture, Bio-Technology."
+                "Development of science In post Independence era",
+                "Indian contribution to Science and Technology in the field of Atomic energy",
+                "Dairy technology",
+                "Agriculture",
+                "Bio-Technology"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Astronomy (खगोल विज्ञान)",
               "topics": [
-                "Ancient Astronomy, Vedic Astronomy, Modern Astronomy, Tools for Astronomy from early period, Indian Calender System, Computation of Eclipse, Lunar Eclipse, Solar Eclipse; Full moon."
+                "Ancient Astronomy",
+                "Vedic Astronomy",
+                "Modern Astronomy",
+                "Tools for Astronomy from early period",
+                "Indian Calender System",
+                "Computation of Eclipse",
+                "Lunar Eclipse",
+                "Solar Eclipse",
+                "Full moon"
               ]
             }
           ],
@@ -518,28 +694,61 @@
               "unitNumber": 1,
               "title": "Kinetic Theory of Gases (गैसों का गतिज सिद्धांत)",
               "topics": [
-                "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas. Mean, RMS and Most Probable Speed. Degree of Freedom. Law of Equipartition of Energy (no derivation). Molecular Collisions: Mean Free Path. Estimation of Mean Free Path. Transport Phenomenon in Ideal Gases: (1) Viscosity, (2) Thermal Conductivity and (3) Diffusion. Brownian motion, Langevin and Einstein's theories and experimental determination of Avogadro's no., Rectilinear flow of heat in a metal rod, Relation between thermal & electrical conductivities."
+                "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas",
+                "Mean",
+                "RMS and Most Probable Speed",
+                "Degree of Freedom",
+                "Law of Equipartition of Energy (no derivation)",
+                "Molecular Collisions: Mean Free Path",
+                "Estimation of Mean Free Path",
+                "Transport Phenomenon in Ideal Gases: (1) Viscosity",
+                "(2) Thermal Conductivity and (3) Diffusion",
+                "Brownian motion",
+                "Langevin and Einstein's theories and experimental determination of Avogadro's no",
+                "Rectilinear flow of heat in a metal rod",
+                "Relation between thermal & electrical conductivities"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Real Gases (वास्तविक गैसें)",
               "topics": [
-                "Behavior of Real Gases. Van der Waal's Equation of State for Real Gases. Values of Critical Constants. Law of Corresponding States. Joule-Thomson Porous Plug Experiment. Joule-Thomson Effect for Real Gases. Joule-Thomson Cooling."
+                "Behavior of Real Gases",
+                "Van der Waal's Equation of State for Real Gases",
+                "Values of Critical Constants",
+                "Law of Corresponding States",
+                "Joule-Thomson Porous Plug Experiment",
+                "Joule-Thomson Effect for Real Gases",
+                "Joule-Thomson Cooling"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Zeroth and First Law of Thermodynamics (ऊष्मागतिकी का शून्यवाँ और प्रथम नियम)",
               "topics": [
-                "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Relation between Cp and Cv."
+                "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Relation between Cp and Cv"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Second Law of Thermodynamics (ऊष्मागतिकी का द्वितीय नियम)",
               "topics": [
-                "Cyclic reversible and irreversible process, Carnot engine, Carnot cycle, Second Law of thermodynamics. Principle of heat engine and refrigerator Kelvin-Planck and Clausius Statements. Concept of Entropy, Clausius Inequality, Second Law in terms of Entropy, Temperature-Entropy diagrams. Third Law of thermodynamics, Thermodynamic Potentials: Internal Energy, Enthalpy, Helmholtz & Gibb's Functions, Maxwell's Relations, Co-efficient of performance, Clausius-Clapeyron equation and phase transition (1st and 2nd order)"
+                "Cyclic reversible and irreversible process",
+                "Carnot engine",
+                "Carnot cycle",
+                "Second Law of thermodynamics",
+                "Principle of heat engine and refrigerator Kelvin-Planck and Clausius Statements",
+                "Concept of Entropy",
+                "Clausius Inequality",
+                "Second Law in terms of Entropy",
+                "Temperature-Entropy diagrams",
+                "Third Law of thermodynamics",
+                "Thermodynamic Potentials: Internal Energy",
+                "Enthalpy",
+                "Helmholtz & Gibb's Functions",
+                "Maxwell's Relations",
+                "Co-efficient of performance",
+                "Clausius-Clapeyron equation and phase transition (1st and 2nd order)"
               ]
             }
           ],
@@ -566,15 +775,15 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To determine Mechanical Equivalent of Heat, J, by Callender and Barne's constant flow method.",
-                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Searle's Apparatus.",
-                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Angstrom's Method.",
-                "To determine the Coefficient of Thermal Conductivity of a bad conductor by Lee and Charlto's disc method.",
-                "To determine the Temperature Coefficient of Resistance by Platinum Resistance Thermometer (PRT).",
-                "To study the variation of Thermo-emf of a Thermocouple with difference of Temperature of its two Junctions using a null method.",
-                "To determine Mechanical Equivalent of Heat (J) with the help of Joule's calorimeter.",
-                "To plot a graph between temperature and pressure at constant volume using Joly's apparatus and to find the coefficient of increase of pressure at constant volume.",
-                "To study the adiabatic expansion of a gas and hence to find the value of the ratio of specific heat at constant pressure to specific heat at constant volume for air using Clement and Desorme's apparatus."
+                "To determine Mechanical Equivalent of Heat, J, by Callender and Barne's constant flow method",
+                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Searle's Apparatus",
+                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Angstrom's Method",
+                "To determine the Coefficient of Thermal Conductivity of a bad conductor by Lee and Charlto's disc method",
+                "To determine the Temperature Coefficient of Resistance by Platinum Resistance Thermometer (PRT)",
+                "To study the variation of Thermo-emf of a Thermocouple with difference of Temperature of its two Junctions using a null method",
+                "To determine Mechanical Equivalent of Heat (J) with the help of Joule's calorimeter",
+                "To plot a graph between temperature and pressure at constant volume using Joly's apparatus and to find the coefficient of increase of pressure at constant volume",
+                "To study the adiabatic expansion of a gas and hence to find the value of the ratio of specific heat at constant pressure to specific heat at constant volume for air using Clement and Desorme's apparatus"
               ]
             }
           ],
@@ -593,28 +802,63 @@
               "unitNumber": 1,
               "title": "Kinetic Theory of Gases (गैसों का गतिज सिद्धांत)",
               "topics": [
-                "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas. Mean, RMS and Most Probable Speeds. Degrees of Freedom. Law of Equipartition of Energy (no derivation). Molecular Collisions: Mean Free Path. Estimation of Mean Free Path. Transport Phenomenon in Ideal Gases: (1) Viscosity, (2) Thermal Conductivity and (3) Diffusion. Brownian motion, Langevin and Einstein's theories and experimental determination of Avogadro's no., Rectilinear flow of heat in a metal rod, relation between thermal & electrical conductivities."
+                "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas",
+                "Mean",
+                "RMS and Most Probable Speeds",
+                "Degrees of Freedom",
+                "Law of Equipartition of Energy (no derivation)",
+                "Molecular Collisions: Mean Free Path",
+                "Estimation of Mean Free Path",
+                "Transport Phenomenon in Ideal Gases: (1) Viscosity",
+                "(2) Thermal Conductivity and (3) Diffusion",
+                "Brownian motion",
+                "Langevin and Einstein's theories and experimental determination of Avogadro's no",
+                "Rectilinear flow of heat in a metal rod",
+                "Relation between thermal & electrical conductivities"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Real Gases (वास्तविक गैसें)",
               "topics": [
-                "Behavior of Real Gases. Van der Waal's Equation of State for Real Gases. Values of Critical Constants. Law of Corresponding States. Joule-Thomson Porous Plug Experiment. Joule-Thomson Effect for Real Gases. Joule-Thomson Cooling."
+                "Behavior of Real Gases",
+                "Van der Waal's Equation of State for Real Gases",
+                "Values of Critical Constants",
+                "Law of Corresponding States",
+                "Joule-Thomson Porous Plug Experiment",
+                "Joule-Thomson Effect for Real Gases",
+                "Joule-Thomson Cooling"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Zeroth and First Law of Thermodynamics (ऊष्मागतिकी का शून्यवाँ और प्रथम नियम)",
               "topics": [
-                "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Specific heat General Relation between Cp and Cv."
+                "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Specific heat General Relation between Cp and Cv"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Second Law of Thermodynamics (ऊष्मागतिकी का द्वितीय नियम)",
               "topics": [
-                "Cyclic, reversible and irreversible process, Carnot engine, Carnot cycle, Principle of Refrigerator. Second Law of thermodynamics. Principal of heat engine and refrigerator Kelvin-Planck and Clausius Statements. Concept of Entropy, Clausius Inequality, Second Law in terms of Entropy, Temperature-Entropy diagrams. Third Law of thermodynamics, Thermodynamic Potentials: Internal Energy, Enthalpy, Helmholtz & Gibb's Functions, Maxwell's Relations, Co-efficient of performance, Clausius-Clapeyron equation and phase transition (1st and 2nd)"
+                "Cyclic",
+                "Reversible and irreversible process",
+                "Carnot engine",
+                "Carnot cycle",
+                "Principle of Refrigerator",
+                "Second Law of thermodynamics",
+                "Principal of heat engine and refrigerator Kelvin-Planck and Clausius Statements",
+                "Concept of Entropy",
+                "Clausius Inequality",
+                "Second Law in terms of Entropy",
+                "Temperature-Entropy diagrams",
+                "Third Law of thermodynamics",
+                "Thermodynamic Potentials: Internal Energy",
+                "Enthalpy",
+                "Helmholtz & Gibb's Functions",
+                "Maxwell's Relations",
+                "Co-efficient of performance",
+                "Clausius-Clapeyron equation and phase transition (1st and 2nd)"
               ]
             }
           ],
@@ -646,12 +890,12 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To determine Mechanical Equivalent of Heat, J, by Callender and Barne's constant flow method.",
-                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Searle's Apparatus.",
-                "To determine the Temperature Coefficient of Resistance by Platinum Resistance Thermometer (PRT).",
-                "To study the variation of Thermo-emf of a Thermocouple with Difference of Temperature of its Two Junctions using a null method.",
-                "To determine Mechanical Equivalent of Heat, J, with the help of Joule's calorimeter.",
-                "To plot a graph between temperature and pressure at constant volume using Joly's apparatus and to find the coefficient of increase of pressure at constant volume."
+                "To determine Mechanical Equivalent of Heat, J, by Callender and Barne's constant flow method",
+                "To determine the Coefficient of Thermal Conductivity of good conductor (Cu) by Searle's Apparatus",
+                "To determine the Temperature Coefficient of Resistance by Platinum Resistance Thermometer (PRT)",
+                "To study the variation of Thermo-emf of a Thermocouple with Difference of Temperature of its Two Junctions using a null method",
+                "To determine Mechanical Equivalent of Heat, J, with the help of Joule's calorimeter",
+                "To plot a graph between temperature and pressure at constant volume using Joly's apparatus and to find the coefficient of increase of pressure at constant volume"
               ]
             }
           ],
@@ -670,21 +914,27 @@
               "unitNumber": 1,
               "title": "Mesoscopic sizes (मेसोस्कोपिक आकार)",
               "topics": [
-                "Mesoscopic sizes materials of bulk size materials of sub molecular sizes, sizes of nanometer range"
+                "Mesoscopic sizes materials of bulk size materials of sub molecular sizes",
+                "Sizes of nanometer range"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Specialty in Physical Properties (भौतिक गुणों में विशेषता)",
               "topics": [
-                "Size dependents of physical properties like mechanical strength electrical conduction and magnetic properties of materials, applications of materials properties at Nanoscale"
+                "Size dependents of physical properties like mechanical strength electrical conduction and magnetic properties of materials",
+                "Applications of materials properties at Nanoscale"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mesoscopic materials in daily life (दैनिक जीवन में मेसोस्कोपिक सामग्री)",
               "topics": [
-                "Mesoscopic materials in daily life: computers, Sensors, High-efficiency lasers and LEDs, ductile, ceramics drugs delivery"
+                "Mesoscopic materials in daily life: computers",
+                "Sensors",
+                "High-efficiency lasers and LEDs",
+                "Ductile",
+                "Ceramics drugs delivery"
               ]
             }
           ],
@@ -703,14 +953,46 @@
               "unitNumber": 1,
               "title": "Circuit Fundamental (सर्किट मूल बातें)",
               "topics": [
-                "Voltage, Current, Power, Work, Short circuit, open circuit, Ohm's Law. Definition of Resistance, Capacitance, Inductance, Series Resistance, Parallel Resistance Passive circuit Element, General, Resistors, types of Resistors, Resistors color code, SI unit, Checking Resistance with ohm meter. Multimeter, components testing using a multimeter, Inductor, Inductance of inductor, Mutual Inductance, SI unit. Capacitor, Capacitance, types of Capacitors, Checking capacitor with ohm meter. SI unit."
+                "Voltage, Current, Power, Work, Short circuit, open circuit, Ohm's Law",
+                "Definition of Resistance",
+                "Capacitance",
+                "Inductance",
+                "Series Resistance",
+                "Parallel Resistance Passive circuit Element",
+                "General",
+                "Resistors",
+                "Types of Resistors",
+                "Resistors color code",
+                "SI unit",
+                "Checking Resistance with ohm meter",
+                "Multimeter",
+                "Components testing using a multimeter",
+                "Inductor",
+                "Inductance of inductor",
+                "Mutual Inductance",
+                "SI unit",
+                "Capacitor",
+                "Capacitance",
+                "Types of Capacitors",
+                "Checking capacitor with ohm meter",
+                "SI unit"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Electronic Devices (इलेक्ट्रॉनिक उपकरण)",
               "topics": [
-                "Diode, Transistor, LED, definition of symbol of these. AC Circuit definition, Sine wave, DC current. Power socket Identifying the phase, neutral, earth on power socket. IC, PCB, bread Board, use a tester to monitor AC power, soldering, fuse definition, definition of an analog circuit, Decimal circuit,"
+                "Diode",
+                "Transistor",
+                "LED",
+                "Definition of symbol of these",
+                "AC Circuit definition",
+                "Sine wave",
+                "DC current",
+                "Power socket Identifying the phase",
+                "Neutral",
+                "Earth on power socket",
+                "IC, PCB, bread Board, use a tester to monitor AC power, soldering, fuse definition, definition of an analog circuit, Decimal circuit"
               ]
             },
             {
@@ -741,22 +1023,50 @@
               "unitNumber": 1,
               "title": "Fundamental Issues (मूलभूत मुद्दे)",
               "topics": [
-                "What is science?, Science and its difference from other systems of belief and knowledge; science as a profession; difference between pure science and technology. Falsifiability, Instrumentalism and realism, problems and puzzles of Induction"
+                "What is science?",
+                "Science and its difference from other systems of belief and knowledge",
+                "Science as a profession",
+                "Difference between pure science and technology",
+                "Falsifiability",
+                "Instrumentalism and realism",
+                "Problems and puzzles of Induction"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Science & Technology: from the Aristotle to the Newton (विज्ञान और प्रौद्योगिकी: अरस्तू से न्यूटन तक)",
               "topics": [
-                "Greek Science, Seventeenth-century attack on Aristotelian Philosophy, Logical Reconstructionist, Philosophy of Science, Astronomical Data: The Philosophical Facts, The Ptolemaic System, The Copernicus System, Kepler's System, Galileo, Philosophical and conceptual connections in the Development of the New Science, Scientific Law Development of the Newtonian worldview 1700-1900"
+                "Greek Science",
+                "Seventeenth-century attack on Aristotelian Philosophy",
+                "Logical Reconstructionist",
+                "Philosophy of Science",
+                "Astronomical Data: The Philosophical Facts",
+                "The Ptolemaic System",
+                "The Copernicus System",
+                "Kepler's System",
+                "Galileo",
+                "Philosophical and conceptual connections in the Development of the New Science",
+                "Scientific Law Development of the Newtonian worldview 1700-1900"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Metaphysical foundations of Science (विज्ञान की आध्यात्मिक नींव)",
               "topics": [
-                "David Hume and the problem of causation, Naturalism and Anti-naturalism, Realism and antirealism about scientific theories; scientific explanation; and laws of nature, Karl popper inductivism and falsificationism, Thomas s Kuhn Rationality in Paradigm Change, normal science and scientific revolutions, Feyeraband scientific rationality and irrationality",
-                "The special Theory of relativity, the general theory of relativity, Overview of the theory of Evolution, Philosophical and conceptual implications of Evolution, Worldviews: concluding Thoughts."
+                "David Hume and the problem of causation",
+                "Naturalism and Anti-naturalism",
+                "Realism and antirealism about scientific theories",
+                "Scientific explanation",
+                "And laws of nature",
+                "Karl popper inductivism and falsificationism",
+                "Thomas s Kuhn Rationality in Paradigm Change",
+                "Normal science and scientific revolutions",
+                "Feyeraband scientific rationality and irrationality",
+                "The special Theory of relativity",
+                "The general theory of relativity",
+                "Overview of the theory of Evolution",
+                "Philosophical and conceptual implications of Evolution",
+                "Worldviews: concluding Thoughts"
               ]
             }
           ],
@@ -807,25 +1117,54 @@
               "unitNumber": 1,
               "title": "Measurement and Motion (माप और गति)",
               "topics": [
-                "Measurement: Physical quantities. Standards and Units. International System of Units. Standards of time, length and mass. Precision and significant figures.",
-                "Newton's laws of motion: Newton's first law. Force, mass. Newton's second law. Newton's third law. Mass and weight. Applications of Newton's laws.",
-                "Projectile motion: Shooting a falling target. Physics behind Shooting, Javelin throw and Discuss throw"
+                "Measurement: Physical quantities",
+                "Standards and Units",
+                "International System of Units",
+                "Standards of time",
+                "Length and mass",
+                "Precision and significant figures",
+                "Newton's laws of motion: Newton's first law",
+                "Force, mass",
+                "Newton's second law",
+                "Newton's third law",
+                "Mass and weight",
+                "Applications of Newton's laws",
+                "Projectile motion: Shooting a falling target",
+                "Physics behind Shooting",
+                "Javelin throw and Discuss throw"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Conservation Laws and Gravitation (संरक्षण कानून और गुरुत्वाकर्षण)",
               "topics": [
-                "Conservation laws: Conservation of linear momentum, collisions - elastic and inelastic. Angular momentum. (Physics behind Carom, Billiards, Racing)",
-                "Centre of mass: Physics behind Cycling, rock climbing, Skating, Gravitation: Origin, Newton's law of gravitation. Archimedes's principle, Buoyancy (Physics behind swimming)"
+                "Conservation laws: Conservation of linear momentum",
+                "Collisions",
+                "Elastic and inelastic",
+                "Angular momentum. (Physics behind Carom, Billiards, Racing)",
+                "Centre of mass: Physics behind Cycling",
+                "Rock climbing",
+                "Skating",
+                "Gravitation: Origin",
+                "Newton's law of gravitation",
+                "Archimedes's principle",
+                "Buoyancy (Physics behind swimming)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Food, Nutrition and Exercise (भोजन, पोषण और व्यायाम)",
               "topics": [
-                "Food and Nutrition: Proteins, Vitamins, Fat, Blood Pressure. Problems due to the deficiency of vitamins. Energy: Different forms of Energy, Conservation of mass-energy.",
-                "Physical exercise: Walking, Jogging and Running, Weight management."
+                "Food and Nutrition: Proteins",
+                "Vitamins",
+                "Fat",
+                "Blood Pressure",
+                "Problems due to the deficiency of vitamins",
+                "Energy: Different forms of Energy",
+                "Conservation of mass-energy",
+                "Physical exercise: Walking",
+                "Jogging and Running",
+                "Weight management"
               ]
             }
           ],
@@ -851,16 +1190,24 @@
               "unitNumber": 1,
               "title": "Earth and its atmosphere (पृथ्वी और उसका वायुमंडल)",
               "topics": [
-                "Earth as a planet of the solar system: origin and internal structure, crustal types, heat flow and temperature gradient.",
-                "Elementary concepts of weather and climate; structure and composition of the atmosphere, Passage of solar radiation through the atmosphere, Atmospheric Windows, emissivity, Absorption spectra of atmospheric gases."
+                "Earth as a planet of the solar system: origin and internal structure",
+                "Crustal types",
+                "Heat flow and temperature gradient",
+                "Elementary concepts of weather and climate",
+                "Structure and composition of the atmosphere",
+                "Passage of solar radiation through the atmosphere",
+                "Atmospheric Windows",
+                "Emissivity",
+                "Absorption spectra of atmospheric gases"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Introduction to Space (अंतरिक्ष का परिचय)",
               "topics": [
-                "Perception of Space from early civilization to pre-telescopic era and post-telescopic era, Important International Organizations involved in Space Exploration.",
-                "Observation of Space through our eyes, its limitations, and further explorations through instrumental aids."
+                "Perception of Space from early civilization to pre-telescopic era and post-telescopic era",
+                "Important International Organizations involved in Space Exploration",
+                "Observation of Space through our eyes, its limitations, and further explorations through instrumental aids"
               ]
             }
           ],
@@ -889,36 +1236,77 @@
               "unitNumber": 1,
               "title": "Electrostatics (स्थिर विद्युत)",
               "topics": [
-                "Electric Field and potential, Field due to a uniformly charged sphere, Gauss Law and its applications: The Field of a conductor. Electric dipole, Field and potential due to an electric dipole, Dipole approximation for an arbitrary charged distribution, Electric quadruple, Field due to a quadrupole, Electrostatic Energy of a uniformly charged sphere, Poisson and Laplace Equations, applications of Laplace equation."
+                "Electric Field and potential",
+                "Field due to a uniformly charged sphere",
+                "Gauss Law and its applications: The Field of a conductor",
+                "Electric dipole",
+                "Field and potential due to an electric dipole",
+                "Dipole approximation for an arbitrary charged distribution",
+                "Electric quadruple",
+                "Field due to a quadrupole",
+                "Electrostatic Energy of a uniformly charged sphere",
+                "Poisson and Laplace Equations",
+                "Applications of Laplace equation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Dielectric Properties of Matter (पदार्थ के ढांकता हुआ गुण)",
               "topics": [
-                "Electric field in matter and Electrical susceptibility and Dielectric polarization, Dielectric constant, Polarisation vector, Surface Charge and bound charge, Displacement Vector D, Relations between E, P and D."
+                "Electric field in matter and Electrical susceptibility and Dielectric polarization",
+                "Dielectric constant",
+                "Polarisation vector",
+                "Surface Charge and bound charge",
+                "Displacement Vector D",
+                "Relations between E",
+                "P and D"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Magnetism (चुंबकत्व)",
               "topics": [
-                "Magnetic field, Magnetic force and Torque on a current carrying conductor, and loop placed in a magnetic field, Biot – Savart's Law and its simple applications: straight wire and circular loop, Magnetic Dipole, Magnetomotive force and Ampere's Circuital theorem and its applications to calculate magnetic field due to current carrying wire and solenoid and toroid.",
-                "Gauss's law of magnetism (Integral and Differential Forms). Relative Permeability of a Material. Magnetic Susceptibility. Magnetization Vector (I), or intensity of magnetisation. Magnetic Intensity (H). Relation between B, I and H. Magnetic Energy stored in Matter. Magnetic Circuit. Potential Energy of a Current Loop placed in a magnetic field. Ballistic Galvanometer: Electromagnetic Damping, Logarithmic Damping, Critical Damping Resistance(CDR)"
+                "Magnetic field, Magnetic force and Torque on a current carrying conductor, and loop placed in a magnetic field, Biot",
+                "Savart's Law and its simple applications: straight wire and circular loop",
+                "Magnetic Dipole",
+                "Magnetomotive force and Ampere's Circuital theorem and its applications to calculate magnetic field due to current carrying wire and solenoid and toroid",
+                "Gauss's law of magnetism (Integral and Differential Forms)",
+                "Relative Permeability of a Material",
+                "Magnetic Susceptibility",
+                "Magnetization Vector (I), or intensity of magnetisation",
+                "Magnetic Intensity (H)",
+                "Relation between B",
+                "I and H",
+                "Magnetic Energy stored in Matter",
+                "Magnetic Circuit",
+                "Potential Energy of a Current Loop placed in a magnetic field",
+                "Ballistic Galvanometer: Electromagnetic Damping",
+                "Logarithmic Damping",
+                "Critical Damping Resistance(CDR)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Electromagnetic Induction (विद्युत चुम्बकीय प्रेरण)",
               "topics": [
-                "Faraday's and Lenz's Laws. Mutual and Self Induction, self and Mutual inductances of a solenoid and system of current carrying loop, Energy stored in a Magnetic Field, Electric field induced due to time varying Magnetic field, magnetic field induced due to Time varying electric field. Introduction to Maxwell's Equations"
+                "Faraday's and Lenz's Laws",
+                "Mutual and Self Induction",
+                "Self and Mutual inductances of a solenoid and system of current carrying loop",
+                "Energy stored in a Magnetic Field",
+                "Electric field induced due to time varying Magnetic field",
+                "Magnetic field induced due to Time varying electric field",
+                "Introduction to Maxwell's Equations"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Electrical Circuits (विद्युत परिपथ)",
               "topics": [
-                "AC Circuits: Kirchhoff's laws for AC circuits. Reactance and Complex Impedance. Series and parallel LCR Circuit: Resonance, Quality Factor, and Band Width, Power in AC Circuits"
+                "AC Circuits: Kirchhoff's laws for AC circuits",
+                "Reactance and Complex Impedance",
+                "Series and parallel LCR Circuit: Resonance",
+                "Quality Factor, and Band Width",
+                "Power in AC Circuits"
               ]
             }
           ],
@@ -951,20 +1339,25 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Use of Multimeter for measuring (a) Resistance, (b) AC and DC Voltages, (c) DC Current, (d) Capacitance, and (e) Checking electrical fuses.",
-                "To calibrate the ammeter and voltmeter by potentiometer.",
-                "To find the low resistance by Carey Foster's bridge after calibrating the bridge wire.",
-                "Measurement of low resistance using Potentiometer.",
-                "To determine the high resistance by leakage method.",
-                "Figure of merit of moving coil galvanometer.",
-                "To determine the angle of dip in the laboratory using an earth inductor.",
-                "Compare the capacities of capacitors by De Sauty bridge.",
-                "To study the characteristics of a series RC Circuit.",
-                "To verify the Thevenin and Norton theorems.",
-                "To verify the Superposition, and Maximum power transfer theorems.",
-                "To determine self inductance of a coil by Anderson's bridge.",
-                "To study the response curve of a Series LCR circuit and determine its (a) Resonant frequency, (b) Impedance at resonance, (c) Quality factor Q, and (d) Band width.",
-                "To study the response curve of a parallel LCR circuit and determine its (a) Anti-resonant frequency and (b) Quality factor Q."
+                "Use of Multimeter for measuring (a) Resistance",
+                "(b) AC and DC Voltages",
+                "(c) DC Current",
+                "(d) Capacitance, and (e) Checking electrical fuses",
+                "To calibrate the ammeter and voltmeter by potentiometer",
+                "To find the low resistance by Carey Foster's bridge after calibrating the bridge wire",
+                "Measurement of low resistance using Potentiometer",
+                "To determine the high resistance by leakage method",
+                "Figure of merit of moving coil galvanometer",
+                "To determine the angle of dip in the laboratory using an earth inductor",
+                "Compare the capacities of capacitors by De Sauty bridge",
+                "To study the characteristics of a series RC Circuit",
+                "To verify the Thevenin and Norton theorems",
+                "To verify the Superposition, and Maximum power transfer theorems",
+                "To determine self inductance of a coil by Anderson's bridge",
+                "To study the response curve of a Series LCR circuit and determine its (a) Resonant frequency",
+                "(b) Impedance at resonance",
+                "(c) Quality factor Q, and (d) Band width",
+                "To study the response curve of a parallel LCR circuit and determine its (a) Anti-resonant frequency and (b) Quality factor Q"
               ]
             }
           ],
@@ -983,29 +1376,61 @@
               "unitNumber": 1,
               "title": "Electrostatics (स्थिर विद्युत)",
               "topics": [
-                "Coulomb's law. Electric Field and potential, Field due to a uniformly charged sphere, Gauss's Law and its application: Electric dipole, Field and potential due to an electric dipole, Electrostatic Energy of a uniformly charged sphere, Energy of a condenser."
+                "Coulomb's law",
+                "Electric Field and potential",
+                "Field due to a uniformly charged sphere",
+                "Gauss's Law and its application: Electric dipole",
+                "Field and potential due to an electric dipole",
+                "Electrostatic Energy of a uniformly charged sphere",
+                "Energy of a condenser"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Dielectric Properties of Matter (पदार्थ के ढांकता हुआ गुण)",
               "topics": [
-                "Electrical susceptibility and Dielectric constant, Polarization, Electronic polarization, Atomic or ionic Polarisation, Surface Charge and bound charge, Displacement Vector D, Relations between E, P and D"
+                "Electrical susceptibility and Dielectric constant",
+                "Polarization",
+                "Electronic polarization",
+                "Atomic or ionic Polarisation",
+                "Surface Charge and bound charge",
+                "Displacement Vector D",
+                "Relations between E",
+                "P and D"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Magnetism (चुंबकत्व)",
               "topics": [
-                "Magnetic field, Magnetic force on a current carrying conductor placed in a uniform magnetic field, Biot – Savart's Law and its simple applications: straight wire and circular loop, Magnetic Dipole, and Ampere's Circuital law. Gauss's law of magnetism (Integral and Differential Forms). Magnetization current. Relative Permeability of a Material. Magnetic Susceptibility. Magnetization Vector (M), Magnetic Intensity (H), Relation between B, M and H.",
-                "Electromagnetic Induction: Faraday's and Lenz's Laws. Mutual and Self Induction and their determination for a solenoid. Energy stored in a Magnetic Field, Induced magnetic field (Time varying electric field)."
+                "Magnetic field",
+                "Magnetic force on a current carrying conductor placed in a uniform magnetic field",
+                "Biot",
+                "Savart's Law and its simple applications: straight wire and circular loop",
+                "Magnetic Dipole, and Ampere's Circuital law",
+                "Gauss's law of magnetism (Integral and Differential Forms)",
+                "Magnetization current",
+                "Relative Permeability of a Material",
+                "Magnetic Susceptibility",
+                "Magnetization Vector (M)",
+                "Magnetic Intensity (H)",
+                "Relation between B",
+                "M and H",
+                "Electromagnetic Induction: Faraday's and Lenz's Laws",
+                "Mutual and Self Induction and their determination for a solenoid",
+                "Energy stored in a Magnetic Field",
+                "Induced magnetic field (Time varying electric field)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Electrical Circuits (विद्युत परिपथ)",
               "topics": [
-                "AC Circuits: Kirchhoff's laws for AC circuits. Reactance and Complex Impedance. Series and parallel LCR Circuit: (1) Resonance, (2) Quality Factor, and (3) Band Width. Power in AC Circuits."
+                "AC Circuits: Kirchhoff's laws for AC circuits",
+                "Reactance and Complex Impedance",
+                "Series and parallel LCR Circuit: (1) Resonance",
+                "(2) Quality Factor, and (3) Band Width",
+                "Power in AC Circuits"
               ]
             }
           ],
@@ -1033,16 +1458,19 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Use of Multimeter for measuring (a) Resistance, (b) AC and DC Voltages, (c) DC Current, (d) Capacitance, and (e) Checking electrical fuses.",
-                "To calibrate the ammeter and voltmeter by potentiometer.",
-                "To find the low resistance by Carey Foster's bridge after calibrating the bridge wire.",
-                "Measurement of low resistance using Potentiometer.",
-                "Figure of merit of moving coil galvanometer.",
-                "To determine the angle of dip in the laboratory using an earth inductor.",
-                "Compare the capacities of capacitors by De Sauty' bridge.",
-                "To verify the Thevenin and Norton theorems.",
-                "To verify the Superposition, and Maximum power transfer theorems.",
-                "To determine self inductance of a coil by Anderson's bridge.",
+                "Use of Multimeter for measuring (a) Resistance",
+                "(b) AC and DC Voltages",
+                "(c) DC Current",
+                "(d) Capacitance, and (e) Checking electrical fuses",
+                "To calibrate the ammeter and voltmeter by potentiometer",
+                "To find the low resistance by Carey Foster's bridge after calibrating the bridge wire",
+                "Measurement of low resistance using Potentiometer",
+                "Figure of merit of moving coil galvanometer",
+                "To determine the angle of dip in the laboratory using an earth inductor",
+                "Compare the capacities of capacitors by De Sauty' bridge",
+                "To verify the Thevenin and Norton theorems",
+                "To verify the Superposition, and Maximum power transfer theorems",
+                "To determine self inductance of a coil by Anderson's bridge",
                 "To study the response curve of a Series LCR circuit and determine its"
               ]
             }
@@ -1062,38 +1490,86 @@
               "unitNumber": 1,
               "title": "Curvilinear Coordinates, Tensors and special functions (वक्रीय निर्देशांक, टेंसर और विशेष कार्य)",
               "topics": [
-                "Spherical and Cylindrical Coordinate Systems. Ordinary Integrals of Vectors, Line, surface and volume integrals of Vector fields. Tensors: Elementary properties, Contra variant and covariant tensors, Symmetric and Anti-symmetric tensors.",
-                "Singular Points of Second Order Linear Differential Equations and their importance, Frobenius method and its applications to differential equations Legendre, Bessel, Hermite and Laguerre Differential Equations"
+                "Spherical and Cylindrical Coordinate Systems",
+                "Ordinary Integrals of Vectors",
+                "Line",
+                "Surface and volume integrals of Vector fields",
+                "Tensors: Elementary properties",
+                "Contra variant and covariant tensors",
+                "Symmetric and Anti-symmetric tensors",
+                "Singular Points of Second Order Linear Differential Equations and their importance",
+                "Frobenius method and its applications to differential equations Legendre",
+                "Bessel",
+                "Hermite and Laguerre Differential Equations"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Partial Differential Equations and Complex Analysis (आंशिक अंतर समीकरण और जटिल विश्लेषण)",
               "topics": [
-                "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular, cylindrical and spherical symmetry.",
-                "Complex Numbers Graphical Representation Euler's formula, De Moivre's theorem, Roots of Complex Numbers. Functions of Complex Variables. Analyticity and Cauchy-Riemann Conditions Cauchy's Inequality. Cauchy's Integral formula. Simply and multiply connected region. Integration of function of a complex variable."
+                "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular",
+                "Cylindrical and spherical symmetry",
+                "Complex Numbers Graphical Representation Euler's formula",
+                "De Moivre's theorem",
+                "Roots of Complex Numbers",
+                "Functions of Complex Variables",
+                "Analyticity and Cauchy-Riemann Conditions Cauchy's Inequality",
+                "Cauchy's Integral formula",
+                "Simply and multiply connected region",
+                "Integration of function of a complex variable"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction to Computers (कंप्यूटर का परिचय)",
               "topics": [
-                "Importance of Computers in Physics, Algorithms and Flow Charts: Algorithm Definition, properties and development. Flowchart: concept of flowchart, symbols, guidelines, types. Sum of two matrices, sum & Products of a finite series, calculations of Sin (x) as a series."
+                "Importance of Computers in Physics",
+                "Algorithms and Flow Charts: Algorithm Definition",
+                "Properties and development",
+                "Flowchart: concept of flowchart",
+                "Symbols",
+                "Guidelines",
+                "Types",
+                "Sum of two matrices",
+                "Sum & Products of a finite series",
+                "Calculations of Sin (x) as a series"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Scientific Programming (वैज्ञानिक प्रोग्रामिंग)",
               "topics": [
-                "Usage of Linux on Editor, some fundamental Linux commands (Internal & External commands) Development of FORTRAN, Basic elements of FORTRAN: Character set, constants and their types, variables and their types, Keywords, variable Declaration and concept of instruction and program. Operators: Arithmetic, Relational, Logical and Assignment operators. Expressions: Arithmetic Relational, Logical, Character and Assignment Expressions. FORTRAN Statements: I/O statements"
+                "Usage of Linux on Editor",
+                "Some fundamental Linux commands (Internal & External commands) Development of FORTRAN",
+                "Basic elements of FORTRAN: Character set",
+                "Constants and their types",
+                "Variables and their types",
+                "Keywords",
+                "Variable Declaration and concept of instruction and program",
+                "Operators: Arithmetic",
+                "Relational",
+                "Logical and Assignment operators",
+                "Expressions: Arithmetic Relational",
+                "Logical",
+                "Character and Assignment Expressions",
+                "FORTRAN Statements: I/O statements"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Control statements (नियंत्रण कथन)",
               "topics": [
-                "Types of Logic (sequential, selection, Repetition), Branching statements (Logical IF, Arithmetic IF, Block IF, Nested Block IF, SELEC CASE and ELSE IF Ladder Statements), Looping statements (DO-CONTINUE, DO-ENDDO, DO-WHILE, Implied and Nested DO Loops), Jumping statements (Unconditional GO TO, computed GO TO, Assigned GO TO), Subscripted variables, Functions and Subroutines (Arithmetic statements, Function, Function subprogram and subroutine), Examples from physics Problems.",
-                "(unformatted/formatted), Executable and Non-Executable statements, Layout of FORTRAN program, Format of writing program and concept of coding."
+                "Types of Logic (sequential, selection, Repetition)",
+                "Branching statements (Logical IF, Arithmetic IF, Block IF, Nested Block IF, SELEC CASE and ELSE IF Ladder Statements)",
+                "Looping statements (DO-CONTINUE, DO-ENDDO, DO-WHILE, Implied and Nested DO Loops)",
+                "Jumping statements (Unconditional GO TO, computed GO TO, Assigned GO TO)",
+                "Subscripted variables",
+                "Functions and Subroutines (Arithmetic statements, Function, Function subprogram and subroutine)",
+                "Examples from physics Problems",
+                "(unformatted/formatted)",
+                "Executable and Non-Executable statements",
+                "Layout of FORTRAN program",
+                "Format of writing program and concept of coding"
               ]
             }
           ],
@@ -1119,11 +1595,23 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Errors & error Analysis: Truncation & rounding of errors, absolute & relative errors.",
-                "Differential equations: Solutions of ordinary differential equation, solution of first order differential equation, solution of quadratic equation.",
-                "Computer Architecture and Organization, Memory and Input/Output devices.",
-                "Basics of Scientific computing : Binary and decimal arithmetic, Floating point numbers, Algorithms, Single & Double precision arithmetic, underflow & overflow.",
-                "Programs : Sum & average of a list of numbers, Largest of a given list of numbers and its location in the list, Sorting of numbers in ascending descending order, Familiarity with DOS commands, Linux Commands and FORTRAN commands."
+                "Errors & error Analysis: Truncation & rounding of errors",
+                "Absolute & relative errors",
+                "Differential equations: Solutions of ordinary differential equation",
+                "Solution of first order differential equation",
+                "Solution of quadratic equation",
+                "Computer Architecture and Organization",
+                "Memory and Input/Output devices",
+                "Basics of Scientific computing : Binary and decimal arithmetic",
+                "Floating point numbers",
+                "Algorithms",
+                "Single & Double precision arithmetic",
+                "Underflow & overflow",
+                "Programs : Sum & average of a list of numbers",
+                "Largest of a given list of numbers and its location in the list",
+                "Sorting of numbers in ascending descending order",
+                "Familiarity with DOS commands",
+                "Linux Commands and FORTRAN commands"
               ]
             }
           ],
@@ -1142,35 +1630,75 @@
               "unitNumber": 1,
               "title": "Maxwell's Equations (मैक्सवेल के समीकरण)",
               "topics": [
-                "Equation of continuity, Displacement Current Maxwell's equations in differential and Integral forms; Vector and scalar potentials, Poynting theorem and Poynting vector, energy conservation (qualitative idea of momentum conservation). Electromagnetic (EM) Energy Density. Physical Concept of Electromagnetic Field Energy Density, Momentum Density, Description of Lorentz force."
+                "Equation of continuity",
+                "Displacement Current Maxwell's equations in differential and Integral forms",
+                "Vector and scalar potentials",
+                "Poynting theorem and Poynting vector",
+                "Energy conservation (qualitative idea of momentum conservation)",
+                "Electromagnetic (EM) Energy Density",
+                "Physical Concept of Electromagnetic Field Energy Density",
+                "Momentum Density",
+                "Description of Lorentz force"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Electromagnetic Wave Propagation in unbounded media (अनबाउंडेड मीडिया में विद्युत चुम्बकीय तरंग प्रसार)",
               "topics": [
-                "Poynting's equation of plane EM waves in plane waves, and electromagnetic waves, transverse nature of plane EM waves, refractive index and dielectric constant, wave impedance. Propagation of EM wave through conducting media, relaxation time, skin depth."
+                "Poynting's equation of plane EM waves in plane waves, and electromagnetic waves",
+                "Transverse nature of plane EM waves",
+                "Refractive index and dielectric constant",
+                "Wave impedance",
+                "Propagation of EM wave through conducting media",
+                "Relaxation time",
+                "Skin depth"
               ]
             },
             {
               "unitNumber": 3,
               "title": "EM Wave Propagation in Bounded Media (बाउंडेड मीडिया में EM तरंग प्रसार)",
               "topics": [
-                "Boundary conditions at a plane interface between two media. Reflection and Refraction of plane waves at plane interface between two dielectric media — Laws of Reflection and Refraction. Fresnel's Formulae for perpendicular & parallel polarization cases, Brewster's law. Reflection & Transmission coefficients. Total internal reflection. Metallic reflection (normal Incidence)."
+                "Boundary conditions at a plane interface between two media",
+                "Reflection and Refraction of plane waves at plane interface between two dielectric media",
+                "Laws of Reflection and Refraction",
+                "Fresnel's Formulae for perpendicular & parallel polarization cases",
+                "Brewster's law",
+                "Reflection & Transmission coefficients",
+                "Total internal reflection",
+                "Metallic reflection (normal Incidence)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Polarization of Electromagnetic Waves (विद्युत चुम्बकीय तरंगों का ध्रुवीकरण)",
               "topics": [
-                "Description of Linear, Circular and Elliptical Polarization. Uniaxial and Biaxial Crystals. Light Propagation in Uniaxial Crystal. Double Refraction. Polarization by Double Refraction."
+                "Description of Linear",
+                "Circular and Elliptical Polarization",
+                "Uniaxial and Biaxial Crystals",
+                "Light Propagation in Uniaxial Crystal",
+                "Double Refraction",
+                "Polarization by Double Refraction"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Transmission Line (ट्रांसमिशन लाइन)",
               "topics": [
-                "Propagation of e.m. wave through transmission line, reflection coefficient, standing wave, characteristic impedance, propagation constant. Wave Guides: Fundamentals of wave guides, Condition of continuity at the interface. Expressions for field components, TE and TM modes. Propagation properties, cutoff frequency,. Field energy and Power transmission. Optical Fibres: Numerical Aperture. Step and Graded Indices (Definitions Only). Single and Multiple Mode Fibres (Concept and Definition Only)."
+                "Propagation of e.m. wave through transmission line",
+                "Reflection coefficient",
+                "Standing wave",
+                "Characteristic impedance",
+                "Propagation constant",
+                "Wave Guides: Fundamentals of wave guides",
+                "Condition of continuity at the interface",
+                "Expressions for field components",
+                "TE and TM modes",
+                "Propagation properties",
+                "Cutoff frequency",
+                "Field energy and Power transmission",
+                "Optical Fibres: Numerical Aperture",
+                "Step and Graded Indices (Definitions Only)",
+                "Single and Multiple Mode Fibres (Concept and Definition Only)"
               ]
             }
           ],
@@ -1198,31 +1726,63 @@
               "unitNumber": 1,
               "title": "Interference (व्यतिकरण)",
               "topics": [
-                "Light as EM Wave(Historical Perspective),Superposition of waves, Conditions for interference, Interference by Division of Wavefront (Fresnel's Biprism, Lloyd's single mirror) and by Division of Amplitude (Interference by Film), Newton's Ring, Complex Representation for Intensity calculation, Stoke's treatment."
+                "Light as EM Wave(Historical Perspective)",
+                "Superposition of waves",
+                "Conditions for interference",
+                "Interference by Division of Wavefront (Fresnel's Biprism, Lloyd's single mirror) and by Division of Amplitude (Interference by Film)",
+                "Newton's Ring",
+                "Complex Representation for Intensity calculation",
+                "Stoke's treatment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Interferometer (इंटरफेरोमीटर)",
               "topics": [
-                "Michelson interferometer and its applications, Multiple beam interference in parallel film, Fabry-Perot interferometer, Coherence - Spatial and Temporal."
+                "Michelson interferometer and its applications",
+                "Multiple beam interference in parallel film",
+                "Fabry-Perot interferometer",
+                "Coherence",
+                "Spatial and Temporal"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Fraunhofer Diffraction (फ्राउनहोफर विवर्तन)",
               "topics": [
-                "Conditions for diffraction, Fraunhofer diffraction due to single, double and multiple slits, Plane transmission grating.",
-                "Fresnel diffraction:",
-                "Fresnel half-period zones, Zone plate, Huygen's-Fresnel principle, Diffraction by a circular aperture, Diffraction by a straight edge, Rayleigh's criterion for limit of resolution, Resolving power of Grating, Telescope and Microscope."
+                "Conditions for diffraction",
+                "Fraunhofer diffraction due to single",
+                "Double and multiple slits",
+                "Plane transmission grating",
+                "Fresnel diffraction",
+                "Fresnel half-period zones",
+                "Zone plate",
+                "Huygen's-Fresnel principle",
+                "Diffraction by a circular aperture",
+                "Diffraction by a straight edge",
+                "Rayleigh's criterion for limit of resolution",
+                "Resolving power of Grating",
+                "Telescope and Microscope"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Polarization and Double Refraction (ध्रुवीकरण और द्वि-अपवर्तन)",
               "topics": [
-                "Polarized light and its mathematical representation, Production of polarized light by reflection, refraction and scattering, Polarization by double refraction, Nicol prism, Quarter wave plate, Half wave plate, Babinet's compensator, Production and analysis of circularly and elliptically polarized light, Optical activity and Fresnel's theory, Bi-quartz polarimeter.",
-                "Elementary ideas of LASERs, Einstein's A & B coefficients, Population Inversion and Holography."
+                "Polarized light and its mathematical representation",
+                "Production of polarized light by reflection",
+                "Refraction and scattering",
+                "Polarization by double refraction",
+                "Nicol prism",
+                "Quarter wave plate",
+                "Half wave plate",
+                "Babinet's compensator",
+                "Production and analysis of circularly and elliptically polarized light",
+                "Optical activity and Fresnel's theory",
+                "Bi-quartz polarimeter",
+                "Elementary ideas of LASERs",
+                "Einstein's A & B coefficients",
+                "Population Inversion and Holography"
               ]
             }
           ],
@@ -1254,20 +1814,20 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To determine Magnifying Power of a telescope by the Slit method/ Linear Scale using Microscope.",
-                "To find the height of an inaccessible object (altitude or angular diameter of the Sun) using Sextant.",
-                "To find angle of prism/ angle of minimum deviation and hence refractive index of material of prism using Spectrometer.",
-                "To find value of Cauchy's Constant A and B for the material of a given prism using a Mercury Vapour Lamp.",
-                "To determine Resolving Power of a prism.",
-                "To determine diameter of a thin wire by studying the diffraction (and interference) pattern.",
-                "To determine wavelength of sodium light using a plane diffraction grating.",
-                "To determine Resolving Power of a plane transmission grating.",
-                "To establish the dispersion relation for a plane transmission grating.",
-                "To verify Fresnel's Law of reflection and refraction by using a plane refracting surface.",
-                "Simple experiment demonstrating different applications of LASER and Optical Fibre.",
-                "Determination of wavelength of light using biprism on optical bench.",
+                "To determine Magnifying Power of a telescope by the Slit method/ Linear Scale using Microscope",
+                "To find the height of an inaccessible object (altitude or angular diameter of the Sun) using Sextant",
+                "To find angle of prism/ angle of minimum deviation and hence refractive index of material of prism using Spectrometer",
+                "To find value of Cauchy's Constant A and B for the material of a given prism using a Mercury Vapour Lamp",
+                "To determine Resolving Power of a prism",
+                "To determine diameter of a thin wire by studying the diffraction (and interference) pattern",
+                "To determine wavelength of sodium light using a plane diffraction grating",
+                "To determine Resolving Power of a plane transmission grating",
+                "To establish the dispersion relation for a plane transmission grating",
+                "To verify Fresnel's Law of reflection and refraction by using a plane refracting surface",
+                "Simple experiment demonstrating different applications of LASER and Optical Fibre",
+                "Determination of wavelength of light using biprism on optical bench",
                 "To determine the wavelength of the monochromatic light by Newton's Ring",
-                "To determine the specific rotation of the cane sugar solution using bi-quartz polarimeter."
+                "To determine the specific rotation of the cane sugar solution using bi-quartz polarimeter"
               ]
             }
           ],
@@ -1291,40 +1851,88 @@
               "unitNumber": 1,
               "title": "Particle Properties of Radiations (विकिरण के कण गुण)",
               "topics": [
-                "Black Body Radiation and Planck's quantum Hypothesis, Discovery and Explanation of Photoelectric effect, Compton Scattering, Pair Production and Annihilation.",
+                "Black Body Radiation and Planck's quantum Hypothesis",
+                "Discovery and Explanation of Photoelectric effect",
+                "Compton Scattering",
+                "Pair Production and Annihilation",
                 "Wave Aspect of Particles",
-                "Idea De Broglie wavelength and matter waves, Davisson-Germer experiment for diffraction of electron, G.P. Thomson Experiment, Phase velocity, wave packets and Concept of Velocity."
+                "Idea De Broglie wavelength and matter waves",
+                "Davisson-Germer experiment for diffraction of electron",
+                "P",
+                "Thomson Experiment",
+                "Phase velocity",
+                "Wave packets and Concept of Velocity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Wave-Particle Duality (तरंग-कण द्वैतता)",
               "topics": [
-                "Concept of Wave-particle duality, Heisenberg Uncertainty Principle, Uncertainty relations involving canonical pair of variables and their Derivation from Wave Packets, Estimation of minimum energy for a confined particle using uncertainty principle, origin of natural width of emission lines, Uncertainty Principle and concept of Bohr Orbit."
+                "Concept of Wave-particle duality",
+                "Heisenberg Uncertainty Principle",
+                "Uncertainty relations involving canonical pair of variables and their Derivation from Wave Packets",
+                "Estimation of minimum energy for a confined particle using uncertainty principle",
+                "Origin of natural width of emission lines",
+                "Uncertainty Principle and concept of Bohr Orbit"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Atomic Structure (परमाणु संरचना)",
               "topics": [
-                "Introduction of Sommerfeld Quantization rule, Bohr-Sommerfield atomic theory, Explanation of Hydrogen and Hydrogen-like Spectra, Comparison between H and He+ Spectra, Corrections for finite nuclear mass and corresponding variations in Rydberg Constant, Relativistic correction"
+                "Introduction of Sommerfeld Quantization rule",
+                "Bohr-Sommerfield atomic theory",
+                "Explanation of Hydrogen and Hydrogen-like Spectra",
+                "Comparison between H and He+ Spectra",
+                "Corrections for finite nuclear mass and corresponding variations in Rydberg Constant",
+                "Relativistic correction"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Wave Mechanical Description of electron particles (इलेक्ट्रॉन कणों का तरंग यांत्रिक विवरण)",
               "topics": [
-                "The Schrodinger Wave equation, properties, concept of normalization of Wave function, Expectation value, Schrodinger equation for non-relativistic particles, Concept of operators in quantum mechanics.",
-                "Time independent Schrodinger equation, Probability, probability current densities, Idea of energy eigenvalues and eigenfunctions"
+                "The Schrodinger Wave equation",
+                "Properties",
+                "Concept of normalization of Wave function",
+                "Expectation value",
+                "Schrodinger equation for non-relativistic particles",
+                "Concept of operators in quantum mechanics",
+                "Time independent Schrodinger equation",
+                "Probability",
+                "Probability current densities",
+                "Idea of energy eigenvalues and eigenfunctions"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Fundamental Properties of Nucleus (नाभिक के मौलिक गुण)",
               "topics": [
-                "Size, constituent and structure of atomic nuclei, Idea of Isotope, Isobar, Isotope and Mirror nuclei, Mass defect, Packing fraction, Binding energy, Binding Energy per nucleon versus Mass number Curve.",
-                "Stability of the nucleus and Nature of Nuclear force, Law of radioactive decay, Mean life and Half-life, successive radioactive disintegration, Basic Idea of Alpha, Beta and Gamma decay, Idea of energy-momentum and parity conservation in nuclear decay process, Q-value in nuclear reaction.",
-                "Radiation Detector, Ionization Chamber, Geiger-Muller Counter, Neutron detection, Spark chamber, Bubble, Cloud and Scintillation, Cherenkov radiation."
+                "Size",
+                "Constituent and structure of atomic nuclei",
+                "Idea of Isotope",
+                "Isobar",
+                "Isotope and Mirror nuclei",
+                "Mass defect",
+                "Packing fraction",
+                "Binding energy",
+                "Binding Energy per nucleon versus Mass number Curve",
+                "Stability of the nucleus and Nature of Nuclear force",
+                "Law of radioactive decay",
+                "Mean life and Half-life",
+                "Successive radioactive disintegration",
+                "Basic Idea of Alpha",
+                "Beta and Gamma decay",
+                "Idea of energy-momentum and parity conservation in nuclear decay process",
+                "Q-value in nuclear reaction",
+                "Radiation Detector",
+                "Ionization Chamber",
+                "Geiger-Muller Counter",
+                "Neutron detection",
+                "Spark chamber",
+                "Bubble",
+                "Cloud and Scintillation",
+                "Cherenkov radiation"
               ]
             }
           ],
@@ -1351,40 +1959,89 @@
               "unitNumber": 1,
               "title": "Digital Circuits (डिजिटल सर्किट)",
               "topics": [
-                "Difference between Analog & Digital Circuits. Binary Numbers. Decimal to Binary & vice-versa. AND, OR and NOT Gates(Realisation using Diodes & Transistors) NAND and NOR Gates as Universal gates. XOR and XNOR Gates."
+                "Difference between Analog & Digital Circuits",
+                "Binary Numbers",
+                "Decimal to Binary & vice-versa",
+                "AND, OR and NOT Gates(Realisation using Diodes & Transistors) NAND and NOR Gates as Universal gates",
+                "XOR and XNOR Gates"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic Circuit Operations (बुनियादी सर्किट संचालन)",
               "topics": [
-                "De Morgan's Theorem, Nodal Laws. Simplification of Logic Circuit using Boolean Algebra. Fundamental Products. Minterms and Maxterms. Conversion of a Truth Table into an Equivalent Logic Circuit by (1) Sum of Products Method and (2) Karnaugh Map (For Advanced Learners) Combinational circuits: Basic idea of Binary Addition. Binary Subtraction using 2's Complement. Half and Full Adders. Half & Full Subtractors."
+                "De Morgan's Theorem",
+                "Nodal Laws",
+                "Simplification of Logic Circuit using Boolean Algebra",
+                "Fundamental Products",
+                "Minterms and Maxterms",
+                "Conversion of a Truth Table into an Equivalent Logic Circuit by (1) Sum of Products Method and (2) Karnaugh Map (For Advanced Learners) Combinational circuits: Basic idea of Binary Addition",
+                "Binary Subtraction using 2's Complement",
+                "Half and Full Adders",
+                "Half & Full Subtractors"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Semiconductor Devices (अर्धचालक उपकरण)",
               "topics": [
-                "P-and N-type semiconductors. Energy Level Diagram. Barrier Formation in PN Junction Diode. Qualitative Idea of Current Flow Mechanism in Forward and Reverse Biased Diode. P-N junction & its characteristics. Static and Dynamic Resistance. Principle and structure of (1) LEDs (2) Photodiode (3) Zener Diode (4) Solar Cell. Electronic Devices and their Applications: (1) Rectifier Diode: Half-wave Rectifiers. Full-wave Rectifiers (Centre-tapped and Bridge), Calculation of Ripple Factor and Rectification Efficiency. (2) Voltage Regulation using Zener Diode.",
-                "Bipolar Junction transistors: n-p-n and p-n-p Transistors, Characteristics of CB, CE and CC Configurations. Current gains α and β parameters, Relations between α and β parameters. Load Line analysis of Transistors. DC Load line and Q-point. Physical Mechanism of Current Flow: Active, Cutoff and Saturation Regions.",
-                "Amplifiers: Transistor Biasing circuits and Stability. Fixed Bias and Voltage Divider Bias circuit for CE Amplifier. (h-parameter Equivalent Circuit). Analysis of a single-stage CE amplifier using Hybrid Model. Input and Output Impedance. Current, Voltage and Power Gains. Class A, B & C Amplifiers (For Advanced Learners)."
+                "P-and N-type semiconductors",
+                "Energy Level Diagram",
+                "Barrier Formation in PN Junction Diode",
+                "Qualitative Idea of Current Flow Mechanism in Forward and Reverse Biased Diode",
+                "P-N junction & its characteristics",
+                "Static and Dynamic Resistance",
+                "Principle and structure of (1) LEDs (2) Photodiode (3) Zener Diode (4) Solar Cell",
+                "Electronic Devices and their Applications: (1) Rectifier Diode: Half-wave Rectifiers",
+                "Full-wave Rectifiers (Centre-tapped and Bridge)",
+                "Calculation of Ripple Factor and Rectification Efficiency. (2) Voltage Regulation using Zener Diode",
+                "Bipolar Junction transistors: n-p-n and p-n-p Transistors",
+                "Characteristics of CB",
+                "CE and CC Configurations",
+                "Current gains α and β parameters",
+                "Relations between α and β parameters",
+                "Load Line analysis of Transistors",
+                "DC Load line and Q-point",
+                "Physical Mechanism of Current Flow: Active",
+                "Cutoff and Saturation Regions",
+                "Amplifiers: Transistor Biasing circuits and Stability",
+                "Fixed Bias and Voltage Divider Bias circuit for CE Amplifier. (h-parameter Equivalent Circuit)",
+                "Analysis of a single-stage CE amplifier using Hybrid Model",
+                "Input and Output Impedance",
+                "Current",
+                "Voltage and Power Gains",
+                "Class A",
+                "B & C Amplifiers (For Advanced Learners)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Operational Amplifiers (परिचालन एम्पलीफायर)",
               "topics": [
-                "Characteristics of an Ideal and Practical Op-Amp (IC 741), Open-loop Gain, CMRR, Concept of virtual ground. Applications of Op-Amp: (1) Inverting and Non-Inverting Amplifiers (2) Adder (3) Subtractor (4) Differentiator (5) Integrator.",
-                "Feedback and Oscillation: Effects of Positive and Negative Feedback on Gain and Stability, Distortion and Noise. Sinusoidal Oscillators: Barkhausen's Criterion for self-sustained oscillations. RC and Wien Bridge oscillator."
+                "Characteristics of an Ideal and Practical Op-Amp (IC 741)",
+                "Open-loop Gain",
+                "CMRR",
+                "Concept of virtual ground",
+                "Applications of Op-Amp: (1) Inverting and Non-Inverting Amplifiers (2) Adder (3) Subtractor (4) Differentiator (5) Integrator",
+                "Feedback and Oscillation: Effects of Positive and Negative Feedback on Gain and Stability",
+                "Distortion and Noise",
+                "Sinusoidal Oscillators: Barkhausen's Criterion for self-sustained oscillations",
+                "RC and Wien Bridge oscillator"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Instrumentations (उपकरण)",
               "topics": [
-                "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage, Current, Frequency and Phase Difference.",
-                "Power Supply: Half Wave Rectifiers, Centre-tapped and Full wave Rectifiers, Calculation of Ripple Factor and Rectification Efficiency, Basic Idea about capacitor filter, Zener Diode and Voltage Regulation.",
-                "Timer IC: IC 555 Pin diagram and its applications as Astable and Monostable Multivibrators."
+                "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage",
+                "Current",
+                "Frequency and Phase Difference",
+                "Power Supply: Half Wave Rectifiers",
+                "Centre-tapped and Full wave Rectifiers",
+                "Calculation of Ripple Factor and Rectification Efficiency",
+                "Basic Idea about capacitor filter",
+                "Zener Diode and Voltage Regulation",
+                "Timer IC: IC 555 Pin diagram and its applications as Astable and Monostable Multivibrators"
               ]
             }
           ],
@@ -1410,17 +2067,19 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To measure (a) Voltage and (b) Time period of a periodic waveform using CRO.",
-                "To test a Diode and Transistor using a Multimeter.",
-                "To design a switch (NOT gate) using a transistor.",
-                "To verify and design AND, OR, NOT and XOR gates using NAND gates.",
-                "Half Adder, Half Subtractor and 4-bit Binary Adder",
-                "To study V-I characteristics of P-N junction, Zener and Light emitting diode.",
-                "To study the characteristics of a Bipolar Junction Transistor in CE configuration.",
-                "To study the frequency response of voltage gain of a RC-coupled transistor amplifier.",
-                "To design Inverting amplifier using Op-amp (741) and study its frequency response.",
-                "To design an Astable Multivibrator using IC 555 Timer.",
-                "To design a precision a Differentiator using an Op-Amp 741."
+                "To measure (a) Voltage and (b) Time period of a periodic waveform using CRO",
+                "To test a Diode and Transistor using a Multimeter",
+                "To design a switch (NOT gate) using a transistor",
+                "To verify and design AND, OR, NOT and XOR gates using NAND gates",
+                "Half Adder",
+                "Half Subtractor and 4-bit Binary Adder",
+                "To study V-I characteristics of P-N junction",
+                "Zener and Light emitting diode",
+                "To study the characteristics of a Bipolar Junction Transistor in CE configuration",
+                "To study the frequency response of voltage gain of a RC-coupled transistor amplifier",
+                "To design Inverting amplifier using Op-amp (741) and study its frequency response",
+                "To design an Astable Multivibrator using IC 555 Timer",
+                "To design a precision a Differentiator using an Op-Amp 741"
               ]
             }
           ],
@@ -1439,36 +2098,51 @@
               "unitNumber": 1,
               "title": "Curvilinear Coordinates, Tensors and special functions (वक्रीय निर्देशांक, टेंसर और विशेष कार्य)",
               "topics": [
-                "Spherical and Cylindrical Coordinate Systems. Ordinary Integrals of Vectors, Line, surface and volume integrals of Vector fields.",
-                "Second Order Linear Differential Equation and its solution using Frobenius method."
+                "Spherical and Cylindrical Coordinate Systems",
+                "Ordinary Integrals of Vectors",
+                "Line",
+                "Surface and volume integrals of Vector fields",
+                "Second Order Linear Differential Equation and its solution using Frobenius method"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Partial Differential Equations (आंशिक अंतर समीकरण)",
               "topics": [
-                "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular, cylindrical and spherical symmetry."
+                "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular",
+                "Cylindrical and spherical symmetry"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction to Computers (कंप्यूटर का परिचय)",
               "topics": [
-                "Importance of Computers in Physics, Algorithms and Flow Charts: Algorithm Definition, properties and development. Flowchart: concept of flowchart, symbols, guidelines, types."
+                "Importance of Computers in Physics",
+                "Algorithms and Flow Charts: Algorithm Definition",
+                "Properties and development",
+                "Flowchart: concept of flowchart",
+                "Symbols",
+                "Guidelines",
+                "Types"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Scientific Programming (वैज्ञानिक प्रोग्रामिंग)",
               "topics": [
-                "Basic ideas of Linux, some fundamental Linux commands (Internal & External commands), FORTRAN: Basic ideas for development of FORTRAN Programming. Layout of FORTRAN programs, writing of simple FORTRAN programs and concept of coding."
+                "Basic ideas of Linux",
+                "Some fundamental Linux commands (Internal & External commands)",
+                "FORTRAN: Basic ideas for development of FORTRAN Programming",
+                "Layout of FORTRAN programs",
+                "Writing of simple FORTRAN programs and concept of coding"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Control statements (नियंत्रण कथन)",
               "topics": [
-                "Introduction of Subscripted variables, Functions and Subroutines (Arithmetic statements, Function, Function subprogram and subroutine), and their usage in programs of simple Physics Problems."
+                "Introduction of Subscripted variables",
+                "Functions and Subroutines (Arithmetic statements, Function, Function subprogram and subroutine), and their usage in programs of simple Physics Problems"
               ]
             }
           ],
@@ -1492,9 +2166,15 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Errors & error Analysis: Truncation & rounding of errors, absolute & relative errors.",
-                "Differential equations: Solutions of ordinary differential equation, solution of first order differential equation, solution of quadratic equation.",
-                "Programs: Sum & average of a list of numbers, Largest of a given list of numbers, Familiarity with DOS commands, Linux Commands and FORTRAN commands."
+                "Errors & error Analysis: Truncation & rounding of errors",
+                "Absolute & relative errors",
+                "Differential equations: Solutions of ordinary differential equation",
+                "Solution of first order differential equation",
+                "Solution of quadratic equation",
+                "Programs: Sum & average of a list of numbers",
+                "Largest of a given list of numbers",
+                "Familiarity with DOS commands",
+                "Linux Commands and FORTRAN commands"
               ]
             }
           ],
@@ -1513,29 +2193,52 @@
               "unitNumber": 1,
               "title": "Maxwell's Equations (मैक्सवेल के समीकरण)",
               "topics": [
-                "Equation of continuity, Maxwell's equations in differential and Integral forms; Vector and scalar potentials. Poynting Theorem and Poynting Vector. Electromagnetic (EM) Energy Density. Physical Concept of Electromagnetic Field Energy Density."
+                "Equation of continuity",
+                "Maxwell's equations in differential and Integral forms",
+                "Vector and scalar potentials",
+                "Poynting Theorem and Poynting Vector",
+                "Electromagnetic (EM) Energy Density",
+                "Physical Concept of Electromagnetic Field Energy Density"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Electromagnetic Wave Propagation in unbounded media (अनबाउंडेड मीडिया में विद्युत चुम्बकीय तरंग प्रसार)",
               "topics": [
-                "Propagation of plane EM waves in free space. Transverse nature of plane EM waves, refractive Index and dielectric constant, wave impedance. Propagation of EM wave through conducting media."
+                "Propagation of plane EM waves in free space",
+                "Transverse nature of plane EM waves",
+                "Refractive Index and dielectric constant",
+                "Wave impedance",
+                "Propagation of EM wave through conducting media"
               ]
             },
             {
               "unitNumber": 3,
               "title": "EM Wave Propagation in Bounded Media (बाउंडेड मीडिया में EM तरंग प्रसार)",
               "topics": [
-                "Boundary conditions at a plane interface between two media. Reflection & Refraction of plane waves at plane interface between two dielectric media — Laws of Reflection & Refraction, Total internal reflection."
+                "Boundary conditions at a plane interface between two media",
+                "Reflection & Refraction of plane waves at plane interface between two dielectric media",
+                "Laws of Reflection & Refraction",
+                "Total internal reflection"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Polarization of Electromagnetic Waves (विद्युत चुम्बकीय तरंगों का ध्रुवीकरण)",
               "topics": [
-                "Description of Linear, Circular and Elliptical Polarization.",
-                "Wave Guides: Condition of continuity at interface. Phase shift on total reflection. Solution of wave equation in Rectangular waveguide, Eigenvalue equations. Expressions for field components (TE and TM modes). Propagation properties, cutoff frequency, group & phase velocity of guided waves. Optical Fibres: Numerical Aperture. Step and Graded Indices (Definitions Only). Single and Multiple Mode Fibres (Concept and Definition Only)."
+                "Description of Linear",
+                "Circular and Elliptical Polarization",
+                "Wave Guides: Condition of continuity at interface",
+                "Phase shift on total reflection",
+                "Solution of wave equation in Rectangular waveguide",
+                "Eigenvalue equations",
+                "Expressions for field components (TE and TM modes)",
+                "Propagation properties",
+                "Cutoff frequency",
+                "Group & phase velocity of guided waves",
+                "Optical Fibres: Numerical Aperture",
+                "Step and Graded Indices (Definitions Only)",
+                "Single and Multiple Mode Fibres (Concept and Definition Only)"
               ]
             }
           ],
@@ -1568,29 +2271,62 @@
               "unitNumber": 1,
               "title": "Constraints and Variational Principle (बाधाएं और परिवर्तन सिद्धांत)",
               "topics": [
-                "Holonomic, Non Holonomic, Scleronomous, Rheonomous, D'Alembert's Principle, Virtual Displacement, Principle of virtual work, concept of generalized co-ordinates, Derivation of Lagrange's equation from D'Alembert's Principle, simple applications of Lagrange's equations.",
-                "Variational Principle and Hamiltonian formalism: Calculus of variation and its applications, Hamilton's Principle, Derivation of Lagrange's equations of motion from Hamilton's Principle, Velocity-dependent potential, Cyclic coordinates, Symmetries and conservation laws, Legendre transformation, Hamilton's equations of motion and its applications, Principle of least action."
+                "Holonomic",
+                "Non Holonomic",
+                "Scleronomous",
+                "Rheonomous",
+                "D'Alembert's Principle",
+                "Virtual Displacement",
+                "Principle of virtual work",
+                "Concept of generalized co-ordinates",
+                "Derivation of Lagrange's equation from D'Alembert's Principle",
+                "Simple applications of Lagrange's equations",
+                "Variational Principle and Hamiltonian formalism: Calculus of variation and its applications",
+                "Hamilton's Principle",
+                "Derivation of Lagrange's equations of motion from Hamilton's Principle",
+                "Velocity-dependent potential",
+                "Cyclic coordinates",
+                "Symmetries and conservation laws",
+                "Legendre transformation",
+                "Hamilton's equations of motion and its applications",
+                "Principle of least action"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Canonical Transformation (कैनोनिकल परिवर्तन)",
               "topics": [
-                "Canonical transformation and its applications, Poisson Brackets, Jacobi identity, Hamilton-Jacobi equation, Action-angle variables, Theory of small oscillations."
+                "Canonical transformation and its applications",
+                "Poisson Brackets",
+                "Jacobi identity",
+                "Hamilton-Jacobi equation",
+                "Action-angle variables",
+                "Theory of small oscillations"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Motion of a Rigid body (दृढ़ पिंड की गति)",
               "topics": [
-                "Euler's Angle, Kinematics of rotation, Euler's equation of Motion, Twisting Torque on a Elastic Cylinder."
+                "Euler's Angle",
+                "Kinematics of rotation",
+                "Euler's equation of Motion",
+                "Twisting Torque on a Elastic Cylinder"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Special Theory of Relativity (सापेक्षता का विशेष सिद्धांत)",
               "topics": [
-                "Michelson-Morley Experiment and its outcome. Postulates of Special Theory of Relativity. Lorentz Transformations. Lorentz contraction. Time dilation. Relativistic addition of velocities. Variation of mass with velocity. Mass less Particles. Mass-energy Equivalence Four vectors."
+                "Michelson-Morley Experiment and its outcome",
+                "Postulates of Special Theory of Relativity",
+                "Lorentz Transformations",
+                "Lorentz contraction",
+                "Time dilation",
+                "Relativistic addition of velocities",
+                "Variation of mass with velocity",
+                "Mass less Particles",
+                "Mass-energy Equivalence Four vectors"
               ]
             }
           ],
@@ -1622,35 +2358,69 @@
               "unitNumber": 1,
               "title": "Classical Statistics (शास्त्रीय सांख्यिकी)",
               "topics": [
-                "Macrostate and Microstate, Phase Space, Elementary Concept of Ensemble, Entropy and Thermodynamic Probability. Maxwell-Boltzmann Distribution Law, Partition Function, Thermodynamic Functions of an Ideal Gas, Classical Entropy Expression, Gibbs Paradox, Sackur-Tetrode equation, Law of Equipartition of energy, its applications to Specific Heat and its Limitations."
+                "Macrostate and Microstate",
+                "Phase Space",
+                "Elementary Concept of Ensemble",
+                "Entropy and Thermodynamic Probability",
+                "Maxwell-Boltzmann Distribution Law",
+                "Partition Function",
+                "Thermodynamic Functions of an Ideal Gas",
+                "Classical Entropy Expression",
+                "Gibbs Paradox",
+                "Sackur-Tetrode equation",
+                "Law of Equipartition of energy, its applications to Specific Heat and its Limitations"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Classical Theory of Radiation (विकिरण का शास्त्रीय सिद्धांत)",
               "topics": [
-                "Black Body Radiation, Kirchhoff's law, Stefan-Boltzmann law(Thermodynamic proof), Radiation Pressure. Wien's Displacement Law. Wien's Distribution Law. Saha's Ionization Formula. Rayleigh-Jean's Law. Ultraviolet Catastrophe."
+                "Black Body Radiation",
+                "Kirchhoff's law",
+                "Stefan-Boltzmann law(Thermodynamic proof)",
+                "Radiation Pressure",
+                "Wien's Displacement Law",
+                "Wien's Distribution Law",
+                "Saha's Ionization Formula",
+                "Rayleigh-Jean's Law",
+                "Ultraviolet Catastrophe"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Quantum Theory of Radiation (विकिरण का क्वांटम सिद्धांत)",
               "topics": [
-                "Spectral Distribution of Black Body Radiation. Planck's Quantum Postulates. Planck's Law of Blackbody Radiation: Experimental verification. Deduction of (1) Wien's Distribution Law (2) Rayleigh-Jeans Law, (3) Stefan-Boltzmann Law, (4) Wien's Displacement Law from Planck's Law."
+                "Spectral Distribution of Black Body Radiation",
+                "Planck's Quantum Postulates",
+                "Planck's Law of Blackbody Radiation: Experimental verification",
+                "Deduction of (1) Wien's Distribution Law (2) Rayleigh-Jeans Law",
+                "(3) Stefan-Boltzmann Law",
+                "(4) Wien's Displacement Law from Planck's Law"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Bose-Einstein Statistics (बोस-आइंस्टीन सांख्यिकी)",
               "topics": [
-                "Bose-Einstein distribution law, Thermodynamic functions of a strongly Degenerate Bose Gas, Bose Einstein condensation, Properties of liquid He (qualitative description), Radiation as a photon gas and Thermodynamic functions of photon gas. Bose derivation of Planck's law."
+                "Bose-Einstein distribution law",
+                "Thermodynamic functions of a strongly Degenerate Bose Gas",
+                "Bose Einstein condensation",
+                "Properties of liquid He (qualitative description)",
+                "Radiation as a photon gas and Thermodynamic functions of photon gas",
+                "Bose derivation of Planck's law"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Fermi-Dirac Statistics (फर्मी-डिराक सांख्यिकी)",
               "topics": [
-                "Fermi-Dirac Distribution Law, Thermodynamic functions of a Completely and strongly Degenerate Fermi Gas, Fermi Energy, Electron gas in a Metal, Specific Heat of Metals, Relativistic Fermi gas, Chandrasekhar Mass Limit."
+                "Fermi-Dirac Distribution Law",
+                "Thermodynamic functions of a Completely and strongly Degenerate Fermi Gas",
+                "Fermi Energy",
+                "Electron gas in a Metal",
+                "Specific Heat of Metals",
+                "Relativistic Fermi gas",
+                "Chandrasekhar Mass Limit"
               ]
             }
           ],
@@ -1676,35 +2446,57 @@
               "unitNumber": 1,
               "title": "Wave-Particle duality (तरंग-कण द्वैतता)",
               "topics": [
-                "Need of quantum mechanics, de Broglie's theory of matter wave, concept of Wave Packet, Fourier transform and momentum-space wave function. Postulates of quantum mechanics, Explanation of Heisenberg's Uncertainty relation"
+                "Need of quantum mechanics",
+                "De Broglie's theory of matter wave",
+                "Concept of Wave Packet",
+                "Fourier transform and momentum-space wave function",
+                "Postulates of quantum mechanics",
+                "Explanation of Heisenberg's Uncertainty relation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Time Independent Schrodinger Wave Equation (समय स्वतंत्र श्रोडिंगर तरंग समीकरण)",
               "topics": [
-                "Derivation of Time independent Schrodinger wave equation, Physical interpretation of wave function. Application of Time independent Schrodinger wave equation in case of Hydrogen atom, Linear harmonic oscillator. Potential Well, Potential Barrier"
+                "Derivation of Time independent Schrodinger wave equation",
+                "Physical interpretation of wave function",
+                "Application of Time independent Schrodinger wave equation in case of Hydrogen atom",
+                "Linear harmonic oscillator",
+                "Potential Well",
+                "Potential Barrier"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Formalism of Quantum Mechanics (क्वांटम यांत्रिकी का औपचारिकता)",
               "topics": [
-                "Hilbert Space and Concept of Ket and Bra notations, Representation of position operator in momentum space. Representation of momentum-operator in position space, Representation of eigen-state vector in momentum space and position space."
+                "Hilbert Space and Concept of Ket and Bra notations",
+                "Representation of position operator in momentum space",
+                "Representation of momentum-operator in position space",
+                "Representation of eigen-state vector in momentum space and position space"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Time Dependent Schrodinger Wave Equation (समय निर्भर श्रोडिंगर तरंग समीकरण)",
               "topics": [
-                "Dynamical evolution of a quantum state, Properties of time-development operator, Derivation of dynamical equation for an operator of a quantum system and its Consequences. Comparative Study of Schrodinger picture, Heisenberg picture and interaction picture."
+                "Dynamical evolution of a quantum state",
+                "Properties of time-development operator",
+                "Derivation of dynamical equation for an operator of a quantum system and its Consequences",
+                "Comparative Study of Schrodinger picture",
+                "Heisenberg picture and interaction picture"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Angular Momentum Operator (कोणीय संवेग संचालक)",
               "topics": [
-                "Orbital Angular momentum operator and its Commutation relation, Spin angular momentum operator and Pauli's spin matrices. Commutation relation of Pauli's spin matrices, ladder operator for total angular momentum operator and its Commutation relation, Spin-Orbit Coupling in atoms(L-S and J-J coupling), Bohr Magneton"
+                "Orbital Angular momentum operator and its Commutation relation",
+                "Spin angular momentum operator and Pauli's spin matrices",
+                "Commutation relation of Pauli's spin matrices",
+                "Ladder operator for total angular momentum operator and its Commutation relation",
+                "Spin-Orbit Coupling in atoms(L-S and J-J coupling)",
+                "Bohr Magneton"
               ]
             }
           ],
@@ -1733,11 +2525,11 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "Solve the Schrodinger equation for the ground state & the 1st excited state of Hydrogen atom.",
-                "Solve the Radial equation for an atom.",
-                "Estimate the Energy values of Linear harmonic oscillator with the given data.",
-                "Estimate the Energy values in Potential Well having defined with & depth.",
-                "Estimate the allowed Energy values of given Potential Barrier."
+                "Solve the Schrodinger equation for the ground state & the 1st excited state of Hydrogen atom",
+                "Solve the Radial equation for an atom",
+                "Estimate the Energy values of Linear harmonic oscillator with the given data",
+                "Estimate the Energy values in Potential Well having defined with & depth",
+                "Estimate the allowed Energy values of given Potential Barrier"
               ]
             }
           ],
@@ -1756,23 +2548,38 @@
               "unitNumber": 1,
               "title": "Interference (व्यतिकरण)",
               "topics": [
-                "Light as EM Wave(Historical Perspective),Superposition of waves, Conditions for interference, Interference by Division of Wavefront (Lloyd's single mirror) and by Division of Amplitude Newton's Ring, Stoke's treatment."
+                "Light as EM Wave(Historical Perspective)",
+                "Superposition of waves",
+                "Conditions for interference",
+                "Interference by Division of Wavefront (Lloyd's single mirror) and by Division of Amplitude Newton's Ring",
+                "Stoke's treatment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Interferometer (इंटरफेरोमीटर)",
               "topics": [
-                "Michelson interferometer and its applications, Multiple beam interference in parallel film, Coherence – Spatial and Temporal."
+                "Michelson interferometer and its applications",
+                "Multiple beam interference in parallel film",
+                "Coherence",
+                "Spatial and Temporal"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Fraunhofer Diffraction (फ्राउनहोफर विवर्तन)",
               "topics": [
-                "Conditions for diffraction, Fraunhofer diffraction due to single, Plane transmission grating.",
-                "Fresnel diffraction:",
-                "Fresnel half-period zones, Zone plate, Huygen's-Fresnel principle, Diffraction by a straight edge, Rayleigh's criterion for limit of resolution, Resolving power of Grating, Telescope."
+                "Conditions for diffraction",
+                "Fraunhofer diffraction due to single",
+                "Plane transmission grating",
+                "Fresnel diffraction",
+                "Fresnel half-period zones",
+                "Zone plate",
+                "Huygen's-Fresnel principle",
+                "Diffraction by a straight edge",
+                "Rayleigh's criterion for limit of resolution",
+                "Resolving power of Grating",
+                "Telescope"
               ]
             },
             {
@@ -1811,14 +2618,14 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To determine Magnifying Power of a telescope by the Linear Scale.",
-                "To find the height of an inaccessible object (altitude or angular diameter of the Sun) using Sextant.",
-                "To find angle of prism/ angle of minimum deviation and hence refractive index of material of prism using Spectrometer.",
-                "To determine diameter of a thin wire by studying the diffraction (and interference) pattern.",
-                "To determine wavelength of sodium light using a plane diffraction grating.",
-                "To determine Resolving Power of a plane transmission grating.",
-                "Simple experiment demonstrating different applications of LASER and Optical Fibre.",
-                "Determination of wavelength of light using biprism on optical bench.",
+                "To determine Magnifying Power of a telescope by the Linear Scale",
+                "To find the height of an inaccessible object (altitude or angular diameter of the Sun) using Sextant",
+                "To find angle of prism/ angle of minimum deviation and hence refractive index of material of prism using Spectrometer",
+                "To determine diameter of a thin wire by studying the diffraction (and interference) pattern",
+                "To determine wavelength of sodium light using a plane diffraction grating",
+                "To determine Resolving Power of a plane transmission grating",
+                "Simple experiment demonstrating different applications of LASER and Optical Fibre",
+                "Determination of wavelength of light using biprism on optical bench",
                 "To determine the wavelength of the monochromatic light by Newton's Ring"
               ]
             }
@@ -1838,21 +2645,37 @@
               "unitNumber": 1,
               "title": "Wave-Particle Duality (तरंग-कण द्वैतता)",
               "topics": [
-                "Hertz Experiment and Discovery of Photoelectric effect; Explanation of Photoelectric effect by Einstein; Wave nature of particle; Historical perspectives of de Broglie's Matter wave; Heisenberg's Uncertainty principle"
+                "Hertz Experiment and Discovery of Photoelectric effect",
+                "Explanation of Photoelectric effect by Einstein",
+                "Wave nature of particle",
+                "Historical perspectives of de Broglie's Matter wave",
+                "Heisenberg's Uncertainty principle"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Understanding Atom (परमाणु को समझना)",
               "topics": [
-                "Different Atomic models; alpha particle scattering experiment performed by Geiger and Marsden, Rutherford's nuclear Model of atom; Bohr's Model and spectrum of hydrogen atom, Limitations of Bohr's Theory; Fine structure of H-lines"
+                "Different Atomic models",
+                "Alpha particle scattering experiment performed by Geiger and Marsden",
+                "Rutherford's nuclear Model of atom",
+                "Bohr's Model and spectrum of hydrogen atom",
+                "Limitations of Bohr's Theory",
+                "Fine structure of H-lines"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Basic properties of atomic nucleus (परमाणु नाभिक के मूल गुण)",
               "topics": [
-                "Mass number, Mass Defect, Binding Energy. Binding Energy per nucleon versus Mass Number Curve; Concept of Nuclear forces; Stability of Nucleus Radioactivity, Law of Radioactive Disintegration. Application of radioactivity in Carbon-Dating and Therapy"
+                "Mass number",
+                "Mass Defect",
+                "Binding Energy",
+                "Binding Energy per nucleon versus Mass Number Curve",
+                "Concept of Nuclear forces",
+                "Stability of Nucleus Radioactivity",
+                "Law of Radioactive Disintegration",
+                "Application of radioactivity in Carbon-Dating and Therapy"
               ]
             }
           ],
@@ -1882,35 +2705,70 @@
               "unitNumber": 1,
               "title": "H-spectra (हाइड्रोजन स्पेक्ट्रा)",
               "topics": [
-                "Fine structure of hydrogen spectra (Hα-line), Wilson-Sommerfeld quantization rule, Problems related to Bohr theory, Bohr-Sommerfeld theory and Ionization Potentials, Bohr-Sommerfeld (H-S) theoretical explanation of fine structure H-spectrum, shortcoming of D-E theory, Stern-Gerlach Experiment to demonstrate the existence of electron spin, Difference between spectra of inner core electron (X-ray spectra) and optically active valence electron (UV-Visible and I.R. Spectra)."
+                "Fine structure of hydrogen spectra (Hα-line)",
+                "Wilson-Sommerfeld quantization rule",
+                "Problems related to Bohr theory",
+                "Bohr-Sommerfeld theory and Ionization Potentials",
+                "Bohr-Sommerfeld (H-S) theoretical explanation of fine structure H-spectrum",
+                "Shortcoming of D-E theory",
+                "Stern-Gerlach Experiment to demonstrate the existence of electron spin",
+                "Difference between spectra of inner core electron (X-ray spectra) and optically active valence electron (UV-Visible and I.R. Spectra)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Quantum mechanics of H-atom (H-परमाणु की क्वांटम यांत्रिकी)",
               "topics": [
-                "Physical interpretation and properties of wave-function, Quantum mechanical treatment of one-electron atomic system (Hydrogen atom). Solution of Schrodinger equation for Hydrogen atom using separation of variables, Associated Legendre Polynomial, Hypergeometric series, Recurrence Formula, Spherical Harmonics, Interpretation of quantum numbers and electron-probability density, Expectation value and parity of eigenfunctions."
+                "Physical interpretation and properties of wave-function",
+                "Quantum mechanical treatment of one-electron atomic system (Hydrogen atom)",
+                "Solution of Schrodinger equation for Hydrogen atom using separation of variables",
+                "Associated Legendre Polynomial",
+                "Hypergeometric series",
+                "Recurrence Formula",
+                "Spherical Harmonics",
+                "Interpretation of quantum numbers and electron-probability density",
+                "Expectation value and parity of eigenfunctions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Concept of Vector Atom model (सदिश परमाणु मॉडल की अवधारणा)",
               "topics": [
-                "Orbital magnetic dipole moment, Behaviour of magnetic dipole in external magnetic field, Larmor Precession, Space quantization, coupling of orbital and spin angular momentum, Spectroscopic term and their notations. Lamb Shift, Pauli's Exclusion Principle and wave function for identical particle system, Zeeman effect and Paschen Back effect for one electron system"
+                "Orbital magnetic dipole moment",
+                "Behaviour of magnetic dipole in external magnetic field",
+                "Larmor Precession",
+                "Space quantization",
+                "Coupling of orbital and spin angular momentum",
+                "Spectroscopic term and their notations",
+                "Lamb Shift",
+                "Pauli's Exclusion Principle and wave function for identical particle system",
+                "Zeeman effect and Paschen Back effect for one electron system"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Spectra of 1 and 2 electron system (1 और 2 इलेक्ट्रॉन प्रणाली का स्पेक्ट्रा)",
               "topics": [
-                "Feature and explanation of Spectra of Alkali elements, Resonance lines and fine structure in Alkali spectra, Intensity ratio of Na-doublet lines, Interaction energy for L-S and J-J coupling for Alkaline Earth elements."
+                "Feature and explanation of Spectra of Alkali elements",
+                "Resonance lines and fine structure in Alkali spectra",
+                "Intensity ratio of Na-doublet lines",
+                "Interaction energy for L-S and J-J coupling for Alkaline Earth elements"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Nuclear Models (नाभिकीय मॉडल)",
               "topics": [
-                "Essence of Liquid drop model, Salient Features and Predictions of Shell model, Brief idea of Collective Model, Alpha particle model and Fermi gas model, Nuclear reaction and its types, Artificial Transmutation, Experimental determination of Q-value, Deuteron problem and its wavefunction, Central force and Non-Central force, Yukawa's model and π-meson."
+                "Essence of Liquid drop model",
+                "Salient Features and Predictions of Shell model",
+                "Brief idea of Collective Model",
+                "Alpha particle model and Fermi gas model",
+                "Nuclear reaction and its types",
+                "Artificial Transmutation",
+                "Experimental determination of Q-value",
+                "Deuteron problem and its wavefunction",
+                "Central force and Non-Central force",
+                "Yukawa's model and π-meson"
               ]
             }
           ],
@@ -1935,12 +2793,12 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To determine e/m by Millikan's oil drop method.",
-                "To draw the plateau curve for a GM count.",
+                "To determine e/m by Millikan's oil drop method",
+                "To draw the plateau curve for a GM count",
                 "To study Zeeman Effect",
-                "To study spectra of simple atoms.",
+                "To study spectra of simple atoms",
                 "To study H-line",
-                "To study Arc-Spectrum and its simulation Experiments."
+                "To study Arc-Spectrum and its simulation Experiments"
               ]
             }
           ],
@@ -1959,30 +2817,66 @@
               "unitNumber": 1,
               "title": "Crystal Structure (क्रिस्टल संरचना)",
               "topics": [
-                "Solids: Amorphous and Crystalline Materials, Lattice and Basis, Bravais Lattices. Lattice Translation Vectors, Types of Bravais Lattices, Unit Cell. Miller Indices. Reciprocal Lattice, Brillouin Zones, Diffraction of X-rays by Crystals. Bragg's Law."
+                "Solids: Amorphous and Crystalline Materials",
+                "Lattice and Basis",
+                "Bravais Lattices",
+                "Lattice Translation Vectors",
+                "Types of Bravais Lattices",
+                "Unit Cell",
+                "Miller Indices",
+                "Reciprocal Lattice",
+                "Brillouin Zones",
+                "Diffraction of X-rays by Crystals",
+                "Bragg's Law"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Crystal Bonding and Lattice Dynamics (क्रिस्टल बॉन्डिंग और जाली गतिकी)",
               "topics": [
-                "A. Crystal Bonding: Elementary idea of Bonding in Solids, Cohesive Energy of Ionic Crystals, Lennard Jones Potential.",
-                "B. Elementary Lattice Dynamics: Lattice Vibrations and Phonons: Linear Monoatomic and Diatomic Chains, Acoustical and Optical Phonons, Dulong and Petit's Law, Einstein theory Debye theory of specific heat of solids, T3—law."
+                "A",
+                "Crystal Bonding: Elementary idea of Bonding in Solids",
+                "Cohesive Energy of Ionic Crystals",
+                "Lennard Jones Potential",
+                "B",
+                "Elementary Lattice Dynamics: Lattice Vibrations and Phonons: Linear Monoatomic and Diatomic Chains",
+                "Acoustical and Optical Phonons",
+                "Dulong and Petit's Law",
+                "Einstein theory Debye theory of specific heat of solids",
+                "T3—law"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Free Electron Theory and Band Theory (मुक्त इलेक्ट्रॉन सिद्धांत और बैंड सिद्धांत)",
               "topics": [
-                "A. Free Electron Theory: Theory of free electron gas, Fermi surface, Fermi Energy, Density of States.",
-                "B. Elementary Band Theory: Bloch Theorem. Kronig-Penny Model, Band Gap, Conductor, Semiconductor (P and N type) and insulator. Conductivity of Semiconductor, Measurement of conductivity (Four Probe Method), Mobility, Hall Effect & Hall coefficient."
+                "A",
+                "Free Electron Theory: Theory of free electron gas",
+                "Fermi surface",
+                "Fermi Energy",
+                "Density of States",
+                "B",
+                "Elementary Band Theory: Bloch Theorem",
+                "Kronig-Penny Model",
+                "Band Gap",
+                "Conductor",
+                "Semiconductor (P and N type) and insulator",
+                "Conductivity of Semiconductor",
+                "Measurement of conductivity (Four Probe Method)",
+                "Mobility",
+                "Hall Effect & Hall coefficient"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Magnetic Properties of Matter (पदार्थ के चुंबकीय गुण)",
               "topics": [
-                "A. Magnetic Properties of Matter: Origin of magnetism, Langevin's theory of Diamagnetism and Paramagnetism. Ferromagnetism and Antiferromagnetism. Curie-Weiss law, Ferromagnetic Domains."
+                "A",
+                "Magnetic Properties of Matter: Origin of magnetism",
+                "Langevin's theory of Diamagnetism and Paramagnetism",
+                "Ferromagnetism and Antiferromagnetism",
+                "Curie-Weiss law",
+                "Ferromagnetic Domains"
               ]
             }
           ],
@@ -2009,15 +2903,15 @@
               "title": "Practical Experiments",
               "topics": [
                 "Measurement of susceptibility of paramagnetic solution (Quinck's Tube Method)",
-                "To measure the Magnetic susceptibility of Solids.",
-                "To determine the Coupling Coefficient of a Piezoelectric crystal.",
+                "To measure the Magnetic susceptibility of Solids",
+                "To determine the Coupling Coefficient of a Piezoelectric crystal",
                 "To measure the Dielectric Constant of a dielectric Materials with frequency",
-                "To determine the complex dielectric constant and plasma frequency of metal using Surface Plasmon resonance (SPR).",
-                "To determine the refractive index of a dielectric layer using SPR.",
-                "To study the PE Hysteresis loop of a Ferroelectric Crystal.",
-                "To draw the BH curve of Fe using Solenoid & determine energy loss from Hysteresis.",
-                "To measure the resistivity of a semiconductor (Ge) with temperature by four-probe method (room temperature to 150°C) and to determine its band gap.",
-                "To determine the Hall coefficient of a semiconductor sample."
+                "To determine the complex dielectric constant and plasma frequency of metal using Surface Plasmon resonance (SPR)",
+                "To determine the refractive index of a dielectric layer using SPR",
+                "To study the PE Hysteresis loop of a Ferroelectric Crystal",
+                "To draw the BH curve of Fe using Solenoid & determine energy loss from Hysteresis",
+                "To measure the resistivity of a semiconductor (Ge) with temperature by four-probe method (room temperature to 150°C) and to determine its band gap",
+                "To determine the Hall coefficient of a semiconductor sample"
               ]
             }
           ],
@@ -2036,40 +2930,81 @@
               "unitNumber": 1,
               "title": "Digital Circuits (डिजिटल सर्किट)",
               "topics": [
-                "Difference between Analog & Digital Circuits. Binary Numbers. Decimal to Binary & vice-versa. AND, OR and NOT Gates(Realisation using Diodes & Transistors) NAND and NOR Gates as Universal gates. XOR Gates."
+                "Difference between Analog & Digital Circuits",
+                "Binary Numbers",
+                "Decimal to Binary & vice-versa",
+                "AND, OR and NOT Gates(Realisation using Diodes & Transistors) NAND and NOR Gates as Universal gates",
+                "XOR Gates"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic Circuit Operations (बुनियादी सर्किट संचालन)",
               "topics": [
-                "De-Morgan's Theorem. Boolean Laws. Simplification of Logic Circuit using Boolean Algebra. Conversion of a Truth Table into an Equivalent Logic Circuit by (1) Sum of Products Method",
-                "Combinational circuits. Basic idea of Binary Addition. Binary Subtraction using 2's Complement. Half and Full Adders."
+                "De-Morgan's Theorem",
+                "Boolean Laws",
+                "Simplification of Logic Circuit using Boolean Algebra",
+                "Conversion of a Truth Table into an Equivalent Logic Circuit by (1) Sum of Products Method",
+                "Combinational circuits",
+                "Basic idea of Binary Addition",
+                "Binary Subtraction using 2's Complement",
+                "Half and Full Adders"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Semiconductor Devices (अर्धचालक उपकरण)",
               "topics": [
-                "P-and N-type semiconductors. Energy Level Diagram. Barrier Formation in PN Junction Diode. Qualitative Idea of Current Flow Mechanism in Forward and Reverse Biased Diode. P-N junction & its characteristics. Static and Dynamic Resistance. Principle and structure of (1) LEDs (2) Photodiode (3) Zener Diode (4) Solar Cell.",
-                "Electronic Devices and their Applications: (1) Rectifier Diode: Half-wave Rectifiers. Full-wave Rectifiers (Centre-tapped and Bridge), Calculation of Ripple Factor and Rectification Efficiency, (2) Voltage Regulation using Zener Diode.",
-                "Bipolar Junction transistors: n-p-n and p-n-p Transistors, Characteristics of CB, CE and CC Configurations. Current gains α and β parameters, Relations between α and β parameters. Load Line analysis of Transistors. DC Load line and Q-point. Physical Mechanism of Current Flow: Active, Cutoff and Saturation Regions.",
-                "Amplifiers: Transistor Biasing circuits and Stability. Fixed Bias and Voltage Divider Bias circuit for CE Amplifier. Input and Output Impedance. Current, Voltage and Power Gains. Class A"
+                "P-and N-type semiconductors",
+                "Energy Level Diagram",
+                "Barrier Formation in PN Junction Diode",
+                "Qualitative Idea of Current Flow Mechanism in Forward and Reverse Biased Diode",
+                "P-N junction & its characteristics",
+                "Static and Dynamic Resistance",
+                "Principle and structure of (1) LEDs (2) Photodiode (3) Zener Diode (4) Solar Cell",
+                "Electronic Devices and their Applications: (1) Rectifier Diode: Half-wave Rectifiers",
+                "Full-wave Rectifiers (Centre-tapped and Bridge)",
+                "Calculation of Ripple Factor and Rectification Efficiency",
+                "(2) Voltage Regulation using Zener Diode",
+                "Bipolar Junction transistors: n-p-n and p-n-p Transistors",
+                "Characteristics of CB",
+                "CE and CC Configurations",
+                "Current gains α and β parameters",
+                "Relations between α and β parameters",
+                "Load Line analysis of Transistors",
+                "DC Load line and Q-point",
+                "Physical Mechanism of Current Flow: Active",
+                "Cutoff and Saturation Regions",
+                "Amplifiers: Transistor Biasing circuits and Stability",
+                "Fixed Bias and Voltage Divider Bias circuit for CE Amplifier",
+                "Input and Output Impedance",
+                "Current",
+                "Voltage and Power Gains",
+                "Class A"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Sinusoidal Oscillations (साइनसॉइडल दोलन)",
               "topics": [
-                "Feedback and Oscillation: Effects of Positive and Negative Feedback on Gain and Stability, Distortion and Noise. Sinusoidal Oscillators: Barkhausen's Criterion for self-sustained oscillations. RC and Wien Bridge oscillator."
+                "Feedback and Oscillation: Effects of Positive and Negative Feedback on Gain and Stability",
+                "Distortion and Noise",
+                "Sinusoidal Oscillators: Barkhausen's Criterion for self-sustained oscillations",
+                "RC and Wien Bridge oscillator"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Instrumentations (उपकरण)",
               "topics": [
-                "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage, Current, Frequency and Phase Difference.",
-                "Power Supply: Half Wave Rectifiers, Centre-tapped and Full wave Rectifiers, Calculation of Ripple Factor and Rectification Efficiency, Basic Idea about capacitor filter, Zener Diode and Voltage Regulation."
+                "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage",
+                "Current",
+                "Frequency and Phase Difference",
+                "Power Supply: Half Wave Rectifiers",
+                "Centre-tapped and Full wave Rectifiers",
+                "Calculation of Ripple Factor and Rectification Efficiency",
+                "Basic Idea about capacitor filter",
+                "Zener Diode and Voltage Regulation"
               ]
             }
           ],
@@ -2095,13 +3030,15 @@
               "unitNumber": 1,
               "title": "Practical Experiments",
               "topics": [
-                "To measure (a) Voltage and (b) Time period of a periodic waveform using CRO.",
-                "To test a Diode and Transistor using a Multimeter.",
-                "To design a switch (NOT gate) using a transistor.",
-                "To verify and design AND, OR, NOT and XOR gates using NAND gates.",
-                "Half Adder, Half Subtractor and 4-bit Binary Adder",
-                "To study V-I characteristics of P-N junction, Zener and Light emitting diode.",
-                "To study the characteristics of a Bipolar Junction Transistor in CE configuration."
+                "To measure (a) Voltage and (b) Time period of a periodic waveform using CRO",
+                "To test a Diode and Transistor using a Multimeter",
+                "To design a switch (NOT gate) using a transistor",
+                "To verify and design AND, OR, NOT and XOR gates using NAND gates",
+                "Half Adder",
+                "Half Subtractor and 4-bit Binary Adder",
+                "To study V-I characteristics of P-N junction",
+                "Zener and Light emitting diode",
+                "To study the characteristics of a Bipolar Junction Transistor in CE configuration"
               ]
             }
           ],
@@ -2125,7 +3062,9 @@
               "unitNumber": 1,
               "title": "Research Methodology (शोध पद्धति)",
               "topics": [
-                "The Paper will be common for all students of faculty of Science. There is a common Syllabus for MJC - 14, already done."
+                "The Paper will be common for all students of faculty of Science",
+                "There is a common Syllabus for MJC",
+                "14, already done"
               ]
             }
           ],
@@ -2144,35 +3083,60 @@
               "unitNumber": 1,
               "title": "Basic Theory of LASER (लेजर का बुनियादी सिद्धांत)",
               "topics": [
-                "Energy levels and process of Absorption and Emission Einstein's Predication, Difference between spontaneous and stimulated emission Important features of stimulated emission Einstein's A and B Co-efficient, Light Amplification condition for enhanced stimulated emission, population inversion and pumping method and schemes (two level, three level and four level): Amplifier and Optical Resonator with threshold condition for Lasing."
+                "Energy levels and process of Absorption and Emission Einstein's Predication",
+                "Difference between spontaneous and stimulated emission Important features of stimulated emission Einstein's A and B Co-efficient",
+                "Light Amplification condition for enhanced stimulated emission",
+                "Population inversion and pumping method and schemes (two level, three level and four level): Amplifier and Optical Resonator with threshold condition for Lasing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Application of LASER (लेजर का अनुप्रयोग)",
               "topics": [
-                "Application of LASER in Holography, Concept of Temporal and Spatial Coherence, Principle method of generating and observing hologram, types of holograms. Application in consumer electronic industry (Barcode reader and its elements), in communication-basic principle and element of optical fiber communication. Numerical aperture of fiber optics cables. In medical science, LASER diagnostics, LASER in ophthalmology and LASIK, LASER-surgery and LASER in Dermatology."
+                "Application of LASER in Holography",
+                "Concept of Temporal and Spatial Coherence",
+                "Principle method of generating and observing hologram",
+                "Types of holograms",
+                "Application in consumer electronic industry (Barcode reader and its elements), in communication-basic principle and element of optical fiber communication",
+                "Numerical aperture of fiber optics cables",
+                "In medical science",
+                "LASER diagnostics",
+                "LASER in ophthalmology and LASIK",
+                "LASER-surgery and LASER in Dermatology"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Concept of molecule (अणु की अवधारणा)",
               "topics": [
-                "Basic idea of molecular bonding-Ionic Non-Rigid rotator and covalent formation of molecules, Morse potential energy curve, Molecule as oscillator, Concept of dissociation, wave function of H2+ Valence bond, Linear Combination of Atomic Orbitals (L.C.A.O.) concept."
+                "Basic idea of molecular bonding-Ionic Non-Rigid rotator and covalent formation of molecules",
+                "Morse potential energy curve",
+                "Molecule as oscillator",
+                "Concept of dissociation",
+                "Wave function of H2+ Valence bond",
+                "Linear Combination of Atomic Orbitals (L.C.A.O.) concept"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Hamiltonian of molecule theory (अणु सिद्धांत का हैमिल्टनियन)",
               "topics": [
-                "Separation of electronic and nuclear motion (Born-oppenheimer approximation), Types of molecular energy states- vibrational, rotational and electronic, Types of molecular spectra-UV, IR, Raman; flame spectroscopy and flame photometry, X-Ray and Mossbauer spectroscopy."
+                "Separation of electronic and nuclear motion (Born-oppenheimer approximation), Types of molecular energy states- vibrational, rotational and electronic, Types of molecular spectra-UV, IR, Raman",
+                "Flame spectroscopy and flame photometry",
+                "X-Ray and Mossbauer spectroscopy"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Different Molecular spectroscopic techniques (विभिन्न आणविक स्पेक्ट्रोस्कोपिक तकनीक)",
               "topics": [
-                "Different Molecular spectroscopic techniques as a Tool- atomic absorption spectroscopy, Emission spectroscopy, Molecular Luminescence, Photo and Opto-acoustic spectroscopy (PAS/OAS), Nuclear Magnetic Resonance (NMR), Nuclear Quadrupole Resonance (NQR), Electron Spin Resonance (ESR) and Electron diffraction spectroscopy."
+                "Different Molecular spectroscopic techniques as a Tool- atomic absorption spectroscopy",
+                "Emission spectroscopy",
+                "Molecular Luminescence",
+                "Photo and Opto-acoustic spectroscopy (PAS/OAS)",
+                "Nuclear Magnetic Resonance (NMR)",
+                "Nuclear Quadrupole Resonance (NQR)",
+                "Electron Spin Resonance (ESR) and Electron diffraction spectroscopy"
               ]
             }
           ],
@@ -2203,9 +3167,9 @@
                 "To detect impurity in given sample using spectrophotometer",
                 "To determine speed light in air in Lab",
                 "To calculate /evaluate the Numerical aperture of given fiber",
-                "To use basic Transmission network using Demonstration Kit.",
-                "To study Characteristics of LASER.",
-                "To study UV/IR- Spectrum of given sample."
+                "To use basic Transmission network using Demonstration Kit",
+                "To study Characteristics of LASER",
+                "To study UV/IR- Spectrum of given sample"
               ]
             }
           ],
@@ -2224,29 +3188,50 @@
               "unitNumber": 1,
               "title": "Rigid Body Motion (दृढ़ पिंड गति)",
               "topics": [
-                "Rigid body, Eulerian angles, Kinematics of rotation, Euler's equations of motion, Motion of a symmetrical top.",
-                "Variational Principle and Hamiltonian formalism: Calculus of variation and its applications, Lagrange's equations of motion for non-holonomic system, Velocity-dependent potential, Cyclic coordinates, Symmetries and conservation laws, Legendre transformation."
+                "Rigid body",
+                "Eulerian angles",
+                "Kinematics of rotation",
+                "Euler's equations of motion",
+                "Motion of a symmetrical top",
+                "Variational Principle and Hamiltonian formalism: Calculus of variation and its applications",
+                "Lagrange's equations of motion for non-holonomic system",
+                "Velocity-dependent potential",
+                "Cyclic coordinates",
+                "Symmetries and conservation laws",
+                "Legendre transformation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Canonical Transformation (कैनोनिकल परिवर्तन)",
               "topics": [
-                "Canonical transformation and its applications, Poisson Brackets, Jacobi identity, Hamilton-Jacobi equation."
+                "Canonical transformation and its applications",
+                "Poisson Brackets",
+                "Jacobi identity",
+                "Hamilton-Jacobi equation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Collisions (टकराव)",
               "topics": [
-                "Elastic and inelastic collisions between particles. Centre of Mass and Laboratory frames. Elasticity: Review of relation between Elastic constants."
+                "Elastic and inelastic collisions between particles",
+                "Centre of Mass and Laboratory frames",
+                "Elasticity: Review of relation between Elastic constants"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Special Theory of Relativity (सापेक्षता का विशेष सिद्धांत)",
               "topics": [
-                "Michelson-Morley Experiment and its outcome. Postulates of Special Theory of Relativity. Lorentz Transformations. Lorentz contraction. Time dilation. Relativistic addition of velocities. Variation of mass with velocity, mass energy equivalence"
+                "Michelson-Morley Experiment and its outcome",
+                "Postulates of Special Theory of Relativity",
+                "Lorentz Transformations",
+                "Lorentz contraction",
+                "Time dilation",
+                "Relativistic addition of velocities",
+                "Variation of mass with velocity",
+                "Mass energy equivalence"
               ]
             }
           ],

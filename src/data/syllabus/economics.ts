@@ -27,7 +27,9 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Exploring the subject matter of Economics",
               "topics": [
-                "Definition of Economics, Need, Scope and Methods of Economics",
+                "Definition of Economics",
+                "Need",
+                "Scope and Methods of Economics",
                 "Nature and subject matter of Economics",
                 "Problem of scarcity and choice",
                 "Central Problems of Economy"
@@ -37,7 +39,21 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Supply and Demand",
               "topics": [
-                "(a) Concept and types of demand, determinants of individual demand/supply; demand and demand function, theory of demand and law of demand and supply, exceptions to law of demand, demand supply schedule and demand/supply curve; demand for complementary and substitute goods, market versus individual demand/supply; shifts in the demand/supply curve, demand and supply together, elasticity of demand and supply, determinants, measurement and application, static and dynamic demand, consumer surplus",
+                "(a) Concept and types of demand",
+                "Determinants of individual demand/supply",
+                "Demand and demand function",
+                "Theory of demand and law of demand and supply",
+                "Exceptions to law of demand",
+                "Demand supply schedule and demand/supply curve",
+                "Demand for complementary and substitute goods",
+                "Market versus individual demand/supply",
+                "Shifts in the demand/supply curve",
+                "Demand and supply together",
+                "Elasticity of demand and supply",
+                "Determinants",
+                "Measurement and application",
+                "Static and dynamic demand",
+                "Consumer surplus",
                 "(b) The theory of Consumer Behaviour: Cardinal and Ordinal utility analysis"
               ]
             },
@@ -45,10 +61,17 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "The Firm and Market Structure",
               "topics": [
-                "Nature of firm, organizing economic activity in a firm",
+                "Nature of firm",
+                "Organizing economic activity in a firm",
                 "Objective of a firm: Profit maximization vs. sales maximization",
-                "Introduction to basic idea of equilibrium of a firm, condition for producers' equilibrium in short run and long run for firm and industry: total and marginal approach",
-                "Basic idea of market, concept and types of cost and revenue; total, average and marginal concept, classification of market, time element in market",
+                "Introduction to basic idea of equilibrium of a firm",
+                "Condition for producers' equilibrium in short run and long run for firm and industry: total and marginal approach",
+                "Basic idea of market",
+                "Concept and types of cost and revenue",
+                "Total",
+                "Average and marginal concept",
+                "Classification of market",
+                "Time element in market",
                 "Characteristics of Different Market Structures along with relevant examples"
               ]
             },
@@ -56,7 +79,16 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "The Markets for the Factors of Production",
               "topics": [
-                "Labour market: Basic concepts, derived demand, productivity of an input, marginal productivity of labour, marginal revenue product, demand for labour, backward bending supply curve of labour, tax policy and labour supply, labour force participation, determination of wage rate in a perfectly competitive labour market"
+                "Labour market: Basic concepts",
+                "Derived demand",
+                "Productivity of an input",
+                "Marginal productivity of labour",
+                "Marginal revenue product",
+                "Demand for labour",
+                "Backward bending supply curve of labour",
+                "Tax policy and labour supply",
+                "Labour force participation",
+                "Determination of wage rate in a perfectly competitive labour market"
               ]
             }
           ],
@@ -87,7 +119,9 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Exploring the subject matter of Economics",
               "topics": [
-                "Definition of Economics, Need, Scope and Methods of Economics",
+                "Definition of Economics",
+                "Need",
+                "Scope and Methods of Economics",
                 "Nature and subject matter of Economics",
                 "Problem of scarcity and choice",
                 "Central Problems of Economy"
@@ -97,15 +131,33 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Supply and Demand",
               "topics": [
-                "Concept and types of demand, determinants of individual demand/supply; demand and demand function, theory of demand and law of demand and supply, exceptions to law of demand, demand supply schedule and demand/supply curve; demand for complementary and substitute goods, market versus individual demand/supply; shifts in the demand/supply curve, demand and supply together, elasticity of demand and supply, determinants, measurement and application, static and dynamic demand, consumer surplus"
+                "Concept and types of demand",
+                "Determinants of individual demand/supply",
+                "Demand and demand function",
+                "Theory of demand and law of demand and supply",
+                "Exceptions to law of demand",
+                "Demand supply schedule and demand/supply curve",
+                "Demand for complementary and substitute goods",
+                "Market versus individual demand/supply",
+                "Shifts in the demand/supply curve",
+                "Demand and supply together",
+                "Elasticity of demand and supply",
+                "Determinants",
+                "Measurement and application",
+                "Static and dynamic demand",
+                "Consumer surplus"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Theory of Consumer Behaviour",
               "topics": [
-                "Cardinal Approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility, Consumer's Equilibrium",
-                "Ordinal Approach: Indifference Curve – meaning and properties of indifference curve, Consumer's Equilibrium with the help of Indifference curve"
+                "Cardinal Approach: Law of Diminishing Marginal Utility",
+                "Law of Equi-Marginal Utility",
+                "Consumer's Equilibrium",
+                "Ordinal Approach: Indifference Curve",
+                "Meaning and properties of indifference curve",
+                "Consumer's Equilibrium with the help of Indifference curve"
               ]
             }
           ],
@@ -131,7 +183,9 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Exploring the subject matter of Economics",
               "topics": [
-                "Definition of Economics, Need, Scope and Methods of Economics",
+                "Definition of Economics",
+                "Need",
+                "Scope and Methods of Economics",
                 "Nature and subject matter of Economics",
                 "Problem of scarcity and choice",
                 "Central Problems of Economy"
@@ -141,15 +195,32 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Supply and Demand",
               "topics": [
-                "(a) Concept and types of demand, determinants of individual demand/supply; demand and demand function, theory of demand and law of demand and supply; exceptions to law of demand, demand/supply schedule and demand/supply curve; demand for complementary and substitute goods, market versus individual demand/supply; shifts in the demand/supply curve, demand and supply together, elasticity of demand and supply, determinants, measurement and application, static and dynamic demand, consumer surplus"
+                "(a) Concept and types of demand",
+                "Determinants of individual demand/supply",
+                "Demand and demand function",
+                "Theory of demand and law of demand and supply",
+                "Exceptions to law of demand",
+                "Demand/supply schedule and demand/supply curve",
+                "Demand for complementary and substitute goods",
+                "Market versus individual demand/supply",
+                "Shifts in the demand/supply curve",
+                "Demand and supply together",
+                "Elasticity of demand and supply",
+                "Determinants",
+                "Measurement and application",
+                "Static and dynamic demand",
+                "Consumer surplus"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Theory of Consumer Behaviour",
               "topics": [
-                "Cardinal approach: Law of Diminishing Marginal Utility, Law of Equi-Marginal Utility, Consumer's Equilibrium",
-                "Ordinal Approach: Indifference Curve-meaning and properties, Consumer's Equilibrium with the help of Indifference curve"
+                "Cardinal approach: Law of Diminishing Marginal Utility",
+                "Law of Equi-Marginal Utility",
+                "Consumer's Equilibrium",
+                "Ordinal Approach: Indifference Curve-meaning and properties",
+                "Consumer's Equilibrium with the help of Indifference curve"
               ]
             }
           ],
@@ -185,8 +256,10 @@ export const economicsSyllabus: CourseSyllabus = {
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -206,7 +279,8 @@ export const economicsSyllabus: CourseSyllabus = {
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -219,7 +293,9 @@ export const economicsSyllabus: CourseSyllabus = {
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -298,35 +374,53 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Preliminaries",
               "topics": [
-                "Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products",
+                "Logic and proof techniques",
+                "Sets and Set Operations",
+                "Ordered pairs and Cartesian Products",
                 "Functions and their Properties",
                 "Number System",
                 "Basic idea of Permutation and Combination",
-                "Progression: Arithmetic, Geometric and Harmonic Progression"
+                "Progression: Arithmetic",
+                "Geometric and Harmonic Progression"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Functions of One Variable",
               "topics": [
-                "Graphs; Elementary types of Functions: Quadratic, Polynomial, Power, Exponential and Logarithmic Functions",
-                "Sequences and Series: Convergence and Divergence, Algebraic Properties and Applications",
-                "Continuous Functions: Characteristics and Properties of Continuous Functions, Convergence and Divergence",
-                "Limit of a Function: Method to Evaluate the Limit of Algebraic, Logarithmic and Exponential Functions"
+                "Graphs",
+                "Elementary types of Functions: Quadratic",
+                "Polynomial",
+                "Power",
+                "Exponential and Logarithmic Functions",
+                "Sequences and Series: Convergence and Divergence",
+                "Algebraic Properties and Applications",
+                "Continuous Functions: Characteristics and Properties of Continuous Functions",
+                "Convergence and Divergence",
+                "Limit of a Function: Method to Evaluate the Limit of Algebraic",
+                "Logarithmic and Exponential Functions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Rules of Differentiation",
               "topics": [
-                "Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions; Second and higher order derivatives; Applications of differentiation in Economics"
+                "Differentiable Functions",
+                "Derivatives of Sum",
+                "Difference",
+                "Product and Quotient Functions",
+                "Second and higher order derivatives",
+                "Applications of differentiation in Economics"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Single-Variable Optimization",
               "topics": [
-                "Conditions for Maxima and Minima; simple applications of maxima and minima in economics – maximization of profit/net revenue, cost minimization"
+                "Conditions for Maxima and Minima",
+                "Simple applications of maxima and minima in economics",
+                "Maximization of profit/net revenue",
+                "Cost minimization"
               ]
             }
           ],
@@ -356,27 +450,43 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Preliminaries",
               "topics": [
-                "Logic and proof techniques; Sets and Set Operations, Ordered pairs and Cartesian Products",
+                "Logic and proof techniques",
+                "Sets and Set Operations",
+                "Ordered pairs and Cartesian Products",
                 "Functions and their Properties",
                 "Number System",
                 "Basic idea of Permutation and Combination",
-                "Progression: Arithmetic, Geometric and Harmonic Progression"
+                "Progression: Arithmetic",
+                "Geometric and Harmonic Progression"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Functions of One Variable",
               "topics": [
-                "Graphs; Elementary types of Functions: Quadratic, Polynomial, Power, Exponential and Logarithmic Functions",
-                "Sequences and Series: Convergence and Divergence, Algebraic Properties and Applications",
-                "Limit of a Function: Method to Evaluate the Limit of Algebraic, Logarithmic and Exponential Functions"
+                "Graphs",
+                "Elementary types of Functions: Quadratic",
+                "Polynomial",
+                "Power",
+                "Exponential and Logarithmic Functions",
+                "Sequences and Series: Convergence and Divergence",
+                "Algebraic Properties and Applications",
+                "Limit of a Function: Method to Evaluate the Limit of Algebraic",
+                "Logarithmic and Exponential Functions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Rules of Differentiation",
               "topics": [
-                "Differentiable Functions; Derivatives of Sum, Difference, Product and Quotient Functions; Second and higher order derivatives; Simple applications of differentiation in Economics – Concept of Marginal Cost, Marginal Revenue and Elasticity of Demand"
+                "Differentiable Functions",
+                "Derivatives of Sum",
+                "Difference",
+                "Product and Quotient Functions",
+                "Second and higher order derivatives",
+                "Simple applications of differentiation in Economics",
+                "Concept of Marginal Cost",
+                "Marginal Revenue and Elasticity of Demand"
               ]
             }
           ],
@@ -404,7 +514,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Macroeconomics and National Income Accounting",
               "topics": [
-                "The Origin and Roots of Macroeconomics, Need and relevance of Macroeconomics, Scope of the Subject, Macroeconomic concerns and issues, the Role of Government in Macroeconomics, the components of Macroeconomics, the methodology to macroeconomics",
+                "The Origin and Roots of Macroeconomics",
+                "Need and relevance of Macroeconomics",
+                "Scope of the Subject",
+                "Macroeconomic concerns and issues",
+                "The Role of Government in Macroeconomics",
+                "The components of Macroeconomics",
+                "The methodology to macroeconomics",
                 "Circular flow of Income",
                 "The Concepts of National income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income and personal disposable income, approaches to calculating GDP, Nominal and real GDP, Green GDP"
               ]
@@ -413,17 +529,27 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Money and Banking",
               "topics": [
-                "Functions of money; quantity theory of money",
-                "Central banking: history, objectives, functions, relevance, performance, tools of monetary policy",
-                "Concept and history of commercial banking - functions, distribution of assets and credit creation"
+                "Functions of money",
+                "Quantity theory of money",
+                "Central banking: history",
+                "Objectives",
+                "Functions",
+                "Relevance",
+                "Performance",
+                "Tools of monetary policy",
+                "Concept and history of commercial banking",
+                "Functions",
+                "Distribution of assets and credit creation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Closed Economy in the Short Run",
               "topics": [
-                "Classical and Keynesian systems; simple classical system of output and employment",
-                "Keynesian model of income determination, concept of multipliers",
+                "Classical and Keynesian systems",
+                "Simple classical system of output and employment",
+                "Keynesian model of income determination",
+                "Concept of multipliers",
                 "Relevance and limitations of Keynesian economics to developing economy"
               ]
             }
@@ -453,43 +579,84 @@ export const economicsSyllabus: CourseSyllabus = {
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -499,22 +666,38 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -587,7 +770,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Macroeconomics and National Income Accounting",
               "topics": [
-                "The Origin and Roots of Macroeconomics, Need and relevance of Macroeconomics, Scope of the Subject, Macroeconomic concerns and issues, the Role of Government in Macroeconomics, the components of Macroeconomics, methodology of macroeconomics",
+                "The Origin and Roots of Macroeconomics",
+                "Need and relevance of Macroeconomics",
+                "Scope of the Subject",
+                "Macroeconomic concerns and issues",
+                "The Role of Government in Macroeconomics",
+                "The components of Macroeconomics",
+                "Methodology of macroeconomics",
                 "Circular flow of Income",
                 "The Concepts of National income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income and personal disposable income, approaches to calculating GDP, Nominal and real GDP, Green GDP"
               ]
@@ -596,17 +785,27 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Money and Banking",
               "topics": [
-                "Functions of money; quantity theory of money",
-                "Central banking: history, objectives, functions, relevance, performance, tools of monetary policy",
-                "Concept and history of commercial banking - functions, distribution of assets and credit creation"
+                "Functions of money",
+                "Quantity theory of money",
+                "Central banking: history",
+                "Objectives",
+                "Functions",
+                "Relevance",
+                "Performance",
+                "Tools of monetary policy",
+                "Concept and history of commercial banking",
+                "Functions",
+                "Distribution of assets and credit creation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Classical and Keynesian Systems",
               "topics": [
-                "Classical and Keynesian systems; simple classical system of output and employment",
-                "Keynesian model of income determination, concept of multipliers",
+                "Classical and Keynesian systems",
+                "Simple classical system of output and employment",
+                "Keynesian model of income determination",
+                "Concept of multipliers",
                 "Relevance and limitations of Keynesian economics to developing economy"
               ]
             }
@@ -635,8 +834,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Basic Statistics",
               "topics": [
-                "Measures of Central Tendency: Mean, Median Mode, Geometric Mean, Harmonic Mean",
-                "Measures of Dispersion: Mean Deviation, Quartile Deviation, Standard Deviation",
+                "Measures of Central Tendency: Mean",
+                "Median Mode",
+                "Geometric Mean",
+                "Harmonic Mean",
+                "Measures of Dispersion: Mean Deviation",
+                "Quartile Deviation",
+                "Standard Deviation",
                 "Moments, Skewness, Kurtosis, Gini coefficient, Lorenz Curve",
                 "Bivariate Frequency Distribution: Simple Correlation and Linear Regression Analysis"
               ]
@@ -645,22 +849,36 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Index Number",
               "topics": [
-                "Concept of Index Number, Laspeyre's Paasche's and Fisher's Ideal Index Number, Tests for Ideal Index Number, Problems in Construction of Index Number, Applications: Cost of living index Number"
+                "Concept of Index Number",
+                "Laspeyre's Paasche's and Fisher's Ideal Index Number",
+                "Tests for Ideal Index Number",
+                "Problems in Construction of Index Number",
+                "Applications: Cost of living index Number"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Concept of Probability and Probability Distribution",
               "topics": [
-                "Sample space and events; probability axioms and properties; Concept of random variable, Addition and Multiplication Theorem, Conditional Probability and Bayes Theorem",
-                "Probability Distributions: Binomial, Poisson and Normal Distribution-properties, mean and variance"
+                "Sample space and events",
+                "Probability axioms and properties",
+                "Concept of random variable",
+                "Addition and Multiplication Theorem",
+                "Conditional Probability and Bayes Theorem",
+                "Probability Distributions: Binomial",
+                "Poisson and Normal Distribution-properties",
+                "Mean and variance"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Sampling Theory and Estimation",
               "topics": [
-                "Concept of Sampling, Methods of Sampling, Types of Sampling, Concept and properties of an estimator, Point and Interval Estimation"
+                "Concept of Sampling",
+                "Methods of Sampling",
+                "Types of Sampling",
+                "Concept and properties of an estimator",
+                "Point and Interval Estimation"
               ]
             }
           ],
@@ -687,7 +905,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Macroeconomics and National Income Accounting",
               "topics": [
-                "The Origin and Roots of Macroeconomics, Need and relevance of Macroeconomics, Scope of the Subject, Macroeconomic concerns and issues, the Role of Government in Macroeconomics, the components of Macroeconomics, methodology of macroeconomics",
+                "The Origin and Roots of Macroeconomics",
+                "Need and relevance of Macroeconomics",
+                "Scope of the Subject",
+                "Macroeconomic concerns and issues",
+                "The Role of Government in Macroeconomics",
+                "The components of Macroeconomics",
+                "Methodology of macroeconomics",
                 "Circular flow of Income",
                 "The Concepts of National income: GDP, GNP, NNP, NNP at factor cost, Personal income, private income and personal disposable income, approaches to calculating GDP, Nominal and real GDP, Green GDP"
               ]
@@ -696,17 +920,27 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Money and Banking",
               "topics": [
-                "Functions of money; quantity theory of money",
-                "Central banking: history, objectives, functions, relevance, performance, tools of monetary policy",
-                "Concept and history of commercial banking - functions, distribution of assets and credit creation"
+                "Functions of money",
+                "Quantity theory of money",
+                "Central banking: history",
+                "Objectives",
+                "Functions",
+                "Relevance",
+                "Performance",
+                "Tools of monetary policy",
+                "Concept and history of commercial banking",
+                "Functions",
+                "Distribution of assets and credit creation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Classical and Keynesian Systems",
               "topics": [
-                "Classical and Keynesian systems; simple classical system of output and employment",
-                "Keynesian model of income determination, concept of multipliers",
+                "Classical and Keynesian systems",
+                "Simple classical system of output and employment",
+                "Keynesian model of income determination",
+                "Concept of multipliers",
                 "Relevance and limitations of Keynesian economics to developing economy"
               ]
             }
@@ -749,9 +983,19 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -770,9 +1014,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -783,9 +1031,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -880,8 +1132,14 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Ordinal Utility Analysis",
               "topics": [
-                "Concept, Assumptions, Tools: Indifference curve and Budget line, income effect, substitution effect and price effect for normal and inferior goods, Slutsky equation and Hicksian Substitution effect",
-                "Revealed preference theory, deriving demand theorem from the Revealed Preference Hypothesis and critical appraisal of Revealed Preference Hypothesis",
+                "Concept",
+                "Assumptions",
+                "Tools: Indifference curve and Budget line",
+                "Income effect",
+                "Substitution effect and price effect for normal and inferior goods",
+                "Slutsky equation and Hicksian Substitution effect",
+                "Revealed preference theory",
+                "Deriving demand theorem from the Revealed Preference Hypothesis and critical appraisal of Revealed Preference Hypothesis",
                 "Revision of Demand Theory: weak and strong ordering",
                 "Recent development in Demand Theory"
               ]
@@ -890,18 +1148,37 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Production, Costs and Revenue Analysis",
               "topics": [
-                "Production with one and more variable inputs; law of variable proportion, returns-to-scale, optimum factor combination, Production possibility curve, elasticity of substitution",
+                "Production with one and more variable inputs",
+                "Law of variable proportion",
+                "Returns-to-scale",
+                "Optimum factor combination",
+                "Production possibility curve",
+                "Elasticity of substitution",
                 "Traditional and Modern approaches to cost",
-                "Behaviour of Cost and Revenue curves under different market conditions, Internal and external economies and diseconomies of scale",
-                "Concept, assumptions, characteristics and types of Production function with examples, estimation and their applications: Homogeneous, Linear Homogenous and Cobb-Douglas Production Function, Production function and technological change"
+                "Behaviour of Cost and Revenue curves under different market conditions",
+                "Internal and external economies and diseconomies of scale",
+                "Concept",
+                "Assumptions",
+                "Characteristics and types of Production function with examples",
+                "Estimation and their applications: Homogeneous",
+                "Linear Homogenous and Cobb-Douglas Production Function",
+                "Production function and technological change"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Perfect Competition and Monopoly",
               "topics": [
-                "Review of perfect competition: features, price and output determination under perfect competition in short and long run, total and marginal approach",
-                "Monopoly: features, conditions for existence of monopoly, price and output determination under monopoly, measurement of the degree of monopoly power, pricing with market power; price discrimination; government policies towards monopoly and competition"
+                "Review of perfect competition: features",
+                "Price and output determination under perfect competition in short and long run",
+                "Total and marginal approach",
+                "Monopoly: features",
+                "Conditions for existence of monopoly",
+                "Price and output determination under monopoly",
+                "Measurement of the degree of monopoly power",
+                "Pricing with market power",
+                "Price discrimination",
+                "Government policies towards monopoly and competition"
               ]
             }
           ],
@@ -927,25 +1204,45 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "The Closed Economy in the Short Run",
               "topics": [
-                "Classical Macroeconomics: Money, prices and interest",
-                "Keynesian system: money, interest and income, IS-LM model, policy effects",
-                "Analysis of Business cycle: phases of business cycle, theories of business cycle: Hawtrey, Keynes, Samuelson, and Hicks"
+                "Classical Macroeconomics: Money",
+                "Prices and interest",
+                "Keynesian system: money",
+                "Interest and income",
+                "IS-LM model",
+                "Policy effects",
+                "Analysis of Business cycle: phases of business cycle",
+                "Theories of business cycle: Hawtrey",
+                "Keynes",
+                "Samuelson, and Hicks"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Inflation, Unemployment and Expectations",
               "topics": [
-                "Inflation its types and causes; cost of inflation, the Fisher effect",
-                "Unemployment: concept, types, measurement and effect on different sections of society, Philips curve, Adaptive and Rational expectation hypothesis, policy implications"
+                "Inflation its types and causes",
+                "Cost of inflation",
+                "The Fisher effect",
+                "Unemployment: concept",
+                "Types",
+                "Measurement and effect on different sections of society",
+                "Philips curve",
+                "Adaptive and Rational expectation hypothesis",
+                "Policy implications"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Open Economy Models",
               "topics": [
-                "Short-run open economy models; Mundell-Fleming Model; exchange rate determination; Purchasing Power Parity; Asset market approach",
-                "Dornbusch's Overshooting Model; monetary approach to balance of payments; international financial markets"
+                "Short-run open economy models",
+                "Mundell-Fleming Model",
+                "Exchange rate determination",
+                "Purchasing Power Parity",
+                "Asset market approach",
+                "Dornbusch's Overshooting Model",
+                "Monetary approach to balance of payments",
+                "International financial markets"
               ]
             }
           ],
@@ -975,35 +1272,62 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Economic Development since Independence",
               "topics": [
-                "Characteristics of Indian Economy, Main features of the economy at independence",
-                "Structural change, growth and development under different policy regimes—goals, constraints, institutions and policy framework",
-                "An assessment of sectoral performance, sustainability and regional contrasts; structural change, trends of savings and investment"
+                "Characteristics of Indian Economy",
+                "Main features of the economy at independence",
+                "Structural change",
+                "Growth and development under different policy regimes—goals",
+                "Constraints",
+                "Institutions and policy framework",
+                "An assessment of sectoral performance",
+                "Sustainability and regional contrasts",
+                "Structural change",
+                "Trends of savings and investment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Indian Agriculture",
               "topics": [
-                "Importance of Agriculture in Indian economy, Problems in Indian Agriculture and their possible solutions, Efforts by the Government for upliftment of Indian Agriculture",
-                "Trends in Agricultural growth and Productivity; Land Reforms; Green and Rainbow Revolution; Agricultural Marketing; Agricultural Price Policy",
-                "Food Security in India, status, prospect and problem of food processing in India"
+                "Importance of Agriculture in Indian economy",
+                "Problems in Indian Agriculture and their possible solutions",
+                "Efforts by the Government for upliftment of Indian Agriculture",
+                "Trends in Agricultural growth and Productivity",
+                "Land Reforms",
+                "Green and Rainbow Revolution",
+                "Agricultural Marketing",
+                "Agricultural Price Policy",
+                "Food Security in India",
+                "Status",
+                "Prospect and problem of food processing in India"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Indian Industry and Services Sector",
               "topics": [
-                "Industrial policies in India since independence, Importance of small scale industries in India, problems, remedies, industrial sickness in India, labour issues and social security",
-                "Services Sector: growth and present state of IT, hospitality and financial sector in India, Fiscal and Financial Sector Reforms in India",
-                "Foreign Trade in India - Composition and Direction"
+                "Industrial policies in India since independence",
+                "Importance of small scale industries in India",
+                "Problems",
+                "Remedies",
+                "Industrial sickness in India",
+                "Labour issues and social security",
+                "Services Sector: growth and present state of IT",
+                "Hospitality and financial sector in India",
+                "Fiscal and Financial Sector Reforms in India",
+                "Foreign Trade in India",
+                "Composition and Direction"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Bihar Economy",
               "topics": [
-                "General features of the economy, performance, major challenges and causes of backwardness in different sectors",
-                "Human Resource Development- Concept and Emerging Issues, Policies for unemployment, Migration- Dimension and its impact",
+                "General features of the economy",
+                "Performance",
+                "Major challenges and causes of backwardness in different sectors",
+                "Human Resource Development- Concept and Emerging Issues",
+                "Policies for unemployment",
+                "Migration- Dimension and its impact",
                 "Policies and Programmes of the State Government for development of different sectors"
               ]
             }
@@ -1033,8 +1357,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Basic Statistics",
               "topics": [
-                "Measures of Central Tendency: Mean, Median Mode, Geometric Mean, Harmonic Mean",
-                "Measures of Dispersion: Mean Deviation, Quartile Deviation, Standard Deviation",
+                "Measures of Central Tendency: Mean",
+                "Median Mode",
+                "Geometric Mean",
+                "Harmonic Mean",
+                "Measures of Dispersion: Mean Deviation",
+                "Quartile Deviation",
+                "Standard Deviation",
                 "Moments, Skewness, Kurtosis, Gini coefficient, Lorenz Curve",
                 "Bivariate Frequency Distribution: Simple Correlation and Linear Regression Analysis"
               ]
@@ -1043,22 +1372,36 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Index Number",
               "topics": [
-                "Concept of Index Number, Laspeyre's Paasche's and Fisher's Ideal Index Number, Tests for Ideal Index Number, Problems in Construction of Index Number, Applications: Cost of living index Number"
+                "Concept of Index Number",
+                "Laspeyre's Paasche's and Fisher's Ideal Index Number",
+                "Tests for Ideal Index Number",
+                "Problems in Construction of Index Number",
+                "Applications: Cost of living index Number"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Concept of Probability and Probability Distribution",
               "topics": [
-                "Sample space and events; probability axioms and properties; Concept of random variable, Addition and Multiplication Theorem, Conditional Probability and Bayes Theorem",
-                "Probability Distributions: Binomial, Poisson and Normal Distribution-properties, mean and variance"
+                "Sample space and events",
+                "Probability axioms and properties",
+                "Concept of random variable",
+                "Addition and Multiplication Theorem",
+                "Conditional Probability and Bayes Theorem",
+                "Probability Distributions: Binomial",
+                "Poisson and Normal Distribution-properties",
+                "Mean and variance"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Sampling Theory and Estimation",
               "topics": [
-                "Concept of Sampling, Methods of Sampling, Types of Sampling, Concept and properties of an estimator, Point and Interval Estimation"
+                "Concept of Sampling",
+                "Methods of Sampling",
+                "Types of Sampling",
+                "Concept and properties of an estimator",
+                "Point and Interval Estimation"
               ]
             }
           ],
@@ -1085,7 +1428,8 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1164,25 +1508,39 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Imperfect Markets",
               "topics": [
-                "Imperfect markets: Common features, price and output determination in monopolistic competition",
-                "Various approaches to price and output determination under Oligopoly-classical models of oligopoly: duopoly Cournot Model, collusive oligopoly: cartel and price leadership, basic idea of kinked demand curve"
+                "Imperfect markets: Common features",
+                "Price and output determination in monopolistic competition",
+                "Various approaches to price and output determination under Oligopoly-classical models of oligopoly: duopoly Cournot Model",
+                "Collusive oligopoly: cartel and price leadership",
+                "Basic idea of kinked demand curve"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Distribution Theory (Pricing of Factors)",
               "topics": [
-                "Concepts of factor productivity, Marginal Revenue Product (MRP) and Value of Marginal Product (VMP), pricing of factors in perfect and imperfect market",
-                "Marginal productivity theory of distribution, Euler's theorem, theories of rent, interest and profit"
+                "Concepts of factor productivity",
+                "Marginal Revenue Product (MRP) and Value of Marginal Product (VMP)",
+                "Pricing of factors in perfect and imperfect market",
+                "Marginal productivity theory of distribution",
+                "Euler's theorem",
+                "Theories of rent",
+                "Interest and profit"
               ]
             },
             {
               "unitNumber": 3,
               "title": "General Equilibrium, Efficiency and Welfare",
               "topics": [
-                "Concept of Partial and General Equilibrium, Welfare concept, Walrasian General Equilibrium",
-                "Concept and conditions of Pareto Optimality, perfect competition and Pareto Optimality",
-                "Externalities in production and consumption, Public Goods, Concept and causes of market failure, correction of market failure"
+                "Concept of Partial and General Equilibrium",
+                "Welfare concept",
+                "Walrasian General Equilibrium",
+                "Concept and conditions of Pareto Optimality",
+                "Perfect competition and Pareto Optimality",
+                "Externalities in production and consumption",
+                "Public Goods",
+                "Concept and causes of market failure",
+                "Correction of market failure"
               ]
             }
           ],
@@ -1211,34 +1569,53 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Public Finance",
               "topics": [
-                "Public Finance: Meaning, Nature, Scope and Importance; difference between Private and Public Finance",
-                "Principle of Maximum Social Advantage; Role of State in Public Finance",
-                "Fiscal functions of State: Allocation, Distribution, Economic Growth and Stabilisation"
+                "Public Finance: Meaning",
+                "Nature",
+                "Scope and Importance",
+                "Difference between Private and Public Finance",
+                "Principle of Maximum Social Advantage",
+                "Role of State in Public Finance",
+                "Fiscal functions of State: Allocation",
+                "Distribution",
+                "Economic Growth and Stabilisation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sources of Revenue",
               "topics": [
-                "Taxes, loans, grants and aid – meaning and types, canons/ principles of taxation, problem of justice in taxes, incidence of taxation, taxable capacity",
-                "Impact of taxation & tax evasion characteristics of Indian tax system, defects & steps of reform"
+                "Taxes, loans, grants and aid",
+                "Meaning and types",
+                "Canons/ principles of taxation",
+                "Problem of justice in taxes",
+                "Incidence of taxation",
+                "Taxable capacity",
+                "Impact of taxation & tax evasion characteristics of Indian tax system",
+                "Defects & steps of reform"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Public Expenditure and Debt",
               "topics": [
-                "Principle of Public Expenditure; Principle of Public Debt and its Methods of Redemption",
-                "Effects of Public Expenditure on Production and Distribution; Public Debt in India"
+                "Principle of Public Expenditure",
+                "Principle of Public Debt and its Methods of Redemption",
+                "Effects of Public Expenditure on Production and Distribution",
+                "Public Debt in India"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Public Finance in India",
               "topics": [
-                "Sources of Revenue of Central Government, State Government and Local Bodies",
-                "Concept and Types of Budget, Fiscal Deficit, Deficit Financing and Deficit Budget",
-                "Financial relation between Central and State; Finance commission; Fiscal Policy"
+                "Sources of Revenue of Central Government",
+                "State Government and Local Bodies",
+                "Concept and Types of Budget",
+                "Fiscal Deficit",
+                "Deficit Financing and Deficit Budget",
+                "Financial relation between Central and State",
+                "Finance commission",
+                "Fiscal Policy"
               ]
             }
           ],
@@ -1271,7 +1648,12 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Ordinal Utility Analysis",
               "topics": [
-                "Concept, Assumptions, Tools: Indifference curve and Budget line, income effect, substitution effect and price effect for normal and inferior goods, Slutsky Equation and Hicksian Substitution Effect",
+                "Concept",
+                "Assumptions",
+                "Tools: Indifference curve and Budget line",
+                "Income effect",
+                "Substitution effect and price effect for normal and inferior goods",
+                "Slutsky Equation and Hicksian Substitution Effect",
                 "Revealed preference theory"
               ]
             },
@@ -1279,18 +1661,30 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Production, Costs and Revenue Analysis",
               "topics": [
-                "Production with one and more variable inputs; law of variable proportion, returns to scale, optimum factor combination, Production possibility curve, elasticity of substitution",
+                "Production with one and more variable inputs",
+                "Law of variable proportion",
+                "Returns to scale",
+                "Optimum factor combination",
+                "Production possibility curve",
+                "Elasticity of substitution",
                 "Traditional and Modern approaches to cost",
-                "Behaviour of Cost and Revenue curves under different market conditions, Internal and external economies and diseconomies of scale",
-                "Concept, assumptions and characteristics of different types of Production function: Linear and Cobb-Douglas Production Function"
+                "Behaviour of Cost and Revenue curves under different market conditions",
+                "Internal and external economies and diseconomies of scale",
+                "Concept",
+                "Assumptions and characteristics of different types of Production function: Linear and Cobb-Douglas Production Function"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Perfect Competition and Monopoly",
               "topics": [
-                "Review of perfect competition: features, price and output determination under perfect competition in short and long run, total and marginal approach",
-                "Monopoly: features, conditions for existence of monopoly, price and output determination under monopoly, price discrimination"
+                "Review of perfect competition: features",
+                "Price and output determination under perfect competition in short and long run",
+                "Total and marginal approach",
+                "Monopoly: features",
+                "Conditions for existence of monopoly",
+                "Price and output determination under monopoly",
+                "Price discrimination"
               ]
             }
           ],
@@ -1316,25 +1710,39 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "The Closed Economy Macroeconomics",
               "topics": [
-                "Classical Macroeconomics: Money, prices and interest",
-                "Keynesian system: money, interest and income, IS-LM model, policy effects",
-                "Analysis of Business cycle: phases of business cycle, theories of business cycle: Hawtrey, Keynes, Samuelson, and Hicks"
+                "Classical Macroeconomics: Money",
+                "Prices and interest",
+                "Keynesian system: money",
+                "Interest and income",
+                "IS-LM model",
+                "Policy effects",
+                "Analysis of Business cycle: phases of business cycle",
+                "Theories of business cycle: Hawtrey",
+                "Keynes",
+                "Samuelson, and Hicks"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Inflation, Unemployment and Expectations",
               "topics": [
-                "Inflation its types and causes; cost of inflation",
-                "Unemployment: concept, types, measurement and effect on different sections of society, Philips curve, policy implications"
+                "Inflation its types and causes",
+                "Cost of inflation",
+                "Unemployment: concept",
+                "Types",
+                "Measurement and effect on different sections of society",
+                "Philips curve",
+                "Policy implications"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Open Economy Macroeconomics",
               "topics": [
-                "Short-run open economy models; Mundell-Fleming Model",
-                "Exchange Rate concept, types and theories of determination"
+                "Short-run open economy models",
+                "Mundell-Fleming Model",
+                "Exchange Rate concept",
+                "Types and theories of determination"
               ]
             }
           ],
@@ -1383,24 +1791,46 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature and scope of International Economics, trade surpluses and deficits, the economic basis of trade, terms of trade, Gains from trade",
-                "Instruments of trade policy and their impact on international trade, trade barriers (quantitative and qualitative): tariffs, subsidies and quotas, free trade vs. protection: case for free trade, case for protection"
+                "Nature and scope of International Economics",
+                "Trade surpluses and deficits",
+                "The economic basis of trade",
+                "Terms of trade",
+                "Gains from trade",
+                "Instruments of trade policy and their impact on international trade",
+                "Trade barriers (quantitative and qualitative): tariffs",
+                "Subsidies and quotas",
+                "Free trade vs. protection: case for free trade",
+                "Case for protection"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Theories of International Trade",
               "topics": [
-                "Absolute and Comparative advantage, Opportunity cost theory, Ricardian and Heckscher-Ohlin Model",
-                "Leontief's Paradox, Immiserising Growth and the Transfer Problem"
+                "Absolute and Comparative advantage",
+                "Opportunity cost theory",
+                "Ricardian and Heckscher-Ohlin Model",
+                "Leontief's Paradox",
+                "Immiserising Growth and the Transfer Problem"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Exchange rate and BoP",
               "topics": [
-                "Concept and types of Exchange rate, Theories of Exchange rate determination, fixed vs. flexible exchange rate, factors affecting exchange rate, impact of exchange rate on economy, market for foreign exchange",
-                "Review of Balance of Payment (BoP) accounting, components of BoP: current and capital account, Disequilibrium of BoP: causes and methods of correction, Adjustment mechanisms, Internal and external balance, Elasticity, Absorption and Monetary Approach to BoP"
+                "Concept and types of Exchange rate",
+                "Theories of Exchange rate determination",
+                "Fixed vs. flexible exchange rate",
+                "Factors affecting exchange rate",
+                "Impact of exchange rate on economy",
+                "Market for foreign exchange",
+                "Review of Balance of Payment (BoP) accounting",
+                "Components of BoP: current and capital account",
+                "Disequilibrium of BoP: causes and methods of correction",
+                "Adjustment mechanisms",
+                "Internal and external balance",
+                "Elasticity",
+                "Absorption and Monetary Approach to BoP"
               ]
             },
             {
@@ -1442,9 +1872,13 @@ export const economicsSyllabus: CourseSyllabus = {
               "title": "Issues in Indian Economic Policy",
               "topics": [
                 "Human resource development: Education and Health",
-                "Population growth and Economic development, Demographic trends and issues, Demographic dividend",
-                "Unemployment, Poverty and Inequality",
-                "Macroeconomic stabilization: Trade, Fiscal and Monetary policy",
+                "Population growth and Economic development",
+                "Demographic trends and issues",
+                "Demographic dividend",
+                "Unemployment",
+                "Poverty and Inequality",
+                "Macroeconomic stabilization: Trade",
+                "Fiscal and Monetary policy",
                 "Infrastructure development in India",
                 "Environmental issues in India"
               ]
@@ -1453,8 +1887,11 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "India's Foreign Trade",
               "topics": [
-                "Volume and Trend of Foreign Trade in India, EXIM Policy assessment",
-                "India's balance of payment, Globalisation and its impact on Indian Economy, WTO and India"
+                "Volume and Trend of Foreign Trade in India",
+                "EXIM Policy assessment",
+                "India's balance of payment",
+                "Globalisation and its impact on Indian Economy",
+                "WTO and India"
               ]
             }
           ],
@@ -1493,9 +1930,15 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Growth and Development",
               "topics": [
-                "Concept of Economic Growth, Economic Development, Economic Progress and Economic Welfare",
-                "Measurement of Economic Growth, Factors of Growth, Historical experience of development (Stages of Growth; late industrialization; structural analysis)",
-                "Poverty and inequality (conceptual issues and measurement); capabilities and entitlements, policies for poverty reduction",
+                "Concept of Economic Growth",
+                "Economic Development",
+                "Economic Progress and Economic Welfare",
+                "Measurement of Economic Growth",
+                "Factors of Growth",
+                "Historical experience of development (Stages of Growth; late industrialization; structural analysis)",
+                "Poverty and inequality (conceptual issues and measurement)",
+                "Capabilities and entitlements",
+                "Policies for poverty reduction",
                 "State and the market (market failure; government failure; conflict versus complementarity)"
               ]
             },
@@ -1505,14 +1948,18 @@ export const economicsSyllabus: CourseSyllabus = {
               "topics": [
                 "Capital and technical progress (role of capital, capital output ratio; resource allocation; level and pattern of capital formation; pattern of technical progress; technology and unemployment; obsolescence, choice of techniques)",
                 "Labour and employment issue (population growth; demographic transition; human resource development; surplus labour, open and disguised unemployment; informal sector; rural-urban migration)",
-                "The Environment and Sustainable development; Non-Renewable resources"
+                "The Environment and Sustainable development",
+                "Non-Renewable resources"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Theories of Growth and Development",
               "topics": [
-                "Balanced and Unbalanced Growth, Big Push Theory, Harrod-Domar Model, Kaldor's Model of Growth"
+                "Balanced and Unbalanced Growth",
+                "Big Push Theory",
+                "Harrod-Domar Model",
+                "Kaldor's Model of Growth"
               ]
             }
           ],
@@ -1540,25 +1987,46 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Economic Development since Independence",
               "topics": [
-                "Characteristics of Indian Economy, Main features of the economy at independence",
-                "Structural change, growth and development under different policy regimes—goals, constraints, institutions and policy framework; an assessment of sectoral performance, sustainability and regional contrasts; structural change, trends of savings and investment"
+                "Characteristics of Indian Economy",
+                "Main features of the economy at independence",
+                "Structural change",
+                "Growth and development under different policy regimes—goals",
+                "Constraints",
+                "Institutions and policy framework",
+                "An assessment of sectoral performance",
+                "Sustainability and regional contrasts",
+                "Structural change",
+                "Trends of savings and investment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Indian Agriculture, Industry and Service Sector",
               "topics": [
-                "Importance of Agriculture in Indian economy, Problems in Indian Agriculture and their possible solutions, Efforts by the Government for upliftment of Indian Agriculture, Land Reforms; Green and Rainbow Revolution",
-                "Industrial policies in India since independence, Importance of small scale industries in India, problems, remedies, industrial sickness in India",
-                "Services Sector: growth and Present status, Foreign Trade in India - Composition and Direction"
+                "Importance of Agriculture in Indian economy",
+                "Problems in Indian Agriculture and their possible solutions",
+                "Efforts by the Government for upliftment of Indian Agriculture",
+                "Land Reforms",
+                "Green and Rainbow Revolution",
+                "Industrial policies in India since independence",
+                "Importance of small scale industries in India",
+                "Problems",
+                "Remedies",
+                "Industrial sickness in India",
+                "Services Sector: growth and Present status",
+                "Foreign Trade in India",
+                "Composition and Direction"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Bihar Economy",
               "topics": [
-                "Demographic features, Poverty and Unemployment",
-                "Growth and problems of Farm sector, Development of Industrial sector, Major policy initiatives for development"
+                "Demographic features",
+                "Poverty and Unemployment",
+                "Growth and problems of Farm sector",
+                "Development of Industrial sector",
+                "Major policy initiatives for development"
               ]
             }
           ],
@@ -1585,25 +2053,39 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Imperfect Markets",
               "topics": [
-                "Imperfect markets: Common features, price and output determination in monopolistic competition",
-                "Various approaches to price and output determination under Oligopoly-classical models of oligopoly: duopoly Cournot Model, collusive oligopoly: cartel and price leadership, basic idea of kinked demand curve"
+                "Imperfect markets: Common features",
+                "Price and output determination in monopolistic competition",
+                "Various approaches to price and output determination under Oligopoly-classical models of oligopoly: duopoly Cournot Model",
+                "Collusive oligopoly: cartel and price leadership",
+                "Basic idea of kinked demand curve"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Distribution Theory (Pricing of Factors)",
               "topics": [
-                "Concepts of factor productivity, Marginal Revenue Product (MRP) and Value of Marginal Product (VMP), pricing of factors in perfect and imperfect market",
-                "Marginal productivity theory of distribution, Euler's theorem, theories of rent, interest and profit"
+                "Concepts of factor productivity",
+                "Marginal Revenue Product (MRP) and Value of Marginal Product (VMP)",
+                "Pricing of factors in perfect and imperfect market",
+                "Marginal productivity theory of distribution",
+                "Euler's theorem",
+                "Theories of rent",
+                "Interest and profit"
               ]
             },
             {
               "unitNumber": 3,
               "title": "General Equilibrium, Efficiency and Welfare",
               "topics": [
-                "Concept of Partial and General Equilibrium, Welfare concept, Walrasian General Equilibrium",
-                "Concept and conditions of Pareto Optimality, perfect competition and Pareto Optimality",
-                "Externalities in production and consumption, Public Goods, Concept and causes of market failure, correction of market failure"
+                "Concept of Partial and General Equilibrium",
+                "Welfare concept",
+                "Walrasian General Equilibrium",
+                "Concept and conditions of Pareto Optimality",
+                "Perfect competition and Pareto Optimality",
+                "Externalities in production and consumption",
+                "Public Goods",
+                "Concept and causes of market failure",
+                "Correction of market failure"
               ]
             }
           ],
@@ -1637,7 +2119,9 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Integration",
               "topics": [
-                "Concept and Methods of Integration – Integration by Substitution, Integration by Transformation & Integration by Parts",
+                "Concept and Methods of Integration",
+                "Integration by Substitution",
+                "Integration by Transformation & Integration by Parts",
                 "Application of Integration in Economics"
               ]
             },
@@ -1645,34 +2129,58 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Functions of Several real Variables",
               "topics": [
-                "Technique of Partial Differentiation; Second Order Partial Derivatives; Cross Partial Derivatives; Applications of Partial Derivatives in Demand, Utility and Production Analysis",
-                "Technique of Total Differentials; Second order Total Differentials; Derivatives of Implicit Functions"
+                "Technique of Partial Differentiation",
+                "Second Order Partial Derivatives",
+                "Cross Partial Derivatives",
+                "Applications of Partial Derivatives in Demand",
+                "Utility and Production Analysis",
+                "Technique of Total Differentials",
+                "Second order Total Differentials",
+                "Derivatives of Implicit Functions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Multi-Variable Optimization",
               "topics": [
-                "Maxima and Minima of a Function of two or more than two Variables – Hessian Determinants",
-                "Unconstrained Optimization and Constrained Optimization with Equality Constraints – Use of Lagrange Multiplier",
-                "Applications of Unconstrained and Constrained Optimization in Economics – Equilibrium of Firm under Pure Competition"
+                "Maxima and Minima of a Function of two or more than two Variables",
+                "Hessian Determinants",
+                "Unconstrained Optimization and Constrained Optimization with Equality Constraints",
+                "Use of Lagrange Multiplier",
+                "Applications of Unconstrained and Constrained Optimization in Economics",
+                "Equilibrium of Firm under Pure Competition"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Linear Algebra",
               "topics": [
-                "Basic Concepts of Vector, Types of Vector, Addition of Vectors, Scalar Product of Two Vectors",
-                "Matrix and Determinants: Types of Matrices, Addition and Subtraction of Matrices, Multiplication of two Matrices, Transpose and Inverse of a Matrix, Rank of a matrix, Determinant and its Properties, Solution of Simultaneous Equation Models"
+                "Basic Concepts of Vector",
+                "Types of Vector",
+                "Addition of Vectors",
+                "Scalar Product of Two Vectors",
+                "Matrix and Determinants: Types of Matrices",
+                "Addition and Subtraction of Matrices",
+                "Multiplication of two Matrices",
+                "Transpose and Inverse of a Matrix",
+                "Rank of a matrix",
+                "Determinant and its Properties",
+                "Solution of Simultaneous Equation Models"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Linear Programming, Input Output Model and Game Theory",
               "topics": [
-                "Introduction to linear programming, formulation of linear programming problem, concept of duality, solution of linear programming trough graphical method",
+                "Introduction to linear programming",
+                "Formulation of linear programming problem",
+                "Concept of duality",
+                "Solution of linear programming trough graphical method",
                 "Input-output analysis-meaning and basic concept",
-                "Game theory-concepts, strategies-dominant strategy, saddle point, zero-sum game"
+                "Game theory-concepts",
+                "Strategies-dominant strategy",
+                "Saddle point",
+                "Zero-sum game"
               ]
             },
             {
@@ -1714,9 +2222,14 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Money",
               "topics": [
-                "Money: Kinds, Functions and Significance, Monetary Standards: Metallic Standard, Gold Standard and Paper Standard",
-                "Value of money, Measurement of changes in the value of money",
-                "Demand for Money: The Classical Approach, Keynesian Approach",
+                "Money: Kinds",
+                "Functions and Significance",
+                "Monetary Standards: Metallic Standard",
+                "Gold Standard and Paper Standard",
+                "Value of money",
+                "Measurement of changes in the value of money",
+                "Demand for Money: The Classical Approach",
+                "Keynesian Approach",
                 "Supply of Money: Definitions—Determinants of Money Supply—High Powered Money and Money Multiplier—Indian Currency system"
               ]
             },
@@ -1724,33 +2237,54 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Financial Institutions, Markets, Instruments and Financial Innovations",
               "topics": [
-                "Role of financial markets and institutions; problem of asymmetric information—adverse selection and moral hazard; financial crises",
-                "Money and capital markets: organization, structure and reforms in India; role of financial derivatives and other innovations"
+                "Role of financial markets and institutions",
+                "Problem of asymmetric information—adverse selection and moral hazard",
+                "Financial crises",
+                "Money and capital markets: organization",
+                "Structure and reforms in India",
+                "Role of financial derivatives and other innovations"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Interest Rates",
               "topics": [
-                "Determination; sources of interest rate differentials",
-                "Theories of term structure of interest rates; interest rates in India"
+                "Determination",
+                "Sources of interest rate differentials",
+                "Theories of term structure of interest rates",
+                "Interest rates in India"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Banking System",
               "topics": [
-                "Commercial banking: Nature; structure; functions: The process of credit creation-purpose and limitations",
-                "Pre-requisites of a sound commercial banking system; Liabilities and assets of Banks",
-                "ATM - Internet Banking - Core banking; A Critical Appraisal of the Progress of Commercial Banking after Nationalization; Recent Reforms in Banking Sector in India"
+                "Commercial banking: Nature",
+                "Structure",
+                "Functions: The process of credit creation-purpose and limitations",
+                "Pre-requisites of a sound commercial banking system",
+                "Liabilities and assets of Banks",
+                "ATM",
+                "Internet Banking",
+                "Core banking",
+                "A Critical Appraisal of the Progress of Commercial Banking after Nationalization",
+                "Recent Reforms in Banking Sector in India"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Central Banking and Monetary Policy",
               "topics": [
-                "Role of central banks in developed and developing countries; Functions of a central bank; Role and functions of the Reserve Bank of India",
-                "Methods of credit control: Quantitative- bank rate, repo rate, open market operations, variable reserve ratio and selective methods; Objectives and limitations of monetary policy; NPA's, Recent changes in monetary policy of India"
+                "Role of central banks in developed and developing countries",
+                "Functions of a central bank",
+                "Role and functions of the Reserve Bank of India",
+                "Methods of credit control: Quantitative- bank rate",
+                "Repo rate",
+                "Open market operations",
+                "Variable reserve ratio and selective methods",
+                "Objectives and limitations of monetary policy",
+                "NPA's",
+                "Recent changes in monetary policy of India"
               ]
             }
           ],
@@ -1837,16 +2371,27 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Public Finance",
               "topics": [
-                "Public Finance: Meaning, Nature, Scope and Importance; difference between Private and Public Finance",
-                "Principle of Maximum Social Advantage; Role of State in Public Finance",
-                "Fiscal functions of State: Allocation, Distribution, Economic Growth and Stabilisation"
+                "Public Finance: Meaning",
+                "Nature",
+                "Scope and Importance",
+                "Difference between Private and Public Finance",
+                "Principle of Maximum Social Advantage",
+                "Role of State in Public Finance",
+                "Fiscal functions of State: Allocation",
+                "Distribution",
+                "Economic Growth and Stabilisation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sources of Revenue",
               "topics": [
-                "Taxes, loans, grants and aid – meaning and types, canons/ principles of taxation, problem of justice in taxes, incidence of taxation, taxable capacity",
+                "Taxes, loans, grants and aid",
+                "Meaning and types",
+                "Canons/ principles of taxation",
+                "Problem of justice in taxes",
+                "Incidence of taxation",
+                "Taxable capacity",
                 "Characteristics of Indian tax system"
               ]
             },
@@ -1854,17 +2399,24 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Public Expenditure and Debt",
               "topics": [
-                "Principle of Public Expenditure; Principle of Public Debt and its Methods of Redemption",
-                "Effects of Public Expenditure on Production and Distribution; Public Debt in India"
+                "Principle of Public Expenditure",
+                "Principle of Public Debt and its Methods of Redemption",
+                "Effects of Public Expenditure on Production and Distribution",
+                "Public Debt in India"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Public Finance in India",
               "topics": [
-                "Sources of Revenue of Central Government, State Government and Local Bodies",
-                "Concept and Types of Budget, Fiscal Deficit, Deficit Financing and Deficit Budget",
-                "Financial relation between Central and State; Finance commission; Fiscal Policy"
+                "Sources of Revenue of Central Government",
+                "State Government and Local Bodies",
+                "Concept and Types of Budget",
+                "Fiscal Deficit",
+                "Deficit Financing and Deficit Budget",
+                "Financial relation between Central and State",
+                "Finance commission",
+                "Fiscal Policy"
               ]
             }
           ],
@@ -1916,30 +2468,46 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Role of Health, Hygiene and Education in Human Resource Development",
               "topics": [
-                "Importance in poverty alleviation; health and education outcomes and their relationship with macroeconomic performance, Importance of Hygiene"
+                "Importance in poverty alleviation",
+                "Health and education outcomes and their relationship with macroeconomic performance",
+                "Importance of Hygiene"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Microeconomic Foundations of Health Economics",
               "topics": [
-                "Demand for health; uncertainty and health insurance market; alternative insurance mechanisms; market failure and rationale for public intervention; equity and inequality",
-                "Costing, cost effectiveness and cost-benefit analysis; burden of disease"
+                "Demand for health",
+                "Uncertainty and health insurance market",
+                "Alternative insurance mechanisms",
+                "Market failure and rationale for public intervention",
+                "Equity and inequality",
+                "Costing",
+                "Cost effectiveness and cost-benefit analysis",
+                "Burden of disease"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Health Sector in India: An Overview",
               "topics": [
-                "Health outcomes; health systems; health financing, Mental Health in India: Concept and issues"
+                "Health outcomes",
+                "Health systems",
+                "Health financing",
+                "Mental Health in India: Concept and issues"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Education Sector in India: An Overview",
               "topics": [
-                "Literacy rates, school participation, school quality measures",
-                "Rate of return to education: private and social; quality of education; signaling or human capital; theories of discrimination"
+                "Literacy rates",
+                "School participation",
+                "School quality measures",
+                "Rate of return to education: private and social",
+                "Quality of education",
+                "Signaling or human capital",
+                "Theories of discrimination"
               ]
             }
           ],
@@ -1965,24 +2533,46 @@ export const economicsSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature and scope of International Economics, trade surpluses and deficits, the economic basis of trade, terms of trade, Gains from trade",
-                "Instruments of trade policy and their impact on international trade, trade barriers (quantitative and qualitative): tariffs, subsidies and quotas, free trade vs. protection: case for free trade, case for protection"
+                "Nature and scope of International Economics",
+                "Trade surpluses and deficits",
+                "The economic basis of trade",
+                "Terms of trade",
+                "Gains from trade",
+                "Instruments of trade policy and their impact on international trade",
+                "Trade barriers (quantitative and qualitative): tariffs",
+                "Subsidies and quotas",
+                "Free trade vs. protection: case for free trade",
+                "Case for protection"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Theories of International Trade",
               "topics": [
-                "Absolute and Comparative advantage, Opportunity cost theory, Ricardian and Heckscher-Ohlin Model",
-                "Leontief's Paradox, Immiserising Growth and the Transfer Problem"
+                "Absolute and Comparative advantage",
+                "Opportunity cost theory",
+                "Ricardian and Heckscher-Ohlin Model",
+                "Leontief's Paradox",
+                "Immiserising Growth and the Transfer Problem"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Exchange rate and BoP",
               "topics": [
-                "Concept and types of Exchange rate, Theories of Exchange rate determination, fixed vs. flexible exchange rate, factors affecting exchange rate, impact of exchange rate on economy, market for foreign exchange",
-                "Review of Balance of Payment (BoP) accounting, components of BoP: current and capital account, Disequilibrium of BoP: causes and methods of correction, Adjustment mechanisms, Internal and external balance, Elasticity, Absorption and Monetary Approach to BoP"
+                "Concept and types of Exchange rate",
+                "Theories of Exchange rate determination",
+                "Fixed vs. flexible exchange rate",
+                "Factors affecting exchange rate",
+                "Impact of exchange rate on economy",
+                "Market for foreign exchange",
+                "Review of Balance of Payment (BoP) accounting",
+                "Components of BoP: current and capital account",
+                "Disequilibrium of BoP: causes and methods of correction",
+                "Adjustment mechanisms",
+                "Internal and external balance",
+                "Elasticity",
+                "Absorption and Monetary Approach to BoP"
               ]
             },
             {

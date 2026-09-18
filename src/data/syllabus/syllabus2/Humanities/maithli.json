@@ -86,10 +86,14 @@
               "unitNumber": 6,
               "title": "आदिकाल एवं मध्यकालक स्थिति",
               "topics": [
-                "आदिकालक सामाजिक, सांस्कृतिक स्थिति",
-                "आदिकालक धार्मिक, आर्थिक स्थिति",
-                "मध्यकालक सामाजिक, सांस्कृतिक स्थिति",
-                "मध्यकालक धार्मिक, आर्थिक स्थिति"
+                "आदिकालक सामाजिक",
+                "सांस्कृतिक स्थिति",
+                "आदिकालक धार्मिक",
+                "आर्थिक स्थिति",
+                "मध्यकालक सामाजिक",
+                "सांस्कृतिक स्थिति",
+                "मध्यकालक धार्मिक",
+                "आर्थिक स्थिति"
               ]
             }
           ],
@@ -209,7 +213,8 @@
               "title": "मैथिली लोक नाट्यक प्रभेद एवं वैशिष्ट्य",
               "topics": [
                 "मैथिली लोक नाट्यक प्रभेद एवं वैशिष्ट्य",
-                "मिशिलाक लोकदेव, लोकदेवीक विवेचन",
+                "मिशिलाक लोकदेव",
+                "लोकदेवीक विवेचन",
                 "लोकोकित"
               ]
             },
@@ -217,7 +222,10 @@
               "unitNumber": 4,
               "title": "'लोरिक विजय' उपन्यासक कथावस्तु",
               "topics": [
-                "'लोरिक विजय' उपन्यासक कथावस्तु, चरित्र-चित्रण, भाषा-शैली, उपन्यासकारक परिचय",
+                "'लोरिक विजय' उपन्यासक कथावस्तु",
+                "चरित्र-चित्रण",
+                "भाषा-शैली",
+                "उपन्यासकारक परिचय",
                 "मिशिला लोक कथा संचय (पाद्यांश-रम्य एवं हास्य-व्यंग्य कथा) कथावस्तु एवं वैशिष्ट्य"
               ]
             }
@@ -254,14 +262,17 @@
               "title": "लोकदेव-लोकदेवीक विवेचन",
               "topics": [
                 "मैथिली लोक साहित्यमे लोकदेव-लोकदेवीक विवेचन",
-                "लोरिक विजय उपन्यासक कथावस्तु, चरित्र-चित्रण, भाषा-शैली उपन्यासकारक परिचय"
+                "लोरिक विजय उपन्यासक कथावस्तु",
+                "चरित्र-चित्रण",
+                "भाषा-शैली उपन्यासकारक परिचय"
               ]
             },
             {
               "unitNumber": 3,
               "title": "मेधिली लोक नाट्य",
               "topics": [
-                "मेधिली लोक नाट्य, जट-जटिनक विविध पक्ष",
+                "मेधिली लोक नाट्य",
+                "जट-जटिनक विविध पक्ष",
                 "लोकोवित्त ओ फकड़ाइ"
               ]
             },
@@ -269,7 +280,9 @@
               "unitNumber": 4,
               "title": "लोक साहित्यक क्षेत्रमे अवदान",
               "topics": [
-                "मणिपद्म, अणिमा सिंह, प्रपूलल कुमार सिंह 'गौन' ओ विश्वेश्वर निष्कल लोक साहित्यक क्षेत्रमे अवदान"
+                "मणिपद्म",
+                "अणिमा सिंह",
+                "प्रपूलल कुमार सिंह 'गौन' ओ विश्वेश्वर निष्कल लोक साहित्यक क्षेत्रमे अवदान"
               ]
             }
           ],
@@ -293,14 +306,17 @@
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development."
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession.",
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
                 "Case studies of the following ecosystems: a) Forest ecosystem b) Grassland ecosystem c) Desert ecosystem d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
@@ -308,30 +324,65 @@
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification.",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations.",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems.",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity.",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots.",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions.",
-                "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity.",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value."
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
+                "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
-                "Solid waste management: Control measures of urban and industrial waste.",
+                "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
               ]
             },
@@ -339,22 +390,39 @@
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act. International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD).",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context."
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
+                "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare.",
-                "Resettlement and rehabilitation of project affected persons; case studies.",
-                "Disaster management: floods, earthquake, cyclones and landslides.",
-                "Water conservation, rain water harvesting, watershed management.",
-                "Wasteland reclamation.",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan.",
-                "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation."
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
+                "Wasteland reclamation",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
+                "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
           ],
@@ -461,23 +529,28 @@
               "unitNumber": 3,
               "title": "मैथिली कथाक विस्तार, भाषा-शैली एवं समाज",
               "topics": [
-                "मैथिली कथाक विस्तार, भाषा-शैली एवं समाज",
+                "मैथिली कथाक विस्तार",
+                "भाषा-शैली एवं समाज",
                 "पाँच पत्र, मधुरमनि, रूसल जमाय, सामाक पौती, ओवरलोड, सांझक गाछ, भात, गनुकसंतान, अगुरबान,पिता, इंकलाब",
-                "निर्धारित ग्रन्थः कथा संग्रह, मैथिली अकादमी, पटना"
+                "निर्धारित ग्रन्थः कथा संग्रह",
+                "मैथिली अकादमी",
+                "पटना"
               ]
             },
             {
               "unitNumber": 4,
               "title": "लिली रेक कथा संग्रह- रंगीन परदा",
               "topics": [
-                "लिली रेक कथा संग्रह- रंगीन परदा, आरंभसँ पांच कथा"
+                "लिली रेक कथा संग्रह- रंगीन परदा",
+                "आरंभसँ पांच कथा"
               ]
             },
             {
               "unitNumber": 5,
               "title": "विभूति आनन्दक कथा संग्रह -काठ",
               "topics": [
-                "विभूति आनन्दक कथा संग्रह -काठ, आरंभसँ पांच कथा"
+                "विभूति आनन्दक कथा संग्रह -काठ",
+                "आरंभसँ पांच कथा"
               ]
             },
             {
@@ -513,7 +586,8 @@
               "title": "विद्यापतिक जीवन औ साहित्य",
               "topics": [
                 "विद्यापतिक जीवन औ साहित्य",
-                "विद्यापतिक पदमे ग्रसित ठौ, शृंगार भावना"
+                "विद्यापतिक पदमे ग्रसित ठौ",
+                "शृंगार भावना"
               ]
             },
             {
@@ -616,7 +690,8 @@
               "unitNumber": 1,
               "title": "मैथिली उपन्यासक परिभाषा, तत्व आ विकासक्रम",
               "topics": [
-                "मैथिली उपन्यासक परिभाषा, तत्व आ विकासक्रम"
+                "मैथिली उपन्यासक परिभाषा",
+                "तत्व आ विकासक्रम"
               ]
             },
             {
@@ -690,7 +765,9 @@
               "title": "मैथिली एकांकीक परिमाप्ता आ विकास यात्रा",
               "topics": [
                 "मैथिली एकांकीक परिमाप्ता आ विकास यात्रा",
-                "निर्धारित ग्रन्थ : एकांकी संग्रह, मैथिली अकादमी, पटना"
+                "निर्धारित ग्रन्थ : एकांकी संग्रह",
+                "मैथिली अकादमी",
+                "पटना"
               ]
             },
             {
@@ -714,7 +791,10 @@
               "title": "महेन्द्र मलंभिया ओ ओकरा आंगनक बारहमासा",
               "topics": [
                 "महेन्द्र मलंभिया ओ ओकरा आंगनक बारहमासा",
-                "परिचय, नाट्यवस्तु, चरित्र चित्रण, शिल्प एवं सामाजिक स्थिति"
+                "परिचय",
+                "नाट्यवस्तु",
+                "चरित्र चित्रण",
+                "शिल्प एवं सामाजिक स्थिति"
               ]
             },
             {
@@ -745,7 +825,8 @@
               "unitNumber": 1,
               "title": "आधुनिक मैथिली कविताक पृष्ठभूमि, प्रवृति एवं विकास-यात्रा",
               "topics": [
-                "आधुनिक मैथिली कविताक पृष्ठभूमि, प्रवृति एवं विकास-यात्रा"
+                "आधुनिक मैथिली कविताक पृष्ठभूमि",
+                "प्रवृति एवं विकास-यात्रा"
               ]
             },
             {
@@ -753,7 +834,9 @@
               "title": "चन्दा झा सैं सुरेन्द्र झा सुमन धरि मैथिली कविताक काव्य-सौन्दर्य",
               "topics": [
                 "चन्दा झा सैं सुरेन्द्र झा सुमन धरि मैथिली कविताक काव्य-सौन्दर्य",
-                "निर्धारित ग्रन्थ : कविता संग्रह, मैथिली अकादमी, पटना"
+                "निर्धारित ग्रन्थ : कविता संग्रह",
+                "मैथिली अकादमी",
+                "पटना"
               ]
             },
             {
@@ -761,7 +844,9 @@
               "title": "यात्री सैं सुकान्त सोम धरिक मैथिली कविताक काव्य-सौन्दर्य",
               "topics": [
                 "यात्री सैं सुकान्त सोम धरिक मैथिली कविताक काव्य-सौन्दर्य",
-                "निर्धारित ग्रन्थ : समकालीन मैथिली कविता, साहित्य अकादमी, दिल्ली"
+                "निर्धारित ग्रन्थ : समकालीन मैथिली कविता",
+                "साहित्य अकादमी",
+                "दिल्ली"
               ]
             },
             {
@@ -811,7 +896,8 @@
               "unitNumber": 1,
               "title": "मैथिली उपन्यासक परिभाषा, तत्व आ विकासक्रम",
               "topics": [
-                "मैथिली उपन्यासक परिभाषा, तत्व आ विकासक्रम"
+                "मैथिली उपन्यासक परिभाषा",
+                "तत्व आ विकासक्रम"
               ]
             },
             {
@@ -868,7 +954,9 @@
               "title": "मैथिली एकांकीक परिभाषा आ विकास यात्रा",
               "topics": [
                 "मैथिली एकांकीक परिभाषा आ विकास यात्रा",
-                "निर्धारित ग्रन्थ : एकांकी संग्रह, मैथिली अकादमी, पटना"
+                "निर्धारित ग्रन्थ : एकांकी संग्रह",
+                "मैथिली अकादमी",
+                "पटना"
               ]
             },
             {
@@ -876,7 +964,8 @@
               "title": "सावित्री-सत्यवान - लालदास",
               "topics": [
                 "परिचय, कथावस्तु, चरित्र चित्रण, शिल्प",
-                "सावित्री-सत्यवान - लालदास"
+                "सावित्री-सत्यवान",
+                "लालदास"
               ]
             },
             {
@@ -911,29 +1000,36 @@
               "unitNumber": 1,
               "title": "aayunin ke mihlalit kivitaak pyudhulim, pyulit pe nvakas-yaa.",
               "topics": [
-                "aayunin ke mihlalit kivitaak pyudhulim, pyulit pe nvakas-yaa."
+                "Aayunin ke mihlalit kivitaak pyudhulim",
+                "Pyulit pe nvakas-yaa"
               ]
             },
             {
               "unitNumber": 2,
               "title": "chn dhaa sri sriye dhaa upun bhri mihlalit kivitaak kala- sriindr",
               "topics": [
-                "chn dhaa sri sriye dhaa upun bhri mihlalit kivitaak kala- sriindr",
-                "nihalirit jnay : kivita sraja, mihlalit akadmi, pt ona"
+                "Chn dhaa sri sriye dhaa upun bhri mihlalit kivitaak kala- sriindr",
+                "Nihalirit jnay : kivita sraja",
+                "Mihlalit akadmi",
+                "Pt ona"
               ]
             },
             {
               "unitNumber": 3,
               "title": "daha kavd de maha kiv - vyaan dhrir, aaramsit 10 ta maa",
               "topics": [
-                "daha kavd de maha kiv - vyaan dhrir, aaramsit 10 ta maa"
+                "Daha kavd de maha kiv",
+                "Vyaan dhrir",
+                "Aaramsit 10 ta maa"
               ]
             },
             {
               "unitNumber": 4,
               "title": "rtae ta nih - acroham sri, aaramsit 10 maa",
               "topics": [
-                "rtae ta nih - acroham sri, aaramsit 10 maa"
+                "Rtae ta nih",
+                "Acroham sri",
+                "Aaramsit 10 maa"
               ]
             }
           ],
@@ -968,21 +1064,25 @@
               "unitNumber": 2,
               "title": "भाषा विज्ञानक परिभाषा एवं उपयोगिता",
               "topics": [
-                "भाषा विज्ञानक परिभाषा एवं उपयोगिता, भाषा विज्ञान विज्ञान थिक वय कला, भाषा विज्ञानक अन्य शास्त्र समस्त सम्बन्ध (दर्शनशास्त्र, समाजशास्त्र, मनोविज्ञान तथा व्याकरण)"
+                "भाषा विज्ञानक परिभाषा एवं उपयोगिता",
+                "भाषा विज्ञान विज्ञान थिक वय कला",
+                "भाषा विज्ञानक अन्य शास्त्र समस्त सम्बन्ध (दर्शनशास्त्र, समाजशास्त्र, मनोविज्ञान तथा व्याकरण)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "भाषेतपितक सिद्धान्त, भाषाक वर्गीकरण",
               "topics": [
-                "भाषेतपितक सिद्धान्त, भाषाक वर्गीकरण एवं भारोपीय भाषा परिवार आ मेथिली"
+                "भाषेतपितक सिद्धान्त",
+                "भाषाक वर्गीकरण एवं भारोपीय भाषा परिवार आ मेथिली"
               ]
             },
             {
               "unitNumber": 4,
               "title": "मैथिली भाषा उद्भव औ विकास",
               "topics": [
-                "मैथिली भाषा उद्भव औ विकास, मैथिलीक विभिन्न बोली"
+                "मैथिली भाषा उद्भव औ विकास",
+                "मैथिलीक विभिन्न बोली"
               ]
             },
             {
@@ -1029,14 +1129,17 @@
               "unitNumber": 2,
               "title": "भाषा विज्ञानक परिभाषा एवं उपयोगिता",
               "topics": [
-                "भाषा विज्ञानक परिभाषा एवं उपयोगिता, भाषा विज्ञान विज्ञान थिक वय कला, भाषा विज्ञानक अन्य शास्त्र समस्त सम्बन्ध (दर्शनशास्त्र, समाजशास्त्र, मनोविज्ञान तथा व्याकरण)"
+                "भाषा विज्ञानक परिभाषा एवं उपयोगिता",
+                "भाषा विज्ञान विज्ञान थिक वय कला",
+                "भाषा विज्ञानक अन्य शास्त्र समस्त सम्बन्ध (दर्शनशास्त्र, समाजशास्त्र, मनोविज्ञान तथा व्याकरण)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "भाषेतपितक सिद्धान्त, भाषाक वर्गीकरण",
               "topics": [
-                "भाषेतपितक सिद्धान्त, भाषाक वर्गीकरण एवं भारोपीय भाषा परिवार आ मेथिली"
+                "भाषेतपितक सिद्धान्त",
+                "भाषाक वर्गीकरण एवं भारोपीय भाषा परिवार आ मेथिली"
               ]
             },
             {
@@ -1069,7 +1172,8 @@
               "unitNumber": 1,
               "title": "यात्रा साहित्यक परिभाषा, महत्व एवं विकास",
               "topics": [
-                "यात्रा साहित्यक परिभाषा, महत्व एवं विकास"
+                "यात्रा साहित्यक परिभाषा",
+                "महत्व एवं विकास"
               ]
             },
             {
@@ -1077,23 +1181,29 @@
               "title": "लोहनासँ लॉस बेगॉस— कीर्तिनाथ ज्ञा",
               "topics": [
                 "लोहनासँ लॉस बेगॉस— कीर्तिनाथ ज्ञा",
-                "भौगोलिक, सामाजिक, सांस्कृतिक स्थितिक मूल्यांकन"
+                "भौगोलिक",
+                "सामाजिक",
+                "सांस्कृतिक स्थितिक मूल्यांकन"
               ]
             },
             {
               "unitNumber": 3,
               "title": "संस्मरण साहित्यक परिभाषा, महत्व एवं विकास",
               "topics": [
-                "संस्मरण साहित्यक परिभाषा, महत्व एवं विकास",
-                "बोसी कातक गंगा - साकेतानन्द"
+                "संस्मरण साहित्यक परिभाषा",
+                "महत्व एवं विकास",
+                "बोसी कातक गंगा",
+                "साकेतानन्द"
               ]
             },
             {
               "unitNumber": 4,
               "title": "आत्मकथा साहित्यक परिभाषा, महत्व एवं विकास",
               "topics": [
-                "आत्मकथा साहित्यक परिभाषा, महत्व एवं विकास",
-                "कतेक डारि पर - मंत्रेश्वर ज्ञा"
+                "आत्मकथा साहित्यक परिभाषा",
+                "महत्व एवं विकास",
+                "कतेक डारि पर",
+                "मंत्रेश्वर ज्ञा"
               ]
             }
           ],
@@ -1122,14 +1232,16 @@
               "unitNumber": 1,
               "title": "महाकाव्यक परिभाषा, लक्षण एवं विकास",
               "topics": [
-                "महाकाव्यक परिभाषा, लक्षण एवं विकास"
+                "महाकाव्यक परिभाषा",
+                "लक्षण एवं विकास"
               ]
             },
             {
               "unitNumber": 2,
               "title": "मिशिला भाषा रामायण-चन्दा झा",
               "topics": [
-                "मिशिला भाषा रामायण-चन्दा झा, पाद्यांश- सुन्दरकाण्ड"
+                "मिशिला भाषा रामायण-चन्दा झा",
+                "पाद्यांश- सुन्दरकाण्ड"
               ]
             },
             {
@@ -1137,14 +1249,17 @@
               "title": "कृष्णचरित- तंत्रनाथ झा",
               "topics": [
                 "कृष्णचरित- तंत्रनाथ झा",
-                "कथावस्तु, चरित्र चित्रण, प्रकृति वर्णन का कवित्व व प्रतिभा"
+                "कथावस्तु",
+                "चरित्र चित्रण",
+                "प्रकृति वर्णन का कवित्व व प्रतिभा"
               ]
             },
             {
               "unitNumber": 4,
               "title": "खण्डकाव्यक परिभाषा, लक्षण एवं विकास",
               "topics": [
-                "खण्डकाव्यक परिभाषा, लक्षण एवं विकास"
+                "खण्डकाव्यक परिभाषा",
+                "लक्षण एवं विकास"
               ]
             },
             {
@@ -1152,7 +1267,9 @@
               "title": "नोर-यागेश्वर झा",
               "topics": [
                 "नोर-यागेश्वर झा, मैथिली अकादमी, पटना",
-                "कथावस्तु, चरित्र चित्रण, प्रकृति वर्णन का कवित्व व प्रतिभा"
+                "कथावस्तु",
+                "चरित्र चित्रण",
+                "प्रकृति वर्णन का कवित्व व प्रतिभा"
               ]
             },
             {
@@ -1160,7 +1277,9 @@
               "title": "ईटडघनी खण्डकाव्य-मनोरंजन झा",
               "topics": [
                 "ईटडघनी खण्डकाव्य-मनोरंजन झा",
-                "कथावस्तु, चरित्र चित्रण, प्रकृति वर्णन का कवित्व व प्रतिभा"
+                "कथावस्तु",
+                "चरित्र चित्रण",
+                "प्रकृति वर्णन का कवित्व व प्रतिभा"
               ]
             }
           ],
@@ -1185,14 +1304,16 @@
               "unitNumber": 1,
               "title": "महाकाव्यक परिभाषा, लक्षण एवं विकास",
               "topics": [
-                "महाकाव्यक परिभाषा, लक्षण एवं विकास"
+                "महाकाव्यक परिभाषा",
+                "लक्षण एवं विकास"
               ]
             },
             {
               "unitNumber": 2,
               "title": "मिथिला भाषा रामायण-चन्दा झा",
               "topics": [
-                "मिथिला भाषा रामायण-चन्दा झा, पाद्यांश- सुन्दरकाण्ड"
+                "मिथिला भाषा रामायण-चन्दा झा",
+                "पाद्यांश- सुन्दरकाण्ड"
               ]
             },
             {
@@ -1200,15 +1321,19 @@
               "title": "पराशर- कांदीनाथ झा 'किरण'",
               "topics": [
                 "पराशर- कांदीनाथ झा 'किरण'",
-                "कथावस्तु, चरित्र चित्रण, प्रकृति वर्णन का कवित्त व प्रतिभा"
+                "कथावस्तु",
+                "चरित्र चित्रण",
+                "प्रकृति वर्णन का कवित्त व प्रतिभा"
               ]
             },
             {
               "unitNumber": 4,
               "title": "खण्डकाव्यक परिभाषा, लक्षण एवं विकास",
               "topics": [
-                "खण्डकाव्यक परिभाषा, लक्षण एवं विकास",
-                "सीता - रवीन्द्रनाथ ठाकूर"
+                "खण्डकाव्यक परिभाषा",
+                "लक्षण एवं विकास",
+                "सीता",
+                "रवीन्द्रनाथ ठाकूर"
               ]
             }
           ],
@@ -1273,7 +1398,14 @@
               "unitNumber": 6,
               "title": "अलंकारक परिभाषा, वर्गीकरण एवं प्रमुख अलंकार",
               "topics": [
-                "अलंकारक परिभाषा, वर्गीकरण एवं प्रमुख अलंकार-उपमा, यमक, उद्गेक्षरूपक, रुलेष, विभावना, अनुप्रास, संदेह"
+                "अलंकारक परिभाषा",
+                "वर्गीकरण एवं प्रमुख अलंकार-उपमा",
+                "यमक",
+                "उद्गेक्षरूपक",
+                "रुलेष",
+                "विभावना",
+                "अनुप्रास",
+                "संदेह"
               ]
             }
           ],
@@ -1303,28 +1435,32 @@
               "unitNumber": 1,
               "title": "एकैसम शताब्दीक कवितामै बदलैत स्वर",
               "topics": [
-                "एकैसम शताब्दीक कवितामै बदलैत स्वर, सामाजिक ओ आर्थिक परिदृश्यक मूल्यांकन"
+                "एकैसम शताब्दीक कवितामै बदलैत स्वर",
+                "सामाजिक ओ आर्थिक परिदृश्यक मूल्यांकन"
               ]
             },
             {
               "unitNumber": 2,
               "title": "पेनज्ञाइवमै पृथ्वी- अजीत आजाद",
               "topics": [
-                "पेनज्ञाइवमै पृथ्वी- अजीत आजाद, पाद्यांश- पहिल पन्नह कविता"
+                "पेनज्ञाइवमै पृथ्वी- अजीत आजाद",
+                "पाद्यांश- पहिल पन्नह कविता"
               ]
             },
             {
               "unitNumber": 3,
               "title": "गेल्ड सम झाड़ैत अछि पॉशिब-मेनका मल्लिक",
               "topics": [
-                "गेल्ड सम झाड़ैत अछि पॉशिब-मेनका मल्लिक, पाद्यांश-पहिल दस कविता"
+                "गेल्ड सम झाड़ैत अछि पॉशिब-मेनका मल्लिक",
+                "पाद्यांश-पहिल दस कविता"
               ]
             },
             {
               "unitNumber": 4,
               "title": "एकैसम शताब्दीमै कथाक बदलैत स्वर",
               "topics": [
-                "एकैसम शताब्दीमै कथाक बदलैत स्वर, सामाजिक ओ आर्थिक परिदृश्यक मूल्यांकन"
+                "एकैसम शताब्दीमै कथाक बदलैत स्वर",
+                "सामाजिक ओ आर्थिक परिदृश्यक मूल्यांकन"
               ]
             },
             {
@@ -1370,14 +1506,16 @@
               "unitNumber": 1,
               "title": "स्त्री विमर्शक अवधारणा",
               "topics": [
-                "स्त्री विमर्शक अवधारणा, मैथिली साहित्यमे स्थिति ओं अपेक्षा"
+                "स्त्री विमर्शक अवधारणा",
+                "मैथिली साहित्यमे स्थिति ओं अपेक्षा"
               ]
             },
             {
               "unitNumber": 2,
               "title": "दलित विमर्शक अवधारणा",
               "topics": [
-                "दलित विमर्शक अवधारणा, मैथिली साहित्यमे स्थिति ओं अपेक्षा"
+                "दलित विमर्शक अवधारणा",
+                "मैथिली साहित्यमे स्थिति ओं अपेक्षा"
               ]
             },
             {

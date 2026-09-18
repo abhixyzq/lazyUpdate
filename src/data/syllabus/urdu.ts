@@ -28,32 +28,42 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "DASTAN",
               "topics": [
-                "1. DASTAN, TARIF, HISTORY",
-                "2. MEER AMMAN KI DASTAN NIGARI with special reference to Bagh-o-Bahar (Sair Pehle Darwesh Ki-Text)"
+                "1",
+                "DASTAN, TARIF, HISTORY",
+                "2",
+                "MEER AMMAN KI DASTAN NIGARI with special reference to Bagh-o-Bahar (Sair Pehle Darwesh Ki-Text)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "NOVEL",
               "topics": [
-                "1. Novel, Taareef, Ajazy-e-Tarkeebi, & History",
-                "2. Deputy Nazir Ahmad ki Novel Nigari with special reference to Taubatun Nasuh"
+                "1",
+                "Novel, Taareef, Ajazy-e-Tarkeebi, & History",
+                "2",
+                "Deputy Nazir Ahmad ki Novel Nigari with special reference to Taubatun Nasuh"
               ]
             },
             {
               "unitNumber": 3,
               "title": "AFSANA",
               "topics": [
-                "1. Afsana, Taareef, Ajazy-e-Tarkeebi, & History",
-                "2. Premchand ki afsana Nigari with special study of the text of Afsana \"Poos Ki Raat\""
+                "1",
+                "Afsana, Taareef, Ajazy-e-Tarkeebi, & History",
+                "2",
+                "Premchand ki afsana Nigari with special study of the text of Afsana \"Poos Ki Raat\""
               ]
             },
             {
               "unitNumber": 4,
               "title": "DRAMA",
               "topics": [
-                "1. Drama, Taareef, Ajazy-e-Tarkeebi-Tareekh",
-                "2. Imteyaz Ali Taj ki drama Nigari with special study of Drama 'Anar Kali' (Text)"
+                "1",
+                "Drama",
+                "Taareef",
+                "Ajazy-e-Tarkeebi-Tareekh",
+                "2",
+                "Imteyaz Ali Taj ki drama Nigari with special study of Drama 'Anar Kali' (Text)"
               ]
             }
           ],
@@ -80,15 +90,20 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "NOVEL",
               "topics": [
-                "(1) Novel, Taarreef, Rewayat aur Tareekh",
-                "(2) Premchand ki Novel Nigari with special reference to Novel, \"Nirmala\""
+                "(1) Novel",
+                "Taarreef",
+                "Rewayat aur Tareekh",
+                "(2) Premchand ki Novel Nigari with special reference to Novel",
+                "\"Nirmala\""
               ]
             },
             {
               "unitNumber": 2,
               "title": "AFSANA",
               "topics": [
-                "(1) Afsana, Taarreef, Rewayat and Tareekh",
+                "(1) Afsana",
+                "Taarreef",
+                "Rewayat and Tareekh",
                 "(2) Saadat Hasan Mantoake afsana nigari with special reference to afsana \"naya qanoon\" & Sohail Azimabadi Ka Afsana 'ALAACO'"
               ]
             },
@@ -96,7 +111,9 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "DRAMA",
               "topics": [
-                "Drama, Taarreef, Rewayat aur Taareekh.",
+                "Drama",
+                "Taarreef",
+                "Rewayat aur Taareekh",
                 "Agha Hashr Kashmeeri ki drama nigari with special reference to \"Rustam Aur Sohrab\""
               ]
             }
@@ -122,14 +139,16 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Urdu Ghazal",
               "topics": [
-                "(A) Urdu Ghazal Tareef, Ajayee-Tarkeebi, Maqbooliat ke Asbaab"
+                "(A) Urdu Ghazal Tareef",
+                "Ajayee-Tarkeebi",
+                "Maqbooliat ke Asbaab"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Selected Ghazals",
               "topics": [
-                "(B) Following poets with below mentioned texts to be studied:",
+                "(B) Following poets with below mentioned texts to be studied",
                 "(1) Wali: Mufflisi Sab Bahar Khoti Hai",
                 "(2) Meer: Ashk Aankhon Mein Kab Nahin Aata",
                 "(3) Dard: Arzo-sama Kahan Teri Wosat Ko paa Sake",
@@ -164,24 +183,31 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mazmoon",
               "topics": [
-                "1. Sinf e Mazmoon, aur uska irteqa",
-                "2. Altaf Hussain Hali Ki Mazmoon Nigari with special study of Zaban-E-Goya-Text"
+                "1",
+                "Sinf e Mazmoon",
+                "Aur uska irteqa",
+                "2",
+                "Altaf Hussain Hali Ki Mazmoon Nigari with special study of Zaban-E-Goya-Text"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Inshaiva",
               "topics": [
-                "1. Sinf e Inshaiva aur Uskairteqa",
-                "2. Rasheed Ahmad Siddiqui Ki Inshaiva Nighari with special study of Inshaiva 'Charpayee'-Text"
+                "1",
+                "Sinf e Inshaiva aur Uskairteqa",
+                "2",
+                "Rasheed Ahmad Siddiqui Ki Inshaiva Nighari with special study of Inshaiva 'Charpayee'-Text"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Khaka",
               "topics": [
-                "1. Sinf e Khaka aur Uskairteqa",
-                "2. Maulvi Abdul Haque ki Khaka Nigari with special study of Khaka 'Haali'-Text"
+                "1",
+                "Sinf e Khaka aur Uskairteqa",
+                "2",
+                "Maulvi Abdul Haque ki Khaka Nigari with special study of Khaka 'Haali'-Text"
               ]
             }
           ],
@@ -207,7 +233,7 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Essay and Inshaiya",
               "topics": [
-                "(A) An Introduction to genres of Essay and Inshaiya, their features and importance."
+                "(A) An Introduction to genres of Essay and Inshaiya, their features and importance"
               ]
             },
             {
@@ -222,7 +248,7 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Text: Meer Kallu Ki Gawahee",
               "topics": [
-                "(C) (1) \"Meer Kallu Ki Gawahee\" by Anjum Manjouri.",
+                "(C) (1) \"Meer Kallu Ki Gawahee\" by Anjum Manjouri",
                 "(2.) Text Reading and its critical appreciation"
               ]
             }
@@ -247,14 +273,16 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Urdu Ghazal",
               "topics": [
-                "(A) Urdu Ghazal Tareef, Ajayee-Tarkeebi, Maqbooliat ke Asbaab"
+                "(A) Urdu Ghazal Tareef",
+                "Ajayee-Tarkeebi",
+                "Maqbooliat ke Asbaab"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Selected Ghazals",
               "topics": [
-                "(B) Following poets with below mentioned texts to be studied:",
+                "(B) Following poets with below mentioned texts to be studied",
                 "(1) Wali: Mufflisi Sab Bahar Khoti Hai",
                 "(2) Meer: Ashk Aankhon Mein Kab Nahin Aata",
                 "(3) Dard: Arzo-sama Kahan Teri Wosat Ko paa Sake",
@@ -387,7 +415,8 @@ export const urduSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Masnavi Nigari",
               "topics": [
-                "Masnavi nigari ka fun aur Riwayat aur Mir Hasan ki masnavi nigari, \"Sehrul Bayan\" ki raushni mein"
+                "Masnavi nigari ka fun aur Riwayat aur Mir Hasan ki masnavi nigari",
+                "\"Sehrul Bayan\" ki raushni mein"
               ]
             }
           ],
@@ -637,7 +666,8 @@ export const urduSyllabus: CourseSyllabus = {
                 "ترجمە: فن اور روایت",
                 "Tarjuma Ki Ahmiyat-O- Efadiat",
                 "ترجمە: اہمیت و افادیت",
-                "Text Translation in Persian to Urdu (Nesab Farsi) & English. Hindi to Urdu (Unseen)",
+                "Text Translation in Persian to Urdu (Nesab Farsi) & English",
+                "Hindi to Urdu (Unseen)",
                 "اردو، فارسی اور انگریزی و بندی مین ترجمە كى مشق"
               ]
             }

@@ -26,34 +26,60 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Statistical Methods: Definition and scope of Statistics, concepts of population and sample.",
-                "Data: quantitative and qualitative, variables, frequency and non frequency.",
-                "Scales of measurement: nominal, ordinal, interval and ratio.",
-                "Presentation of data: tabular and graphical including histogram, ogives and box plot."
+                "Statistical Methods: Definition and scope of Statistics",
+                "Concepts of population and sample",
+                "Data: quantitative and qualitative",
+                "Variables",
+                "Frequency and non frequency",
+                "Scales of measurement: nominal",
+                "Ordinal",
+                "Interval and ratio",
+                "Presentation of data: tabular and graphical including histogram",
+                "Ogives and box plot"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Measures of Central Tendency: mathematical and positional, their relative merits and demerits.",
-                "Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation.",
-                "Moments, absolute moments, factorial moments, skewness and kurtosis, Sheppard's corrections."
+                "Measures of Central Tendency: mathematical and positional, their relative merits and demerits",
+                "Measures of Dispersion: range",
+                "Quartile deviation",
+                "Mean deviation",
+                "Standard deviation",
+                "Coefficient of variation",
+                "Moments",
+                "Absolute moments",
+                "Factorial moments",
+                "Skewness and kurtosis",
+                "Sheppard's corrections"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Bivariate data: Definition, scatter diagram, Karl Pearson product moment correlation coefficient and its properties, rank correlation, partial and multiple correlation (3 variables only).",
-                "Simple linear regression, properties of regression coefficients, principle of least squares and fitting of polynomials and exponential curves."
+                "Bivariate data: Definition",
+                "Scatter diagram",
+                "Karl Pearson product moment correlation coefficient and its properties",
+                "Rank correlation",
+                "Partial and multiple correlation (3 variables only)",
+                "Simple linear regression",
+                "Properties of regression coefficients",
+                "Principle of least squares and fitting of polynomials and exponential curves"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Theory of Attributes: Notations, Dichotomy, classes & class frequency, consistency of data and its conditions of independence of attributes, criterion of independence, Association of attributes, Yule's coefficient of association."
+                "Theory of Attributes: Notations",
+                "Dichotomy",
+                "Classes & class frequency",
+                "Consistency of data and its conditions of independence of attributes",
+                "Criterion of independence",
+                "Association of attributes",
+                "Yule's coefficient of association"
               ]
             }
           ],
@@ -96,28 +122,47 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Statistical Methods: Definition and scope of Statistics, concepts of population and sample. Data: quantitative and qualitative, variables, frequency and non frequency. Scales of measurement- nominal, ordinal, Presentation of data: tabular and graphical including histogram, and ogives."
+                "Statistical Methods: Definition and scope of Statistics",
+                "Concepts of population and sample",
+                "Data: quantitative and qualitative",
+                "Variables",
+                "Frequency and non frequency",
+                "Scales of measurement- nominal",
+                "Ordinal",
+                "Presentation of data: tabular and graphical including histogram, and ogives"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Measures of Central Tendency: mathematical and positional. Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation. Moments, skewness and kurtosis."
+                "Measures of Central Tendency: mathematical and positional",
+                "Measures of Dispersion: range",
+                "Quartile deviation",
+                "Mean deviation",
+                "Standard deviation",
+                "Coefficient of variation",
+                "Moments",
+                "Skewness and kurtosis"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Bivariate data: Definition, scatter diagram, Karl Pearson product moment correlation coefficient and its properties, rank correlation."
+                "Bivariate data: Definition",
+                "Scatter diagram",
+                "Karl Pearson product moment correlation coefficient and its properties",
+                "Rank correlation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Simple linear regression, properties of regression coefficients, principle of least square."
+                "Simple linear regression",
+                "Properties of regression coefficients",
+                "Principle of least square"
               ]
             }
           ],
@@ -160,28 +205,46 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Definition and scope of Statistics, concepts of population and sample. Data: quantitative and qualitative, variables, frequency and non-frequency. Presentation of data: tabular and graphical including bar, line diagram and pie chart."
+                "Definition and scope of Statistics",
+                "Concepts of population and sample",
+                "Data: quantitative and qualitative",
+                "Variables",
+                "Frequency and non-frequency",
+                "Presentation of data: tabular and graphical including bar",
+                "Line diagram and pie chart"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Histogram and ogives. Measures of Central Tendency: mean, median, mode, geometric and harmonic mean and their properties."
+                "Histogram and ogives",
+                "Measures of Central Tendency: mean",
+                "Median",
+                "Mode",
+                "Geometric and harmonic mean and their properties"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Measures of Dispersion: range, quartile deviation, mean deviation, standard deviation, coefficient of variation, Moments, skewness and kurtosis"
+                "Measures of Dispersion: range",
+                "Quartile deviation",
+                "Mean deviation",
+                "Standard deviation",
+                "Coefficient of variation",
+                "Moments",
+                "Skewness and kurtosis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Bivariate data: Scatter diagram, Karl Pearson product moment correlation coefficient and its properties. Simple linear regression."
+                "Bivariate data: Scatter diagram",
+                "Karl Pearson product moment correlation coefficient and its properties",
+                "Simple linear regression"
               ]
             }
           ],
@@ -262,31 +325,56 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Probability: Introduction, random experiments, sample space, events and algebra of events.",
-                "Definitions of Probability - classical, statistical, and axiomatic., laws of addition and multiplication, independence and mutual independence of events, theorem of total probability, conditional probability, Baye's theorem and its applications."
+                "Probability: Introduction",
+                "Random experiments",
+                "Sample space",
+                "Events and algebra of events",
+                "Definitions of Probability",
+                "Classical",
+                "Statistical, and axiomatic",
+                "Laws of addition and multiplication",
+                "Independence and mutual independence of events",
+                "Theorem of total probability",
+                "Conditional probability",
+                "Baye's theorem and its applications"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f) and cumulative density function (c.d.f) with illustrations and properties of random variables, univariate transformations with illustrations.",
-                "Two dimensional random variables: discrete and continuous type, joint, marginal, and conditional p.m.f, p.d.f., and c.d.f., independence of variables, bivariate transformations with illustrations."
+                "Random variables: discrete and continuous random variables",
+                "Probability mass function (p.m.f)",
+                "Probability density functions (p.d.f) and cumulative density function (c.d.f) with illustrations and properties of random variables",
+                "Univariate transformations with illustrations",
+                "Two dimensional random variables: discrete and continuous type, joint, marginal, and conditional p.m.f, p.d.f., and c.d.f., independence of variables, bivariate transformations with illustrations"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Mathematical Expectation and Generating Functions: Expectation of univariate and bivariate random variables and its properties.",
-                "Moments, moment generating function (m.g.f) and characteristic function (c.f.), Uniqueness and inversion theorems (without proof) along with applications, Conditional expectation."
+                "Mathematical Expectation and Generating Functions: Expectation of univariate and bivariate random variables and its properties",
+                "Moments",
+                "Moment generating function (m.g.f) and characteristic function (c.f.)",
+                "Uniqueness and inversion theorems (without proof) along with applications",
+                "Conditional expectation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Standard probability distributions: Binomial, Poisson, geometric, negative binomial, hyper-geometric, uniform, normal, exponential, Cauchy, beta and gamma along with their properties."
+                "Standard probability distributions: Binomial",
+                "Poisson",
+                "Geometric",
+                "Negative binomial",
+                "Hyper-geometric",
+                "Uniform",
+                "Normal",
+                "Exponential",
+                "Cauchy",
+                "Beta and gamma along with their properties"
               ]
             }
           ],
@@ -329,28 +417,46 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Probability: Introduction, random experiments, sample space, events and algebra of events. Definitions of Probability - classical, statistical, and axiomatic, laws of addition and multiplication, independence and conditional probability"
+                "Probability: Introduction",
+                "Random experiments",
+                "Sample space",
+                "Events and algebra of events",
+                "Definitions of Probability",
+                "Classical",
+                "Statistical, and axiomatic",
+                "Laws of addition and multiplication",
+                "Independence and conditional probability"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f), cumulative density function (c.d.f), and its properties, univariate transformations with illustrations."
+                "Random variables: discrete and continuous random variables",
+                "Probability mass function (p.m.f)",
+                "Probability density functions (p.d.f)",
+                "Cumulative density function (c.d.f), and its properties",
+                "Univariate transformations with illustrations"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Expectation of random variable with properties and moments, moment generating function (m.g.f) and characteristic function (c.f)."
+                "Expectation of random variable with properties and moments",
+                "Moment generating function (m.g.f) and characteristic function (c.f)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Standard probability distributions: Binomial, Poisson, geometric, uniform, normal, exponential, and gamma along with their properties."
+                "Standard probability distributions: Binomial",
+                "Poisson",
+                "Geometric",
+                "Uniform",
+                "Normal",
+                "Exponential, and gamma along with their properties"
               ]
             }
           ],
@@ -393,28 +499,42 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Probability: Introduction, random experiments, sample space, events and algebra of events. Definitions of Probability - classical, statistical, and axiomatic, laws of addition and multiplication, independence and conditional probability"
+                "Probability: Introduction",
+                "Random experiments",
+                "Sample space",
+                "Events and algebra of events",
+                "Definitions of Probability",
+                "Classical",
+                "Statistical, and axiomatic",
+                "Laws of addition and multiplication",
+                "Independence and conditional probability"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Random variables: discrete and continuous random variables, probability mass function (p.m.f), probability density functions (p.d.f), cumulative density function (c.d.f), and its properties."
+                "Random variables: discrete and continuous random variables",
+                "Probability mass function (p.m.f)",
+                "Probability density functions (p.d.f)",
+                "Cumulative density function (c.d.f), and its properties"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Expectation of random variable with properties and moments, moment generating function (m.g.f)."
+                "Expectation of random variable with properties and moments",
+                "Moment generating function (m.g.f)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Standard probability distributions: Binomial, Poisson, normal distribution and its properties."
+                "Standard probability distributions: Binomial",
+                "Poisson",
+                "Normal distribution and its properties"
               ]
             }
           ],
@@ -457,44 +577,83 @@
               "unitNumber": 1,
               "title": "Unit 1: Introduction to environmental studies",
               "topics": [
-                "Multidisciplinary nature of environmental studies Scope and importance; Concept of sustainability and sustainable development."
+                "Multidisciplinary nature of environmental studies Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Unit 2: Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession. Case studies of the following ecosystems: a) Forest ecosystem b) Grassland ecosystem c) Desert ecosystem d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: a) Forest ecosystem b) Grassland ecosystem c) Desert ecosystem d) Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Unit 3: Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification.",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations.",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems.",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity.",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Unit 4: Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots.",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions.",
-                "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity.",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value."
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
+                "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Unit 5: Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
-                "Solid waste management: Control measures of urban and industrial waste.",
+                "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
               ]
             },
@@ -502,22 +661,39 @@
               "unitNumber": 6,
               "title": "Unit 6: Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act. International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD).",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context."
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
+                "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Unit 7: Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare.",
-                "Resettlement and rehabilitation of project affected persons; case studies.",
-                "Disaster management: floods, earthquake, cyclones and landslides.",
-                "Water conservation, rain water harvesting, watershed management.",
-                "Wasteland reclamation.",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan.",
-                "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation."
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
+                "Wasteland reclamation",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
+                "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
           ],
@@ -563,32 +739,46 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Finite difference: Different types of operators and their properties, fundamental theorem of finite differences, missing terms (equal intervals), factorial notation.",
-                "Assumptions and uses of interpolation. Gregory Newton's Forward and Backward Interpolation formula for equal intervals."
+                "Finite difference: Different types of operators and their properties",
+                "Fundamental theorem of finite differences",
+                "Missing terms (equal intervals)",
+                "Factorial notation",
+                "Assumptions and uses of interpolation",
+                "Gregory Newton's Forward and Backward Interpolation formula for equal intervals"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Interpolation with arguments at unequal intervals divided differences Δ, theorems on divided differences, Newton's divided difference formula, Lagrange's interpolation formula."
+                "Interpolation with arguments at unequal intervals divided differences Δ",
+                "Theorems on divided differences",
+                "Newton's divided difference formula",
+                "Lagrange's interpolation formula"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Parameter and statistic, sampling distribution of a statistics, standard errors of sample mean, sample variance and sample proportion.",
-                "Null and alternative hypotheses, level of significance, Type I and Type II errors and critical region.",
-                "Large sample tests, Test of proportion, mean and standard deviation (For one and two-sample)."
+                "Parameter and statistic",
+                "Sampling distribution of a statistics",
+                "Standard errors of sample mean",
+                "Sample variance and sample proportion",
+                "Null and alternative hypotheses",
+                "Level of significance",
+                "Type I and Type II errors and critical region",
+                "Large sample tests",
+                "Test of proportion",
+                "Mean and standard deviation (For one and two-sample)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Exact sampling distribution: Definition and derivation of p.d.f. of χ2, Student's t and Fishers F-distribution, with their mean, variance, m.g.f., and cumulant generating function, additive property and limiting form of χ2, t, F distribution.",
-                "Relationship between them and their applications."
+                "Exact sampling distribution: Definition and derivation of p.d.f. of χ2, Student's t and Fishers F-distribution, with their mean, variance, m.g.f., and cumulant generating function, additive property and limiting form of χ2, t, F distribution",
+                "Relationship between them and their applications"
               ]
             }
           ],
@@ -631,30 +821,55 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Real Analysis: Representation of real numbers as points on the line and the set of real numbers as complete ordered field. Bounded and unbounded sets, neighborhood sand limit points, Superimum and infimum, open and closed sets, sequences and their convergence.",
-                "Infinite series, positive termed series and their convergence, Comparison test, D'Alembert's ratio test, Cauchy's nth root test, Raabe's test."
+                "Real Analysis: Representation of real numbers as points on the line and the set of real numbers as complete ordered field",
+                "Bounded and unbounded sets",
+                "Neighborhood sand limit points",
+                "Superimum and infimum",
+                "Open and closed sets",
+                "Sequences and their convergence",
+                "Infinite series",
+                "Positive termed series and their convergence",
+                "Comparison test",
+                "D'Alembert's ratio test",
+                "Cauchy's nth root test",
+                "Raabe's test"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Review of limit, continuity and differentiability, uniform Continuity and boundedness of a function. Rolle's and Lagrange's Mean Value theorems.",
-                "Taylor's theorem with lagrange's and Cauchy's form of remainder (without proof). Taylor's and Maclaurin's series expansions."
+                "Review of limit",
+                "Continuity and differentiability",
+                "Uniform Continuity and boundedness of a function",
+                "Rolle's and Lagrange's Mean Value theorems",
+                "Taylor's theorem with lagrange's and Cauchy's form of remainder (without proof)",
+                "Taylor's and Maclaurin's series expansions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Different types of Matrices. Algebra of Matrices. Adjoint and inverse of a Matrix, different ways of finding inverse, partitioning, characteristic equation and Calay-Hamilton theorem."
+                "Different types of Matrices",
+                "Algebra of Matrices",
+                "Adjoint and inverse of a Matrix",
+                "Different ways of finding inverse",
+                "Partitioning",
+                "Characteristic equation and Calay-Hamilton theorem"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Elementary row and column operations. Elementary matrices, equivalent matrices, rank of a matrix, invariance of rank through elementary row/column operations, rank of sum and product of matrices and related theorems. Solution of a system of linear equations."
+                "Elementary row and column operations",
+                "Elementary matrices",
+                "Equivalent matrices",
+                "Rank of a matrix",
+                "Invariance of rank through elementary row/column operations",
+                "Rank of sum and product of matrices and related theorems",
+                "Solution of a system of linear equations"
               ]
             }
           ],
@@ -697,28 +912,38 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Finite difference: Forward difference operation Δ, The shift operator E, properties of operator Δ and E. Assumptions and uses of interpolation. Gregory Newton's Forward and Backward Interpolation formula for equal intervals."
+                "Finite difference: Forward difference operation Δ",
+                "The shift operator E",
+                "Properties of operator Δ and E",
+                "Assumptions and uses of interpolation",
+                "Gregory Newton's Forward and Backward Interpolation formula for equal intervals"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Interpolation with arguments at unequal intervals divided differences Δ, divided differences table, Newton's divided difference formula, Lagrange's interpolation formula"
+                "Interpolation with arguments at unequal intervals divided differences Δ",
+                "Divided differences table",
+                "Newton's divided difference formula",
+                "Lagrange's interpolation formula"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "General Quadrature Formula for equidistant ordinates, Trapezoidal Rule, Simpson's one-third rule, Simpson's three-eight rule."
+                "General Quadrature Formula for equidistant ordinates",
+                "Trapezoidal Rule",
+                "Simpson's one-third rule",
+                "Simpson's three-eight rule"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Exact sampling distribution: Definition of χ2, Student's t and Fishers F-distribution, mean, variance, and m.g.f., of χ2, t, F distribution."
+                "Exact sampling distribution: Definition of χ2, Student's t and Fishers F-distribution, mean, variance, and m.g.f., of χ2, t, F distribution"
               ]
             }
           ],
@@ -761,29 +986,43 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Population and Sample, Parameter and statistic, sampling distribution of a statistic, sampling distribution of sample mean, standard errors of sample mean, sample variance and sample proportion.",
-                "Null and alternative hypotheses, level of significance, Type I and Type II errors and critical region."
+                "Population and Sample",
+                "Parameter and statistic",
+                "Sampling distribution of a statistic",
+                "Sampling distribution of sample mean",
+                "Standard errors of sample mean",
+                "Sample variance and sample proportion",
+                "Null and alternative hypotheses",
+                "Level of significance",
+                "Type I and Type II errors and critical region"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Large sample tests, standard normal variate, testing of mean and proportion, testing of difference of two mean and two proportion."
+                "Large sample tests",
+                "Standard normal variate",
+                "Testing of mean and proportion",
+                "Testing of difference of two mean and two proportion"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Exact sampling distribution: χ2, Student's t and Fishers F-distribution and their mean and variance."
+                "Exact sampling distribution: χ2",
+                "Student's t and Fishers F-distribution and their mean and variance"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Application of Exact sampling distributions: testing of one sample mean, two sample mean, pair t-test, testing of variance and goodness of fit."
+                "Application of Exact sampling distributions: testing of one sample mean",
+                "Two sample mean",
+                "Pair t-test",
+                "Testing of variance and goodness of fit"
               ]
             }
           ],
@@ -837,61 +1076,108 @@
               "unitNumber": 1,
               "title": "Introduction on Disaster Different Types of Disaster",
               "topics": [
-                "A) Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "B) Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc. Causes, effects and practical examples for all disasters."
+                "Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc. Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Risk and Vulnerability Analysis",
               "topics": [
-                "1. Risk : Its concept and analysis",
-                "2. Risk Reduction",
-                "3. Vulnerability : Its concept and analysis",
-                "4. Strategic Development for Vulnerability Reduction"
+                "1",
+                "Risk : Its concept and analysis",
+                "2",
+                "Risk Reduction",
+                "3",
+                "Vulnerability : Its concept and analysis",
+                "4",
+                "Strategic Development for Vulnerability Reduction"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Disaster Preparedness and Response Preparedness",
               "topics": [
-                "1. Disaster Preparedness: Concept and Nature",
-                "2. Disaster Preparedness Plan",
-                "3. Prediction, Early Warnings and Safety Measures of Disaster.",
-                "4. Role of Information, Education, Communication, and Training,",
-                "5. Role of Government, International and NGO Bodies.",
-                "6. Role of IT in Disaster Preparedness",
-                "7. Role of Engineers on Disaster Management."
+                "1",
+                "Disaster Preparedness: Concept and Nature",
+                "2",
+                "Disaster Preparedness Plan",
+                "3",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "4",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "5",
+                "Role of Government",
+                "International and NGO Bodies",
+                "6",
+                "Role of IT in Disaster Preparedness",
+                "7",
+                "Role of Engineers on Disaster Management"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Response",
               "topics": [
-                "1. Disaster Response: Introduction",
-                "2. Disaster Response Plan",
-                "3. Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "4. Search, Rescue, Evacuation and Logistic Management",
-                "5. Role of Government, International and NGO Bodies",
-                "6. Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
-                "7. Relief and Recovery",
-                "8. Medical Health Response to Different Disasters",
-                "10. Role of Educational Institute."
+                "1",
+                "Disaster Response: Introduction",
+                "2",
+                "Disaster Response Plan",
+                "3",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "4",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "5",
+                "Role of Government",
+                "International and NGO Bodies",
+                "6",
+                "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
+                "7",
+                "Relief and Recovery",
+                "8",
+                "Medical Health Response to Different Disasters",
+                "10",
+                "Role of Educational Institute"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Rehabilitation, Reconstruction and Recovery",
               "topics": [
-                "1. Reconstruction and Rehabilitation as a Means of Development.",
-                "2. Damage Assessment",
-                "3. Post Disaster effects and Remedial Measures.",
-                "4. Creation of Long-term Job Opportunities and Livelihood Options,",
-                "5. Disaster Resistant House Construction",
-                "6. Sanitation and Hygiene",
-                "7. Education and Awareness,",
-                "8. Dealing with Victims' Psychology,",
-                "9. Long-term Counter Disaster Planning"
+                "1",
+                "Reconstruction and Rehabilitation as a Means of Development",
+                "2",
+                "Damage Assessment",
+                "3",
+                "Post Disaster effects and Remedial Measures",
+                "4",
+                "Creation of Long-term Job Opportunities and Livelihood Options",
+                "5",
+                "Disaster Resistant House Construction",
+                "6",
+                "Sanitation and Hygiene",
+                "7",
+                "Education and Awareness",
+                "8",
+                "Dealing with Victims' Psychology",
+                "9",
+                "Long-term Counter Disaster Planning"
               ]
             }
           ],
@@ -915,32 +1201,57 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Estimation: Problem of estimation, Properties of a good estimator - unbiasedness, consistency, efficiency and sufficiency.",
-                "Factorization theorem. Cramer-Rao inequality and MVB estimators (statement and applications), Minimum variance unbiased estimator (MVUE), Rao-Blackwell theorem."
+                "Estimation: Problem of estimation",
+                "Properties of a good estimator",
+                "Unbiasedness",
+                "Consistency",
+                "Efficiency and sufficiency",
+                "Factorization theorem",
+                "Cramer-Rao inequality and MVB estimators (statement and applications)",
+                "Minimum variance unbiased estimator (MVUE)",
+                "Rao-Blackwell theorem"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Methods of Estimation: Method of moments, method of maximum likelihood and minimum chi square, properties of maximum likelihood estimators and minimum chi square (without proof)."
+                "Methods of Estimation: Method of moments",
+                "Method of maximum likelihood and minimum chi square",
+                "Properties of maximum likelihood estimators and minimum chi square (without proof)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Confidence interval: Confidence interval for mean, proportion and variance.",
-                "Bayesian Estimation: Loss function, prior distribution, Bayes theorem, posterior distributions, Bayes risk, Bayes principle, Bayes estimators."
+                "Confidence interval: Confidence interval for mean",
+                "Proportion and variance",
+                "Bayesian Estimation: Loss function",
+                "Prior distribution",
+                "Bayes theorem",
+                "Posterior distributions",
+                "Bayes risk",
+                "Bayes principle",
+                "Bayes estimators"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Testing of hypothesis: Null and alternative hypotheses, simple and composite hypotheses.",
-                "Type-I and Type-II errors, critical region, level of significance, size and power of a test, best critical region, most powerful test, uniformly most powerful test, Neyman Pearson Lemma (statement and applications to construct most powerful test).",
-                "Likelihood ratio test, properties of likelihood ratio tests (without proof)."
+                "Testing of hypothesis: Null and alternative hypotheses",
+                "Simple and composite hypotheses",
+                "Type-I and Type-II errors",
+                "Critical region",
+                "Level of significance",
+                "Size and power of a test",
+                "Best critical region",
+                "Most powerful test",
+                "Uniformly most powerful test",
+                "Neyman Pearson Lemma (statement and applications to construct most powerful test)",
+                "Likelihood ratio test",
+                "Properties of likelihood ratio tests (without proof)"
               ]
             }
           ],
@@ -983,28 +1294,38 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Nonparametric Tests: Introduction and Concept, advantages of Non-parametric tests over parametric tests. Concept of a distribution free statistic."
+                "Nonparametric Tests: Introduction and Concept",
+                "Advantages of Non-parametric tests over parametric tests",
+                "Concept of a distribution free statistic"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Single sample and two samples Nonparametric tests: Wald-Wolfzman Run test, Test for randomness based on total number of runs, Sign tests, Median test, Mann-Whitney U-test."
+                "Single sample and two samples Nonparametric tests: Wald-Wolfzman Run test",
+                "Test for randomness based on total number of runs",
+                "Sign tests",
+                "Median test",
+                "Mann-Whitney U-test"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Sequential Analysis: Sequential probability ratio test (SPRT) for simple vs simple hypotheses. Fundamental relations among α, β, A and B, determination of A and B in practice."
+                "Sequential Analysis: Sequential probability ratio test (SPRT) for simple vs simple hypotheses",
+                "Fundamental relations among α, β, A and B, determination of A and B in practice"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Wald's fundamental identity and the derivation of operating characteristics (OC) and average sample number (ASN) functions, examples based on normal, Poisson, binomial and exponential distributions."
+                "Wald's fundamental identity and the derivation of operating characteristics (OC) and average sample number (ASN) functions",
+                "Examples based on normal",
+                "Poisson",
+                "Binomial and exponential distributions"
               ]
             }
           ],
@@ -1047,34 +1368,52 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Population Theories: Coverage and content errors in demographic data, use of balancing equations and Chandrasekharan-Deming formula to check completeness of registration data.",
-                "Adjustment of age data, use of Myer and UN indices, Population composition, dependency ratio."
+                "Population Theories: Coverage and content errors in demographic data",
+                "Use of balancing equations and Chandrasekharan-Deming formula to check completeness of registration data",
+                "Adjustment of age data",
+                "Use of Myer and UN indices",
+                "Population composition",
+                "Dependency ratio"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Introduction and sources of collecting data on vital statistics, errors in census and registration data.",
-                "Measurement of population, rate and ratio of vital events.",
-                "Measurements of Mortality: Crude Death Rate (CDR), Specific Death Rate (SDR), Infant Mortality, Rate (IMR) and Standardized Death Rates."
+                "Introduction and sources of collecting data on vital statistics",
+                "Errors in census and registration data",
+                "Measurement of population",
+                "Rate and ratio of vital events",
+                "Measurements of Mortality: Crude Death Rate (CDR)",
+                "Specific Death Rate (SDR)",
+                "Infant Mortality",
+                "Rate (IMR) and Standardized Death Rates"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Stationary and Stable population, Central Mortality Rates and Force of Mortality.",
-                "Life(Mortality) Tables: Assumption, description, construction of Life Tables and Uses of Life Tables."
+                "Stationary and Stable population",
+                "Central Mortality Rates and Force of Mortality",
+                "Life(Mortality) Tables: Assumption",
+                "Description",
+                "Construction of Life Tables and Uses of Life Tables"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Abridged Life Tables; Concept and construction of abridged life tables by Reed-Merrell method, Greville's method and King's Method.",
-                "Measurements of Fertility: Crude Birth Rate (CBR), General Fertility Rate (GFR), Specific Fertility Rate (SFR) and Total Fertility Rate (TFR).",
-                "Measurement of Population Growth: Crude rates of natural increase, Pearl's Vital Index, Gross Reproduction Rate (GRR) and Net Reproduction Rate (NNR)."
+                "Abridged Life Tables",
+                "Concept and construction of abridged life tables by Reed-Merrell method",
+                "Greville's method and King's Method",
+                "Measurements of Fertility: Crude Birth Rate (CBR)",
+                "General Fertility Rate (GFR)",
+                "Specific Fertility Rate (SFR) and Total Fertility Rate (TFR)",
+                "Measurement of Population Growth: Crude rates of natural increase",
+                "Pearl's Vital Index",
+                "Gross Reproduction Rate (GRR) and Net Reproduction Rate (NNR)"
               ]
             }
           ],
@@ -1117,30 +1456,49 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Introduction of Statistical inference, Estimation: Problem of estimation, Properties of a good estimator - unbiasedness, consistency, efficiency and sufficiency.",
-                "Methods of Estimation: Method of moments, method of maximum likelihood, properties of maximum likelihood estimators (without proof)."
+                "Introduction of Statistical inference",
+                "Estimation: Problem of estimation",
+                "Properties of a good estimator",
+                "Unbiasedness",
+                "Consistency",
+                "Efficiency and sufficiency",
+                "Methods of Estimation: Method of moments",
+                "Method of maximum likelihood",
+                "Properties of maximum likelihood estimators (without proof)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Testing of hypothesis: Null and alternative hypotheses, simple and composite hypotheses, Type-I and Type-II errors, critical region, level of significance, size and power of a test, best critical region"
+                "Testing of hypothesis: Null and alternative hypotheses",
+                "Simple and composite hypotheses",
+                "Type-I and Type-II errors",
+                "Critical region",
+                "Level of significance",
+                "Size and power of a test",
+                "Best critical region"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Test based on t-distribution, Test of single mean, difference of two means, paired t-test, test for sample correlation coefficient.",
-                "Test based on chi square-distribution and F distribution for the equality of two population variance."
+                "Test based on t-distribution",
+                "Test of single mean",
+                "Difference of two means",
+                "Paired t-test",
+                "Test for sample correlation coefficient",
+                "Test based on chi square-distribution and F distribution for the equality of two population variance"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Non-Parametric tests: Sign test for median, Sign test for symmetry, Wilcoxon two-sample test."
+                "Non-Parametric tests: Sign test for median",
+                "Sign test for symmetry",
+                "Wilcoxon two-sample test"
               ]
             }
           ],
@@ -1199,32 +1557,53 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Concept of population and sample, complete enumeration versus sampling, sampling and non-sampling errors.",
-                "Types of sampling: non-probability and probability sampling, basic principle of sample survey, simple random sampling with and without replacement, definition and procedure of selecting a sample, estimates of: population mean, total and proportion, variances of these estimates, estimates of their variances and sample size determination."
+                "Concept of population and sample",
+                "Complete enumeration versus sampling",
+                "Sampling and non-sampling errors",
+                "Types of sampling: non-probability and probability sampling",
+                "Basic principle of sample survey",
+                "Simple random sampling with and without replacement",
+                "Definition and procedure of selecting a sample",
+                "Estimates of: population mean",
+                "Total and proportion",
+                "Variances of these estimates",
+                "Estimates of their variances and sample size determination"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Stratified random sampling: Technique, estimates of population mean and total, variances of these estimates, proportional and optimum allocations and their comparison with SRS,",
-                "Systematic Sampling: Technique, estimates of population mean and total, variances of these estimates (N=nxk). Comparison of systematic sampling with SRS and stratified sampling."
+                "Stratified random sampling: Technique",
+                "Estimates of population mean and total",
+                "Variances of these estimates",
+                "Proportional and optimum allocations and their comparison with SRS",
+                "Systematic Sampling: Technique",
+                "Estimates of population mean and total",
+                "Variances of these estimates (N=nxk)",
+                "Comparison of systematic sampling with SRS and stratified sampling"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Ratio and regression method of estimation, estimate of population mean and total (of SRS of large size) and its variance.",
-                "Cluster sampling (equal clusters only) estimation of population mean and its variance, comparison (with and without randomly formed clusters). Relative efficiency of cluster sampling with SRS in terms of intra class correlation."
+                "Ratio and regression method of estimation",
+                "Estimate of population mean and total (of SRS of large size) and its variance",
+                "Cluster sampling (equal clusters only) estimation of population mean and its variance",
+                "Comparison (with and without randomly formed clusters)",
+                "Relative efficiency of cluster sampling with SRS in terms of intra class correlation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Present official statistical system in India, Method of collection of official statistics, their reliability and limitations.",
-                "Principle publications containing data on the topics such as population, industry and finance. Various official agencies responsible for data collection and their main function."
+                "Present official statistical system in India",
+                "Method of collection of official statistics, their reliability and limitations",
+                "Principle publications containing data on the topics such as population",
+                "Industry and finance",
+                "Various official agencies responsible for data collection and their main function"
               ]
             }
           ],
@@ -1267,30 +1646,82 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Components of C language, structure of a C program, Data types, variable declaration, Local, Global, Parametric variables, Assignment of Variables, Numeric, Character, Real and String constants, Different operators, Basic input/output."
+                "Components of C language",
+                "Structure of a C program",
+                "Data types",
+                "Variable declaration",
+                "Local",
+                "Global",
+                "Parametric variables",
+                "Assignment of Variables",
+                "Numeric",
+                "Character",
+                "Real and String constants",
+                "Different operators",
+                "Basic input/output"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Control statements: conditional statements, if - else, nesting of if - else, else if ladder, switch statements, loops in c, for, while, do - while loops, break, continue, exit ( ), goto and label declarations, One dimensional two dimensional and multidimensional arrays. Storage classes: Automatic variables, External variables, Static variables."
+                "Control statements: conditional statements, if",
+                "Else, nesting of if",
+                "Else, else if ladder, switch statements, loops in c, for, while, do",
+                "While loops",
+                "Break",
+                "Continue",
+                "Exit ( )",
+                "Goto and label declarations",
+                "One dimensional two dimensional and multidimensional arrays",
+                "Storage classes: Automatic variables",
+                "External variables",
+                "Static variables"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Functions: classification of functions, functions definition and declaration, assessing a function, return statement, parameter passing in functions. Pointers (concept only).",
-                "Structure: Definition and declaration; structure (initialization) comparison of structure variable; Array of structures: array within structures, structures within structures, passing structures to functions; Unions accessing a union member, union of structure, initialization of a union variable, uses of union. Introduction to linked list."
+                "Functions: classification of functions",
+                "Functions definition and declaration",
+                "Assessing a function",
+                "Return statement",
+                "Parameter passing in functions",
+                "Pointers (concept only)",
+                "Structure: Definition and declaration",
+                "Structure (initialization) comparison of structure variable",
+                "Array of structures: array within structures",
+                "Structures within structures",
+                "Passing structures to functions",
+                "Unions accessing a union member",
+                "Union of structure",
+                "Initialization of a union variable",
+                "Uses of union",
+                "Introduction to linked list"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "R language: Basics of R, naming a data object, R is a functional language, creation of data objects including vectors, factors, matrices, list and data frames. Extraction from a data object.",
-                "Data Visualization: Grammar of graphics, ggplot2, scatter plot, line graphs, histograms, boxplots, bar plots, density plots. Statistics Methods and techniques in R."
+                "R language: Basics of R",
+                "Naming a data object",
+                "R is a functional language",
+                "Creation of data objects including vectors",
+                "Factors",
+                "Matrices",
+                "List and data frames",
+                "Extraction from a data object",
+                "Data Visualization: Grammar of graphics",
+                "Ggplot2",
+                "Scatter plot",
+                "Line graphs",
+                "Histograms",
+                "Boxplots",
+                "Bar plots",
+                "Density plots",
+                "Statistics Methods and techniques in R"
               ]
             }
           ],
@@ -1332,28 +1763,40 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Concept of population and sample, complete enumeration versus sampling, sampling and non-sampling errors. Types of sampling: non-probability and probability sampling, basic principle of sample survey, simple random sampling with and without replacement."
+                "Concept of population and sample",
+                "Complete enumeration versus sampling",
+                "Sampling and non-sampling errors",
+                "Types of sampling: non-probability and probability sampling",
+                "Basic principle of sample survey",
+                "Simple random sampling with and without replacement"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Stratified random sampling: Technique, estimates of population mean and total, variances of these estimates, proportional and optimum allocations."
+                "Stratified random sampling: Technique",
+                "Estimates of population mean and total",
+                "Variances of these estimates",
+                "Proportional and optimum allocations"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Systematic Sampling: Technique, estimates of population mean and total, Comparison of systematic sampling with SRS and stratified sampling. Cluster sampling"
+                "Systematic Sampling: Technique",
+                "Estimates of population mean and total",
+                "Comparison of systematic sampling with SRS and stratified sampling",
+                "Cluster sampling"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Present official statistical system in India, Method of collection of official statistics, their reliability and limitations."
+                "Present official statistical system in India",
+                "Method of collection of official statistics, their reliability and limitations"
               ]
             }
           ],
@@ -1396,29 +1839,66 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Components of C language, structure of a C program, Data types, variable declaration, Local, Global, Parametric variables, Assignment of Variables, Numeric, Character, Real and String constants, Different operators, Basic input/output."
+                "Components of C language",
+                "Structure of a C program",
+                "Data types",
+                "Variable declaration",
+                "Local",
+                "Global",
+                "Parametric variables",
+                "Assignment of Variables",
+                "Numeric",
+                "Character",
+                "Real and String constants",
+                "Different operators",
+                "Basic input/output"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Control statements: conditional statements, if - else, nesting of if - else, switch statements, loops in c, for, while, do - while loops, break, continue, exit ( ), goto and label declarations, One dimensional two dimensional."
+                "Control statements: conditional statements, if",
+                "Else, nesting of if",
+                "Else, switch statements, loops in c, for, while, do",
+                "While loops",
+                "Break",
+                "Continue",
+                "Exit ( )",
+                "Goto and label declarations",
+                "One dimensional two dimensional"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Functions: classification of functions, functions definition and declaration, assessing a function, return statement. Pointers (concept only). Structure: Definition and declaration; structure (initialization) comparison of structure variable."
+                "Functions: classification of functions",
+                "Functions definition and declaration",
+                "Assessing a function",
+                "Return statement",
+                "Pointers (concept only)",
+                "Structure: Definition and declaration",
+                "Structure (initialization) comparison of structure variable"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "R language: Basics of R, naming a data object, creation of data objects including vectors, matrices, list and data frames. Extraction from a data object.",
-                "Data Visualization: Grammar of graphics, scatter plot, line graphs, histograms, boxplots, bar plots; Statistics Methods and techniques in R."
+                "R language: Basics of R",
+                "Naming a data object",
+                "Creation of data objects including vectors",
+                "Matrices",
+                "List and data frames",
+                "Extraction from a data object",
+                "Data Visualization: Grammar of graphics",
+                "Scatter plot",
+                "Line graphs",
+                "Histograms",
+                "Boxplots",
+                "Bar plots",
+                "Statistics Methods and techniques in R"
               ]
             }
           ],
@@ -1476,28 +1956,41 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Gauss-Markov set-up: Theory of linear estimation, Estimability of linear parametric functions, Method of least squares, Gauss-Markov theorem, Estimation of error variance."
+                "Gauss-Markov set-up: Theory of linear estimation",
+                "Estimability of linear parametric functions",
+                "Method of least squares",
+                "Gauss-Markov theorem",
+                "Estimation of error variance"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Regression analysis: Simple regression analysis, Estimation and hypothesis testing in case of simple and multiple regression models, Concept of model matrix and its use in estimation."
+                "Regression analysis: Simple regression analysis",
+                "Estimation and hypothesis testing in case of simple and multiple regression models",
+                "Concept of model matrix and its use in estimation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Analysis of variance: Definitions of fixed, random and mixed effect models, analysis of variance and covariance in one-way classified data for fixed effect models, analysis of variance and covariance in two-way classified data with one observation per cell for fixed effect models."
+                "Analysis of variance: Definitions of fixed",
+                "Random and mixed effect models",
+                "Analysis of variance and covariance in one-way classified data for fixed effect models",
+                "Analysis of variance and covariance in two-way classified data with one observation per cell for fixed effect models"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Model checking: Prediction from a fitted model, Violation of usual assumptions concerning normality, Homoscedasticity and collinearity, Diagnostics using quantile-quantile plots, Ridge Regression."
+                "Model checking: Prediction from a fitted model",
+                "Violation of usual assumptions concerning normality",
+                "Homoscedasticity and collinearity",
+                "Diagnostics using quantile-quantile plots",
+                "Ridge Regression"
               ]
             }
           ],
@@ -1540,30 +2033,47 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Experimental designs: Role, historical perspective, terminology, experimental error, basic principles- Randomization, replication, local control and uniformity trials"
+                "Experimental designs: Role",
+                "Historical perspective",
+                "Terminology",
+                "Experimental error",
+                "Basic principles- Randomization",
+                "Replication",
+                "Local control and uniformity trials"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Analysis of Variance for one way and Two Way Classification.",
-                "Basic designs: Completely Randomized Design (CRD), Randomized Block Design (RBD), Latin Square Design (LSD)- layout, model and statistical analysis and relative efficiency. Missing Plot techniques."
+                "Analysis of Variance for one way and Two Way Classification",
+                "Basic designs: Completely Randomized Design (CRD)",
+                "Randomized Block Design (RBD)",
+                "Latin Square Design (LSD)- layout",
+                "Model and statistical analysis and relative efficiency",
+                "Missing Plot techniques"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Factorial experiments: advantages, notations and concepts, 2^2, 2^3 ... 2^n factorial experiments, design and analysis. Split Plot Design and Strip Plot Design."
+                "Factorial experiments: advantages",
+                "Notations and concepts",
+                "2^2",
+                "2^3 ... 2^n factorial experiments",
+                "Design and analysis",
+                "Split Plot Design and Strip Plot Design"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Total and Partial confounding for 2^n (n≤5).",
-                "Analysis of covariance. Analysis of non-orthogonal data. Analysis of missing data."
+                "Total and Partial confounding for 2^n (n≤5)",
+                "Analysis of covariance",
+                "Analysis of non-orthogonal data",
+                "Analysis of missing data"
               ]
             }
           ],
@@ -1606,33 +2116,53 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Meaning of Index Numbers, Problems in the construction of index numbers, Types of index number, Different formulae, Test of Index numbers, Base shifting and splicing of index numbers, Uses of Index Numbers."
+                "Meaning of Index Numbers",
+                "Problems in the construction of index numbers",
+                "Types of index number",
+                "Different formulae",
+                "Test of Index numbers",
+                "Base shifting and splicing of index numbers",
+                "Uses of Index Numbers"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Introduction to times series data, application of time series to various fields, Components of a times series, Decomposition of a time series.",
-                "Trend: Estimation of trend by free hand curve method, method of semi averages, fitting various mathematical curves, and growth curves, Method of moving averages."
+                "Introduction to times series data",
+                "Application of time series to various fields",
+                "Components of a times series",
+                "Decomposition of a time series",
+                "Trend: Estimation of trend by free hand curve method",
+                "Method of semi averages",
+                "Fitting various mathematical curves, and growth curves",
+                "Method of moving averages"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Effect of elimination of trend on other components of the time series.",
-                "Seasonal Component: Estimation of seasonal component by Method of simple averages, Ratio to Trend, Ratio to Moving Averages, Depersonalization.",
-                "Cyclic Component: Harmonic Analysis,"
+                "Effect of elimination of trend on other components of the time series",
+                "Seasonal Component: Estimation of seasonal component by Method of simple averages",
+                "Ratio to Trend",
+                "Ratio to Moving Averages",
+                "Depersonalization",
+                "Cyclic Component: Harmonic Analysis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Moving-average (MA) process and Autoregressive (AR) process of orders one and two, Estimation of the parameters of AR (1) and AR (2) - Yule-Walker equations.",
-                "Random Component: Variate component method.",
-                "Forecasting: Exponential smoothing methods, Short term forecasting methods, Stationary Time series: Weak stationarity, autocorrelation function and correlogram of moving average"
+                "Moving-average (MA) process and Autoregressive (AR) process of orders one and two",
+                "Estimation of the parameters of AR (1) and AR (2)",
+                "Yule-Walker equations",
+                "Random Component: Variate component method",
+                "Forecasting: Exponential smoothing methods",
+                "Short term forecasting methods",
+                "Stationary Time series: Weak stationarity",
+                "Autocorrelation function and correlogram of moving average"
               ]
             }
           ],
@@ -1675,28 +2205,41 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Experimental designs: Role, historical perspective, terminology, experimental error, basic principles- Randomization, replication and local control."
+                "Experimental designs: Role",
+                "Historical perspective",
+                "Terminology",
+                "Experimental error",
+                "Basic principles- Randomization",
+                "Replication and local control"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Analysis of variance for one way and two-way analysis. Fixed and Random effect Model."
+                "Analysis of variance for one way and two-way analysis",
+                "Fixed and Random effect Model"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Basic designs: Completely Randomized Design (CRD), Randomized Block Design (RBD), Latin Square Design (LSD)- layout, model and statistical analysis."
+                "Basic designs: Completely Randomized Design (CRD)",
+                "Randomized Block Design (RBD)",
+                "Latin Square Design (LSD)- layout",
+                "Model and statistical analysis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Factorial experiments: advantages, notations and concepts, 2^2, 2^3 ... 2^n factorial experiments, design and analysis."
+                "Factorial experiments: advantages",
+                "Notations and concepts",
+                "2^2",
+                "2^3 ... 2^n factorial experiments",
+                "Design and analysis"
               ]
             }
           ],
@@ -1739,28 +2282,40 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Meaning of Index Numbers, Problems in the construction of index numbers, Types of index number, Different formulae, Uses of Index Numbers."
+                "Meaning of Index Numbers",
+                "Problems in the construction of index numbers",
+                "Types of index number",
+                "Different formulae",
+                "Uses of Index Numbers"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Introduction to times series data, application of time series to various fields, Components of a times series, Decomposition of a time series."
+                "Introduction to times series data",
+                "Application of time series to various fields",
+                "Components of a times series",
+                "Decomposition of a time series"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Trend: Estimation of trend by free hand curve method, method of semi averages, fitting various mathematical curves, and growth curves"
+                "Trend: Estimation of trend by free hand curve method",
+                "Method of semi averages",
+                "Fitting various mathematical curves, and growth curves"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Seasonal Component: Estimation of seasonal component by Method of simple averages, Ratio to Trend. Cyclic Component: Harmonic Analysis, Random Component: Variate component method."
+                "Seasonal Component: Estimation of seasonal component by Method of simple averages",
+                "Ratio to Trend",
+                "Cyclic Component: Harmonic Analysis",
+                "Random Component: Variate component method"
               ]
             }
           ],
@@ -1808,31 +2363,42 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Quality: Definition, dimensions of quality, chance and assignable Causes of quality variation. Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts."
+                "Quality: Definition",
+                "Dimensions of quality",
+                "Chance and assignable Causes of quality variation",
+                "Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Control charts for variables: X-bar & R-chart, X-bar & s-chart.",
-                "Control charts for attributes: np-chart, p-chart, c-chart and u-chart.",
-                "Comparison between control charts for variables and control charts for attributes.",
-                "Analysis of patterns on control chart, estimation of process capability."
+                "Control charts for variables: X-bar & R-chart",
+                "X-bar & s-chart",
+                "Control charts for attributes: np-chart",
+                "p-chart",
+                "C-chart and u-chart",
+                "Comparison between control charts for variables and control charts for attributes",
+                "Analysis of patterns on control chart",
+                "Estimation of process capability"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Acceptance sampling plan: Principle of acceptance sampling plans. Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation, use and interpretation of Dodge and Romig's sampling inspection plan tables"
+                "Acceptance sampling plan: Principle of acceptance sampling plans",
+                "Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation, use and interpretation of Dodge and Romig's sampling inspection plan tables"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Introduction to Six-Sigma: Overview of Six Sigma, Lean Manufacturing and Total Quality Management (TQM). Organizational Structure and Six Sigma training plans- Selection Criteria for Six-Sigma roles and training plans. Voice of customers (VOC): Importance and VOC data collection."
+                "Introduction to Six-Sigma: Overview of Six Sigma",
+                "Lean Manufacturing and Total Quality Management (TQM)",
+                "Organizational Structure and Six Sigma training plans- Selection Criteria for Six-Sigma roles and training plans",
+                "Voice of customers (VOC): Importance and VOC data collection"
               ]
             }
           ],
@@ -1886,29 +2452,39 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Bivariate Normal Distribution (BVN): p.d.f. of BVN, properties of BVN, marginal and conditional p.d.f. of BVN.",
-                "Multivariate Data: Random Vector: Probability mass/density functions, Distribution function, Mean vector & Dispersion matrix, Marginal & Conditional distributions"
+                "Bivariate Normal Distribution (BVN): p.d.f. of BVN",
+                "Properties of BVN",
+                "Marginal and conditional p.d.f. of BVN",
+                "Multivariate Data: Random Vector: Probability mass/density functions",
+                "Distribution function",
+                "Mean vector & Dispersion matrix",
+                "Marginal & Conditional distributions"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Multivariate Normal distribution and its properties. Sampling distribution for mean vector and variance-covariance matrix. Multiple and partial correlation coefficient and their properties."
+                "Multivariate Normal distribution and its properties",
+                "Sampling distribution for mean vector and variance-covariance matrix",
+                "Multiple and partial correlation coefficient and their properties"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Random sampling from multivariate normal distribution, Maximum likelihood estimators of parameters, Distribution of sample mean vector."
+                "Random sampling from multivariate normal distribution",
+                "Maximum likelihood estimators of parameters",
+                "Distribution of sample mean vector"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Applications of Multivariate Analysis: Discriminant Analysis, Principal Components Analysis and Factor Analysis"
+                "Applications of Multivariate Analysis: Discriminant Analysis",
+                "Principal Components Analysis and Factor Analysis"
               ]
             }
           ],
@@ -1951,28 +2527,38 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Quality: Definition, dimensions of quality, chance and assignable Causes of quality variation. Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts."
+                "Quality: Definition",
+                "Dimensions of quality",
+                "Chance and assignable Causes of quality variation",
+                "Statistical Control Charts- Construction and Statistical basis of 3-σ Control charts"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Control charts for variables: X-bar & R-chart, X-bar & s-chart. Control charts for attributes: np-chart, p-chart, c-chart and u-chart."
+                "Control charts for variables: X-bar & R-chart",
+                "X-bar & s-chart",
+                "Control charts for attributes: np-chart",
+                "p-chart",
+                "C-chart and u-chart"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Comparison between control charts for variables and control charts for attributes. Analysis of patterns on control chart, estimation of process capability."
+                "Comparison between control charts for variables and control charts for attributes",
+                "Analysis of patterns on control chart",
+                "Estimation of process capability"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Acceptance sampling plan: Principle of acceptance sampling plans. Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation."
+                "Acceptance sampling plan: Principle of acceptance sampling plans",
+                "Single and Double sampling plan their OC, AQL, LTPD, AOQ, AOQL, ASN, ATI functions with graphical interpretation"
               ]
             }
           ],
@@ -2020,28 +2606,49 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Convex sets and their properties, Introduction to linear programming problem, solution by graphical method. Simplex method, optimality and unboundedness, artificial variables, two-phase method, Big-M method. Duality, formulation of the dual problem, primal-dual relationships, economic interpretation of the dual"
+                "Convex sets and their properties",
+                "Introduction to linear programming problem",
+                "Solution by graphical method",
+                "Simplex method",
+                "Optimality and unboundedness",
+                "Artificial variables",
+                "Two-phase method",
+                "Big-M method",
+                "Duality",
+                "Formulation of the dual problem",
+                "Primal-dual relationships",
+                "Economic interpretation of the dual"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Transportation problem and its mathematical formulation, north-west-corner method, least cost method and Vogel approximation method for determination of initial basic solution, algorithm for solving transportation problem. Transportation problem as a linear programming problem."
+                "Transportation problem and its mathematical formulation",
+                "North-west-corner method",
+                "Least cost method and Vogel approximation method for determination of initial basic solution",
+                "Algorithm for solving transportation problem",
+                "Transportation problem as a linear programming problem"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Assignment problem and its mathematical formulation, Hungarian method for solving assignment problem. Assignment problem as a linear programming problem."
+                "Assignment problem and its mathematical formulation",
+                "Hungarian method for solving assignment problem",
+                "Assignment problem as a linear programming problem"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Game theory: Rectangular game, pure and mixed strategies, minimax-maximin principle, solution to rectangular game using graphical method, dominance and modified dominance property to reduce the game matrix and solution to rectangular game with mixed strategy."
+                "Game theory: Rectangular game",
+                "Pure and mixed strategies",
+                "Minimax-maximin principle",
+                "Solution to rectangular game using graphical method",
+                "Dominance and modified dominance property to reduce the game matrix and solution to rectangular game with mixed strategy"
               ]
             }
           ],
@@ -2084,28 +2691,37 @@
               "unitNumber": 1,
               "title": "UNIT I",
               "topics": [
-                "Convex sets and their properties, Introduction to linear programming problem, solution by graphical method."
+                "Convex sets and their properties",
+                "Introduction to linear programming problem",
+                "Solution by graphical method"
               ]
             },
             {
               "unitNumber": 2,
               "title": "UNIT II",
               "topics": [
-                "Simplex method, optimality and unboundedness, artificial variables, two-phase method, Big-M method."
+                "Simplex method",
+                "Optimality and unboundedness",
+                "Artificial variables",
+                "Two-phase method",
+                "Big-M method"
               ]
             },
             {
               "unitNumber": 3,
               "title": "UNIT III",
               "topics": [
-                "Duality, formulation of the dual problem, primal-dual relationships, economic interpretation of the dual."
+                "Duality",
+                "Formulation of the dual problem",
+                "Primal-dual relationships",
+                "Economic interpretation of the dual"
               ]
             },
             {
               "unitNumber": 4,
               "title": "UNIT IV",
               "topics": [
-                "Transportation and Assignment problem and its mathematical formulation."
+                "Transportation and Assignment problem and its mathematical formulation"
               ]
             }
           ],

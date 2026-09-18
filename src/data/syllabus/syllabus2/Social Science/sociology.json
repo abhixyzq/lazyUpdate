@@ -26,9 +26,13 @@
               "unitNumber": 1,
               "title": "Introductory",
               "topics": [
-                "Definition, Nature and Scope of Sociology",
-                "Sociology and other Social Sciences: Sociology and Anthropology, Sociology and Psychology and Sociology and History",
-                "Basic Concepts: Society, Community, Association and Institution"
+                "Definition",
+                "Nature and Scope of Sociology",
+                "Sociology and other Social Sciences: Sociology and Anthropology",
+                "Sociology and Psychology and Sociology and History",
+                "Basic Concepts: Society",
+                "Community",
+                "Association and Institution"
               ]
             },
             {
@@ -90,19 +94,29 @@
               "unitNumber": 1,
               "title": "Introductory",
               "topics": [
-                "Definition, Nature and Scope of Sociology",
-                "Sociology and its relation with other Social Sciences: Anthropology, History & Psychology"
+                "Definition",
+                "Nature and Scope of Sociology",
+                "Sociology and its relation with other Social Sciences: Anthropology",
+                "History & Psychology"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic Sociological Concepts",
               "topics": [
-                "Society, Community, Association and Institutions: concept, characteristics and differences",
-                "Social Groups: definitions, characteristics & types",
-                "Culture: definition, elements and cultural lag",
-                "Social Control; definition, means and agencies",
-                "Social Stratification: definition, caste & class as bases of social stratification"
+                "Society",
+                "Community",
+                "Association and Institutions: concept",
+                "Characteristics and differences",
+                "Social Groups: definitions",
+                "Characteristics & types",
+                "Culture: definition",
+                "Elements and cultural lag",
+                "Social Control",
+                "Definition",
+                "Means and agencies",
+                "Social Stratification: definition",
+                "Caste & class as bases of social stratification"
               ]
             },
             {
@@ -110,7 +124,9 @@
               "title": "Social Change",
               "topics": [
                 "Concept and definition",
-                "Types: Innovation, invention, revolution"
+                "Types: Innovation",
+                "Invention",
+                "Revolution"
               ]
             },
             {
@@ -160,8 +176,10 @@
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -181,7 +199,8 @@
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -194,7 +213,9 @@
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -286,28 +307,42 @@
               "unitNumber": 2,
               "title": "Social Institutions",
               "topics": [
-                "Caste - Definition, origin, features and recent changes",
+                "Caste",
+                "Definition",
+                "Origin",
+                "Features and recent changes",
                 "Dominant Caste: Concept & Significance",
                 "Jajmani System: Concept & Significance",
-                "Joint Family - Definition, characteristics and factors of disintegration",
-                "Marriage - Hindu, Muslim and Tribal",
-                "Kinship - Definition, types and usages"
+                "Joint Family",
+                "Definition",
+                "Characteristics and factors of disintegration",
+                "Marriage",
+                "Hindu, Muslim and Tribal",
+                "Kinship",
+                "Definition",
+                "Types and usages"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Communities",
               "topics": [
-                "Tribe - Definition and characteristics; Caste and Tribe: differences",
-                "Village Community - Features and changing trends"
+                "Tribe",
+                "Definition and characteristics",
+                "Caste and Tribe: differences",
+                "Village Community",
+                "Features and changing trends"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Women and Society",
               "topics": [
-                "Status of women in India - Changing patterns",
-                "Women Empowerment - Concept, factors and obstacles"
+                "Status of women in India",
+                "Changing patterns",
+                "Women Empowerment",
+                "Concept",
+                "Factors and obstacles"
               ]
             },
             {
@@ -410,43 +445,84 @@
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -456,22 +532,38 @@
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -613,8 +705,13 @@
               "unitNumber": 1,
               "title": "Ideas of India",
               "topics": [
-                "Gandhi, Lohia and Ambedkar – Views on Indian Society",
-                "Contributions of G.S. Ghurye and M. N. Srinivas"
+                "Gandhi",
+                "Lohia and Ambedkar",
+                "Views on Indian Society",
+                "Contributions of G.S",
+                "Ghurye and M",
+                "N",
+                "Srinivas"
               ]
             },
             {
@@ -622,7 +719,8 @@
               "title": "Resistance, Mobilization and Change",
               "topics": [
                 "Reservation Policy and Empowerment of Dalits",
-                "Trends of mobility and change in Indian Society – Modernization & Globalization"
+                "Trends of mobility and change in Indian Society",
+                "Modernization & Globalization"
               ]
             },
             {
@@ -638,8 +736,12 @@
               "unitNumber": 4,
               "title": "Issues and Challenges",
               "topics": [
-                "Communism – Concept, Characteristics and Causes",
-                "Secularism – Concept and Characteristics; Nationalism"
+                "Communism",
+                "Concept",
+                "Characteristics and Causes",
+                "Secularism",
+                "Concept and Characteristics",
+                "Nationalism"
               ]
             },
             {
@@ -738,9 +840,19 @@
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -759,9 +871,13 @@
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -772,9 +888,13 @@
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -864,17 +984,29 @@
               "title": "Political Sociology- Contextualising Study of Politics",
               "topics": [
                 "Emergence of Political Sociology",
-                "Definition, Nature and Scope of Political Sociology",
-                "Relationship with Sociology, Political Science, Economics and Psychology"
+                "Definition",
+                "Nature and Scope of Political Sociology",
+                "Relationship with Sociology",
+                "Political Science",
+                "Economics and Psychology"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic Concepts",
               "topics": [
-                "Influence – Definitions, nature, characteristics and sources",
-                "Power – Definitions, characteristics, sources and types",
-                "Authority – Definitions, types, functions and distinctions with power and influence"
+                "Influence",
+                "Definitions",
+                "Nature",
+                "Characteristics and sources",
+                "Power",
+                "Definitions",
+                "Characteristics",
+                "Sources and types",
+                "Authority",
+                "Definitions",
+                "Types",
+                "Functions and distinctions with power and influence"
               ]
             },
             {
@@ -882,7 +1014,8 @@
               "title": "Theories of Elite",
               "topics": [
                 "Pareto",
-                "C. Wright Mills",
+                "C",
+                "Wright Mills",
                 "Mosca"
               ]
             },
@@ -890,8 +1023,13 @@
               "unitNumber": 4,
               "title": "Democratic Actors",
               "topics": [
-                "Pressure Group – Definitions, types and role",
-                "Political parties – Definitions, elements, functions and limitations",
+                "Pressure Group",
+                "Definitions",
+                "Types and role",
+                "Political parties",
+                "Definitions",
+                "Elements",
+                "Functions and limitations",
                 "Voting Behaviour in India"
               ]
             },
@@ -926,7 +1064,8 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, definition and scope: Rural & Urban",
+                "Meaning",
+                "Definition and scope: Rural & Urban",
                 "Rural and urban community: characteristics and continuum",
                 "City concept & characteristics"
               ]
@@ -987,9 +1126,12 @@
               "unitNumber": 1,
               "title": "Gendering Sociology",
               "topics": [
-                "Sociology of Gender: Meaning, definition and subject matter",
+                "Sociology of Gender: Meaning",
+                "Definition and subject matter",
                 "Sex and Gender: Bases of gender role division",
-                "Patriarchy: Meaning, definition, origin and dimensions"
+                "Patriarchy: Meaning",
+                "Definition",
+                "Origin and dimensions"
               ]
             },
             {
@@ -1005,15 +1147,24 @@
               "unitNumber": 3,
               "title": "Gender, Differences and Inequalities",
               "topics": [
-                "Gender inequality – Meaning, definitions, extent, factors and eradicative measures",
-                "Gender discrimination – Meaning, modes, agencies and offences against women"
+                "Gender inequality",
+                "Meaning",
+                "Definitions",
+                "Extent",
+                "Factors and eradicative measures",
+                "Gender discrimination",
+                "Meaning",
+                "Modes",
+                "Agencies and offences against women"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gender – Power and Resistance",
               "topics": [
-                "Power and Subordination - Rights of Women, Laws to Protect the Rights of Women.",
+                "Power and Subordination",
+                "Rights of Women",
+                "Laws to Protect the Rights of Women",
                 "Resistance and Movements"
               ]
             },
@@ -1045,8 +1196,13 @@
               "unitNumber": 1,
               "title": "Ideas of India",
               "topics": [
-                "Gandhi, Lohia and Ambedkar – Views on Indian Society",
-                "Contributions of G.S. Ghurye and M. N. Srinivas"
+                "Gandhi",
+                "Lohia and Ambedkar",
+                "Views on Indian Society",
+                "Contributions of G.S",
+                "Ghurye and M",
+                "N",
+                "Srinivas"
               ]
             },
             {
@@ -1054,7 +1210,8 @@
               "title": "Resistance, Mobilization and Change",
               "topics": [
                 "Reservation Policy and Empowerment of Dalits",
-                "Trends of mobility and change in Indian Society – Modernization & Globalization"
+                "Trends of mobility and change in Indian Society",
+                "Modernization & Globalization"
               ]
             },
             {
@@ -1069,8 +1226,12 @@
               "unitNumber": 4,
               "title": "Issues and Challenges",
               "topics": [
-                "Communalism – Concept, Characteristics and Causes",
-                "Secularism – Concept and Characteristics; Nationalism"
+                "Communalism",
+                "Concept",
+                "Characteristics and Causes",
+                "Secularism",
+                "Concept and Characteristics",
+                "Nationalism"
               ]
             },
             {
@@ -1104,7 +1265,8 @@
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1177,7 +1339,8 @@
               "unitNumber": 1,
               "title": "Crime",
               "topics": [
-                "Concept, meaning and definition",
+                "Concept",
+                "Meaning and definition",
                 "Factors and types",
                 "Theories of crime"
               ]
@@ -1239,24 +1402,38 @@
               "unitNumber": 1,
               "title": "Political Sociology- Contextualising Study of Politics",
               "topics": [
-                "Definition, Nature and Scope of Political Sociology",
-                "Relationship with Sociology, Political Science, Economics and Psychology"
+                "Definition",
+                "Nature and Scope of Political Sociology",
+                "Relationship with Sociology",
+                "Political Science",
+                "Economics and Psychology"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic Concepts",
               "topics": [
-                "Power - Definitions, characteristics, sources and types",
-                "Authority - Definitions, types, functions and distinctions with power"
+                "Power",
+                "Definitions",
+                "Characteristics",
+                "Sources and types",
+                "Authority",
+                "Definitions",
+                "Types",
+                "Functions and distinctions with power"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Democratic Actors",
               "topics": [
-                "Pressure Group - Definitions, types and role",
-                "Political parties - Definitions, elements, functions and limitations",
+                "Pressure Group",
+                "Definitions",
+                "Types and role",
+                "Political parties",
+                "Definitions",
+                "Elements",
+                "Functions and limitations",
                 "Voting Behaviour in India"
               ]
             },
@@ -1371,8 +1548,10 @@
               "unitNumber": 1,
               "title": "Founding Fathers",
               "topics": [
-                "August Comte: Law of three stages, Positivis",
-                "Herbert Spencer: Social Evolution, Organic Analogy of society"
+                "August Comte: Law of three stages",
+                "Positivis",
+                "Herbert Spencer: Social Evolution",
+                "Organic Analogy of society"
               ]
             },
             {
@@ -1433,9 +1612,11 @@
               "title": "Logic of Social Research",
               "topics": [
                 "Social Research: Meaning and Characteristics",
-                "Social Survey: Meaning, Characteristics, Distinction with Social Research",
+                "Social Survey: Meaning",
+                "Characteristics",
+                "Distinction with Social Research",
                 "Qualitative & Quantitative Research: Basic concept and application",
-                "Scientific methods: Characteristics and steps."
+                "Scientific methods: Characteristics and steps"
               ]
             },
             {
@@ -1451,7 +1632,8 @@
               "title": "Mode of Enquiry",
               "topics": [
                 "Sources of data: Primary and Secondary",
-                "Hypothesis: Meaning, importance and Characteristics"
+                "Hypothesis: Meaning",
+                "Importance and Characteristics"
               ]
             },
             {
@@ -1494,7 +1676,8 @@
               "unitNumber": 1,
               "title": "Basic Concept",
               "topics": [
-                "Sociology of Gender: Meaning, definition and subject matter",
+                "Sociology of Gender: Meaning",
+                "Definition and subject matter",
                 "Sex and Gender",
                 "Patriarchy and Gender roles"
               ]
@@ -1513,8 +1696,12 @@
               "unitNumber": 3,
               "title": "Gender inequality and Feminist movements",
               "topics": [
-                "Gender inequality – Meaning, definitions, extent, factors and steps to eradicate gender inequality",
-                "Feminist movement in India."
+                "Gender inequality",
+                "Meaning",
+                "Definitions",
+                "Extent",
+                "Factors and steps to eradicate gender inequality",
+                "Feminist movement in India"
               ]
             },
             {
@@ -1561,7 +1748,8 @@
               "unitNumber": 3,
               "title": "Socialization",
               "topics": [
-                "Meaning, definition and characteristics",
+                "Meaning",
+                "Definition and characteristics",
                 "Stages and processes"
               ]
             },
@@ -1631,8 +1819,10 @@
               "unitNumber": 4,
               "title": "Indian Social Thinkers",
               "topics": [
-                "G.S. Ghurye",
-                "M.N. Srinivas",
+                "S",
+                "Ghurye",
+                "N",
+                "Srinivas",
                 "Radhakamal Mukherjee",
                 "Mahatama Gandhi",
                 "Raja Ram Mohan Roy"
@@ -1676,7 +1866,8 @@
               "title": "Social Research",
               "topics": [
                 "Stages of Social Research",
-                "Hypothesis. Sources and Types"
+                "Hypothesis",
+                "Sources and Types"
               ]
             },
             {
@@ -1684,8 +1875,12 @@
               "title": "Methods of Social Research",
               "topics": [
                 "Sampling-Meaning and Types",
-                "Research Design.-Meaning. Objectives and Types",
-                "Tools of Data Collection.-Interview. Questionnaire. Schedule. Observation & Case Study."
+                "Research Design.-Meaning",
+                "Objectives and Types",
+                "Tools of Data Collection.-Interview",
+                "Questionnaire",
+                "Schedule",
+                "Observation & Case Study"
               ]
             },
             {
@@ -1693,7 +1888,8 @@
               "title": "Statistical Method",
               "topics": [
                 "Measurement in Social Research.-Meaning",
-                "Measurement of Central tendency.-Mean, Median and Mode",
+                "Measurement of Central tendency.-Mean",
+                "Median and Mode",
                 "Scale.-Thurston Likert and Bogardus"
               ]
             },
@@ -1733,7 +1929,8 @@
               "unitNumber": 1,
               "title": "Introducing Population Studies",
               "topics": [
-                "Definition, Nature and Scope",
+                "Definition",
+                "Nature and Scope",
                 "Relationship with other Social Sciences",
                 "Importance & Implications"
               ]
@@ -1794,14 +1991,16 @@
               "unitNumber": 1,
               "title": "Basic Concepts",
               "topics": [
-                "Meaning of Social Change, Social Development and Social Progress"
+                "Meaning of Social Change",
+                "Social Development and Social Progress"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Theories of Social Change",
               "topics": [
-                "Evolutionary, Cyclical and Conflict Theory"
+                "Evolutionary",
+                "Cyclical and Conflict Theory"
               ]
             },
             {
@@ -1815,7 +2014,8 @@
               "unitNumber": 4,
               "title": "Planned Change in India",
               "topics": [
-                "Niti Ayog: Objectives, Achievements and Limitations",
+                "Niti Ayog: Objectives",
+                "Achievements and Limitations",
                 "MANREGA: Objectives & Achievements",
                 "Panchayati Raj in Bihar: Structure and Functions"
               ]
@@ -1865,7 +2065,8 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, definition and subject matter",
+                "Meaning",
+                "Definition and subject matter",
                 "Why Social Anthropology studies primitive societies",
                 "Relationship with other social sciences"
               ]
@@ -1874,9 +2075,14 @@
               "unitNumber": 2,
               "title": "Social Institutions",
               "topics": [
-                "Tribal Marriage: Meaning, function and types, ways of acquiring mates in primitive societies",
-                "Tribal Family: Definition, characteristics, types and importance",
-                "Tribal Kinship: Concept, types and usages,"
+                "Tribal Marriage: Meaning",
+                "Function and types",
+                "Ways of acquiring mates in primitive societies",
+                "Tribal Family: Definition",
+                "Characteristics",
+                "Types and importance",
+                "Tribal Kinship: Concept",
+                "Types and usages"
               ]
             },
             {
@@ -1884,8 +2090,10 @@
               "title": "Organizational Structure",
               "topics": [
                 "Lineage: Definition and characteristics",
-                "Clan: Concept, origin and role in tribal life",
-                "Phratry and Moiety: Meaning, concept and difference",
+                "Clan: Concept",
+                "Origin and role in tribal life",
+                "Phratry and Moiety: Meaning",
+                "Concept and difference",
                 "Youth organization: Structure and function"
               ]
             },
@@ -1893,9 +2101,12 @@
               "unitNumber": 4,
               "title": "Religion",
               "topics": [
-                "Meaning, definition and functions of religion",
-                "Theories: Animism, Animatism and Naturalism",
-                "Magic: Concept, Types and distinction with religion"
+                "Meaning",
+                "Definition and functions of religion",
+                "Theories: Animism",
+                "Animatism and Naturalism",
+                "Magic: Concept",
+                "Types and distinction with religion"
               ]
             },
             {

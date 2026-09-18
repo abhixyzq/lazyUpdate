@@ -28,38 +28,90 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Principles of Management",
               "topics": [
-                "Management - Meaning and Characteristics; Fayol's 14 Principles of Management; Levels of Management Importance of Management, Arts and Science of Management - Skills of Management; Scientific Management - meaning, objectives, relevance and criticism"
+                "Management",
+                "Meaning and Characteristics",
+                "Fayol's 14 Principles of Management",
+                "Levels of Management Importance of Management",
+                "Arts and Science of Management",
+                "Skills of Management",
+                "Scientific Management",
+                "Meaning",
+                "Objectives",
+                "Relevance and criticism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Functions of Management: Planning and Organizing",
               "topics": [
-                "Planning - Meaning, Characteristics, Types of Plans, Advantages and Disadvantages - Approaches to Planning - Management by Objectives (MBO) - Steps in MBO - Benefits - Weaknesses",
-                "Organizing - Process of Organizing; Principles of Organisation - Formal and Informal Organisations - Line, Staff Organisations, Line and Staff Conflicts. Functional Organisation; Span of Management - Meaning - Determining Span - Factors influencing the Span of Supervision"
+                "Planning",
+                "Meaning",
+                "Characteristics",
+                "Types of Plans",
+                "Advantages and Disadvantages",
+                "Approaches to Planning",
+                "Management by Objectives (MBO)",
+                "Steps in MBO",
+                "Benefits",
+                "Weaknesses",
+                "Organizing",
+                "Process of Organizing",
+                "Principles of Organisation",
+                "Formal and Informal Organisations",
+                "Line",
+                "Staff Organisations",
+                "Line and Staff Conflicts",
+                "Functional Organisation",
+                "Span of Management",
+                "Meaning",
+                "Determining Span",
+                "Factors influencing the Span of Supervision"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Functions of Management: Authority and Coordination",
               "topics": [
-                "Meaning of Authority, Power, responsibility and accountability - Delegation of Authority - Decentralization of Authority; Definition, importance, process, and principles of Coordination techniques of Effective Coordination"
+                "Meaning of Authority",
+                "Power",
+                "Responsibility and accountability",
+                "Delegation of Authority",
+                "Decentralization of Authority",
+                "Definition",
+                "Importance",
+                "Process, and principles of Coordination techniques of Effective Coordination"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Functions of Management: Control and Communication",
               "topics": [
-                "Control-Meaning, Relationship between planning and control, Steps in Control - Types (post, current, and pre-control). Requirements for effective control",
-                "Communication-purpose, process, formal and informal communication, barriers to effective communication and overcoming these barriers"
+                "Control-Meaning",
+                "Relationship between planning and control",
+                "Steps in Control",
+                "Types (post, current, and pre-control)",
+                "Requirements for effective control",
+                "Communication-purpose",
+                "Process",
+                "Formal and informal communication",
+                "Barriers to effective communication and overcoming these barriers"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Functions of Management: Motivation and Leadership",
               "topics": [
-                "Motivation- Meaning, importance, major motivation theories- Maslow's need hierarchy theory, Herzberg's two-factors theory, Vroom's Expectation Theory, extrinsic and intrinsic motivation",
-                "Leadership- meaning, theories, essential qualities, global leadership attributes, practicing leadership"
+                "Motivation- Meaning",
+                "Importance",
+                "Major motivation theories- Maslow's need hierarchy theory",
+                "Herzberg's two-factors theory",
+                "Vroom's Expectation Theory",
+                "Extrinsic and intrinsic motivation",
+                "Leadership- meaning",
+                "Theories",
+                "Essential qualities",
+                "Global leadership attributes",
+                "Practicing leadership"
               ]
             }
           ],
@@ -88,24 +140,52 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Concept, Nature, Functions, Importance and Scope of HRM; Functions and Qualities of a successful HR Manager; Human Resource Policies – Need, Sources, Process, Types and Contents; A conceptual Framework of HR Planning; Job-Analysis; Job description and Job specification"
+                "Concept",
+                "Nature",
+                "Functions",
+                "Importance and Scope of HRM",
+                "Functions and Qualities of a successful HR Manager",
+                "Human Resource Policies",
+                "Need, Sources, Process, Types and Contents",
+                "A conceptual Framework of HR Planning",
+                "Job-Analysis",
+                "Job description and Job specification"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Recruitment, Selection and Training",
               "topics": [
-                "Recruitment - Meaning and Sources of Recruitment",
-                "Selection – Process, Recruitment Vs. Selection, Common mistake in Group Discussion and Interview",
-                "Placement and Induction – Conceptual Framework, Job Change, Transfer and Promotion",
-                "Training – Meaning, Need, Importance and Method (on the job training and off the job training)"
+                "Recruitment",
+                "Meaning and Sources of Recruitment",
+                "Selection",
+                "Process",
+                "Recruitment Vs. Selection",
+                "Common mistake in Group Discussion and Interview",
+                "Placement and Induction",
+                "Conceptual Framework",
+                "Job Change",
+                "Transfer and Promotion",
+                "Training",
+                "Meaning",
+                "Need",
+                "Importance and Method (on the job training and off the job training)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Executive Development and Remuneration",
               "topics": [
-                "Executive Development Programme – Meaning, Significance, Contents and Methods; Performance Appraisal-Concept, Need, Objectives, Methods of Performance Appraisal; Job Evaluation – Conceptual Framework",
+                "Executive Development Programme",
+                "Meaning",
+                "Significance",
+                "Contents and Methods",
+                "Performance Appraisal-Concept",
+                "Need",
+                "Objectives",
+                "Methods of Performance Appraisal",
+                "Job Evaluation",
+                "Conceptual Framework",
                 "Methods of Remuneration: An Elementary Knowledge of Methods of wage payment and Fringe Benefits"
               ]
             }
@@ -183,24 +263,52 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Concept, Nature, Functions, Importance and Scope of HRM; Functions and Qualities of a successful HR Manager; Human Resource Policies – Need, Sources, Process, Types and Contents; A conceptual Framework of HR Planning; Job-Analysis; Job description and Job specification"
+                "Concept",
+                "Nature",
+                "Functions",
+                "Importance and Scope of HRM",
+                "Functions and Qualities of a successful HR Manager",
+                "Human Resource Policies",
+                "Need, Sources, Process, Types and Contents",
+                "A conceptual Framework of HR Planning",
+                "Job-Analysis",
+                "Job description and Job specification"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Recruitment, Selection and Training",
               "topics": [
-                "Recruitment - Meaning and Sources of Recruitment",
-                "Selection – Process, Recruitment Vs. Selection, Common mistake in Group Discussion and Interview",
-                "Placement and Induction – Conceptual Framework, Job Change, Transfer and Promotion",
-                "Training – Meaning, Need, Importance and Method (on the job training and off the job training)"
+                "Recruitment",
+                "Meaning and Sources of Recruitment",
+                "Selection",
+                "Process",
+                "Recruitment Vs. Selection",
+                "Common mistake in Group Discussion and Interview",
+                "Placement and Induction",
+                "Conceptual Framework",
+                "Job Change",
+                "Transfer and Promotion",
+                "Training",
+                "Meaning",
+                "Need",
+                "Importance and Method (on the job training and off the job training)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Executive Development and Remuneration",
               "topics": [
-                "Executive Development Programme - Meaning, Significance, Contents and Methods; Performance Appraisal-Concept, Need, Objectives, Methods of Performance Appraisal; Job Evaluation - Conceptual Framework",
+                "Executive Development Programme",
+                "Meaning",
+                "Significance",
+                "Contents and Methods",
+                "Performance Appraisal-Concept",
+                "Need",
+                "Objectives",
+                "Methods of Performance Appraisal",
+                "Job Evaluation",
+                "Conceptual Framework",
                 "Methods of Remuneration: An Elementary Knowledge of Methods of wage payment and Fringe Benefits"
               ]
             },
@@ -208,8 +316,13 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Maintenance of Employees and Grievance Management",
               "topics": [
-                "Maintenance: Employee Health and Safety; Employee Welfare; Employer and Employee Relations - An overview",
-                "Grievance: Handling and Redressal; Grievance Procedure; Management of Employees Grievance",
+                "Maintenance: Employee Health and Safety",
+                "Employee Welfare",
+                "Employer and Employee Relations",
+                "An overview",
+                "Grievance: Handling and Redressal",
+                "Grievance Procedure",
+                "Management of Employees Grievance",
                 "Industrial Disputes: Causes and Settlement Machinery"
               ]
             },
@@ -217,9 +330,18 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Morale and Discipline",
               "topics": [
-                "Morale - Meaning, Factors Affecting, Methods of Measurement, Suggestive for Improving morale",
-                "Discipline - Need, Causes of Indiscipline, Suggestions for Effective Discipline, Procedure for Disciplinary Action",
-                "HR Audit - A Conceptual Framework of Human Resource Audit"
+                "Morale",
+                "Meaning",
+                "Factors Affecting",
+                "Methods of Measurement",
+                "Suggestive for Improving morale",
+                "Discipline",
+                "Need",
+                "Causes of Indiscipline",
+                "Suggestions for Effective Discipline",
+                "Procedure for Disciplinary Action",
+                "HR Audit",
+                "A Conceptual Framework of Human Resource Audit"
               ]
             }
           ],
@@ -249,21 +371,37 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nature of Training and Development",
               "topics": [
-                "Theories of management training and development and practical application of these theories in today's organisations, inputs and gaps in training; Training and development as a source of competitive advantage; Resistance to change"
+                "Theories of management training and development and practical application of these theories in today's organisations",
+                "Inputs and gaps in training",
+                "Training and development as a source of competitive advantage",
+                "Resistance to change"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Designing Training Programmes",
               "topics": [
-                "Training process and practical application of designing programmes in today's environment, Methods of training; Human re-engineering, managing change, workmen training, re-training, government initiatives, self-directed work teams, learning curves, managing a diverse workforce"
+                "Training process and practical application of designing programmes in today's environment",
+                "Methods of training",
+                "Human re-engineering",
+                "Managing change",
+                "Workmen training",
+                "Re-training",
+                "Government initiatives",
+                "Self-directed work teams",
+                "Learning curves",
+                "Managing a diverse workforce"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Evaluation of Training and Development Programme and Career Development",
               "topics": [
-                "Evaluation of Training and Development Programme – Statistical methods, use of appropriate training and development software packages. Career Development and Planning, Career Development Programme and Counselling"
+                "Evaluation of Training and Development Programme",
+                "Statistical methods",
+                "Use of appropriate training and development software packages",
+                "Career Development and Planning",
+                "Career Development Programme and Counselling"
               ]
             }
           ],
@@ -334,35 +472,83 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Job Analysis and Performance Appraisal",
               "topics": [
-                "Job analysis – manpower planning – at the start of the business and as ongoing process – performance appraisal – standards, methods, errors"
+                "Job analysis",
+                "Manpower planning",
+                "At the start of the business and as ongoing process",
+                "Performance appraisal",
+                "Standards, methods, errors"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Learning Objectives",
               "topics": [
-                "Learning Objectives – domains of learning – methods of learning – importance of teaching techniques – instruction technology – instructor behavior – attention versus involvement"
+                "Learning Objectives",
+                "Domains of learning",
+                "Methods of learning",
+                "Importance of teaching techniques",
+                "Instruction technology",
+                "Instructor behavior",
+                "Attention versus involvement"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Need for Training and Development",
               "topics": [
-                "Need for Training and Development – Role of Development officers – administrators, consultants, designers and instructors – determining training needs – potential macro needs – usefulness of training – development of competency-based training programs – Evaluation of training programs"
+                "Need for Training and Development",
+                "Role of Development officers",
+                "Administrators",
+                "Consultants",
+                "Designers and instructors",
+                "Determining training needs",
+                "Potential macro needs",
+                "Usefulness of training",
+                "Development of competency-based training programs",
+                "Evaluation of training programs"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Methods of training",
               "topics": [
-                "Methods of training – on the job training – off the job training – choosing optimum method – the lecture – field trips – panel discussion – behavior modeling – interactive demonstrations – brain storming – case studies – action mazes, incident process, in-baskets, team tasks, buzz-groups and syndicates, agenda setting, role-plays-reverse role plays, rotational role plays, finding metaphors, simulations, business games, clinics, critical incidents, fish bowls, T-groups, data gathering, grouping methods, transactional analysis, exception analysis"
+                "Methods of training",
+                "On the job training",
+                "Off the job training",
+                "Choosing optimum method",
+                "The lecture",
+                "Field trips",
+                "Panel discussion",
+                "Behavior modeling",
+                "Interactive demonstrations",
+                "Brain storming",
+                "Case studies",
+                "Action mazes",
+                "Incident process, in-baskets",
+                "Team tasks",
+                "Buzz-groups and syndicates",
+                "Agenda setting",
+                "Role-plays-reverse role plays",
+                "Rotational role plays",
+                "Finding metaphors",
+                "Simulations",
+                "Business games",
+                "Clinics",
+                "Critical incidents",
+                "Fish bowls",
+                "T-groups",
+                "Data gathering",
+                "Grouping methods",
+                "Transactional analysis",
+                "Exception analysis"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Need for Development",
               "topics": [
-                "Need for Development – difference between training and development-management development programme-career development program-counseling evaluation of programs- job evaluation-methods and techniques"
+                "Need for Development",
+                "Difference between training and development-management development programme-career development program-counseling evaluation of programs- job evaluation-methods and techniques"
               ]
             }
           ],
@@ -387,14 +573,24 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Compensation Management",
               "topics": [
-                "Introduction - Definition of Compensation Management - Objective of Compensation- Principles of compensation Management- Importance of compensation Management- Types of Wages. Exploring and Defining the compensation context - Intrinsic compensation- Extrinsic compensation- Compensation Trends in India. - The 3-P compensation concept"
+                "Introduction",
+                "Definition of Compensation Management",
+                "Objective of Compensation- Principles of compensation Management- Importance of compensation Management- Types of Wages",
+                "Exploring and Defining the compensation context",
+                "Intrinsic compensation- Extrinsic compensation- Compensation Trends in India",
+                "The 3-P compensation concept"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Compensation Planning & Bases of Compensation",
               "topics": [
-                "Compensation and its Components - Compensation Planning: Level, Structure and Systems Decision - Compensation level planning - factors influencing compensation level planning: internal factors and external factors. Traditional Bases for Pay- seniority and Longevity Pay Merit Pay- Performance Appraisal- Methods -Biases- Strengthening the Pay for Performance Link- Possible Limitations of Merit Pay programme"
+                "Compensation and its Components",
+                "Compensation Planning: Level",
+                "Structure and Systems Decision",
+                "Compensation level planning",
+                "Factors influencing compensation level planning: internal factors and external factors",
+                "Traditional Bases for Pay- seniority and Longevity Pay Merit Pay- Performance Appraisal- Methods -Biases- Strengthening the Pay for Performance Link- Possible Limitations of Merit Pay programme"
               ]
             },
             {
@@ -402,14 +598,21 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "title": "Incentive Pay & Other Pay Systems",
               "topics": [
                 "Exploring Incentive Pay- Contrasting Invertive pay with Traditional Pay",
-                "Individual Incentives Types of Individual Incentives-Advantages and Disadvantages. Group Incentives-Types of Group Incentives-Advantages and Disadvantages. Companywide Incentive-Types-Designing Incentive Pay Programmes. Person Focused Pay-Competency Based Pay, Pay for Knowledge and Skill Based pay, team based pay-concepts"
+                "Individual Incentives Types of Individual Incentives-Advantages and Disadvantages",
+                "Group Incentives-Types of Group Incentives-Advantages and Disadvantages",
+                "Companywide Incentive-Types-Designing Incentive Pay Programmes",
+                "Person Focused Pay-Competency Based Pay",
+                "Pay for Knowledge and Skill Based pay",
+                "Team based pay-concepts"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Designing Compensation System",
               "topics": [
-                "Building internally consistent Compensation System- Creatin Internal Equality through job Analysis and job Valuation- Building Market Competitive Compensation System - compensation surveys Integrating Internal Job Structure with External Market-Building Pa Structures that Recognize Individual Contribution : Constructing pa structure. Pay structure variations- Broad banding- two tier pa structure"
+                "Building internally consistent Compensation System- Creatin Internal Equality through job Analysis and job Valuation- Building Market Competitive Compensation System",
+                "Compensation surveys Integrating Internal Job Structure with External Market-Building Pa Structures that Recognize Individual Contribution : Constructing pa structure",
+                "Pay structure variations- Broad banding- two tier pa structure"
               ]
             },
             {
@@ -442,14 +645,24 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Compensation Management",
               "topics": [
-                "Introduction – Definition of Compensation Management – Objective of Compensation- Principles of compensation Management- Importance of compensation Management- Types of Wages. Exploring and Defining the compensation context – Intrinsic compensation- Extrinsic compensation- Compensation Trends in India. – The 3-P compensation concept"
+                "Introduction",
+                "Definition of Compensation Management",
+                "Objective of Compensation- Principles of compensation Management- Importance of compensation Management- Types of Wages",
+                "Exploring and Defining the compensation context",
+                "Intrinsic compensation- Extrinsic compensation- Compensation Trends in India",
+                "The 3-P compensation concept"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Compensation Planning & Bases of Compensation",
               "topics": [
-                "Compensation and its Components – Compensation Planning: Level, Structure and Systems Decision – Compensation level planning – factors influencing compensation level planning: internal factors and external factors. Traditional Bases for Pay- seniority and Longevity Pay Merit Pay- Performance Appraisal- Methods –Biases- Strengthening the Pay for Performance Link- Possible Limitations of Merit Pay programme"
+                "Compensation and its Components",
+                "Compensation Planning: Level",
+                "Structure and Systems Decision",
+                "Compensation level planning",
+                "Factors influencing compensation level planning: internal factors and external factors",
+                "Traditional Bases for Pay- seniority and Longevity Pay Merit Pay- Performance Appraisal- Methods –Biases- Strengthening the Pay for Performance Link- Possible Limitations of Merit Pay programme"
               ]
             },
             {
@@ -532,24 +745,30 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Labour and Employment Laws",
               "topics": [
-                "The course consists of various Acts related to Labour and Employment Laws in India with respect to their enactment. Definitions and different provisions"
+                "The course consists of various Acts related to Labour and Employment Laws in India with respect to their enactment",
+                "Definitions and different provisions"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The workmen's Compensations Act, 1923 & The Employees State Insurance Act, 1948",
               "topics": [
-                "The workmen's Compensations Act, 1923",
-                "The Employees State Insurance Act, 1948"
+                "The workmen's Compensations Act",
+                "1923",
+                "The Employees State Insurance Act",
+                "1948"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Employee's Provident fund and Miscellaneous Provisions Act, 1952 & The payment of gratuity Act, 1972 & The Maternity Benefit Act, 1961",
               "topics": [
-                "The Employee's Provident fund and Miscellaneous Provisions Act, 1952",
-                "The payment of gratuity Act, 1972",
-                "The Maternity Benefit Act, 1961"
+                "The Employee's Provident fund and Miscellaneous Provisions Act",
+                "1952",
+                "The payment of gratuity Act",
+                "1972",
+                "The Maternity Benefit Act",
+                "1961"
               ]
             }
           ],
@@ -576,14 +795,19 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Labour Welfare",
               "topics": [
-                "Concept, objective and Scope of Labour Welfare, Types of Labour Welfare- Statutory and Non- Statutory' Agencies of Labour welfare work"
+                "Concept",
+                "Objective and Scope of Labour Welfare",
+                "Types of Labour Welfare- Statutory and Non- Statutory' Agencies of Labour welfare work"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Labour Welfare in India",
               "topics": [
-                "Labour welfare under Constitution of India; Main Provision of the Factories Act, 1948, Regarding Labour Welfare"
+                "Labour welfare under Constitution of India",
+                "Main Provision of the Factories Act",
+                "1948",
+                "Regarding Labour Welfare"
               ]
             },
             {
@@ -597,14 +821,22 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Social Security",
               "topics": [
-                "Concept Need and Significance of Social Security, Types of Social Security; Social Assistance and Social Insurance"
+                "Concept Need and Significance of Social Security",
+                "Types of Social Security",
+                "Social Assistance and Social Insurance"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Social Security in India",
               "topics": [
-                "Main Features and Provisions of the Employees State Insurance Act, 1948; the Employees Provident Funds and Miscellaneous Provisions Act, 1952; the workmen's Compensation Act, 1923 and the Maturity Benefit Act, 1961 with regard to Labour Welfare"
+                "Main Features and Provisions of the Employees State Insurance Act",
+                "1948",
+                "The Employees Provident Funds and Miscellaneous Provisions Act",
+                "1952",
+                "The workmen's Compensation Act",
+                "1923 and the Maturity Benefit Act",
+                "1961 with regard to Labour Welfare"
               ]
             }
           ],
@@ -629,21 +861,46 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Industrial Relation",
               "topics": [
-                "Concepts, evaluation, characteristics, scope, components, factors affecting industrial relations, approaches to IR, IR in India, prerequisites of successful industrial relation program"
+                "Concepts",
+                "Evaluation",
+                "Characteristics",
+                "Scope",
+                "Components",
+                "Factors affecting industrial relations",
+                "Approaches to IR",
+                "IR in India",
+                "Prerequisites of successful industrial relation program"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Industrial, conflicts and disputes",
               "topics": [
-                "Meaning, essentials, classification, recognitions of disputes, impact of Industrial disputes/conflicts, Strikes-forms, prevention of strikes, lock-outs, gheraos. Ways to achieve Industrial peace. Code of discipline in the industry"
+                "Meaning",
+                "Essentials",
+                "Classification",
+                "Recognitions of disputes",
+                "Impact of Industrial disputes/conflicts",
+                "Strikes-forms",
+                "Prevention of strikes",
+                "Lock-outs",
+                "Gheraos",
+                "Ways to achieve Industrial peace",
+                "Code of discipline in the industry"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Grievances handling",
               "topics": [
-                "Meaning, nature & causes of grievances, procedures for redressal. Collective Bargaining- meaning, principles, contents, forms, process and levels of Collective Bargaining"
+                "Meaning",
+                "Nature & causes of grievances",
+                "Procedures for redressal",
+                "Collective Bargaining- meaning",
+                "Principles",
+                "Contents",
+                "Forms",
+                "Process and levels of Collective Bargaining"
               ]
             }
           ],
@@ -667,21 +924,46 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Industrial Relation",
               "topics": [
-                "Concepts, evaluation, characteristics, scope, components, factors affecting industrial relations, approaches to IR, IR in India, prerequisites of successful industrial relation program"
+                "Concepts",
+                "Evaluation",
+                "Characteristics",
+                "Scope",
+                "Components",
+                "Factors affecting industrial relations",
+                "Approaches to IR",
+                "IR in India",
+                "Prerequisites of successful industrial relation program"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Industrial, conflicts and disputes",
               "topics": [
-                "Meaning, essentials, classification, recognitions of disputes, impact of Industrial disputes/conflicts, Strikes-forms, prevention of strikes, lock-outs, gheraos. Ways to achieve Industrial peace. Code of discipline in the industry"
+                "Meaning",
+                "Essentials",
+                "Classification",
+                "Recognitions of disputes",
+                "Impact of Industrial disputes/conflicts",
+                "Strikes-forms",
+                "Prevention of strikes",
+                "Lock-outs",
+                "Gheraos",
+                "Ways to achieve Industrial peace",
+                "Code of discipline in the industry"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Grievances handling",
               "topics": [
-                "Meaning, nature & causes of grievances, procedures for redressal. Collective Bargaining- meaning, principles, contents, forms, process and levels of Collective Bargaining"
+                "Meaning",
+                "Nature & causes of grievances",
+                "Procedures for redressal",
+                "Collective Bargaining- meaning",
+                "Principles",
+                "Contents",
+                "Forms",
+                "Process and levels of Collective Bargaining"
               ]
             }
           ],
@@ -728,7 +1010,8 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature of Groups and Group dynamics- Group formation – Value of Groups"
+                "Nature of Groups and Group dynamics- Group formation",
+                "Value of Groups"
               ]
             },
             {
@@ -782,15 +1065,22 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mathematics for Finance",
               "topics": [
-                "Simple and Compound Interest - Annuities - Discounts and Present values. Basic Calculus - Rules for Differentiation"
+                "Simple and Compound Interest",
+                "Annuities",
+                "Discounts and Present values",
+                "Basic Calculus",
+                "Rules for Differentiation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Progression",
               "topics": [
-                "Arithmetic Progression: General Term, Sum upto n terms of an A.P., Arithmetic Mean",
-                "Geometric Progression: General Term, Sum of Finite and infinite Geometric Progression",
+                "Arithmetic Progression: General Term",
+                "Sum upto n terms of an A.P",
+                "Arithmetic Mean",
+                "Geometric Progression: General Term",
+                "Sum of Finite and infinite Geometric Progression",
                 "Harmonic Progression: General Term and Harmonic Mean"
               ]
             },
@@ -798,21 +1088,50 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Statistics",
               "topics": [
-                "Definition - Scope and Limitation - Presentation of Data - Diagrammatic and Graphical Representation of Data. Measures of Central Tendency - Mean - Median and Mode - GM and HM Measures of Dispersion - Range - Mean Deviation - Quartile Deviation - Standard Deviation - Coefficient Variation"
+                "Definition",
+                "Scope and Limitation",
+                "Presentation of Data",
+                "Diagrammatic and Graphical Representation of Data",
+                "Measures of Central Tendency",
+                "Mean",
+                "Median and Mode",
+                "GM and HM Measures of Dispersion",
+                "Range",
+                "Mean Deviation",
+                "Quartile Deviation",
+                "Standard Deviation",
+                "Coefficient Variation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Correlation",
               "topics": [
-                "Karl Pearson's Correlation - Concurrent Deviation Method - Rank Correlation - Uses of Correlation in Business Regression - Regression Lines - Regression Coefficients - Uses of Regression in Business Problems"
+                "Karl Pearson's Correlation",
+                "Concurrent Deviation Method",
+                "Rank Correlation",
+                "Uses of Correlation in Business Regression",
+                "Regression Lines",
+                "Regression Coefficients",
+                "Uses of Regression in Business Problems"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Time Series",
               "topics": [
-                "Components of time Series - Measurement of Trend - Semi Average method - Moving Average method - Method of Least Squares - Measurement of Seasonal Variations - Simple Average Method - Ratio to Moving Average Method. Index Numbers - Weighted and UN weighted Index Numbers - Cost of Living Index Number - Test on index Numbers"
+                "Components of time Series",
+                "Measurement of Trend",
+                "Semi Average method",
+                "Moving Average method",
+                "Method of Least Squares",
+                "Measurement of Seasonal Variations",
+                "Simple Average Method",
+                "Ratio to Moving Average Method",
+                "Index Numbers",
+                "Weighted and UN weighted Index Numbers",
+                "Cost of Living Index Number",
+                "Test on index Numbers"
               ]
             }
           ],
@@ -837,24 +1156,30 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Labour and Employment Laws in India",
               "topics": [
-                "The course consists of various Acts related to Labour and Employment Laws in India with respect to their enactment. Definitions and different provisions"
+                "The course consists of various Acts related to Labour and Employment Laws in India with respect to their enactment",
+                "Definitions and different provisions"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The workmen's Compensations Act, 1923 & The Employees State Insurance Act, 1948",
               "topics": [
-                "The workmen's Compensations Act, 1923",
-                "The Employees State Insurance Act, 1948"
+                "The workmen's Compensations Act",
+                "1923",
+                "The Employees State Insurance Act",
+                "1948"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Employee's Provident fund and Miscellaneous Provisions Act, 1952 & The payment of gratuity Act, 1972 & The Maternity Benefit Act, 1961",
               "topics": [
-                "The Employee's Provident fund and Miscellaneous Provisions Act, 1952",
-                "The payment of gratuity Act, 1972",
-                "The Maternity Benefit Act, 1961"
+                "The Employee's Provident fund and Miscellaneous Provisions Act",
+                "1952",
+                "The payment of gratuity Act",
+                "1972",
+                "The Maternity Benefit Act",
+                "1961"
               ]
             }
           ],
@@ -881,14 +1206,19 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Labour Welfare",
               "topics": [
-                "Concept, objective and Scope of Labour Welfare, Types of Labour Welfare-Statutory and Non-Statutory' Agencies of Labour welfare work"
+                "Concept",
+                "Objective and Scope of Labour Welfare",
+                "Types of Labour Welfare-Statutory and Non-Statutory' Agencies of Labour welfare work"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Labour Welfare in India",
               "topics": [
-                "Labour welfare under Constitution of India; Main Provision of the Factories Act, 1948, Regarding Labour Welfare"
+                "Labour welfare under Constitution of India",
+                "Main Provision of the Factories Act",
+                "1948",
+                "Regarding Labour Welfare"
               ]
             },
             {
@@ -925,7 +1255,9 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Understanding Organization, Behaviour and OB",
               "topics": [
-                "Organization as a Social Unit: Concept of Learning Organization, Roles and skill of manager, challenges and opportunities of OB"
+                "Organization as a Social Unit: Concept of Learning Organization",
+                "Roles and skill of manager",
+                "Challenges and opportunities of OB"
               ]
             },
             {
@@ -934,30 +1266,41 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "topics": [
                 "Basic Individual differences(ability and biographical Characteristics)",
                 "Personality : Meaning \"Big-Five\" Personality Traits",
-                "Perception : Meaning. Role of Object"
+                "Perception : Meaning",
+                "Role of Object"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Group in Organization",
               "topics": [
-                "Groups : Types, Their development stages. Concept of role. Transactional Analysis",
-                "Stress and Conflict : Meaning and causes of stress, types of conflicts. Copying strategies for stress and conflict: negotiation skills",
-                "Communication : Process. Types. Barriers; Grapevine"
+                "Groups : Types, Their development stages",
+                "Concept of role",
+                "Transactional Analysis",
+                "Stress and Conflict : Meaning and causes of stress",
+                "Types of conflicts",
+                "Copying strategies for stress and conflict: negotiation skills",
+                "Communication : Process",
+                "Types",
+                "Barriers",
+                "Grapevine"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Leadership and Organizational Change",
               "topics": [
-                "Concept, Trait Behavioural and Contingency (Fiedler. Herse and Bhanchard) theories; leadership styles successful and effective leadership"
+                "Concept",
+                "Trait Behavioural and Contingency (Fiedler. Herse and Bhanchard) theories",
+                "Leadership styles successful and effective leadership"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Organizational Change",
               "topics": [
-                "Concept, Resistance to and Managing Change"
+                "Concept",
+                "Resistance to and Managing Change"
               ]
             }
           ],
@@ -983,21 +1326,32 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and nature of stress",
               "topics": [
-                "Difference between stress and distress; Frustration, conflict and pressure; Meaning of stressors; common stressors at work place: Stressors unique to age and gender"
+                "Difference between stress and distress",
+                "Frustration",
+                "Conflict and pressure",
+                "Meaning of stressors",
+                "Common stressors at work place: Stressors unique to age and gender"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Cognitive appraisal of stress",
               "topics": [
-                "General adaptation to stress; Consequences of stress; Physiological and psychological changes associated with the stress response. Stress and Memory; Stress and Other Cognitive Variables; Stressful environmental conditions on performance"
+                "General adaptation to stress",
+                "Consequences of stress",
+                "Physiological and psychological changes associated with the stress response",
+                "Stress and Memory",
+                "Stress and Other Cognitive Variables",
+                "Stressful environmental conditions on performance"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Stress and Work performance",
               "topics": [
-                "Role of communication in managing stress and work performance: Emotional regulation and coping; Emotional intelligence and conflict management: Emotional Basis and Stress; Stress and Conflict in Relationships"
+                "Role of communication in managing stress and work performance: Emotional regulation and coping",
+                "Emotional intelligence and conflict management: Emotional Basis and Stress",
+                "Stress and Conflict in Relationships"
               ]
             }
           ],
@@ -1030,28 +1384,36 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Overview of change, importance and impact of change. Origins of change- Technological, Social, Behavioural, role of human resource strategies in implanting change"
+                "Overview of change",
+                "Importance and impact of change",
+                "Origins of change- Technological",
+                "Social",
+                "Behavioural",
+                "Role of human resource strategies in implanting change"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Organisational Structure, Culture and Change- The Significance",
               "topics": [
-                "Organisational Structure, Culture and Change- The Significance"
+                "Organisational Structure",
+                "Culture and Change- The Significance"
               ]
             },
             {
               "unitNumber": 3,
               "title": "HR Process & Change",
               "topics": [
-                "Relocation and development of recruitment and selection processes for planned and unplanned change; HRD and organizational Change"
+                "Relocation and development of recruitment and selection processes for planned and unplanned change",
+                "HRD and organizational Change"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Strategic reward Management",
               "topics": [
-                "Strategic reward Management and its role in changing employee behaviour, managing change through employee involvement"
+                "Strategic reward Management and its role in changing employee behaviour",
+                "Managing change through employee involvement"
               ]
             }
           ],
@@ -1076,21 +1438,28 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Overview of change, importance and impact of change. Origins of change- Technological, Social, Behavioural, role of human resource strategies in implanting change"
+                "Overview of change",
+                "Importance and impact of change",
+                "Origins of change- Technological",
+                "Social",
+                "Behavioural",
+                "Role of human resource strategies in implanting change"
               ]
             },
             {
               "unitNumber": 2,
               "title": "HR Process & Change",
               "topics": [
-                "Relocation and development of recruitment and selection processes for planned and unplanned change; HRD and organizational Change"
+                "Relocation and development of recruitment and selection processes for planned and unplanned change",
+                "HRD and organizational Change"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Strategic reward Management",
               "topics": [
-                "Strategic reward Management and its role in changing employee behaviour, managing change through employee involvement"
+                "Strategic reward Management and its role in changing employee behaviour",
+                "Managing change through employee involvement"
               ]
             }
           ],
@@ -1160,39 +1529,61 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, Scope and Importance of Business Economics - Economic Problems, Opportunity Cost principle- Incremental and Marginal Concepts"
+                "Meaning",
+                "Scope and Importance of Business Economics",
+                "Economic Problems",
+                "Opportunity Cost principle- Incremental and Marginal Concepts"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Demand Analysis",
               "topics": [
-                "Law of Demand - Meaning and factors affecting demand, Nature of demand curve under different markets",
-                "The basics of market demand, market supply and equilibrium price",
-                "Meaning, significance, types and measurement of elasticity of demand (Price, income and cross) - relationship between price elasticity of demand and revenue concepts"
+                "Law of Demand",
+                "Meaning and factors affecting demand",
+                "Nature of demand curve under different markets",
+                "The basics of market demand",
+                "Market supply and equilibrium price",
+                "Meaning",
+                "Significance",
+                "Types and measurement of elasticity of demand (Price, income and cross)",
+                "Relationship between price elasticity of demand and revenue concepts"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Supply and Production decisions",
               "topics": [
-                "Production function: short run analysis with Law of Variable Proportions- Production function, Long run production function and Laws of Returns to Scale",
-                "Cost concepts and classification: Accounting cost and economic cost, implicit and explicit cost, social and private cost, historical cost and replacement cost, sunk cost and incremental cost - fixed and variable cost - total, average and marginal cost"
+                "Production function: short run analysis with Law of Variable Proportions- Production function",
+                "Long run production function and Laws of Returns to Scale",
+                "Cost concepts and classification: Accounting cost and economic cost",
+                "Implicit and explicit cost",
+                "Social and private cost",
+                "Historical cost and replacement cost",
+                "Sunk cost and incremental cost",
+                "Fixed and variable cost",
+                "Total",
+                "Average and marginal cost"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pricing and output decisions under various Market structure",
               "topics": [
-                "Perfect competition and Monopoly models as two extreme cases - profit maximisation and the competitive firm's supply curve - Short run and long run equilibrium of a firm and of industry",
-                "Features of monopolistic competition: Product differentiation and role of sales promotion, short run and long run equilibrium, monopolistic verses perfect competition"
+                "Perfect competition and Monopoly models as two extreme cases",
+                "Profit maximisation and the competitive firm's supply curve",
+                "Short run and long run equilibrium of a firm and of industry",
+                "Features of monopolistic competition: Product differentiation and role of sales promotion",
+                "Short run and long run equilibrium",
+                "Monopolistic verses perfect competition"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Capital budgeting: evaluating capital projects",
               "topics": [
-                "Meaning and importance steps in capital budgeting- Techniques of Investment appraisal:- payback period method, net present value method, and internal rate of return method"
+                "Meaning and importance steps in capital budgeting- Techniques of Investment appraisal:- payback period method",
+                "Net present value method, and internal rate of return method"
               ]
             }
           ],
@@ -1228,28 +1619,35 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "The Research Problem and Design",
               "topics": [
-                "Formulation and Definition of Business Research Problem Formulation of Research Hypotheses, Baines Research Design Explanatory Research Design (Secondary Das and Qualitative Research Descriptive Research Design (Survey and Observation and Causal Research Design (Experimentation Potential Sources of Errors in Research"
+                "Formulation and Definition of Business Research Problem Formulation of Research Hypotheses",
+                "Baines Research Design Explanatory Research Design (Secondary Das and Qualitative Research Descriptive Research Design (Survey and Observation and Causal Research Design (Experimentation Potential Sources of Errors in Research"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sampling Design and Measurement Techniques",
               "topics": [
-                "The Sampling Design Process; Types of Sample Design Probability and Non-probability Sampling Design S1e of Sample Sampling Errors: Concept of Measurement and Sesling Important Scaling Techniques Comparative and Non-comparative liability and Validity of Measurement"
+                "The Sampling Design Process",
+                "Types of Sample Design Probability and Non-probability Sampling Design S1e of Sample Sampling Errors: Concept of Measurement and Sesling Important Scaling Techniques Comparative and Non-comparative liability and Validity of Measurement"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Data Collection Tous and Data Processing",
               "topics": [
-                "Questionnaire and Observation Form Questiona Design Process Collecting Primary Data tgh-Observations, Semi-structured Interviews lo-depth Interviews and Questionnaire, Processing of Research Data Editing, Coding. Classification and Tabulation Analysis of Data Basic Data Analysis Descriptive Statistics Hypotheses Testing"
+                "Questionnaire and Observation Form Questiona Design Process Collecting Primary Data tgh-Observations",
+                "Semi-structured Interviews lo-depth Interviews and Questionnaire",
+                "Processing of Research Data Editing",
+                "Coding",
+                "Classification and Tabulation Analysis of Data Basic Data Analysis Descriptive Statistics Hypotheses Testing"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Business Research Report",
               "topics": [
-                "Importance of the Repon & Presentation Business Report Fost Report Writing Oral Presentation, Research Follow-up"
+                "Importance of the Repon & Presentation Business Report Fost Report Writing Oral Presentation",
+                "Research Follow-up"
               ]
             }
           ],
@@ -1273,10 +1671,17 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "The Indian Contract Act: General Principles",
               "topics": [
-                "Contract-meaning, characteristics, kinds",
-                "Essentials of a valid contract-Offer, Acceptance consideration, Contractual Capacity, Free Consent, legality of Object",
+                "Contract-meaning",
+                "Characteristics",
+                "Kinds",
+                "Essentials of a valid contract-Offer",
+                "Acceptance consideration",
+                "Contractual Capacity",
+                "Free Consent",
+                "Legality of Object",
                 "Void and Voidable Agreements",
-                "Discharge of a contract-modes of discharge, breach & remedies against breach of contract",
+                "Discharge of a contract-modes of discharge",
+                "Breach & remedies against breach of contract",
                 "Contingent & Quasi Contract"
               ]
             },
@@ -1293,25 +1698,37 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "The Sale of Goods Act, 1930",
               "topics": [
-                "Contract of sale, meaning, Difference between sale and Agreement to sale",
-                "conditions and warranties",
+                "Contract of sale",
+                "Meaning",
+                "Difference between sale and Agreement to sale",
+                "Conditions and warranties",
                 "Performance of contract of sale",
                 "Transfer of ownership in goods",
-                "Unpaid Seller- meaning, right of an unpaid seller against the goods and the buyer"
+                "Unpaid Seller- meaning",
+                "Right of an unpaid seller against the goods and the buyer"
               ]
             },
             {
               "unitNumber": 4,
               "title": "The Negotiable Instruments Act 1881",
               "topics": [
-                "Meaning, characteristics, Types of N. Instruments promissory note, Bills of Exchange, Cheque Holder and Holder in due Course, Privileges of Holder in due Course. Negotiation: Types of Endorsements Crossing: General and Specific Dishonour of Cheque, Consequences and Remedies. Payment in Due Course"
+                "Meaning, characteristics, Types of N",
+                "Instruments promissory note",
+                "Bills of Exchange",
+                "Cheque Holder and Holder in due Course",
+                "Privileges of Holder in due Course",
+                "Negotiation: Types of Endorsements Crossing: General and Specific Dishonour of Cheque",
+                "Consequences and Remedies",
+                "Payment in Due Course"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Indian Partnership Act, 1932",
               "topics": [
-                "General nature of Partnership, Registration of a Partnership Firm Rights, Duties and Liabilities of Partners Modes of Dissolution of Partnership"
+                "General nature of Partnership",
+                "Registration of a Partnership Firm Rights",
+                "Duties and Liabilities of Partners Modes of Dissolution of Partnership"
               ]
             }
           ],
@@ -1339,21 +1756,32 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and nature of stress",
               "topics": [
-                "Difference between stress and distress; Frustration, conflict and pressure; Meaning of stressors; common stressors at work place: Stressors unique to age and gender"
+                "Difference between stress and distress",
+                "Frustration",
+                "Conflict and pressure",
+                "Meaning of stressors",
+                "Common stressors at work place: Stressors unique to age and gender"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Cognitive appraisal of stress",
               "topics": [
-                "General adaptation to stress; Consequences of stress; Physiological and psychological changes associated with the stress response. Stress and Memory; Stress and Other Cognitive Variables; Stressful environmental conditions on performance"
+                "General adaptation to stress",
+                "Consequences of stress",
+                "Physiological and psychological changes associated with the stress response",
+                "Stress and Memory",
+                "Stress and Other Cognitive Variables",
+                "Stressful environmental conditions on performance"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Stress and Work performance",
               "topics": [
-                "Role of communication in managing stress and work performance: Emotional regulation and coping; Emotional intelligence and conflict management: Emotional Basis and Stress; Stress and Conflict in Relationships"
+                "Role of communication in managing stress and work performance: Emotional regulation and coping",
+                "Emotional intelligence and conflict management: Emotional Basis and Stress",
+                "Stress and Conflict in Relationships"
               ]
             }
           ],
@@ -1391,35 +1819,59 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Meaning and importance of Communication in business",
               "topics": [
-                "the process of Communication, models of Communication, types of information order, advice, suggestion, motivation, persuasion, warning and education"
+                "The process of Communication",
+                "Models of Communication",
+                "Types of information order",
+                "Advice",
+                "Suggestion",
+                "Motivation",
+                "Persuasion",
+                "Warning and education"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Channels of Communication",
               "topics": [
-                "Their effectiveness and limitations, media of communication, barriers of communication, approaches to effective communication, and tools of communication, direction, sentence, paragraphs, punctuation and report writing"
+                "Their effectiveness and limitations",
+                "Media of communication",
+                "Barriers of communication",
+                "Approaches to effective communication, and tools of communication",
+                "Direction",
+                "Sentence",
+                "Paragraphs",
+                "Punctuation and report writing"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Group Communication through Committees",
               "topics": [
-                "Conference, Seminar, Symposia and other Formal Communication with Public at Large, Interviews and Group Discussion"
+                "Conference",
+                "Seminar",
+                "Symposia and other Formal Communication with Public at Large",
+                "Interviews and Group Discussion"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Specific of Business Communication",
               "topics": [
-                "Essentials of Business Communication Structure of Business Correspondence: inquires and replies, order and their executions, complaints and adjustments, credits and status inquires, agency letters and sales letters"
+                "Essentials of Business Communication Structure of Business Correspondence: inquires and replies",
+                "Order and their executions",
+                "Complaints and adjustments",
+                "Credits and status inquires",
+                "Agency letters and sales letters"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Strategies to improve Reading Skills",
               "topics": [
-                "Speaking skills, listening skills: guidelines to effective public speaking: developing job application-covering letter, resume, interviewing: negotiating the job offer"
+                "Speaking skills",
+                "Listening skills: guidelines to effective public speaking: developing job application-covering letter",
+                "Resume",
+                "Interviewing: negotiating the job offer"
               ]
             }
           ],
@@ -1442,7 +1894,18 @@ export const bcomHrmSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Strategic HRM",
               "topics": [
-                "An Investment Perspective of Human Resource Management, Introduction to business and corporate strategies - Integrating HR strategies with business strategies—Human Resource Environment, Technology and structure – Management Trends-Demographic trends – Trends in the utilization of human resources. Integrating Strategy and Human Resource Planning – The strategic role of Human Resource Planning, Selecting forecasting techniques, forecasting the supply of human resources, forecasting the demand for human resources, workforce utilization and employment practices"
+                "An Investment Perspective of Human Resource Management",
+                "Introduction to business and corporate strategies",
+                "Integrating HR strategies with business strategies—Human Resource Environment",
+                "Technology and structure",
+                "Management Trends-Demographic trends",
+                "Trends in the utilization of human resources",
+                "Integrating Strategy and Human Resource Planning",
+                "The strategic role of Human Resource Planning",
+                "Selecting forecasting techniques",
+                "Forecasting the supply of human resources",
+                "Forecasting the demand for human resources",
+                "Workforce utilization and employment practices"
               ]
             },
             {

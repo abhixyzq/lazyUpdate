@@ -40,9 +40,15 @@
               "title": "Set Theory and Relations",
               "topics": [
                 "Cartesian product of sets",
-                "Equivalence relations, partition, partial and total order relation",
-                "Functions, Composition of functions, Invertible functions",
-                "Cardinality of a set, Countable and Uncountable sets, Cantor's theorem"
+                "Equivalence relations",
+                "Partition",
+                "Partial and total order relation",
+                "Functions",
+                "Composition of functions",
+                "Invertible functions",
+                "Cardinality of a set",
+                "Countable and Uncountable sets",
+                "Cantor's theorem"
               ]
             },
             {
@@ -61,12 +67,18 @@
               "unitNumber": 4,
               "title": "Matrices and Linear Equations",
               "topics": [
-                "Matrices, Operation on Matrices, Kinds of matrices",
-                "Transpose, symmetric & skew symmetric Matrices",
-                "Hermitian, skew Hermitian Matrices",
-                "Adjoint and Inverse of a matrix, orthogonal matrix",
+                "Matrices",
+                "Operation on Matrices",
+                "Kinds of matrices",
+                "Transpose",
+                "Symmetric & skew symmetric Matrices",
+                "Hermitian",
+                "Skew Hermitian Matrices",
+                "Adjoint and Inverse of a matrix",
+                "Orthogonal matrix",
                 "Solution of a system of linear equations by matrix methods",
-                "Echelon forms, Rank of a matrix"
+                "Echelon forms",
+                "Rank of a matrix"
               ]
             }
           ],
@@ -94,29 +106,50 @@
               "unitNumber": 1,
               "title": "Complex Numbers and Trigonometry",
               "topics": [
-                "Polar representation of complex numbers, De Moivre's theorem and its applications",
-                "Logarithms of complex quantities, Hyperbolic functions, Gregory series, Summation of series"
+                "Polar representation of complex numbers",
+                "De Moivre's theorem and its applications",
+                "Logarithms of complex quantities",
+                "Hyperbolic functions",
+                "Gregory series",
+                "Summation of series"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Set Theory and Relations",
               "topics": [
-                "Cartesian product of sets, Equivalence relations, Functions, Composition of functions, Invertible functions, Partial and Total order relation, Countable and Uncountable sets"
+                "Cartesian product of sets",
+                "Equivalence relations",
+                "Functions",
+                "Composition of functions",
+                "Invertible functions",
+                "Partial and Total order relation",
+                "Countable and Uncountable sets"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Matrices and Linear Equations",
               "topics": [
-                "Matrices, Operation on Matrices, Kinds of matrices, Transpose, symmetric & skew symmetric matrices, Hermitian and skew Hermitian matrices, Adjoint and Inverse of a matrix, Solution of a system of linear equations by matrix methods"
+                "Matrices",
+                "Operation on Matrices",
+                "Kinds of matrices",
+                "Transpose",
+                "Symmetric & skew symmetric matrices",
+                "Hermitian and skew Hermitian matrices",
+                "Adjoint and Inverse of a matrix",
+                "Solution of a system of linear equations by matrix methods"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Theory of Equations",
               "topics": [
-                "Fundamental theorem of algebra, Relation between roots and coefficients of a polynomial equation, Evaluation of symmetric functions of roots, Transformation of equation, Solution of Cubic equation (Cardon's method)"
+                "Fundamental theorem of algebra",
+                "Relation between roots and coefficients of a polynomial equation",
+                "Evaluation of symmetric functions of roots",
+                "Transformation of equation",
+                "Solution of Cubic equation (Cardon's method)"
               ]
             }
           ],
@@ -193,8 +226,13 @@
               "topics": [
                 "Successive differentiation and Leibnitz's theorem",
                 "Maclaurin's and Taylor's series of Expansion",
-                "Tangent and Normal, Partial differentiation and Euler's theorem",
-                "Total Differential, L'Hospital's rule, Curvature, Asymptotes, Curve tracing in Cartesian coordinates and polar coordinates of standard curves"
+                "Tangent and Normal",
+                "Partial differentiation and Euler's theorem",
+                "Total Differential",
+                "L'Hospital's rule",
+                "Curvature",
+                "Asymptotes",
+                "Curve tracing in Cartesian coordinates and polar coordinates of standard curves"
               ]
             },
             {
@@ -202,9 +240,13 @@
               "title": "Integral Calculus",
               "topics": [
                 "Integration of rational and irrational functions",
-                "Evaluation of definite integrals, Reduction formulae",
-                "Area, Length of plane curves and area bounded by plane curves",
-                "Volume and surface area of solid of revolution, Beta and Gamma Functions, Multiple Integrals"
+                "Evaluation of definite integrals",
+                "Reduction formulae",
+                "Area",
+                "Length of plane curves and area bounded by plane curves",
+                "Volume and surface area of solid of revolution",
+                "Beta and Gamma Functions",
+                "Multiple Integrals"
               ]
             },
             {
@@ -221,15 +263,19 @@
               "title": "3D Geometry",
               "topics": [
                 "Sphere, Cone, Cylinder, Central conicoid, Paraboloids",
-                "Plane section of conicoid, Generating lines, Tangent plane and normal to a conicoid"
+                "Plane section of conicoid",
+                "Generating lines",
+                "Tangent plane and normal to a conicoid"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Vector Calculus",
               "topics": [
-                "Scalar triple product and vector triple product, Product of four vectors",
-                "Introduction to vector functions, Operations with vector-valued functions",
+                "Scalar triple product and vector triple product",
+                "Product of four vectors",
+                "Introduction to vector functions",
+                "Operations with vector-valued functions",
                 "Differentiation and integration of vector functions",
                 "Gradient of a scalar and Divergence and Curl of a vector function in Cartesian coordinate"
               ]
@@ -260,28 +306,47 @@
               "unitNumber": 1,
               "title": "Differential Calculus",
               "topics": [
-                "Successive differentiation and Leibnitz's theorem, Maclaurin's and Taylor's series of Expansion, Partial differentiation and Euler's theorem, Total Differential, L'Hospital's rule, Tangent and Normal, Asymptotes, Curvature"
+                "Successive differentiation and Leibnitz's theorem",
+                "Maclaurin's and Taylor's series of Expansion",
+                "Partial differentiation and Euler's theorem",
+                "Total Differential",
+                "L'Hospital's rule",
+                "Tangent and Normal",
+                "Asymptotes",
+                "Curvature"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Integral Calculus",
               "topics": [
-                "Evaluation of definite integrals, Reduction formulae, Length of plane curve and area bounded by plane curves, Volumes and Surface area of solid revolution"
+                "Evaluation of definite integrals",
+                "Reduction formulae",
+                "Length of plane curve and area bounded by plane curves",
+                "Volumes and Surface area of solid revolution"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Conic Sections",
               "topics": [
-                "Transformation of rectangular axes, General equations of Conic and its Reduction to the normal form, Equation of the tangent and normal at a point of the Conic"
+                "Transformation of rectangular axes",
+                "General equations of Conic and its Reduction to the normal form",
+                "Equation of the tangent and normal at a point of the Conic"
               ]
             },
             {
               "unitNumber": 4,
               "title": "3D Geometry",
               "topics": [
-                "Sphere, Cone, Cylinder, Central conicoid, Paraboloids, Plane section of conicoid, Generating lines, Tangent plane and normal to a conicoid"
+                "Sphere",
+                "Cone",
+                "Cylinder",
+                "Central conicoid",
+                "Paraboloids",
+                "Plane section of conicoid",
+                "Generating lines",
+                "Tangent plane and normal to a conicoid"
               ]
             }
           ],
@@ -359,28 +424,61 @@
               "unitNumber": 1,
               "title": "Real Number System",
               "topics": [
-                "Dedekind theory of real numbers, Algebraic and order properties of R, Archimedean Property, Density Theorem, Completeness property of R, Bounded sets, Theorems on Suprema and Infima"
+                "Dedekind theory of real numbers",
+                "Algebraic and order properties of R",
+                "Archimedean Property",
+                "Density Theorem",
+                "Completeness property of R",
+                "Bounded sets",
+                "Theorems on Suprema and Infima"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Topology of Real Numbers",
               "topics": [
-                "Neighbourhood of a point in R, Open and closed sets, Limit points and isolated points of a set, Bolzano-Weierstrass theorem for a set, Derived set, Clouser and Interior of a set"
+                "Neighbourhood of a point in R",
+                "Open and closed sets",
+                "Limit points and isolated points of a set",
+                "Bolzano-Weierstrass theorem for a set",
+                "Derived set",
+                "Clouser and Interior of a set"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sequences",
               "topics": [
-                "Sequence and its convergence, Bounded sequence, Monotone sequences, Subsequences, Limit of a sequence, Limit Theorem, Bolzano-Weierstrass theorem for sequences, Limit superior and limit inferior for bounded sequence, Cauchy sequence, Cauchy's general principle of convergence"
+                "Sequence and its convergence",
+                "Bounded sequence",
+                "Monotone sequences",
+                "Subsequences",
+                "Limit of a sequence",
+                "Limit Theorem",
+                "Bolzano-Weierstrass theorem for sequences",
+                "Limit superior and limit inferior for bounded sequence",
+                "Cauchy sequence",
+                "Cauchy's general principle of convergence"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Infinite Series",
               "topics": [
-                "Infinite series and their convergence, Cauchy Criterion, Tests for convergence: Comparison test, D'Alembert Ratio Test, Cauchy's root test, Rabbe's test, Logarithmic test, D'Morgan and Bertrand's test, Cauchy integral test, Cauchy condensation test, Gauss's test, Alternating series, Leibnitz test, Absolute and Conditional convergence"
+                "Infinite series and their convergence",
+                "Cauchy Criterion",
+                "Tests for convergence: Comparison test",
+                "D'Alembert Ratio Test",
+                "Cauchy's root test",
+                "Rabbe's test",
+                "Logarithmic test",
+                "D'Morgan and Bertrand's test",
+                "Cauchy integral test",
+                "Cauchy condensation test",
+                "Gauss's test",
+                "Alternating series",
+                "Leibnitz test",
+                "Absolute and Conditional convergence"
               ]
             }
           ],
@@ -427,21 +525,46 @@
               "unitNumber": 1,
               "title": "Real Number System",
               "topics": [
-                "Dedekind theory of real numbers, Algebraic and order properties of R, Archimedean Property, Density Theorem, Completeness property of R, Bounded sets, Theorems on Suprema and Infima"
+                "Dedekind theory of real numbers",
+                "Algebraic and order properties of R",
+                "Archimedean Property",
+                "Density Theorem",
+                "Completeness property of R",
+                "Bounded sets",
+                "Theorems on Suprema and Infima"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sequences",
               "topics": [
-                "Sequence and its convergence, Bounded sequence, Monotone sequences, Subsequences, Limit of a sequence, Limit Theorem, Bolzano-Weierstrass theorem for sequences, Cauchy sequence, Cauchy's general principle of convergence"
+                "Sequence and its convergence",
+                "Bounded sequence",
+                "Monotone sequences",
+                "Subsequences",
+                "Limit of a sequence",
+                "Limit Theorem",
+                "Bolzano-Weierstrass theorem for sequences",
+                "Cauchy sequence",
+                "Cauchy's general principle of convergence"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Infinite Series",
               "topics": [
-                "Infinite series and their convergence, Cauchy Criterion, Tests for convergence: Comparison test, D'Alembert Ratio Test, Cauchy's root test, Rabbe's test, Logarithmic test, Cauchy integral test, Gauss's test, Alternating series, Leibnitz test, Absolute and Conditional convergence"
+                "Infinite series and their convergence",
+                "Cauchy Criterion",
+                "Tests for convergence: Comparison test",
+                "D'Alembert Ratio Test",
+                "Cauchy's root test",
+                "Rabbe's test",
+                "Logarithmic test",
+                "Cauchy integral test",
+                "Gauss's test",
+                "Alternating series",
+                "Leibnitz test",
+                "Absolute and Conditional convergence"
               ]
             }
           ],
@@ -516,28 +639,50 @@
               "unitNumber": 1,
               "title": "Limits of Functions",
               "topics": [
-                "Limit of functions, Sequential criterion for limits, Divergence criteria, Limit theorems, One-sided limits, Infinite limits and limits at infinity"
+                "Limit of functions",
+                "Sequential criterion for limits",
+                "Divergence criteria",
+                "Limit theorems",
+                "One-sided limits",
+                "Infinite limits and limits at infinity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Continuity",
               "topics": [
-                "Continuous functions, Sequential criterion for continuity and discontinuity, Algebra of continuous functions, Properties of continuous functions on closed intervals, Uniform continuity, Uniform continuity theorem"
+                "Continuous functions",
+                "Sequential criterion for continuity and discontinuity",
+                "Algebra of continuous functions",
+                "Properties of continuous functions on closed intervals",
+                "Uniform continuity",
+                "Uniform continuity theorem"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Differentiability",
               "topics": [
-                "Differentiability of a function, Algebra of differentiable functions, Increasing and Decreasing functions, Sign of derivatives, Chain rule, Darboux's theorem, Intermediate value theorem for derivatives, Rolle's theorem, Lagrange's and Cauchy's Mean value theorem and their applications"
+                "Differentiability of a function",
+                "Algebra of differentiable functions",
+                "Increasing and Decreasing functions",
+                "Sign of derivatives",
+                "Chain rule",
+                "Darboux's theorem",
+                "Intermediate value theorem for derivatives",
+                "Rolle's theorem",
+                "Lagrange's and Cauchy's Mean value theorem and their applications"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Taylor's Theorem",
               "topics": [
-                "Taylor's theorem with Lagrange's and Cauchy's remainder forms, Maclaurin's theorem, Application of Taylor's theorem in error estimation, Extreme values, Theorems related to extrema"
+                "Taylor's theorem with Lagrange's and Cauchy's remainder forms",
+                "Maclaurin's theorem",
+                "Application of Taylor's theorem in error estimation",
+                "Extreme values",
+                "Theorems related to extrema"
               ]
             }
           ],
@@ -561,35 +706,66 @@
               "unitNumber": 1,
               "title": "Groups and Subgroups",
               "topics": [
-                "Definition and examples of groups, Elementary properties of groups, Subgroups and examples of subgroups, Generator of a group, Cyclic group, Properties of cyclic groups"
+                "Definition and examples of groups",
+                "Elementary properties of groups",
+                "Subgroups and examples of subgroups",
+                "Generator of a group",
+                "Cyclic group",
+                "Properties of cyclic groups"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Permutations and Cosets",
               "topics": [
-                "Permutations Group, Even and odd permutations, Alternating Group, Cosets and its properties, Lagrange's theorem, Fermat's Little theorem, Euler's theorem, Normal subgroups, Quotient groups, Center of a group, Normalizer of an element, Normalizer of a subgroup"
+                "Permutations Group",
+                "Even and odd permutations",
+                "Alternating Group",
+                "Cosets and its properties",
+                "Lagrange's theorem",
+                "Fermat's Little theorem",
+                "Euler's theorem",
+                "Normal subgroups",
+                "Quotient groups",
+                "Center of a group",
+                "Normalizer of an element",
+                "Normalizer of a subgroup"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Homomorphisms",
               "topics": [
-                "Group homomorphisms, Kernel of a group homomorphism, Fundamental theorem of group homomorphism, Isomorphisms, Properties of Isomorphisms, First, Second and Third isomorphism theorems for groups, Cayley's theorem"
+                "Group homomorphisms",
+                "Kernel of a group homomorphism",
+                "Fundamental theorem of group homomorphism",
+                "Isomorphisms",
+                "Properties of Isomorphisms",
+                "First",
+                "Second and Third isomorphism theorems for groups",
+                "Cayley's theorem"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Automorphisms",
               "topics": [
-                "Automorphism, Inner automorphism, Group of Automorphisms, Group Automorphisms of finite and infinite cyclic groups, Commutator subgroup"
+                "Automorphism",
+                "Inner automorphism",
+                "Group of Automorphisms",
+                "Group Automorphisms of finite and infinite cyclic groups",
+                "Commutator subgroup"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Sylow's Theorems",
               "topics": [
-                "Conjugacy classes, Class equation, p-groups, Cauchy's theorem for finite abelian groups, Sylow's theorems"
+                "Conjugacy classes",
+                "Class equation",
+                "p-groups",
+                "Cauchy's theorem for finite abelian groups",
+                "Sylow's theorems"
               ]
             }
           ],
@@ -613,28 +789,45 @@
               "unitNumber": 1,
               "title": "First Order PDEs",
               "topics": [
-                "Partial differential equations – Basic concepts and definitions, Formation of PDEs, Classification of First order PDEs, Lagrange's and Charpit's method for solving PDEs"
+                "Partial differential equations",
+                "Basic concepts and definitions",
+                "Formation of PDEs",
+                "Classification of First order PDEs",
+                "Lagrange's and Charpit's method for solving PDEs"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Higher Order PDEs",
               "topics": [
-                "Homogeneous and non-homogeneous Partial differential equation of second and higher order with constant coefficients, Partial differential equations reducible to equations with constant coefficients"
+                "Homogeneous and non-homogeneous Partial differential equation of second and higher order with constant coefficients",
+                "Partial differential equations reducible to equations with constant coefficients"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Second Order PDEs",
               "topics": [
-                "Partial differential equations of second order with variable coefficients, Monge's Methods, Classification of second order linear equations as hyperbolic, parabolic or elliptic, Reduction of second order linear equations to canonical forms"
+                "Partial differential equations of second order with variable coefficients",
+                "Monge's Methods",
+                "Classification of second order linear equations as hyperbolic",
+                "Parabolic or elliptic",
+                "Reduction of second order linear equations to canonical forms"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Fourier Series and Applications",
               "topics": [
-                "Fourier series in (c, c + 2π), Dirichlet's condition (without proof), Euler's formulae, Fourier series for even and odd functions, Fourier series of arbitrary interval (0, 2L) and (-L, L), Fourier Half range sine and cosine series, Method of Separation of variables, Solution of the Wave, Heat and Laplace equations and their applications"
+                "Fourier series in (c, c + 2π)",
+                "Dirichlet's condition (without proof)",
+                "Euler's formulae",
+                "Fourier series for even and odd functions",
+                "Fourier series of arbitrary interval (0, 2L) and (-L, L)",
+                "Fourier Half range sine and cosine series",
+                "Method of Separation of variables",
+                "Solution of the Wave",
+                "Heat and Laplace equations and their applications"
               ]
             }
           ],
@@ -701,35 +894,64 @@
               "unitNumber": 1,
               "title": "Rings and Ideals",
               "topics": [
-                "Definition and examples of rings, Properties of rings, Definition and examples of Subrings, Zero divisors, Integral domains and its examples, Properties of integral domains, Division rings, fields, Characteristic of a ring, Ideals and its properties, Quotient rings"
+                "Definition and examples of rings",
+                "Properties of rings",
+                "Definition and examples of Subrings",
+                "Zero divisors",
+                "Integral domains and its examples",
+                "Properties of integral domains",
+                "Division rings",
+                "Fields",
+                "Characteristic of a ring",
+                "Ideals and its properties",
+                "Quotient rings"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ring Homomorphisms",
               "topics": [
-                "Ring homomorphisms, Kernel of Ring homomorphisms, Properties of ring homomorphisms, Isomorphism theorems for Rings"
+                "Ring homomorphisms",
+                "Kernel of Ring homomorphisms",
+                "Properties of ring homomorphisms",
+                "Isomorphism theorems for Rings"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Vector Spaces",
               "topics": [
-                "Vector spaces, Subspaces, Algebra of subspaces, Linear combination of vectors, Linear span, Linear independence, Basis and dimension, Dimension of subspaces, Quotient spaces"
+                "Vector spaces",
+                "Subspaces",
+                "Algebra of subspaces",
+                "Linear combination of vectors",
+                "Linear span",
+                "Linear independence",
+                "Basis and dimension",
+                "Dimension of subspaces",
+                "Quotient spaces"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Linear Transformations",
               "topics": [
-                "Linear transformations, Null Spaces and Ranges, Matrix representation of a linear transformation, Rank-Nullity theorem, Algebra of linear transformation, Eigenvalues and Eigenvectors, Characteristic equation of a matrix and Cayley-Hamilton theorem"
+                "Linear transformations",
+                "Null Spaces and Ranges",
+                "Matrix representation of a linear transformation",
+                "Rank-Nullity theorem",
+                "Algebra of linear transformation",
+                "Eigenvalues and Eigenvectors",
+                "Characteristic equation of a matrix and Cayley-Hamilton theorem"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Isomorphisms",
               "topics": [
-                "Isomorphisms for vector spaces, Isomorphism theorems for vector spaces, Invertibility and Isomorphisms"
+                "Isomorphisms for vector spaces",
+                "Isomorphism theorems for vector spaces",
+                "Invertibility and Isomorphisms"
               ]
             }
           ],
@@ -754,35 +976,65 @@
               "unitNumber": 1,
               "title": "Functions of Several Variables",
               "topics": [
-                "Functions of several variables, Limits and continuity, Partial derivatives, Euler's theorem, Higher order partial derivatives, Total differential and differentiability, Schwarz and Young's theorem, Chain rule"
+                "Functions of several variables",
+                "Limits and continuity",
+                "Partial derivatives",
+                "Euler's theorem",
+                "Higher order partial derivatives",
+                "Total differential and differentiability",
+                "Schwarz and Young's theorem",
+                "Chain rule"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Gradient and Extrema",
               "topics": [
-                "Directional derivatives, Gradient, Maximal and normal property of the gradient, Tangent planes and normal lines, Level curves and surfaces, Gradient and Tangents to Level curves, Extrema of functions of two variables, Critical points, Saddle points, Method of Lagrange multipliers"
+                "Directional derivatives",
+                "Gradient",
+                "Maximal and normal property of the gradient",
+                "Tangent planes and normal lines",
+                "Level curves and surfaces",
+                "Gradient and Tangents to Level curves",
+                "Extrema of functions of two variables",
+                "Critical points",
+                "Saddle points",
+                "Method of Lagrange multipliers"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Multiple Integrals",
               "topics": [
-                "Double integrals in Cartesian and polar co-ordinates, area and surface area, Triple integrals, Volume by triple integrals, triple integrals in cylindrical and spherical coordinates, Change of variables in double and triple integrals"
+                "Double integrals in Cartesian and polar co-ordinates",
+                "Area and surface area",
+                "Triple integrals",
+                "Volume by triple integrals",
+                "Triple integrals in cylindrical and spherical coordinates",
+                "Change of variables in double and triple integrals"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Vector Calculus",
               "topics": [
-                "Line integrals, Applications of line integrals: Mass and Work, Fundamental theorem for line integrals, Definition of vector field, Conservative vector fields, Divergence and curl"
+                "Line integrals",
+                "Applications of line integrals: Mass and Work",
+                "Fundamental theorem for line integrals",
+                "Definition of vector field",
+                "Conservative vector fields",
+                "Divergence and curl"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Integral Theorems",
               "topics": [
-                "Green's theorem- Tangential and Normal form, Evaluation of line integrals using Green's theorem, Surface integrals, Stokes' theorem, The Gauss divergence theorem"
+                "Green's theorem- Tangential and Normal form",
+                "Evaluation of line integrals using Green's theorem",
+                "Surface integrals",
+                "Stokes' theorem",
+                "The Gauss divergence theorem"
               ]
             }
           ],
@@ -807,21 +1059,36 @@
               "unitNumber": 1,
               "title": "Limits of Functions",
               "topics": [
-                "Limit of functions, Sequential criterion for limits, Divergence criteria, Limit theorems, One-sided limits, Infinite limits and limits at infinity"
+                "Limit of functions",
+                "Sequential criterion for limits",
+                "Divergence criteria",
+                "Limit theorems",
+                "One-sided limits",
+                "Infinite limits and limits at infinity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Continuity",
               "topics": [
-                "Continuous functions, Sequential criterion for continuity and discontinuity, Algebra of continuous functions, Properties of continuous functions on closed intervals"
+                "Continuous functions",
+                "Sequential criterion for continuity and discontinuity",
+                "Algebra of continuous functions",
+                "Properties of continuous functions on closed intervals"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Differentiability",
               "topics": [
-                "Differentiability of a function, Algebra of differentiable functions, Increasing and Decreasing functions, Sign of derivatives, Darboux's theorem, Intermediate value theorem for derivatives, Rolle's theorem, Lagrange's and Cauchy's Mean value theorem and their applications"
+                "Differentiability of a function",
+                "Algebra of differentiable functions",
+                "Increasing and Decreasing functions",
+                "Sign of derivatives",
+                "Darboux's theorem",
+                "Intermediate value theorem for derivatives",
+                "Rolle's theorem",
+                "Lagrange's and Cauchy's Mean value theorem and their applications"
               ]
             }
           ],
@@ -845,21 +1112,43 @@
               "unitNumber": 1,
               "title": "Groups and Subgroups",
               "topics": [
-                "Definition and examples of groups, Elementary properties of groups, Subgroups and examples of subgroups, Generator of a group, Cyclic group, Properties of cyclic groups"
+                "Definition and examples of groups",
+                "Elementary properties of groups",
+                "Subgroups and examples of subgroups",
+                "Generator of a group",
+                "Cyclic group",
+                "Properties of cyclic groups"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Permutations and Cosets",
               "topics": [
-                "Permutations Group, Even and odd permutations, Alternating Group, Cosets and its properties, Lagrange's theorem, Fermat's Little theorem, Normal subgroups, Quotient groups, Center of a group, Normalizer of an element, Normalizer of a subgroup"
+                "Permutations Group",
+                "Even and odd permutations",
+                "Alternating Group",
+                "Cosets and its properties",
+                "Lagrange's theorem",
+                "Fermat's Little theorem",
+                "Normal subgroups",
+                "Quotient groups",
+                "Center of a group",
+                "Normalizer of an element",
+                "Normalizer of a subgroup"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Homomorphisms",
               "topics": [
-                "Group homomorphisms, Kernel of a group homomorphism, Fundamental theorem of group homomorphism, Isomorphisms, Properties of Isomorphisms, First, Second and Third isomorphism theorems for groups, Cayley's theorem"
+                "Group homomorphisms",
+                "Kernel of a group homomorphism",
+                "Fundamental theorem of group homomorphism",
+                "Isomorphisms",
+                "Properties of Isomorphisms",
+                "First",
+                "Second and Third isomorphism theorems for groups",
+                "Cayley's theorem"
               ]
             }
           ],
@@ -907,35 +1196,72 @@
               "unitNumber": 1,
               "title": "Complex Numbers and Functions",
               "topics": [
-                "Introduction to complex number and its geometrical interpretation, algebra of complex numbers, functions of complex variables, limit of a complex function, continuity and uniform continuity, differentiability, Analytic and regular functions, Cauchy-Riemann equation and it's applications"
+                "Introduction to complex number and its geometrical interpretation",
+                "Algebra of complex numbers",
+                "Functions of complex variables",
+                "Limit of a complex function",
+                "Continuity and uniform continuity",
+                "Differentiability",
+                "Analytic and regular functions",
+                "Cauchy-Riemann equation and it's applications"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Elementary Functions and Contour Integrals",
               "topics": [
-                "Exponential function, logarithmic function, Branches and derivatives of logarithms, trigonometric and hyperbolic functions, derivatives of functions, Definite integrals of functions, Contours, Contour integrals with examples, Upper bounds for moduli of contour integrals"
+                "Exponential function",
+                "Logarithmic function",
+                "Branches and derivatives of logarithms",
+                "Trigonometric and hyperbolic functions",
+                "Derivatives of functions",
+                "Definite integrals of functions",
+                "Contours",
+                "Contour integrals with examples",
+                "Upper bounds for moduli of contour integrals"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Complex Integration",
               "topics": [
-                "Complex integration, Cauchy's theorem, Cauchy's Goursat theorem, primitives, Cauchy's integral formula, Cauchy's integral formula for the derivative of an analytic function, Morera's theorem, Poisson's integral formula for a circle, Cauchy's inequality, Liouville's Theorem and Fundamental theorem of Algebra"
+                "Complex integration",
+                "Cauchy's theorem",
+                "Cauchy's Goursat theorem",
+                "Primitives",
+                "Cauchy's integral formula",
+                "Cauchy's integral formula for the derivative of an analytic function",
+                "Morera's theorem",
+                "Poisson's integral formula for a circle",
+                "Cauchy's inequality",
+                "Liouville's Theorem and Fundamental theorem of Algebra"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Series Expansions",
               "topics": [
-                "Convergence of sequences and series, Taylor series with examples; Laurent series and its examples, Absolute and uniform convergence of power series, Uniqueness of series representations of power series"
+                "Convergence of sequences and series",
+                "Taylor series with examples",
+                "Laurent series and its examples",
+                "Absolute and uniform convergence of power series",
+                "Uniqueness of series representations of power series"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Transformations",
               "topics": [
-                "Linear Transformation, Jacobian of a transformation, Elementary transformations: translation, rotation, magnification, inversion, Mobius transformation (bilinear transformation), Cross ratio, preservation of cross ratio under bilinear transformation, fixed point of a bilinear transformation"
+                "Linear Transformation",
+                "Jacobian of a transformation",
+                "Elementary transformations: translation",
+                "Rotation",
+                "Magnification",
+                "Inversion",
+                "Mobius transformation (bilinear transformation)",
+                "Cross ratio",
+                "Preservation of cross ratio under bilinear transformation",
+                "Fixed point of a bilinear transformation"
               ]
             }
           ],
@@ -960,35 +1286,60 @@
               "unitNumber": 1,
               "title": "Metric Spaces",
               "topics": [
-                "Definition and examples of metric spaces, notion of Open and closed ball, Neighborhood of a point, Open set, Interior point, Interior of a set, Limit point of a set, Derived set, Closed set, Closure of a set, Diameter of a set, Dense set, Subspaces"
+                "Definition and examples of metric spaces",
+                "Notion of Open and closed ball",
+                "Neighborhood of a point",
+                "Open set",
+                "Interior point",
+                "Interior of a set",
+                "Limit point of a set",
+                "Derived set",
+                "Closed set",
+                "Closure of a set",
+                "Diameter of a set",
+                "Dense set",
+                "Subspaces"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Complete Metric Spaces",
               "topics": [
-                "Sequences in metric spaces, Cauchy sequences, Complete metric space, Cantor's intersection theorem, Baire's category theorem, Contraction mapping, Banach fixed point theorem"
+                "Sequences in metric spaces",
+                "Cauchy sequences",
+                "Complete metric space",
+                "Cantor's intersection theorem",
+                "Baire's category theorem",
+                "Contraction mapping",
+                "Banach fixed point theorem"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Continuity",
               "topics": [
-                "Continuous mappings, Sequential criterion and other characterizations of continuity, Uniform continuity, Homeomorphism"
+                "Continuous mappings",
+                "Sequential criterion and other characterizations of continuity",
+                "Uniform continuity",
+                "Homeomorphism"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Connectedness",
               "topics": [
-                "Connectedness, Connected subsets of R, Connectedness and continuous mappings"
+                "Connectedness",
+                "Connected subsets of R",
+                "Connectedness and continuous mappings"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Compactness",
               "topics": [
-                "Compactness, boundedness, Continuous functions on compact spaces"
+                "Compactness",
+                "Boundedness",
+                "Continuous functions on compact spaces"
               ]
             }
           ],
@@ -1013,35 +1364,57 @@
               "unitNumber": 1,
               "title": "Riemann Integration",
               "topics": [
-                "Definition and existence of Riemann Integral of bounded functions,Darboux theorem,necessary and sufficient condition for R-Integrability, Riemann integrability of continuous functions, monotonic function and function having finite number of discontinuities, Riemann integral as the limit of a sum, fundamental theorem of integral calculus, Mean value theorems"
+                "Definition and existence of Riemann Integral of bounded functions",
+                "Darboux theorem",
+                "Necessary and sufficient condition for R-Integrability",
+                "Riemann integrability of continuous functions",
+                "Monotonic function and function having finite number of discontinuities",
+                "Riemann integral as the limit of a sum",
+                "Fundamental theorem of integral calculus",
+                "Mean value theorems"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Improper Integrals",
               "topics": [
-                "Improper integrals of Type-I, Type-II and mixed type, test for convergence of improper integral such as comparison test and μ-test, Convergence of Beta and Gamma functions and their properties"
+                "Improper integrals of Type-I",
+                "Type-II and mixed type",
+                "Test for convergence of improper integral such as comparison test and μ-test",
+                "Convergence of Beta and Gamma functions and their properties"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sequence of Functions",
               "topics": [
-                "Pointwise and uniform convergence of sequence of functions, Cauchy criterion for uniform convergence, theorems on boundedness, continuity, derivability and integrability of the limit function of a sequence of functions with uniform convergence"
+                "Pointwise and uniform convergence of sequence of functions",
+                "Cauchy criterion for uniform convergence",
+                "Theorems on boundedness",
+                "Continuity",
+                "Derivability and integrability of the limit function of a sequence of functions with uniform convergence"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Series of Functions",
               "topics": [
-                "Series of functions, Theorems on the continuity, integrability and derivability of the sum function of a uniformly convergence series of functions, Cauchy criterion for uniform convergence and Weierstrass M-Test"
+                "Series of functions",
+                "Theorems on the continuity",
+                "Integrability and derivability of the sum function of a uniformly convergence series of functions",
+                "Cauchy criterion for uniform convergence and Weierstrass M-Test"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Power Series",
               "topics": [
-                "Power series, radius of convergence, Cauchy Hadamard Theorem, Differentiation and integration of power series, Abel's Theorem, Weierstrass Approximation Theorem"
+                "Power series",
+                "Radius of convergence",
+                "Cauchy Hadamard Theorem",
+                "Differentiation and integration of power series",
+                "Abel's Theorem",
+                "Weierstrass Approximation Theorem"
               ]
             }
           ],
@@ -1119,35 +1492,62 @@
               "unitNumber": 1,
               "title": "Polynomial Rings",
               "topics": [
-                "Field of quotients of an integral domain, Embedding of rings, Polynomial rings, The Division algorithm and consequences, The Remainder Theorem, The Factor Theorem, Irreducible Polynomials, Reducible polynomials, Primitive Polynomial, Gauss's Lemma, Irreducibility tests, Unique factorization domains"
+                "Field of quotients of an integral domain",
+                "Embedding of rings",
+                "Polynomial rings",
+                "The Division algorithm and consequences",
+                "The Remainder Theorem",
+                "The Factor Theorem",
+                "Irreducible Polynomials",
+                "Reducible polynomials",
+                "Primitive Polynomial",
+                "Gauss's Lemma",
+                "Irreducibility tests",
+                "Unique factorization domains"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Dual Spaces",
               "topics": [
-                "Linear Functionals, Dual spaces, dual basis, Double dual, Annihilators, Transpose of a linear transformation and its matrix in the dual basis"
+                "Linear Functionals",
+                "Dual spaces",
+                "Dual basis",
+                "Double dual",
+                "Annihilators",
+                "Transpose of a linear transformation and its matrix in the dual basis"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Diagonalization",
               "topics": [
-                "Eigenspaces of a linear operator, Diagonalization of Linear Operators, Invariant subspaces, The minimal polynomial for a linear operator"
+                "Eigenspaces of a linear operator",
+                "Diagonalization of Linear Operators",
+                "Invariant subspaces",
+                "The minimal polynomial for a linear operator"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Inner Product Spaces",
               "topics": [
-                "Inner products and Norms, Orthonormal basis, Gram-Schmidt orthogonalization process, Orthogonal complements, Bessel's inequality"
+                "Inner products and Norms",
+                "Orthonormal basis",
+                "Gram-Schmidt orthogonalization process",
+                "Orthogonal complements",
+                "Bessel's inequality"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Operators on Inner Product Spaces",
               "topics": [
-                "The adjoint of a linear operator, Least squares approximation, Minimal solutions to systems of linear equations, Normal and Self-Adjoint Operators, Unitary and orthogonal operators"
+                "The adjoint of a linear operator",
+                "Least squares approximation",
+                "Minimal solutions to systems of linear equations",
+                "Normal and Self-Adjoint Operators",
+                "Unitary and orthogonal operators"
               ]
             }
           ],
@@ -1191,35 +1591,66 @@
               "unitNumber": 1,
               "title": "Root Finding",
               "topics": [
-                "Errors: Relative, Absolute, Round off, Truncation, Finding roots of Transcendental and Polynomial equations: Bisection method, Secant method, Regula-Falsi method, Newton-Raphson method, Fixed point iteration method, Rate of convergence"
+                "Errors: Relative",
+                "Absolute",
+                "Round off",
+                "Truncation",
+                "Finding roots of Transcendental and Polynomial equations: Bisection method",
+                "Secant method",
+                "Regula-Falsi method",
+                "Newton-Raphson method",
+                "Fixed point iteration method",
+                "Rate of convergence"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Linear Systems",
               "topics": [
-                "Solution of system of linear algebraic equations: Partial pivoting, LU decomposition and its applications, Gaussian Elimination and Gauss Jordan methods, Gauss Jacobi method, Gauss Seidel method, SOR methods and their convergence analysis"
+                "Solution of system of linear algebraic equations: Partial pivoting",
+                "LU decomposition and its applications",
+                "Gaussian Elimination and Gauss Jordan methods",
+                "Gauss Jacobi method",
+                "Gauss Seidel method",
+                "SOR methods and their convergence analysis"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Interpolation",
               "topics": [
-                "Finite differences, Interpolation, Newton's Forward and Backward interpolation, Stirling's Formula, Bessel formula, Newton's divided difference, Lagrange's Interpolation, Inverse Interpolation"
+                "Finite differences",
+                "Interpolation",
+                "Newton's Forward and Backward interpolation",
+                "Stirling's Formula",
+                "Bessel formula",
+                "Newton's divided difference",
+                "Lagrange's Interpolation",
+                "Inverse Interpolation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Numerical Differentiation and Integration",
               "topics": [
-                "Numerical differentiation, Numerical Integration: Newton Cotes formula, Trapezoidal rule, Simpson's 1/3rd rule, Simpsons 3/8th rule, Gauss quadrature formula"
+                "Numerical differentiation",
+                "Numerical Integration: Newton Cotes formula",
+                "Trapezoidal rule",
+                "Simpson's 1/3rd rule",
+                "Simpsons 3/8th rule",
+                "Gauss quadrature formula"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Numerical Solutions of ODEs",
               "topics": [
-                "Solution of difference equation of the first order, General solution, Linear difference equation with constant co-efficient, Solution of ordinary differential equations one step method: Euler's and modified Euler's method, Picard's method, Runge-Kutta methods"
+                "Solution of difference equation of the first order",
+                "General solution",
+                "Linear difference equation with constant co-efficient",
+                "Solution of ordinary differential equations one step method: Euler's and modified Euler's method",
+                "Picard's method",
+                "Runge-Kutta methods"
               ]
             }
           ],
@@ -1244,28 +1675,42 @@
               "unitNumber": 1,
               "title": "Functions of Several Variables",
               "topics": [
-                "Functions of several variables, Limits and continuity, Partial derivatives, Higher order partial derivatives, Euler's theorem on Homogeneous function"
+                "Functions of several variables",
+                "Limits and continuity",
+                "Partial derivatives",
+                "Higher order partial derivatives",
+                "Euler's theorem on Homogeneous function"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Multiple Integrals",
               "topics": [
-                "Double integrals in Cartesian and polar co-ordinates, Triple integrals, Change of variables in double and triple integrals"
+                "Double integrals in Cartesian and polar co-ordinates",
+                "Triple integrals",
+                "Change of variables in double and triple integrals"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Vector Calculus",
               "topics": [
-                "Line integrals, Applications of line integrals: Mass and Work, Fundamental theorem for line integrals, Definition of vector field, Conservative vector fields, Divergence and curl"
+                "Line integrals",
+                "Applications of line integrals: Mass and Work",
+                "Fundamental theorem for line integrals",
+                "Definition of vector field",
+                "Conservative vector fields",
+                "Divergence and curl"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Integral Theorems",
               "topics": [
-                "Green's theorem- Tangential and Normal form, Evaluate line integrals using Green's theorem, Surface integrals, Stokes' theorem"
+                "Green's theorem- Tangential and Normal form",
+                "Evaluate line integrals using Green's theorem",
+                "Surface integrals",
+                "Stokes' theorem"
               ]
             }
           ],
@@ -1294,28 +1739,56 @@
               "unitNumber": 1,
               "title": "Interest Rates",
               "topics": [
-                "Interest rates, Types of rates, Measuring interest rates, Zero rates, Bond pricing, Forward rate, Duration, Convexity, Exchange traded markets and OTC markets"
+                "Interest rates",
+                "Types of rates",
+                "Measuring interest rates",
+                "Zero rates",
+                "Bond pricing",
+                "Forward rate",
+                "Duration",
+                "Convexity",
+                "Exchange traded markets and OTC markets"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Derivatives",
               "topics": [
-                "Derivatives--Forward contracts, Futures contract, Options, Types of traders, Hedging, Speculation, Arbitrage, No Arbitrage principle, Short selling, Forward price for an investment asset"
+                "Derivatives--Forward contracts",
+                "Futures contract",
+                "Options",
+                "Types of traders",
+                "Hedging",
+                "Speculation",
+                "Arbitrage",
+                "No Arbitrage principle",
+                "Short selling",
+                "Forward price for an investment asset"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Options",
               "topics": [
-                "Types of Options, Option positions, Underlying assets, Factors affecting option prices, Bounds on option prices, Put-call parity, Early exercise, Effect of dividends"
+                "Types of Options",
+                "Option positions",
+                "Underlying assets",
+                "Factors affecting option prices",
+                "Bounds on option prices",
+                "Put-call parity",
+                "Early exercise",
+                "Effect of dividends"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Option Pricing Models",
               "topics": [
-                "Binomial option pricing model, Risk neutral valuation (for European and American options on assets following binomial tree model), Lognormal property of stock prices, Distribution of rate of return, expected return"
+                "Binomial option pricing model",
+                "Risk neutral valuation (for European and American options on assets following binomial tree model)",
+                "Lognormal property of stock prices",
+                "Distribution of rate of return",
+                "Expected return"
               ]
             }
           ],

@@ -13,6 +13,7 @@ import {
   ChevronRight,
   ChevronDown,
 } from 'lucide-react';
+import { formatUnitTopics } from '@/utils/syllabusTopicParser';
 
 interface SemesterDetailViewProps {
   course: CourseSyllabus;
@@ -269,46 +270,49 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                 </div>
 
                 <div className="space-y-2">
-                  {activePaper.units.map((unit, uIdx) => (
-                    <details
-                      key={unit.unitNumber}
-                      open={uIdx === 0}
-                      className="group rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3.5 shadow-xs transition-all duration-200 open:border-slate-300 open:bg-white open:shadow-xs"
-                    >
-                      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 select-none">
-                        <div className="flex items-center gap-2.5 min-w-0">
-                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-xs font-black text-blue-700 border border-blue-200">
-                            {unit.unitNumber}
-                          </span>
-                          <h4 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition truncate">
-                            Unit {unit.unitNumber}: {unit.title}
-                          </h4>
-                        </div>
-
-                        <div className="flex items-center gap-2 shrink-0">
-                          {unit.topics && unit.topics.length > 0 && (
-                            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
-                              {unit.topics.length} {unit.topics.length === 1 ? 'Topic' : 'Topics'}
+                  {activePaper.units.map((unit, uIdx) => {
+                    const topics = formatUnitTopics(unit.topics);
+                    return (
+                      <details
+                        key={unit.unitNumber}
+                        open={uIdx === 0}
+                        className="group rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3.5 shadow-xs transition-all duration-200 open:border-slate-300 open:bg-white open:shadow-xs"
+                      >
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-3 select-none">
+                          <div className="flex items-center gap-2.5 min-w-0">
+                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-xs font-black text-blue-700 border border-blue-200">
+                              {unit.unitNumber}
                             </span>
-                          )}
-                          <ChevronDown className="h-4 w-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 group-open:text-slate-700" />
-                        </div>
-                      </summary>
+                            <h4 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition truncate">
+                              Unit {unit.unitNumber}: {unit.title}
+                            </h4>
+                          </div>
 
-                      {unit.topics && unit.topics.length > 0 && (
-                        <div className="mt-3 pt-3 border-t border-slate-100">
-                          <ul className="space-y-2 pl-1 text-xs text-slate-700 leading-relaxed">
-                            {unit.topics.map((topic, tIdx) => (
-                              <li key={tIdx} className="flex items-start gap-2">
-                                <span className="h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0 mt-1.5" />
-                                <span className="text-slate-800">{topic}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                    </details>
-                  ))}
+                          <div className="flex items-center gap-2 shrink-0">
+                            {topics && topics.length > 0 && (
+                              <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                                {topics.length} {topics.length === 1 ? 'Topic' : 'Topics'}
+                              </span>
+                            )}
+                            <ChevronDown className="h-4 w-4 text-slate-400 transition-transform duration-200 group-open:rotate-180 group-open:text-slate-700" />
+                          </div>
+                        </summary>
+
+                        {topics && topics.length > 0 && (
+                          <div className="mt-3 pt-3 border-t border-slate-100">
+                            <ul className="space-y-2 pl-1 text-xs text-slate-700 leading-relaxed">
+                              {topics.map((topic, tIdx) => (
+                                <li key={tIdx} className="flex items-start gap-2">
+                                  <span className="h-1.5 w-1.5 rounded-full bg-blue-500 shrink-0 mt-1.5" />
+                                  <span className="text-slate-800">{topic}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </details>
+                    );
+                  })}
                 </div>
               </div>
             ) : (

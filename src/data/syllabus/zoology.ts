@@ -28,15 +28,25 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Non-chordates",
               "topics": [
-                "General characteristics and classification (up to order) of the following Phyla: Protozoa, Porifera, Cnidaria, Ctenophora, Platyhelminthes, Nemathelminthes, Annelida, Arthropoda, Mollusca and Echinodermata"
+                "General characteristics and classification (up to order) of the following Phyla: Protozoa",
+                "Porifera",
+                "Cnidaria",
+                "Ctenophora",
+                "Platyhelminthes",
+                "Nemathelminthes",
+                "Annelida",
+                "Arthropoda",
+                "Mollusca and Echinodermata"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Protozoa, Porifera",
               "topics": [
-                "Protozoa: Structure and Life cycle of Paramecium, Plasmodium and Leshmania donovani",
-                "Porifera: Spicules and Canal system in sponges; affinities of the Phylum"
+                "Protozoa: Structure and Life cycle of Paramecium",
+                "Plasmodium and Leshmania donovani",
+                "Porifera: Spicules and Canal system in sponges",
+                "Affinities of the Phylum"
               ]
             },
             {
@@ -44,18 +54,27 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Cnidaria, Ctenophora, Platyhelminthes and Nemathelminthes",
               "topics": [
                 "Cnidaria: Structure and Life Cycle: Obelia and Aurelia",
-                "Ctenophora: General organization of Hormiphora; affinities of the phylum",
-                "Platyhelminthes and Nemathelminthes: Structure and Life cycle of Fascicola hepatica, Taenia solium and Ascaris lumbricoides"
+                "Ctenophora: General organization of Hormiphora",
+                "Affinities of the phylum",
+                "Platyhelminthes and Nemathelminthes: Structure and Life cycle of Fascicola hepatica",
+                "Taenia solium and Ascaris lumbricoides"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Annelida, Arthropoda, Mollusca and Echinodermata",
               "topics": [
-                "Annelida: Earthworm and Leech: Structure, locomotion, alimentary canal and reproduction",
-                "Arthropoda: Palaemon and Peripatus, Adaptive variations in insect mouth parts",
-                "Mollusca: Structure and Life cycle: Unio, Pila. Torsion and Detorsion in Gastropoda",
-                "Echinodermata: Structure: Star fish; Larval forms in Echinoderms; Water Vascular System in Echinoderms"
+                "Annelida: Earthworm and Leech: Structure",
+                "Locomotion",
+                "Alimentary canal and reproduction",
+                "Arthropoda: Palaemon and Peripatus",
+                "Adaptive variations in insect mouth parts",
+                "Mollusca: Structure and Life cycle: Unio",
+                "Pila",
+                "Torsion and Detorsion in Gastropoda",
+                "Echinodermata: Structure: Star fish",
+                "Larval forms in Echinoderms",
+                "Water Vascular System in Echinoderms"
               ]
             }
           ],
@@ -82,15 +101,29 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of whole mount of Euglena, Amoeba, Paramecium, Monocystis; Binary fission and Conjugation in Paramecium",
-                "Study of Sycon; T.S. of Sycon, L.S. of Sycon; Gemmule, Hyalonema",
+                "Study of whole mount of Euglena",
+                "Amoeba",
+                "Paramecium",
+                "Monocystis",
+                "Binary fission and Conjugation in Paramecium",
+                "Study of Sycon",
+                "S. of Sycon",
+                "S. of Sycon",
+                "Gemmule, Hyalonema",
                 "Permanent stained preparation of spicules of sponges",
                 "Study of Obelia, Aurelia, Metridium, Physalia",
                 "Specimen/slide of any one Ctenophore",
-                "Study of adult Fasciola hepatica, Taenia solium and Ascaris (male & female)",
-                "Study of Aphrodite, Septal nephridia and Ovary of Earthworm; Jaws of leech; Trochophore larva",
-                "Study of T.S. through pharynx, gizzard, and typhlosolar region of earthworm",
-                "Study of Limulus, Scolopendra, Grasshopper, Phyllium, Praying mantis, Palaemon, Sacculina, Cancer, Eupagurus, Apis, Musca. Salivary gland of Cockroach, Mouth parts of Mosquito",
+                "Study of adult Fasciola hepatica",
+                "Taenia solium and Ascaris (male & female)",
+                "Study of Aphrodite",
+                "Septal nephridia and Ovary of Earthworm",
+                "Jaws of leech",
+                "Trochophore larva",
+                "Study of T.S. through pharynx",
+                "Gizzard, and typhlosolar region of earthworm",
+                "Study of Limulus, Scolopendra, Grasshopper, Phyllium, Praying mantis, Palaemon, Sacculina, Cancer, Eupagurus, Apis, Musca",
+                "Salivary gland of Cockroach",
+                "Mouth parts of Mosquito",
                 "Study of Chiton, Dentalium, Octopus, Glochidim larva",
                 "Study of Asterias, Echinus, Antedon",
                 "Practical Records/Charts/Models",
@@ -113,35 +146,54 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Non-chordates",
               "topics": [
-                "General characteristics and classification (up to order) of the following Phyla: Protozoa, Porifera, Cnidaria, Ctenophora, Platyhelminthes, Nemathelminthes, Annelida, Arthropoda, Mollusca, Echinodermata"
+                "General characteristics and classification (up to order) of the following Phyla: Protozoa",
+                "Porifera",
+                "Cnidaria",
+                "Ctenophora",
+                "Platyhelminthes",
+                "Nemathelminthes",
+                "Annelida",
+                "Arthropoda",
+                "Mollusca",
+                "Echinodermata"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Structure and life history of Protozoa and Porifera",
               "topics": [
-                "Protozoa - Paramecium",
-                "Porifera - Sycon"
+                "Protozoa",
+                "Paramecium",
+                "Porifera",
+                "Sycon"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Structure and life history of Cnidaria, Platyhelminthes and Aschelminthes",
               "topics": [
-                "Cnidaria - Obelia",
-                "Platyhelminthes - Fasciola",
-                "Aschelminthes - Ascaris"
+                "Cnidaria",
+                "Obelia",
+                "Platyhelminthes",
+                "Fasciola",
+                "Aschelminthes",
+                "Ascaris"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Study of coelomates",
               "topics": [
-                "Annelida - Pheretima",
-                "Arthropoda - Palaemon",
-                "Mollusca - Pila",
-                "Echinodermata - Asteries",
-                "Hemichordata - Balanoglossus"
+                "Annelida",
+                "Pheretima",
+                "Arthropoda",
+                "Palaemon",
+                "Mollusca",
+                "Pila",
+                "Echinodermata",
+                "Asteries",
+                "Hemichordata",
+                "Balanoglossus"
               ]
             }
           ],
@@ -168,12 +220,20 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of whole mount of Euglena, Paramecium, Leshmania",
-                "Study of Sycon, Spongilla, T.S. of Sycon, L.S. of Sycon",
+                "Study of whole mount of Euglena",
+                "Paramecium",
+                "Leshmania",
+                "Study of Sycon",
+                "Spongilla",
+                "S. of Sycon",
+                "S. of Sycon",
                 "Study of Obelia, Aurelia, Gorgonia",
-                "Study of adult Fasciola hepatica, Taenia soliumand their life stages",
-                "Study of Pheretima, Hirudinaria",
-                "Study of T.S. through pharynx, gizzard, and typhlosolar intestine of earthworm",
+                "Study of adult Fasciola hepatica",
+                "Taenia soliumand their life stages",
+                "Study of Pheretima",
+                "Hirudinaria",
+                "Study of T.S. through pharynx",
+                "Gizzard, and typhlosolar intestine of earthworm",
                 "Study of Limulus, Palaemon, Apis",
                 "Mouth parts of Mosquito and Cockroach",
                 "Study of Pila, Unio",
@@ -196,35 +256,53 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Non-chordates",
               "topics": [
-                "General characteristics and classification (up to order) of the following Phyla: Protozoa, Porifera, Cnidaria, Ctenophora, Platyhelminthes and Nemathelminthes, Annelida, Arthropoda, Mollusca, Echinodermata"
+                "General characteristics and classification (up to order) of the following Phyla: Protozoa",
+                "Porifera",
+                "Cnidaria",
+                "Ctenophora",
+                "Platyhelminthes and Nemathelminthes",
+                "Annelida",
+                "Arthropoda",
+                "Mollusca",
+                "Echinodermata"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Structure and life history of Protozoa and Porifera",
               "topics": [
-                "Protozoa - Paramecium",
-                "Porifera - Sycon"
+                "Protozoa",
+                "Paramecium",
+                "Porifera",
+                "Sycon"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Structure and life history of Cnidaria, Platyhelminthes and Aschelminthes",
               "topics": [
-                "Cnidaria - Obelia",
-                "Platyhelminthes - Fasciola",
-                "Aschelminthes - Ascaris"
+                "Cnidaria",
+                "Obelia",
+                "Platyhelminthes",
+                "Fasciola",
+                "Aschelminthes",
+                "Ascaris"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Study of coelomates",
               "topics": [
-                "Annelida - Pheretima",
-                "Arthropoda - Palaemon",
-                "Mollusca - Pila",
-                "Echinodermata - Asteries",
-                "Hemichordata - Balanoglossus"
+                "Annelida",
+                "Pheretima",
+                "Arthropoda",
+                "Palaemon",
+                "Mollusca",
+                "Pila",
+                "Echinodermata",
+                "Asteries",
+                "Hemichordata",
+                "Balanoglossus"
               ]
             }
           ],
@@ -310,7 +388,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Chordates",
               "topics": [
-                "General characteristics and classification (upto Order): Cephalochordata, Urochordata, Cyclostomata, Pisces, Amphibia, Reptilia, Aves and Mammalia"
+                "General characteristics and classification (upto Order): Cephalochordata",
+                "Urochordata",
+                "Cyclostomata",
+                "Pisces",
+                "Amphibia",
+                "Reptilia",
+                "Aves and Mammalia"
               ]
             },
             {
@@ -327,17 +411,23 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Pisces, Amphibia and Reptilia",
               "topics": [
-                "Pisces: Migration, Osmoregulation, and Accessory respiration",
-                "Amphibia: Origin and Evolution; Parental care and Neoteny",
-                "Reptilia: Poison and Non-poisonous snakes; Poison apparatus; biting and feeding mechanism in snakes"
+                "Pisces: Migration",
+                "Osmoregulation, and Accessory respiration",
+                "Amphibia: Origin and Evolution",
+                "Parental care and Neoteny",
+                "Reptilia: Poison and Non-poisonous snakes",
+                "Poison apparatus",
+                "Biting and feeding mechanism in snakes"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Aves and Mammalia",
               "topics": [
-                "Aves: Origin of birds, Flight adaptations and Migration in birds",
-                "Mammalia: Characters, distribution and affinities of Prototheria Metatheria and Eutheria"
+                "Aves: Origin of birds",
+                "Flight adaptations and Migration in birds",
+                "Mammalia: Characters",
+                "Distribution and affinities of Prototheria Metatheria and Eutheria"
               ]
             }
           ],
@@ -364,14 +454,27 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Amphioxus: T.S through pharyngeal, intestinal, and caudal regions",
-                "Herdmania: Whole mount, Spicules",
-                "Cyclostomata: Petromyzon, Myxine",
-                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus; Scales of fishes",
+                "Amphioxus: T.S through pharyngeal",
+                "Intestinal, and caudal regions",
+                "Herdmania: Whole mount",
+                "Spicules",
+                "Cyclostomata: Petromyzon",
+                "Myxine",
+                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus",
+                "Scales of fishes",
                 "Amphibia: Ichthyophis, Bufo, Hyla, Alytes, Salamandra, Axolotle larva",
-                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeleon, Draco, Calotes, Heloderma; Key for Identification of poisonous and non-poisonous snakes",
-                "Aves: Types of beaks and claws, Study of pecten from fowl head and brain of fowl",
-                "Mammalia: Sorex, Bat (Insectivorous and Frugivorous), Funambulus, Loris, Herpestes, Erinaceous, Macropus, Echidna"
+                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeleon, Draco, Calotes, Heloderma",
+                "Key for Identification of poisonous and non-poisonous snakes",
+                "Aves: Types of beaks and claws",
+                "Study of pecten from fowl head and brain of fowl",
+                "Mammalia: Sorex",
+                "Bat (Insectivorous and Frugivorous)",
+                "Funambulus",
+                "Loris",
+                "Herpestes",
+                "Erinaceous",
+                "Macropus",
+                "Echidna"
               ]
             }
           ],
@@ -390,7 +493,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Chordates",
               "topics": [
-                "General characteristics and classification (upto Order): Cephalochordata, Urochordata, Cyclostomata, Pisces, Amphibia, Reptilia, Aves and Mammals"
+                "General characteristics and classification (upto Order): Cephalochordata",
+                "Urochordata",
+                "Cyclostomata",
+                "Pisces",
+                "Amphibia",
+                "Reptilia",
+                "Aves and Mammals"
               ]
             },
             {
@@ -413,8 +522,10 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Aves and Mammals",
               "topics": [
-                "Aves: Flight adaptations, Elementary idea of migration",
-                "Mammals: Characters, distribution and affinities of Prototheria and Metatheria"
+                "Aves: Flight adaptations",
+                "Elementary idea of migration",
+                "Mammals: Characters",
+                "Distribution and affinities of Prototheria and Metatheria"
               ]
             }
           ],
@@ -441,14 +552,27 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Amphioxus: Section through pharyngeal, intestinal, and caudal regions",
-                "Herdmania: Whole mount, Spicules",
-                "Cyclostomata: Petromyzon, Myxine",
-                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus; Scales of fishes",
+                "Amphioxus: Section through pharyngeal",
+                "Intestinal, and caudal regions",
+                "Herdmania: Whole mount",
+                "Spicules",
+                "Cyclostomata: Petromyzon",
+                "Myxine",
+                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus",
+                "Scales of fishes",
                 "Amphibia: Ichthyophis, Bufo, Hyla, Alytes, Salamandra, Axolotle larva",
-                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeleon, Draco, Calotes, Heloderma; Key for Identification of poisonous and non-poisonous snakes",
-                "Aves: Types of beaks and claws, Study of pecten from fowl head and brain of fowl",
-                "Mammalia: Sorex, Bat (Insectivorous and Frugivorous), Funambulus, Loris, Herpestes, Erinaceous, Macropus, Echidna"
+                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeleon, Draco, Calotes, Heloderma",
+                "Key for Identification of poisonous and non-poisonous snakes",
+                "Aves: Types of beaks and claws",
+                "Study of pecten from fowl head and brain of fowl",
+                "Mammalia: Sorex",
+                "Bat (Insectivorous and Frugivorous)",
+                "Funambulus",
+                "Loris",
+                "Herpestes",
+                "Erinaceous",
+                "Macropus",
+                "Echidna"
               ]
             }
           ],
@@ -467,7 +591,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Chordates",
               "topics": [
-                "General characteristics and classification (upto Order): Cephalochordata, Urochordata, Cyclostomata, Pisces, Amphibia, Reptilia, Aves and Mammals"
+                "General characteristics and classification (upto Order): Cephalochordata",
+                "Urochordata",
+                "Cyclostomata",
+                "Pisces",
+                "Amphibia",
+                "Reptilia",
+                "Aves and Mammals"
               ]
             },
             {
@@ -490,8 +620,10 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Aves and Mammals",
               "topics": [
-                "Aves: Flight adaptations, Elementary idea of migration",
-                "Mammals: Characters, distribution and affinities of Proto-theria & Metatheria"
+                "Aves: Flight adaptations",
+                "Elementary idea of migration",
+                "Mammals: Characters",
+                "Distribution and affinities of Proto-theria & Metatheria"
               ]
             }
           ],
@@ -518,14 +650,27 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Amphioxus: Section through pharyngeal, intestinal, and caudal regions",
-                "Herdmania: Whole mount, Spicules",
-                "Cyclostomata: Petromyzon, Myxine",
-                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus; Scales of fishes",
+                "Amphioxus: Section through pharyngeal",
+                "Intestinal, and caudal regions",
+                "Herdmania: Whole mount",
+                "Spicules",
+                "Cyclostomata: Petromyzon",
+                "Myxine",
+                "Fish: Scoliodon, Torpedo, Chimaera, Labeo, Exocoetus, Echeneis, Hippocampus",
+                "Scales of fishes",
                 "Amphibia: Ichthyophis, Bufo, Hyla, Aytes, Salamandra, Axolotle larva",
-                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeloon, Draco, Calotes, Heloderma; Key for Identification of poisonous and non-poisonous snakes",
-                "Aves: Types of beaks and claws, Study of pecten from fowl head and brain of fowl",
-                "Mammalia: Sorex, Bat (Insectivorous and Frugivorous), Funambulus, Loris, Herpestes, Erinaceous, Macropus, Echidna"
+                "Reptilia: Chelone, Hemidactylus, Varanus, Vipera, Naja, Bungarus, Uromastix, Chamaeloon, Draco, Calotes, Heloderma",
+                "Key for Identification of poisonous and non-poisonous snakes",
+                "Aves: Types of beaks and claws",
+                "Study of pecten from fowl head and brain of fowl",
+                "Mammalia: Sorex",
+                "Bat (Insectivorous and Frugivorous)",
+                "Funambulus",
+                "Loris",
+                "Herpestes",
+                "Erinaceous",
+                "Macropus",
+                "Echidna"
               ]
             }
           ],
@@ -591,7 +736,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Integumentary System",
               "topics": [
-                "Structure and derivatives of integument, functions of skin"
+                "Structure and derivatives of integument",
+                "Functions of skin"
               ]
             },
             {
@@ -658,10 +804,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of placoid, cycloid and ctenoid scales of fish through permanent slides",
+                "Study of placoid",
+                "Cycloid and ctenoid scales of fish through permanent slides",
                 "Study of afferent and efferent branchial vessels of Scoliodon through videos/models",
                 "Study of digestive tract of frog/rat through videos/models",
-                "Disarticulated skeleton of Frog, Varanus, Fowl and Rabbit (Skull, Limb bones, Vertebral Column, Sternum, Girdles, Ribs)",
+                "Disarticulated skeleton of Frog",
+                "Varanus",
+                "Fowl and Rabbit (Skull, Limb bones, Vertebral Column, Sternum, Girdles, Ribs)",
                 "Practical Records/Charts/Models",
                 "Viva-voce"
               ]
@@ -682,7 +831,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Digestive System",
               "topics": [
-                "Digestion, Absorption and Assimilation of Carbohydrates, Protein and Lipid",
+                "Digestion",
+                "Absorption and Assimilation of Carbohydrates",
+                "Protein and Lipid",
                 "Digestive glands"
               ]
             },
@@ -690,8 +841,10 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Neuromuscular Physiology",
               "topics": [
-                "Structure of neuron, Propagation of nerve impulse",
-                "Structure of skeletal muscle, Mechanism of muscle contraction",
+                "Structure of neuron",
+                "Propagation of nerve impulse",
+                "Structure of skeletal muscle",
+                "Mechanism of muscle contraction",
                 "Neuromuscular junction"
               ]
             },
@@ -708,7 +861,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Cardiovascular System",
               "topics": [
-                "Components of blood and their function, blood coagulation",
+                "Components of blood and their function",
+                "Blood coagulation",
                 "Coronary circulation and heart beat",
                 "Cardiac cycle and ECG",
                 "Nervous and chemical regulation of heart rate"
@@ -749,7 +903,14 @@ export const zoologySyllabus: CourseSyllabus = {
                 "Enumeration of red blood cells and white blood cells using haemocytometer",
                 "Determination of erythrocyte sedimentation rate",
                 "Estimation of haemoglobin",
-                "Examination of histological sections of mammalian oesophagus, stomach, duodenum, ileum, rectum, trachea, lung, Testis and Ovary",
+                "Examination of histological sections of mammalian oesophagus",
+                "Stomach",
+                "Duodenum",
+                "Ileum",
+                "Rectum",
+                "Trachea",
+                "Lung",
+                "Testis and Ovary",
                 "Practical Records/Charts/Models",
                 "Viva-voce"
               ]
@@ -786,7 +947,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Respiratory Physiology",
               "topics": [
-                "Structure of respiratory organs, pulmonary ventilation",
+                "Structure of respiratory organs",
+                "Pulmonary ventilation",
                 "Transport of gases in blood"
               ]
             },
@@ -838,7 +1000,14 @@ export const zoologySyllabus: CourseSyllabus = {
                 "Enumeration of red blood cells and white blood cells using haemocytometer",
                 "Determination of erythrocyte sedimentation rate",
                 "Estimation of haemoglobin",
-                "Examination of histological sections of mammalian oesophagus, stomach, duodenum, ileum, rectum, trachea, lung, Testis and Ovary",
+                "Examination of histological sections of mammalian oesophagus",
+                "Stomach",
+                "Duodenum",
+                "Ileum",
+                "Rectum",
+                "Trachea",
+                "Lung",
+                "Testis and Ovary",
                 "Practical Records/Charts/Models",
                 "Viva-voce"
               ]
@@ -875,7 +1044,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Respiratory Physiology",
               "topics": [
-                "Structure of respiratory organs, pulmonary ventilation",
+                "Structure of respiratory organs",
+                "Pulmonary ventilation",
                 "Transport of gases in blood"
               ]
             },
@@ -927,7 +1097,14 @@ export const zoologySyllabus: CourseSyllabus = {
                 "Enumeration of red blood cells and white blood cells using haemocytometer",
                 "Determination of erythrocyte sedimentation rate",
                 "Estimation of haemoglobin",
-                "Examination of histological sections of mammalian oesophagus, stomach, duodenum, ileum, rectum, trachea, lung, Testis and Ovary",
+                "Examination of histological sections of mammalian oesophagus",
+                "Stomach",
+                "Duodenum",
+                "Ileum",
+                "Rectum",
+                "Trachea",
+                "Lung",
+                "Testis and Ovary",
                 "Practical Records/Charts/Models",
                 "Viva-voce"
               ]
@@ -999,7 +1176,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Overview of Cells",
               "topics": [
-                "Overview of Virus, Prokaryotic and Eukaryotic cells"
+                "Overview of Virus",
+                "Prokaryotic and Eukaryotic cells"
               ]
             },
             {
@@ -1014,10 +1192,16 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Cytoplasmic organelles",
               "topics": [
-                "Endoplasmic Reticulum – Structure, Signal hypothesis",
-                "Golgi apparatus – Structure, Protein sorting",
+                "Endoplasmic Reticulum",
+                "Structure",
+                "Signal hypothesis",
+                "Golgi apparatus",
+                "Structure",
+                "Protein sorting",
                 "Lysosomes and Peroxisomes",
-                "Mitochondria – Structure, Respiratory chain and oxidative phosphorylation"
+                "Mitochondria",
+                "Structure",
+                "Respiratory chain and oxidative phosphorylation"
               ]
             },
             {
@@ -1089,7 +1273,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Peripheral Endocrine Glands",
               "topics": [
-                "Functional histology, hormones and function of Thyroid, Parathyroid, Adrenal, Islets of Langerhans and Gonads",
+                "Functional histology",
+                "Hormones and function of Thyroid",
+                "Parathyroid",
+                "Adrenal",
+                "Islets of Langerhans and Gonads",
                 "Disorders related to hypersecretion and hyposecretion of hormones"
               ]
             },
@@ -1123,8 +1311,18 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Display of gonads, thyroid, adrenal, pancreas in mammal through videos or virtual dissection",
-                "Study of the permanent slides of Pituitary, Adrenal, Ovary, Testes, Islets of Langerhan's, Thymus, Thyroid, Parathyroid",
+                "Display of gonads",
+                "Thyroid",
+                "Adrenal",
+                "Pancreas in mammal through videos or virtual dissection",
+                "Study of the permanent slides of Pituitary",
+                "Adrenal",
+                "Ovary",
+                "Testes",
+                "Islets of Langerhan's",
+                "Thymus",
+                "Thyroid",
+                "Parathyroid",
                 "Working principles of ELISA/RIA",
                 "Practical/Project report on chick embryo development",
                 "Viva-voce"
@@ -1155,9 +1353,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Ecosystem",
               "topics": [
-                "Definition, structure, and function of different types of ecosystems including wetland ecosystem",
+                "Definition",
+                "Structure, and function of different types of ecosystems including wetland ecosystem",
                 "Food chain and Food web",
-                "Energy flow through the ecosystem, Ecological pyramids and Ecological efficiencies",
+                "Energy flow through the ecosystem",
+                "Ecological pyramids and Ecological efficiencies",
                 "Biogeochemical cycles"
               ]
             },
@@ -1166,15 +1366,23 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Population ecology",
               "topics": [
                 "Study of population attributes (Natality, Mortality, Density)",
-                "Life tables; Exponential and logistic growth, equation and patterns, r and k strategies",
-                "Population interactions; Lotka-Volterra model"
+                "Life tables",
+                "Exponential and logistic growth",
+                "Equation and patterns",
+                "R and k strategies",
+                "Population interactions",
+                "Lotka-Volterra model"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Community Ecology",
               "topics": [
-                "Community characteristics: species richness, dominance, diversity, abundance, Ecotone and Edge effect",
+                "Community characteristics: species richness",
+                "Dominance",
+                "Diversity",
+                "Abundance",
+                "Ecotone and Edge effect",
                 "Ecological succession with examples and types"
               ]
             },
@@ -1182,8 +1390,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Applied Ecology",
               "topics": [
-                "Biodiversity - Importance and threats",
-                "Wildlife conservation and management; National Parks, Bioreserves and Sanctuaries",
+                "Biodiversity",
+                "Importance and threats",
+                "Wildlife conservation and management",
+                "National Parks",
+                "Bioreserves and Sanctuaries",
                 "Pollution and its hazards"
               ]
             }
@@ -1231,14 +1442,18 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Ecology",
               "topics": [
-                "Introduction to Ecology, Scope of ecology, Laws of limiting factors"
+                "Introduction to Ecology",
+                "Scope of ecology",
+                "Laws of limiting factors"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Population Ecology",
               "topics": [
-                "Population dynamics, Demographic indices, Population interactions"
+                "Population dynamics",
+                "Demographic indices",
+                "Population interactions"
               ]
             },
             {
@@ -1252,14 +1467,23 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Ecosystem",
               "topics": [
-                "Types of ecosystems, Detailed study of Aquatic ecosystem, Food chain, Food web, Ecological pyramids and Biogeochemical cycle"
+                "Types of ecosystems",
+                "Detailed study of Aquatic ecosystem",
+                "Food chain",
+                "Food web",
+                "Ecological pyramids and Biogeochemical cycle"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Applied Ecology",
               "topics": [
-                "Wildlife conservation; Importance, threats and management, Protected areas; National Parks, Bioreserves and Sanctuaries"
+                "Wildlife conservation",
+                "Importance",
+                "Threats and management",
+                "Protected areas",
+                "National Parks",
+                "Bioreserves and Sanctuaries"
               ]
             }
           ],
@@ -1332,16 +1556,20 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Elementary idea of biomolecule",
               "topics": [
-                "Structure and classification of Carbohydrates, Lipid and Protein",
-                "Structure, classification and physiological importance of Amino Acids",
-                "Structure, classification and physiological importance of Vitamins"
+                "Structure and classification of Carbohydrates",
+                "Lipid and Protein",
+                "Structure",
+                "Classification and physiological importance of Amino Acids",
+                "Structure",
+                "Classification and physiological importance of Vitamins"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Enzymes",
               "topics": [
-                "Nomenclature and classification, Isozymes",
+                "Nomenclature and classification",
+                "Isozymes",
                 "Kinetics of enzyme-substrate reactions",
                 "Regulation of enzyme action"
               ]
@@ -1351,14 +1579,17 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Carbohydrate Metabolism",
               "topics": [
                 "Glycolysis and Citric acid cycle",
-                "Pentose Phosphate Pathway, Gluconeogenesis, Glycogenolysis and Glycogenesis"
+                "Pentose Phosphate Pathway",
+                "Gluconeogenesis",
+                "Glycogenolysis and Glycogenesis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Lipid and Protein Metabolism",
               "topics": [
-                "Beta oxidation and omega-oxidation of fatty acids, Ketogenesis",
+                "Beta oxidation and omega-oxidation of fatty acids",
+                "Ketogenesis",
                 "Transamination, Deamination, Urea cycle"
               ]
             }
@@ -1384,9 +1615,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Qualitative tests of carbohydrates, proteins and lipids",
+                "Qualitative tests of carbohydrates",
+                "Proteins and lipids",
                 "Paper chromatography of amino acids",
-                "Demonstration of impact of pH, temperature and inhibitors on the action of salivary amylase",
+                "Demonstration of impact of pH",
+                "Temperature and inhibitors on the action of salivary amylase",
                 "Practical Records/Charts/Models",
                 "Viva-voce"
               ]
@@ -1407,17 +1640,27 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mendelian Genetics and Linkage",
               "topics": [
-                "Principles of inheritance, Incomplete dominance and co-dominance, Multiple alleles, Lethal alleles, Epistasis and Pleiotropy",
-                "Linkage and crossing over; its cytological basis and molecular mechanisms, Recombination frequency, Interference and coincidence"
+                "Principles of inheritance",
+                "Incomplete dominance and co-dominance",
+                "Multiple alleles",
+                "Lethal alleles",
+                "Epistasis and Pleiotropy",
+                "Linkage and crossing over",
+                "Its cytological basis and molecular mechanisms",
+                "Recombination frequency",
+                "Interference and coincidence"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Mutations",
               "topics": [
-                "Gene mutation - Chemical and Physical mutagenesis",
-                "Chromosomal aberrations - Structural and Numerical",
-                "Detection of mutations in Drosophila - CLB method and attached X method"
+                "Gene mutation",
+                "Chemical and Physical mutagenesis",
+                "Chromosomal aberrations",
+                "Structural and Numerical",
+                "Detection of mutations in Drosophila",
+                "CLB method and attached X method"
               ]
             },
             {
@@ -1426,7 +1669,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "topics": [
                 "Chromosomal mechanisms of sex determination",
                 "Genetic and molecular basis of sex determination in Drosophila",
-                "Sex-linked inheritance, sex-influenced and sex-limited characters"
+                "Sex-linked inheritance",
+                "Sex-influenced and sex-limited characters"
               ]
             },
             {
@@ -1434,7 +1678,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Extra-chromosomal Inheritance and Quantitative Genetics",
               "topics": [
                 "Criteria for extra-chromosomal inheritance",
-                "Antibiotic resistance in Chlamydomonas, Kappa particles in Paramoecium and Maternal effects (Shell spiralling in snail)",
+                "Antibiotic resistance in Chlamydomonas",
+                "Kappa particles in Paramoecium and Maternal effects (Shell spiralling in snail)",
                 "Polygenic inheritance"
               ]
             }
@@ -1491,21 +1736,25 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Plasma Membrane",
               "topics": [
-                "Plasma Membrane: Fluid Mosaic Model, Active and passive transport"
+                "Plasma Membrane: Fluid Mosaic Model",
+                "Active and passive transport"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Endomembrane System",
               "topics": [
-                "Structure and Functions of Endoplasmic Reticulum, Golgi apparatus, Lysosomes and Peroxisomes"
+                "Structure and Functions of Endoplasmic Reticulum",
+                "Golgi apparatus",
+                "Lysosomes and Peroxisomes"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Mitochondria",
               "topics": [
-                "Structure, Respiratory chain and ATP production"
+                "Structure",
+                "Respiratory chain and ATP production"
               ]
             },
             {
@@ -1519,7 +1768,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 6,
               "title": "Cell cycle",
               "topics": [
-                "Mitosis, Meiosis and their regulation in brief"
+                "Mitosis",
+                "Meiosis and their regulation in brief"
               ]
             }
           ],
@@ -1568,7 +1818,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mendelian Genetics",
               "topics": [
-                "Principles of Genetic inheritance, Incomplete dominance and co-dominance",
+                "Principles of Genetic inheritance",
+                "Incomplete dominance and co-dominance",
                 "Concept of Linkage and crossing over"
               ]
             },
@@ -1576,8 +1827,10 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Mutations",
               "topics": [
-                "Gene mutation - Chemical and Physical mutagenesis",
-                "Chromosomal aberrations - Structural and Numerical"
+                "Gene mutation",
+                "Chemical and Physical mutagenesis",
+                "Chromosomal aberrations",
+                "Structural and Numerical"
               ]
             },
             {
@@ -1585,7 +1838,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Sex Determination",
               "topics": [
                 "Chromosomal mechanisms of sex determination",
-                "Sex-linked inheritance, sex-influenced and sex-limited characters"
+                "Sex-linked inheritance",
+                "Sex-influenced and sex-limited characters"
               ]
             },
             {
@@ -1666,9 +1920,15 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Principles and Basic concepts of development biology - Phases of development, Cell-Cell interaction, Differentiation and growth",
+                "Principles and Basic concepts of development biology",
+                "Phases of development",
+                "Cell-Cell interaction",
+                "Differentiation and growth",
                 "Gametogenesis: Spermatogenesis and Oogenesis",
-                "Mechanism of fertilization, Types of eggs and cleavage, Blastulation, Fate maps (including Techniques)"
+                "Mechanism of fertilization",
+                "Types of eggs and cleavage",
+                "Blastulation",
+                "Fate maps (including Techniques)"
               ]
             },
             {
@@ -1676,15 +1936,20 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Early and Late Embryonic Development",
               "topics": [
                 "Early development of frog and chick up to gastrulation",
-                "Late Embryonic Development: Fate of Germ Layers, Extra-embryonic membranes in birds, Placentation"
+                "Late Embryonic Development: Fate of Germ Layers",
+                "Extra-embryonic membranes in birds",
+                "Placentation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Post Embryonic Development",
               "topics": [
-                "Metamorphosis: Changes, hormonal regulations in amphibians",
-                "Regeneration: Modes of regeneration, epimorphosis, morphallaxis and compensatory regeneration (with one example each)"
+                "Metamorphosis: Changes",
+                "Hormonal regulations in amphibians",
+                "Regeneration: Modes of regeneration",
+                "Epimorphosis",
+                "Morphallaxis and compensatory regeneration (with one example each)"
               ]
             },
             {
@@ -1692,7 +1957,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Implications of Developmental Biology",
               "topics": [
                 "Teratogenesis: Teratogenic agents and their effects on embryonic development",
-                "In vitro fertilization, Stem cell, Amniocentesis",
+                "In vitro fertilization",
+                "Stem cell",
+                "Amniocentesis",
                 "Basic concept of Aging and senescence"
               ]
             }
@@ -1719,7 +1986,12 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of whole mounts and sections of developmental stages of frog through permanent slides: Cleavage stages, blastula, gastrula, neurula, tail-bud stage, tadpole (external and internal gill stages)",
+                "Study of whole mounts and sections of developmental stages of frog through permanent slides: Cleavage stages",
+                "Blastula",
+                "Gastrula",
+                "Neurula",
+                "Tail-bud stage",
+                "Tadpole (external and internal gill stages)",
                 "Study of whole mounts of developmental stages of chick through permanent slides (Different hours of incubation)",
                 "Study of the developmental stages and life cycle of Drosophila from stock culture",
                 "Study of different sections of placenta (Photomicrograph/slides)",
@@ -1751,7 +2023,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Evolutionary concepts",
               "topics": [
-                "Lamarckism, Darwinism and Neo-Darwinism",
+                "Lamarckism",
+                "Darwinism and Neo-Darwinism",
                 "Types and causes of Variation and their role in evolution"
               ]
             },
@@ -1762,14 +2035,16 @@ export const zoologySyllabus: CourseSyllabus = {
                 "Evidences of Organic Evolution",
                 "Types of fossils and geological time scale",
                 "Evolution of horse and man",
-                "Human migration-Theories, Mitochondrial DNA and Y-chromosome studies"
+                "Human migration-Theories",
+                "Mitochondrial DNA and Y-chromosome studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Population Genetics",
               "topics": [
-                "Hardy-weinberg Law, gene pool and allele frequency",
+                "Hardy-weinberg Law",
+                "Gene pool and allele frequency",
                 "Natural selection (concept of fitness, types of selection, kin selection)",
                 "Genetic Drift (mechanism, founder's effect, bottleneck phenomenon)"
               ]
@@ -1798,9 +2073,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of types of fossils, Archaeopteryx",
-                "Vestigial, Analogous and Homologous organs using suitable specimens or Sampling for discrete characteristics (dominant vs recessive) for discontinuous variations e.g. hitch-hiker's thumb, tongue rolling and ear lobe",
-                "Calculation of genotypic, phenotypic and allelic frequencies from the data provided",
+                "Study of types of fossils",
+                "Archaeopteryx",
+                "Vestigial",
+                "Analogous and Homologous organs using suitable specimens or Sampling for discrete characteristics (dominant vs recessive) for discontinuous variations e.g. hitch-hiker's thumb",
+                "Tongue rolling and ear lobe",
+                "Calculation of genotypic",
+                "Phenotypic and allelic frequencies from the data provided",
                 "Practical records/charts/models",
                 "Viva-voce"
               ]
@@ -1830,7 +2109,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Patterns of behaviour and its Control",
               "topics": [
-                "Stereotyped Behaviour; Orientation and Reflex",
+                "Stereotyped Behaviour",
+                "Orientation and Reflex",
                 "Innate and Learned behaviours"
               ]
             },
@@ -1838,8 +2118,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Biological Rhythm",
               "topics": [
-                "Biological clocks in animals, Adaptive significance of biological clocks",
-                "Types of biological rhythms- Tidal, Lunar, Circadian and Circannual",
+                "Biological clocks in animals",
+                "Adaptive significance of biological clocks",
+                "Types of biological rhythms- Tidal",
+                "Lunar",
+                "Circadian and Circannual",
                 "Role of melatonin"
               ]
             },
@@ -1847,7 +2130,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Social and Sexual Behaviour",
               "topics": [
-                "Social behaviour of insects (Honey bee), Foraging and dances in honey bee",
+                "Social behaviour of insects (Honey bee)",
+                "Foraging and dances in honey bee",
                 "Parental care in fishes and amphibians"
               ]
             }
@@ -1875,7 +2159,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Study of the pattern of Behaviour (any one of the followings) a) Photo Tactile Response in Earthworms or Paramecium. b) Geotactic Response of Earthworm or Pest",
-                "Comment upon the given specimen with response to parental care – Ichthyophis, Alytes and Hippocampus etc",
+                "Comment upon the given specimen with response to parental care",
+                "Ichthyophis",
+                "Alytes and Hippocampus etc",
                 "Submit and write-up on any one of the given topic: a) Courtship in Peacock /Pigeons b) Maternal Behavior in Rats /Cats c) Study of nests and nesting behavior of the birds and social insects d) Study of honey bee hive",
                 "Practical records/ charts/ models",
                 "Viva-voce"
@@ -1904,14 +2190,16 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Evolutionary concepts",
               "topics": [
-                "A brief account of evolutionary theories: Lamarckism, Darwinism and Neo-Darwinism"
+                "A brief account of evolutionary theories: Lamarckism",
+                "Darwinism and Neo-Darwinism"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Evidences of Evolution",
               "topics": [
-                "Evidences of Evolution, Evolution of man"
+                "Evidences of Evolution",
+                "Evolution of man"
               ]
             },
             {
@@ -1944,9 +2232,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Study of types of fossils (Archaeopteryx- a connecting link)",
-                "Vestigial, Analogous and Homologous organs using suitable specimens",
-                "Sampling for discrete characteristics (dominant vs recessive) for discontinuous variations e.g., tongue rolling, ear lobe",
-                "Calculation of genotypic, phenotypic and allelic frequencies from the data provided",
+                "Vestigial",
+                "Analogous and Homologous organs using suitable specimens",
+                "Sampling for discrete characteristics (dominant vs recessive) for discontinuous variations e.g",
+                "Tongue rolling",
+                "Ear lobe",
+                "Calculation of genotypic",
+                "Phenotypic and allelic frequencies from the data provided",
                 "Practical records/charts/models",
                 "Viva-voce"
               ]
@@ -1974,8 +2266,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Early and Late Embryonic Development",
               "topics": [
-                "Gametogenesis - Spermatogenesis, Oogenesis",
-                "Types of eggs, Patterns of cleavage and Blastulation",
+                "Gametogenesis",
+                "Spermatogenesis",
+                "Oogenesis",
+                "Types of eggs",
+                "Patterns of cleavage and Blastulation",
                 "Early development of frog up to gastrulation",
                 "Extra-embryonic membranes in birds"
               ]
@@ -1984,7 +2279,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Post Embryonic Development",
               "topics": [
-                "Metamorphosis: Changes, hormonal regulations in amphibians",
+                "Metamorphosis: Changes",
+                "Hormonal regulations in amphibians",
                 "Ageing: Concepts and Theories"
               ]
             },
@@ -2038,7 +2334,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Basics of Nucleic Acid",
               "topics": [
                 "Central Dogma of Molecular Biology",
-                "Structure of DNA, DNA forms, Repetitive DNA",
+                "Structure of DNA",
+                "DNA forms",
+                "Repetitive DNA",
                 "Structure and functions of mRNA, tRNA, and rRNA"
               ]
             },
@@ -2047,7 +2345,10 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "DNA replication and repair",
               "topics": [
                 "DNA replication in prokaryotes",
-                "DNA repair, mismatch repair, Base excision repair (BER), Nucleotide excision repair (NER)",
+                "DNA repair",
+                "Mismatch repair",
+                "Base excision repair (BER)",
+                "Nucleotide excision repair (NER)",
                 "Difference between prokaryotic and eukaryotic replication (A brief account)"
               ]
             },
@@ -2063,7 +2364,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Translation",
               "topics": [
-                "Genetic code, degeneracy of genetic code and Wobble hypothesis",
+                "Genetic code",
+                "Degeneracy of genetic code and Wobble hypothesis",
                 "Structure of ribosomes",
                 "Mechanism of translation in prokaryotes",
                 "Difference between prokaryotes and eukaryotes translation (A brief account)"
@@ -2134,24 +2436,35 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Basic Concept of immunity",
               "topics": [
-                "Overview of Immune System, Cells and organs of Immune system",
-                "Innate and Adaptive Immunity - Anatomical barriers, Inflammation and Phagocytosis, Mechanism of cell and humoral mediated immunity, Active and Passive immunity"
+                "Overview of Immune System",
+                "Cells and organs of Immune system",
+                "Innate and Adaptive Immunity",
+                "Anatomical barriers",
+                "Inflammation and Phagocytosis",
+                "Mechanism of cell and humoral mediated immunity",
+                "Active and Passive immunity"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Antigen and Immunoglobulin",
               "topics": [
-                "Antigens; Antigenicity vs immunogenicity, Factors influencing immunogenicity, Adjuvants and haptens",
-                "Immunoglobulins: Structure and functions of different classes of immunoglobulins, Antigen-antibody interactions"
+                "Antigens",
+                "Antigenicity vs immunogenicity",
+                "Factors influencing immunogenicity",
+                "Adjuvants and haptens",
+                "Immunoglobulins: Structure and functions of different classes of immunoglobulins",
+                "Antigen-antibody interactions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "MHC and Cytokines",
               "topics": [
-                "Major Histocompatibility Complex: Structure and functions of MHC I and II, Antigen processing and presentation",
-                "Cytokines – Types and function"
+                "Major Histocompatibility Complex: Structure and functions of MHC I and II",
+                "Antigen processing and presentation",
+                "Cytokines",
+                "Types and function"
               ]
             },
             {
@@ -2166,8 +2479,13 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Microbiology",
               "topics": [
-                "Bacteria; Structure, Classification, Growth, Culture and Pathogenicity",
-                "Virus; Morphology and Pathogenicity",
+                "Bacteria",
+                "Structure",
+                "Classification",
+                "Growth",
+                "Culture and Pathogenicity",
+                "Virus",
+                "Morphology and Pathogenicity",
                 "A brief outline of endoparasitic diseases"
               ]
             }
@@ -2198,7 +2516,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "topics": [
                 "Determination of ABO blood group using ABD antisera method",
                 "Study of lymphoid organs: (i) Kidney (ii) Spleen (iii) Bone marrow (iv) Lymph node",
-                "Comment upon working principle of RIA, Flow Cytometry, ELISA",
+                "Comment upon working principle of RIA",
+                "Flow Cytometry",
+                "ELISA",
                 "Culture and Gram staining of Bacteria",
                 "Practical/Project report on chick embryo development",
                 "Viva-voce"
@@ -2237,7 +2557,9 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Biological Rhythm",
               "topics": [
                 "Biological clocks in animals and its adaptive significance",
-                "Types of biological rhythms- Tidal, Lunar, Circadian and Circannual"
+                "Types of biological rhythms- Tidal",
+                "Lunar",
+                "Circadian and Circannual"
               ]
             },
             {
@@ -2289,16 +2611,25 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Instrumentation",
               "topics": [
-                "Principle and uses of: pH meter, Colorimeter, Spectrophotometer, Centrifuge",
-                "Microscopy: Light microscope, Compound microscope, Phase contrast, Fluorescent and Electron Microscope"
+                "Principle and uses of: pH meter",
+                "Colorimeter",
+                "Spectrophotometer",
+                "Centrifuge",
+                "Microscopy: Light microscope",
+                "Compound microscope",
+                "Phase contrast",
+                "Fluorescent and Electron Microscope"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Biological Techniques",
               "topics": [
-                "Electrophoresis - Agarose gel, SDS-PAGE electrophoresis",
-                "Chromatography - Column, GLC",
+                "Electrophoresis",
+                "Agarose gel",
+                "SDS-PAGE electrophoresis",
+                "Chromatography",
+                "Column, GLC",
                 "Cell separation by density gradient centrifugation",
                 "Introduction to different culture medium and tools used",
                 "PCR",
@@ -2310,9 +2641,14 @@ export const zoologySyllabus: CourseSyllabus = {
               "title": "Introduction to Biometry",
               "topics": [
                 "Concept of data and graphical presentation of data",
-                "Measures of central tendency: mean, mode and median",
-                "Measures of dispersion, standard deviation, standard error",
-                "Types of variables; Poisson, Binomial and Normal distribution",
+                "Measures of central tendency: mean",
+                "Mode and median",
+                "Measures of dispersion",
+                "Standard deviation",
+                "Standard error",
+                "Types of variables",
+                "Poisson",
+                "Binomial and Normal distribution",
                 "Experimental design and hypothesis testing"
               ]
             },
@@ -2320,8 +2656,11 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Tests of Significance",
               "topics": [
-                "Test of significance: t-test, F-test, chi square test",
-                "Multiple linear regression – ANOVA (One way and two-way ANOVA)",
+                "Test of significance: t-test",
+                "F-test",
+                "Chi square test",
+                "Multiple linear regression",
+                "ANOVA (One way and two-way ANOVA)",
                 "Correlation and simple linear regression",
                 "Karl-Pearson correlation coefficient and Ranks correlation coefficient"
               ]
@@ -2349,7 +2688,8 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Overview of the endocrine system",
               "topics": [
-                "Overview of the endocrine system – Glands and their hormone"
+                "Overview of the endocrine system",
+                "Glands and their hormone"
               ]
             },
             {
@@ -2363,14 +2703,16 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Pituitary",
               "topics": [
-                "Pituitary: Structure, Hormones and their function"
+                "Pituitary: Structure",
+                "Hormones and their function"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Peripheral Endocrine Glands and Gonads",
               "topics": [
-                "Peripheral Endocrine Glands: Histophysiology of Thyroid, Parathyroid and Adrenal",
+                "Peripheral Endocrine Glands: Histophysiology of Thyroid",
+                "Parathyroid and Adrenal",
                 "Gonads: Hormones and functions"
               ]
             }
@@ -2395,8 +2737,18 @@ export const zoologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Display of gonads, thyroid, adrenal, pancreas in mammal through videos or virtual dissection",
-                "Study of the permanent slides of Pituitary, Adrenal, Ovary, Testes, Islets of Langerhan's, Thymus, Thyroid, Parathyroid",
+                "Display of gonads",
+                "Thyroid",
+                "Adrenal",
+                "Pancreas in mammal through videos or virtual dissection",
+                "Study of the permanent slides of Pituitary",
+                "Adrenal",
+                "Ovary",
+                "Testes",
+                "Islets of Langerhan's",
+                "Thymus",
+                "Thyroid",
+                "Parathyroid",
                 "Working principles of ELISA/RIA",
                 "Practical/Project report on chick embryo development",
                 "Viva-voce"

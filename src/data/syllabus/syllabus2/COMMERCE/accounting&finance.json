@@ -26,48 +26,87 @@
               "unitNumber": 1,
               "title": "Theoretical Framework",
               "topics": [
-                "Accounting as an information system, the users of financial accounting information and their needs",
+                "Accounting as an information system",
+                "The users of financial accounting information and their needs",
                 "Qualitative characteristics of accounting information",
-                "Functions, advantages and limitations of accounting",
+                "Functions",
+                "Advantages and limitations of accounting",
                 "Branches of accounting",
                 "Bases of accounting: cash basis and accrual basis",
-                "Meaning, Characteristics and scope of Accounting, Function, advantages and limitations of Accounting, Branches of Accounting",
+                "Meaning",
+                "Characteristics and scope of Accounting",
+                "Function",
+                "Advantages and limitations of Accounting",
+                "Branches of Accounting",
                 "Basic Concepts and Conventions of Accounting",
-                "Accounting standards: Concept, benefits and Process of formulation of Accounting Standards including Indian AS (IFRS converged standards) and IFRSs; convergence Vs. adoption; Application of accounting standards (AS and Ind AS) on various entities in India. International Financial Accounting Standards (IFRS) – meaning, need and scope; Process of issuing IFRS"
+                "Accounting standards: Concept",
+                "Benefits and Process of formulation of Accounting Standards including Indian AS (IFRS converged standards) and IFRSs",
+                "Convergence Vs. adoption",
+                "Application of accounting standards (AS and Ind AS) on various entities in India",
+                "International Financial Accounting Standards (IFRS)",
+                "Meaning, need and scope",
+                "Process of issuing IFRS"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Accounting for Depreciation, Inventory Valuation & Business Entities",
               "topics": [
-                "Definition, nature and concept of depreciation, Factors in the measurement of Depreciation, Methods of charging Depreciation-SLM and DBM",
-                "Valuation of inventory: Meaning and significance of inventory valuation, Methods of computing depreciation: FIFO, LIFO",
-                "Accounting for Non Corporate Business entities: Preparation of Final Accounts with adjustments; Accounting for Non profitable organizations; Preparation of Receipts and Payments Account, Income & Expenditure Account and Balance Sheet; Accounting under Single Entry System: Computation of Profit & Loss, Conversion of Single Entry into Double Entry"
+                "Definition",
+                "Nature and concept of depreciation",
+                "Factors in the measurement of Depreciation",
+                "Methods of charging Depreciation-SLM and DBM",
+                "Valuation of inventory: Meaning and significance of inventory valuation",
+                "Methods of computing depreciation: FIFO",
+                "LIFO",
+                "Accounting for Non Corporate Business entities: Preparation of Final Accounts with adjustments",
+                "Accounting for Non profitable organizations",
+                "Preparation of Receipts and Payments Account",
+                "Income & Expenditure Account and Balance Sheet",
+                "Accounting under Single Entry System: Computation of Profit & Loss",
+                "Conversion of Single Entry into Double Entry"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Accounting for Hire Purchase, Installment and Royalty",
               "topics": [
-                "Hire Purchase System-Concept-Concept Transaction, Journal Ledger Accounts in the books of Hire Vendor and Hire Purchase including Default and Repossession",
-                "Installment Payment System - Concept, Transaction, Journal, Ledger, Accounts in the books of Credit Purchase & Seller",
-                "Royalty: Concept Journal, ledger, accounts in the books of Lessor and Lessee"
+                "Hire Purchase System-Concept-Concept Transaction",
+                "Journal Ledger Accounts in the books of Hire Vendor and Hire Purchase including Default and Repossession",
+                "Installment Payment System",
+                "Concept",
+                "Transaction",
+                "Journal",
+                "Ledger",
+                "Accounts in the books of Credit Purchase & Seller",
+                "Royalty: Concept Journal",
+                "Ledger",
+                "Accounts in the books of Lessor and Lessee"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Accounting for Inland Branches/Departments",
               "topics": [
-                "Concepts of Branch System, different types of Branches, accounting aspects of Dependant and independent Branches, Stock and Debtor System, Final Accounts system and Wholesale Basis System",
-                "Departmental Accounts: Concept Departmental System, Preparation of Final Accounts of Departmental including Adjustments and various methods"
+                "Concepts of Branch System",
+                "Different types of Branches",
+                "Accounting aspects of Dependant and independent Branches",
+                "Stock and Debtor System",
+                "Final Accounts system and Wholesale Basis System",
+                "Departmental Accounts: Concept Departmental System",
+                "Preparation of Final Accounts of Departmental including Adjustments and various methods"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Accounting for Dissolution of Partnership Firm and Insolvency",
               "topics": [
-                "Concept of Dissolution of Firm: Distinction between Dissolution of Partnership & Dissolution of Firm. Accounting of Dissolution of the Partnership Firm including Insolvency of Partners",
-                "Concept of Insolvency of an Individual, Process of Declaration of Insolvency, Defined under law, Preparation of Statement of Affairs & Deficiency Accounts including Revised Statement of Affairs"
+                "Concept of Dissolution of Firm: Distinction between Dissolution of Partnership & Dissolution of Firm",
+                "Accounting of Dissolution of the Partnership Firm including Insolvency of Partners",
+                "Concept of Insolvency of an Individual",
+                "Process of Declaration of Insolvency",
+                "Defined under law",
+                "Preparation of Statement of Affairs & Deficiency Accounts including Revised Statement of Affairs"
               ]
             }
           ],
@@ -103,14 +142,26 @@
               "unitNumber": 1,
               "title": "Theoretical Framework",
               "topics": [
-                "Accounting as an information system, the users of financial accounting information and their needs",
+                "Accounting as an information system",
+                "The users of financial accounting information and their needs",
                 "Qualitative characteristics of accounting information",
-                "Functions, advantages and limitations of accounting",
+                "Functions",
+                "Advantages and limitations of accounting",
                 "Branches of accounting",
                 "Bases of accounting: cash basis and accrual basis",
-                "Meaning, Characteristics and scope of Accounting, Function, advantages and limitations of Accounting, Branches of Accounting",
+                "Meaning",
+                "Characteristics and scope of Accounting",
+                "Function",
+                "Advantages and limitations of Accounting",
+                "Branches of Accounting",
                 "Basic Concepts and Conventions of Accounting",
-                "Accounting standards: Concept, benefits and Process of formulation of Accounting Standards including Indian AS (IFRS converged standards) and IFRSs; convergence Vs. adoption; Application of accounting standards (AS and Ind AS) on various entities in India. International Financial Accounting Standards (IFRS) – meaning, need and scope; Process of issuing IFRS"
+                "Accounting standards: Concept",
+                "Benefits and Process of formulation of Accounting Standards including Indian AS (IFRS converged standards) and IFRSs",
+                "Convergence Vs. adoption",
+                "Application of accounting standards (AS and Ind AS) on various entities in India",
+                "International Financial Accounting Standards (IFRS)",
+                "Meaning, need and scope",
+                "Process of issuing IFRS"
               ]
             },
             {
@@ -118,16 +169,30 @@
               "title": "Preparation of journal, Ledger and Trial Balance",
               "topics": [
                 "Meaning of Journal Ledger and Trial Balance",
-                "Preparation of Subsidiary Books-Cash Book, Purchase Book, Sales Book, Bills Receivable Book, Bills Payable Book"
+                "Preparation of Subsidiary Books-Cash Book",
+                "Purchase Book",
+                "Sales Book",
+                "Bills Receivable Book",
+                "Bills Payable Book"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Accounting for Depreciation, Inventory Valuation & Business Entities",
               "topics": [
-                "Definition, nature and concept of depreciation, Factors in the measurement of Depreciation, Methods of charging Depreciation-SLM and DBM",
-                "Valuation of inventory: Meaning and significance of inventory valuation, Methods of computing depreciation: FIFO, LIFO",
-                "Accounting for Non Corporate Business entities: Preparation of Final Accounts with adjustments; Accounting for Non profitable organizations; Preparation of Receipts and Payments Account, Income & Expenditure Account and Balance Sheet; Accounting under Single Entry System: Computation of Profit & Loss, Conversion of Single Entry into Double Entry"
+                "Definition",
+                "Nature and concept of depreciation",
+                "Factors in the measurement of Depreciation",
+                "Methods of charging Depreciation-SLM and DBM",
+                "Valuation of inventory: Meaning and significance of inventory valuation",
+                "Methods of computing depreciation: FIFO",
+                "LIFO",
+                "Accounting for Non Corporate Business entities: Preparation of Final Accounts with adjustments",
+                "Accounting for Non profitable organizations",
+                "Preparation of Receipts and Payments Account",
+                "Income & Expenditure Account and Balance Sheet",
+                "Accounting under Single Entry System: Computation of Profit & Loss",
+                "Conversion of Single Entry into Double Entry"
               ]
             }
           ],
@@ -203,42 +268,74 @@
               "unitNumber": 1,
               "title": "Business",
               "topics": [
-                "Concept, meaning, features, stages of development of business and its importance classification of Business Activities",
-                "Meaning features, importance, objectives of Business Organisation, its types & kinds, Difference between Trade, Industry & Commerce"
+                "Concept",
+                "Meaning",
+                "Features",
+                "Stages of development of business and its importance classification of Business Activities",
+                "Meaning features",
+                "Importance",
+                "Objectives of Business Organisation, its types & kinds",
+                "Difference between Trade",
+                "Industry & Commerce"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Promotion of Business",
               "topics": [
-                "Consideration in establishing a New Business, Qualities of a successful Businessman",
-                "Forms of Business Organisation: Sole proprietorship, Partnership, J.S. Companies, Cooperatives and their characteristics, relative merits & demerits, Distinction between private and public company concept of one person company"
+                "Consideration in establishing a New Business",
+                "Qualities of a successful Businessman",
+                "Forms of Business Organisation: Sole proprietorship",
+                "Partnership",
+                "S",
+                "Companies",
+                "Cooperatives and their characteristics",
+                "Relative merits & demerits",
+                "Distinction between private and public company concept of one person company"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Plant location",
               "topics": [
-                "Concept, Meaning, Importance, Factors affecting plant location, size of a Business unit: criteria for measuring the size, factors affecting the size, optimum size and factors determining the optimum size"
+                "Concept",
+                "Meaning",
+                "Importance",
+                "Factors affecting plant location",
+                "Size of a Business unit: criteria for measuring the size",
+                "Factors affecting the size",
+                "Optimum size and factors determining the optimum size"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Principles and Functions of Management",
               "topics": [
-                "Management - Meaning and Characteristics",
+                "Management",
+                "Meaning and Characteristics",
                 "Fayol's 14 Principles of Management",
                 "Functions of Management",
-                "Levels of Management - Skills of Management",
-                "Scientific Management - meaning, objectives, relevance and criticism"
+                "Levels of Management",
+                "Skills of Management",
+                "Scientific Management",
+                "Meaning",
+                "Objectives",
+                "Relevance and criticism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Business Combination",
               "topics": [
-                "Meaning, characteristics objectives, Causes, Forms and Kinds of Business Combination",
-                "Rationalization: Meaning, Characteristics, Objectives, Principles, Merits & Demerits"
+                "Meaning",
+                "Characteristics objectives",
+                "Causes",
+                "Forms and Kinds of Business Combination",
+                "Rationalization: Meaning",
+                "Characteristics",
+                "Objectives",
+                "Principles",
+                "Merits & Demerits"
               ]
             }
           ],
@@ -268,10 +365,19 @@
               "title": "Accounting for Share Capital and Debentures",
               "topics": [
                 "Introduction to issue of shares and debentures",
-                "Issue of rights and Bonus shares, ESOPs and buyback of shares, book building",
+                "Issue of rights and Bonus shares",
+                "ESOPs and buyback of shares",
+                "Book building",
                 "Underwriting of shares and debentures",
-                "Redemption of Preference shares, Redemption of debentures: sinking/debenture redemption fund, open market purchase and conversion of debentures",
-                "Relevant AS and IND-AS as applicableAccounting Standards including Indian AS (IFRS converged standards) and IFRSs; convergence Vs. adoption; Application of accounting standards (AS and Ind AS) on various entities in India. International Financial Accounting Standards (IFRS) – meaning, need and scope; Process of issuing IFRS"
+                "Redemption of Preference shares",
+                "Redemption of debentures: sinking/debenture redemption fund",
+                "Open market purchase and conversion of debentures",
+                "Relevant AS and IND-AS as applicableAccounting Standards including Indian AS (IFRS converged standards) and IFRSs",
+                "Convergence Vs. adoption",
+                "Application of accounting standards (AS and Ind AS) on various entities in India",
+                "International Financial Accounting Standards (IFRS)",
+                "Meaning, need and scope",
+                "Process of issuing IFRS"
               ]
             },
             {
@@ -358,30 +464,54 @@
               "unitNumber": 1,
               "title": "Contract Act, 1872",
               "topics": [
-                "Concept and Essentials of Contract, Classification of Contract, offer and Acceptance, Capacity of Parties",
-                "Consideration, Free Consent, Legality of Objects, Void Agreements, Discharge of Contracts, Indemnity and Guarantee, Contract of Bailment, Pledge, Agency"
+                "Concept and Essentials of Contract",
+                "Classification of Contract",
+                "Offer and Acceptance",
+                "Capacity of Parties",
+                "Consideration",
+                "Free Consent",
+                "Legality of Objects",
+                "Void Agreements",
+                "Discharge of Contracts",
+                "Indemnity and Guarantee",
+                "Contract of Bailment",
+                "Pledge",
+                "Agency"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sale of Goods Act, 1930",
               "topics": [
-                "Contract of Sale, Meaning and Difference Between Sale and Agreement to Sell, Conditions and Warranties, Transfer of Property and Goods, Unpaid Seller and His Rights"
+                "Contract of Sale",
+                "Meaning and Difference Between Sale and Agreement to Sell",
+                "Conditions and Warranties",
+                "Transfer of Property and Goods",
+                "Unpaid Seller and His Rights"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Negotiable Instrument Act, 1881",
               "topics": [
-                "Concept and Features of Negotiable Instrument, Promissory Note, Bills of Exchange and Cheque, Holder and Holder in Due Course, Dishonour and Discharge of Negotiable instrument",
-                "Consumer Protection Act, 1986: Salient Features, Definition of consumer, Grievance Redressal Machinery"
+                "Concept and Features of Negotiable Instrument",
+                "Promissory Note",
+                "Bills of Exchange and Cheque",
+                "Holder and Holder in Due Course",
+                "Dishonour and Discharge of Negotiable instrument",
+                "Consumer Protection Act",
+                "1986: Salient Features",
+                "Definition of consumer",
+                "Grievance Redressal Machinery"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Limited Liability Partnership (LLP) Act, 2008",
               "topics": [
-                "Salient Features of LLP, Difference between LLP and Partnership, LLP and"
+                "Salient Features of LLP",
+                "Difference between LLP and Partnership",
+                "LLP and"
               ]
             }
           ],
@@ -407,16 +537,22 @@
               "unitNumber": 1,
               "title": "Mathematics for Finance",
               "topics": [
-                "Simple and Compound Interest - Annuities - Discounts and Present values",
-                "Basic Calculus - Rules for Differentiation"
+                "Simple and Compound Interest",
+                "Annuities",
+                "Discounts and Present values",
+                "Basic Calculus",
+                "Rules for Differentiation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Progression",
               "topics": [
-                "Arithmetic Progression: General Term, Sum upto n terms of an A.P., Arithmetic Mean",
-                "Geometric Progression: General Term, Sum of Finite and infinite Geometric Progression",
+                "Arithmetic Progression: General Term",
+                "Sum upto n terms of an A.P",
+                "Arithmetic Mean",
+                "Geometric Progression: General Term",
+                "Sum of Finite and infinite Geometric Progression",
                 "Harmonic Progression: General Term and Harmonic Mean"
               ]
             },
@@ -424,25 +560,52 @@
               "unitNumber": 3,
               "title": "Statistics",
               "topics": [
-                "Definition - Scope and Limitation - Presentation of Data - Diagrammatic and Graphical Representation of Data",
-                "Measures of Central Tendency - Mean - Median and Mode - GM and HM",
-                "Measures of Dispersion - Range - Mean Deviation - Quartile Deviation - Standard Deviation - Coefficient Variation"
+                "Definition",
+                "Scope and Limitation",
+                "Presentation of Data",
+                "Diagrammatic and Graphical Representation of Data",
+                "Measures of Central Tendency",
+                "Mean",
+                "Median and Mode",
+                "GM and HM",
+                "Measures of Dispersion",
+                "Range",
+                "Mean Deviation",
+                "Quartile Deviation",
+                "Standard Deviation",
+                "Coefficient Variation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Correlation",
               "topics": [
-                "Karl Pearson's Correlation - Concurrent Deviation Method - Rank Correlation - Uses of Correlation in Business",
-                "Regression - Regression Lines - Regression Coefficients - Uses of Regression in Business Problems"
+                "Karl Pearson's Correlation",
+                "Concurrent Deviation Method",
+                "Rank Correlation",
+                "Uses of Correlation in Business",
+                "Regression",
+                "Regression Lines",
+                "Regression Coefficients",
+                "Uses of Regression in Business Problems"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Time Series",
               "topics": [
-                "Components of time Series - Measurement of Trend - Semi Average method - Moving Average method - Method of Least Squares - Measurement of Seasonal Variations - Simple Average Method - Ratio to Moving Average Method",
-                "Index Numbers - Weighted and UN weighted Index Numbers - Cost of Living Index Number - Test on index Numbers"
+                "Components of time Series",
+                "Measurement of Trend",
+                "Semi Average method",
+                "Moving Average method",
+                "Method of Least Squares",
+                "Measurement of Seasonal Variations",
+                "Simple Average Method",
+                "Ratio to Moving Average Method",
+                "Index Numbers",
+                "Weighted and UN weighted Index Numbers",
+                "Cost of Living Index Number",
+                "Test on index Numbers"
               ]
             }
           ],
@@ -467,11 +630,29 @@
               "unitNumber": 1,
               "title": "Business Finance",
               "topics": [
-                "Definition, nature and Scope of Business Finance; Finance Function in Business; Traditional and Modern Views of Finance; Objectives of Financial Management - Profit Maximization Vs. Wealth maximization",
-                "Planning for Funds: Financial Plan - Meaning and Basic Considerations; Factors Affecting Fixed Capital and Working Capital Requirements",
-                "Capitalization: Concept, Cost and Earnings Theories of Capitalization, Over-capitalization and Under Capitalization - their Causes, Effects and Remedies",
-                "Pattern of Capital Requirements: Long-Term and Medium-Term Financing - Purpose, Sources and instruments; Short Term Financing - Purpose, Sources and Instruments",
-                "Raising of Funds: Sources and Forms of External Financing with Special Reference to India; underwriting of Capital Issues - Trends and Broad Features of underwriting in India"
+                "Definition",
+                "Nature and Scope of Business Finance",
+                "Finance Function in Business",
+                "Traditional and Modern Views of Finance",
+                "Objectives of Financial Management",
+                "Profit Maximization Vs. Wealth maximization",
+                "Planning for Funds: Financial Plan",
+                "Meaning and Basic Considerations",
+                "Factors Affecting Fixed Capital and Working Capital Requirements",
+                "Capitalization: Concept",
+                "Cost and Earnings Theories of Capitalization",
+                "Over-capitalization and Under Capitalization",
+                "Their Causes",
+                "Effects and Remedies",
+                "Pattern of Capital Requirements: Long-Term and Medium-Term Financing",
+                "Purpose",
+                "Sources and instruments",
+                "Short Term Financing",
+                "Purpose",
+                "Sources and Instruments",
+                "Raising of Funds: Sources and Forms of External Financing with Special Reference to India",
+                "Underwriting of Capital Issues",
+                "Trends and Broad Features of underwriting in India"
               ]
             }
           ],
@@ -548,35 +729,53 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Definition, nature and Scope of Business Finance; Finance Function in Business; Traditional and Modern Views of Finance; Objectives of Financial Management - Profit Maximization Vs. Wealth maximization"
+                "Definition",
+                "Nature and Scope of Business Finance",
+                "Finance Function in Business",
+                "Traditional and Modern Views of Finance",
+                "Objectives of Financial Management",
+                "Profit Maximization Vs. Wealth maximization"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Planning for Funds",
               "topics": [
-                "Financial Plan - Meaning and Basic Considerations; Factors Affecting Fixed Capital and Working Capital Requirements"
+                "Financial Plan",
+                "Meaning and Basic Considerations",
+                "Factors Affecting Fixed Capital and Working Capital Requirements"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Capitalization",
               "topics": [
-                "Concept, Cost and Earnings Theories of Capitalization, Over-capitalization and Under Capitalization - their Causes, Effects and Remedies"
+                "Concept",
+                "Cost and Earnings Theories of Capitalization",
+                "Over-capitalization and Under Capitalization",
+                "Their Causes",
+                "Effects and Remedies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pattern of Capital Requirements",
               "topics": [
-                "Long-Term and Medium-Term Financing - Purpose, Sources and instruments; Short Term Financing - Purpose, Sources and Instruments"
+                "Long-Term and Medium-Term Financing",
+                "Purpose",
+                "Sources and instruments",
+                "Short Term Financing",
+                "Purpose",
+                "Sources and Instruments"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Raising of Funds",
               "topics": [
-                "Sources and Forms of External Financing with Special Reference to India; underwriting of Capital Issues - Trends and Broad Features of underwriting in India"
+                "Sources and Forms of External Financing with Special Reference to India",
+                "Underwriting of Capital Issues",
+                "Trends and Broad Features of underwriting in India"
               ]
             }
           ],
@@ -601,7 +800,13 @@
               "unitNumber": 1,
               "title": "Basic Concept",
               "topics": [
-                "Income, person, assessee, assessment year, previous year, gross total income total income, Permanent Account Number (PAN)",
+                "Income",
+                "Person",
+                "Assessee",
+                "Assessment year",
+                "Previous year",
+                "Gross total income total income",
+                "Permanent Account Number (PAN)",
                 "Residential status: scope of total income on the basis of residential status & tax liability of an Individual"
               ]
             },
@@ -627,14 +832,17 @@
               "unitNumber": 4,
               "title": "Total income and tax computation",
               "topics": [
-                "Deductions from gross total income, rebates and reliefs, computation of total income of an individual"
+                "Deductions from gross total income",
+                "Rebates and reliefs",
+                "Computation of total income of an individual"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Tax liability of individual and Partnership Firms",
               "topics": [
-                "Tax liability of individual and Partnership Firms; Brief introduction to e-filing"
+                "Tax liability of individual and Partnership Firms",
+                "Brief introduction to e-filing"
               ]
             }
           ],
@@ -658,35 +866,54 @@
               "unitNumber": 1,
               "title": "Investment",
               "topics": [
-                "Meaning – Objectives – Investment Vs. Speculation –Investment Process – Investment information – Management of Investment"
+                "Meaning",
+                "Objectives",
+                "Investment Vs. Speculation –Investment Process",
+                "Investment information",
+                "Management of Investment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Investment Alternatives",
               "topics": [
-                "Meaning – variable Income Securities – Fixed Income Securities – Tax Sheltered Saving Schemes –Mutual Funds –Real Assets – Modern Investment –Arts and Techniques"
+                "Meaning",
+                "Variable Income Securities",
+                "Fixed Income Securities",
+                "Tax Sheltered Saving Schemes –Mutual Funds –Real Assets",
+                "Modern Investment –Arts and Techniques"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Risks and Returns",
               "topics": [
-                "Meaning – Systematic Risks – Unsystematic Risks – Risk Measurement – Capital Returns and Revenue Returns –Computation of Expected Risks and Returns"
+                "Meaning",
+                "Systematic Risks",
+                "Unsystematic Risks",
+                "Risk Measurement",
+                "Capital Returns and Revenue Returns –Computation of Expected Risks and Returns"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Investment Valuation",
               "topics": [
-                "Time Value for Money – Bond Valuation – Yield to Maturity – Equity Valuation – capital asset pricing model"
+                "Time Value for Money",
+                "Bond Valuation",
+                "Yield to Maturity",
+                "Equity Valuation",
+                "Capital asset pricing model"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Investment Analysis",
               "topics": [
-                "Fundamental Analysis –Economic Analysis – Industry Analysis – Company Analysis – Financial Analysis"
+                "Fundamental Analysis –Economic Analysis",
+                "Industry Analysis",
+                "Company Analysis",
+                "Financial Analysis"
               ]
             }
           ],
@@ -712,10 +939,35 @@
               "unitNumber": 1,
               "title": "Management Accounting",
               "topics": [
-                "Definition – Objectives and functions – Advantages and limitations – Distinction between Financial Accounting and Management Accounting – Meaning of Financial statements – Tools of Financial Statement Analysis – Comparative Financial Statements – Common Size Financial Statements – Trend Percentages",
-                "Ratio Analysis: Meaning – Definition – Significance – Limitations – Classification – Liquidity Ratios (Short Term Solvency Ratios) and Long term Solvency Ratios, Concept of ratio, Uses of Ratio – Turnover and Profitability Ratios",
-                "Fund Flow Analysis: Meaning – Definition – Uses of Fund Flow Statement – Limitations of Fund Flow Statement – Preparation of Fund Flow Statement",
-                "Cash flow Analysis: Meaning – Definition – Uses of Cash Flow Statement – Limitations of Cash Flow statement – Distinction between Fund Flow Statement and Cash Flow Statement – Preparation of Cash Flow Statement (AS - 3)"
+                "Definition",
+                "Objectives and functions",
+                "Advantages and limitations",
+                "Distinction between Financial Accounting and Management Accounting",
+                "Meaning of Financial statements",
+                "Tools of Financial Statement Analysis",
+                "Comparative Financial Statements",
+                "Common Size Financial Statements",
+                "Trend Percentages",
+                "Ratio Analysis: Meaning",
+                "Definition",
+                "Significance",
+                "Limitations",
+                "Classification",
+                "Liquidity Ratios (Short Term Solvency Ratios) and Long term Solvency Ratios",
+                "Concept of ratio",
+                "Uses of Ratio",
+                "Turnover and Profitability Ratios",
+                "Fund Flow Analysis: Meaning",
+                "Definition",
+                "Uses of Fund Flow Statement",
+                "Limitations of Fund Flow Statement",
+                "Preparation of Fund Flow Statement",
+                "Cash flow Analysis: Meaning",
+                "Definition",
+                "Uses of Cash Flow Statement",
+                "Limitations of Cash Flow statement",
+                "Distinction between Fund Flow Statement and Cash Flow Statement",
+                "Preparation of Cash Flow Statement (AS - 3)"
               ]
             }
           ],
@@ -766,7 +1018,9 @@
               "unitNumber": 1,
               "title": "Accounting for share Capital and Debentures",
               "topics": [
-                "Issue, Forfeiture and reissue of forfeited shares, Redemption of preference shares and Debentures"
+                "Issue",
+                "Forfeiture and reissue of forfeited shares",
+                "Redemption of preference shares and Debentures"
               ]
             },
             {
@@ -782,7 +1036,8 @@
               "unitNumber": 3,
               "title": "Valuation of goodwill and valuation of shares",
               "topics": [
-                "Concepts and Calculation – simple problem only",
+                "Concepts and Calculation",
+                "Simple problem only",
                 "Banking Companies: Final Accounts"
               ]
             },
@@ -828,36 +1083,66 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, objectives and advantages of cost accounting, Difference between Financial, Cost and Management Accounting and Cost concepts and classifications, Role of acostaccountant in an organization, Importance of CMA as a career"
+                "Meaning",
+                "Objectives and advantages of cost accounting",
+                "Difference between Financial",
+                "Cost and Management Accounting and Cost concepts and classifications",
+                "Role of acostaccountant in an organization",
+                "Importance of CMA as a career"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Elements of cost",
               "topics": [
-                "Materials: Material / inventory Control – Concept and techniques, Accounting and Control of purchases, Storage and issue of materials. Methods of pricing of Materials issues – FIFO, LIFO, Simple Average, Weighted Average, Replacement, Standard, Treatment of Material Losses",
-                "Labour: Accounting and Control of Labour cost, time – kccping and time booking, concept and treatment of idle time, over time, labour turnover and fringe benefits"
+                "Materials: Material / inventory Control",
+                "Concept and techniques",
+                "Accounting and Control of purchases",
+                "Storage and issue of materials",
+                "Methods of pricing of Materials issues",
+                "FIFO, LIFO, Simple Average, Weighted Average, Replacement, Standard, Treatment of Material Losses",
+                "Labour: Accounting and Control of Labour cost",
+                "Time",
+                "Kccping and time booking",
+                "Concept and treatment of idle time",
+                "Over time",
+                "Labour turnover and fringe benefits"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Overhead",
               "topics": [
-                "Classification, allocation appointment and absorption of overhead. Under and over absorption, capacity costs. Treatments of certain items in costing, like interest on capital, packing expenses, debts, research and development expenses, (ABC) - Activity Based Cost allocation"
+                "Classification",
+                "Allocation appointment and absorption of overhead",
+                "Under and over absorption",
+                "Capacity costs",
+                "Treatments of certain items in costing",
+                "Like interest on capital",
+                "Packing expenses",
+                "Debts",
+                "Research and development expenses",
+                "(ABC)",
+                "Activity Based Cost allocation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Methods of costing",
               "topics": [
-                "Unit costing, Job costing, Contract costing"
+                "Unit costing",
+                "Job costing",
+                "Contract costing"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Methods of Process costing",
               "topics": [
-                "process losses, valuation of work in progress, joint and by products, Service"
+                "Process losses",
+                "Valuation of work in progress",
+                "Joint and by products",
+                "Service"
               ]
             }
           ],
@@ -883,21 +1168,49 @@
               "unitNumber": 1,
               "title": "Structures of Indian Financial System",
               "topics": [
-                "An overview of the Indian financial system, financial sector reforms: context, need and objectives; major reforms in the last decade; competition; future agenda of reforms"
+                "An overview of the Indian financial system",
+                "Financial sector reforms: context",
+                "Need and objectives",
+                "Major reforms in the last decade",
+                "Competition",
+                "Future agenda of reforms"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Regulations of Banks, NBFCs & FIs",
               "topics": [
-                "Salient provisions of banking regulation act and RBI Act; Role of RBI as a central banker; core banking solution (CBS); RTGS and internet banking NBFCs and its types; comparison between banks and NBFCs"
+                "Salient provisions of banking regulation act and RBI Act",
+                "Role of RBI as a central banker",
+                "Core banking solution (CBS)",
+                "RTGS and internet banking NBFCs and its types",
+                "Comparison between banks and NBFCs"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction to Financial Markets in India",
               "topics": [
-                "Role and importance of Financial Markets, Financial Markets. Money market; capital market; factor affecting financial markets; Integration of Indian financial market with Global Financial Markets, Primary & Secondary market, Currency market, debt market role and functions of these markets. Primary Market for Corporate Securities in India; Issue of Corporate Securities Public Issue through Prospectus, Green shoe option, online IPO, Disinvestment of PSU, Employees Stock Options, Preferential issue of shares, Venture Capital, Private Equity, Performance of Primary Market in India, Corporate Listings: Listing and Delisting of Corporate Stocks"
+                "Role and importance of Financial Markets",
+                "Financial Markets",
+                "Money market",
+                "Capital market",
+                "Factor affecting financial markets",
+                "Integration of Indian financial market with Global Financial Markets",
+                "Primary & Secondary market",
+                "Currency market",
+                "Debt market role and functions of these markets",
+                "Primary Market for Corporate Securities in India",
+                "Issue of Corporate Securities Public Issue through Prospectus",
+                "Green shoe option",
+                "Online IPO",
+                "Disinvestment of PSU",
+                "Employees Stock Options",
+                "Preferential issue of shares",
+                "Venture Capital",
+                "Private Equity",
+                "Performance of Primary Market in India",
+                "Corporate Listings: Listing and Delisting of Corporate Stocks"
               ]
             }
           ],
@@ -923,7 +1236,14 @@
               "unitNumber": 1,
               "title": "Basic Concept",
               "topics": [
-                "Income, person, assessees, assessment year, previous year, gross total income, total income, Permanent Account Number (PAN)",
+                "Income",
+                "Person",
+                "Assessees",
+                "Assessment year",
+                "Previous year",
+                "Gross total income",
+                "Total income",
+                "Permanent Account Number (PAN)",
                 "Residential status: scope of total income on the basis of residential status & tax liability of an Individual"
               ]
             },
@@ -940,7 +1260,9 @@
               "unitNumber": 3,
               "title": "Profits and gains of business or profession, capital gains, income from other sources",
               "topics": [
-                "Profits and gains of business or profession, capital gains, income from other sources"
+                "Profits and gains of business or profession",
+                "Capital gains",
+                "Income from other sources"
               ]
             }
           ],
@@ -970,35 +1292,66 @@
               "unitNumber": 1,
               "title": "Nature and Scope of Managerial Economics",
               "topics": [
-                "Definition of Economics - Important concept of Economics - Basic Economic problem - Relationship between Micro and Macro economics - Managerial Economics - Nature and Scope - Objectives of the Firm"
+                "Definition of Economics",
+                "Important concept of Economics",
+                "Basic Economic problem",
+                "Relationship between Micro and Macro economics",
+                "Managerial Economics",
+                "Nature and Scope",
+                "Objectives of the Firm"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Theory of Consumer behavior",
               "topics": [
-                "Managerial Utility Analysis indifference curve and analysis Meaning of Demand - Law of Demand - Types of Demand - Determinants of demand - Elasticity of Demand - Demand Forecasting"
+                "Managerial Utility Analysis indifference curve and analysis Meaning of Demand",
+                "Law of Demand",
+                "Types of Demand",
+                "Determinants of demand",
+                "Elasticity of Demand",
+                "Demand Forecasting"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Production and Cost Analysis",
               "topics": [
-                "Law of returns to scale and Economies of scale - Cost analysis - different cost concepts - Cost - output relationship - Short run and long run - Revenue curves of firms - Supply Analysis"
+                "Law of returns to scale and Economies of scale",
+                "Cost analysis",
+                "Different cost concepts",
+                "Cost",
+                "Output relationship",
+                "Short run and long run",
+                "Revenue curves of firms",
+                "Supply Analysis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pricing Methods and Strategies",
               "topics": [
-                "Objectives - Factors - General Considerations of Pricing - Methods of pricing - Role of Government - Dual pricing - price Discrimination"
+                "Objectives",
+                "Factors",
+                "General Considerations of Pricing",
+                "Methods of pricing",
+                "Role of Government",
+                "Dual pricing",
+                "Price Discrimination"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Market forms",
               "topics": [
-                "Market structure - Basis of Market classification - Output determination - Perfect Competition - Monopoly - Monopolistic Competition - Duopoly - Oligopoly"
+                "Market structure",
+                "Basis of Market classification",
+                "Output determination",
+                "Perfect Competition",
+                "Monopoly",
+                "Monopolistic Competition",
+                "Duopoly",
+                "Oligopoly"
               ]
             }
           ],
@@ -1025,37 +1378,82 @@
               "unitNumber": 1,
               "title": "Management Accounting",
               "topics": [
-                "Definition - Objectives and functions - Advantages and limitations - Distinction between Financial Accounting and Management Accounting - Meaning of Financial statements - Tools of Financial Statement Analysis - Comparative Financial Statements – Common Size Financial Statements – Trend Percentages"
+                "Definition",
+                "Objectives and functions",
+                "Advantages and limitations",
+                "Distinction between Financial Accounting and Management Accounting",
+                "Meaning of Financial statements",
+                "Tools of Financial Statement Analysis",
+                "Comparative Financial Statements",
+                "Common Size Financial Statements",
+                "Trend Percentages"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Fund Flow Analysis",
               "topics": [
-                "Meaning - Definition - Uses of Fund Flow Statement - Limitations of Fund Flow Statement - Preparation of Fund Flow Statement",
-                "Cash flow Analysis: Meaning - Definition - Uses of Cash Flow Statement - Limitations of Cash Flow statement - Distinction between Fund Flow Statement and Cash Flow Statement - Preparation of Cash Flow Statement (AS - 3)"
+                "Meaning",
+                "Definition",
+                "Uses of Fund Flow Statement",
+                "Limitations of Fund Flow Statement",
+                "Preparation of Fund Flow Statement",
+                "Cash flow Analysis: Meaning",
+                "Definition",
+                "Uses of Cash Flow Statement",
+                "Limitations of Cash Flow statement",
+                "Distinction between Fund Flow Statement and Cash Flow Statement",
+                "Preparation of Cash Flow Statement (AS - 3)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Marginal costing",
               "topics": [
-                "Definition - Advantages and Limitation - Marginal Cost Equations - Contribution - Cost-Volume-Profit Analysis - P/V Ratio - BEP - Margin of Safety, Application of Marginal Costing Techniques Cost Control: Key factor - Make or Buy decision"
+                "Definition",
+                "Advantages and Limitation",
+                "Marginal Cost Equations",
+                "Contribution",
+                "Cost-Volume-Profit Analysis",
+                "P/V Ratio",
+                "BEP",
+                "Margin of Safety",
+                "Application of Marginal Costing Techniques Cost Control: Key factor",
+                "Make or Buy decision"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pricing Methods and Strategies",
               "topics": [
-                "Objectives - Factors - General Considerations of Pricing - Methods of pricing - Role of Government - Dual pricing - price Discrimination"
+                "Objectives",
+                "Factors",
+                "General Considerations of Pricing",
+                "Methods of pricing",
+                "Role of Government",
+                "Dual pricing",
+                "Price Discrimination"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Budget and Budgetary Control",
               "topics": [
-                "Definition - Objectives - Uses and Limitations - Preparation of Materials Purchase, Production, Sales, Cash and Flexible Budget - Zero Base Budgeting",
-                "Standard Costing: Definition - Features - Advantages - Limitation - Analysis of Variances - Materials Variance - Labour Variance"
+                "Definition",
+                "Objectives",
+                "Uses and Limitations",
+                "Preparation of Materials Purchase",
+                "Production",
+                "Sales",
+                "Cash and Flexible Budget",
+                "Zero Base Budgeting",
+                "Standard Costing: Definition",
+                "Features",
+                "Advantages",
+                "Limitation",
+                "Analysis of Variances",
+                "Materials Variance",
+                "Labour Variance"
               ]
             }
           ],
@@ -1080,35 +1478,62 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Constitutional framework of Indirect Taxes before GST (Taxation powers of Union & State Government); Meaning, variants and Methods; Majordefectsinthe structure of indirect taxes prior to GST"
+                "Constitutional framework of Indirect Taxes before GST (Taxation powers of Union & State Government)",
+                "Meaning",
+                "Variants and Methods",
+                "Majordefectsinthe structure of indirect taxes prior to GST"
               ]
             },
             {
               "unitNumber": 2,
               "title": "GST Structure",
               "topics": [
-                "Rationale for GST; structure of GST (SGST, CGST, UTGST & IGST); GST council, GST Network, State compensation Mechanism, Registration"
+                "Rationale for GST",
+                "Structure of GST (SGST, CGST, UTGST & IGST)",
+                "GST council",
+                "GST Network",
+                "State compensation Mechanism",
+                "Registration"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Levy and collection of GST",
               "topics": [
-                "Taxable event-“supply” of goods and services; place of supply; within state, interstate, important export; time of supply"
+                "Taxable event-“supply” of goods and services",
+                "Place of supply",
+                "Within state",
+                "Interstate",
+                "Important export",
+                "Time of supply"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Valuation for GST",
               "topics": [
-                "valuation rules, exemption from GST; small supplies and composition scheme; classification of goods and services: composite and mixed supplies"
+                "Valuation rules",
+                "Exemption from GST",
+                "Small supplies and composition scheme",
+                "Classification of goods and services: composite and mixed supplies"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Input Tax Credit",
               "topics": [
-                "Eligible and Ineligible input tax credit; apportionments of credit and blocked credits; tax credit in respect of capital goods; recovery of excess tax credit; availability of tax credit in special circumstances; transfer of input. Credit (Input Service Distribution) payment of taxes; refund; doctrine of unjust enrichment; TDS, TCS. Reverse Charge Mechanism, Job work"
+                "Eligible and Ineligible input tax credit",
+                "Apportionments of credit and blocked credits",
+                "Tax credit in respect of capital goods",
+                "Recovery of excess tax credit",
+                "Availability of tax credit in special circumstances",
+                "Transfer of input",
+                "Credit (Input Service Distribution) payment of taxes",
+                "Refund",
+                "Doctrine of unjust enrichment",
+                "TDS, TCS",
+                "Reverse Charge Mechanism",
+                "Job work"
               ]
             }
           ],
@@ -1130,21 +1555,36 @@
               "unitNumber": 1,
               "title": "Investment",
               "topics": [
-                "Meaning – Objectives – Investment Vs. Speculation –Investment Process – Investment information – Management of Investment"
+                "Meaning",
+                "Objectives",
+                "Investment Vs. Speculation –Investment Process",
+                "Investment information",
+                "Management of Investment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Investment Alternatives",
               "topics": [
-                "Meaning – variable Income Securities – Fixed Income Securities – Tax Sheltered Saving Schemes – Mutual Funds – Real Assets – Modern Investment –Arts and Techniques"
+                "Meaning",
+                "Variable Income Securities",
+                "Fixed Income Securities",
+                "Tax Sheltered Saving Schemes",
+                "Mutual Funds",
+                "Real Assets",
+                "Modern Investment –Arts and Techniques"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Risks and Returns",
               "topics": [
-                "Meaning – Systematic Risks – Unsystematic Risks – Risk Measurement – Capital Returns and Revenue Returns – Computation of Expected Risks and Returns"
+                "Meaning",
+                "Systematic Risks",
+                "Unsystematic Risks",
+                "Risk Measurement",
+                "Capital Returns and Revenue Returns",
+                "Computation of Expected Risks and Returns"
               ]
             }
           ],
@@ -1171,7 +1611,10 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Constitutional framework of Indirect Taxes before GST (Taxation powers of Union & State Government); Meaning, variants and Methods; Major defects in the structure of indirect taxes prior to GST"
+                "Constitutional framework of Indirect Taxes before GST (Taxation powers of Union & State Government)",
+                "Meaning",
+                "Variants and Methods",
+                "Major defects in the structure of indirect taxes prior to GST"
               ]
             },
             {
@@ -1179,14 +1622,19 @@
               "title": "GST Structure",
               "topics": [
                 "Rationale for GST: structure of GST (SGST, CGST, UTGST&IGST)",
-                "GST council, GST Network, State compensation Mechanism, Registration"
+                "GST council",
+                "GST Network",
+                "State compensation Mechanism",
+                "Registration"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Levy and collection of GST",
               "topics": [
-                "Taxable event-“supply”of goods and services: place of supply: within state, inter state, import and export:time of supply"
+                "Taxable event-“supply”of goods and services: place of supply: within state",
+                "Inter state",
+                "Import and export:time of supply"
               ]
             }
           ],
@@ -1215,35 +1663,73 @@
               "unitNumber": 1,
               "title": "Introduction of Auditing",
               "topics": [
-                "Introduction, Meaning, Objectives, Principles and Techniques, Classification of Audit, Audit Planning, Internal Control-Internal Check and Internal Audit, Audit Procedure-Vouching and verification of Assets stabilities"
+                "Introduction",
+                "Meaning",
+                "Objectives",
+                "Principles and Techniques",
+                "Classification of Audit",
+                "Audit Planning",
+                "Internal Control-Internal Check and Internal Audit",
+                "Audit Procedure-Vouching and verification of Assets stabilities"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Audit of Companies",
               "topics": [
-                "Audit of limited companies; Company Auditor-Qualification and disqualifications, Appointment, Rotation, Removal, Remuneration, Rights and Duties of Companies auditor, Auditors Report-Contents & Types. Liabilities of statutory Auditors under the companies Act 2013"
+                "Audit of limited companies",
+                "Company Auditor-Qualification and disqualifications",
+                "Appointment",
+                "Rotation",
+                "Removal",
+                "Remuneration",
+                "Rights and Duties of Companies auditor",
+                "Auditors Report-Contents & Types",
+                "Liabilities of statutory Auditors under the companies Act 2013"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Special Audit",
               "topics": [
-                "Special features of cost audit, Tax audit, Social Audit and Management Audit. Special features of Audit of departmental undertaking statutory corporations, Government Companies, Banks. Audit of insurance Companies and non-profit companies"
+                "Special features of cost audit",
+                "Tax audit",
+                "Social Audit and Management Audit",
+                "Special features of Audit of departmental undertaking statutory corporations",
+                "Government Companies",
+                "Banks",
+                "Audit of insurance Companies and non-profit companies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Corporate Governance",
               "topics": [
-                "Conceptual framework of corporate Governance-Issues need, code, transparency & disclosure; Theories & Models, Broad Committees. Role of auditor, Corporate Governance Reforms. Major Corporate Scandals in India & Abroad. Common Governance problems Noticed in various corporate failures"
+                "Conceptual framework of corporate Governance-Issues need",
+                "Code",
+                "Transparency & disclosure",
+                "Theories & Models",
+                "Broad Committees",
+                "Role of auditor",
+                "Corporate Governance Reforms",
+                "Major Corporate Scandals in India & Abroad",
+                "Common Governance problems Noticed in various corporate failures"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Business Ethics & Corporate Social Responsibility(CSR)",
               "topics": [
-                "Morality and ethics, business values and ethics, approaches and practices of business ethics, Corporate ethics, ethics program, codes of ethics, ethics committee. Ethical Behavior: Concepts & Advantages; Rating Agencies, Green Governance"
+                "Morality and ethics",
+                "Business values and ethics",
+                "Approaches and practices of business ethics",
+                "Corporate ethics",
+                "Ethics program",
+                "Codes of ethics",
+                "Ethics committee",
+                "Ethical Behavior: Concepts & Advantages",
+                "Rating Agencies",
+                "Green Governance"
               ]
             }
           ],
@@ -1275,28 +1761,35 @@
               "unitNumber": 2,
               "title": "The Research Problem and Design",
               "topics": [
-                "Formulation and Definition of Business Research Problem Formulation of Research Hypotheses, Baines Research Design Explanatory Research Design (Secondary Das and Qualitative Research Descriptive Research Design (Survey and Observation and Causal Research Design (Experimentation Potential Sources of Errors in Research"
+                "Formulation and Definition of Business Research Problem Formulation of Research Hypotheses",
+                "Baines Research Design Explanatory Research Design (Secondary Das and Qualitative Research Descriptive Research Design (Survey and Observation and Causal Research Design (Experimentation Potential Sources of Errors in Research"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sampling Design and Measurement Techniques",
               "topics": [
-                "The Sampling Design Process; Types of Sample Design Probability and Non-probability Sampling Design S1e of Sample Sampling Errors: Concept of Measurement and Sesling Important Scaling Techniques Comparative and Non-comparative liability and Validity of Measurement"
+                "The Sampling Design Process",
+                "Types of Sample Design Probability and Non-probability Sampling Design S1e of Sample Sampling Errors: Concept of Measurement and Sesling Important Scaling Techniques Comparative and Non-comparative liability and Validity of Measurement"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Data Collection Tous and Data Processing",
               "topics": [
-                "Questionnaire and Observation Form Questiona Design Process Collecting Primary Data tgh-Observations, Semi-structured Interviews lo-depth Interviews and Questionnaire, Processing of Research Data Editing, Coding. Classification and Tabulation Analysis of Data Basic Data Analysis Descriptive Statistics Hypotheses Testing"
+                "Questionnaire and Observation Form Questiona Design Process Collecting Primary Data tgh-Observations",
+                "Semi-structured Interviews lo-depth Interviews and Questionnaire",
+                "Processing of Research Data Editing",
+                "Coding",
+                "Classification and Tabulation Analysis of Data Basic Data Analysis Descriptive Statistics Hypotheses Testing"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Business Research Report",
               "topics": [
-                "Importance of the Repon & Presentation Business Report Fost Report Writing Oral Presentation, Research Follow-up"
+                "Importance of the Repon & Presentation Business Report Fost Report Writing Oral Presentation",
+                "Research Follow-up"
               ]
             }
           ],
@@ -1320,35 +1813,63 @@
               "unitNumber": 1,
               "title": "Introduction to the Companies Act 1956 and 2013",
               "topics": [
-                "Definition of Company, its nature and Kinds- Formation of Company and its stages. Company documents, Memorandum of Association, Article of Association and Prospectus. Alteration of Memorandum and Article of Association, Doctrine of constructive notice and doctrine of indoor Management"
+                "Definition of Company, its nature and Kinds- Formation of Company and its stages",
+                "Company documents",
+                "Memorandum of Association",
+                "Article of Association and Prospectus",
+                "Alteration of Memorandum and Article of Association",
+                "Doctrine of constructive notice and doctrine of indoor Management"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Share Capital",
               "topics": [
-                "Definition of share, shares and stock Types of shares, Types of share capital, Issue of Shares at premium and discount. Right issue, Issue of Bonus shares, Share Certificate, Share Warrant"
+                "Definition of share",
+                "Shares and stock Types of shares",
+                "Types of share capital",
+                "Issue of Shares at premium and discount",
+                "Right issue",
+                "Issue of Bonus shares",
+                "Share Certificate",
+                "Share Warrant"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Members, Shareholders and Board of Directors",
               "topics": [
-                "Meaning of member and shareholders, Distinguish between member and Shareholders. Methods of becoming a member. Rights and Liabilities of Members, Termination of membership. Board of Directors and their Right, Duties and Liabilities"
+                "Meaning of member and shareholders",
+                "Distinguish between member and Shareholders",
+                "Methods of becoming a member",
+                "Rights and Liabilities of Members",
+                "Termination of membership",
+                "Board of Directors and their Right",
+                "Duties and Liabilities"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Meetings and Resolutions",
               "topics": [
-                "Meaning of meeting, Types of meeting, Board Meeting, Shareholders Meeting- Statutory meeting, Annual General Meeting, Extra Ordinary General Meeting, Class Meeting. Types of Resolutions"
+                "Meaning of meeting",
+                "Types of meeting",
+                "Board Meeting",
+                "Shareholders Meeting- Statutory meeting",
+                "Annual General Meeting",
+                "Extra Ordinary General Meeting",
+                "Class Meeting",
+                "Types of Resolutions"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Winding up of a Company",
               "topics": [
-                "Meaning, Modes of Winding up. Appointment of official liquidator. Powers and Duties of liquidator"
+                "Meaning",
+                "Modes of Winding up",
+                "Appointment of official liquidator",
+                "Powers and Duties of liquidator"
               ]
             }
           ],
@@ -1375,22 +1896,47 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, objectives and advantages of cost accounting, Difference between Financial, Cost and Management Accounting and Cost concepts and classifications, Role of a cost accountant in an organization, Importance of CMA as a career"
+                "Meaning",
+                "Objectives and advantages of cost accounting",
+                "Difference between Financial",
+                "Cost and Management Accounting and Cost concepts and classifications",
+                "Role of a cost accountant in an organization",
+                "Importance of CMA as a career"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Elements of cost",
               "topics": [
-                "Materials : Material / inventory Control - Concept and techniques, Accounting and Control of purchases, Storage and issue Of materials. Methods of pricing of Materials issues- FIFO, LIFO, Simple Average, Weighted Average, Replacement, Standard treatment of Material Losses",
-                "Labour : Accounting and Control of Labour cost, time - keeping and time booking, concept and treatment of idle time, over time, labour turnover and fringe benefits"
+                "Materials : Material / inventory Control",
+                "Concept and techniques",
+                "Accounting and Control of purchases",
+                "Storage and issue Of materials",
+                "Methods of pricing of Materials issues- FIFO",
+                "LIFO",
+                "Simple Average",
+                "Weighted Average",
+                "Replacement",
+                "Standard treatment of Material Losses",
+                "Labour : Accounting and Control of Labour cost",
+                "Time",
+                "Keeping and time booking",
+                "Concept and treatment of idle time",
+                "Over time",
+                "Labour turnover and fringe benefits"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Overhead",
               "topics": [
-                "Classification, allocation appointment and absorption of overhead. Under and over absorption. Methods of costing, Unit costing, Job costing, Contract costing"
+                "Classification",
+                "Allocation appointment and absorption of overhead",
+                "Under and over absorption",
+                "Methods of costing",
+                "Unit costing",
+                "Job costing",
+                "Contract costing"
               ]
             }
           ],
@@ -1423,35 +1969,70 @@
               "unitNumber": 1,
               "title": "Introduction to Business Communication",
               "topics": [
-                "Characteristics of Effective Organizational Communication, Basic Forms of Communication, Process of Communication, Principles of Effective Business Communication, 7 C's"
+                "Characteristics of Effective Organizational Communication",
+                "Basic Forms of Communication",
+                "Process of Communication",
+                "Principles of Effective Business Communication",
+                "7 C's"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Barriers to Communication",
               "topics": [
-                "Facilitators to Communication, Effective Listening, Perception & Reality, Role of Opinion, Attitudes & Beliefs, Mal-functions of communication, Business Etiquettes"
+                "Facilitators to Communication",
+                "Effective Listening",
+                "Perception & Reality",
+                "Role of Opinion",
+                "Attitudes & Beliefs",
+                "Mal-functions of communication",
+                "Business Etiquettes"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Channels of Communications",
               "topics": [
-                "Formal, Informal, Rumour and informal communication Networks, Group Discussion, Paper Presentation, Speech, Debate, Quiz, Electronic Presentation"
+                "Formal",
+                "Informal",
+                "Rumour and informal communication Networks",
+                "Group Discussion",
+                "Paper Presentation",
+                "Speech",
+                "Debate",
+                "Quiz",
+                "Electronic Presentation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Forms of Business Communication",
               "topics": [
-                "Written Communication, Oral Communication, Non verbal Communication, Technology of Business Communication, Peculiarities of Communication in Indian Organizations, Conflict Management"
+                "Written Communication",
+                "Oral Communication",
+                "Non verbal Communication",
+                "Technology of Business Communication",
+                "Peculiarities of Communication in Indian Organizations",
+                "Conflict Management"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Conduct of Meeting",
               "topics": [
-                "Agenda, Notice, Notes, Minutes, Office Memorandum, Office Orders, Press Release, Business Letter Writing-Need, functions & Kinds, Layout of letter writing, Types of letter writing, Report writing- Problems, Organization and techniques of writing"
+                "Agenda",
+                "Notice",
+                "Notes",
+                "Minutes",
+                "Office Memorandum",
+                "Office Orders",
+                "Press Release",
+                "Business Letter Writing-Need",
+                "Functions & Kinds",
+                "Layout of letter writing",
+                "Types of letter writing",
+                "Report writing- Problems",
+                "Organization and techniques of writing"
               ]
             }
           ],
@@ -1475,21 +2056,44 @@
               "unitNumber": 1,
               "title": "Introduction of Auditing",
               "topics": [
-                "Introduction, Meaning, Objectives, Principles and Techniques, Classification of Audit, Audit Planning, Internal Control-Internal Check and Internal Audit, Audit Procedure-Vouching and verification of Assets stabilities"
+                "Introduction",
+                "Meaning",
+                "Objectives",
+                "Principles and Techniques",
+                "Classification of Audit",
+                "Audit Planning",
+                "Internal Control-Internal Check and Internal Audit",
+                "Audit Procedure-Vouching and verification of Assets stabilities"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Audit of Companies",
               "topics": [
-                "Audit of limited companies; Company Auditor-Qualification and disqualifications, Appointment, Rotation, Removal, Remuneration, Rights and Duties of Companies auditor, Auditors Report-Contents & Types. Liabilities of statutory Auditors under the companies Act 2013"
+                "Audit of limited companies",
+                "Company Auditor-Qualification and disqualifications",
+                "Appointment",
+                "Rotation",
+                "Removal",
+                "Remuneration",
+                "Rights and Duties of Companies auditor",
+                "Auditors Report-Contents & Types",
+                "Liabilities of statutory Auditors under the companies Act 2013"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Corporate Governance",
               "topics": [
-                "Conceptual framework of corporate Governance-Issues need, code, transparency & disclosure; Theories & Models, Broad Committees. Role of auditor, Corporate Governance Reforms. Major Corporate Scandals in India & Abroad. Common Governance problems Noticed in various corporate failures"
+                "Conceptual framework of corporate Governance-Issues need",
+                "Code",
+                "Transparency & disclosure",
+                "Theories & Models",
+                "Broad Committees",
+                "Role of auditor",
+                "Corporate Governance Reforms",
+                "Major Corporate Scandals in India & Abroad",
+                "Common Governance problems Noticed in various corporate failures"
               ]
             }
           ],

@@ -35,9 +35,17 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Algae",
               "topics": [
-                "General characteristics; Classification; Range of thallus organization and reproduction",
+                "General characteristics",
+                "Classification",
+                "Range of thallus organization and reproduction",
                 "Significant contributions of important Phycologists (F.E. Fritsch, G.M. Smith, H.D. Kumar, M.O.P. Iyengar)",
-                "Structure, Life history and affinities of the following genera: Nostoc, Volvox, Oedogonium, Chara, Vaucheria, Batrachospermum and Ectocarpus",
+                "Structure",
+                "Life history and affinities of the following genera: Nostoc",
+                "Volvox",
+                "Oedogonium",
+                "Chara",
+                "Vaucheria",
+                "Batrachospermum and Ectocarpus",
                 "Economic Importance of Algae"
               ]
             },
@@ -45,7 +53,11 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Virus",
               "topics": [
-                "Discovery, Nature and General structure, DNA virus (Bacteriophage)-Structure and its replication (Lytic and lysogenic Cycle), RNA virus (TMV), Corona virus (elementary idea)",
+                "Discovery",
+                "Nature and General structure",
+                "DNA virus (Bacteriophage)-Structure and its replication (Lytic and lysogenic Cycle)",
+                "RNA virus (TMV)",
+                "Corona virus (elementary idea)",
                 "Economic importance of viruses"
               ]
             },
@@ -53,7 +65,11 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Bacteria",
               "topics": [
-                "Discovery, Characteristics and Cell Structure, Types-Archaeobacteria and Eubacteria, Reproduction-vegetative, asexual and genetic recombination (Conjugation, Transformation and Transduction)",
+                "Discovery",
+                "Characteristics and Cell Structure",
+                "Types-Archaeobacteria and Eubacteria",
+                "Reproduction-vegetative",
+                "Asexual and genetic recombination (Conjugation, Transformation and Transduction)",
                 "Economic importance of bacteria with reference to their role in agriculture and industry",
                 "Role of Microbes in Biological nitrogen fixation",
                 "General account of Mycoplasma"
@@ -109,21 +125,30 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Five kingdom classification",
               "topics": [
                 "Five kingdom classification",
-                "Algae: Characteristics, Morphology and life cycle of Nostoc, Oedogonium and Chara"
+                "Algae: Characteristics",
+                "Morphology and life cycle of Nostoc",
+                "Oedogonium and Chara"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Virus",
               "topics": [
-                "Discovery and General Structure, DNA Virus (Bacteriophage)-Structure and its replication (Lytic and Lysogenic Cycle), RNA Virus (TMV), Economic importance of Viruses"
+                "Discovery and General Structure",
+                "DNA Virus (Bacteriophage)-Structure and its replication (Lytic and Lysogenic Cycle)",
+                "RNA Virus (TMV)",
+                "Economic importance of Viruses"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Bacteria",
               "topics": [
-                "Discovery, Characteristics and Cell structure, Reproduction-vegetative, asexual and genetic recombination (Conjugation, Transformation and Transduction), Economic importance of Bacteria"
+                "Discovery",
+                "Characteristics and Cell structure",
+                "Reproduction-vegetative",
+                "Asexual and genetic recombination (Conjugation, Transformation and Transduction)",
+                "Economic importance of Bacteria"
               ]
             }
           ],
@@ -217,21 +242,38 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Biomolecules",
               "topics": [
-                "Structure, classification and function of Carbohydrates, amino acids, proteins, lipids and nucleic acid"
+                "Structure",
+                "Classification and function of Carbohydrates",
+                "Amino acids",
+                "Proteins",
+                "Lipids and nucleic acid"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Enzymes",
               "topics": [
-                "Classification, nomenclature, physico-chemical properties mechanism of action and regulation"
+                "Classification",
+                "Nomenclature",
+                "Physico-chemical properties mechanism of action and regulation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Cell",
               "topics": [
-                "Cell theory; Structure of prokaryotic and eukaryotic cells; Origin of eukaryotic cell (Endosymbiotic theory); Cell wall and Cell membrane, structure and function of cell organelles: nucleus, mitochondria, ribosomes, golgi apparatus, endoplasmic reticulum, lysosomes, chloroplast and vacuoles; Structure of chromosome with nucleosome concept"
+                "Cell theory",
+                "Structure of prokaryotic and eukaryotic cells",
+                "Origin of eukaryotic cell (Endosymbiotic theory)",
+                "Cell wall and Cell membrane",
+                "Structure and function of cell organelles: nucleus",
+                "Mitochondria",
+                "Ribosomes",
+                "Golgi apparatus",
+                "Endoplasmic reticulum",
+                "Lysosomes",
+                "Chloroplast and vacuoles",
+                "Structure of chromosome with nucleosome concept"
               ]
             },
             {
@@ -268,7 +310,8 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Estimation of protein and sugar",
-                "Detection of tannin, alkaloid and flavonoid in the given plant sample",
+                "Detection of tannin",
+                "Alkaloid and flavonoid in the given plant sample",
                 "Separation of amino acids by paper chromatography technique",
                 "Study of cell and its organelles with the help of electron microphotographs",
                 "Study of different stages of mitosis and meiosis"
@@ -290,14 +333,19 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Bio-molecules",
               "topics": [
-                "Structure, classification and function of Carbohydrates, Amino acids, Protein"
+                "Structure",
+                "Classification and function of Carbohydrates",
+                "Amino acids",
+                "Protein"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Enzymes",
               "topics": [
-                "Nomenclature, Classification, mode of action"
+                "Nomenclature",
+                "Classification",
+                "Mode of action"
               ]
             },
             {
@@ -355,14 +403,19 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Bio molecules",
               "topics": [
-                "Structure, classification and function of Carbohydrates, Amino acids, Protein"
+                "Structure",
+                "Classification and function of Carbohydrates",
+                "Amino acids",
+                "Protein"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Enzymes",
               "topics": [
-                "Nomenclature, Classification, mode of action"
+                "Nomenclature",
+                "Classification",
+                "Mode of action"
               ]
             },
             {
@@ -465,29 +518,47 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Fungi",
               "topics": [
-                "General characteristics; Thallus organization; Nutrition; Cell wall composition; Reproduction and Classification"
+                "General characteristics",
+                "Thallus organization",
+                "Nutrition",
+                "Cell wall composition",
+                "Reproduction and Classification"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Structure and life history of the following genera",
               "topics": [
-                "Synchytrium, Albugo, Peziza, Puccinia and Alternaria"
+                "Synchytrium",
+                "Albugo",
+                "Peziza",
+                "Puccinia and Alternaria"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Phytopathology",
               "topics": [
-                "Terms and concepts; General symptoms; Host-Pathogen relationships; disease cycle; prevention and control of plant diseases"
+                "Terms and concepts",
+                "General symptoms",
+                "Host-Pathogen relationships",
+                "Disease cycle",
+                "Prevention and control of plant diseases"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Etiology, symptoms and control of the following diseases",
               "topics": [
-                "Citrus canker, Little leaf of brinjal, Early and Late blight of potato, Black stem rust of wheat and White rust of crucifers, Red rot of sugarcane",
-                "General account of Lichens, types & economic importance; Mycorrhiza-Ectomycorrhiza, Endomycorrhiza and their significance"
+                "Citrus canker",
+                "Little leaf of brinjal",
+                "Early and Late blight of potato",
+                "Black stem rust of wheat and White rust of crucifers",
+                "Red rot of sugarcane",
+                "General account of Lichens",
+                "Types & economic importance",
+                "Mycorrhiza-Ectomycorrhiza",
+                "Endomycorrhiza and their significance"
               ]
             }
           ],
@@ -515,10 +586,16 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Mycology: Study of vegetative and reproductive structures of Rhizopus and Peziza (ascocarp) through temporary preparations and permanent slides",
-                "Lichen: Study of growth forms of lichens (crustose, foliose and fruticose) on different substrates (Photographs); Mycorrhizae: ectomycorrhizal and endomycorrhiza (Photographs)",
-                "Phytopathology: Study of Host-parasite relationship of Synchytrium, Albugo, Alternaria and Puccinia through temporary preparations and permanent slides",
+                "Lichen: Study of growth forms of lichens (crustose, foliose and fruticose) on different substrates (Photographs)",
+                "Mycorrhizae: ectomycorrhizal and endomycorrhiza (Photographs)",
+                "Phytopathology: Study of Host-parasite relationship of Synchytrium",
+                "Albugo",
+                "Alternaria and Puccinia through temporary preparations and permanent slides",
                 "Photographs of fungal spores",
-                "Herbarium specimens/Photographs of Citrus Canker; TMV, Early blight of potato, Black stem rust of wheat and White rust of crucifers"
+                "Herbarium specimens/Photographs of Citrus Canker",
+                "TMV",
+                "Early blight of potato",
+                "Black stem rust of wheat and White rust of crucifers"
               ]
             }
           ],
@@ -537,28 +614,53 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Distinguishing features of archegoniates; Alternation of generation",
               "topics": [
-                "Distinguishing features of archegoniates; Alternation of generation"
+                "Distinguishing features of archegoniates",
+                "Alternation of generation"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Bryophytes",
               "topics": [
-                "General Characteristics, Adaptation to land habit, Classification (up to family); Vegetative reproduction; Range of thallus organization; Structure, life history and affinities of the following genera- Marchantia, Anthoceros and Sphagnum; Ecological and economic importance of bryophytes"
+                "General Characteristics",
+                "Adaptation to land habit",
+                "Classification (up to family)",
+                "Vegetative reproduction",
+                "Range of thallus organization",
+                "Structure",
+                "Life history and affinities of the following genera- Marchantia",
+                "Anthoceros and Sphagnum",
+                "Ecological and economic importance of bryophytes"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Pteridophytes",
               "topics": [
-                "General characteristics, classification (up to family), stellar evolution, apogamy and apospory, morphology, anatomy and reproduction of Psilotum, Selaginella (with special reference to seed habit), Equisetum and Marsilea; Ecological and economic importance; Fossil Pteridophyte-Rhynia"
+                "General characteristics",
+                "Classification (up to family)",
+                "Stellar evolution",
+                "Apogamy and apospory",
+                "Morphology",
+                "Anatomy and reproduction of Psilotum",
+                "Selaginella (with special reference to seed habit)",
+                "Equisetum and Marsilea",
+                "Ecological and economic importance",
+                "Fossil Pteridophyte-Rhynia"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gymnosperm",
               "topics": [
-                "General characteristics, classification (up to family), morphology, anatomy and reproduction of Cycas, Pinus and Gnetum; Ecological and economic importance; Fossil Gymnosperm – Lignoidodendron"
+                "General characteristics",
+                "Classification (up to family)",
+                "Morphology",
+                "Anatomy and reproduction of Cycas",
+                "Pinus and Gnetum",
+                "Ecological and economic importance",
+                "Fossil Gymnosperm",
+                "Lignoidodendron"
               ]
             }
           ],
@@ -586,9 +688,14 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Bryophytes: Study of vegetative and reproductive structures of Marchantia, Anthoceros, Sphagnum through temporary preparations and permanent slides",
-                "Pteridophytes: Study of vegetative and reproductive structures of Psilotum, Selaginella, Equisetum and Marsilea through temporary preparations and permanent slides",
-                "Gymnosperms: Study of vegetative and reproductive structures of Cycas, Pinus and Gnetum through temporary preparations and permanent slides"
+                "Bryophytes: Study of vegetative and reproductive structures of Marchantia",
+                "Anthoceros",
+                "Sphagnum through temporary preparations and permanent slides",
+                "Pteridophytes: Study of vegetative and reproductive structures of Psilotum",
+                "Selaginella",
+                "Equisetum and Marsilea through temporary preparations and permanent slides",
+                "Gymnosperms: Study of vegetative and reproductive structures of Cycas",
+                "Pinus and Gnetum through temporary preparations and permanent slides"
               ]
             }
           ],
@@ -607,8 +714,12 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Fungi",
               "topics": [
-                "General characteristics; Thallus organization",
-                "General account of Lichens, types & economic importance; Mycorrhiza-Ectomycorrhiza, Endomycorrhiza and their significance"
+                "General characteristics",
+                "Thallus organization",
+                "General account of Lichens",
+                "Types & economic importance",
+                "Mycorrhiza-Ectomycorrhiza",
+                "Endomycorrhiza and their significance"
               ]
             },
             {
@@ -622,7 +733,10 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Etiology, symptoms and control of the following diseases",
               "topics": [
-                "Citrus canker, Little leaf of brinjal, Late blight of potato, White rust of crucifers"
+                "Citrus canker",
+                "Little leaf of brinjal",
+                "Late blight of potato",
+                "White rust of crucifers"
               ]
             }
           ],
@@ -669,22 +783,40 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Scope and importance, Branches of horticulture; Role in rural economy and employment generation; Urban horticulture and ecotourism"
+                "Scope and importance",
+                "Branches of horticulture",
+                "Role in rural economy and employment generation",
+                "Urban horticulture and ecotourism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ornamental plants",
               "topics": [
-                "Types, classification (annuals, perennials, climbers and trees); Identification and salient features of some ornamental plants [rose, marigold, carnations, cacti and succulents",
-                "Fruit and vegetable crops: Production, origin and distribution; Description of plants and their economic products; Management and marketing of vegetable and fruit crops; Identification of some fruits and vegetable varieties banana, mango, chillies and cucurbits"
+                "Types",
+                "Classification (annuals, perennials, climbers and trees)",
+                "Identification and salient features of some ornamental plants [rose, marigold, carnations, cacti and succulents",
+                "Fruit and vegetable crops: Production",
+                "Origin and distribution",
+                "Description of plants and their economic products",
+                "Management and marketing of vegetable and fruit crops",
+                "Identification of some fruits and vegetable varieties banana",
+                "Mango",
+                "Chillies and cucurbits"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Horticultural techniques",
               "topics": [
-                "Application of manure, fertilizers, nutrients and PGRs; Weed control; Biofertilizers, biopesticides; Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation); Propagation Methods: asexual (grafting, cutting, layering, budding)"
+                "Application of manure",
+                "Fertilizers",
+                "Nutrients and PGRs",
+                "Weed control",
+                "Biofertilizers",
+                "Biopesticides",
+                "Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation)",
+                "Propagation Methods: asexual (grafting, cutting, layering, budding)"
               ]
             }
           ],
@@ -759,30 +891,41 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Brief account of inflorescence, flowers, fruits and seeds",
               "topics": [
-                "Brief account of inflorescence, flowers, fruits and seeds"
+                "Brief account of inflorescence",
+                "Flowers",
+                "Fruits and seeds"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Meristem and permanent tissue",
               "topics": [
-                "Root and shoot meristem, simple and complex tissue",
-                "Mechanical Tissues – Structure, distribution and function"
+                "Root and shoot meristem",
+                "Simple and complex tissue",
+                "Mechanical Tissues",
+                "Structure",
+                "Distribution and function"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Normal secondary growth",
               "topics": [
-                "Anomalous secondary growth in Tinospora, Bignonia, Boerhaavia, and Dracaena"
+                "Anomalous secondary growth in Tinospora",
+                "Bignonia",
+                "Boerhaavia, and Dracaena"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Organization of tissue in relation to environment",
               "topics": [
-                "Hydrophytes, Xerophytes, Halophytes and Epiphytes",
-                "Periderm – Origin, structure and function"
+                "Hydrophytes",
+                "Xerophytes",
+                "Halophytes and Epiphytes",
+                "Periderm",
+                "Origin",
+                "Structure and function"
               ]
             }
           ],
@@ -811,8 +954,11 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Study of anatomical details through permanent slides/temporary stain mounts/ Photographs",
-                "Distribution and types of parenchyma, collenchyma and sclerenchyma through permanent slides/temporary stain mounts/ Photographs",
-                "Study of anomalous secondary growth in Tinospora, Bignonia, Boerhaavia, and Dracaena through temporary preparations and permanent slides",
+                "Distribution and types of parenchyma",
+                "Collenchyma and sclerenchyma through permanent slides/temporary stain mounts/ Photographs",
+                "Study of anomalous secondary growth in Tinospora",
+                "Bignonia",
+                "Boerhaavia, and Dracaena through temporary preparations and permanent slides",
                 "Study of morphological and anatomical adaptations in hydrophytes and xerophytes through specimens and temporary slide preparations"
               ]
             }
@@ -832,28 +978,40 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Cereals, Legumes, Oil and Fats",
               "topics": [
-                "Botanical characteristics, cultivation and uses of Cereals (Wheat, Maize and Rice), Legumes (Gram, Garden pea), Oil and Fats (Mustard and Groundnut) yielding plants"
+                "Botanical characteristics",
+                "Cultivation and uses of Cereals (Wheat, Maize and Rice)",
+                "Legumes (Gram, Garden pea)",
+                "Oil and Fats (Mustard and Groundnut) yielding plants"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Spices, Fruits and Vegetables",
               "topics": [
-                "Botanical characteristics, cultivation and uses of Spices (Coriander, Chilli and Turmeric), Fruits and Vegetables (Mango, Litchi, Cauliflower, Brinjal)"
+                "Botanical characteristics",
+                "Cultivation and uses of Spices (Coriander, Chilli and Turmeric)",
+                "Fruits and Vegetables (Mango, Litchi, Cauliflower, Brinjal)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Beverages, Narcotics, Timber and Fiber",
               "topics": [
-                "Botanical characteristics, cultivation, processing and uses of Beverages (Tea and Coffee), Narcotics, Timber and Fiber yielding plant (Sal, Teak, Cotton, Jute), Rubber and Gum yielding plants"
+                "Botanical characteristics",
+                "Cultivation",
+                "Processing and uses of Beverages (Tea and Coffee)",
+                "Narcotics",
+                "Timber and Fiber yielding plant (Sal, Teak, Cotton, Jute)",
+                "Rubber and Gum yielding plants"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Medicinal plants, Sugar and Starch",
               "topics": [
-                "Botanical characteristics, cultivation and uses of ten (10) Medicinal plants of Bihar; Sugar (Sugarcane) and Starch (Potato) yielding plants"
+                "Botanical characteristics",
+                "Cultivation and uses of ten (10) Medicinal plants of Bihar",
+                "Sugar (Sugarcane) and Starch (Potato) yielding plants"
               ]
             }
           ],
@@ -878,28 +1036,46 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mendelian inheritance",
               "topics": [
-                "Mendel's experiments and principles of inheritance: back cross and test cross; gene interactions and modified dihybrid ratio-complementary, supplementary, duplicate and epistatic factor and inhibitory genes"
+                "Mendel's experiments and principles of inheritance: back cross and test cross",
+                "Gene interactions and modified dihybrid ratio-complementary",
+                "Supplementary",
+                "Duplicate and epistatic factor and inhibitory genes"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Linkage and crossing over",
               "topics": [
-                "Cytological basis of crossing over; Recombination frequency, two factor and three factor crosses; Interference and coincidence; Sex determination and sex linked inheritance; Cytoplasmic inheritance"
+                "Cytological basis of crossing over",
+                "Recombination frequency",
+                "Two factor and three factor crosses",
+                "Interference and coincidence",
+                "Sex determination and sex linked inheritance",
+                "Cytoplasmic inheritance"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mutations",
               "topics": [
-                "Types and induction (physical and chemical mutagens); Molecular basis of mutations and their role"
+                "Types and induction (physical and chemical mutagens)",
+                "Molecular basis of mutations and their role"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chromosomes",
               "topics": [
-                "Physical and chemical characteristics, Lampbrush chromosomes, B-chromosomes and polythene chromosomes; Chromosomal aberrations: Deletion, Duplication, Inversion, Translocation, Position effect, Euploidy and Aneuploidy, Polyploidy (types and role in evolution)"
+                "Physical and chemical characteristics",
+                "Lampbrush chromosomes",
+                "B-chromosomes and polythene chromosomes",
+                "Chromosomal aberrations: Deletion",
+                "Duplication",
+                "Inversion",
+                "Translocation",
+                "Position effect",
+                "Euploidy and Aneuploidy",
+                "Polyploidy (types and role in evolution)"
               ]
             }
           ],
@@ -926,7 +1102,9 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Brief account of inflorescence, flowers, fruits and seeds",
               "topics": [
-                "Brief account of inflorescence, flowers, fruits and seeds"
+                "Brief account of inflorescence",
+                "Flowers",
+                "Fruits and seeds"
               ]
             },
             {
@@ -940,14 +1118,18 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Normal secondary growth; Anomalous secondary growth in Tinospora, Boerhaavia, and Dracaena",
               "topics": [
-                "Normal secondary growth; Anomalous secondary growth in Tinospora, Boerhaavia, and Dracaena"
+                "Normal secondary growth",
+                "Anomalous secondary growth in Tinospora",
+                "Boerhaavia, and Dracaena"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Organization of tissue in relation to environment",
               "topics": [
-                "Hydrophytes, Xerophytes, Halophytes and Epiphytes"
+                "Hydrophytes",
+                "Xerophytes",
+                "Halophytes and Epiphytes"
               ]
             }
           ],
@@ -1018,14 +1200,19 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Nucleic acids",
               "topics": [
-                "structures of DNA and RNA, forms of DNA, DNA replication and role of DNA polymerases, different forms of RNA and their role, Genetic code"
+                "Structures of DNA and RNA",
+                "Forms of DNA",
+                "DNA replication and role of DNA polymerases",
+                "Different forms of RNA and their role",
+                "Genetic code"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Central dogma, Transcription and Translation in prokaryotes and eukaryotes",
               "topics": [
-                "Central dogma, Transcription and Translation in prokaryotes and eukaryotes"
+                "Central dogma",
+                "Transcription and Translation in prokaryotes and eukaryotes"
               ]
             },
             {
@@ -1039,7 +1226,11 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Blotting techniques",
               "topics": [
-                "northern, southern & western blotting, DNA fingerprinting, Gel Electrophoresis, Polymerase Chain Reaction"
+                "Northern",
+                "Southern & western blotting",
+                "DNA fingerprinting",
+                "Gel Electrophoresis",
+                "Polymerase Chain Reaction"
               ]
             }
           ],
@@ -1087,7 +1278,8 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Environment, Ecology, Biosphere, Biome, habitat, niche; Adaptation of hydrophytes and xerophytes",
               "topics": [
-                "Environment, Ecology, Biosphere, Biome, habitat, niche; Adaptation of hydrophytes and xerophytes",
+                "Environment, Ecology, Biosphere, Biome, habitat, niche",
+                "Adaptation of hydrophytes and xerophytes",
                 "Biotic interactions: Beneficial and harmful interactions (symbiosis, commensalism, amensalism, herbivory, predation, parasitism)"
               ]
             },
@@ -1096,24 +1288,41 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Population ecology: Characteristics and Regulations",
               "topics": [
                 "Population ecology: Characteristics and Regulations",
-                "Community ecology: Concept of ecological amplitude; Characters: analytical and synthetic; Ecotone and edge effect; Dynamics: succession (Hydrosere and Xerosere) Ecosystem: Structure and function of ecosystem, food chains and webs, Principles and models of energy flow, ecological pyramids"
+                "Community ecology: Concept of ecological amplitude",
+                "Characters: analytical and synthetic",
+                "Ecotone and edge effect",
+                "Dynamics: succession (Hydrosere and Xerosere) Ecosystem: Structure and function of ecosystem",
+                "Food chains and webs",
+                "Principles and models of energy flow",
+                "Ecological pyramids"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Soil",
               "topics": [
-                "Origin, Formation, Composition (Physical, Chemical and Biological), Soil profile and importance",
-                "Water: Precipitation types (rain, fog, snow, hail, dew), Soil water and Water table"
+                "Origin",
+                "Formation",
+                "Composition (Physical, Chemical and Biological)",
+                "Soil profile and importance",
+                "Water: Precipitation types (rain, fog, snow, hail, dew)",
+                "Soil water and Water table"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biogeochemical cycles",
               "topics": [
-                "Gaseous and sedimentary cycles, Hydrological cycle",
-                "Environmental pollution: Air pollution, water pollution, noise pollution, radioactive pollution and their control measures, global Warming and Ozone hole",
-                "Phytogeography: Major vegetational belts of India, Basic concept of wetlands with special reference to Bihar; Conservation of biodiversity"
+                "Gaseous and sedimentary cycles",
+                "Hydrological cycle",
+                "Environmental pollution: Air pollution",
+                "Water pollution",
+                "Noise pollution",
+                "Radioactive pollution and their control measures",
+                "Global Warming and Ozone hole",
+                "Phytogeography: Major vegetational belts of India",
+                "Basic concept of wetlands with special reference to Bihar",
+                "Conservation of biodiversity"
               ]
             }
           ],
@@ -1141,9 +1350,15 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Determination of pH of various soil and water samples",
-                "Analysis for carbonates, chlorides, nitrates, sulphates, organic matter and base deficiency from two soil samples by rapid soil tests",
+                "Analysis for carbonates",
+                "Chlorides",
+                "Nitrates",
+                "Sulphates",
+                "Organic matter and base deficiency from two soil samples by rapid soil tests",
                 "Study of morphological and anatomical adaptations of hydrophytes and xerophytes",
-                "Study of biotic interactions of the following: Stem parasite (Cuscuta), Root parasite (Orobanche) Epiphytes, Predation (Insectivorous plants) through specimens/photographs",
+                "Study of biotic interactions of the following: Stem parasite (Cuscuta)",
+                "Root parasite (Orobanche) Epiphytes",
+                "Predation (Insectivorous plants) through specimens/photographs",
                 "Quantitative analysis of herbaceous vegetation in the college campus for frequency and comparison with Raunkiaer's frequency distribution law",
                 "Quantitative analysis of herbaceous vegetation for density and abundance in the college campus field visit"
               ]
@@ -1164,22 +1379,31 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Cereals, Legumes, Oil and Fats",
               "topics": [
-                "Botanical characteristics, cultivation and uses of Cereals (Wheat), Legumes (Garden pea), Oil and Fats (Mustard) yielding plants"
+                "Botanical characteristics",
+                "Cultivation and uses of Cereals (Wheat)",
+                "Legumes (Garden pea)",
+                "Oil and Fats (Mustard) yielding plants"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Spices, Fruits and Vegetables",
               "topics": [
-                "Botanical characteristics, cultivation and uses of Spices (Chilli), Fruits and Vegetables (Mango, Brinjal)"
+                "Botanical characteristics",
+                "Cultivation and uses of Spices (Chilli)",
+                "Fruits and Vegetables (Mango, Brinjal)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Beverages, Timber and Fiber, Medicinal plants",
               "topics": [
-                "Botanical characteristics, cultivation, processing and uses of Beverages (Tea), Timber and Fiber yielding plant (Sal, Cotton)",
-                "Botanical characteristics, cultivation and uses of five Medicinal plants"
+                "Botanical characteristics",
+                "Cultivation",
+                "Processing and uses of Beverages (Tea)",
+                "Timber and Fiber yielding plant (Sal, Cotton)",
+                "Botanical characteristics",
+                "Cultivation and uses of five Medicinal plants"
               ]
             }
           ],
@@ -1206,29 +1430,39 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mendelian inheritance",
               "topics": [
-                "Mendel's experiments and principles of inheritance: back cross and test cross; gene interactions and modified dihybrid ratio-complementary, supplementary"
+                "Mendel's experiments and principles of inheritance: back cross and test cross",
+                "Gene interactions and modified dihybrid ratio-complementary",
+                "Supplementary"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Linkage and crossing over",
               "topics": [
-                "Cytological basis of crossing over; Sex determination and sex linked inheritance; Cytoplasmic inheritance"
+                "Cytological basis of crossing over",
+                "Sex determination and sex linked inheritance",
+                "Cytoplasmic inheritance"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mutations",
               "topics": [
-                "Types and induction (physical and chemical mutagens); Molecular basis of mutations and their role"
+                "Types and induction (physical and chemical mutagens)",
+                "Molecular basis of mutations and their role"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chromosomes",
               "topics": [
-                "Physical and chemical characteristics, Lampbrush chromosomes and polythene chromosomes",
-                "Chromosomal aberrations: Deletion, Duplication, Inversion, Translocation, Polyploidy (types and role in evolution)"
+                "Physical and chemical characteristics",
+                "Lampbrush chromosomes and polythene chromosomes",
+                "Chromosomal aberrations: Deletion",
+                "Duplication",
+                "Inversion",
+                "Translocation",
+                "Polyploidy (types and role in evolution)"
               ]
             }
           ],
@@ -1278,7 +1512,10 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Systematics, Concept of taxa",
               "topics": [
-                "Systematics, Concept of taxa (family, genus, species); Categories and taxonomic hierarchy; Species concept (taxonomic, biological, evolutionary)",
+                "Systematics",
+                "Concept of taxa (family, genus, species)",
+                "Categories and taxonomic hierarchy",
+                "Species concept (taxonomic, biological, evolutionary)",
                 "Botanical nomenclature: Idea about important rules of plant nomenclature as per ICBN"
               ]
             },
@@ -1293,14 +1530,23 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Floral characteristics and economic importance of following families",
               "topics": [
-                "Ranunculaceae, Asclepiadaceae, Apocynaceae, Amaranthaceae, Euphorbiaceae, Lamiaceae, Cyperaceae and Poaceae"
+                "Ranunculaceae",
+                "Asclepiadaceae",
+                "Apocynaceae",
+                "Amaranthaceae",
+                "Euphorbiaceae",
+                "Lamiaceae",
+                "Cyperaceae and Poaceae"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Phylogeny of Angiosperms",
               "topics": [
-                "Terms and concepts of primitive and advanced, homology and analogy, origin & evolution of angiosperms, methods of illustrating evolutionary relationship (phylogenetic tree, cladogram)"
+                "Terms and concepts of primitive and advanced",
+                "Homology and analogy",
+                "Origin & evolution of angiosperms",
+                "Methods of illustrating evolutionary relationship (phylogenetic tree, cladogram)"
               ]
             }
           ],
@@ -1327,7 +1573,12 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Study of vegetative and floral characters of the following families (Description, V.S. flower, section of ovary, floral diagram/s, floral formula/e and systematic position according to Bentham & Hooker's system of classification): Ranunculaceae, Lamiaceae, Apocynaceae, Amaranthaceae, Asclepiadaceae, Euphorbiaceae and Cyperaceae",
+                "Study of vegetative and floral characters of the following families (Description, V.S. flower, section of ovary, floral diagram/s, floral formula/e and systematic position according to Bentham & Hooker's system of classification): Ranunculaceae",
+                "Lamiaceae",
+                "Apocynaceae",
+                "Amaranthaceae",
+                "Asclepiadaceae",
+                "Euphorbiaceae and Cyperaceae",
                 "Preparation of Herbarium sheets (to be submitted in the record book)"
               ]
             }
@@ -1347,15 +1598,31 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Anther",
               "topics": [
-                "Structure and functions of anther wall, microsporogenesis and microgametogenesis; Palynology and scope (a brief account); Pollen viability, germination; Abnormal features: Pseudomonads, polyads, massulae, pollinia"
+                "Structure and functions of anther wall",
+                "Microsporogenesis and microgametogenesis",
+                "Palynology and scope (a brief account)",
+                "Pollen viability",
+                "Germination",
+                "Abnormal features: Pseudomonads",
+                "Polyads",
+                "Massulae",
+                "Pollinia"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ovule",
               "topics": [
-                "Structure and Types; Special structures-endothelium, obturator, aril, caruncle and hypostase; Female Gametophyte (Types of Embryo sacs) and megagametogenesis (details of Polygonum type); Organization and ultrastructure of mature embryo sac; Double fertilization",
-                "Endosperm: Types, development and its morphological natures"
+                "Structure and Types",
+                "Special structures-endothelium",
+                "Obturator",
+                "Aril",
+                "Caruncle and hypostase",
+                "Female Gametophyte (Types of Embryo sacs) and megagametogenesis (details of Polygonum type)",
+                "Organization and ultrastructure of mature embryo sac",
+                "Double fertilization",
+                "Endosperm: Types",
+                "Development and its morphological natures"
               ]
             },
             {
@@ -1369,7 +1636,8 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Apomixis & Polyembryony",
               "topics": [
-                "Definition, types and applications"
+                "Definition",
+                "Types and applications"
               ]
             }
           ],
@@ -1395,8 +1663,13 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practical",
               "topics": [
-                "Photographs/slides of pollen grains of families: Malvaceae, Liliaceae, Asteraceae and Poaceae",
-                "Study of anther, ovule, double fertilization, endosperm and embryo through slide/photographs/ppt",
+                "Photographs/slides of pollen grains of families: Malvaceae",
+                "Liliaceae",
+                "Asteraceae and Poaceae",
+                "Study of anther",
+                "Ovule",
+                "Double fertilization",
+                "Endosperm and embryo through slide/photographs/ppt",
                 "Models of the above topics to be submitted by the students"
               ]
             }
@@ -1416,7 +1689,13 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Plant water relationship",
               "topics": [
-                "Imbibition, diffusion and osmosis; Water Potential and its components; Active and passive absorption and transport of water and solutes; Ascent of sap; Transpiration and factors affecting transpiration, mechanism of stomatal movement and factors controlling it",
+                "Imbibition",
+                "Diffusion and osmosis",
+                "Water Potential and its components",
+                "Active and passive absorption and transport of water and solutes",
+                "Ascent of sap",
+                "Transpiration and factors affecting transpiration",
+                "Mechanism of stomatal movement and factors controlling it",
                 "Transport of organic substances: Path and mechanism of translocation"
               ]
             },
@@ -1424,21 +1703,29 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Mineral nutrition",
               "topics": [
-                "Macro and micronutrients and their role in plant nutrition; nutrient uptake and transport mechanisms. role of carriers"
+                "Macro and micronutrients and their role in plant nutrition",
+                "Nutrient uptake and transport mechanisms. role of carriers"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Phytohormones",
               "topics": [
-                "Discovery, chemical nature (basic structure), bioassay and physiological roles of Auxin, Gibberellins, Cytokinin, Abscisic acid and Ethylene"
+                "Discovery",
+                "Chemical nature (basic structure)",
+                "Bioassay and physiological roles of Auxin",
+                "Gibberellins",
+                "Cytokinin",
+                "Abscisic acid and Ethylene"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Physiology of flowering",
               "topics": [
-                "Photoperiodism and vernalization; Plant movements, plant growth"
+                "Photoperiodism and vernalization",
+                "Plant movements",
+                "Plant growth"
               ]
             }
           ],
@@ -1466,7 +1753,8 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Determination of the rate of transpiration by using Farmer's and Ganong's Potometer",
-                "Determination of the amount of water absorbed and transpired by a plant, using T/A apparatus",
+                "Determination of the amount of water absorbed and transpired by a plant",
+                "Using T/A apparatus",
                 "Study of different types of stomata",
                 "To compare the rate of imbibition of oily and starchy seeds",
                 "Study of effect of sugar concentrations on leaf cell by plasmolytic method",
@@ -1492,7 +1780,8 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Environment, Ecology, Biosphere, Biome, habitat, niche; Adaptation of hydrophytes and xerophytes",
               "topics": [
-                "Environment, Ecology, Biosphere, Biome, habitat, niche; Adaptation of hydrophytes and xerophytes",
+                "Environment, Ecology, Biosphere, Biome, habitat, niche",
+                "Adaptation of hydrophytes and xerophytes",
                 "Biotic interactions: Beneficial and harmful interactions (symbiosis, commensalism, amensalism, herbivory, predation, parasitism)"
               ]
             },
@@ -1500,15 +1789,22 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Community ecology",
               "topics": [
-                "Concept of ecological amplitude; Characters: analytical and synthetic; Dynamics: succession (Hydrosere and Xerosere)",
-                "Ecosystem: Structure and function of ecosystem, food chains and webs, Principles and models of energy flow, ecological pyramids"
+                "Concept of ecological amplitude",
+                "Characters: analytical and synthetic",
+                "Dynamics: succession (Hydrosere and Xerosere)",
+                "Ecosystem: Structure and function of ecosystem",
+                "Food chains and webs",
+                "Principles and models of energy flow",
+                "Ecological pyramids"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Soil",
               "topics": [
-                "Origin, Formation, Composition (Physical, Chemical and Biological) Soil profile and importance"
+                "Origin",
+                "Formation",
+                "Composition (Physical, Chemical and Biological) Soil profile and importance"
               ]
             },
             {
@@ -1516,7 +1812,11 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Biogeochemical cycles",
               "topics": [
                 "Gaseous cycles",
-                "Environmental pollution: Air pollution, water pollution, noise pollution, radioactive pollution and their control measures, global Warming and Ozone hole",
+                "Environmental pollution: Air pollution",
+                "Water pollution",
+                "Noise pollution",
+                "Radioactive pollution and their control measures",
+                "Global Warming and Ozone hole",
                 "Phytogeography: Major vegetational belts of India"
               ]
             }
@@ -1543,7 +1843,10 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Systematics, Concept of taxa",
               "topics": [
-                "Systematics, Concept of taxa (family, genus, species); Categories and taxonomic hierarchy; Species concept (taxonomic, biological, evolutionary)",
+                "Systematics",
+                "Concept of taxa (family, genus, species)",
+                "Categories and taxonomic hierarchy",
+                "Species concept (taxonomic, biological, evolutionary)",
                 "Botanical nomenclature: Idea about important rules of plant nomenclature as per ICBN"
               ]
             },
@@ -1558,7 +1861,9 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Floral characteristics and economic importance of following families",
               "topics": [
-                "Ranunculaceae, Apocynaceae, Euphorbiaceae and Cyperaceae"
+                "Ranunculaceae",
+                "Apocynaceae",
+                "Euphorbiaceae and Cyperaceae"
               ]
             }
           ],
@@ -1609,21 +1914,34 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Concept of metabolism",
               "topics": [
-                "Concept of metabolism, regulation of metabolism, role of regulatory enzymes (allosteric, covalent modulation and isozymes)"
+                "Concept of metabolism",
+                "Regulation of metabolism",
+                "Role of regulatory enzymes (allosteric, covalent modulation and isozymes)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Photosynthesis",
               "topics": [
-                "photosynthetic apparatus, pigments, photochemical reactions, electron transport pathways in chloroplast membranes, photophosphorylation, Calvin Cycle, Crassulacean Acid Metabolism, Hatch & Slack pathway; Photorespiration"
+                "Photosynthetic apparatus",
+                "Pigments",
+                "Photochemical reactions",
+                "Electron transport pathways in chloroplast membranes",
+                "Photophosphorylation",
+                "Calvin Cycle",
+                "Crassulacean Acid Metabolism",
+                "Hatch & Slack pathway",
+                "Photorespiration"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Respiration",
               "topics": [
-                "Glycolysis, TCA Cycle; oxidative phosphorylation, Pentose Phosphate Pathway, Respiratory quotient"
+                "Glycolysis, TCA Cycle",
+                "Oxidative phosphorylation",
+                "Pentose Phosphate Pathway",
+                "Respiratory quotient"
               ]
             },
             {
@@ -1676,17 +1994,24 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "rDNA technology",
               "topics": [
-                "History; Major enzymes used: Restriction enzymes-types and cleavage pattern; DNA ligase-types and ligation process",
-                "Steps of Genetic engineering: Selection of cloning vectors- Plasmids (natural, pBR322), Phages, cosmid"
+                "History",
+                "Major enzymes used: Restriction enzymes-types and cleavage pattern",
+                "DNA ligase-types and ligation process",
+                "Steps of Genetic engineering: Selection of cloning vectors- Plasmids (natural, pBR322)",
+                "Phages",
+                "Cosmid"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Passenger DNA",
               "topics": [
-                "Different strategies used for isolation/synthesis of gene; Construction of genomic and cDNA libraries",
+                "Different strategies used for isolation/synthesis of gene",
+                "Construction of genomic and cDNA libraries",
                 "Construction of rDNA: Different strategies for construction of rDNA",
-                "Methods of DNA transfer in suitable host: electroporation, microinjection, particle gun method",
+                "Methods of DNA transfer in suitable host: electroporation",
+                "Microinjection",
+                "Particle gun method",
                 "Selection strategies: Different methods for selection of clone (antibiotic resistant markers, colony hybridization, immune-screening)",
                 "Expression of foreign gene"
               ]
@@ -1695,15 +2020,23 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Plant Tissue Culture",
               "topics": [
-                "Basic aspect, totipotency, organogenesis, embryogenesis (somatic and zygotic), Role of plant tissue culture in growth, development and differentiation, anther culture and their applications micro-propagation",
-                "Germplasm conservation, Cryopreservation"
+                "Basic aspect",
+                "Totipotency",
+                "Organogenesis",
+                "Embryogenesis (somatic and zygotic)",
+                "Role of plant tissue culture in growth",
+                "Development and differentiation",
+                "Anther culture and their applications micro-propagation",
+                "Germplasm conservation",
+                "Cryopreservation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Application of Recombinant DNA technology",
               "topics": [
-                "In medicine (Humulin) and Agriculture (Bt-cotton, Flavor Savr tomato, Golden rice). Biosafety concerns on GMO"
+                "In medicine (Humulin) and Agriculture (Bt-cotton, Flavor Savr tomato, Golden rice)",
+                "Biosafety concerns on GMO"
               ]
             }
           ],
@@ -1729,9 +2062,16 @@ export const botanySyllabus: CourseSyllabus = {
               "title": "Practical",
               "topics": [
                 "Preparation of MS medium",
-                "Demonstration of in vitro sterilization and inoculation methods using leaf and nodal explants of tobacco, Datura, Brassica etc",
-                "Study of anther, embryo and endosperm culture, micropropagation, somatic embryogenesis & artificial seeds through photographs",
-                "Study of steps of genetic engineering for production of Bt cotton, Golden rice, Flavor Savr tomato through photographs",
+                "Demonstration of in vitro sterilization and inoculation methods using leaf and nodal explants of tobacco",
+                "Datura",
+                "Brassica etc",
+                "Study of anther",
+                "Embryo and endosperm culture",
+                "Micropropagation",
+                "Somatic embryogenesis & artificial seeds through photographs",
+                "Study of steps of genetic engineering for production of Bt cotton",
+                "Golden rice",
+                "Flavor Savr tomato through photographs",
                 "Isolation of genomic DNA from cauliflower",
                 "Models on the above mentioned topics to be submitted by the students"
               ]
@@ -1752,7 +2092,13 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Plant water relationship",
               "topics": [
-                "Imbibition, diffusion and osmosis; Water Potential and its components; Active and passive absorption and transport of water and solutes; Ascent of sap; Transpiration and factors affecting transpiration, Transport of organic substances"
+                "Imbibition",
+                "Diffusion and osmosis",
+                "Water Potential and its components",
+                "Active and passive absorption and transport of water and solutes",
+                "Ascent of sap",
+                "Transpiration and factors affecting transpiration",
+                "Transport of organic substances"
               ]
             },
             {
@@ -1766,7 +2112,10 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Phytohormones",
               "topics": [
-                "Discovery, chemical nature (basic structure), bioassay and physiological roles of Auxin, Gibberellins and Cytokinin"
+                "Discovery",
+                "Chemical nature (basic structure)",
+                "Bioassay and physiological roles of Auxin",
+                "Gibberellins and Cytokinin"
               ]
             }
           ],
@@ -1795,38 +2144,77 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Scope and importance, Branches of horticulture; Role in rural economy and employment generation; Urban horticulture and ecotourism"
+                "Scope and importance",
+                "Branches of horticulture",
+                "Role in rural economy and employment generation",
+                "Urban horticulture and ecotourism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ornamental plants",
               "topics": [
-                "Types, classification (annuals, perennials, climbers and trees); Identification and salient features of some ornamental plants [rose, marigold, gladiolus, carnations, poppies, tuberose, cacti and succulents",
-                "Fruit and vegetable crops: Production, origin and distribution; Description of plants and their economic products; Management and marketing of vegetables and fruits; Identification of some fruits and vegetables (citrus, banana, mango, chillies and cucurbits)"
+                "Types",
+                "Classification (annuals, perennials, climbers and trees)",
+                "Identification and salient features of some ornamental plants [rose, marigold, gladiolus, carnations, poppies, tuberose, cacti and succulents",
+                "Fruit and vegetable crops: Production",
+                "Origin and distribution",
+                "Description of plants and their economic products",
+                "Management and marketing of vegetables and fruits",
+                "Identification of some fruits and vegetables (citrus, banana, mango, chillies and cucurbits)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Horticultural techniques",
               "topics": [
-                "Application of manure, fertilizers, nutrients and PGRs; Weed control; Biofertilizers, biopesticides; Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation); Hydroponics; Propagation Methods: asexual (grafting, cutting, layering, budding), sexual (seed propagation), Scope and limitations"
+                "Application of manure",
+                "Fertilizers",
+                "Nutrients and PGRs",
+                "Weed control",
+                "Biofertilizers",
+                "Biopesticides",
+                "Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation)",
+                "Hydroponics",
+                "Propagation Methods: asexual (grafting, cutting, layering, budding)",
+                "Sexual (seed propagation)",
+                "Scope and limitations"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Landscaping and garden design",
               "topics": [
-                "Planning and layout (parks and avenues); gardening traditions - Ancient Indian, European, Mughal and Japanese Gardens; Urban forestry; policies and practices",
-                "Floriculture: Cut flowers, bonsai, commerce (market demand and supply); Importance of flower shows and exhibitions"
+                "Planning and layout (parks and avenues)",
+                "Gardening traditions",
+                "Ancient Indian",
+                "European",
+                "Mughal and Japanese Gardens",
+                "Urban forestry",
+                "Policies and practices",
+                "Floriculture: Cut flowers",
+                "Bonsai",
+                "Commerce (market demand and supply)",
+                "Importance of flower shows and exhibitions"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Post-harvest technology",
               "topics": [
-                "Importance of post harvest technology in horticultural crops; Evaluation of quality traits; Harvesting and handling of fruits, vegetables and cut flowers; Principles, methods of preservation and processing; Methods of minimizing loses during storage and transportation; Food irradiation - advantages and disadvantages; food safety",
-                "Disease control and management: Field and post-harvest diseases; Identification of deficiency symptoms; remedial measures and nutritional management practices"
+                "Importance of post harvest technology in horticultural crops",
+                "Evaluation of quality traits",
+                "Harvesting and handling of fruits",
+                "Vegetables and cut flowers",
+                "Principles",
+                "Methods of preservation and processing",
+                "Methods of minimizing loses during storage and transportation",
+                "Food irradiation",
+                "Advantages and disadvantages",
+                "Food safety",
+                "Disease control and management: Field and post-harvest diseases",
+                "Identification of deficiency symptoms",
+                "Remedial measures and nutritional management practices"
               ]
             }
           ],
@@ -1850,22 +2238,40 @@ export const botanySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Scope and importance, Branches of horticulture; Role in rural economy and employment generation; Urban horticulture and ecotourism"
+                "Scope and importance",
+                "Branches of horticulture",
+                "Role in rural economy and employment generation",
+                "Urban horticulture and ecotourism"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ornamental plants",
               "topics": [
-                "Types, classification (annuals, perennials, climbers and trees); Identification and salient features of some ornamental plants [rose, marigold, carnations, cacti and succulents]"
+                "Types",
+                "Classification (annuals, perennials, climbers and trees)",
+                "Identification and salient features of some ornamental plants [rose, marigold, carnations, cacti and succulents]"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Fruit and vegetable crops",
               "topics": [
-                "Production, origin and distribution; Description of plants and their economic products; Management and marketing of vegetable and fruit crops; Identification of some fruits and vegetable varieties banana, mango, chillies and cucurbits",
-                "Horticultural techniques: Application of manure, fertilizers, nutrients and PGRs; Weed control; Biofertilizers, biopesticides; Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation); Propagation Methods: asexual (grafting, cutting, layering, budding)"
+                "Production",
+                "Origin and distribution",
+                "Description of plants and their economic products",
+                "Management and marketing of vegetable and fruit crops",
+                "Identification of some fruits and vegetable varieties banana",
+                "Mango",
+                "Chillies and cucurbits",
+                "Horticultural techniques: Application of manure",
+                "Fertilizers",
+                "Nutrients and PGRs",
+                "Weed control",
+                "Biofertilizers",
+                "Biopesticides",
+                "Irrigation methods (drip irrigation, surface irrigation, furrow and border irrigation)",
+                "Propagation Methods: asexual (grafting, cutting, layering, budding)"
               ]
             }
           ],
@@ -1891,7 +2297,9 @@ export const botanySyllabus: CourseSyllabus = {
               "topics": [
                 "Dissertation or project work as one Discipline Specific Elective paper (12 credits) in 8th Semester",
                 "Dissertation/Project: An elective course designed to acquire special/advanced knowledge, such as supplement study/support study to a project work, and a candidate studies such a course on his/her own with an advisory support by a teacher/faculty member is called dissertation/project",
-                "Project work/Dissertation is considered as a special course involving application of knowledge involving / analyzing/exploring a real life situation / difficult problem. A Project/Dissertation work would be of 12 credits. A Project/Dissertation work may be given in lieu of a discipline specific elective paper"
+                "Project work/Dissertation is considered as a special course involving application of knowledge involving / analyzing/exploring a real life situation / difficult problem",
+                "A Project/Dissertation work would be of 12 credits",
+                "A Project/Dissertation work may be given in lieu of a discipline specific elective paper"
               ]
             }
           ],

@@ -27,55 +27,56 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Sources and Indus Valley Civilization",
               "topics": [
-                "a) Sources of the study of Ancient Indian History",
-                "b) Indus valley Civilization",
-                "c) Town planning",
-                "d) Social, Economic and religious conditions",
-                "e) Vedic Age (socio-Economic and religious conditions)"
+                "Sources of the study of Ancient Indian History",
+                "Indus valley Civilization",
+                "Town planning",
+                "Social",
+                "Economic and religious conditions",
+                "Vedic Age (socio-Economic and religious conditions)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Political Condition in the sixth century B.C.",
               "topics": [
-                "a) Mahājanapadas and Republics",
-                "b) Rise of Magadha Empire from the Haryamka to the end of Nanda dynasties",
-                "c) Foreign Invasions (Persian and Mecedonians)",
-                "d) Achaemenion Invasions of India (Cyrus, Darius I and Xeraxes)",
-                "e) Alexander's Invasion of India"
+                "Mahājanapadas and Republics",
+                "Rise of Magadha Empire from the Haryamka to the end of Nanda dynasties",
+                "Foreign Invasions (Persian and Mecedonians)",
+                "Achaemenion Invasions of India (Cyrus, Darius I and Xeraxes)",
+                "Alexander's Invasion of India"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mauryan Dynasty",
               "topics": [
-                "a) Origin",
-                "b) Chandragupta",
-                "c) Aśhoka",
-                "d) Ashoka-Dhamma and its propagation",
-                "e) Decline of Mauryan Dynasty"
+                "Origin",
+                "Chandragupta",
+                "Aśhoka",
+                "Ashoka-Dhamma and its propagation",
+                "Decline of Mauryan Dynasty"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Post-Mauryan Dynasties",
               "topics": [
-                "a) Shunga",
-                "b) Kanva",
-                "c) Satavahana",
-                "d) Cedi",
-                "e) Shaka-Satavahana Relations"
+                "Shunga",
+                "Kanva",
+                "Satavahana",
+                "Cedi",
+                "Shaka-Satavahana Relations"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Foreign Dynasties",
               "topics": [
-                "a) Indo-Greeks",
-                "b) Saka (western Ksatrapas)",
-                "c) Pahlava",
-                "d) Kushāna",
-                "e) Date of Kanishka"
+                "Indo-Greeks",
+                "Saka (western Ksatrapas)",
+                "Pahlava",
+                "Kushāna",
+                "Date of Kanishka"
               ]
             }
           ],
@@ -108,45 +109,45 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Sources and Indus Valley Civilization",
               "topics": [
-                "a) Sources of the study of Ancient India History",
-                "b) Indus Valley civilization",
-                "c) Vedic Age (socio-Economic and religious conditions)"
+                "Sources of the study of Ancient India History",
+                "Indus Valley civilization",
+                "Vedic Age (socio-Economic and religious conditions)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Political condition in the sixth century B.C",
               "topics": [
-                "a) Mahajanapadas and Republics",
-                "b) Rise of Magadha",
-                "c) Alexander's invention of India"
+                "Mahajanapadas and Republics",
+                "Rise of Magadha",
+                "Alexander's invention of India"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mauryan Dynasty",
               "topics": [
-                "a) Origin",
-                "b) Chandragupta Maurya",
-                "c) Ashoka Dhamma and its propagation"
+                "Origin",
+                "Chandragupta Maurya",
+                "Ashoka Dhamma and its propagation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Post Mauryan Dynasties",
               "topics": [
-                "a) Shunga",
-                "b) Satavahana",
-                "c) Saka-Satavahana Relations"
+                "Shunga",
+                "Satavahana",
+                "Saka-Satavahana Relations"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Foreign Dynasties",
               "topics": [
-                "a) Indo Greeks",
-                "b) Saka (Western Kshatrapas)",
-                "c) Kushana"
+                "Indo Greeks",
+                "Saka (Western Kshatrapas)",
+                "Kushana"
               ]
             }
           ],
@@ -179,45 +180,45 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Sources and Indus Valley Civilization",
               "topics": [
-                "a) Sources of the study of Ancient India History",
-                "b) Indus Valley civilization",
-                "c) Vedic Age (socio-Economic and religious conditions)"
+                "Sources of the study of Ancient India History",
+                "Indus Valley civilization",
+                "Vedic Age (socio-Economic and religious conditions)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Political condition in the sixth century B.C",
               "topics": [
-                "a) Mahajanapadas and Republics",
-                "b) Rise of Magadha",
-                "c) Alexander's invention of India"
+                "Mahajanapadas and Republics",
+                "Rise of Magadha",
+                "Alexander's invention of India"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mauryan Dynasty",
               "topics": [
-                "a) Origin",
-                "b) Chandragupta Maurya",
-                "c) Ashoka Dhamma and its propagation"
+                "Origin",
+                "Chandragupta Maurya",
+                "Ashoka Dhamma and its propagation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Post Mauryan Dynasties",
               "topics": [
-                "a) Shunga",
-                "b) Satavahana",
-                "c) Saka-Satavahana Relations"
+                "Shunga",
+                "Satavahana",
+                "Saka-Satavahana Relations"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Foreign Dynasties",
               "topics": [
-                "a) Indo Greeks",
-                "b) Saka (Western Kshatrapas)",
-                "c) Kushana"
+                "Indo Greeks",
+                "Saka (Western Kshatrapas)",
+                "Kushana"
               ]
             }
           ],
@@ -250,9 +251,9 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Birth of Buddhism",
               "topics": [
-                "a) The Birth of Buddhism in India-Socio-Religious condition of India",
-                "b) Birth of Buddhism Origin & Growth",
-                "c) Life and teaching of Gautam Buddha"
+                "The Birth of Buddhism in India-Socio-Religious condition of India",
+                "Birth of Buddhism Origin & Growth",
+                "Life and teaching of Gautam Buddha"
               ]
             },
             {
@@ -260,27 +261,27 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "title": "Buddhist councils",
               "topics": [
                 "Leading Monks & Their Patrons",
-                "a) Council I",
-                "b) Council II",
-                "c) Council III",
-                "d) Council IV"
+                "Council I",
+                "Council II",
+                "Council III",
+                "Council IV"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Emergence of Mahayana and Hinayana",
               "topics": [
-                "a) Emergence of Mahayana",
-                "b) Emergence of Hinayana and varayana"
+                "Emergence of Mahayana",
+                "Emergence of Hinayana and varayana"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Foreign traveller accounts and decline",
               "topics": [
-                "a) Foreign traveller Fa-Hian's Account of India",
-                "b) Foreign traveller Hiuen Tsang's account of India",
-                "c) Decline of Buddhism in India."
+                "Foreign traveller Fa-Hian's Account of India",
+                "Foreign traveller Hiuen Tsang's account of India",
+                "Decline of Buddhism in India"
               ]
             }
           ],
@@ -318,53 +319,59 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Early History of the Gupta",
               "topics": [
-                "a) Chandragupta I",
-                "b) Samudragupta",
-                "c) Chandragupta II",
-                "d) Kumāragupta I and Skandagupta",
-                "e) Hūna Invasion and the Down fall of Gupta Empire"
+                "Chandragupta I",
+                "Samudragupta",
+                "Chandragupta II",
+                "Kumāragupta I and Skandagupta",
+                "Hūna Invasion and the Down fall of Gupta Empire"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The Vākātaka and Later Gupta",
               "topics": [
-                "a) A brief History of Vākātaka dynasty",
-                "b) Vindhyasakti, Pravarasena I, Rudrasena I, Prthvīsena I, Rudrasena II,",
-                "c) Pravarasena II",
-                "d) Later Guptas",
-                "e) Maukhārīs"
+                "A brief History of Vākātaka dynasty",
+                "Vindhyasakti",
+                "Pravarasena I",
+                "Rudrasena I",
+                "Prthvīsena I",
+                "Rudrasena II",
+                "Pravarasena II",
+                "Later Guptas",
+                "Maukhārīs"
               ]
             },
             {
               "unitNumber": 3,
               "title": "History of Kannauj",
               "topics": [
-                "a) Pusyabhūti",
-                "b) Achievement of Harshavardhana",
-                "c) Yaśovarman"
+                "Pusyabhūti",
+                "Achievement of Harshavardhana",
+                "Yaśovarman"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Dynasties of North India",
               "topics": [
-                "a) Political History of Kashmir (Karkota dynasty)",
-                "b) The Palas - achievements of Dharampala and Devpala",
-                "c) The Pratiharas",
-                "d) The Arab and Turk invasion on India",
-                "e) Political History of Sindh"
+                "Political History of Kashmir (Karkota dynasty)",
+                "The Palas",
+                "Achievements of Dharampala and Devpala",
+                "The Pratiharas",
+                "The Arab and Turk invasion on India",
+                "Political History of Sindh"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Dynasties of South India",
               "topics": [
-                "a) Political & Cultural achievements of Pallavas",
-                "b) Achievements of Pulkesin II",
-                "c) Achievements of Rastrakutas, Govind III",
-                "d) Northern invasion of Rastrakutas",
-                "e) Achievements of Rajaraj I and Rajendra Chola"
+                "Political & Cultural achievements of Pallavas",
+                "Achievements of Pulkesin II",
+                "Achievements of Rastrakutas",
+                "Govind III",
+                "Northern invasion of Rastrakutas",
+                "Achievements of Rajaraj I and Rajendra Chola"
               ]
             }
           ],
@@ -398,47 +405,47 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Early History of the Gupta",
               "topics": [
-                "a) Chandragupta -I",
-                "b) Samudragupta",
-                "c) Chandragupta -II",
-                "d) Downfall of Gupta Empire"
+                "Chandragupta -I",
+                "Samudragupta",
+                "Chandragupta -II",
+                "Downfall of Gupta Empire"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The Vakataka and Later Gupta",
               "topics": [
-                "a) A brief History of Vakataka dynasty",
-                "b) Later Guptas",
-                "c) Maulkharis"
+                "A brief History of Vakataka dynasty",
+                "Later Guptas",
+                "Maulkharis"
               ]
             },
             {
               "unitNumber": 3,
               "title": "History of Kannauj",
               "topics": [
-                "a) Pusyabhuti",
-                "b) Achievement of Harshvardhana",
-                "c) Yasovarman"
+                "Pusyabhuti",
+                "Achievement of Harshvardhana",
+                "Yasovarman"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Dynasties of North India",
               "topics": [
-                "a) Political History of Kashmir (Karkota dynasty)",
-                "b) The palas- achievements of Dharampala & Devpala",
-                "c) The Partiharas"
+                "Political History of Kashmir (Karkota dynasty)",
+                "The palas- achievements of Dharampala & Devpala",
+                "The Partiharas"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Dynasties of South India",
               "topics": [
-                "a) Political & Cultural achievements of Pallavas.",
-                "b) Achievements of Pulkesin II",
-                "c) Achievements of Rastrakutas",
-                "d) Achievements of chola"
+                "Political & Cultural achievements of Pallavas",
+                "Achievements of Pulkesin II",
+                "Achievements of Rastrakutas",
+                "Achievements of chola"
               ]
             }
           ],
@@ -472,47 +479,47 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Early History of the Gupta",
               "topics": [
-                "a) Chandragupta -I",
-                "b) Samudragupta",
-                "c) Chandragupta -II",
-                "d) Downfall of Gupta Empire"
+                "Chandragupta -I",
+                "Samudragupta",
+                "Chandragupta -II",
+                "Downfall of Gupta Empire"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The Vakataka and Later Gupta",
               "topics": [
-                "a) A brief History of Vakataka dynasty",
-                "b) Later Guptas",
-                "c) Maulkaris"
+                "A brief History of Vakataka dynasty",
+                "Later Guptas",
+                "Maulkaris"
               ]
             },
             {
               "unitNumber": 3,
               "title": "History of Kannauj",
               "topics": [
-                "a) Pusyabhuti",
-                "b) Achievement of Harshvardhana",
-                "c) Yasovarman"
+                "Pusyabhuti",
+                "Achievement of Harshvardhana",
+                "Yasovarman"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Dynasties of North India",
               "topics": [
-                "a) Political History of Kashmir (Karkota dynasty)",
-                "b) The palas- achievements of Dharampala & Devpala",
-                "c) The Partiharas"
+                "Political History of Kashmir (Karkota dynasty)",
+                "The palas- achievements of Dharampala & Devpala",
+                "The Partiharas"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Dynasties of South India",
               "topics": [
-                "a) Political & Cultural achievements of Pallavas.",
-                "b) Achievements of Pulkesin II",
-                "c) Achievements of Rastrakutas",
-                "d) Achievements of chola"
+                "Political & Cultural achievements of Pallavas",
+                "Achievements of Pulkesin II",
+                "Achievements of Rastrakutas",
+                "Achievements of chola"
               ]
             }
           ],
@@ -546,47 +553,47 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to South East Asia",
               "topics": [
-                "a) Sources of South East Asia",
-                "b) Causes of Indianization of South East Asia",
-                "c) Routes of Indianization of South East Asia"
+                "Sources of South East Asia",
+                "Causes of Indianization of South East Asia",
+                "Routes of Indianization of South East Asia"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Funan Kambuja",
               "topics": [
-                "a) Funan Kambuja-Sources of cultural",
-                "b) Component of cultural in Ancient time",
-                "c) Art and Architecture"
+                "Funan Kambuja-Sources of cultural",
+                "Component of cultural in Ancient time",
+                "Art and Architecture"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Shailendra",
               "topics": [
-                "a) Shailendra as Maritime power",
-                "b) Trade Relation between India and south east Asian Kingdoms",
-                "c) Downfall of Shailendra Empire"
+                "Shailendra as Maritime power",
+                "Trade Relation between India and south east Asian Kingdoms",
+                "Downfall of Shailendra Empire"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Indonesia",
               "topics": [
-                "a) Indonesia-sources of culture",
-                "b) component of culture in Ancient Times",
-                "c) Literature and Religion",
-                "d) Art and Architecture"
+                "Indonesia-sources of culture",
+                "Component of culture in Ancient Times",
+                "Literature and Religion",
+                "Art and Architecture"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Thailand",
               "topics": [
-                "a) Thailand sources of culture",
-                "b) component of culture in Ancient Times",
-                "c) Literature and Religion",
-                "d) Art and Architecture"
+                "Thailand sources of culture",
+                "Component of culture in Ancient Times",
+                "Literature and Religion",
+                "Art and Architecture"
               ]
             }
           ],
@@ -620,53 +627,54 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Social Structure",
               "topics": [
-                "a) Varna, Jati and Ashrama",
-                "b) Family and Marriage",
-                "c) Position of Women",
-                "d) Education",
-                "e) Social Stratification"
+                "Varna",
+                "Jati and Ashrama",
+                "Family and Marriage",
+                "Position of Women",
+                "Education",
+                "Social Stratification"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Economic Conditions",
               "topics": [
-                "a) Agriculture",
-                "b) Trade and Commerce",
-                "c) Guilds",
-                "d) Coinage",
-                "e) Land System"
+                "Agriculture",
+                "Trade and Commerce",
+                "Guilds",
+                "Coinage",
+                "Land System"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Urbanization",
               "topics": [
-                "a) Harappan Urbanization",
-                "b) Second Urbanization",
-                "c) Cities and Towns",
-                "d) Trade Routes"
+                "Harappan Urbanization",
+                "Second Urbanization",
+                "Cities and Towns",
+                "Trade Routes"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Religion and Philosophy",
               "topics": [
-                "a) Vedic Religion",
-                "b) Buddhism",
-                "c) Jainism",
-                "d) Ajivikas",
-                "e) Bhagavatism"
+                "Vedic Religion",
+                "Buddhism",
+                "Jainism",
+                "Ajivikas",
+                "Bhagavatism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Art and Culture",
               "topics": [
-                "a) Mauryan Art",
-                "b) Shunga Art",
-                "c) Kushana Art",
-                "d) Gupta Art"
+                "Mauryan Art",
+                "Shunga Art",
+                "Kushana Art",
+                "Gupta Art"
               ]
             }
           ],
@@ -698,49 +706,49 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "History of Indian Art",
               "topics": [
-                "a) History of Indian Art",
-                "b) Mauryan art",
-                "c) Shunga Art",
-                "d) Gandhara Art",
-                "e) Mathura Art"
+                "History of Indian Art",
+                "Mauryan art",
+                "Shunga Art",
+                "Gandhara Art",
+                "Mathura Art"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Architecture",
               "topics": [
-                "a) Ashoka Pillars",
-                "b) Stūpas-Bharahut",
-                "c) Sanchi",
-                "d) Amaravati",
-                "e) Bhaja and Karle Caves"
+                "Ashoka Pillars",
+                "Stūpas-Bharahut",
+                "Sanchi",
+                "Amaravati",
+                "Bhaja and Karle Caves"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Temples",
               "topics": [
-                "a) Gupta Temples",
-                "b) Orissan temples (Lingrajā & Konarka)",
-                "c) Khajuraho Temple (Kandariye Mahadev Temple)",
-                "d) Early Cālukyan Temples of Aihole",
-                "e) Badami and Pattadakal"
+                "Gupta Temples",
+                "Orissan temples (Lingrajā & Konarka)",
+                "Khajuraho Temple (Kandariye Mahadev Temple)",
+                "Early Cālukyan Temples of Aihole",
+                "Badami and Pattadakal"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rock-cut and South Indian Architecture",
               "topics": [
-                "a) Ellora Temple (Kailashnath Temple)",
-                "b) Pallava Architect (Malabulipuram Rathas)",
-                "c) Chola Temple (Brihadeshwara Temple)"
+                "Ellora Temple (Kailashnath Temple)",
+                "Pallava Architect (Malabulipuram Rathas)",
+                "Chola Temple (Brihadeshwara Temple)"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Primitive Art",
               "topics": [
-                "a) Primitive art and Rock Painting"
+                "Primitive art and Rock Painting"
               ]
             }
           ],
@@ -773,45 +781,46 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Social Structure",
               "topics": [
-                "a) Varna, Jati and Ashrama",
-                "b) Family and Marriage",
-                "c) Position of Women"
+                "Varna",
+                "Jati and Ashrama",
+                "Family and Marriage",
+                "Position of Women"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Economic Conditions",
               "topics": [
-                "a) Agriculture",
-                "b) Trade and Commerce",
-                "c) Guilds"
+                "Agriculture",
+                "Trade and Commerce",
+                "Guilds"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Urbanization",
               "topics": [
-                "a) Harappan Urbanization",
-                "b) Second Urbanization",
-                "c) Cities and Towns"
+                "Harappan Urbanization",
+                "Second Urbanization",
+                "Cities and Towns"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Religion and Philosophy",
               "topics": [
-                "a) Vedic Religion",
-                "b) Buddhism",
-                "c) Jainism"
+                "Vedic Religion",
+                "Buddhism",
+                "Jainism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Art and Culture",
               "topics": [
-                "a) Mauryan Art",
-                "b) Shunga Art",
-                "c) Gupta Art"
+                "Mauryan Art",
+                "Shunga Art",
+                "Gupta Art"
               ]
             }
           ],
@@ -842,46 +851,52 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical Geography of Bihar",
               "topics": [
-                "a) Mithila (Tirthut)",
-                "b) Vaishali",
-                "c) Magadha and Anga"
+                "Mithila (Tirthut)",
+                "Vaishali",
+                "Magadha and Anga"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Religious background of Bihar",
               "topics": [
-                "a) Saivism and Vaishnavism and Saktism",
-                "b) Centre of Jainism",
-                "c) Centre of Buddhism",
-                "d) Bihar as a Purānic Tīrtha"
+                "Saivism and Vaishnavism and Saktism",
+                "Centre of Jainism",
+                "Centre of Buddhism",
+                "Bihar as a Purānic Tīrtha"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Art and Architecture of Bihar",
               "topics": [
-                "a) Ashokan Pillars: Rampurva, Lauriya Nandangarh, Vaishali",
-                "b) Kesariya Stupa, Vaishali Stupa",
-                "c) Bodhgaya Temple",
-                "d) Paintings: Rock Painting of Kaimur, Pala Painting of Nalanda"
+                "Ashokan Pillars: Rampurva",
+                "Lauriya Nandangarh",
+                "Vaishali",
+                "Kesariya Stupa",
+                "Vaishali Stupa",
+                "Bodhgaya Temple",
+                "Paintings: Rock Painting of Kaimur",
+                "Pala Painting of Nalanda"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Bihar as a centre of Education",
               "topics": [
-                "a) Nalanda",
-                "b) Vikramsila",
-                "c) Odantpuri"
+                "Nalanda",
+                "Vikramsila",
+                "Odantpuri"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Bihar through Ages",
               "topics": [
-                "a) Bihar in Pre-Mauryan, Mauryan & Post Mauryan era",
-                "b) Bihar in Gupta and Post - Gupta Period."
+                "Bihar in Pre-Mauryan",
+                "Mauryan & Post Mauryan era",
+                "Bihar in Gupta and Post",
+                "Gupta Period"
               ]
             }
           ],
@@ -915,47 +930,48 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vedic Religion and Philosophy",
               "topics": [
-                "a) Vedic Religion",
-                "b) Upanishadic Philosophy",
-                "c) Six systems of Indian Philosophy."
+                "Vedic Religion",
+                "Upanishadic Philosophy",
+                "Six systems of Indian Philosophy"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Bhakti Movement",
               "topics": [
-                "a) Rise of Bhakti movement",
-                "b) Vaishnavism",
-                "c) Shavism",
-                "d) Shaktiism."
+                "Rise of Bhakti movement",
+                "Vaishnavism",
+                "Shavism",
+                "Shaktiism"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Buddhism",
               "topics": [
-                "a) Rise of buddhism",
-                "b) Life and teachings of Gautama Buddha",
-                "c) Buddhist Councils",
-                "d) Sects -Hinayana, Mahayana and Vajrayana."
+                "Rise of buddhism",
+                "Life and teachings of Gautama Buddha",
+                "Buddhist Councils",
+                "Sects -Hinayana",
+                "Mahayana and Vajrayana"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Jainism",
               "topics": [
-                "a) Rise of Jainism",
-                "b) Life and teachings of Mahavihara Jaina",
-                "c) Introduction to Jaina philosophy",
-                "d) Sects of Jainism."
+                "Rise of Jainism",
+                "Life and teachings of Mahavihara Jaina",
+                "Introduction to Jaina philosophy",
+                "Sects of Jainism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Shankaracharya and South Indian Philosophy",
               "topics": [
-                "a) Adi Shankracharya and his contributions",
-                "b) Religion and Philosophy of south India."
+                "Adi Shankracharya and his contributions",
+                "Religion and Philosophy of south India"
               ]
             }
           ],
@@ -989,46 +1005,48 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Archaeology",
               "topics": [
-                "a) Definition, nature and scope",
-                "b) Archaeology, its relation with other sciences (Social and Natural.)",
-                "c) Archaeology as a source of ancient history"
+                "Definition",
+                "Nature and scope",
+                "Archaeology, its relation with other sciences (Social and Natural.)",
+                "Archaeology as a source of ancient history"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Archaeology & Archaeologists",
               "topics": [
-                "a) Archaeology - History archaeology in Indian",
-                "b) Sir Alexander Cunningham and Sir John Marshall",
-                "c) Sir Mortimer Wheeler"
+                "Archaeology",
+                "History archaeology in Indian",
+                "Sir Alexander Cunningham and Sir John Marshall",
+                "Sir Mortimer Wheeler"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Methods of Data Retrieval and New trends in Archaeology",
               "topics": [
-                "a) Methods of explorations",
-                "b) Methods of excavations (Vertical, Horizontal and Quadrangular)",
-                "c) Marine Archaeology",
-                "d) New Archaeology"
+                "Methods of explorations",
+                "Methods of excavations (Vertical, Horizontal and Quadrangular)",
+                "Marine Archaeology",
+                "New Archaeology"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chronology and Dating Methods",
               "topics": [
-                "a) Stratigraphy",
-                "b) Relative Chronology",
-                "c) Absolute methods of dating"
+                "Stratigraphy",
+                "Relative Chronology",
+                "Absolute methods of dating"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Excavated Archaeological Sites",
               "topics": [
-                "a) Chirand and Vaishali",
-                "b) Rajagitla and Pailputra (Kumhrar)",
-                "c) Nalanda"
+                "Chirand and Vaishali",
+                "Rajagitla and Pailputra (Kumhrar)",
+                "Nalanda"
               ]
             }
           ],
@@ -1061,28 +1079,32 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Buddhist Education",
               "topics": [
-                "a) Training of a monk. Subject matter and academic life."
+                "Training of a monk",
+                "Subject matter and academic life"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Monasteries as seat of learning",
               "topics": [
-                "a) Monasteries as seat of learning."
+                "Monasteries as seat of learning"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Buddhist ceremonies",
               "topics": [
-                "a) Buddhist ceremonies - Varsavasa, Upasatha Pavarna, Kathina etc."
+                "Buddhist ceremonies",
+                "Varsavasa",
+                "Upasatha Pavarna",
+                "Kathina etc"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Monastic Indian Universities",
               "topics": [
-                "Nalanda, Vallabhi, Vikramasila."
+                "Nalanda, Vallabhi, Vikramasila"
               ]
             }
           ],
@@ -1121,28 +1143,36 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Stupa Architecture",
               "topics": [
-                "Origin and Development of Stupa Architecture. Stupa of Sanchi, Bharhut, Nagarjunakonda, Amaravati."
+                "Origin and Development of Stupa Architecture",
+                "Stupa of Sanchi, Bharhut, Nagarjunakonda, Amaravati"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chaitya Hall",
               "topics": [
-                "General Features of a Chaitya Hall, Chaitya Hall of Bedsa, Karle, Bhaja."
+                "General Features of a Chaitya Hall",
+                "Chaitya Hall of Bedsa",
+                "Karle",
+                "Bhaja"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Monasteries",
               "topics": [
-                "General Feature of a Monastery - Nalanda, Ajanta Jaulian & Taxila"
+                "General Feature of a Monastery",
+                "Nalanda",
+                "Ajanta Jaulian & Taxila"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Asokan Pillars and Buddha Images",
               "topics": [
-                "Asokan Pillars, Buddha Image of Mathura School., Buddha Image of Gandhara School."
+                "Asokan Pillars",
+                "Buddha Image of Mathura School",
+                "Buddha Image of Gandhara School"
               ]
             }
           ],
@@ -1189,50 +1219,50 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Epigraphy",
               "topics": [
-                "a) Epigraphy as a source of history",
-                "b) Origin and development of Brahmi Script",
-                "c) Origin of Kharosthi script"
+                "Epigraphy as a source of history",
+                "Origin and development of Brahmi Script",
+                "Origin of Kharosthi script"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Asokan Edicts",
               "topics": [
-                "a) Asokan Edicts: Rock Edict II, X, XII, XIII,",
-                "b) Pillar Edicts IV, VII",
-                "c) Lumbini Inscription of Asoka",
-                "d) Minor rock edict of Bairat"
+                "Asokan Edicts: Rock Edict II, X, XII, XIII",
+                "Pillar Edicts IV, VII",
+                "Lumbini Inscription of Asoka",
+                "Minor rock edict of Bairat"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Early Inscriptions",
               "topics": [
-                "a) Besnagar Garuda pillar inscription",
-                "b) Hathigumpha inscription of Kharvela",
-                "c) Junagarh rock Inscription of Rudradaman",
-                "d) Lucknow museum Jain image inscription of the time of Huviska"
+                "Besnagar Garuda pillar inscription",
+                "Hathigumpha inscription of Kharvela",
+                "Junagarh rock Inscription of Rudradaman",
+                "Lucknow museum Jain image inscription of the time of Huviska"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gupta and Post-Gupta Inscriptions",
               "topics": [
-                "a) Allahabad Pillar Inscription of Samundragupta",
-                "b) Bhitari Inscription of Skandgupta",
-                "c) Banskhra Inscription of Harsha",
-                "d) Nalanda Copper Plate of Devapala."
+                "Allahabad Pillar Inscription of Samundragupta",
+                "Bhitari Inscription of Skandgupta",
+                "Banskhra Inscription of Harsha",
+                "Nalanda Copper Plate of Devapala"
               ]
             },
             {
               "unitNumber": 5,
               "title": "South Indian Inscriptions",
               "topics": [
-                "a) Aihole pillar inscription of Pulkesin II",
-                "b) Gwalior inscription of Mihir Bhoja",
-                "c) Khalimpur copper plate of Dharmpala",
-                "d) Sanjan copper plate of Amoghavarsha",
-                "e) Mandsoir inscription of Yeshovanar"
+                "Aihole pillar inscription of Pulkesin II",
+                "Gwalior inscription of Mihir Bhoja",
+                "Khalimpur copper plate of Dharmpala",
+                "Sanjan copper plate of Amoghavarsha",
+                "Mandsoir inscription of Yeshovanar"
               ]
             }
           ],
@@ -1267,45 +1297,47 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Numismatics",
               "topics": [
-                "a) Coins as an important source of history",
-                "b) Origin and antiquity of coinage in ancient India",
-                "c) Technique/Methods of manufacturing coins: Silver, copper, gold and alloys"
+                "Coins as an important source of history",
+                "Origin and antiquity of coinage in ancient India",
+                "Technique/Methods of manufacturing coins: Silver",
+                "Copper",
+                "Gold and alloys"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Early Coinage",
               "topics": [
-                "a) Barter system and antiquity of coins",
-                "b) Punch marked coins",
-                "c) inscribed and un-inscribed cast coins"
+                "Barter system and antiquity of coins",
+                "Punch marked coins",
+                "Inscribed and un-inscribed cast coins"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Janapada and Foreign Coins",
               "topics": [
-                "a) Janpada and tribal Coins of Yaudheyas and the Malavas,",
-                "b) Indo-Greek coins",
-                "c) Saka-Kashtrapa"
+                "Janpada and tribal Coins of Yaudheyas and the Malavas",
+                "Indo-Greek coins",
+                "Saka-Kashtrapa"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Kushana and Satavahana Coins",
               "topics": [
-                "a) Kushana",
-                "b) Satavahana coinage",
-                "c) Roman coins"
+                "Kushana",
+                "Satavahana coinage",
+                "Roman coins"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Gupta Coins",
               "topics": [
-                "a) Coins of the Gupta dynasty up to Skandgupta",
-                "b) Chandragupta II",
-                "c) Samundra Gupta"
+                "Coins of the Gupta dynasty up to Skandgupta",
+                "Chandragupta II",
+                "Samundra Gupta"
               ]
             }
           ],
@@ -1336,47 +1368,48 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vedic Religion and Philosophy",
               "topics": [
-                "a) Vedic Religion",
-                "b) Upanishadic Philosophy",
-                "c) Six systems of Indian Philosophy."
+                "Vedic Religion",
+                "Upanishadic Philosophy",
+                "Six systems of Indian Philosophy"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Bhakti Movement",
               "topics": [
-                "a) Rise of Bhakti movement",
-                "b) Vaishnavism",
-                "c) Shavism",
-                "d) Shaktiism."
+                "Rise of Bhakti movement",
+                "Vaishnavism",
+                "Shavism",
+                "Shaktiism"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Buddhism",
               "topics": [
-                "a) Rise of buddhism",
-                "b) Life and teachings of Gautama Buddha",
-                "c) Buddhist Councils",
-                "d) Sects -Hinayana, Mahayana and Vajrayana."
+                "Rise of buddhism",
+                "Life and teachings of Gautama Buddha",
+                "Buddhist Councils",
+                "Sects -Hinayana",
+                "Mahayana and Vajrayana"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Jainism",
               "topics": [
-                "a) Rise of Jainism",
-                "b) Life and teachings of Mahavihara Jaina",
-                "c) Introduction to Jaina philosophy",
-                "d) Sects of Jainism."
+                "Rise of Jainism",
+                "Life and teachings of Mahavihara Jaina",
+                "Introduction to Jaina philosophy",
+                "Sects of Jainism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Shankaracharya and South Indian Philosophy",
               "topics": [
-                "a) Adi Shankracharya and his contributions",
-                "b) Religion and Philosophy of south India."
+                "Adi Shankracharya and his contributions",
+                "Religion and Philosophy of south India"
               ]
             }
           ],
@@ -1410,48 +1443,49 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "History of Indian Art",
               "topics": [
-                "a) History of Indian Art",
-                "b) Mauryan and Shunga Art",
-                "c) Gandhara and Mathura Art"
+                "History of Indian Art",
+                "Mauryan and Shunga Art",
+                "Gandhara and Mathura Art"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Architecture",
               "topics": [
-                "a) Ashoka Pillars",
-                "b) Stūpas-Bharahut, Sanchi and Amaravati Stupa",
-                "c) Bhāja and Karle Caves."
+                "Ashoka Pillars",
+                "Stūpas-Bharahut",
+                "Sanchi and Amaravati Stupa",
+                "Bhāja and Karle Caves"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Temples",
               "topics": [
-                "a) Gupta Temples",
-                "b) Orissan temples (Lingraja & Konarka)",
-                "c) Khajuraho Temple (Kandariye Mahadev Temple)"
+                "Gupta Temples",
+                "Orissan temples (Lingraja & Konarka)",
+                "Khajuraho Temple (Kandariye Mahadev Temple)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Rock-cut and South Indian Architecture",
               "topics": [
-                "a) Ellora Temple (Kailashnath Temple)",
-                "b) Pallava Architecture (Mahabalipuram Rathas)",
-                "c) Chola Temple (Brihadeshwara Temple)"
+                "Ellora Temple (Kailashnath Temple)",
+                "Pallava Architecture (Mahabalipuram Rathas)",
+                "Chola Temple (Brihadeshwara Temple)"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Paintings and Iconography",
               "topics": [
-                "a) Primitive Art and Rock Painting",
-                "b) Ajanta and Bagh Paintings",
-                "c) Vishnu",
-                "d) Shiva",
-                "e) Durga",
-                "f) Rudrāha and Jain"
+                "Primitive Art and Rock Painting",
+                "Ajanta and Bagh Paintings",
+                "Vishnu",
+                "Shiva",
+                "Durga",
+                "Rudrāha and Jain"
               ]
             }
           ],
@@ -1486,45 +1520,45 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Epigraphy",
               "topics": [
-                "a) Epigraphy as a source of history",
-                "b) Origin and development of Brahmi Script & kharoshthi",
-                "c) Asokan Edicts: Rock Edicts X, XII, XIII"
+                "Epigraphy as a source of history",
+                "Origin and development of Brahmi Script & kharoshthi",
+                "Asokan Edicts: Rock Edicts X, XII, XIII"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Early Inscriptions",
               "topics": [
-                "a) Besnagar Garuda pillar inscription",
-                "b) Hathigumpha inscription of Kharvela",
-                "c) Junagarh rock inscription of Rudradaman"
+                "Besnagar Garuda pillar inscription",
+                "Hathigumpha inscription of Kharvela",
+                "Junagarh rock inscription of Rudradaman"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Gupta and South Indian Inscriptions",
               "topics": [
-                "a) Allahabad Pillar Inscription of Samundragupta",
-                "b) Banskhra Inscription of Harsha",
-                "c) Aihole pillar inscription of Pulkesin II"
+                "Allahabad Pillar Inscription of Samundragupta",
+                "Banskhra Inscription of Harsha",
+                "Aihole pillar inscription of Pulkesin II"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Numismatics",
               "topics": [
-                "a) Coins as an important source of history",
-                "b) Punch marked coins",
-                "c) Indo-Greek coins"
+                "Coins as an important source of history",
+                "Punch marked coins",
+                "Indo-Greek coins"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Kushana, Satavahana and Gupta Coins",
               "topics": [
-                "a) Kushana",
-                "b) Satavahana coinage",
-                "c) Coins of the Gupta dynasty up to Skandgupta"
+                "Kushana",
+                "Satavahana coinage",
+                "Coins of the Gupta dynasty up to Skandgupta"
               ]
             }
           ],
@@ -1567,49 +1601,51 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Archaeology",
               "topics": [
-                "a) Definition, nature and scope",
-                "b) Archaeology, its relation with other sciences (Social and Natural.)",
-                "c) Archaeology as a source of ancient history"
+                "Definition",
+                "Nature and scope",
+                "Archaeology, its relation with other sciences (Social and Natural.)",
+                "Archaeology as a source of ancient history"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Archaeology & Archaeologists in India",
               "topics": [
-                "a) Archaeology - History archaeology in Indian",
-                "b) Sir Alexander Cunningham",
-                "c) Sir John Marshall",
-                "d) Sir Mortimer Wheeler"
+                "Archaeology",
+                "History archaeology in Indian",
+                "Sir Alexander Cunningham",
+                "Sir John Marshall",
+                "Sir Mortimer Wheeler"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Methods of Data Retrieval and New trends in Archaeology",
               "topics": [
-                "a) Methods of explorations",
-                "b) Methods of excavations (Vertical, Horizontal and Quadrangular)",
-                "c) Marine Archaeology",
-                "d) New Archaeology"
+                "Methods of explorations",
+                "Methods of excavations (Vertical, Horizontal and Quadrangular)",
+                "Marine Archaeology",
+                "New Archaeology"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chronology and Dating Methods",
               "topics": [
-                "a) Stratigraphy",
-                "b) Relative Chronology",
-                "c) Absolute methods of dating"
+                "Stratigraphy",
+                "Relative Chronology",
+                "Absolute methods of dating"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Excavated Archaeological Sites",
               "topics": [
-                "a) Chirand",
-                "b) Vaishali",
-                "c) Rajagriha",
-                "d) Patliputra (Kumhrar)",
-                "e) Nalanda"
+                "Chirand",
+                "Vaishali",
+                "Rajagriha",
+                "Patliputra (Kumhrar)",
+                "Nalanda"
               ]
             }
           ],
@@ -1642,45 +1678,46 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to South East Asia",
               "topics": [
-                "a) South – East Asia- Sources of Study and Terminology",
-                "b) Causes of Indianization of South- East Asia",
-                "c) Routes of Indianization of South- East Asia"
+                "South",
+                "East Asia- Sources of Study and Terminology",
+                "Causes of Indianization of South- East Asia",
+                "Routes of Indianization of South- East Asia"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Early Contacts",
               "topics": [
-                "a) Early India Literary References",
-                "b) Beginning of contact with India",
-                "c) Formation of Different States"
+                "Early India Literary References",
+                "Beginning of contact with India",
+                "Formation of Different States"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Early Kingdoms",
               "topics": [
-                "a) Early Kingdoms and dynasties (Funan, Champa)",
-                "b) Early History of Mayanmar and Thailand",
-                "c) Early History of Malaysia and Indonesia"
+                "Early Kingdoms and dynasties (Funan, Champa)",
+                "Early History of Mayanmar and Thailand",
+                "Early History of Malaysia and Indonesia"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Shailendra and Khmer",
               "topics": [
-                "a) Shallendras as a Marine Power",
-                "b) Important Struggles of the Khamer Kings",
-                "c) Trades Relation between India and Southeast Asian Kingdom"
+                "Shallendras as a Marine Power",
+                "Important Struggles of the Khamer Kings",
+                "Trades Relation between India and Southeast Asian Kingdom"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Angkor and Vietnam",
               "topics": [
-                "a) Dynastic History of Angkor",
-                "b) Concept of Devarajia Cult und its signification in Southeast Asian History",
-                "c) Political History of Vietnam"
+                "Dynastic History of Angkor",
+                "Concept of Devarajia Cult und its signification in Southeast Asian History",
+                "Political History of Vietnam"
               ]
             }
           ],
@@ -1713,45 +1750,45 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Epigraphy",
               "topics": [
-                "a) Epigraphy as a source of history",
-                "b) Origin and development of Brahmi Script & kharoshthi",
-                "c) Asokan Edicts: Rock Edicts X, XII, XIII"
+                "Epigraphy as a source of history",
+                "Origin and development of Brahmi Script & kharoshthi",
+                "Asokan Edicts: Rock Edicts X, XII, XIII"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Early Inscriptions",
               "topics": [
-                "a) Besnagar Garuda pillar inscription",
-                "b) Hathigumpha inscription of Kharvela",
-                "c) Junagarh rock inscription of Rudradaman"
+                "Besnagar Garuda pillar inscription",
+                "Hathigumpha inscription of Kharvela",
+                "Junagarh rock inscription of Rudradaman"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Gupta and South Indian Inscriptions",
               "topics": [
-                "a) Allahabad Pillar Inscription of Samundragupta",
-                "b) Banskhra Inscription of Harsha",
-                "c) Aihole pillar inscription of Pulkesin II"
+                "Allahabad Pillar Inscription of Samundragupta",
+                "Banskhra Inscription of Harsha",
+                "Aihole pillar inscription of Pulkesin II"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Numismatics",
               "topics": [
-                "a) Coins as an important source of history",
-                "b) Punch marked coins",
-                "c) Indo-Greek coins"
+                "Coins as an important source of history",
+                "Punch marked coins",
+                "Indo-Greek coins"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Kushana, Satavahana and Gupta Coins",
               "topics": [
-                "a) Kushana",
-                "b) Satavahana coinage",
-                "c) Coins of the Gupta dynasty up to Skandgupta"
+                "Kushana",
+                "Satavahana coinage",
+                "Coins of the Gupta dynasty up to Skandgupta"
               ]
             }
           ],
@@ -1789,44 +1826,46 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Sources and Origin of State",
               "topics": [
-                "a) Sources",
-                "b) Origin of State",
-                "c) Sabha & Samiti, Vidath, Paura - Janapada"
+                "Sources",
+                "Origin of State",
+                "Sabha & Samiti, Vidath, Paura",
+                "Janapada"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Kingship and Republics",
               "topics": [
-                "a) Origin of Kingship",
-                "b) Republics, Strong and weak points of Republics and characteristics,",
-                "c) Saptanga theory"
+                "Origin of Kingship",
+                "Republics",
+                "Strong and weak points of Republics and characteristics",
+                "Saptanga theory"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Coronation and Council",
               "topics": [
-                "a) Coronation Ceremony",
-                "b) Council of Ministers."
+                "Coronation Ceremony",
+                "Council of Ministers"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Administration",
               "topics": [
-                "a) Administration of Mauryas",
-                "b) Gupta",
-                "c) Harshas",
-                "d) Colas"
+                "Administration of Mauryas",
+                "Gupta",
+                "Harshas",
+                "Colas"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Mandal Theory and Taxation",
               "topics": [
-                "a) Mandal theory of State",
-                "b) Taxation."
+                "Mandal theory of State",
+                "Taxation"
               ]
             }
           ],
@@ -1877,52 +1916,52 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Mesopotamian Civilization",
               "topics": [
-                "a) Mesopotamian Civilization",
-                "b) Importance of Twin rivers",
-                "c) Sumer",
-                "d) Babylon",
-                "e) Assyria with special reference to Society",
-                "f) Economy and Culture and their contribution to world civilization"
+                "Mesopotamian Civilization",
+                "Importance of Twin rivers",
+                "Sumer",
+                "Babylon",
+                "Assyria with special reference to Society",
+                "Economy and Culture and their contribution to world civilization"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Egyptian Civilization",
               "topics": [
-                "a) Gift of Nile",
-                "b) Egyptian Civilization with special reference to Society",
-                "c) Economy",
-                "d) Religion and their contribution to world civilization"
+                "Gift of Nile",
+                "Egyptian Civilization with special reference to Society",
+                "Economy",
+                "Religion and their contribution to world civilization"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Persian Civilization",
               "topics": [
-                "a) Brief History of Persian Civilization",
-                "b) Society",
-                "c) Economy",
-                "d) Religion and their contribution to world civilization"
+                "Brief History of Persian Civilization",
+                "Society",
+                "Economy",
+                "Religion and their contribution to world civilization"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chinese Civilization",
               "topics": [
-                "a) Brief History of Chinese civilization",
-                "b) Society",
-                "c) Economy",
-                "d) Religion and their contribution to world civilization"
+                "Brief History of Chinese civilization",
+                "Society",
+                "Economy",
+                "Religion and their contribution to world civilization"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Greek Civilization",
               "topics": [
-                "a) Brief history of Greek Civilization",
-                "b) Society",
-                "c) Economy",
-                "d) Religion and their contribution to world civilization"
+                "Brief history of Greek Civilization",
+                "Society",
+                "Economy",
+                "Religion and their contribution to world civilization"
               ]
             }
           ],
@@ -1957,43 +1996,43 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Dynasties of the Deccan",
               "topics": [
-                "a) Cālukyas of Bādāmī",
-                "b) Cālukyas of Vengī",
-                "c) Cālukyas of Kalyānī"
+                "Cālukyas of Bādāmī",
+                "Cālukyas of Vengī",
+                "Cālukyas of Kalyānī"
               ]
             },
             {
               "unitNumber": 2,
               "title": "The Rastrakūtas",
               "topics": [
-                "a) Origin and rise of the Rāstrakūtas",
-                "b) History of Rāstrakūtas upto Krishna III"
+                "Origin and rise of the Rāstrakūtas",
+                "History of Rāstrakūtas upto Krishna III"
               ]
             },
             {
               "unitNumber": 3,
               "title": "The Colas",
               "topics": [
-                "a) Origin and rise of Chola power",
-                "b) Rājarāja, Rājendra, Rājādhirāja I",
-                "c) Decline and fall of Chola empire"
+                "Origin and rise of Chola power",
+                "Rājarāja, Rājendra, Rājādhirāja I",
+                "Decline and fall of Chola empire"
               ]
             },
             {
               "unitNumber": 4,
               "title": "The Pallavas of Kanchi",
               "topics": [
-                "a) Origin and rise of Pallavas",
-                "b) Early Pallava rulers",
-                "c) History of Pallavas upto Narasimhavarman I"
+                "Origin and rise of Pallavas",
+                "Early Pallava rulers",
+                "History of Pallavas upto Narasimhavarman I"
               ]
             },
             {
               "unitNumber": 5,
               "title": "The Pāndya Dynasty of Madurā and Yādavas of Devagiri",
               "topics": [
-                "a) First and Second Pāndya dynasty",
-                "b) History of Yādava upto Rāmācāruha"
+                "First and Second Pāndya dynasty",
+                "History of Yādava upto Rāmācāruha"
               ]
             }
           ],
@@ -2023,50 +2062,50 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Funan & Kambuja – Source of Culture-Literary & Archaeological",
               "topics": [
-                "a) Components of Culture in Ancient Kambodia",
-                "b) Literature",
-                "c) Art & Architecture",
-                "d) Religion & Philosophy"
+                "Components of Culture in Ancient Kambodia",
+                "Literature",
+                "Art & Architecture",
+                "Religion & Philosophy"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Champa – Source of Culture-Literary & Archaeological",
               "topics": [
-                "a) Components of Culture in Ancient Champa",
-                "b) Literature",
-                "c) Art & Architecture",
-                "d) Religion & Philosophy"
+                "Components of Culture in Ancient Champa",
+                "Literature",
+                "Art & Architecture",
+                "Religion & Philosophy"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Thailand in Ancient Times –Source of Culture & Literary & Archaeological",
               "topics": [
-                "a) Components of Culture in Ancient Times",
-                "b) Literature",
-                "c) Art & Architecture",
-                "d) Religion & Philosophy"
+                "Components of Culture in Ancient Times",
+                "Literature",
+                "Art & Architecture",
+                "Religion & Philosophy"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Indonesia & Malay Peninsula in Ancient Times-Source of Culture –Literary & Archaeological",
               "topics": [
-                "a) Components of Culture in Ancient Times",
-                "b) Literature",
-                "c) Art & Architecture",
-                "d) Religion & Philosophy"
+                "Components of Culture in Ancient Times",
+                "Literature",
+                "Art & Architecture",
+                "Religion & Philosophy"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Ancient Burma – Source of Culture –Literary & Archaeological",
               "topics": [
-                "a) Components of Culture in Ancient Times",
-                "b) Literature",
-                "c) Art & Architecture",
-                "d) Religion & Philosophy"
+                "Components of Culture in Ancient Times",
+                "Literature",
+                "Art & Architecture",
+                "Religion & Philosophy"
               ]
             }
           ],
@@ -2103,47 +2142,48 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vedic Religion and Philosophy",
               "topics": [
-                "a) Vedic Religion",
-                "b) Upnishadic Philosophy",
-                "c) Six systems of Indian Philosophy."
+                "Vedic Religion",
+                "Upnishadic Philosophy",
+                "Six systems of Indian Philosophy"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Bhakti Movement",
               "topics": [
-                "a) Rise of Bhakti movement",
-                "b) Vaishnavism",
-                "c) Shavism",
-                "d) Shaktiism."
+                "Rise of Bhakti movement",
+                "Vaishnavism",
+                "Shavism",
+                "Shaktiism"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Buddhism",
               "topics": [
-                "a) Rise of buddhism",
-                "b) Life and teachings of Gautama Buddha",
-                "c) Buddhist Councils",
-                "d) Sects -Hinayana, Mahayana and Vajrayana."
+                "Rise of buddhism",
+                "Life and teachings of Gautama Buddha",
+                "Buddhist Councils",
+                "Sects -Hinayana",
+                "Mahayana and Vajrayana"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Jainism",
               "topics": [
-                "a) Rise of Jainism",
-                "b) Life and teachings of Mahavihara Jaina",
-                "c) Introduction to Jaina philosophy",
-                "d) Sects of Jainism."
+                "Rise of Jainism",
+                "Life and teachings of Mahavihara Jaina",
+                "Introduction to Jaina philosophy",
+                "Sects of Jainism"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Shankaracharya and South Indian Philosophy",
               "topics": [
-                "a) Adi Shankracharya and his contributions",
-                "b) Religion and Philosophy of south India."
+                "Adi Shankracharya and his contributions",
+                "Religion and Philosophy of south India"
               ]
             }
           ],
@@ -2177,46 +2217,48 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Archaeology",
               "topics": [
-                "a) Definition, nature and scope",
-                "b) Archaeology, its relation with other sciences (Social and Natural.)",
-                "c) Archaeology as a source of ancient history"
+                "Definition",
+                "Nature and scope",
+                "Archaeology, its relation with other sciences (Social and Natural.)",
+                "Archaeology as a source of ancient history"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Archaeology & Archaeologists in India",
               "topics": [
-                "a) Archaeology - History archaeology in Indian",
-                "b) Sir Alexander Cunningham and Sir John Marshall",
-                "c) Sir Mortimer Wheeler"
+                "Archaeology",
+                "History archaeology in Indian",
+                "Sir Alexander Cunningham and Sir John Marshall",
+                "Sir Mortimer Wheeler"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Methods of Data Retrieval and New trends in Archaeology",
               "topics": [
-                "a) Methods of explorations",
-                "b) Methods of excavations (Vertical, Horizontal and Quadrangular)",
-                "c) Marine Archaeology",
-                "d) New Archaeology"
+                "Methods of explorations",
+                "Methods of excavations (Vertical, Horizontal and Quadrangular)",
+                "Marine Archaeology",
+                "New Archaeology"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chronology and Dating Methods",
               "topics": [
-                "a) Stratigraphy",
-                "b) Relative Chronology",
-                "c) Absolute methods of dating"
+                "Stratigraphy",
+                "Relative Chronology",
+                "Absolute methods of dating"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Excavated Archaeological Sites",
               "topics": [
-                "a) Chirand and Vaishali",
-                "b) Rajagriha and Patliputra (Kumhrar)",
-                "c) Nalanda"
+                "Chirand and Vaishali",
+                "Rajagriha and Patliputra (Kumhrar)",
+                "Nalanda"
               ]
             }
           ],
@@ -2254,45 +2296,52 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Stone Age Culture (Paleolithic)",
               "topics": [
-                "a) Salient feature of the Paleolithic culture in India;",
-                "b) The Sohan Valley"
+                "Salient feature of the Paleolithic culture in India",
+                "The Sohan Valley"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Acheulian and Prehistoric Art",
               "topics": [
-                "a) The Acheulian industry and its spread into major river valleys: Sites in the Narmada valleys",
-                "b) The Belan valleys",
-                "c) Son valleys",
-                "d) Prehistoric Art in the Indian context"
+                "The Acheulian industry and its spread into major river valleys: Sites in the Narmada valleys",
+                "The Belan valleys",
+                "Son valleys",
+                "Prehistoric Art in the Indian context"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Mesolithic & Neolithic culture of the Indian subcontinent",
               "topics": [
-                "a) Mesolithic culture of India",
-                "b) Neolithic cultures of the Indian subcontinent: (Early farming communities of Baluchistan, Kashmir, Central Ganga and Vindhyan region, Eastern Neolithic sites: Senuwar and North-Eastern region southern peninsular India)"
+                "Mesolithic culture of India",
+                "Neolithic cultures of the Indian subcontinent: (Early farming communities of Baluchistan, Kashmir, Central Ganga and Vindhyan region, Eastern Neolithic sites: Senuwar and North-Eastern region southern peninsular India)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Proto-history: Courses towards urbanization",
               "topics": [
-                "a) The Harappa Civilizations. Origin & Development of the Harappa culture",
-                "b) Early Harappa, Mature Harappa and Late Harappa, Decline",
-                "c) Chalcolithic Cultures of India: Banas/Ahar, Kayatha, Malwa, Jorwe cultures"
+                "The Harappa Civilizations",
+                "Origin & Development of the Harappa culture",
+                "Early Harappa",
+                "Mature Harappa and Late Harappa",
+                "Decline",
+                "Chalcolithic Cultures of India: Banas/Ahar",
+                "Kayatha",
+                "Malwa",
+                "Jorwe cultures"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Iron Age and Pottery",
               "topics": [
-                "a) The Iron Age in India and emergence of second Urbanization",
-                "b) Painted Grey Ware culture: Extent, and Chronology and characteristic traits",
-                "c) Northern Black Polished Ware culture: Extent, chronology and characteristic traits",
-                "d) The Megalithic culture of India."
+                "The Iron Age in India and emergence of second Urbanization",
+                "Painted Grey Ware culture: Extent, and Chronology and characteristic traits",
+                "Northern Black Polished Ware culture: Extent",
+                "Chronology and characteristic traits",
+                "The Megalithic culture of India"
               ]
             }
           ],
@@ -2379,51 +2428,60 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Museum Methods and Important Museums",
               "topics": [
-                "a) Museum Methods – History, Nature and Important of Museums",
-                "b) Important Museums - Indian Museum",
-                "c) National Museum",
-                "d) Patna museum",
-                "e) Site Museum (Nalanda)"
+                "Museum Methods",
+                "History",
+                "Nature and Important of Museums",
+                "Important Museums",
+                "Indian Museum",
+                "National Museum",
+                "Patna museum",
+                "Site Museum (Nalanda)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Museum Management",
               "topics": [
-                "a) Acquisition",
-                "b) Documentation of object",
-                "c) Display",
-                "d) Museum Building",
-                "e) Museum Administration."
+                "Acquisition",
+                "Documentation of object",
+                "Display",
+                "Museum Building",
+                "Museum Administration"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Museum Activities",
               "topics": [
-                "a) Museum activities - Educational and recreational",
-                "b) Conservation and Preservation of Museum Objects",
-                "c) National and International seminars",
-                "d) Museums as a center of research."
+                "Museum activities",
+                "Educational and recreational",
+                "Conservation and Preservation of Museum Objects",
+                "National and International seminars",
+                "Museums as a center of research"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Tourism in Bihar",
               "topics": [
-                "a) Tourism - History, Nature and importance of Tourism",
-                "b) Tourism places in Bihar",
-                "c) Historical and Archaeological Sites : Rajgriha, Vaishali, Nalanda, Bodhgaya"
+                "Tourism",
+                "History",
+                "Nature and importance of Tourism",
+                "Tourism places in Bihar",
+                "Historical and Archaeological Sites : Rajgriha",
+                "Vaishali",
+                "Nalanda",
+                "Bodhgaya"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Practical Aspects of Tourism",
               "topics": [
-                "a) Practical Aspects of Tourism",
-                "b) Tourist Guide as a career",
-                "c) Problem and prospects of Tourism in Bihar",
-                "d) Role of Government and tourists agencies in Bihar"
+                "Practical Aspects of Tourism",
+                "Tourist Guide as a career",
+                "Problem and prospects of Tourism in Bihar",
+                "Role of Government and tourists agencies in Bihar"
               ]
             }
           ],
@@ -2451,43 +2509,53 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to South East Asia",
               "topics": [
-                "a) South – East Asia – Sources of Study",
-                "b) Causes of Indianization of South – East Asia.",
-                "c) Routes of Indianization of South – East Asia"
+                "South",
+                "East Asia",
+                "Sources of Study",
+                "Causes of Indianization of South",
+                "East Asia",
+                "Routes of Indianization of South",
+                "East Asia"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Early Contacts",
               "topics": [
-                "a) Early Indian Literary Reference",
-                "b) Contact with India",
-                "c) Formation of Different States"
+                "Early Indian Literary Reference",
+                "Contact with India",
+                "Formation of Different States"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Early Kingdoms",
               "topics": [
-                "a) Early Kingdoms and Dynasties (Funan, Champa)",
-                "b) Early History of Myanmar and Thailand",
-                "c) Early History of Malaysia and Indonesia"
+                "Early Kingdoms and Dynasties (Funan, Champa)",
+                "Early History of Myanmar and Thailand",
+                "Early History of Malaysia and Indonesia"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Shailendra and Trade",
               "topics": [
-                "a) Shallendras as a Marine Power",
-                "b) Trade Relation between India and Southeast Asian Kingdom",
-                "c) Dynastic History of Angkor"
+                "Shallendras as a Marine Power",
+                "Trade Relation between India and Southeast Asian Kingdom",
+                "Dynastic History of Angkor"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Cultural Aspects",
               "topics": [
-                "Shallendras – Java, Champa, Funnan, Burma, Thailand with special reference to Religion, art and Literature"
+                "Shallendras",
+                "Java",
+                "Champa",
+                "Funnan",
+                "Burma",
+                "Thailand with special reference to Religion",
+                "Art and Literature"
               ]
             }
           ],
@@ -2526,46 +2594,53 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical Geography of Bihar",
               "topics": [
-                "a) Mithila (Tirthut)",
-                "b) Vaishali",
-                "c) Magadha",
-                "d) Anga"
+                "Mithila (Tirthut)",
+                "Vaishali",
+                "Magadha",
+                "Anga"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Religious background of Bihar",
               "topics": [
-                "a) Saivism, Vaishnavism and Saktism",
-                "b) Jainism and Buddhism",
-                "c) Bihar as a Purānic Tirtha"
+                "Saivism",
+                "Vaishnavism and Saktism",
+                "Jainism and Buddhism",
+                "Bihar as a Purānic Tirtha"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Art and Architecture of Bihar",
               "topics": [
-                "a) Aslōkāni Pillars : Rampurva, Lauriya Nandāngarh, Vaishali",
-                "b) Kesāriya Stupa, Vaishali Stupa",
-                "c) Bodhgaya Temple",
-                "d) Paintings: Rock Painting of Kaimur, Pala Painting of Nalanda"
+                "Aslōkāni Pillars : Rampurva",
+                "Lauriya Nandāngarh",
+                "Vaishali",
+                "Kesāriya Stupa",
+                "Vaishali Stupa",
+                "Bodhgaya Temple",
+                "Paintings: Rock Painting of Kaimur",
+                "Pala Painting of Nalanda"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Bihar as a centre of Education",
               "topics": [
-                "a) Nalanda",
-                "b) Vikramsila",
-                "c) Odantpuri"
+                "Nalanda",
+                "Vikramsila",
+                "Odantpuri"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Bihar through Ages",
               "topics": [
-                "a) Bihar in Pre Mauryan, Mauryan & Post- Mauryan era",
-                "b) Bihar in Gupta and Post – Gupta Period."
+                "Bihar in Pre Mauryan",
+                "Mauryan & Post- Mauryan era",
+                "Bihar in Gupta and Post",
+                "Gupta Period"
               ]
             }
           ],
@@ -2600,46 +2675,52 @@ export const aihArchaeologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical Geography of Bihar",
               "topics": [
-                "a) Mithila (Tirthut)",
-                "b) Vaishali",
-                "c) Magadha and Anga"
+                "Mithila (Tirthut)",
+                "Vaishali",
+                "Magadha and Anga"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Religious background of Bihar",
               "topics": [
-                "a) Saivism and Vaishnavism and Saktism",
-                "b) Centre of Jainism",
-                "c) Centre of Buddhism",
-                "d) Bihar as a Purānic Tirtha"
+                "Saivism and Vaishnavism and Saktism",
+                "Centre of Jainism",
+                "Centre of Buddhism",
+                "Bihar as a Purānic Tirtha"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Art and Architecture of Bihar",
               "topics": [
-                "a) Ashokan Pillars : Rampurva, Lauriya Nandangarh, Vaishali",
-                "b) Kesariya Stupa, Vaishali Stupa",
-                "c) Bodhgaya Temple",
-                "d) Paintings: Rock Painting of Kaimur, Pala Painting of Nalanda"
+                "Ashokan Pillars : Rampurva",
+                "Lauriya Nandangarh",
+                "Vaishali",
+                "Kesariya Stupa",
+                "Vaishali Stupa",
+                "Bodhgaya Temple",
+                "Paintings: Rock Painting of Kaimur",
+                "Pala Painting of Nalanda"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Bihar as a centre of Education",
               "topics": [
-                "a) Nalanda",
-                "b) Vikramsila",
-                "c) Odantpuri"
+                "Nalanda",
+                "Vikramsila",
+                "Odantpuri"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Bihar through Ages",
               "topics": [
-                "a) Bihar in Pre Mauryan, Mauryan & Post- Mauryan era",
-                "b) Bihar in Gupta and Post – Gupta Period."
+                "Bihar in Pre Mauryan",
+                "Mauryan & Post- Mauryan era",
+                "Bihar in Gupta and Post",
+                "Gupta Period"
               ]
             }
           ],

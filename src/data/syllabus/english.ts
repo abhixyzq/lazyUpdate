@@ -28,31 +28,65 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Poetry",
               "topics": [
-                "a. Toru Dutt – The Lotus",
-                "b. Henry Derozio – The Harp of India, India, My Native Land",
-                "c. Sarojini Naidu – The Palanquin Bearers",
-                "d. Kamal Das – An Introduction",
-                "e. Nissim Ezekiel – The Night of Scorpion",
-                "f. Imtiyaz Dharkar – Purdah",
-                "g. Vikram Seth – A Little Distance"
+                "A",
+                "Toru Dutt",
+                "The Lotus",
+                "B",
+                "Henry Derozio",
+                "The Harp of India",
+                "India",
+                "My Native Land",
+                "C",
+                "Sarojini Naidu",
+                "The Palanquin Bearers",
+                "D",
+                "Kamal Das",
+                "An Introduction",
+                "E",
+                "Nissim Ezekiel",
+                "The Night of Scorpion",
+                "F",
+                "Imtiyaz Dharkar",
+                "Purdah",
+                "G",
+                "Vikram Seth",
+                "A Little Distance"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Novel and Drama",
               "topics": [
-                "a. R.K. Narayan – The Bachelor of Arts"
+                "A",
+                "K",
+                "Narayan",
+                "The Bachelor of Arts"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Prose",
               "topics": [
-                "a. Pandita Ramabai - Widowhood",
-                "b. Rabindranath Tagore - The Spirit of Freedom",
-                "c. B. R. Ambedkar - The Annihilation of Caste",
-                "d. Salim Ali - Man and Nature in India - The Ecological Balance",
-                "e. A.P. J. Abdul Kalam - Work Brings Solace"
+                "A",
+                "Pandita Ramabai",
+                "Widowhood",
+                "B",
+                "Rabindranath Tagore",
+                "The Spirit of Freedom",
+                "C",
+                "B",
+                "R",
+                "Ambedkar",
+                "The Annihilation of Caste",
+                "D",
+                "Salim Ali",
+                "Man and Nature in India",
+                "The Ecological Balance",
+                "E",
+                "P",
+                "J",
+                "Abdul Kalam",
+                "Work Brings Solace"
               ]
             }
           ],
@@ -79,14 +113,19 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Geoffrey Chaucer, The Wife of Bath's Prologue",
               "topics": [
-                "Geoffrey Chaucer, The Wife of Bath's Prologue in The Wife of Bath's Prologue and Tale. Ed. James Winny. Cambridge: Cambridge University Press, 2016."
+                "Geoffrey Chaucer",
+                "The Wife of Bath's Prologue in The Wife of Bath's Prologue and Tale",
+                "Ed",
+                "James Winny",
+                "Cambridge: Cambridge University Press"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Edmund Spenser and Andrew Marvel",
               "topics": [
-                "(a) Edmund Spenser: Selections from Amoretii: Sonnet LXVII 'Like as a huntsman...' Sonnet LVII Sweet warrior... Sonnet LXXV One day I wrote her name...",
+                "(a) Edmund Spenser: Selections from Amoretii: Sonnet LXVII 'Like as a huntsman...' Sonnet LVII Sweet warrior",
+                "Sonnet LXXV One day I wrote her name",
                 "(b) Andrew Marvel: Thoughts in a Garden, To His Coy Mistress"
               ]
             },
@@ -94,14 +133,16 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Christopher Marlowe: Doctor Faustus",
               "topics": [
-                "Christopher Marlowe: Doctor Faustus, London: Routledge, 1990."
+                "Christopher Marlowe: Doctor Faustus",
+                "London: Routledge"
               ]
             },
             {
               "unitNumber": 4,
               "title": "William Shakespeare: Macbeth",
               "topics": [
-                "William Shakespeare: Macbeth, UK: CambridgeUniversity Press, 1997."
+                "William Shakespeare: Macbeth",
+                "UK: CambridgeUniversity Press"
               ]
             }
           ],
@@ -127,42 +168,48 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Toru Dutt - Our Casuarina Tree",
               "topics": [
-                "Toru Dutt - Our Casuarina Tree"
+                "Toru Dutt",
+                "Our Casuarina Tree"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Derozio - India, My Native Land",
               "topics": [
-                "Derozio - India, My Native Land"
+                "Derozio",
+                "India, My Native Land"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Sri Aurobindo - The Tiger and the Deer",
               "topics": [
-                "Sri Aurobindo - The Tiger and the Deer"
+                "Sri Aurobindo",
+                "The Tiger and the Deer"
               ]
             },
             {
               "unitNumber": 4,
               "title": "A.K.Ramanujan - A River",
               "topics": [
-                "A.K.Ramanujan - A River"
+                "K.Ramanujan",
+                "A River"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Mahesh Dattani - Tara",
               "topics": [
-                "Mahesh Dattani - Tara"
+                "Mahesh Dattani",
+                "Tara"
               ]
             },
             {
               "unitNumber": 6,
               "title": "R.K.Narayan - Swami and Friends",
               "topics": [
-                "R.K.Narayan - Swami and Friends"
+                "K.Narayan",
+                "Swami and Friends"
               ]
             }
           ],
@@ -191,14 +238,17 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Tennessee Williams: The Glass Menagerie",
               "topics": [
-                "Tennessee Williams: The Glass Menagerie, UK: Penguin UK, 2009."
+                "Tennessee Williams: The Glass Menagerie",
+                "UK: Penguin UK"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Toni Morrison, Beloved",
               "topics": [
-                "Toni Morrison, Beloved, New York: Penguin Patanam Inc., 1998."
+                "Toni Morrison",
+                "Beloved",
+                "New York: Penguin Patanam Inc"
               ]
             },
             {
@@ -206,8 +256,10 @@ export const englishSyllabus: CourseSyllabus = {
               "title": "Short Stories",
               "topics": [
                 "(a) Edgar Allan Poe: The Purloined Letter",
-                "(b) O. Henry: The Last Leaf",
-                "(c) F. Scott Fitzgerald: The Crack-up",
+                "(b) O",
+                "Henry: The Last Leaf",
+                "(c) F",
+                "Scott Fitzgerald: The Crack-up",
                 "(d) William Faulkner: Dry September"
               ]
             },
@@ -218,7 +270,14 @@ export const englishSyllabus: CourseSyllabus = {
                 "(a) Anne Bradstreet: The Prologue",
                 "(b) Walt Whitman: Selections from Leaves of Grass: O Captain! My Captain! Passage to India (lines1-68)",
                 "(c) Alexie Sherman Alexie: Crow Testament Evolution",
-                "(d) Robert Frost: The Road Not Taken, Stopping by Woods in The Norton Anthology of Poetry, Fourth Edition, Margaret Ferguson, Mary Jo Salter and Jon Stallworthy, New York: W. W. Norton and Company, 1996."
+                "(d) Robert Frost: The Road Not Taken",
+                "Stopping by Woods in The Norton Anthology of Poetry",
+                "Fourth Edition",
+                "Margaret Ferguson",
+                "Mary Jo Salter and Jon Stallworthy",
+                "New York: W",
+                "W",
+                "Norton and Company, 1996"
               ]
             }
           ],
@@ -250,16 +309,28 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Language & Linguistics",
               "topics": [
-                "a) Definition and Characteristic Features",
-                "b) Language varieties: Dialect, idiolect, Register, Pidgin and Creole, Standard language",
-                "c) Synchronic and Diachronic, Langue, Parole, Syntagmatic and Paradigmatic relations"
+                "Definition and Characteristic Features",
+                "Language varieties: Dialect",
+                "Idiolect",
+                "Register",
+                "Pidgin and Creole",
+                "Standard language",
+                "Synchronic and Diachronic",
+                "Langue",
+                "Parole",
+                "Syntagmatic and Paradigmatic relations"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Phonetics and Phonology",
               "topics": [
-                "Phonemes, Allophones, Organs of Speech, Classification of Vowels and Consonants of English, Syllables, Stress and Intonation"
+                "Phonemes",
+                "Allophones",
+                "Organs of Speech",
+                "Classification of Vowels and Consonants of English",
+                "Syllables",
+                "Stress and Intonation"
               ]
             },
             {
@@ -273,7 +344,10 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Oral Drills & Practices",
               "topics": [
-                "English Vowels and Consonants, Stress, Intonation, Phonemic transcription of isolated words"
+                "English Vowels and Consonants",
+                "Stress",
+                "Intonation",
+                "Phonemic transcription of isolated words"
               ]
             }
           ],
@@ -302,28 +376,38 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "John Milton: Paradise Lost: Book 1",
               "topics": [
-                "John Milton: Paradise Lost: Book 1, London: Penguin Books, 1996."
+                "John Milton: Paradise Lost: Book 1",
+                "London: Penguin Books"
               ]
             },
             {
               "unitNumber": 2,
               "title": "John Donne",
               "topics": [
-                "John Donne – The Sunne Rising, The Good Morrow, A Hymn to God, The Father, Death Be Not Proud"
+                "John Donne",
+                "The Sunne Rising",
+                "The Good Morrow",
+                "A Hymn to God",
+                "The Father",
+                "Death Be Not Proud"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Ben Jonson, The Alchemist",
               "topics": [
-                "Ben Jonson, The Alchemist, Peacock Books, Atlantic Publishers, 2021."
+                "Ben Jonson",
+                "The Alchemist",
+                "Peacock Books",
+                "Atlantic Publishers"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Thomas Middleton – Women Beware Women",
               "topics": [
-                "Thomas Middleton – Women Beware Women"
+                "Thomas Middleton",
+                "Women Beware Women"
               ]
             }
           ],
@@ -347,28 +431,32 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Chaucer - Prologue to Canterbury Tales",
               "topics": [
-                "Chaucer - Prologue to Canterbury Tales"
+                "Chaucer",
+                "Prologue to Canterbury Tales"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Shakespeare's Sonnets",
               "topics": [
-                "Shakespeare's Sonnets - NO. 01, 15, 128, 135"
+                "Shakespeare's Sonnets",
+                "NO. 01, 15, 128, 135"
               ]
             },
             {
               "unitNumber": 3,
               "title": "George Herbert - The Gifts of God",
               "topics": [
-                "George Herbert - The Gifts of God"
+                "George Herbert",
+                "The Gifts of God"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Marlowe - Edward II",
               "topics": [
-                "Marlowe - Edward II"
+                "Marlowe",
+                "Edward II"
               ]
             }
           ],
@@ -390,49 +478,57 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Ernest Hemingway - The Old Man and the Sea",
               "topics": [
-                "Ernest Hemingway - The Old Man and the Sea"
+                "Ernest Hemingway",
+                "The Old Man and the Sea"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Walt Whitman - O Captain! My Captain!",
               "topics": [
-                "Walt Whitman - O Captain! My Captain!"
+                "Walt Whitman",
+                "O Captain! My Captain!"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Emily Dickenson - Because I Could Not Stop for Death",
               "topics": [
-                "Emily Dickenson - Because I Could Not Stop for Death"
+                "Emily Dickenson",
+                "Because I Could Not Stop for Death"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Robert Frost - Stopping by Woods on a Snowy Evening",
               "topics": [
-                "Robert Frost - Stopping by Woods on a Snowy Evening"
+                "Robert Frost",
+                "Stopping by Woods on a Snowy Evening"
               ]
             },
             {
               "unitNumber": 5,
               "title": "W.C. Williams - This is Just to Say",
               "topics": [
-                "W.C. Williams - This is Just to Say"
+                "C",
+                "Williams",
+                "This is Just to Say"
               ]
             },
             {
               "unitNumber": 6,
               "title": "Langston Hughes - Theme for English B",
               "topics": [
-                "Langston Hughes - Theme for English B"
+                "Langston Hughes",
+                "Theme for English B"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Wendy Rose - Women Like Me",
               "topics": [
-                "Wendy Rose - Women Like Me"
+                "Wendy Rose",
+                "Women Like Me"
               ]
             }
           ],
@@ -453,14 +549,30 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Definitions and characteristics of language and linguistics",
               "topics": [
-                "Definitions and characteristics of language and linguistics, Basic concepts of linguistics: phonetics and phonology, phonemes, morphology, morphemes, allomorphs, phrase, clause, syntax. Semantics, pragmatics"
+                "Definitions and characteristics of language and linguistics",
+                "Basic concepts of linguistics: phonetics and phonology",
+                "Phonemes",
+                "Morphology",
+                "Morphemes",
+                "Allomorphs",
+                "Phrase",
+                "Clause",
+                "Syntax",
+                "Semantics, pragmatics"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Basic concepts of socio-linguistics",
               "topics": [
-                "Basic concepts of socio-linguistics: Pidgin, Creole, Dialects, Idiolect, Register, Standard language, Psycho-linguistics: structuralism, methods of teaching (direct and indirect)"
+                "Basic concepts of socio-linguistics: Pidgin",
+                "Creole",
+                "Dialects",
+                "Idiolect",
+                "Register",
+                "Standard language",
+                "Psycho-linguistics: structuralism",
+                "Methods of teaching (direct and indirect)"
               ]
             },
             {
@@ -491,7 +603,8 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to the Conventions of Academic Writing",
               "topics": [
-                "Strategies for Writing, Institutional Contexts"
+                "Strategies for Writing",
+                "Institutional Contexts"
               ]
             },
             {
@@ -505,14 +618,21 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Writing in one's own words",
               "topics": [
-                "Summarizing and Paraphrasing: Paragraphing, Transitions, Summary Writing, Structuring an Argument, Writing as a Practice."
+                "Summarizing and Paraphrasing: Paragraphing",
+                "Transitions",
+                "Summary Writing",
+                "Structuring an Argument",
+                "Writing as a Practice"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Citing Resources; Editing, Book and Media Review",
               "topics": [
-                "Citational Practices, Conference talks, Footnotes and Endnotes, Rhetorical"
+                "Citational Practices",
+                "Conference talks",
+                "Footnotes and Endnotes",
+                "Rhetorical"
               ]
             }
           ],
@@ -545,19 +665,21 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Modes of Creative Writing -- Poetry and Fiction",
               "topics": [
-                "a) Writing to Communicate",
-                "b) Writing Poetry -- Definitions of Poetry/Difference between Poetry and Prose",
-                "c) Writing Verse for children",
-                "d) Writing Fiction -- Differences between Fiction and Non-Fiction",
-                "e) Creating Character, Plot, Setting"
+                "Writing to Communicate",
+                "Writing Poetry -- Definitions of Poetry/Difference between Poetry and Prose",
+                "Writing Verse for children",
+                "Writing Fiction -- Differences between Fiction and Non-Fiction",
+                "Creating Character",
+                "Plot",
+                "Setting"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Modes of Creative Writing-Drama and Screenplay",
               "topics": [
-                "a) What is a Drama --Concept",
-                "b) Plot and Character in Drama"
+                "What is a Drama --Concept",
+                "Plot and Character in Drama"
               ]
             },
             {
@@ -604,14 +726,18 @@ export const englishSyllabus: CourseSyllabus = {
               "title": "Report Writing & CV",
               "topics": [
                 "(a) Report Writing & CV",
-                "(b) Agenda, Minutes of Meeting, Memorandum, Office Order, Circular, Notes."
+                "(b) Agenda, Minutes of Meeting, Memorandum, Office Order, Circular, Notes"
               ]
             },
             {
               "unitNumber": 4,
               "title": "E-correspondence and Spoken English",
               "topics": [
-                "(a) E-correspondence: Fax – Email – Video Conferencing – Internet – Websites and their use in Business Correspondence.",
+                "(a) E-correspondence: Fax",
+                "Email",
+                "Video Conferencing",
+                "Internet",
+                "Websites and their use in Business Correspondence",
                 "(b) Spoken English for Business Communication"
               ]
             }
@@ -641,28 +767,37 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical overview of the period",
               "topics": [
-                "Restoration, Glorious revolution, New Classicism & Enlightenment."
+                "Restoration",
+                "Glorious revolution",
+                "New Classicism & Enlightenment"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Jonathan Swift - Gulliver's Travels",
               "topics": [
-                "Jonathan Swift - Gulliver's Travels, UK: Oxford University Press, 2008."
+                "Jonathan Swift",
+                "Gulliver's Travels",
+                "UK: Oxford University Press"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Daniel Defoe - Robinson Crusoe",
               "topics": [
-                "Daniel Defoe - Robinson Crusoe, New York: Oxford University Press Inc., 2007. (Introduction by Thomas Keymer)."
+                "Daniel Defoe",
+                "Robinson Crusoe",
+                "New York: Oxford University Press Inc",
+                "(Introduction by Thomas Keymer)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Thomas Gray - 'Elegy Written in a Country Churchyard'",
               "topics": [
-                "Thomas Gray - 'Elegy Written in a Country Churchyard' in Palgrave's Golden Treasury, New York: O.U.P., 2007."
+                "Thomas Gray",
+                "'Elegy Written in a Country Churchyard' in Palgrave's Golden Treasury",
+                "New York: O.U.P"
               ]
             }
           ],
@@ -692,14 +827,22 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical overview of the Period",
               "topics": [
-                "Characteristics of Romantic Revival also known as the age of revolution, Origin of French Revolution, Industrialisation, Concepts of liberty equality and fraternity, Innovations in writing from thematic as well as technical points of views, Conceptions of Nature, Literature and Revolution, The Gothic"
+                "Characteristics of Romantic Revival also known as the age of revolution",
+                "Origin of French Revolution",
+                "Industrialisation",
+                "Concepts of liberty equality and fraternity",
+                "Innovations in writing from thematic as well as technical points of views",
+                "Conceptions of Nature",
+                "Literature and Revolution",
+                "The Gothic"
               ]
             },
             {
               "unitNumber": 2,
               "title": "William Blake, Robert Burns, William Wordsworth",
               "topics": [
-                "William Blake: \"The Lamb\", \"The Chimney Sweeper\" (from The Songs of Innocence and The Songs of Experience) \"The Tyger\" (The Songs of Experience)",
+                "William Blake: \"The Lamb\"",
+                "\"The Chimney Sweeper\" (from The Songs of Innocence and The Songs of Experience) \"The Tyger\" (The Songs of Experience)",
                 "Robert Burns: \"Red Rose\"",
                 "William Wordsworth: \"Ode on Intimations of Immortality\""
               ]
@@ -717,7 +860,8 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Mary Shelley: Frankenstein",
               "topics": [
-                "Mary Shelley: Frankenstein, Oxford: Oxford University Press, 2008."
+                "Mary Shelley: Frankenstein",
+                "Oxford: Oxford University Press"
               ]
             }
           ],
@@ -749,21 +893,30 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Historical overview of the Period",
               "topics": [
-                "The importance of Romanticism, Origin of Victorian Poetry, Concept of Faith and Doubt, Mercantilism, Emergence of New Themes and Techniques."
+                "The importance of Romanticism",
+                "Origin of Victorian Poetry",
+                "Concept of Faith and Doubt",
+                "Mercantilism",
+                "Emergence of New Themes and Techniques"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Jane Austen, Pride and Prejudice",
               "topics": [
-                "Jane Austen, Pride and Prejudice, London: Oxford University Press, 2019."
+                "Jane Austen",
+                "Pride and Prejudice",
+                "London: Oxford University Press"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Charles Dickens, David Copperfield",
               "topics": [
-                "Charles Dickens, David Copperfield, Penguin Classics; Revised Edition, 2004."
+                "Charles Dickens",
+                "David Copperfield",
+                "Penguin Classics",
+                "Revised Edition, 2004"
               ]
             },
             {
@@ -801,19 +954,37 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Poetry",
               "topics": [
-                "(a) Emily Dickinson-I cannot live with you in The Poems of Emily Dickinson, Thomas H. Johnson, ed., Cambridge, Mass.: The Belknap Press of Harvard University Press,1951.",
-                "(b) Sylvia Plath – Daddy, Harper & Row., Copyright by the Estate of Sylvia Plath, 1981.",
-                "(c) Maya Angelou – Still I Rise, Gillespie, Marcia Ann, Rosa Johnson Butler, and Richard A. Long, Maya Angelou: A Glorious Celebration. New York: Random House,2008.",
-                "(d) Eunice de Souza – Advice to Women in Ways of Belonging: Selected New Poems. Polygon, 1994.",
-                "(e) A Jayaprabha – Stares (Chupulu in Telugu, Translated in English by BVL Narayan Row. Pp 596-59 in Women Writing in India, Tharu and Lalita)"
+                "(a) Emily Dickinson-I cannot live with you in The Poems of Emily Dickinson",
+                "Thomas H",
+                "Johnson",
+                "Ed",
+                "Cambridge",
+                "Mass.: The Belknap Press of Harvard University Press",
+                "(b) Sylvia Plath",
+                "Daddy",
+                "Harper & Row",
+                "Copyright by the Estate of Sylvia Plath",
+                "(c) Maya Angelou",
+                "Still I Rise",
+                "Gillespie",
+                "Marcia Ann",
+                "Rosa Johnson Butler, and Richard A",
+                "Long",
+                "Maya Angelou: A Glorious Celebration",
+                "New York: Random House",
+                "(d) Eunice de Souza",
+                "Advice to Women in Ways of Belonging: Selected New Poems",
+                "Polygon, 1994",
+                "(e) A Jayaprabha",
+                "Stares (Chupulu in Telugu, Translated in English by BVL Narayan Row. Pp 596-59 in Women Writing in India, Tharu and Lalita)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Fiction",
               "topics": [
-                "(a) Walker, Alice, The Color Purple, New York: Harcourt, 1992.",
-                "(b) Mansfield, K, ‘Bliss’ in Bliss and Other Stories, Harmondsworth: Penguin, 1962."
+                "(a) Walker, Alice, The Color Purple, New York: Harcourt, 1992",
+                "(b) Mansfield, K, ‘Bliss’ in Bliss and Other Stories, Harmondsworth: Penguin, 1962"
               ]
             }
           ],
@@ -838,30 +1009,49 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Joseph Conrad, Heart of Darkness",
               "topics": [
-                "Joseph Conrad, Heart of Darkness, India: Fingerprint! Publishing, 2018."
+                "Joseph Conrad",
+                "Heart of Darkness",
+                "India: Fingerprint! Publishing"
               ]
             },
             {
               "unitNumber": 2,
               "title": "D.H. Lawrence",
               "topics": [
-                "(a) Stories: The Fox, The White Stocking",
-                "(b) Letters: ‘To Collins 17th Jan.1913, To Edward Marsh 28 Oct.1913 D. H. Lawrence's Stories, Essays and Poems, London: Everyman's Library,1939."
+                "(a) Stories: The Fox",
+                "The White Stocking",
+                "(b) Letters: ‘To Collins 17th Jan.1913, To Edward Marsh 28 Oct.1913 D",
+                "H",
+                "Lawrence's Stories",
+                "Essays and Poems",
+                "London: Everyman's Library"
               ]
             },
             {
               "unitNumber": 3,
               "title": "G.B. Shaw: Candida",
               "topics": [
-                "G.B. Shaw: Candida, Penguin Classics."
+                "B",
+                "Shaw: Candida",
+                "Penguin Classics"
               ]
             },
             {
               "unitNumber": 4,
               "title": "W.B. Yeats and T.S. Eliot",
               "topics": [
-                "(a) W.B. Yeats: The Second Coming, Sailing to Byzantium The Collected Poems of W.B. Yeats, Revised Edition, Wordsworth Editions Ltd, 2000.",
-                "(b) T.S. Eliot: The Love Song of J. Alfred Prufrock, Gerontion, in Collected Poems 1909-1962, Main Edition, India: Faber and Faber,2002."
+                "(a) W.B",
+                "Yeats: The Second Coming",
+                "Sailing to Byzantium The Collected Poems of W.B",
+                "Yeats",
+                "Revised Edition",
+                "Wordsworth Editions Ltd",
+                "(b) T.S",
+                "Eliot: The Love Song of J",
+                "Alfred Prufrock",
+                "Gerontion, in Collected Poems 1909-1962",
+                "Main Edition",
+                "India: Faber and Faber"
               ]
             }
           ],
@@ -885,14 +1075,17 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "John Milton - Lycidas",
               "topics": [
-                "John Milton - Lycidas"
+                "John Milton",
+                "Lycidas"
               ]
             },
             {
               "unitNumber": 2,
               "title": "W. Wycherley - The Country Wife",
               "topics": [
-                "W. Wycherley - The Country Wife"
+                "W",
+                "Wycherley",
+                "The Country Wife"
               ]
             }
           ],
@@ -914,14 +1107,16 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "John Dryden - Mac Flecknoe",
               "topics": [
-                "John Dryden - Mac Flecknoe"
+                "John Dryden",
+                "Mac Flecknoe"
               ]
             },
             {
               "unitNumber": 2,
               "title": "William Congreve - The Way of the World",
               "topics": [
-                "William Congreve - The Way of the World"
+                "William Congreve",
+                "The Way of the World"
               ]
             }
           ],
@@ -949,28 +1144,38 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Ibsen, Henrik, Ghosts",
               "topics": [
-                "Ibsen, Henrik, Ghosts, Four Major Plays. Oxford World's Classic. Oxford University Press, 1981."
+                "Ibsen, Henrik, Ghosts, Four Major Plays",
+                "Oxford World's Classic",
+                "Oxford University Press"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Bertolt Brecht, The Good Woman of Setzuan",
               "topics": [
-                "Bertolt Brecht, The Good Woman of Setzuan, Bentley, Eric, trans. & ed. London: Penguin, 2007."
+                "Bertolt Brecht",
+                "The Good Woman of Setzuan",
+                "Bentley",
+                "Eric",
+                "Trans. & ed",
+                "London: Penguin, 2007"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Genet Jean, The Balcony",
               "topics": [
-                "Genet Jean, The Balcony, Atlantic, 1994."
+                "Genet Jean, The Balcony, Atlantic, 1994"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Pinter, Harold. The Dumb Waiter",
               "topics": [
-                "Pinter, Harold. The Dumb Waiter. Published by Samuel French, UK."
+                "Pinter, Harold",
+                "The Dumb Waiter",
+                "Published by Samuel French",
+                "UK"
               ]
             }
           ],
@@ -1015,7 +1220,8 @@ export const englishSyllabus: CourseSyllabus = {
               "topics": [
                 "(a) Pablo Neruda-Tonight I can Write",
                 "(b) Derek Walcott-A Far Cry from Africa",
-                "(c) A. K Ramanujan-The Striders",
+                "(c) A",
+                "K Ramanujan-The Striders",
                 "(d) Gabriel Okara-Once upon a Time",
                 "(e) David Malouf-Revolving Days",
                 "(f) Mamang Dai-Small Towns and the River"
@@ -1030,7 +1236,12 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Novel",
               "topics": [
-                "(a) Chinua Achebe, Things Fall Apart, UK: PenguinUK,2001. or (b) Raja Rao, Kanthapura, India: Penguin,2014."
+                "(a) Chinua Achebe",
+                "Things Fall Apart",
+                "UK: PenguinUK",
+                "Or (b) Raja Rao",
+                "Kanthapura",
+                "India: Penguin"
               ]
             }
           ],
@@ -1059,28 +1270,35 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "William Blake - The Divine Image, The Garden of Love",
               "topics": [
-                "William Blake - The Divine Image, The Garden of Love"
+                "William Blake",
+                "The Divine Image",
+                "The Garden of Love"
               ]
             },
             {
               "unitNumber": 2,
               "title": "William Wordsworth - Lines Written in the Early Spring",
               "topics": [
-                "William Wordsworth - Lines Written in the Early Spring"
+                "William Wordsworth",
+                "Lines Written in the Early Spring"
               ]
             },
             {
               "unitNumber": 3,
               "title": "S. T. Coleridge - Love",
               "topics": [
-                "S. T. Coleridge - Love"
+                "S",
+                "T",
+                "Coleridge",
+                "Love"
               ]
             },
             {
               "unitNumber": 4,
               "title": "John Keats - Ode to Autumn",
               "topics": [
-                "John Keats - Ode to Autumn"
+                "John Keats",
+                "Ode to Autumn"
               ]
             }
           ],
@@ -1109,7 +1327,10 @@ export const englishSyllabus: CourseSyllabus = {
               "title": "Wordsworth and Coleridge",
               "topics": [
                 "(a) William Wordsworth: Preface to the Lyrical Ballads(1802)",
-                "(b) S. T. Coleridge: BiographicalLiteraria(ChaptersXIII & XIV), India: CreateSpace Independent Pub,2014."
+                "(b) S",
+                "T",
+                "Coleridge: BiographicalLiteraria(ChaptersXIII & XIV)",
+                "India: CreateSpace Independent Pub"
               ]
             },
             {
@@ -1117,25 +1338,34 @@ export const englishSyllabus: CourseSyllabus = {
               "title": "Arnold and Eliot",
               "topics": [
                 "(a) Arnold: \"The Study of Poetry\"",
-                "(b) Eliot: \"Tradition and the Individual Talent\" and \"Functions of Criticism\" fromD.J. Enright and Ernst De Chickera, English Critical Texts, New Delhi: Oxford University Press, 1962."
+                "(b) Eliot: \"Tradition and the Individual Talent\" and \"Functions of Criticism\" fromD.J",
+                "Enright and Ernst De Chickera",
+                "English Critical Texts",
+                "New Delhi: Oxford University Press"
               ]
             },
             {
               "unitNumber": 3,
               "title": "I. A. Richards",
               "topics": [
-                "(a) I. A. Richards: Principles of Literary Criticism (Ch - 1, The Chaos of Critical Theories), London & New York: Routledge&Kagan Paul,1926.",
-                "(b) I.A. Richards: Practical Criticism, London: Kagan Paul,1930"
+                "(a) I",
+                "A",
+                "Richards: Principles of Literary Criticism (Ch - 1, The Chaos of Critical Theories)",
+                "London & New York: Routledge&Kagan Paul",
+                "(b) I.A",
+                "Richards: Practical Criticism",
+                "London: Kagan Paul",
+                "1930"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Major Modern Literary Trends",
               "topics": [
-                "• Formalism",
-                "• Modernism",
-                "• Postmodernism",
-                "• Structuralism"
+                "Formalism",
+                "Modernism",
+                "Postmodernism",
+                "Structuralism"
               ]
             }
           ],
@@ -1164,28 +1394,32 @@ export const englishSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Matthew Arnold - Shakespeare",
               "topics": [
-                "Matthew Arnold - Shakespeare"
+                "Matthew Arnold",
+                "Shakespeare"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Tennyson - Break, Break, Break",
               "topics": [
-                "Tennyson - Break, Break, Break"
+                "Tennyson",
+                "Break, Break, Break"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Robert Browning - Prosice",
               "topics": [
-                "Robert Browning - Prosice"
+                "Robert Browning",
+                "Prosice"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Charles Dickens - Oliver Twist",
               "topics": [
-                "Charles Dickens - Oliver Twist"
+                "Charles Dickens",
+                "Oliver Twist"
               ]
             }
           ],

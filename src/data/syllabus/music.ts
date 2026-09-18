@@ -50,7 +50,8 @@ export const musicSyllabus: CourseSyllabus = {
               "topics": [
                 "Taansen",
                 "Swami Haridas",
-                "Pt. Omkar Nath Thakur",
+                "Pt",
+                "Omkar Nath Thakur",
                 "Muttuswami Dikshitar",
                 "Vidyapati"
               ]
@@ -95,14 +96,16 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Practice of Swaras",
               "topics": [
-                "Practice of Swaras, Dress Code and Sitting Postures with your Instrument"
+                "Practice of Swaras",
+                "Dress Code and Sitting Postures with your Instrument"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Rendition of Alankar",
               "topics": [
-                "Rendition of Alankar, Palta"
+                "Rendition of Alankar",
+                "Palta"
               ]
             },
             {
@@ -163,8 +166,12 @@ export const musicSyllabus: CourseSyllabus = {
               "topics": [
                 "Taansen",
                 "Baiju Bawra",
-                "Pt. V.D. Palushkar",
-                "Pt. V.N. Bhatkhande"
+                "Pt",
+                "D",
+                "Palushkar",
+                "Pt",
+                "N",
+                "Bhatkhande"
               ]
             },
             {
@@ -274,7 +281,8 @@ export const musicSyllabus: CourseSyllabus = {
               "topics": [
                 "Taansen",
                 "Swami Haridas",
-                "Pt. Omkar Nath Thakur",
+                "Pt",
+                "Omkar Nath Thakur",
                 "Muttuswami Dikshitar",
                 "Vidyapati"
               ]
@@ -443,15 +451,29 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Elementary Knowledge of Terms",
               "topics": [
-                "Alpatwa-Bahutwa, Purwang-Uttarang, Janak Raag, Janya Raag, Aashray Raag, Paramel Praweshak Raag"
+                "Alpatwa-Bahutwa",
+                "Purwang-Uttarang",
+                "Janak Raag",
+                "Janya Raag",
+                "Aashray Raag",
+                "Paramel Praweshak Raag"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Details study of Terms",
               "topics": [
-                "Jati, Types of Taan, Merits & Demerits of Gayak and Vadak, Raag Lakshan, Nibaddha-Anibddha Gaan",
-                "Types of Geet: Dhrupad, Dhamar, Kheyal, Thumri, Dadra, Tarana"
+                "Jati",
+                "Types of Taan",
+                "Merits & Demerits of Gayak and Vadak",
+                "Raag Lakshan",
+                "Nibaddha-Anibddha Gaan",
+                "Types of Geet: Dhrupad",
+                "Dhamar",
+                "Kheyal",
+                "Thumri",
+                "Dadra",
+                "Tarana"
               ]
             },
             {
@@ -459,7 +481,10 @@ export const musicSyllabus: CourseSyllabus = {
               "title": "Gharanas of North Indian Classical Music",
               "topics": [
                 "Vocal: Gwalior, Delhi, Agra, Kirana, Patiyala, Jaipur-Atrauli, Rampur-Sahaswan, Bhindi Bazar, Benaras",
-                "Instrumental Music: Senia, Maihar, Imdadkhani, Jafarkhani"
+                "Instrumental Music: Senia",
+                "Maihar",
+                "Imdadkhani",
+                "Jafarkhani"
               ]
             },
             {
@@ -473,7 +498,10 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Introduction of Ragas & Taalas",
               "topics": [
-                "Raagas: Alhaiya Bilawal, Jaunpuri, Patdeep, Kedar with Notation of Bandishes / Gats",
+                "Raagas: Alhaiya Bilawal",
+                "Jaunpuri",
+                "Patdeep",
+                "Kedar with Notation of Bandishes / Gats",
                 "Taalas: Chartaal, Tivra, Deepchandi"
               ]
             }
@@ -502,7 +530,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vilambit or Maseetkhani Gat",
               "topics": [
-                "One Vilambit or Maseetkhani Gat in any one Raag of Unit 5 of Theory Paper, MJC-03"
+                "One Vilambit or Maseetkhani Gat in any one Raag of Unit 5 of Theory Paper",
+                "MJC-03"
               ]
             },
             {
@@ -516,14 +545,16 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Demonstration of Dhrupad",
               "topics": [
-                "Demonstration of one Dhrupad in any one prescribed Raga with Thah, Dugan & Chaugan"
+                "Demonstration of one Dhrupad in any one prescribed Raga with Thah",
+                "Dugan & Chaugan"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Thaah, Dugun and Chaugun",
               "topics": [
-                "Thaah, Dugun and Chaugun in prescribed Taals"
+                "Thaah",
+                "Dugun and Chaugun in prescribed Taals"
               ]
             }
           ],
@@ -547,15 +578,22 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Elementary Knowledge of Terms",
               "topics": [
-                "Purwang-Uttarang, Janak Raag, Janya Raag, Aashray Raag"
+                "Purwang-Uttarang",
+                "Janak Raag",
+                "Janya Raag",
+                "Aashray Raag"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Detail study of Terms",
               "topics": [
-                "Raag Lakshan, Nibaddha-Anibddha Gaan",
-                "Types of Shailies: Dhrupad, Dhamar, Kheyal, Thumari"
+                "Raag Lakshan",
+                "Nibaddha-Anibddha Gaan",
+                "Types of Shailies: Dhrupad",
+                "Dhamar",
+                "Kheyal",
+                "Thumari"
               ]
             },
             {
@@ -641,7 +679,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Aavirbhav-Tirobhav, Shuddha-Chhayalag-Sankeern Raag, Time-Theory of Raag"
+                "Aavirbhav-Tirobhav",
+                "Shuddha-Chhayalag-Sankeern Raag",
+                "Time-Theory of Raag"
               ]
             },
             {
@@ -655,7 +695,10 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "General Study",
               "topics": [
-                "Raagalap – Rupakalap - Alaptigaan - Swasthan Niyam",
+                "Raagalap",
+                "Rupakalap",
+                "Alaptigaan",
+                "Swasthan Niyam",
                 "Trivat, Chaturang, Tappa, Lakshan Geet, Sargam Geet, Bhajan"
               ]
             },
@@ -663,15 +706,20 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Gharanas of Bihar",
               "topics": [
-                "Darbhanga, Bettiah, Madhubani, Pachgachhiya, Dumaron, Panchobh, etc.",
-                "Life History and Contribution of Pt. Ram Chatur Mallik, Pt. Siyaram Tiwari"
+                "Darbhanga, Bettiah, Madhubani, Pachgachhiya, Dumaron, Panchobh, etc",
+                "Life History and Contribution of Pt",
+                "Ram Chatur Mallik, Pt",
+                "Siyaram Tiwari"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Introduction of Ragas with Notation of Bandishes and Gats",
               "topics": [
-                "Ragas: Bhimpalasi, Jounpuri, Multani, Hameer (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
+                "Ragas: Bhimpalasi",
+                "Jounpuri",
+                "Multani",
+                "Hameer (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
                 "Taals: Adachartal, Sooltaal, Dhamar"
               ]
             }
@@ -698,35 +746,47 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Elementary Knowledge of Terms",
               "topics": [
-                "Swar-Samvad, Types of Laykari, Importance of Ardhwadarshak Swar, Definition of Gamak, Giti & Bani"
+                "Swar-Samvad",
+                "Types of Laykari",
+                "Importance of Ardhwadarshak Swar",
+                "Definition of Gamak",
+                "Giti & Bani"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Notation Systems",
               "topics": [
-                "Pt. Vishnu Digambar and Pt. Bhathkande Notation System"
+                "Pt",
+                "Vishnu Digambar and Pt",
+                "Bhathkande Notation System"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Regional Folk Music",
               "topics": [
-                "Introduction, Types and its Examples"
+                "Introduction",
+                "Types and its Examples"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Regional Folk Artists",
               "topics": [
-                "Mahendra Mishra, Vindhyavasini Devi, Sharda Sinha"
+                "Mahendra Mishra",
+                "Vindhyavasini Devi",
+                "Sharda Sinha"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Introduction of Ragas with Notation of Bandishes and Gats",
               "topics": [
-                "Raagas: Deshkar, Kamod, Sohini, Rageshri (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
+                "Raagas: Deshkar",
+                "Kamod",
+                "Sohini",
+                "Rageshri (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
                 "Taalas: Tilwara, Jat, Sitarkhani"
               ]
             }
@@ -786,7 +846,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Thah, Dugun & Chaugun",
               "topics": [
-                "Thah, Dugun & Chaugun in prescribed Taals"
+                "Thah",
+                "Dugun & Chaugun in prescribed Taals"
               ]
             }
           ],
@@ -811,7 +872,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vilambit / Maseetkhani Gat",
               "topics": [
-                "One Vilambit / Maseetkhani Gat in any of the following Raagas : Bihag, Yaman, Bhairav"
+                "One Vilambit / Maseetkhani Gat in any of the following Raagas : Bihag",
+                "Yaman",
+                "Bhairav"
               ]
             },
             {
@@ -825,7 +888,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Taalas",
               "topics": [
-                "Thah, Dugun & Chaugun in following Taalas : Rupak, Jhaptal"
+                "Thah",
+                "Dugun & Chaugun in following Taalas : Rupak",
+                "Jhaptal"
               ]
             }
           ],
@@ -873,7 +938,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Thaat - Raag Classification, Raga-Ragini Classification"
+                "Thaat",
+                "Raag Classification",
+                "Raga-Ragini Classification"
               ]
             },
             {
@@ -888,7 +955,10 @@ export const musicSyllabus: CourseSyllabus = {
               "title": "History of Music",
               "topics": [
                 "General Study of Medieval Period",
-                "Granths : Sangeet Ratnakar, Sangeet Darpan, Sangeet Parijat, Raag Tarangini"
+                "Granths : Sangeet Ratnakar",
+                "Sangeet Darpan",
+                "Sangeet Parijat",
+                "Raag Tarangini"
               ]
             },
             {
@@ -902,8 +972,13 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Introduction of Ragas with Notation of Bandishes and Gats",
               "topics": [
-                "Raagas: Shankara, Shuddh Kalyan, Basant, Vibhas (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
-                "Taalas: Addha, Kaharawa, Dadra with different Layakaries"
+                "Raagas: Shankara",
+                "Shuddh Kalyan",
+                "Basant",
+                "Vibhas (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
+                "Taalas: Addha",
+                "Kaharawa",
+                "Dadra with different Layakaries"
               ]
             }
           ],
@@ -945,7 +1020,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Dhrupad / Dhamar",
               "topics": [
-                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah, Dugun & Chaugun"
+                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah",
+                "Dugun & Chaugun"
               ]
             },
             {
@@ -959,7 +1035,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Thaah, Dugun & Chaugun",
               "topics": [
-                "Thaah, Dugun & Chaugun in prescribed Taals"
+                "Thaah",
+                "Dugun & Chaugun in prescribed Taals"
               ]
             }
           ],
@@ -990,15 +1067,26 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Elementary Knowledge of Terms",
               "topics": [
-                "Vadi, Samvadi, Anuvadi, Vivadi, Varjya-Swar, Achal-Swar, Vikrit Swar-Shuddh Swar, Time-Theory"
+                "Vadi",
+                "Samvadi",
+                "Anuvadi",
+                "Vivadi",
+                "Varjya-Swar",
+                "Achal-Swar",
+                "Vikrit Swar-Shuddh Swar",
+                "Time-Theory"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction of Raagas and Taalas",
               "topics": [
-                "Raagas: Alhiya Bilawal, Bhimpalasi, Asawari",
-                "Taalas: Thah, Dugun and Chaugun – in Taalas- Raupak & Jhataal"
+                "Raagas: Alhiya Bilawal",
+                "Bhimpalasi",
+                "Asawari",
+                "Taalas: Thah",
+                "Dugun and Chaugun",
+                "In Taalas- Raupak & Jhataal"
               ]
             }
           ],
@@ -1026,7 +1114,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Vilambit / Maseetkhani Gat",
               "topics": [
-                "One Vilambit / Maseetkhani Gat in any of the following Raagas : Bihag, Yaman, Bhairav"
+                "One Vilambit / Maseetkhani Gat in any of the following Raagas : Bihag",
+                "Yaman",
+                "Bhairav"
               ]
             },
             {
@@ -1040,7 +1130,10 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Taalas",
               "topics": [
-                "Thah, Dugun, Tigun & Chaugun in following Taalas : Rupak, Jhaptal"
+                "Thah",
+                "Dugun",
+                "Tigun & Chaugun in following Taalas : Rupak",
+                "Jhaptal"
               ]
             }
           ],
@@ -1084,14 +1177,23 @@ export const musicSyllabus: CourseSyllabus = {
               "title": "Brief Study",
               "topics": [
                 "History of Music: Modern Period",
-                "Contribution of Mohammad Raza, Pt. Vishnu Digambar Palushkar, Pt. Vishnu Narayan Bhatkhande, Pt. Omkar Nath Thakur"
+                "Contribution of Mohammad Raza, Pt",
+                "Vishnu Digambar Palushkar, Pt",
+                "Vishnu Narayan Bhatkhande, Pt",
+                "Omkar Nath Thakur"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Music Education in Colleges and Universities",
               "topics": [
-                "Sangeet Sammelan, All India Music Conferences, Tansen Samaroh, Hariballabh, Sangeet Sammelan, Allauddin Khan Samaroh, Swami Haridas Sangeet Sammelan"
+                "Sangeet Sammelan",
+                "All India Music Conferences",
+                "Tansen Samaroh",
+                "Hariballabh",
+                "Sangeet Sammelan",
+                "Allauddin Khan Samaroh",
+                "Swami Haridas Sangeet Sammelan"
               ]
             }
           ],
@@ -1123,14 +1225,23 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Brief Study",
               "topics": [
-                "Definition of Rasa, Kinds of Rasa, Relation between Rasa-Bhawa, Raga-Rasa"
+                "Definition of Rasa",
+                "Kinds of Rasa",
+                "Relation between Rasa-Bhawa",
+                "Raga-Rasa"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction of Multi Media",
               "topics": [
-                "Microphones, Gramophones, Radio, Television, Tape-recorder Cassette, C.D. Player, Pen-drive"
+                "Microphones",
+                "Gramophones",
+                "Radio",
+                "Television",
+                "Tape-recorder Cassette",
+                "D",
+                "Player, Pen-drive"
               ]
             },
             {
@@ -1138,7 +1249,11 @@ export const musicSyllabus: CourseSyllabus = {
               "title": "Introduction of Ragas with Notation of Bandishes and Gats",
               "topics": [
                 "Ragas: Vrindavani Sarang, Todi, Desi, Khamaj (one Vilambit & Maseetkhani Gat and Chhota Khayal / Razakhani Gat)",
-                "Taalas: Ektaal, Rupak, Jhaptal writing with Thaah, Dugun, Tigun and Chaugun"
+                "Taalas: Ektaal",
+                "Rupak",
+                "Jhaptal writing with Thaah",
+                "Dugun",
+                "Tigun and Chaugun"
               ]
             },
             {
@@ -1186,7 +1301,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Dhrupad / Dhamar",
               "topics": [
-                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah, Dugun & Chaugun"
+                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah",
+                "Dugun & Chaugun"
               ]
             },
             {
@@ -1200,7 +1316,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Thaah, Dugun & Chaugun",
               "topics": [
-                "Thaah, Dugun & Chaugun in prescribed Taals"
+                "Thaah",
+                "Dugun & Chaugun in prescribed Taals"
               ]
             }
           ],
@@ -1225,7 +1342,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "History of Modern Period",
               "topics": [
-                "Contribution of Mohammad Raza and Pt. Vinayak Rao Patwardhan"
+                "Contribution of Mohammad Raza and Pt",
+                "Vinayak Rao Patwardhan"
               ]
             },
             {
@@ -1309,22 +1427,32 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Back ground Music, Playback singing, Vadya-Vrind (Orchestra) Chorus"
+                "Back ground Music",
+                "Playback singing",
+                "Vadya-Vrind (Orchestra) Chorus"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Music and its relation with other Arts and discipline",
               "topics": [
-                "Sangeet evam Sahitya, Sangeet evam Chitrakala, Sangeet evam Manovigyan, Sangeet evam Chikitsa"
+                "Sangeet evam Sahitya",
+                "Sangeet evam Chitrakala",
+                "Sangeet evam Manovigyan",
+                "Sangeet evam Chikitsa"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Introduction of Film Music",
               "topics": [
-                "Contribution of Classical Musicians in Film Music, Pt. Ravi Shankar, Pt. Hari Prasad Chaurasia, Pt. Shiv Kumar Sharma",
-                "Play back Singers: Lata Mangeshkar, Mohammad Rafi, Manna Dey"
+                "Contribution of Classical Musicians in Film Music, Pt",
+                "Ravi Shankar, Pt",
+                "Hari Prasad Chaurasia, Pt",
+                "Shiv Kumar Sharma",
+                "Play back Singers: Lata Mangeshkar",
+                "Mohammad Rafi",
+                "Manna Dey"
               ]
             },
             {
@@ -1338,7 +1466,9 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 5,
               "title": "Introduction and Comparative study of following Talas",
               "topics": [
-                "Teentaal-Tilwada, Ektaal-Chaartaal, Rupak-Tivra"
+                "Teentaal-Tilwada",
+                "Ektaal-Chaartaal",
+                "Rupak-Tivra"
               ]
             }
           ],
@@ -1399,7 +1529,8 @@ export const musicSyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Dhrupad / Dhamar",
               "topics": [
-                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah, Dugun & Chaugun"
+                "Demonstration of one Dhrupad / Dhamar in any one prescribed Raga with Thaah",
+                "Dugun & Chaugun"
               ]
             },
             {

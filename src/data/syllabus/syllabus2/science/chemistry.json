@@ -27,38 +27,105 @@
               "title": "Atomic Structure",
               "topics": [
                 "Bohr's Theory, its limitations and atomic spectrum of hydrogen atom",
-                "Wave mechanics: de Broglie equation, Heisenberg's Uncertainty Principle and its significance, Schrodinger's wave equation, significance of wave function",
+                "Wave mechanics: de Broglie equation",
+                "Heisenberg's Uncertainty Principle and its significance",
+                "Schrodinger's wave equation",
+                "Significance of wave function",
                 "Quantum Numbers and their significance",
-                "Normalized and orthogonal wave functions. Sign of wave functions",
-                "Radial and angular wave functions for hydrogen atom. Radial and angular distribution curves",
-                "Shapes of s, p, d and f orbitals. Contour boundary and probability diagrams",
-                "Pauli's Exclusions Principle, Hund's Rule of maximum multiplicity, Aufbau's principle and its limitations, Variations of orbital energy with atomic number"
+                "Normalized and orthogonal wave functions",
+                "Sign of wave functions",
+                "Radial and angular wave functions for hydrogen atom",
+                "Radial and angular distribution curves",
+                "Shapes of s, p, d and f orbitals",
+                "Contour boundary and probability diagrams",
+                "Pauli's Exclusions Principle",
+                "Hund's Rule of maximum multiplicity",
+                "Aufbau's principle and its limitations",
+                "Variations of orbital energy with atomic number"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemical Bonding",
               "topics": [
-                "Ionic bond: General characteristics, types of ions size effects, radius ratio rule and its limitations. Packing of ions in crystals. Born-Lande equation with derivation and importance of Kapustinskii expression for lattice energy. Madelung constant, Born-Haber cycle and its application, Solvation energy",
-                "Covalent bond: Lewis structure, Valence Bond Theory (Heitler-London approach). Energetics of hybridization, equivalent and non-equivalent hybrid orbitals. Bent's rule, Resonance and resonance energy, Molecular orbital theory. Molecular orbital diagrams of diatomic and simple polyatomic molecules N2, O2, C2, B2, F2 & CO, NO and their ions; hydrogen chloride, beryllium fluoride, carbon dioxide, (idea of s-p mixing and orbital interaction to be given). Formal charge, Valence shell electron pair repulsion theory (VSEPR), shapes of simple molecules and ions containing lone pairs and bond pairs of electrons, multiple bonding (sigma and pi bond approach) and bond lengths. Covalent character in ionic compounds, polarizing power and polaziability. Fajan's rule and consequences of polarization. Ionic character in covalent compounds: Bond moment, dipole moment and electronegativity difference",
-                "Metallic bond: Qualitative idea of valence bond and band theories. Semiconductors and insulators, defects in solids",
-                "Weak Chemical Forces: van der Waals forces, ion-dipole forces, dipole-dipole interactions, induced dipole interactions, Instantaneous dipole-induced dipole interactions. Repulsive forces, Hydrogen Bonding (theories of hydrogen bonding, valence bond treatment) Effects of chemical force, melting and boiling points, solubility energetics of dissolution process"
+                "Ionic bond: General characteristics",
+                "Types of ions size effects",
+                "Radius ratio rule and its limitations",
+                "Packing of ions in crystals",
+                "Born-Lande equation with derivation and importance of Kapustinskii expression for lattice energy",
+                "Madelung constant",
+                "Born-Haber cycle and its application",
+                "Solvation energy",
+                "Covalent bond: Lewis structure",
+                "Valence Bond Theory (Heitler-London approach)",
+                "Energetics of hybridization",
+                "Equivalent and non-equivalent hybrid orbitals",
+                "Bent's rule",
+                "Resonance and resonance energy",
+                "Molecular orbital theory",
+                "Molecular orbital diagrams of diatomic and simple polyatomic molecules N2, O2, C2, B2, F2 & CO, NO and their ions",
+                "Hydrogen chloride",
+                "Beryllium fluoride",
+                "Carbon dioxide",
+                "(idea of s-p mixing and orbital interaction to be given)",
+                "Formal charge",
+                "Valence shell electron pair repulsion theory (VSEPR)",
+                "Shapes of simple molecules and ions containing lone pairs and bond pairs of electrons",
+                "Multiple bonding (sigma and pi bond approach) and bond lengths",
+                "Covalent character in ionic compounds",
+                "Polarizing power and polaziability",
+                "Fajan's rule and consequences of polarization",
+                "Ionic character in covalent compounds: Bond moment",
+                "Dipole moment and electronegativity difference",
+                "Metallic bond: Qualitative idea of valence bond and band theories",
+                "Semiconductors and insulators",
+                "Defects in solids",
+                "Weak Chemical Forces: van der Waals forces",
+                "Ion-dipole forces",
+                "Dipole-dipole interactions",
+                "Induced dipole interactions",
+                "Instantaneous dipole-induced dipole interactions",
+                "Repulsive forces",
+                "Hydrogen Bonding (theories of hydrogen bonding, valence bond treatment) Effects of chemical force",
+                "Melting and boiling points",
+                "Solubility energetics of dissolution process"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Fundamentals of Organic Chemistry",
               "topics": [
-                "Physical Effects, Electronic Displacements: Inductive Effect, Electromeric Effect, Resonance and Hyperconjugation. Cleavage of Bonds: Homolysis and Heterolysis",
-                "Structure, shape and reactivity of organic molecules, Nucleophiles and electrophiles. Reactive Intermediates: Carbocations, Carbanions and free radicals",
-                "Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values. Aromaticity: Benzenoids and Hückel's rule"
+                "Physical Effects",
+                "Electronic Displacements: Inductive Effect",
+                "Electromeric Effect",
+                "Resonance and Hyperconjugation",
+                "Cleavage of Bonds: Homolysis and Heterolysis",
+                "Structure",
+                "Shape and reactivity of organic molecules",
+                "Nucleophiles and electrophiles",
+                "Reactive Intermediates: Carbocations",
+                "Carbanions and free radicals",
+                "Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values",
+                "Aromaticity: Benzenoids and Hückel's rule"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Stereochemistry",
               "topics": [
-                "Conformations with respect to ethane, butane and cyclohexane. Interconversion of Wedge Formula, Newmann, Sawhorse and Fischer representations. Concept of chirality (upto two carbon atoms). Configuration: Geometrical and Optical isomerism; Enantiomerism, Diastereomerism and Meso compounds). Threo and erythro; D and L; cis-trans nomenclature; CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
+                "Conformations with respect to ethane",
+                "Butane and cyclohexane",
+                "Interconversion of Wedge Formula",
+                "Newmann",
+                "Sawhorse and Fischer representations",
+                "Concept of chirality (upto two carbon atoms)",
+                "Configuration: Geometrical and Optical isomerism",
+                "Enantiomerism",
+                "Diastereomerism and Meso compounds)",
+                "Threo and erythro",
+                "D and L",
+                "Cis-trans nomenclature",
+                "CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
               ]
             },
             {
@@ -66,9 +133,25 @@
               "title": "Aliphatic Hydrocarbons",
               "topics": [
                 "Functional group approach for the following reactions (preparations & reactions) to be studied in context to their structure",
-                "Alkanes: (Upto 5 Carbons). Preparation: Catalytic hydrogenation, Wurtz reaction, Kolbe's synthesis, from Grignard reagent. Reactions: Free radical Substitution: Halogenation",
-                "Alkenes: (Upto 5 Carbons) Preparation: Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule); cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction). Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine), Addition of HX (Markownikoff's and anti-Markownikoff's addition), Hydration, Ozonolysis, oxymercuration-demercuration, Hydroboration-oxidation",
-                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes; by dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides. Reactions: formation of metal acetylides, addition of bromine and alkaline KMnO4, ozonolysis and oxidation with hot alk. KMnO4"
+                "Alkanes: (Upto 5 Carbons)",
+                "Preparation: Catalytic hydrogenation",
+                "Wurtz reaction",
+                "Kolbe's synthesis, from Grignard reagent",
+                "Reactions: Free radical Substitution: Halogenation",
+                "Alkenes: (Upto 5 Carbons) Preparation: Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule)",
+                "Cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction)",
+                "Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine)",
+                "Addition of HX (Markownikoff's and anti-Markownikoff's addition)",
+                "Hydration",
+                "Ozonolysis",
+                "Oxymercuration-demercuration",
+                "Hydroboration-oxidation",
+                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes",
+                "By dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides",
+                "Reactions: formation of metal acetylides",
+                "Addition of bromine and alkaline KMnO4",
+                "Ozonolysis and oxidation with hot alk",
+                "KMnO4"
               ]
             }
           ],
@@ -108,7 +191,8 @@
               "unitNumber": 2,
               "title": "Organic Chemistry Practical",
               "topics": [
-                "Detection of elements, separation and purification of Organic Compounds and Hydrolysis of ester"
+                "Detection of elements",
+                "Separation and purification of Organic Compounds and Hydrolysis of ester"
               ]
             }
           ],
@@ -133,31 +217,86 @@
               "unitNumber": 1,
               "title": "Atomic Structure",
               "topics": [
-                "Review of: Bohr's theory and its limitations, dual behaviour of matter and radiation, de-Broglie's relation, Heisenberg Uncertainty principle. Hydrogen atom spectra. Need of a new approach to Atomic structure",
-                "Significance of quantum numbers, orbital angular momentum and quantum numbers m and ms. Shapes of s, p and d atomic orbitals, nodal planes. Discovery of spin, spin quantum number (s) and magnetic spin quantum number (ms)",
-                "Rules for filling electrons in various orbitals, Electronic configurations of the atoms. Stability of half-filled and completely filled orbitals, concept of exchange energy. Relative energies of atomic orbitals, Anomalous electronic configuration, Hund's, Pauli's and Aufbau's principle"
+                "Review of: Bohr's theory and its limitations",
+                "Dual behaviour of matter and radiation",
+                "De-Broglie's relation",
+                "Heisenberg Uncertainty principle",
+                "Hydrogen atom spectra",
+                "Need of a new approach to Atomic structure",
+                "Significance of quantum numbers",
+                "Orbital angular momentum and quantum numbers m and ms",
+                "Shapes of s",
+                "P and d atomic orbitals",
+                "Nodal planes",
+                "Discovery of spin",
+                "Spin quantum number (s) and magnetic spin quantum number (ms)",
+                "Rules for filling electrons in various orbitals",
+                "Electronic configurations of the atoms",
+                "Stability of half-filled and completely filled orbitals",
+                "Concept of exchange energy",
+                "Relative energies of atomic orbitals",
+                "Anomalous electronic configuration",
+                "Hund's",
+                "Pauli's and Aufbau's principle"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemical Bonding and Molecular Structure",
               "topics": [
-                "Ionic Bonding: General characteristics of ionic bonding. Energy considerations in ionic bonding, lattice energy and solvation energy and their importance in the context of stability and solubility of ionic compounds. Statement of Born-Lande equation for calculation of lattice energy, Born-Haber cycle and its applications, polarizing power and polarizability. Fajan's rules, ionic character in covalent compounds, bond moment, dipole moment and percentage ionic character",
-                "Covalent bonding: VB Approach: Shapes of some inorganic molecules and ions on the basis of VSEPR and hybridization with suitable examples of linear, trigonal planar, square planar, tetrahedral, trigonal bipyramidal and octahedral arrangements. Concept of resonance and resonating structures in various inorganic and organic compounds"
+                "Ionic Bonding: General characteristics of ionic bonding",
+                "Energy considerations in ionic bonding",
+                "Lattice energy and solvation energy and their importance in the context of stability and solubility of ionic compounds",
+                "Statement of Born-Lande equation for calculation of lattice energy",
+                "Born-Haber cycle and its applications",
+                "Polarizing power and polarizability",
+                "Fajan's rules",
+                "Ionic character in covalent compounds",
+                "Bond moment",
+                "Dipole moment and percentage ionic character",
+                "Covalent bonding: VB Approach: Shapes of some inorganic molecules and ions on the basis of VSEPR and hybridization with suitable examples of linear",
+                "Trigonal planar",
+                "Square planar",
+                "Tetrahedral",
+                "Trigonal bipyramidal and octahedral arrangements",
+                "Concept of resonance and resonating structures in various inorganic and organic compounds"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Section B: Organic Chemistry-1",
               "topics": [
-                "Fundamentals of Organic Chemistry: Physical Effects, Electronic Displacements: Inductive Effect, Electromeric Effect, Resonance and Hyperconjugation. Cleavage of Bonds: Homolysis and Heterolysis. Structure, shape and reactivity of organic molecules: Nucleophiles and electrophiles. Reactive Intermediates: Carbocations, Carbanions and free radicals. Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values. Aromaticity: Benzenoids and Hückel's rule"
+                "Fundamentals of Organic Chemistry: Physical Effects",
+                "Electronic Displacements: Inductive Effect",
+                "Electromeric Effect",
+                "Resonance and Hyperconjugation",
+                "Cleavage of Bonds: Homolysis and Heterolysis",
+                "Structure",
+                "Shape and reactivity of organic molecules: Nucleophiles and electrophiles",
+                "Reactive Intermediates: Carbocations",
+                "Carbanions and free radicals",
+                "Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values",
+                "Aromaticity: Benzenoids and Hückel's rule"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Stereochemistry",
               "topics": [
-                "Conformations with respect to ethane, butane and cyclohexane. Interconversion of Wedge Formula, Newmann, Sawhorse and Fischer representations. Concept of chirality (upto two carbon atoms). Configuration: Geometrical and Optical isomerism; Enantiomerism, Diastereomerism and Meso compounds). Three and erythro; D and L; cis - trans nomenclature; CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
+                "Conformations with respect to ethane",
+                "Butane and cyclohexane",
+                "Interconversion of Wedge Formula",
+                "Newmann",
+                "Sawhorse and Fischer representations",
+                "Concept of chirality (upto two carbon atoms)",
+                "Configuration: Geometrical and Optical isomerism",
+                "Enantiomerism",
+                "Diastereomerism and Meso compounds)",
+                "Three and erythro",
+                "D and L",
+                "Cis",
+                "Trans nomenclature",
+                "CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
               ]
             }
           ],
@@ -203,7 +342,8 @@
               "unitNumber": 2,
               "title": "Organic Chemistry Practical",
               "topics": [
-                "Organic Practical : Detection of elements, separation and purification of Organic Compounds"
+                "Organic Practical : Detection of elements",
+                "Separation and purification of Organic Compounds"
               ]
             }
           ],
@@ -228,31 +368,86 @@
               "unitNumber": 1,
               "title": "Atomic Structure",
               "topics": [
-                "Review of: Bohr's theory and its limitations, dual behaviour of matter and radiation, de-Broglie's relation, Heisenberg Uncertainty principle. Hydrogen atom spectra. Need of a new approach to Atomic structure",
-                "Significance of quantum numbers, orbital angular momentum and quantum numbers m and m. Shapes of s, p and d atomic orbitals, nodal planes. Discovery of spin, spin quantum number (s) and magnetic spin quantum number (ms)",
-                "Rules for filling electrons in various orbitals, Electronic configurations of the atoms. Stability of half-filled and completely filled orbitals, concept of exchange energy. Relative energies of atomic orbitals, Anomalous electronic configuration, Hund's, Pauli's and Aufbau's principle"
+                "Review of: Bohr's theory and its limitations",
+                "Dual behaviour of matter and radiation",
+                "De-Broglie's relation",
+                "Heisenberg Uncertainty principle",
+                "Hydrogen atom spectra",
+                "Need of a new approach to Atomic structure",
+                "Significance of quantum numbers",
+                "Orbital angular momentum and quantum numbers m and m",
+                "Shapes of s",
+                "P and d atomic orbitals",
+                "Nodal planes",
+                "Discovery of spin",
+                "Spin quantum number (s) and magnetic spin quantum number (ms)",
+                "Rules for filling electrons in various orbitals",
+                "Electronic configurations of the atoms",
+                "Stability of half-filled and completely filled orbitals",
+                "Concept of exchange energy",
+                "Relative energies of atomic orbitals",
+                "Anomalous electronic configuration",
+                "Hund's",
+                "Pauli's and Aufbau's principle"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemical Bonding and Molecular Structure",
               "topics": [
-                "Ionic Bonding: General characteristics of ionic bonding. Energy considerations in ionic bonding, lattice energy and solvation energy and their importance in the context of stability and solubility of ionic compounds. Statement of Born-Lande equation for calculation of lattice energy, Born-Haber cycle and its applications, polarizing power and polarizability. Fajan's rules, ionic character in covalent compounds, bond moment, dipole moment and percentage ionic character",
-                "Covalent bonding: VB Approach: Shapes of some inorganic molecules and ions on the basis of VSEPR and hybridization with suitable examples of linear, trigonal planar, square planar, tetrahedral, trigonal bipyramidal and octahedral arrangements. Concept of resonance and resonating structures in various inorganic and organic compounds"
+                "Ionic Bonding: General characteristics of ionic bonding",
+                "Energy considerations in ionic bonding",
+                "Lattice energy and solvation energy and their importance in the context of stability and solubility of ionic compounds",
+                "Statement of Born-Lande equation for calculation of lattice energy",
+                "Born-Haber cycle and its applications",
+                "Polarizing power and polarizability",
+                "Fajan's rules",
+                "Ionic character in covalent compounds",
+                "Bond moment",
+                "Dipole moment and percentage ionic character",
+                "Covalent bonding: VB Approach: Shapes of some inorganic molecules and ions on the basis of VSEPR and hybridization with suitable examples of linear",
+                "Trigonal planar",
+                "Square planar",
+                "Tetrahedral",
+                "Trigonal bipyramidal and octahedral arrangements",
+                "Concept of resonance and resonating structures in various inorganic and organic compounds"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Section B: Organic Chemistry-1",
               "topics": [
-                "Fundamentals of Organic Chemistry: Physical Effects, Electronic Displacements: Inductive Effect, Electromeric Effect, Resonance and Hyperconjugation. Cleavage of Bonds: Homolysis and Heterolysis. Structure, shape and reactivity of organic molecules: Nucleophiles and electrophiles. Reactive Intermediates: Carbocations, Carbanions and free radicals. Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values. Aromaticity: Benzenoids and Hückel's rule"
+                "Fundamentals of Organic Chemistry: Physical Effects",
+                "Electronic Displacements: Inductive Effect",
+                "Electromeric Effect",
+                "Resonance and Hyperconjugation",
+                "Cleavage of Bonds: Homolysis and Heterolysis",
+                "Structure",
+                "Shape and reactivity of organic molecules: Nucleophiles and electrophiles",
+                "Reactive Intermediates: Carbocations",
+                "Carbanions and free radicals",
+                "Strength of organic acids and bases: Comparative study with emphasis on factors affecting pK values",
+                "Aromaticity: Benzenoids and Hückel's rule"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Stereochemistry",
               "topics": [
-                "Conformations with respect to ethane, butane and cyclohexane. Interconversion of Wedge Formula, Newmann, Sawhorse and Fischer representations. Concept of chirality (upto two carbon atoms). Configuration: Geometrical and Optical isomerism; Enantiomerism, Diastereomerism and Meso compounds). Threo and erythro; D and L; cis - trans nomenclature; CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
+                "Conformations with respect to ethane",
+                "Butane and cyclohexane",
+                "Interconversion of Wedge Formula",
+                "Newmann",
+                "Sawhorse and Fischer representations",
+                "Concept of chirality (upto two carbon atoms)",
+                "Configuration: Geometrical and Optical isomerism",
+                "Enantiomerism",
+                "Diastereomerism and Meso compounds)",
+                "Threo and erythro",
+                "D and L",
+                "Cis",
+                "Trans nomenclature",
+                "CIP Rules: R/S (for upto 2 chiral carbon atoms) and E/Z Nomenclature (for upto two C=C systems)"
               ]
             }
           ],
@@ -298,7 +493,8 @@
               "unitNumber": 2,
               "title": "Organic Chemistry Practical",
               "topics": [
-                "Organic Practical : Detection of elements, separation and purification of Organic Compounds"
+                "Organic Practical : Detection of elements",
+                "Separation and purification of Organic Compounds"
               ]
             }
           ],
@@ -370,31 +566,88 @@
               "unitNumber": 1,
               "title": "Gaseous state",
               "topics": [
-                "Kinetic molecular model of a gas postulates and concept of an Ideal gas, Derivation of the kinetic gas equation and various gas laws; Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities – Most Probable Velocity, Average (Mean) Velocity, Root Mean Square (RMS) Velocity, and Average kinetic energy; Relationship between various molecular velocities; Law of equipartition of energy, degrees of freedom and molecular basis of heat capacities",
-                "Viscosity of gases, co-efficient of viscosity and its dependence on temperature and pressure; Collision frequency, Collision diameter and Mean free path; Relationship between mean free path (λ) and co-efficient of viscosity (η), Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
-                "Behaviour of real gases: Deviations form ideal gas behavior, compressibility factor Z, and its variation with pressure for different gases; Causes of deviation from ideal behaviour. Equation of states for real gases; Van der Waals equation of state, its derivation and application in explaining real gas behaviour, Virial coefficients, calculation of Boyle temperature; Isotherms of real gases and their comparison with van der Waals isotherms, continuity of states, critical state & critical constants, relation between critical constants and van der Waals constants, law of corresponding states"
+                "Kinetic molecular model of a gas postulates and concept of an Ideal gas",
+                "Derivation of the kinetic gas equation and various gas laws",
+                "Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities",
+                "Most Probable Velocity",
+                "Average (Mean) Velocity",
+                "Root Mean Square (RMS) Velocity, and Average kinetic energy",
+                "Relationship between various molecular velocities",
+                "Law of equipartition of energy",
+                "Degrees of freedom and molecular basis of heat capacities",
+                "Viscosity of gases",
+                "Co-efficient of viscosity and its dependence on temperature and pressure",
+                "Collision frequency",
+                "Collision diameter and Mean free path",
+                "Relationship between mean free path (λ) and co-efficient of viscosity (η)",
+                "Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
+                "Behaviour of real gases: Deviations form ideal gas behavior",
+                "Compressibility factor Z, and its variation with pressure for different gases",
+                "Causes of deviation from ideal behaviour",
+                "Equation of states for real gases",
+                "Van der Waals equation of state, its derivation and application in explaining real gas behaviour",
+                "Virial coefficients",
+                "Calculation of Boyle temperature",
+                "Isotherms of real gases and their comparison with van der Waals isotherms",
+                "Continuity of states",
+                "Critical state & critical constants",
+                "Relation between critical constants and van der Waals constants",
+                "Law of corresponding states"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Liquid state",
               "topics": [
-                "Qualitative treatment of the structure of the liquid state; physical properties of liquids; vapour pressure, surface tension and coefficient of viscosity, and their determination. Effect of addition of various solutes on surface tension and viscosity. Explanation of cleansing action of detergents. Temperature variation of viscosity of liquids and comparison with that of gases"
+                "Qualitative treatment of the structure of the liquid state",
+                "Physical properties of liquids",
+                "Vapour pressure",
+                "Surface tension and coefficient of viscosity, and their determination",
+                "Effect of addition of various solutes on surface tension and viscosity",
+                "Explanation of cleansing action of detergents",
+                "Temperature variation of viscosity of liquids and comparison with that of gases"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Solid state",
               "topics": [
-                "Nature of the solid state, law of constancy of interfacial angles, law of rational indices, miller indices, elementary ideas of symmetry, symmetry elements and symmetry operations, qualitative idea of point and space groups, seven crystal systems and fourteen Bravais lattices; x-ray diffraction, Bragg's law, a simple account of rotating crystal method and powder pattern method; Analysis of powder diffraction patterns of NaCl, CsCl and KCl"
+                "Nature of the solid state",
+                "Law of constancy of interfacial angles",
+                "Law of rational indices",
+                "Miller indices",
+                "Elementary ideas of symmetry",
+                "Symmetry elements and symmetry operations",
+                "Qualitative idea of point and space groups",
+                "Seven crystal systems and fourteen Bravais lattices",
+                "X-ray diffraction",
+                "Bragg's law",
+                "A simple account of rotating crystal method and powder pattern method",
+                "Analysis of powder diffraction patterns of NaCl, CsCl and KCl"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Ionic equilibria",
               "topics": [
-                "Strong, moderate and weak electrolytes, degree of ionization, factors affecting degree of ionization, ionization constant and ionic product of water. Ionization of weak acids and bases, dissociation constants of mono and diprotic acids; pH and pOH, pH scale; common ion effect; Salt hydrolysis, calculation of hydrolysis constant, degree of hydrolysis and pH for different salts",
-                "Buffer solutions; derivation of Henderson equation and its applications; Solubility product of sparingly soluble salts, applications of solubility product principle; Qualitative treatment of acid-base titration curves (calculation of pH at various stages). Theory of acid-base indicators; selection of indicators and their limitations"
+                "Strong, moderate and weak electrolytes",
+                "Degree of ionization",
+                "Factors affecting degree of ionization",
+                "Ionization constant and ionic product of water",
+                "Ionization of weak acids and bases",
+                "Dissociation constants of mono and diprotic acids",
+                "pH and pOH, pH scale",
+                "Common ion effect",
+                "Salt hydrolysis",
+                "Calculation of hydrolysis constant",
+                "Degree of hydrolysis and pH for different salts",
+                "Buffer solutions",
+                "Derivation of Henderson equation and its applications",
+                "Solubility product of sparingly soluble salts",
+                "Applications of solubility product principle",
+                "Qualitative treatment of acid-base titration curves (calculation of pH at various stages)",
+                "Theory of acid-base indicators",
+                "Selection of indicators and their limitations"
               ]
             }
           ],
@@ -423,7 +676,8 @@
               "unitNumber": 1,
               "title": "Surface tension measurements using Stalagmometer",
               "topics": [
-                "Determine the surface tension of aqueous solutions by (a) drop number, (b) drop weight method"
+                "Determine the surface tension of aqueous solutions by (a) drop number",
+                "(b) drop weight method"
               ]
             },
             {
@@ -445,9 +699,11 @@
               "unitNumber": 4,
               "title": "pH- metry",
               "topics": [
-                "Study the effect of addition of HCl/ NaOH on pH to the solutions of acetic acid, sodium acetate and their mixtures",
+                "Study the effect of addition of HCl/ NaOH on pH to the solutions of acetic acid",
+                "Sodium acetate and their mixtures",
                 "Preparation of buffer solutions of different pH values (a) Sodium acetate- acetic acid (b) Ammonium chloride- ammonium hydroxide",
-                "pH metric titration of (a) strong acid with strong base, (b) weak acid with strong base and determination of dissociation constant of a weak acid"
+                "pH metric titration of (a) strong acid with strong base",
+                "(b) weak acid with strong base and determination of dissociation constant of a weak acid"
               ]
             }
           ],
@@ -470,14 +726,20 @@
               "unitNumber": 1,
               "title": "Atomic Structure",
               "topics": [
-                "What is Quantum mechanics? Time independent Schrodinger equation and meaning of various terms in it. Significance of ψ and ψ2, Schrödinger equation for hydrogen atom. Radial and angular parts of the hydrogen wavefunctions (atomic orbitals) and their variations for 1s, 2s, 2p, 3s, 3p and 3d orbitals (Only graphical representation). Radial and angular nodes and their significance. Radial distribution functions and the concept of the most probable distance with special reference to 1s and 2s atomic orbitals"
+                "What is Quantum mechanics? Time independent Schrodinger equation and meaning of various terms in it",
+                "Significance of ψ and ψ2",
+                "Schrödinger equation for hydrogen atom",
+                "Radial and angular parts of the hydrogen wavefunctions (atomic orbitals) and their variations for 1s, 2s, 2p, 3s, 3p and 3d orbitals (Only graphical representation)",
+                "Radial and angular nodes and their significance",
+                "Radial distribution functions and the concept of the most probable distance with special reference to 1s and 2s atomic orbitals"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemical Bonding and Molecular Structure",
               "topics": [
-                "MO Approach: Rules for the LCAO method, bonding and antibonding MOs and their characteristics for s-s, s-p and p-p combinations of atomic orbitals, nonbonding combination of orbitals, MO treatment of homonuclear diatomic molecules of 1st and 2nd periods (including idea of s-p mixing) and heteronuclear diatomic molecules such as CO, NO and NO+. Comparison of VB and MO approaches"
+                "MO Approach: Rules for the LCAO method, bonding and antibonding MOs and their characteristics for s-s, s-p and p-p combinations of atomic orbitals, nonbonding combination of orbitals, MO treatment of homonuclear diatomic molecules of 1st and 2nd periods (including idea of s-p mixing) and heteronuclear diatomic molecules such as CO, NO and NO+",
+                "Comparison of VB and MO approaches"
               ]
             },
             {
@@ -486,18 +748,58 @@
               "topics": [
                 "Aliphatic Hydrocarbons",
                 "Functional group approach for the following reactions (preparations & reactions) to be studied in context to their structure",
-                "Alkanes: (Upto 5 Carbons). Preparation: Catalytic hydrogenation, Wurtz reaction, Kolbe's synthesis, from Grignard reagent. Reactions: Free radical Substitution: Halogenation",
-                "Alkenes: (Upto 5 Carbons) Preparation- Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule); cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction). Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine), Addition of HX (Markownikoff's and anti-Markownikoff's addition), Hydration, Ozonolysis, oxymercuration-demercuration, Hydroboration-oxidation",
-                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes; by dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides. Reactions: formation of metal acetylides, addition of bromine and alkaline KMnO4, ozonolysis and oxidation with hot alk. KMnO4"
+                "Alkanes: (Upto 5 Carbons)",
+                "Preparation: Catalytic hydrogenation",
+                "Wurtz reaction",
+                "Kolbe's synthesis, from Grignard reagent",
+                "Reactions: Free radical Substitution: Halogenation",
+                "Alkenes: (Upto 5 Carbons) Preparation- Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule)",
+                "Cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction)",
+                "Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine)",
+                "Addition of HX (Markownikoff's and anti-Markownikoff's addition)",
+                "Hydration",
+                "Ozonolysis",
+                "Oxymercuration-demercuration",
+                "Hydroboration-oxidation",
+                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes",
+                "By dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides",
+                "Reactions: formation of metal acetylides",
+                "Addition of bromine and alkaline KMnO4",
+                "Ozonolysis and oxidation with hot alk",
+                "KMnO4"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gaseous state",
               "topics": [
-                "Kinetic molecular model of a gas postulates and concept of an Ideal gas, Derivation of the kinetic gas equation and various gas laws; Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities - Most Probable Velocity, Average (Mean) Velocity, Root Mean Square (RMS) Velocity, and Average kinetic energy; Relationship between various molecular velocities; Law of equipartition of energy, degrees of freedom and molecular basis of heat capacities",
-                "Viscosity of gases, co-efficient of viscosity and its dependence on temperature and pressure; Collision frequency, Collision diameter and Mean free path; Relationship between mean free path (λ) and co-efficient of viscosity (η), Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
-                "Behaviour of real gases: Deviations form ideal gas behavior, compressibility factor Z, and its variation with pressure for different gases; Causes of deviation from ideal behaviour. Equation of states for real gases; Van der Waals equation of state, its derivation and application in explaining real gas behaviour, Virial coefficients, calculation of Boyle temperature; Isotherms of real gases and their comparison with van der Waals isotherms, continuity of states, critical state & critical constants, relation between critical constants and van der Waals constants, law of corresponding states"
+                "Kinetic molecular model of a gas postulates and concept of an Ideal gas",
+                "Derivation of the kinetic gas equation and various gas laws",
+                "Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities",
+                "Most Probable Velocity",
+                "Average (Mean) Velocity",
+                "Root Mean Square (RMS) Velocity, and Average kinetic energy",
+                "Relationship between various molecular velocities",
+                "Law of equipartition of energy",
+                "Degrees of freedom and molecular basis of heat capacities",
+                "Viscosity of gases",
+                "Co-efficient of viscosity and its dependence on temperature and pressure",
+                "Collision frequency",
+                "Collision diameter and Mean free path",
+                "Relationship between mean free path (λ) and co-efficient of viscosity (η)",
+                "Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
+                "Behaviour of real gases: Deviations form ideal gas behavior",
+                "Compressibility factor Z, and its variation with pressure for different gases",
+                "Causes of deviation from ideal behaviour",
+                "Equation of states for real gases",
+                "Van der Waals equation of state, its derivation and application in explaining real gas behaviour",
+                "Virial coefficients",
+                "Calculation of Boyle temperature",
+                "Isotherms of real gases and their comparison with van der Waals isotherms",
+                "Continuity of states",
+                "Critical state & critical constants",
+                "Relation between critical constants and van der Waals constants",
+                "Law of corresponding states"
               ]
             }
           ],
@@ -535,7 +837,8 @@
               "title": "Practical",
               "topics": [
                 "Surface tension measurements using Stalagmometer",
-                "Determine the surface tension of aqueous solutions by (a) drop number, (b) drop weight method",
+                "Determine the surface tension of aqueous solutions by (a) drop number",
+                "(b) drop weight method",
                 "Viscosity measurement using Ostwald's viscometer",
                 "Determination of co-efficient of viscosity of an unknown aqueous solution",
                 "Study of variation of viscosity with different concentration of sugar solutions",
@@ -563,14 +866,20 @@
               "unitNumber": 1,
               "title": "Atomic Structure",
               "topics": [
-                "What is Quantum mechanics? Time independent Schrodinger equation and meaning of various terms in it. Significance of ψ and ψ2, Schrödinger equation for hydrogen atom. Radial and angular parts of the hydrogen wavefunctions (atomic orbitals) and their variations for 1s, 2s, 2p, 3s, 3p and 3d orbitals (Only graphical representation). Radial and angular nodes and their significance. Radial distribution functions and the concept of the most probable distance with special reference to 1s and 2s atomic orbitals"
+                "What is Quantum mechanics? Time independent Schrodinger equation and meaning of various terms in it",
+                "Significance of ψ and ψ2",
+                "Schrödinger equation for hydrogen atom",
+                "Radial and angular parts of the hydrogen wavefunctions (atomic orbitals) and their variations for 1s, 2s, 2p, 3s, 3p and 3d orbitals (Only graphical representation)",
+                "Radial and angular nodes and their significance",
+                "Radial distribution functions and the concept of the most probable distance with special reference to 1s and 2s atomic orbitals"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemical Bonding and Molecular Structure",
               "topics": [
-                "MO Approach: Rules for the LCAO method, bonding and antibonding MOs and their characteristics for s-s, s-p and p-p combinations of atomic orbitals, nonbonding combination of orbitals, MO treatment of homonuclear diatomic molecules of 1st and 2nd periods (including idea of s-p mixing) and heteronuclear diatomic molecules such as CO, NO and NO+. Comparison of VB and MO approaches"
+                "MO Approach: Rules for the LCAO method, bonding and antibonding MOs and their characteristics for s-s, s-p and p-p combinations of atomic orbitals, nonbonding combination of orbitals, MO treatment of homonuclear diatomic molecules of 1st and 2nd periods (including idea of s-p mixing) and heteronuclear diatomic molecules such as CO, NO and NO+",
+                "Comparison of VB and MO approaches"
               ]
             },
             {
@@ -579,18 +888,58 @@
               "topics": [
                 "Aliphatic Hydrocarbons",
                 "Functional group approach for the following reactions (preparations & reactions) to be studied in context to their structure",
-                "Alkanes: (Upto 5 Carbons). Preparation: Catalytic hydrogenation, Wurtz reaction, Kolbe's synthesis, from Grignard reagent. Reactions: Free radical Substitution: Halogenation",
-                "Alkenes: (Upto 5 Carbons) Preparation- Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule); cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction). Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine), Addition of HX (Markownikoff's and anti-Markownikoff's addition), Hydration, Ozonolysis, oxymercuration-demercuration, Hydroboration-oxidation",
-                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes; by dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides. Reactions: formation of metal acetylides, addition of bromine and alkaline KMnO4, ozonolysis and oxidation with hot alk. KMnO4"
+                "Alkanes: (Upto 5 Carbons)",
+                "Preparation: Catalytic hydrogenation",
+                "Wurtz reaction",
+                "Kolbe's synthesis, from Grignard reagent",
+                "Reactions: Free radical Substitution: Halogenation",
+                "Alkenes: (Upto 5 Carbons) Preparation- Elimination reactions: Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule)",
+                "Cis alkenes (Partial catalytic hydrogenation) and trans alkenes (Birch reduction)",
+                "Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine)",
+                "Addition of HX (Markownikoff's and anti-Markownikoff's addition)",
+                "Hydration",
+                "Ozonolysis",
+                "Oxymercuration-demercuration",
+                "Hydroboration-oxidation",
+                "Alkynes: (Upto 5 Carbons) Preparation: Acetylene from CaC2 and conversion into higher alkynes",
+                "By dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides",
+                "Reactions: formation of metal acetylides",
+                "Addition of bromine and alkaline KMnO4",
+                "Ozonolysis and oxidation with hot alk",
+                "KMnO4"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Gaseous state",
               "topics": [
-                "Kinetic molecular model of a gas postulates and concept of an Ideal gas, Derivation of the kinetic gas equation and various gas laws; Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities - Most Probable Velocity, Average (Mean) Velocity, Root Mean Square (RMS) Velocity, and Average kinetic energy; Relationship between various molecular velocities; Law of equipartition of energy, degrees of freedom and molecular basis of heat capacities",
-                "Viscosity of gases, co-efficient of viscosity and its dependence on temperature and pressure; Collision frequency, Collision diameter and Mean free path; Relationship between mean free path (λ) and co-efficient of viscosity (η), Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
-                "Behaviour of real gases: Deviations form ideal gas behavior, compressibility factor Z, and its variation with pressure for different gases; Causes of deviation from ideal behaviour. Equation of states for real gases; Van der Waals equation of state, its derivation and application in explaining real gas behaviour, Virial coefficients, calculation of Boyle temperature; Isotherms of real gases and their comparison with van der Waals isotherms, continuity of states, critical state & critical constants, relation between critical constants and van der Waals constants, law of corresponding states"
+                "Kinetic molecular model of a gas postulates and concept of an Ideal gas",
+                "Derivation of the kinetic gas equation and various gas laws",
+                "Maxwell's Distribution of Molecular velocities and its use in evaluating different types of molecular velocities",
+                "Most Probable Velocity",
+                "Average (Mean) Velocity",
+                "Root Mean Square (RMS) Velocity, and Average kinetic energy",
+                "Relationship between various molecular velocities",
+                "Law of equipartition of energy",
+                "Degrees of freedom and molecular basis of heat capacities",
+                "Viscosity of gases",
+                "Co-efficient of viscosity and its dependence on temperature and pressure",
+                "Collision frequency",
+                "Collision diameter and Mean free path",
+                "Relationship between mean free path (λ) and co-efficient of viscosity (η)",
+                "Calculation of collision diameter (σ) from co-efficient of viscosity (η)",
+                "Behaviour of real gases: Deviations form ideal gas behavior",
+                "Compressibility factor Z, and its variation with pressure for different gases",
+                "Causes of deviation from ideal behaviour",
+                "Equation of states for real gases",
+                "Van der Waals equation of state, its derivation and application in explaining real gas behaviour",
+                "Virial coefficients",
+                "Calculation of Boyle temperature",
+                "Isotherms of real gases and their comparison with van der Waals isotherms",
+                "Continuity of states",
+                "Critical state & critical constants",
+                "Relation between critical constants and van der Waals constants",
+                "Law of corresponding states"
               ]
             }
           ],
@@ -628,7 +977,8 @@
               "title": "Practical",
               "topics": [
                 "Surface tension measurements using Stalagmometer",
-                "Determine the surface tension of aqueous solutions by (a) drop number, (b) drop weight method",
+                "Determine the surface tension of aqueous solutions by (a) drop number",
+                "(b) drop weight method",
                 "Viscosity measurement using Ostwald's viscometer",
                 "Determination of co-efficient of viscosity of an unknown aqueous solution",
                 "Study of variation of viscosity with different concentration of sugar solutions",
@@ -703,30 +1053,52 @@
               "unitNumber": 1,
               "title": "Reaction intermediates",
               "topics": [
-                "Carbenes, nitrenes and benzynes: Generation, structure, stability and reactions"
+                "Carbenes",
+                "Nitrenes and benzynes: Generation",
+                "Structure",
+                "Stability and reactions"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Chemistry of Cyclic Hydrocarbons",
               "topics": [
-                "Nomenclature of monocyclic and bicyclic compounds, Baeyer's strain theory, conformation of cyclohexane, relative stability of chair, boat and twist boat forms of cyclohexane with their energy level diagram, relative stability of mono- and disubstituted cyclohexanes, Aromaticity and Huckel rules with reference to benzenoids, cyclocarbocations and cyclocarbanions, mechanism of electrophilic aromatic substitution in benzene-halogenation, nitration, sulphonation, Friedel-Crafts alkylation/acylation, energy profile diagrams of these reactions, reactivity of mono-subsituted benzene, directive influence of functional groups"
+                "Nomenclature of monocyclic and bicyclic compounds",
+                "Baeyer's strain theory",
+                "Conformation of cyclohexane",
+                "Relative stability of chair",
+                "Boat and twist boat forms of cyclohexane with their energy level diagram",
+                "Relative stability of mono- and disubstituted cyclohexanes",
+                "Aromaticity and Huckel rules with reference to benzenoids",
+                "Cyclocarbocations and cyclocarbanions",
+                "Mechanism of electrophilic aromatic substitution in benzene-halogenation",
+                "Nitration",
+                "Sulphonation",
+                "Friedel-Crafts alkylation/acylation",
+                "Energy profile diagrams of these reactions",
+                "Reactivity of mono-subsituted benzene",
+                "Directive influence of functional groups"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Chemistry of Halogen Derivatives of alkanes",
               "topics": [
-                "General methods of preparation, properties and uses of mono- and dihalo derivatives of alkanes",
-                "Mechanism of substitution and elimination reactions viz. SN1, SN2, SN1, E1, E2 and E1CB mechanism"
+                "General methods of preparation",
+                "Properties and uses of mono- and dihalo derivatives of alkanes",
+                "Mechanism of substitution and elimination reactions viz",
+                "SN1, SN2, SN1, E1, E2 and E1CB mechanism"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Halogen derivatives of arenes",
               "topics": [
-                "General methods of preparation, properties and uses of halogen derivatives of arenes",
-                "Mechanism: ArSN2, ArSN1, elimination-addition mechanism (benzene mechanism)"
+                "General methods of preparation",
+                "Properties and uses of halogen derivatives of arenes",
+                "Mechanism: ArSN2",
+                "ArSN1",
+                "Elimination-addition mechanism (benzene mechanism)"
               ]
             }
           ],
@@ -763,21 +1135,51 @@
               "unitNumber": 2,
               "title": "Thermochemistry",
               "topics": [
-                "Standard state, enthalpy of reaction, standard enthalpy of formation, Hess's law of constant heat summation and its applications, enthalpy of combustion, enthalpy of neutralization, bond dissociation energy and its calculation from thermo-chemical data, temperature dependence of enthalpy, Kirchoff's equation"
+                "Standard state",
+                "Enthalpy of reaction",
+                "Standard enthalpy of formation",
+                "Hess's law of constant heat summation and its applications",
+                "Enthalpy of combustion",
+                "Enthalpy of neutralization",
+                "Bond dissociation energy and its calculation from thermo-chemical data",
+                "Temperature dependence of enthalpy",
+                "Kirchoff's equation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Thermodynamics-II",
               "topics": [
-                "Second law of thermodynamics, need of the law, different statements of the law, Carnot theorem, Carnot cycle and its efficiency, concept of entropy, entropy as a function of V&T, P&T, entropy change in ideal gases and mixing of ideal gases, free energy and spontaneity, variation of Gibbs free energy (G) and Helmholtz free energy(A) with P,V and T, Maxwell's relations, Thermodynamic equation of state, Nernst heat theorem, third law of thermodynamics, statement, evaluation of absolute entropy from third law of thermodynamics, concept of residual entropy"
+                "Second law of thermodynamics",
+                "Need of the law",
+                "Different statements of the law",
+                "Carnot theorem",
+                "Carnot cycle and its efficiency",
+                "Concept of entropy",
+                "Entropy as a function of V&T",
+                "P&T",
+                "Entropy change in ideal gases and mixing of ideal gases",
+                "Free energy and spontaneity",
+                "Variation of Gibbs free energy (G) and Helmholtz free energy(A) with P",
+                "V and T",
+                "Maxwell's relations",
+                "Thermodynamic equation of state",
+                "Nernst heat theorem",
+                "Third law of thermodynamics",
+                "Statement",
+                "Evaluation of absolute entropy from third law of thermodynamics",
+                "Concept of residual entropy"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Systems of Variable Composition",
               "topics": [
-                "Partial molar quantities, chemical potential, dependance of chemical potential with temperature and pressure, chemical potential of a gas in ideal gas mixture, Gibb's Duhem equation"
+                "Partial molar quantities",
+                "Chemical potential",
+                "Dependance of chemical potential with temperature and pressure",
+                "Chemical potential of a gas in ideal gas mixture",
+                "Gibb's Duhem equation"
               ]
             }
           ],
@@ -841,21 +1243,32 @@
               "unitNumber": 2,
               "title": "Alkanes: (Upto 5 Carbons)",
               "topics": [
-                "Preparation: Catalytic hydrogenation, Wurtz reaction, Kolbe's synthesis, from Grignard reagent. Reactions: Free radical Substitution: Halogenation"
+                "Preparation: Catalytic hydrogenation",
+                "Wurtz reaction",
+                "Kolbe's synthesis, from Grignard reagent",
+                "Reactions: Free radical Substitution: Halogenation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Alkenes: (Upto 5 Carbons)",
               "topics": [
-                "Preparation: Elimination reaction, dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule); cis Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine), Addition of HX (Markownikoff's and anti-Markownikoff's addition), Hydration, Ozonolysis, oxymecuration-demercuration, Hydroboration-oxidation"
+                "Preparation: Elimination reaction",
+                "Dehydration of alkenes and dehydrohalogenation of alkyl halides (Saytzeff's rule)",
+                "Cis Reactions: cis-addition (alk. KMnO4) and trans-addition (bromine)",
+                "Addition of HX (Markownikoff's and anti-Markownikoff's addition)",
+                "Hydration",
+                "Ozonolysis",
+                "Oxymecuration-demercuration",
+                "Hydroboration-oxidation"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Alkynes: (Up to 5 Carbons)",
               "topics": [
-                "Preparation: Acetylene from CaC2 and conversion into higher alkynes; by dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides",
+                "Preparation: Acetylene from CaC2 and conversion into higher alkynes",
+                "By dehalogenation of tetra halides and dehydrohalogenation of vicinal-dihalides",
                 "Reactions: formation of metal acetylides, addition of bromine and alkaline KMnO4, ozonolysis and oxidation with hot alk, KMnO4"
               ]
             },
@@ -863,7 +1276,13 @@
               "unitNumber": 5,
               "title": "Chemistry in everyday life",
               "topics": [
-                "Air Pollution, Water Pollution, Toxic Chemicals, Inorganic and Organic Chemicals in soil, Important Fertilizers Green Chemistry, essential constituents in foods, Important drugs food preservatives"
+                "Air Pollution",
+                "Water Pollution",
+                "Toxic Chemicals",
+                "Inorganic and Organic Chemicals in soil",
+                "Important Fertilizers Green Chemistry",
+                "Essential constituents in foods",
+                "Important drugs food preservatives"
               ]
             }
           ],
@@ -885,28 +1304,64 @@
               "unitNumber": 1,
               "title": "Polymers",
               "topics": [
-                "Monomers and polymers, classification of polymers, addition and condensation of polymers, homopolymers and copolymers, preparation, properties and applications of polymers, styrene, PVC, Teflon, acrolein, nylon-6, nylon-66, natural rubber, Buna-S, Buna-N, bakelite, neoprene, biodegradable polymers"
+                "Monomers and polymers",
+                "Classification of polymers",
+                "Addition and condensation of polymers",
+                "Homopolymers and copolymers",
+                "Preparation",
+                "Properties and applications of polymers",
+                "Styrene",
+                "PVC",
+                "Teflon",
+                "Acrolein",
+                "Nylon-6",
+                "Nylon-66",
+                "Natural rubber",
+                "Buna-S",
+                "Buna-N",
+                "Bakelite",
+                "Neoprene",
+                "Biodegradable polymers"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sources of energy",
               "topics": [
-                "Nuclear energy, solar energy, bioenergy, hydral energy, bio additives to fuels, blue and green hydrogen as fuel"
+                "Nuclear energy",
+                "Solar energy",
+                "Bioenergy",
+                "Hydral energy",
+                "Bio additives to fuels",
+                "Blue and green hydrogen as fuel"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Colloids",
               "topics": [
-                "True solution, suspension, colloidal solution, types of solution, preparation of colloids, Tindal effect, Brownian motion, electrophoresis, cataphoresis, dialysis"
+                "True solution",
+                "Suspension",
+                "Colloidal solution",
+                "Types of solution",
+                "Preparation of colloids",
+                "Tindal effect",
+                "Brownian motion",
+                "Electrophoresis",
+                "Cataphoresis",
+                "Dialysis"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chemistry in everyday life",
               "topics": [
-                "Air Pollution, Water Pollution, Toxic Chemicals (Inorganic and Organic), Chemicals in soil, Important Fertilizers, Green Chemistry and foods preservatives"
+                "Air Pollution",
+                "Water Pollution",
+                "Toxic Chemicals (Inorganic and Organic)",
+                "Chemicals in soil",
+                "Important Fertilizers",
+                "Green Chemistry and foods preservatives"
               ]
             }
           ],
@@ -1004,27 +1459,67 @@
               "unitNumber": 1,
               "title": "Periodic Table and Periodicity of Elements",
               "topics": [
-                "s-, p-, d- and f-block elements, the long form of periodic table, detailed discussion of the following periodic properties of the elements with reference to s- and p-block:",
-                "(a) shielding or screening effect, Slater's rules, effective nuclear charge",
+                "s-, p-, d- and f-block elements, the long form of periodic table, detailed discussion of the following periodic properties of the elements with reference to s- and p-block",
+                "(a) shielding or screening effect",
+                "Slater's rules",
+                "Effective nuclear charge",
                 "(b) atomic radii (covalent, metallic and van der Waals)",
-                "(c) ionization enthalpy, successive ionization enthalpies, factors affecting ionization enthalpy and applications of ionization enthalpy",
+                "(c) ionization enthalpy",
+                "Successive ionization enthalpies",
+                "Factors affecting ionization enthalpy and applications of ionization enthalpy",
                 "(d) electron gain enthalpy",
-                "(e) electronegativity: Pauling's, Mullikan, Allred Rochow's scales, group electronegativity, variations of electronegativity with bond order and partial charge",
-                "General electronic configuration of s- and p- block elements, inert pair effect, relative stability of different oxidation states, diagonal relationship and anomalous behaviour of first member of each group, allotropy and catenation properties, complex forming tendency of s- and p- block elements"
+                "(e) electronegativity: Pauling's",
+                "Mullikan",
+                "Allred Rochow's scales",
+                "Group electronegativity",
+                "Variations of electronegativity with bond order and partial charge",
+                "General electronic configuration of s- and p- block elements",
+                "Inert pair effect",
+                "Relative stability of different oxidation states",
+                "Diagonal relationship and anomalous behaviour of first member of each group",
+                "Allotropy and catenation properties",
+                "Complex forming tendency of s- and p- block elements"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Compounds of p block elements",
               "topics": [
-                "Study of the following compounds with emphasis on structure, bonding, preparation, properties and uses:- Boric acid, borates, borazines, borohydrides, calcium carbide, silicon carbide, aluminium carbide, silicates, silanes, siloxanes, silicon halides, silicones, NH3-manufacture (Haber's process), oxides, oxy-, peroxy acids of nitrogen, phosphorus and sulphur, inter-halogen compounds, polyhalides and pseudohalides"
+                "Study of the following compounds with emphasis on structure",
+                "Bonding",
+                "Preparation",
+                "Properties and uses:- Boric acid",
+                "Borates",
+                "Borazines",
+                "Borohydrides",
+                "Calcium carbide",
+                "Silicon carbide",
+                "Aluminium carbide",
+                "Silicates",
+                "Silanes",
+                "Siloxanes",
+                "Silicon halides",
+                "Silicones",
+                "NH3-manufacture (Haber's process)",
+                "Oxides",
+                "Oxy-",
+                "Peroxy acids of nitrogen",
+                "Phosphorus and sulphur",
+                "Inter-halogen compounds",
+                "Polyhalides and pseudohalides"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Chemistry of noble gases",
               "topics": [
-                "Occurrence and isolation, rationalization of inertness of noble gases, nature of bonding in noble gas compounds, shape and structure of noble gas compounds using VSEPR theory, preparation and properties of XeF2, XeF4 and XeF6. Clathrates"
+                "Occurrence and isolation",
+                "Rationalization of inertness of noble gases",
+                "Nature of bonding in noble gas compounds",
+                "Shape and structure of noble gas compounds using VSEPR theory",
+                "Preparation and properties of XeF2",
+                "XeF4 and XeF6",
+                "Clathrates"
               ]
             },
             {
@@ -1038,7 +1533,17 @@
               "unitNumber": 5,
               "title": "Chemistry of f-block Elements",
               "topics": [
-                "General electronic configuration of f-block elements (inner transition elements - 4f and 5f series), position of lanthanides and actinides in periodic table, group trends with special reference to electronic configuration, ionic radii and lanthanide contraction, consequences of lanthanide contraction, complex forming ability of lanthanides, occurrence and isolation of lanthanides, compounds of lanthanides, sources of actinides, chemistry of actinides, separation of Np and Pu from spent fuel"
+                "General electronic configuration of f-block elements (inner transition elements - 4f and 5f series)",
+                "Position of lanthanides and actinides in periodic table",
+                "Group trends with special reference to electronic configuration",
+                "Ionic radii and lanthanide contraction",
+                "Consequences of lanthanide contraction",
+                "Complex forming ability of lanthanides",
+                "Occurrence and isolation of lanthanides",
+                "Compounds of lanthanides",
+                "Sources of actinides",
+                "Chemistry of actinides",
+                "Separation of Np and Pu from spent fuel"
               ]
             }
           ],
@@ -1091,16 +1596,43 @@
               "title": "Alcohols, Phenols, Ethers and Epoxides",
               "topics": [
                 "Alcohols: Classification and nomenclature",
-                "Preparation of 1°, 2° and 3° alcohols using substitution reaction, addition reactions, Grignard reagent, Ester hydrolysis, Reduction of aldehydes, ketones, carboxylic acids and esters",
-                "Reactions: With sodium, HX (Lucas test), esterification, oxidation (with PCC, alk. KMnO4, acidic dichromate, conc. HNO3). Oppeneauer oxidation",
-                "Diols: Oxidation of diols. Pinacol-Pinacolone rearrangement",
-                "Glycerol: Preparation, properties and uses",
-                "Phenols: Classification, nomenclature and properties",
+                "Preparation of 1°",
+                "2° and 3° alcohols using substitution reaction",
+                "Addition reactions",
+                "Grignard reagent",
+                "Ester hydrolysis",
+                "Reduction of aldehydes",
+                "Ketones",
+                "Carboxylic acids and esters",
+                "Reactions: With sodium",
+                "HX (Lucas test)",
+                "Esterification",
+                "Oxidation (with PCC, alk. KMnO4, acidic dichromate, conc. HNO3)",
+                "Oppeneauer oxidation",
+                "Diols: Oxidation of diols",
+                "Pinacol-Pinacolone rearrangement",
+                "Glycerol: Preparation",
+                "Properties and uses",
+                "Phenols: Classification",
+                "Nomenclature and properties",
                 "Preparation: Cumene hydroperoxide method, from diazonium salts",
-                "Reactions: Electrophilic substitution: Nitration, halogenation and sulphonation. Fries and Claisen Rearrangements, Kolbe's–Schmidt Reaction, Lederer-Manasse reaction, Reimer-Tiemann Reaction, Gattermann-Koch Reaction, Houben-Hoesch Condensation, Schotten–Baumann Reaction",
-                "Ethers and epoxides (aliphatic and aromatic): Classification, nomenclature, preparation and properties",
+                "Reactions: Electrophilic substitution: Nitration",
+                "Halogenation and sulphonation",
+                "Fries and Claisen Rearrangements",
+                "Kolbe's–Schmidt Reaction",
+                "Lederer-Manasse reaction",
+                "Reimer-Tiemann Reaction",
+                "Gattermann-Koch Reaction",
+                "Houben-Hoesch Condensation",
+                "Schotten–Baumann Reaction",
+                "Ethers and epoxides (aliphatic and aromatic): Classification",
+                "Nomenclature",
+                "Preparation and properties",
                 "Reactions: Cleavage of ethers with HI",
-                "Syntheses of epoxides, Acid and base–catalyzed ring opening of epoxides, orientation of ring opening, reactions of Grignard and organolithium reagents with epoxides",
+                "Syntheses of epoxides",
+                "Acid and base–catalyzed ring opening of epoxides",
+                "Orientation of ring opening",
+                "Reactions of Grignard and organolithium reagents with epoxides",
                 "Concept of crown ethers"
               ]
             },
@@ -1108,23 +1640,56 @@
               "unitNumber": 2,
               "title": "Aldehydes and ketones (aliphatic and aromatic)",
               "topics": [
-                "Structure, reactivity and preparation; nucleophilic additions, Nucleophilic addition-elimination reactions with ammonia derivatives and their mechanisms; mechanisms of Aldol and Benzoin condensation, Knoevenagel condensations, Claisen-Schmidt, Perkin, Cannizzaro and Wittig reactions, Beckmann and Benzil-Benzilic acid rearrangements, haloform reaction and Baeyer Villiger oxidation, α-substitution reactions,oxidations and reductions (Clemmensen, Wolff-Kishner, LiAlH4, NaBH4, MPV and PDC). Addition reactions of unsaturated carbonyl compounds: Michael addition",
-                "Active Methylene Compounds: Keto-enol tautomerism. Preparation and synthetic applications of diethyl malonate and ethyl acetoacetate"
+                "Structure",
+                "Reactivity and preparation",
+                "Nucleophilic additions",
+                "Nucleophilic addition-elimination reactions with ammonia derivatives and their mechanisms",
+                "Mechanisms of Aldol and Benzoin condensation",
+                "Knoevenagel condensations",
+                "Claisen-Schmidt",
+                "Perkin",
+                "Cannizzaro and Wittig reactions",
+                "Beckmann and Benzil-Benzilic acid rearrangements",
+                "Haloform reaction and Baeyer Villiger oxidation",
+                "α-substitution reactions",
+                "Oxidations and reductions (Clemmensen, Wolff-Kishner, LiAlH4, NaBH4, MPV and PDC)",
+                "Addition reactions of unsaturated carbonyl compounds: Michael addition",
+                "Active Methylene Compounds: Keto-enol tautomerism",
+                "Preparation and synthetic applications of diethyl malonate and ethyl acetoacetate"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Carboxylic Acids and their Derivatives",
               "topics": [
-                "Preparation, physical properties and reactions of monocarboxylic acids. Typical reactions of dicarboxylic acids, hydroxy acids and unsaturated acids: succinic/phthalic, lactic, malic, tartaric, citric, maleic and fumaric acid",
-                "Preparation and reactions of acid chlorides, anhydrides, esters and amides; Mechanism of acidic and alkaline hydrolysis of esters, Claisen condensation, Dieckmann and Reformatsky reactions, Hofmann bromamide degradation and Curtius rearrangement"
+                "Preparation",
+                "Physical properties and reactions of monocarboxylic acids",
+                "Typical reactions of dicarboxylic acids",
+                "Hydroxy acids and unsaturated acids: succinic/phthalic",
+                "Lactic",
+                "Malic",
+                "Tartaric",
+                "Citric",
+                "Maleic and fumaric acid",
+                "Preparation and reactions of acid chlorides",
+                "Anhydrides",
+                "Esters and amides",
+                "Mechanism of acidic and alkaline hydrolysis of esters",
+                "Claisen condensation",
+                "Dieckmann and Reformatsky reactions",
+                "Hofmann bromamide degradation and Curtius rearrangement"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Carbohydrates",
               "topics": [
-                "Classification and general properties of carbohydrates, Glucose and Fructose (open chain and cyclic structure), Determination of configuration of monosaccharides, absolute configuration of Glucose and Fructose, Muta rotation, ascending and descending in monosaccharides",
+                "Classification and general properties of carbohydrates",
+                "Glucose and Fructose (open chain and cyclic structure)",
+                "Determination of configuration of monosaccharides",
+                "Absolute configuration of Glucose and Fructose",
+                "Muta rotation",
+                "Ascending and descending in monosaccharides",
                 "Structure of disaccharides (sucrose, cellobiose, maltose, lactose) and polysaccharides (starch and cellulose)"
               ]
             }
@@ -1154,12 +1719,17 @@
               "topics": [
                 "Acetylation of one of the following compounds: phenols (β-naphthol, vanillin, salicylic acid) by any one method: Using conventional method/Using green approach",
                 "Benzoylation of one of the following amines (aniline, o-, m-, p-toluidines and o-, m-, p-anisidine) and one of the following phenols (β-naphthol, resorcinol, p-cresol) by Schotten-Baumann reaction",
-                "Preparation of Oxime and 2,4-dinitrophenylhydrazone of aldehydes and ketones",
+                "Preparation of Oxime and 2",
+                "4-dinitrophenylhydrazone of aldehydes and ketones",
                 "Oxidation of ethanol and isopropanol (Iodoform reaction)",
-                "Preparation of semicarbazone of the following compounds: acetone, ethyl methyl ketone, cyclohexanone, benzaldehyde",
+                "Preparation of semicarbazone of the following compounds: acetone",
+                "Ethyl methyl ketone",
+                "Cyclohexanone",
+                "Benzaldehyde",
                 "Aldol condensation using either conventional or green method",
                 "S-Benzylisothiouronium chloride from thiourea and benzyl chloride",
-                "Reduction of p-, m-nitrobenzaldehyde by sodium borohydride",
+                "Reduction of p-",
+                "M-nitrobenzaldehyde by sodium borohydride",
                 "Bromination of Phenol",
                 "Hydrolysis of amides and esters"
               ]
@@ -1188,21 +1758,55 @@
               "unitNumber": 1,
               "title": "Phase Equilibria",
               "topics": [
-                "Phases, components and degrees of freedom of systems, criteria of phase equilibria, Gibbs Phase Rule and its thermodynamic derivation, derivation of Clausius-Clapeyron equation and its importance in phase equilibria, phase diagram of one component system (water/sulphur) and two component system involving eutectics, congruent and incongruent melting points (lead-silver, FeCl3-water and Na-K only), Nernst distribution law and its thermodynamic derivation, limitations of Nernst distribution law, modification of the distribution law in cases of association and dissociation of solutes, application of the law in the process of solvent extraction"
+                "Phases",
+                "Components and degrees of freedom of systems",
+                "Criteria of phase equilibria",
+                "Gibbs Phase Rule and its thermodynamic derivation",
+                "Derivation of Clausius-Clapeyron equation and its importance in phase equilibria",
+                "Phase diagram of one component system (water/sulphur) and two component system involving eutectics",
+                "Congruent and incongruent melting points (lead-silver, FeCl3-water and Na-K only)",
+                "Nernst distribution law and its thermodynamic derivation",
+                "Limitations of Nernst distribution law",
+                "Modification of the distribution law in cases of association and dissociation of solutes",
+                "Application of the law in the process of solvent extraction"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Conductance",
               "topics": [
-                "Conductance, specific conductance (conductivity), equivalent and molar conductance, their variation with dilution for weak and strong electrolytes, Kohlrausch law of independent migration of ions, transference number and its experimental determination using Hittorf and Moving Boundary Methods, ionic mobility, applications of conductance measurements, determination of degree of ionization of weak electrolyte, solubility and solubility products of sparingly soluble salts, ionic product of water, hydrolysis constant of a salt, conductometric titrations (only acid-base)"
+                "Conductance",
+                "Specific conductance (conductivity)",
+                "Equivalent and molar conductance, their variation with dilution for weak and strong electrolytes",
+                "Kohlrausch law of independent migration of ions",
+                "Transference number and its experimental determination using Hittorf and Moving Boundary Methods",
+                "Ionic mobility",
+                "Applications of conductance measurements",
+                "Determination of degree of ionization of weak electrolyte",
+                "Solubility and solubility products of sparingly soluble salts",
+                "Ionic product of water",
+                "Hydrolysis constant of a salt",
+                "Conductometric titrations (only acid-base)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Electrochemical cells",
               "topics": [
-                "Electrode and electrode potential, reference electrodes (Standard hydrogen electrode and Calomel electrode), standard electrode potential, type of electrodes, galvanic cells, electrochemical series and its significance, Nernst equation and its importance, types of electrochemical cells – chemical cells and concentration cells, concept of EMF of a galvanic cell, measurement of EMF of a cell, construction and working of a Galvanic cell, liquid junction potential and salt bridge, EMF of a concentration cell with and without transference"
+                "Electrode and electrode potential",
+                "Reference electrodes (Standard hydrogen electrode and Calomel electrode)",
+                "Standard electrode potential",
+                "Type of electrodes",
+                "Galvanic cells",
+                "Electrochemical series and its significance",
+                "Nernst equation and its importance",
+                "Types of electrochemical cells",
+                "Chemical cells and concentration cells",
+                "Concept of EMF of a galvanic cell",
+                "Measurement of EMF of a cell",
+                "Construction and working of a Galvanic cell",
+                "Liquid junction potential and salt bridge",
+                "EMF of a concentration cell with and without transference"
               ]
             },
             {
@@ -1244,21 +1848,39 @@
               "unitNumber": 2,
               "title": "Thermochemistry",
               "topics": [
-                "Standard state, enthalpy of reaction, standard enthalpy of formation, Hess's law of constant heat summation and its applications, enthalpy of combustion, enthalpy of neutralization, bond dissociation energy and its calculation from thermo-chemical data, temperature dependence of enthalpy, Kirchoff's equation"
+                "Standard state",
+                "Enthalpy of reaction",
+                "Standard enthalpy of formation",
+                "Hess's law of constant heat summation and its applications",
+                "Enthalpy of combustion",
+                "Enthalpy of neutralization",
+                "Bond dissociation energy and its calculation from thermo-chemical data",
+                "Temperature dependence of enthalpy",
+                "Kirchoff's equation"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Second law of thermodynamics",
               "topics": [
-                "Second law of thermodynamics, need of the law, different statements of the law, Carnot theorem, Carnot cycle and its efficiency"
+                "Second law of thermodynamics",
+                "Need of the law",
+                "Different statements of the law",
+                "Carnot theorem",
+                "Carnot cycle and its efficiency"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Entropy and free energy",
               "topics": [
-                "Concept of entropy, entropy as a function of V&T, P&T, entropy change in ideal gases and mixing of ideal gases, free energy and spontaneity, variation of Gibbs free energy (G) and Helmholtz free energy(A) with P, V and T"
+                "Concept of entropy",
+                "Entropy as a function of V&T",
+                "P&T",
+                "Entropy change in ideal gases and mixing of ideal gases",
+                "Free energy and spontaneity",
+                "Variation of Gibbs free energy (G) and Helmholtz free energy(A) with P",
+                "V and T"
               ]
             }
           ],
@@ -1309,28 +1931,57 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Molecular or addition compounds, double salts and coordination compounds, coordination sphere, coordination number (C.N), oxidation state (O.S.) of the central metal atom/ion, ligands and their classification, chelating ligands, chelates and their stability. Werner's theory of coordination compounds, limitations of Werner's theory, effective atomic number (EAN) rule, nomenclature of coordination compounds, isomerism in coordination compounds"
+                "Molecular or addition compounds",
+                "Double salts and coordination compounds",
+                "Coordination sphere",
+                "Coordination number (C.N)",
+                "Oxidation state (O.S.) of the central metal atom/ion",
+                "Ligands and their classification",
+                "Chelating ligands",
+                "Chelates and their stability",
+                "Werner's theory of coordination compounds",
+                "Limitations of Werner's theory",
+                "Effective atomic number (EAN) rule",
+                "Nomenclature of coordination compounds",
+                "Isomerism in coordination compounds"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Valence bond theory",
               "topics": [
-                "Valence bond theory of complex compounds, different octahedral, square planar and tetrahedral complexes of Cr, Fe, Co, Ni, Cu and Zn, strength of ligands and stability of complexes, outer and inner orbital complexes. Limitations of valence bond theory (VBT)"
+                "Valence bond theory of complex compounds, different octahedral, square planar and tetrahedral complexes of Cr, Fe, Co, Ni, Cu and Zn, strength of ligands and stability of complexes, outer and inner orbital complexes",
+                "Limitations of valence bond theory (VBT)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Crystal field theory",
               "topics": [
-                "Crystal field theory, crystal field splitting of d-orbitals in octahedral, tetrahedral, tetragonal and square-planar complexes, HS and LS complexes, factors affecting the crystal field splitting energy, spectrochemical series, magnetic properties of complexes, colour of the complexes, crystal field stabilization energy (CFSE) and its calculation, variation of octahedral ionic radii. Crystal structure of spinels"
+                "Crystal field theory",
+                "Crystal field splitting of d-orbitals in octahedral",
+                "Tetrahedral",
+                "Tetragonal and square-planar complexes",
+                "HS and LS complexes",
+                "Factors affecting the crystal field splitting energy",
+                "Spectrochemical series",
+                "Magnetic properties of complexes",
+                "Colour of the complexes",
+                "Crystal field stabilization energy (CFSE) and its calculation",
+                "Variation of octahedral ionic radii",
+                "Crystal structure of spinels"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Magnetic properties of transition metal complexes",
               "topics": [
-                "Types of magnetic behaviour, methods of determination of magnetic susceptibility, L-S coupling, correlation of the magnetic moment (spin only formula) and effective magnetic moment values, quenching of orbital contribution to magnetic moment, applications of magnetic moment data for 3d series"
+                "Types of magnetic behaviour",
+                "Methods of determination of magnetic susceptibility",
+                "L-S coupling",
+                "Correlation of the magnetic moment (spin only formula) and effective magnetic moment values",
+                "Quenching of orbital contribution to magnetic moment",
+                "Applications of magnetic moment data for 3d series"
               ]
             }
           ],
@@ -1359,11 +2010,16 @@
               "title": "Preparation of inorganic compounds/ complexes",
               "topics": [
                 "Preparation of potash alum [K2SO4.Al2(SO4)3 24H2O]",
-                "Preparation of potassium tris(oxalate) ferrate (III), K3[Fe(C2O4)3]",
-                "Preparation of potassium tris(oxalate) chromate (III), K3[Cr(C2O4)3]",
-                "Preparation of hexamine nickel (II) chloride, [Ni(NH3)6]Cl2",
-                "Preparation of tetramminecopper(II) sulphate,[Cu(NH3)4]SO4",
-                "Preparation of sodium nitropruside, Na2[Fe(CN)5(NO)]"
+                "Preparation of potassium tris(oxalate) ferrate (III)",
+                "K3[Fe(C2O4)3]",
+                "Preparation of potassium tris(oxalate) chromate (III)",
+                "K3[Cr(C2O4)3]",
+                "Preparation of hexamine nickel (II) chloride",
+                "[Ni(NH3)6]Cl2",
+                "Preparation of tetramminecopper(II) sulphate",
+                "[Cu(NH3)4]SO4",
+                "Preparation of sodium nitropruside",
+                "Na2[Fe(CN)5(NO)]"
               ]
             },
             {
@@ -1371,7 +2027,8 @@
               "title": "Complexometric titrations and colorimetry",
               "topics": [
                 "Estimation of copper sulphate/copper ion from a given solution colorimetrically",
-                "Estimation of phosphate ion, (PO4)3- in a given sample of water/soil colorimetrically",
+                "Estimation of phosphate ion",
+                "(PO4)3- in a given sample of water/soil colorimetrically",
                 "Complexometric titrations by EDTA",
                 "(i) Estimation of Ca2+/ Mg2+ in the supplied sample of water",
                 "(ii) Estimation of total hardness from the supplied sample of water"
@@ -1396,29 +2053,54 @@
               "unitNumber": 1,
               "title": "Polynuclear Hydrocarbons",
               "topics": [
-                "Nomenclature of polynuclear hydrocarbons, preparation and properties and constitution of naphthalene, anthracene and phenanthrene"
+                "Nomenclature of polynuclear hydrocarbons",
+                "Preparation and properties and constitution of naphthalene",
+                "Anthracene and phenanthrene"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Nitrogen containing Compounds: Amines, Nitriles, Isocyanides and diazonium compound",
               "topics": [
-                "Reduction of nitro compounds under different conditions, von Richter reaction, preparation and separation of primary, secondary and tertiary amines, relative basic strength of amines, distinctions among primary, secondary and tertiary amines, preparation of diazonium salts and their synthetic applications, diazo-coupling reactions, Gomberg reaction, preparation and properties of nitriles and isonitriles"
+                "Reduction of nitro compounds under different conditions",
+                "Von Richter reaction",
+                "Preparation and separation of primary",
+                "Secondary and tertiary amines",
+                "Relative basic strength of amines",
+                "Distinctions among primary",
+                "Secondary and tertiary amines",
+                "Preparation of diazonium salts and their synthetic applications",
+                "Diazo-coupling reactions",
+                "Gomberg reaction",
+                "Preparation and properties of nitriles and isonitriles"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Heterocyclic Compounds",
               "topics": [
-                "Classification and nomenclature of heterocyclic compounds, aromaticity in 5- & 6-membered rings with one heteroatom, syntheses of pyrrole(Knorr-Pyrrole synthesis, Paal-Knorr synthesis, Hantzsch synthesis), Reaction synthesis and constitutions of furan, thiophene, pyridine (Hantzsch synthesis), reactions of pyrrole, furan, thiophene and pyridine",
-                "Quinoline and isoquinoline: Reactions, syntheses and constitution of quinoline and isoquinoline. (Skraup synthesis, Friedlander's Synthesis, Knorr Quinoline Synthesis, Bischler Napieralski Synthesis)"
+                "Classification and nomenclature of heterocyclic compounds",
+                "Aromaticity in 5- & 6-membered rings with one heteroatom",
+                "Syntheses of pyrrole(Knorr-Pyrrole synthesis, Paal-Knorr synthesis, Hantzsch synthesis)",
+                "Reaction synthesis and constitutions of furan",
+                "Thiophene",
+                "Pyridine (Hantzsch synthesis)",
+                "Reactions of pyrrole",
+                "Furan",
+                "Thiophene and pyridine",
+                "Quinoline and isoquinoline: Reactions",
+                "Syntheses and constitution of quinoline and isoquinoline. (Skraup synthesis, Friedlander's Synthesis, Knorr Quinoline Synthesis, Bischler Napieralski Synthesis)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Alkaloids and Terpenoids",
               "topics": [
-                "Natural occurrence, classification and isolation of alkaloids and terpenoids, isoprene. Isoprene and Special Isoprene rule, reactions used in general methods involved in structural elucidation of alkaloids and terpenoids"
+                "Natural occurrence",
+                "Classification and isolation of alkaloids and terpenoids",
+                "Isoprene",
+                "Isoprene and Special Isoprene rule",
+                "Reactions used in general methods involved in structural elucidation of alkaloids and terpenoids"
               ]
             }
           ],
@@ -1471,33 +2153,64 @@
               "unitNumber": 1,
               "title": "Periodic Table and Periodicity of Elements",
               "topics": [
-                "The long form of periodic table, detailed discussion of the following periodic properties of the elements",
-                "a) Atomic radii (covalent, metallic and van der Waals)",
-                "b) Ionization enthalpy, successive ionization enthalpies, factors affecting ionization enthalpy and applications of ionization enthalpy",
-                "c) Electron gain enthalpy",
-                "d) Electronegativity: Pauling's and Mullikan, variations of electronegativity with bond order and partial charge",
-                "General electronic configuration of s- and p- block elements, inert pair effect, relative stability of different oxidation states, diagonal relationship and anomalous behaviour of first member of each group, allotropy and catenation properties"
+                "The long form of periodic table",
+                "Detailed discussion of the following periodic properties of the elements",
+                "Atomic radii (covalent, metallic and van der Waals)",
+                "Ionization enthalpy",
+                "Successive ionization enthalpies",
+                "Factors affecting ionization enthalpy and applications of ionization enthalpy",
+                "Electron gain enthalpy",
+                "Electronegativity: Pauling's and Mullikan",
+                "Variations of electronegativity with bond order and partial charge",
+                "General electronic configuration of s- and p- block elements",
+                "Inert pair effect",
+                "Relative stability of different oxidation states",
+                "Diagonal relationship and anomalous behaviour of first member of each group",
+                "Allotropy and catenation properties"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Compounds of p block elements",
               "topics": [
-                "Study of the following compounds with emphasis on structure, bonding, preparation, properties and uses:- Boric acid, borates, borazines, silicates, silicones, NH3-manufacture (Haber's process), oxides, oxy- and peroxy acids of nitrogen, phosphorus and sulphur"
+                "Study of the following compounds with emphasis on structure",
+                "Bonding",
+                "Preparation",
+                "Properties and uses:- Boric acid",
+                "Borates",
+                "Borazines",
+                "Silicates",
+                "Silicones",
+                "NH3-manufacture (Haber's process)",
+                "Oxides",
+                "Oxy- and peroxy acids of nitrogen",
+                "Phosphorus and sulphur"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Chemistry of noble gases",
               "topics": [
-                "Occurrence and isolation, rationalization of inertness of noble gases, shape and structure of noble gas compounds using VSEPR theory, preparation and properties of XeF2, XeF4 and XeF6"
+                "Occurrence and isolation",
+                "Rationalization of inertness of noble gases",
+                "Shape and structure of noble gas compounds using VSEPR theory",
+                "Preparation and properties of XeF2",
+                "XeF4 and XeF6"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chemistry of d-block elements",
               "topics": [
-                "General electronic configuration of d-block metals and their group trends, variable oxidation states and their relative stabilities, magnetic and catalytic properties of metals, colour, complex forming ability of metals, Chemistry of Cr, Mn and Fe in various oxidation states with special reference to their following compounds: peroxy compounds of Cr, potassium dichromate, potassium permanganate"
+                "General electronic configuration of d-block metals and their group trends",
+                "Variable oxidation states and their relative stabilities",
+                "Magnetic and catalytic properties of metals",
+                "Colour",
+                "Complex forming ability of metals",
+                "Chemistry of Cr",
+                "Mn and Fe in various oxidation states with special reference to their following compounds: peroxy compounds of Cr",
+                "Potassium dichromate",
+                "Potassium permanganate"
               ]
             }
           ],
@@ -1548,14 +2261,33 @@
               "unitNumber": 1,
               "title": "Colligative Properties of Dilute Solutions",
               "topics": [
-                "Colligative properties of solutions, Henry's law, Raoult's law (thermodynamic derivation), ideal and non-ideal solutions, azeotropes, thermodynamic derivation and experimental determination of relative lowering in vapour pressure, elevation in boiling point, depression in freezing point and osmotic pressure, abnormal colligative properties due to association and dissociation of solutes in solutions, van't Hoff's factor, abnormal molar mass, applications of colligative properties in determining molar mass of solutes, degree of dissociation and association"
+                "Colligative properties of solutions",
+                "Henry's law",
+                "Raoult's law (thermodynamic derivation)",
+                "Ideal and non-ideal solutions",
+                "Azeotropes",
+                "Thermodynamic derivation and experimental determination of relative lowering in vapour pressure",
+                "Elevation in boiling point",
+                "Depression in freezing point and osmotic pressure",
+                "Abnormal colligative properties due to association and dissociation of solutes in solutions",
+                "Van't Hoff's factor",
+                "Abnormal molar mass",
+                "Applications of colligative properties in determining molar mass of solutes",
+                "Degree of dissociation and association"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Kinetics of Elementary Reactions",
               "topics": [
-                "Rate laws of first, second, third and zero order reactions, methods of determination of order of reactions, temperature dependance of reaction rate, Arrhenius equation, Activation energy, Collision theory and transition state theory of reaction rates",
+                "Rate laws of first",
+                "Second",
+                "Third and zero order reactions",
+                "Methods of determination of order of reactions",
+                "Temperature dependance of reaction rate",
+                "Arrhenius equation",
+                "Activation energy",
+                "Collision theory and transition state theory of reaction rates",
                 "Catalysis: Theory and applications"
               ]
             },
@@ -1563,17 +2295,34 @@
               "unitNumber": 3,
               "title": "Kinetics of Complex Reactions",
               "topics": [
-                "Steady state approximation, integrated rate expression (first order only) for the",
-                "1. Opposing reactions",
-                "2. Parallel reactions and",
-                "3. Consecutive reactions"
+                "Steady state approximation",
+                "Integrated rate expression (first order only) for the",
+                "1",
+                "Opposing reactions",
+                "2",
+                "Parallel reactions and",
+                "3",
+                "Consecutive reactions"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Photochemistry",
               "topics": [
-                "Introduction, consequences of light absorption, Lambert-Beer's law, laws of photochemistry, Grottthus-Draper law, Stark-Einstein law of photochemical equivalence, quantum yield, photochemical reactions (H2 + Cl2, H2 + Br2, decomposition of HI), photochemical rate laws, energy transfer in photochemical reactions, Jablonski diagram, photosensitization, fluorescence, phosphorescence and chemiluminescence"
+                "Introduction",
+                "Consequences of light absorption",
+                "Lambert-Beer's law",
+                "Laws of photochemistry",
+                "Grottthus-Draper law",
+                "Stark-Einstein law of photochemical equivalence",
+                "Quantum yield",
+                "Photochemical reactions (H2 + Cl2, H2 + Br2, decomposition of HI)",
+                "Photochemical rate laws",
+                "Energy transfer in photochemical reactions",
+                "Jablonski diagram",
+                "Photosensitization",
+                "Fluorescence",
+                "Phosphorescence and chemiluminescence"
               ]
             }
           ],
@@ -1633,29 +2382,71 @@
               "unitNumber": 1,
               "title": "Amino Acids, Peptides and Proteins",
               "topics": [
-                "Classification of α-Amino Acids, General methods of synthesis, ionic properties and reactions, Zwitterions, pKa values, isoelectric point and electrophoresis, study of peptides: Oligo and polypeptides, features of peptide bonds, syntheses of peptides using N-protecting, C-protecting and C-activating groups, solid-phase synthesis, elementary idea of primary, secondary, tertiary and quaternary structures of proteins"
+                "Classification of α-Amino Acids",
+                "General methods of synthesis",
+                "Ionic properties and reactions",
+                "Zwitterions",
+                "PKa values",
+                "Isoelectric point and electrophoresis",
+                "Study of peptides: Oligo and polypeptides",
+                "Features of peptide bonds",
+                "Syntheses of peptides using N-protecting",
+                "C-protecting and C-activating groups",
+                "Solid-phase synthesis",
+                "Elementary idea of primary",
+                "Secondary, tertiary and quaternary structures of proteins"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Nucleic Acids",
               "topics": [
-                "Components of nucleic acids, nucleosides and nucleotides, Structure and syntheses of Adenine, Guanine, Cytosine, Uracil and Thymine, structure of polynucleotides and DNA double helix"
+                "Components of nucleic acids",
+                "Nucleosides and nucleotides",
+                "Structure and syntheses of Adenine",
+                "Guanine",
+                "Cytosine",
+                "Uracil and Thymine",
+                "Structure of polynucleotides and DNA double helix"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Enzymes and Lipids",
               "topics": [
-                "Introduction, classification and characteristics of enzymes, mechanism of enzyme action (taking trypsin as example), factors affecting enzyme action specificity of enzyme action, enzyme inhibitors and their importance, phenomenon of inhibition (competitive, uncompetitive and non-competitive inhibition), Introduction to oils and fats, classification of lipids, phospholipids, hydrogenation and iodine number, saponification value"
+                "Introduction",
+                "Classification and characteristics of enzymes",
+                "Mechanism of enzyme action (taking trypsin as example)",
+                "Factors affecting enzyme action specificity of enzyme action",
+                "Enzyme inhibitors and their importance",
+                "Phenomenon of inhibition (competitive, uncompetitive and non-competitive inhibition)",
+                "Introduction to oils and fats",
+                "Classification of lipids",
+                "Phospholipids",
+                "Hydrogenation and iodine number",
+                "Saponification value"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Concept of energy in Biosystems and Pharmaceutical compounds",
               "topics": [
-                "Role of ATP in glycolysis during phosphorylation of glucose, conversion of glucose-6-phosphate to fructose-6-phosphate, phosphorylation of fructose-6-phosphate, cleavage of fructose-1,6-biphosphate, oxidation of glyceraldehyde-3-phosphate to 1,3-biphosphoglycerate, phosphoryl transfer from biphosphate to ADP, Conversion of 3-phosphoglycerate to 2-phosphoglycerate, dehydration of 2-phosphoglycerate, transfer of the phosphoryl group from phosphoryl pyruvate to ADP and overall energy balance sheet for ATP",
-                "Structure, syntheses and therapeutic uses of aspirin, paracetamol, and ibuprofen, medicinal values of curcumin (haldi), azadirachtin (neem) and vitamin C"
+                "Role of ATP in glycolysis during phosphorylation of glucose",
+                "Conversion of glucose-6-phosphate to fructose-6-phosphate",
+                "Phosphorylation of fructose-6-phosphate",
+                "Cleavage of fructose-1",
+                "6-biphosphate",
+                "Oxidation of glyceraldehyde-3-phosphate to 1",
+                "3-biphosphoglycerate",
+                "Phosphoryl transfer from biphosphate to ADP",
+                "Conversion of 3-phosphoglycerate to 2-phosphoglycerate",
+                "Dehydration of 2-phosphoglycerate",
+                "Transfer of the phosphoryl group from phosphoryl pyruvate to ADP and overall energy balance sheet for ATP",
+                "Structure",
+                "Syntheses and therapeutic uses of aspirin",
+                "Paracetamol, and ibuprofen",
+                "Medicinal values of curcumin (haldi)",
+                "Azadirachtin (neem) and vitamin C"
               ]
             }
           ],
@@ -1721,21 +2512,48 @@
               "unitNumber": 1,
               "title": "Elementary Quantum Mechanics",
               "topics": [
-                "Postulates of Quantum Mechanics, quantum mechanical operators, properties of operator, Hermitian operator, Schrödinger wave equation and its importance, physical interpretation of wave function, probability distribution function, nodal properties, particle in one dimensional box, particle in three dimensional box, concept of degeneracy and zero point energy, Schrödinger wave equation for hydrogen atom, separation of variables, hydrogen like wave functions"
+                "Postulates of Quantum Mechanics",
+                "Quantum mechanical operators",
+                "Properties of operator",
+                "Hermitian operator",
+                "Schrödinger wave equation and its importance",
+                "Physical interpretation of wave function",
+                "Probability distribution function",
+                "Nodal properties",
+                "Particle in one dimensional box",
+                "Particle in three dimensional box",
+                "Concept of degeneracy and zero point energy",
+                "Schrödinger wave equation for hydrogen atom",
+                "Separation of variables",
+                "Hydrogen like wave functions"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Valence Bond Theory and Molecular Orbital Theory",
               "topics": [
-                "Basic ideas of VBT and MOT, valence bond model of H2, construction of MO's by LCAO for H2+ ion, physical picture of bonding and antibonding wave functions, concept of σ, σ*, π, π* non-bonding orbitals, comparison between VBT and MOT. Hybrid orbitals sp, sp2 and sp3 and calculation of coefficients of atomic orbitals used in these hybrid orbitals"
+                "Basic ideas of VBT and MOT, valence bond model of H2, construction of MO's by LCAO for H2+ ion, physical picture of bonding and antibonding wave functions, concept of σ, σ*, π, π* non-bonding orbitals, comparison between VBT and MOT",
+                "Hybrid orbitals sp",
+                "Sp2 and sp3 and calculation of coefficients of atomic orbitals used in these hybrid orbitals"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Rotational and Electronic Spectra",
               "topics": [
-                "Electromagnetic radiation, Energy levels of a rigid rotor, selection rules, intensity of spectral lines using population distribution and degeneracy, effect of isotopic substitution, determination of bond length and atomic mass from rotational spectra, description of non-rigid rotor, Franck-Condon principle and intensity of spectral lines, pre-dissociation and dissociation, calculation of bond dissociation energy, electronic transitions, singlet and triplet states, concept of potential energy curves for bonding and anti-bonding molecular orbitals"
+                "Electromagnetic radiation",
+                "Energy levels of a rigid rotor",
+                "Selection rules",
+                "Intensity of spectral lines using population distribution and degeneracy",
+                "Effect of isotopic substitution",
+                "Determination of bond length and atomic mass from rotational spectra",
+                "Description of non-rigid rotor",
+                "Franck-Condon principle and intensity of spectral lines",
+                "Pre-dissociation and dissociation",
+                "Calculation of bond dissociation energy",
+                "Electronic transitions",
+                "Singlet and triplet states",
+                "Concept of potential energy curves for bonding and anti-bonding molecular orbitals"
               ]
             },
             {
@@ -1793,28 +2611,57 @@
               "title": "Alcohols, Phenols, Ethers and Epoxides",
               "topics": [
                 "Alcohols: Classification and nomenclature",
-                "Preparation of 1°, 2° and 3° alcohols using substitution reaction, addition reactions, Grignard reagent",
-                "Reactions: With sodium, HX (Lucas test), esterification, oxidation (with PCC, alk. KMnO4, acidic dichromate, conc. HNO3). Oppeneauer oxidation",
-                "Phenols: Classification, nomenclature and properties",
+                "Preparation of 1°",
+                "2° and 3° alcohols using substitution reaction",
+                "Addition reactions",
+                "Grignard reagent",
+                "Reactions: With sodium",
+                "HX (Lucas test)",
+                "Esterification",
+                "Oxidation (with PCC, alk. KMnO4, acidic dichromate, conc. HNO3)",
+                "Oppeneauer oxidation",
+                "Phenols: Classification",
+                "Nomenclature and properties",
                 "Preparation: Cumene hydroperoxide method, from diazonium salts",
-                "Reactions: Electrophilic substitution: Nitration, halogenation and sulphonation. Kolbe's-Schmidt Reaction, Reimer-Tiemann Reaction, Gattermann-Koch Reaction, Schotten-Baumann Reaction",
-                "Ethers and epoxides (aliphatic and aromatic): Classification, nomenclature, preparation and properties",
+                "Reactions: Electrophilic substitution: Nitration",
+                "Halogenation and sulphonation",
+                "Kolbe's-Schmidt Reaction",
+                "Reimer-Tiemann Reaction",
+                "Gattermann-Koch Reaction",
+                "Schotten-Baumann Reaction",
+                "Ethers and epoxides (aliphatic and aromatic): Classification",
+                "Nomenclature",
+                "Preparation and properties",
                 "Reactions: Cleavage of ethers with HI",
-                "Syntheses of epoxides, Acid and base-catalyzed ring opening of epoxides"
+                "Syntheses of epoxides",
+                "Acid and base-catalyzed ring opening of epoxides"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Aldehydes and ketones (aliphatic and aromatic)",
               "topics": [
-                "Structure, reactivity and preparation; nucleophilic additions, Nucleophilic addition-elimination reactions with ammonia derivatives and their mechanisms; mechanisms of Aldol and Benzoin condensation, Knoevenagel condensations, Claisen-Schmidt, Perkin, Cannizzaro and Wittig reactions, haloform reaction and Baeyer Villiger oxidation, oxidations and reductions (Clemmensen, Wolff-Kishner, LiAlH4, NaBH4, MPV and PDC)"
+                "Structure",
+                "Reactivity and preparation",
+                "Nucleophilic additions",
+                "Nucleophilic addition-elimination reactions with ammonia derivatives and their mechanisms",
+                "Mechanisms of Aldol and Benzoin condensation",
+                "Knoevenagel condensations",
+                "Claisen-Schmidt",
+                "Perkin",
+                "Cannizzaro and Wittig reactions",
+                "Haloform reaction and Baeyer Villiger oxidation",
+                "Oxidations and reductions (Clemmensen, Wolff-Kishner, LiAlH4, NaBH4, MPV and PDC)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Carbohydrates",
               "topics": [
-                "Classification and general properties of carbohydrates, Glucose and Fructose (open chain and cyclic structure), Mutaotation, ascending and descending in monosaccharides"
+                "Classification and general properties of carbohydrates",
+                "Glucose and Fructose (open chain and cyclic structure)",
+                "Mutaotation",
+                "Ascending and descending in monosaccharides"
               ]
             }
           ],
@@ -1843,7 +2690,8 @@
               "topics": [
                 "Acetylation of salicylic acid",
                 "Benzoylation of aniline",
-                "Preparation of Oximes and 2,4-dinitrophenylhydrazones of aldehydes and ketones",
+                "Preparation of Oximes and 2",
+                "4-dinitrophenylhydrazones of aldehydes and ketones",
                 "Bromination of Phenol"
               ]
             }
@@ -1876,28 +2724,53 @@
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Definition, nomenclature and classification of organometallic compounds, concept of hapticity, classification, preparation, properties and bonding of metal carbonyls, EAN rule and 18-electron rule applied to metal carbonyls, π-acceptor behaviour of CO, synergic effect, use of IR spectra in determining structure of metal carbonyls, structure of mono-, bi- and poly-nuclear metal carbonyls"
+                "Definition",
+                "Nomenclature and classification of organometallic compounds",
+                "Concept of hapticity",
+                "Classification",
+                "Preparation",
+                "Properties and bonding of metal carbonyls",
+                "EAN rule and 18-electron rule applied to metal carbonyls",
+                "π-acceptor behaviour of CO",
+                "Synergic effect",
+                "Use of IR spectra in determining structure of metal carbonyls",
+                "Structure of mono-",
+                "Bi- and poly-nuclear metal carbonyls"
               ]
             },
             {
               "unitNumber": 2,
               "title": "σ-complexes",
               "topics": [
-                "Preparation, properties, bonding and applications of Alkyls and aryl of Li, Al, Hg, Sn and Ti. Concept of multicentred bonding"
+                "Preparation, properties, bonding and applications of Alkyls and aryl of Li, Al, Hg, Sn and Ti",
+                "Concept of multicentred bonding"
               ]
             },
             {
               "unitNumber": 3,
               "title": "π-Complexes",
               "topics": [
-                "A brief account of metal-ethylene and Metal-acetylene complexes. Zeise's salt: Preparation, properties, bonding and synergic effect. Ferrocene: Preparation, reactions, structure and aromaticity, comparison of aromaticity and reactivity with that of benzene"
+                "A brief account of metal-ethylene and Metal-acetylene complexes",
+                "Zeise's salt: Preparation",
+                "Properties",
+                "Bonding and synergic effect",
+                "Ferrocene: Preparation",
+                "Reactions",
+                "Structure and aromaticity",
+                "Comparison of aromaticity and reactivity with that of benzene"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Symmetry and Group Theory",
               "topics": [
-                "Concept of symmetry, symmetry elements and symmetry operations, point groups, determination of point groups of simple molecules. Multiplication table of C2v and C3v point groups, group, characteristics of a group and subgroups"
+                "Concept of symmetry",
+                "Symmetry elements and symmetry operations",
+                "Point groups",
+                "Determination of point groups of simple molecules",
+                "Multiplication table of C2v and C3v point groups",
+                "Group",
+                "Characteristics of a group and subgroups"
               ]
             }
           ],
@@ -1963,31 +2836,62 @@
               "unitNumber": 1,
               "title": "Colligative Properties of Dilute Solutions",
               "topics": [
-                "Colligative properties of solutions, Henry's law, Raoult's law (thermodynamic derivation), ideal and non-ideal solutions, azeotropes, thermodynamic derivation and experimental determination of relative lowering in vapour pressure, elevation in boiling point, depression in freezing point and osmotic pressure, abnormal colligative properties due to association and dissociation of solutes in solutions, van't Hoff's factor, abnormal molar mass, applications of colligative properties in determining molar mass of solutes, degree of dissociation and association"
+                "Colligative properties of solutions",
+                "Henry's law",
+                "Raoult's law (thermodynamic derivation)",
+                "Ideal and non-ideal solutions",
+                "Azeotropes",
+                "Thermodynamic derivation and experimental determination of relative lowering in vapour pressure",
+                "Elevation in boiling point",
+                "Depression in freezing point and osmotic pressure",
+                "Abnormal colligative properties due to association and dissociation of solutes in solutions",
+                "Van't Hoff's factor",
+                "Abnormal molar mass",
+                "Applications of colligative properties in determining molar mass of solutes",
+                "Degree of dissociation and association"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Kinetics of Elementary Reactions",
               "topics": [
-                "Rate laws of first, second, third and zero order reactions, methods of determination of order of reactions, temperature dependance of reaction rate, Arrhenius equation, Activation energy, Catalysis: Theory and applications"
+                "Rate laws of first",
+                "Second",
+                "Third and zero order reactions",
+                "Methods of determination of order of reactions",
+                "Temperature dependance of reaction rate",
+                "Arrhenius equation",
+                "Activation energy",
+                "Catalysis: Theory and applications"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Kinetics of Complex Reactions",
               "topics": [
-                "Steady state approximation, integrated rate expression (first order only) for the",
-                "1. Opposing reactions",
-                "2. Parallel reactions and",
-                "3. Consecutive reactions"
+                "Steady state approximation",
+                "Integrated rate expression (first order only) for the",
+                "1",
+                "Opposing reactions",
+                "2",
+                "Parallel reactions and",
+                "3",
+                "Consecutive reactions"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Photochemistry",
               "topics": [
-                "Introduction, consequences of light absorption, Lambert-Beer's law, laws of photochemistry, Grothus-Draper law, Stark-Einstein law of photochemical equivalence, quantum yield, photochemical reactions (H2 + Cl2, H2 + Br2, decomposition of HI), photochemical rate laws"
+                "Introduction",
+                "Consequences of light absorption",
+                "Lambert-Beer's law",
+                "Laws of photochemistry",
+                "Grothus-Draper law",
+                "Stark-Einstein law of photochemical equivalence",
+                "Quantum yield",
+                "Photochemical reactions (H2 + Cl2, H2 + Br2, decomposition of HI)",
+                "Photochemical rate laws"
               ]
             }
           ],
@@ -2039,7 +2943,11 @@
               "unitNumber": 1,
               "title": "Qualitative and Quantitative Aspects of Analysis",
               "topics": [
-                "Sampling, evaluation of analytical data, errors, accuracy and precision, methods of their expression",
+                "Sampling",
+                "Evaluation of analytical data",
+                "Errors",
+                "Accuracy and precision",
+                "Methods of their expression",
                 "Normal law of distribution of indeterminate errors, statistical test of data, F, Q and t test, rejection of data, and confidence intervals"
               ]
             },
@@ -2047,23 +2955,37 @@
               "unitNumber": 2,
               "title": "Optical Methods of Analysis",
               "topics": [
-                "UV-Visible Spectrophotometry: Basic principle of instrumentation (choice of source, monochromator and detector) for single and double beam instrument, Transmittance. Absorbance",
-                "Basic principles of quantitative analysis: Estimation of metal ions from aqueous solution, geometrical isomers, keto-enol tautomers",
-                "Flame Atomic Absorption and Emission Spectrometry: Basic principles of instrumentation (choice of source, monochromator, detector, choice of flame and Burner designs). Techniques of atomization and sample introduction; Method of background correction, sources of chemical interferences and their method of removal, Techniques for the quantitative estimation of trace level of metal ions from water samples"
+                "UV-Visible Spectrophotometry: Basic principle of instrumentation (choice of source, monochromator and detector) for single and double beam instrument",
+                "Transmittance",
+                "Absorbance",
+                "Basic principles of quantitative analysis: Estimation of metal ions from aqueous solution",
+                "Geometrical isomers",
+                "Keto-enol tautomers",
+                "Flame Atomic Absorption and Emission Spectrometry: Basic principles of instrumentation (choice of source, monochromator, detector, choice of flame and Burner designs)",
+                "Techniques of atomization and sample introduction",
+                "Method of background correction",
+                "Sources of chemical interferences and their method of removal",
+                "Techniques for the quantitative estimation of trace level of metal ions from water samples"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Thermal Methods of Analysis",
               "topics": [
-                "Theory of thermogravimetry (TG) and basic principle of instrumentation of thermal analyser. Techniques for quantitative estimation of Ca and Mg from their mixture"
+                "Theory of thermogravimetry (TG) and basic principle of instrumentation of thermal analyser",
+                "Techniques for quantitative estimation of Ca and Mg from their mixture"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Chromatography",
               "topics": [
-                "Classification, principle and efficiency of the technique, Mechanism of separation: adsorption, partition & ion-exchange, Development of chromatograms: frontal, elution and displacement methods"
+                "Classification",
+                "Principle and efficiency of the technique",
+                "Mechanism of separation: adsorption",
+                "Partition & ion-exchange",
+                "Development of chromatograms: frontal",
+                "Elution and displacement methods"
               ]
             }
           ],
@@ -2088,21 +3010,40 @@
               "unitNumber": 1,
               "title": "Phase Equilibria",
               "topics": [
-                "Phases, components and degrees of freedom of systems, criteria of phase equilibria, Gibbs Phase Rule and its thermodynamic derivation, phase diagram of one component system (water/sulphur)"
+                "Phases",
+                "Components and degrees of freedom of systems",
+                "Criteria of phase equilibria",
+                "Gibbs Phase Rule and its thermodynamic derivation",
+                "Phase diagram of one component system (water/sulphur)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Conductance",
               "topics": [
-                "Conductance, specific conductance (conductivity), equivalent and molar conductance, their variation with dilution for weak and strong electrolytes, Kohlrausch law of independent migration of ions, transference number"
+                "Conductance",
+                "Specific conductance (conductivity)",
+                "Equivalent and molar conductance, their variation with dilution for weak and strong electrolytes",
+                "Kohlrausch law of independent migration of ions",
+                "Transference number"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Electrochemical cells",
               "topics": [
-                "Electrode and electrode potential, reference electrodes (Standard hydrogen electrode and Calomel electrode), standard electrode potential, type of electrodes, galvanic cells, electrochemical series and its significance, Nernst equation and its importance, types of electrochemical cells – chemical cells and concentration cells, concept of EMF of a galvanic cell, measurement of EMF of a cell, construction and working of a Galvanic cell"
+                "Electrode and electrode potential",
+                "Reference electrodes (Standard hydrogen electrode and Calomel electrode)",
+                "Standard electrode potential",
+                "Type of electrodes",
+                "Galvanic cells",
+                "Electrochemical series and its significance",
+                "Nernst equation and its importance",
+                "Types of electrochemical cells",
+                "Chemical cells and concentration cells",
+                "Concept of EMF of a galvanic cell",
+                "Measurement of EMF of a cell",
+                "Construction and working of a Galvanic cell"
               ]
             },
             {

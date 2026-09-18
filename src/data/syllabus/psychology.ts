@@ -27,35 +27,54 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Psychology as a scientific study of behavior, Sub-fields and applications of Psychology",
-                "Perspectives of Psychology-Psychodynamic, Behavioral, Cognitive, Humanistic and Positive",
-                "Methods: Experimental, Interview and Case study"
+                "Psychology as a scientific study of behavior",
+                "Sub-fields and applications of Psychology",
+                "Perspectives of Psychology-Psychodynamic",
+                "Behavioral",
+                "Cognitive",
+                "Humanistic and Positive",
+                "Methods: Experimental",
+                "Interview and Case study"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Learning and Memory",
               "topics": [
-                "Learning: Meaning, Theories of learning: Classical conditioning, Instrumental conditioning and Observational learning",
-                "Memory: Sensory, STM and LTM; Forgetting and its causes"
+                "Learning: Meaning",
+                "Theories of learning: Classical conditioning",
+                "Instrumental conditioning and Observational learning",
+                "Memory: Sensory",
+                "STM and LTM",
+                "Forgetting and its causes"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Motivation & Emotion",
               "topics": [
-                "Motivation: Nature and types, Need-hierarchy model",
-                "Emotion: Nature, Bodily changes in emotion,",
-                "Theories of emotion - James-Lange theory, Cannon-Bard theory and Schachter-Singer theory",
-                "Emotional Intelligence-Meaning, Dimensions and implications"
+                "Motivation: Nature and types",
+                "Need-hierarchy model",
+                "Emotion: Nature",
+                "Bodily changes in emotion",
+                "Theories of emotion",
+                "James-Lange theory",
+                "Cannon-Bard theory and Schachter-Singer theory",
+                "Emotional Intelligence-Meaning",
+                "Dimensions and implications"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Individual Differences",
               "topics": [
-                "Intelligence: Nature and Theories: Spearman's Two-factor theory, Thurstone's theory and Sternberg's Triarchic theory of intelligence",
-                "Personality: Nature, Determinants and theories, Freud, Social cognitive theory, Big Five Factor theory"
+                "Intelligence: Nature and Theories: Spearman's Two-factor theory",
+                "Thurstone's theory and Sternberg's Triarchic theory of intelligence",
+                "Personality: Nature",
+                "Determinants and theories",
+                "Freud",
+                "Social cognitive theory",
+                "Big Five Factor theory"
               ]
             }
           ],
@@ -86,23 +105,30 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Nature and scope of Psychology, Methods, Subfields, Recent Trends in Psychology"
+                "Nature and scope of Psychology",
+                "Methods",
+                "Subfields",
+                "Recent Trends in Psychology"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Sensation and Perception",
               "topics": [
-                "Structure and Functions of Eye and Ear, Perceptual Organization, Illusions"
+                "Structure and Functions of Eye and Ear",
+                "Perceptual Organization",
+                "Illusions"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Learning, Motivation and Memory",
               "topics": [
-                "Learning : Meaning, Methods of Learning,",
-                "Motivation : Biological and Sociological,",
-                "Memory : Types of Memory, Forgetting and its causes"
+                "Learning : Meaning",
+                "Methods of Learning",
+                "Motivation : Biological and Sociological",
+                "Memory : Types of Memory",
+                "Forgetting and its causes"
               ]
             }
           ],
@@ -155,8 +181,10 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Language of Communication",
               "topics": [
                 "Verbal and Non-verbal (Spoken and Written)",
-                "Personal, Social and Business",
-                "Intra-personal, Inter-personal and Group communication"
+                "Personal",
+                "Social and Business",
+                "Intra-personal",
+                "Inter-personal and Group communication"
               ]
             },
             {
@@ -176,7 +204,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Reading and Understanding",
               "topics": [
                 "Close Reading",
-                "Comprehension, Analysis and Interpretation",
+                "Comprehension",
+                "Analysis and Interpretation",
                 "Summary Paraphrasing",
                 "Translation (from Indian language to English and vice-versa)",
                 "Literary/Knowledge Texts"
@@ -189,7 +218,9 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Making notes",
                 "Documenting",
                 "Report Writing",
-                "Writing Letters - job applications, CV and Resume",
+                "Writing Letters",
+                "Job applications",
+                "CV and Resume",
                 "Academic Writing",
                 "Writing a Proposal"
               ]
@@ -282,7 +313,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Social Psychology: Definition, Nature and Scope",
+                "Social Psychology: Definition",
+                "Nature and Scope",
                 "Methods of social psychology: Survey and Correlation methods"
               ]
             },
@@ -290,10 +322,12 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Social Perception and Social Cognitions",
               "topics": [
-                "Social perception: Meaning, Role of Non-verbal cues.",
+                "Social perception: Meaning",
+                "Role of Non-verbal cues",
                 "Impression formation and management",
                 "Social cognition : Social Loafing and Social Facilitation",
-                "Social influence: Conformity, Compliance and Obedience",
+                "Social influence: Conformity",
+                "Compliance and Obedience",
                 "Interpersonal attraction: Meaning and Factors of interpersonal attraction"
               ]
             },
@@ -301,20 +335,31 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Behavior in Groups",
               "topics": [
-                "Nature, Classification and Functions of group",
-                "Group dynamics, Group decision making,",
+                "Nature",
+                "Classification and Functions of group",
+                "Group dynamics",
+                "Group decision making",
                 "Factors influencing group cohesiveness",
-                "Intergroup relations: Prejudice, Sources and Reduction, techniques"
+                "Intergroup relations: Prejudice",
+                "Sources and Reduction",
+                "Techniques"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Attitude, Prosocial behavior and Aggression",
               "topics": [
-                "Attitude: Nature, Components, Formation of attitude",
-                "Change of attitude - Balance theory, Cognitive Dissonance theory",
-                "Prosocial behavior: Nature, Determinants, theories",
-                "Aggression: Nature, Causes and Control"
+                "Attitude: Nature",
+                "Components",
+                "Formation of attitude",
+                "Change of attitude",
+                "Balance theory",
+                "Cognitive Dissonance theory",
+                "Prosocial behavior: Nature",
+                "Determinants",
+                "Theories",
+                "Aggression: Nature",
+                "Causes and Control"
               ]
             }
           ],
@@ -372,43 +417,84 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Introduction to environmental studies",
               "topics": [
                 "Multidisciplinary nature of environmental studies",
-                "Scope and importance; Concept of sustainability and sustainable development"
+                "Scope and importance",
+                "Concept of sustainability and sustainable development"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Ecosystems",
               "topics": [
-                "What is an ecosystem? Structure and function of ecosystem; Energy flow in an ecosystem: food chains, food webs and ecological succession",
-                "Case studies of the following ecosystems: Forest ecosystem, Grassland ecosystem, Desert ecosystem, Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
+                "What is an ecosystem? Structure and function of ecosystem",
+                "Energy flow in an ecosystem: food chains",
+                "Food webs and ecological succession",
+                "Case studies of the following ecosystems: Forest ecosystem",
+                "Grassland ecosystem",
+                "Desert ecosystem",
+                "Aquatic ecosystems (ponds, streams, lakes, rivers, oceans, estuaries)"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Natural Resources: Renewable and Non-renewable Resources",
               "topics": [
-                "Land resources and land-use change; Land degradation, soil erosion and desertification",
-                "Deforestation: Causes and impacts due to mining, dam building on environment, forests, biodiversity and tribal populations",
-                "Water: Use and over-exploitation of surface and ground water, floods, droughts, conflicts over water (international & inter-state), Dams - benefits and problems",
-                "Food resources: World food problems, changes caused by agriculture and overgrazing, effects of modern agriculture, fertilizer-pesticide problems, waterlogging, salinity",
-                "Energy resources: Renewable and nonrenewable energy sources, use of alternate energy sources, growing energy needs, case studies"
+                "Land resources and land-use change",
+                "Land degradation",
+                "Soil erosion and desertification",
+                "Deforestation: Causes and impacts due to mining",
+                "Dam building on environment",
+                "Forests",
+                "Biodiversity and tribal populations",
+                "Water: Use and over-exploitation of surface and ground water",
+                "Floods",
+                "Droughts",
+                "Conflicts over water (international & inter-state)",
+                "Dams",
+                "Benefits and problems",
+                "Food resources: World food problems",
+                "Changes caused by agriculture and overgrazing",
+                "Effects of modern agriculture",
+                "Fertilizer-pesticide problems",
+                "Waterlogging",
+                "Salinity",
+                "Energy resources: Renewable and nonrenewable energy sources",
+                "Use of alternate energy sources",
+                "Growing energy needs",
+                "Case studies"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Biodiversity and Conservation",
               "topics": [
-                "Levels of biological diversity: genetic, species and ecosystem diversity; Bio-geographic zones of India; Biodiversity patterns and global biodiversity hotspots",
-                "India as a mega-biodiversity nation; Endangered and endemic species of India, threats to biodiversity: Habitat loss, poaching of wildlife, man-wildlife conflicts, biological invasions",
+                "Levels of biological diversity: genetic",
+                "Species and ecosystem diversity",
+                "Bio-geographic zones of India",
+                "Biodiversity patterns and global biodiversity hotspots",
+                "India as a mega-biodiversity nation",
+                "Endangered and endemic species of India",
+                "Threats to biodiversity: Habitat loss",
+                "Poaching of wildlife",
+                "Man-wildlife conflicts",
+                "Biological invasions",
                 "Conservation of biodiversity: In-situ and Ex-situ conservation of biodiversity",
-                "Ecosystem and biodiversity services: Ecological, economic, social, ethical, aesthetic and Informational value"
+                "Ecosystem and biodiversity services: Ecological",
+                "Economic",
+                "Social",
+                "Ethical",
+                "Aesthetic and Informational value"
               ]
             },
             {
               "unitNumber": 5,
               "title": "Environmental Pollution",
               "topics": [
-                "Environmental pollution: types, causes, effects and controls; Air, water, soil and noise pollution",
+                "Environmental pollution: types",
+                "Causes",
+                "Effects and controls",
+                "Air",
+                "Water",
+                "Soil and noise pollution",
                 "Nuclear hazards and human health risks",
                 "Solid waste management: Control measures of urban and industrial waste",
                 "Pollution case studies"
@@ -418,22 +504,38 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 6,
               "title": "Environmental Policies & Practices",
               "topics": [
-                "Climate change, global warming, ozone layer depletion, acid rain and impacts on human communities and agriculture",
-                "Environment Laws: Environment Protection Act; Air (Prevention & Control of Pollution) Act; Water (Prevention and control of Pollution) Act; Wildlife Protection Act; Forest Conservation Act",
+                "Climate change",
+                "Global warming",
+                "Ozone layer depletion",
+                "Acid rain and impacts on human communities and agriculture",
+                "Environment Laws: Environment Protection Act",
+                "Air (Prevention & Control of Pollution) Act",
+                "Water (Prevention and control of Pollution) Act",
+                "Wildlife Protection Act",
+                "Forest Conservation Act",
                 "International agreements: Montreal and Kyoto protocols and Convention on Biological Diversity (CBD)",
-                "Nature reserves, tribal populations and rights, and human wildlife conflicts in Indian context"
+                "Nature reserves",
+                "Tribal populations and rights, and human wildlife conflicts in Indian context"
               ]
             },
             {
               "unitNumber": 7,
               "title": "Human Communities and the Environment",
               "topics": [
-                "Human population growth: Impacts on environment, human health and welfare",
-                "Resettlement and rehabilitation of project affected persons; case studies",
-                "Disaster management: floods, earthquake, cyclones and landslides",
-                "Water conservation, rain water harvesting, watershed management",
+                "Human population growth: Impacts on environment",
+                "Human health and welfare",
+                "Resettlement and rehabilitation of project affected persons",
+                "Case studies",
+                "Disaster management: floods",
+                "Earthquake",
+                "Cyclones and landslides",
+                "Water conservation",
+                "Rain water harvesting",
+                "Watershed management",
                 "Wasteland reclamation",
-                "Environmental movements: Chipko, Silent valley, Bishnois of Rajasthan",
+                "Environmental movements: Chipko",
+                "Silent valley",
+                "Bishnois of Rajasthan",
                 "Environmental ethics: Role of Indian and other religions and cultures in environmental conservation"
               ]
             }
@@ -520,27 +622,39 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Life Span Perspective: Nature, Importance and Principles",
+                "Life Span Perspective: Nature",
+                "Importance and Principles",
                 "Stages of Development",
-                "Methods of Study: Longitudinal, Observation and Cross-sectional studies",
-                "Factors in Development: Biogenic, Psychogenic and Sociogenic"
+                "Methods of Study: Longitudinal",
+                "Observation and Cross-sectional studies",
+                "Factors in Development: Biogenic",
+                "Psychogenic and Sociogenic"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Cognitive and Language Development",
               "topics": [
-                "Cognitive development; Meaning, Theories of cognitive development: Piaget's theory, Vygotsky's theory",
-                "Language development: Meaning, Chomsky's theory",
-                "Moral development: Meaning, Kohlberg's theory, Giligan's Theory"
+                "Cognitive development",
+                "Meaning",
+                "Theories of cognitive development: Piaget's theory",
+                "Vygotsky's theory",
+                "Language development: Meaning",
+                "Chomsky's theory",
+                "Moral development: Meaning",
+                "Kohlberg's theory",
+                "Giligan's Theory"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Physical and Emotional Development",
               "topics": [
-                "Physical development – Influence of physical development on behaviour",
-                "Emotional Development – Nature of emotional behaviour, Factors affecting emotionality",
+                "Physical development",
+                "Influence of physical development on behaviour",
+                "Emotional Development",
+                "Nature of emotional behaviour",
+                "Factors affecting emotionality",
                 "Erikson's theory of Psycho-social development"
               ]
             },
@@ -580,8 +694,11 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Fundamentals of statistics",
               "topics": [
                 "Meaning and Uses of statistics in Psychology",
-                "Variables: Meaning and Types – Categorical and Continuous",
-                "Levels of Measurement-Nominal, Ordinal, Interval, and Ratio"
+                "Variables: Meaning and Types",
+                "Categorical and Continuous",
+                "Levels of Measurement-Nominal",
+                "Ordinal",
+                "Interval, and Ratio"
               ]
             },
             {
@@ -589,8 +706,10 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Introduction to Descriptive Statistics",
               "topics": [
                 "Basic concept of Descriptive and Inferential statistics",
-                "Frequency distribution of data and Graphic presentation: Histogram, Polygon and Ogive",
-                "Measures of Central tendency: Calculation of Mean, Median and Mode",
+                "Frequency distribution of data and Graphic presentation: Histogram",
+                "Polygon and Ogive",
+                "Measures of Central tendency: Calculation of Mean",
+                "Median and Mode",
                 "Measures of Variability: Calculation of Range, QD, AD, SD"
               ]
             },
@@ -598,7 +717,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Correlation and t-test",
               "topics": [
-                "Correlation: Concept; Types of correlation",
+                "Correlation: Concept",
+                "Types of correlation",
                 "Calculation of Correlation: Product moment and Rank difference method",
                 "Calculation of t-test: Independent group and Correlated group"
               ]
@@ -665,9 +785,19 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction on Disaster",
               "topics": [
-                "Different Types of Disaster: Natural Disaster: such as Flood, Cyclone, Earthquakes, Landslides etc.",
-                "Man-made Disaster: such as Fire, Industrial Pollution, Nuclear Disaster, Biological Disasters, Accidents (Air, Sea, Rail & Road), Structural failures (Building and Bridge), War & Terrorism etc.",
-                "Causes, effects and practical examples for all disasters"
+                "Different Types of Disaster: Natural Disaster: such as Flood",
+                "Cyclone",
+                "Earthquakes",
+                "Landslides etc",
+                "Man-made Disaster: such as Fire",
+                "Industrial Pollution",
+                "Nuclear Disaster",
+                "Biological Disasters",
+                "Accidents (Air, Sea, Rail & Road)",
+                "Structural failures (Building and Bridge)",
+                "War & Terrorism etc",
+                "Causes",
+                "Effects and practical examples for all disasters"
               ]
             },
             {
@@ -686,9 +816,13 @@ export const psychologySyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Preparedness: Concept and Nature",
                 "Disaster Preparedness Plan",
-                "Prediction, Early Warnings and Safety Measures of Disaster",
-                "Role of Information, Education, Communication, and Training",
-                "Role of Government, International and NGO Bodies",
+                "Prediction",
+                "Early Warnings and Safety Measures of Disaster",
+                "Role of Information",
+                "Education",
+                "Communication, and Training",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Role of IT in Disaster Preparedness",
                 "Role of Engineers on Disaster Management"
               ]
@@ -699,9 +833,13 @@ export const psychologySyllabus: CourseSyllabus = {
               "topics": [
                 "Disaster Response: Introduction",
                 "Disaster Response Plan",
-                "Communication, Participation, and Activation of Emergency Preparedness Plan",
-                "Search, Rescue, Evacuation and Logistic Management",
-                "Role of Government, International and NGO Bodies",
+                "Communication",
+                "Participation, and Activation of Emergency Preparedness Plan",
+                "Search",
+                "Rescue",
+                "Evacuation and Logistic Management",
+                "Role of Government",
+                "International and NGO Bodies",
                 "Psychological Response and Management (Trauma, Stress, Rumor and Panic)",
                 "Relief and Recovery",
                 "Medical Health Response to Different Disasters",
@@ -799,7 +937,9 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Definition and Nature of Abnormal behaviour",
                 "Historical Background of Abnormal Psychology",
                 "Criteria of abnormality",
-                "Classification System : DSM - 5 and ICD - 11"
+                "Classification System : DSM",
+                "5 and ICD",
+                "11"
               ]
             },
             {
@@ -816,19 +956,28 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Psychological Disorders",
               "topics": [
-                "Phobias - Symptoms, Types and Causes",
-                "Obsessive Compulsive Disorders - Clinical picture, and Causes",
-                "Depressive Disorders - Clinical picture and Causes",
-                "Schizophrenia - Clinical picture, Types and Causes"
+                "Phobias",
+                "Symptoms",
+                "Types and Causes",
+                "Obsessive Compulsive Disorders",
+                "Clinical picture, and Causes",
+                "Depressive Disorders",
+                "Clinical picture and Causes",
+                "Schizophrenia",
+                "Clinical picture",
+                "Types and Causes"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Neurodevelopmental Disorders",
               "topics": [
-                "Intellectual Disorders- Meaning, Types, and Causes",
-                "Autism Spectrum Disorder- Meaning, Clinical picture and Causes",
-                "Attention Deficit / Hyperactivity Disorder- Meaning, Clinical picture and Causes"
+                "Intellectual Disorders- Meaning",
+                "Types, and Causes",
+                "Autism Spectrum Disorder- Meaning",
+                "Clinical picture and Causes",
+                "Attention Deficit / Hyperactivity Disorder- Meaning",
+                "Clinical picture and Causes"
               ]
             }
           ],
@@ -858,8 +1007,13 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, Nature, Scope, Aims and Relevance of Educational Psychology",
-                "Perspectives of Educational Psychology: Behaviouristic, Observational learning, Cognitive and Humanistic"
+                "Meaning",
+                "Nature",
+                "Scope",
+                "Aims and Relevance of Educational Psychology",
+                "Perspectives of Educational Psychology: Behaviouristic",
+                "Observational learning",
+                "Cognitive and Humanistic"
               ]
             },
             {
@@ -867,7 +1021,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Individual Differences and Educational Implications",
               "topics": [
                 "Individual Differences: Meaning and Significance",
-                "Dimensions of Individual Differences – Psychological and Physical",
+                "Dimensions of Individual Differences",
+                "Psychological and Physical",
                 "Educational Implications of Individual Differences"
               ]
             },
@@ -878,7 +1033,9 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Characteristics of Effective Teachers",
                 "Teaching Methods & Issues Related to Technological Advances",
                 "Classroom Management",
-                "Creativity: Meaning, Characteristics of Creative Person, Role of School in Promoting Creativity in Children"
+                "Creativity: Meaning",
+                "Characteristics of Creative Person",
+                "Role of School in Promoting Creativity in Children"
               ]
             },
             {
@@ -888,7 +1045,9 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Exceptional Children: Meaning and Characteristics",
                 "Importance and Need to Educate Exceptional Children",
                 "Responsibilities of Teachers towards Learners with Special Needs",
-                "Types of Exceptional Children: Gifted, Academically Backward, Learning Disabled and Children with behavioral problems"
+                "Types of Exceptional Children: Gifted",
+                "Academically Backward",
+                "Learning Disabled and Children with behavioral problems"
               ]
             }
           ],
@@ -918,21 +1077,24 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Structuralism and Functionalism",
               "topics": [
-                "Structuralism and Functionalism: Contribution of Wundt, Titchner and William James"
+                "Structuralism and Functionalism: Contribution of Wundt",
+                "Titchner and William James"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Behaviourism & Psychoanalysis",
               "topics": [
-                "Contributions of Watson, Skinner and Freud"
+                "Contributions of Watson",
+                "Skinner and Freud"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Humanistic Psychology & Indian Psychology",
               "topics": [
-                "Major features of Humanistic Psychology, Contributions of Maslow",
+                "Major features of Humanistic Psychology",
+                "Contributions of Maslow",
                 "Eminent Indian Psychologists"
               ]
             }
@@ -965,7 +1127,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Fundamentals of statistics",
               "topics": [
                 "Meaning and significance of Statistics in Psychology",
-                "Levels of Measurement-Nominal, Ordinal, Interval, and Ratio"
+                "Levels of Measurement-Nominal",
+                "Ordinal",
+                "Interval, and Ratio"
               ]
             },
             {
@@ -973,15 +1137,18 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Introduction to Descriptive Statistics",
               "topics": [
                 "Basic concept of Descriptive and Inferential statistics",
-                "Frequency distribution of data and Graphic presentation: Histogram, Bar Diagram",
-                "Measures of Central tendency: Calculation of Mean, Median and Mode"
+                "Frequency distribution of data and Graphic presentation: Histogram",
+                "Bar Diagram",
+                "Measures of Central tendency: Calculation of Mean",
+                "Median and Mode"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Correlation and t-test",
               "topics": [
-                "Correlation: Concept; Types of correlation",
+                "Correlation: Concept",
+                "Types of correlation",
                 "Calculation of Correlation: Rank difference method"
               ]
             }
@@ -1011,7 +1178,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "NCC General",
               "topics": [
-                "Aims, Objectives and Organization of NCC",
+                "Aims",
+                "Objectives and Organization of NCC",
                 "Incentives for NCC Cadets",
                 "Duties of NCC Cadets",
                 "NCC Camps: Types and Conduct"
@@ -1090,7 +1258,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, Nature and Historical perspectives",
+                "Meaning",
+                "Nature and Historical perspectives",
                 "Distinction between Clinical and Abnormal psychology",
                 "Education and Training of Clinical Psychologists"
               ]
@@ -1110,9 +1279,13 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Clinical Assessment & Techniques",
               "topics": [
                 "Nature and Purpose of clinical assessment",
-                "Techniques: Observation; Case history; Interviews",
-                "Objective measures - MMPI",
-                "Projective Measures - Sentence Completion Test"
+                "Techniques: Observation",
+                "Case history",
+                "Interviews",
+                "Objective measures",
+                "MMPI",
+                "Projective Measures",
+                "Sentence Completion Test"
               ]
             },
             {
@@ -1150,9 +1323,14 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Guidance and Counselling",
               "topics": [
-                "Counselling: Meaning and Nature, Objectives, Types of counselling",
-                "Guidance: Meaning and Nature, Objectives, Types of guidance",
-                "Difference between Guidance and Counselling; Counselling and Psychotherapy"
+                "Counselling: Meaning and Nature",
+                "Objectives",
+                "Types of counselling",
+                "Guidance: Meaning and Nature",
+                "Objectives",
+                "Types of guidance",
+                "Difference between Guidance and Counselling",
+                "Counselling and Psychotherapy"
               ]
             },
             {
@@ -1226,8 +1404,11 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Psychological Disorders",
               "topics": [
-                "Phobias – Symptoms, Types and Causes",
-                "Depressive Disorders – Clinical picture and Causes"
+                "Phobias",
+                "Symptoms",
+                "Types and Causes",
+                "Depressive Disorders",
+                "Clinical picture and Causes"
               ]
             }
           ],
@@ -1263,7 +1444,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Individual Differences and Educational Implications",
               "topics": [
                 "Individual Differences: Meaning and Significance",
-                "Dimensions of Individual Differences – Psychological and Physical"
+                "Dimensions of Individual Differences",
+                "Psychological and Physical"
               ]
             },
             {
@@ -1329,8 +1511,12 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Perception and Attention",
               "topics": [
-                "Attention: Meaning, Types of attention, Factors influencing selective attention",
-                "Perception: Meaning, Gestalt's theory of perception, Factors of perception",
+                "Attention: Meaning",
+                "Types of attention",
+                "Factors influencing selective attention",
+                "Perception: Meaning",
+                "Gestalt's theory of perception",
+                "Factors of perception",
                 "Depth perception: Monocular and Binocular cues"
               ]
             },
@@ -1338,20 +1524,35 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Thinking, Problem Solving and Creativity",
               "topics": [
-                "Thinking: Meaning, Nature and Tools of thinking; Convergent and Divergent thinking",
-                "Problem solving: Meaning and Strategies - Trial and error, Algorithms, Heuristics and Insight; Barriers to problem solving",
-                "Reasoning: Meaning; Inductive and Deductive reasoning",
-                "Creativity: Nature; Stages, Factors of creativity"
+                "Thinking: Meaning",
+                "Nature and Tools of thinking",
+                "Convergent and Divergent thinking",
+                "Problem solving: Meaning and Strategies",
+                "Trial and error",
+                "Algorithms",
+                "Heuristics and Insight",
+                "Barriers to problem solving",
+                "Reasoning: Meaning",
+                "Inductive and Deductive reasoning",
+                "Creativity: Nature",
+                "Stages",
+                "Factors of creativity"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Memory and Forgetting",
               "topics": [
-                "Memory: Meaning, Reconstructive nature of memory",
-                "Types of memory- LTM, STM, Implicit and Explicit",
-                "Models of memory: Information processing model, Levels of processing, Parallel distributed processing",
-                "Forgetting: Meaning, Nature and Factors"
+                "Memory: Meaning",
+                "Reconstructive nature of memory",
+                "Types of memory- LTM",
+                "STM",
+                "Implicit and Explicit",
+                "Models of memory: Information processing model",
+                "Levels of processing",
+                "Parallel distributed processing",
+                "Forgetting: Meaning",
+                "Nature and Factors"
               ]
             }
           ],
@@ -1382,7 +1583,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "topics": [
                 "Meaning and Nature of Bio-psychology",
                 "Historical development",
-                "Related areas: Neuropsychology, Physiological psychology, Genetics: Genes and Chromosomes"
+                "Related areas: Neuropsychology",
+                "Physiological psychology",
+                "Genetics: Genes and Chromosomes"
               ]
             },
             {
@@ -1390,7 +1593,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Neurons",
               "topics": [
                 "Neuron: Structure, Types",
-                "Electrical activities of neurons – Resting, Graded and Action potential",
+                "Electrical activities of neurons",
+                "Resting",
+                "Graded and Action potential",
                 "Synapse and Synaptic transmission",
                 "Neurotransmitters"
               ]
@@ -1409,8 +1614,12 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 4,
               "title": "Endocrine Systems",
               "topics": [
-                "Functions and abnormalities of major glands: Thyroid, Adrenal, Gonads, Pituitary, Pancreas and Pineal",
-                "Effect of Hormones on behaviour.",
+                "Functions and abnormalities of major glands: Thyroid",
+                "Adrenal",
+                "Gonads",
+                "Pituitary",
+                "Pancreas and Pineal",
+                "Effect of Hormones on behaviour",
                 "Biopsychology of Emotions and Stress"
               ]
             }
@@ -1441,8 +1650,12 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Introduction",
               "topics": [
                 "Nature and aims of Health Psychology",
-                "Components of health: Physical, Social, Emotional and Cognitive aspects",
-                "Model of health and illness: Medical and Bio-psycho-social models, Stress – Diathesis model"
+                "Components of health: Physical",
+                "Social",
+                "Emotional and Cognitive aspects",
+                "Model of health and illness: Medical and Bio-psycho-social models",
+                "Stress",
+                "Diathesis model"
               ]
             },
             {
@@ -1450,7 +1663,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Behavior and Health",
               "topics": [
                 "Role of Behavioural factors in disease and disorders",
-                "Models and Approaches to health behavior change – Cognitive, Behavioural and Social Engineering approaches",
+                "Models and Approaches to health behavior change",
+                "Cognitive",
+                "Behavioural and Social Engineering approaches",
                 "Changing health habits"
               ]
             },
@@ -1458,8 +1673,11 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 3,
               "title": "Stress and Coping",
               "topics": [
-                "Stress: Meaning and Nature, Causes, Effects of stress on Physical and Mental health",
-                "Theories of stress - Cannon, Selye, Lazarus",
+                "Stress: Meaning and Nature",
+                "Causes",
+                "Effects of stress on Physical and Mental health",
+                "Theories of stress",
+                "Cannon, Selye, Lazarus",
                 "Coping strategies",
                 "Stress management"
               ]
@@ -1469,7 +1687,10 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Promoting Wellness and Health",
               "topics": [
                 "Promoting wellness: Primary and Secondary prevention",
-                "Health-enhancing behaviours: Exercise, Nutrition, Yoga, Meditation"
+                "Health-enhancing behaviours: Exercise",
+                "Nutrition",
+                "Yoga",
+                "Meditation"
               ]
             }
           ],
@@ -1518,7 +1739,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, Nature and Historical perspectives",
+                "Meaning",
+                "Nature and Historical perspectives",
                 "Distinction between Clinical and Abnormal psychology"
               ]
             },
@@ -1537,7 +1759,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "title": "Clinical Assessment & Techniques",
               "topics": [
                 "Nature and purpose of clinical assessment",
-                "Techniques: Observation; Case history; Interviews",
+                "Techniques: Observation",
+                "Case history",
+                "Interviews",
                 "Objective and Projective Tests"
               ]
             }
@@ -1572,7 +1796,8 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Meaning, Nature and Characteristics of Psychological Test",
+                "Meaning",
+                "Nature and Characteristics of Psychological Test",
                 "Purpose of Psychological assessment",
                 "Types of Psychological Test",
                 "Ethical issues in testing",
@@ -1585,7 +1810,11 @@ export const psychologySyllabus: CourseSyllabus = {
               "topics": [
                 "Steps in psychological test construction",
                 "Items writing: Concept and guidelines",
-                "Item Analysis – Meaning, Purpose, Item difficulty, Item discrimination"
+                "Item Analysis",
+                "Meaning",
+                "Purpose",
+                "Item difficulty",
+                "Item discrimination"
               ]
             },
             {
@@ -1646,8 +1875,10 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction",
               "topics": [
-                "Definition, Nature and Scope of Criminal psychology.",
-                "Theories of Crime: Psychological theories, Social theories"
+                "Definition",
+                "Nature and Scope of Criminal psychology",
+                "Theories of Crime: Psychological theories",
+                "Social theories"
               ]
             },
             {
@@ -1656,7 +1887,9 @@ export const psychologySyllabus: CourseSyllabus = {
               "topics": [
                 "Juvenile offender: Criminogenic factors in child and adult anti-social behaviour",
                 "Mental illness and Crime",
-                "Sex offenders: Nature of rape; Theories: Feminist theory, Social learning and Evolutionary theory",
+                "Sex offenders: Nature of rape",
+                "Theories: Feminist theory",
+                "Social learning and Evolutionary theory",
                 "Influence of Media on criminal behaviour"
               ]
             },
@@ -1667,7 +1900,10 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Psychology of Aggression and Violence",
                 "Terrorism",
                 "Drugs and Crime",
-                "Cyber Crimes – Meaning; Cyber related crime - Bullying, Harassment, Stalking"
+                "Cyber Crimes",
+                "Meaning",
+                "Cyber related crime",
+                "Bullying, Harassment, Stalking"
               ]
             },
             {
@@ -1677,8 +1913,9 @@ export const psychologySyllabus: CourseSyllabus = {
                 "Psychological profiling and personality of criminals",
                 "Future predictions of criminal behaviour on the basis of criminal profiling",
                 "Prevention of crime",
-                "Delinquent Rehabilitation, Effective intervention for serious juvenile offenders",
-                "Cognitive and Behavioural Rehabilitation of criminals."
+                "Delinquent Rehabilitation",
+                "Effective intervention for serious juvenile offenders",
+                "Cognitive and Behavioural Rehabilitation of criminals"
               ]
             }
           ],
@@ -1706,8 +1943,10 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 1,
               "title": "Introduction to Guidance and Counselling",
               "topics": [
-                "Counselling: Meaning, Nature and Objectives",
-                "Guidance: Meaning, Nature and Objectives",
+                "Counselling: Meaning",
+                "Nature and Objectives",
+                "Guidance: Meaning",
+                "Nature and Objectives",
                 "Difference between guidance and counselling"
               ]
             },
@@ -1801,17 +2040,24 @@ export const psychologySyllabus: CourseSyllabus = {
               "unitNumber": 2,
               "title": "Perception and Attention",
               "topics": [
-                "Attention: Meaning, Types of attention",
-                "Perception: Meaning, Gestalt's theory of perception, Factors of perception"
+                "Attention: Meaning",
+                "Types of attention",
+                "Perception: Meaning",
+                "Gestalt's theory of perception",
+                "Factors of perception"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Memory and Forgetting",
               "topics": [
-                "Memory: Meaning, Reconstructive nature of memory",
-                "Types of memory-LTM,STM, Implicit and Explicit",
-                "Forgetting: Meaning, Nature and Factors"
+                "Memory: Meaning",
+                "Reconstructive nature of memory",
+                "Types of memory-LTM",
+                "STM",
+                "Implicit and Explicit",
+                "Forgetting: Meaning",
+                "Nature and Factors"
               ]
             }
           ],
