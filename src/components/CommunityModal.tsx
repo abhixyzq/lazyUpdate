@@ -97,7 +97,7 @@ export const CommunityModal: React.FC<CommunityModalProps> = ({
               </div>
               <div className="text-left">
                 <div className="text-sm font-extrabold leading-tight">Follow on Instagram</div>
-                <div className="text-[11px] text-pink-100 font-normal">Campus Updates, Reels & Exam Dates • @_lazypu</div>
+                <div className="text-[11px] text-pink-100 font-normal">Campus Updates, Reels & Exam Dates</div>
               </div>
             </div>
             <span className="rounded bg-white/25 px-2 py-0.5 text-xs font-black uppercase">

@@ -22,7 +22,7 @@ export default function ExtrasPage() {
       <SubpageHeader title="Extras" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
-        
+
         {/* Official PU Web Portals Card */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-3">
           <h3 className="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
@@ -121,7 +121,7 @@ export default function ExtrasPage() {
               <InstagramIcon className="h-5 w-5 shrink-0" />
               <div>
                 <div className="text-xs font-black text-slate-900">Instagram</div>
-                <div className="text-[10px] text-pink-700 font-semibold">@_lazypu</div>
+                <div className="text-[10px] text-pink-700 font-semibold">Follow Us</div>
               </div>
             </a>
           </div>
@@ -144,7 +144,7 @@ export default function ExtrasPage() {
             Lazy PU is a student-built companion platform for Patna University scholars to freely explore syllabi, compute SGPA, and track circulars without clunky servers.
           </p>
           <div className="pt-1 text-[10px] text-slate-400">
-            Lazy PU v2.0 • Made with ❤️ for Patna University Students
+            Lazy PU v2.0 • Made with ❤️ by Abhishek @nainix
           </div>
         </div>
       </main>
