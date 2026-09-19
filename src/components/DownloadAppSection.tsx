@@ -54,7 +54,7 @@ export const DownloadAppSection: React.FC<DownloadAppSectionProps> = ({
         </div>
 
         <a
-          href="/downloads/lazy-pu.apk"
+          href="/downloads/lazy-pu.apk?v=2"
           download="lazy-pu.apk"
           className="flex items-center gap-1.5 rounded-xl bg-blue-600 px-3 py-1.5 text-xs font-black text-white hover:bg-blue-700 active:scale-95 transition shrink-0 shadow-2xs"
         >

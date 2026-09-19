@@ -4,6 +4,8 @@ import {
   BannerAdOptions,
   BannerAdSize,
   BannerAdPosition,
+  BannerAdPluginEvents,
+  AdMobError,
 } from '@capacitor-community/admob';
 
 // Production Banner Ad Unit ID
@@ -14,6 +16,46 @@ export const TEST_BANNER_AD_ID = 'ca-app-pub-3940256099942544/6300978111';
 
 let isAdMobInitialized = false;
 let isBannerShowing = false;
+let isListenersAttached = false;
+let hasFallenBackToTest = false;
+
+function setupBannerListeners() {
+  if (isListenersAttached || !Capacitor.isNativePlatform()) return;
+  isListenersAttached = true;
+
+  try {
+    AdMob.addListener(BannerAdPluginEvents.Loaded, () => {
+      console.log('[AdMob] Banner loaded and visible.');
+      isBannerShowing = true;
+    });
+
+    AdMob.addListener(BannerAdPluginEvents.FailedToLoad, async (err: AdMobError) => {
+      console.warn('[AdMob] Banner FailedToLoad:', JSON.stringify(err));
+      isBannerShowing = false;
+
+      // When live ad has No Fill (Error code 3: new ad unit / account in review),
+      // automatically fall back to Google Test Banner so developer can verify the ad renders on device
+      if (!hasFallenBackToTest) {
+        hasFallenBackToTest = true;
+        console.log('[AdMob] Falling back to official test banner for layout verification...');
+        try {
+          const testOptions: BannerAdOptions = {
+            adId: TEST_BANNER_AD_ID,
+            adSize: BannerAdSize.ADAPTIVE_BANNER,
+            position: BannerAdPosition.BOTTOM_CENTER,
+            margin: 0,
+            isTesting: true,
+          };
+          await AdMob.showBanner(testOptions);
+        } catch (fallbackErr) {
+          console.warn('[AdMob] Fallback banner error:', fallbackErr);
+        }
+      }
+    });
+  } catch (listenerErr) {
+    console.warn('[AdMob] Error attaching listeners:', listenerErr);
+  }
+}
 
 /**
  * Initializes the Google AdMob SDK on native Android/iOS platform.
@@ -28,6 +70,7 @@ export async function initAdMob(): Promise<boolean> {
   }
 
   try {
+    setupBannerListeners();
     await AdMob.initialize({
       testingDevices: ['EMULATOR'],
       initializeForTesting: false,
@@ -53,6 +96,7 @@ export async function showFooterBanner(): Promise<void> {
   }
 
   try {
+    setupBannerListeners();
     const ready = await initAdMob();
     if (!ready) return;
 

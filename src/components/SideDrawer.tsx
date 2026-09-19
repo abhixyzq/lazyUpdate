@@ -45,7 +45,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
     setIsSharing(true);
     setShareFeedback('Preparing APK file...');
 
-    const apkRelativeUrl = '/downloads/lazy-pu.apk';
+    const apkRelativeUrl = '/downloads/lazy-pu.apk?v=2';
     const apkFullUrl =
       typeof window !== 'undefined'
         ? `${window.location.origin}${apkRelativeUrl}`
