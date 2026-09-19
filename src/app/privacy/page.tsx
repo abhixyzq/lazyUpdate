@@ -87,6 +87,16 @@ export default function PrivacyAndDisclaimerPage() {
                 </p>
               </div>
             </div>
+
+            <div className="flex items-start gap-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 p-3">
+              <ShieldCheck className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
+              <div>
+                <h4 className="font-black text-slate-900 text-xs">Advertisements & Google AdMob</h4>
+                <p className="mt-0.5 text-[11px] text-slate-500">
+                  To keep this educational platform free for students, we use Google AdMob to display banner ads. Google AdMob may use device identifiers and cookies to serve ads in compliance with Google&apos;s advertising policies.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
