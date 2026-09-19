@@ -53,12 +53,9 @@ export function AppUpdateModal() {
         const remoteConfig: RemoteVersionConfig = await response.json();
         if (!isMounted) return;
 
-        // Check if remote version is higher than current build
-        const hasNewVersion =
-          remoteConfig.versionCode > currentCode ||
-          (remoteConfig.version &&
-            remoteConfig.version.trim() !== (info.version || '').trim() &&
-            remoteConfig.versionCode >= currentCode);
+        // Strictly check if remote versionCode is higher than installed native build
+        const remoteCode = Number(remoteConfig.versionCode) || 0;
+        const hasNewVersion = remoteCode > currentCode;
 
         // Check if user already dismissed this version in current session (unless forced)
         const dismissedKey = `dismissed_update_${remoteConfig.versionCode}`;
