@@ -11,7 +11,7 @@ import {
   CalendarIcon,
 } from './ApnaIcons';
 import { InstagramIcon, WhatsAppIcon } from './OfficialBrandIcons';
-import { ChevronRight, Heart } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 export type ApnaActionType =
@@ -103,17 +103,17 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
           </Link>
         </div>
 
-        {/* Social & Community Pill Action Buttons */}
-        <div className="grid grid-cols-3 gap-1.5 sm:gap-2 pt-3 mt-1">
+        {/* Dual Social Pill Action Buttons */}
+        <div className="grid grid-cols-2 gap-2 pt-3 mt-1">
           {/* Authentic Official Instagram Logo */}
           <a
             href="https://instagram.com/_lazypu"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-1.5 rounded-xl border border-pink-200 bg-pink-50/70 py-2.5 px-2 text-xs font-bold text-pink-700 shadow-xs hover:bg-pink-100 active:scale-98 transition"
+            className="flex items-center justify-center gap-2 rounded-xl border border-pink-200 bg-pink-50/70 py-2.5 px-3 text-xs font-bold text-pink-700 shadow-xs hover:bg-pink-100 active:scale-98 transition"
           >
             <InstagramIcon className="h-4 w-4 shrink-0" />
-            <span className="truncate">Instagram</span>
+            <span>Instagram</span>
           </a>
 
           {/* Authentic Official WhatsApp Logo */}
@@ -121,20 +121,11 @@ export const UniversityGridSection: React.FC<UniversityGridSectionProps> = ({
             href="https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50 py-2.5 px-2 text-xs font-bold text-emerald-800 shadow-xs hover:bg-emerald-100 active:scale-98 transition"
+            className="flex items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 py-2.5 px-3 text-xs font-bold text-emerald-800 shadow-xs hover:bg-emerald-100 active:scale-98 transition"
           >
             <WhatsAppIcon className="h-4 w-4 shrink-0" />
-            <span className="truncate">WhatsApp</span>
+            <span>WhatsApp Channel</span>
           </a>
-
-          {/* Contribute in Lazy PU */}
-          <Link
-            href="/contribute"
-            className="flex items-center justify-center gap-1.5 rounded-xl border border-rose-200 bg-rose-50/80 py-2.5 px-2 text-xs font-bold text-rose-700 shadow-xs hover:bg-rose-100 active:scale-98 transition"
-          >
-            <Heart className="h-3.5 w-3.5 shrink-0 fill-rose-500 text-rose-500" />
-            <span className="truncate">Contribute</span>
-          </Link>
         </div>
 
       </div>
