@@ -46,7 +46,7 @@ export default function ApnaUniversityHomePage() {
         router.push('/results');
         break;
       case 'notice':
-        setSelectedNotice(puNoticesData[0]);
+        router.push('/notices');
         break;
       case 'sgpa':
         setIsSGPAOpen(true);
