@@ -5,33 +5,13 @@ import {
   Plus,
   Trash2,
   Edit2,
-  Save,
   RotateCcw,
   Clock,
   MapPin,
   User,
   CheckCircle2,
-  Calendar,
-  Sparkles,
-  Layers,
   X,
-  Bell,
-  BellRing,
-  BellOff,
-  Smartphone,
-  Vibrate,
 } from 'lucide-react';
-import {
-  parseStartTime,
-  calculate5MinBefore,
-  scheduleClassReminders,
-  cancelAllClassReminders,
-  triggerTestNotification,
-  triggerVibrationAlert,
-  getSavedNotificationSetting,
-  findClassStartingSoon,
-  isHolidayOrSunday,
-} from '@/utils/timetableNotifications';
 
 export interface TimeTableSlot {
   id: string;
@@ -61,53 +41,49 @@ const SLOT_COLORS = [
   'bg-cyan-50 border-cyan-200 text-cyan-900',
 ];
 
-const DEFAULT_TIMETABLE: TimeTableSlot[] = [
-  // Monday
-  { id: '1', day: 'Mon', subject: 'Major (MJC) Lecture', time: '10:00 - 11:00 AM', room: 'Room 12', teacher: 'Prof. Sharma', color: SLOT_COLORS[0] },
-  { id: '2', day: 'Mon', subject: 'Minor (MIC) Class', time: '11:00 - 12:00 PM', room: 'Hall B', teacher: 'Dr. Verma', color: SLOT_COLORS[1] },
-  { id: '3', day: 'Mon', subject: 'AEC English / Hindi', time: '01:00 - 02:00 PM', room: 'Room 04', color: SLOT_COLORS[2] },
-
-  // Tuesday
-  { id: '4', day: 'Tue', subject: 'Major (MJC) Lecture', time: '10:00 - 11:00 AM', room: 'Room 12', teacher: 'Prof. Sharma', color: SLOT_COLORS[0] },
-  { id: '5', day: 'Tue', subject: 'MDC Multidisciplinary', time: '11:00 - 12:00 PM', room: 'Room 08', color: SLOT_COLORS[3] },
-  { id: '6', day: 'Tue', subject: 'Practical / Lab Session', time: '01:00 - 03:00 PM', room: 'Central Lab', teacher: 'Dr. Kumar', color: SLOT_COLORS[4] },
-
-  // Wednesday
-  { id: '7', day: 'Wed', subject: 'Major (MJC) Lecture', time: '10:00 - 11:00 AM', room: 'Room 12', teacher: 'Prof. Sharma', color: SLOT_COLORS[0] },
-  { id: '8', day: 'Wed', subject: 'SEC Skill Course', time: '11:00 - 12:00 PM', room: 'Seminar Hall', color: SLOT_COLORS[5] },
-  { id: '9', day: 'Wed', subject: 'VAC Value Added Course', time: '01:00 - 02:00 PM', room: 'Room 02', color: SLOT_COLORS[2] },
-
-  // Thursday
-  { id: '10', day: 'Thu', subject: 'Major (MJC) Tutorial', time: '10:00 - 11:00 AM', room: 'Room 12', color: SLOT_COLORS[0] },
-  { id: '11', day: 'Thu', subject: 'Minor (MIC) Class', time: '11:00 - 12:00 PM', room: 'Hall B', teacher: 'Dr. Verma', color: SLOT_COLORS[1] },
-  { id: '12', day: 'Thu', subject: 'Library / Self Study', time: '01:00 - 02:30 PM', room: 'Central Library', color: SLOT_COLORS[1] },
-
-  // Friday
-  { id: '13', day: 'Fri', subject: 'Major (MJC) Lecture', time: '10:00 - 11:00 AM', room: 'Room 12', teacher: 'Prof. Sharma', color: SLOT_COLORS[0] },
-  { id: '14', day: 'Fri', subject: 'Minor (MIC) Class', time: '11:00 - 12:00 PM', room: 'Hall B', color: SLOT_COLORS[1] },
-  { id: '15', day: 'Fri', subject: 'Practical / Lab Session', time: '01:00 - 03:00 PM', room: 'Central Lab', teacher: 'Dr. Kumar', color: SLOT_COLORS[4] },
-
-  // Saturday
-  { id: '16', day: 'Sat', subject: 'Seminar / Presentation', time: '10:00 - 11:30 AM', room: 'Auditorium', color: SLOT_COLORS[3] },
-  { id: '17', day: 'Sat', subject: 'Remedial / Doubt Class', time: '11:30 - 01:00 PM', room: 'Room 12', color: SLOT_COLORS[0] },
-];
+const DEFAULT_TIMETABLE: TimeTableSlot[] = [];
 
 const STORAGE_KEY = 'lazy_pu_student_custom_timetable_v1';
+
+export function formatTime24to12(time24: string): string {
+  if (!time24) return '';
+  const [hStr, mStr] = time24.split(':');
+  let h = parseInt(hStr, 10);
+  const m = mStr || '00';
+  const mer = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
+  return `${h.toString().padStart(2, '0')}:${m} ${mer}`;
+}
+
+export function parseTimeTo24(timeStr: string): { start: string; end: string } {
+  if (!timeStr) return { start: '10:00', end: '11:00' };
+
+  const parts = timeStr.split(/[-–—]|to/i).map((s) => s.trim());
+  const parseOne = (str: string, fallbackH: number): string => {
+    const m = str.match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/i);
+    if (!m) return `${fallbackH.toString().padStart(2, '0')}:00`;
+    let h = parseInt(m[1], 10);
+    const min = m[2] || '00';
+    const mer = (m[3] || '').toUpperCase();
+    if (mer === 'PM' && h < 12) h += 12;
+    if (mer === 'AM' && h === 12) h = 0;
+    if (!mer) {
+      const isPm = /pm/i.test(timeStr);
+      if (isPm && h < 12 && (h < 8 || h === 12)) h += 12;
+    }
+    return `${h.toString().padStart(2, '0')}:${min}`;
+  };
+
+  const start = parts[0] ? parseOne(parts[0], 10) : '10:00';
+  const end = parts[1] ? parseOne(parts[1], 11) : '11:00';
+  return { start, end };
+}
 
 export const StudentTimeTableBuilder: React.FC = () => {
   const [slots, setSlots] = useState<TimeTableSlot[]>([]);
   const [selectedDay, setSelectedDay] = useState<TimeTableSlot['day']>('Mon');
   const [viewMode, setViewMode] = useState<'day' | 'table'>('table');
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-
-  // 5-Min Silent Vibration Notification state
-  const [remindersActive, setRemindersActive] = useState<boolean>(false);
-  const [todayOff, setTodayOff] = useState<{ isOff: boolean; reason?: string }>({ isOff: false });
-  const [upcomingAlert, setUpcomingAlert] = useState<{
-    slot: TimeTableSlot;
-    minutesRemaining: number;
-    startTimeStr: string;
-  } | null>(null);
 
   // Modal for adding / editing a slot
   const [isSlotModalOpen, setIsSlotModalOpen] = useState(false);
@@ -116,17 +92,19 @@ export const StudentTimeTableBuilder: React.FC = () => {
   // Form fields
   const [formDay, setFormDay] = useState<TimeTableSlot['day']>('Mon');
   const [formSubject, setFormSubject] = useState('');
-  const [formTime, setFormTime] = useState('');
+  const [formStartTime, setFormStartTime] = useState('10:00');
+  const [formEndTime, setFormEndTime] = useState('11:00');
+  const [formTime, setFormTime] = useState('10:00 AM - 11:00 AM');
   const [formRoom, setFormRoom] = useState('');
   const [formTeacher, setFormTeacher] = useState('');
 
-  // Load from localStorage or defaults
+  // Load from localStorage or empty
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
+        if (Array.isArray(parsed)) {
           setSlots(parsed);
           return;
         }
@@ -134,7 +112,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
     } catch {
       // LocalStorage fallback
     }
-    setSlots(DEFAULT_TIMETABLE);
+    setSlots([]);
   }, []);
 
   // Today's day index
@@ -151,28 +129,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
     if (map[dayIndex]) {
       setSelectedDay(map[dayIndex]);
     }
-    // Load notification setting and today's off status
-    setRemindersActive(getSavedNotificationSetting());
-    setTodayOff(isHolidayOrSunday(new Date()));
   }, []);
-
-  // Active monitor: check every 30 seconds if any class is in ~5 minutes
-  useEffect(() => {
-    if (!remindersActive || slots.length === 0) return;
-
-    const checkSoon = () => {
-      const soon = findClassStartingSoon(slots);
-      if (soon && (!upcomingAlert || upcomingAlert.slot.id !== soon.slot.id)) {
-        // Trigger gentle 1.5-second vibration without disturbing class
-        triggerVibrationAlert(1500);
-      }
-      setUpcomingAlert(soon);
-    };
-
-    checkSoon();
-    const interval = setInterval(checkSoon, 30000);
-    return () => clearInterval(interval);
-  }, [remindersActive, slots, upcomingAlert]);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -184,38 +141,18 @@ export const StudentTimeTableBuilder: React.FC = () => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
       showToast('Routine saved to device!');
-      // If reminders active, auto-reschedule
-      if (remindersActive) {
-        scheduleClassReminders(updated).catch(() => {});
-      }
     } catch {
       // Fallback
     }
   };
 
-  const handleToggleReminders = async () => {
-    if (remindersActive) {
-      await cancelAllClassReminders();
-      setRemindersActive(false);
-      showToast('Class notifications turned off');
-    } else {
-      const res = await scheduleClassReminders(slots);
-      if (res.scheduledCount > 0) {
-        setRemindersActive(true);
-        triggerVibrationAlert(1500);
-        showToast('📳 Silent 1.5s vibration alerts active! (No loud alarm)');
-      } else {
-        showToast(res.message || 'Notification permission required');
-      }
-    }
-  };
-
-  const handleTestNotification = async () => {
-    const ok = await triggerTestNotification();
-    if (ok) {
-      showToast('📳 1.5s Vibration triggered! Check notification tray.');
-    } else {
-      showToast('Please enable notifications in phone/browser settings.');
+  const handleTimeChange = (start: string, end: string) => {
+    setFormStartTime(start);
+    setFormEndTime(end);
+    if (start && end) {
+      setFormTime(`${formatTime24to12(start)} - ${formatTime24to12(end)}`);
+    } else if (start) {
+      setFormTime(formatTime24to12(start));
     }
   };
 
@@ -223,7 +160,9 @@ export const StudentTimeTableBuilder: React.FC = () => {
     setEditingSlotId(null);
     setFormDay(day);
     setFormSubject('');
-    setFormTime('10:00 - 11:00 AM');
+    setFormStartTime('10:00');
+    setFormEndTime('11:00');
+    setFormTime('10:00 AM - 11:00 AM');
     setFormRoom('');
     setFormTeacher('');
     setIsSlotModalOpen(true);
@@ -233,6 +172,9 @@ export const StudentTimeTableBuilder: React.FC = () => {
     setEditingSlotId(slot.id);
     setFormDay(slot.day);
     setFormSubject(slot.subject);
+    const { start, end } = parseTimeTo24(slot.time);
+    setFormStartTime(start);
+    setFormEndTime(end);
     setFormTime(slot.time);
     setFormRoom(slot.room || '');
     setFormTeacher(slot.teacher || '');
@@ -282,8 +224,8 @@ export const StudentTimeTableBuilder: React.FC = () => {
   };
 
   const handleResetToDefault = () => {
-    if (window.confirm('Reset timetable to official Patna University default template?')) {
-      saveToStorage(DEFAULT_TIMETABLE);
+    if (window.confirm('Clear all timetable classes?')) {
+      saveToStorage([]);
     }
   };
 
@@ -291,55 +233,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
 
   return (
     <div className="space-y-3">
-      {/* Today Holiday / Sunday Notice */}
-      {todayOff.isOff && (
-        <div className="rounded-2xl border border-blue-200/90 bg-blue-50/80 p-3 text-xs text-blue-950 flex items-center gap-2.5 shadow-2xs">
-          <span className="text-lg">🏖️</span>
-          <div>
-            <div className="font-black text-xs text-blue-900">
-              Today is {todayOff.reason}
-            </div>
-            <p className="text-[11px] text-blue-700 font-medium">
-              College is closed today. Class notifications and vibration alerts are automatically paused.
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* 1. Live 5-Minute Class Alert Banner (if class starts in 5 minutes) */}
-      {upcomingAlert && (
-        <div className="rounded-2xl border border-amber-300 bg-amber-50/95 p-3 text-xs font-bold text-amber-950 flex items-center justify-between gap-2 shadow-xs animate-pulse">
-          <div className="flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0">
-              <BellRing className="h-4 w-4" />
-            </div>
-            <div>
-              <div className="font-black text-amber-950 flex items-center gap-1.5">
-                <span>Class in 5 Minutes!</span>
-                <span className="text-[10px] bg-amber-200 px-1.5 py-0.2 rounded-md">
-                  Starts at {upcomingAlert.startTimeStr}
-                </span>
-                <span className="text-[9px] bg-amber-300/80 px-1.5 py-0.2 rounded-md font-bold">
-                  📳 1.5s Vibrate
-                </span>
-              </div>
-              <p className="text-[11px] text-amber-900 font-medium">
-                {upcomingAlert.slot.subject}
-                {upcomingAlert.slot.room ? ` • ${upcomingAlert.slot.room}` : ''}
-              </p>
-            </div>
-          </div>
-          <button
-            type="button"
-            onClick={() => setUpcomingAlert(null)}
-            className="p-1 rounded-lg text-amber-700 hover:text-amber-950 hover:bg-amber-100 transition"
-          >
-            <X className="h-4 w-4" />
-          </button>
-        </div>
-      )}
-
-      {/* 2. Header Toolbar */}
+      {/* Header Toolbar */}
       <div className="flex items-center justify-between gap-2 flex-wrap bg-slate-50 border border-slate-200/90 rounded-2xl p-2.5">
         <div className="flex items-center gap-1.5 bg-white border border-slate-200 rounded-xl p-0.5">
           <button
@@ -379,77 +273,10 @@ export const StudentTimeTableBuilder: React.FC = () => {
           <button
             type="button"
             onClick={handleResetToDefault}
-            title="Reset to default routine"
+            title="Clear all classes"
             className="p-1.5 rounded-xl border border-slate-200 bg-white text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition"
           >
             <RotateCcw className="h-4 w-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* 3. 5-Minute Class Silent Vibration Bar (Class-Safe, No Alarm) */}
-      <div className="flex items-center justify-between gap-2 rounded-2xl border border-amber-200/80 bg-linear-to-r from-amber-50/90 via-white to-amber-50/50 p-2.5 sm:p-3 shadow-2xs">
-        <div className="flex items-center gap-2.5">
-          <div
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border transition ${
-              remindersActive
-                ? 'bg-amber-500 text-white border-amber-600 shadow-xs'
-                : 'bg-slate-100 text-slate-400 border-slate-200'
-            }`}
-          >
-            {remindersActive ? (
-              <BellRing className="h-4 w-4 animate-bounce" />
-            ) : (
-              <BellOff className="h-4 w-4" />
-            )}
-          </div>
-          <div>
-            <div className="flex items-center gap-1.5">
-              <span className="text-xs font-black text-slate-900">
-                5-Min Class Reminder (1.5s Vibration)
-              </span>
-              {remindersActive ? (
-                <span className="rounded-full bg-emerald-100 border border-emerald-200 px-1.5 py-0.2 text-[9px] font-black text-emerald-800">
-                  ACTIVE
-                </span>
-              ) : (
-                <span className="rounded-full bg-slate-200 text-slate-600 px-1.5 py-0.2 text-[9px] font-bold">
-                  OFF
-                </span>
-              )}
-            </div>
-            <p className="text-[10px] text-slate-600 font-medium leading-tight">
-              Class se 5 min pahle 1.5s silent vibration • Sundays & Holidays auto-muted 🏖️
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-1.5 shrink-0">
-          {remindersActive && (
-            <button
-              type="button"
-              onClick={handleTestNotification}
-              className="rounded-xl border border-amber-300 bg-amber-100/70 px-2 py-1 text-[10px] font-black text-amber-900 hover:bg-amber-200/80 transition"
-              title="Test 1.5-second vibration alert on your phone"
-            >
-              Test 1.5s Vibrate
-            </button>
-          )}
-
-          <button
-            type="button"
-            onClick={handleToggleReminders}
-            className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-hidden ${
-              remindersActive ? 'bg-amber-500' : 'bg-slate-300'
-            }`}
-            role="switch"
-            aria-checked={remindersActive}
-          >
-            <span
-              className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-md ring-0 transition duration-200 ease-in-out ${
-                remindersActive ? 'translate-x-5' : 'translate-x-0'
-              }`}
-            />
           </button>
         </div>
       </div>
@@ -492,11 +319,6 @@ export const StudentTimeTableBuilder: React.FC = () => {
                         {currentDaySlots.length > 0 ? (
                           <div className="flex flex-wrap gap-2">
                             {currentDaySlots.map((slot) => {
-                              const parsed = parseStartTime(slot.time);
-                              const preAlert = parsed
-                                ? calculate5MinBefore(parsed.hour, parsed.minute)
-                                : null;
-
                               return (
                                 <div
                                   key={slot.id}
@@ -532,13 +354,6 @@ export const StudentTimeTableBuilder: React.FC = () => {
                                     <Clock className="h-3 w-3 shrink-0" />
                                     <span>{slot.time}</span>
                                   </div>
-
-                                  {/* 5-Min Silent Vibrate Badge */}
-                                  {preAlert && (
-                                    <div className="mt-1 inline-flex items-center gap-1 rounded-md bg-white/80 border border-amber-300/80 px-1.5 py-0.5 text-[9px] font-bold text-amber-900">
-                                      <span>📳 1.5s Vibrate: {preAlert.formatted}</span>
-                                    </div>
-                                  )}
 
                                   {(slot.room || slot.teacher) && (
                                     <div className="mt-1 flex items-center gap-2 text-[10px] opacity-80">
@@ -624,11 +439,6 @@ export const StudentTimeTableBuilder: React.FC = () => {
           <div className="space-y-2">
             {daySlots.length > 0 ? (
               daySlots.map((slot, idx) => {
-                const parsed = parseStartTime(slot.time);
-                const preAlert = parsed
-                  ? calculate5MinBefore(parsed.hour, parsed.minute)
-                  : null;
-
                 return (
                   <div
                     key={slot.id}
@@ -656,15 +466,6 @@ export const StudentTimeTableBuilder: React.FC = () => {
                           </span>
                         )}
                       </div>
-
-                      {/* 5-Min Alert pill */}
-                      {preAlert && (
-                        <div className="pt-0.5">
-                          <span className="inline-flex items-center gap-1 rounded-md bg-amber-100/90 border border-amber-300 text-amber-950 px-2 py-0.5 text-[9px] font-bold">
-                            <span>📳 1.5s Vibrate Alert: {preAlert.formatted}</span>
-                          </span>
-                        </div>
-                      )}
 
                       {slot.teacher && (
                         <p className="text-[11px] font-medium opacity-80 flex items-center gap-1 pt-0.5">
@@ -772,32 +573,40 @@ export const StudentTimeTableBuilder: React.FC = () => {
 
               {/* Time */}
               <div>
-                <div className="flex items-center justify-between mb-1">
-                  <label className="block font-bold text-slate-700">
-                    Time Slot *
-                  </label>
-                  {formTime && (
-                    <span className="text-[10px] text-amber-700 font-bold">
-                      {(() => {
-                        const parsed = parseStartTime(formTime);
-                        if (!parsed) return '';
-                        const alert = calculate5MinBefore(parsed.hour, parsed.minute);
-                        return `📳 Vibrate at ${alert.formatted}`;
-                      })()}
-                    </span>
-                  )}
+                <label className="block font-bold text-slate-700 mb-1">
+                  Time Slot *
+                </label>
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                      Start Time
+                    </label>
+                    <input
+                      type="time"
+                      required
+                      value={formStartTime}
+                      onChange={(e) => handleTimeChange(e.target.value, formEndTime)}
+                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden bg-white text-slate-800"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                      End Time
+                    </label>
+                    <input
+                      type="time"
+                      required
+                      value={formEndTime}
+                      onChange={(e) => handleTimeChange(formStartTime, e.target.value)}
+                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden bg-white text-slate-800"
+                    />
+                  </div>
                 </div>
-                <input
-                  type="text"
-                  required
-                  value={formTime}
-                  onChange={(e) => setFormTime(e.target.value)}
-                  placeholder="e.g. 10:00 - 11:00 AM"
-                  className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden"
-                />
-                <p className="mt-1 text-[10px] text-slate-500">
-                  Class se 5 min pehle silent 1.5s vibration alert milega taaki class disturb na ho.
-                </p>
+                {formTime && (
+                  <p className="mt-1 text-[11px] font-bold text-slate-600">
+                    Selected: {formTime}
+                  </p>
+                )}
               </div>
 
               {/* Room & Teacher */}

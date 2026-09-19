@@ -40,7 +40,7 @@ export const TimeTableModal: React.FC<TimeTableModalProps> = ({
           <div>
             <h3 className="text-base font-black text-slate-900">Class Time Table</h3>
             <p className="text-[11px] text-slate-500 font-medium">
-              Weekly lecture schedule & 1.5s silent vibration reminders
+              Weekly lecture routine & schedule
             </p>
           </div>
         </div>

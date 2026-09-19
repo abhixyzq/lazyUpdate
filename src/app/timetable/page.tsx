@@ -9,7 +9,7 @@ export default function TimeTablePage() {
     <div className="min-h-screen bg-transparent text-slate-900 pb-16">
       <SubpageHeader
         title="Time Table"
-        subtitle="Weekly Lecture Routine & 1.5s Silent Vibration Reminders"
+        subtitle="Weekly Lecture Routine & Class Schedule"
       />
 
       <main className="mx-auto max-w-3xl px-3 pt-3">
