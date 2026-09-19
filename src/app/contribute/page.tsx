@@ -23,15 +23,13 @@ interface Contributor {
   badge?: string;
 }
 
-const PRESET_AMOUNTS = [21, 51, 101, 251, 500];
-
 const INITIAL_CONTRIBUTORS: Contributor[] = [
   {
     id: 'c1',
     name: 'Aman Verma',
     college: 'Patna Science College',
-    amount: 251,
-    message: 'Lazy PU se exam routine aur results check karna bohot aasan ho gaya. Keep it ad-free! 🚀',
+    amount: 250,
+    message: 'Lazy PU makes checking exam routines and results so simple. Keep it ad-free! 🚀',
     date: '18 Sept 2026',
     badge: 'Super Patron ⭐',
   },
@@ -39,8 +37,8 @@ const INITIAL_CONTRIBUTORS: Contributor[] = [
     id: 'c2',
     name: 'Pooja Kumari',
     college: 'Magadh Mahila College',
-    amount: 101,
-    message: 'Best app for PU students. Thank you for zero popup ads! 💖',
+    amount: 100,
+    message: 'The best portal for Patna University students. Proud to support! 💖',
     date: '17 Sept 2026',
     badge: 'Ad-Free Hero 🛡️',
   },
@@ -48,8 +46,8 @@ const INITIAL_CONTRIBUTORS: Contributor[] = [
     id: 'c3',
     name: 'Rohit Kumar',
     college: 'B.N. College',
-    amount: 51,
-    message: 'Aapka kaam sach me kamaal ka hai. Proud supporter!',
+    amount: 50,
+    message: 'Wonderful project for all PU students. Thank you!',
     date: '16 Sept 2026',
     badge: 'Patron ☕',
   },
@@ -57,8 +55,8 @@ const INITIAL_CONTRIBUTORS: Contributor[] = [
     id: 'c4',
     name: 'Anonymous Student',
     college: 'Patna University',
-    amount: 21,
-    message: 'Chhoti si madad Lazy PU ke liye ❤️',
+    amount: 20,
+    message: 'A small token of appreciation for keeping it ad-free ❤️',
     date: '15 Sept 2026',
     badge: 'Supporter 💖',
   },
@@ -74,8 +72,7 @@ declare global {
 }
 
 export default function ContributePage() {
-  const [amount, setAmount] = useState<number>(51);
-  const [customAmount, setCustomAmount] = useState<string>('');
+  const [amount, setAmount] = useState<string>('50');
   const [name, setName] = useState('');
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [college, setCollege] = useState('');
@@ -111,21 +108,6 @@ export default function ContributePage() {
     };
   }, []);
 
-  const handleSelectPreset = (val: number) => {
-    setAmount(val);
-    setCustomAmount('');
-  };
-
-  const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value.replace(/\D/g, '');
-    setCustomAmount(val);
-    if (val) {
-      setAmount(parseInt(val, 10));
-    } else {
-      setAmount(0);
-    }
-  };
-
   const finalizeContribution = (contributorObj: Contributor) => {
     const updated = [contributorObj, ...contributors];
     setContributors(updated);
@@ -138,9 +120,11 @@ export default function ContributePage() {
     }
   };
 
+  const parsedAmount = parseInt(amount, 10) || 0;
+
   const handlePayment = () => {
-    if (!amount || amount < 1) {
-      alert('Kripya kam se kam ₹1 amount select ya enter karein.');
+    if (!parsedAmount || parsedAmount < 1) {
+      alert('Please enter a valid amount of at least ₹1.');
       return;
     }
 
@@ -154,20 +138,20 @@ export default function ContributePage() {
       id: 'c_' + Date.now(),
       name: contributorName,
       college: college.trim() || 'Patna University',
-      amount: amount,
-      message: message.trim() || 'Supporting ad-free Lazy PU!',
+      amount: parsedAmount,
+      message: message.trim() || 'Proud to support ad-free Lazy PU!',
       date: 'Just now',
-      badge: amount >= 250 ? 'Super Patron ⭐' : amount >= 100 ? 'Ad-Free Hero 🛡️' : 'Patron 💖',
+      badge: parsedAmount >= 200 ? 'Super Patron ⭐' : parsedAmount >= 100 ? 'Ad-Free Hero 🛡️' : 'Patron 💖',
     };
 
     const razorpayKey = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
 
-    // If Razorpay SDK is available and a production key is configured
+    // If Razorpay SDK is loaded and a key is provided
     if (typeof window !== 'undefined' && window.Razorpay && razorpayKey) {
       try {
         const options = {
           key: razorpayKey,
-          amount: amount * 100, // amount in paisa
+          amount: parsedAmount * 100, // amount in paise
           currency: 'INR',
           name: 'Lazy PU Support',
           description: 'Contribution to keep Lazy PU 100% Ad-Free',
@@ -176,7 +160,7 @@ export default function ContributePage() {
             name: contributorName,
           },
           theme: {
-            color: '#e11d48', // rose-600
+            color: '#e11d48',
           },
           handler: function () {
             setLoading(false);
@@ -193,11 +177,11 @@ export default function ContributePage() {
         rzp.open();
         return;
       } catch (err) {
-        console.error('Razorpay init error:', err);
+        console.error('Razorpay initialization error:', err);
       }
     }
 
-    // Direct UPI / Instant Demo Contribution fallback (works seamlessly on all devices)
+    // Direct Instant Payment / Demo Fallback
     setTimeout(() => {
       setLoading(false);
       finalizeContribution(newEntry);
@@ -208,10 +192,10 @@ export default function ContributePage() {
 
   return (
     <div className="min-h-screen bg-slate-50/70 text-slate-900 pb-20">
-      <SubpageHeader title="Contribute in Lazy PU" />
+      <SubpageHeader title="Contribute to Lazy PU" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
-        {/* Thank You Success State */}
+        {/* Thank You Celebration State */}
         {isSuccess && lastContribution ? (
           <div className="rounded-3xl border border-rose-200 bg-white p-6 sm:p-8 text-center shadow-md space-y-5 animate-in fade-in zoom-in-95 duration-200">
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl bg-rose-50 text-4xl border border-rose-200 shadow-xs">
@@ -224,10 +208,10 @@ export default function ContributePage() {
                 Thank You So Much!
               </span>
               <h2 className="text-2xl font-black text-slate-900 tracking-tight">
-                Dil Se Dhanyawad, {lastContribution.name}!
+                Thank You, {lastContribution.name}!
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md mx-auto">
-                Aapka <strong className="text-rose-600 font-black">₹{lastContribution.amount}</strong> ka contribution successfully record ho gaya hai. Aapne Lazy PU ko sabhi students ke liye 100% ad-free aur fast rakhne me bohot badi madad ki hai.
+                Your contribution of <strong className="text-rose-600 font-black">₹{lastContribution.amount}</strong> has been successfully received. You are directly helping keep Lazy PU 100% ad-free, fast, and accessible for everyone.
               </p>
             </div>
 
@@ -285,14 +269,14 @@ export default function ContributePage() {
                     Community Funded Project
                   </span>
                   <h1 className="text-base sm:text-lg font-black text-slate-900 leading-tight">
-                    Help Us Keep Lazy PU Ad-Free
+                    Help Us Keep Lazy PU 100% Ad-Free
                   </h1>
                 </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Lazy PU ko Patna University ke students ke liye bina kisi annoying popup ads, intrusive banners ya paid subscriptions ke chalaya ja raha hai.
-                Aapka chhota sa contribution (chahe <strong>₹21</strong> ya <strong>₹51</strong> ho) humare high-speed server costs aur maintenance ko cover karne me direct madad karta hai.
+                Lazy PU is built by students, for students. We do not run annoying pop-up ads, intrusive banners, or paid subscriptions.
+                Your contribution helps us cover high-speed server costs and keep the platform free, fast, and accessible for everyone at Patna University.
               </p>
 
               {/* 3 Value Pillars */}
@@ -303,7 +287,7 @@ export default function ContributePage() {
                     100% Ad-Free
                   </span>
                   <span className="text-[9px] text-slate-500 block leading-tight">
-                    Zero popup interruptions
+                    Zero annoying popups
                   </span>
                 </div>
 
@@ -313,17 +297,17 @@ export default function ContributePage() {
                     Fast Servers
                   </span>
                   <span className="text-[9px] text-slate-500 block leading-tight">
-                    Heavy traffic exam days
+                    Reliable peak traffic
                   </span>
                 </div>
 
                 <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 space-y-1">
                   <Heart className="h-4 w-4 text-rose-500 mx-auto fill-rose-500" />
                   <span className="text-[11px] font-black text-slate-800 block">
-                    By Students
+                    Student First
                   </span>
                   <span className="text-[9px] text-slate-500 block leading-tight">
-                    Built with love for PU
+                    Built for PU students
                   </span>
                 </div>
               </div>
@@ -334,64 +318,46 @@ export default function ContributePage() {
               <div className="flex items-center justify-between">
                 <h2 className="text-sm sm:text-base font-black text-slate-900 flex items-center gap-1.5">
                   <Coffee className="h-4 w-4 text-rose-600" />
-                  Choose Contribution Amount
+                  Enter Contribution Amount
                 </h2>
                 <span className="text-[10px] font-bold text-slate-400">
                   Any amount helps!
                 </span>
               </div>
 
-              {/* Preset Chips */}
-              <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
-                {PRESET_AMOUNTS.map((amt) => {
-                  const isSelected = amount === amt && !customAmount;
-                  return (
-                    <button
-                      key={amt}
-                      type="button"
-                      onClick={() => handleSelectPreset(amt)}
-                      className={`rounded-2xl py-2.5 text-xs font-black transition active:scale-95 ${
-                        isSelected
-                          ? 'border-2 border-rose-600 bg-rose-50 text-rose-700 shadow-xs'
-                          : 'border border-slate-200 bg-slate-50/70 text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      ₹{amt}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Custom Amount Input */}
-              <div className="space-y-1">
+              {/* Clean Custom Amount Input Only (No presets) */}
+              <div className="space-y-1.5">
                 <label
-                  htmlFor="customAmountInput"
-                  className="block text-[11px] font-bold text-slate-600"
+                  htmlFor="contributionAmountInput"
+                  className="block text-xs font-bold text-slate-700"
                 >
-                  Or enter any custom amount (₹)
+                  Amount (₹)
                 </label>
                 <div className="relative">
-                  <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-sm font-black text-slate-400">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-black text-slate-400">
                     ₹
                   </span>
                   <input
-                    id="customAmountInput"
+                    id="contributionAmountInput"
                     type="text"
                     inputMode="numeric"
                     pattern="[0-9]*"
                     maxLength={6}
-                    value={customAmount}
-                    onChange={handleCustomAmountChange}
-                    placeholder="Enter amount (e.g. 11, 151, 1000)"
-                    className="w-full rounded-2xl border border-slate-300 bg-white pl-8 pr-4 py-2.5 text-sm font-black text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-hidden focus:ring-2 focus:ring-rose-100 transition shadow-xs"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value.replace(/\D/g, ''))}
+                    placeholder="Enter any amount (e.g. 50, 100, 500)"
+                    className="w-full rounded-2xl border border-slate-300 bg-white pl-9 pr-4 py-3 text-base font-black text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:border-rose-500 focus:outline-hidden focus:ring-2 focus:ring-rose-100 transition shadow-xs"
                   />
                 </div>
+                <p className="text-[11px] text-slate-500">
+                  Give whatever you feel comfortable with from your heart. Every single rupee counts!
+                </p>
               </div>
 
               {/* Contributor Details */}
               <div className="space-y-2.5 pt-2 border-t border-slate-100">
                 <span className="text-xs font-black text-slate-700 block">
-                  Your Details (For Hall of Fame)
+                  Your Details (For Contributors Wall)
                 </span>
 
                 <div className="space-y-1">
@@ -401,7 +367,7 @@ export default function ContributePage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder={isAnonymous ? 'Contributing Anonymously' : 'Your Name (e.g. Aryan Kumar)'}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition disabled:opacity-50"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2.5 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition disabled:opacity-50"
                   />
                   <label className="flex items-center gap-2 cursor-pointer pt-0.5">
                     <input
@@ -411,7 +377,7 @@ export default function ContributePage() {
                       className="rounded border-slate-300 text-rose-600 focus:ring-rose-500"
                     />
                     <span className="text-[11px] font-medium text-slate-500">
-                      Keep my name anonymous
+                      Contribute anonymously (hide my name)
                     </span>
                   </label>
                 </div>
@@ -421,15 +387,15 @@ export default function ContributePage() {
                   value={college}
                   onChange={(e) => setCollege(e.target.value)}
                   placeholder="Your College / Department (Optional)"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2.5 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition"
                 />
 
                 <input
                   type="text"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Short note or message for Lazy PU (Optional)"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition"
+                  placeholder="Leave a short message or note for Lazy PU (Optional)"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2.5 text-xs font-semibold text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:bg-white focus:outline-hidden transition"
                 />
               </div>
 
@@ -437,11 +403,13 @@ export default function ContributePage() {
               <button
                 type="button"
                 onClick={handlePayment}
-                disabled={loading || !amount || amount < 1}
+                disabled={loading || !parsedAmount || parsedAmount < 1}
                 className="w-full flex items-center justify-center gap-2 rounded-2xl bg-rose-600 hover:bg-rose-700 active:scale-98 disabled:opacity-50 disabled:pointer-events-none py-3.5 px-4 text-sm font-black text-white shadow-xs transition"
               >
                 <Heart className="h-4 w-4 fill-white text-white" />
-                <span>Contribute ₹{amount || 0} </span>
+                <span>
+                  Contribute {parsedAmount > 0 ? `₹${parsedAmount}` : ''} via Razorpay / UPI
+                </span>
               </button>
 
               <div className="flex items-center justify-center gap-3 text-[10px] text-slate-400 font-bold pt-1">
@@ -465,13 +433,13 @@ export default function ContributePage() {
                     </h3>
                   </div>
                   <p className="text-[11px] text-slate-500 font-medium">
-                    Dil se dhanyawad to everyone backing Lazy PU!
+                    A big thank you to everyone supporting Lazy PU!
                   </p>
                 </div>
 
                 <div className="text-right">
                   <span className="text-[10px] font-bold text-slate-400 block uppercase">
-                    Total Backed
+                    Total Raised
                   </span>
                   <span className="text-xs font-black text-rose-600">
                     ₹{totalRaised}+
