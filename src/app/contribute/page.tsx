@@ -72,7 +72,7 @@ declare global {
 }
 
 export default function ContributePage() {
-  const [amount, setAmount] = useState<string>('50');
+  const [amount, setAmount] = useState<string>('');
   const [name, setName] = useState('');
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [college, setCollege] = useState('');

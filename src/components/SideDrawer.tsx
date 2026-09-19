@@ -13,7 +13,6 @@ import {
   Info,
   Heart,
   Loader2,
-  Download,
 } from 'lucide-react';
 import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 import { FeedbackModal } from './FeedbackModal';
@@ -277,19 +276,6 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                     {isSharing ? 'Loading' : shareFeedback ? 'Done' : 'Share APK'}
                   </span>
                 </button>
-
-                {/* Direct APK Download Link */}
-                <a
-                  href="/downloads/lazy-pu.apk"
-                  download="lazy-pu.apk"
-                  className="flex w-full items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/70 px-3.5 py-2 font-bold text-slate-700 hover:bg-slate-100 transition shadow-2xs group"
-                >
-                  <div className="flex items-center gap-2.5 text-[11px]">
-                    <Download className="h-3.5 w-3.5 text-slate-500" />
-                    <span>Download APK directly (24.8 MB)</span>
-                  </div>
-                  <span className="text-[10px] text-slate-400 font-medium">.apk</span>
-                </a>
 
                 {/* Privacy Policy and Disclaimer */}
                 <Link
