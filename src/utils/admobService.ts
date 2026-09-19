@@ -6,7 +6,10 @@ import {
   BannerAdPosition,
 } from '@capacitor-community/admob';
 
-// Google's official test sample Banner ID for Android
+// Production Banner Ad Unit ID
+export const PRODUCTION_BANNER_AD_ID = 'ca-app-pub-8589300527808447/6540085043';
+
+// Google's official test sample Banner ID for Android fallback
 export const TEST_BANNER_AD_ID = 'ca-app-pub-3940256099942544/6300978111';
 
 let isAdMobInitialized = false;
@@ -27,7 +30,7 @@ export async function initAdMob(): Promise<boolean> {
   try {
     await AdMob.initialize({
       testingDevices: ['EMULATOR'],
-      initializeForTesting: true,
+      initializeForTesting: false,
     });
     isAdMobInitialized = true;
     return true;
@@ -53,17 +56,15 @@ export async function showFooterBanner(): Promise<void> {
     const ready = await initAdMob();
     if (!ready) return;
 
-    // Use live banner ID if set in environment, otherwise use Google's official test ID
-    const liveAdId = process.env.NEXT_PUBLIC_ADMOB_BANNER_ID?.trim();
-    const isLive = Boolean(liveAdId);
-    const adId = isLive ? liveAdId! : TEST_BANNER_AD_ID;
+    // Use environment variable or default to production banner ID
+    const adId = process.env.NEXT_PUBLIC_ADMOB_BANNER_ID?.trim() || PRODUCTION_BANNER_AD_ID;
 
     const options: BannerAdOptions = {
       adId,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
-      isTesting: !isLive,
+      isTesting: false,
     };
 
     await AdMob.showBanner(options);
