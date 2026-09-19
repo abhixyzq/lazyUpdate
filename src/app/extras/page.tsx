@@ -8,12 +8,14 @@ import { ExternalLink, Building2, Globe, Heart, Mail, Share2, ShieldCheck } from
 
 export default function ExtrasPage() {
   const handleShareApp = () => {
-    const text = `🌟 Lazy PU - The complete open-access student portal for Patna University!\nAccess Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Circulars.\nCheck it out here: ${window.location.origin}`;
+    const portalUrl = 'https://lazyupdate.tech';
+    const apkUrl = `${portalUrl}/downloads/lazy-pu.apk`;
+    const text = `🌟 Lazy PU - The complete open-access student portal for Patna University!\nAccess Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Circulars.\n\n📲 Download Android App: ${apkUrl}\n🌐 Website: ${portalUrl}`;
     if (navigator.share) {
-      navigator.share({ title: 'Lazy PU Portal', text, url: window.location.origin });
+      navigator.share({ title: 'Lazy PU Portal', text, url: apkUrl });
     } else {
-      navigator.clipboard.writeText(text);
-      alert('Link copied to clipboard! Share with your classmates.');
+      navigator.clipboard.writeText(apkUrl);
+      alert('Official download link copied to clipboard! Share with your classmates.');
     }
   };
 

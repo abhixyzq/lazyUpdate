@@ -43,70 +43,54 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
   const handleShareApp = async () => {
     if (isSharing) return;
     setIsSharing(true);
-    setShareFeedback('Preparing APK file...');
+    setShareFeedback('Preparing link...');
 
-    const apkRelativeUrl = '/downloads/lazy-pu.apk?v=2';
-    const apkFullUrl =
-      typeof window !== 'undefined'
-        ? `${window.location.origin}${apkRelativeUrl}`
-        : apkRelativeUrl;
+    const apkFullUrl = 'https://lazyupdate.tech/downloads/lazy-pu.apk';
+    const shareText = `🌟 *Lazy PU - Patna University Companion App*\nDirect syllabus, exam circulars, 75% attendance calculator & SGPA tool.\n\n📲 Download & Install Android App:\n${apkFullUrl}`;
 
-    try {
-      // 1. Fetch APK blob to share direct file via Web Share API
-      const res = await fetch(apkRelativeUrl);
-      if (res.ok) {
-        const blob = await res.blob();
-        const apkFile = new File([blob], 'lazy-pu.apk', {
-          type: 'application/vnd.android.package-archive',
-        });
-
-        // 2. Test if browser/WebView supports binary file sharing
-        if (
-          typeof navigator !== 'undefined' &&
-          navigator.canShare &&
-          navigator.canShare({ files: [apkFile] })
-        ) {
-          await navigator.share({
-            files: [apkFile],
-            title: 'Lazy PU App',
-            text: 'Here is the Lazy PU Android App (Patna University companion). Install and open!',
-          });
-          setShareFeedback('APK shared!');
-          setTimeout(() => setShareFeedback(null), 2500);
-          setIsSharing(false);
-          return;
-        }
-      }
-    } catch (err) {
-      console.log('Direct APK file share attempt completed or skipped:', err);
-    }
-
-    // 3. Fallback: Share direct APK download URL via regular Web Share
+    // 1. Native Web Share API (WhatsApp, Telegram, System Sheet)
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
         await navigator.share({
           title: 'Lazy PU - Patna University Student App',
-          text: `Download & install Lazy PU Android App for Patna University:`,
+          text: shareText,
           url: apkFullUrl,
         });
-        setShareFeedback('Link shared!');
+        setShareFeedback('Shared!');
         setTimeout(() => setShareFeedback(null), 2500);
         setIsSharing(false);
         return;
-      } catch {
-        // User dismissed the share dialog
+      } catch (err: any) {
+        // If user cancelled the share dialog, silently reset
+        if (err?.name === 'AbortError') {
+          setIsSharing(false);
+          setShareFeedback(null);
+          return;
+        }
       }
     }
 
-    // 4. Fallback: Copy direct APK link to clipboard
+    // 2. Fallback: Copy official download link to clipboard
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       try {
         await navigator.clipboard.writeText(apkFullUrl);
-        setShareFeedback('Direct APK link copied!');
+        setShareFeedback('Link copied!');
         setTimeout(() => setShareFeedback(null), 2500);
       } catch {
-        setShareFeedback('Sharing unavailable');
-        setTimeout(() => setShareFeedback(null), 2500);
+        // Fallback for older webviews
+        try {
+          const textarea = document.createElement('textarea');
+          textarea.value = apkFullUrl;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          setShareFeedback('Link copied!');
+          setTimeout(() => setShareFeedback(null), 2500);
+        } catch {
+          setShareFeedback('Sharing unavailable');
+          setTimeout(() => setShareFeedback(null), 2500);
+        }
       }
     }
     setIsSharing(false);
