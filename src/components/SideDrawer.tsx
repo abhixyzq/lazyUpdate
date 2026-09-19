@@ -228,6 +228,25 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   <ChevronRight className="h-4 w-4 text-blue-500 group-hover:translate-x-0.5 transition" />
                 </button>
 
+                {/* Direct Instagram Chat Support */}
+                <a
+                  href="https://ig.me/m/_lazypu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-full items-center justify-between rounded-2xl border border-pink-200/80 bg-gradient-to-r from-pink-50/70 via-rose-50/50 to-amber-50/50 px-3.5 py-2.5 font-bold text-slate-800 hover:border-pink-300 hover:from-pink-100/70 hover:to-amber-100/70 transition shadow-2xs group text-left"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-white shadow-2xs">
+                      <InstagramIcon className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-black text-slate-900">Instagram Chat Support</div>
+                      <div className="text-[10px] text-pink-700 font-normal">Direct DM • @_lazypu</div>
+                    </div>
+                  </div>
+                  <ChevronRight className="h-4 w-4 text-pink-500 group-hover:translate-x-0.5 transition" />
+                </a>
+
                 {/* Direct APK Share Button */}
                 <button
                   type="button"

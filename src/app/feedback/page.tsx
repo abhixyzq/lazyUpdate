@@ -11,6 +11,7 @@ import {
   Sparkles,
   HelpCircle,
 } from 'lucide-react';
+import { InstagramIcon } from '@/components/OfficialBrandIcons';
 
 export default function FeedbackPage() {
   const [rating, setRating] = useState<number>(5);
@@ -19,6 +20,7 @@ export default function FeedbackPage() {
   const [courseOrCollege, setCourseOrCollege] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [copiedForIg, setCopiedForIg] = useState<boolean>(false);
 
   const categories = [
     'General Review',
@@ -44,6 +46,28 @@ export default function FeedbackPage() {
     setIsSubmitted(true);
   };
 
+  const handleSendInstagram = async () => {
+    const text =
+      `📌 *Lazy PU Feedback & Review*\n` +
+      `• *Topic:* ${category}\n` +
+      `• *Rating:* ${rating}/5\n` +
+      (courseOrCollege ? `• *Course/College:* ${courseOrCollege}\n` : '') +
+      (email ? `• *Email:* ${email}\n` : '') +
+      `• *Message:* ${feedbackText || 'Feedback sent from Lazy PU'}`;
+
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(text);
+        setCopiedForIg(true);
+        setTimeout(() => setCopiedForIg(false), 3000);
+      }
+    } catch {
+      // ignore
+    }
+
+    window.open('https://ig.me/m/_lazypu', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader
@@ -52,6 +76,27 @@ export default function FeedbackPage() {
       />
 
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-4">
+        {/* Direct Instagram Chat Support Card */}
+        <div className="rounded-3xl border border-pink-200/90 bg-gradient-to-r from-pink-50/80 via-rose-50/60 to-amber-50/60 p-4 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white shadow-2xs">
+              <InstagramIcon className="h-6 w-6" />
+            </div>
+            <div>
+              <h4 className="text-xs font-black text-slate-900">Direct Instagram Chat Support</h4>
+              <p className="text-[11px] text-slate-600">Have a query, suggestion, or bug? Chat with us directly on Instagram</p>
+            </div>
+          </div>
+          <a
+            href="https://ig.me/m/_lazypu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 px-3.5 py-2 text-xs font-bold text-white shadow-xs hover:opacity-95 transition"
+          >
+            <span>Chat @_lazypu</span>
+          </a>
+        </div>
+
         {isSubmitted ? (
           <div className="rounded-3xl border border-emerald-200 bg-white p-6 text-center shadow-xs space-y-3 animate-in zoom-in-95 duration-200">
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 border border-emerald-200">
@@ -63,7 +108,14 @@ export default function FeedbackPage() {
             <p className="text-xs text-slate-600 max-w-sm mx-auto leading-relaxed">
               Your response has been received. Your suggestions help us keep the Patna University syllabus, circulars, and tools up to date!
             </p>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row gap-2 justify-center">
+              <button
+                onClick={handleSendInstagram}
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-bold py-2.5 px-4 text-xs shadow-xs transition active:scale-98"
+              >
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span>{copiedForIg ? 'Copied! Opening Chat...' : 'Send in Instagram Chat (@_lazypu)'}</span>
+              </button>
               <button
                 onClick={() => {
                   setIsSubmitted(false);
@@ -185,14 +237,27 @@ export default function FeedbackPage() {
               />
             </div>
 
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={!feedbackText.trim()}
-              className="w-full flex items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white font-black py-3 px-4 text-xs transition shadow-xs active:scale-98"
-            >
-              <Send className="h-4 w-4" /> Submit Review
-            </button>
+            {/* Submit & Instagram Chat Buttons */}
+            <div className="space-y-2 pt-1">
+              <button
+                type="submit"
+                disabled={!feedbackText.trim()}
+                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white font-black py-3 px-4 text-xs transition shadow-xs active:scale-98"
+              >
+                <Send className="h-4 w-4" /> Submit Review
+              </button>
+
+              <button
+                type="button"
+                onClick={handleSendInstagram}
+                className="w-full flex items-center justify-center gap-2 rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50/90 via-rose-50/70 to-amber-50/70 hover:from-pink-100 hover:to-amber-100 text-slate-800 font-bold py-2.5 px-4 text-xs transition shadow-2xs active:scale-98"
+              >
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 bg-clip-text text-transparent font-extrabold">
+                  {copiedForIg ? 'Copied! Opening Instagram Chat...' : 'Chat on Instagram (@_lazypu)'}
+                </span>
+              </button>
+            </div>
           </form>
         )}
 

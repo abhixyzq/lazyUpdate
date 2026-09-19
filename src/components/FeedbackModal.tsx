@@ -12,7 +12,7 @@ import {
   HelpCircle,
   FileText,
 } from 'lucide-react';
-import { WhatsAppIcon } from './OfficialBrandIcons';
+import { InstagramIcon } from './OfficialBrandIcons';
 
 interface FeedbackModalProps {
   isOpen: boolean;
@@ -47,6 +47,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   const [message, setMessage] = useState<string>('');
   const [nameAndCollege, setNameAndCollege] = useState<string>('');
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [copiedForIg, setCopiedForIg] = useState<boolean>(false);
 
   if (!isOpen) return null;
 
@@ -76,15 +77,47 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
     setIsSubmitted(true);
   };
 
-  const handleSendWhatsApp = () => {
-    const text = `*Lazy PU Feedback & Suggestion*\n` +
-      `📌 *Topic:* ${category}\n` +
-      `⭐ *Rating:* ${rating}/5\n` +
-      (nameAndCollege ? `🎓 *Student:* ${nameAndCollege}\n` : '') +
-      `💬 *Message:* ${message || 'Feedback sent from Lazy PU App'}`;
+  const handleSendInstagram = async () => {
+    const text =
+      `📌 *Lazy PU Feedback & Suggestion*\n` +
+      `• *Topic:* ${category}\n` +
+      `• *Rating:* ${rating}/5\n` +
+      (nameAndCollege ? `• *Student:* ${nameAndCollege}\n` : '') +
+      `• *Message:* ${message || 'Feedback sent from Lazy PU App'}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
-    window.open(whatsappUrl, '_blank');
+    // Automatically copy text to clipboard for quick paste in Instagram DM
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        await navigator.clipboard.writeText(text);
+        setCopiedForIg(true);
+        setTimeout(() => setCopiedForIg(false), 3000);
+      }
+    } catch {
+      // fallback if clipboard not allowed
+    }
+
+    // Save locally
+    try {
+      const existing = JSON.parse(
+        localStorage.getItem('lazy_pu_feedbacks_v1') || '[]'
+      );
+      const newEntry = {
+        id: Date.now().toString(),
+        date: new Date().toISOString(),
+        category,
+        rating,
+        message: message.trim(),
+        nameAndCollege: nameAndCollege.trim(),
+        channel: 'instagram_chat',
+      };
+      existing.push(newEntry);
+      localStorage.setItem('lazy_pu_feedbacks_v1', JSON.stringify(existing));
+    } catch {
+      // ignore
+    }
+
+    // Direct Instagram Chat link (opens Instagram app directly to 1-on-1 chat with @_lazypu)
+    window.open('https://ig.me/m/_lazypu', '_blank');
   };
 
   return (
@@ -118,11 +151,11 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
 
             <div className="pt-3 flex flex-col sm:flex-row gap-2 justify-center">
               <button
-                onClick={handleSendWhatsApp}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 text-xs shadow-xs transition"
+                onClick={handleSendInstagram}
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-bold py-2.5 px-4 text-xs shadow-xs transition active:scale-98"
               >
-                <WhatsAppIcon className="h-4 w-4" />
-                <span>Send to PU WhatsApp Support</span>
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span>{copiedForIg ? 'Copied! Opening Chat...' : 'Send in Instagram Chat (@_lazypu)'}</span>
               </button>
               <button
                 onClick={() => {
@@ -238,7 +271,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
               />
             </div>
 
-            {/* Submit & WhatsApp Buttons */}
+            {/* Submit & Instagram Buttons */}
             <div className="space-y-2 pt-1">
               <button
                 type="submit"
@@ -250,11 +283,13 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
 
               <button
                 type="button"
-                onClick={handleSendWhatsApp}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50/80 hover:bg-emerald-100 text-emerald-900 font-bold py-2 px-4 text-xs transition"
+                onClick={handleSendInstagram}
+                className="w-full flex items-center justify-center gap-2 rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50/90 via-rose-50/70 to-amber-50/70 hover:from-pink-100 hover:to-amber-100 text-slate-800 font-bold py-2.5 px-4 text-xs transition shadow-2xs active:scale-98"
               >
-                <WhatsAppIcon className="h-4 w-4" />
-                <span>Or Send Direct on WhatsApp</span>
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 bg-clip-text text-transparent font-extrabold">
+                  {copiedForIg ? 'Copied! Opening Instagram Chat...' : 'Chat on Instagram (@_lazypu)'}
+                </span>
               </button>
             </div>
           </form>
