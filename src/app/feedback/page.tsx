@@ -45,7 +45,7 @@ export default function FeedbackPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-16">
+    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader
         title="Feedback & Reviews"
         subtitle="Help us make Lazy PU better for every student"

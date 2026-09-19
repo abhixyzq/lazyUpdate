@@ -7,7 +7,7 @@ import { ArrowLeft, Clock, FileText, CheckCircle2, BookOpen } from 'lucide-react
 
 export default function PYQsPage() {
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader title="Previous Year Questions" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">

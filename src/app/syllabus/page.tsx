@@ -77,7 +77,7 @@ export default function SyllabusCoursesPage() {
   }, [selectedFaculty, searchQuery, SECTIONS_CONFIG]);
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       {/* 1. Top Subpage Header */}
       <SubpageHeader title="PU Syllabus" />
 

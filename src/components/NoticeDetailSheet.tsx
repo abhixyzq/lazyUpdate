@@ -38,7 +38,7 @@ export const NoticeDetailSheet: React.FC<NoticeDetailSheetProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-2xl max-h-[85vh] sm:max-h-[90vh] overflow-y-auto rounded-t-3xl sm:rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-2xl text-slate-900"
+        className="relative w-full max-w-2xl max-h-[85vh] sm:max-h-[90vh] overflow-y-auto rounded-t-3xl sm:rounded-2xl border border-slate-200 bg-white p-5 pb-28 sm:p-6 sm:pb-6 shadow-2xl text-slate-900"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Mobile Grab Bar */}

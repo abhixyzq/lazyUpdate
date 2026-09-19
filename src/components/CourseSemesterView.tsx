@@ -25,7 +25,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
   const totalPapers = course.semesters.reduce((sum, s) => sum + s.papers.length, 0);
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       {/* 1. Subpage Sticky Header */}
       <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/95 backdrop-blur-md px-3 py-3">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">

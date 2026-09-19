@@ -7,7 +7,7 @@ import { ArrowLeft, Clock, BellRing, ExternalLink, Zap, FileText } from 'lucide-
 
 export default function NoticesPage() {
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader title="PU Notice" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">

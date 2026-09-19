@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenUniversityModal,
 }) => {
   return (
-    <footer className="mt-12 border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-[#070b13] text-xs text-slate-600 dark:text-slate-400 transition-colors pb-20 lg:pb-8">
+    <footer className="mt-12 border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-[#070b13] text-xs text-slate-600 dark:text-slate-400 transition-colors pb-28 lg:pb-12">
       <div className="mx-auto max-w-7xl px-3 sm:px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           

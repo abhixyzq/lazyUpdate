@@ -191,7 +191,7 @@ export default function ContributePage() {
   const totalRaised = contributors.reduce((acc, c) => acc + c.amount, 0);
 
   return (
-    <div className="min-h-screen bg-slate-50/70 text-slate-900 pb-20">
+    <div className="min-h-screen bg-slate-50/70 text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader title="Contribute to Lazy PU" />
 
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">

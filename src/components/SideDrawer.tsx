@@ -311,7 +311,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
           </div>
 
           {/* 4. Drawer Footer */}
-          <div className="border-t border-slate-100 p-3.5 bg-slate-50 text-center">
+          <div className="border-t border-slate-100 p-3.5 pb-20 sm:pb-3.5 bg-slate-50 text-center">
             <p className="text-[11px] font-bold text-slate-500 flex items-center justify-center gap-1">
               Lazy PU v2.0 • Made with <Heart className="h-3 w-3 fill-rose-500 text-rose-500 inline" /> for PU Students
             </p>

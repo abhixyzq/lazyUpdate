@@ -17,11 +17,11 @@ export const TimeTableModal: React.FC<TimeTableModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/75 backdrop-blur-xs animate-in fade-in duration-150"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 pb-20 sm:p-4 bg-black/75 backdrop-blur-xs animate-in fade-in duration-150"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-3xl rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 shadow-2xl text-slate-900 max-h-[92vh] overflow-y-auto flex flex-col"
+        className="relative w-full max-w-3xl rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 shadow-2xl text-slate-900 max-h-[82vh] sm:max-h-[92vh] overflow-y-auto flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         <button

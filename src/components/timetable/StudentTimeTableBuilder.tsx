@@ -515,7 +515,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
       {/* 6. Modal: Add / Edit Slot */}
       {isSlotModalOpen && (
         <div
-          className="fixed inset-0 z-70 flex items-center justify-center p-3 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
+          className="fixed inset-0 z-70 flex items-center justify-center p-3 pb-20 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
           onClick={() => setIsSlotModalOpen(false)}
         >
           <div

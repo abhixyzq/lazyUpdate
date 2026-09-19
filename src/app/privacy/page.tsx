@@ -15,7 +15,7 @@ import {
 
 export default function PrivacyAndDisclaimerPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-16">
+    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-28 sm:pb-16">
       {/* Header */}
       <SubpageHeader
         title="Privacy & Disclaimer"
