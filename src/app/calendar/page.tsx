@@ -237,9 +237,6 @@ export default function CalendarPage() {
               <p>• {puCalendarMeta.noteHindi}</p>
               <p>• लाल अंक अंगीभूत महाविद्यालयों, विश्वविद्यालय विभागों एवं शैक्षिक संस्थानों के अवकाश के द्योतक हैं।</p>
               <p>• {puCalendarMeta.summerVacation.titleHindi}: <b>{puCalendarMeta.summerVacation.dates}</b> ({puCalendarMeta.summerVacation.daysCount} दिन)</p>
-              <div className="pt-1 text-[10px] text-slate-500">
-                हस्ताक्षर: {puCalendarMeta.registrar}
-              </div>
             </div>
           </div>
         )}
