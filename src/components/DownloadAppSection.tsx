@@ -26,7 +26,7 @@ export const DownloadAppSection: React.FC<DownloadAppSectionProps> = ({
           setIsNative(true);
         }
       })
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   // Do NOT render on native Android/iOS app - only show on website
@@ -48,7 +48,7 @@ export const DownloadAppSection: React.FC<DownloadAppSectionProps> = ({
               Download {appTitle} App
             </span>
             <span className="text-[10px] text-slate-500 font-medium block truncate">
-              Ad-free Android APK • 1-Click Install
+              Android APK • 1-Click Install
             </span>
           </div>
         </div>
