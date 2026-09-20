@@ -5,30 +5,33 @@ import Link from 'next/link';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { WhatsAppIcon } from '@/components/OfficialBrandIcons';
 import {
-  Lock,
-  Unlock,
   Sparkles,
   CheckCircle2,
   XCircle,
   Clock,
   Eye,
   MousePointerClick,
-  Layers,
-  ArrowRight,
   RefreshCw,
   Plus,
   Trash2,
-  Phone,
   Mail,
   ShieldCheck,
   Calendar,
   AlertCircle,
   ExternalLink,
-  Zap,
   Shield,
   Key,
   LogOut,
-  UserCheck,
+  Users,
+  Smartphone,
+  Globe,
+  Radio,
+  TrendingUp,
+  Megaphone,
+  Bell,
+  Check,
+  ArrowRight,
+  Layers,
 } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
@@ -36,15 +39,24 @@ import {
   Sponsor,
   getActiveSponsor,
   getAllSponsorApplicationsAsync,
-  getAllSponsorApplications,
   approveAndActivateSponsor,
   resetToInHouseSponsor,
   setCustomActiveSponsor,
+  deleteSponsorApplication,
   getSponsorStats,
   DEFAULT_INHOUSE_SPONSOR,
 } from '@/services/sponsorService';
+import {
+  subscribeToLivePresence,
+  getDeviceAnalyticsAsync,
+  getRemoteAppSetting,
+  setRemoteAppSetting,
+  PresenceStats,
+  DeviceAnalytics,
+} from '@/services/telemetryService';
 
 export default function SponsorAdminPage() {
+  // Auth states (Pure Email + Password)
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoadingAuth, setIsLoadingAuth] = useState(false);
@@ -52,9 +64,33 @@ export default function SponsorAdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
+  // Active Admin Tab
+  const [activeTab, setActiveTab] = useState<'analytics' | 'sponsors' | 'broadcast'>('analytics');
+
+  // Live Telemetry & Device Analytics
+  const [presence, setPresence] = useState<PresenceStats>({
+    totalLive: 1,
+    liveApp: 0,
+    liveWeb: 1,
+  });
+  const [deviceStats, setDeviceStats] = useState<DeviceAnalytics>({
+    totalAppInstalls: 0,
+    totalWebVisitors: 0,
+    activeToday: 0,
+    recentDevices: [],
+  });
+
+  // Sponsor & Ads Data
   const [activeSponsor, setActiveSponsor] = useState<Sponsor>(DEFAULT_INHOUSE_SPONSOR);
   const [applications, setApplications] = useState<Sponsor[]>([]);
+  const [activeFilter, setActiveFilter] = useState<'all' | 'active' | 'pending' | 'expired'>('all');
   const [stats, setStats] = useState({ impressions: 0, clicks: 0 });
+
+  // Remote Broadcast / Announcement Ticker
+  const [tickerText, setTickerText] = useState('PU UG Exam Forms & Semester Results Portal Live • Download Syllabi & PYQs');
+  const [tickerEnabled, setTickerEnabled] = useState(true);
+  const [isSavingTicker, setIsSavingTicker] = useState(false);
+  const [tickerSavedSuccess, setTickerSavedSuccess] = useState(false);
 
   // Quick Direct Sponsor Modal
   const [isQuickCreateOpen, setIsQuickCreateOpen] = useState(false);
@@ -66,11 +102,12 @@ export default function SponsorAdminPage() {
     phone: '',
     posterImage: '',
     durationDays: 30,
-    category: 'Coaching & Education',
+    category: 'Coaching & Services',
   });
 
   const loadData = async () => {
     try {
+      // 1. Sponsor banner & applications
       const active = await getActiveSponsor();
       setActiveSponsor(active);
       if (active.id) {
@@ -78,6 +115,20 @@ export default function SponsorAdminPage() {
       }
       const apps = await getAllSponsorApplicationsAsync();
       setApplications(apps);
+
+      // 2. Device & Download analytics
+      const devAnalytics = await getDeviceAnalyticsAsync();
+      setDeviceStats(devAnalytics);
+
+      // 3. Remote Ticker Setting
+      const tickerSetting = await getRemoteAppSetting('ticker', {
+        enabled: true,
+        text: 'PU UG Exam Forms & Semester Results Portal Live • Download Syllabi & PYQs',
+      });
+      if (tickerSetting) {
+        setTickerText(tickerSetting.text || '');
+        setTickerEnabled(tickerSetting.enabled ?? true);
+      }
     } catch {
       // ignore
     }
@@ -109,10 +160,19 @@ export default function SponsorAdminPage() {
     }
   }, []);
 
+  // Subscribe to Realtime Presence when authenticated
   useEffect(() => {
-    if (isAuthenticated) {
-      loadData();
-    }
+    if (!isAuthenticated) return;
+
+    loadData();
+
+    const unsubscribePresence = subscribeToLivePresence((newStats) => {
+      setPresence(newStats);
+    });
+
+    return () => {
+      unsubscribePresence();
+    };
   }, [isAuthenticated]);
 
   const handleSupabaseAuth = async (e: React.FormEvent) => {
@@ -172,8 +232,19 @@ export default function SponsorAdminPage() {
     }
   };
 
+  const handleDelete = async (id: string, name: string) => {
+    if (window.confirm(`Delete sponsor application from "${name}"?`)) {
+      const success = await deleteSponsorApplication(id);
+      if (success) {
+        await loadData();
+      } else {
+        alert('Failed to delete application.');
+      }
+    }
+  };
+
   const handleResetToInHouse = async () => {
-    if (window.confirm('Reset the active banner to the default In-House partner promotion?')) {
+    if (window.confirm('Reset active banner to the default In-House partner promotion?')) {
       await resetToInHouseSponsor();
       await loadData();
     }
@@ -215,7 +286,35 @@ export default function SponsorAdminPage() {
     alert('New sponsor is now LIVE across Lazy PU!');
   };
 
-  // 1. Authentication Screen (Supabase Email & Password Only)
+  const handleSaveTicker = async () => {
+    setIsSavingTicker(true);
+    setTickerSavedSuccess(false);
+    const success = await setRemoteAppSetting('ticker', {
+      enabled: tickerEnabled,
+      text: tickerText.trim(),
+      updatedAt: new Date().toISOString(),
+    });
+    setIsSavingTicker(false);
+    if (success) {
+      setTickerSavedSuccess(true);
+      setTimeout(() => setTickerSavedSuccess(false), 3000);
+    } else {
+      alert('Failed to update ticker settings in Supabase.');
+    }
+  };
+
+  // Filtered applications
+  const filteredApps = applications.filter((app) => {
+    if (activeFilter === 'all') return true;
+    return app.status === activeFilter;
+  });
+
+  // Calculate total earnings
+  const totalEarnings = applications
+    .filter((a) => a.status === 'active' || a.paymentMethod === 'razorpay')
+    .reduce((sum, a) => sum + (Number(a.paymentAmount) || 0), 0);
+
+  // 1. Authentication Screen (Clean Supabase Email & Password Only)
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-[#f8fafc] text-slate-900 flex items-center justify-center p-4 pb-20">
@@ -286,44 +385,42 @@ export default function SponsorAdminPage() {
     );
   }
 
-  // 2. Authenticated Admin Dashboard
+  // 2. Authenticated Admin Command Center
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-20">
+    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-24">
       <SubpageHeader
-        title="Sponsor Control Panel"
-        subtitle="Manage live banners, approve incoming applications, and track leads"
+        title="Command Center"
+        subtitle="Live telemetry, real-time presence, ads control & campus broadcasts"
       />
 
-      <main className="mx-auto max-w-5xl px-3 pt-4 space-y-5">
-        {/* Top Control Strip */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-3.5 shadow-2xs">
+      <main className="mx-auto max-w-5xl px-3 pt-4 space-y-4">
+        
+        {/* Top Control Strip with Live Indicator */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-2xs">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs font-black text-slate-900">
-              {currentUser ? currentUser.email : 'System Online • Connected'}
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
             </span>
-            {currentUser && (
-              <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold px-1.5 py-0.5">
-                <ShieldCheck className="h-3 w-3" /> Supabase Auth
-              </span>
-            )}
+
+            <span className="text-xs font-black text-slate-900">
+              {currentUser?.email || 'Admin Online'}
+            </span>
+
+            <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold px-2 py-0.5">
+              <Radio className="h-3 w-3 animate-pulse" />
+              <span>{presence.totalLive} Live Online</span>
+            </span>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <button
-              onClick={() => setIsQuickCreateOpen(true)}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 text-xs font-bold shadow-2xs transition active:scale-95 cursor-pointer"
-            >
-              <Plus className="h-3.5 w-3.5" />
-              <span>Add Custom Sponsor</span>
-            </button>
-
-            <button
               onClick={loadData}
-              className="rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 p-2 text-slate-600 transition cursor-pointer"
+              className="inline-flex items-center justify-center gap-1 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 px-3 py-1.5 text-slate-700 text-xs font-bold transition cursor-pointer"
               title="Refresh Data"
             >
               <RefreshCw className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Refresh</span>
             </button>
 
             <button
@@ -337,192 +434,532 @@ export default function SponsorAdminPage() {
           </div>
         </div>
 
-        {/* 1. Live Active Sponsor Card */}
-        <div className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50/70 via-white to-indigo-50/50 p-5 shadow-sm space-y-3">
-          <div className="flex items-center justify-between pb-2.5 border-b border-blue-100">
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1 rounded-full bg-blue-600 px-2.5 py-0.5 text-[10px] font-black uppercase text-white shadow-2xs">
-                <Sparkles className="h-3 w-3" />
-                CURRENTLY LIVE IN APP
-              </span>
-              {activeSponsor.isInHouse && (
-                <span className="text-[11px] font-bold text-blue-700">
-                  (Default In-House Promo)
-                </span>
-              )}
-            </div>
+        {/* Tab Navigation */}
+        <div className="flex items-center gap-1.5 border-b border-slate-200 pb-2 overflow-x-auto">
+          <button
+            onClick={() => setActiveTab('analytics')}
+            className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black transition cursor-pointer ${
+              activeTab === 'analytics'
+                ? 'bg-slate-900 text-white shadow-2xs'
+                : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
+            }`}
+          >
+            <TrendingUp className="h-3.5 w-3.5" />
+            <span>Live Analytics & Devices</span>
+          </button>
 
-            {!activeSponsor.isInHouse && (
-              <button
-                onClick={handleResetToInHouse}
-                className="text-xs font-bold text-rose-600 hover:text-rose-800 transition"
-              >
-                Reset to Default Banner
-              </button>
-            )}
-          </div>
+          <button
+            onClick={() => setActiveTab('sponsors')}
+            className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black transition cursor-pointer ${
+              activeTab === 'sponsors'
+                ? 'bg-slate-900 text-white shadow-2xs'
+                : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
+            }`}
+          >
+            <Megaphone className="h-3.5 w-3.5" />
+            <span>Ads & Sponsors ({applications.length})</span>
+          </button>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-            <div className="md:col-span-8 space-y-1.5">
-              <h3 className="text-base font-black text-slate-900">
-                {activeSponsor.businessName}
-              </h3>
-              <p className="text-xs font-bold text-amber-900">
-                {activeSponsor.tagline}
-              </p>
-              {activeSponsor.description && (
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  {activeSponsor.description}
-                </p>
-              )}
-
-              <div className="pt-1 flex flex-wrap items-center gap-3 text-xs text-slate-500">
-                <span className="flex items-center gap-1">
-                  <WhatsAppIcon className="h-3.5 w-3.5" />
-                  <span>+{activeSponsor.whatsappNumber}</span>
-                </span>
-                <span className="flex items-center gap-1">
-                  <Calendar className="h-3.5 w-3.5" />
-                  <span>Expires: {new Date(activeSponsor.endDate).toLocaleDateString()}</span>
-                </span>
-              </div>
-            </div>
-
-            {/* Live Stats */}
-            <div className="md:col-span-4 grid grid-cols-2 gap-2 text-center">
-              <div className="rounded-2xl border border-slate-200/80 bg-white p-3 shadow-2xs">
-                <div className="text-xs text-slate-500 font-bold flex items-center justify-center gap-1">
-                  <Eye className="h-3.5 w-3.5 text-blue-600" />
-                  <span>Views</span>
-                </div>
-                <div className="text-xl font-black text-slate-900 mt-1">
-                  {stats.impressions || activeSponsor.impressions || 0}
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-slate-200/80 bg-white p-3 shadow-2xs">
-                <div className="text-xs text-slate-500 font-bold flex items-center justify-center gap-1">
-                  <MousePointerClick className="h-3.5 w-3.5 text-emerald-600" />
-                  <span>Leads</span>
-                </div>
-                <div className="text-xl font-black text-emerald-600 mt-1">
-                  {stats.clicks || activeSponsor.clicks || 0}
-                </div>
-              </div>
-            </div>
-          </div>
+          <button
+            onClick={() => setActiveTab('broadcast')}
+            className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black transition cursor-pointer ${
+              activeTab === 'broadcast'
+                ? 'bg-slate-900 text-white shadow-2xs'
+                : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50'
+            }`}
+          >
+            <Bell className="h-3.5 w-3.5" />
+            <span>Broadcast & Ticker</span>
+          </button>
         </div>
 
-        {/* 2. Incoming Sponsor Applications */}
-        <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-sm space-y-4">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-            <div>
-              <h3 className="text-sm font-black text-slate-900">
-                Incoming Applications ({applications.length})
-              </h3>
-              <p className="text-[11px] text-slate-500">
-                Review payment UTRs and activate banners with 1-click
-              </p>
-            </div>
-          </div>
+        {/* ============================================================ */}
+        {/* TAB 1: LIVE ANALYTICS & DEVICES                             */}
+        {/* ============================================================ */}
+        {activeTab === 'analytics' && (
+          <div className="space-y-4">
+            
+            {/* 4 Hero KPI Cards */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
+              
+              {/* Card 1: Live Online Right Now */}
+              <div className="rounded-2xl border border-emerald-200/90 bg-emerald-50/40 p-4 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-black uppercase text-emerald-800 tracking-wider">
+                    Live Online Now
+                  </span>
+                  <Radio className="h-4 w-4 text-emerald-600 animate-pulse" />
+                </div>
+                <div className="py-2">
+                  <div className="text-2xl sm:text-3xl font-black text-emerald-950">
+                    {presence.totalLive}
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-bold text-emerald-800">
+                  <span>📱 {presence.liveApp} App</span>
+                  <span>•</span>
+                  <span>🌐 {presence.liveWeb} Web</span>
+                </div>
+              </div>
 
-          {applications.length === 0 ? (
-            <div className="py-10 text-center space-y-2 text-slate-400">
-              <Clock className="mx-auto h-8 w-8 text-slate-300" />
-              <p className="text-xs">No pending sponsor applications yet.</p>
-              <p className="text-[11px] text-slate-400">
-                When a business books from `/sponsor`, it will appear here.
-              </p>
+              {/* Card 2: Total Phone Installs */}
+              <div className="rounded-2xl border border-blue-200/90 bg-white p-4 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-black uppercase text-blue-700 tracking-wider">
+                    Total App Installs
+                  </span>
+                  <Smartphone className="h-4 w-4 text-blue-600" />
+                </div>
+                <div className="py-2">
+                  <div className="text-2xl sm:text-3xl font-black text-slate-900">
+                    {deviceStats.totalAppInstalls}
+                  </div>
+                </div>
+                <div className="text-[10px] font-semibold text-slate-500">
+                  Unique Android Devices
+                </div>
+              </div>
+
+              {/* Card 3: Total Web Visitors */}
+              <div className="rounded-2xl border border-purple-200/90 bg-white p-4 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-black uppercase text-purple-700 tracking-wider">
+                    Web Visitors
+                  </span>
+                  <Globe className="h-4 w-4 text-purple-600" />
+                </div>
+                <div className="py-2">
+                  <div className="text-2xl sm:text-3xl font-black text-slate-900">
+                    {deviceStats.totalWebVisitors}
+                  </div>
+                </div>
+                <div className="text-[10px] font-semibold text-slate-500">
+                  Browser & Desktop Clients
+                </div>
+              </div>
+
+              {/* Card 4: Daily Active Users (DAU) */}
+              <div className="rounded-2xl border border-amber-200/90 bg-white p-4 shadow-2xs flex flex-col justify-between">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-black uppercase text-amber-700 tracking-wider">
+                    24h Active Users
+                  </span>
+                  <Users className="h-4 w-4 text-amber-600" />
+                </div>
+                <div className="py-2">
+                  <div className="text-2xl sm:text-3xl font-black text-slate-900">
+                    {deviceStats.activeToday}
+                  </div>
+                </div>
+                <div className="text-[10px] font-semibold text-slate-500">
+                  Students active in last 24h
+                </div>
+              </div>
+
             </div>
-          ) : (
-            <div className="space-y-3">
-              {applications.map((app) => (
+
+            {/* Platform Ratio Bar */}
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs space-y-2">
+              <div className="flex items-center justify-between text-xs font-bold text-slate-800">
+                <span className="flex items-center gap-1.5">
+                  <Smartphone className="h-4 w-4 text-blue-600" />
+                  <span>Android App vs Web Platform Split</span>
+                </span>
+                <span className="text-[11px] text-slate-500">
+                  Total Registered Devices: {deviceStats.totalAppInstalls + deviceStats.totalWebVisitors}
+                </span>
+              </div>
+
+              {/* Progress bar */}
+              <div className="h-3 w-full rounded-full bg-slate-100 overflow-hidden flex">
                 <div
-                  key={app.id}
-                  className={`rounded-2xl border p-4 space-y-3 transition ${
-                    app.status === 'active'
-                      ? 'border-emerald-200 bg-emerald-50/40'
-                      : 'border-slate-200 bg-white hover:border-slate-300'
-                  }`}
-                >
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-slate-100">
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-black text-slate-900">
-                          {app.businessName}
-                        </span>
+                  style={{
+                    width: `${
+                      ((deviceStats.totalAppInstalls || 0) /
+                        Math.max(deviceStats.totalAppInstalls + deviceStats.totalWebVisitors, 1)) *
+                      100
+                    }%`,
+                  }}
+                  className="bg-blue-600 transition-all duration-500"
+                  title="Android App"
+                />
+                <div
+                  style={{
+                    width: `${
+                      ((deviceStats.totalWebVisitors || 0) /
+                        Math.max(deviceStats.totalAppInstalls + deviceStats.totalWebVisitors, 1)) *
+                      100
+                    }%`,
+                  }}
+                  className="bg-purple-500 transition-all duration-500"
+                  title="Web"
+                />
+              </div>
+
+              <div className="flex items-center justify-between text-[11px] text-slate-500 pt-1">
+                <span className="flex items-center gap-1 font-bold text-blue-700">
+                  <span className="h-2 w-2 rounded-full bg-blue-600" /> Android App ({deviceStats.totalAppInstalls})
+                </span>
+                <span className="flex items-center gap-1 font-bold text-purple-700">
+                  <span className="h-2 w-2 rounded-full bg-purple-500" /> Web & Browser ({deviceStats.totalWebVisitors})
+                </span>
+              </div>
+            </div>
+
+            {/* Recent Registered Devices Log */}
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+                <div className="flex items-center gap-2">
+                  <Layers className="h-4 w-4 text-slate-500" />
+                  <h3 className="text-xs font-black text-slate-900">
+                    Recent Devices & Students Activity
+                  </h3>
+                </div>
+                <span className="text-[10px] text-slate-400 font-semibold">
+                  Latest 10 Heartbeats
+                </span>
+              </div>
+
+              {deviceStats.recentDevices.length === 0 ? (
+                <p className="text-xs text-slate-400 text-center py-4">
+                  Devices telemetry will appear here as students open the app.
+                </p>
+              ) : (
+                <div className="divide-y divide-slate-100 overflow-x-auto">
+                  {deviceStats.recentDevices.map((dev) => (
+                    <div
+                      key={dev.id}
+                      className="flex items-center justify-between py-2.5 text-xs hover:bg-slate-50 px-2 rounded-xl transition"
+                    >
+                      <div className="flex items-center gap-2.5">
                         <span
                           className={`rounded-md px-2 py-0.5 text-[10px] font-black uppercase ${
-                            app.status === 'active'
-                              ? 'bg-emerald-600 text-white'
-                              : 'bg-amber-100 text-amber-800'
+                            dev.platform === 'android'
+                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                              : 'bg-purple-50 text-purple-700 border border-purple-200'
                           }`}
                         >
-                          {app.status}
+                          {dev.platform}
                         </span>
+                        <div>
+                          <div className="font-mono text-slate-800 text-[11px] font-bold truncate max-w-[180px] sm:max-w-xs">
+                            {dev.deviceId}
+                          </div>
+                          <div className="text-[10px] text-slate-400">
+                            Version: {dev.appVersion}
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-2 pt-0.5">
-                        <span className="text-[11px] text-slate-500">
-                          Plan: <strong>{app.planName || '30 Days'}</strong> (₹{app.paymentAmount}) • Ref:{' '}
-                          <strong className="font-mono text-slate-900">{app.paymentUtr}</strong>
-                        </span>
-                        {app.paymentMethod === 'razorpay' || app.paymentUtr?.startsWith('pay_') ? (
-                          <span className="inline-flex items-center gap-1 rounded-md bg-blue-100 text-blue-800 px-1.5 py-0.5 text-[10px] font-black">
-                            <Zap className="h-3 w-3 text-blue-600 fill-blue-600" />
-                            <span>Razorpay Verified</span>
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 text-slate-600 px-1.5 py-0.5 text-[10px] font-bold">
-                            Direct UPI QR
-                          </span>
-                        )}
+
+                      <div className="text-right text-[11px] text-slate-500 font-medium">
+                        {new Date(dev.lastSeenAt).toLocaleTimeString([], {
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
                       </div>
                     </div>
+                  ))}
+                </div>
+              )}
+            </div>
 
-                    <div className="flex items-center gap-2">
-                      {app.status !== 'active' && (
-                        <button
-                          onClick={() => handleApprove(app.id)}
-                          className="rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-1.5 text-xs font-black shadow-2xs transition active:scale-95"
-                        >
-                          Approve & Go Live
-                        </button>
+          </div>
+        )}
+
+        {/* ============================================================ */}
+        {/* TAB 2: ADS & SPONSORS MANAGEMENT                            */}
+        {/* ============================================================ */}
+        {activeTab === 'sponsors' && (
+          <div className="space-y-4">
+            
+            {/* Live Banner Spotlight */}
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
+                <div>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">
+                    Currently Displayed Banner
+                  </span>
+                  <div className="flex items-center gap-2 pt-0.5">
+                    <h3 className="text-base font-black text-slate-900">
+                      {activeSponsor.businessName}
+                    </h3>
+                    <span
+                      className={`rounded-md px-2 py-0.5 text-[10px] font-black uppercase ${
+                        activeSponsor.isInHouse
+                          ? 'bg-blue-100 text-blue-800'
+                          : 'bg-emerald-100 text-emerald-800'
+                      }`}
+                    >
+                      {activeSponsor.isInHouse ? 'In-House Partner' : 'Paid Sponsor Active'}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  {!activeSponsor.isInHouse && (
+                    <button
+                      onClick={handleResetToInHouse}
+                      className="rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-700 px-3 py-1.5 text-xs font-bold transition cursor-pointer"
+                    >
+                      Revert to In-House
+                    </button>
+                  )}
+                  <button
+                    onClick={() => setIsQuickCreateOpen(true)}
+                    className="inline-flex items-center gap-1 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 text-xs font-bold transition shadow-xs cursor-pointer"
+                  >
+                    <Plus className="h-3.5 w-3.5" />
+                    <span>Set Custom Sponsor</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Performance Stats of Active Banner */}
+              <div className="grid grid-cols-3 gap-2 text-center pt-1">
+                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
+                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Views</span>
+                  <span className="text-base font-black text-slate-900">{stats.impressions}</span>
+                </div>
+
+                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
+                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Leads (Clicks)</span>
+                  <span className="text-base font-black text-emerald-600">{stats.clicks}</span>
+                </div>
+
+                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
+                  <span className="text-[10px] font-bold text-slate-400 block uppercase">CTR Ratio</span>
+                  <span className="text-base font-black text-blue-600">
+                    {((stats.clicks / Math.max(stats.impressions, 1)) * 100).toFixed(1)}%
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Applications List Header with Filter Tabs */}
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-slate-100">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider">
+                    Sponsorship Applications ({applications.length})
+                  </h3>
+                  <span className="rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-1.5 py-0.2">
+                    ₹{totalEarnings} Total Revenue
+                  </span>
+                </div>
+
+                {/* Filter Pills */}
+                <div className="flex items-center gap-1 text-[11px] font-bold">
+                  {(['all', 'active', 'pending', 'expired'] as const).map((filter) => (
+                    <button
+                      key={filter}
+                      onClick={() => setActiveFilter(filter)}
+                      className={`px-2.5 py-1 rounded-lg capitalize transition cursor-pointer ${
+                        activeFilter === filter
+                          ? 'bg-slate-900 text-white'
+                          : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+                      }`}
+                    >
+                      {filter}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {filteredApps.length === 0 ? (
+                <div className="p-8 text-center text-slate-400 text-xs">
+                  No {activeFilter !== 'all' ? activeFilter : ''} sponsor applications found.
+                </div>
+              ) : (
+                <div className="space-y-2.5">
+                  {filteredApps.map((app) => (
+                    <div
+                      key={app.id}
+                      className={`rounded-2xl border p-3.5 space-y-2.5 transition ${
+                        app.status === 'active'
+                          ? 'border-emerald-300 bg-emerald-50/20'
+                          : 'border-slate-200 bg-white hover:border-slate-300'
+                      }`}
+                    >
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-slate-100">
+                        <div>
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm font-black text-slate-900">
+                              {app.businessName}
+                            </span>
+                            <span
+                              className={`rounded-md px-2 py-0.5 text-[10px] font-black uppercase ${
+                                app.status === 'active'
+                                  ? 'bg-emerald-600 text-white'
+                                  : app.status === 'pending'
+                                  ? 'bg-amber-100 text-amber-800'
+                                  : 'bg-slate-100 text-slate-600'
+                              }`}
+                            >
+                              {app.status}
+                            </span>
+                            {app.paymentMethod === 'razorpay' && (
+                              <span className="rounded-md bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold px-1.5 py-0.2">
+                                Razorpay Verified
+                              </span>
+                            )}
+                          </div>
+                          <span className="text-[11px] text-slate-500">
+                            Plan: <strong>{app.planName || '30 Days'}</strong> (₹{app.paymentAmount}) • UTR:{' '}
+                            <strong className="font-mono text-slate-900">{app.paymentUtr}</strong>
+                          </span>
+                        </div>
+
+                        <div className="flex items-center gap-1.5">
+                          {app.status !== 'active' && (
+                            <button
+                              onClick={() => handleApprove(app.id)}
+                              className="rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 text-xs font-black shadow-2xs transition active:scale-95 cursor-pointer"
+                            >
+                              Approve & Go Live
+                            </button>
+                          )}
+                          <button
+                            onClick={() => handleDelete(app.id, app.businessName)}
+                            className="rounded-xl border border-rose-200 text-rose-600 hover:bg-rose-50 p-1.5 transition cursor-pointer"
+                            title="Delete Application"
+                          >
+                            <Trash2 className="h-3.5 w-3.5" />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                        <div>
+                          <span className="text-slate-400 text-[11px] block">Offer Tagline:</span>
+                          <p className="font-bold text-slate-800">{app.tagline}</p>
+                        </div>
+
+                        <div>
+                          <span className="text-slate-400 text-[11px] block">Contact Person:</span>
+                          <p className="text-slate-800">
+                            {app.applicantName} ({app.applicantPhone || app.whatsappNumber})
+                          </p>
+                        </div>
+                      </div>
+
+                      {app.posterImage && (
+                        <div className="pt-1">
+                          <a
+                            href={app.posterImage}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 hover:underline"
+                          >
+                            <span>View Uploaded Poster</span>
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        </div>
                       )}
                     </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
-                    <div>
-                      <span className="text-slate-400 text-[11px] block">Offer Tagline:</span>
-                      <p className="font-bold text-slate-800">{app.tagline}</p>
-                    </div>
-
-                    <div>
-                      <span className="text-slate-400 text-[11px] block">Contact Person:</span>
-                      <p className="text-slate-800">
-                        {app.applicantName} ({app.applicantPhone})
-                      </p>
-                    </div>
-                  </div>
-
-                  {app.posterImage && (
-                    <div className="pt-1">
-                      <a
-                        href={app.posterImage}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 hover:underline"
-                      >
-                        <span>View Uploaded Poster</span>
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
-                    </div>
-                  )}
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
-          )}
-        </div>
+
+          </div>
+        )}
+
+        {/* ============================================================ */}
+        {/* TAB 3: BROADCAST & NOTICE TICKER CONTROL                    */}
+        {/* ============================================================ */}
+        {activeTab === 'broadcast' && (
+          <div className="space-y-4">
+            
+            {/* Live Ticker Preview */}
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-2xs space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100">
+                <div className="flex items-center gap-2">
+                  <Bell className="h-4 w-4 text-amber-500" />
+                  <h3 className="text-sm font-black text-slate-900">
+                    Live Announcement Strip Control
+                  </h3>
+                </div>
+                <span
+                  className={`rounded-full px-2.5 py-0.5 text-[10px] font-black uppercase ${
+                    tickerEnabled
+                      ? 'bg-emerald-100 text-emerald-800'
+                      : 'bg-slate-100 text-slate-500'
+                  }`}
+                >
+                  {tickerEnabled ? 'Broadcast Active' : 'Broadcast Paused'}
+                </span>
+              </div>
+
+              {/* Preview */}
+              <div>
+                <span className="text-[11px] font-bold text-slate-400 block mb-1">
+                  Student Live View Preview:
+                </span>
+                <div className="rounded-2xl border border-amber-200/90 bg-amber-50/80 px-3.5 py-2.5 shadow-xs text-xs flex items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-2 min-w-0 flex-1">
+                    <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-600">
+                      <Bell className="h-3 w-3" />
+                    </div>
+                    <p className="truncate text-xs text-amber-950 font-semibold">
+                      {tickerText || 'No announcement message set.'}
+                    </p>
+                  </div>
+                  <span className="shrink-0 rounded-xl bg-slate-900 px-3 py-1 font-black text-[10px] text-white">
+                    Join Now
+                  </span>
+                </div>
+              </div>
+
+              {/* Message Editor Form */}
+              <div className="space-y-3 pt-2">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    Announcement Text
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={tickerText}
+                    onChange={(e) => setTickerText(e.target.value)}
+                    placeholder="Enter message for the golden notification strip on homepage..."
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-xs text-slate-900 focus:bg-white focus:outline-hidden transition"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between pt-1">
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={tickerEnabled}
+                      onChange={(e) => setTickerEnabled(e.target.checked)}
+                      className="h-4 w-4 rounded-md border-slate-300 text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="text-xs font-bold text-slate-700">
+                      Show on Home Page
+                    </span>
+                  </label>
+
+                  <button
+                    onClick={handleSaveTicker}
+                    disabled={isSavingTicker}
+                    className="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white font-black px-4 py-2 text-xs transition active:scale-95 shadow-xs cursor-pointer"
+                  >
+                    {isSavingTicker ? (
+                      'Broadcasting...'
+                    ) : tickerSavedSuccess ? (
+                      <>
+                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                        <span>Saved Live!</span>
+                      </>
+                    ) : (
+                      'Save & Broadcast'
+                    )}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        )}
 
         {/* 3. Quick Custom Sponsor Modal */}
         {isQuickCreateOpen && (
@@ -534,7 +971,7 @@ export default function SponsorAdminPage() {
                 </h3>
                 <button
                   onClick={() => setIsQuickCreateOpen(false)}
-                  className="rounded-full p-1 text-slate-400 hover:bg-slate-100 transition"
+                  className="rounded-full p-1 text-slate-400 hover:bg-slate-100 transition cursor-pointer"
                 >
                   ✕
                 </button>
@@ -614,13 +1051,13 @@ export default function SponsorAdminPage() {
                   <button
                     type="button"
                     onClick={() => setIsQuickCreateOpen(false)}
-                    className="rounded-xl border border-slate-200 px-4 py-2 font-bold text-slate-700 hover:bg-slate-50"
+                    className="rounded-xl border border-slate-200 px-4 py-2 font-bold text-slate-700 hover:bg-slate-50 cursor-pointer"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-xs"
+                    className="rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-xs cursor-pointer"
                   >
                     Set Live Now
                   </button>

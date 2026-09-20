@@ -89,3 +89,72 @@ begin
   where id = target_id;
 end;
 $$ language plpgsql security definer;
+
+-- 6. Table for Device Tracking (Installs, Web Visitors & Active Users)
+create table if not exists public.app_devices (
+  id uuid default gen_random_uuid() primary key,
+  device_id text unique not null,
+  platform text not null, -- 'android' | 'web'
+  app_version text default '2.0.0',
+  first_seen_at timestamptz default now(),
+  last_seen_at timestamptz default now()
+);
+
+create index if not exists idx_app_devices_platform on public.app_devices(platform);
+create index if not exists idx_app_devices_last_seen on public.app_devices(last_seen_at);
+
+alter table public.app_devices enable row level security;
+
+-- Allow anyone to upsert their device record
+drop policy if exists "Allow device upsert" on public.app_devices;
+create policy "Allow device upsert"
+  on public.app_devices
+  for all
+  using (true)
+  with check (true);
+
+-- 7. Table for App Broadcast & Remote Settings
+create table if not exists public.app_settings (
+  key text primary key,
+  value jsonb not null,
+  updated_at timestamptz default now()
+);
+
+alter table public.app_settings enable row level security;
+
+drop policy if exists "Allow public read app_settings" on public.app_settings;
+create policy "Allow public read app_settings"
+  on public.app_settings
+  for select
+  using (true);
+
+drop policy if exists "Allow update app_settings" on public.app_settings;
+create policy "Allow update app_settings"
+  on public.app_settings
+  for all
+  using (true)
+  with check (true);
+
+-- Insert default announcement ticker if not exists
+insert into public.app_settings (key, value)
+values 
+  ('ticker', '{"enabled": true, "text": "PU UG Exam Forms & Semester Results Portal Live • Download Syllabi & PYQs", "type": "info"}'::jsonb)
+on conflict (key) do nothing;
+
+-- 8. Stored procedure to register or ping a device
+create or replace function register_or_ping_device(
+  p_device_id text,
+  p_platform text,
+  p_version text
+)
+returns void as $$
+begin
+  insert into public.app_devices (device_id, platform, app_version, last_seen_at)
+  values (p_device_id, p_platform, p_version, now())
+  on conflict (device_id) do update
+  set 
+    platform = excluded.platform,
+    app_version = excluded.app_version,
+    last_seen_at = now();
+end;
+$$ language plpgsql security definer;

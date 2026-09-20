@@ -522,3 +522,39 @@ export async function setCustomActiveSponsor(sponsor: Sponsor): Promise<boolean>
   }
   return true;
 }
+
+/**
+ * Admin action: Delete a sponsor application
+ */
+export async function deleteSponsorApplication(id: string): Promise<boolean> {
+  if (supabase) {
+    try {
+      await supabase.from('sponsors').delete().eq('id', id);
+    } catch {
+      // ignore
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_APPLICATIONS) || '[]';
+      const list: Sponsor[] = JSON.parse(raw);
+      const filtered = list.filter((s) => s.id !== id);
+      localStorage.setItem(STORAGE_KEY_APPLICATIONS, JSON.stringify(filtered));
+
+      // If this was the active sponsor, reset to default
+      const activeRaw = localStorage.getItem(STORAGE_KEY_ACTIVE);
+      if (activeRaw) {
+        const active: Sponsor = JSON.parse(activeRaw);
+        if (active.id === id) {
+          localStorage.removeItem(STORAGE_KEY_ACTIVE);
+        }
+      }
+      return true;
+    } catch {
+      return false;
+    }
+  }
+  return true;
+}
+
