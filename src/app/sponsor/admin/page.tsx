@@ -24,6 +24,7 @@ import {
   Calendar,
   AlertCircle,
   ExternalLink,
+  Zap,
 } from 'lucide-react';
 import {
   Sponsor,
@@ -362,10 +363,22 @@ export default function SponsorAdminPage() {
                           {app.status}
                         </span>
                       </div>
-                      <span className="text-[11px] text-slate-500">
-                        Plan: <strong>{app.planName || '30 Days'}</strong> (₹{app.paymentAmount}) • UTR:{' '}
-                        <strong className="font-mono text-slate-900">{app.paymentUtr}</strong>
-                      </span>
+                      <div className="flex flex-wrap items-center gap-2 pt-0.5">
+                        <span className="text-[11px] text-slate-500">
+                          Plan: <strong>{app.planName || '30 Days'}</strong> (₹{app.paymentAmount}) • Ref:{' '}
+                          <strong className="font-mono text-slate-900">{app.paymentUtr}</strong>
+                        </span>
+                        {app.paymentMethod === 'razorpay' || app.paymentUtr?.startsWith('pay_') ? (
+                          <span className="inline-flex items-center gap-1 rounded-md bg-blue-100 text-blue-800 px-1.5 py-0.5 text-[10px] font-black">
+                            <Zap className="h-3 w-3 text-blue-600 fill-blue-600" />
+                            <span>Razorpay Verified</span>
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 text-slate-600 px-1.5 py-0.5 text-[10px] font-bold">
+                            Direct UPI QR
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <div className="flex items-center gap-2">

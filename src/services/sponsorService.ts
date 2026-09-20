@@ -19,6 +19,7 @@ export interface Sponsor {
   planName?: string;
   paymentUtr?: string;
   paymentAmount?: number;
+  paymentMethod?: 'razorpay' | 'upi_qr' | 'offline';
   applicantName?: string;
   applicantEmail?: string;
   applicantPhone?: string;
@@ -182,6 +183,7 @@ export async function submitSponsorApplication(data: {
   durationDays: number;
   paymentAmount: number;
   paymentUtr: string;
+  paymentMethod?: 'razorpay' | 'upi_qr' | 'offline';
   applicantName: string;
   applicantEmail: string;
   applicantPhone: string;
@@ -209,6 +211,7 @@ export async function submitSponsorApplication(data: {
     planName: data.planName,
     paymentUtr: data.paymentUtr.trim(),
     paymentAmount: data.paymentAmount,
+    paymentMethod: data.paymentMethod || (data.paymentUtr.startsWith('pay_') ? 'razorpay' : 'upi_qr'),
     applicantName: data.applicantName.trim(),
     applicantEmail: data.applicantEmail.trim(),
     applicantPhone: data.applicantPhone.trim(),
