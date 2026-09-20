@@ -5,6 +5,7 @@ import { SubpageHeader } from '@/components/SubpageHeader';
 import { puCollegesData } from '@/data/puColleges';
 import { InstagramIcon, WhatsAppIcon } from '@/components/OfficialBrandIcons';
 import { ExternalLink, Building2, Globe, Heart, Mail, Share2, ShieldCheck } from 'lucide-react';
+import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 
 export default function ExtrasPage() {
   const handleShareApp = () => {
@@ -135,6 +136,9 @@ export default function ExtrasPage() {
             <Share2 className="h-4 w-4" /> Share Lazy PU with Classmates
           </button>
         </div>
+
+        {/* Campus Partner / Sponsored Banner */}
+        <CampusPartnerBanner sourcePage="extras" />
 
         {/* About Lazy PU Footer Box */}
         <div className="rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4 text-xs text-slate-600 space-y-2 text-center">

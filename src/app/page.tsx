@@ -13,6 +13,7 @@ import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
 import { SideDrawer } from '@/components/SideDrawer';
 import { ImportantLinksModal, ImportantLinkCategory } from '@/components/ImportantLinksModal';
 import { DownloadAppSection } from '@/components/DownloadAppSection';
+import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 
 import { puNoticesData } from '@/data/puNotices';
 import { PUNotice } from '@/types';
@@ -145,6 +146,9 @@ export default function ApnaUniversityHomePage() {
             </Link>
           </div>
         </div>
+
+        {/* Campus Partner / Sponsored Banner */}
+        <CampusPartnerBanner sourcePage="home" />
       </div>
 
       {/* Modals & Popups */}

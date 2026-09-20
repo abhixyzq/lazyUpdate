@@ -1,0 +1,67 @@
+{
+  "activeSponsor": {
+    "id": "lazy_pu_inhouse_1",
+    "businessName": "Patna University Community & Partner Hub",
+    "tagline": "Are you a Coaching, PG, or Book Store in Patna?",
+    "description": "Put your banner in front of 5,000+ active Patna University students across all constituent colleges. High visibility, genuine student leads!",
+    "badge": "CAMPUS PARTNER",
+    "posterImage": "",
+    "targetUrl": "https://lazyupdate.tech/sponsor",
+    "whatsappNumber": "918709322301",
+    "whatsappMessage": "Hello! I want to sponsor / advertise on Lazy PU App for Patna University students.",
+    "phone": "+918709322301",
+    "category": "Coaching & Services",
+    "startDate": "2026-09-01",
+    "endDate": "2027-12-31",
+    "status": "active",
+    "isInHouse": true,
+    "impressions": 1240,
+    "clicks": 98
+  },
+  "packages": [
+    {
+      "id": "starter_7d",
+      "name": "Weekly Spotlight",
+      "durationDays": 7,
+      "price": 499,
+      "originalPrice": 899,
+      "features": [
+        "Present on all Semester Syllabus & Notice pages",
+        "Direct WhatsApp lead button with custom pre-filled message",
+        "Real-time Impression & Click counters",
+        "Mobile App + Web Portal visibility"
+      ],
+      "recommended": false
+    },
+    {
+      "id": "growth_30d",
+      "name": "Monthly Campus Partner",
+      "durationDays": 30,
+      "price": 1499,
+      "originalPrice": 2499,
+      "features": [
+        "Everything in Weekly Spotlight",
+        "Priority placement on top-traffic Syllabus pages",
+        "Dedicated Shoutout on @_lazypu Instagram Community",
+        "1-Click banner change or offer update anytime",
+        "Direct Call & WhatsApp leads guaranteed"
+      ],
+      "recommended": true
+    },
+    {
+      "id": "semester_90d",
+      "name": "Semester Anchor",
+      "durationDays": 90,
+      "price": 3499,
+      "originalPrice": 5999,
+      "features": [
+        "Full 3-Month Examination & Admission Cycle coverage",
+        "Permanent presence across 200+ Syllabus & PYQ pages",
+        "2x Instagram Feature Post/Story on @_lazypu",
+        "Priority verified Partner Badge",
+        "Weekly performance lead report"
+      ],
+      "recommended": false
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
   Info,
   Heart,
   Loader2,
+  Megaphone,
 } from 'lucide-react';
 import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 import { FeedbackModal } from './FeedbackModal';
@@ -246,6 +247,24 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   </div>
                   <ChevronRight className="h-4 w-4 text-pink-500 group-hover:translate-x-0.5 transition" />
                 </a>
+
+                {/* Sponsor / Campus Partner Link */}
+                <Link
+                  href="/sponsor"
+                  onClick={onClose}
+                  className="flex w-full items-center justify-between rounded-2xl border border-indigo-200/90 bg-gradient-to-r from-indigo-50/70 via-blue-50/50 to-purple-50/50 px-3.5 py-2.5 font-bold text-slate-800 hover:border-indigo-400 hover:from-indigo-100/70 hover:to-purple-100/70 transition shadow-2xs group text-left"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
+                      <Megaphone className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-black text-slate-900">Advertise on Lazy PU</div>
+                      <div className="text-[10px] text-indigo-700 font-normal">Sponsor • Reach 5,000+ Students</div>
+                    </div>
+                  </div>
+                  <ChevronRight className="h-4 w-4 text-indigo-500 group-hover:translate-x-0.5 transition" />
+                </Link>
 
                 {/* Direct APK Share Button */}
                 <button

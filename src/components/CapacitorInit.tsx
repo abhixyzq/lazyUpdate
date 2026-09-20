@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { showFooterBanner } from '@/utils/admobService';
 
 export function CapacitorInit() {
   const router = useRouter();
@@ -43,13 +42,6 @@ export function CapacitorInit() {
           };
         } catch {
           // App listener unavailable
-        }
-
-        // 3. Configure Google AdMob Footer Banner Ad
-        try {
-          await showFooterBanner();
-        } catch (adErr) {
-          console.warn('AdMob banner initialization error:', adErr);
         }
       } catch {
         // Not native platform

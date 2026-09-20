@@ -28,6 +28,7 @@ import {
   Clock,
   Check,
 } from 'lucide-react';
+import { CampusPartnerBanner } from './CampusPartnerBanner';
 
 interface SyllabusFlowProps {
   onBackToHome?: () => void;
@@ -1098,6 +1099,9 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                   <Share2 className="h-4 w-4" /> WhatsApp Share
                 </button>
               </div>
+
+              {/* In-Page Campus Partner / Sponsored Banner */}
+              <CampusPartnerBanner sourcePage="syllabus" />
             </div>
           )}
         </div>

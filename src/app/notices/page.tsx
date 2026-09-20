@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { ArrowLeft, Clock, BellRing, ExternalLink, Zap, FileText } from 'lucide-react';
+import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 
 export default function NoticesPage() {
   return (
@@ -90,6 +91,9 @@ export default function NoticesPage() {
             </Link>
           </div>
         </div>
+
+        {/* Campus Partner / Sponsored Banner */}
+        <CampusPartnerBanner sourcePage="notices" />
       </main>
     </div>
   );
