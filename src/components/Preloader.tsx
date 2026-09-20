@@ -46,9 +46,6 @@ export const Preloader: React.FC = () => {
           <h1 className="text-sm font-black tracking-tight text-slate-900">
             Lazy PU
           </h1>
-          <p className="text-[11px] font-semibold text-slate-500">
-            Patna University Portal
-          </p>
         </div>
 
         {/* Clean Minimal Spinner */}
