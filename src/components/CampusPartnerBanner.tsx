@@ -11,7 +11,7 @@ import {
   BadgeCheck,
   Megaphone,
 } from 'lucide-react';
-import { WhatsAppIcon } from './OfficialBrandIcons';
+import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 import {
   Sponsor,
   getActiveSponsor,
@@ -61,10 +61,12 @@ export const CampusPartnerBanner: React.FC<CampusPartnerBannerProps> = ({
     if (sponsor.id) {
       recordClick(sponsor.id);
     }
-    const cleanNumber = (sponsor.whatsappNumber || '918709322301').replace(/[^0-9]/g, '');
-    const defaultMsg = sponsor.isInHouse
-      ? `Hello! I am interested in advertising / sponsoring on Lazy PU App.`
-      : `Hi! I saw your ${sponsor.businessName} banner on Lazy PU App and would like to get more information.`;
+    if (sponsor.isInHouse || !sponsor.whatsappNumber) {
+      window.open('https://ig.me/m/_lazypu', '_blank');
+      return;
+    }
+    const cleanNumber = sponsor.whatsappNumber.replace(/[^0-9]/g, '');
+    const defaultMsg = `Hi! I saw your ${sponsor.businessName} banner on Lazy PU App and would like to get more information.`;
     const msg = encodeURIComponent(sponsor.whatsappMessage || defaultMsg);
     window.open(`https://api.whatsapp.com/send?phone=${cleanNumber}&text=${msg}`, '_blank');
   };
@@ -124,14 +126,20 @@ export const CampusPartnerBanner: React.FC<CampusPartnerBannerProps> = ({
                 <span>Book Sponsorship / Ad Space</span>
               </Link>
 
-              <button
-                type="button"
-                onClick={handleWhatsAppClick}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 font-bold py-2.5 px-4 text-xs transition active:scale-98"
+              <a
+                href="https://ig.me/m/_lazypu"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  if (sponsor.id) recordClick(sponsor.id);
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50/90 via-rose-50/70 to-amber-50/70 hover:from-pink-100 hover:to-amber-100 text-slate-800 font-bold py-2.5 px-4 text-xs transition active:scale-98 shadow-2xs"
               >
-                <WhatsAppIcon className="h-4 w-4 shrink-0" />
-                <span>Enquire on WhatsApp</span>
-              </button>
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 bg-clip-text text-transparent font-extrabold">
+                  Chat on Instagram (@_lazypu)
+                </span>
+              </a>
             </div>
           </div>
         </div>

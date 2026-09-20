@@ -326,15 +326,13 @@ export default function SponsorPage() {
 
             <div className="pt-2 flex flex-col sm:flex-row gap-2.5 justify-center">
               <a
-                href={`https://api.whatsapp.com/send?phone=918709322301&text=${encodeURIComponent(
-                  `Hello Lazy PU Team! I submitted a sponsor application for ${businessName} (Ref: ${submittedId}, UTR: ${paymentUtr}). Please approve.`
-                )}`}
+                href="https://ig.me/m/_lazypu"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black py-2.5 px-5 text-xs shadow-xs transition"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-black py-2.5 px-5 text-xs shadow-xs transition"
               >
-                <WhatsAppIcon className="h-4 w-4 shrink-0" />
-                <span>Notify Admin on WhatsApp</span>
+                <InstagramIcon className="h-4 w-4 shrink-0" />
+                <span>Notify Admin on Instagram Chat (@_lazypu)</span>
               </a>
 
               <Link
@@ -682,29 +680,19 @@ export default function SponsorPage() {
               </div>
 
               {/* Quick Contact & Admin Link */}
-              <div className="rounded-2xl border border-slate-200/80 bg-white p-3 text-center space-y-2">
-                <span className="text-xs text-slate-600 block">
-                  Questions before booking?
+              <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 text-center space-y-2.5">
+                <span className="text-xs font-bold text-slate-700 block">
+                  Have questions before booking?
                 </span>
-                <div className="flex justify-center gap-2">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=918709322301&text=Hi!%20I%20have%20questions%20regarding%20Lazy%20PU%20sponsorship."
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1.5 text-xs font-bold hover:bg-emerald-100 transition"
-                  >
-                    <WhatsAppIcon className="h-3.5 w-3.5" />
-                    <span>WhatsApp Us</span>
-                  </a>
-
+                <div className="flex justify-center">
                   <a
                     href="https://ig.me/m/_lazypu"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1 rounded-xl bg-pink-50 text-pink-800 border border-pink-200 px-3 py-1.5 text-xs font-bold hover:bg-pink-100 transition"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white py-2 px-3 text-xs font-extrabold transition shadow-xs"
                   >
-                    <InstagramIcon className="h-3.5 w-3.5" />
-                    <span>Instagram DM</span>
+                    <InstagramIcon className="h-4 w-4 shrink-0" />
+                    <span>Chat with Admin on Instagram (@_lazypu)</span>
                   </a>
                 </div>
 
