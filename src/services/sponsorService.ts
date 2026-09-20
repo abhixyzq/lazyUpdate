@@ -2,6 +2,8 @@
 
 import { supabase } from '@/lib/supabase';
 
+export type AdTargetPage = 'all' | 'home' | 'syllabus' | 'notices' | 'extras';
+
 export interface Sponsor {
   id: string;
   businessName: string;
@@ -17,6 +19,7 @@ export interface Sponsor {
   startDate: string;
   endDate: string;
   status: 'active' | 'pending' | 'expired' | 'rejected';
+  targetPage?: AdTargetPage;
   planId?: string;
   planName?: string;
   paymentUtr?: string;
@@ -41,9 +44,26 @@ export interface SponsorPackage {
   recommended?: boolean;
 }
 
+export interface PlanPriceTier {
+  starter_7d: number;
+  growth_30d: number;
+  semester_90d: number;
+}
+
+export type SponsorPlacementPricing = Record<AdTargetPage, PlanPriceTier>;
+
+export const DEFAULT_PLACEMENT_PRICING: SponsorPlacementPricing = {
+  home: { starter_7d: 699, growth_30d: 1999, semester_90d: 4999 },
+  syllabus: { starter_7d: 499, growth_30d: 1499, semester_90d: 3499 },
+  notices: { starter_7d: 399, growth_30d: 1199, semester_90d: 2999 },
+  extras: { starter_7d: 299, growth_30d: 899, semester_90d: 2199 },
+  all: { starter_7d: 999, growth_30d: 2999, semester_90d: 7499 },
+};
+
 const STORAGE_KEY_ACTIVE = 'lazy_pu_active_sponsor_v1';
 const STORAGE_KEY_APPLICATIONS = 'lazy_pu_sponsor_applications_v1';
 const STORAGE_KEY_STATS = 'lazy_pu_sponsor_stats_v1';
+const STORAGE_KEY_PRICING = 'lazy_pu_sponsor_pricing_v1';
 
 export const DEFAULT_INHOUSE_SPONSOR: Sponsor = {
   id: 'lazy_pu_inhouse_1',
@@ -60,6 +80,7 @@ export const DEFAULT_INHOUSE_SPONSOR: Sponsor = {
   startDate: '2026-01-01',
   endDate: '2030-12-31',
   status: 'active',
+  targetPage: 'all',
   isInHouse: true,
   impressions: 0,
   clicks: 0,
@@ -83,6 +104,7 @@ function mapRowToSponsor(row: any): Sponsor {
     startDate: row.start_date || new Date().toISOString(),
     endDate: row.end_date || new Date().toISOString(),
     status: row.status || 'pending',
+    targetPage: (row.target_page as AdTargetPage) || 'all',
     planId: row.plan_id || '',
     planName: row.plan_name || '',
     paymentUtr: row.payment_utr || '',
@@ -99,11 +121,79 @@ function mapRowToSponsor(row: any): Sponsor {
 }
 
 /**
- * Retrieves the currently active sponsor banner.
- * First checks Supabase, then local storage, then static fallback.
+ * Retrieves dynamic sponsor pricing from Supabase app_settings.
+ * Falls back to localStorage and DEFAULT_PLACEMENT_PRICING.
  */
-export async function getActiveSponsor(): Promise<Sponsor> {
-  // 1. If Supabase is connected, query active sponsor from DB
+export async function getSponsorPricingSettings(): Promise<SponsorPlacementPricing> {
+  if (supabase) {
+    try {
+      const { data, error } = await supabase
+        .from('app_settings')
+        .select('value')
+        .eq('key', 'sponsor_pricing')
+        .maybeSingle();
+
+      if (data?.value && !error) {
+        return {
+          ...DEFAULT_PLACEMENT_PRICING,
+          ...data.value,
+        };
+      }
+    } catch (err) {
+      console.warn('[sponsorService] Failed to load sponsor pricing from Supabase:', err);
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    try {
+      const cached = localStorage.getItem(STORAGE_KEY_PRICING);
+      if (cached) return JSON.parse(cached);
+    } catch {}
+  }
+
+  return DEFAULT_PLACEMENT_PRICING;
+}
+
+/**
+ * Admin action: Save updated sponsor pricing matrix to Supabase app_settings.
+ */
+export async function updateSponsorPricingSettings(pricing: SponsorPlacementPricing): Promise<boolean> {
+  if (supabase) {
+    try {
+      const { error } = await supabase.from('app_settings').upsert({
+        key: 'sponsor_pricing',
+        value: pricing,
+        updated_at: new Date().toISOString(),
+      });
+      if (error) {
+        console.error('[sponsorService] Error updating sponsor pricing in Supabase:', error);
+        return false;
+      }
+    } catch (err) {
+      console.error('[sponsorService] Exception updating sponsor pricing:', err);
+      return false;
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(STORAGE_KEY_PRICING, JSON.stringify(pricing));
+    } catch {}
+  }
+
+  return true;
+}
+
+/**
+ * Retrieves the currently active sponsor banner for a specific page/placement.
+ * First checks for an active ad targeted specifically to `placement`.
+ * If not found, falls back to a universal active ad (`target_page = 'all'`).
+ * If none found, returns the default In-House partner promotion.
+ */
+export async function getActiveSponsor(placement: string = 'all'): Promise<Sponsor> {
+  const normPlacement = (placement || 'all').toLowerCase();
+
+  // 1. If Supabase is connected, query active sponsors from DB
   if (supabase) {
     try {
       const now = new Date().toISOString();
@@ -112,22 +202,33 @@ export async function getActiveSponsor(): Promise<Sponsor> {
         .select('*')
         .eq('status', 'active')
         .gte('end_date', now)
-        .order('created_at', { ascending: false })
-        .limit(1)
-        .maybeSingle();
+        .in('target_page', [normPlacement, 'all'])
+        .order('created_at', { ascending: false });
 
-      if (data && !error) {
-        return mapRowToSponsor(data);
+      if (data && data.length > 0 && !error) {
+        // First look for exact placement match
+        const exactMatch = data.find((d: any) => (d.target_page || 'all') === normPlacement);
+        if (exactMatch) {
+          return mapRowToSponsor(exactMatch);
+        }
+        // Next look for universal 'all' ad
+        const universalMatch = data.find((d: any) => !d.target_page || d.target_page === 'all');
+        if (universalMatch) {
+          return mapRowToSponsor(universalMatch);
+        }
+        return mapRowToSponsor(data[0]);
       }
     } catch (err) {
       console.warn('[sponsorService] Supabase getActiveSponsor error:', err);
     }
   }
 
-  // 2. Check local storage override
+  // 2. Check local storage override (placement-specific or global)
   if (typeof window !== 'undefined') {
     try {
-      const stored = localStorage.getItem(STORAGE_KEY_ACTIVE);
+      const stored =
+        localStorage.getItem(`${STORAGE_KEY_ACTIVE}_${normPlacement}`) ||
+        localStorage.getItem(STORAGE_KEY_ACTIVE);
       if (stored) {
         const parsed: Sponsor = JSON.parse(stored);
         if (parsed && parsed.status === 'active') {
@@ -163,7 +264,46 @@ export async function getActiveSponsor(): Promise<Sponsor> {
     }
   }
 
-  return DEFAULT_INHOUSE_SPONSOR;
+  return { ...DEFAULT_INHOUSE_SPONSOR, targetPage: normPlacement as AdTargetPage };
+}
+
+/**
+ * Retrieve current active live ads grouped by each placement for Admin.
+ */
+export async function getAllActiveSponsorsByPlacementAsync(): Promise<Record<AdTargetPage, Sponsor | null>> {
+  const result: Record<AdTargetPage, Sponsor | null> = {
+    home: null,
+    syllabus: null,
+    notices: null,
+    extras: null,
+    all: null,
+  };
+
+  if (supabase) {
+    try {
+      const now = new Date().toISOString();
+      const { data, error } = await supabase
+        .from('sponsors')
+        .select('*')
+        .eq('status', 'active')
+        .gte('end_date', now)
+        .order('created_at', { ascending: false });
+
+      if (data && !error) {
+        for (const row of data) {
+          const s = mapRowToSponsor(row);
+          const page = (s.targetPage || 'all') as AdTargetPage;
+          if (result[page] === null) {
+            result[page] = s;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('[sponsorService] getAllActiveSponsorsByPlacementAsync error:', e);
+    }
+  }
+
+  return result;
 }
 
 /**
@@ -272,6 +412,7 @@ export async function submitSponsorApplication(data: {
   category?: string;
   posterImage?: string;
   targetUrl?: string;
+  targetPage?: AdTargetPage;
   planId: string;
   planName: string;
   durationDays: number;
@@ -301,6 +442,7 @@ export async function submitSponsorApplication(data: {
     startDate: now.toISOString(),
     endDate: endDate.toISOString(),
     status: 'pending',
+    targetPage: data.targetPage || 'all',
     planId: data.planId,
     planName: data.planName,
     paymentUtr: data.paymentUtr.trim(),
@@ -333,6 +475,7 @@ export async function submitSponsorApplication(data: {
         start_date: application.startDate,
         end_date: application.endDate,
         status: 'pending',
+        target_page: application.targetPage || 'all',
         plan_id: application.planId,
         plan_name: application.planName,
         payment_utr: application.paymentUtr,
@@ -403,9 +546,9 @@ export function getAllSponsorApplications(): Sponsor[] {
 }
 
 /**
- * Admin action: Approve an application and make it the live active sponsor.
+ * Admin action: Approve an application and make it the live active sponsor for its targeted placement.
  */
-export async function approveAndActivateSponsor(sponsorId: string): Promise<boolean> {
+export async function approveAndActivateSponsor(sponsorId: string, targetPageOverride?: AdTargetPage): Promise<boolean> {
   const now = new Date();
   let durationDays = 30;
 
@@ -416,14 +559,20 @@ export async function approveAndActivateSponsor(sponsorId: string): Promise<bool
       const { data } = await supabase.from('sponsors').select('*').eq('id', sponsorId).single();
       if (data) {
         durationDays = data.duration_days || (data.plan_id === 'starter_7d' ? 7 : data.plan_id === 'semester_90d' ? 90 : 30);
+        const targetPage = targetPageOverride || (data.target_page as AdTargetPage) || 'all';
         const endDate = new Date(now.getTime() + durationDays * 24 * 60 * 60 * 1000).toISOString();
 
-        // Deactivate old active sponsors first
-        await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
+        // Deactivate old active sponsors on THIS specific placement only
+        await supabase
+          .from('sponsors')
+          .update({ status: 'expired' })
+          .eq('status', 'active')
+          .eq('target_page', targetPage);
 
         // Activate target sponsor
         await supabase.from('sponsors').update({
           status: 'active',
+          target_page: targetPage,
           start_date: now.toISOString(),
           end_date: endDate,
         }).eq('id', sponsorId);
@@ -441,12 +590,19 @@ export async function approveAndActivateSponsor(sponsorId: string): Promise<bool
       const target = list.find((s) => s.id === sponsorId);
       if (target) {
         target.status = 'active';
+        if (targetPageOverride) {
+          target.targetPage = targetPageOverride;
+        }
+        const targetPage = target.targetPage || 'all';
         const days = target.planId === 'starter_7d' ? 7 : target.planId === 'semester_90d' ? 90 : 30;
         target.startDate = now.toISOString();
         target.endDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000).toISOString();
 
         localStorage.setItem(STORAGE_KEY_APPLICATIONS, JSON.stringify(list));
-        localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(target));
+        localStorage.setItem(`${STORAGE_KEY_ACTIVE}_${targetPage}`, JSON.stringify(target));
+        if (targetPage === 'all') {
+          localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(target));
+        }
       }
       return true;
     } catch (e) {
@@ -460,11 +616,18 @@ export async function approveAndActivateSponsor(sponsorId: string): Promise<bool
 
 /**
  * Admin action: Deactivate custom sponsor and restore default in-house partner banner.
+ * If placement is provided, deactivates only that placement's active ad.
  */
-export async function resetToInHouseSponsor(): Promise<boolean> {
+export async function resetToInHouseSponsor(placement?: string): Promise<boolean> {
+  const normPlacement = placement ? placement.toLowerCase() : null;
+
   if (supabase) {
     try {
-      await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
+      let query = supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
+      if (normPlacement) {
+        query = query.eq('target_page', normPlacement);
+      }
+      await query;
     } catch (e) {
       console.warn('[sponsorService] Supabase reset error:', e);
     }
@@ -472,7 +635,12 @@ export async function resetToInHouseSponsor(): Promise<boolean> {
 
   if (typeof window !== 'undefined') {
     try {
-      localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(DEFAULT_INHOUSE_SPONSOR));
+      if (normPlacement) {
+        localStorage.removeItem(`${STORAGE_KEY_ACTIVE}_${normPlacement}`);
+      }
+      if (!normPlacement || normPlacement === 'all') {
+        localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(DEFAULT_INHOUSE_SPONSOR));
+      }
       return true;
     } catch {
       return false;
@@ -482,39 +650,64 @@ export async function resetToInHouseSponsor(): Promise<boolean> {
 }
 
 /**
- * Admin action: Manually create or update an active sponsor directly.
+ * Admin action: Manually create or update an active sponsor directly for a specific placement.
  */
 export async function setCustomActiveSponsor(sponsor: Sponsor): Promise<boolean> {
+  const targetPage = sponsor.targetPage || 'all';
+
   if (supabase) {
     try {
-      await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
-      await supabase.from('sponsors').upsert({
+      // Deactivate only ads on this specific placement
+      await supabase
+        .from('sponsors')
+        .update({ status: 'expired' })
+        .eq('status', 'active')
+        .eq('target_page', targetPage);
+
+      const { error } = await supabase.from('sponsors').upsert({
         id: sponsor.id,
         business_name: sponsor.businessName,
         tagline: sponsor.tagline,
-        description: sponsor.description,
-        badge: sponsor.badge,
-        poster_image: sponsor.posterImage,
-        target_url: sponsor.targetUrl,
+        description: sponsor.description || '',
+        badge: sponsor.badge || 'CAMPUS PARTNER',
+        poster_image: sponsor.posterImage || '',
+        target_url: sponsor.targetUrl || '',
         whatsapp_number: sponsor.whatsappNumber,
-        whatsapp_message: sponsor.whatsappMessage,
-        phone: sponsor.phone,
-        category: sponsor.category,
+        whatsapp_message: sponsor.whatsappMessage || '',
+        phone: sponsor.phone || sponsor.whatsappNumber,
+        category: sponsor.category || 'Coaching & Services',
         start_date: sponsor.startDate,
         end_date: sponsor.endDate,
         status: 'active',
+        target_page: targetPage,
         is_in_house: false,
-        impressions: sponsor.impressions,
-        clicks: sponsor.clicks,
+        payment_utr: sponsor.paymentUtr || 'ADMIN_DIRECT',
+        payment_amount: sponsor.paymentAmount || 0,
+        payment_method: sponsor.paymentMethod || 'offline',
+        plan_id: sponsor.planId || 'custom',
+        plan_name: sponsor.planName || 'Admin Direct Placement',
+        impressions: sponsor.impressions || 0,
+        clicks: sponsor.clicks || 0,
       });
-    } catch (e) {
-      console.warn('[sponsorService] Supabase setCustomActiveSponsor error:', e);
+
+      if (error) {
+        console.error('[sponsorService] Supabase setCustomActiveSponsor error:', error);
+        alert('Supabase Error: ' + error.message);
+        return false;
+      }
+    } catch (e: any) {
+      console.error('[sponsorService] Supabase setCustomActiveSponsor exception:', e);
+      alert('Supabase Network Error: ' + (e?.message || 'Unknown error'));
+      return false;
     }
   }
 
   if (typeof window !== 'undefined') {
     try {
-      localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(sponsor));
+      localStorage.setItem(`${STORAGE_KEY_ACTIVE}_${targetPage}`, JSON.stringify(sponsor));
+      if (targetPage === 'all') {
+        localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(sponsor));
+      }
       return true;
     } catch {
       return false;

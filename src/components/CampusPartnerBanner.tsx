@@ -34,7 +34,7 @@ export const CampusPartnerBanner: React.FC<CampusPartnerBannerProps> = ({
   useEffect(() => {
     let isMounted = true;
 
-    getActiveSponsor()
+    getActiveSponsor(sourcePage)
       .then((data) => {
         if (isMounted) {
           setSponsor(data);

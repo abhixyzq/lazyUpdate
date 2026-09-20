@@ -20,7 +20,7 @@ create table if not exists public.sponsors (
   plan_name text default 'Premier Academic Partner',
   duration_days integer default 30,
   payment_amount numeric default 1499,
-  payment_utr text not null,
+  payment_utr text default 'ADMIN_DIRECT',
   payment_method text default 'razorpay',
   applicant_name text default '',
   applicant_email text default '',
@@ -28,15 +28,17 @@ create table if not exists public.sponsors (
   status text default 'pending', -- 'pending' | 'active' | 'expired' | 'rejected'
   start_date timestamptz default now(),
   end_date timestamptz default now() + interval '30 days',
+  target_page text default 'all', -- 'all' | 'home' | 'syllabus' | 'notices' | 'extras'
   is_in_house boolean default false,
   impressions integer default 0,
   clicks integer default 0,
   created_at timestamptz default now()
 );
 
--- 2. Create index on status and dates for quick lookup
+-- 2. Create index on status, dates and target_page for quick lookup
 create index if not exists idx_sponsors_status on public.sponsors(status);
 create index if not exists idx_sponsors_end_date on public.sponsors(end_date);
+create index if not exists idx_sponsors_target_page on public.sponsors(target_page);
 
 -- 3. Enable Row Level Security (RLS)
 alter table public.sponsors enable row level security;
@@ -158,3 +160,42 @@ begin
     last_seen_at = now();
 end;
 $$ language plpgsql security definer;
+
+-- 9. Migration patch (if table already created):
+alter table if exists public.sponsors alter column payment_utr drop not null;
+alter table if exists public.sponsors alter column payment_utr set default 'ADMIN_DIRECT';
+alter table if exists public.sponsors add column if not exists target_page text default 'all';
+create index if not exists idx_sponsors_target_page on public.sponsors(target_page);
+
+-- 10. Default Sponsor Placement Pricing Matrix in app_settings
+insert into public.app_settings (key, value)
+values 
+  ('sponsor_pricing', '{
+    "home": {
+      "starter_7d": 699,
+      "growth_30d": 1999,
+      "semester_90d": 4999
+    },
+    "syllabus": {
+      "starter_7d": 499,
+      "growth_30d": 1499,
+      "semester_90d": 3499
+    },
+    "notices": {
+      "starter_7d": 399,
+      "growth_30d": 1199,
+      "semester_90d": 2999
+    },
+    "extras": {
+      "starter_7d": 299,
+      "growth_30d": 899,
+      "semester_90d": 2199
+    },
+    "all": {
+      "starter_7d": 999,
+      "growth_30d": 2999,
+      "semester_90d": 7499
+    }
+  }'::jsonb)
+on conflict (key) do nothing;
+

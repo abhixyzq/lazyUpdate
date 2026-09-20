@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { WhatsAppIcon, InstagramIcon } from '@/components/OfficialBrandIcons';
 import {
@@ -18,7 +18,13 @@ import {
   ChevronRight,
   Crown,
 } from 'lucide-react';
-import { submitSponsorApplication } from '@/services/sponsorService';
+import {
+  submitSponsorApplication,
+  AdTargetPage,
+  SponsorPlacementPricing,
+  DEFAULT_PLACEMENT_PRICING,
+  getSponsorPricingSettings,
+} from '@/services/sponsorService';
 
 interface Package {
   id: string;
@@ -31,51 +37,59 @@ interface Package {
   popular?: boolean;
 }
 
-const PACKAGES: Package[] = [
+const PLACEMENT_OPTIONS: {
+  id: AdTargetPage;
+  name: string;
+  badge: string;
+  badgeColor: string;
+  icon: string;
+  reach: string;
+  desc: string;
+}[] = [
   {
-    id: 'starter_7d',
-    name: 'Campus Spotlight',
-    durationDays: 7,
-    price: 499,
-    originalPrice: 899,
-    tag: 'Trial Placement',
-    features: [
-      '7 Days Active across Mobile App & Web Ecosystem',
-      'Curated placement across 200+ Syllabi & Circular pages',
-      'Frictionless 1-Click Direct WhatsApp Lead Acquisition',
-      'Real-time verified impression & engagement telemetry',
-    ],
+    id: 'all',
+    name: 'All Pages (Universal Bundle)',
+    badge: 'MAX IMPACT',
+    badgeColor: 'bg-emerald-500 text-white',
+    icon: '🌟',
+    reach: '5,000+ views across all pages',
+    desc: 'Runs across Home, Syllabus, Question Papers, Notices & Tools',
   },
   {
-    id: 'growth_30d',
-    name: 'Premier Academic Partner',
-    durationDays: 30,
-    price: 1499,
-    originalPrice: 2499,
-    tag: 'Flagship Authority',
-    popular: true,
-    features: [
-      '30 Days High-Priority Prime Placement on high-traffic papers',
-      'Exclusive Featured Story on @_lazypu Instagram Network',
-      'Distinguished "CAMPUS PARTNER" Official Verified Badge',
-      'Instant Student Lead Channels (Direct WhatsApp & Voice Dial)',
-      'Unrestricted real-time creative & offer modifications',
-    ],
+    id: 'home',
+    name: 'Home Page Spotlight',
+    badge: 'PRIME ANCHOR',
+    badgeColor: 'bg-blue-600 text-white',
+    icon: '🏠',
+    reach: 'Top landing portal',
+    desc: 'Main anchor banner right beneath the live announcements strip',
   },
   {
-    id: 'semester_90d',
-    name: 'Semester Dominance',
-    durationDays: 90,
-    price: 3499,
-    originalPrice: 5999,
-    tag: 'Maximum Institutional ROI',
-    features: [
-      'Full 90 Days (Complete Semester Examination & Admission Cycle)',
-      'Permanent anchor prominence across all PU college portals',
-      '2x Dedicated Feature Posts & Reels on @_lazypu Community',
-      'VIP Verified Status with prioritized student lead routing',
-      'Comprehensive performance analytics & engagement reports',
-    ],
+    id: 'syllabus',
+    name: 'Syllabus & PYQ Section',
+    badge: 'ACADEMIC INTENT',
+    badgeColor: 'bg-amber-500 text-white',
+    icon: '📚',
+    reach: 'Active exam studiers',
+    desc: 'Prominent above 200+ semester syllabus files and question papers',
+  },
+  {
+    id: 'notices',
+    name: 'University Notices & Circulars',
+    badge: 'FAST CONVERSIONS',
+    badgeColor: 'bg-purple-600 text-white',
+    icon: '📢',
+    reach: 'Urgent exam traffic',
+    desc: 'Seen by students checking exam dates, admit cards & circulars',
+  },
+  {
+    id: 'extras',
+    name: 'Extras & Student Tools',
+    badge: 'HIGH FREQUENCY',
+    badgeColor: 'bg-rose-500 text-white',
+    icon: '⚡',
+    reach: 'Daily utility users',
+    desc: 'Displays on CGPA calculator, timetable builder and student utilities',
   },
 ];
 
@@ -105,7 +119,70 @@ const loadRazorpayScript = (): Promise<boolean> => {
 };
 
 export default function SponsorPage() {
-  const [selectedPlan, setSelectedPlan] = useState<Package>(PACKAGES[1]); // Default to Premier
+  const [targetPage, setTargetPage] = useState<AdTargetPage>('all');
+  const [pricingSettings, setPricingSettings] = useState<SponsorPlacementPricing>(DEFAULT_PLACEMENT_PRICING);
+
+  useEffect(() => {
+    getSponsorPricingSettings().then((pricing) => {
+      if (pricing) {
+        setPricingSettings(pricing);
+      }
+    });
+  }, []);
+
+  const currentTier = pricingSettings[targetPage] || DEFAULT_PLACEMENT_PRICING[targetPage];
+
+  const dynamicPackages: Package[] = [
+    {
+      id: 'starter_7d',
+      name: 'Campus Spotlight',
+      durationDays: 7,
+      price: currentTier.starter_7d,
+      originalPrice: Math.round(currentTier.starter_7d * 1.6),
+      tag: 'Trial Placement',
+      features: [
+        `7 Days Guaranteed Visibility on ${targetPage === 'all' ? 'All Pages' : targetPage.toUpperCase() + ' Page'}`,
+        'Curated placement across active college traffic',
+        'Frictionless 1-Click Direct WhatsApp Lead Acquisition',
+        'Real-time verified impression & engagement telemetry',
+      ],
+    },
+    {
+      id: 'growth_30d',
+      name: 'Premier Academic Partner',
+      durationDays: 30,
+      price: currentTier.growth_30d,
+      originalPrice: Math.round(currentTier.growth_30d * 1.6),
+      tag: 'Flagship Authority',
+      popular: true,
+      features: [
+        `30 Days High-Priority Placement on ${targetPage === 'all' ? 'All Pages' : targetPage.toUpperCase() + ' Page'}`,
+        'Exclusive Featured Story on @_lazypu Instagram Network',
+        'Distinguished "CAMPUS PARTNER" Official Verified Badge',
+        'Instant Student Lead Channels (Direct WhatsApp & Voice Dial)',
+        'Unrestricted real-time creative & offer modifications',
+      ],
+    },
+    {
+      id: 'semester_90d',
+      name: 'Semester Dominance',
+      durationDays: 90,
+      price: currentTier.semester_90d,
+      originalPrice: Math.round(currentTier.semester_90d * 1.6),
+      tag: 'Maximum Institutional ROI',
+      features: [
+        `Full 90 Days (Complete Semester) on ${targetPage === 'all' ? 'All Pages' : targetPage.toUpperCase() + ' Page'}`,
+        'Permanent anchor prominence across student sessions',
+        '2x Dedicated Feature Posts & Reels on @_lazypu Community',
+        'VIP Verified Status with prioritized student lead routing',
+        'Comprehensive performance analytics & engagement reports',
+      ],
+    },
+  ];
+
+  const [selectedPlanId, setSelectedPlanId] = useState<string>('growth_30d');
+  const selectedPlan = dynamicPackages.find((p) => p.id === selectedPlanId) || dynamicPackages[1];
+
   const [businessName, setBusinessName] = useState('');
   const [tagline, setTagline] = useState('');
   const [description, setDescription] = useState('');
@@ -135,8 +212,9 @@ export default function SponsorPage() {
         category,
         posterImage,
         targetUrl: '',
+        targetPage: targetPage,
         planId: selectedPlan.id,
-        planName: selectedPlan.name,
+        planName: `${selectedPlan.name} (${targetPage.toUpperCase()})`,
         durationDays: selectedPlan.durationDays,
         paymentAmount: selectedPlan.price,
         paymentUtr: paymentId,
@@ -280,65 +358,134 @@ export default function SponsorPage() {
           </p>
         </div>
 
-        {/* 1. Plan Selector Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-          {PACKAGES.map((pkg) => {
-            const isSelected = selectedPlan.id === pkg.id;
-            return (
-              <div
-                key={pkg.id}
-                onClick={() => setSelectedPlan(pkg)}
-                className={`relative cursor-pointer rounded-2xl border p-5 transition-all duration-200 flex flex-col justify-between ${
-                  isSelected
-                    ? 'border-orange-500 bg-gradient-to-b from-orange-50/50 via-white to-white ring-2 ring-orange-500/30 shadow-md scale-[1.01]'
-                    : 'border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-xs'
-                }`}
-              >
-                {pkg.popular && (
-                  <span className="absolute -top-3 right-4 inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-3 py-0.5 text-[9px] font-black uppercase text-white shadow-xs tracking-wider">
-                    <Crown className="h-2.5 w-2.5 text-white" />
-                    {pkg.tag}
-                  </span>
-                )}
+        {/* Step 1: Target Placement Selection */}
+        <div className="space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <div>
+              <span className="text-[10px] font-black uppercase tracking-wider text-orange-600 block">
+                STEP 1: SELECT YOUR TARGET SECTION
+              </span>
+              <h2 className="text-base sm:text-lg font-black text-slate-900">
+                Where should your sponsorship banner appear?
+              </h2>
+            </div>
+            <span className="self-start sm:self-auto rounded-full bg-orange-50 border border-orange-200 text-orange-800 text-[10px] font-black px-2.5 py-0.5">
+              5 Placement Options
+            </span>
+          </div>
 
-                <div>
-                  <div className="flex items-center justify-between pb-3.5 border-b border-slate-100">
-                    <div>
-                      <h3 className="text-sm font-black text-slate-900">{pkg.name}</h3>
-                      <span className="text-[11px] text-slate-500 font-medium">
-                        {pkg.durationDays} Days Guaranteed Visibility
-                      </span>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-xl font-black text-slate-900">₹{pkg.price}</div>
-                      <div className="text-[10px] text-slate-400 line-through">₹{pkg.originalPrice}</div>
-                    </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5">
+            {PLACEMENT_OPTIONS.map((opt) => {
+              const isSelected = targetPage === opt.id;
+              return (
+                <div
+                  key={opt.id}
+                  onClick={() => setTargetPage(opt.id)}
+                  className={`relative cursor-pointer rounded-2xl border p-3.5 transition-all duration-200 flex flex-col justify-between ${
+                    isSelected
+                      ? 'border-orange-500 bg-orange-50/50 ring-2 ring-orange-500/30 shadow-xs'
+                      : 'border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-2xs'
+                  }`}
+                >
+                  {isSelected && (
+                    <span className="absolute top-2.5 right-2.5 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-white text-[9px] font-black">
+                      ✓
+                    </span>
+                  )}
+                  <div className="space-y-1.5">
+                    <span className="text-xl block">{opt.icon}</span>
+                    <h3 className="font-black text-xs text-slate-900 leading-tight">
+                      {opt.name}
+                    </h3>
+                    <p className="text-[10px] text-slate-500 leading-snug">
+                      {opt.desc}
+                    </p>
                   </div>
 
-                  <ul className="mt-4 space-y-2 text-[11px] text-slate-600">
-                    {pkg.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <Check className="h-3.5 w-3.5 text-orange-600 shrink-0 mt-0.5" />
-                        <span className="leading-snug">{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="pt-4 mt-2">
-                  <div
-                    className={`w-full py-2 rounded-xl text-xs font-black text-center transition ${
-                      isSelected
-                        ? 'bg-orange-500 text-white shadow-xs'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {isSelected ? '✓ Selected Placement' : 'Select Plan'}
+                  <div className="pt-2.5 mt-2 border-t border-slate-100/80 flex items-center justify-between">
+                    <span className={`rounded-md px-1.5 py-0.5 text-[9px] font-black uppercase ${opt.badgeColor}`}>
+                      {opt.badge}
+                    </span>
+                    <span className="text-[9px] font-bold text-slate-400 truncate">
+                      {opt.reach}
+                    </span>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Step 2: Plan Selector Cards */}
+        <div className="space-y-3">
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-wider text-orange-600 block">
+              STEP 2: SELECT DURATION &amp; TIER
+            </span>
+            <h2 className="text-base sm:text-lg font-black text-slate-900">
+              Pick the visibility plan that fits your campaign goals
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+            {dynamicPackages.map((pkg) => {
+              const isSelected = selectedPlan.id === pkg.id;
+              return (
+                <div
+                  key={pkg.id}
+                  onClick={() => setSelectedPlanId(pkg.id)}
+                  className={`relative cursor-pointer rounded-2xl border p-5 transition-all duration-200 flex flex-col justify-between ${
+                    isSelected
+                      ? 'border-orange-500 bg-gradient-to-b from-orange-50/50 via-white to-white ring-2 ring-orange-500/30 shadow-md scale-[1.01]'
+                      : 'border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-xs'
+                  }`}
+                >
+                  {pkg.popular && (
+                    <span className="absolute -top-3 right-4 inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-3 py-0.5 text-[9px] font-black uppercase text-white shadow-xs tracking-wider">
+                      <Crown className="h-2.5 w-2.5 text-white" />
+                      {pkg.tag}
+                    </span>
+                  )}
+
+                  <div>
+                    <div className="flex items-center justify-between pb-3.5 border-b border-slate-100">
+                      <div>
+                        <h3 className="text-sm font-black text-slate-900">{pkg.name}</h3>
+                        <span className="text-[11px] text-slate-500 font-medium">
+                          {pkg.durationDays} Days Visibility on {targetPage === 'all' ? 'All Pages' : targetPage.toUpperCase()}
+                        </span>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-xl font-black text-slate-900">₹{pkg.price}</div>
+                        <div className="text-[10px] text-slate-400 line-through">₹{pkg.originalPrice}</div>
+                      </div>
+                    </div>
+
+                    <ul className="mt-4 space-y-2 text-[11px] text-slate-600">
+                      {pkg.features.map((feat, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <Check className="h-3.5 w-3.5 text-orange-600 shrink-0 mt-0.5" />
+                          <span className="leading-snug">{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-4 mt-2">
+                    <div
+                      className={`w-full py-2 rounded-xl text-xs font-black text-center transition ${
+                        isSelected
+                          ? 'bg-orange-500 text-white shadow-xs'
+                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      }`}
+                    >
+                      {isSelected ? '✓ Selected Plan' : 'Select Plan'}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* 2. Main Work Area: Form + Live Mobile Preview */}

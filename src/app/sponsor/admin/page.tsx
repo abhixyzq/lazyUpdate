@@ -37,7 +37,13 @@ import { supabase } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
 import {
   Sponsor,
+  AdTargetPage,
+  SponsorPlacementPricing,
+  DEFAULT_PLACEMENT_PRICING,
   getActiveSponsor,
+  getAllActiveSponsorsByPlacementAsync,
+  getSponsorPricingSettings,
+  updateSponsorPricingSettings,
   getAllSponsorApplicationsAsync,
   approveAndActivateSponsor,
   resetToInHouseSponsor,
@@ -54,6 +60,50 @@ import {
   PresenceStats,
   DeviceAnalytics,
 } from '@/services/telemetryService';
+
+const PLACEMENT_CONFIGS: {
+  id: AdTargetPage;
+  title: string;
+  icon: string;
+  badgeClass: string;
+  desc: string;
+}[] = [
+  {
+    id: 'home',
+    title: 'Home Page',
+    icon: '🏠',
+    badgeClass: 'bg-blue-100 text-blue-800 border-blue-200',
+    desc: 'Top prominence on main landing screen (sourcePage="home")',
+  },
+  {
+    id: 'syllabus',
+    title: 'Syllabus & PYQs',
+    icon: '📚',
+    badgeClass: 'bg-amber-100 text-amber-800 border-amber-200',
+    desc: 'High student focus above papers (sourcePage="syllabus")',
+  },
+  {
+    id: 'notices',
+    title: 'University Notices',
+    icon: '📢',
+    badgeClass: 'bg-purple-100 text-purple-800 border-purple-200',
+    desc: 'Circulars & exam notifications (sourcePage="notices")',
+  },
+  {
+    id: 'extras',
+    title: 'Extras & Tools',
+    icon: '⚡',
+    badgeClass: 'bg-rose-100 text-rose-800 border-rose-200',
+    desc: 'CGPA, timetable & student tools (sourcePage="extras")',
+  },
+  {
+    id: 'all',
+    title: 'Universal (All Pages)',
+    icon: '🌟',
+    badgeClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+    desc: 'Fallback across all pages if no section-specific ad is live',
+  },
+];
 
 export default function SponsorAdminPage() {
   // Auth states (Pure Email + Password)
@@ -86,6 +136,18 @@ export default function SponsorAdminPage() {
   const [activeFilter, setActiveFilter] = useState<'all' | 'active' | 'pending' | 'expired'>('all');
   const [stats, setStats] = useState({ impressions: 0, clicks: 0 });
 
+  // Placement-wise Live Ads & Dynamic Pricing
+  const [liveAdsByPlacement, setLiveAdsByPlacement] = useState<Record<AdTargetPage, Sponsor | null>>({
+    all: null,
+    home: null,
+    syllabus: null,
+    notices: null,
+    extras: null,
+  });
+  const [pricingSettings, setPricingSettings] = useState<SponsorPlacementPricing>(DEFAULT_PLACEMENT_PRICING);
+  const [isSavingPricing, setIsSavingPricing] = useState(false);
+  const [pricingSavedSuccess, setPricingSavedSuccess] = useState(false);
+
   // Remote Broadcast / Announcement Ticker
   const [tickerText, setTickerText] = useState('PU UG Exam Forms & Semester Results Portal Live • Download Syllabi & PYQs');
   const [tickerEnabled, setTickerEnabled] = useState(true);
@@ -103,12 +165,13 @@ export default function SponsorAdminPage() {
     posterImage: '',
     durationDays: 30,
     category: 'Coaching & Services',
+    targetPage: 'all' as AdTargetPage,
   });
 
   const loadData = async () => {
     try {
       // 1. Sponsor banner & applications
-      const active = await getActiveSponsor();
+      const active = await getActiveSponsor('all');
       setActiveSponsor(active);
       if (active.id) {
         setStats(getSponsorStats(active.id));
@@ -116,11 +179,19 @@ export default function SponsorAdminPage() {
       const apps = await getAllSponsorApplicationsAsync();
       setApplications(apps);
 
-      // 2. Device & Download analytics
+      // 2. Multi-placement active ads
+      const byPlacement = await getAllActiveSponsorsByPlacementAsync();
+      setLiveAdsByPlacement(byPlacement);
+
+      // 3. Dynamic Placement Pricing Settings
+      const pricing = await getSponsorPricingSettings();
+      setPricingSettings(pricing);
+
+      // 4. Device & Download analytics
       const devAnalytics = await getDeviceAnalyticsAsync();
       setDeviceStats(devAnalytics);
 
-      // 3. Remote Ticker Setting
+      // 5. Remote Ticker Setting
       const tickerSetting = await getRemoteAppSetting('ticker', {
         enabled: true,
         text: 'PU UG Exam Forms & Semester Results Portal Live • Download Syllabi & PYQs',
@@ -220,11 +291,12 @@ export default function SponsorAdminPage() {
     setPassword('');
   };
 
-  const handleApprove = async (id: string) => {
-    if (window.confirm('Approve this sponsor and make it LIVE across the entire app?')) {
-      const success = await approveAndActivateSponsor(id);
+  const handleApprove = async (id: string, targetPage?: AdTargetPage) => {
+    const pageLabel = targetPage ? targetPage.toUpperCase() : 'UNIVERSAL';
+    if (window.confirm(`Approve this sponsor and make it LIVE on "${pageLabel}" section?`)) {
+      const success = await approveAndActivateSponsor(id, targetPage);
       if (success) {
-        alert('Sponsor is now LIVE across the app!');
+        alert(`Sponsor is now LIVE on ${pageLabel} section!`);
         await loadData();
       } else {
         alert('Failed to activate sponsor.');
@@ -243,17 +315,47 @@ export default function SponsorAdminPage() {
     }
   };
 
-  const handleResetToInHouse = async () => {
-    if (window.confirm('Reset active banner to the default In-House partner promotion?')) {
-      await resetToInHouseSponsor();
+  const handleResetToInHouse = async (placement?: string) => {
+    const label = placement ? placement.toUpperCase() : 'UNIVERSAL';
+    if (window.confirm(`Reset active banner on ${label} to the default In-House partner promotion?`)) {
+      await resetToInHouseSponsor(placement);
       await loadData();
+    }
+  };
+
+  const handleOpenQuickCreate = (targetPage: AdTargetPage = 'all') => {
+    setQuickForm({
+      businessName: '',
+      tagline: '',
+      description: '',
+      whatsappNumber: '',
+      phone: '',
+      posterImage: '',
+      durationDays: 30,
+      category: 'Coaching & Services',
+      targetPage: targetPage,
+    });
+    setIsQuickCreateOpen(true);
+  };
+
+  const handleSavePricing = async () => {
+    setIsSavingPricing(true);
+    setPricingSavedSuccess(false);
+    const success = await updateSponsorPricingSettings(pricingSettings);
+    setIsSavingPricing(false);
+    if (success) {
+      setPricingSavedSuccess(true);
+      setTimeout(() => setPricingSavedSuccess(false), 3000);
+      alert('Sponsorship pricing updated successfully across all sections!');
+    } else {
+      alert('Failed to update pricing settings in Supabase.');
     }
   };
 
   const handleQuickCreateSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!quickForm.businessName || !quickForm.tagline || !quickForm.whatsappNumber) {
-      alert('Please fill required fields');
+      alert('Please fill required fields (Business Name, Tagline, WhatsApp)');
       return;
     }
 
@@ -274,16 +376,24 @@ export default function SponsorAdminPage() {
       startDate: now.toISOString(),
       endDate: end.toISOString(),
       status: 'active',
+      targetPage: quickForm.targetPage,
       isInHouse: false,
+      paymentUtr: 'ADMIN_DIRECT',
+      paymentAmount: 0,
+      paymentMethod: 'offline',
+      planId: 'custom',
+      planName: `Admin Direct (${quickForm.targetPage.toUpperCase()})`,
       impressions: 0,
       clicks: 0,
       createdAt: now.toISOString(),
     };
 
-    await setCustomActiveSponsor(newSponsor);
-    setIsQuickCreateOpen(false);
-    await loadData();
-    alert('New sponsor is now LIVE across Lazy PU!');
+    const success = await setCustomActiveSponsor(newSponsor);
+    if (success) {
+      setIsQuickCreateOpen(false);
+      await loadData();
+      alert(`New sponsor is now LIVE on "${quickForm.targetPage.toUpperCase()}" section!`);
+    }
   };
 
   const handleSaveTicker = async () => {
@@ -672,66 +782,253 @@ export default function SponsorAdminPage() {
         {activeTab === 'sponsors' && (
           <div className="space-y-4">
             
-            {/* Live Banner Spotlight */}
-            <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-3">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
+            {/* 1. Multi-Placement Live Ads Controller */}
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">
-                    Currently Displayed Banner
+                    Concurrent Placement Engine
                   </span>
                   <div className="flex items-center gap-2 pt-0.5">
                     <h3 className="text-base font-black text-slate-900">
-                      {activeSponsor.businessName}
+                      Live Ads by App Section / Page
                     </h3>
-                    <span
-                      className={`rounded-md px-2 py-0.5 text-[10px] font-black uppercase ${
-                        activeSponsor.isInHouse
-                          ? 'bg-blue-100 text-blue-800'
-                          : 'bg-emerald-100 text-emerald-800'
-                      }`}
-                    >
-                      {activeSponsor.isInHouse ? 'In-House Partner' : 'Paid Sponsor Active'}
+                    <span className="rounded-md bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-black px-2 py-0.5">
+                      Multi-Ad Live
                     </span>
                   </div>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    Different advertisers can run live ads simultaneously across different pages.
+                  </p>
                 </div>
 
-                <div className="flex items-center gap-2">
-                  {!activeSponsor.isInHouse && (
-                    <button
-                      onClick={handleResetToInHouse}
-                      className="rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-700 px-3 py-1.5 text-xs font-bold transition cursor-pointer"
-                    >
-                      Revert to In-House
-                    </button>
-                  )}
-                  <button
-                    onClick={() => setIsQuickCreateOpen(true)}
-                    className="inline-flex items-center gap-1 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 text-xs font-bold transition shadow-xs cursor-pointer"
-                  >
-                    <Plus className="h-3.5 w-3.5" />
-                    <span>Set Custom Sponsor</span>
-                  </button>
-                </div>
+                <button
+                  onClick={() => handleOpenQuickCreate('all')}
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-xs font-bold transition shadow-xs cursor-pointer shrink-0"
+                >
+                  <Plus className="h-4 w-4" />
+                  <span>Launch Custom Ad</span>
+                </button>
               </div>
 
-              {/* Performance Stats of Active Banner */}
-              <div className="grid grid-cols-3 gap-2 text-center pt-1">
-                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
-                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Views</span>
-                  <span className="text-base font-black text-slate-900">{stats.impressions}</span>
+              {/* 5 Placement Cards Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {PLACEMENT_CONFIGS.map((cfg) => {
+                  const liveAd = liveAdsByPlacement[cfg.id];
+                  const hasActiveAd = Boolean(liveAd && liveAd.status === 'active');
+                  const daysRemaining = liveAd
+                    ? Math.max(0, Math.ceil((new Date(liveAd.endDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24)))
+                    : 0;
+
+                  return (
+                    <div
+                      key={cfg.id}
+                      className={`rounded-2xl border p-3.5 flex flex-col justify-between space-y-3 transition ${
+                        hasActiveAd
+                          ? 'border-emerald-300 bg-emerald-50/20'
+                          : 'border-slate-200 bg-slate-50/50'
+                      }`}
+                    >
+                      <div>
+                        {/* Header */}
+                        <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100">
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-base">{cfg.icon}</span>
+                            <span className="text-xs font-black text-slate-900">{cfg.title}</span>
+                          </div>
+                          <span
+                            className={`rounded-md px-1.5 py-0.5 text-[10px] font-black uppercase ${
+                              hasActiveAd
+                                ? 'bg-emerald-100 text-emerald-800'
+                                : 'bg-slate-200/80 text-slate-600'
+                            }`}
+                          >
+                            {hasActiveAd ? 'Ad Live' : 'Default In-House'}
+                          </span>
+                        </div>
+
+                        {/* Content */}
+                        <div className="pt-2">
+                          {hasActiveAd && liveAd ? (
+                            <div className="space-y-1.5">
+                              <h4 className="text-xs font-black text-slate-900 flex items-center gap-1">
+                                <span className="truncate">{liveAd.businessName}</span>
+                                <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+                              </h4>
+                              <p className="text-[11px] font-medium text-slate-600 line-clamp-2">
+                                {liveAd.tagline}
+                              </p>
+                              {liveAd.description && (
+                                <p className="text-[10px] text-slate-500 italic line-clamp-1">
+                                  &quot;{liveAd.description}&quot;
+                                </p>
+                              )}
+                              <div className="flex items-center gap-2 pt-1 text-[10px] text-slate-500 font-semibold">
+                                <span className="rounded-md bg-emerald-100 text-emerald-800 font-black px-1.5 py-0.2">
+                                  {daysRemaining}d remaining
+                                </span>
+                                <span>Ends {new Date(liveAd.endDate).toLocaleDateString()}</span>
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="space-y-1 py-1">
+                              <p className="text-xs font-semibold text-slate-700">
+                                In-House Partner Promotion
+                              </p>
+                              <p className="text-[10px] text-slate-400">
+                                {cfg.desc}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Card Actions */}
+                      <div className="pt-2 border-t border-slate-100/80 flex items-center justify-between gap-1.5">
+                        <button
+                          onClick={() => handleOpenQuickCreate(cfg.id)}
+                          className="flex-1 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-bold px-2.5 py-1.5 text-[11px] transition text-center cursor-pointer shadow-2xs"
+                        >
+                          {hasActiveAd ? 'Switch Ad' : '+ Place Ad Here'}
+                        </button>
+                        {hasActiveAd && (
+                          <button
+                            onClick={() => handleResetToInHouse(cfg.id)}
+                            className="rounded-xl border border-rose-200 text-rose-600 hover:bg-rose-50 px-2 py-1.5 text-[11px] font-bold transition cursor-pointer"
+                            title="Reset this section to In-House"
+                          >
+                            Revert
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 2. Dynamic Placement Pricing Manager */}
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-base">💰</span>
+                    <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider">
+                      Dynamic Placement Pricing (for Sponsor Form)
+                    </h3>
+                  </div>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    Configure prices for each placement. When advertisers visit <code className="bg-slate-100 px-1 py-0.5 rounded text-blue-600 font-bold">/sponsor</code>, prices dynamically adapt based on their selected placement.
+                  </p>
                 </div>
 
-                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
-                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Leads (Clicks)</span>
-                  <span className="text-base font-black text-emerald-600">{stats.clicks}</span>
-                </div>
+                <button
+                  onClick={handleSavePricing}
+                  disabled={isSavingPricing}
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white font-black px-4 py-2 text-xs transition active:scale-95 shadow-xs cursor-pointer shrink-0"
+                >
+                  {isSavingPricing ? (
+                    'Saving Prices...'
+                  ) : pricingSavedSuccess ? (
+                    <>
+                      <Check className="h-3.5 w-3.5 text-emerald-400" />
+                      <span>Prices Saved Live!</span>
+                    </>
+                  ) : (
+                    <>
+                      <CheckCircle2 className="h-3.5 w-3.5 text-blue-400" />
+                      <span>Save Pricing Live</span>
+                    </>
+                  )}
+                </button>
+              </div>
 
-                <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-2.5">
-                  <span className="text-[10px] font-bold text-slate-400 block uppercase">CTR Ratio</span>
-                  <span className="text-base font-black text-blue-600">
-                    {((stats.clicks / Math.max(stats.impressions, 1)) * 100).toFixed(1)}%
-                  </span>
-                </div>
+              {/* Pricing Cards for 5 Placements */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                {PLACEMENT_CONFIGS.map((cfg) => {
+                  const tier = pricingSettings[cfg.id] || DEFAULT_PLACEMENT_PRICING[cfg.id];
+                  return (
+                    <div
+                      key={cfg.id}
+                      className="rounded-2xl border border-slate-200/90 bg-slate-50/70 p-3.5 space-y-2.5 shadow-2xs"
+                    >
+                      <div className="flex items-center gap-1.5 pb-2 border-b border-slate-200/60">
+                        <span className="text-base">{cfg.icon}</span>
+                        <span className="text-xs font-black text-slate-900 truncate">
+                          {cfg.title}
+                        </span>
+                      </div>
+
+                      <div className="space-y-2 pt-0.5 text-xs">
+                        <div>
+                          <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                            7 Days (Starter)
+                          </label>
+                          <div className="relative mt-0.5">
+                            <span className="absolute left-2.5 top-1.5 text-xs font-bold text-slate-400">₹</span>
+                            <input
+                              type="number"
+                              min={0}
+                              value={tier.starter_7d}
+                              onChange={(e) => {
+                                const val = Number(e.target.value);
+                                setPricingSettings((prev) => ({
+                                  ...prev,
+                                  [cfg.id]: { ...prev[cfg.id], starter_7d: val },
+                                }));
+                              }}
+                              className="w-full pl-6 pr-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-hidden focus:border-blue-600 shadow-2xs"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                            30 Days (Premier)
+                          </label>
+                          <div className="relative mt-0.5">
+                            <span className="absolute left-2.5 top-1.5 text-xs font-bold text-slate-400">₹</span>
+                            <input
+                              type="number"
+                              min={0}
+                              value={tier.growth_30d}
+                              onChange={(e) => {
+                                const val = Number(e.target.value);
+                                setPricingSettings((prev) => ({
+                                  ...prev,
+                                  [cfg.id]: { ...prev[cfg.id], growth_30d: val },
+                                }));
+                              }}
+                              className="w-full pl-6 pr-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-hidden focus:border-blue-600 shadow-2xs"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                            90 Days (Semester)
+                          </label>
+                          <div className="relative mt-0.5">
+                            <span className="absolute left-2.5 top-1.5 text-xs font-bold text-slate-400">₹</span>
+                            <input
+                              type="number"
+                              min={0}
+                              value={tier.semester_90d}
+                              onChange={(e) => {
+                                const val = Number(e.target.value);
+                                setPricingSettings((prev) => ({
+                                  ...prev,
+                                  [cfg.id]: { ...prev[cfg.id], semester_90d: val },
+                                }));
+                              }}
+                              className="w-full pl-6 pr-2.5 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-hidden focus:border-blue-600 shadow-2xs"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -797,6 +1094,9 @@ export default function SponsorAdminPage() {
                             >
                               {app.status}
                             </span>
+                            <span className="rounded-md bg-slate-100 border border-slate-200 text-slate-700 text-[10px] font-black px-2 py-0.5 uppercase">
+                              Target: {app.targetPage ? app.targetPage.toUpperCase() : 'UNIVERSAL'}
+                            </span>
                             {app.paymentMethod === 'razorpay' && (
                               <span className="rounded-md bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold px-1.5 py-0.2">
                                 Razorpay Verified
@@ -812,7 +1112,7 @@ export default function SponsorAdminPage() {
                         <div className="flex items-center gap-1.5">
                           {app.status !== 'active' && (
                             <button
-                              onClick={() => handleApprove(app.id)}
+                              onClick={() => handleApprove(app.id, app.targetPage)}
                               className="rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 text-xs font-black shadow-2xs transition active:scale-95 cursor-pointer"
                             >
                               Approve & Go Live
@@ -980,6 +1280,26 @@ export default function SponsorAdminPage() {
               <form onSubmit={handleQuickCreateSubmit} className="space-y-3 text-xs">
                 <div>
                   <label className="block font-bold text-slate-700 mb-1">
+                    Target Section / Page Placement *
+                  </label>
+                  <select
+                    value={quickForm.targetPage}
+                    onChange={(e) => setQuickForm({ ...quickForm, targetPage: e.target.value as AdTargetPage })}
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 font-bold text-slate-800 focus:bg-white focus:outline-hidden"
+                  >
+                    <option value="all">🌟 All Pages (Universal Fallback)</option>
+                    <option value="home">🏠 Home Page Only (Main Top Banner)</option>
+                    <option value="syllabus">📚 Syllabus & Question Papers Page</option>
+                    <option value="notices">📢 University Notices & Circulars</option>
+                    <option value="extras">⚡ Extras & Student Tools Page</option>
+                  </select>
+                  <p className="text-[10px] text-slate-400 mt-1">
+                    Select which page this ad will run on. Different ads can run on different pages at the same time!
+                  </p>
+                </div>
+
+                <div>
+                  <label className="block font-bold text-slate-700 mb-1">
                     Business Name *
                   </label>
                   <input
@@ -987,7 +1307,7 @@ export default function SponsorAdminPage() {
                     required
                     value={quickForm.businessName}
                     onChange={(e) => setQuickForm({ ...quickForm, businessName: e.target.value })}
-                    placeholder="e.g. Drishti IAS / Patna Boys PG"
+                    placeholder="e.g. Drishti IAS / Patna Boys PG / Spark Classes"
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 focus:bg-white focus:outline-hidden"
                   />
                 </div>
@@ -1001,8 +1321,24 @@ export default function SponsorAdminPage() {
                     required
                     value={quickForm.tagline}
                     onChange={(e) => setQuickForm({ ...quickForm, tagline: e.target.value })}
-                    placeholder="e.g. Special Discount for PU Students"
+                    placeholder="e.g. Special 25% Discount for PU Students"
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 focus:bg-white focus:outline-hidden"
+                  />
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="block font-bold text-slate-700">
+                      Ad Description / Offer Details
+                    </label>
+                    <span className="text-[10px] text-slate-400">Shown below tagline in student banner</span>
+                  </div>
+                  <textarea
+                    rows={3}
+                    value={quickForm.description}
+                    onChange={(e) => setQuickForm({ ...quickForm, description: e.target.value })}
+                    placeholder="e.g. Comprehensive BPSC/UPSC Prelims batch starts next Monday. High quality notes, AC study rooms & personalized mentorship near Patna University campus."
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 focus:bg-white focus:outline-hidden leading-relaxed"
                   />
                 </div>
 
@@ -1023,15 +1359,36 @@ export default function SponsorAdminPage() {
 
                   <div>
                     <label className="block font-bold text-slate-700 mb-1">
-                      Duration (Days)
+                      Duration (Days) *
                     </label>
                     <input
                       type="number"
+                      required
+                      min={1}
                       value={quickForm.durationDays}
                       onChange={(e) => setQuickForm({ ...quickForm, durationDays: Number(e.target.value) })}
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 focus:bg-white focus:outline-hidden"
                     />
                   </div>
+                </div>
+
+                {/* Quick duration chips */}
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] font-bold text-slate-400">Quick Duration:</span>
+                  {[7, 15, 30, 90].map((d) => (
+                    <button
+                      key={d}
+                      type="button"
+                      onClick={() => setQuickForm({ ...quickForm, durationDays: d })}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition cursor-pointer ${
+                        quickForm.durationDays === d
+                          ? 'bg-blue-600 text-white shadow-2xs'
+                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      }`}
+                    >
+                      {d}d
+                    </button>
+                  ))}
                 </div>
 
                 <div>
@@ -1042,7 +1399,7 @@ export default function SponsorAdminPage() {
                     type="url"
                     value={quickForm.posterImage}
                     onChange={(e) => setQuickForm({ ...quickForm, posterImage: e.target.value })}
-                    placeholder="https://..."
+                    placeholder="https://images.unsplash.com/... or hosted poster link"
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 p-2.5 focus:bg-white focus:outline-hidden"
                   />
                 </div>
