@@ -617,12 +617,12 @@ export default function SponsorPage() {
                   <label className="block text-xs font-semibold text-slate-700 mb-1">
                     Campus Value Proposition / Brief Details (Optional)
                   </label>
-                  <input
-                    type="text"
+                  <textarea
+                    rows={3}
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     placeholder="e.g. Located right opposite Patna College, Ashok Rajpath. Free comprehensive study module included."
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition leading-relaxed resize-none"
                   />
                 </div>
 

@@ -133,7 +133,9 @@ export function subscribeToLivePresence(
   }
 
   try {
-    const channel = supabase.channel('lazy_campus_live_admin');
+    // BUGFIX: Must join the SAME channel as students ('lazy_campus_live') to see their presence.
+    // Previously used 'lazy_campus_live_admin' which was a separate channel — count was always 0.
+    const channel = supabase.channel('lazy_campus_live');
 
     const updatePresence = () => {
       const state = channel.presenceState();

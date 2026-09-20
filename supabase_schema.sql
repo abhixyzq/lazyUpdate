@@ -57,19 +57,22 @@ create policy "Allow public insert of applications"
   for insert
   with check (true);
 
--- Policy 3: Allow incrementing impressions & clicks
+-- Policy 3: Allow incrementing impressions & clicks (ONLY those 2 columns, anon can't change status)
 drop policy if exists "Allow updating impressions and clicks" on public.sponsors;
 create policy "Allow updating impressions and clicks"
   on public.sponsors
   for update
-  using (true)
-  with check (true);
+  using (status = 'active')
+  with check (status = 'active');
 
--- Policy 4: Allow reading all applications for admin
+-- Policy 4: Authenticated admins can read ALL sponsor rows (including pending/expired)
+-- NOTE: Policy "Allow all reads for service role and admin" REMOVED — it was open to all anon users.
+-- Admins access full data via Supabase Auth (signInWithPassword) + authenticated role.
 drop policy if exists "Allow all reads for service role and admin" on public.sponsors;
-create policy "Allow all reads for service role and admin"
+create policy "Allow authenticated admin full read"
   on public.sponsors
   for select
+  to authenticated
   using (true);
 
 -- 4. Stored Procedure to atomically record impression
@@ -130,10 +133,14 @@ create policy "Allow public read app_settings"
   for select
   using (true);
 
+-- SECURITY FIX: Only authenticated admins can write/update app_settings (ticker, pricing etc.)
+-- Anonymous users (students) can only READ app_settings.
 drop policy if exists "Allow update app_settings" on public.app_settings;
-create policy "Allow update app_settings"
+drop policy if exists "Allow admin write app_settings" on public.app_settings;
+create policy "Allow admin write app_settings"
   on public.app_settings
   for all
+  to authenticated
   using (true)
   with check (true);
 
@@ -198,4 +205,41 @@ values
     }
   }'::jsonb)
 on conflict (key) do nothing;
+
+-- ==========================================================
+-- OPTIONAL: Custom Emergency / Pinned Campus Notices Table
+-- (Allows Admin to pin emergency circulars to the /notices page)
+-- ==========================================================
+create table if not exists public.custom_notices (
+  id text primary key,
+  title text not null,
+  date text not null,
+  url text not null,
+  category text default 'Circulars',
+  is_pinned boolean default false,
+  created_at timestamptz default now()
+);
+
+alter table public.custom_notices enable row level security;
+
+-- Public read for custom notices (Auto-filters notices older than 6 months)
+drop policy if exists "Allow public read custom_notices" on public.custom_notices;
+create policy "Allow public read custom_notices"
+  on public.custom_notices for select
+  using (created_at >= now() - interval '6 months');
+
+-- Admin write for custom notices
+drop policy if exists "Allow admin write custom_notices" on public.custom_notices;
+create policy "Allow admin write custom_notices"
+  on public.custom_notices for all to authenticated
+  using (true) with check (true);
+
+-- Optional: Auto-cleanup function to permanently purge notices older than 6 months
+create or replace function public.cleanup_old_notices()
+returns void as $$
+begin
+  delete from public.custom_notices
+  where created_at < now() - interval '6 months';
+end;
+$$ language plpgsql security definer;
 

@@ -154,6 +154,13 @@ export default function SponsorAdminPage() {
   const [isSavingTicker, setIsSavingTicker] = useState(false);
   const [tickerSavedSuccess, setTickerSavedSuccess] = useState(false);
 
+  // Inline notification state (replaces alert() popups)
+  const [inlineToast, setInlineToast] = useState<{ type: 'success' | 'error'; msg: string } | null>(null);
+  const showToast = (type: 'success' | 'error', msg: string) => {
+    setInlineToast({ type, msg });
+    setTimeout(() => setInlineToast(null), 4000);
+  };
+
   // Quick Direct Sponsor Modal
   const [isQuickCreateOpen, setIsQuickCreateOpen] = useState(false);
   const [quickForm, setQuickForm] = useState({
@@ -296,10 +303,10 @@ export default function SponsorAdminPage() {
     if (window.confirm(`Approve this sponsor and make it LIVE on "${pageLabel}" section?`)) {
       const success = await approveAndActivateSponsor(id, targetPage);
       if (success) {
-        alert(`Sponsor is now LIVE on ${pageLabel} section!`);
+        showToast('success', `Sponsor is now LIVE on ${pageLabel} section!`);
         await loadData();
       } else {
-        alert('Failed to activate sponsor.');
+        showToast('error', 'Failed to activate sponsor. Check Supabase connection.');
       }
     }
   };
@@ -308,9 +315,10 @@ export default function SponsorAdminPage() {
     if (window.confirm(`Delete sponsor application from "${name}"?`)) {
       const success = await deleteSponsorApplication(id);
       if (success) {
+        showToast('success', `"${name}" deleted successfully.`);
         await loadData();
       } else {
-        alert('Failed to delete application.');
+        showToast('error', 'Failed to delete. Try again.');
       }
     }
   };
@@ -346,9 +354,9 @@ export default function SponsorAdminPage() {
     if (success) {
       setPricingSavedSuccess(true);
       setTimeout(() => setPricingSavedSuccess(false), 3000);
-      alert('Sponsorship pricing updated successfully across all sections!');
+      showToast('success', 'Sponsorship pricing updated across all sections!');
     } else {
-      alert('Failed to update pricing settings in Supabase.');
+      showToast('error', 'Failed to update pricing. Check Supabase connection.');
     }
   };
 
@@ -392,7 +400,9 @@ export default function SponsorAdminPage() {
     if (success) {
       setIsQuickCreateOpen(false);
       await loadData();
-      alert(`New sponsor is now LIVE on "${quickForm.targetPage.toUpperCase()}" section!`);
+      showToast('success', `New sponsor is now LIVE on "${quickForm.targetPage.toUpperCase()}" section!`);
+    } else {
+      showToast('error', 'Failed to set sponsor live. Check Supabase.');
     }
   };
 
@@ -408,8 +418,9 @@ export default function SponsorAdminPage() {
     if (success) {
       setTickerSavedSuccess(true);
       setTimeout(() => setTickerSavedSuccess(false), 3000);
+      showToast('success', 'Announcement ticker broadcasted live!');
     } else {
-      alert('Failed to update ticker settings in Supabase.');
+      showToast('error', 'Failed to update ticker. Check Supabase connection.');
     }
   };
 
@@ -505,7 +516,19 @@ export default function SponsorAdminPage() {
 
       <main className="mx-auto max-w-5xl px-3 pt-4 space-y-4">
         
-        {/* Top Control Strip with Live Indicator */}
+        {/* Inline Toast Notification — replaces alert() popups */}
+        {inlineToast && (
+          <div
+            className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-2.5 rounded-2xl border px-4 py-3 text-xs font-bold shadow-xl animate-in slide-in-from-top-2 duration-200 ${
+              inlineToast.type === 'success'
+                ? 'bg-emerald-50 border-emerald-300 text-emerald-900'
+                : 'bg-rose-50 border-rose-300 text-rose-900'
+            }`}
+          >
+            <span>{inlineToast.type === 'success' ? '✅' : '❌'}</span>
+            <span>{inlineToast.msg}</span>
+          </div>
+        )}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-2xs">
           <div className="flex flex-wrap items-center gap-2">
             <span className="relative flex h-2.5 w-2.5">
