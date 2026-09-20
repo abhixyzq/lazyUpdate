@@ -1,5 +1,7 @@
 'use client';
 
+import { supabase } from '@/lib/supabase';
+
 export interface Sponsor {
   id: string;
   businessName: string;
@@ -64,34 +66,86 @@ export const DEFAULT_INHOUSE_SPONSOR: Sponsor = {
   createdAt: '2026-01-01T00:00:00.000Z',
 };
 
+// Helper: map Supabase row to Sponsor interface
+function mapRowToSponsor(row: any): Sponsor {
+  return {
+    id: row.id,
+    businessName: row.business_name || '',
+    tagline: row.tagline || '',
+    description: row.description || '',
+    badge: row.badge || 'CAMPUS PARTNER',
+    posterImage: row.poster_image || '',
+    targetUrl: row.target_url || '',
+    whatsappNumber: row.whatsapp_number || '',
+    whatsappMessage: row.whatsapp_message || '',
+    phone: row.phone || '',
+    category: row.category || '',
+    startDate: row.start_date || new Date().toISOString(),
+    endDate: row.end_date || new Date().toISOString(),
+    status: row.status || 'pending',
+    planId: row.plan_id || '',
+    planName: row.plan_name || '',
+    paymentUtr: row.payment_utr || '',
+    paymentAmount: row.payment_amount ? Number(row.payment_amount) : 0,
+    paymentMethod: row.payment_method || 'razorpay',
+    applicantName: row.applicant_name || '',
+    applicantEmail: row.applicant_email || '',
+    applicantPhone: row.applicant_phone || '',
+    isInHouse: Boolean(row.is_in_house),
+    impressions: row.impressions ? Number(row.impressions) : 0,
+    clicks: row.clicks ? Number(row.clicks) : 0,
+    createdAt: row.created_at || new Date().toISOString(),
+  };
+}
+
 /**
  * Retrieves the currently active sponsor banner.
- * Validates expiration dates automatically.
+ * First checks Supabase, then local storage, then static fallback.
  */
 export async function getActiveSponsor(): Promise<Sponsor> {
-  if (typeof window === 'undefined') {
-    return DEFAULT_INHOUSE_SPONSOR;
+  // 1. If Supabase is connected, query active sponsor from DB
+  if (supabase) {
+    try {
+      const now = new Date().toISOString();
+      const { data, error } = await supabase
+        .from('sponsors')
+        .select('*')
+        .eq('status', 'active')
+        .gte('end_date', now)
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+      if (data && !error) {
+        return mapRowToSponsor(data);
+      }
+    } catch (err) {
+      console.warn('[sponsorService] Supabase getActiveSponsor error:', err);
+    }
   }
 
-  try {
-    // 1. Check local storage override first (set by admin)
-    const stored = localStorage.getItem(STORAGE_KEY_ACTIVE);
-    if (stored) {
-      const parsed: Sponsor = JSON.parse(stored);
-      if (parsed && parsed.status === 'active') {
-        const now = new Date();
-        const end = new Date(parsed.endDate);
-        if (end >= now || parsed.isInHouse) {
-          return parsed;
-        } else {
-          // Expired, mark as expired
-          parsed.status = 'expired';
-          localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(parsed));
+  // 2. Check local storage override
+  if (typeof window !== 'undefined') {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY_ACTIVE);
+      if (stored) {
+        const parsed: Sponsor = JSON.parse(stored);
+        if (parsed && parsed.status === 'active') {
+          const now = new Date();
+          const end = new Date(parsed.endDate);
+          if (end >= now || parsed.isInHouse) {
+            return parsed;
+          } else {
+            parsed.status = 'expired';
+            localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(parsed));
+          }
         }
       }
+    } catch {
+      // ignore
     }
 
-    // 2. Fetch from public/sponsors.json
+    // 3. Fallback to public/sponsors.json
     try {
       const res = await fetch('/sponsors.json', { cache: 'no-store' });
       if (res.ok) {
@@ -105,10 +159,8 @@ export async function getActiveSponsor(): Promise<Sponsor> {
         }
       }
     } catch {
-      // ignore fetch error
+      // ignore
     }
-  } catch (err) {
-    console.warn('[sponsorService] Error fetching active sponsor:', err);
   }
 
   return DEFAULT_INHOUSE_SPONSOR;
@@ -119,6 +171,27 @@ export async function getActiveSponsor(): Promise<Sponsor> {
  */
 export function recordImpression(sponsorId: string): void {
   if (typeof window === 'undefined' || !sponsorId) return;
+
+  // 1. Update Supabase if available
+  const client = supabase;
+  if (client) {
+    try {
+      client.rpc('increment_sponsor_impression', { target_id: sponsorId }).then(({ error }) => {
+        if (error && client) {
+          // fallback direct update if function not created
+          client.from('sponsors').select('impressions').eq('id', sponsorId).single().then(({ data }) => {
+            if (data && client) {
+              client.from('sponsors').update({ impressions: (data.impressions || 0) + 1 }).eq('id', sponsorId);
+            }
+          });
+        }
+      });
+    } catch {
+      // ignore
+    }
+  }
+
+  // 2. Cache in localStorage
   try {
     const raw = localStorage.getItem(STORAGE_KEY_STATS) || '{}';
     const stats = JSON.parse(raw);
@@ -137,6 +210,26 @@ export function recordImpression(sponsorId: string): void {
  */
 export function recordClick(sponsorId: string): void {
   if (typeof window === 'undefined' || !sponsorId) return;
+
+  // 1. Update Supabase if available
+  const client = supabase;
+  if (client) {
+    try {
+      client.rpc('increment_sponsor_click', { target_id: sponsorId }).then(({ error }) => {
+        if (error && client) {
+          client.from('sponsors').select('clicks').eq('id', sponsorId).single().then(({ data }) => {
+            if (data && client) {
+              client.from('sponsors').update({ clicks: (data.clicks || 0) + 1 }).eq('id', sponsorId);
+            }
+          });
+        }
+      });
+    } catch {
+      // ignore
+    }
+  }
+
+  // 2. Cache in localStorage
   try {
     const raw = localStorage.getItem(STORAGE_KEY_STATS) || '{}';
     const stats = JSON.parse(raw);
@@ -167,7 +260,8 @@ export function getSponsorStats(sponsorId: string): { impressions: number; click
 }
 
 /**
- * Submit a new sponsor application from the landing page.
+ * Submit a new Sponsor Application.
+ * Stores in Supabase database & caches locally.
  */
 export async function submitSponsorApplication(data: {
   businessName: string;
@@ -175,7 +269,7 @@ export async function submitSponsorApplication(data: {
   description?: string;
   whatsappNumber: string;
   phone?: string;
-  category: string;
+  category?: string;
   posterImage?: string;
   targetUrl?: string;
   planId: string;
@@ -221,6 +315,47 @@ export async function submitSponsorApplication(data: {
     createdAt: now.toISOString(),
   };
 
+  // 1. Save to Supabase
+  if (supabase) {
+    try {
+      const { error } = await supabase.from('sponsors').insert({
+        id: application.id,
+        business_name: application.businessName,
+        tagline: application.tagline,
+        description: application.description,
+        badge: application.badge,
+        poster_image: application.posterImage,
+        target_url: application.targetUrl,
+        whatsapp_number: application.whatsappNumber,
+        whatsapp_message: application.whatsappMessage,
+        phone: application.phone,
+        category: application.category,
+        start_date: application.startDate,
+        end_date: application.endDate,
+        status: 'pending',
+        plan_id: application.planId,
+        plan_name: application.planName,
+        payment_utr: application.paymentUtr,
+        payment_amount: application.paymentAmount,
+        payment_method: application.paymentMethod,
+        applicant_name: application.applicantName,
+        applicant_email: application.applicantEmail,
+        applicant_phone: application.applicantPhone,
+        is_in_house: false,
+        impressions: 0,
+        clicks: 0,
+        created_at: application.createdAt,
+      });
+
+      if (error) {
+        console.warn('[sponsorService] Supabase insert warning:', error);
+      }
+    } catch (e) {
+      console.error('[sponsorService] Supabase insert error:', e);
+    }
+  }
+
+  // 2. Cache in localStorage
   if (typeof window !== 'undefined') {
     try {
       const raw = localStorage.getItem(STORAGE_KEY_APPLICATIONS) || '[]';
@@ -238,6 +373,25 @@ export async function submitSponsorApplication(data: {
 /**
  * Retrieve all sponsor applications for the Admin Panel.
  */
+export async function getAllSponsorApplicationsAsync(): Promise<Sponsor[]> {
+  if (supabase) {
+    try {
+      const { data, error } = await supabase
+        .from('sponsors')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (data && !error) {
+        return data.map(mapRowToSponsor);
+      }
+    } catch (e) {
+      console.warn('[sponsorService] Supabase getAllSponsorApplications error:', e);
+    }
+  }
+
+  return getAllSponsorApplications();
+}
+
 export function getAllSponsorApplications(): Sponsor[] {
   if (typeof window === 'undefined') return [];
   try {
@@ -251,55 +405,120 @@ export function getAllSponsorApplications(): Sponsor[] {
 /**
  * Admin action: Approve an application and make it the live active sponsor.
  */
-export function approveAndActivateSponsor(sponsorId: string): boolean {
-  if (typeof window === 'undefined') return false;
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY_APPLICATIONS) || '[]';
-    const list: Sponsor[] = JSON.parse(raw);
-    const target = list.find((s) => s.id === sponsorId);
-    if (!target) return false;
+export async function approveAndActivateSponsor(sponsorId: string): Promise<boolean> {
+  const now = new Date();
+  let durationDays = 30;
 
-    target.status = 'active';
-    const now = new Date();
-    // Default 30 days if not set
-    const days = target.planId === 'starter_7d' ? 7 : target.planId === 'semester_90d' ? 90 : 30;
-    target.startDate = now.toISOString();
-    target.endDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000).toISOString();
+  // 1. Update Supabase if available
+  if (supabase) {
+    try {
+      // First get application
+      const { data } = await supabase.from('sponsors').select('*').eq('id', sponsorId).single();
+      if (data) {
+        durationDays = data.duration_days || (data.plan_id === 'starter_7d' ? 7 : data.plan_id === 'semester_90d' ? 90 : 30);
+        const endDate = new Date(now.getTime() + durationDays * 24 * 60 * 60 * 1000).toISOString();
 
-    // Update applications list
-    localStorage.setItem(STORAGE_KEY_APPLICATIONS, JSON.stringify(list));
+        // Deactivate old active sponsors first
+        await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
 
-    // Set as active sponsor
-    localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(target));
-    return true;
-  } catch (e) {
-    console.error('[sponsorService] Approval failed:', e);
-    return false;
+        // Activate target sponsor
+        await supabase.from('sponsors').update({
+          status: 'active',
+          start_date: now.toISOString(),
+          end_date: endDate,
+        }).eq('id', sponsorId);
+      }
+    } catch (e) {
+      console.warn('[sponsorService] Supabase approval error:', e);
+    }
   }
+
+  // 2. Update localStorage
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_APPLICATIONS) || '[]';
+      const list: Sponsor[] = JSON.parse(raw);
+      const target = list.find((s) => s.id === sponsorId);
+      if (target) {
+        target.status = 'active';
+        const days = target.planId === 'starter_7d' ? 7 : target.planId === 'semester_90d' ? 90 : 30;
+        target.startDate = now.toISOString();
+        target.endDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000).toISOString();
+
+        localStorage.setItem(STORAGE_KEY_APPLICATIONS, JSON.stringify(list));
+        localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(target));
+      }
+      return true;
+    } catch (e) {
+      console.error('[sponsorService] Local approval error:', e);
+      return false;
+    }
+  }
+
+  return true;
 }
 
 /**
  * Admin action: Deactivate custom sponsor and restore default in-house partner banner.
  */
-export function resetToInHouseSponsor(): boolean {
-  if (typeof window === 'undefined') return false;
-  try {
-    localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(DEFAULT_INHOUSE_SPONSOR));
-    return true;
-  } catch {
-    return false;
+export async function resetToInHouseSponsor(): Promise<boolean> {
+  if (supabase) {
+    try {
+      await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
+    } catch (e) {
+      console.warn('[sponsorService] Supabase reset error:', e);
+    }
   }
+
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(DEFAULT_INHOUSE_SPONSOR));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+  return true;
 }
 
 /**
  * Admin action: Manually create or update an active sponsor directly.
  */
-export function setCustomActiveSponsor(sponsor: Sponsor): boolean {
-  if (typeof window === 'undefined') return false;
-  try {
-    localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(sponsor));
-    return true;
-  } catch {
-    return false;
+export async function setCustomActiveSponsor(sponsor: Sponsor): Promise<boolean> {
+  if (supabase) {
+    try {
+      await supabase.from('sponsors').update({ status: 'expired' }).eq('status', 'active');
+      await supabase.from('sponsors').upsert({
+        id: sponsor.id,
+        business_name: sponsor.businessName,
+        tagline: sponsor.tagline,
+        description: sponsor.description,
+        badge: sponsor.badge,
+        poster_image: sponsor.posterImage,
+        target_url: sponsor.targetUrl,
+        whatsapp_number: sponsor.whatsappNumber,
+        whatsapp_message: sponsor.whatsappMessage,
+        phone: sponsor.phone,
+        category: sponsor.category,
+        start_date: sponsor.startDate,
+        end_date: sponsor.endDate,
+        status: 'active',
+        is_in_house: false,
+        impressions: sponsor.impressions,
+        clicks: sponsor.clicks,
+      });
+    } catch (e) {
+      console.warn('[sponsorService] Supabase setCustomActiveSponsor error:', e);
+    }
   }
+
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(STORAGE_KEY_ACTIVE, JSON.stringify(sponsor));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+  return true;
 }

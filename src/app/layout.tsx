@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { CapacitorInit } from '@/components/CapacitorInit';
 import { AppUpdateModal } from '@/components/AppUpdateModal';
+import { Preloader } from '@/components/Preloader';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -52,6 +53,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-[#f8fafc] text-slate-900 transition-colors selection:bg-blue-600 selection:text-white flex flex-col antialiased">
         <ThemeProvider>
+          <Preloader />
           <CapacitorInit />
           <AppUpdateModal />
           {children}

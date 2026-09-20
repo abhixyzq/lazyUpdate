@@ -1,33 +1,22 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { SubpageHeader } from '@/components/SubpageHeader';
 import { WhatsAppIcon, InstagramIcon } from '@/components/OfficialBrandIcons';
 import {
   Sparkles,
   CheckCircle2,
   BadgeCheck,
-  TrendingUp,
-  Users,
   Eye,
-  MessageSquare,
-  ShieldCheck,
-  QrCode,
-  Copy,
   Check,
-  ArrowRight,
-  ExternalLink,
-  HelpCircle,
-  Clock,
+  ArrowLeft,
   Phone,
-  Send,
   Building,
-  UploadCloud,
-  Layers,
   Lock,
   Zap,
-  CreditCard,
+  ShieldCheck,
+  ChevronRight,
+  Crown,
 } from 'lucide-react';
 import { submitSponsorApplication } from '@/services/sponsorService';
 
@@ -45,64 +34,61 @@ interface Package {
 const PACKAGES: Package[] = [
   {
     id: 'starter_7d',
-    name: 'Weekly Spotlight',
+    name: 'Campus Spotlight',
     durationDays: 7,
     price: 499,
     originalPrice: 899,
-    tag: 'Quick Promotion',
+    tag: 'Trial Placement',
     features: [
-      '7 Days Active in Mobile App + Web Portal',
-      'Placed on 200+ Semester Syllabus & Notice pages',
-      'Direct WhatsApp Lead Button (1-Click Chat)',
-      'Real-time Impression & Click Tracking',
+      '7 Days Active across Mobile App & Web Ecosystem',
+      'Curated placement across 200+ Syllabi & Circular pages',
+      'Frictionless 1-Click Direct WhatsApp Lead Acquisition',
+      'Real-time verified impression & engagement telemetry',
     ],
   },
   {
     id: 'growth_30d',
-    name: 'Monthly Campus Partner',
+    name: 'Premier Academic Partner',
     durationDays: 30,
     price: 1499,
     originalPrice: 2499,
-    tag: 'Most Popular',
+    tag: 'Flagship Authority',
     popular: true,
     features: [
-      '30 Days Guaranteed Active Visibility',
-      'Priority placement on high-traffic Syllabus pages',
-      'Dedicated Instagram Story feature on @_lazypu',
-      'Verified "CAMPUS PARTNER" badge',
-      '1-Click banner change or offer update anytime',
-      'Direct Call & WhatsApp leads',
+      '30 Days High-Priority Prime Placement on high-traffic papers',
+      'Exclusive Featured Story on @_lazypu Instagram Network',
+      'Distinguished "CAMPUS PARTNER" Official Verified Badge',
+      'Instant Student Lead Channels (Direct WhatsApp & Voice Dial)',
+      'Unrestricted real-time creative & offer modifications',
     ],
   },
   {
     id: 'semester_90d',
-    name: 'Semester Anchor',
+    name: 'Semester Dominance',
     durationDays: 90,
     price: 3499,
     originalPrice: 5999,
-    tag: 'Best ROI for Coaching/PG',
+    tag: 'Maximum Institutional ROI',
     features: [
-      'Full 90 Days (Complete Semester Exam & Admission cycle)',
-      'Permanent anchor position across entire portal',
-      '2x Instagram Featured Posts/Reels on @_lazypu',
-      'VIP Verified Partner Status',
-      'Weekly performance report via WhatsApp',
-      'Direct lead routing to your counseling desk',
+      'Full 90 Days (Complete Semester Examination & Admission Cycle)',
+      'Permanent anchor prominence across all PU college portals',
+      '2x Dedicated Feature Posts & Reels on @_lazypu Community',
+      'VIP Verified Status with prioritized student lead routing',
+      'Comprehensive performance analytics & engagement reports',
     ],
   },
 ];
 
 const CATEGORIES = [
-  'Coaching & Competitive Exams (BPSC / UPSC / SSC)',
-  'Hostel & PG for Students (Patna)',
-  'Book Store & Stationery',
-  'Food, Tiffin & Student Cafe',
-  'EdTech & Skill Courses',
-  'College Event / Fest Sponsor',
-  'Other Business / Service',
+  'Premier Coaching & Competitive Academies (BPSC / UPSC / SSC)',
+  'Student Hostels & Luxury PGs (Patna)',
+  'Academic Bookstores & Publications',
+  'Cafes, Food & Tiffin Subscriptions',
+  'EdTech, IT Skills & Professional Certifications',
+  'Collegiate Fest & Youth Event Sponsorship',
+  'Professional Student Services',
 ];
 
-const DEFAULT_UPI_ID = '8709322301@ybl';
 const RAZORPAY_KEY_ID = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || 'rzp_live_Tb0M1Ou87gY7GL';
 
 const loadRazorpayScript = (): Promise<boolean> => {
@@ -119,7 +105,7 @@ const loadRazorpayScript = (): Promise<boolean> => {
 };
 
 export default function SponsorPage() {
-  const [selectedPlan, setSelectedPlan] = useState<Package>(PACKAGES[1]); // Default to 30D
+  const [selectedPlan, setSelectedPlan] = useState<Package>(PACKAGES[1]); // Default to Premier
   const [businessName, setBusinessName] = useState('');
   const [tagline, setTagline] = useState('');
   const [description, setDescription] = useState('');
@@ -130,109 +116,14 @@ export default function SponsorPage() {
   const [applicantName, setApplicantName] = useState('');
   const [applicantEmail, setApplicantEmail] = useState('');
   const [applicantPhone, setApplicantPhone] = useState('');
-  const [paymentUtr, setPaymentUtr] = useState('');
-  const [paymentMode, setPaymentMode] = useState<'razorpay' | 'upi'>('razorpay');
   const [isOpeningRazorpay, setIsOpeningRazorpay] = useState(false);
-  const [isRazorpayPaid, setIsRazorpayPaid] = useState(false);
-  const [copiedUpi, setCopiedUpi] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submittedId, setSubmittedId] = useState('');
+  const [verifiedPaymentId, setVerifiedPaymentId] = useState('');
 
-  // Generate UPI QR link
-  const upiPaymentUrl = useMemo(() => {
-    const amount = selectedPlan.price;
-    const note = encodeURIComponent(`Lazy PU ${selectedPlan.name}`);
-    return `upi://pay?pa=${DEFAULT_UPI_ID}&pn=LazyPU&am=${amount}&cu=INR&tn=${note}`;
-  }, [selectedPlan]);
-
-  const qrImageUrl = useMemo(() => {
-    return `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(upiPaymentUrl)}`;
-  }, [upiPaymentUrl]);
-
-  const handleCopyUpi = () => {
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(DEFAULT_UPI_ID);
-      setCopiedUpi(true);
-      setTimeout(() => setCopiedUpi(false), 2500);
-    }
-  };
-
-  const handlePayWithRazorpay = async () => {
-    if (!businessName.trim() || !whatsappNumber.trim()) {
-      alert('Please fill your Business Name and WhatsApp Lead Number in Step 1 before paying.');
-      return;
-    }
-
-    setIsOpeningRazorpay(true);
-    try {
-      const loaded = await loadRazorpayScript();
-      if (!loaded) {
-        alert('Unable to load Razorpay checkout. Please check internet connection or switch to Direct UPI QR tab.');
-        setIsOpeningRazorpay(false);
-        return;
-      }
-
-      const options = {
-        key: RAZORPAY_KEY_ID,
-        amount: selectedPlan.price * 100, // paise
-        currency: 'INR',
-        name: 'Lazy PU',
-        description: `${selectedPlan.name} - Patna University Campus Sponsor (${selectedPlan.durationDays} Days)`,
-        image: 'https://lazyupdate.tech/icon-192.png',
-        prefill: {
-          name: applicantName.trim() || businessName.trim(),
-          email: applicantEmail.trim() || '',
-          contact: applicantPhone.trim() || whatsappNumber.trim() || '',
-        },
-        notes: {
-          platform: 'Lazy PU App',
-          business_name: businessName.trim(),
-          plan_name: selectedPlan.name,
-          duration_days: selectedPlan.durationDays.toString(),
-        },
-        theme: {
-          color: '#2563eb',
-        },
-        handler: function (response: any) {
-          if (response && response.razorpay_payment_id) {
-            const pId = response.razorpay_payment_id;
-            setPaymentUtr(pId);
-            setIsRazorpayPaid(true);
-          }
-          setIsOpeningRazorpay(false);
-        },
-        modal: {
-          ondismiss: function () {
-            setIsOpeningRazorpay(false);
-          },
-        },
-      };
-
-      const rzp = new (window as any).Razorpay(options);
-      rzp.on('payment.failed', function (resp: any) {
-        alert(`Payment not completed: ${resp.error?.description || 'Please retry or use UPI QR.'}`);
-        setIsOpeningRazorpay(false);
-      });
-      rzp.open();
-    } catch (err) {
-      console.error('[Razorpay] Checkout open error:', err);
-      alert('Something went wrong launching Razorpay checkout. You can also use the Direct UPI QR option.');
-      setIsOpeningRazorpay(false);
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!businessName || !tagline || !whatsappNumber || !paymentUtr) {
-      if (paymentMode === 'razorpay' && !isRazorpayPaid) {
-        alert('Please complete the Razorpay payment first before submitting.');
-      } else {
-        alert('Please fill all required fields and enter the payment reference / UTR number.');
-      }
-      return;
-    }
-
+  // Submit to storage after payment is confirmed
+  const executeSubmission = async (paymentId: string) => {
     setIsSubmitting(true);
     try {
       const res = await submitSponsorApplication({
@@ -248,8 +139,8 @@ export default function SponsorPage() {
         planName: selectedPlan.name,
         durationDays: selectedPlan.durationDays,
         paymentAmount: selectedPlan.price,
-        paymentUtr,
-        paymentMethod: isRazorpayPaid || paymentUtr.startsWith('pay_') ? 'razorpay' : 'upi_qr',
+        paymentUtr: paymentId,
+        paymentMethod: 'razorpay',
         applicantName: applicantName || businessName,
         applicantEmail: applicantEmail || 'contact@business.com',
         applicantPhone: applicantPhone || whatsappNumber,
@@ -257,98 +148,165 @@ export default function SponsorPage() {
 
       if (res.success) {
         setSubmittedId(res.id);
+        setVerifiedPaymentId(paymentId);
         setIsSuccess(true);
+      } else {
+        alert('Failed to register application. Please contact @_lazypu on Instagram with Payment ID: ' + paymentId);
       }
     } catch {
-      alert('Failed to submit application. Please try again.');
+      alert('Error registering application. Please notify @_lazypu on Instagram with Payment ID: ' + paymentId);
     } finally {
       setIsSubmitting(false);
+      setIsOpeningRazorpay(false);
+    }
+  };
+
+  // Launch Razorpay directly
+  const handlePayAndSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!businessName.trim() || !tagline.trim() || !whatsappNumber.trim()) {
+      alert('Please provide your Enterprise Name, Headline, and WhatsApp Lead Number.');
+      return;
+    }
+
+    setIsOpeningRazorpay(true);
+    try {
+      const loaded = await loadRazorpayScript();
+      if (!loaded) {
+        alert('Unable to initialize Razorpay checkout. Please check your network connectivity.');
+        setIsOpeningRazorpay(false);
+        return;
+      }
+
+      const options = {
+        key: RAZORPAY_KEY_ID,
+        amount: selectedPlan.price * 100, // in paise
+        currency: 'INR',
+        name: 'Lazy PU',
+        description: `${selectedPlan.name} (${selectedPlan.durationDays} Days Placement)`,
+        image: 'https://lazyupdate.tech/icon-192.png',
+        prefill: {
+          name: applicantName.trim() || businessName.trim(),
+          email: applicantEmail.trim() || '',
+          contact: applicantPhone.trim() || whatsappNumber.trim() || '',
+        },
+        notes: {
+          platform: 'Lazy PU Institutional Network',
+          business_name: businessName.trim(),
+          plan_name: selectedPlan.name,
+          duration_days: selectedPlan.durationDays.toString(),
+        },
+        theme: {
+          color: '#f97316', // Vibrant signature orange
+        },
+        handler: async function (response: any) {
+          if (response && response.razorpay_payment_id) {
+            await executeSubmission(response.razorpay_payment_id);
+          }
+        },
+        modal: {
+          ondismiss: function () {
+            setIsOpeningRazorpay(false);
+          },
+        },
+      };
+
+      const rzp = new (window as any).Razorpay(options);
+      rzp.on('payment.failed', function (resp: any) {
+        alert(`Payment not completed: ${resp.error?.description || 'Transaction was declined'}`);
+        setIsOpeningRazorpay(false);
+      });
+      rzp.open();
+    } catch (err) {
+      console.error('[Razorpay] Checkout launch error:', err);
+      alert('Unable to launch secure payment portal. Please try again.');
+      setIsOpeningRazorpay(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-20">
-      <SubpageHeader
-        title="Advertise on Lazy PU"
-        subtitle="Connect your Coaching, PG, or Brand with 5,000+ Patna University Students"
-      />
+    <div className="min-h-screen bg-[#f8fafc] text-slate-900 antialiased pb-24 selection:bg-orange-500 selection:text-white">
+      {/* Top Navbar */}
+      <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-xl px-4 py-3 shadow-2xs">
+        <div className="mx-auto flex max-w-5xl items-center justify-between">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-orange-600 transition group"
+          >
+            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
+            <span>Back to Portal</span>
+          </Link>
 
-      <main className="mx-auto max-w-5xl px-3 pt-4 space-y-6">
-        {/* 1. Hero Value Proposition Banner */}
-        <div className="relative overflow-hidden rounded-3xl border border-blue-200/90 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 p-6 sm:p-8 text-white shadow-xl">
-          <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
-          <div className="pointer-events-none absolute -left-16 -bottom-16 h-64 w-64 rounded-full bg-purple-500/20 blur-3xl" />
+          <div className="flex items-center gap-3">
+            <a
+              href="https://ig.me/m/_lazypu"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1 text-xs font-semibold text-slate-700 hover:text-slate-900 hover:border-orange-300 hover:bg-orange-50/50 transition shadow-2xs"
+            >
+              <InstagramIcon className="h-3.5 w-3.5" />
+              <span>@_lazypu</span>
+            </a>
 
-          <div className="relative z-10 max-w-2xl space-y-3">
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/20 px-3 py-1 text-xs font-black tracking-wider text-blue-200 uppercase backdrop-blur-xs">
-              <Sparkles className="h-3.5 w-3.5 text-amber-400" />
-              <span>Patna University Hyper-Local Ads</span>
-            </div>
-
-            <h1 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight">
-              Promote Directly to Students When They Are Actively Studying
-            </h1>
-
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Lazy PU is the daily companion app for Patna University students across B.A., B.Sc., B.Com., and vocational courses. No random traffic — 100% verified college students from Ashok Rajpath, Boring Road, and Patna campuses.
-            </p>
-
-            {/* Metric Pills */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-xs">
-                <div className="text-xl font-black text-amber-400">5,000+</div>
-                <div className="text-[10px] text-slate-300 font-medium">PU Students Reach</div>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-xs">
-                <div className="text-xl font-black text-emerald-400">10+</div>
-                <div className="text-[10px] text-slate-300 font-medium">Constituent Colleges</div>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-xs">
-                <div className="text-xl font-black text-cyan-400">1-Click</div>
-                <div className="text-[10px] text-slate-300 font-medium">Direct WhatsApp Leads</div>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur-xs">
-                <div className="text-xl font-black text-purple-400">0%</div>
-                <div className="text-[10px] text-slate-300 font-medium">Ad-Blocker Loss</div>
-              </div>
-            </div>
+            <Link
+              href="/sponsor/admin"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500 hover:text-slate-900 hover:border-slate-300 transition"
+            >
+              <Lock className="h-3 w-3" />
+              <span>Admin</span>
+            </Link>
           </div>
         </div>
+      </header>
 
-        {/* 2. Transparent Pricing Packages */}
-        <div className="space-y-3">
-          <div className="text-center max-w-md mx-auto">
-            <h2 className="text-lg font-black text-slate-900">Select Your Sponsorship Plan</h2>
-            <p className="text-xs text-slate-500">
-              Clear, transparent pricing with no hidden charges. Active across both Android App & Web Portal.
-            </p>
+      <main className="mx-auto max-w-5xl px-4 pt-8 space-y-8">
+        {/* Clean Hero Section */}
+        <div className="text-center space-y-2.5 max-w-2xl mx-auto">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-orange-200 bg-orange-50 px-3.5 py-1 text-[11px] font-black tracking-widest text-orange-700 uppercase shadow-2xs">
+            <Sparkles className="h-3.5 w-3.5 text-orange-500" />
+            <span>EXCLUSIVE INSTITUTIONAL SPONSORSHIP</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-            {PACKAGES.map((pkg) => {
-              const isSelected = selectedPlan.id === pkg.id;
-              return (
-                <div
-                  key={pkg.id}
-                  onClick={() => setSelectedPlan(pkg)}
-                  className={`relative cursor-pointer rounded-3xl border p-5 transition-all shadow-sm ${
-                    isSelected
-                      ? 'border-blue-600 bg-white ring-2 ring-blue-600/20 shadow-md scale-[1.02]'
-                      : 'border-slate-200/90 bg-white hover:border-slate-300'
-                  }`}
-                >
-                  {pkg.popular && (
-                    <span className="absolute -top-3 right-5 inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-3 py-0.5 text-[10px] font-black uppercase text-white shadow-xs">
-                      <Sparkles className="h-3 w-3" />
-                      {pkg.tag}
-                    </span>
-                  )}
+          <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-slate-900 leading-tight">
+            Elevate Your Brand Across <br className="hidden sm:inline" />
+            <span className="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
+              Patna University
+            </span>
+          </h1>
 
-                  <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+          <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+            Directly engage 5,000+ verified undergraduate &amp; postgraduate scholars while they actively study syllabus, circulars, and exam updates.
+          </p>
+        </div>
+
+        {/* 1. Plan Selector Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+          {PACKAGES.map((pkg) => {
+            const isSelected = selectedPlan.id === pkg.id;
+            return (
+              <div
+                key={pkg.id}
+                onClick={() => setSelectedPlan(pkg)}
+                className={`relative cursor-pointer rounded-2xl border p-5 transition-all duration-200 flex flex-col justify-between ${
+                  isSelected
+                    ? 'border-orange-500 bg-gradient-to-b from-orange-50/50 via-white to-white ring-2 ring-orange-500/30 shadow-md scale-[1.01]'
+                    : 'border-slate-200/90 bg-white hover:border-slate-300 hover:shadow-xs'
+                }`}
+              >
+                {pkg.popular && (
+                  <span className="absolute -top-3 right-4 inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-3 py-0.5 text-[9px] font-black uppercase text-white shadow-xs tracking-wider">
+                    <Crown className="h-2.5 w-2.5 text-white" />
+                    {pkg.tag}
+                  </span>
+                )}
+
+                <div>
+                  <div className="flex items-center justify-between pb-3.5 border-b border-slate-100">
                     <div>
                       <h3 className="text-sm font-black text-slate-900">{pkg.name}</h3>
                       <span className="text-[11px] text-slate-500 font-medium">
-                        {pkg.durationDays} Days Duration
+                        {pkg.durationDays} Days Guaranteed Visibility
                       </span>
                     </div>
                     <div className="text-right">
@@ -357,58 +315,55 @@ export default function SponsorPage() {
                     </div>
                   </div>
 
-                  <ul className="mt-4 space-y-2 text-xs text-slate-600">
+                  <ul className="mt-4 space-y-2 text-[11px] text-slate-600">
                     {pkg.features.map((feat, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <Check className="h-3.5 w-3.5 text-blue-600 shrink-0 mt-0.5" />
-                        <span className="leading-tight">{feat}</span>
+                        <Check className="h-3.5 w-3.5 text-orange-600 shrink-0 mt-0.5" />
+                        <span className="leading-snug">{feat}</span>
                       </li>
                     ))}
                   </ul>
+                </div>
 
-                  <button
-                    type="button"
-                    className={`mt-5 w-full rounded-2xl py-2 px-3 text-xs font-black transition ${
+                <div className="pt-4 mt-2">
+                  <div
+                    className={`w-full py-2 rounded-xl text-xs font-black text-center transition ${
                       isSelected
-                        ? 'bg-blue-600 text-white shadow-xs'
+                        ? 'bg-orange-500 text-white shadow-xs'
                         : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                     }`}
                   >
-                    {isSelected ? '✓ Plan Selected' : 'Choose Plan'}
-                  </button>
+                    {isSelected ? '✓ Selected Placement' : 'Select Plan'}
+                  </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
 
-        {/* 3. Form & Live Preview Section */}
+        {/* 2. Main Work Area: Form + Live Mobile Preview */}
         {isSuccess ? (
-          <div className="rounded-3xl border border-emerald-200 bg-white p-8 text-center shadow-lg space-y-4 animate-in zoom-in-95 duration-200">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-3xl bg-emerald-50 text-emerald-600 border border-emerald-200 shadow-xs">
-              <CheckCircle2 className="h-9 w-9" />
+          <div className="rounded-3xl border border-emerald-200 bg-white p-8 text-center shadow-lg space-y-4 max-w-xl mx-auto animate-in zoom-in-95 duration-200">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 border border-emerald-200 shadow-xs">
+              <CheckCircle2 className="h-8 w-8" />
             </div>
 
-            <div className="space-y-1 max-w-md mx-auto">
+            <div className="space-y-1">
               <h3 className="text-xl font-black text-slate-900">
-                Application Received Successfully!
+                Institutional Sponsorship Authorized!
               </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Thank you for choosing to partner with Lazy PU! Your application ID is{' '}
-                <span className="font-mono font-bold text-slate-900 bg-slate-100 px-2 py-0.5 rounded-md">
-                  {submittedId}
+              <p className="text-xs text-slate-600">
+                Verified via Razorpay • ID:{' '}
+                <span className="font-mono font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md">
+                  {verifiedPaymentId}
                 </span>
-                .
               </p>
             </div>
 
-            <div className="rounded-2xl border border-blue-100 bg-blue-50/70 p-4 max-w-md mx-auto text-left text-xs text-blue-900 space-y-2">
-              <div className="font-black flex items-center gap-1.5">
-                <Clock className="h-4 w-4 text-blue-600" />
-                <span>Next Steps:</span>
-              </div>
-              <p className="text-[11px] text-blue-800 leading-relaxed">
-                Our team verifies the payment UTR and banner content within <strong>2–4 hours</strong>. Once approved, your banner will immediately go live on all Patna University syllabus and notice pages!
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left text-xs text-slate-700 space-y-1.5">
+              <p className="text-[11px] leading-relaxed">
+                Your placement order reference is <strong className="text-slate-900 font-mono">{submittedId}</strong>.
+                Our editorial team activates verified partner campaigns within <strong>2–4 business hours</strong>.
               </p>
             </div>
 
@@ -417,413 +372,241 @@ export default function SponsorPage() {
                 href="https://ig.me/m/_lazypu"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-black py-2.5 px-5 text-xs shadow-xs transition"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-black py-2.5 px-4 text-xs transition shadow-xs"
               >
                 <InstagramIcon className="h-4 w-4 shrink-0" />
-                <span>Notify Admin on Instagram Chat (@_lazypu)</span>
+                <span>Notify Admin on Instagram (@_lazypu)</span>
               </a>
 
               <Link
                 href="/"
-                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2.5 px-5 text-xs transition"
+                className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-2.5 px-4 text-xs transition"
               >
-                Back to Home
+                Back to Portal
               </Link>
             </div>
           </div>
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-            {/* Left Column: The Booking Form */}
+            {/* Left: The Form */}
             <form
-              onSubmit={handleSubmit}
+              onSubmit={handlePayAndSubmit}
               className="lg:col-span-7 rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm space-y-4"
             >
               <div className="pb-3 border-b border-slate-100">
-                <h3 className="text-base font-black text-slate-900 flex items-center gap-2">
-                  <Building className="h-5 w-5 text-blue-600" />
-                  <span>Business & Banner Details</span>
+                <h3 className="text-sm font-black text-slate-900 flex items-center gap-2">
+                  <Building className="h-4 w-4 text-orange-500" />
+                  <span>Institutional &amp; Brand Credentials</span>
                 </h3>
-                <p className="text-[11px] text-slate-500">
-                  Fill in your details. You can see the live preview on the right in real-time.
+                <p className="text-[11px] text-slate-500 mt-0.5">
+                  Configure your brand positioning. Changes reflect live in the mobile preview.
                 </p>
               </div>
 
-              {/* Business Name */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Business / Institute / PG Name <span className="text-rose-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={businessName}
-                  onChange={(e) => setBusinessName(e.target.value)}
-                  placeholder="e.g. Apex BPSC Academy / Ganga Girls PG"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                />
-              </div>
-
-              {/* Tagline / Main Offer */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Tagline / Special Offer for Students <span className="text-rose-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={tagline}
-                  onChange={(e) => setTagline(e.target.value)}
-                  placeholder="e.g. Ashok Rajpath Branch • Flat 20% off for PU Students"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                />
-              </div>
-
-              {/* Category */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Category <span className="text-rose-500">*</span>
-                </label>
-                <select
-                  value={category}
-                  onChange={(e) => setCategory(e.target.value)}
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                >
-                  {CATEGORIES.map((c) => (
-                    <option key={c} value={c}>
-                      {c}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* WhatsApp Number (Crucial for leads) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {/* Form Inputs */}
+              <div className="space-y-3">
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">
-                    WhatsApp Number for Leads <span className="text-rose-500">*</span>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                    Enterprise / Institute Name <span className="text-orange-500">*</span>
                   </label>
-                  <input
-                    type="tel"
-                    required
-                    value={whatsappNumber}
-                    onChange={(e) => setWhatsappNumber(e.target.value)}
-                    placeholder="e.g. 9876543210"
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                  />
-                  <span className="text-[10px] text-slate-400">Students will message on this number</span>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Calling Phone Number <span className="text-slate-400 font-normal">(Optional)</span>
-                  </label>
-                  <input
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder="e.g. 9876543210"
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                  />
-                </div>
-              </div>
-
-              {/* Poster / Logo Image URL */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Poster / Banner Image URL <span className="text-slate-400 font-normal">(Optional - Recommended)</span>
-                </label>
-                <input
-                  type="url"
-                  value={posterImage}
-                  onChange={(e) => setPosterImage(e.target.value)}
-                  placeholder="https://... (or WhatsApp it to us after payment)"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
-                />
-                <span className="text-[10px] text-slate-400">
-                  Direct image link. If you don&apos;t have a link, you can WhatsApp the poster to us!
-                </span>
-              </div>
-
-              {/* Short Description */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Short Description / Key Highlights <span className="text-slate-400 font-normal">(Optional)</span>
-                </label>
-                <textarea
-                  rows={2}
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                  placeholder="e.g. Daily answer writing, AC library, 100m from Patna College gate."
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50/70 p-3 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden transition resize-none"
-                />
-              </div>
-
-              {/* Contact Person Details */}
-              <div className="pt-2 border-t border-slate-100">
-                <span className="block text-xs font-black text-slate-800 uppercase tracking-wider mb-2">
-                  Contact Person Info
-                </span>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <input
                     type="text"
                     required
-                    value={applicantName}
-                    onChange={(e) => setApplicantName(e.target.value)}
-                    placeholder="Your Name *"
-                    className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden"
-                  />
-                  <input
-                    type="email"
-                    required
-                    value={applicantEmail}
-                    onChange={(e) => setApplicantEmail(e.target.value)}
-                    placeholder="Email Address *"
-                    className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden"
-                  />
-                  <input
-                    type="tel"
-                    required
-                    value={applicantPhone}
-                    onChange={(e) => setApplicantPhone(e.target.value)}
-                    placeholder="Mobile Number *"
-                    className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-500 focus:outline-hidden"
+                    value={businessName}
+                    onChange={(e) => setBusinessName(e.target.value)}
+                    placeholder="e.g. Achievers BPSC & Civil Services Academy"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition"
                   />
                 </div>
-              </div>
 
-              {/* 4. Payment Section (Razorpay & UPI) */}
-              <div className="pt-3 border-t border-slate-100 space-y-3">
-                <div className="flex items-center justify-between">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-blue-700">
-                      STEP 2: PAYMENT & VERIFICATION
-                    </span>
-                    <h4 className="text-sm font-black text-slate-900">
-                      Total: ₹{selectedPlan.price} ({selectedPlan.name})
-                    </h4>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">
+                      Primary Category
+                    </label>
+                    <select
+                      value={category}
+                      onChange={(e) => setCategory(e.target.value)}
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    >
+                      {CATEGORIES.map((c) => (
+                        <option key={c} value={c}>
+                          {c}
+                        </option>
+                      ))}
+                    </select>
                   </div>
-                  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-0.5 text-[10px] font-extrabold text-emerald-800">
-                    <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
-                    Secure Checkout
+
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">
+                      Direct Student WhatsApp Desk <span className="text-orange-500">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      required
+                      value={whatsappNumber}
+                      onChange={(e) => setWhatsappNumber(e.target.value)}
+                      placeholder="e.g. 9876543210 (10 Digits)"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                    Promotional Tagline / Offer Headline <span className="text-orange-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={tagline}
+                    onChange={(e) => setTagline(e.target.value)}
+                    placeholder="e.g. New Batch Starting 25th Sept • Flat 25% Fee Waiver for PU Scholars"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                    Campus Value Proposition / Brief Details (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    placeholder="e.g. Located right opposite Patna College, Ashok Rajpath. Free comprehensive study module included."
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500/30 focus:outline-hidden transition"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">
+                      Direct Voice Helpline (Optional)
+                    </label>
+                    <input
+                      type="tel"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      placeholder="e.g. 9876543210"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">
+                      Poster Image URL (Optional)
+                    </label>
+                    <input
+                      type="url"
+                      value={posterImage}
+                      onChange={(e) => setPosterImage(e.target.value)}
+                      placeholder="https://..."
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    />
+                  </div>
+                </div>
+
+                {/* Authorized Representative Details */}
+                <div className="pt-3 border-t border-slate-100">
+                  <span className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2">
+                    Authorized Representative Credentials
                   </span>
-                </div>
-
-                {/* Mode Selector Tabs */}
-                <div className="grid grid-cols-2 gap-2 p-1 bg-slate-100 rounded-2xl">
-                  <button
-                    type="button"
-                    onClick={() => setPaymentMode('razorpay')}
-                    className={`flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-black transition-all ${
-                      paymentMode === 'razorpay'
-                        ? 'bg-white text-blue-600 shadow-xs'
-                        : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    <Zap className={`h-3.5 w-3.5 ${paymentMode === 'razorpay' ? 'text-amber-500 fill-amber-500' : ''}`} />
-                    <span>Razorpay Online</span>
-                    <span className="text-[9px] bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded-md uppercase tracking-wider hidden sm:inline">
-                      Fastest
-                    </span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => setPaymentMode('upi')}
-                    className={`flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-black transition-all ${
-                      paymentMode === 'upi'
-                        ? 'bg-white text-blue-600 shadow-xs'
-                        : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    <QrCode className="h-3.5 w-3.5" />
-                    <span>Direct UPI QR</span>
-                  </button>
-                </div>
-
-                {/* Tab 1: Razorpay Option */}
-                {paymentMode === 'razorpay' && (
-                  <div className="rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50/80 via-white to-indigo-50/40 p-4 space-y-3.5 shadow-2xs">
-                    {isRazorpayPaid ? (
-                      <div className="rounded-2xl border border-emerald-200 bg-emerald-50/90 p-4 text-center space-y-2">
-                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xs">
-                          <Check className="h-6 w-6" />
-                        </div>
-                        <div className="space-y-0.5">
-                          <h5 className="text-xs font-black text-emerald-900">
-                            Payment Verified Successfully!
-                          </h5>
-                          <p className="text-[11px] text-emerald-800">
-                            Razorpay Payment ID: <strong className="font-mono bg-white px-2 py-0.5 rounded-md border border-emerald-300">{paymentUtr}</strong>
-                          </p>
-                        </div>
-                        <p className="text-[10px] text-emerald-600">
-                          Amount of ₹{selectedPlan.price} verified. Click &quot;Submit Application & Banner&quot; below to finish!
-                        </p>
-                      </div>
-                    ) : (
-                      <>
-                        <div className="flex items-center justify-between text-xs pb-2 border-b border-blue-100/80">
-                          <span className="text-slate-600 font-medium text-[11px]">Supported Payment Modes:</span>
-                          <span className="text-[10px] font-bold text-blue-600">
-                            UPI • Cards • NetBanking • Wallets
-                          </span>
-                        </div>
-
-                        <div className="grid grid-cols-3 gap-2 text-center text-[10px] font-bold text-slate-700">
-                          <div className="p-2 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
-                            <span className="block text-emerald-600 font-extrabold text-xs">GPay / PhonePe</span>
-                            <span className="text-[9px] text-slate-400">1-Click UPI</span>
-                          </div>
-                          <div className="p-2 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
-                            <span className="block text-blue-600 font-extrabold text-xs">Cards / RuPay</span>
-                            <span className="text-[9px] text-slate-400">Debit & Credit</span>
-                          </div>
-                          <div className="p-2 rounded-xl bg-white border border-slate-200/80 shadow-2xs">
-                            <span className="block text-purple-600 font-extrabold text-xs">NetBanking</span>
-                            <span className="text-[9px] text-slate-400">50+ Banks</span>
-                          </div>
-                        </div>
-
-                        <button
-                          type="button"
-                          onClick={handlePayWithRazorpay}
-                          disabled={isOpeningRazorpay}
-                          className="w-full flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 active:scale-98 disabled:opacity-60 text-white font-black py-3.5 px-4 text-xs transition shadow-md shadow-blue-500/20"
-                        >
-                          <Zap className="h-4 w-4 text-amber-300 fill-amber-300" />
-                          <span>
-                            {isOpeningRazorpay
-                              ? 'Launching Razorpay Checkout...'
-                              : `Pay ₹${selectedPlan.price} with Razorpay`}
-                          </span>
-                        </button>
-
-                        <div className="flex items-center justify-center gap-1.5 text-[10px] text-slate-400">
-                          <Lock className="h-3 w-3 text-slate-400" />
-                          <span>100% Secure &amp; Auto-Verified transaction powered by Razorpay</span>
-                        </div>
-                      </>
-                    )}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                    <input
+                      type="text"
+                      required
+                      value={applicantName}
+                      onChange={(e) => setApplicantName(e.target.value)}
+                      placeholder="Full Name *"
+                      className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    />
+                    <input
+                      type="email"
+                      value={applicantEmail}
+                      onChange={(e) => setApplicantEmail(e.target.value)}
+                      placeholder="Official Email"
+                      className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    />
+                    <input
+                      type="tel"
+                      value={applicantPhone}
+                      onChange={(e) => setApplicantPhone(e.target.value)}
+                      placeholder="Mobile No."
+                      className="rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-orange-500 focus:outline-hidden transition"
+                    />
                   </div>
-                )}
-
-                {/* Tab 2: Direct UPI QR Option */}
-                {paymentMode === 'upi' && (
-                  <div className="rounded-2xl border border-blue-200 bg-gradient-to-br from-blue-50/80 via-white to-amber-50/50 p-4 space-y-3">
-                    <div className="flex flex-col sm:flex-row items-center gap-4 bg-white p-3.5 rounded-xl border border-slate-200/80">
-                      <div className="h-32 w-32 shrink-0 rounded-xl border border-slate-200 bg-white p-1.5 flex items-center justify-center shadow-2xs">
-                        <img
-                          src={qrImageUrl}
-                          alt="UPI QR Code"
-                          className="h-full w-full object-contain"
-                        />
-                      </div>
-
-                      <div className="space-y-2 text-xs text-slate-600 text-center sm:text-left flex-1">
-                        <p className="text-[11px] leading-relaxed">
-                          Scan with any UPI app (<strong>GPay, PhonePe, Paytm, BHIM</strong>) to pay ₹{selectedPlan.price}.
-                        </p>
-
-                        <div className="flex items-center gap-2 justify-center sm:justify-start">
-                          <span className="font-mono text-xs font-bold text-slate-900 bg-slate-100 px-2 py-1 rounded-lg border border-slate-200">
-                            {DEFAULT_UPI_ID}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={handleCopyUpi}
-                            className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 hover:text-blue-800 transition"
-                          >
-                            {copiedUpi ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Copy className="h-3.5 w-3.5" />}
-                            <span>{copiedUpi ? 'Copied' : 'Copy'}</span>
-                          </button>
-                        </div>
-
-                        <p className="text-[10px] text-slate-400">
-                          After payment, copy the 12-digit UPI Reference/UTR number and enter it below.
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Payment UTR Input */}
-                    <div>
-                      <label className="block text-xs font-bold text-slate-800 mb-1">
-                        UPI Reference / UTR Number <span className="text-rose-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        required={paymentMode === 'upi'}
-                        value={paymentUtr}
-                        onChange={(e) => setPaymentUtr(e.target.value)}
-                        placeholder="e.g. 425689123456 (12 digits)"
-                        className="w-full rounded-xl border border-blue-300 bg-white px-3 py-2 text-xs font-mono font-bold text-slate-900 placeholder:text-slate-400 focus:border-blue-600 focus:outline-hidden"
-                      />
-                    </div>
-                  </div>
-                )}
+                </div>
               </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={isSubmitting || (paymentMode === 'razorpay' && !isRazorpayPaid)}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 active:scale-98 disabled:opacity-50 text-white font-black py-3 px-4 text-xs transition shadow-md"
-              >
-                <Send className="h-4 w-4" />
-                <span>
-                  {isSubmitting
-                    ? 'Submitting Application...'
-                    : paymentMode === 'razorpay' && !isRazorpayPaid
-                    ? `Please Pay ₹${selectedPlan.price} via Razorpay to Submit`
-                    : 'Submit Application & Banner'}
-                </span>
-              </button>
+              {/* Direct Razorpay Checkout Button */}
+              <div className="pt-3 border-t border-slate-100 space-y-2">
+                <button
+                  type="submit"
+                  disabled={isOpeningRazorpay || isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 hover:from-orange-600 hover:to-amber-600 active:scale-98 disabled:opacity-50 text-white font-black py-3.5 px-4 text-xs transition shadow-lg shadow-orange-500/25 cursor-pointer"
+                >
+                  <Zap className="h-4 w-4 fill-white text-white" />
+                  <span>
+                    {isOpeningRazorpay || isSubmitting
+                      ? 'Initializing Secure Gateway...'
+                      : `Authorize Placement & Pay ₹${selectedPlan.price} via Razorpay`}
+                  </span>
+                  <ChevronRight className="h-4 w-4 text-white" />
+                </button>
+
+                <div className="flex items-center justify-center gap-2 text-[10px] text-slate-500 pt-1">
+                  <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
+                  <span>Encrypted PCI-DSS Gateway • Direct Settlement via Razorpay</span>
+                </div>
+              </div>
             </form>
 
-            {/* Right Column: Live Mobile Mockup Preview */}
-            <div className="lg:col-span-5 space-y-3 sticky top-4">
+            {/* Right: Live Mobile Mockup Preview */}
+            <div className="lg:col-span-5 space-y-3 sticky top-16">
               <div className="flex items-center justify-between px-1">
-                <span className="text-xs font-black uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-                  <Eye className="h-4 w-4 text-blue-600" />
-                  <span>Live Mobile Preview</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                  <Eye className="h-4 w-4 text-orange-500" />
+                  <span>Student View Preview</span>
                 </span>
-                <span className="text-[10px] text-slate-400 font-medium">
-                  Instant real-time render
-                </span>
+                <span className="text-[10px] text-slate-400 font-medium">Real-Time Mobile Render</span>
               </div>
 
-              {/* Smartphone Container Mockup */}
-              <div className="relative mx-auto w-full max-w-sm rounded-[36px] border-4 border-slate-900 bg-slate-900 p-2 shadow-2xl">
-                {/* Speaker notch */}
-                <div className="mx-auto h-4 w-28 rounded-full bg-slate-800 mb-2 flex items-center justify-center">
-                  <div className="h-1.5 w-10 rounded-full bg-slate-700" />
+              {/* Smartphone Frame */}
+              <div className="relative mx-auto w-full max-w-sm rounded-[36px] border-4 border-slate-900 bg-slate-900 p-2 shadow-xl">
+                {/* Speaker Notch */}
+                <div className="mx-auto h-3 w-20 rounded-full bg-slate-800 mb-2 flex items-center justify-center">
+                  <div className="h-1 w-6 rounded-full bg-slate-700" />
                 </div>
 
-                {/* Inner Screen */}
-                <div className="overflow-hidden rounded-[26px] bg-[#f8fafc] text-slate-900 p-3 space-y-3 min-h-[480px]">
-                  {/* Fake Syllabus Content */}
-                  <div className="rounded-2xl bg-white p-3 border border-slate-200/80 shadow-2xs space-y-2">
-                    <div className="h-3 w-28 rounded-full bg-blue-100" />
-                    <div className="h-2 w-44 rounded-full bg-slate-100" />
-                    <div className="h-2 w-36 rounded-full bg-slate-100" />
-                    <div className="text-[10px] font-bold text-blue-600">
-                      B.A. Political Science • Sem 1
+                {/* Inner Screen: AUTHENTIC WHITE BACKGROUND */}
+                <div className="overflow-hidden rounded-[26px] bg-[#f8fafc] text-slate-900 p-3 space-y-3 min-h-[460px] border border-slate-200">
+                  {/* Mock Syllabus Content */}
+                  <div className="rounded-xl bg-white p-3 border border-slate-200/90 shadow-2xs space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <div className="h-2.5 w-24 rounded-full bg-blue-100" />
+                      <span className="text-[9px] font-bold text-slate-400">CBCS NEP-2020</span>
+                    </div>
+                    <div className="h-2 w-40 rounded-full bg-slate-100" />
+                    <div className="text-[11px] font-extrabold text-blue-600">
+                      B.A. Political Science • Semester 1
                     </div>
                   </div>
 
-                  {/* The Live Rendered Banner Card */}
-                  <div className="rounded-2xl border border-amber-200/90 bg-gradient-to-br from-amber-50/80 via-white to-orange-50/50 p-3.5 shadow-xs">
-                    <div className="flex items-center justify-between pb-2 border-b border-amber-200/60">
-                      <span className="inline-flex items-center gap-1 rounded-md bg-amber-500 px-1.5 py-0.5 text-[9px] font-black text-white uppercase">
+                  {/* Rendered Live Campus Partner Banner Card */}
+                  <div className="rounded-2xl border border-amber-300/90 bg-gradient-to-br from-amber-50/90 via-white to-orange-50/70 p-3.5 space-y-2 shadow-xs">
+                    <div className="flex items-center justify-between pb-1.5 border-b border-amber-200/70">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-gradient-to-r from-orange-600 to-amber-600 px-1.5 py-0.5 text-[9px] font-black text-white uppercase shadow-2xs">
                         <BadgeCheck className="h-3 w-3" />
                         CAMPUS PARTNER
                       </span>
-                      <span className="text-[9px] font-bold text-slate-400 truncate max-w-[120px]">
-                        {category}
+                      <span className="text-[9px] font-bold text-slate-500 truncate max-w-[120px]">
+                        {category.split('&')[0]}
                       </span>
                     </div>
 
                     {posterImage ? (
-                      <div className="mt-2.5 overflow-hidden rounded-xl border border-amber-100 bg-white">
+                      <div className="overflow-hidden rounded-xl border border-amber-200 bg-white shadow-2xs">
                         <img
                           src={posterImage}
                           alt="Poster Preview"
@@ -835,69 +618,62 @@ export default function SponsorPage() {
                       </div>
                     ) : null}
 
-                    <div className="pt-2 space-y-1">
+                    <div className="space-y-1 pt-1">
                       <div className="text-xs font-black text-slate-900 flex items-center gap-1 truncate">
-                        <span>{businessName || 'Your Business / Coaching Name'}</span>
+                        <span>{businessName || 'Your Institute / Brand Name'}</span>
                         <CheckCircle2 className="h-3 w-3 text-blue-600 shrink-0" />
                       </div>
-                      <p className="text-[11px] font-bold text-amber-900 leading-snug">
-                        {tagline || 'Your Special Offer / Tagline for PU Students'}
+
+                      <p className="text-[11px] font-bold text-amber-950 leading-snug">
+                        {tagline || 'Your Strategic Offer or Course Announcement for PU Students'}
                       </p>
-                      {description && (
-                        <p className="text-[10px] text-slate-600 line-clamp-2">
+
+                      {description ? (
+                        <p className="text-[10px] text-slate-600 line-clamp-2 leading-relaxed">
                           {description}
                         </p>
-                      )}
+                      ) : null}
 
                       <div className="pt-2 flex gap-1.5">
-                        <div className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 text-white font-bold py-1.5 text-[10px] shadow-2xs">
+                        <div className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-emerald-600 text-white font-extrabold py-2 text-[10px] shadow-xs active:scale-98">
                           <WhatsAppIcon className="h-3 w-3" />
                           <span>Connect on WhatsApp</span>
                         </div>
-                        {phone && (
-                          <div className="flex items-center justify-center rounded-xl border border-slate-200 bg-white px-2 py-1.5 text-[10px] font-bold text-slate-700">
+                        {phone ? (
+                          <div className="flex items-center justify-center rounded-xl border border-slate-200 bg-white px-2.5 py-2 text-[10px] font-bold text-slate-700 shadow-2xs">
                             <Phone className="h-3 w-3" />
                           </div>
-                        )}
+                        ) : null}
                       </div>
                     </div>
                   </div>
 
-                  {/* Fake Bottom Space */}
-                  <div className="rounded-xl bg-slate-100/80 p-2.5 text-center">
-                    <span className="text-[10px] text-slate-400">
-                      Students see this right under their study materials
+                  {/* Context note inside screen */}
+                  <div className="rounded-xl bg-white border border-slate-200/80 p-2.5 text-center shadow-2xs">
+                    <span className="text-[10px] font-medium text-slate-500">
+                      Students experience this banner directly under official question papers &amp; notices
                     </span>
                   </div>
                 </div>
 
-                {/* Home Indicator */}
-                <div className="mx-auto mt-2 h-1 w-24 rounded-full bg-slate-700" />
+                {/* Home Indicator Bar */}
+                <div className="mx-auto mt-2 h-1 w-20 rounded-full bg-slate-800" />
               </div>
 
-              {/* Quick Contact & Admin Link */}
-              <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 text-center space-y-2.5">
-                <span className="text-xs font-bold text-slate-700 block">
-                  Have questions before booking?
+              {/* Assistance Card */}
+              <div className="rounded-2xl border border-slate-200/90 bg-white p-3 text-center shadow-2xs">
+                <span className="text-xs text-slate-500 block mb-1">
+                  Custom institutional alliance or invoice requirements?
                 </span>
-                <div className="flex justify-center">
-                  <a
-                    href="https://ig.me/m/_lazypu"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white py-2 px-3 text-xs font-extrabold transition shadow-xs"
-                  >
-                    <InstagramIcon className="h-4 w-4 shrink-0" />
-                    <span>Chat with Admin on Instagram (@_lazypu)</span>
-                  </a>
-                </div>
-
-                <div className="pt-2 border-t border-slate-100 text-[10px] text-slate-400">
-                  <Link href="/sponsor/admin" className="hover:text-slate-600 transition flex items-center justify-center gap-1">
-                    <Lock className="h-3 w-3" />
-                    <span>Partner Control Panel</span>
-                  </Link>
-                </div>
+                <a
+                  href="https://ig.me/m/_lazypu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-orange-600 hover:text-orange-700 transition inline-flex items-center gap-1"
+                >
+                  <InstagramIcon className="h-3.5 w-3.5" />
+                  <span>Direct Consultation on Instagram (@_lazypu)</span>
+                </a>
               </div>
             </div>
           </div>

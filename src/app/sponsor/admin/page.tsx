@@ -25,10 +25,17 @@ import {
   AlertCircle,
   ExternalLink,
   Zap,
+  Shield,
+  Key,
+  LogOut,
+  UserCheck,
 } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
+import type { User } from '@supabase/supabase-js';
 import {
   Sponsor,
   getActiveSponsor,
+  getAllSponsorApplicationsAsync,
   getAllSponsorApplications,
   approveAndActivateSponsor,
   resetToInHouseSponsor,
@@ -37,10 +44,11 @@ import {
   DEFAULT_INHOUSE_SPONSOR,
 } from '@/services/sponsorService';
 
-const ADMIN_PIN = '2026';
-
 export default function SponsorAdminPage() {
-  const [pin, setPin] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoadingAuth, setIsLoadingAuth] = useState(false);
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -68,12 +76,38 @@ export default function SponsorAdminPage() {
       if (active.id) {
         setStats(getSponsorStats(active.id));
       }
-      const apps = getAllSponsorApplications();
+      const apps = await getAllSponsorApplicationsAsync();
       setApplications(apps);
     } catch {
       // ignore
     }
   };
+
+  // Check Supabase session on mount
+  useEffect(() => {
+    if (supabase) {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session?.user) {
+          setCurrentUser(session.user);
+          setIsAuthenticated(true);
+        }
+      });
+
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+        if (session?.user) {
+          setCurrentUser(session.user);
+          setIsAuthenticated(true);
+        } else {
+          setCurrentUser(null);
+          setIsAuthenticated(false);
+        }
+      });
+
+      return () => {
+        subscription.unsubscribe();
+      };
+    }
+  }, []);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -81,36 +115,71 @@ export default function SponsorAdminPage() {
     }
   }, [isAuthenticated]);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleSupabaseAuth = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (pin.trim() === ADMIN_PIN) {
-      setIsAuthenticated(true);
-      setErrorMsg('');
-    } else {
-      setErrorMsg('Incorrect Admin PIN. Please try again.');
+    if (!email.trim() || !password) {
+      setErrorMsg('Please enter both email and password.');
+      return;
+    }
+
+    if (!supabase) {
+      setErrorMsg('Supabase client is not initialized.');
+      return;
+    }
+
+    setIsLoadingAuth(true);
+    setErrorMsg('');
+
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: email.trim(),
+        password,
+      });
+
+      if (error) {
+        setErrorMsg(error.message || 'Invalid email or password.');
+      } else if (data?.user) {
+        setCurrentUser(data.user);
+        setIsAuthenticated(true);
+        setErrorMsg('');
+      }
+    } catch (err: any) {
+      setErrorMsg(err.message || 'Authentication error.');
+    } finally {
+      setIsLoadingAuth(false);
     }
   };
 
-  const handleApprove = (id: string) => {
+  const handleLogout = async () => {
+    if (supabase) {
+      await supabase.auth.signOut();
+    }
+    setCurrentUser(null);
+    setIsAuthenticated(false);
+    setEmail('');
+    setPassword('');
+  };
+
+  const handleApprove = async (id: string) => {
     if (window.confirm('Approve this sponsor and make it LIVE across the entire app?')) {
-      const success = approveAndActivateSponsor(id);
+      const success = await approveAndActivateSponsor(id);
       if (success) {
         alert('Sponsor is now LIVE across the app!');
-        loadData();
+        await loadData();
       } else {
         alert('Failed to activate sponsor.');
       }
     }
   };
 
-  const handleResetToInHouse = () => {
+  const handleResetToInHouse = async () => {
     if (window.confirm('Reset the active banner to the default In-House partner promotion?')) {
-      resetToInHouseSponsor();
-      loadData();
+      await resetToInHouseSponsor();
+      await loadData();
     }
   };
 
-  const handleQuickCreateSubmit = (e: React.FormEvent) => {
+  const handleQuickCreateSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!quickForm.businessName || !quickForm.tagline || !quickForm.whatsappNumber) {
       alert('Please fill required fields');
@@ -140,55 +209,70 @@ export default function SponsorAdminPage() {
       createdAt: now.toISOString(),
     };
 
-    setCustomActiveSponsor(newSponsor);
+    await setCustomActiveSponsor(newSponsor);
     setIsQuickCreateOpen(false);
+    await loadData();
     alert('New sponsor is now LIVE across Lazy PU!');
-    loadData();
   };
 
-  // 1. PIN Login Screen
+  // 1. Authentication Screen (Supabase Email & Password Only)
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-[#f8fafc] text-slate-900 flex items-center justify-center p-4 pb-20">
         <div className="w-full max-w-sm rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-7 shadow-xl space-y-4">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-200">
-            <Lock className="h-7 w-7" />
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-200 shadow-2xs">
+            <Shield className="h-7 w-7" />
           </div>
 
           <div className="text-center space-y-1">
             <h2 className="text-lg font-black text-slate-900">Partner Admin Portal</h2>
             <p className="text-xs text-slate-500">
-              Enter the master PIN to manage campus sponsors & banners
+              Sign in with your Email & Password
             </p>
           </div>
 
-          <form onSubmit={handleLogin} className="space-y-3">
-            <div>
+          <form onSubmit={handleSupabaseAuth} className="space-y-3 pt-1">
+            <div className="relative">
+              <Mail className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+              <input
+                type="email"
+                required
+                autoFocus
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+                className="w-full pl-10 pr-3.5 py-2.5 text-xs rounded-xl border border-slate-200 bg-slate-50/80 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:outline-hidden transition shadow-2xs"
+              />
+            </div>
+
+            <div className="relative">
+              <Key className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
               <input
                 type="password"
                 required
-                autoFocus
-                value={pin}
-                onChange={(e) => setPin(e.target.value)}
-                placeholder="Enter PIN (Default: 2026)"
-                className="w-full text-center tracking-widest font-mono text-lg rounded-2xl border border-slate-200 bg-slate-50 p-3 text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-hidden transition"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password"
+                className="w-full pl-10 pr-3.5 py-2.5 text-xs rounded-xl border border-slate-200 bg-slate-50/80 text-slate-900 placeholder:text-slate-400 focus:bg-white focus:border-blue-600 focus:outline-hidden transition shadow-2xs"
               />
-              {errorMsg && (
-                <p className="text-xs text-rose-600 font-bold text-center mt-1.5 flex items-center justify-center gap-1">
-                  <AlertCircle className="h-3.5 w-3.5" />
-                  <span>{errorMsg}</span>
-                </p>
-              )}
             </div>
+
+            {errorMsg && (
+              <p className="text-xs text-rose-600 font-bold text-center mt-1 flex items-center justify-center gap-1">
+                <AlertCircle className="h-3.5 w-3.5 shrink-0" />
+                <span>{errorMsg}</span>
+              </p>
+            )}
 
             <button
               type="submit"
-              className="w-full rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-black py-3 text-xs transition shadow-xs active:scale-98"
+              disabled={isLoadingAuth}
+              className="w-full rounded-2xl bg-slate-900 hover:bg-slate-800 disabled:opacity-60 text-white font-black py-3 text-xs transition shadow-xs active:scale-98 cursor-pointer"
             >
-              Unlock Control Panel
+              {isLoadingAuth ? 'Authenticating...' : 'Sign In to Control Panel'}
             </button>
 
-            <div className="text-center pt-2">
+            <div className="text-center pt-1">
               <Link
                 href="/sponsor"
                 className="text-xs font-bold text-slate-400 hover:text-slate-600 transition"
@@ -213,17 +297,22 @@ export default function SponsorAdminPage() {
       <main className="mx-auto max-w-5xl px-3 pt-4 space-y-5">
         {/* Top Control Strip */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-3.5 shadow-2xs">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
             <span className="text-xs font-black text-slate-900">
-              System Online • Connected
+              {currentUser ? currentUser.email : 'System Online • Connected'}
             </span>
+            {currentUser && (
+              <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold px-1.5 py-0.5">
+                <ShieldCheck className="h-3 w-3" /> Supabase Auth
+              </span>
+            )}
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <button
               onClick={() => setIsQuickCreateOpen(true)}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 text-xs font-bold shadow-2xs transition active:scale-95"
+              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 text-xs font-bold shadow-2xs transition active:scale-95 cursor-pointer"
             >
               <Plus className="h-3.5 w-3.5" />
               <span>Add Custom Sponsor</span>
@@ -231,10 +320,19 @@ export default function SponsorAdminPage() {
 
             <button
               onClick={loadData}
-              className="rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 p-2 text-slate-600 transition"
-              title="Refresh"
+              className="rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 p-2 text-slate-600 transition cursor-pointer"
+              title="Refresh Data"
             >
               <RefreshCw className="h-3.5 w-3.5" />
+            </button>
+
+            <button
+              onClick={handleLogout}
+              className="inline-flex items-center gap-1 rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 px-3 py-1.5 text-xs font-bold transition cursor-pointer"
+              title="Sign Out"
+            >
+              <LogOut className="h-3.5 w-3.5" />
+              <span>Logout</span>
             </button>
           </div>
         </div>
