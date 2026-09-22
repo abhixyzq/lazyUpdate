@@ -18,18 +18,20 @@ import {
   ShieldCheck,
   AlertCircle
 } from 'lucide-react';
-import { LiveNoticeItem } from '@/app/api/notices/route';
+import { LiveNoticeItem, FALLBACK_NOTICES } from '@/data/liveNoticesFallback';
 
 const CACHE_KEY = 'lazy_pu_notices_cache';
 const CACHE_TIME_KEY = 'lazy_pu_notices_cache_time';
+const SIX_MONTHS_MS = 180 * 24 * 60 * 60 * 1000;
 
 export default function NoticesPage() {
-  const [notices, setNotices] = useState<LiveNoticeItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  // Pre-populate with verified fallback notices so it NEVER shows an empty screen
+  const [notices, setNotices] = useState<LiveNoticeItem[]>(FALLBACK_NOTICES);
+  const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const [lastUpdated, setLastUpdated] = useState<string>('');
+  const [lastUpdated, setLastUpdated] = useState<string>('Recent');
   const [sourceType, setSourceType] = useState<string>('live_samarth');
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
@@ -37,44 +39,6 @@ export default function NoticesPage() {
     setToastMessage(msg);
     setTimeout(() => setToastMessage(null), 2500);
   };
-
-  // Fetch notices from API
-  const fetchNotices = async (isManualRefresh = false) => {
-    if (isManualRefresh) setRefreshing(true);
-    try {
-      const res = await fetch('/api/notices');
-      const data = await res.json();
-
-      if (data.success && Array.isArray(data.notices)) {
-        setNotices(data.notices);
-        setSourceType(data.source || 'live_samarth');
-        const updateTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        setLastUpdated(updateTime);
-
-        // Save to offline storage
-        try {
-          localStorage.setItem(CACHE_KEY, JSON.stringify(data.notices));
-          localStorage.setItem(CACHE_TIME_KEY, updateTime);
-        } catch {
-          // ignore localstorage quota issue
-        }
-
-        if (isManualRefresh) {
-          showToast('Notices refreshed from official portal');
-        }
-      }
-    } catch (err) {
-      console.error('Failed to load notices:', err);
-      if (isManualRefresh) {
-        showToast('Network issue: Showing saved notices');
-      }
-    } finally {
-      setLoading(false);
-      setRefreshing(false);
-    }
-  };
-
-  const SIX_MONTHS_MS = 180 * 24 * 60 * 60 * 1000;
 
   const isNoticeExpired = (item: LiveNoticeItem) => {
     try {
@@ -90,6 +54,83 @@ export default function NoticesPage() {
     return false;
   };
 
+  // Determine correct API URL for Web vs Native Android/iOS App
+  const getNoticeApiUrl = () => {
+    if (typeof window !== 'undefined') {
+      const isCapacitor = !!(window as any).Capacitor?.isNativePlatform?.() ||
+                          window.location.protocol === 'capacitor:' ||
+                          window.location.protocol === 'file:';
+      const isLocalhostNoPort = window.location.hostname === 'localhost' && !window.location.port;
+
+      // In Capacitor native app, relative '/api/notices' fails because there's no local Node server.
+      // Must use absolute production domain: https://lazyupdate.tech/api/notices
+      if (isCapacitor || isLocalhostNoPort) {
+        return 'https://lazyupdate.tech/api/notices';
+      }
+    }
+    return '/api/notices';
+  };
+
+  // Fetch notices from API with resilient multi-tier fallback
+  const fetchNotices = async (isManualRefresh = false) => {
+    if (isManualRefresh) setRefreshing(true);
+    let data: any = null;
+
+    try {
+      // Tier 1: Try resolved endpoint (either relative for web, or lazyupdate.tech for app)
+      const primaryUrl = getNoticeApiUrl();
+      const res = await fetch(primaryUrl);
+      if (res.ok) {
+        data = await res.json();
+      }
+    } catch (err) {
+      console.warn('Primary notice fetch failed, trying direct remote endpoint:', err);
+    }
+
+    // Tier 2: If primary failed or returned error, try direct production URL
+    if (!data || !data.success) {
+      try {
+        const fallbackRes = await fetch('https://lazyupdate.tech/api/notices');
+        if (fallbackRes.ok) {
+          data = await fallbackRes.json();
+        }
+      } catch (err2) {
+        console.warn('Direct remote notice fetch failed:', err2);
+      }
+    }
+
+    // Process result
+    if (data && data.success && Array.isArray(data.notices) && data.notices.length > 0) {
+      const activeOnly = data.notices.filter((item: LiveNoticeItem) => !isNoticeExpired(item));
+      if (activeOnly.length > 0) {
+        setNotices(activeOnly);
+        setSourceType(data.source || 'live_samarth');
+        const updateTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        setLastUpdated(updateTime);
+
+        // Save to offline storage
+        try {
+          localStorage.setItem(CACHE_KEY, JSON.stringify(activeOnly));
+          localStorage.setItem(CACHE_TIME_KEY, updateTime);
+        } catch {
+          // ignore localstorage quota issue
+        }
+
+        if (isManualRefresh) {
+          showToast('Notices refreshed from official portal');
+        }
+      }
+    } else {
+      // Tier 3: Network unavailable — use localStorage or keep pre-bundled fallback
+      if (isManualRefresh) {
+        showToast('Offline: Showing saved official notices');
+      }
+    }
+
+    setLoading(false);
+    setRefreshing(false);
+  };
+
   // Initial load: fast render from cache (pruning expired ones), then background sync
   useEffect(() => {
     try {
@@ -98,11 +139,11 @@ export default function NoticesPage() {
       if (cached) {
         const parsed = JSON.parse(cached);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // Auto-purge any notice older than 6 months from phone cache
           const activeOnly = parsed.filter((item: LiveNoticeItem) => !isNoticeExpired(item));
-          setNotices(activeOnly);
-          setLoading(false);
-          if (cachedTime) setLastUpdated(cachedTime);
+          if (activeOnly.length > 0) {
+            setNotices(activeOnly);
+            if (cachedTime) setLastUpdated(cachedTime);
+          }
         }
       }
     } catch {
