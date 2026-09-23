@@ -12,7 +12,6 @@ import { useRouter } from 'next/navigation';
 import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
 import { SideDrawer } from '@/components/SideDrawer';
 import { ImportantLinksModal, ImportantLinkCategory } from '@/components/ImportantLinksModal';
-import { DownloadAppSection } from '@/components/DownloadAppSection';
 import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 
 import { puNoticesData } from '@/data/puNotices';
@@ -92,10 +91,7 @@ export default function ApnaUniversityHomePage() {
         onSelectAction={handleAction}
       />
 
-      {/* 4. Download App Section */}
-      <DownloadAppSection appTitle={appTitle} />
-
-      {/* 5. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
+      {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
       <div className="mx-auto max-w-xl px-3 pt-3">
         <div className="rounded-3xl border border-slate-200/90 bg-white p-3.5 sm:p-4 shadow-sm">
           <div className="flex items-center justify-between pb-2.5 px-1 border-b border-slate-100 mb-2.5">
