@@ -23,64 +23,92 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Computer Fundamentals - P.K. Sinha & Priti Sinha, BPB Publications",
+            "Computer System Architecture - M. Morris Mano, Pearson",
+            "Introduction to Computers - Peter Norton, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction to Computer and Basic anatomy",
+              "title": "Introduction to Computer and Basic Anatomy",
               "topics": [
-                "Definitions: Data, Processing, information, Bits, Bytes and Words, Input, Output, CPU, Peripheral Devices, Backing Storage Input interface, Output Interface, Microprocessor, RISC, CISC, Types of motherboards Expansion slots, Adaptor Cards, SMPS, Controller Cards, Video - Raster Scanning & interleaved double scan, DISPLAYS - MDA, CGA, HGA, EGA, VGA, SVGA"
+                "Definitions: Data, Information, Processing, Bits, Bytes, and Words",
+                "Computer Anatomy: Input Devices, Output Devices, Central Processing Unit (CPU)",
+                "System Interfaces: Input Interface, Output Interface, and Backing Storage",
+                "Microprocessor Architecture: RISC vs CISC Microprocessors",
+                "Motherboard Components: Types of Motherboards, Expansion Slots, Adaptor Cards, SMPS, Controller Cards",
+                "Video Display Architecture: Raster Scanning and Interleaved Double Scan",
+                "Display Standards: MDA, CGA, HGA, EGA, VGA, SVGA"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Classification of Computers and Applications",
               "topics": [
-                "On the basis of generation Micro, Mini, Super, Mainframe, Digital, Analog, Hybrid Applications in Business & Industry, Science & Technology, Education, Health, Communication, Banking & Other Public services, Block Diagram of IBM PC,"
+                "Classification by Generation: First to Fifth Generation Computers",
+                "Classification by Technology: Micro, Mini, Mainframe, Supercomputers, Digital, Analog, and Hybrid",
+                "Applications: Business, Industry, Science & Technology, Education, Healthcare, Communication, and Banking",
+                "Block Diagram and Architecture of IBM PC"
               ]
             },
             {
               "unitNumber": 3,
               "title": "Peripheral Devices",
               "topics": [
-                "Input Devices Keyboard, Mouse, Joystick, Trackball, Touch Panels, OMR, OCR, MICR, Data Glove, Digitizers, Image scanners, Light Pen, Voice system Output Devices Printers: Impact printers and non-impact printers, Character Printers, Line Printers and Page Printers, Dot matrix, Daisy wheel, Thermal, LASER, Inkjet, Electrostatic, Drum Printer, Chain Printer Plotters: Drum and Flat Bed Plotters VDU: Visual Display Adapters, LCD Secondary Storage Devices Magnetic Disk (Winchester and hard disks), Magnetic Tape, Floppy Disk, Optical (Video or LASER disk), CD"
+                "Input Devices: Keyboard, Mouse, Joystick, Trackball, Touch Panels",
+                "Optical & Magnetic Recognition: OMR, OCR, MICR, Image Scanners, Digitizers, Light Pen",
+                "Advanced Input: Voice Recognition System, Data Glove",
+                "Output Devices: Printers (Impact and Non-Impact Printers)",
+                "Printer Technologies: Character Printers, Line Printers, Page Printers, Dot Matrix, Daisy Wheel, Thermal, LASER, Inkjet, Electrostatic",
+                "High-Speed Printers: Drum Printer, Chain Printer",
+                "Plotters: Drum Plotters and Flat Bed Plotters",
+                "Visual Display Units (VDU): Visual Display Adapters, LCD Displays",
+                "Secondary Storage Devices: Magnetic Disks (Winchester and Hard Disks), Magnetic Tape, Floppy Disk",
+                "Optical Storage: CD, DVD, Video / LASER Disk"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Memory and Register",
               "topics": [
-                "Primary memory, Secondary Memory, Cache memory RAM- SRAM, DRAM, ROM- PROM, EPROM, EEPROM, CDROM, ROM BIOS, BUSES Registers- Program Counter, Memory Buffer register, Memory Address Register, Accumulator, Cache Memory"
+                "Memory Hierarchy: Primary Memory, Secondary Memory, and Cache Memory",
+                "RAM Technologies: SRAM (Static RAM) vs DRAM (Dynamic RAM)",
+                "ROM Technologies: PROM, EPROM, EEPROM, CDROM, ROM BIOS",
+                "System Buses: Data Bus, Address Bus, Control Bus",
+                "Processor Registers: Program Counter (PC), Memory Buffer Register (MBR), Memory Address Register (MAR), Accumulator, Cache Memory"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Computer Codes and Number system",
+              "title": "Computer Codes and Number System",
               "topics": [
-                "Number System: (i) Positional - Decimal, Binary, Octal, Hexadecimal (ii) Non Positional (Roman), Conversion of Decimal Number in other systems and vice-versa Binary Arithmetic - Addition, Subtraction (1's complement, 2's complement), Multiplication, Division, Boolean Algebra - BASIC Gates (OR, AND, NAND, NOT, XOR, NOR)"
+                "Positional Number Systems: Decimal, Binary, Octal, Hexadecimal",
+                "Non-Positional Number Systems: Roman Numerals",
+                "Base Conversions: Decimal to Binary, Octal, Hexadecimal and Vice-Versa",
+                "Binary Arithmetic: Addition, Subtraction (1's and 2's Complement), Multiplication, Division",
+                "Boolean Algebra & Logic Gates: Basic Gates (AND, OR, NOT) and Universal Gates (NAND, NOR, XOR, XNOR)"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Types of processing and Introduction to Operating Systems",
+              "title": "Software Concept",
               "topics": [
-                "(i) Batch Processing (ii) On-line processing (iii) Real-time processing Operating Systems(OS), Multi-programming, Multitasking, Multiprocessor, Utilities, Compilers/Interpreters, Assemblers"
+                "Introduction to Software: Types of Software, Software Development Lifecycle Overview",
+                "System Software: Operating Systems, Device Drivers, Language Translators (Assembler, Compiler, Interpreter)",
+                "Application Software: General-Purpose Software vs Customized Business Application Software",
+                "Software Utilities, File Managers, and Anti-virus Software"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Networking",
+              "title": "Computer Languages",
               "topics": [
-                "Topologies (BUS, STAR, RING, MIXED), Advantages and disadvantages of networking, LAN, WAN. Transmission Media, Multimedia, Internet"
+                "Language Hierarchy: Machine Language, Assembly Language, High-Level Language",
+                "Comparative Analysis: Advantages, Limitations, and Machine Independence",
+                "Language Translators: Compilers, Interpreters, Linkers, and Loaders"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "Computer Fundamental Architecture and Organization - B. Ram.",
-            "Computer Fundamentals - Sukhvir Singh (Khanna Publication)",
-            "\"O\" Level (Module - I) Information Technology - V.K. Jain",
-            "Introduction to IBM PC - Peter Nortan",
-            "Microprocessor Architecture, Programming Applications - Ramesh S.Gaonakar",
-            "Illustrated MS-DOS 6.22 - Russell A. Stultz"
           ]
         },
         {
@@ -90,20 +118,21 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "DOS: The Complete Reference - Kris Jamsa, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "DOS Practical",
+              "title": "DOS Lab Practicals",
               "topics": [
-                "Directory Structure, File naming Convention and valid characters for filenames.",
-                "Internal Commands: CLS, DIR, COPY CON, TYPE, REN, COPY, DATE, TIME, DEL, MD, RD, CD, ERASE, PROMPT, ECHO, PATH, PAUSE, SET, VER, VOL, REM(.) Current Directory, (..) Root Directory,",
-                "External Commands: FORMAT, CHKDSK, SCANDISK, DISKCOPY, SORT, FIND, SHIFT, ATTRIB, XCOPY, TREE, UNDELETE, EDIT, DELTREE, MOVE, DEFRAG, MORE, IF EXIST, BREAK, VERIFY,",
-                "Redirection, Pipes, Command Line Parameter. Executable Files, Text Files, Batch Files."
+                "Internal DOS Commands: DIR, CLS, COPY, DEL, REN, TYPE, MD, CD, RD, DATE, TIME, VER, VOL",
+                "External DOS Commands: CHKDSK, FORMAT, DISKCOPY, XCOPY, TREE, ATTRIB, MORE, FIND, SORT",
+                "Batch File Programming (.BAT) and System Configuration (AUTOEXEC.BAT, CONFIG.SYS)"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-2",
@@ -113,96 +142,105 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Programming in ANSI C - E. Balagurusamy, McGraw Hill",
+            "Let Us C - Yashavant Kanetkar, BPB Publications",
+            "The C Programming Language - Brian W. Kernighan & Dennis M. Ritchie, Prentice Hall"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction to Programming",
+              "title": "Introduction to Programming Concepts",
               "topics": [
-                "History of C, Overview of Procedural Programming, Introduction to Algorithm & Flowcharts."
+                "Problem Solving Approaches: Algorithms, Flowcharts, Pseudo-code, Decision Tables",
+                "Program Development Life Cycle: Coding, Compilation, Debugging, Testing, Documentation"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Understanding Compilation and Execution in C",
+              "title": "C Fundamentals & Data Types",
               "topics": [
-                "Using main() function, Compiling and Executing Simple Programs in C."
+                "Character Set, Identifiers, Keywords, Constants, Variables, Data Types in C",
+                "Operators & Expressions: Arithmetic, Relational, Logical, Bitwise, Assignment, Ternary Operators",
+                "Operator Precedence, Associativity, and Type Casting"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Data Types, Variables, Constants, Operators and Basic I/O",
+              "title": "Managing Input and Output Operations",
               "topics": [
-                "Declaring, Defining and Initializing Variables, Scope of Variables, Using Named Constants, Keywords, Data Types, Casting of Data Types, Operators (Arithmetic, Logical and Bitwise), Using Comments in programs, Character I/O (getc, getchar, putc, putchar ctc), Formatted and Console I/O (printf(), scanf()), Using Basic Header Files (stdio.h, conio.h etc)."
+                "Formatted I/O Functions: printf() and scanf() with Format Specifiers",
+                "Unformatted Character & String I/O: getchar(), putchar(), gets(), puts()"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Expressions, Conditional Statements and Iterative Statements",
+              "title": "Decision Making & Branching",
               "topics": [
-                "Simple Expressions in C (including Unary Operator Expressions, Binary Operator Expressions), Understanding Operators Precedence in Expressions, Conditional Statements (if construct, switch-case construct), Understanding syntax and utility of Iterative Statements (while, do-while, and for loops), Use of break and continue in Loops, Using Nested Statements (Conditional as well as Iterative)"
+                "Conditional Control: if, if-else, nested if-else, else-if ladder",
+                "Multi-way Branching: switch-case, default statement, break statement"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Understanding Functions",
+              "title": "Decision Making & Looping",
               "topics": [
-                "Utility of functions, Call by Value, Call by Reference, Functions returning value, Void functions, Inline Functions, Return data type of functions, Functions parameters, Differentiating between Declaration and Definition of Functions, Command Line Arguments/Parameters in Functions, Functions with variable number of Arguments."
+                "Looping Constructs: while loop, do-while loop, for loop, nested loops",
+                "Jumps in Loops: break, continue, goto statements"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Implementation of Arrays and Strings",
+              "title": "Arrays",
               "topics": [
-                "Creating and Using One Dimensional Arrays (Declaring and Defining an Array, Initializing an Array, Accessing individual elements in an Array, Manipulating array elements using loops), Use Various types of arrays (integer, float and character arrays / Strings) Two-dimensional Arrays (Declaring, Defining and Initializing Two Dimensional Array, Working with Rows and Columns), Introduction to Multi-dimensional arrays"
+                "One-Dimensional Arrays: Declaration, Initialization, Memory Representation, Accessing Elements",
+                "Two-Dimensional & Multi-Dimensional Arrays: Matrix Operations (Addition, Multiplication, Transpose)"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "User-defined Data Types (Structures and Unions)",
+              "title": "Character Arrays & Strings",
               "topics": [
-                "Understanding utility of structures and unions, Declaring, initializing and using simple structures and unions, Manipulating individual members of structures and unions, Array of Structures, Individual data members as structures, Passing and returning structures from functions, Structure with union as members, Union with structures as members."
+                "Declaring and Initializing String Variables, Reading and Writing Strings",
+                "Standard String Library Functions: strlen(), strcpy(), strcat(), strcmp(), strrev(), strstr()"
               ]
             },
             {
               "unitNumber": 8,
-              "title": "Pointers and References in C",
+              "title": "User-Defined Functions",
               "topics": [
-                "Understanding a Pointer Variable, Simple use of Pointers (Declaring and Dereferencing Pointers to simple variables), Pointers to Pointers, Pointers to structures, Problems with Pointers, Passing pointers as function arguments, Returning a pointer from a function, using arrays as pointers, Passing arrays to functions. Pointers vs. References, Declaring and initializing references, Using references as function arguments and function return values"
+                "Function Basics: Declaration, Prototype, Definition, Calling Functions",
+                "Parameter Passing: Call by Value vs Call by Reference",
+                "Recursion: Recursive Functions, Base Case, Stack Allocation"
               ]
             },
             {
               "unitNumber": 9,
-              "title": "Memory Allocation in C",
+              "title": "Structures and Unions",
               "topics": [
-                "Differentiating between static and dynamic memory allocation, use of malloc, calloc and free functions, use of new and delete operators, storage of variables in static and dynamic memory allocation"
+                "Defining Structures, Declaring Structure Variables, Accessing Members (. and -> operators)",
+                "Array of Structures, Nested Structures, Passing Structures to Functions",
+                "Unions: Definition, Differences Between Structure and Union, Bit Fields"
               ]
             },
             {
               "unitNumber": 10,
-              "title": "File I/O",
+              "title": "Pointers",
               "topics": [
-                "Opening and closing a file, Reading and writing Text Files, Using put(), get(), read() and write() functions, Random access in files,"
+                "Pointer Concepts: Pointer Variables, Address Operator (&), Dereferencing Operator (*)",
+                "Pointer Arithmetic, Pointers with Arrays, Pointers to Structures",
+                "Dynamic Memory Allocation: malloc(), calloc(), realloc(), free()"
               ]
             },
             {
               "unitNumber": 11,
-              "title": "Preprocessor Directives",
+              "title": "File Management in C",
               "topics": [
-                "Understanding the Preprocessor Directives (#include, #define)"
+                "File Streams: Opening and Closing Files (fopen, fclose, File Modes)",
+                "File I/O Operations: getc, putc, getw, putw, fprintf, fscanf, fgets, fputs",
+                "Random Access in Files: fseek(), ftell(), rewind()"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "ANSI C - E. Balagurusamy",
-            "Programming in C - Gottfried (TMH).",
-            "Let us C - Yashwant Kanetkar",
-            "\"The C Programming Language ANSI C Version\", Kernighan & Ritchie, Prentice Hall Software Series",
-            "\"ANSI C - Made Easy\", Herbert Schildt, Osborne McGraw-Hill",
-            "\"Learning to Program in C\", N. Kantaris, Babani",
-            "\"C - The Complete Reference\", Herbert Schildt, Osborne McGraw-Hill",
-            "\"Programming in C\", ReemaThareja, Oxford University Press",
-            "\"A First Course in Programming With C\", T. Jeyapoovan, Vikas Publishing House",
-            "\"Let Us C\", Yashavant P. Kanetkar, BPB Publications"
           ]
         },
         {
@@ -212,57 +250,25 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Exploring C - Yashavant Kanetkar, BPB Publications"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "C Programming Practicals",
+              "title": "C Programming Laboratory Practicals",
               "topics": [
-                "WAP to perform input/output of all basic data types.",
-                "WAP to enter two numbers and find their sum.",
-                "WAP to reverse a number.",
-                "WAP to Swap Two Numbers.",
-                "WAP to Check Whether a Number is Even or Odd",
-                "WAP to compute the factors of a given number.",
-                "WAP to enter marks of five subjects and calculate total, average and percentage.",
-                "WAP to print the sum and product of digits of an integer.",
-                "WAP to Check Whether a Character is Vowel or Consonant",
-                "WAP to Find the Largest Number Among Three Numbers",
-                "WAP to compute the sum of the first n terms of the following series S =1-2+3-4+5.",
-                "WAP to compute the sum of the first n terms of the following series S = 1 + 1/2 + 1/3 + 1/4 + ...",
-                "WAP to print a triangle of stars as follows (take number of lines from user):",
-                "WAP to perform following actions on an array entered by the user: a) Print the even-valued elements b) Print the odd-valued elements c) Calculate and print the sum and average of the elements of array d) Print the maximum and minimum element of array e) Remove the duplicates from the array f) Print the array in reverse order",
-                "WAP that prints a table indicating the number of occurrences of each alphabet in the text entered as command line arguments.",
-                "Write a program that swaps two numbers using pointers.",
-                "Write a program in which a function is passed address of two variables and then alter its contents.",
-                "Write a program which takes the radius of a circle as input from the user, passes it to another function that computes the area and the circumference of the circle and displays the value of area and circumference from the main() function.",
-                "Write a program to find sum of n elements entered by the user. To write this program, allocate memory dynamically using malloc() / calloc() functions or new operator.",
-                "Write a menu driven program to perform following operations on strings:",
-                "Show address of each character in string",
-                "Concatenate two strings without using struct function.",
-                "Concatenate two strings using struct function.",
-                "Compare two strings",
-                "Calculate length of the string (use pointers)",
-                "Convert all lowercase characters to uppercase",
-                "Convert all uppercase characters to lowercase",
-                "Calculate number of vowels",
-                "Reverse the string",
-                "Given two ordered arrays of integers, write a program to merge the two-arrays to get an ordered array.",
-                "WAP to display Fibonacci series (i)using recursion, (ii) using iteration",
-                "WAP to calculate Factorial of a number (i)using recursion, (ii) using iteration",
-                "WAP to calculate GCD of two numbers (i) with recursion (ii) without recursion.",
-                "Write a menu-driven program to perform following Matrix operations (2-D array implementation): a) Sum b) Difference c) Product d) Transpose",
-                "Create a structure Student containing fields for Roll No., Name, Class, Year and Total Marks. Create 10 students and store them in a file.",
-                "Write a program to retrieve the student information from file created in previous question and print it in following format: Roll No. Name Marks",
-                "Copy the contents of one text file to another file, after removing all whitespaces.",
-                "WAP to Write a Sentence to a File.",
-                "WAP to Read a Line From a File and Display it.",
-                "Write a function that reverses the elements of an array in place. The function must accept only one pointer value and return void.",
-                "Write a program that will read 10 integers from user and store them in an array. Implement array using pointers. The program will print the array elements in ascending and descending order."
+                "Implementation of arithmetic algorithms and mathematical series (Fibonacci, Factorial, Prime numbers)",
+                "Array manipulation: Sorting (Bubble sort, Selection sort), Searching (Linear & Binary search)",
+                "Matrix operations: Addition, subtraction, multiplication, and matrix transpose",
+                "String manipulation programs without using string library functions",
+                "Structure implementations for student records, banking accounts, and payroll processing",
+                "Pointer programs for swapping variables, dynamic memory allocation, and array traversal",
+                "File handling programs to read, write, copy, and append records in disk files"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         }
       ]
     },
@@ -277,64 +283,65 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Java: The Complete Reference - Herbert Schildt, McGraw Hill",
+            "Head First Java - Kathy Sierra & Bert Bates, O’Reilly",
+            "Core Java Volume I: Fundamentals - Cay S. Horstmann, Prentice Hall"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction to Java",
+              "title": "Introduction to Java Platform",
               "topics": [
-                "Java Architecture and Features, Understanding the semantic and syntax differences between C++ and Java, Compiling and Executing a Java Program, Variables, Constants, Keywords Data Types, Operators (Arithmetic, Logical and Bitwise) and Expressions, Comments, Doing Basic Program Output, Decision Making Constructs (conditional statements and loops) and Nesting, Java Methods (Defining, Scope, Passing and Returning Arguments, Type Conversion and Type and Checking, Built-in Java Class Methods),"
+                "History, Philosophy, and Evolution of Java; Key Features of Java (Simple, Object-Oriented, Robust, Secure, Platform Independent)",
+                "Java Architecture: Java Development Kit (JDK), Java Runtime Environment (JRE), Java Virtual Machine (JVM), Bytecode and JIT Compiler",
+                "Java vs C++: Architectural Differences and Memory Model"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Arrays, Strings and I/O",
+              "title": "Java Language Basics & Control Flow",
               "topics": [
-                "Creating & Using Arrays (One Dimension and Multi-dimensional). Referencing Arrays Dynamically, Java Strings: The Java String class, Creating & Using String Objects, Manipulating Strings, String Immutability & Equality, Passing Strings To & From Methods, String Buffer Classes. Simple I/O using System.out and the Scanner class, Byte and Character streams, Reading/Writing from console and files."
+                "Data Types, Variables, Constants, Arrays, Operators, Type Conversion & Casting",
+                "Control Statements: Selection (if-else, switch), Iteration (while, do-while, for, enhanced for-each loop), Jump statements (break, continue, return)"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Object-Oriented Programming Overview",
+              "title": "Classes, Objects & Methods",
               "topics": [
-                "Principles of Object-Oriented Programming, Defining & Using Classes, Controlling Access to Class Members, Class Constructors, Method Overloading, Class Variables & Methods, Objects as parameters, final classes, Object class, Garbage Collection."
+                "Class Fundamentals: Declaring Objects, Reference Variables, Assigning Object Reference Variables",
+                "Methods: Parameter Passing, Returning Values, Constructors, Default & Parameterized Constructors",
+                "this Keyword, Garbage Collection, finalize() Method, Method Overloading, Constructor Overloading"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Inheritance, Interfaces, Packages, Enumerations, Autoboxing and Metadata",
+              "title": "Inheritance, Packages & Interfaces",
               "topics": [
-                "Inheritance: (Single Level and Multilevel, Method Overriding, Dynamic Method Dispatch, Abstract Classes), Interfaces and Packages, Extending interfaces and packages, Package and Class Visibility, Using Standard Java Packages (util, lang, io, net), Wrapper Classes, Autoboxing/Unboxing, Enumerations and Metadata."
+                "Inheritance Basics: Member Access, super Keyword, Method Overriding, Dynamic Method Dispatch, Abstract Classes, final Keyword",
+                "Packages: Defining a Package, Finding Packages and CLASSPATH, Importing Packages, Access Protection",
+                "Interfaces: Defining an Interface, Implementing Interfaces, Nested Interfaces, Multiple Inheritance using Interfaces"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Exception Handling, Threading, Networking and Database Connectivity",
+              "title": "Exception Handling & Multithreading",
               "topics": [
-                "Exception types, uncaught exceptions, throw, built-in exceptions, Creating your own exceptions; Multi-threading: The Thread class and Runnable interface, creating single and multiple threads, Thread prioritization, synchronization and communication, suspending/resuming threads. Using java.net package, Overview of TCP/IP and Datagram programming. Accessing and manipulating databases using JDBC."
+                "Exception-Handling Fundamentals: try, catch, throw, throws, finally; Built-in Exceptions, Creating Custom Exception Subclasses",
+                "Multithreaded Programming: Java Thread Model, Thread Lifecycle, Creating a Thread (Thread class & Runnable interface)",
+                "Thread Priorities, Synchronization, Inter-thread Communication (wait, notify, notifyAll), Deadlocks"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Applets and Event Handling",
+              "title": "Java I/O, Applets & Collections Overview",
               "topics": [
-                "Java Applets: Introduction to Applets, Writing Java Applets, Working with Graphics, Incorporating Images & Sounds. Event Handling Mechanisms, Listener Interfaces, Adapter and Inner Classes. The design and Implementation of GUIs using the AWT controls, Swing components of Java Foundation Classes such as labels, buttons, textfields, layout managers, menus, events and listeners; Graphic objects for drawing figures such as lines, rectangles, ovals, using different fonts. Overview of servlets."
+                "Java I/O Streams: Byte Streams (FileInputStream, FileOutputStream) and Character Streams (FileReader, FileWriter)",
+                "Applet Fundamentals: Applet Lifecycle, paint(), repaint(), update(), Passing Parameters to Applets",
+                "Introduction to Java Collections Framework: ArrayList, LinkedList, Vector, Stack, HashMap basics"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "Ken Arnold, James Gosling, David Homes, \"The Java Programming Language\", 4th Edition, 2002.",
-            "James Gosling, Bill Joy, Guy L Steele Jr, GiladBracha, Alex Buckley\"The Java Language Specification, Java SE 8 Edition (Java Series)\", Published by Addison Wesley, 2014.",
-            "Joshua Bloch, \"Effective Java\" 2nd Edition, Publisher: Addison-Wesley, 2008.",
-            "Cay S. Horstmann, Gary Cornell, \"Core Java 2 Volume 1, 9th Edition, Printice Hall, 2012",
-            "Cay S. Horstmann, Gary Cornell, \"Core Java 2 Volume 2 - Advanced Features\", 9th Edition, Printice Hall, 2013",
-            "Bruce Eckel, \"Thinking in Java\", 3rd Edition, PHI, 2002.",
-            "E. Balaguruswamy, \"Programming with Java\", 4th Edition, McGraw Hill, 2009.",
-            "Paul Deitel, Harvey Deitel, \"Java: How to Program\", 10th Edition, Printice Hall, 2011.",
-            "Bert Bates Kathy Sierra, \"Head First Java\", Orielly Media Inc. 2nd Edition, 2005.",
-            "Object Oriented Programming through JAVA, P Radha Krishna, University Press",
-            "David J. Eck, \"Introduction to Programming Using Java\", Published by CreateSpace Independent Publishing Platform, 2009.",
-            "John R. Hubbard, \"Programming with JAVA\", Schaum's Series, 2nd Edition, 2004.",
-            "R. Nageswara, Core Java: An Integrated Approach, Dreamtech Press"
           ]
         },
         {
@@ -344,98 +351,87 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Java Programming Lab Manual - Herbert Schildt, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Java Programming Practicals",
+              "title": "Java Laboratory Practicals",
               "topics": [
-                "To find the sum of any number of integers entered as command line arguments",
-                "To find the factorial of a given number",
-                "To learn use of single dimensional array by defining the array dynamically.",
-                "To learn use of length in case of a two dimensional array",
-                "To convert a decimal to binary number",
-                "To check if a number is prime or not, by taking the number as input from the keyboard",
-                "To find the sum of any number of integers interactively, i.e., entering every number from the keyboard, whereas the total number of integers is given as a command line argument",
-                "Write a program that show working of different functions of String and StringBufferclass like setCharAt (setLength(), append(), insert(), concat() and equals().",
-                "Write a program to create a distance || class with methods where distance is computed in terms of feet and inches, how to create objects of a class and to see the use of this pointer",
-                "Modify the distance || class by creating constructor for assigning values (feet and inches) to the distance object. Create another object and assign second object as reference variable to another object reference variable. Further create a third object which is a clone of the first object.",
-                "Write a program to show that during function overloading, if no matching argument is found, then java will apply automatic type conversions(from lower to higher data type)",
-                "Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by value and objects are passed by reference and to learn use of final keyword",
-                "Write a program to show the use of static functions and to pass variable length arguments in a function.",
-                "Write a program to demonstrate the concept of boxing and unboxing.",
-                "Create a multi-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).",
-                "Write a program to create a multilevel package and also creates a reusable class to generate Fibonacci series, where the function to generate fibonacci series is given in a different file belonging to the same package.",
-                "Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages",
-                "Write a program -DivideByZero that takes two numbers a and b as input, computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.",
-                "Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.",
-                "Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).",
-                "Write a program to demonstrate priorities among multiple threads.",
-                "Write a program to demonstrate multithread communication by implementing synchronization among threads (Hint: you can implement a simple producer and consumer problem).",
-                "Write a program to create URL object, create a URLConnection using the openConnection() method and then use it examine the different components of the URL and content.",
-                "Write a program to implement a simple datagram client and server in which a message that is typed into the server window is sent to the client side where it is displayed.",
-                "Write a program that creates a Banner and then creates a thread to scrolls the message in the banner from left to right across the applet,s window.",
-                "Write a program to get the URL/location of code (i.e. java code) and document(i.e. html file).",
-                "Write a program to demonstrate different mouse handling events like:- mouseClicked(),mouseEntered(),mouseExited(),mousePressed, mouseReleased() and mouseDragged().",
-                "Write a program to demonstrate different keyboard handling events.",
-                "Write a program to generate a window without an applet window using main() function.",
-                "Write a program to demonstrate the use of push buttons."
+                "Writing, compiling, and running basic Java console programs",
+                "Implementation of classes, constructors, methods, and method overloading",
+                "Single, multilevel, and hierarchical inheritance implementations with method overriding",
+                "Creating and importing custom user packages and testing interface implementations",
+                "Exception handling programs using multiple catch blocks, finally, and user-defined exceptions",
+                "Multithreading programs demonstrating concurrent execution and thread synchronization",
+                "File reading and writing programs using Java I/O streams"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-4",
           "code": "CC-4",
           "name": "Computer System Architecture",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Computer System Architecture - M. Morris Mano, Pearson",
+            "Computer Organization and Architecture - William Stallings, Pearson",
+            "Computer Architecture: A Quantitative Approach - Hennessy & Patterson, Morgan Kaufmann"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Basic Computer Organization and Design",
+              "title": "Data Representation & Digital Logic",
               "topics": [
-                "Computer registers, bus system, instruction set, timing and control, instruction cycle, memory reference, input-output and interrupt, Interconnection Structures, Bus Interconnection design of basic computer."
+                "Data Types: Complements, Fixed-Point Representation, Floating-Point Representation",
+                "Error Detection and Correction Codes: Parity Check, Hamming Code Generation and Detection",
+                "Digital Logic Circuits: Decoders, Encoders, Multiplexers, De-multiplexers, Flip-Flops (SR, JK, D, T)"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Central Processing Unit",
+              "title": "Register Transfer & Microoperations",
               "topics": [
-                "Register organization, arithmetic and logical micro-operations, stack organization, micro programmable control. Instruction formats, pipelining and parallel processing."
+                "Register Transfer Language (RTL), Bus and Memory Transfers, Three-State Bus Buffers",
+                "Arithmetic Microoperations: Binary Adder, Binary Subtractor, Adder-Subtractor",
+                "Logic Microoperations: Hardware Implementation, Applications; Shift Microoperations: Logical, Circular, Arithmetic Shifts"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Memory Organization",
+              "title": "Basic Computer Organization & Design",
               "topics": [
-                "Shift registers, Multiplexers, Encoder, Decoder, Half Adder, Full Adder, Cache memory, Associative memory, mapping."
+                "Instruction Codes, Computer Registers, Computer Instructions, Timing and Control",
+                "Instruction Cycle: Fetch, Decode, Read Effective Address, Execution of Instruction",
+                "Memory-Reference Instructions, Input-Output and Interrupt Cycle"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Processors",
+              "title": "Central Processing Unit (CPU) Design",
               "topics": [
-                "8086, 8088, 80286, 80386, 80486, P5, Dual Core, Core2Duo, Quadra core, Octa core, Real Mode & Protected Mode, addressing modes, instruction codes, Difference between DX & SX of different microprocessor,"
+                "General Register Organization, Stack Organization: Register Stack, Memory Stack, Reverse Polish Notation",
+                "Instruction Formats: Three-Address, Two-Address, One-Address, Zero-Address Instructions",
+                "Addressing Modes: Direct, Indirect, Register, Register Indirect, Immediate, Relative, Indexed, Base Register",
+                "Data Transfer and Manipulation Instructions, Program Control Instructions, Reduced Instruction Set Computer (RISC) vs CISC"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Bus Architecture",
+              "title": "Input-Output & Memory Organization",
               "topics": [
-                "Bus width, Clock Pulse Generator, DMA controller, PIC (Programmed Interrupt Controller), memory. ports, Communications, Architecture - ISA, EISA (Brief Description)"
+                "Peripheral Devices, Input-Output Interface, Asynchronous Data Transfer (Strobe Control, Handshaking)",
+                "Modes of Data Transfer: Programmed I/O, Interrupt-Initiated I/O, Direct Memory Access (DMA), DMA Controller",
+                "Memory Hierarchy, Main Memory (RAM & ROM Chips), Auxiliary Memory, Associative Memory",
+                "Cache Memory: Hit Ratio, Mapping Functions (Direct, Associative, Set-Associative), Virtual Memory Concepts"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "M. Mano, Computer System Architecture, Pearson Education 1992",
-            "A. J. Dos Reis, Assembly Language and Computer Architecture using C++ and JAVA, Course Technology, 2004",
-            "W. Stallings, Computer Organization and Architecture Designing for Performance, 8th Edition, Prentice Hall of India,2009",
-            "M.M. Mano, Digital Design, Pearson Education Asia,2013",
-            "Carl Hamacher, Computer Organization, Fifth edition, McGrawHill, 2012."
           ]
         }
       ]
@@ -451,61 +447,67 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Learning Python - Mark Lutz, O’Reilly Media",
+            "Python Crash Course - Eric Matthes, No Starch Press",
+            "Programming in Python 3 - Mark Summerfield, Addison-Wesley"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction and overview",
+              "title": "Introduction to Python",
               "topics": [
-                "Introduction. What is Python, Origin, Comparison, Comments, Operators, Variables and Assignment, Numbers, Strings, Lists and Tuples, Dictionaries, if Statement, while Loop, for Loop and the range() Built-in Function, Files and the open() Built-in Function, Errors and Exceptions, Functions, Classes, Modules Syntax and Style Statements and Syntax, Variable Assignment, Identifiers, Basic Style Guidelines, Memory Management, Python Application Examples"
+                "History, Features of Python, Python 2 vs Python 3, Python Interpreter, Running Python Scripts, IDLE",
+                "Syntax Basics: Comments, Indentation, Docstrings, Keywords, Identifiers, Variables, Dynamic Typing"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Python Objects",
+              "title": "Data Types, Operators & Expressions",
               "topics": [
-                "Python Objects, Standard Types, Other Built-in Types, Internal Types, Standard Type Operators, Standard Type Built-in Functions, Introduction to Numbers, Integers, Floating Point Real Numbers, Complex Numbers, Operators, Built-in Functions. Sequences: Strings, Lists, and Tuples, Sequences, Strings, Strings and Operators, String-only Operators, Categorizing the Standard Types, Unsupported Types. Numbers and Strings.Built-in Functions, String Built-in Methods, Special Features of Strings"
+                "Built-in Data Types: Integers, Floats, Complex Numbers, Strings, Booleans",
+                "Operators: Arithmetic, Relational, Logical, Bitwise, Assignment, Membership (in, not in), Identity (is, is not)",
+                "Type Conversion (Implicit & Explicit), Operator Precedence, String Formatting & Slicing"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Lists",
+              "title": "Control Flow Structures",
               "topics": [
-                "Operators, Built-in Functions, List Type Built-in Methods, Special Features of Lists, Tuples, Tuple Operators and Built-in Functions, Special Features of Tuples",
-                "Dictionaries: Introduction to Dictionaries, Operators, Built-in Functions, Built-in Methods, Dictionary Keys, Conditionals and Loops: if statement, else Statement, elif Statement, while Statement, for Statement, break Statement, continue Statement, pass Statement, else Statement"
+                "Conditional Statements: if, if-else, if-elif-else ladder, nested if statements",
+                "Looping Statements: for loops with range(), while loops, loop control statements (break, continue, pass)",
+                "else clause with loops, nested loop structures"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Files and Input/Output",
+              "title": "Python Collections & Data Structures",
               "topics": [
-                "File Objects, File Built-in Function, File Built-in Methods, File Built-in Attributes, Standard Files, Command-line Arguments, File System, File Execution, Persistent Storage Modules"
+                "Lists: Creation, Indexing, Slicing, List Methods (append, extend, insert, remove, pop, sort), List Comprehensions",
+                "Tuples: Immutability, Tuple Packing & Unpacking, Tuple Operations",
+                "Sets: Set Operations (Union, Intersection, Difference, Symmetric Difference), Set Methods",
+                "Dictionaries: Key-Value Pairs, Accessing, Adding, Modifying, Dictionary Methods (keys, values, items, get), Dictionary Comprehensions"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Advance topics",
+              "title": "Functions & Modules",
               "topics": [
-                "Security - Encryption and Decryption, Classical Cyphers",
-                "Graphics and GUI Programming - Drawing using Turtle, Tkinter and Python, Other GUIs"
+                "Function Definition, Calling Functions, Function Parameters (Positional, Keyword, Default Arguments)",
+                "*args and **kwargs in Functions, Return Statements, Variable Scope (Local vs Global, global keyword)",
+                "Anonymous Functions: Lambda Functions with map(), filter(), reduce()",
+                "Python Modules: Creating Modules, import Statements, from-import, Standard Library Modules (math, random, sys, os)"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Errors and Exceptions",
+              "title": "Exception Handling & File Operations",
               "topics": [
-                "What Are Exceptions? Exceptions in Python, Detecting and Handling Exceptions, Exceptions as Strings, Raising Exceptions, Assertions, Standard Exceptions",
-                "Functions: Functions, Calling Functions, Creating Functions, Formal Arguments, Positional Arguments, Default Arguments, Why Default Arguments?, Default Function Object Argument Example, Variable-length Arguments, Non-keyword Variable Arguments (Tuple), Keyword Variable Arguments (Dictionary)"
+                "Exceptions in Python: Common Built-in Exceptions (ValueError, TypeError, IndexError, KeyError)",
+                "Handling Exceptions: try-except blocks, handling multiple exceptions, else and finally blocks, raising exceptions (raise)",
+                "File I/O: Opening Files (open), File Modes (r, w, a, r+), Reading (read, readline, readlines), Writing (write, writelines), with statement"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "John V Guttag. \"Introduction to Computation and Programming Using Python\", Prentice Hall of India",
-            "R. Nageswara Rao, \"Core Python Programming\", dreamtech",
-            "Wesley J. Chun. \"Core Python Programming - Second Edition\", Prentice Hall",
-            "Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser, \"Data Structures and Algorithms in Python\", Wiley",
-            "Kenneth A. Lambert, \"Fundamentals of Python - First Programs\", CENGAGE Publication",
-            "Luke Sneeringer, \"Professional Python\", Wrox",
-            "\"Hacking Secret Ciphers with Python\", Al Sweigart, URL- https://inventwithpython.com/hacking/chapters"
           ]
         },
         {
@@ -516,75 +518,89 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Operating System Concepts - Silberschatz, Galvin & Gagne, Wiley",
+            "Modern Operating Systems - Andrew S. Tanenbaum, Pearson",
+            "Operating Systems: Internals and Design Principles - William Stallings, Pearson"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction",
+              "title": "Introduction to Operating Systems",
               "topics": [
-                "Basic OS functions, resource abstraction, types of operating systems- multiprogramming systems, batch systems, time sharing systems; operating systems for personal computers & workstations, process control & real time systems. Multiuser, multitasking, multiprocessing and real time operating systems."
+                "Definition, Goals, and Functions of Operating Systems; Resource Abstraction and Virtualization",
+                "Types of Operating Systems: Batch Processing Systems, Multiprogramming Systems, Time-Sharing Systems, Distributed Systems, Real-Time Operating Systems (RTOS)"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Operating System Organization",
+              "title": "Operating System Architecture & Structures",
               "topics": [
-                "Processor and user modes, kernels, system calls and system programs. Various components of operating system with reference to DOS. BIOS, BIOS and DOS interrupt, Single user operating system. Task loader, Memory management."
+                "Processor Execution Modes: User Mode vs Kernel Mode, Dual-Mode Operation",
+                "Kernels: Monolithic Kernels, Microkernels, Hybrid Kernels",
+                "System Calls and System Programs; Operating System Components and Services"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Process Management",
+              "title": "Process Management, Threads & CPU Scheduling",
               "topics": [
-                "System view of the process and resources, process abstraction, process hierarchy, threads, threading issues, thread libraries; Process Scheduling, non-preemptive and preemptive scheduling algorithms; concurrent and processes, critical section, semaphores, methods for inter-process communication; deadlocks. Device management. Control of various devices. Device drivers. Interrupt driven and poll driven data transfers. Need of software and hardware protocols."
+                "Process Concept: Process Control Block (PCB), Process States, Process Hierarchy, Creation & Termination",
+                "Threads: Single-threaded vs Multithreaded Processes, User-level vs Kernel-level Threads, Thread Libraries",
+                "CPU Scheduling: Preemptive vs Non-Preemptive Scheduling, Scheduling Criteria (CPU utilization, Throughput, Turnaround, Waiting, Response time)",
+                "Scheduling Algorithms: First-Come First-Served (FCFS), Shortest Job First (SJF), Round Robin (RR), Priority Scheduling, Multilevel Queue Scheduling",
+                "Process Synchronization & Deadlocks: Critical Section Problem, Semaphores, Deadlock Conditions, Deadlock Handling (Prevention, Avoidance - Banker's Algorithm, Detection & Recovery)"
               ]
             },
             {
               "unitNumber": 4,
               "title": "Memory Management",
               "topics": [
-                "Physical and virtual address space; memory allocation strategies - fixed and variable partitions, paging, segmentation, virtual memory"
+                "Logical vs Physical Address Space, Address Binding, Memory Protection",
+                "Contiguous Memory Allocation: Fixed & Variable Partitions, Allocation Strategies (First-Fit, Best-Fit, Worst-Fit), Fragmentation (Internal & External)",
+                "Paging: Page Table Structure, Hardware Support, Translation Lookaside Buffer (TLB), Protection and Sharing in Paging",
+                "Segmentation: Basic Method, Hardware Architecture; Virtual Memory Concepts, Demand Paging, Page Faults, Page Replacement Algorithms (FIFO, LRU, Optimal)"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "File and I/O Management",
+              "title": "File Systems & Storage Management",
               "topics": [
-                "Directory structure, file operations, file allocation methods, device management, File systems. File management. Process management and scheduling Special requirements and facilities for multiprocessing environment"
+                "File Concept: Attributes, Operations, File Types, File Access Methods (Sequential, Direct)",
+                "Directory Structures: Single-Level, Two-Level, Tree-Structured, Acyclic-Graph Directories",
+                "File Allocation Methods: Contiguous Allocation, Linked Allocation, Indexed Allocation; Free Space Management",
+                "Disk Storage: Disk Structure, Disk Scheduling Algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK)"
               ]
             },
             {
               "unitNumber": 6,
               "title": "Protection and Security",
               "topics": [
-                "Policy mechanism, Authentication, Internal access Authorization."
+                "Goals of Protection, Principles of Protection, Domain of Protection, Access Matrix Implementation",
+                "Security Threats: Malware, Viruses, Worms, Trojan Horses, Denial of Service (DoS)",
+                "User Authentication and Access Control"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Introduction to Unix",
+              "title": "Introduction to Unix Operating System",
               "topics": [
-                "Brief history of UNIX, Features of UNIX, Structure of the UNIX system, functions of shell & kernel. UNIX File System (etc, bin, dev, usr, lib, tmp). Types of files (ordinary, special & directory files), Pathname - absolute & relative, block and character device, Internal structure of File System (boot block, super block, inode block, data block). Files opened by UNIX - stdin(0), stdout(1), stderr(2) Shell variables - HOME, PATH, TERM, LOGNAME, PS1, PS2, MAIL."
+                "Brief History and Philosophy of UNIX; Salient Features of UNIX Operating System",
+                "UNIX System Architecture: Hardware, Kernel, Shell, and Utilities",
+                "Functions of UNIX Kernel and Shell; UNIX Hierarchical File System (root, bin, etc, dev, home, usr, tmp)"
               ]
             },
             {
               "unitNumber": 8,
-              "title": "Unix Commands",
+              "title": "Unix Commands & Utilities",
               "topics": [
-                "ls [options- A,d,F,i,l,r,R,t,u,x] [files..]wild card characters \\*, ?,[a..z], cat , rm [options - i,r][files..], cal, date [m,h,a,D,x,V], banner, passwd, pwd, echo, who[options- H,u], who am i, logname, clear, tty, tput clear, mkdir, cd, rmdir, comm, diff, cmp, chmod, chgrp, chown, Redirection & pipes { <, >, >, >, |} cp [options - i,r][files..], tee, ln, mv, wc [options- l,w,c] [files..], grep[options- c,i,l,n,v],pr [(+n)d(on)(1n)] [files...], passwd, pg, more, sleep, write, mesg, wall, lp [cm(n number)], ps [options- a, e, u ], kill [-9] <pid>.Vi modes of vi - command mode & edit mode.vi +n file, vi /pattern filexiting - ZZ, :wq, :q!, :qi, :x , window movement- ^d, ^u, ^f, ^b, z, z, - z, text entry - a, i, o, A, O, I, cursor movement - 1, k,j,h,^, $,[n]w,[n]b,[n]e), (return,H, M, Ldeletion of text- [n]x, [n]X,[n]r,R, [n]s,d$,d^ undo - u & U, redraw screen- ^, pattern searching - /pattern, ?patternrearranging textJ, P, p, operators- [n]dd, [n]yy, cc, vi options - :set,:setallnu, showmodelast line commands contd ... :w!, :w <name>, :w! <name>, :w, :r <name> PROGRAMMING THE BOURNE SHELL echo, \\c, \\t, \\n, \\v, \\l executing a shell script test <expression> files :r, w,x,f,d,e,s string :z,n,s1=s2,s1!=s2 numerics :- n1 [opt] n2 opt - gt, lt, eq, ne, ge, le read <variable>, if ... then..elif..else ... fi, case ... esac, while, until, for."
+                "File and Directory Commands: ls (with options -a, -l, -d, -F, -R, -t), cd, pwd, mkdir, rmdir, cp, mv, rm, cat, more, less, head, tail",
+                "Wildcard Characters (*, ?, [a-z]); File Permissions and Security: chmod, chown, chgrp",
+                "General Utilities: cal, date, who, whoami, finger, echo, clear, bc",
+                "Text Processing & Filters: grep, wc, sort, uniq, cut, paste, tr",
+                "Process Management: ps, kill, top, nice; Input/Output Redirection (<, >, >>) and Unix Pipes (|)"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "A.S. Tanenbaum, Modern Operating Systems, 3rd Edition, Pearson Education 2007.",
-            "G. Nutt, Operating Systems: A Modern Perspective, 2nd Edition Pearson Education 1997.",
-            "W. Stallings, Operating Systems, Internals & Design Principles, 5th Edition, Prentice Hall of India. 2008.",
-            "M. Milenkovic, Operating Systems- Concepts and design, Tata McGraw Hill 1992.",
-            "Operating Systems, A K Sharma, University Press",
-            "Silberschatz, P.B. Galvin, G. Gagne, Operating Systems Concepts, 8th Edition, John Wiley Publications 2008.",
-            "Operating System Concepts (4th Ed.) by Abraham Silberschatz & Peter B. Galvin",
-            "A User Guide to UNIX System by Dr. Rebecca Thomas and Jean Yates",
-            "Concepts & Application by Sumitabha Das",
-            "Peter Norton's guide to Unix"
           ]
         },
         {
@@ -592,55 +608,68 @@ export const bcaSyllabus: CourseSyllabus = {
           "code": "CC-7",
           "name": "Structured System Analysis and Design",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "System Analysis and Design - Elias M. Awad, Galgotia Publications",
+            "Analysis and Design of Information Systems - James A. Senn, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "Concept of System",
               "topics": [
-                "Characteristics of system (Organisation, Interaction, Interdependence, Integration, Central objectives), Types of system - Physical & abstract system, open & closed system, Man made information system, Computer based information system."
+                "Characteristics of a System: Organization, Interaction, Interdependence, Integration, Central Objectives",
+                "Elements of a System: Inputs, Outputs, Processor, Control, Feedback, Environment, Boundaries and Interfaces",
+                "Types of Systems: Physical vs Abstract Systems, Open vs Closed Systems, Deterministic vs Probabilistic Systems, Man-made Information Systems"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "System Life Cycle",
+              "title": "System Development Life Cycle (SDLC)",
               "topics": [
-                "Different stages of the system life cycle and the forms generated at each level - Conception, initiation, analysis, design, construction (project request form, system proposal, functional specifications, information requirement table) role of the systems analyst."
+                "Different Stages of SDLC: Recognition of Need, Feasibility Study, Analysis, Design, Development, Testing, Implementation, Maintenance",
+                "Feasibility Study: Technical, Operational, Economic (Cost-Benefit Analysis), Legal Feasibility",
+                "Role and Responsibilities of a Systems Analyst"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Context Analysis Diagram",
+              "title": "Structured Analysis Tools & Context Diagrams",
               "topics": [
-                "Introduction to Context analysis diagram, Data flow diagram, External entity, data flow, data store, process"
+                "Context Analysis Diagram: Defining System Scope and Boundaries",
+                "Data Flow Diagram (DFD): Symbols and Components (External Entity, Process, Data Flow, Data Store)",
+                "Constructing Levelled DFDs: Context Diagram (Level 0), Level 1, Level 2 DFDs, Balancing Rules for DFDs"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Normalization",
+              "title": "Database Normalization",
               "topics": [
-                "Normalization first level, second level and third level normalization"
+                "Functional Dependency: Full, Partial, and Transitive Dependencies",
+                "Normalization in System Design: First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), Boyce-Codd Normal Form (BCNF)",
+                "Benefits of Normalization: Eliminating Data Redundancy and Update Anomalies"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Introduction to Data dictionary",
+              "title": "Data Dictionary & Process Specifications",
               "topics": [
-                "Data dictionary and its organization, Data structure, data element, data flows, data stores & process (decision tree, decision table, structured english)"
+                "Data Dictionary: Concept, Structure, Data Elements, Data Flows, and Data Store Definitions",
+                "Process Specification Tools: Decision Trees, Decision Tables, Structured English"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "DFD",
+              "title": "System Design & Implementation",
               "topics": [
-                "Levelled data flow diagrams, Balancing of levelled DFD's, local data stores, current physical DFD, current logical DFD, proposed logical DFD, proposed physical DFD, automation boundary"
+                "Input Design: Form Design Principles, Data Capture Methods, Validation Checks",
+                "Output Design: Objectives, Report Design Principles, Screen Presentations",
+                "System Testing Strategies: Unit Testing, Integration Testing, System Testing, Acceptance Testing",
+                "System Conversion Methods: Direct, Parallel, Pilot, and Phased Implementation"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "Analysis Arid Design Of Information System. - V. Rajaraman"
           ]
         },
         {
@@ -648,71 +677,90 @@ export const bcaSyllabus: CourseSyllabus = {
           "code": "CC-8",
           "name": "Computer Networks",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Computer Networks - Andrew S. Tanenbaum & David J. Wetherall, Pearson",
+            "Data Communications and Networking - Behrouz A. Forouzan, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "Introduction to Computer Networks",
               "topics": [
-                "Network definition; network topologies; network classifications; network protocol; layered network architecture; overview of OSI reference model; overview of TCP/IP protocol suite."
+                "Network Definition, Goals, Business Applications, Mobile and Home Applications",
+                "Network Topologies: Bus, Star, Ring, Mesh, Tree, and Hybrid Topologies",
+                "Network Classifications: Local Area Network (LAN), Metropolitan Area Network (MAN), Wide Area Network (WAN)",
+                "Layered Network Architecture: Protocol Hierarchies, Design Issues for Layers, Interfaces and Services",
+                "Reference Models: The OSI 7-Layer Reference Model and TCP/IP Reference Model Comparison"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Data Communication Fundamentals and Techniques",
+              "title": "Physical Layer & Data Communication",
               "topics": [
-                "Analog and digital signal; data-rate limits; digital to digital line encoding schemes; pulse code modulation; parallel and serial transmission; digital to analog modulation-; multiplexing techniques- FDM, TDM; transmission media."
+                "Analog vs Digital Signals, Bandwidth, Throughput, Latency, Data Rate Limits (Nyquist Bit Rate, Shannon Capacity)",
+                "Transmission Media: Guided Media (Twisted Pair, Coaxial Cable, Fiber Optic Cable) vs Unguided Media (Radio, Microwave, Infrared)",
+                "Digital-to-Digital Line Encoding Schemes (NRZ, NRZ-L, NRZ-I, Manchester, Differential Manchester)",
+                "Modulation Techniques (ASK, FSK, PSK, QAM), Multiplexing (FDM, WDM, TDM)"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Networks Switching Techniques and Access mechanisms",
+              "title": "Switching Techniques & Data Link Layer",
               "topics": [
-                "Circuit switching; packet switching- connectionless datagram switching, connection-oriented virtual circuit switching; dial-up modems; digital subscriber line; cable TV for data transfer."
+                "Switching Networks: Circuit Switching, Packet Switching (Connectionless Datagram vs Connection-Oriented Virtual Circuit)",
+                "Data Link Layer Design Issues: Services Provided to Network Layer, Framing Methods (Character Count, Byte Stuffing, Bit Stuffing)",
+                "Flow Control: Stop-and-Wait, Sliding Window Protocols (Go-Back-N, Selective Repeat)"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Data Link Layer Functions and Protocol",
+              "title": "Error Detection, Correction & MAC Sublayer",
               "topics": [
-                "Error detection and error correction techniques; data-link control- framing and flow control; error recovery protocols- stop and wait ARQ, go-back-n ARQ; Point to Point Protocol on Internet."
+                "Error Detection and Correction: Types of Errors, Parity Check, Checksum, Cyclic Redundancy Check (CRC), Hamming Codes",
+                "Medium Access Control (MAC) Sublayer: Channel Allocation Problem, Multiple Access Protocols (ALOHA, Slotted ALOHA)",
+                "CSMA Protocols: 1-Persistent, Non-Persistent, p-Persistent CSMA; CSMA/CD in Ethernet and CSMA/CA in Wireless LANs"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Multiple Access Protocol and Networks",
+              "title": "Network Hardware & Ethernet Standards",
               "topics": [
-                "CSMA/CD protocols; Ethernet LANS; connecting LAN and back-bone networks- repeaters, hubs, switches, bridges, router and gateways;"
+                "Connecting Devices: Repeaters, Hubs, Bridges, Switches, Routers, Gateways",
+                "Ethernet Standards: Standard Ethernet, Fast Ethernet, Gigabit Ethernet, 10-Gigabit Ethernet",
+                "Virtual LANs (VLANs) and Wireless LAN Standards (IEEE 802.11 Wi-Fi, Bluetooth IEEE 802.15)"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Networks Layer Functions and Protocols",
+              "title": "Network Layer Functions & Protocols",
               "topics": [
-                "Routing; routing algorithms; network layer protocol of Internet- IP protocol, Internet control protocols"
+                "Network Layer Design Issues: Store-and-Forward Packet Switching, Connectionless vs Connection-Oriented Service",
+                "Routing Algorithms: Shortest Path Routing (Dijkstra), Distance Vector Routing (Bellman-Ford), Link State Routing",
+                "Internetworking: IPv4 Addressing, Classful vs Classless Addressing (CIDR), Subnetting and Supernetting",
+                "Internet Protocols: IP Protocol Header, Address Resolution Protocol (ARP), Reverse ARP (RARP), ICMP Protocol, IPv6 Overview"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Transport Layer Functions and Protocols",
+              "title": "Transport Layer Functions & Protocols",
               "topics": [
-                "Transport services- error and flow control, Connection establishment and release- three way handshaking"
+                "Transport Service: Services Provided to Upper Layers, Quality of Service (QoS)",
+                "Transport Protocols: User Datagram Protocol (UDP) Header & Operation, Transmission Control Protocol (TCP) Header",
+                "TCP Connection Management: Three-Way Handshaking for Connection Establishment and Release, TCP Flow Control & Congestion Control"
               ]
             },
             {
               "unitNumber": 8,
-              "title": "Overview of Application layer protocol",
+              "title": "Application Layer Protocols & Network Security",
               "topics": [
-                "Overview of DNS protocol; overview of WWW & HTTP protocol"
+                "Domain Name System (DNS): Hierarchical Name Space, Resource Records, Name Servers",
+                "Application Protocols: Electronic Mail (SMTP, POP3, IMAP), World Wide Web (HTTP & HTTPS Architecture), File Transfer Protocol (FTP), Telnet",
+                "Network Security Fundamentals: Cryptography Basics (Symmetric vs Asymmetric Key), Firewalls, Virtual Private Networks (VPN)"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "B. A. Forouzan: Data Communications and Networking, Fourth edition, THM, 2007.",
-            "A. S. Tanenbaum: Computer Networks, Fourth edition, PHI, 2002",
-            "Dr. Rakesh Kumar Mandal: Computer Networks for Students, First Edition, SPD, 2018"
           ]
         }
       ]
@@ -725,69 +773,84 @@ export const bcaSyllabus: CourseSyllabus = {
           "code": "CC-9",
           "name": "VB.NET",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Visual Basic .NET: The Complete Reference - Jeffrey R. Shapiro, McGraw Hill",
+            "Programming Microsoft Visual Basic .NET - Francesco Balena, Microsoft Press"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction",
+              "title": "Introduction to .NET Framework",
               "topics": [
-                "NET Framework Technology, Advantage, Framework Class Library : data types exceptions, events, attributes, collections, remote calls, threading, web services etc., Working with .NET FCL : namespaces."
+                ".NET Framework Architecture and Technology Advantages; Common Language Runtime (CLR), Common Type System (CTS), Common Language Specification (CLS)",
+                ".NET Framework Class Library (FCL): Data Types, Exceptions, Collections, Assemblies, and Manifest"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Language",
+              "title": "VB.NET Language Fundamentals",
               "topics": [
-                "Data Types, Operators, Modifiers, Directives, Programming Constructs : decision making, case and iteration, Arrays, Procedures & Functions, Library Functions : string, date & time, mat number and Miscellaneous."
+                "Data Types, Variables, Constants, Literals, Modifiers, Directives, Operators",
+                "Programming Constructs: Decision Making (If...Then...Else, Select Case), Iteration Loops (For...Next, While...End While, Do...Loop, For Each...Next)",
+                "Arrays (Single and Multi-Dimensional Arrays), Procedures, Functions, Subroutines, Passing Arguments ByVal and ByRef"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "OOPS",
+              "title": "Object-Oriented Programming in VB.NET",
               "topics": [
-                "Features, Declaring classes, Properties, Public & Private variables, Inheritance Overloading, Overriding, Virtual Methods and Abstract Class."
+                "Classes and Objects: Declaring Classes, Creating Objects, Properties (Get & Set Accessors), Public, Private, and Protected Scope",
+                "Inheritance: Single and Multilevel Inheritance, Method Overloading, Method Overriding, Shadows Keyword",
+                "Interfaces: Creating and Implementing Interfaces, Abstract Classes (MustInherit) and Sealed Classes (NotInheritable)"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Windows Form",
+              "title": "Windows Forms & GUI Controls",
               "topics": [
-                "Introduction to Class Libraries, Event and Event Handlers, Winforms and GUI Creating Applications using Winforms, Concept of Controls, Different GUI Controls, their properties, methods and event procedures and Programs using controls."
+                "Windows Forms Architecture, Form Properties, Form Events and Event Handlers",
+                "GUI Controls: Button, Label, TextBox, CheckBox, RadioButton, ListBox, ComboBox, GroupBox, PictureBox, Timer",
+                "Menus and Toolbars: MenuStrip, ContextMenuStrip, ToolStrip, StatusStrip"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Error Handling in Windows Form",
+              "title": "Error Handling in Windows Forms",
               "topics": [
-                "Introduction to Errors, Exceptions & Validations, Types of Validations, Types of Errors, Types of Exceptions."
+                "Types of Errors: Syntax Errors, Runtime Errors, Logical Errors",
+                "Structured Exception Handling: Try...Catch...Finally Blocks, Throwing Exceptions",
+                "Input Validations: Validating Event, ErrorProvider Component, Regular Expressions for Validation"
               ]
             },
             {
               "unitNumber": 6,
               "title": "SDI & MDI Applications",
               "topics": [
-                "Introduction, Characteristics & Drawbacks, File Handling program."
+                "Single Document Interface (SDI) vs Multiple Document Interface (MDI)",
+                "Creating MDI Parent Forms and MDI Child Forms; Arranging Child Windows, Managing Menus in MDI Applications"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Data Access",
+              "title": "Database Access with ADO.NET",
               "topics": [
-                "Introduction to Microsoft Data Access Technologies, ADO.NET : overview architecture, class libraries, Creating Database, Connecting to Database, Databound Controls, Creating Data Set, Manipulating Records and XML Data."
+                "Introduction to Microsoft Data Access Technologies and Evolution to ADO.NET",
+                "ADO.NET Architecture: Connected Architecture (Connection, Command, DataReader) vs Disconnected Architecture (DataAdapter, DataSet, DataTable, DataRow, DataColumn)",
+                "Connecting to Databases, Performing CRUD (Create, Read, Update, Delete) Operations, Binding Data to DataGridView"
               ]
             },
             {
               "unitNumber": 8,
-              "title": "Component Object Module (COM)",
+              "title": "Component Object Module (COM) & Deployment",
               "topics": [
-                "Fundamentals of Custom Control, Introduction to COM Events and User Controls, Web Programming."
+                "Component Object Module (COM) and COM Interoperability in .NET",
+                "Building Custom Windows Controls, Creating DLLs and Referencing Assemblies",
+                "Packaging and Deploying .NET Windows Applications: Setup and Deployment Wizard"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "Programming in VB .Net: V. Karthika: Books"
           ]
         },
         {
@@ -797,78 +860,109 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Visual Basic .NET Lab Manual - Jeffrey R. Shapiro, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "VB.NET Practicals",
               "topics": [
-                "Students are advised to do laboratory/practical practice."
+                "Designing Windows Form GUI applications with interactive controls (Calculator, Registration forms)",
+                "Implementation of OOP concepts: Classes, inheritance, polymorphism, and interface implementation in VB.NET",
+                "Developing MDI applications with dynamic menu bars and child form management",
+                "Database connectivity applications using ADO.NET for record insertion, modification, deletion, and searching",
+                "Binding database tables to DataGridView and generating customized data reports"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-10",
           "code": "CC-10",
-          "name": "RDBMS",
+          "name": "RDBMS (Relational Database Management Systems)",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Database System Concepts - Silberschatz, Korth & Sudarshan, McGraw Hill",
+            "Fundamentals of Database Systems - Elmasri & Navathe, Pearson",
+            "Oracle Database: The Complete Reference - Kevin Loney, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction ORACLE",
+              "title": "Introduction to RDBMS & Oracle Architecture",
               "topics": [
-                "Relational Approach. Various aspect of relational model"
+                "Database Concepts: Database, DBMS, Database Administrator (DBA), Three-Schema Architecture",
+                "RDBMS Principles: E.F. Codd 12 Rules, Entity-Relationship (ER) Modeling (Entities, Relationships, ER Diagrams)",
+                "Relational Model Concepts: Domains, Attributes, Tuples, Relations; Relational Integrity Constraints (Primary Key, Foreign Key, Unique, Not Null, Check)"
               ]
             },
             {
               "unitNumber": 2,
               "title": "Introduction to SQL",
               "topics": [
-                "Feature of SQL, Query with SQL, Arithmetic expression, Column aliases, Concatenated columns, LiteralsWriting SQL statements, Clauses, Select, order by, where, group by, distinct, having, SQL operators, Between... and..., In(list), Like, Is null, Not between, Not in, Not like, Is not null, SQL commands, Del, list, get, save, run, start, edit, exit, clear buffer, etc. Running standard queries with substitution variables, Single ampersand substitution variable, double ampersand substitution variable, define, underline, accept, prompt, no prompt, hide"
+                "Features of SQL, SQL Data Types, Operators and Expressions",
+                "Data Definition Language (DDL): CREATE, ALTER, DROP, TRUNCATE, RENAME",
+                "Data Manipulation Language (DML): INSERT, UPDATE, DELETE",
+                "Data Query Language (DQL): SELECT statement, Column Aliases, Concatenation, Literals, WHERE clause, ORDER BY, DISTINCT"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Functions",
+              "title": "SQL Functions & Operators",
               "topics": [
-                "Date function: ADD_MONTHS, LAST_DAY, MONTHS_BETWEEN, NEXT_DAY, GREATEST, LEAST etc. Formats :MM, DD, MON, MONTH, D, DAY, YYYY, YYY, YY, YEAR, WW, W, HH, A.M., P.M., FM, TH, SP, SPTH, THSP, etc. String function: RPAD, LPAD, LOWER, UPPER, INITCAP, LENGTH, SUBSTR, INSTR, TRANSLATE. REPLACE Arithmetic function: ABS, ROUND, COS, LOG, EXP, SQRT, SIGN, SIN, MOD, POWER, FLOOR etc. Conversion function: TO_CHAR, TO_DATE, TO_NUMBER etc. Miscellaneous function: DECODE, NVL etc Group column function: AVG, COUNT, MAX, MIN, SUM etc. Nested function : Sub queries, nested sub queries Join: Equi join, outer join, inner join, non-equi join Set operator: Union, intersect, minus"
+                "Single-Row Functions: String Functions (UPPER, LOWER, INITCAP, SUBSTR, LENGTH, LPAD, RPAD, TRIM)",
+                "Numeric Functions: ROUND, TRUNC, MOD, CEIL, FLOOR, POWER",
+                "Date Functions: ADD_MONTHS, LAST_DAY, MONTHS_BETWEEN, NEXT_DAY, Date Formats (DD, MM, MON, YYYY)",
+                "Conversion Functions: TO_CHAR, TO_DATE, TO_NUMBER; General Functions: NVL, NVL2, NULLIF, COALESCE",
+                "Aggregate Functions: COUNT, SUM, AVG, MIN, MAX; Grouping Data: GROUP BY and HAVING clauses"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Building a report in SQL*PLUS",
+              "title": "Advanced Queries, Joins & Views",
               "topics": [
-                "Commands: Column, rem, heading. Null, skip, title, bitle, etc., Breaking a report in sections, Break on, compute, Set commands, spooling, show commands, environments variables, Creating defining table structures (DDL), Introduction to data definition language, Creating a table, Integrity constraints, Creating tables using hierarchical relation, Creating tables with rows from another table, Alter table & drop table, Data dictionary, Create views, Create sequences, Create index, Data manipulation language (DML), Commands to manipulate data, Data control language (DCL), DCL Commands"
+                "SQL Joins: Equi-Join, Non-Equi Join, Inner Join, Self-Join, Outer Joins (Left Outer, Right Outer, Full Outer Join)",
+                "Subqueries: Single-Row Subqueries, Multiple-Row Subqueries (IN, ANY, ALL), Correlated Subqueries",
+                "Database Objects: Views (Creating, Updating, Dropping), Sequences, Indexes, Synonyms",
+                "Transaction Control Language (TCL): COMMIT, ROLLBACK, SAVEPOINT"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "PL/SQL",
+              "title": "PL/SQL Programming Language",
               "topics": [
-                "Introduction, PL/SQL structure, The environment of PL/SQL, Features of PL/SQL, The rules of block structure (Declare, Begin, ... End), Nested block, Declaring Constants and variables, PL/SQL variables and Bind variables, Procedures, Functions, SQL Commands in PL/SQL, Exception handling, Predefined, User Defined, Control structure, If statement, GOTO, For..Loop, while, exit, Records in PL/SQL, %ROWTYPE, Implicit & Explicit cursors, cursor, fetch, declare, open, close etc., Database Triggers, Creating Triggers, Before and After Trigger, Row level Trigger, Statement level Trigger"
+                "PL/SQL Architecture, Block Structure: Declaration Section, Executable Section, Exception Handling Section",
+                "PL/SQL Variables, Constants, Data Types, %TYPE and %ROWTYPE Attributes",
+                "Control Structures: Conditional Branching (IF-THEN, IF-THEN-ELSE, ELSIF), Iterative Loops (Simple Loop, WHILE Loop, FOR Loop)",
+                "Cursors: Implicit Cursors (%FOUND, %NOTFOUND, %ROWCOUNT), Explicit Cursors (DECLARE, OPEN, FETCH, CLOSE), Cursor FOR Loops",
+                "PL/SQL Exceptions: Predefined Exceptions, User-Defined Exceptions, PRAGMA EXCEPTION_INIT"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "ORACLE FORMS",
+              "title": "Subprograms, Packages & Database Triggers",
               "topics": [
-                "Introduction, Oracle form designer, Object navigator, Canvas view, Property Sheet, PL/SQL editor, Blocks, LOVs, Radio Buttons, Alerts, Form Triggers, Form Level Triggers, Block level triggers, Item level triggers, Query triggers, Navigation triggers, Writing PL/SQL code, Master Detail relationship"
+                "Stored Procedures: Creating, Executing, IN, OUT, IN OUT Parameters",
+                "Stored Functions: Creating, Calling Functions from SQL Statements",
+                "PL/SQL Packages: Package Specification and Package Body",
+                "Database Triggers: Concept, Types (Row-Level vs Statement-Level, BEFORE vs AFTER, INSTEAD OF), Trigger Implementation and Applications"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "ORACLE REPORT DESIGNER",
+              "title": "Oracle Developer Tools & Forms",
               "topics": [
-                "Creation of reports, Ordinary reports & matrix reports"
+                "Introduction to Oracle Developer Suite: Oracle Form Designer, Object Navigator, Layout Editor, Property Palette",
+                "Form Components: Data Blocks, Control Blocks, Canvas, Windows, Text Items, Buttons, Radio Groups, Checkboxes, List of Values (LOVs)",
+                "Form Triggers: When-Button-Pressed, When-New-Form-Instance, Post-Query; Master-Detail Forms; Oracle Report Designer overview"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-10-lab",
@@ -877,17 +971,23 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "SQL, PL/SQL: The Programming Language of Oracle - Ivan Bayross, BPB Publications"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "RDBMS Practicals",
               "topics": [
-                "Development of a business application in RDBMS"
+                "Creation of relational tables with primary key, foreign key, check, and unique constraints",
+                "Executing complex SQL queries with joins, subqueries, group by, and aggregate functions",
+                "Writing PL/SQL blocks demonstrating cursor handling and exception handling",
+                "Creating and testing stored procedures, functions, and database triggers",
+                "Developing a comprehensive database project (Student Information System, Library Management, or Hospital Record Management)"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         }
       ]
     },
@@ -902,59 +1002,60 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Data Structures using C - Aaron M. Tenenbaum, Yedidyah Langsam, Moshe J. Augenstein, Pearson",
+            "Data Structures: A Pseudocode Approach with C - Richard F. Gilberg & Behrouz A. Forouzan, Cengage",
+            "Fundamentals of Data Structures in C - Ellis Horowitz, Sartaj Sahni, Susan Anderson-Freed, Silicon Press"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction to data structures",
+              "title": "Introduction to Data Structures",
               "topics": [
-                "Introduction to data structures"
+                "Definition, Classification of Data Structures: Linear vs Non-Linear, Static vs Dynamic Data Structures",
+                "Abstract Data Types (ADTs); Algorithm Complexity Analysis: Time Complexity, Space Complexity, Asymptotic Notations (Big-O, Big-Omega, Big-Theta)"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Linear data structures",
+              "title": "Linear Data Structures - Arrays, Stacks, Queues, Linked Lists",
               "topics": [
-                "Arrays: Definition, concept and operation on arrays",
-                "Linked list :Singly linked list, Circularly linked list, Doubly linked list",
-                "Stacks: Creation, Push, Pop",
-                "Queues: creation, insertion and deletion"
+                "Arrays: Memory Representation, Address Calculation (Row-Major and Column-Major Order), Sparse Matrices",
+                "Stacks: Stack ADT, Array and Linked Representation, Push and Pop Operations, Applications: Expression Evaluation, Infix to Postfix Conversion, Recursion",
+                "Queues: Queue ADT, Operations (Enqueue, Dequeue), Circular Queue, Priority Queue, Double-Ended Queue (Deque)",
+                "Linked Lists: Singly Linked List, Circular Linked List, Doubly Linked List; Operations: Insertion, Deletion, Searching, Reversing"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Non-linear data structures",
+              "title": "Non-Linear Data Structures - Trees",
               "topics": [
-                "Tree: Definition, concept and operation of trees, Storage representation of binary trees, Manipulation of binary trees, B_tree, AVL trees, Tree Traversal Algorithms"
+                "Tree Terminology: Node, Root, Leaf, Depth, Height, Subtree, Degree",
+                "Binary Trees: Properties, Types (Full, Complete, Balanced Binary Trees), Memory Representation (Array vs Linked)",
+                "Binary Tree Traversals: In-order, Pre-order, Post-order, Level-order Traversals",
+                "Binary Search Trees (BST): Creation, Insertion, Deletion, Searching Algorithms",
+                "Balanced Trees: AVL Trees (Rotations and Balancing), B-Trees, B+ Trees overview"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Sorting",
+              "title": "Non-Linear Data Structures - Graphs",
               "topics": [
-                "Selection sort, Bubble sort, Merge sort, Quick sort, Heap sort,"
+                "Graph Terminology: Directed vs Undirected, Connected vs Disconnected, Weighted Graphs, Cyclic vs Acyclic Graphs",
+                "Graph Representations: Adjacency Matrix and Adjacency List Representations",
+                "Graph Traversal Algorithms: Breadth-First Search (BFS) and Depth-First Search (DFS)",
+                "Minimum Spanning Trees: Prim's and Kruskal's Algorithms; Shortest Path: Dijkstra's Algorithm"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Searching",
+              "title": "Searching, Sorting & Hashing",
               "topics": [
-                "Sequential searching, Binary searching"
+                "Searching Techniques: Linear Search, Binary Search (Iterative & Recursive), Performance Comparison",
+                "Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort (Algorithms and Time Complexities)",
+                "Hashing: Hash Tables, Hash Functions (Division, Mid-Square, Folding), Collision Resolution Techniques (Chaining, Open Addressing - Linear Probing, Quadratic Probing, Double Hashing)"
               ]
             }
-          ],
-          "recommendedBooks": [
-            "Adam Drozdok, \"Data Structures and algorithm in C++\", Third Edition, Cengage Learning, 2012.",
-            "SartajSahni, Data Structures, \"Algorithms and applications in C++\", Second Edition, Universities Press, 2011.",
-            "Aaron M. Tenenbaum, Moshe J. Augenstein, YedidyahLangsam, \"Data Structures Using C and C++\", Second edition, PHI, 2009.",
-            "Robert L. Kruse, \"Data Structures and Program Design in C++\", Pearson, 1999.",
-            "D.S Malik, Data Structure using C++,Second edition, Cengage Learning, 2010",
-            "Mark Allen Weiss, \"Data Structures and Algorithms Analysis in Java\", Pearson Education, 3rd edition, 2011.",
-            "Aaron M. Tenenbaum, Moshe J. Augenstein, YedidyahLangsam, \"Data Structures Using Java, 2003.",
-            "Robert Lafore, \"Data Structures and Algorithms in Java, 2/E\", Pearson/ Macmillan Computer Pub,2003.",
-            "John Hubbard, \"Data Structures with JAVA\", McGraw Hill Education (India) Private Limited; 2 edition, 2009.",
-            "Goodrich, M. and Tamassia, R. \"Data Structures and Algorithms Analysis in Java\", 4th Edition, Wiley,2013",
-            "Herbert Schildt, \"Java The Complete Reference (English) 9th Edition Paperback\", Tata McGraw Hill, 2014.",
-            "D. S. Malik, P.S. Nair, \"Data Structures Using Java\", Course Technology, 2003."
           ]
         },
         {
@@ -964,71 +1065,94 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Data Structures Lab Manual - Seymour Lipschutz, McGraw Hill"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "Data Structures Practicals",
               "topics": [
-                "Students are advised to do laboratory/practical practice."
+                "Implementation of Stack operations (Push, Pop, Peek) and Infix to Postfix conversion using arrays and linked lists",
+                "Implementation of Linear and Circular Queue operations using arrays",
+                "Singly and Doubly Linked List operations: Creation, insertion at beginning/middle/end, deletion, and reversal",
+                "Binary Search Tree (BST) operations: Node insertion, node deletion, searching, and traversal algorithms (In-order, Pre-order, Post-order)",
+                "Implementation and performance comparison of sorting algorithms (Bubble sort, Selection sort, Insertion sort, Quick sort, Merge sort)",
+                "Implementation of Breadth-First Search (BFS) and Depth-First Search (DFS) graph traversal"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-12",
           "code": "CC-12",
           "name": "Introduction to Big Data Analytics",
           "paperType": "Major (MJC)",
-          "credits": 6,
+          "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Big Data: Principles and Best Practices of Scalable Real-time Data Systems - Nathan Marz & James Warren, Manning",
+            "Hadoop: The Definitive Guide - Tom White, O’Reilly",
+            "Data Science and Big Data Analytics - EMC Education Services, Wiley"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Overview",
+              "title": "Overview of Big Data",
               "topics": [
-                "Introduction, Data Mining Life Cycle : CRISP-DM Methodology and SEMMA Methodology. Big Data Life Cycle"
+                "Introduction to Big Data: The 5 Vs of Big Data (Volume, Velocity, Variety, Veracity, Value)",
+                "Big Data Life Cycle and Analytics Methodologies: CRISP-DM Methodology and SEMMA Methodology",
+                "Traditional Data Warehousing vs Big Data Architecture; Distributed Computing Concepts"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Methodology",
+              "title": "Statistical Modeling & Data Analytics Approaches",
               "topics": [
-                "Difference from traditional statistical approach of experimental design. Statistical Modelling."
+                "Traditional Statistical Approach vs Modern Data-Driven Machine Learning Analytics",
+                "Statistical Modeling: Hypothesis Testing, Probability Distributions, Sampling, Correlation Analysis, Regression Analysis",
+                "Supervised vs Unsupervised Learning Paradigms"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Deliverables & Stakeholders in BDA",
+              "title": "Deliverables & Stakeholders in Big Data Analytics",
               "topics": [
-                "Machine Learning Implementation, Recommender System, Dashboard, Ad-Hoc Analysis, Project/Project Understanding, Establishing advantages of the analysis."
+                "Key Deliverables: Predictive Models, Recommender Systems, Analytical Dashboards, Automated Reports, Ad-Hoc Analytics",
+                "Project Stakeholders: Domain Experts, Data Architects, Business Analysts, End-Users; Value Creation"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Data Analyst & Data Scientist",
+              "title": "Roles: Data Analyst vs Data Scientist",
               "topics": [
-                "Introduction, Work-area and Role."
+                "Data Analyst: Roles, Responsibilities, Core Skillsets, Reporting, Dashboarding",
+                "Data Scientist: Roles, Responsibilities, Predictive Modeling, Machine Learning Algorithms, Deep Learning Exploration",
+                "Data Engineer: Pipeline Building, ETL Processes, Data Lakes, Data Infrastructure"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "BDA Methods",
+              "title": "Big Data Technologies, R & SQL",
               "topics": [
-                "Introduction to R, Introduction to SQL, Charts and Graphs, Data Tools, Statistical Methods."
+                "Introduction to Big Data Frameworks: Hadoop Ecosystem, HDFS (Hadoop Distributed File System), MapReduce Programming Model, Apache Spark",
+                "NoSQL Databases: Key-Value, Document, Column-Family, Graph Stores (MongoDB, Cassandra basics)",
+                "Analytical Programming: Introduction to R Language, SQL for Data Analysts, Charts and Visualizations"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "BDA Project Management",
+              "title": "Big Data Analytics Project Lifecycle",
               "topics": [
-                "Project Description, Problem Definition : Supervised Classification, Supervised Regression, Unsupervised Learning & Ranking, Data Collection (mini project-twitter), Data Mining / Cleansing : homogenization & heterogenization, Summarizing, Data Exploration : exploratory data analysis and Data Visualization : generation of correlation matrix visualization."
+                "Problem Formulation: Classification Problems, Regression Problems, Clustering and Ranking Problems",
+                "Data Collection & Ingestion, Data Preprocessing: Handling Missing Values, Outlier Detection, Data Normalization",
+                "Exploratory Data Analysis (EDA) and Visualization: Heatmaps, Correlation Matrices, Scatter Plots, Interactive Charts",
+                "Model Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC Curves"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         }
       ]
     },
@@ -1043,58 +1167,90 @@ export const bcaSyllabus: CourseSyllabus = {
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Web Technologies: A Computer Science Perspective - Jeffrey C. Jackson, Pearson",
+            "Learning PHP, MySQL & JavaScript - Robin Nixon, O’Reilly",
+            "HTML & CSS: Design and Build Websites - Jon Duckett, Wiley"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Web Basics",
+              "title": "Web Basics & Internet Protocols",
               "topics": [
-                "Introduction & Concept of Internet, History of Internet, Advantage and Disadvantage of Internet, Protocols Used, WWW, Domain : Letter Addressing System (URL), Domain : Number Addressing System (IP Address), Dedicated Access, Dial-up Access, Purchasing/Renting Domains (web sites), Web Server, Browsers, Introduction to Cyber Law, Introduction to e-Commerce."
+                "Introduction & Concept of Internet, History of Internet, Evolution of the World Wide Web (WWW)",
+                "Web Protocols: HTTP, HTTPS, FTP, TCP/IP, SMTP, DNS Resolution Process",
+                "Domain Name System: Uniform Resource Locator (URL), IP Addressing, Web Hosting, Web Servers, Web Browsers",
+                "Introduction to Cyber Law, Web Security, E-Commerce Infrastructure"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "HTML",
+              "title": "HTML & HTML5 Architecture",
               "topics": [
-                "Introduction and History, Basic structure of HTML document, Head Elements : Title, Meta, Style, Base & Link. Body Element properties : Background, BGColor, Text, Link, Vlink, Alink, BGProperties & Margin. Font Element properties : Size, Color & Face. Other text basics - Heading, Line Break, Paragraph, Span, HR, Center. Marquee Element properties : Align, Behaviour, BGColor, Direction, Height, Width, Loop, ScrollAmount, ScrollDelay, HSpace, VSpace. Anchor Element properties :Href, Rel, Name, Title & Targets. List Elements and their properties : LI, OL, UL, Menu & DIR. Table elements - Table, TH, TR & TD and their properties - Rowspan, Colspan, Caption, Border, Width, Align, Valign, BGColor, BorderColor, & CellSpacing. Form Elements - Input, Select & Option and their properties : Type, Value, Name, ID, Size, Checked, MaxLength, Align, SRC, Multiple & Selected. Form properties : Methods - Get & Post and Action. HTML-Media."
+                "Introduction, History, Basic Structure of HTML Document (doctype, html, head, body)",
+                "Head Elements: title, meta, style, link, base, script tags",
+                "Text Formatting & Semantic Tags: Headings (h1-h6), Paragraphs (p), Line Break (br), Horizontal Rule (hr), blockquote, span, div, header, nav, main, section, article, footer",
+                "Lists: Ordered List (ol), Unordered List (ul), Description List (dl)",
+                "Links & Images: Hyperlinks (a tag, href, target), Image Embedding (img tag, src, alt, width, height)",
+                "Tables: table, tr, th, td, caption, thead, tbody, tfoot, rowspan, colspan attributes",
+                "Forms & Inputs: form tag (action, method - GET/POST), input types (text, password, email, radio, checkbox, submit, reset, file), select, option, textarea, button, form validation attributes"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Cascading Style Sheet (CSS3)",
+              "title": "Cascading Style Sheets (CSS3)",
               "topics": [
-                "Introduction, Units, Types, Basic properties : text, font, color, background, image, link, table, border, margin, list, padding, cursor, scrollbar, dimension, visibility, positioning, layers, text effects, layouts, multi background, shadow, multi columns, gradient, user interface, responsive css, animation etc."
+                "CSS Fundamentals: Inline, Internal, and External Stylesheets; CSS Selectors (Element, Class, ID, Group, Universal, Attribute, Pseudo-classes)",
+                "CSS Box Model: Content, Padding, Border, Margin, Box-Sizing",
+                "Text & Font Styling: font-family, font-size, font-weight, color, text-align, text-decoration, line-height",
+                "Backgrounds & Borders: background-color, background-image, background-repeat, background-size, border-radius, box-shadow",
+                "Layouts & Positioning: display (block, inline, inline-block, none), position (static, relative, absolute, fixed, sticky), z-index, float, clear",
+                "Modern CSS Layouts: Flexbox (Flex Container & Items, justify-content, align-items), CSS Grid basics, Media Queries and Responsive Web Design"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Dynamic HTML and XML",
+              "title": "Dynamic HTML (DHTML) & XML",
               "topics": [
-                "Introduction, Difference b/w HTML and DHTML, Advantages of DHTML, CSS for DHTML, Document Object Models (DOMs), Event Handling, Data Binding, Introduction to XML."
+                "DHTML Concept: Combining HTML, CSS, JavaScript, and DOM for Dynamic Web Pages",
+                "Document Object Model (DOM): DOM Tree Hierarchy, Accessing and Manipulating HTML Elements Dynamically",
+                "DOM Events and Event Handling (onclick, onmouseover, onchange, onsubmit)",
+                "Introduction to XML: XML Syntax, Elements, Attributes, Well-Formed vs Valid XML, XML DTD and XML Schema"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "PHP (with ref to HTML)",
+              "title": "Server-Side Scripting with PHP",
               "topics": [
-                "Introduction, Program Structure, Data Types, Variables and Constants, Operators, Programming Constructs : Decision, Iteration and Case. Strings, Arrays, Accessing HTML data using Get and Post, User Defined Functions and their usage, Library Functions : String, Date & Time, Number, Math and Miscellaneous. Global Constants and Macros. Sessions, Cookies, File Handling, Data Uploading. Sending Emails and SMSs, Error Handling, OOPS."
+                "PHP Fundamentals: Server-Side vs Client-Side Scripting, PHP Syntax, Variables, Data Types, Constants, Operators",
+                "Control Structures: Conditional Statements (if, if-else, switch), Iteration (while, do-while, for, foreach)",
+                "Arrays in PHP: Indexed Arrays, Associative Arrays, Multidimensional Arrays, Array Functions",
+                "Functions: Defining Functions, Function Arguments, Return Values; Built-in String, Math, and Date Functions",
+                "Form Handling in PHP: Collecting Form Data using $_GET and $_POST, Form Validation, Data Sanitization",
+                "State Management: Cookies, Sessions, Session Management; File Handling (fopen, fread, fwrite, fclose, file upload)"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "MySQL (with ref. To PHP)",
+              "title": "MySQL Integration with PHP",
               "topics": [
-                "Introduction, Database operations : creation, selection and dropping and connecting from web-page using PHP. Data Types. Table operations : creating, altering, dropping, inserting/updating/deleting/querying of records, all using PHPMyAdmin and PHP code."
+                "Database Connectivity: Connecting to MySQL Database using PHP (MySQLi and PDO extensions)",
+                "Executing Database Operations: Creating Databases and Tables, Inserting Records, Updating Records, Deleting Records, Fetching Records",
+                "Displaying Database Records in HTML Tables dynamically using PHP loops",
+                "Preventing SQL Injection: Prepared Statements and Parameterized Queries; Working with phpMyAdmin interface"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Java Script and AJAX (with ref. To PHP and HTML)",
+              "title": "JavaScript & AJAX",
               "topics": [
-                "JS Introduction, Program Structure, Data Types, Variables and Constants, Operators, Programming Constructs : Decision, Iteration and Case. Strings and Arrays. User Defined Functions and their usage. Event Handling, Error Handling, Validation and Animation. AJAX introduction, XMLHttpRequest, Database operations."
+                "JavaScript Introduction: Client-Side Scripting, Variables (var, let, const), Data Types, Operators, Control Structures",
+                "Functions, Arrays, Objects, String Methods, DOM Manipulation via JavaScript (getElementById, querySelector)",
+                "Client-Side Form Validation: Validating Form Inputs before Submission",
+                "AJAX Fundamentals: Asynchronous JavaScript and XML, XMLHttpRequest Object, Fetch API, Sending Asynchronous Requests, Updating Web Content without Page Reload"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-13-lab",
@@ -1103,85 +1259,117 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Web Technologies Lab Exercises - Jeffrey C. Jackson, Pearson"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "Web Technologies Practicals",
               "topics": [
-                "Software Lab Based on Web Technologies: Students are advised to do laboratory/practical practice."
+                "Designing static responsive web pages using HTML5 semantic elements and CSS3 layouts",
+                "Implementing multi-page website navigation with interactive navigation bars and CSS Flexbox",
+                "Writing JavaScript scripts for client-side form validation (email, password strength, required fields)",
+                "Developing dynamic PHP scripts for user registration, login, and session handling",
+                "Integrating PHP with MySQL database to perform complete CRUD operations through web forms",
+                "Implementing asynchronous data fetching using AJAX and displaying server responses dynamically"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-14",
           "code": "CC-14",
-          "name": "Android and App Development",
+          "name": "Android and Mobile App Development",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
           "internalMarks": 30,
+          "recommendedBooks": [
+            "Android Programming: The Big Nerd Ranch Guide - Bill Phillips & Chris Stewart, Big Nerd Ranch",
+            "Professional Android 4 Application Development - Reto Meier, Wrox Wiley",
+            "Head First Android Development - Dawn Griffiths & David Griffiths, O’Reilly"
+          ],
           "units": [
             {
               "unitNumber": 1,
-              "title": "Refreshing Java",
+              "title": "Java Refresher for Android Development",
               "topics": [
-                "Javaintroduction. OOPs Concepts, Abstract class & Interface, Exception handling. Multi threading(Thread class & RunnableInterface)"
+                "OOP Concepts Refresher: Classes, Objects, Inheritance, Polymorphism, Abstract Classes, Interfaces",
+                "Exception Handling in Java, Collections Framework (ArrayList, HashMap) for Mobile Data",
+                "Multithreading Essentials: Thread Class, Runnable Interface, Concurrency in UI Applications"
               ]
             },
             {
               "unitNumber": 2,
-              "title": "Android",
+              "title": "Introduction to Android Architecture & Tools",
               "topics": [
-                "Introduction to Android, WhyAndroid?, Android RunTime, Android Studio, Introduction toGradle, Fundamentals : Basic Building blocks - Activities, Services, Broadcast Receivers & Contentproviders, UI Components- Views & notifications, Components for communication - Intents & IntentFilters, Android API levels(versions & versionsnames)"
+                "History of Android OS, Android Features, Android Open Source Project (AOSP)",
+                "Android Architecture Stack: Linux Kernel, Hardware Abstraction Layer (HAL), Native Libraries, Android Runtime (ART & Dalvik), Application Framework, Applications",
+                "Android Studio IDE, SDK Manager, Gradle Build System, Project Directory Structure",
+                "Android Four Core Building Blocks: Activities, Services, Broadcast Receivers, Content Providers; Android API Levels and Versioning"
               ]
             },
             {
               "unitNumber": 3,
-              "title": "Application Structure",
+              "title": "Android Application Structure & Activity Lifecycle",
               "topics": [
-                "AndroidManifest.xml, uses-permission, Activity/services/receiverdeclarations, Resources &R.java, Layouts & DrawableResources, Activities and Activitylifecycle"
+                "AndroidManifest.xml: Role, Manifest Tag, Application Tag, Declaring Activities, Services, Receivers, uses-permission Tag",
+                "Android Resources: res/layout, res/values (strings.xml, colors.xml, styles.xml), res/drawable, R.java auto-generation",
+                "Activity Lifecycle: Lifecycle States and Callback Methods (onCreate, onStart, onResume, onPause, onStop, onDestroy, onRestart)",
+                "Intents: Explicit Intents vs Implicit Intents, Intent Filters, Passing Data between Activities using Intent Extras and Bundle"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Emulator",
+              "title": "Android Emulator & Debugging Tools",
               "topics": [
-                "Launching emulator, Editing emulatorsettings, Emulatorshortcuts, Logcatusage, Introduction to Android Device Monitor(ADM), Fileexplorer, Intents: ExplicitIntents, ImplicitIntents"
+                "Android Virtual Device (AVD): Creating and Launching Emulators, Emulator Controls, Hardware Acceleration",
+                "Debugging Tools: Logcat (Log.v, Log.d, Log.i, Log.w, Log.e), Breakpoints, Debugger, Android Device Monitor (ADM), Device File Explorer",
+                "Android Debug Bridge (adb) Command-Line Utility: Installing APKs, Viewing Logs, Shell Access"
               ]
             },
             {
               "unitNumber": 5,
-              "title": "Basic UI design, Styles & Themes",
+              "title": "Android UI Design, Layouts & Widgets",
               "topics": [
-                "Formwidthets, Text Fields, Layouts - RelativeLayout, TableLayout, FrameLayout, LinearLayout, Nested layouts, [dip,dp,sip,sp] versusupx, styles.xml, drawable resources forshapes, gradients(selectors), Style attribute in layoutfile, Applying themes via code and manifestfile, AlertDialogs&Toast, Time and Date, Images andmedia"
+                "View and ViewGroup Concepts, UI Hierarchy; Measurement Units: dp (dip), sp, px, pt, in, mm",
+                "Layout Managers: LinearLayout (Orientation, Weight), RelativeLayout, ConstraintLayout, FrameLayout, TableLayout, ScrollView",
+                "Common UI Widgets: TextView, EditText, Button, ImageButton, CheckBox, RadioButton, RadioGroup, ToggleButton, Switch, ImageView, ProgressBar",
+                "Styles and Themes: Defining Styles in styles.xml, Applying Themes at Application and Activity Level"
               ]
             },
             {
               "unitNumber": 6,
-              "title": "Menu",
+              "title": "Menus, Dialogs & Adapters",
               "topics": [
-                "Option menu And Action Bar( menu in actionbar), Context menu and contextual actionmode, Popup menu, menu fromxml, menu via code, Linkify, MatchFilter&TransformFilter, Adapters : ArrayAdapters, BaseAdapters, ListView andListActivity, Customlistview, GridView usingadapters, Gallery usingadapters, Android Session and Sessionmanagement"
+                "Android Menus: Options Menu, Context Menu, Popup Menu; Creating Menus via XML and Inflating Menus programmatically",
+                "Dialogs: AlertDialog (Title, Message, Positive/Negative Buttons), DatePickerDialog, TimePickerDialog; Custom Toast Messages",
+                "Adapters and List Views: Adapter Pattern, ArrayAdapter, BaseAdapter, ListView, GridView, Modern RecyclerView & CardView Architecture"
               ]
             },
             {
               "unitNumber": 7,
-              "title": "Content Providers",
+              "title": "Data Storage & SQLite Database in Android",
               "topics": [
-                "SQL, DML & DDL Queries inbrief, SQLiteDatabase, SQLiteOpenHelper, Cursor, SQLiteProgramming, Reading and updatingContacts, Android Debug Bridge(adb)tool, Broadcast Receivers, Services"
+                "Data Storage Options in Android: SharedPreferences (Saving key-value pairs), Internal Storage, External Storage",
+                "SQLite Database in Android: SQLite Architecture, SQLiteOpenHelper Class (onCreate, onUpgrade)",
+                "SQLiteDatabase Class: Executing SQL Queries, insert(), query(), update(), delete() methods, Cursor Class and iterating query results",
+                "Building a Local Database Application (Contact Manager, Notes App) with full CRUD functionality"
               ]
             },
             {
               "unitNumber": 8,
-              "title": "Notifications",
+              "title": "Background Tasks, Notifications & Web APIs",
               "topics": [
-                "Alarm, Viservice, Customize: Toast, Dialogs, Tabs, Animatedpopuppanels, Gridview, Spinner, Thread.AsynTask, XMLParsing, Android JSON parsing usingVolley, How to create REST API for Android app usingPHP, Mysql, Accessing Phone services(Call,SMS)"
+                "Background Processing: Main (UI) Thread vs Worker Threads, NetworkOnMainThreadException, AsyncTask (deprecated) vs ExecutorService and Coroutines/WorkManager",
+                "Broadcast Receivers: System Broadcasts (Boot Completed, Battery Low), Custom Broadcasts, Registering via Manifest and Code",
+                "Services: Started Services, Bound Services, IntentService; Notification Manager, Notification Channels, Building Interactive Notifications",
+                "Networking & REST APIs: Consuming RESTful Web Services in Android, Fetching JSON Data over HTTP using Volley / Retrofit Library, Parsing JSON Data into App Models"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         },
         {
           "id": "bca-cc-14-lab",
@@ -1190,17 +1378,25 @@ export const bcaSyllabus: CourseSyllabus = {
           "paperType": "Practical / Lab",
           "credits": 2,
           "theoryMarks": 0,
-          "internalMarks": 30,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Android Studio Development Essentials - Neil Smyth, Payload Media"
+          ],
           "units": [
             {
               "unitNumber": 1,
               "title": "Android Practicals",
               "topics": [
-                "Software Lab Based on Android: Students are advised to do laboratory/practical practice."
+                "Setting up Android Studio, configuring AVD emulator, and creating a \"Hello World\" app",
+                "Creating an interactive Activity with layout design, event listeners, and Toast messages",
+                "Multi-Activity application demonstrating data transfer using Explicit Intents and Bundles",
+                "Building a user registration form with validation and displaying formatted data on a second screen",
+                "Implementing ListView / RecyclerView with custom adapter and handling item click events",
+                "Developing a complete SQLite database application (e.g. Student Attendance or Expense Tracker) with CRUD operations",
+                "Connecting an Android app to a live REST API and parsing JSON data to display in a RecyclerView"
               ]
             }
-          ],
-          "recommendedBooks": []
+          ]
         }
       ]
     }

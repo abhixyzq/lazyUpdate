@@ -132,13 +132,16 @@ export function parseTopicsFromText(text: string): string[] {
     }
 
     let canSplit = true;
-    const tinyCount = commaParts.filter(p => p.length < 5 || /^(and|or|etc\.?)\b/i.test(p)).length;
-    if (tinyCount >= 2 || commaParts.some(p => p.length <= 2)) {
+    const isAcronym = (s: string) => /^[A-Z0-9_\-\.\+]{2,6}$/.test(s.trim());
+    const isSubstantive = (s: string) => s.length >= 4 || isAcronym(s);
+
+    const nonSubstantiveCount = commaParts.filter(p => !isSubstantive(p) || /^(and|or|etc\.?)\b/i.test(p)).length;
+    if (nonSubstantiveCount >= 3 || commaParts.some(p => p.length === 1)) {
       canSplit = false;
     }
 
     const avgLen = commaParts.reduce((acc, p) => acc + p.length, 0) / commaParts.length;
-    if (avgLen < 12 && !commaParts.some(p => p.length > 20)) {
+    if (avgLen < 7 && !commaParts.some(p => p.length > 15)) {
       canSplit = false;
     }
 
