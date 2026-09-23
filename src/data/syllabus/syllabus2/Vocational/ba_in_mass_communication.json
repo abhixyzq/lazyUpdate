@@ -1,0 +1,1031 @@
+{
+  "id": "ba-mass-communication",
+  "name": "B.A. (Hons.) in Mass Communication (BMC)",
+  "shortCode": "Mass Communication",
+  "stream": "Vocational",
+  "faculty": "Vocational",
+  "icon": "📰",
+  "degree": "3-Year Professional Degree",
+  "totalSemesters": 6,
+  "description": "Three-Year Undergraduate Degree Programme in Mass Communication (Bachelor of Mass Communication / B.A. Hons. in Mass Communication) under Choice Based Credit System (CBCS), Patna University. Offered at Patna College and the Centre for Mass Communication, this program prepares students for leadership in print journalism, television broadcasting, digital news, radio production, advertising, public relations, and visual communication.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "mc-cc-1",
+          "code": "CC-1",
+          "name": "Introduction to Mass Communication",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Mass Communication in India - Keval J. Kumar, Jaico Publishing",
+            "McQuail’s Mass Communication Theory - Denis McQuail, SAGE",
+            "Understanding Media - Marshall McLuhan, Routledge"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations & Process of Communication",
+              "topics": [
+                "Concept, definition, nature and scope of communication; Human communication evolution from oral to digital era",
+                "Elements and process of communication: Sender, encoding, message, channel, receiver, decoding, feedback and noise",
+                "Levels of communication: Intrapersonal, interpersonal, group, public and mass communication",
+                "7 Cs of effective communication and communication barriers"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Classic Models of Communication",
+              "topics": [
+                "Linear models: Aristotle model, Harold Lasswell formula (Who says What in Which Channel to Whom with What Effect)",
+                "Claude Shannon and Warren Weaver Mathematical Model of Communication",
+                "Interactive and circular models: Wilbur Schramm, David Berlo (SMCR) Model, Newcomb ABX Model",
+                "Helical model of Frank Dance and Westley-MacLean conceptual model"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Functions & Role of Mass Media",
+              "topics": [
+                "Mass communication: Definition, distinct characteristics and audiences",
+                "Functions of mass media: Surveillance, correlation, cultural transmission, entertainment and economic mobilization",
+                "Dysfunctions of mass media: Narcotizing dysfunction, stereotyping and information overload"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Mass Media & Society",
+              "topics": [
+                "Relationship between mass media, democracy and civil society; Media as the Fourth Estate",
+                "Mass culture, popular culture, high culture and sub-cultures; Commercialization of media",
+                "Globalization of media and cultural imperialism debates"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-2",
+          "code": "CC-2",
+          "name": "History of Print Media & Indian Press",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "History of Indian Journalism - J. Natarajan, Publications Division",
+            "Press in India - G.N.S. Raghavan, Gyan Publishing House",
+            "Indian Journalism - Nadig Krishnamurthy, Prasaranga"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Early Printing & Birth of Indian Press",
+              "topics": [
+                "Invention of movable type printing press by Johannes Gutenberg and its socio-political impact",
+                "Introduction of printing technology in India by Christian missionaries",
+                "James Augustus Hicky and the Bengal Gazette (1780): Origins of newspaper journalism in India"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Press in India’s Freedom Struggle",
+              "topics": [
+                "Role of social reformers: Raja Ram Mohan Roy (Mirat-ul-Akhbar, Sambad Kaumudi)",
+                "1857 revolt and the Gagging Act; Vernacular Press Act 1878 and struggle for press freedom",
+                "Nationalist press leaders: Bal Gangadhar Tilak (Kesari, Mahratta), Mahatma Gandhi as journalist (Young India, Harijan, Indian Opinion)",
+                "Pioneering regional and national dailies: The Hindu, Amrita Bazar Patrika, The Statesman, The Indian Express"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "History of Hindi & Bihar Press",
+              "topics": [
+                "First Hindi newspaper: Udant Martand (1826) published by Pt. Jugal Kishore Shukla",
+                "Growth of Hindi journalism: Bharatendu Harishchandra, Mahavir Prasad Dwivedi (Saraswati)",
+                "Evolution of press in Bihar: The Searchlight, The Indian Nation, Aryavarta, Pradeep and modern contemporary Hindi dailies"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Post-Independence Press & Institutional Framework",
+              "topics": [
+                "Press after independence: Challenges of nation building and development coverage",
+                "First Press Commission (1952-54) and Second Press Commission (1978-82) recommendations",
+                "Establishment and role of Press Council of India (PCI) and Registrar of Newspapers for India (RNI)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-ge-1",
+          "code": "GE-1",
+          "name": "Media Language & Creative Writing",
+          "paperType": "Minor (MIC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Writing for the Media - Sunny Thomas, Oxford",
+            "The Elements of Style - William Strunk Jr. & E.B. White"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Journalistic Language Principles",
+              "topics": [
+                "Grammar, syntax, vocabulary, clarity, conciseness and punch in journalistic writing",
+                "Differences in writing style for print, radio, television and web media"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Creative Non-Fiction & Feature Writing",
+              "topics": [
+                "Feature stories: Types (human interest, profile, trend, travel, lifestyle)",
+                "Middle pieces, opinion editorials (Op-Ed), columns, letters to editor and creative narrative techniques"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-aecc-1",
+          "code": "AECC-1",
+          "name": "Language Proficiency (English / Hindi)",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "High School English Grammar and Composition - Wren & Martin",
+            "Vyavaharik Hindi Vyakaran - Hardev Bahri"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Functional Linguistic Competency",
+              "topics": [
+                "Sentence structure, common errors, idioms, phrases and vocabulary enrichment",
+                "Reading comprehension, critical analysis and summarization of complex texts"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Professional Expression",
+              "topics": [
+                "Drafting official correspondence, circulars, press releases and executive summaries",
+                "Public speaking, pronunciation, oral presentation and participation in panel discussions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "papers": [
+        {
+          "id": "mc-cc-3",
+          "code": "CC-3",
+          "name": "Print Journalism & Reporting",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Basic News Writing - Melvin Mencher, McGraw Hill",
+            "News Reporting and Writing - Brian S. Brooks et al., Bedford/St. Martin’s",
+            "The Journalist’s Handbook - M.V. Kamath, Vikas Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Understanding News & News Values",
+              "topics": [
+                "Definition, concept and elements of news: Timeliness, proximity, prominence, conflict, human interest, oddity and consequence",
+                "Types of news: Hard news vs soft news, breaking news, follow-up stories and backgrounders",
+                "News sources: Attribution, credibility, cultivating reliable confidential sources and press conferences"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "News Writing & Structure",
+              "topics": [
+                "The 5 Ws and 1 H of news reporting; Inverted pyramid structure vs narrative storytelling",
+                "Anatomy of a news story: Headline, dateline, byline, lead/intro types (summary, quote, question, descriptive, punch), body and kicker/conclusion",
+                "Quotes, paraphrasing, balance, objectivity and fairness in reporting"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Beat Reporting Specializations",
+              "topics": [
+                "Beat system: Functions and duties of beat reporters",
+                "Reporting major beats: Political reporting, crime and court reporting, civic issues, sports journalism, business and economy, education and health",
+                "Investigative journalism: Techniques, sting operations, ethical challenges and investigative reporting cases"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Interviewing Techniques & Fieldwork",
+              "topics": [
+                "Types of interviews: Face-to-face, telephonic, press conferences, vox populi and investigative interviews",
+                "Preparation, formulating open-ended questions, handling hostile interviewees and taking notes",
+                "Practical news gathering assignments and filing news reports from Patna University campus and Patna city"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-4",
+          "code": "CC-4",
+          "name": "Editing & Newspaper Layout Design",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "The Art of Editing - Baskette, Sissors & Brooks, Allyn & Bacon",
+            "Modern Newspaper Editing - Gene Gilmore, Iowa State University Press",
+            "Newspaper Design - Harold Evans, Heinemann"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "News Desk & Editing Principles",
+              "topics": [
+                "Structure and hierarchy of a newspaper newsroom: Editor-in-Chief, Resident Editor, News Editor, Chief Sub-Editor and Sub-Editors",
+                "Meaning and purpose of editing: Checking facts, ensuring balance, eliminating libellous material, pruning verbosity",
+                "Standard copy-editing symbols and stylebook adherence"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Headline Writing & Captioning",
+              "topics": [
+                "Significance and functions of headlines; Types of headlines: Banner, streamer, kicker, hammer, deck, label, question",
+                "Writing captivating and accurate headlines under space constraints",
+                "Photo captioning: 5 Ws in captions, cutlines, photo selection and photo cropping principles"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Newspaper Layout & Design Principles",
+              "topics": [
+                "Typography: Typefaces (serif vs sans-serif), font sizes, kerning, leading, column width",
+                "Principles of design: Balance, contrast, rhythm, unity, proportion and eye-movement flow on front page",
+                "Elements of page makeup: Masthead, folio, dateline, teasers, anchor stories, white space and infographic usage"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Digital Desktop Publishing (DTP) Hands-on",
+              "topics": [
+                "Introduction to DTP software: Adobe InDesign and QuarkXPress workspace and tools",
+                "Setting up multi-column newspaper grid templates and dummy sheets",
+                "Designing a laboratory newspaper / campus tabloid including dummy creation, text flow, headline placing and final PDF export"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-ge-2",
+          "code": "GE-2",
+          "name": "Media Laws & Indian Constitution",
+          "paperType": "Minor (MIC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Law of the Press in India - D.D. Basu, Prentice Hall of India",
+            "Media Law and Ethics - Neelamalar M., PHI Learning"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Constitutional Guarantees & Press Freedom",
+              "topics": [
+                "Freedom of Speech and Expression: Article 19(1)(a) of Indian Constitution; Reasonable restrictions under Article 19(2)",
+                "Key Supreme Court judgements on press freedom (Romesh Thappar, Sakal Papers, Bennett Coleman)",
+                "Parliamentary Privileges: Articles 105 and 194; Contempt of Legislature"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Statutory Media Acts & Information Law",
+              "topics": [
+                "Defamation: Civil and criminal defamation under IPC Sections 499 & 500, legal defenses",
+                "Contempt of Courts Act 1971: Civil vs criminal contempt; Official Secrets Act 1923",
+                "Right to Information (RTI) Act 2005: Filing applications, appellate authorities, exemptions under Section 8",
+                "Working Journalists Act, Press and Registration of Books Act, Copyright Act and Fair Use doctrine"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-aecc-2",
+          "code": "AECC-2",
+          "name": "Environmental Sustainability in Media",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Environmental Communication and the Public Sphere - Robert Cox & Phaedra C. Pezzullo, SAGE"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Ecology & Environmental Crises",
+              "topics": [
+                "Climate change, global warming, carbon emissions, deforestation, river pollution (Ganga conservation initiatives)",
+                "Biodiversity loss, wildlife conservation laws and sustainable development goals (SDGs)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Environmental Journalism in Action",
+              "topics": [
+                "Coverage of climate issues, industrial pollution, disaster reporting, environmental activism and eco-campaigns"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "papers": [
+        {
+          "id": "mc-cc-5",
+          "code": "CC-5",
+          "name": "Radio Journalism & Audio Production",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Radio Production - Robert McLeish, Focal Press",
+            "Broadcast Journalism - Andrew Boyd, Focal Press",
+            "Other Voices: The Struggle for Community Radio in India - Vinod Pavarala & Kanchan K. Malik, SAGE"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Radio as a Mass Medium",
+              "topics": [
+                "Characteristics, strengths and limitations of radio as an audio medium; History of broadcasting in India: AIR (All India Radio)",
+                "FM revolution, private commercial FM channels, Community Radio Stations (CRS) and government licensing guidelines",
+                "Internet radio, podcasting revolution and streaming audio platforms (Spotify, Apple Podcasts)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Radio Formats & Scriptwriting",
+              "topics": [
+                "Radio programming formats: Radio news bulletins, documentaries, radio features, talk shows, phone-in programs, radio drama and radio jingles",
+                "Writing for the ear: Conversational style, simplicity, brevity, tone, signposting and phonetic writing",
+                "Sound elements: Voice, music (stingers, sting, bed), ambient sound and sound effects (SFX)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Voice Culture, Anchoring & Interviewing",
+              "topics": [
+                "Microphone types: Dynamic, condenser, omni-directional, bi-directional, cardioid, lavalier and shotgun microphones",
+                "Voice culture: Pitch, pace, tone, modulation, pronunciation, breathing techniques and overcoming mic fright",
+                "Radio news anchoring and conducting live interviews in studio and over phone"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Digital Audio Recording & Editing Lab",
+              "topics": [
+                "Studio acoustics and digital audio workstations (DAW): Audacity / Adobe Audition tools",
+                "Multi-track audio recording, editing, voice leveling, noise reduction, equalization and audio mixing",
+                "Practical production of a 5-minute radio news capsule or podcast episode"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-6",
+          "code": "CC-6",
+          "name": "Television Journalism & Video Production",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Television Production Handbook - Herbert Zettl, Wadsworth",
+            "Television Journalism - Ivor Yorke, Focal Press",
+            "Broadcast News Handbook - C.A. Tuggle et al., McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Television Medium & Newsroom Setup",
+              "topics": [
+                "Evolution of television broadcasting in India: Doordarshan, SITE experiment, 1991 Gulf War impact and private satellite 24x7 news channels",
+                "Organization of a TV news channel: Input desk, output desk, assignment desk, production control room (PCR) and master control room (MCR)",
+                "Roles: Executive Producer, News Anchor, Correspondent, Video Journalist (VJ) and Video Editor"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "TV News Gathering & Scripting",
+              "topics": [
+                "Visual grammar: Writing to visuals, split-page script format (Audio vs Video column)",
+                "Anatomy of a TV news package: Anchor intro, sound bites (SOT - Sound on Tape), B-roll (cutaways), voice-over (VO) and Piece to Camera (PTC)",
+                "Live reporting, running breaking news, breaking news ticker/super and OB van / live mobile backpack (LiveU) setups"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Camera Handling, Lighting & Composition",
+              "topics": [
+                "Video camera operations: White balance, iris, shutter speed, focus and tripod handling",
+                "Camera shots: Extreme long shot (ELS), long shot (LS), medium shot (MS), close-up (CU), extreme close-up (ECU); Camera angles (low, eye, high, Dutch angle)",
+                "Camera movements: Pan, tilt, zoom, dolly, tracking; Rule of thirds and 180-degree rule in video composition",
+                "Lighting fundamentals: Three-point lighting setup (Key light, Fill light, Back light) and outdoor natural lighting"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Non-Linear Video Editing (NLE) Lab",
+              "topics": [
+                "Principles of video editing: Cut, dissolve, fade, wipe; Continuity editing, jump cut avoidance and montage",
+                "Working with editing software: Adobe Premiere Pro / DaVinci Resolve timeline, video-audio synch, transitions and color grading",
+                "Practical production of a 2-minute television news package with PTC and sound bites"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-7",
+          "code": "CC-7",
+          "name": "Photojournalism & Visual Storytelling",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Photojournalism: The Professionals’ Approach - Kenneth Kobre, Focal Press",
+            "Basic Critical Theory for Photographers - Ashley la Grange, Focal Press"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Camera Mechanics & Exposure Triangle",
+              "topics": [
+                "History of photography and photojournalism; Camera types: DSLR, Mirrorless, Medium format",
+                "The Exposure Triangle: Aperture (f-stop and depth of field), Shutter Speed (motion blur vs freeze action) and ISO (grain/noise)",
+                "Lenses: Prime, zoom, wide-angle, telephoto and macro lenses"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Composition & Photojournalistic Ethics",
+              "topics": [
+                "Visual composition rules: Rule of thirds, leading lines, framing, symmetry, patterns and negative space",
+                "Photojournalistic storytelling: Hard news photographs, spot news, feature photos, portraits and photo essays",
+                "Ethics in photojournalism: Digital manipulation, staged photos, privacy invasion, gruesome imagery and copyright protection"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-ge-3",
+          "code": "GE-3",
+          "name": "Indian Society & Political Economy",
+          "paperType": "Minor (MIC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Social Change in Modern India - M.N. Srinivas, Orient Blackswan",
+            "India Since Independence - Bipan Chandra, Penguin"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Social Stratification & Contemporary Issues",
+              "topics": [
+                "Caste system, class, religion, linguistic diversity, gender disparities and marginalized communities in India",
+                "Agrarian issues, farmer movements, urban migration, poverty and literacy challenges"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Democratic Institutions & Electoral Politics",
+              "topics": [
+                "Indian Parliamentary democracy, Federalism, Center-State relations, Election Commission of India and voting trends",
+                "Role of media in shaping public opinion and election coverage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-sec-1",
+          "code": "SEC-1",
+          "name": "Digital Photography & Image Editing Skills",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 4,
+          "theoryMarks": 0,
+          "internalMarks": 100,
+          "recommendedBooks": [
+            "Adobe Photoshop Classroom in a Book - Adobe Press"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Hands-on Photography & Darkroom Software",
+              "topics": [
+                "Field photography assignments across Patna: Monuments, riverfront, markets, campus life and portraiture",
+                "Adobe Photoshop / Lightroom image post-processing: Cropping, color correction, levels, curves, sharpening and metadata tagging",
+                "Curating and presenting a personal photographic portfolio of 10 high-resolution thematic photographs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "papers": [
+        {
+          "id": "mc-cc-8",
+          "code": "CC-8",
+          "name": "Advertising Concepts & Brand Strategy",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Ogilvy on Advertising - David Ogilvy, Vintage Books",
+            "Advertising Management - Rajeev Batra, John G. Myers, David A. Aaker, Pearson",
+            "Foundations of Advertising - S.A. Chunawalla & K.C. Sethia, Himalaya Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Advertising Concept & Classification",
+              "topics": [
+                "Definition, role, functions and socio-economic effects of advertising; Advertising vs Sales Promotion vs PR",
+                "Types of advertising: Consumer, industrial, trade, retail, financial, institutional and public service advertising (PSA)",
+                "AIDA model (Attention, Interest, Desire, Action) and DAGMAR approach (Defining Advertising Goals for Measured Advertising Results)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Advertising Agency Operations",
+              "topics": [
+                "Structure and working of an advertising agency: Account planning, creative department, media planning and client servicing",
+                "Agency selection criteria, agency compensation methods (commission system vs fee system)",
+                "Self-regulation in advertising: Advertising Standards Council of India (ASCI) code of ethics"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Creativity, Copywriting & Design",
+              "topics": [
+                "Creative brief preparation; The creative pitch and brainstorming techniques",
+                "Copywriting for print: Headline types, subhead, body copy, slogan/tagline, logo and call-to-action (CTA)",
+                "Writing commercial scripts for TV commercials (TVC) and radio jingles; Storyboard creation"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Media Planning & Campaign Strategy",
+              "topics": [
+                "Media planning process: Reach, frequency, gross rating points (GRP), cost per thousand (CPM)",
+                "Comparative evaluation of print, television, radio, outdoor (OOH) and digital display/social advertising",
+                "Designing a complete multi-media advertising campaign for a new brand launch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-9",
+          "code": "CC-9",
+          "name": "Public Relations & Corporate Communication",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Effective Public Relations - Cutlip, Center & Broom, Pearson",
+            "Corporate Communication - Paul A. Argenti, McGraw Hill",
+            "Public Relations in India - J.M. Kaul, Naya Prokash"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Public Relations",
+              "topics": [
+                "Meaning, definition, history and evolution of PR in India and internationally; Ivy Lee and Edward Bernays contributions",
+                "PR vs Advertising, Publicity, Propaganda and Lobbying; Key publics of PR: Internal vs external publics",
+                "Public Relations Society of India (PRSI) and code of professional conduct"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Tools & Media Relations in PR",
+              "topics": [
+                "Media relations: Organizing press conferences, press briefings, press tours and writing effective press releases",
+                "Internal communication tools: House journals, newsletters, intranet, bulletin boards, annual reports and town-halls",
+                "Corporate publications: Brochures, leaflets, backgrounders and media kits"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Corporate Communication & Crisis PR",
+              "topics": [
+                "Corporate Identity: Corporate vision, brand identity, logo, stationery and organizational reputation management",
+                "Crisis Communication: Types of corporate crises, developing a crisis management plan, appointing designated spokesperson and damage control strategies",
+                "Corporate Social Responsibility (CSR): Planning and communicating social initiatives"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "PR Campaign Planning & Evaluation",
+              "topics": [
+                "Steps in planning a PR campaign: Research, action planning, communication execution and post-campaign evaluation",
+                "Public opinion polling, media monitoring and press clipping services"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-10",
+          "code": "CC-10",
+          "name": "Development Communication",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Communication for Development in the Third World - Srinivas R. Melkote & H. Leslie Steeves, SAGE",
+            "Development Communication - Uma Narula, Har-Anand Publications"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Concepts & Paradigms of Development",
+              "topics": [
+                "Concept, meaning, indicators and dimensions of development; Human Development Index (HDI)",
+                "Dominant paradigm of development (Everett Rogers, Daniel Lerner) and its critique; Participatory development communication model"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Media in Nation Building & Rural Reporting",
+              "topics": [
+                "Role of radio, television and print media in agricultural extension, health, family welfare, education and poverty alleviation",
+                "SITE (Satellite Instructional Television Experiment) and Kheda communication projects in India",
+                "Designing Information, Education and Communication (IEC) materials and community radio campaigns"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-ge-4",
+          "code": "GE-4",
+          "name": "Cinema Studies & Film Appreciation",
+          "paperType": "Minor (MIC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Film Art: An Introduction - David Bordwell & Kristin Thompson, McGraw Hill",
+            "Our Films, Their Films - Satyajit Ray, Orient Blackswan"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Film Language & Indian Cinema",
+              "topics": [
+                "Elements of cinema: Mise-en-scene, cinematography, lighting, sound design, editing cuts and montage",
+                "Evolution of Indian cinema: Silent era (Raja Harishchandra), studio era, Golden Age of Indian cinema, Parallel/New Wave cinema (Satyajit Ray, Ritwik Ghatak, Mrinal Sen, Shyam Benegal)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Film Review & Analysis",
+              "topics": [
+                "Film genres: Realism, melodrama, thriller, documentary; Regional cinema of Bihar (Bhojpuri, Maithili cinema history)",
+                "Writing critical film reviews: Thematic analysis, directorial vision, performances and technical craft"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-sec-2",
+          "code": "SEC-2",
+          "name": "Audio-Video Editing & Podcasting Skills",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 4,
+          "theoryMarks": 0,
+          "internalMarks": 100,
+          "recommendedBooks": [
+            "Digital Video Editing: Fundamentals with Premiere Pro - Adobe Press"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Studio Editing Workstation",
+              "topics": [
+                "Timeline workflow, cutting sound bites, audio sweetening and mixing background music in Audacity",
+                "Adobe Premiere Pro / Final Cut Pro: Trimming clips, lower-thirds titling, color grading, multi-camera editing",
+                "Exporting video in broadcast and web streaming formats (H.264, MP4, 1080p, 4K)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "papers": [
+        {
+          "id": "mc-cc-11",
+          "code": "CC-11",
+          "name": "New Media & Digital Journalism",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Journalism in the Digital Age - John V. Pavlik, Columbia University Press",
+            "Online Journalism: A Basic Text - Tapas Ray, Cambridge University Press",
+            "Mobile Journalism: How to Produce News with Your Smartphone - Robb Montgomery, Routledge"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Characteristics of Digital Media",
+              "topics": [
+                "Convergence of computing, telecommunications and traditional media; Digital divide and digital literacy in India",
+                "Unique characteristics of web journalism: Interactivity, hyper-textuality, multimodality, immediacy, archiving and non-linear consumption",
+                "Traditional journalism vs Online journalism: Speed vs accuracy dilemma and the 24x7 news cycle"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Writing for the Web & Search Engine Optimization (SEO)",
+              "topics": [
+                "Writing for digital platforms: Inverted pyramid adapted for online readers, chunking content, scannability, subheads and bullet points",
+                "SEO fundamentals: Keyword research, meta tags, SEO headlines, link building and analytics (Google Analytics overview)",
+                "Content Management Systems (CMS): WordPress workspace, publishing posts, uploading media and managing tags"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Mobile Journalism (MoJo) & Social Media Reporting",
+              "topics": [
+                "Mobile Journalism (MoJo): Smartphone reporting kits, mobile filming, microphones, stabilization and mobile editing apps (VN, CapCut, Kinemaster)",
+                "Using social media platforms (X/Twitter, Instagram, YouTube, Facebook, LinkedIn) as news gathering, crowdsourcing and dissemination tools",
+                "Citizen journalism: Blogging, vlogging, live streaming and community engagement"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Fact Checking, Misinformation & Data Journalism",
+              "topics": [
+                "Information disorder: Misinformation, disinformation, mal-information, deepfakes and algorithmic echo chambers",
+                "Digital verification tools: Google Reverse Image Search, InVID, TinEye, verifying geolocation and source verification",
+                "Data Journalism: Finding public datasets, cleaning data in spreadsheets, basic data visualization charts and storytelling"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-12",
+          "code": "CC-12",
+          "name": "Media Management & Economics",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Media Management - B.K. Chaturvedi, Global Vision Publishing",
+            "Newspaper Management - Frank Thayer, Prentice Hall"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Media Economics & Ownership Patterns",
+              "topics": [
+                "Media as an industry and business enterprise; Ownership patterns in Indian media: Sole proprietorship, partnership, private limited company, trust, chain newspapers, conglomerates",
+                "Cross-media ownership, concentration of media ownership and its impact on editorial independence"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Revenue Models & Newspaper Operations",
+              "topics": [
+                "Revenue streams: Advertising revenue vs subscription/cover price; The economics of circulation and distribution networks",
+                "Production management: Newsprint procurement, printing technology economics, wastage control and space management"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-dse-1",
+          "code": "DSE-1",
+          "name": "Communication Research Methods",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Mass Media Research: An Introduction - Roger D. Wimmer & Joseph R. Dominick, Cengage",
+            "Research Methodology - C.R. Kothari, New Age International"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Scientific Research in Communication",
+              "topics": [
+                "Meaning, scope and purpose of scientific inquiry in communication; The research process steps",
+                "Qualitative vs Quantitative research paradigms in mass communication",
+                "Formulating research hypotheses and research questions"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Research Methods & Audience Measurement",
+              "topics": [
+                "Content analysis: Unit of analysis, coding sheet, categories and inter-coder reliability",
+                "Survey research: Questionnaire design, sampling techniques (probability vs non-probability), interviews and focus groups",
+                "Audience measurement metrics: TRP (Target Rating Points), TAM, BARC in television, IRS (Indian Readership Survey) in print"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-dse-2",
+          "code": "DSE-2",
+          "name": "Science & Environmental Journalism",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Science Journalism: An Introduction - Martin W. Bauer, Routledge",
+            "Reporting on the Environment - S.L. Becker, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Popularizing Science & Health Reporting",
+              "topics": [
+                "Role of media in fostering scientific temper in society; Communicating complex scientific research in accessible lay language",
+                "Health and medical journalism: Reporting epidemics, vaccines, public health policy, nutrition and debunking medical myths"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Disasters & Climate Crisis Reporting",
+              "topics": [
+                "Reporting natural disasters: Floods in Bihar, earthquakes, heatwaves and cyclones; Safety guidelines for disaster journalists",
+                "Covering industrial pollution, waste management and government environmental initiatives"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "papers": [
+        {
+          "id": "mc-cc-13",
+          "code": "CC-13",
+          "name": "Global Communication & Media Theories",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Theories of Mass Communication - Melvin L. DeFleur & Sandra Ball-Rokeach, Longman",
+            "Global Communication - Cees J. Hamelink, SAGE",
+            "Many Voices, One World (MacBride Report) - UNESCO"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Classical Media Effects Theories",
+              "topics": [
+                "Direct effects: Hypodermic Needle / Magic Bullet Theory; Limited effects model: Two-Step Flow of Communication (Paul Lazarsfeld)",
+                "Agenda Setting Theory (McCombs & Shaw); Framing and Priming in media narratives",
+                "Cultivation Theory (George Gerbner) and Mean World Syndrome",
+                "Uses and Gratifications Theory: How audiences actively use media to satisfy needs"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Critical, Cultural & Global Communication",
+              "topics": [
+                "Frankfurt School: Critical theory, culture industry, commodification and hegemony (Antonio Gramsci)",
+                "Information imbalance between Global North and Global South; Flow of news and global news agencies (Reuters, AP, AFP)",
+                "New World Information and Communication Order (NWICO) and UNESCO MacBride Commission Report (Many Voices, One World)",
+                "Information Society, network society and digital globalization"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-cc-14",
+          "code": "CC-14",
+          "name": "Media Ethics, Cyber Laws & Public Interest",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Media Ethics: Cases and Moral Reasoning - Clifford G. Christians et al., Routledge",
+            "Cyber Laws in India - Pavan Duggal, Universal Law Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Ethical Dilemmas in Contemporary Journalism",
+              "topics": [
+                "Objectivity, credibility, truthfulness, impartiality and conflict of interest",
+                "Sensationalism, yellow journalism, fake news, paid news and private treaties in media",
+                "Trial by media, sting operations ethics, privacy intrusion and reporting on juveniles and victims of sexual violence"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Cyber Laws & Digital Media Regulation",
+              "topics": [
+                "Information Technology Act 2000 (and 2008 Amendment): Cyber crimes, hacking, cyber stalking, identity theft and online defamation",
+                "Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules 2021: Three-tier self-regulatory mechanism for OTT platforms and digital news portals",
+                "Digital Personal Data Protection Act (DPDP) 2023 overview and journalist privileges"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-dse-3",
+          "code": "DSE-3",
+          "name": "Documentary Filmmaking",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Directing the Documentary - Michael Rabiger, Focal Press",
+            "Introduction to Documentary - Bill Nichols, Indiana University Press"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Documentary Form & Aesthetics",
+              "topics": [
+                "Definition and brief history of documentary cinema: Robert Flaherty, John Grierson, Cinema Verite and Direct Cinema",
+                "Modes of documentary representation: Expository, observational, participatory, reflexive, poetic and performative modes",
+                "Documentary research, proposal writing and shooting treatment script"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Production & Directing",
+              "topics": [
+                "Production planning, conducting on-camera interviews, shooting B-roll, ethical considerations towards subjects",
+                "Post-production: Rough cut, narration voice-over, music score, fine cut, titling and festival distribution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mc-dse-4",
+          "code": "DSE-4",
+          "name": "Major Media Project / Internship & Comprehensive Viva",
+          "paperType": "Research Project",
+          "credits": 6,
+          "theoryMarks": 50,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "The Craft of Research - Wayne C. Booth et al., University of Chicago Press"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Capstone Media Portfolio & Defense",
+              "topics": [
+                "Submission of an extensive capstone project in any one specialization: (a) Production of an 8-page laboratory newspaper / magazine, OR (b) Production of a 10-minute research-based documentary film / video package, OR (c) Comprehensive 4-6 weeks corporate/media internship report from an established media house",
+                "Grand Viva-Voce examination and portfolio defense before an External Board of Examiners constituted by Patna University"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -239,6 +239,20 @@ export const LawCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' }) =>
   </div>
 );
 
+// 27. Biotechnology: DNA Helix
+export const BiotechnologyCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' }) => (
+  <div className="flex h-full w-full items-center justify-center rounded-xl bg-teal-50 text-teal-600">
+    <Dna className={className} strokeWidth={2.2} />
+  </div>
+);
+
+// 28. Mass Communication: Media & Broadcast Megaphone
+export const MassCommCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' }) => (
+  <div className="flex h-full w-full items-center justify-center rounded-xl bg-pink-50 text-pink-600">
+    <Megaphone className={className} strokeWidth={2.2} />
+  </div>
+);
+
 // 27. Sports Science: Championship Trophy
 export const SportsCourseIcon: React.FC<IconProps> = ({ className = 'h-7 w-7' }) => (
   <div className="flex h-full w-full items-center justify-center rounded-xl bg-amber-50 text-amber-600">
@@ -359,6 +373,12 @@ export const getCourseVectorIcon = (courseId: string, className = 'h-7 w-7'): Re
   }
   if (id.includes('bba') || id.includes('business') || id.includes('manage')) {
     return <BBACourseIcon className={className} />;
+  }
+  if (id.includes('biotech')) {
+    return <BiotechnologyCourseIcon className={className} />;
+  }
+  if (id.includes('mass') || id.includes('comm') || id.includes('journalism')) {
+    return <MassCommCourseIcon className={className} />;
   }
   if (id.includes('law') || id.includes('llb')) {
     return <LawCourseIcon className={className} />;

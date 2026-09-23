@@ -104,9 +104,6 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   <h2 className="text-sm font-black text-slate-900 leading-none">
                     Lazy PU
                   </h2>
-                  <span className="rounded-md bg-indigo-50 border border-indigo-200/60 px-1.5 py-0.5 text-[9px] font-black text-indigo-700 leading-none">
-                    v2.0
-                  </span>
                 </div>
                 <p className="text-[10px] font-semibold text-slate-500 mt-0.5">
                   Patna University Portal

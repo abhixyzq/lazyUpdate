@@ -1,0 +1,1518 @@
+{
+  "id": "biotechnology",
+  "name": "B.Sc. (Hons.) in Biotechnology",
+  "shortCode": "Biotechnology",
+  "stream": "Vocational",
+  "faculty": "Vocational",
+  "icon": "🧬",
+  "degree": "3-Year B.Sc. (Hons.) Vocational Degree",
+  "totalSemesters": 6,
+  "description": "Approved comprehensive 6-semester undergraduate syllabus for B.Sc. (Hons.) in Biotechnology under Patna University, offered at premier constituent colleges including Patna Science College and B.N. College. Rigorous curriculum spanning cell biology, biochemistry, general microbiology, molecular biology, genetics, immunology, recombinant DNA technology, bioprocess engineering, bioinformatics, genomics, and industrial biotechnology.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "bio-cc-1",
+          "code": "CC-1",
+          "name": "Cell Biology",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Molecular Biology of the Cell - Alberts et al., Garland Science",
+            "Cell and Molecular Biology - De Robertis & De Robertis, Lippincott",
+            "The Cell: A Molecular Approach - Geoffrey M. Cooper, Sinauer Associates"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to Cell Biology & Cell Wall",
+              "topics": [
+                "Discovery of cells and Cell Theory; Comparative architecture of prokaryotic and eukaryotic cells",
+                "Structure and chemical composition of plant cell wall and bacterial cell wall",
+                "Extracellular matrix and cell junctions (tight junctions, desmosomes, gap junctions)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Plasma Membrane & Transport Mechanisms",
+              "topics": [
+                "Membrane models: Evolution from Danielli-Davson to Singer-Nicolson Fluid Mosaic model",
+                "Membrane lipids, proteins and carbohydrates; Membrane fluidity and lipid rafts",
+                "Transport across membrane: Passive diffusion, facilitated diffusion, active transport (Na+/K+ ATPase, ABC transporters), ion channels, endocytosis and exocytosis"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Cytoplasmic Organelles & Cytoskeleton",
+              "topics": [
+                "Structure and functions of Endoplasmic Reticulum (RER & SER), protein folding and glycosylation",
+                "Golgi apparatus: Architecture, protein sorting and vesicular trafficking",
+                "Lysosomes, peroxisomes and vacuoles: Biogenesis and enzymatic functions",
+                "Semiautonomous organelles: Mitochondria (chemiosmosis, Cristae structure) and Chloroplasts (thylakoids, stroma); Endosymbiotic theory",
+                "Cytoskeletal network: Microfilaments (actin), microtubules (tubulin) and intermediate filaments"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Nucleus & Cell Cycle Regulation",
+              "topics": [
+                "Nuclear envelope, nuclear pore complex (NPC) and nucleolus structure",
+                "Chromatin organization: Nucleosome model, euchromatin and heterochromatin",
+                "Cell division: Phases and molecular events of Mitosis and Meiosis",
+                "Cell cycle checkpoints (G1/S, G2/M, spindle assembly), cyclins and cyclin-dependent kinases (CDKs), basics of apoptosis (programmed cell death)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-1-p",
+          "code": "CC-1 (P)",
+          "name": "Cell Biology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Laboratory Manual in Cell and Molecular Biology - P.K. Gupta, Rastogi",
+            "Experimental Cell Biology - H.B. Rao, Himalaya Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Cell Biology Laboratory Exercises",
+              "topics": [
+                "Operation and calibration of compound microscope and ocular/stage micrometry",
+                "Preparation of temporary squash mounts of onion root tips to study stages of mitosis",
+                "Study of meiosis in grasshopper testes or flower buds of Allium cepa",
+                "Measurement of cell size and cell viability assay using Trypan Blue exclusion test"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-2",
+          "code": "CC-2",
+          "name": "Biochemistry & Biophysics",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Lehninger Principles of Biochemistry - David L. Nelson & Michael M. Cox, W.H. Freeman",
+            "Biochemistry - Donald Voet & Judith G. Voet, Wiley",
+            "Biophysics: Principles and Techniques - P.K. Srivastava, Rastogi"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Aqueous Chemistry & Bioenergetics",
+              "topics": [
+                "Structure of water, ionization, pH, pKa, Henderson-Hasselbalch equation and biological buffer systems",
+                "Non-covalent interactions: Hydrogen bonds, hydrophobic interactions, ionic bonds, van der Waals forces",
+                "Bioenergetics: Laws of thermodynamics, free energy change (delta G), high-energy phosphate compounds and ATP hydrolysis"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Carbohydrates & Lipids",
+              "topics": [
+                "Classification, stereochemistry (D/L, optical isomerism) and ring structures of monosaccharides",
+                "Disaccharides (sucrose, lactose, maltose) and structural/storage polysaccharides (starch, glycogen, cellulose, chitin)",
+                "Fatty acids: Saturated, unsaturated, essential fatty acids; Triacylglycerols, phospholipids, glycolipids, sphingolipids and cholesterol biological significance"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Amino Acids, Peptides & Proteins",
+              "topics": [
+                "Classification, structure, physical properties and zwitterionic nature of standard 20 amino acids",
+                "Peptide bond formation, Ramachandran plot and conformational angles (phi, psi)",
+                "Levels of protein architecture: Primary sequence, secondary structures (alpha-helix, beta-pleated sheets, turns), tertiary conformation and quaternary structures (hemoglobin vs myoglobin)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Nucleic Acids & Biophysical Techniques",
+              "topics": [
+                "Purine and pyrimidine bases, nucleosides and nucleotides; Watson-Crick double helix structure of DNA (A, B and Z forms)",
+                "Denaturation and renaturation of DNA, hyperchromic effect, Tm value and RNA structural diversity (mRNA, tRNA, rRNA)",
+                "Biophysical tools: Principles of spectrophotometry (Beer-Lambert law), UV-visible absorbance, pH metry"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-2-p",
+          "code": "CC-2 (P)",
+          "name": "Biochemistry - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Practical Biochemistry: Principles and Techniques - Keith Wilson & John Walker, Cambridge",
+            "An Introduction to Practical Biochemistry - David T. Plummer, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Biochemical Analysis Laboratory Exercises",
+              "topics": [
+                "Preparation of physiological and laboratory buffers (phosphate, acetate, Tris-HCl buffer)",
+                "Qualitative biochemical tests for carbohydrates (Molisch, Fehling, Benedict, Barfoed, Iodine test)",
+                "Qualitative tests for proteins and amino acids (Biuret, Ninhydrin, Xanthoproteic test)",
+                "Quantitative estimation of proteins using Bradford / Lowry method with standard calibration curve",
+                "Separation of amino acid mixture using ascending paper chromatography"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-ge-1",
+          "code": "GE-1",
+          "name": "Chemistry for Life Sciences",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Organic Chemistry - Paula Yurkanis Bruice, Pearson",
+            "Inorganic Chemistry - J.D. Lee, Wiley"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Chemical Bonding & Reaction Mechanisms",
+              "topics": [
+                "Atomic structure, periodic trends, electronegativity and valence bond vs molecular orbital theory",
+                "Ionic, covalent and coordinate covalent bonding in metalloproteins and biomolecules",
+                "Organic reaction mechanisms: Nucleophilic substitution (SN1, SN2), electrophilic addition, condensation and esterification reactions"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Stereochemistry & Coordination Chemistry",
+              "topics": [
+                "Optical isomerism, enantiomers, diastereomers, meso compounds and R/S configuration in biological compounds",
+                "Coordination chemistry: Werner theory, ligands, chelation therapy and biological role of coordination complexes (hemoglobin, chlorophyll, Vitamin B12)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "papers": [
+        {
+          "id": "bio-cc-3",
+          "code": "CC-3",
+          "name": "General Microbiology",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Microbiology - Lansing M. Prescott, John P. Harley & Donald A. Klein, McGraw Hill",
+            "Brock Biology of Microorganisms - Michael T. Madigan et al., Pearson",
+            "General Microbiology - Stanier et al., Macmillan"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "History, Classification & Bacterial Structure",
+              "topics": [
+                "Spontaneous generation controversy, germ theory of disease (Louis Pasteur, Robert Koch) and Koch postulates",
+                "Carl Woese Three-Domain system (Archaea, Bacteria, Eukarya) and Bergey Manual of Systematic Bacteriology",
+                "Morphology and fine structure of bacteria: Cell wall (Gram-positive vs Gram-negative peptidoglycan structure), plasma membrane, capsule, flagella (arrangements and motility), pili, endospores and inclusion bodies"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Microbial Nutrition & Cultivation",
+              "topics": [
+                "Nutritional categories: Phototrophs, chemotrophs, lithotrophs, organotrophs, autotrophs, heterotrophs",
+                "Culture media: Synthetic, complex, selective, differential, enriched and transport media",
+                "Pure culture techniques: Streak plate, pour plate, spread plate and serial dilution method; Preservation of microbial cultures (cryopreservation, lyophilization)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Microbial Growth Kinetics & Control",
+              "topics": [
+                "Bacterial growth curve: Lag, log (exponential), stationary and decline phases; Generation time and specific growth rate",
+                "Factors affecting microbial growth: Temperature (psychrophiles, mesophiles, thermophiles), pH, oxygen (aerobes, anaerobes), water activity and osmotic pressure",
+                "Physical and chemical control of microorganisms: Moist heat (autoclave), dry heat (hot air oven), filtration, radiation, disinfectants and antiseptics"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Virology, Fungi & Microbial Pathogenesis",
+              "topics": [
+                "General characteristics and structure of viruses: Capsid symmetries (helical, icosahedral, complex); Bacteriophages: Lytic cycle of T4 and lysogenic cycle of Lambda phage",
+                "Overview of medically important bacteria, fungi (Candida, Aspergillus) and protozoans",
+                "Antimicrobial agents: Mechanism of action of antibiotics (penicillin, streptomycin, tetracycline) and drug resistance development"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-3-p",
+          "code": "CC-3 (P)",
+          "name": "General Microbiology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Microbiology: A Laboratory Manual - James G. Cappuccino & Natalie Sherman, Pearson",
+            "Laboratory Experiments in Microbiology - Ted R. Johnson & Christine L. Case, Pearson"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Microbiology Laboratory Exercises",
+              "topics": [
+                "Good microbiological laboratory practices and standard operating procedures for autoclave, laminar air flow and incubator",
+                "Preparation and sterilization of solid (nutrient agar) and liquid (nutrient broth) culture media",
+                "Smear preparation and simple staining using crystal violet/methylene blue",
+                "Differential Gram staining technique and microscopic observation of Gram-positive and Gram-negative bacteria",
+                "Isolation of pure bacterial colonies by streak-plate method from mixed environmental sample"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-4",
+          "code": "CC-4",
+          "name": "Plant & Animal Physiology",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Plant Physiology and Development - Lincoln Taiz & Eduardo Zeiger, Sinauer Associates",
+            "Guyton and Hall Textbook of Medical Physiology - John E. Hall, Elsevier",
+            "Animal Physiology - Richard W. Hill, Sinauer Associates"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Plant Water Relations & Mineral Nutrition",
+              "topics": [
+                "Diffusion, osmosis, water potential, ascent of sap and transpiration mechanisms; Stomatal movement regulation",
+                "Essential macro and micronutrients; Nitrogen metabolism: Nitrogen fixation (symbiotic vs asymbiotic) and nitrate assimilation"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Plant Photosynthesis & Growth Regulators",
+              "topics": [
+                "Photosynthetic pigments, light reaction (Z-scheme, cyclic & non-cyclic photophosphorylation), Calvin cycle (C3 pathway), C4 pathway, CAM and photorespiration",
+                "Plant growth hormones: Physiological functions of auxins, gibberellins, cytokinins, ethylene and abscisic acid (ABA); Photoperiodism and vernalization"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Animal Digestion, Circulation & Respiration",
+              "topics": [
+                "Digestion and absorption of carbohydrates, proteins and lipids; Gastrointestinal hormones",
+                "Composition of blood, blood coagulation cascade, cardiac cycle, blood pressure and ECG overview",
+                "Mechanism of pulmonary respiration, transport of respiratory gases (oxygen-hemoglobin dissociation curve, Bohr effect)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Excretion, Neuro-Endocrine Coordination",
+              "topics": [
+                "Structure of nephron, glomerular filtration, tubular reabsorption, counter-current mechanism and urine concentration",
+                "Nerve impulse transmission: Resting membrane potential, action potential propagation and synaptic transmission",
+                "Endocrine glands: Hormones and target organ actions of pituitary, thyroid, parathyroid, adrenal, pancreas and gonads"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-cc-4-p",
+          "code": "CC-4 (P)",
+          "name": "Physiology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Practical Botany - Bendre & Kumar, Rastogi Publications",
+            "A Manual of Practical Zoology - P.S. Verma, S. Chand"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Physiological Experiments",
+              "topics": [
+                "Separation of photosynthetic pigments from fresh spinach leaves using paper chromatography",
+                "Demonstration of transpiration rate using Ganong photometer",
+                "Determination of human ABO and Rh blood groups using agglutination test",
+                "Estimation of hemoglobin content using Sahli hemometer and total RBC/WBC count using hemocytometer"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-ge-2",
+          "code": "GE-2",
+          "name": "Biostatistics & Analytical Instrumentation",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Biostatistical Analysis - Jerrold H. Zar, Pearson",
+            "Principles and Techniques of Biochemistry and Molecular Biology - Keith Wilson & John Walker, Cambridge"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Biostatistics & Biological Hypotheses",
+              "topics": [
+                "Sampling techniques, tabulation and graphical representation of biological experimental data",
+                "Measures of central tendency (mean, median, mode) and dispersion (standard deviation, standard error, variance)",
+                "Testing of statistical hypothesis: Student t-test (paired and unpaired), Chi-square test for goodness of fit and independence"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Analytical Instrumentation in Biotechnology",
+              "topics": [
+                "Principles and types of centrifugation: Differential, density gradient and ultracentrifugation",
+                "Chromatographic techniques: TLC, column chromatography, gel filtration, ion exchange and affinity chromatography",
+                "Electrophoretic techniques: Agarose gel electrophoresis (AGE) and SDS-PAGE principles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "papers": [
+        {
+          "id": "bio-cc-5",
+          "code": "CC-5",
+          "name": "Genetics",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Introduction: Historical developments in the field of genetics. Organisms suitable for genetic experimentation and their genetic significance.",
+                "Cell Cycle: Mitosis and Meiosis: Control points in cell-cycle progression in yeast. Role of meiosis in life cycles of organisms.",
+                "Mendelian genetics : Mendel's experimental design, monohybrid, di-hybrid and tri hybrid crosses, Law of segregation & Principle of independent assortment. Verification of segregates by test and back crosses, Chromosomal theory of inheritance, Allelic interactions: Concept of dominance, recessiveness, incomplete dominance, co-dominance, semi-dominance, pleiotropy, multiple allele, pseudo-allele, essential and lethal genes, penetrance and expressivity."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Non allelic interactions: Interaction producing new phenotype complementary genes, epistasis (dominant & recessive), duplicate genes and inhibitory genes.",
+                "Chromosome and genomic organization: Eukaryotic nuclear genome nucleotide sequence composition - unique & repetitive DNA, satellite DNA. Centromere and telomere DNA sequences, middle repetitive sequences- VNTRs & dinucleotide repeats, repetitive transposed sequences- SINEs & LINEs, middle repetitive multiple copy genes, noncoding DNA. Genetic organization of prokaryotic and viral genome.",
+                "Structure and characteristics of bacterial and eukaryotic chromosome, chromosome morphology, concept of euchromatin and heterochromatin. packaging of DNA molecule into chromosomes, chromosome banding pattern, karyotype, giant chromosomes, one gene one polypeptide hypothesis, concept of cistron, exons, introns, genetic code, gene function."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Chromosome and gene mutations: Definition and types of mutations, causes of mutations, Ames test for mutagenic agents, screening procedures for isolation of mutants and uses of mutants, variations in chromosomes structure - deletion, duplication, inversion and translocation (reciprocal and Robertsonian), position effects of gene expression, chromosomal aberrations in human beings, abnormalities- Aneuploidy and Euploidy.",
+                "Sex determination and sex linkage: Mechanisms of sex determination, Environmental factors and sex determination, sex differentiation, Barr bodies, dosage compensation, genetic balance theory, Fragile-X-syndrome and chromosome, sex influenced dominance, sex limited gene expression, sex linked inheritance."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Genetic linkage, crossing over and chromosome mapping: Linkage and Recombination of genes in a chromosome crossing over, Cytological basis of crossing over, Molecular mechanism of crossing over, Crossing over at four strand stage, Multiple crossing overs Genetic mapping.",
+                "Extra chromosomal inheritance: Rules of extra nuclear inheritance, maternal effects, maternal inheritance, cytoplasmic inheritance, organelle heredity, genomic imprinting.",
+                "Evolution and population genetics: In breeding and out breeding, Hardy Weinberg law (prediction, derivation), allelic and genotype frequencies, changes in allelic frequencies, systems of mating, evolutionary genetics, natural selection."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gardner, E.J., Simmons, M.J., Snustad, D.P. (2006). Principles of Genetics. VIII Edition John Wiley & Sons.",
+            "Snustad, D.P., Simmons, M.J. (2009). Principles of Genetics. V Edition. John Wiley and Sons Inc.",
+            "Klug, W.S., Cummings, M.R., Spencer, C.A. (2009). Concepts of Genetics. IX Edition. Benjamin Cummings.",
+            "Russell, P. J. (2009). Genetics- A Molecular Approach. III Edition. Benjamin Cummings.",
+            "Griffiths, A.J.F., Wessler, S.R., Lewontin, R.C. and Carroll, S.B. IX Edition. Introduction to Genetic Analysis, W. H. Freeman & Co."
+          ]
+        },
+        {
+          "id": "bio-cc-5-p",
+          "code": "CC-5 (P)",
+          "name": "Genetics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Permanent and temporary mount of mitosis.",
+                "Permanent and temporary mount of meiosis.",
+                "Mendelian deviations in dihybrid crosses",
+                "Demonstration of - Barr Body -Rhoeotranslocation.",
+                "Karyotyping with the help of photographs",
+                "Pedigree charts of some common characters like blood group, color blindness and",
+                "Study of polyploidy in onion root tip by colchicine treatment."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-6",
+          "code": "CC-6",
+          "name": "General Microbiology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Fundamentals, History and Evolution of Microbiology. Classification of microorganisms: Microbial taxonomy, criteria used including molecular approaches, Microbial phylogeny and current classification of bacteria. Microbial Diversity: Distribution and characterization Prokaryotic and Eukaryotic cells, Morphology and cell structure of major groups of microorganisms eg. Bacteria, Algae, Fungi, Protozoa and Unique features of viruses."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Cultivation and Maintenance of microorganisms: Nutritional categories of micro-organisms, methods of isolation, Purification and preservation."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Microbial growth: Growth curve, Generation time, synchronous batch and continuous culture, measurement of growth and factors affecting growth of bacteria.",
+                "Microbial Metabolism: Metabolic pathways, amphi-catabolic and biosynthetic pathways Bacterial Reproduction: Transformation, Transduction and Conjugation. Endospores and sporulation in bacteria."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Control of Microorganisms: By physical, chemical and chemotherapeutic Agents Water Microbiology: Bacterial pollutants of water, coliforms and non coliforms. Sewage composition and its disposal.",
+                "Food Microbiology: Important microorganism in food Microbiology: Moulds, Yeasts, bacteria. Major food born infections and intoxications, Preservation of various types of foods. Fermented Foods."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Alexopoulos CJ, Mims CW, and Blackwell M. (1996). Introductory Mycology. 4 th edition. John and Sons, Inc.",
+            "Jay JM, Loessner MJ and Golden DA. (2005). Modern Food Microbiology. 7thedition, CBS Publishers and Distributors, Delhi, India.",
+            "Kumar HD. (1990). Introductory Phycology. 2nd edition. Affiliated East Western Press.",
+            "Madigan MT, Martinko JM and Parker J. (2009). Brock Biology of Microorganisms. 12th edition. Pearson/Benjamin Cummings.",
+            "Pelczar MJ, Chan ECS and Krieg NR. (1993). Microbiology. 5th edition. McGraw Hill Book Company.",
+            "Stanier RY, Ingraham JL, Wheelis ML, and Painter PR. (2005). General Microbiology. 5th"
+          ]
+        },
+        {
+          "id": "bio-cc-6-p",
+          "code": "CC-6 (P)",
+          "name": "General Microbiology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Isolation of bacteria & their biochemical characterization.",
+                "Staining methods: simple staining, Gram staining, spore staining, negative staining, hanging drop.",
+                "Preparation of media & sterilization methods, Methods of Isolation of bacteria from different sources.",
+                "Determination of bacterial cell size by micrometry.",
+                "Enumeration of microorganism - total & viable count."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-ge-3",
+          "code": "GE-3",
+          "name": "Biostatistics",
+          "paperType": "Minor (MIC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Types of Data, Collection of data; Primary & Secondary data, Classification and Graphical representation of Statistical data. Measures of central tendency and Dispersion. Measures of Skewness and Kurtosis."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Probability classical & axiomatic definition of probability, Theorems on total and compound probability), Elementary ideas of Binomial, Poisson and Normal distributions."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Methods of sampling, confidence level, critical region, testing of hypothesis and standard error, large sample test and small sample test. Problems on test of significance, t-test, chi-square test for goodness of fit and analysis of variance (ANOVA)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Correlation and Regression. Emphasis on examples from Biological Sciences."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Le CT (2003) Introductory biostatistics. 1st edition, John Wiley, USA",
+            "Glaser AN (2001) High YieldTM Biostatistics. Lippincott Williams and Wilkins, USA",
+            "Edmondson A and Druce D (1996) Advanced Biology Statistics, Oxford University Press.",
+            "Danial W (2004) Biostatistics: A foundation for Analysis in Health Sciences, John Wiley and Sons Inc."
+          ]
+        },
+        {
+          "id": "bio-sec-1",
+          "code": "SEC-1",
+          "name": "Molecular Diagnostics",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Enzyme Immunoassays: Comparison of enzymes available for enzyme immunoassays, conjugation of enzymes. Solid phases used in enzyme immunoassays. Homogeneous and heterogeneous enzyme immunoassays. Enzyme immunoassays after immuno blotting. Enzyme immuno histochemical techniques. Use of polyclonal or monoclonal antibodies in enzymes immuno assays. Applications of enzyme immunoassays in diagnostic microbiology"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Molecular methods in clinical microbiology: Applications of PCR, RFLP, Nuclear hybridization methods, Single nucleotide polymorphism and plasmid finger printing in clinical microbiology",
+                "Laboratory tests in chemotherapy: Susceptibility tests: Micro-dilution and macro-dilution broth procedures. Susceptibility tests: Diffusion test procedures. Susceptibility tests: Tests for bactericidal activity. Automated procedures for antimicrobial susceptibility tests."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Automation in microbial diagnosis, rapid diagnostic approach including technical purification and standardization of antigen and specific antibodies. Concepts and methods in idiotypes. Antidiotypes and molecular mimicry and receptors. Epitope design and applications. Immunodiagnostic tests. Immuno florescence. Radioimmunoassay."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "GLC, HPLC, Electron microscopy, flowcytometry and cell sorting.",
+                "Transgenic animals."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Practical Biochemistry, Principles and Techniques, Keith Wilson and John Walker",
+            "Bioinstrumentation, Webster",
+            "Advanced Instrumentation, Data Interpretation, and Control of Biotechnological Processes, J.F. Van Impe, Kluwer Academic",
+            "Ananthanarayan R and Paniker CKJ. (2005). Textbook of Microbiology. 7th edition (edited by Paniker CKJ). University Press Publication.",
+            "Brooks GF, Carroll KC, Butel JS and Morse SA. (2007). Jawetz, Melnick and Adelberg's Medical Microbiology. 24th edition. McGraw Hill Publication.",
+            "Goering R, Dockrell H, Zuckerman M and Wakelin D. (2007). Mims' Medical Microbiology. 4th edition. Elsevier.",
+            "Joklik WK, Willett HP and Amos DB (1995). Zinsser Microbiology. 19th edition. Appleton-Century-Crofts publication.",
+            "Willey JM, Sherwood LM, and Woolverton CJ. (2008). Prescott, Harley and Klein's Microbiology. 7th edition. McGraw Hill Higher Education.",
+            "Microscopic Techniques in Biotechnology, Michael Hopper"
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "papers": [
+        {
+          "id": "bio-cc-7",
+          "code": "CC-7",
+          "name": "Molecular Biology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I: DNA structure and replication",
+              "topics": [
+                "DNA as genetic material, Structure of DNA, Types of DNA, Replication of DNA in prokaryotes and eukaryotes: Semiconservative nature of DNA replication, Bi-directional replication, DNA polymerases, The replication complex: Pre-primming proteins, primosome, replisome, Rolling circle replication, Unique aspects of eukaryotic chromosome replication, Fidelity of replication."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II: DNA damage, repair and homologous recombination",
+              "topics": [
+                "DNA damage and repair: causes and types of DNA damage, mechanism of DNA repair: Photoreactivation, base excision repair, nucleotide excision repair, mismatch repair, translesion synthesis, recombinational repair, nonhomologous end joining.",
+                "Homologous recombination: models and mechanism."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III: Transcription and RNA processing",
+              "topics": [
+                "RNA structure and types of RNA, Transcription in prokaryotes: Prokaryotic RNA polymerase, role of sigma factor, promoter, Initiation, elongation and termination of RNA chains Transcription in eukaryotes: Eukaryotic RNA polymerases, transcription factors, promoters, enhancers, mechanism of transcription initiation, promoter clearance and elongation RNA splicing and processing: processing of pre-mRNA: 5' cap formation, polyadenylation, splicing, rRNA and tRNA splicing."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV: Regulation of gene expression and translation",
+              "topics": [
+                "Regulation of gene expression in prokaryotes: Operon concept (inducible and repressible system), Genetic code and its characteristics, Prokaryotic and eukaryotic translation: ribosome structure and assembly, Charging of tRNA, aminoacyl tRNA synthetases, Mechanism of initiation, elongation and termination of polypeptides, Fidelity of translation, Inhibitors of translation.,Posttranslational modifications of proteins."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Karp, G. (2010). Cell and Molecular Biology: Concepts and Experiments. VI Edition. John Wiley & Sons. Inc.",
+            "De Robertis, E.D.P. and De Robertis, E.M.F. (2006). Cell and Molecular Biology. VIII Edition. Lippincott Williams and Wilkins, Philadelphia.",
+            "Becker, W.M., Kleinsmith, L.J., Hardin. J. and Bertoni, G. P. (2009). The World of the Cell. VII Edition. Pearson Benjamin Cummings Publishing, San Francisco.",
+            "Watson, J. D., Baker T.A., Bell, S. P., Gann, A., Levine, M., and Losick, R., (2008) Molecular Biology of the Gene (VI Edition.). Cold Spring Harbour Lab. Press, Pearson Pub."
+          ]
+        },
+        {
+          "id": "bio-cc-7-p",
+          "code": "CC-7 (P)",
+          "name": "Molecular Biology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Preparation of solutions for Molecular Biology experiments.",
+                "Isolation of chromosomal DNA from bacterial cells.",
+                "Isolation of Plasmid DNA by alkaline lysis method",
+                "Agarose gel electrophoresis of genomic DNA & plasmid DNA",
+                "Preparation of restriction enzyme digests of DNA samples",
+                "Demonstration of AMES test or reverse mutation for carcinogenicity"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-8",
+          "code": "CC-8",
+          "name": "Immunology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Immune Response - An overview, components of mammalian immune system, molecular structure of Immuno-globulins or Antibodies, Humoral & Cellular immune responses, T-lymphocytes & immune response (cytotoxic T-cell, helper T-cell, suppressor T-cells), T-cell receptors, genome rearrangements during B-lymphocyte differentiation, Antibody affinity maturation class switching, assembly of T-cell receptor genes by somatic recombination."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Regulation of immunoglobulin gene expression - clonal selection theory, allotypes & idiotypes, allelic exclusion, immunologic memory, heavy chain gene transcription, genetic basis of antibody diversity, hypotheses (germ line & somatic mutation), antibody diversity."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Major Histocompatibility complexes - class I & class II MHC antigens, antigen processing.",
+                "Immunity to infection - immunity to different organisms, pathogen defense strategies, avoidance of recognition.",
+                "Autoimmune diseases, Immunodeficiency-AIDS."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Vaccines & Vaccination - adjuvants, cytokines, DNA vaccines, recombinant vaccines, bacterial vaccines, viral vaccines, vaccines to other infectious agents, passive & active immunization.",
+                "Introduction to immunodiagnostics - RIA, ELISA."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Abbas AK, Lichtman AH, Pillai S. (2007). Cellular and Molecular Immunology. 6 th edition Saunders Publication, Philadelphia.",
+            "Delves P, Martin S, Burton D, Roitt IM. (2006). Roitt's Essential Immunology. 11th edition Wiley-Blackwell Scientific Publication, Oxford.",
+            "Goldsby RA, Kindt TJ, Osborne BA. (2007). Kuby's Immunology. 6th edition W.H. Freeman and Company, New York.",
+            "Murphy K, Travers P, Walport M. (2008). Janeway's Immunobiology. 7th edition Garland Science Publishers, New York.",
+            "Peakman M, and Vergani D. (2009). Basic and Clinical Immunology. 2nd edition Churchill Livingstone Publishers, Edinberg.",
+            "Richard C and Geffrey S. (2009). Immunology. 6th edition. Wiley Blackwell Publication."
+          ]
+        },
+        {
+          "id": "bio-cc-8-p",
+          "code": "CC-8 (P)",
+          "name": "Immunology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Differential leucocytes count",
+                "Total leucocytes count",
+                "Total RBC count",
+                "Haemagglutination assay",
+                "Haemagglutination inhibition assay",
+                "Separation of serum from blood",
+                "Double immunodiffusion test using specific antibody and antigen.",
+                "ELISA."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-9",
+          "code": "CC-9",
+          "name": "Developmental Biology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I: GAMETOGENESIS AND FERTILIZATION",
+              "topics": [
+                "Definition, scope & historical perspective of development Biology, Gametogenesis - Spermatogenesis, Oogenesis Fertilization - Definition, mechanism, types of fertilization. Different types of eggs on the basis of yolk."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II: Early embryonic development",
+              "topics": [
+                "Cleavage: Definition, types, patterns & mechanism Blastulation: Process, types & mechanism Gastrulation: Morphogenetic movements- epiboly, emboly, extension, invagination, convergence, de-lamination. Formation & differentiation of primary germ layers, Fate Maps in early embryos."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III: Embryonic Differentiation",
+              "topics": [
+                "Differentiation: Cell commitment and determination- the epigenetic landscape: a model of determination and differentiation, control of differentiation at the level of genome, transcription and post-translation level Concept of embryonic induction: Primary, secondary & tertiary embryonic induction, Neural induction and induction of vertebrate lens."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV: Organogenesis",
+              "topics": [
+                "Neurulation, ontogenesis, development of vertebrate eye. Fate of different primary germ layers Development of behavior: constancy & plasticity, Extra embryonic membranes, placenta in Mammals."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Gilbert, S. F. (2006). Developmental Biology, VIII Edition, Sinauer Associates, Inc., Publishers, Sunderland, Massachusetts, USA.",
+            "Balinsky, B.I. (2008). An introduction to Embryology, International Thomson Computer Press.",
+            "Kalthoff, (2000). Analysis of Biological Development, II Edition, McGraw-Hill Professional"
+          ]
+        },
+        {
+          "id": "bio-sec-2",
+          "code": "SEC-2",
+          "name": "Enzymology",
+          "paperType": "Skill Enhancement (SEC)",
+          "credits": 2,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT - I",
+              "topics": [
+                "Isolation, crystallization and purification of enzymes, test of homogeneity of enzyme preparation, methods of enzyme analysis.",
+                "Enzyme classification (rationale, overview and specific examples) Zymogens and their activation (Proteases and Prothrombin).",
+                "Enzyme substrate complex: concept of E-S complex, binding sites, active site, specificity, Kinetics of enzyme activity, Michaelis-Menten equation and its derivation,",
+                "Different plots for the determination of Km and Vmax and their physiological significance, factors affecting initial rate, E, S, temp. &pH. Collision and transition state theories, Significance of activation energy and free energy."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT - II",
+              "topics": [
+                "Two substrate reactions (Random, ordered and ping-pong mechanism) Enzyme inhibition types of inhibition, determination of Ki, suicide inhibitor.",
+                "Mechanism of enzyme action: General mechanistic principle, factors associated with catalytic efficiency: proximity, orientation, distortion of strain, acid-base, nucleophilic and covalent catalysis.",
+                "Techniques for studying mechanisms of action, chemical modification of active site groups, specific examples- : chymotrypsin, Isozyme, GPDH, aldolase, RNase, Carboxypeptidase and alcohol dehydrogenase.",
+                "Enzyme regulation: Product inhibition, feed-backcontrol, covalent modification."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT - III",
+              "topics": [
+                "Allosteric enzymes with special reference to aspartate transcarboxylase and phosphofructokinase. Qualitative description of concerted and sequential models. Negative cooperativity and half site reactivity.",
+                "Enzyme - Enzyme interaction, Protein ligand binding, measurements analysis of binding isotherm, cooperativity, Hill and scatchard plots, kinetics of allosteric enzymes. Isoenzymes- multiple forms of enzymes with special reference to lactate dehydrogenase. Multienzyme complexes. Ribozymes.",
+                "Multifunctional enzyme- eg Fatty Acid synthase."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT - IV",
+              "topics": [
+                "Enzyme Technology: Methods for large scale production of enzymes.",
+                "Immobilized enzyme and their comparison with soluble enzymes, Methods for immobilization of enzymes. Immobilized enzyme reactors. Application of Immobilized and soluble enzyme in health and industry.",
+                "Application to fundamental studies of biochemistry. Enzyme electrodes. Thermal stability and catalytic efficiency of enzyme, site directed mutagenesis and enzyme engineering- selected examples, Delivery system for protein pharmaceuticals, structure function relationship in enzymes, structural motifs and enzyme evolution.",
+                "Methods for protein sequencing. Methods for analysis of secondary and tertiary structures of enzymes.",
+                "Protein folding invitro &invivo."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "papers": [
+        {
+          "id": "bio-cc-10",
+          "code": "CC-10",
+          "name": "Genomics & Proteomics",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Introduction to Genomics, DNA sequencing methods - manual & automated: Maxam & Gilbert and Sangers method. Pyrosequencing, Genome Sequencing: Shotgun & Hierarchical (clone contig) methods, Computer tools for sequencing projects: Genome sequence assembly software."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Managing and Distributing Genome Data: Web based servers and softwares for genomeanalysis: ENSEMBL, VISTA, UCSC Genome Browser, NCBI genome. Selected Model Organisms' Genomes and Databases."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Introduction to protein structure, Chemical properties of proteins. Physical interactions that determine the property of proteins. Short-range interactions, electrostatic forces, van der waal interactions, hydrogen bonds, Hydrophobic interactions. Determination of sizes (Sedimentation analysis, gel filtration, SDS-PAGE); Native PAGE, Determination of covalent structures - Edman degradation."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "IntroductiontoProteomics,Analysisofproteomes.2D-PAGE.Samplepreparation,solubilization, reduction,resolution.",
+                "Reproducibility of 2D-PAGE. Mass spectrometry based methods for protein identification. De novo sequencing using mass spectrometric data."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Genes IX by Benjamin Lewin, Johns and Bartlett Publisher,2006.",
+            "Modern Biotechnology, 2nd Edition, S.B. Primrose, Blackwell Publishing,1987.",
+            "Molecular Biotechnology: Principles and Applications of Recombinant DNA, 4thEdition, B.R. Glick, J.J. Pasternak and C.L. Patten, 2010.",
+            "Molecular Cloning: A Laboratory Manual (3rd Edition) Sambrook and Russell Vol. I toIII, 1989.",
+            "Principles of Gene Manipulation 6th Edition, S.B.Primrose, R.M.Twyman and R.W.Old. Blackwell Science,2001.",
+            "Snustad, D.P., Simmons, M.J. (2009). Principles of Genetics. V Edition. John Wiley andSons Inc.",
+            "Klug, W.S., Cummings, M.R., Spencer, C.A. (2009). Concepts of Genetics. IXEdition. BenjaminCummings.",
+            "Russell, P. J. (2009). Genetics- A Molecular Approach. III Edition. BenjaminCummings.",
+            "Glick, B.R., Pasternak, J.J. (2003). Molecular Biotechnology- Principles and Applications of recombinant DNA. ASM Press, Washington.",
+            "Pevsner, J. (2009). Bioinformatics and Functional Genomics. II Edition. John Wiley &Sons."
+          ]
+        },
+        {
+          "id": "bio-cc-10-p",
+          "code": "CC-10 (P)",
+          "name": "Genomics & Proteomics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Use of SNP databases at NCBI and othersites",
+                "Use of OMIMdatabase",
+                "Detection of Open Reading Frames using ORF Finder",
+                "Proteomics 2D PAGEdatabase",
+                "Softwares for Protein localization.",
+                "Hydropathyplots",
+                "NativePAGE",
+                "SDS- PAGE"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-11",
+          "code": "CC-11",
+          "name": "Industrial Biotechnology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Industry: protein engineering; enzyme and polysaccharide synthesis, activity and secretion, alcohol and antibiotic formation."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Agriculture: N2fixation:transferofpestresistancegenestoplants;interactionbetweenplantsand microbes; qualitative improvement of livestock."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Environments: e.g. chlorinated and non-chlorinated organ pollutant degradation; degradation of hydrocarbons and agricultural wastes, stress management, development of biodegradable polymers such as PHB."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT V",
+              "topics": [
+                "Health:e.g.developmentofnon-toxictherapeutigacents,recombinantlivevaccines,genetherapy, diagnostics, monoclonal in E.coli, human genomeproject."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Sateesh MK (2010) Bioethics and Biosafety, I. K. International PvtLtd.",
+            "Sree Krishna V (2007) Bioethics and Biosafety in Biotechnology, New age international publishers"
+          ]
+        },
+        {
+          "id": "bio-dse-1",
+          "code": "DSE-1",
+          "name": "Bioinformatics",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "History of Bioinformatics. The notion of Homology. Sequence Information Sources, EMBL, GENBANK, Entrez, Unigene, Understanding the structure of each source and using it on the web."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Protein Information Sources, PDB, SWISSPROT, TREMBL, Understanding the structure of each source and using it on the web. Introduction of Data Generating Techniques and Bioinformatics problem posed by them- Restriction Digestion, Chromatograms, Blots, PCR, Microarrays, Mass Spectrometry."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Sequence and Phylogeny analysis, Detecting Open Reading Frames, Outline of sequence Assembly, Mutation/Substitution Matrices, Pairwise Alignments, Introduction to BLAST, using it on the web, Interpreting results, Multiple Sequence Alignment, PhylogeneticAnalysis."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Searching Databases: SRS, Entrez, Sequence Similarity Searches- BLAST, FASTA, Data Submission. Genome Annotation: Pattern and repeat finding, Geneidentification tools."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Ghosh Z. and Bibekanand M. (2008) Bioinformatics: Principles and Applications.Oxford University Press.",
+            "Pevsner J. (2009) Bioinformatics and Functional Genomics. II Edition.Wiley-Blackwell.",
+            "Campbell A. M., Heyer L. J. (2006) Discovering Genomics, Proteomics and Bioinformatics. II Edition. BenjaminCummings."
+          ]
+        },
+        {
+          "id": "bio-dse-1-p",
+          "code": "DSE-1 (P)",
+          "name": "Bioinformatics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Sequence information resource",
+                "Understanding and use of various web resources: EMBL, Genbank, Entrez, Unigene, Protein information resource(PIR)",
+                "Understanding and using: PDB, Swissprot, TREMBL",
+                "Using various BLAST and interpretation of results.",
+                "Retrieval of information from nucleotide databases.",
+                "Sequence alignment using BLAST.",
+                "Multiple sequence alignment using ClustalW."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-dse-2",
+          "code": "DSE-2",
+          "name": "Environmental Biotechnology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Conventional fuels and their environmental impact - Firewood, Plant, Animal, Water, Coal and Gas. Modern fuels and their environmental impact - Methanogenic bacteria, Biogas, Microbial hydrogen Production, Conversion of sugar to alcohol Gasohol"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Bioremediation of soil & water contaminated with oil spills, heavy metals and detergents. Degradation of lignin and cellulose using microbes. Phyto-remediation. Degradation of pesticides and other toxic chemicals by micro-organisms- degradation aromatic and chlorinates hydrocarbons and petroleumproducts."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Treatment of municipal waste and Industrial effluents. Bio-fertilizers Role of symbiotic and asymbiotic nitrogen fixing bacteria in the enrichment of soil. Algal and fungal biofertilizers (VAM)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Bioleaching, Enrichment of ores by microorganisms (Gold, Copper and Uranium). Environmental significance of genetically modified microbes, plants and animals."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Environmental Science, S.C.Santra",
+            "Environmental Biotechnology, Pradipta Kumar Mohapatra",
+            "Environmental Biotechnology - Concepts and Applications, Hans-Joachim Jordenin and JeseWinter",
+            "Waste Water Engineering, Metcalf and Eddy, Tata McGrawhill",
+            "Agricultural Biotechnology, S.S.Purohit",
+            "EnvironmentalMicrobiology:MethodsandProtocols, AliciaL.RagoutDeSpencer,John F.T. Spencer",
+            "Introduction to Environmental Biotechnology, MiltonWainwright",
+            "Principles of Environmental Engineering, GilbertMasters",
+            "Wastewater Engineering - Metcalf &Eddy"
+          ]
+        },
+        {
+          "id": "bio-dse-2-p",
+          "code": "DSE-2 (P)",
+          "name": "Environmental Biotechnology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Calculation of Total Dissolved Solids (TDS) of watersample.",
+                "Calculation of BOD of watersample.",
+                "Calculation of COD of watersample.",
+                "Bacterial Examination of Water by MPNMethod."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "papers": [
+        {
+          "id": "bio-cc-12",
+          "code": "CC-12",
+          "name": "Bioethics & Biosafety",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT- I",
+              "topics": [
+                "Introduction to Indian Patent Law. World Trade Organization and its related intellectual property provisions. Intellectual/Industrial property and its legal protection in research, design and development. Patenting in Biotechnology, economic, ethical and depository considerations."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Entrepreneurship: Selection of a product, line, design and development processes, economics on material and energy requirement, stock the product and release the same for making etc. The basic regulations of excise: Demand for a given product, feasibility of its production under given constraints of raw material, energy input, financial situations export potential etc."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Bioethics - Necessity of Bioethics, different paradigms of Bioethics - National & International. Ethical issues against the molecular technologies."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Bioethics - Introduction to biosafety and health hazards concerning biotechnology. Introduction to the concept of containment level and Good Laboratory Practices (GLP) and Good Manufacturing Practices (GMP)."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Entrepreneurship: New Venture Creation : David H.Holt",
+            "Patterns of Entrepreneurship : Jack M.Kaplan",
+            "Entrepreneurship and Small Business Management: C.B. Gupta, S.S. Khanka, Sultan Chand & Sons.",
+            "Sateesh MK (2010) Bioethics and Biosafety, I. K. International PvtLtd.",
+            "Sree Krishna V (2007) Bioethics and Biosafety in Biotechnology, New age international publishers"
+          ]
+        },
+        {
+          "id": "bio-cc-12-p",
+          "code": "CC-12 (P)",
+          "name": "Bioethics & Biosafety - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Proxy filing of Indian Productpatent",
+                "Proxy filing of Indian Processpatent",
+                "Planning of establishing a hypothetical biotechnology industry in India",
+                "A case study on clinical trials of drugs in India with emphasis on ethicalissues.",
+                "Case study on women healthethics.",
+                "Case study on medical errors andnegligence.",
+                "Case study on handling and disposal of radioactivewaste"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-13",
+          "code": "CC-13",
+          "name": "Bioprocess Technology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Introduction to bioprocess technology. Range of bioprocess technology and its chronological development. Basic principle components of fermentation technology. Types of microbial culture and its growth kinetics- Batch, Fedbatch and Continuousculture."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Design of bioprocess vessels- Significance of Impeller, Baffles, Sparger; Types of culture/production vessels- Airlift; Cyclone Column; Packed Tower and their application in production processes. Principles of upstream processing - Media preparation, Inocula development and sterilization."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Introduction to oxygen requirement in bioprocess; mass transfer coefficient; factors affecting KLa. Bioprocess measurement and control system with special reference to computer aided process control."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Introduction to downstream processing, product recovery and purification. Effluent treatment. Microbial production of ethanol, amylase, lactic acid and Single Cell Proteins."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Casida LE. (1991). Industrial Microbiology. 1st edition. Wiley EasternLimited.",
+            "Crueger W and Crueger A. (2000). Biotechnology: A textbook of Industrial Microbiology. 2nd edition. Panima Publishing Co. NewDelhi.",
+            "Patel AH. (1996). Industrial Microbiology. 1st edition, Macmillan IndiaLimited.",
+            "Stanbury PF, Whitaker A and Hall SJ. (2006). Principles of Fermentation Technology. 2nd edition, Elsevier ScienceLtd."
+          ]
+        },
+        {
+          "id": "bio-cc-13-p",
+          "code": "CC-13 (P)",
+          "name": "Bioprocess Technology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Bacterial growthcurve.",
+                "Calculation of thermal death point (TDP) of a microbialsample.",
+                "Production and analysis ofethanol.",
+                "Production and analysis ofamylase.",
+                "Production and analysis of lacticacid.",
+                "Isolation of industrially important microorganism from naturalresource."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-cc-14",
+          "code": "CC-14",
+          "name": "Plant Diversity",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I: Pteridophytes",
+              "topics": [
+                "General characters of pteridophytes, affinities with bryophytes & gymnosperms, classification, economic importance, study of life histories of fossil Pteridophytes - Rhynia."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II: Pteridophytes: Type studies",
+              "topics": [
+                "Life histories of Selaginella- (Heterospory and seed habit), Equisetum, Pteris, Lycopodium."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III: Gymnosperms",
+              "topics": [
+                "General characters, classification, geological time scale, theories of fossil formation, types of fossils, fossil gymnosperms- Williamsonia&Glossopteris, telome and stele concept."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV: Gymnosperms: Type studies",
+              "topics": [
+                "Life histories of Cycas & Pinus, economic importance of gymnosperms."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Bhatnager, S.P. and Moitra, A. 1996 Gymnosperms. New Age International (P) Ltd. Publishers, New Delhi.",
+            "Parihar, N.S.1996. The Biology and Morphology of Pteridophytes. Central Book Depot, Allahabad.",
+            "Sambamurty 2008 A Textbook of Bryophytes, Pteridophytes, Gymnosperms and Paleobotany. IK International Publishers.",
+            "Wickens, G.E. 2004 Economic Botany: Principles and Practices, Springer. Kuwer Publishers, Dordrecht, The Netherlands"
+          ]
+        },
+        {
+          "id": "bio-cc-14-p",
+          "code": "CC-14 (P)",
+          "name": "Plant Diversity - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Examination of morphology and anatomy of vegetative and reproductive parts of Selaginella, Equisetum & Pteris.",
+                "Examination of morphology and anatomy of vegetative & reproductive parts of - Cycas & Pinus",
+                "Plant collection (pteridophytes & gymnosperms)"
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-dse-3",
+          "code": "DSE-3",
+          "name": "Bioinformatics",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "History of Bioinformatics. The notion of Homology. Sequence Information Sources, EMBL, GENBANK, Entrez, Unigene, Understanding the structure of each source and using it on the web."
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Protein Information Sources, PDB, SWISSPROT, TREMBL, Understanding the structure of each source and using it on the web. Introduction of Data Generating Techniques and Bioinformatics problem posed by them- Restriction Digestion, Chromatograms, Blots, PCR, Microarrays, Mass Spectrometry."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Sequence and Phylogeny analysis, Detecting Open Reading Frames, Outline of sequence Assembly, Mutation/Substitution Matrices, Pairwise Alignments, Introduction to BLAST, using it on the web, Interpreting results, Multiple Sequence Alignment, PhylogeneticAnalysis."
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Searching Databases: SRS, Entrez, Sequence Similarity Searches- BLAST, FASTA, Data Submission. Genome Annotation: Pattern and repeat finding, Geneidentification tools."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Ghosh Z. and Bibekanand M. (2008) Bioinformatics: Principles and Applications.Oxford University Press.",
+            "Pevsner J. (2009) Bioinformatics and Functional Genomics. II Edition.Wiley-Blackwell.",
+            "Campbell A. M., Heyer L. J. (2006) Discovering Genomics, Proteomics and Bioinformatics. II Edition. BenjaminCummings."
+          ]
+        },
+        {
+          "id": "bio-dse-3-p",
+          "code": "DSE-3 (P)",
+          "name": "Bioinformatics - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Sequence information resource",
+                "Understanding and use of various web resources: EMBL, Genbank, Entrez, Unigene, Protein information resource(PIR)",
+                "Understanding and using: PDB, Swissprot, TREMBL",
+                "Using various BLAST and interpretation of results.",
+                "Retrieval of information from nucleotide databases.",
+                "Sequence alignment using BLAST.",
+                "Multiple sequence alignment using ClustalW."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        },
+        {
+          "id": "bio-dse-4",
+          "code": "DSE-4",
+          "name": "Environmental Biotechnology",
+          "paperType": "Major (MJC)",
+          "credits": 6,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "UNIT I",
+              "topics": [
+                "Conventional fuels and their environmental impact - Firewood, Plant, Animal, Water, Coal and Gas. Modern fuels and their environmental impact - Methanogenic bacteria, Biogas, Microbial hydrogen Production, Conversion of sugar to alcohol Gasohol"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "UNIT II",
+              "topics": [
+                "Bioremediation of soil & water contaminated with oil spills, heavy metals and detergents. Degradation of lignin and cellulose using microbes. Phyto-remediation. Degradation of pesticides and other toxic chemicals by micro-organisms- degradation aromatic and chlorinates hydrocarbons and petroleumproducts."
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "UNIT III",
+              "topics": [
+                "Treatment of municipal waste and Industrial effluents. Bio-fertilizers Role of symbiotic and asymbiotic nitrogen fixing bacteria in the enrichment of soil. Algal and fungal biofertilizers (VAM)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "UNIT IV",
+              "topics": [
+                "Bioleaching, Enrichment of ores by microorganisms (Gold, Copper and Uranium). Environmental significance of genetically modified microbes, plants and animals."
+              ]
+            }
+          ],
+          "recommendedBooks": [
+            "Environmental Science, S.C.Santra",
+            "Environmental Biotechnology, Pradipta Kumar Mohapatra",
+            "Environmental Biotechnology - Concepts and Applications, Hans-Joachim Jordenin and JeseWinter",
+            "Waste Water Engineering, Metcalf and Eddy, Tata McGrawhill",
+            "Agricultural Biotechnology, S.S.Purohit",
+            "EnvironmentalMicrobiology:MethodsandProtocols, AliciaL.RagoutDeSpencer,John F.T. Spencer",
+            "Introduction to Environmental Biotechnology, MiltonWainwright",
+            "Principles of Environmental Engineering, GilbertMasters",
+            "Wastewater Engineering - Metcalf &Eddy"
+          ]
+        },
+        {
+          "id": "bio-dse-4-p",
+          "code": "DSE-4 (P)",
+          "name": "Environmental Biotechnology - Practical",
+          "paperType": "Practical / Lab",
+          "credits": 2,
+          "theoryMarks": 0,
+          "internalMarks": 30,
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "PRACTICALS",
+              "topics": [
+                "Calculation of Total Dissolved Solids (TDS) of watersample.",
+                "Calculation of BOD of watersample.",
+                "Calculation of COD of watersample.",
+                "Bacterial Examination of Water by MPNMethod."
+              ]
+            }
+          ],
+          "recommendedBooks": []
+        }
+      ]
+    }
+  ]
+}

@@ -22,6 +22,10 @@ import { sociologySyllabus } from './sociology';
 import { statisticsSyllabus } from './statistics';
 import { urduSyllabus } from './urdu';
 import { zoologySyllabus } from './zoology';
+import { bbaSyllabus } from './bba';
+import { bcaSyllabus } from './bca';
+import { biotechnologySyllabus } from './biotechnology';
+import { massCommunicationSyllabus } from './massCommunication';
 
 export {
   aihArchaeologySyllabus,
@@ -47,6 +51,10 @@ export {
   statisticsSyllabus,
   urduSyllabus,
   zoologySyllabus,
+  bbaSyllabus,
+  bcaSyllabus,
+  biotechnologySyllabus,
+  massCommunicationSyllabus,
 };
 
 const cleanCourseText = (str: string): string => {
@@ -64,7 +72,7 @@ const cleanCourseText = (str: string): string => {
 const sanitizeCourse = (course: CourseSyllabus): CourseSyllabus => ({
   ...course,
   name: cleanCourseText(course.name),
-  degree: 'Undergraduate',
+  degree: course.degree || 'Undergraduate',
   description: course.description
     ? course.description
         .replace(/4-Year\s*FYUGP\s*CBCS\s*/gi, '')
@@ -74,12 +82,12 @@ const sanitizeCourse = (course: CourseSyllabus): CourseSyllabus => ({
 });
 
 export const puFacultyList = [
-  { id: 'All', name: 'All Sections', count: '23 Subjects' },
+  { id: 'All', name: 'All Sections', count: '27 Courses' },
   { id: 'Social Science', name: 'Social Science', count: '7 Subjects' },
   { id: 'Humanities', name: 'Humanities', count: '7 Subjects' },
   { id: 'Science', name: 'Science', count: '6 Subjects' },
   { id: 'Commerce', name: 'Commerce', count: '3 Groups' },
-  { id: 'Vocational', name: 'Vocational & Law', count: '0 Courses' },
+  { id: 'Vocational', name: 'Vocational & Law', count: '4 Courses' },
   { id: 'Common NEP', name: 'AEC & MDC', count: '0 Modules' },
 ] as const;
 
@@ -127,6 +135,12 @@ const rawSyllabusData: CourseSyllabus[] = [
   bcomAccountingFinanceSyllabus,
   bcomHrmSyllabus,
   bcomMarketingSyllabus,
+
+  // Faculty of Vocational & Professional Courses (4 Courses)
+  bbaSyllabus,
+  bcaSyllabus,
+  biotechnologySyllabus,
+  massCommunicationSyllabus,
 ];
 
 export const puCompleteSyllabusData: CourseSyllabus[] = rawSyllabusData.map(sanitizeCourse);

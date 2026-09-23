@@ -1,0 +1,1187 @@
+{
+  "id": "bba",
+  "name": "Bachelor of Business Administration (BBA Hons.)",
+  "shortCode": "BBA",
+  "stream": "Vocational",
+  "faculty": "Vocational",
+  "icon": "💼",
+  "degree": "3-Year Professional Degree",
+  "totalSemesters": 6,
+  "description": "Undergraduate professional programme in Business Administration under Patna University, offered across prestigious colleges including Vanijya Mahavidyalaya (VMV) and B.N. College. Focuses on management principles, financial accounting, marketing, human resources, business law, and strategic operations.",
+  "officialPdfLink": "https://www.pup.ac.in/UnderGraduateCourse.aspx",
+  "semesters": [
+    {
+      "semester": 1,
+      "papers": [
+        {
+          "id": "bba-101",
+          "code": "BBA-101",
+          "name": "Principles of Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Essentials of Management - Harold Koontz and Heinz Weihrich, McGraw Hill",
+            "Principles and Practice of Management - L.M. Prasad, Sultan Chand & Sons",
+            "Management - Stephen P. Robbins & Mary Coulter, Pearson"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Nature & Evolution of Management",
+              "topics": [
+                "Concept, nature, purpose and scope of management; Management as an art, science and profession",
+                "Management vs Administration; Levels and skills of management",
+                "Evolution of management thought: Classical theory (F.W. Taylor, Henri Fayol), Neo-classical (Elton Mayo Hawthorne experiments), Systems and Contingency approaches"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Planning & Decision Making",
+              "topics": [
+                "Concept, importance, types and steps in planning; Strategic vs Operational planning",
+                "Management by Objectives (MBO): Process and benefits",
+                "Decision making: Nature, types, rational decision making process, techniques and bounded rationality"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Organizing & Staffing",
+              "topics": [
+                "Nature, process and principles of organizing; Formal and informal organization",
+                "Organizational structures: Line, functional, matrix and project structures",
+                "Span of control, centralization vs decentralization, delegation of authority",
+                "Staffing: Meaning, importance, manpower planning, recruitment and selection basics"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Directing, Leading & Controlling",
+              "topics": [
+                "Directing: Principles, motivation theories (Maslow, Herzberg, McGregor Theory X & Y)",
+                "Leadership: Concept, styles (Autocratic, Democratic, Free-rein), managerial grid",
+                "Communication: Channels, barriers and effective business communication",
+                "Controlling: Meaning, process, types, budgetary control and modern control techniques"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-102",
+          "code": "BBA-102",
+          "name": "Business Economics",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Managerial Economics - G.S. Gupta, Tata McGraw Hill",
+            "Microeconomics - M.L. Jhingan, Vrinda Publications",
+            "Business Economics - D.N. Dwivedi, Vikas Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to Managerial Economics",
+              "topics": [
+                "Definition, nature, scope and significance of business economics",
+                "Micro vs Macro economics; Basic economic problems, scarcity and choice",
+                "Opportunity cost principle, incremental principle, discounting principle"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Demand Analysis & Elasticity",
+              "topics": [
+                "Law of demand, demand determinants and demand schedule",
+                "Elasticity of demand: Price, income, cross and advertising elasticity",
+                "Demand forecasting: Purpose, qualitative and quantitative forecasting methods"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Production & Cost Analysis",
+              "topics": [
+                "Production function: Law of variable proportions (short-run), Laws of returns to scale (long-run)",
+                "Isoquants, isocost curves and producer equilibrium",
+                "Cost concepts: Fixed, variable, average, marginal, opportunity and sunk costs; Short-run and long-run cost curves"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Market Structures & Pricing",
+              "topics": [
+                "Price and output determination under Perfect Competition",
+                "Monopoly: Equilibrium, price discrimination and regulation",
+                "Monopolistic Competition: Features, product differentiation and selling costs",
+                "Oligopoly: Characteristics, kinked demand curve model and price leadership"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-103",
+          "code": "BBA-103",
+          "name": "Financial Accounting",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Financial Accounting - P.C. Tulsian, Pearson",
+            "Advanced Accounting - S.N. Maheshwari, Vikas Publishing",
+            "Financial Accounting - Robert N. Anthony, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Accounting Principles & Framework",
+              "topics": [
+                "Meaning, scope, objectives and limitations of accounting",
+                "Generally Accepted Accounting Principles (GAAP); Accounting concepts and conventions",
+                "Accounting standards overview; Double entry bookkeeping system"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Recording Transactions & Trial Balance",
+              "topics": [
+                "Journal, ledger posting and balancing of accounts",
+                "Subsidiary books: Cash book, purchases book, sales book, returns books",
+                "Bank reconciliation statement (BRS): Causes of difference and preparation",
+                "Trial balance: Objectives, methods of preparation and rectification of errors"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Depreciation Accounting & Reserves",
+              "topics": [
+                "Depreciation: Concept, causes, Straight Line Method (SLM) and Written Down Value Method (WDV)",
+                "Provisions and reserves: Meaning, distinction and accounting treatment"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Preparation of Final Accounts",
+              "topics": [
+                "Preparation of Trading Account, Profit & Loss Account and Balance Sheet for sole proprietorship",
+                "Key adjustments: Closing stock, outstanding expenses, prepaid expenses, bad debts and provision for doubtful debts"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-104",
+          "code": "BBA-104",
+          "name": "Business Communication & English",
+          "paperType": "Ability Enhancement (AEC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Business Communication - Meenakshi Raman & Prakash Singh, Oxford",
+            "Basic Business Communication - Lesikar & Flatley, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Communication",
+              "topics": [
+                "Concept, process, importance and channels of communication",
+                "7 Cs of effective communication; Barriers to communication and strategies to overcome them",
+                "Verbal vs Non-verbal communication, body language and paralanguage"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Business Correspondence",
+              "topics": [
+                "Structure and layout of commercial letters",
+                "Letters of enquiry, quotation, order, complaints and adjustments",
+                "Circulars, office orders, notices and memos"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Oral & Professional Presentation Skills",
+              "topics": [
+                "Public speaking, preparing and delivering PowerPoint presentations",
+                "Group discussions: Techniques, etiquette and active participation",
+                "Job interview skills: Resume preparation, cover letter and facing personal interviews"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Report Writing & Meeting Minutes",
+              "topics": [
+                "Types, structure and preparation of business reports",
+                "Notice, agenda and drafting minutes of official meetings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "papers": [
+        {
+          "id": "bba-201",
+          "code": "BBA-201",
+          "name": "Business Law",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Mercantile Law - N.D. Kapoor, Sultan Chand & Sons",
+            "Business Law - P.C. Tulsian, McGraw Hill",
+            "Legal Aspects of Business - Akhileshwar Pathak, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Indian Contract Act 1872 - General Principles",
+              "topics": [
+                "Agreement and Contract: Definitions, essentials of a valid contract",
+                "Offer and acceptance, consideration, capacity of parties, free consent (coercion, undue influence, fraud, misrepresentation, mistake)",
+                "Void agreements, contingent contracts, quasi contracts"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Performance & Breach of Contract",
+              "topics": [
+                "Performance of contracts, discharge of contract by mutual consent, impossibility and breach",
+                "Remedies for breach of contract, damages and quantum meruit"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Special Contracts",
+              "topics": [
+                "Contract of Indemnity and Guarantee: Rights and liabilities of surety",
+                "Contract of Bailment and Pledge: Duties of bailor, bailee, pawnor and pawnee",
+                "Contract of Agency: Creation, classification, rights and termination of agency"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Sale of Goods & Consumer Protection",
+              "topics": [
+                "Sale of Goods Act 1930: Contract of sale, conditions and warranties, transfer of ownership, doctrine of caveat emptor, unpaid seller rights",
+                "Consumer Protection Act 2019: Objectives, consumer rights, three-tier redressal machinery"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-202",
+          "code": "BBA-202",
+          "name": "Organizational Behaviour",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Organizational Behavior - Stephen P. Robbins, Pearson",
+            "Organizational Behavior - Fred Luthans, McGraw Hill",
+            "Organizational Behaviour - K. Aswathappa, Himalaya Publishing House"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to OB & Individual Behaviour",
+              "topics": [
+                "Concept, scope, challenges and models of Organizational Behaviour",
+                "Personality: Determinants, Big Five Model, Myers-Briggs Type Indicator (MBTI)",
+                "Perception: Perceptual process, errors in perception (halo effect, stereotyping)",
+                "Attitudes, values and job satisfaction"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Group Dynamics & Team Building",
+              "topics": [
+                "Foundations of group behavior, group norms, group cohesiveness and groupthink",
+                "Stages of group development (Tuckman model: Forming, Storming, Norming, Performing, Adjourning)",
+                "Teams vs groups, types of teams, building effective collaborative teams"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Power, Politics & Conflict",
+              "topics": [
+                "Sources of organizational power; Organizational politics: Causes and management",
+                "Conflict: Concept, functional vs dysfunctional conflict, conflict stages and conflict resolution styles"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Organizational Culture & Change",
+              "topics": [
+                "Organizational culture: Characteristics, creating and sustaining culture",
+                "Organizational change: Forces for change, resistance to change, Lewin’s three-step change model",
+                "Stress management at workplace: Causes, symptoms and coping strategies"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-203",
+          "code": "BBA-203",
+          "name": "Business Mathematics & Statistics",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Business Mathematics & Statistics - N.G. Das & J.K. Das, McGraw Hill",
+            "Statistical Methods - S.P. Gupta, Sultan Chand & Sons"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Mathematical Foundations for Business",
+              "topics": [
+                "Matrices and Determinants: Addition, multiplication, inverse of a matrix, Cramer’s rule for solving linear equations",
+                "Simple and compound interest, present value and annuity calculations in business finance"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Data Representation & Central Tendency",
+              "topics": [
+                "Collection, classification and tabulation of statistical data; Frequency distributions, histograms, frequency polygons",
+                "Measures of central tendency: Mean (Arithmetic, Geometric, Harmonic), Median, Mode and their business applications"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Measures of Dispersion",
+              "topics": [
+                "Range, quartile deviation, mean deviation, standard deviation and variance",
+                "Coefficient of variation and its utility in evaluating business consistency"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Correlation & Regression Analysis",
+              "topics": [
+                "Karl Pearson coefficient of correlation, Spearman rank correlation",
+                "Linear regression: Regression equations, lines of regression and business forecasting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-204",
+          "code": "BBA-204",
+          "name": "Environmental Studies & Sustainable Business",
+          "paperType": "Value Added (VAC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Environmental Studies - Erach Bharucha, Universities Press",
+            "Business and Environment - Francis Cherunilam, Himalaya Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Ecosystems & Biodiversity",
+              "topics": [
+                "Ecosystem concept, structure, trophic levels, food chains and ecological succession",
+                "Biodiversity: Threats, conservation (In-situ & Ex-situ), India as a mega-diversity nation"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Pollution, Climate Change & Legislation",
+              "topics": [
+                "Air, water, soil and noise pollution: Causes, industrial effects and control measures",
+                "Global warming, acid rain, ozone layer depletion",
+                "Environmental Protection Act 1986, Air and Water pollution control acts"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Sustainable Development & Green Business",
+              "topics": [
+                "Concept of sustainability, renewable energy resources, circular economy",
+                "Green marketing, carbon credits, environmental audit and ISO 14000 standards"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Corporate Social Responsibility (CSR)",
+              "topics": [
+                "Concept, evolution and significance of CSR in India (Companies Act 2013 provisions)",
+                "CSR initiatives in education, community welfare and environmental sustainability"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "papers": [
+        {
+          "id": "bba-301",
+          "code": "BBA-301",
+          "name": "Marketing Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Marketing Management - Philip Kotler, Kevin Lane Keller, Pearson",
+            "Marketing Management - V.S. Ramaswamy & S. Namakumari, Sage Publications"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Marketing",
+              "topics": [
+                "Marketing: Definition, core concepts, needs, wants, demand, customer value and satisfaction",
+                "Evolution of marketing philosophies: Production, product, selling, marketing, holistic marketing concepts",
+                "Marketing environment: Micro (company, suppliers, intermediaries, customers, competitors) and Macro (PESTEL)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "STP - Segmentation, Targeting & Positioning",
+              "topics": [
+                "Consumer buyer behavior: Buying decision process, factors influencing consumer behavior",
+                "Market Segmentation: Bases of consumer and business market segmentation (geographic, demographic, psychographic, behavioral)",
+                "Target market selection strategies; Positioning concept, perceptual mapping, developing positioning statement"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Product & Pricing Decisions",
+              "topics": [
+                "Product concept, classification, Product Life Cycle (PLC) stages and marketing strategies",
+                "New product development process; Branding, packaging and labeling decisions",
+                "Pricing: Factors influencing pricing, pricing methods (cost-based, value-based, competition-based), pricing strategies (penetration, skimming)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Distribution & Integrated Promotion",
+              "topics": [
+                "Distribution channels: Functions, types, channel conflict and logistics management",
+                "Promotion mix: Advertising, personal selling, sales promotion, public relations, direct marketing",
+                "Integrated Marketing Communications (IMC) approach; Emerging digital marketing trends"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-302",
+          "code": "BBA-302",
+          "name": "Human Resource Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Human Resource Management - Gary Dessler, Pearson",
+            "Personnel and Human Resource Management - P. Subba Rao, Himalaya Publishing",
+            "Human Resource Management - K. Aswathappa, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "HRM Overview & Manpower Planning",
+              "topics": [
+                "Concept, objectives, scope, functions and strategic importance of HRM",
+                "HRM vs Personnel Management; Roles and competencies of an HR Manager",
+                "Human Resource Planning (HRP): Process, forecasting demand and supply of manpower"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Job Analysis, Recruitment & Selection",
+              "topics": [
+                "Job Analysis: Job description and job specification methods",
+                "Recruitment: Internal vs external sources, e-recruitment techniques",
+                "Selection process: Application screening, tests, interviews, reference checks, placement and orientation"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Training, Development & Performance Appraisal",
+              "topics": [
+                "Training and Development: Need assessment, on-the-job and off-the-job training methods, evaluating training effectiveness",
+                "Performance Appraisal: Objectives, traditional vs modern methods (360-degree feedback, MBO, BARS), appraisal biases",
+                "Career planning, career development and succession planning"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Compensation, Employee Welfare & Industrial Relations",
+              "topics": [
+                "Compensation management: Factors determining pay, job evaluation, wage incentives and fringe benefits",
+                "Employee welfare and safety measures; Grievance handling procedure",
+                "Industrial Relations: Trade unions, collective bargaining and dispute settlement mechanisms in India"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-303",
+          "code": "BBA-303",
+          "name": "Cost & Management Accounting",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Cost Accounting: Principles and Practice - M.N. Arora, Vikas Publishing",
+            "Management Accounting - M.Y. Khan & P.K. Jain, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Cost Accounting Fundamentals",
+              "topics": [
+                "Meaning, scope, objectives and importance of Cost Accounting; Cost Accounting vs Financial Accounting",
+                "Elements of cost: Material, labor, expenses; Cost classification and cost centers",
+                "Preparation of Cost Sheet and Tender / Quotation price determination"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Material & Labor Cost Control",
+              "topics": [
+                "Material control: Purchasing procedure, Economic Order Quantity (EOQ), re-order levels",
+                "Pricing of material issues: FIFO, LIFO, Weighted Average methods",
+                "Labor cost: Time keeping, time booking, incentive wage schemes (Halsey and Rowan plans)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Marginal Costing & CVP Analysis",
+              "topics": [
+                "Concept of marginal costing; Marginal vs Absorption costing",
+                "Cost-Volume-Profit (CVP) analysis, Contribution, Profit-Volume (P/V) ratio",
+                "Break-Even Point (BEP) calculation, Margin of Safety and managerial decision making"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Budgetary Control & Standard Costing",
+              "topics": [
+                "Budget and budgetary control: Objectives, preparation of Cash Budget and Flexible Budget",
+                "Standard Costing: Concept, advantages; Material and labor variance analysis basics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-304",
+          "code": "BBA-304",
+          "name": "Business Environment & Policy",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Business Environment - Francis Cherunilam, Himalaya Publishing",
+            "Economic Environment of Business - Adhikary M., Sultan Chand & Sons"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Indian Business Environment Dynamics",
+              "topics": [
+                "Concept, significance and components of business environment",
+                "Interaction between business and environment; Environmental scanning techniques"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Economic Environment & Policy Reforms",
+              "topics": [
+                "New Economic Policy 1991: Liberalization, Privatization and Globalization (LPG) impact on Indian economy",
+                "Industrial Policy: Recent policy changes, Make in India, Atmanirbhar Bharat initiative",
+                "Disinvestment policy and public sector enterprise reforms"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Monetary & Fiscal Policies",
+              "topics": [
+                "Reserve Bank of India (RBI): Monetary policy instruments (Repo, Reverse Repo, CRR, SLR) and inflation management",
+                "Fiscal Policy: Union Budget, government revenue, fiscal deficit and GST implementation"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "International Business Environment & Multilateral Bodies",
+              "topics": [
+                "Foreign Direct Investment (FDI) and FPI trends in India; EXIM policy highlights",
+                "World Trade Organization (WTO): Structure, agreements (TRIPs, TRIMs, GATS) and impact on developing nations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "papers": [
+        {
+          "id": "bba-401",
+          "code": "BBA-401",
+          "name": "Financial Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Financial Management - I.M. Pandey, Vikas Publishing",
+            "Financial Management - Prasanna Chandra, McGraw Hill",
+            "Financial Management - Khan & Jain, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Financial Management",
+              "topics": [
+                "Meaning, scope, objectives of financial management: Profit maximization vs Wealth maximization",
+                "Role of finance manager in modern corporation; Risk-return trade-off",
+                "Time value of money: Compounding, discounting, present value of single cash flow and annuity"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Capital Budgeting Decisions",
+              "topics": [
+                "Nature, significance and process of long-term investment decisions",
+                "Evaluation techniques: Traditional (Payback Period, Accounting Rate of Return) and Discounted Cash Flow (Net Present Value, Internal Rate of Return, Profitability Index)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Cost of Capital & Capital Structure",
+              "topics": [
+                "Cost of capital: Specific cost of debt, preference shares, equity and retained earnings; Weighted Average Cost of Capital (WACC)",
+                "Operating, financial and combined leverage",
+                "Capital structure theories: Net Income (NI), Net Operating Income (NOI), Traditional and MM Hypothesis"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Working Capital & Dividend Decisions",
+              "topics": [
+                "Working capital management: Concept, operating cycle, determinants and estimating working capital requirement",
+                "Cash, inventory and receivables management overview",
+                "Dividend policy: Determinants, Walter model, Gordon model and Modigliani-Miller irrelevance theorem"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-402",
+          "code": "BBA-402",
+          "name": "Production & Operations Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Production and Operations Management - K. Aswathappa & K. Sridhara Bhat, Himalaya Publishing",
+            "Operations Management - Norman Gaither & Greg Frazier, Cengage Learning"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Introduction to Operations Management",
+              "topics": [
+                "Concept, objectives, scope and historical evolution of POM",
+                "Production systems: Continuous (Mass, Process), Intermittent (Job shop, Batch production)",
+                "Operations strategy and competitiveness"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Plant Location & Layout Design",
+              "topics": [
+                "Plant location: Factors influencing facility location, location evaluation techniques",
+                "Plant layout: Objectives, principles and types (Product, Process, Fixed Position, Cellular layouts)",
+                "Material handling: Principles and equipment selection"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Production Planning, Control & Materials Management",
+              "topics": [
+                "Production Planning and Control (PPC): Objectives, stages (Routing, Loading, Scheduling, Dispatching, Expediting)",
+                "Materials management: Objectives and scope; ABC analysis, VED analysis and Economic Order Quantity (EOQ)"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Quality Control, TQM & Maintenance",
+              "topics": [
+                "Quality concepts, Statistical Quality Control (SQC), control charts for variables and attributes",
+                "Total Quality Management (TQM), Six Sigma methodology and ISO 9000 quality standards",
+                "Plant maintenance: Preventive, breakdown and predictive maintenance"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-403",
+          "code": "BBA-403",
+          "name": "Research Methodology in Business",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Research Methodology: Methods and Techniques - C.R. Kothari, New Age International",
+            "Business Research Methods - Donald Cooper & Pamela Schindler, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Business Research",
+              "topics": [
+                "Meaning, objectives, types and significance of research; Research process overview",
+                "Identification and formulation of research problem; Literature review importance",
+                "Formulation of research hypotheses: Null vs Alternative hypotheses"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Research Design & Sampling Techniques",
+              "topics": [
+                "Research design: Exploratory, descriptive and diagnostic/experimental research designs",
+                "Census vs Sample survey; Sampling techniques: Probability (Simple random, Stratified, Systematic, Cluster) and Non-probability (Convenience, Purposive, Quota, Snowball)",
+                "Sample size determination and sampling errors"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Data Collection & Measurement Scales",
+              "topics": [
+                "Primary data collection methods: Observation, interviews, questionnaires, schedules",
+                "Questionnaire design: Principles, question types and pre-testing",
+                "Secondary data sources and evaluation; Measurement scales: Nominal, Ordinal, Interval, Ratio; Likert scale"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Data Analysis & Research Report Writing",
+              "topics": [
+                "Data processing: Editing, coding, classification and tabulation",
+                "Parametric and non-parametric hypothesis testing overview (t-test, Chi-square test)",
+                "Structure and layout of research report; Citation styles and bibliography"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-404",
+          "code": "BBA-404",
+          "name": "Indian Financial System & Banking",
+          "paperType": "Minor (MIC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Indian Financial System - M.Y. Khan, McGraw Hill",
+            "Financial Markets and Services - Gordon & Natarajan, Himalaya Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Structure of Indian Financial System",
+              "topics": [
+                "Components of financial system: Financial institutions, financial markets, financial instruments, financial services",
+                "Role of financial system in economic development of India"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Commercial Banking & Digital Banking Innovations",
+              "topics": [
+                "Commercial banks: Functions, credit creation process and NPA management",
+                "Digital banking: ATMs, internet banking, mobile banking, UPI, NEFT, RTGS, IMPS",
+                "Payment banks and Small finance banks"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Financial Markets & Regulators",
+              "topics": [
+                "Money Market: Call money, treasury bills, commercial papers, certificate of deposits",
+                "Capital Market: Primary market (IPO process) and Secondary market (Stock exchanges - BSE, NSE)",
+                "Regulatory framework: Role and powers of SEBI and RBI"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Financial Services Overview",
+              "topics": [
+                "Mutual funds: Concept, structure, types of mutual fund schemes (Equity, Debt, Hybrid)",
+                "Merchant banking, leasing, factoring and credit rating agencies in India (CRISIL, ICRA)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "papers": [
+        {
+          "id": "bba-501",
+          "code": "BBA-501",
+          "name": "Strategic Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Strategic Management - John A. Pearce & Richard B. Robinson, McGraw Hill",
+            "Business Policy and Strategic Management - Azhar Kazmi, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Strategic Management Process & Intent",
+              "topics": [
+                "Concept, definition, nature and benefits of strategic management",
+                "Strategic management process; Strategic Intent: Vision, Mission, Business Definition, Goals and Objectives"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Environmental Appraisal & Internal Analysis",
+              "topics": [
+                "External environmental analysis: PESTEL analysis, Porter’s Five Forces model of industry competition",
+                "Internal analysis: Resource-Based View (RBV), VRIO framework, Value Chain analysis, Core competencies",
+                "SWOT analysis and TOWS matrix"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Strategy Formulation at Multiple Levels",
+              "topics": [
+                "Corporate level strategies: Growth/Expansion (Concentration, Integration, Diversification), Stability, Retrenchment",
+                "Business level strategies: Porter’s generic strategies (Cost leadership, Differentiation, Focus)",
+                "Portfolio analysis models: BCG Growth-Share Matrix, GE/McKinsey 9-Cell Matrix"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Strategy Implementation & Strategic Control",
+              "topics": [
+                "Interrelationship between strategy formulation and implementation",
+                "Structural, behavioral and operational implementation issues; Balanced Scorecard approach",
+                "Strategic control: Premise control, implementation control, surveillance control and special alert control"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-502",
+          "code": "BBA-502",
+          "name": "Entrepreneurship & Small Business Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Entrepreneurship: Successfully Launching New Ventures - Bruce R. Barringer & R. Duane Ireland, Pearson",
+            "Dynamics of Entrepreneurial Development and Management - Vasant Desai, Himalaya Publishing"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Entrepreneurship Concept & Mindset",
+              "topics": [
+                "Concept, characteristics, functions and types of entrepreneurs; Entrepreneur vs Manager",
+                "Entrepreneurial mindset, creativity, innovation and opportunity recognition",
+                "Women entrepreneurship: Growth, problems and development programs in India"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Small Business & Startup Ecosystem",
+              "topics": [
+                "Definition and classification of Micro, Small and Medium Enterprises (MSMEs) under MSMED Act",
+                "Role of MSMEs in Indian economic growth and employment generation",
+                "Startup India initiative, incubators, accelerators and angel investors"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Business Plan Formulation",
+              "topics": [
+                "Significance of business plan; Components of a comprehensive business plan: Executive summary, marketing plan, operational plan, financial projections",
+                "Feasibility analysis: Technical, market, economic and financial feasibility"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Financing & Institutional Support",
+              "topics": [
+                "Sources of capital: Bootstrapping, bank loans, venture capital, crowd funding, government subsidies",
+                "Institutional support network: SIDBI, NABARD, NSIC, DIC (District Industries Centres)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-503",
+          "code": "BBA-503",
+          "name": "Consumer Behaviour & Services Marketing",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Consumer Behavior - Leon G. Schiffman & Joseph Wisenblit, Pearson",
+            "Services Marketing - Valarie A. Zeithaml & Dwayne D. Gremler, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Consumer Decision Making Dynamics",
+              "topics": [
+                "Consumer decision making models: Howard-Sheth model, Engel-Kollat-Blackwell (EKB) model",
+                "Psychological determinants: Motivation, perception, learning, consumer attitudes and attitude change strategies"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Socio-Cultural Influences on Buyers",
+              "topics": [
+                "Reference groups, family life cycle, social class and culture/sub-culture impact on purchase behavior",
+                "Diffusion of innovations: Adopter categories and adoption process"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Services Marketing Concepts & The 7 Ps",
+              "topics": [
+                "Distinct characteristics of services: Intangibility, inseparability, variability, perishability",
+                "Extended marketing mix for services: Product, Price, Place, Promotion, People, Physical Evidence, Process"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Service Quality & Customer Retention",
+              "topics": [
+                "Service quality measurement: SERVQUAL model and GAP model of service quality",
+                "Customer relationship management (CRM) and service recovery strategies"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-504",
+          "code": "BBA-504",
+          "name": "Summer Internship Project & Presentation",
+          "paperType": "Internship",
+          "credits": 4,
+          "theoryMarks": 50,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "How to Write a Thesis - Umberto Eco, MIT Press",
+            "Project Work in Management - S.S. Khanka, S. Chand"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Corporate Internship Project",
+              "topics": [
+                "Four to six weeks of field/industry internship in an established corporate, MSME, or banking institution",
+                "Preparation of comprehensive project report based on live business problem, data collection, findings, and strategic recommendations",
+                "Formal presentation and viva-voce examination before an expert panel"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "papers": [
+        {
+          "id": "bba-601",
+          "code": "BBA-601",
+          "name": "International Business Management",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "International Business: Competing in the Global Marketplace - Charles W.L. Hill, McGraw Hill",
+            "International Business - Justin Paul, PHI Learning"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Global Business Dynamics & Trade Theories",
+              "topics": [
+                "Meaning, nature, drivers and scope of international business; Domestic vs International business",
+                "International trade theories: Mercantilism, Absolute Advantage, Comparative Advantage, Heckscher-Ohlin Theory"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "International Trade Environment & Regional Blocs",
+              "topics": [
+                "Trade barriers: Tariff vs Non-tariff barriers",
+                "Regional Economic Integration: Free trade area, customs union, common market, economic union; EU, ASEAN, SAARC, USMCA"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Global Market Entry & Modes",
+              "topics": [
+                "Foreign market entry strategies: Exporting, licensing, franchising, joint ventures, wholly owned subsidiaries, turn-key operations"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Foreign Exchange & International Finance",
+              "topics": [
+                "Foreign exchange market: Structure, spot and forward markets, hedging exchange rate risk",
+                "Role of international economic institutions: IMF, World Bank, UNCTAD, WTO"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-602",
+          "code": "BBA-602",
+          "name": "Business Ethics & Corporate Governance",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Business Ethics and Corporate Governance - A.C. Fernando, Pearson",
+            "Corporate Governance: Principles, Policies and Practices - Bob Tricker, Oxford"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Foundations of Business Ethics",
+              "topics": [
+                "Meaning, scope and principles of business ethics; Ethical theories (Teleological, Deontological, Virtue ethics)",
+                "Ethical dilemmas in business; Codes of conduct and corporate value systems"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Functional Ethics in Management",
+              "topics": [
+                "Ethics in marketing: Misleading advertising, deceptive pricing, consumer privacy",
+                "Ethics in finance: Insider trading, window dressing of financial statements, financial fraud",
+                "Ethics in HRM: Workplace discrimination, sexual harassment, employee privacy, whistleblowing mechanisms"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "Corporate Governance Framework in India",
+              "topics": [
+                "Concept, principles, importance and pillars of Corporate Governance",
+                "Cadbury Committee, Kumar Mangalam Birla Committee, Narayan Murthy Committee recommendations",
+                "Role, duties and responsibilities of Board of Directors; Independent directors and audit committee provisions under Companies Act 2013"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Corporate Governance Scandals & Social Audit",
+              "topics": [
+                "Analysis of corporate failures: Enron, Satyam Computers, Lehman Brothers; Regulatory safeguards",
+                "Social audit and environmental audit; Triple Bottom Line (TBL) reporting"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-603",
+          "code": "BBA-603",
+          "name": "Management Information Systems (MIS)",
+          "paperType": "Major (MJC)",
+          "credits": 4,
+          "theoryMarks": 70,
+          "internalMarks": 30,
+          "recommendedBooks": [
+            "Management Information Systems - Kenneth C. Laudon & Jane P. Laudon, Pearson",
+            "Management Information Systems - James A. O’Brien & George M. Marakas, McGraw Hill"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Information Systems Foundations",
+              "topics": [
+                "Data vs Information; Concept, role, structure and components of Management Information Systems",
+                "Classification of Information Systems: Transaction Processing Systems (TPS), MIS, Decision Support Systems (DSS), Executive Support Systems (ESS)"
+              ]
+            },
+            {
+              "unitNumber": 2,
+              "title": "Database & Enterprise Applications",
+              "topics": [
+                "Database Management Systems (DBMS) approach; Relational databases, Data Warehousing, Data Mining concepts",
+                "Enterprise Systems: Enterprise Resource Planning (ERP), Supply Chain Management (SCM), Customer Relationship Management (CRM)"
+              ]
+            },
+            {
+              "unitNumber": 3,
+              "title": "E-Commerce & Digital Transformation",
+              "topics": [
+                "E-commerce business models: B2B, B2C, C2C; Digital payment systems and payment gateways",
+                "Cloud computing fundamentals, Big Data analytics, AI and IoT applications in business management"
+              ]
+            },
+            {
+              "unitNumber": 4,
+              "title": "Information Security & Cyber Ethics",
+              "topics": [
+                "Information system vulnerabilities, security threats (malware, phishing, ransomware)",
+                "Security controls: Firewalls, encryption, authentication, digital signatures; IT Act 2000 provisions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bba-604",
+          "code": "BBA-604",
+          "name": "Grand Project & Comprehensive Viva-Voce",
+          "paperType": "Research Project",
+          "credits": 4,
+          "theoryMarks": 50,
+          "internalMarks": 50,
+          "recommendedBooks": [
+            "Business Research Methods - William G. Zikmund, Cengage",
+            "Writing Research Papers - James D. Lester, Pearson"
+          ],
+          "units": [
+            {
+              "unitNumber": 1,
+              "title": "Major Dissertation & Industry Viva",
+              "topics": [
+                "Selection of research topic in specialization area (Marketing, Finance, HR, Operations, Entrepreneurship)",
+                "Empirical investigation, data collection, statistical hypothesis testing, analytical discussion",
+                "Submission of finalized bound dissertation and defense before the University Board of Examiners"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

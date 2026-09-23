@@ -150,7 +150,7 @@ export default function ExtrasPage() {
             Lazy PU is a student-built companion platform for Patna University scholars to freely explore syllabi, compute SGPA, and track circulars without clunky servers.
           </p>
           <div className="pt-1 text-[10px] text-slate-400">
-            Lazy PU v2.0 • Made with ❤️ by Abhishek @nainix
+            Lazy PU • Made with ❤️ by Abhishek @nainix
           </div>
         </div>
       </main>
