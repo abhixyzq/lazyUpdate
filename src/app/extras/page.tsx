@@ -9,14 +9,14 @@ import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 
 export default function ExtrasPage() {
   const handleShareApp = () => {
+    const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.lazypu.app';
     const portalUrl = 'https://lazyupdate.tech';
-    const apkUrl = `${portalUrl}/downloads/lazy-pu.apk`;
-    const text = `🌟 Lazy PU - The complete open-access student portal for Patna University!\nAccess Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Circulars.\n\n📲 Download Android App: ${apkUrl}\n🌐 Website: ${portalUrl}`;
+    const text = `🌟 Lazy PU - The Ultimate Patna University Student Companion!\nAccess CBCS Syllabi, Past Papers (PYQs), 75% Attendance Calculator, SGPA Tools & Live Circulars.\n\n📲 Get it on Google Play Store:\n${playStoreUrl}\n🌐 Website: ${portalUrl}`;
     if (navigator.share) {
-      navigator.share({ title: 'Lazy PU Portal', text, url: apkUrl });
+      navigator.share({ title: 'Lazy PU - Patna University Companion', text, url: playStoreUrl });
     } else {
-      navigator.clipboard.writeText(apkUrl);
-      alert('Official download link copied to clipboard! Share with your classmates.');
+      navigator.clipboard.writeText(playStoreUrl);
+      alert('Official Google Play Store link copied to clipboard! Share with your classmates.');
     }
   };
 

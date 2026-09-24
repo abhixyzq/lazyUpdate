@@ -1,16 +1,17 @@
 {
   "version": "1.0.0",
   "versionCode": 1,
-  "releaseDate": "2026-09-20",
-  "title": "Lazy PU v1.0.0 Live! 🚀",
-  "message": "Official production release with Real-Time Automated PU Notices, 6-month auto-clean, verified CBCS syllabus, PYQs, and self-service campus partner portal.",
+  "releaseDate": "2026-09-24",
+  "title": "Lazy PU on Google Play! 🚀",
+  "message": "Official Google Play release with full CBCS & Vocational syllabi, real-time Samarth circulars, and SGPA tools.",
   "features": [
-    "Real-Time Automated PU Notice & Circulars Portal (Direct AWS S3 documents)",
-    "6-Month automatic notice expiration & cleanup",
-    "Complete 4-Year CBCS Syllabi & PYQs for all colleges",
-    "Offline timetable builder, SGPA calculator & student tools",
-    "Self-service campus partner advertising manager"
+    "Now available on Google Play Store",
+    "Real-time official PU Samarth notices with direct documents",
+    "Comprehensive CBCS & Vocational course syllabi (Sem 1-6)",
+    "Smart 75% Attendance & Bunk Planner",
+    "Patna University SGPA & Grade Estimator"
   ],
   "forceUpdate": false,
-  "downloadUrl": "https://lazyupdate.tech/downloads/lazy-pu.apk?v=1.0.0"
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.lazypu.app",
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.lazypu.app"
 }

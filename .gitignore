@@ -43,3 +43,8 @@ next-env.d.ts
 
 # scratch scripts
 scratch/
+
+# android bundles & keys
+*.aab
+*.keystore
+public/playstore-assets/*.aab

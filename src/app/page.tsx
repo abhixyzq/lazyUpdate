@@ -13,6 +13,7 @@ import { NoticeDetailSheet } from '@/components/NoticeDetailSheet';
 import { SideDrawer } from '@/components/SideDrawer';
 import { ImportantLinksModal, ImportantLinkCategory } from '@/components/ImportantLinksModal';
 import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
+import { DownloadAppSection } from '@/components/DownloadAppSection';
 
 import { puNoticesData } from '@/data/puNotices';
 import { PUNotice } from '@/types';
@@ -90,6 +91,9 @@ export default function ApnaUniversityHomePage() {
         universityTitle={universityTitle}
         onSelectAction={handleAction}
       />
+
+      {/* 3.1 Google Play Store Badge Section (Web Visitors only) */}
+      <DownloadAppSection appTitle={appTitle} />
 
       {/* 4. Bottom Section: Important Links (Internships, Scholarships, Anti-Ragging) */}
       <div className="mx-auto max-w-xl px-3 pt-3">

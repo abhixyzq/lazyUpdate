@@ -17,6 +17,8 @@ import {
   ChevronRight,
   Heart,
   Loader2,
+  Star,
+  RefreshCw,
 } from 'lucide-react';
 import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 import { FeedbackModal } from './FeedbackModal';
@@ -35,23 +37,40 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
   const [shareFeedback, setShareFeedback] = useState<string | null>(null);
+  const [isCheckingUpdate, setIsCheckingUpdate] = useState(false);
+  const [updateFeedback, setUpdateFeedback] = useState<string | null>(null);
+
+  // Listen for update status event from AppUpdateModal
+  React.useEffect(() => {
+    const handleStatus = (e: any) => {
+      const msg = e.detail?.message || 'Up to date!';
+      setUpdateFeedback(msg);
+      setIsCheckingUpdate(false);
+      setTimeout(() => setUpdateFeedback(null), 3500);
+    };
+
+    window.addEventListener('app-update-status', handleStatus);
+    return () => window.removeEventListener('app-update-status', handleStatus);
+  }, []);
 
   if (!isOpen) return null;
+
+  const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lazypu.app';
+  const MARKET_URL = 'market://details?id=com.lazypu.app';
 
   const handleShareApp = async () => {
     if (isSharing) return;
     setIsSharing(true);
     setShareFeedback('Sharing...');
 
-    const apkFullUrl = 'https://lazyupdate.tech/downloads/lazy-pu.apk';
-    const shareText = `🌟 Lazy PU - Patna University Student Companion\nSyllabus, circulars, attendance planner & SGPA tool.\n\n📲 Download Android App:\n${apkFullUrl}`;
+    const shareText = `🌟 Lazy PU - The Ultimate Patna University Student Companion!\nVerified CBCS syllabus, real-time Samarth notices, 75% attendance planner & SGPA calculator.\n\n📲 Get it on Google Play Store:\n${PLAY_STORE_URL}\n🌐 Website: https://lazyupdate.tech`;
 
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
         await navigator.share({
-          title: 'Lazy PU - Patna University Student App',
+          title: 'Lazy PU - Patna University Companion',
           text: shareText,
-          url: apkFullUrl,
+          url: PLAY_STORE_URL,
         });
         setShareFeedback('Shared!');
         setTimeout(() => setShareFeedback(null), 2500);
@@ -68,7 +87,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
 
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       try {
-        await navigator.clipboard.writeText(apkFullUrl);
+        await navigator.clipboard.writeText(PLAY_STORE_URL);
         setShareFeedback('Link Copied!');
         setTimeout(() => setShareFeedback(null), 2500);
       } catch {
@@ -77,6 +96,40 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
       }
     }
     setIsSharing(false);
+  };
+
+  const handleRateApp = async () => {
+    try {
+      const { Capacitor } = await import('@capacitor/core');
+      if (Capacitor.isNativePlatform()) {
+        window.location.href = MARKET_URL;
+        setTimeout(() => {
+          window.open(PLAY_STORE_URL, '_system');
+        }, 500);
+        return;
+      }
+    } catch {
+      // Browser fallback
+    }
+    window.open(PLAY_STORE_URL, '_blank');
+  };
+
+  const handleCheckUpdate = () => {
+    if (isCheckingUpdate) return;
+    setIsCheckingUpdate(true);
+    setUpdateFeedback('Checking...');
+    window.dispatchEvent(new CustomEvent('check-app-update', { detail: { manual: true } }));
+    // Timeout fallback if no event response
+    setTimeout(() => {
+      setIsCheckingUpdate((prev) => {
+        if (prev) {
+          setUpdateFeedback('You are on v1.0.0 (Latest) ✨');
+          setTimeout(() => setUpdateFeedback(null), 3000);
+          return false;
+        }
+        return false;
+      });
+    }, 2000);
   };
 
   return (
@@ -299,6 +352,24 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
 
                 <button
                   type="button"
+                  onClick={handleRateApp}
+                  className="w-full flex items-center justify-between px-3.5 py-2.5 hover:bg-slate-50 transition group text-left cursor-pointer"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-50 text-amber-600 border border-amber-100">
+                      <Star className="h-4 w-4 fill-amber-400 text-amber-500" />
+                    </div>
+                    <span className="text-xs font-bold text-slate-800 group-hover:text-amber-700 transition">
+                      Rate on Google Play
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200/80 px-2 py-0.5 rounded-full">
+                    5★
+                  </span>
+                </button>
+
+                <button
+                  type="button"
                   onClick={handleShareApp}
                   disabled={isSharing}
                   className="w-full flex items-center justify-between px-3.5 py-2.5 hover:bg-slate-50 transition group text-left disabled:opacity-70 cursor-pointer"
@@ -319,6 +390,25 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
                   </div>
                   <span className="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded-full">
                     {shareFeedback ? 'Done' : 'Share'}
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleCheckUpdate}
+                  disabled={isCheckingUpdate}
+                  className="w-full flex items-center justify-between px-3.5 py-2.5 hover:bg-slate-50 transition group text-left disabled:opacity-70 cursor-pointer"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 border border-indigo-100">
+                      <RefreshCw className={`h-4 w-4 text-indigo-600 ${isCheckingUpdate ? 'animate-spin' : ''}`} />
+                    </div>
+                    <span className="text-xs font-bold text-slate-800 group-hover:text-indigo-600 transition truncate">
+                      {updateFeedback || 'Check for Updates'}
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/80 px-2 py-0.5 rounded-full shrink-0">
+                    {isCheckingUpdate ? 'Checking' : updateFeedback ? 'Checked' : 'v1.0.0'}
                   </span>
                 </button>
 
