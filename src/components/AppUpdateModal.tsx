@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { Sparkles, CheckCircle2, X, ExternalLink, RefreshCw } from 'lucide-react';
+import { GooglePlayIcon } from '@/components/OfficialBrandIcons';
 
 interface RemoteVersionConfig {
   version: string;
@@ -208,12 +209,10 @@ export function AppUpdateModal() {
         <div className="flex flex-col gap-2">
           <button
             onClick={handleOpenPlayStore}
-            className="w-full flex items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 py-3 px-4 text-xs font-black text-white active:scale-98 shadow-md transition cursor-pointer"
+            className="w-full flex items-center justify-center gap-2.5 rounded-2xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 py-3 px-4 text-xs font-black text-white active:scale-98 shadow-md transition cursor-pointer"
           >
-            {/* Google Play Store Triangle Icon */}
-            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M3.609 1.814L13.793 12 3.61 22.186c-.332-.303-.54-.741-.54-1.238V3.052c0-.497.208-.935.54-1.238zM15.207 13.414l2.122 2.121-12.72 7.344 10.598-9.465zm0-2.828L4.609 1.121l12.72 7.344-2.122 2.121zm1.414 1.414l4.243-2.45c.78-.45.78-1.185 0-1.636l-4.243-2.45-2.121 2.121 2.121 2.415z" />
-            </svg>
+            {/* Authentic 4-Color Google Play Icon */}
+            <GooglePlayIcon className="h-4 w-4 shrink-0" />
             <span>Update on Google Play</span>
             <ExternalLink className="h-3.5 w-3.5 opacity-70" />
           </button>

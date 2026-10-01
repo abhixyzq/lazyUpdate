@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Sparkles, ShieldCheck, ExternalLink, Star } from 'lucide-react';
+import { GooglePlayIcon } from '@/components/OfficialBrandIcons';
 
 interface DownloadAppSectionProps {
   appTitle?: string;
@@ -82,15 +83,13 @@ export const DownloadAppSection: React.FC<DownloadAppSectionProps> = ({
             href={PLAY_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-xl bg-slate-900 hover:bg-slate-800 active:scale-95 px-3.5 py-2.5 text-xs font-bold text-white transition shrink-0 shadow-xs cursor-pointer group"
+            className="flex items-center gap-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 active:scale-95 px-3.5 py-2 text-xs font-bold text-white transition shrink-0 shadow-sm cursor-pointer group border border-slate-800"
           >
-            {/* Google Play Triangle SVG */}
-            <svg className="h-4 w-4 shrink-0 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M3.609 1.814L13.793 12 3.61 22.186c-.332-.303-.54-.741-.54-1.238V3.052c0-.497.208-.935.54-1.238zM15.207 13.414l2.122 2.121-12.72 7.344 10.598-9.465zm0-2.828L4.609 1.121l12.72 7.344-2.122 2.121zm1.414 1.414l4.243-2.45c.78-.45.78-1.185 0-1.636l-4.243-2.45-2.121 2.121 2.121 2.415z" />
-            </svg>
-            <div className="text-left leading-none">
-              <span className="text-[9px] block text-slate-300 font-normal uppercase tracking-wider">GET IT ON</span>
-              <span className="text-[11px] font-black text-white">Google Play</span>
+            {/* Authentic 4-Color Google Play Icon */}
+            <GooglePlayIcon className="h-5 w-5 shrink-0 transition-transform group-hover:scale-110" />
+            <div className="text-left leading-tight">
+              <span className="text-[9px] block text-slate-300 font-medium uppercase tracking-wider">GET IT ON</span>
+              <span className="text-xs font-black text-white">Google Play</span>
             </div>
           </a>
         </div>
