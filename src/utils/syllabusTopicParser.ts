@@ -14,13 +14,24 @@ function isInsideParens(str: string, index: number): boolean {
   return depth > 0;
 }
 
+function stripLeadingBullet(str: string): string {
+  if (!str) return '';
+  str = str.trim();
+  // Strip list markers like (a), (1), a), 1), a., 1., •, -, –
+  str = str.replace(/^(?:[\u2022\u2023\u25E6\u2043\u2219\*\-–—]+\s*|\(?\d+[\.\)]\s*|\(?[a-z][\.\)]\s*)/, '');
+  // Strip capital letter bullet like A. or (A) only if followed by a regular word (3+ letters), NOT initials like 'R. '
+  str = str.replace(/^\(?[A-Z][\.\)]\s+(?=[A-Za-z]{3,})/, '');
+  return str.trim();
+}
+
 function cleanTopic(t: string): string {
   if (!t) return '';
-  t = t.trim();
-  // Remove leading bullets, list markers like '1. ', '• ', '- '
-  t = t.replace(/^(?:[\u2022\u2023\u25E6\u2043\u2219\*\-–—]|\d+[\.\)]|[a-zA-Z][\.\)])\s*/, '');
-  // Remove trailing punctuation (commas, semicolons, colons, dots)
+  t = stripLeadingBullet(t);
+  // Remove trailing punctuation
   t = t.replace(/[\s,;:\.]+$/, '');
+  // Discard isolated single characters, initials, or empty fragments
+  if (t.length <= 1) return '';
+  if (/^[A-Za-z]\.?$/.test(t)) return '';
   // Capitalize first letter if lowercase (except known notations like pH, pOH, s-block)
   if (t.length > 0 && /^[a-z]/.test(t)) {
     if (!/^(pH|pOH|s-|p-|d-|f-|i\.e\.|e\.g\.)/.test(t)) {
@@ -58,7 +69,7 @@ function mergeDependentClauses(parts: string[]): string[] {
 
 export function parseTopicsFromText(text: string): string[] {
   if (!text || typeof text !== 'string') return [];
-  text = text.trim();
+  text = stripLeadingBullet(text);
   if (!text) return [];
 
   // Pass 1: Split by newlines and semicolons (outside parens)
@@ -77,30 +88,23 @@ export function parseTopicsFromText(text: string): string[] {
     if (cur.trim()) rawChunks.push(cur.trim());
   });
 
-  // Pass 2: Dashes and period followed by space + Capital letter
+  // Pass 2: Sentence-ending periods (ONLY when previous word is a real word >= 2 chars, not an abbreviation, not an initial)
   const secondPass: string[] = [];
   rawChunks.forEach(chunk => {
     let cur = '';
     for (let i = 0; i < chunk.length; i++) {
-      const isDash = (chunk[i] === ' ' || chunk[i] === '\t') &&
-                     (chunk[i + 1] === '-' || chunk[i + 1] === '–' || chunk[i + 1] === '—') &&
-                     (chunk[i + 2] === ' ' || chunk[i + 2] === '\t');
-
       let isPeriod = false;
       if (chunk[i] === '.' && i + 2 < chunk.length && chunk[i + 1] === ' ' && /[A-Z]/.test(chunk[i + 2]) && !isInsideParens(chunk, i)) {
-        const prevWordMatch = chunk.substring(Math.max(0, i - 10), i).match(/([a-zA-Z]+)$/);
+        const prevWordMatch = chunk.substring(Math.max(0, i - 12), i).match(/([a-zA-Z]+)$/);
         const prevWord = prevWordMatch ? prevWordMatch[1].toLowerCase() : '';
-        const abbrevs = ['eg', 'ie', 'etc', 'vol', 'no', 'dr', 'mr', 'mrs', 'prof', 'vs', 'st', 'al', 'fig'];
-        if (!abbrevs.includes(prevWord)) {
+        const abbrevs = ['eg', 'ie', 'etc', 'vol', 'no', 'dr', 'mr', 'mrs', 'ms', 'prof', 'vs', 'st', 'al', 'fig', 'ed', 'trans', 'chap', 'ch', 'sec', 'pp', 'dept', 'univ'];
+        // Crucial: Single letters are initials (R., K., B., A., etc.) -> NOT sentence end!
+        if (prevWord.length > 1 && !abbrevs.includes(prevWord) && cur.trim().length >= 20) {
           isPeriod = true;
         }
       }
 
-      if (isDash && !isInsideParens(chunk, i)) {
-        if (cur.trim()) secondPass.push(cur.trim());
-        cur = '';
-        i += 2;
-      } else if (isPeriod) {
+      if (isPeriod) {
         if (cur.trim()) secondPass.push(cur.trim());
         cur = '';
         i += 1;
@@ -127,6 +131,13 @@ export function parseTopicsFromText(text: string): string[] {
     if (cur.trim()) commaParts.push(cur.trim());
 
     if (commaParts.length <= 1) {
+      finalPass.push(chunk);
+      return;
+    }
+
+    // Do NOT split on comma if it looks like an Author, Book or title list:
+    // e.g. 'Henry Derozio – The Harp of India, India, My Native Land' or 'Act I, Scene 1'
+    if (chunk.includes('–') || chunk.includes(' - ') || chunk.includes(':')) {
       finalPass.push(chunk);
       return;
     }
@@ -158,7 +169,7 @@ export function parseTopicsFromText(text: string): string[] {
     }
   });
 
-  return finalPass.map(cleanTopic).filter(t => t.length > 0);
+  return finalPass.map(cleanTopic).filter(t => t && t.length > 1);
 }
 
 /**
@@ -173,7 +184,7 @@ export function formatUnitTopics(topics: string[]): string[] {
       result.push(...parsed);
     } else {
       const cleaned = cleanTopic(t);
-      if (cleaned) result.push(cleaned);
+      if (cleaned && cleaned.length > 1) result.push(cleaned);
     }
   }
   return result;
