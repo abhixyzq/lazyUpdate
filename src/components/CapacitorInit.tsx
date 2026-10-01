@@ -44,13 +44,6 @@ export function CapacitorInit() {
           // App listener unavailable
         }
 
-        // 3. Configure Google AdMob Footer Banner Ad
-        try {
-          const { showFooterBanner } = await import('@/utils/admobService');
-          await showFooterBanner();
-        } catch (adErr) {
-          console.warn('AdMob banner initialization error:', adErr);
-        }
       } catch {
         // Not native platform
       }

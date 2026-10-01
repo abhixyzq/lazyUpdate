@@ -87,21 +87,13 @@ export default function PrivacyAndDisclaimerPage() {
               </div>
             </div>
 
-            {/* 3. Third-Party Services & Google AdMob */}
+            {/* 3. 100% Ad-Free & Clean Experience */}
             <div className="flex items-start gap-3 rounded-2xl bg-slate-50/80 border border-slate-200/80 p-3.5">
               <Cpu className="h-4 w-4 text-indigo-600 shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-black text-slate-900 text-xs">Third-Party Services & Google AdMob</h4>
+                <h4 className="font-black text-slate-900 text-xs">100% Ad-Free Experience</h4>
                 <p className="mt-1 text-[11px] text-slate-500 leading-normal">
-                  To provide free open access to educational content, Lazy PU displays banner ads via <strong>Google AdMob</strong>. The AdMob SDK may collect anonymous device information, standard advertising identifiers (such as Google Advertising ID), and crash reports to deliver relevant ads and detect fraud, governed by{' '}
-                  <a
-                    href="https://policies.google.com/privacy"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold underline text-blue-600 inline-flex items-center gap-0.5"
-                  >
-                    Google&apos;s Privacy Policy <ExternalLink className="h-2.5 w-2.5 inline" />
-                  </a>.
+                  Lazy PU is committed to providing a clean, distraction-free educational environment. The application does not display third-party advertisements, does not include advertising SDKs, and does not sell or share student data with advertising networks.
                 </p>
               </div>
             </div>
@@ -112,7 +104,7 @@ export default function PrivacyAndDisclaimerPage() {
               <div>
                 <h4 className="font-black text-slate-900 text-xs">App Permissions Explained</h4>
                 <p className="mt-1 text-[11px] text-slate-500 leading-normal">
-                  • <strong>Internet Access (INTERNET / ACCESS_NETWORK_STATE):</strong> Required to fetch authentic syllabus PDFs, real-time Samarth circulars, and display AdMob banners.<br />
+                  • <strong>Internet Access (INTERNET / ACCESS_NETWORK_STATE):</strong> Required to fetch authentic syllabus PDFs and real-time circulars.<br />
                   • <strong>Notifications (POST_NOTIFICATIONS):</strong> Optional permission used solely to deliver alerts about urgent university circulars, admission deadlines, and exam schedules.<br />
                   • <strong>Exact Alarms (SCHEDULE_EXACT_ALARM):</strong> Used strictly for user-scheduled timetable reminders.
                 </p>
