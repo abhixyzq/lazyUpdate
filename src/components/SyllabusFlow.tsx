@@ -28,7 +28,7 @@ import {
   Clock,
   Check,
 } from 'lucide-react';
-import { CampusPartnerBanner } from './CampusPartnerBanner';
+import { getAmazonSearchUrl } from '@/utils/amazon';
 
 interface SyllabusFlowProps {
   onBackToHome?: () => void;
@@ -1046,15 +1046,33 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                     </p>
                   )}
 
-                  {/* Recommended Textbooks */}
+                  {/* Recommended Textbooks with Amazon Links */}
                   {activePaper.recommendedBooks && activePaper.recommendedBooks.length > 0 && (
-                    <div className="rounded-xl border border-blue-900/60 bg-[#061426] p-3 text-xs space-y-1">
-                      <span className="font-bold text-cyan-400 block text-xs">📚 Recommended Textbooks:</span>
-                      <ul className="list-disc pl-4 text-slate-300 space-y-0.5 text-[11px]">
+                    <div className="rounded-xl border border-blue-900/60 bg-[#061426] p-3 text-xs space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-cyan-400 block text-xs">📚 Recommended Textbooks:</span>
+                        <span className="text-[10px] text-slate-400 hidden sm:inline">Direct Amazon links</span>
+                      </div>
+                      <div className="space-y-1.5 text-[11px]">
                         {activePaper.recommendedBooks.map((book, idx) => (
-                          <li key={idx}>{book}</li>
+                          <div
+                            key={idx}
+                            className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 p-2 rounded-lg bg-[#040e1c] border border-blue-950/80 hover:border-blue-900/80 transition"
+                          >
+                            <span className="text-slate-300 leading-snug">{book}</span>
+                            <a
+                              href={getAmazonSearchUrl(book)}
+                              target="_blank"
+                              rel="noopener noreferrer sponsored"
+                              className="inline-flex items-center gap-1 shrink-0 self-start sm:self-center rounded-md border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 px-2 py-0.5 text-[10px] font-bold transition active:scale-95"
+                              title="Search and buy on Amazon India"
+                            >
+                              <span>Buy on Amazon</span>
+                              <ExternalLink className="h-2.5 w-2.5 text-amber-400" />
+                            </a>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -1099,9 +1117,6 @@ export const SyllabusFlow: React.FC<SyllabusFlowProps> = ({
                   <Share2 className="h-4 w-4" /> WhatsApp Share
                 </button>
               </div>
-
-              {/* In-Page Campus Partner / Sponsored Banner */}
-              <CampusPartnerBanner sourcePage="syllabus" />
             </div>
           )}
         </div>

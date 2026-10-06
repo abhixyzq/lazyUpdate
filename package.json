@@ -1,6 +1,6 @@
 {
-  "name": "temp-app",
-  "version": "1.0.0",
+  "name": "lazy-pu",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "cap:sync": "next build && npx cap sync",
-    "cap:open": "npx cap open android"
+    "cap:open": "npx cap open android",
+    "build:aab": "next build && npx cap sync android && cd android && .\\gradlew bundleRelease",
+    "build:apk": "next build && npx cap sync android && cd android && .\\gradlew assembleRelease"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.2",

@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { SubpageHeader } from '@/components/SubpageHeader';
-import { CampusPartnerBanner } from '@/components/CampusPartnerBanner';
 import { 
   Search, 
   RotateCw, 
@@ -461,11 +460,6 @@ export default function NoticesPage() {
               <span>Back to Home</span>
             </Link>
           </div>
-        </div>
-
-        {/* Campus Partner Sponsor Banner */}
-        <div className="pt-1">
-          <CampusPartnerBanner sourcePage="notices" />
         </div>
 
       </main>

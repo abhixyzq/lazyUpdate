@@ -243,3 +243,55 @@ begin
 end;
 $$ language plpgsql security definer;
 
+-- ==========================================================
+-- 9. Table for Community Contributors & Student Supporters
+-- ==========================================================
+create table if not exists public.contributors (
+  id text primary key,
+  name text not null,
+  college text not null,
+  course text default '',
+  role text default 'Supporter',
+  badge text default '',
+  amount numeric default 0,
+  message text default '',
+  created_at timestamptz default now()
+);
+
+alter table public.contributors enable row level security;
+
+-- Drop any previous restrictive policies
+drop policy if exists "Allow public read contributors" on public.contributors;
+drop policy if exists "Allow public insert contributors" on public.contributors;
+drop policy if exists "Allow admin manage contributors" on public.contributors;
+drop policy if exists "Allow public update contributors" on public.contributors;
+drop policy if exists "Allow public delete contributors" on public.contributors;
+drop policy if exists "Allow all operations on contributors" on public.contributors;
+
+-- Full CRUD permissions for Contributors (Select, Insert, Update, Delete)
+create policy "Allow all operations on contributors"
+  on public.contributors
+  for all
+  using (true)
+  with check (true);
+
+-- Stored procedure to delete a single contributor by ID (bypasses RLS)
+create or replace function delete_contributor_by_id(target_id text)
+returns boolean as $$
+begin
+  delete from public.contributors where id = target_id;
+  return true;
+end;
+$$ language plpgsql security definer;
+
+-- Stored procedure to delete all dummy/test contributors (bypasses RLS)
+create or replace function delete_all_contributors()
+returns boolean as $$
+begin
+  delete from public.contributors;
+  return true;
+end;
+$$ language plpgsql security definer;
+
+
+

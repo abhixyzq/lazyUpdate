@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { ExternalLink, Send, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
+import { ExternalLink, Send, ShieldCheck, Heart } from 'lucide-react';
 import { WhatsAppIcon } from './OfficialBrandIcons';
 
 interface FooterProps {
@@ -139,8 +140,24 @@ export const Footer: React.FC<FooterProps> = ({
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800/80 pt-4 text-[11px] text-slate-500 dark:text-slate-400">
           <p>© 2026 LazyUpdate.tech — Patna University Student Portal</p>
-          <div className="flex items-center gap-3">
-            <span>Fast • Mobile-First • Direct Links</span>
+          <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+            <Link
+              href="/contributors"
+              className="inline-flex items-center gap-1 font-bold text-rose-600 hover:text-rose-700 dark:text-rose-400 transition"
+            >
+              <Heart className="h-3 w-3 fill-rose-500 text-rose-500" />
+              <span>Contributors & Supporters</span>
+            </Link>
+            <span>•</span>
+            <Link href="/privacy" className="hover:text-blue-600 dark:hover:text-blue-400 transition">
+              Privacy Policy
+            </Link>
+            <span>•</span>
+            <Link href="/admin" className="hover:text-slate-800 dark:hover:text-slate-200 transition">
+              Admin
+            </Link>
+            <span>•</span>
+            <span>Fast • Ad-Free</span>
           </div>
         </div>
 

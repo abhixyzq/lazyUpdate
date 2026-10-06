@@ -46,5 +46,7 @@ scratch/
 
 # android bundles & keys
 *.aab
+*.apk
+release/
 *.keystore
 public/playstore-assets/*.aab

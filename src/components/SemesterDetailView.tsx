@@ -10,9 +10,11 @@ import {
   CheckCircle2,
   Sparkles,
   Info,
+  ExternalLink,
 } from 'lucide-react';
 import { formatUnitTopics } from '@/utils/syllabusTopicParser';
 import { TopicActionModal } from './TopicActionModal';
+import { getAmazonSearchUrl } from '@/utils/amazon';
 
 interface SemesterDetailViewProps {
   course: CourseSyllabus;
@@ -365,17 +367,40 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
               </div>
             )}
 
-            {/* Recommended Reference Books (Clean Minimal List) */}
+            {/* Recommended Reference Books with Amazon Affiliate Links */}
             {activePaper.recommendedBooks && activePaper.recommendedBooks.length > 0 && (
-              <div className="pt-3 border-t border-slate-100 space-y-1.5">
-                <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
-                  Reference Books:
-                </span>
-                <ul className="space-y-1 text-xs text-slate-700 pl-4 list-disc marker:text-amber-500">
+              <div className="pt-3 border-t border-slate-100 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
+                    Reference Books:
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-medium hidden sm:inline">
+                    Direct Amazon links available
+                  </span>
+                </div>
+                <div className="space-y-1.5">
                   {activePaper.recommendedBooks.map((book, bIdx) => (
-                    <li key={bIdx}>{book}</li>
+                    <div
+                      key={bIdx}
+                      className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 p-2 rounded-xl bg-slate-50/80 hover:bg-slate-100/70 border border-slate-200/60 transition group"
+                    >
+                      <div className="flex items-start gap-2 text-xs text-slate-800">
+                        <span className="text-amber-500 font-bold shrink-0 mt-0.5">•</span>
+                        <span className="leading-snug">{book}</span>
+                      </div>
+                      <a
+                        href={getAmazonSearchUrl(book)}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="inline-flex items-center gap-1 shrink-0 self-start sm:self-center rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 px-2.5 py-1 text-[11px] font-bold shadow-2xs transition active:scale-95"
+                        title="Search & buy on Amazon India"
+                      >
+                        <span>Buy on Amazon</span>
+                        <ExternalLink className="h-3 w-3 text-amber-600" />
+                      </a>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
           </div>
