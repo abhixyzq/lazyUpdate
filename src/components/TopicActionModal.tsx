@@ -73,13 +73,13 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
 
         {/* Header with Topic Details */}
         <div className="pb-3 border-b border-slate-100 pr-6">
-          <span className="text-[10px] font-black uppercase tracking-wider text-blue-600">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-700">
             {paperName}
           </span>
-          <h3 className="text-sm sm:text-base font-black text-slate-900 leading-snug mt-0.5">
+          <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug mt-0.5">
             {topic}
           </h3>
-          <span className="text-[11px] font-semibold text-slate-500 block mt-0.5">
+          <span className="text-[11px] font-medium text-slate-500 block mt-0.5">
             {courseName}
           </span>
         </div>
@@ -93,36 +93,36 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}
-            className="flex items-center justify-between rounded-2xl border border-rose-200 bg-rose-50/70 p-3.5 hover:bg-rose-100/80 active:scale-98 transition shadow-xs group"
+            className="flex items-center justify-between rounded-2xl border border-slate-200/80 bg-white p-3 hover:border-rose-300 hover:bg-rose-50/40 active:scale-98 transition shadow-2xs group"
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white border border-rose-200 shadow-2xs">
-                <YouTubeIcon className="h-5 w-5" />
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-rose-50 border border-rose-100">
+                <YouTubeIcon className="h-4 w-4" />
               </div>
               <div className="text-left">
-                <div className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-rose-700 transition">
+                <div className="text-xs font-semibold text-slate-900 group-hover:text-rose-700 transition">
                   Search on YouTube
                 </div>
-                <div className="text-[10px] text-slate-500 font-medium">
+                <div className="text-[10px] text-slate-400 font-normal">
                   Watch top video lectures & tutorials
                 </div>
               </div>
             </div>
-            <ExternalLink className="h-4 w-4 text-slate-400 group-hover:text-rose-600 transition shrink-0" />
+            <ExternalLink className="h-3.5 w-3.5 text-slate-300 group-hover:text-rose-600 transition shrink-0" />
           </a>
 
           {/* 2. Ask AI Option */}
-          <div className="rounded-2xl border border-indigo-200 bg-gradient-to-br from-indigo-50/80 via-white to-purple-50/60 p-3.5 shadow-xs space-y-2.5">
+          <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs space-y-2.5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 text-white shadow-xs">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-emerald-700 text-white shadow-2xs">
                   <Sparkles className="h-4 w-4" />
                 </div>
                 <div>
-                  <div className="text-xs sm:text-sm font-black text-slate-900">
+                  <div className="text-xs font-semibold text-slate-900">
                     Ask AI Explainer
                   </div>
-                  <div className="text-[10px] text-slate-500 font-medium">
+                  <div className="text-[10px] text-slate-400 font-normal">
                     Instant exam notes, concepts & answers
                   </div>
                 </div>
@@ -130,15 +130,15 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
             </div>
 
             {/* AI Action Buttons */}
-            <div className="grid grid-cols-2 gap-2 pt-1">
+            <div className="grid grid-cols-2 gap-2 pt-0.5">
               <a
                 href={geminiUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
-                className="flex items-center justify-center gap-1.5 rounded-xl border border-blue-200 bg-white py-2 px-2.5 text-[11px] font-black text-blue-700 hover:bg-blue-50 active:scale-95 transition shadow-2xs"
+                className="flex items-center justify-center gap-1.5 rounded-xl border border-slate-200/80 bg-slate-50 py-2 px-2.5 text-[11px] font-semibold text-slate-700 hover:bg-slate-100 active:scale-95 transition"
               >
-                <Sparkles className="h-3.5 w-3.5 text-blue-600" />
+                <Sparkles className="h-3.5 w-3.5 text-slate-600" />
                 <span>Google Gemini</span>
               </a>
 
@@ -147,9 +147,9 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
-                className="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200 bg-white py-2 px-2.5 text-[11px] font-black text-emerald-800 hover:bg-emerald-50 active:scale-95 transition shadow-2xs"
+                className="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200/70 bg-emerald-50/60 py-2 px-2.5 text-[11px] font-semibold text-emerald-800 hover:bg-emerald-100/60 active:scale-95 transition"
               >
-                <Bot className="h-3.5 w-3.5 text-emerald-600" />
+                <Bot className="h-3.5 w-3.5 text-emerald-700" />
                 <span>ChatGPT</span>
               </a>
             </div>
@@ -181,38 +181,38 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
               onToggleComplete();
               onClose();
             }}
-            className={`w-full flex items-center justify-between rounded-2xl border p-3.5 active:scale-98 transition shadow-xs ${
+            className={`w-full flex items-center justify-between rounded-2xl border p-3 active:scale-98 transition shadow-2xs ${
               isCompleted
-                ? 'border-emerald-300 bg-emerald-50/80 text-emerald-950'
-                : 'border-slate-200 bg-slate-50 hover:bg-white text-slate-800'
+                ? 'border-emerald-300 bg-emerald-50/70 text-emerald-950'
+                : 'border-slate-200/80 bg-white hover:bg-slate-50 text-slate-800'
             }`}
           >
             <div className="flex items-center gap-3">
               <div
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${
+                className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${
                   isCompleted
-                    ? 'bg-emerald-600 border-emerald-600 text-white'
-                    : 'bg-white border-slate-200 text-slate-400'
+                    ? 'bg-emerald-700 border-emerald-700 text-white'
+                    : 'bg-slate-50 border-slate-200 text-slate-400'
                 }`}
               >
-                <CheckCircle2 className="h-5 w-5" />
+                <CheckCircle2 className="h-4 w-4" />
               </div>
               <div className="text-left">
-                <div className="text-xs sm:text-sm font-black">
+                <div className="text-xs sm:text-sm font-semibold">
                   {isCompleted ? 'Marked as Completed ✓' : 'Mark as Completed'}
                 </div>
-                <div className="text-[10px] text-slate-500 font-medium">
+                <div className="text-[10px] text-slate-400 font-normal">
                   {isCompleted
                     ? 'Tap to unmark this topic'
-                    : 'Double-tap also marks this topic completed'}
+                    : 'Double-tap on topic also toggles completion'}
                 </div>
               </div>
             </div>
             <span
-              className={`rounded-full px-2 py-0.5 text-[10px] font-black ${
+              className={`rounded-full px-2.5 py-0.5 text-[10px] font-semibold ${
                 isCompleted
-                  ? 'bg-emerald-200 text-emerald-900'
-                  : 'bg-slate-200 text-slate-700'
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'bg-slate-100 text-slate-600'
               }`}
             >
               {isCompleted ? 'Done' : 'Pending'}

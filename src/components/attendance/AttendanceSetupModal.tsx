@@ -150,11 +150,11 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-slate-100">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-200">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 border border-emerald-200">
               <GraduationCap className="h-5 w-5" />
             </div>
             <div>
-              <h3 className="text-base font-black text-slate-900">
+              <h3 className="text-base font-bold text-slate-900">
                 {initialProfile ? 'Edit Course & Subjects' : 'Attendance Setup'}
               </h3>
               <p className="text-[11px] text-slate-500 font-medium">
@@ -174,14 +174,14 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
         <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto space-y-4 pt-4 pr-1">
           {/* Step 1: Select Course */}
           <div className="space-y-1.5">
-            <label className="text-xs font-black uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
-              <BookOpen className="h-3.5 w-3.5 text-blue-600" />
+            <label className="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+              <BookOpen className="h-3.5 w-3.5 text-emerald-700" />
               1. Select Course / Program
             </label>
             <select
               value={selectedCourseId}
               onChange={(e) => handleCourseChange(e.target.value)}
-              className="w-full rounded-2xl border border-slate-300 bg-slate-50/80 px-3.5 py-2.5 text-xs font-bold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-none transition shadow-xs"
+              className="w-full rounded-2xl border border-slate-300 bg-slate-50/80 px-3.5 py-2.5 text-xs font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-hidden transition shadow-xs"
             >
               <optgroup label="Popular Patna University Courses">
                 {COURSE_PRESETS.filter((c) => c.id !== 'custom').map((c) => (
@@ -200,14 +200,14 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
                 value={customCourseName}
                 onChange={(e) => setCustomCourseName(e.target.value)}
                 required
-                className="mt-2 w-full rounded-2xl border border-blue-300 bg-blue-50/40 px-3.5 py-2 text-xs font-bold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-none transition"
+                className="mt-2 w-full rounded-2xl border border-emerald-300 bg-emerald-50/40 px-3.5 py-2 text-xs font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-hidden transition"
               />
             )}
           </div>
 
           {/* Step 2: Semester Selection */}
           <div className="space-y-1.5">
-            <label className="text-xs font-black uppercase tracking-wider text-slate-700">
+            <label className="text-xs font-semibold uppercase tracking-wider text-slate-700">
               2. Select Semester
             </label>
             <div className="grid grid-cols-4 sm:grid-cols-8 gap-1.5">
@@ -216,9 +216,9 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
                   type="button"
                   key={sem}
                   onClick={() => handleSemesterChange(sem)}
-                  className={`rounded-xl py-2 text-xs font-black transition border ${
+                  className={`rounded-xl py-2 text-xs font-semibold transition border ${
                     semester === sem
-                      ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                      ? 'bg-emerald-700 text-white border-emerald-700 shadow-xs'
                       : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                   }`}
                 >
@@ -308,19 +308,19 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
                 placeholder="Add new subject / lab name..."
                 value={newSubjectName}
                 onChange={(e) => setNewSubjectName(e.target.value)}
-                className="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-blue-500 focus:outline-none"
+                className="flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-emerald-600 focus:outline-hidden"
               />
               <input
                 type="text"
                 placeholder="Code (optional)"
                 value={newSubjectCode}
                 onChange={(e) => setNewSubjectCode(e.target.value)}
-                className="w-24 rounded-xl border border-slate-200 bg-white px-2 py-2 text-xs font-medium text-slate-900 focus:border-blue-500 focus:outline-none"
+                className="w-24 rounded-xl border border-slate-200 bg-white px-2 py-2 text-xs font-medium text-slate-900 focus:border-emerald-600 focus:outline-hidden"
               />
               <button
                 type="button"
                 onClick={handleAddSubject}
-                className="flex items-center gap-1 rounded-xl bg-slate-900 px-3 py-2 text-xs font-bold text-white hover:bg-slate-800 transition"
+                className="flex items-center gap-1 rounded-xl bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-slate-800 transition"
               >
                 <Plus className="h-3.5 w-3.5" /> Add
               </button>
@@ -332,13 +332,13 @@ export const AttendanceSetupModal: React.FC<AttendanceSetupModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="flex-1 rounded-2xl border border-slate-200 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-50 transition"
+              className="flex-1 rounded-2xl border border-slate-200 py-2.5 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="flex-2 flex items-center justify-center gap-1.5 rounded-2xl bg-blue-600 py-2.5 text-xs font-black text-white hover:bg-blue-700 shadow-md shadow-blue-500/20 active:scale-95 transition"
+              className="flex-2 flex items-center justify-center gap-1.5 rounded-2xl bg-emerald-700 py-2.5 text-xs font-semibold text-white hover:bg-emerald-800 shadow-md shadow-emerald-700/20 active:scale-95 transition"
             >
               <span>{initialProfile ? 'Save Changes' : 'Start Tracking Attendance'}</span>
               <ArrowRight className="h-3.5 w-3.5" />

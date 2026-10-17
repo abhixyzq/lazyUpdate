@@ -24,8 +24,20 @@ function stripLeadingBullet(str: string): string {
   return str.trim();
 }
 
+export function stripHindiTranslations(str: string): string {
+  if (!str || typeof str !== 'string') return '';
+  // If text contains English characters, strip parenthesized or delimited Devanagari Hindi translations
+  if (/[a-zA-Z]/.test(str)) {
+    str = str.replace(/\s*\([^\)]*[\u0900-\u097F]+[^\)]*\)/g, '');
+    str = str.replace(/\s*\[[^\]]*[\u0900-\u097F]+[^\]]*\]/g, '');
+    str = str.replace(/\s*[\/\-–]\s*[\u0900-\u097F\s,.\-–/:;0-9]+$/g, '');
+  }
+  return str.trim();
+}
+
 function cleanTopic(t: string): string {
   if (!t) return '';
+  t = stripHindiTranslations(t);
   t = stripLeadingBullet(t);
   // Remove trailing punctuation
   t = t.replace(/[\s,;:\.]+$/, '');

@@ -13,6 +13,7 @@ import {
   X,
   Shield,
 } from 'lucide-react';
+import { BottomNav } from '@/components/BottomNav';
 
 export default function ContributorsPage() {
   const [contributors, setContributors] = useState<ContributorItem[]>([]);
@@ -181,7 +182,7 @@ export default function ContributorsPage() {
                     setSearchQuery('');
                     setSelectedCollege('All');
                   }}
-                  className="mt-2 text-xs text-blue-600 hover:underline font-medium"
+                  className="mt-2 text-xs text-emerald-700 hover:underline font-semibold"
                 >
                   Clear all filters
                 </button>
@@ -257,6 +258,9 @@ export default function ContributorsPage() {
         </div>
 
       </main>
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 }

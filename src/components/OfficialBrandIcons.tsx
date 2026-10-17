@@ -90,3 +90,46 @@ export const YouTubeIcon: React.FC<{ className?: string }> = ({ className = 'h-5
     <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
   </svg>
 );
+
+// 7. Monochrome Black & White WhatsApp Icon
+export const WhatsAppMonoIcon: React.FC<{ className?: string }> = ({
+  className = 'h-5 w-5 shrink-0',
+}) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    className={className}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Black Speech Bubble */}
+    <path
+      fill="#000000"
+      d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"
+    />
+    {/* Crisp Pure White Telephone Handset */}
+    <path
+      fill="#FFFFFF"
+      d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"
+    />
+  </svg>
+);
+
+// 8. Monochrome Black & White Instagram Icon
+export const InstagramMonoIcon: React.FC<{ className?: string }> = ({
+  className = 'h-5 w-5 shrink-0',
+}) => (
+  <svg
+    viewBox="0 0 24 24"
+    className={className}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Black Rounded Squircle */}
+    <rect x="2" y="2" width="20" height="20" rx="5.5" fill="#000000" />
+    {/* Crisp Pure White Camera Glyph */}
+    <rect x="6.5" y="6.5" width="11" height="11" rx="3" stroke="#FFFFFF" strokeWidth="1.8" />
+    <circle cx="12" cy="12" r="2.8" stroke="#FFFFFF" strokeWidth="1.8" />
+    <circle cx="15.5" cy="8.5" r="0.8" fill="#FFFFFF" />
+  </svg>
+);

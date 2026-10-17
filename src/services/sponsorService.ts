@@ -2,7 +2,7 @@
 
 import { supabase } from '@/lib/supabase';
 
-export type AdTargetPage = 'all' | 'home' | 'syllabus' | 'notices' | 'extras';
+export type AdTargetPage = 'all' | 'home' | 'syllabus' | 'notices' | 'tools' | 'extras';
 
 export interface Sponsor {
   id: string;
@@ -56,6 +56,7 @@ export const DEFAULT_PLACEMENT_PRICING: SponsorPlacementPricing = {
   home: { starter_7d: 699, growth_30d: 1999, semester_90d: 4999 },
   syllabus: { starter_7d: 499, growth_30d: 1499, semester_90d: 3499 },
   notices: { starter_7d: 399, growth_30d: 1199, semester_90d: 2999 },
+  tools: { starter_7d: 299, growth_30d: 899, semester_90d: 2199 },
   extras: { starter_7d: 299, growth_30d: 899, semester_90d: 2199 },
   all: { starter_7d: 999, growth_30d: 2999, semester_90d: 7499 },
 };
@@ -275,6 +276,7 @@ export async function getAllActiveSponsorsByPlacementAsync(): Promise<Record<AdT
     home: null,
     syllabus: null,
     notices: null,
+    tools: null,
     extras: null,
     all: null,
   };

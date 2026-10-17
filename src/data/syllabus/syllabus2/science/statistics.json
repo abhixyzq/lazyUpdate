@@ -16,7 +16,7 @@
         {
           "id": "stat-mjc-1",
           "code": "MJC-1",
-          "name": "Descriptive Statistics (वर्णनात्मक सांख्यिकी)",
+          "name": "Descriptive Statistics",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -112,7 +112,7 @@
         {
           "id": "stat-mic-1",
           "code": "MIC-1",
-          "name": "Introduction to Statistics (सांख्यिकी का परिचय)",
+          "name": "Introduction to Statistics",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -195,7 +195,7 @@
         {
           "id": "stat-mdc-1",
           "code": "MDC-1",
-          "name": "Basics of Statistics (सांख्यिकी की मूल बातें)",
+          "name": "Basics of Statistics",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -315,7 +315,7 @@
         {
           "id": "stat-mjc-2",
           "code": "MJC-2",
-          "name": "Theory of Probability (प्रायिकता का सिद्धांत)",
+          "name": "Theory of Probability",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -407,7 +407,7 @@
         {
           "id": "stat-mic-2",
           "code": "MIC-2",
-          "name": "Probability Theory and Probability Distributions (प्रायिकता सिद्धांत और प्रायिकता वितरण)",
+          "name": "Probability Theory and Probability Distributions",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -489,7 +489,7 @@
         {
           "id": "stat-mdc-2",
           "code": "MDC-2",
-          "name": "Introductory Probability (प्रारंभिक प्रायिकता)",
+          "name": "Introductory Probability",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -729,7 +729,7 @@
         {
           "id": "stat-mjc-3",
           "code": "MJC-3",
-          "name": "Numerical Analysis & Sampling Distribution (संख्यात्मक विश्लेषण और नमूनाकरण वितरण)",
+          "name": "Numerical Analysis & Sampling Distribution",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -811,7 +811,7 @@
         {
           "id": "stat-mjc-4",
           "code": "MJC-4",
-          "name": "Real Analysis and Matrices (वास्तविक विश्लेषण और आव्यूह)",
+          "name": "Real Analysis and Matrices",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -902,7 +902,7 @@
         {
           "id": "stat-mic-3",
           "code": "MIC-3",
-          "name": "Introductory Numerical Analysis & Sampling Distribution (प्रारंभिक संख्यात्मक विश्लेषण और नमूनाकरण वितरण)",
+          "name": "Introductory Numerical Analysis & Sampling Distribution",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -976,7 +976,7 @@
         {
           "id": "stat-mdc-3",
           "code": "MDC-3",
-          "name": "Basics of Sampling Distribution and Test of Significance (नमूनाकरण वितरण और महत्व के परीक्षण की मूल बातें)",
+          "name": "Basics of Sampling Distribution and Test of Significance",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -1191,7 +1191,7 @@
         {
           "id": "stat-mjc-5",
           "code": "MJC-5",
-          "name": "Statistical Inference (सांख्यिकीय अनुमान)",
+          "name": "Statistical Inference",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1284,7 +1284,7 @@
         {
           "id": "stat-mjc-6",
           "code": "MJC-6",
-          "name": "Non- Parametric and Sequential Analysis (गैर-पैरामीट्रिक और अनुक्रमिक विश्लेषण)",
+          "name": "Non- Parametric and Sequential Analysis",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1358,7 +1358,7 @@
         {
           "id": "stat-mjc-7",
           "code": "MJC-7",
-          "name": "Demography & Vital Statistics (जनसांख्यिकी और महत्वपूर्ण सांख्यिकी)",
+          "name": "Demography & Vital Statistics",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1446,7 +1446,7 @@
         {
           "id": "stat-mic-4",
           "code": "MIC-4",
-          "name": "Introduction to Statistical Inference (सांख्यिकीय अनुमान का परिचय)",
+          "name": "Introduction to Statistical Inference",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -1547,7 +1547,7 @@
         {
           "id": "stat-mjc-8",
           "code": "MJC-8",
-          "name": "Survey Sampling & Indian Official Statistics (सर्वेक्षण नमूनाकरण और भारतीय आधिकारिक सांख्यिकी)",
+          "name": "Survey Sampling & Indian Official Statistics",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1636,7 +1636,7 @@
         {
           "id": "stat-mjc-9",
           "code": "MJC-9",
-          "name": "Statistical Computing using C and R (C और R का उपयोग करके सांख्यिकीय कंप्यूटिंग)",
+          "name": "Statistical Computing using C and R",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1753,7 +1753,7 @@
         {
           "id": "stat-mic-5",
           "code": "MIC-5",
-          "name": "Introduction to Survey Sampling and Indian Official Statistics (सर्वेक्षण नमूनाकरण और भारतीय आधिकारिक सांख्यिकी का परिचय)",
+          "name": "Introduction to Survey Sampling and Indian Official Statistics",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -1829,7 +1829,7 @@
         {
           "id": "stat-mic-6",
           "code": "MIC-6",
-          "name": "Basics of Statistical Computing Using C and R (C और R का उपयोग करके सांख्यिकीय कंप्यूटिंग की मूल बातें)",
+          "name": "Basics of Statistical Computing Using C and R",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -1946,7 +1946,7 @@
         {
           "id": "stat-mjc-10",
           "code": "MJC-10",
-          "name": "Linear Models (रैखिक मॉडल)",
+          "name": "Linear Models",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2023,7 +2023,7 @@
         {
           "id": "stat-mjc-11",
           "code": "MJC-11",
-          "name": "Design of Experiments (प्रयोगों का डिजाइन)",
+          "name": "Design of Experiments",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2106,7 +2106,7 @@
         {
           "id": "stat-mjc-12",
           "code": "MJC-12",
-          "name": "Index number & Time Series Analysis (सूचकांक संख्या और समय श्रृंखला विश्लेषण)",
+          "name": "Index number & Time Series Analysis",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2195,7 +2195,7 @@
         {
           "id": "stat-mic-7",
           "code": "MIC-7",
-          "name": "Introduction to Design of Experiments (प्रयोगों के डिजाइन का परिचय)",
+          "name": "Introduction to Design of Experiments",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -2272,7 +2272,7 @@
         {
           "id": "stat-mic-8",
           "code": "MIC-8",
-          "name": "Basics of Index Number and Time series Analysis (सूचकांक संख्या और समय श्रृंखला विश्लेषण की मूल बातें)",
+          "name": "Basics of Index Number and Time series Analysis",
           "paperType": "Minor (MIC)",
           "credits": 2,
           "theoryMarks": 70,
@@ -2353,7 +2353,7 @@
         {
           "id": "stat-mjc-13",
           "code": "MJC-13",
-          "name": "Statistical Quality Control (सांख्यिकीय गुणवत्ता नियंत्रण)",
+          "name": "Statistical Quality Control",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2431,7 +2431,7 @@
         {
           "id": "stat-mjc-14",
           "code": "MJC-14",
-          "name": "Research Methodology (शोध पद्धति)",
+          "name": "Research Methodology",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -2442,7 +2442,7 @@
         {
           "id": "stat-mjc-15",
           "code": "MJC-15",
-          "name": "Multivariate Analysis (बहुभिन्नराशीय विश्लेषण)",
+          "name": "Multivariate Analysis",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -2517,7 +2517,7 @@
         {
           "id": "stat-mic-9",
           "code": "MIC-9",
-          "name": "Introduction to Statistical Quality Control (सांख्यिकीय गुणवत्ता नियंत्रण का परिचय)",
+          "name": "Introduction to Statistical Quality Control",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2596,7 +2596,7 @@
         {
           "id": "stat-mjc-16",
           "code": "MJC-16",
-          "name": "Operations Research (संचालन अनुसंधान)",
+          "name": "Operations Research",
           "paperType": "Major (MJC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2681,7 +2681,7 @@
         {
           "id": "stat-mic-10",
           "code": "MIC-10",
-          "name": "Introductory Operations research (प्रारंभिक संचालन अनुसंधान)",
+          "name": "Introductory Operations research",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,

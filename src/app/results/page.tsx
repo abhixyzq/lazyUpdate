@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { fetchUgRegularResult } from '@/utils/puResultService';
 import { UgResultData } from '@/types/result';
+import { BottomNav } from '@/components/BottomNav';
 
 export default function ResultsPage() {
   const [rollInput, setRollInput] = useState('');
@@ -89,19 +90,19 @@ export default function ResultsPage() {
 
       <main className="mx-auto max-w-2xl px-3 pt-4 space-y-4">
         {/* Search & Lookup Section - hidden during print */}
-        <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-xs print:hidden space-y-4">
+        <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-2xs print:hidden space-y-4">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 border border-indigo-100">
-              <GraduationCap className="h-5 w-5" />
+            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 border border-emerald-100">
+              <GraduationCap className="h-5 w-5 stroke-[1.8]" />
             </span>
-            <h1 className="text-base sm:text-lg font-black text-slate-900 leading-tight">
+            <h1 className="text-base sm:text-lg font-bold text-slate-900 leading-tight">
               PU UG Regular Result
             </h1>
           </div>
 
           {/* Roll Input Form */}
           <div className="space-y-2">
-            <label htmlFor="rollNumberInput" className="block text-xs font-bold text-slate-700">
+            <label htmlFor="rollNumberInput" className="block text-xs font-semibold text-slate-700">
               Exam Roll Number (UG Regular 25-29)
             </label>
             <div className="flex flex-col sm:flex-row gap-2">
@@ -121,7 +122,7 @@ export default function ResultsPage() {
                     if (e.key === 'Enter') handleFetch();
                   }}
                   placeholder="Enter 11-digit roll (e.g. 12602404033)"
-                  className="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:border-indigo-500 focus:outline-hidden focus:ring-2 focus:ring-indigo-100 transition shadow-xs"
+                  className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-hidden focus:ring-1 focus:ring-emerald-200 transition shadow-2xs"
                 />
                 {rollInput && (
                   <button
@@ -142,7 +143,7 @@ export default function ResultsPage() {
                 type="button"
                 disabled={loading || !rollInput.trim()}
                 onClick={() => handleFetch()}
-                className="flex items-center justify-center gap-2 rounded-2xl bg-indigo-600 hover:bg-indigo-700 active:scale-98 disabled:opacity-50 disabled:pointer-events-none px-6 py-3 text-sm font-black text-white shadow-xs transition"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 active:scale-98 disabled:opacity-50 disabled:pointer-events-none px-6 py-3 text-sm font-semibold text-white shadow-2xs transition"
               >
                 {loading ? (
                   <>
@@ -151,7 +152,7 @@ export default function ResultsPage() {
                   </>
                 ) : (
                   <>
-                    <Search className="h-4 w-4" />
+                    <Search className="h-4 w-4 stroke-[2]" />
                     <span>Show Result</span>
                   </>
                 )}
@@ -470,13 +471,18 @@ export default function ResultsPage() {
         <div className="pt-2 text-center print:hidden">
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-800 transition"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-slate-700 transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             <span>Back to Home</span>
           </Link>
         </div>
       </main>
+
+      {/* Persistent Bottom Nav - hidden during print */}
+      <div className="print:hidden">
+        <BottomNav />
+      </div>
     </div>
   );
 }

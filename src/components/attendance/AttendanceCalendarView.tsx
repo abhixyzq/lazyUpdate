@@ -71,12 +71,12 @@ export const AttendanceCalendarView: React.FC<AttendanceCalendarViewProps> = ({
   };
 
   return (
-    <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-4">
+    <div className="rounded-2xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-4">
       {/* Month Navigator */}
       <div className="flex items-center justify-between pb-2 border-b border-slate-100">
         <div className="flex items-center gap-2">
-          <CalendarIcon className="h-4 w-4 text-blue-600" />
-          <h3 className="text-sm font-black text-slate-900">{monthName}</h3>
+          <CalendarIcon className="h-4 w-4 text-emerald-700" />
+          <h3 className="text-sm font-bold text-slate-900">{monthName}</h3>
         </div>
 
         <div className="flex items-center gap-1">
@@ -102,7 +102,7 @@ export const AttendanceCalendarView: React.FC<AttendanceCalendarViewProps> = ({
       {/* Weekday headers */}
       <div className="grid grid-cols-7 gap-1 text-center">
         {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => (
-          <span key={day} className="text-[10px] font-black uppercase text-slate-400 py-1">
+          <span key={day} className="text-[10px] font-bold uppercase text-slate-400 py-1">
             {day}
           </span>
         ))}
@@ -128,11 +128,11 @@ export const AttendanceCalendarView: React.FC<AttendanceCalendarViewProps> = ({
               type="button"
               key={dayNum}
               onClick={() => onSelectDate(dayKey)}
-              className={`relative flex h-10 flex-col items-center justify-center rounded-xl transition text-xs font-bold ${
+              className={`relative flex h-10 flex-col items-center justify-center rounded-xl transition text-xs font-semibold ${
                 isSelected
-                  ? 'bg-blue-600 text-white shadow-sm ring-2 ring-blue-600/30'
+                  ? 'bg-emerald-700 text-white shadow-xs ring-2 ring-emerald-600/30'
                   : isCurrentToday
-                  ? 'bg-blue-50 text-blue-800 border border-blue-200'
+                  ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
                   : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-100'
               }`}
             >

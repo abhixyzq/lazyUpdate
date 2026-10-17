@@ -239,9 +239,9 @@ export const StudentTimeTableBuilder: React.FC = () => {
           <button
             type="button"
             onClick={() => setViewMode('table')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-black transition ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
               viewMode === 'table'
-                ? 'bg-blue-600 text-white shadow-2xs'
+                ? 'bg-emerald-700 text-white shadow-2xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -250,9 +250,9 @@ export const StudentTimeTableBuilder: React.FC = () => {
           <button
             type="button"
             onClick={() => setViewMode('day')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-black transition ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
               viewMode === 'day'
-                ? 'bg-blue-600 text-white shadow-2xs'
+                ? 'bg-emerald-700 text-white shadow-2xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -387,7 +387,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => handleOpenAddModal(d.key)}
-                          className="p-1 rounded-lg border border-slate-200 text-slate-400 hover:text-blue-600 hover:border-blue-300 transition"
+                          className="p-1 rounded-lg border border-slate-200 text-slate-400 hover:text-emerald-700 hover:border-emerald-300 transition"
                           title={`Add class for ${d.full}`}
                         >
                           <Plus className="h-3.5 w-3.5" />
@@ -416,9 +416,9 @@ export const StudentTimeTableBuilder: React.FC = () => {
                   key={d.key}
                   type="button"
                   onClick={() => setSelectedDay(d.key)}
-                  className={`flex items-center gap-1.5 whitespace-nowrap rounded-xl py-2 px-3 text-xs font-black transition shrink-0 ${
+                  className={`flex items-center gap-1.5 whitespace-nowrap rounded-xl py-2 px-3 text-xs font-semibold transition shrink-0 ${
                     isSelected
-                      ? 'bg-blue-600 text-white shadow-xs'
+                      ? 'bg-emerald-700 text-white shadow-xs'
                       : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-50'
                   }`}
                 >
@@ -479,7 +479,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => handleOpenEditModal(slot)}
-                        className="rounded-lg border border-slate-200/80 bg-white/80 p-1.5 text-slate-600 hover:text-blue-600 hover:bg-white transition"
+                        className="rounded-lg border border-slate-200/80 bg-white/80 p-1.5 text-slate-600 hover:text-emerald-700 hover:bg-white transition"
                         title="Edit slot"
                       >
                         <Edit2 className="h-3.5 w-3.5" />
@@ -537,16 +537,16 @@ export const StudentTimeTableBuilder: React.FC = () => {
             <form onSubmit={handleSaveSlot} className="space-y-3 text-xs">
               {/* Day Selection */}
               <div>
-                <label className="block font-bold text-slate-700 mb-1">Day</label>
+                <label className="block font-semibold text-slate-700 mb-1">Day</label>
                 <div className="grid grid-cols-6 gap-1">
                   {DAYS.map((d) => (
                     <button
                       key={d.key}
                       type="button"
                       onClick={() => setFormDay(d.key)}
-                      className={`py-1.5 rounded-lg text-center font-black text-xs transition border ${
+                      className={`py-1.5 rounded-lg text-center font-semibold text-xs transition border ${
                         formDay === d.key
-                          ? 'bg-blue-600 text-white border-blue-600'
+                          ? 'bg-emerald-700 text-white border-emerald-700'
                           : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'
                       }`}
                     >
@@ -558,7 +558,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
 
               {/* Subject */}
               <div>
-                <label className="block font-bold text-slate-700 mb-1">
+                <label className="block font-semibold text-slate-700 mb-1">
                   Subject / Paper Name *
                 </label>
                 <input
@@ -567,18 +567,18 @@ export const StudentTimeTableBuilder: React.FC = () => {
                   value={formSubject}
                   onChange={(e) => setFormSubject(e.target.value)}
                   placeholder="e.g. Major MJC Physics / History"
-                  className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden"
+                  className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-medium focus:border-emerald-600 outline-hidden"
                 />
               </div>
 
               {/* Time */}
               <div>
-                <label className="block font-bold text-slate-700 mb-1">
+                <label className="block font-semibold text-slate-700 mb-1">
                   Time Slot *
                 </label>
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                    <label className="block text-[10px] font-semibold text-slate-600 mb-0.5">
                       Start Time
                     </label>
                     <input
@@ -586,11 +586,11 @@ export const StudentTimeTableBuilder: React.FC = () => {
                       required
                       value={formStartTime}
                       onChange={(e) => handleTimeChange(e.target.value, formEndTime)}
-                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden bg-white text-slate-800"
+                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-medium focus:border-emerald-600 outline-hidden bg-white text-slate-800"
                     />
                   </div>
                   <div>
-                    <label className="block text-[10px] font-bold text-slate-600 mb-0.5">
+                    <label className="block text-[10px] font-semibold text-slate-600 mb-0.5">
                       End Time
                     </label>
                     <input
@@ -598,12 +598,12 @@ export const StudentTimeTableBuilder: React.FC = () => {
                       required
                       value={formEndTime}
                       onChange={(e) => handleTimeChange(formStartTime, e.target.value)}
-                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden bg-white text-slate-800"
+                      className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-medium focus:border-emerald-600 outline-hidden bg-white text-slate-800"
                     />
                   </div>
                 </div>
                 {formTime && (
-                  <p className="mt-1 text-[11px] font-bold text-slate-600">
+                  <p className="mt-1 text-[11px] font-semibold text-slate-600">
                     Selected: {formTime}
                   </p>
                 )}
@@ -612,7 +612,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
               {/* Room & Teacher */}
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="block font-bold text-slate-700 mb-1">
+                  <label className="block font-semibold text-slate-700 mb-1">
                     Room No. (Opt)
                   </label>
                   <input
@@ -620,11 +620,11 @@ export const StudentTimeTableBuilder: React.FC = () => {
                     value={formRoom}
                     onChange={(e) => setFormRoom(e.target.value)}
                     placeholder="e.g. Room 104"
-                    className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden"
+                    className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-medium focus:border-emerald-600 outline-hidden"
                   />
                 </div>
                 <div>
-                  <label className="block font-bold text-slate-700 mb-1">
+                  <label className="block font-semibold text-slate-700 mb-1">
                     Teacher (Opt)
                   </label>
                   <input
@@ -632,7 +632,7 @@ export const StudentTimeTableBuilder: React.FC = () => {
                     value={formTeacher}
                     onChange={(e) => setFormTeacher(e.target.value)}
                     placeholder="e.g. Prof. Verma"
-                    className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-semibold focus:border-blue-500 outline-hidden"
+                    className="w-full rounded-xl border border-slate-200 py-2 px-3 text-xs font-medium focus:border-emerald-600 outline-hidden"
                   />
                 </div>
               </div>
@@ -642,13 +642,13 @@ export const StudentTimeTableBuilder: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsSlotModalOpen(false)}
-                  className="flex-1 rounded-xl border border-slate-200 py-2.5 font-bold text-slate-600 hover:bg-slate-50"
+                  className="flex-1 rounded-xl border border-slate-200 py-2.5 font-semibold text-slate-600 hover:bg-slate-50"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 rounded-xl bg-blue-600 hover:bg-blue-700 py-2.5 font-black text-white shadow-xs"
+                  className="flex-1 rounded-xl bg-emerald-700 hover:bg-emerald-800 py-2.5 font-semibold text-white shadow-xs"
                 >
                   {editingSlotId ? 'Update Slot' : 'Save Slot'}
                 </button>

@@ -9,12 +9,15 @@ import {
   ChevronRight,
   CheckCircle2,
   Sparkles,
-  Info,
   ExternalLink,
+  BookOpen,
+  Circle,
+  Layers,
 } from 'lucide-react';
-import { formatUnitTopics } from '@/utils/syllabusTopicParser';
+import { formatUnitTopics, stripHindiTranslations } from '@/utils/syllabusTopicParser';
 import { TopicActionModal } from './TopicActionModal';
 import { getAmazonSearchUrl } from '@/utils/amazon';
+import { BottomNav } from '@/components/BottomNav';
 
 interface SemesterDetailViewProps {
   course: CourseSyllabus;
@@ -52,7 +55,6 @@ const TopicItem: React.FC<TopicItemProps> = ({
     const touch = e.touches[0];
     startPosRef.current = { x: touch.clientX, y: touch.clientY };
 
-    // 450ms long press timer
     timerRef.current = setTimeout(() => {
       isLongPressActiveRef.current = true;
       if (typeof window !== 'undefined' && window.navigator && window.navigator.vibrate) {
@@ -127,24 +129,24 @@ const TopicItem: React.FC<TopicItemProps> = ({
         e.preventDefault();
         onLongPress();
       }}
-      className={`group relative flex items-start justify-between gap-2.5 rounded-xl p-2 sm:p-2.5 select-none cursor-pointer transition-all duration-150 ${
+      className={`group relative flex items-start justify-between gap-2.5 rounded-xl p-2 select-none cursor-pointer transition-all duration-150 ${
         isCompleted
-          ? 'bg-emerald-50/70 border border-emerald-200/90 shadow-2xs'
-          : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/80'
+          ? 'bg-emerald-50/60 border border-emerald-200/80'
+          : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/60'
       }`}
       title="Double-tap to mark complete • Long-press for YouTube & AI"
     >
       <div className="flex items-start gap-2.5 min-w-0 flex-1">
         {isCompleted ? (
-          <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5 stroke-[2.5]" />
+          <CheckCircle2 className="h-4 w-4 text-emerald-700 shrink-0 mt-0.5 stroke-[2.2]" />
         ) : (
-          <span className="text-slate-400 font-bold text-sm shrink-0 mt-0.5 leading-none">◦</span>
+          <Circle className="h-4 w-4 text-slate-300 shrink-0 mt-0.5 stroke-[1.5] group-hover:text-slate-400" />
         )}
         <span
           className={`text-xs leading-relaxed transition-all ${
             isCompleted
-              ? 'text-emerald-950 font-semibold line-through decoration-emerald-500/70'
-              : 'text-slate-800 font-medium'
+              ? 'text-emerald-950 font-medium line-through decoration-emerald-600/60'
+              : 'text-slate-700 font-normal'
           }`}
         >
           {topic}
@@ -152,7 +154,7 @@ const TopicItem: React.FC<TopicItemProps> = ({
       </div>
 
       {isCompleted && (
-        <span className="rounded-full bg-emerald-100 px-1.5 py-0.2 text-[9px] font-black text-emerald-800 shrink-0 self-center border border-emerald-200">
+        <span className="rounded-full bg-emerald-100/80 px-2 py-0.2 text-[9px] font-semibold text-emerald-800 shrink-0 self-center border border-emerald-200">
           Done ✓
         </span>
       )}
@@ -232,90 +234,116 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
   const nextSem = semesterNumber < course.totalSemesters ? semesterNumber + 1 : null;
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
+    <div className="min-h-screen bg-[#fafbfc] text-slate-900 pb-28 sm:pb-20">
       {/* 1. Header */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/95 backdrop-blur-md px-3 py-3">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-2.5">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
           <Link
             href={`/syllabus/${course.id}`}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 hover:text-slate-900 transition active:scale-95 shrink-0"
+            className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-300 hover:text-emerald-700 transition active:scale-95 shrink-0"
+            title={`Back to ${course.shortCode} Semesters`}
           >
             <ArrowLeft className="h-4 w-4" />
           </Link>
           <div className="text-center min-w-0 flex-1">
-            <h1 className="text-sm font-black text-slate-900 truncate">
+            <h1 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
               {course.shortCode} • {getOrdinal(semesterNumber)} Sem
             </h1>
-            <p className="text-[10px] font-bold text-blue-600 truncate">
-              {course.name}
+            <p className="text-[11px] font-medium text-emerald-700 truncate">
+              {stripHindiTranslations(course.name)}
             </p>
           </div>
           <Link
             href={`/syllabus/${course.id}`}
-            className="rounded-xl border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-[11px] font-bold text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition shrink-0"
+            className="rounded-xl border border-slate-200/80 bg-white px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:border-emerald-300 hover:text-emerald-700 transition shrink-0"
           >
             Semesters
           </Link>
         </div>
       </header>
 
-      <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
-        {/* Top Banner Card: Course & Semester */}
-        <div className="rounded-2xl border border-blue-200/80 bg-blue-50/60 p-3 sm:p-3.5 text-center shadow-xs">
-          <h2 className="text-xs sm:text-sm font-black text-blue-950 uppercase tracking-wide">
-            {course.name.replace(/\s*\((?:CBCS\s*)?(?:4-Year\s*)?(?:FYUGP\s*)?[^)]*\)/gi, '').trim()}
-          </h2>
-          <p className="text-[11px] font-bold text-blue-700 mt-0.5">
-            {getOrdinal(semesterNumber)} Semester Syllabus
-          </p>
+      <main className="mx-auto max-w-xl px-4 pt-4 space-y-4">
+        {/* Top Header Card */}
+        <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs">
+          <div className="flex items-center justify-between gap-2">
+            <div>
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+                {getOrdinal(semesterNumber)} Semester
+              </span>
+              <h2 className="text-sm font-bold text-slate-900 mt-1">
+                {stripHindiTranslations(course.name).replace(/\s*\((?:CBCS\s*)?(?:4-Year\s*)?(?:FYUGP\s*)?[^)]*\)/gi, '').trim()}
+              </h2>
+            </div>
+            <span className="text-[11px] font-medium text-slate-400 bg-slate-50 px-2.5 py-1 rounded-xl border border-slate-100 shrink-0">
+              {semesterData.papers.length} Papers
+            </span>
+          </div>
         </div>
 
-        {/* Section Heading */}
-        <div className="text-center pt-1">
-          <span className="text-xs font-black tracking-widest text-blue-600 uppercase">
-            Select Paper in this Semester
-          </span>
-        </div>
+        {/* Paper Tabs Selector (Clean Horizontal Scroll) */}
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between px-1">
+            <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+              Select Paper / Course
+            </span>
+            <span className="text-[11px] text-emerald-700 font-medium">
+              {activePaper?.code || ''}
+            </span>
+          </div>
 
-        {/* Linear Vertical Button List of Papers */}
-        <div className="flex flex-col gap-2">
-          {semesterData.papers.map((paper) => {
-            const isSelected = activePaper?.id === paper.id;
+          <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+            {semesterData.papers.map((paper) => {
+              const isSelected = activePaper?.id === paper.id;
 
-            return (
-              <button
-                key={paper.id}
-                type="button"
-                onClick={() => setActivePaperId(paper.id)}
-                className={`w-full rounded-2xl py-2.5 sm:py-3 px-4 text-center transition-all duration-150 active:scale-98 border text-xs sm:text-sm ${
-                  isSelected
-                    ? 'bg-amber-400 border-amber-500 text-slate-950 font-black shadow-md ring-2 ring-amber-400/40'
-                    : 'bg-white border-slate-200/90 text-slate-800 font-bold hover:bg-slate-50 hover:border-slate-300 shadow-2xs'
-                }`}
-              >
-                <span>
-                  {paper.code ? `${paper.code} : ` : ''}{paper.name}
-                </span>
-              </button>
-            );
-          })}
+              return (
+                <button
+                  key={paper.id}
+                  type="button"
+                  onClick={() => setActivePaperId(paper.id)}
+                  className={`whitespace-nowrap rounded-xl px-3.5 py-2 text-xs font-semibold transition-all duration-150 shrink-0 ${
+                    isSelected
+                      ? 'bg-emerald-700 text-white shadow-2xs'
+                      : 'bg-white border border-slate-200/80 text-slate-700 hover:border-slate-300 hover:bg-slate-50'
+                  }`}
+                >
+                  <span>{paper.code || stripHindiTranslations(paper.name)}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Active Paper Detailed View */}
         {activePaper ? (
-          <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-sm space-y-3.5 animate-in fade-in duration-150 mt-2">
-            
-            {/* Paper Title Header */}
-            <div className="text-center pb-2 border-b border-slate-100">
-              <h3 className="text-sm sm:text-base font-black text-blue-600 uppercase tracking-wide">
-                {activePaper.code ? `${activePaper.code} : ` : ''}{activePaper.name}
+          <div className="rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5 shadow-2xs space-y-4 animate-in fade-in duration-150">
+            {/* Paper Header */}
+            <div className="border-b border-slate-100 pb-3">
+              <div className="flex items-center gap-2 flex-wrap mb-1">
+                {activePaper.code && (
+                  <span className="rounded-md bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-800 border border-emerald-200/60">
+                    {activePaper.code}
+                  </span>
+                )}
+                {activePaper.credits && (
+                  <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+                    {activePaper.credits} Credits
+                  </span>
+                )}
+                {activePaper.paperType && (
+                  <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-600">
+                    {activePaper.paperType}
+                  </span>
+                )}
+              </div>
+              <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                {stripHindiTranslations(activePaper.name)}
               </h3>
             </div>
 
-            {/* Gesture Hint Strip */}
-            <div className="rounded-xl border border-amber-200/80 bg-amber-50/60 py-1.5 px-3 flex items-center justify-center gap-1.5 text-[10px] sm:text-[11px] font-bold text-amber-900">
-              <Sparkles className="h-3 w-3 text-amber-600 shrink-0" />
-              <span>Double-tap topic to mark complete • Long-press for YouTube & AI</span>
+            {/* Gesture Hint Strip (Lightweight) */}
+            <div className="rounded-xl border border-emerald-100 bg-emerald-50/50 py-2 px-3 flex items-center gap-2 text-[11px] font-medium text-emerald-900">
+              <Sparkles className="h-3.5 w-3.5 text-emerald-700 shrink-0" />
+              <span>Double-tap any topic to mark complete • Long-press for AI explainer</span>
             </div>
 
             {/* Units & Topics List */}
@@ -325,17 +353,19 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                   const topics = formatUnitTopics(unit.topics);
                   return (
                     <div key={unit.unitNumber} className="space-y-2">
-                      {/* Unit Title with Bullet */}
-                      <div className="flex items-center gap-2 font-black text-xs sm:text-sm text-amber-800">
-                        <span className="h-2 w-2 rounded-full bg-amber-500 shrink-0" />
-                        <span>
-                          Unit {unit.unitNumber}: {unit.title}
+                      {/* Unit Title Header */}
+                      <div className="flex items-center gap-2">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-md bg-emerald-50 text-emerald-800 text-[10px] font-bold border border-emerald-200/50 shrink-0">
+                          {unit.unitNumber}
                         </span>
+                        <h4 className="font-semibold text-xs sm:text-sm text-slate-900">
+                          Unit {unit.unitNumber}: {stripHindiTranslations(unit.title)}
+                        </h4>
                       </div>
 
                       {/* Sub-topics interactive list */}
                       {topics && topics.length > 0 && (
-                        <div className="pl-2 sm:pl-3 space-y-1">
+                        <div className="pl-2 space-y-0.5">
                           {topics.map((topic, tIdx) => {
                             const key = getTopicKey(unit.unitNumber, tIdx, topic);
                             const isCompleted = completedTopicKeys.has(key);
@@ -358,7 +388,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                 })}
               </div>
             ) : (
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center text-xs text-slate-500 font-medium">
+              <div className="rounded-xl border border-slate-200/80 bg-slate-50/70 p-4 text-center text-xs text-slate-500 font-normal">
                 {activePaper.paperType === 'Internship'
                   ? 'Summer Internship Paper — Practical evaluation & viva.'
                   : activePaper.paperType === 'Research Project'
@@ -367,36 +397,36 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
               </div>
             )}
 
-            {/* Recommended Reference Books with Amazon Affiliate Links */}
+            {/* Recommended Reference Books */}
             {activePaper.recommendedBooks && activePaper.recommendedBooks.length > 0 && (
-              <div className="pt-3 border-t border-slate-100 space-y-2">
+              <div className="pt-3 border-t border-slate-100 space-y-2.5">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
-                    Reference Books:
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
+                    Recommended Textbooks:
                   </span>
-                  <span className="text-[10px] text-slate-400 font-medium hidden sm:inline">
-                    Direct Amazon links available
+                  <span className="text-[10px] text-slate-400 font-normal hidden sm:inline">
+                    Direct Amazon search
                   </span>
                 </div>
                 <div className="space-y-1.5">
                   {activePaper.recommendedBooks.map((book, bIdx) => (
                     <div
                       key={bIdx}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 p-2 rounded-xl bg-slate-50/80 hover:bg-slate-100/70 border border-slate-200/60 transition group"
+                      className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50/60 hover:bg-slate-50 border border-slate-200/60 transition group"
                     >
-                      <div className="flex items-start gap-2 text-xs text-slate-800">
-                        <span className="text-amber-500 font-bold shrink-0 mt-0.5">•</span>
-                        <span className="leading-snug">{book}</span>
+                      <div className="flex items-start gap-2 text-xs text-slate-800 min-w-0">
+                        <BookOpen className="h-3.5 w-3.5 text-slate-400 shrink-0 mt-0.5" />
+                        <span className="leading-snug font-medium truncate">{book}</span>
                       </div>
                       <a
                         href={getAmazonSearchUrl(book)}
                         target="_blank"
                         rel="noopener noreferrer sponsored"
-                        className="inline-flex items-center gap-1 shrink-0 self-start sm:self-center rounded-lg border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 px-2.5 py-1 text-[11px] font-bold shadow-2xs transition active:scale-95"
+                        className="inline-flex items-center gap-1 shrink-0 self-start sm:self-center rounded-lg border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 px-2.5 py-1 text-[11px] font-medium shadow-2xs transition active:scale-95"
                         title="Search & buy on Amazon India"
                       >
                         <span>Buy on Amazon</span>
-                        <ExternalLink className="h-3 w-3 text-amber-600" />
+                        <ExternalLink className="h-2.5 w-2.5 text-slate-400" />
                       </a>
                     </div>
                   ))}
@@ -411,13 +441,13 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         )}
 
         {/* Quick Prev / Next Semester Switcher */}
-        <div className="flex items-center justify-between gap-3 pt-2">
+        <div className="flex items-center justify-between gap-3 pt-1">
           {prevSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${prevSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 hover:text-slate-900 hover:border-slate-300 shadow-xs transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 shadow-2xs transition"
             >
-              <ChevronLeft className="h-3.5 w-3.5 text-blue-600" />
+              <ChevronLeft className="h-3.5 w-3.5" />
               <span>{getOrdinal(prevSem)} Semester</span>
             </Link>
           ) : (
@@ -427,10 +457,10 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           {nextSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${nextSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-bold text-slate-700 hover:text-slate-900 hover:border-slate-300 shadow-xs transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 shadow-2xs transition"
             >
               <span>{getOrdinal(nextSem)} Semester</span>
-              <ChevronRight className="h-3.5 w-3.5 text-blue-600" />
+              <ChevronRight className="h-3.5 w-3.5" />
             </Link>
           ) : (
             <div />
@@ -441,7 +471,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         <div className="pt-2 text-center">
           <Link
             href={`/syllabus/${course.id}`}
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-900 transition"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-emerald-700 transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to {course.shortCode} Semesters
@@ -454,18 +484,16 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         <TopicActionModal
           isOpen={Boolean(modalTopic)}
           onClose={() => setModalTopic(null)}
-          topic={modalTopic}
-          courseName={course.name.replace(/\s*\((?:CBCS\s*)?(?:4-Year\s*)?(?:FYUGP\s*)?[^)]*\)/gi, '').trim()}
-          paperName={activePaper?.name || 'Syllabus Paper'}
+          topic={stripHindiTranslations(modalTopic)}
+          courseName={stripHindiTranslations(course.name).replace(/\s*\((?:CBCS\s*)?(?:4-Year\s*)?(?:FYUGP\s*)?[^)]*\)/gi, '').trim()}
+          paperName={stripHindiTranslations(activePaper?.name || 'Syllabus Paper')}
           isCompleted={(() => {
-            // Check if active topic is completed
             for (const key of completedTopicKeys) {
               if (key.includes(modalTopic.slice(0, 30))) return true;
             }
             return false;
           })()}
           onToggleComplete={() => {
-            // Find key and toggle
             let targetKey = '';
             activePaper?.units?.forEach((unit) => {
               const topics = formatUnitTopics(unit.topics);
@@ -481,6 +509,9 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           }}
         />
       )}
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 };

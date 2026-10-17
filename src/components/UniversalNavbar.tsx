@@ -2,18 +2,22 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { ChevronLeft, Menu } from 'lucide-react';
 import { SideDrawer } from './SideDrawer';
 
 interface UniversalNavbarProps {
   pageTitle?: string;
   onOpenMenu?: () => void;
+  showBack?: boolean;
 }
 
 export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
   pageTitle = 'Lazy PU',
   onOpenMenu,
+  showBack = true,
 }) => {
+  const router = useRouter();
   const [internalDrawerOpen, setInternalDrawerOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -26,32 +30,41 @@ export const UniversalNavbar: React.FC<UniversalNavbarProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full bg-white/90 backdrop-blur-md px-4 py-3 sm:px-6 shadow-xs border-b border-slate-200/90">
-        <div className="mx-auto flex max-w-xl items-center justify-between">
+      <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md px-3 py-2.5 sm:px-6 shadow-2xs border-b border-slate-100">
+        <div className="mx-auto flex max-w-xl items-center justify-between gap-2">
           
-          {/* Left: Official Lazy PU Mascot Logo Sticker */}
-          <Link href="/" className="flex items-center shrink-0 hover:opacity-90 transition">
-            <img
-              src="/lazy-pu-logo.png"
-              alt="Lazy PU Logo"
-              className="h-10 sm:h-11 w-auto object-contain transition-transform hover:scale-105 active:scale-95 cursor-pointer"
-            />
-          </Link>
+          {/* Left: Back Arrow or Lazy PU Branding */}
+          <div className="flex items-center gap-2">
+            {showBack && (
+              <button
+                onClick={() => router.back()}
+                aria-label="Go Back"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white text-slate-600 hover:border-emerald-300 hover:text-emerald-700 active:scale-95 transition"
+              >
+                <ChevronLeft className="h-4 w-4 stroke-[2]" />
+              </button>
+            )}
+            <Link href="/" className="flex items-baseline gap-0.5 group">
+              <span className="text-base font-bold tracking-tight text-slate-900">
+                Lazy <span className="text-emerald-600 font-extrabold">PU</span>
+              </span>
+            </Link>
+          </div>
 
-          {/* Middle: Page Name in crisp, centered, high-contrast bold typography */}
+          {/* Middle: Page Title */}
           <div className="text-center px-2 flex-1 overflow-hidden">
-            <h1 className="text-base sm:text-lg font-black tracking-tight text-slate-900 truncate">
+            <h1 className="text-xs sm:text-sm font-semibold tracking-tight text-slate-800 truncate">
               {pageTitle}
             </h1>
           </div>
 
-          {/* Right: Hamburger Menu in rounded clean light card */}
+          {/* Right: Minimal Menu Button */}
           <button
             onClick={handleMenuClick}
             aria-label="Open Menu"
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-100/80 text-slate-700 hover:bg-slate-200 hover:text-slate-900 active:scale-95 transition"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200/80 bg-white text-slate-600 hover:border-emerald-300 hover:text-emerald-700 active:scale-95 transition"
           >
-            <Menu className="h-5 w-5 stroke-[2.5]" />
+            <Menu className="h-4 w-4 stroke-[1.8]" />
           </button>
 
         </div>

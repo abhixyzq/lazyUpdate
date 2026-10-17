@@ -1,70 +1,103 @@
 'use client';
 
 import React from 'react';
-import { Home, Calendar, MessageSquare, LayoutGrid } from 'lucide-react';
-
-export type MainTabType = 'updates' | 'syllabus' | 'results' | 'community';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Home, BookOpen, Megaphone, LayoutGrid, MoreHorizontal } from 'lucide-react';
 
 interface BottomNavProps {
-  activeTab: MainTabType;
-  setActiveTab: (tab: MainTabType) => void;
-  onOpenCommunity?: () => void;
-  onOpenDrawer: () => void;
+  onOpenDrawer?: () => void;
 }
 
-export const BottomNav: React.FC<BottomNavProps> = ({
-  activeTab,
-  setActiveTab,
-  onOpenCommunity,
-  onOpenDrawer,
-}) => {
+export const BottomNav: React.FC<BottomNavProps> = ({ onOpenDrawer }) => {
+  const pathname = usePathname();
+
+  const isHome = pathname === '/';
+  const isSyllabus = pathname.startsWith('/syllabus');
+  const isNotices = pathname.startsWith('/notices');
+  const isTools = pathname.startsWith('/tools');
+
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-slate-200/80 bg-white/95 px-2 py-2 backdrop-blur-md dark:border-slate-800 dark:bg-[#090d16]/95 transition-colors shadow-lg pb-[env(safe-area-inset-bottom,10px)]">
-      
+    <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-emerald-100/80 bg-white/90 px-2 py-1.5 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(16,185,129,0.07)] pb-[env(safe-area-inset-bottom,8px)]">
       {/* 1. Home */}
-      <button
-        onClick={() => setActiveTab('updates')}
-        className={`flex flex-col items-center justify-center flex-1 py-1 transition ${
-          activeTab === 'updates'
-            ? 'text-indigo-600 dark:text-indigo-400 font-extrabold'
-            : 'text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300'
+      <Link
+        href="/"
+        className={`flex flex-col items-center justify-center py-1 px-3 transition rounded-2xl ${
+          isHome ? 'text-emerald-900 font-bold' : 'text-slate-400 hover:text-slate-700'
         }`}
       >
-        <Home className={`h-5 w-5 ${activeTab === 'updates' ? 'stroke-[2.5px]' : 'stroke-2'}`} />
-        <span className="text-[10px] tracking-tight mt-1 font-semibold">Home</span>
-      </button>
+        <div
+          className={`flex items-center justify-center px-3.5 py-1 rounded-full transition-all ${
+            isHome ? 'bg-emerald-100/70 text-emerald-900' : ''
+          }`}
+        >
+          <Home className={`h-5 w-5 ${isHome ? 'fill-emerald-800 text-emerald-800' : 'stroke-[1.8]'}`} />
+        </div>
+        <span className="text-[10px] tracking-tight mt-0.5 font-medium">Home</span>
+      </Link>
 
-      {/* 2. Calendar / Events / Syllabus */}
-      <button
-        onClick={() => setActiveTab('syllabus')}
-        className={`flex flex-col items-center justify-center flex-1 py-1 transition ${
-          activeTab === 'syllabus'
-            ? 'text-indigo-600 dark:text-indigo-400 font-extrabold'
-            : 'text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300'
+      {/* 2. Syllabus */}
+      <Link
+        href="/syllabus"
+        className={`flex flex-col items-center justify-center py-1 px-3 transition rounded-2xl ${
+          isSyllabus ? 'text-emerald-900 font-bold' : 'text-slate-400 hover:text-slate-700'
         }`}
       >
-        <Calendar className={`h-5 w-5 ${activeTab === 'syllabus' ? 'stroke-[2.5px]' : 'stroke-2'}`} />
-        <span className="text-[10px] tracking-tight mt-1 font-semibold">Calendar</span>
-      </button>
+        <div
+          className={`flex items-center justify-center px-3.5 py-1 rounded-full transition-all ${
+            isSyllabus ? 'bg-emerald-100/70 text-emerald-900' : ''
+          }`}
+        >
+          <BookOpen className={`h-5 w-5 ${isSyllabus ? 'stroke-[2.2]' : 'stroke-[1.8]'}`} />
+        </div>
+        <span className="text-[10px] tracking-tight mt-0.5 font-medium">Syllabus</span>
+      </Link>
 
-      {/* 3. Messages / WhatsApp */}
-      <button
-        onClick={onOpenCommunity || (() => window.open('https://whatsapp.com/channel/0029VbDWOxc3LdQXxMfsBl2G', '_blank'))}
-        className="flex flex-col items-center justify-center flex-1 py-1 text-slate-400 hover:text-indigo-600 dark:text-slate-500 dark:hover:text-indigo-400 transition"
+      {/* 3. Notices */}
+      <Link
+        href="/notices"
+        className={`flex flex-col items-center justify-center py-1 px-3 transition rounded-2xl ${
+          isNotices ? 'text-emerald-900 font-bold' : 'text-slate-400 hover:text-slate-700'
+        }`}
       >
-        <MessageSquare className="h-5 w-5 stroke-2" />
-        <span className="text-[10px] tracking-tight mt-1 font-semibold">Messages</span>
-      </button>
+        <div
+          className={`flex items-center justify-center px-3.5 py-1 rounded-full transition-all ${
+            isNotices ? 'bg-emerald-100/70 text-emerald-900' : ''
+          }`}
+        >
+          <Megaphone className={`h-5 w-5 ${isNotices ? 'stroke-[2.2]' : 'stroke-[1.8]'}`} />
+        </div>
+        <span className="text-[10px] tracking-tight mt-0.5 font-medium">Notices</span>
+      </Link>
 
-      {/* 4. More (Grid icon) */}
+      {/* 4. Tools */}
+      <Link
+        href="/tools"
+        className={`flex flex-col items-center justify-center py-1 px-3 transition rounded-2xl ${
+          isTools ? 'text-emerald-900 font-bold' : 'text-slate-400 hover:text-slate-700'
+        }`}
+      >
+        <div
+          className={`flex items-center justify-center px-3.5 py-1 rounded-full transition-all ${
+            isTools ? 'bg-emerald-100/70 text-emerald-900' : ''
+          }`}
+        >
+          <LayoutGrid className={`h-5 w-5 ${isTools ? 'stroke-[2.2]' : 'stroke-[1.8]'}`} />
+        </div>
+        <span className="text-[10px] tracking-tight mt-0.5 font-medium">Tools</span>
+      </Link>
+
+      {/* 5. More */}
       <button
         onClick={onOpenDrawer}
-        className="flex flex-col items-center justify-center flex-1 py-1 text-slate-400 hover:text-indigo-600 dark:text-slate-500 dark:hover:text-indigo-400 transition"
+        type="button"
+        className="flex flex-col items-center justify-center py-1 px-3 text-slate-400 hover:text-slate-700 transition"
       >
-        <LayoutGrid className="h-5 w-5 stroke-2" />
-        <span className="text-[10px] tracking-tight mt-1 font-semibold">More</span>
+        <div className="flex items-center justify-center px-3.5 py-1 rounded-full">
+          <MoreHorizontal className="h-5 w-5 stroke-[1.8]" />
+        </div>
+        <span className="text-[10px] tracking-tight mt-0.5 font-medium">More</span>
       </button>
-
     </nav>
   );
 };

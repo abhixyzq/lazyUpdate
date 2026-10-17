@@ -16,7 +16,7 @@
         {
           "id": "phy-mjc-1",
           "code": "MJC-1",
-          "name": "Introduction to Mathematical Physics & Classical Mechanics (गणितीय भौतिकी और शास्त्रीय यांत्रिकी का परिचय)",
+          "name": "Introduction to Mathematical Physics & Classical Mechanics",
           "paperType": "Major (MJC)",
           "credits": 6,
           "theoryMarks": 70,
@@ -24,7 +24,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Concept of Differentiation & Integration (विभेदन और समाकलन की अवधारणा)",
+              "title": "Concept of Differentiation & Integration",
               "topics": [
                 "Differential calculus: Geometric Meaning of derivative",
                 "Maxima & Minima",
@@ -41,7 +41,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Vector Algebra & Vector Calculus (सदिश बीजगणित और सदिश कलन)",
+              "title": "Vector Algebra & Vector Calculus",
               "topics": [
                 "Vector Triple Products & their significance",
                 "Concept of scalar & vector fields",
@@ -51,7 +51,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Fundamentals of Dynamics (गतिकी की मूल बातें)",
+              "title": "Fundamentals of Dynamics",
               "topics": [
                 "Inertial and Non-Inertial Frame of Reference",
                 "Rotating frame of Reference",
@@ -62,7 +62,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Centre-of-Mass Frame and Central Forces (द्रव्यमान केंद्र फ्रेम और केंद्रीय बल)",
+              "title": "Centre-of-Mass Frame and Central Forces",
               "topics": [
                 "Lab frame & Centre of Mass frame",
                 "Two dimensional collision in physical problems",
@@ -131,7 +131,7 @@
         {
           "id": "phy-mic-1",
           "code": "MIC-1",
-          "name": "Introduction to Mathematical Physics & Classical Mechanics (गणितीय भौतिकी और शास्त्रीय यांत्रिकी का परिचय)",
+          "name": "Introduction to Mathematical Physics & Classical Mechanics",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -139,7 +139,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Introduction to Calculus & Vector (कलन और सदिश का परिचय)",
+              "title": "Introduction to Calculus & Vector",
               "topics": [
                 "Differential calculus: Geometric Meaning of derivative",
                 "Maxima & Minima",
@@ -159,7 +159,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Fundamentals of Dynamics (गतिकी की मूल बातें)",
+              "title": "Fundamentals of Dynamics",
               "topics": [
                 "Inertial and Non-Inertial Frame of Reference",
                 "Rotating frame",
@@ -217,7 +217,7 @@
         {
           "id": "phy-mdc-1",
           "code": "MDC-1",
-          "name": "Physics Around Us (हमारे आसपास की भौतिकी)",
+          "name": "Physics Around Us",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -225,7 +225,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Climate Science (जलवायु विज्ञान)",
+              "title": "Climate Science",
               "topics": [
                 "Atmospheric science as multidisciplinary science",
                 "Physical and dynamical metrology weather climate variables, and their difference",
@@ -236,7 +236,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Applications of Physics (भौतिकी के अनुप्रयोग)",
+              "title": "Applications of Physics",
               "topics": [
                 "Application in Agriculture",
                 "Agro Physics",
@@ -250,7 +250,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Energy Sources (ऊर्जा स्रोत)",
+              "title": "Energy Sources",
               "topics": [
                 "Energy Sources- Importance of Renewable energy",
                 "Solar energy",
@@ -278,7 +278,7 @@
         {
           "id": "phy-vac-1",
           "code": "VAC-1",
-          "name": "Great Indian Scientists (महान भारतीय वैज्ञानिक)",
+          "name": "Great Indian Scientists",
           "paperType": "Value Added (VAC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -286,7 +286,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Life and work of Indian Scientists- I (भारतीय वैज्ञानिकों का जीवन और कार्य - I)",
+              "title": "Life and work of Indian Scientists- I",
               "topics": [
                 "Dr. C.V",
                 "Raman (Raman effect & Indian Academy of Science)",
@@ -299,7 +299,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Life and work of Indian Scientists- II (भारतीय वैज्ञानिकों का जीवन और कार्य - II)",
+              "title": "Life and work of Indian Scientists- II",
               "topics": [
                 "G.K Menon (KGF Particle, TIFR)",
                 "S",
@@ -310,7 +310,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Indian Women in Science (विज्ञान में भारतीय महिलाएं)",
+              "title": "Indian Women in Science",
               "topics": [
                 "Janaki Ammal (Da Botanical Survey of India)",
                 "Asima Chatterjee (Phyto Chemistry)",
@@ -333,7 +333,7 @@
         {
           "id": "phy-mjc-2",
           "code": "MJC-2",
-          "name": "Oscillations and Waves (दोलन और तरंगें)",
+          "name": "Oscillations and Waves",
           "paperType": "Major (MJC)",
           "credits": 6,
           "theoryMarks": 70,
@@ -341,7 +341,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Basics of Oscillations (दोलन की मूल बातें)",
+              "title": "Basics of Oscillations",
               "topics": [
                 "Idea of S.H.M., its differential equation and solutions",
                 "Energy in S.H.M",
@@ -356,7 +356,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Superposition of Oscillations (दोलनों का अध्यारोपण)",
+              "title": "Superposition of Oscillations",
               "topics": [
                 "Addition of two S.H.Ms: Concept of Lissajou Figure, its Geometrical Composition & Application",
                 "Stationary waves as combination of oscillations (Waves in a linear bounded medium)",
@@ -365,7 +365,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Wave Motion (तरंग गति)",
+              "title": "Wave Motion",
               "topics": [
                 "Wave front",
                 "Equation of Wave Motion",
@@ -378,7 +378,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Sound Waves (ध्वनि तरंगें)",
+              "title": "Sound Waves",
               "topics": [
                 "Sound wave: Preparation and speed of sound (Accoustic) waves in media",
                 "Speed in air: Newton's formula & Laplace Correction",
@@ -440,7 +440,7 @@
         {
           "id": "phy-mic-2",
           "code": "MIC-2",
-          "name": "Oscillations and Waves (दोलन और तरंगें)",
+          "name": "Oscillations and Waves",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -448,7 +448,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Oscillations (दोलन)",
+              "title": "Oscillations",
               "topics": [
                 "Idea of S.H.M",
                 "Free",
@@ -459,7 +459,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Waves (तरंगें)",
+              "title": "Waves",
               "topics": [
                 "Waves Characteristic of Wave Motion",
                 "Sound Wave",
@@ -521,7 +521,7 @@
         {
           "id": "phy-mdc-2",
           "code": "MDC-2",
-          "name": "Crystallography (क्रिस्टलोग्राफी)",
+          "name": "Crystallography",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -529,7 +529,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Elements of Crystallography (क्रिस्टलोग्राफी के तत्व)",
+              "title": "Elements of Crystallography",
               "topics": [
                 "Unit cell",
                 "Lattice and Basis",
@@ -544,7 +544,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Crystal Type and Crystal Binding (क्रिस्टल प्रकार और क्रिस्टल बंधन)",
+              "title": "Crystal Type and Crystal Binding",
               "topics": [
                 "Ionic Crystal",
                 "Covalent crystal",
@@ -556,7 +556,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "X-Ray Diffraction (एक्स-रे विवर्तन)",
+              "title": "X-Ray Diffraction",
               "topics": [
                 "Diffraction",
                 "Braggs law",
@@ -630,7 +630,7 @@
         {
           "id": "phy-vac-2",
           "code": "VAC-2",
-          "name": "History Of Science (विज्ञान का इतिहास)",
+          "name": "History Of Science",
           "paperType": "Value Added (VAC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -638,7 +638,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "History of Science (विज्ञान का इतिहास)",
+              "title": "History of Science",
               "topics": [
                 "Origin and outline of historiography of science",
                 "Ancient Indian science from Vedic age to pre-independence Era",
@@ -647,7 +647,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Science in Post Independence era (स्वतंत्रता के बाद के युग में विज्ञान)",
+              "title": "Science in Post Independence era",
               "topics": [
                 "Development of science In post Independence era",
                 "Indian contribution to Science and Technology in the field of Atomic energy",
@@ -658,7 +658,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Astronomy (खगोल विज्ञान)",
+              "title": "Astronomy",
               "topics": [
                 "Ancient Astronomy",
                 "Vedic Astronomy",
@@ -684,7 +684,7 @@
         {
           "id": "phy-mjc-3",
           "code": "MJC-3",
-          "name": "Thermal Physics & Thermodynamics (तापीय भौतिकी और ऊष्मागतिकी)",
+          "name": "Thermal Physics & Thermodynamics",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -692,7 +692,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Kinetic Theory of Gases (गैसों का गतिज सिद्धांत)",
+              "title": "Kinetic Theory of Gases",
               "topics": [
                 "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas",
                 "Mean",
@@ -711,7 +711,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Real Gases (वास्तविक गैसें)",
+              "title": "Real Gases",
               "topics": [
                 "Behavior of Real Gases",
                 "Van der Waal's Equation of State for Real Gases",
@@ -724,14 +724,14 @@
             },
             {
               "unitNumber": 3,
-              "title": "Zeroth and First Law of Thermodynamics (ऊष्मागतिकी का शून्यवाँ और प्रथम नियम)",
+              "title": "Zeroth and First Law of Thermodynamics",
               "topics": [
                 "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Relation between Cp and Cv"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Second Law of Thermodynamics (ऊष्मागतिकी का द्वितीय नियम)",
+              "title": "Second Law of Thermodynamics",
               "topics": [
                 "Cyclic reversible and irreversible process",
                 "Carnot engine",
@@ -792,7 +792,7 @@
         {
           "id": "phy-mic-3",
           "code": "MIC-3",
-          "name": "Thermal Physics & Thermodynamics (तापीय भौतिकी और ऊष्मागतिकी)",
+          "name": "Thermal Physics & Thermodynamics",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -800,7 +800,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Kinetic Theory of Gases (गैसों का गतिज सिद्धांत)",
+              "title": "Kinetic Theory of Gases",
               "topics": [
                 "Maxwell-Boltzmann Molecular Speed distribution Law for an Ideal Gas",
                 "Mean",
@@ -819,7 +819,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Real Gases (वास्तविक गैसें)",
+              "title": "Real Gases",
               "topics": [
                 "Behavior of Real Gases",
                 "Van der Waal's Equation of State for Real Gases",
@@ -832,14 +832,14 @@
             },
             {
               "unitNumber": 3,
-              "title": "Zeroth and First Law of Thermodynamics (ऊष्मागतिकी का शून्यवाँ और प्रथम नियम)",
+              "title": "Zeroth and First Law of Thermodynamics",
               "topics": [
                 "Extensive and intensive Thermodynamic Variables, Thermodynamic Equilibrium, Zeroth Law of Thermodynamics and Concept of Temperature, Work, Heat, State Functions and path functions, First Law of Thermodynamics, Internal Energy for ideal and real gases, Applications of First Law of thermodynamics in case of thin film, stretched wire, hydrostatics, and specific Molar Heat Capacity for gases, Specific heat General Relation between Cp and Cv"
               ]
             },
             {
               "unitNumber": 4,
-              "title": "Second Law of Thermodynamics (ऊष्मागतिकी का द्वितीय नियम)",
+              "title": "Second Law of Thermodynamics",
               "topics": [
                 "Cyclic",
                 "Reversible and irreversible process",
@@ -904,7 +904,7 @@
         {
           "id": "phy-mdc-3",
           "code": "MDC-3",
-          "name": "Mesoscopic Materials (मेसोस्कोपिक सामग्री)",
+          "name": "Mesoscopic Materials",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -912,7 +912,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Mesoscopic sizes (मेसोस्कोपिक आकार)",
+              "title": "Mesoscopic sizes",
               "topics": [
                 "Mesoscopic sizes materials of bulk size materials of sub molecular sizes",
                 "Sizes of nanometer range"
@@ -920,7 +920,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Specialty in Physical Properties (भौतिक गुणों में विशेषता)",
+              "title": "Specialty in Physical Properties",
               "topics": [
                 "Size dependents of physical properties like mechanical strength electrical conduction and magnetic properties of materials",
                 "Applications of materials properties at Nanoscale"
@@ -928,7 +928,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Mesoscopic materials in daily life (दैनिक जीवन में मेसोस्कोपिक सामग्री)",
+              "title": "Mesoscopic materials in daily life",
               "topics": [
                 "Mesoscopic materials in daily life: computers",
                 "Sensors",
@@ -943,7 +943,7 @@
         {
           "id": "phy-mdc-3-ele",
           "code": "MDC-3",
-          "name": "Acquaintance of Electrical and Electronic Appliances (विद्युत और इलेक्ट्रॉनिक उपकरणों का परिचय)",
+          "name": "Acquaintance of Electrical and Electronic Appliances",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -951,7 +951,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Circuit Fundamental (सर्किट मूल बातें)",
+              "title": "Circuit Fundamental",
               "topics": [
                 "Voltage, Current, Power, Work, Short circuit, open circuit, Ohm's Law",
                 "Definition of Resistance",
@@ -980,7 +980,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Electronic Devices (इलेक्ट्रॉनिक उपकरण)",
+              "title": "Electronic Devices",
               "topics": [
                 "Diode",
                 "Transistor",
@@ -997,7 +997,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Hands on Training (प्रशिक्षण)",
+              "title": "Hands on Training",
               "topics": [
                 "How to repair an electric cord",
                 "Installing a new plug",
@@ -1013,7 +1013,7 @@
         {
           "id": "phy-mdc-3-hist",
           "code": "MDC-3",
-          "name": "History and Philosophy of Science (विज्ञान का इतिहास और दर्शन)",
+          "name": "History and Philosophy of Science",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1021,7 +1021,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Fundamental Issues (मूलभूत मुद्दे)",
+              "title": "Fundamental Issues",
               "topics": [
                 "What is science?",
                 "Science and its difference from other systems of belief and knowledge",
@@ -1034,7 +1034,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Science & Technology: from the Aristotle to the Newton (विज्ञान और प्रौद्योगिकी: अरस्तू से न्यूटन तक)",
+              "title": "Science & Technology: from the Aristotle to the Newton",
               "topics": [
                 "Greek Science",
                 "Seventeenth-century attack on Aristotelian Philosophy",
@@ -1051,7 +1051,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Metaphysical foundations of Science (विज्ञान की आध्यात्मिक नींव)",
+              "title": "Metaphysical foundations of Science",
               "topics": [
                 "David Hume and the problem of causation",
                 "Naturalism and Anti-naturalism",
@@ -1088,7 +1088,7 @@
         {
           "id": "phy-mdc-3-comm",
           "code": "MDC-3",
-          "name": "Physics of Communication Technology (संचार प्रौद्योगिकी की भौतिकी)",
+          "name": "Physics of Communication Technology",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1096,7 +1096,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Physics of Communication Technology (संचार प्रौद्योगिकी की भौतिकी)",
+              "title": "Physics of Communication Technology",
               "topics": [
                 "Physics of Communication Technology"
               ]
@@ -1107,7 +1107,7 @@
         {
           "id": "phy-mdc-3-sports",
           "code": "MDC-3",
-          "name": "Sports Science (खेल विज्ञान)",
+          "name": "Sports Science",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1115,7 +1115,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Measurement and Motion (माप और गति)",
+              "title": "Measurement and Motion",
               "topics": [
                 "Measurement: Physical quantities",
                 "Standards and Units",
@@ -1136,7 +1136,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Conservation Laws and Gravitation (संरक्षण कानून और गुरुत्वाकर्षण)",
+              "title": "Conservation Laws and Gravitation",
               "topics": [
                 "Conservation laws: Conservation of linear momentum",
                 "Collisions",
@@ -1153,7 +1153,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Food, Nutrition and Exercise (भोजन, पोषण और व्यायाम)",
+              "title": "Food, Nutrition and Exercise",
               "topics": [
                 "Food and Nutrition: Proteins",
                 "Vitamins",
@@ -1180,7 +1180,7 @@
         {
           "id": "phy-mdc-3-atmos",
           "code": "MDC-3",
-          "name": "Atmospheric & Space Science (वायुमंडलीय और अंतरिक्ष विज्ञान)",
+          "name": "Atmospheric & Space Science",
           "paperType": "Multidisciplinary (MDC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1188,7 +1188,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Earth and its atmosphere (पृथ्वी और उसका वायुमंडल)",
+              "title": "Earth and its atmosphere",
               "topics": [
                 "Earth as a planet of the solar system: origin and internal structure",
                 "Crustal types",
@@ -1203,7 +1203,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Introduction to Space (अंतरिक्ष का परिचय)",
+              "title": "Introduction to Space",
               "topics": [
                 "Perception of Space from early civilization to pre-telescopic era and post-telescopic era",
                 "Important International Organizations involved in Space Exploration",
@@ -1226,7 +1226,7 @@
         {
           "id": "phy-mjc-4",
           "code": "MJC-4",
-          "name": "Electricity & Magnetism (विद्युत और चुंबकत्व)",
+          "name": "Electricity & Magnetism",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -1234,7 +1234,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Electrostatics (स्थिर विद्युत)",
+              "title": "Electrostatics",
               "topics": [
                 "Electric Field and potential",
                 "Field due to a uniformly charged sphere",
@@ -1251,7 +1251,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Dielectric Properties of Matter (पदार्थ के ढांकता हुआ गुण)",
+              "title": "Dielectric Properties of Matter",
               "topics": [
                 "Electric field in matter and Electrical susceptibility and Dielectric polarization",
                 "Dielectric constant",
@@ -1264,7 +1264,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Magnetism (चुंबकत्व)",
+              "title": "Magnetism",
               "topics": [
                 "Magnetic field, Magnetic force and Torque on a current carrying conductor, and loop placed in a magnetic field, Biot",
                 "Savart's Law and its simple applications: straight wire and circular loop",
@@ -1287,7 +1287,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Electromagnetic Induction (विद्युत चुम्बकीय प्रेरण)",
+              "title": "Electromagnetic Induction",
               "topics": [
                 "Faraday's and Lenz's Laws",
                 "Mutual and Self Induction",
@@ -1300,7 +1300,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Electrical Circuits (विद्युत परिपथ)",
+              "title": "Electrical Circuits",
               "topics": [
                 "AC Circuits: Kirchhoff's laws for AC circuits",
                 "Reactance and Complex Impedance",
@@ -1366,7 +1366,7 @@
         {
           "id": "phy-mic-4",
           "code": "MIC-4",
-          "name": "Electricity & Magnetism (विद्युत और चुंबकत्व)",
+          "name": "Electricity & Magnetism",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -1374,7 +1374,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Electrostatics (स्थिर विद्युत)",
+              "title": "Electrostatics",
               "topics": [
                 "Coulomb's law",
                 "Electric Field and potential",
@@ -1387,7 +1387,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Dielectric Properties of Matter (पदार्थ के ढांकता हुआ गुण)",
+              "title": "Dielectric Properties of Matter",
               "topics": [
                 "Electrical susceptibility and Dielectric constant",
                 "Polarization",
@@ -1401,7 +1401,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Magnetism (चुंबकत्व)",
+              "title": "Magnetism",
               "topics": [
                 "Magnetic field",
                 "Magnetic force on a current carrying conductor placed in a uniform magnetic field",
@@ -1424,7 +1424,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Electrical Circuits (विद्युत परिपथ)",
+              "title": "Electrical Circuits",
               "topics": [
                 "AC Circuits: Kirchhoff's laws for AC circuits",
                 "Reactance and Complex Impedance",
@@ -1480,7 +1480,7 @@
         {
           "id": "phy-mjc-5",
           "code": "MJC-5",
-          "name": "Mathematical Physics-II and Introduction to Computational Methods (गणितीय भौतिकी-II और कम्प्यूटेशनल विधियों का परिचय)",
+          "name": "Mathematical Physics-II and Introduction to Computational Methods",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -1488,7 +1488,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Curvilinear Coordinates, Tensors and special functions (वक्रीय निर्देशांक, टेंसर और विशेष कार्य)",
+              "title": "Curvilinear Coordinates, Tensors and special functions",
               "topics": [
                 "Spherical and Cylindrical Coordinate Systems",
                 "Ordinary Integrals of Vectors",
@@ -1505,7 +1505,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Partial Differential Equations and Complex Analysis (आंशिक अंतर समीकरण और जटिल विश्लेषण)",
+              "title": "Partial Differential Equations and Complex Analysis",
               "topics": [
                 "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular",
                 "Cylindrical and spherical symmetry",
@@ -1521,7 +1521,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Introduction to Computers (कंप्यूटर का परिचय)",
+              "title": "Introduction to Computers",
               "topics": [
                 "Importance of Computers in Physics",
                 "Algorithms and Flow Charts: Algorithm Definition",
@@ -1537,7 +1537,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Scientific Programming (वैज्ञानिक प्रोग्रामिंग)",
+              "title": "Scientific Programming",
               "topics": [
                 "Usage of Linux on Editor",
                 "Some fundamental Linux commands (Internal & External commands) Development of FORTRAN",
@@ -1557,7 +1557,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Control statements (नियंत्रण कथन)",
+              "title": "Control statements",
               "topics": [
                 "Types of Logic (sequential, selection, Repetition)",
                 "Branching statements (Logical IF, Arithmetic IF, Block IF, Nested Block IF, SELEC CASE and ELSE IF Ladder Statements)",
@@ -1620,7 +1620,7 @@
         {
           "id": "phy-mjc-6",
           "code": "MJC-6",
-          "name": "Electrodynamics & Electromagnetism (इलेक्ट्रोडायनामिक्स और विद्युत चुम्बकत्व)",
+          "name": "Electrodynamics & Electromagnetism",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -1628,7 +1628,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Maxwell's Equations (मैक्सवेल के समीकरण)",
+              "title": "Maxwell's Equations",
               "topics": [
                 "Equation of continuity",
                 "Displacement Current Maxwell's equations in differential and Integral forms",
@@ -1643,7 +1643,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Electromagnetic Wave Propagation in unbounded media (अनबाउंडेड मीडिया में विद्युत चुम्बकीय तरंग प्रसार)",
+              "title": "Electromagnetic Wave Propagation in unbounded media",
               "topics": [
                 "Poynting's equation of plane EM waves in plane waves, and electromagnetic waves",
                 "Transverse nature of plane EM waves",
@@ -1656,7 +1656,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "EM Wave Propagation in Bounded Media (बाउंडेड मीडिया में EM तरंग प्रसार)",
+              "title": "EM Wave Propagation in Bounded Media",
               "topics": [
                 "Boundary conditions at a plane interface between two media",
                 "Reflection and Refraction of plane waves at plane interface between two dielectric media",
@@ -1670,7 +1670,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Polarization of Electromagnetic Waves (विद्युत चुम्बकीय तरंगों का ध्रुवीकरण)",
+              "title": "Polarization of Electromagnetic Waves",
               "topics": [
                 "Description of Linear",
                 "Circular and Elliptical Polarization",
@@ -1682,7 +1682,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Transmission Line (ट्रांसमिशन लाइन)",
+              "title": "Transmission Line",
               "topics": [
                 "Propagation of e.m. wave through transmission line",
                 "Reflection coefficient",
@@ -1716,7 +1716,7 @@
         {
           "id": "phy-mjc-7",
           "code": "MJC-7",
-          "name": "Optics (प्रकाशिकी)",
+          "name": "Optics",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -1724,7 +1724,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Interference (व्यतिकरण)",
+              "title": "Interference",
               "topics": [
                 "Light as EM Wave(Historical Perspective)",
                 "Superposition of waves",
@@ -1737,7 +1737,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Interferometer (इंटरफेरोमीटर)",
+              "title": "Interferometer",
               "topics": [
                 "Michelson interferometer and its applications",
                 "Multiple beam interference in parallel film",
@@ -1748,7 +1748,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Fraunhofer Diffraction (फ्राउनहोफर विवर्तन)",
+              "title": "Fraunhofer Diffraction",
               "topics": [
                 "Conditions for diffraction",
                 "Fraunhofer diffraction due to single",
@@ -1767,7 +1767,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Polarization and Double Refraction (ध्रुवीकरण और द्वि-अपवर्तन)",
+              "title": "Polarization and Double Refraction",
               "topics": [
                 "Polarized light and its mathematical representation",
                 "Production of polarized light by reflection",
@@ -1841,7 +1841,7 @@
         {
           "id": "phy-mjc-8",
           "code": "MJC-8",
-          "name": "Elements of Modern Physics (आधुनिक भौतिकी के तत्व)",
+          "name": "Elements of Modern Physics",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -1849,7 +1849,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Particle Properties of Radiations (विकिरण के कण गुण)",
+              "title": "Particle Properties of Radiations",
               "topics": [
                 "Black Body Radiation and Planck's quantum Hypothesis",
                 "Discovery and Explanation of Photoelectric effect",
@@ -1866,7 +1866,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Wave-Particle Duality (तरंग-कण द्वैतता)",
+              "title": "Wave-Particle Duality",
               "topics": [
                 "Concept of Wave-particle duality",
                 "Heisenberg Uncertainty Principle",
@@ -1878,7 +1878,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Atomic Structure (परमाणु संरचना)",
+              "title": "Atomic Structure",
               "topics": [
                 "Introduction of Sommerfeld Quantization rule",
                 "Bohr-Sommerfield atomic theory",
@@ -1890,7 +1890,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Wave Mechanical Description of electron particles (इलेक्ट्रॉन कणों का तरंग यांत्रिक विवरण)",
+              "title": "Wave Mechanical Description of electron particles",
               "topics": [
                 "The Schrodinger Wave equation",
                 "Properties",
@@ -1906,7 +1906,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Fundamental Properties of Nucleus (नाभिक के मौलिक गुण)",
+              "title": "Fundamental Properties of Nucleus",
               "topics": [
                 "Size",
                 "Constituent and structure of atomic nuclei",
@@ -1949,7 +1949,7 @@
         {
           "id": "phy-mjc-9",
           "code": "MJC-9",
-          "name": "Basic Electronics (मूल इलेक्ट्रॉनिक्स)",
+          "name": "Basic Electronics",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -1957,7 +1957,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Digital Circuits (डिजिटल सर्किट)",
+              "title": "Digital Circuits",
               "topics": [
                 "Difference between Analog & Digital Circuits",
                 "Binary Numbers",
@@ -1968,7 +1968,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Basic Circuit Operations (बुनियादी सर्किट संचालन)",
+              "title": "Basic Circuit Operations",
               "topics": [
                 "De Morgan's Theorem",
                 "Nodal Laws",
@@ -1983,7 +1983,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Semiconductor Devices (अर्धचालक उपकरण)",
+              "title": "Semiconductor Devices",
               "topics": [
                 "P-and N-type semiconductors",
                 "Energy Level Diagram",
@@ -2016,7 +2016,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Operational Amplifiers (परिचालन एम्पलीफायर)",
+              "title": "Operational Amplifiers",
               "topics": [
                 "Characteristics of an Ideal and Practical Op-Amp (IC 741)",
                 "Open-loop Gain",
@@ -2031,7 +2031,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Instrumentations (उपकरण)",
+              "title": "Instrumentations",
               "topics": [
                 "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage",
                 "Current",
@@ -2088,7 +2088,7 @@
         {
           "id": "phy-mic-5",
           "code": "MIC-5",
-          "name": "Mathematical Physics-II and Introduction to Computational Methods (गणितीय भौतिकी-II और कम्प्यूटेशनल विधियों का परिचय)",
+          "name": "Mathematical Physics-II and Introduction to Computational Methods",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2096,7 +2096,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Curvilinear Coordinates, Tensors and special functions (वक्रीय निर्देशांक, टेंसर और विशेष कार्य)",
+              "title": "Curvilinear Coordinates, Tensors and special functions",
               "topics": [
                 "Spherical and Cylindrical Coordinate Systems",
                 "Ordinary Integrals of Vectors",
@@ -2107,7 +2107,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Partial Differential Equations (आंशिक अंतर समीकरण)",
+              "title": "Partial Differential Equations",
               "topics": [
                 "Solutions to partial differential equations using separation of variables: Laplace's Equation in problems of rectangular",
                 "Cylindrical and spherical symmetry"
@@ -2115,7 +2115,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Introduction to Computers (कंप्यूटर का परिचय)",
+              "title": "Introduction to Computers",
               "topics": [
                 "Importance of Computers in Physics",
                 "Algorithms and Flow Charts: Algorithm Definition",
@@ -2128,7 +2128,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Scientific Programming (वैज्ञानिक प्रोग्रामिंग)",
+              "title": "Scientific Programming",
               "topics": [
                 "Basic ideas of Linux",
                 "Some fundamental Linux commands (Internal & External commands)",
@@ -2139,7 +2139,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Control statements (नियंत्रण कथन)",
+              "title": "Control statements",
               "topics": [
                 "Introduction of Subscripted variables",
                 "Functions and Subroutines (Arithmetic statements, Function, Function subprogram and subroutine), and their usage in programs of simple Physics Problems"
@@ -2183,7 +2183,7 @@
         {
           "id": "phy-mic-6",
           "code": "MIC-6",
-          "name": "Electrodynamics and Electromagnetism (इलेक्ट्रोडायनामिक्स और विद्युत चुम्बकत्व)",
+          "name": "Electrodynamics and Electromagnetism",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2191,7 +2191,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Maxwell's Equations (मैक्सवेल के समीकरण)",
+              "title": "Maxwell's Equations",
               "topics": [
                 "Equation of continuity",
                 "Maxwell's equations in differential and Integral forms",
@@ -2203,7 +2203,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Electromagnetic Wave Propagation in unbounded media (अनबाउंडेड मीडिया में विद्युत चुम्बकीय तरंग प्रसार)",
+              "title": "Electromagnetic Wave Propagation in unbounded media",
               "topics": [
                 "Propagation of plane EM waves in free space",
                 "Transverse nature of plane EM waves",
@@ -2214,7 +2214,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "EM Wave Propagation in Bounded Media (बाउंडेड मीडिया में EM तरंग प्रसार)",
+              "title": "EM Wave Propagation in Bounded Media",
               "topics": [
                 "Boundary conditions at a plane interface between two media",
                 "Reflection & Refraction of plane waves at plane interface between two dielectric media",
@@ -2224,7 +2224,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Polarization of Electromagnetic Waves (विद्युत चुम्बकीय तरंगों का ध्रुवीकरण)",
+              "title": "Polarization of Electromagnetic Waves",
               "topics": [
                 "Description of Linear",
                 "Circular and Elliptical Polarization",
@@ -2261,7 +2261,7 @@
         {
           "id": "phy-mjc-10",
           "code": "MJC-10",
-          "name": "Analytical Mechanics & Special Theory of Relativity (विश्लेषणात्मक यांत्रिकी और सापेक्षता का विशेष सिद्धांत)",
+          "name": "Analytical Mechanics & Special Theory of Relativity",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -2269,7 +2269,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Constraints and Variational Principle (बाधाएं और परिवर्तन सिद्धांत)",
+              "title": "Constraints and Variational Principle",
               "topics": [
                 "Holonomic",
                 "Non Holonomic",
@@ -2294,7 +2294,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Canonical Transformation (कैनोनिकल परिवर्तन)",
+              "title": "Canonical Transformation",
               "topics": [
                 "Canonical transformation and its applications",
                 "Poisson Brackets",
@@ -2306,7 +2306,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Motion of a Rigid body (दृढ़ पिंड की गति)",
+              "title": "Motion of a Rigid body",
               "topics": [
                 "Euler's Angle",
                 "Kinematics of rotation",
@@ -2316,7 +2316,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Special Theory of Relativity (सापेक्षता का विशेष सिद्धांत)",
+              "title": "Special Theory of Relativity",
               "topics": [
                 "Michelson-Morley Experiment and its outcome",
                 "Postulates of Special Theory of Relativity",
@@ -2348,7 +2348,7 @@
         {
           "id": "phy-mjc-11",
           "code": "MJC-11",
-          "name": "Statistical Mechanics (सांख्यिकीय यांत्रिकी)",
+          "name": "Statistical Mechanics",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -2356,7 +2356,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Classical Statistics (शास्त्रीय सांख्यिकी)",
+              "title": "Classical Statistics",
               "topics": [
                 "Macrostate and Microstate",
                 "Phase Space",
@@ -2373,7 +2373,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Classical Theory of Radiation (विकिरण का शास्त्रीय सिद्धांत)",
+              "title": "Classical Theory of Radiation",
               "topics": [
                 "Black Body Radiation",
                 "Kirchhoff's law",
@@ -2388,7 +2388,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Quantum Theory of Radiation (विकिरण का क्वांटम सिद्धांत)",
+              "title": "Quantum Theory of Radiation",
               "topics": [
                 "Spectral Distribution of Black Body Radiation",
                 "Planck's Quantum Postulates",
@@ -2400,7 +2400,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Bose-Einstein Statistics (बोस-आइंस्टीन सांख्यिकी)",
+              "title": "Bose-Einstein Statistics",
               "topics": [
                 "Bose-Einstein distribution law",
                 "Thermodynamic functions of a strongly Degenerate Bose Gas",
@@ -2412,7 +2412,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Fermi-Dirac Statistics (फर्मी-डिराक सांख्यिकी)",
+              "title": "Fermi-Dirac Statistics",
               "topics": [
                 "Fermi-Dirac Distribution Law",
                 "Thermodynamic functions of a Completely and strongly Degenerate Fermi Gas",
@@ -2436,7 +2436,7 @@
         {
           "id": "phy-mjc-12",
           "code": "MJC-12",
-          "name": "Quantum Mechanics & its Application (क्वांटम यांत्रिकी और इसके अनुप्रयोग)",
+          "name": "Quantum Mechanics & its Application",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -2444,7 +2444,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Wave-Particle duality (तरंग-कण द्वैतता)",
+              "title": "Wave-Particle duality",
               "topics": [
                 "Need of quantum mechanics",
                 "De Broglie's theory of matter wave",
@@ -2456,7 +2456,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Time Independent Schrodinger Wave Equation (समय स्वतंत्र श्रोडिंगर तरंग समीकरण)",
+              "title": "Time Independent Schrodinger Wave Equation",
               "topics": [
                 "Derivation of Time independent Schrodinger wave equation",
                 "Physical interpretation of wave function",
@@ -2468,7 +2468,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Formalism of Quantum Mechanics (क्वांटम यांत्रिकी का औपचारिकता)",
+              "title": "Formalism of Quantum Mechanics",
               "topics": [
                 "Hilbert Space and Concept of Ket and Bra notations",
                 "Representation of position operator in momentum space",
@@ -2478,7 +2478,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Time Dependent Schrodinger Wave Equation (समय निर्भर श्रोडिंगर तरंग समीकरण)",
+              "title": "Time Dependent Schrodinger Wave Equation",
               "topics": [
                 "Dynamical evolution of a quantum state",
                 "Properties of time-development operator",
@@ -2489,7 +2489,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Angular Momentum Operator (कोणीय संवेग संचालक)",
+              "title": "Angular Momentum Operator",
               "topics": [
                 "Orbital Angular momentum operator and its Commutation relation",
                 "Spin angular momentum operator and Pauli's spin matrices",
@@ -2538,7 +2538,7 @@
         {
           "id": "phy-mic-7",
           "code": "MIC-7",
-          "name": "Optics (प्रकाशिकी)",
+          "name": "Optics",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2546,7 +2546,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Interference (व्यतिकरण)",
+              "title": "Interference",
               "topics": [
                 "Light as EM Wave(Historical Perspective)",
                 "Superposition of waves",
@@ -2557,7 +2557,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Interferometer (इंटरफेरोमीटर)",
+              "title": "Interferometer",
               "topics": [
                 "Michelson interferometer and its applications",
                 "Multiple beam interference in parallel film",
@@ -2567,7 +2567,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Fraunhofer Diffraction (फ्राउनहोफर विवर्तन)",
+              "title": "Fraunhofer Diffraction",
               "topics": [
                 "Conditions for diffraction",
                 "Fraunhofer diffraction due to single",
@@ -2584,7 +2584,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Polarization and Double Refraction (ध्रुवीकरण और द्वि-अपवर्तन)",
+              "title": "Polarization and Double Refraction",
               "topics": [
                 "Polarization and Double Refraction"
               ]
@@ -2635,7 +2635,7 @@
         {
           "id": "phy-mic-8",
           "code": "MIC-8",
-          "name": "Elements of Modern Physics (आधुनिक भौतिकी के तत्व)",
+          "name": "Elements of Modern Physics",
           "paperType": "Minor (MIC)",
           "credits": 3,
           "theoryMarks": 70,
@@ -2643,7 +2643,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Wave-Particle Duality (तरंग-कण द्वैतता)",
+              "title": "Wave-Particle Duality",
               "topics": [
                 "Hertz Experiment and Discovery of Photoelectric effect",
                 "Explanation of Photoelectric effect by Einstein",
@@ -2654,7 +2654,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Understanding Atom (परमाणु को समझना)",
+              "title": "Understanding Atom",
               "topics": [
                 "Different Atomic models",
                 "Alpha particle scattering experiment performed by Geiger and Marsden",
@@ -2666,7 +2666,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Basic properties of atomic nucleus (परमाणु नाभिक के मूल गुण)",
+              "title": "Basic properties of atomic nucleus",
               "topics": [
                 "Mass number",
                 "Mass Defect",
@@ -2695,7 +2695,7 @@
         {
           "id": "phy-mjc-13",
           "code": "MJC-13",
-          "name": "Physics of Atoms and Nuclei (परमाणु और नाभिक की भौतिकी)",
+          "name": "Physics of Atoms and Nuclei",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -2703,7 +2703,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "H-spectra (हाइड्रोजन स्पेक्ट्रा)",
+              "title": "H-spectra",
               "topics": [
                 "Fine structure of hydrogen spectra (Hα-line)",
                 "Wilson-Sommerfeld quantization rule",
@@ -2717,7 +2717,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Quantum mechanics of H-atom (H-परमाणु की क्वांटम यांत्रिकी)",
+              "title": "Quantum mechanics of H-atom",
               "topics": [
                 "Physical interpretation and properties of wave-function",
                 "Quantum mechanical treatment of one-electron atomic system (Hydrogen atom)",
@@ -2732,7 +2732,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Concept of Vector Atom model (सदिश परमाणु मॉडल की अवधारणा)",
+              "title": "Concept of Vector Atom model",
               "topics": [
                 "Orbital magnetic dipole moment",
                 "Behaviour of magnetic dipole in external magnetic field",
@@ -2747,7 +2747,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Spectra of 1 and 2 electron system (1 और 2 इलेक्ट्रॉन प्रणाली का स्पेक्ट्रा)",
+              "title": "Spectra of 1 and 2 electron system",
               "topics": [
                 "Feature and explanation of Spectra of Alkali elements",
                 "Resonance lines and fine structure in Alkali spectra",
@@ -2757,7 +2757,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Nuclear Models (नाभिकीय मॉडल)",
+              "title": "Nuclear Models",
               "topics": [
                 "Essence of Liquid drop model",
                 "Salient Features and Predictions of Shell model",
@@ -2807,7 +2807,7 @@
         {
           "id": "phy-mjc-15",
           "code": "MJC-15",
-          "name": "Solid State Physics (ठोस अवस्था भौतिकी)",
+          "name": "Solid State Physics",
           "paperType": "Major (MJC)",
           "credits": 6,
           "theoryMarks": 70,
@@ -2815,7 +2815,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Crystal Structure (क्रिस्टल संरचना)",
+              "title": "Crystal Structure",
               "topics": [
                 "Solids: Amorphous and Crystalline Materials",
                 "Lattice and Basis",
@@ -2832,7 +2832,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Crystal Bonding and Lattice Dynamics (क्रिस्टल बॉन्डिंग और जाली गतिकी)",
+              "title": "Crystal Bonding and Lattice Dynamics",
               "topics": [
                 "A",
                 "Crystal Bonding: Elementary idea of Bonding in Solids",
@@ -2848,7 +2848,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Free Electron Theory and Band Theory (मुक्त इलेक्ट्रॉन सिद्धांत और बैंड सिद्धांत)",
+              "title": "Free Electron Theory and Band Theory",
               "topics": [
                 "A",
                 "Free Electron Theory: Theory of free electron gas",
@@ -2869,7 +2869,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Magnetic Properties of Matter (पदार्थ के चुंबकीय गुण)",
+              "title": "Magnetic Properties of Matter",
               "topics": [
                 "A",
                 "Magnetic Properties of Matter: Origin of magnetism",
@@ -2920,7 +2920,7 @@
         {
           "id": "phy-mic-9",
           "code": "MIC-9",
-          "name": "Basic Electronics (मूल इलेक्ट्रॉनिक्स)",
+          "name": "Basic Electronics",
           "paperType": "Minor (MIC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -2928,7 +2928,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Digital Circuits (डिजिटल सर्किट)",
+              "title": "Digital Circuits",
               "topics": [
                 "Difference between Analog & Digital Circuits",
                 "Binary Numbers",
@@ -2939,7 +2939,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Basic Circuit Operations (बुनियादी सर्किट संचालन)",
+              "title": "Basic Circuit Operations",
               "topics": [
                 "De-Morgan's Theorem",
                 "Boolean Laws",
@@ -2953,7 +2953,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Semiconductor Devices (अर्धचालक उपकरण)",
+              "title": "Semiconductor Devices",
               "topics": [
                 "P-and N-type semiconductors",
                 "Energy Level Diagram",
@@ -2985,7 +2985,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Sinusoidal Oscillations (साइनसॉइडल दोलन)",
+              "title": "Sinusoidal Oscillations",
               "topics": [
                 "Feedback and Oscillation: Effects of Positive and Negative Feedback on Gain and Stability",
                 "Distortion and Noise",
@@ -2995,7 +2995,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Instrumentations (उपकरण)",
+              "title": "Instrumentations",
               "topics": [
                 "Introduction to CRO: Block Diagram and Applications of CRO: (1) Study of Waveform (2) Measurement of Voltage",
                 "Current",
@@ -3052,7 +3052,7 @@
         {
           "id": "phy-mjc-14",
           "code": "MJC-14",
-          "name": "Research Methodology (शोध पद्धति)",
+          "name": "Research Methodology",
           "paperType": "Major (MJC)",
           "credits": 5,
           "theoryMarks": 70,
@@ -3060,7 +3060,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Research Methodology (शोध पद्धति)",
+              "title": "Research Methodology",
               "topics": [
                 "The Paper will be common for all students of faculty of Science",
                 "There is a common Syllabus for MJC",
@@ -3073,7 +3073,7 @@
         {
           "id": "phy-mjc-16",
           "code": "MJC-16",
-          "name": "Physics of Laser and Molecules (लेजर और अणुओं की भौतिकी)",
+          "name": "Physics of Laser and Molecules",
           "paperType": "Major (MJC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -3081,7 +3081,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Basic Theory of LASER (लेजर का बुनियादी सिद्धांत)",
+              "title": "Basic Theory of LASER",
               "topics": [
                 "Energy levels and process of Absorption and Emission Einstein's Predication",
                 "Difference between spontaneous and stimulated emission Important features of stimulated emission Einstein's A and B Co-efficient",
@@ -3091,7 +3091,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Application of LASER (लेजर का अनुप्रयोग)",
+              "title": "Application of LASER",
               "topics": [
                 "Application of LASER in Holography",
                 "Concept of Temporal and Spatial Coherence",
@@ -3107,7 +3107,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Concept of molecule (अणु की अवधारणा)",
+              "title": "Concept of molecule",
               "topics": [
                 "Basic idea of molecular bonding-Ionic Non-Rigid rotator and covalent formation of molecules",
                 "Morse potential energy curve",
@@ -3119,7 +3119,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Hamiltonian of molecule theory (अणु सिद्धांत का हैमिल्टनियन)",
+              "title": "Hamiltonian of molecule theory",
               "topics": [
                 "Separation of electronic and nuclear motion (Born-oppenheimer approximation), Types of molecular energy states- vibrational, rotational and electronic, Types of molecular spectra-UV, IR, Raman",
                 "Flame spectroscopy and flame photometry",
@@ -3128,7 +3128,7 @@
             },
             {
               "unitNumber": 5,
-              "title": "Different Molecular spectroscopic techniques (विभिन्न आणविक स्पेक्ट्रोस्कोपिक तकनीक)",
+              "title": "Different Molecular spectroscopic techniques",
               "topics": [
                 "Different Molecular spectroscopic techniques as a Tool- atomic absorption spectroscopy",
                 "Emission spectroscopy",
@@ -3178,7 +3178,7 @@
         {
           "id": "phy-mic-10",
           "code": "MIC-10",
-          "name": "Analytical Mechanics & Special Theory of Relativity (विश्लेषणात्मक यांत्रिकी और सापेक्षता का विशेष सिद्धांत)",
+          "name": "Analytical Mechanics & Special Theory of Relativity",
           "paperType": "Minor (MIC)",
           "credits": 4,
           "theoryMarks": 70,
@@ -3186,7 +3186,7 @@
           "units": [
             {
               "unitNumber": 1,
-              "title": "Rigid Body Motion (दृढ़ पिंड गति)",
+              "title": "Rigid Body Motion",
               "topics": [
                 "Rigid body",
                 "Eulerian angles",
@@ -3203,7 +3203,7 @@
             },
             {
               "unitNumber": 2,
-              "title": "Canonical Transformation (कैनोनिकल परिवर्तन)",
+              "title": "Canonical Transformation",
               "topics": [
                 "Canonical transformation and its applications",
                 "Poisson Brackets",
@@ -3213,7 +3213,7 @@
             },
             {
               "unitNumber": 3,
-              "title": "Collisions (टकराव)",
+              "title": "Collisions",
               "topics": [
                 "Elastic and inelastic collisions between particles",
                 "Centre of Mass and Laboratory frames",
@@ -3222,7 +3222,7 @@
             },
             {
               "unitNumber": 4,
-              "title": "Special Theory of Relativity (सापेक्षता का विशेष सिद्धांत)",
+              "title": "Special Theory of Relativity",
               "topics": [
                 "Michelson-Morley Experiment and its outcome",
                 "Postulates of Special Theory of Relativity",

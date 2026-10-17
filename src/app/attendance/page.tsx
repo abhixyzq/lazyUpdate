@@ -18,6 +18,7 @@ import {
   BookOpen,
   HelpCircle,
 } from 'lucide-react';
+import { BottomNav } from '@/components/BottomNav';
 import {
   AttendanceProfile,
   SubjectItem,
@@ -249,9 +250,9 @@ export default function AttendancePage() {
           <button
             type="button"
             onClick={() => setActiveTab('daily')}
-            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition ${
+            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'daily'
-                ? 'bg-white text-blue-600 shadow-xs'
+                ? 'bg-white text-emerald-800 shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -262,9 +263,9 @@ export default function AttendancePage() {
           <button
             type="button"
             onClick={() => setActiveTab('subjects')}
-            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition ${
+            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'subjects'
-                ? 'bg-white text-blue-600 shadow-xs'
+                ? 'bg-white text-emerald-800 shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -275,9 +276,9 @@ export default function AttendancePage() {
           <button
             type="button"
             onClick={() => setActiveTab('calendar')}
-            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition ${
+            className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'calendar'
-                ? 'bg-white text-blue-600 shadow-xs'
+                ? 'bg-white text-emerald-800 shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -305,7 +306,7 @@ export default function AttendancePage() {
           <div className="space-y-3">
             {/* Header with Add Subject Button */}
             <div className="flex items-center justify-between px-1">
-              <span className="text-xs font-black uppercase tracking-wider text-slate-600">
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-600">
                 All Subjects Status
               </span>
               <button
@@ -314,7 +315,7 @@ export default function AttendancePage() {
                   setEditingSubject(null);
                   setIsSubjectModalOpen(true);
                 }}
-                className="flex items-center gap-1 rounded-xl bg-blue-600 px-2.5 py-1 text-xs font-black text-white hover:bg-blue-700 active:scale-95 transition shadow-2xs"
+                className="flex items-center gap-1 rounded-xl bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-800 active:scale-95 transition shadow-2xs"
               >
                 <Plus className="h-3.5 w-3.5" />
                 <span>Add Subject</span>
@@ -384,9 +385,9 @@ export default function AttendancePage() {
         </div>
 
         {/* Patna University Attendance Policy Banner */}
-        <div className="rounded-3xl border border-slate-200/90 bg-white p-4 text-xs text-slate-600 space-y-1.5 leading-relaxed shadow-xs">
-          <div className="flex items-center gap-1.5 font-black text-slate-900 text-xs">
-            <HelpCircle className="h-3.5 w-3.5 text-blue-600" />
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-4 text-xs text-slate-600 space-y-1.5 leading-relaxed shadow-xs">
+          <div className="flex items-center gap-1.5 font-bold text-slate-900 text-xs">
+            <HelpCircle className="h-3.5 w-3.5 text-emerald-700" />
             <span>Patna University 75% Rule Guide:</span>
           </div>
           <p>
@@ -423,6 +424,9 @@ export default function AttendancePage() {
         stats={stats}
         targetPercentage={profile.targetPercentage}
       />
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 }

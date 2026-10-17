@@ -3,6 +3,7 @@
 import React from 'react';
 import { SubpageHeader } from '@/components/SubpageHeader';
 import { StudentTimeTableBuilder } from '@/components/timetable/StudentTimeTableBuilder';
+import { BottomNav } from '@/components/BottomNav';
 
 export default function TimeTablePage() {
   return (
@@ -13,10 +14,13 @@ export default function TimeTablePage() {
       />
 
       <main className="mx-auto max-w-3xl px-3 pt-3">
-        <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs">
+        <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs">
           <StudentTimeTableBuilder />
         </div>
       </main>
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 }

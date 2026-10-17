@@ -18,6 +18,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { LiveNoticeItem, FALLBACK_NOTICES } from '@/data/liveNoticesFallback';
+import { BottomNav } from '@/components/BottomNav';
 
 const CACHE_KEY = 'lazy_pu_notices_cache';
 const CACHE_TIME_KEY = 'lazy_pu_notices_cache_time';
@@ -61,13 +62,13 @@ export default function NoticesPage() {
                           window.location.protocol === 'file:';
       const isLocalhostNoPort = window.location.hostname === 'localhost' && !window.location.port;
 
-      // In Capacitor native app, relative '/api/notices' fails because there's no local Node server.
-      // Must use absolute production domain: https://lazyupdate.tech/api/notices
+      // In Capacitor native app, relative '/api/notices/' fails because there's no local Node server.
+      // Must use absolute production domain: https://lazyupdate.tech/api/notices/
       if (isCapacitor || isLocalhostNoPort) {
-        return 'https://lazyupdate.tech/api/notices';
+        return 'https://lazyupdate.tech/api/notices/';
       }
     }
-    return '/api/notices';
+    return '/api/notices/';
   };
 
   // Fetch notices from API with resilient multi-tier fallback
@@ -89,7 +90,7 @@ export default function NoticesPage() {
     // Tier 2: If primary failed or returned error, try direct production URL
     if (!data || !data.success) {
       try {
-        const fallbackRes = await fetch('https://lazyupdate.tech/api/notices');
+        const fallbackRes = await fetch('https://lazyupdate.tech/api/notices/');
         if (fallbackRes.ok) {
           data = await fallbackRes.json();
         }
@@ -130,7 +131,7 @@ export default function NoticesPage() {
     setRefreshing(false);
   };
 
-  // Initial load: fast render from cache (pruning expired ones), then background sync
+  // Auto-Sync: fast render from cache, immediate background sync, recurring 60s interval, focus & online triggers
   useEffect(() => {
     try {
       const cached = localStorage.getItem(CACHE_KEY);
@@ -149,7 +150,35 @@ export default function NoticesPage() {
       // ignore
     }
 
-    fetchNotices();
+    // 1. Initial immediate background sync
+    fetchNotices(false);
+
+    // 2. Periodic background auto-sync every 60 seconds
+    const intervalId = setInterval(() => {
+      fetchNotices(false);
+    }, 60000);
+
+    // 3. Auto-sync on window focus / tab visibility return
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        fetchNotices(false);
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('focus', handleVisibilityChange);
+
+    // 4. Auto-sync when reconnecting to network
+    const handleOnline = () => {
+      fetchNotices(false);
+    };
+    window.addEventListener('online', handleOnline);
+
+    return () => {
+      clearInterval(intervalId);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('focus', handleVisibilityChange);
+      window.removeEventListener('online', handleOnline);
+    };
   }, []);
 
   // Category counts
@@ -236,17 +265,21 @@ export default function NoticesPage() {
 
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
         
-        {/* Status Strip & Live Sync Banner */}
-        <div className="flex items-center justify-between gap-2 rounded-2xl border border-slate-200 bg-white px-3.5 py-2.5 shadow-xs">
+        {/* Status Strip & Live Sync Banner with Glass Green styling */}
+        <div className="flex items-center justify-between gap-2 rounded-2xl border border-emerald-200/80 bg-gradient-to-r from-emerald-50/60 via-white/85 to-emerald-50/40 backdrop-blur-md px-3.5 py-2.5 shadow-2xs">
           <div className="flex items-center gap-2 min-w-0">
             <span className="relative flex h-2.5 w-2.5 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
             </span>
-            <div className="truncate text-xs font-medium text-slate-600">
-              <span className="font-bold text-slate-800">PU Samarth eGov</span>
+            <div className="truncate text-xs font-medium text-slate-700 flex items-center gap-1.5 flex-wrap">
+              <span className="font-bold text-slate-900">PU Samarth eGov</span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100/90 text-emerald-800 font-semibold px-2 py-0.5 text-[10px]">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-600 animate-pulse" />
+                Auto-Sync Live
+              </span>
               {lastUpdated && (
-                <span className="text-slate-400 text-[11px] ml-1.5 hidden sm:inline">
+                <span className="text-slate-500 text-[11px] hidden sm:inline">
                   • Synced at {lastUpdated}
                 </span>
               )}
@@ -256,10 +289,10 @@ export default function NoticesPage() {
           <button
             onClick={() => fetchNotices(true)}
             disabled={refreshing}
-            className="flex items-center gap-1 text-[11px] font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 px-2.5 py-1 rounded-lg transition active:scale-95 disabled:opacity-50"
+            className="flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-white border border-emerald-200 px-2.5 py-1.5 rounded-xl shadow-2xs hover:bg-emerald-50 transition active:scale-95 disabled:opacity-50 cursor-pointer shrink-0"
             title="Refresh from official university portal"
           >
-            <RotateCw className={`h-3 w-3 ${refreshing ? 'animate-spin text-blue-600' : ''}`} />
+            <RotateCw className={`h-3 w-3 ${refreshing ? 'animate-spin text-emerald-600' : ''}`} />
             <span>{refreshing ? 'Syncing...' : 'Sync'}</span>
           </button>
         </div>
@@ -272,7 +305,7 @@ export default function NoticesPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by keyword, admission, merit, exam..."
-            className="w-full rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-9 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 shadow-xs"
+            className="w-full rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-9 text-xs font-normal text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-200 shadow-2xs"
           />
           {searchQuery && (
             <button
@@ -295,14 +328,14 @@ export default function NoticesPage() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`whitespace-nowrap px-3 py-1.5 rounded-full font-bold text-xs transition active:scale-95 shrink-0 border ${
+                className={`whitespace-nowrap px-3 py-1.5 rounded-full font-semibold text-xs transition active:scale-95 shrink-0 border ${
                   isSelected
-                    ? 'bg-slate-900 text-white border-slate-900 shadow-xs'
-                    : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-100'
+                    ? 'bg-emerald-700 text-white border-emerald-700 shadow-2xs'
+                    : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                 }`}
               >
                 <span>{cat}</span>
-                <span className={`ml-1.5 text-[10px] font-black rounded-full px-1.5 py-0.2 ${
+                <span className={`ml-1.5 text-[10px] font-bold rounded-full px-1.5 py-0.2 ${
                   isSelected ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
                 }`}>
                   {count}
@@ -336,8 +369,8 @@ export default function NoticesPage() {
               🔍
             </div>
             <div className="space-y-1">
-              <h3 className="text-sm font-bold text-slate-800">No notices match your search</h3>
-              <p className="text-xs text-slate-500 max-w-xs mx-auto">
+              <h3 className="text-sm font-semibold text-slate-800">No notices match your search</h3>
+              <p className="text-xs text-slate-400 max-w-xs mx-auto">
                 No matching circular found for "{searchQuery}". Try searching with another keyword or clear filters.
               </p>
             </div>
@@ -346,7 +379,7 @@ export default function NoticesPage() {
                 setSearchQuery('');
                 setSelectedCategory('All');
               }}
-              className="inline-flex items-center gap-1 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white hover:bg-slate-800 transition"
+              className="inline-flex items-center gap-1 rounded-xl bg-emerald-700 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-800 transition"
             >
               Reset Filters
             </button>
@@ -356,13 +389,13 @@ export default function NoticesPage() {
             {filteredNotices.map((item, idx) => (
               <article
                 key={item.id || idx}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition hover:border-slate-300 hover:shadow-sm"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs transition hover:border-emerald-200 hover:shadow-xs"
               >
                 {/* Top Row: Category + IsNew + Date */}
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <div className="flex items-center gap-1.5 flex-wrap">
                     <span
-                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black border uppercase tracking-wider ${getCategoryBadgeClass(
+                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold border uppercase tracking-wider ${getCategoryBadgeClass(
                         item.category
                       )}`}
                     >
@@ -370,40 +403,40 @@ export default function NoticesPage() {
                     </span>
 
                     {item.isNew && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-rose-50 border border-rose-200 px-2 py-0.5 text-[10px] font-black text-rose-700 animate-pulse">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-rose-50 border border-rose-200 px-2 py-0.5 text-[10px] font-semibold text-rose-700 animate-pulse">
                         <Sparkles className="h-2.5 w-2.5" />
                         NEW
                       </span>
                     )}
                   </div>
 
-                  <div className="flex items-center gap-1 text-[11px] font-semibold text-slate-400 shrink-0">
+                  <div className="flex items-center gap-1 text-[11px] font-normal text-slate-400 shrink-0">
                     <Clock className="h-3 w-3" />
                     <span>{item.date}</span>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xs sm:text-sm font-bold text-slate-900 leading-snug tracking-tight mb-3 group-hover:text-blue-900 transition">
+                <h2 className="text-xs sm:text-sm font-semibold text-slate-900 leading-snug tracking-tight mb-3 group-hover:text-emerald-800 transition">
                   {item.title}
                 </h2>
 
                 {/* Bottom Row: Document Type + Actions */}
                 <div className="flex items-center justify-between pt-2 border-t border-slate-100 gap-2">
-                  <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium truncate">
+                  <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-normal truncate">
                     {item.fileType === 'pdf' ? (
-                      <span className="flex items-center gap-1 text-rose-600 font-bold bg-rose-50 border border-rose-100 rounded-md px-1.5 py-0.5 text-[10px]">
+                      <span className="flex items-center gap-1 text-rose-600 font-semibold bg-rose-50 border border-rose-100 rounded-md px-1.5 py-0.5 text-[10px]">
                         <FileText className="h-3 w-3" />
                         PDF
                       </span>
                     ) : (
-                      <span className="flex items-center gap-1 text-blue-600 font-bold bg-blue-50 border border-blue-100 rounded-md px-1.5 py-0.5 text-[10px]">
+                      <span className="flex items-center gap-1 text-emerald-700 font-semibold bg-emerald-50 border border-emerald-100 rounded-md px-1.5 py-0.5 text-[10px]">
                         <ImageIcon className="h-3 w-3" />
                         IMAGE
                       </span>
                     )}
                     <span className="text-slate-400 text-[10px] truncate hidden sm:inline">
-                      Official AWS S3 Document
+                      Official Document
                     </span>
                   </div>
 
@@ -415,7 +448,7 @@ export default function NoticesPage() {
                       className="flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition active:scale-95"
                       title="Share Notice"
                     >
-                      <Share2 className="h-3.5 w-3.5" />
+                      <Share2 className="h-3.5 w-3.5 stroke-[1.8]" />
                     </button>
 
                     {/* View Document CTA */}
@@ -423,10 +456,10 @@ export default function NoticesPage() {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 rounded-xl bg-slate-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-xs hover:bg-blue-600 active:scale-95 transition"
+                      className="flex items-center gap-1.5 rounded-xl bg-emerald-700 px-3.5 py-1.5 text-xs font-semibold text-white shadow-2xs hover:bg-emerald-800 active:scale-95 transition"
                     >
                       <span>Read Notice</span>
-                      <ExternalLink className="h-3 w-3" />
+                      <ExternalLink className="h-3 w-3 stroke-[2]" />
                     </a>
                   </div>
                 </div>
@@ -436,26 +469,26 @@ export default function NoticesPage() {
         )}
 
         {/* Official Source & Verification Footer Box */}
-        <div className="rounded-2xl border border-slate-200 bg-white/80 p-3.5 text-slate-500 text-[11px] space-y-1.5 shadow-xs">
-          <div className="flex items-center gap-1.5 font-bold text-slate-700 text-xs">
+        <div className="rounded-2xl border border-slate-200 bg-white/80 p-3.5 text-slate-500 text-[11px] space-y-1.5 shadow-2xs">
+          <div className="flex items-center gap-1.5 font-semibold text-slate-700 text-xs">
             <ShieldCheck className="h-4 w-4 text-emerald-600" />
             <span>Official University Source Verified</span>
           </div>
-          <p className="leading-relaxed">
-            All notices displayed here are fetched directly from Patna University's Samarth eGov Portal (Ministry of Education, Gov of India) and signed documents are delivered from Amazon AWS S3. Circulars older than 6 months are automatically purged to keep the feed fresh and fast.
+          <p className="leading-relaxed text-slate-400">
+            All notices displayed here are fetched directly from Patna University's official Samarth eGov Portal.
           </p>
-          <div className="pt-1 flex items-center justify-between text-[10px] font-bold">
+          <div className="pt-1 flex items-center justify-between text-[10px] font-semibold">
             <a
               href="https://pupadm.samarth.edu.in/index.php/notifications/index"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline flex items-center gap-1"
+              className="text-emerald-700 hover:underline flex items-center gap-1"
             >
               <span>Visit Official Portal</span>
               <ExternalLink className="h-2.5 w-2.5" />
             </a>
 
-            <Link href="/" className="text-slate-500 hover:text-slate-800 flex items-center gap-1">
+            <Link href="/" className="text-slate-400 hover:text-slate-700 flex items-center gap-1">
               <ArrowLeft className="h-2.5 w-2.5" />
               <span>Back to Home</span>
             </Link>
@@ -463,6 +496,9 @@ export default function NoticesPage() {
         </div>
 
       </main>
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 }

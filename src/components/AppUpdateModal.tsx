@@ -21,7 +21,7 @@ const MARKET_URL = 'market://details?id=com.lazypu.app';
 
 export function AppUpdateModal() {
   const [updateInfo, setUpdateInfo] = useState<RemoteVersionConfig | null>(null);
-  const [currentVersion, setCurrentVersion] = useState<string>('1.0.1');
+  const [currentVersion, setCurrentVersion] = useState<string>('1.0.3');
   const [isOpen, setIsOpen] = useState(false);
   const [isCheckingManual, setIsCheckingManual] = useState(false);
 
@@ -30,8 +30,8 @@ export function AppUpdateModal() {
       if (isManual) setIsCheckingManual(true);
 
       let isNative = false;
-      let currentCode = 2;
-      let installedVersion = '1.0.1';
+      let currentCode = 3;
+      let installedVersion = '1.0.3';
 
       try {
         const { Capacitor } = await import('@capacitor/core');
@@ -40,8 +40,8 @@ export function AppUpdateModal() {
         if (isNative) {
           const { App } = await import('@capacitor/app');
           const info = await App.getInfo();
-          installedVersion = info.version || '1.0.1';
-          currentCode = parseInt(info.build || '2', 10);
+          installedVersion = info.version || '1.0.3';
+          currentCode = parseInt(info.build || '3', 10);
         }
       } catch {
         // Fallback for web or dev environment

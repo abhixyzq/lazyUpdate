@@ -12,6 +12,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 import { InstagramIcon } from '@/components/OfficialBrandIcons';
+import { BottomNav } from '@/components/BottomNav';
 
 export default function FeedbackPage() {
   const [rating, setRating] = useState<number>(5);
@@ -133,11 +134,11 @@ export default function FeedbackPage() {
             className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-4"
           >
             {/* Header banner */}
-            <div className="flex items-center gap-3 rounded-2xl bg-blue-50/80 border border-blue-100 p-3">
-              <MessageSquareHeart className="h-6 w-6 text-blue-600 shrink-0" />
+            <div className="flex items-center gap-3 rounded-2xl bg-emerald-50/80 border border-emerald-100 p-3">
+              <MessageSquareHeart className="h-6 w-6 text-emerald-700 shrink-0" />
               <div>
-                <h4 className="text-xs font-black text-blue-950">We Value Your Review</h4>
-                <p className="text-[11px] text-blue-800">
+                <h4 className="text-xs font-bold text-emerald-950">We Value Your Review</h4>
+                <p className="text-[11px] text-emerald-800">
                   Tell us what you love or what we should add to Lazy PU.
                 </p>
               </div>
@@ -242,7 +243,7 @@ export default function FeedbackPage() {
               <button
                 type="submit"
                 disabled={!feedbackText.trim()}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white font-black py-3 px-4 text-xs transition shadow-xs active:scale-98"
+                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 disabled:opacity-50 text-white font-semibold py-3 px-4 text-xs transition shadow-2xs active:scale-98"
               >
                 <Send className="h-4 w-4" /> Submit Review
               </button>
@@ -250,10 +251,10 @@ export default function FeedbackPage() {
               <button
                 type="button"
                 onClick={handleSendInstagram}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50/90 via-rose-50/70 to-amber-50/70 hover:from-pink-100 hover:to-amber-100 text-slate-800 font-bold py-2.5 px-4 text-xs transition shadow-2xs active:scale-98"
+                className="w-full flex items-center justify-center gap-2 rounded-2xl border border-pink-200 bg-gradient-to-r from-pink-50/90 via-rose-50/70 to-amber-50/70 hover:from-pink-100 hover:to-amber-100 text-slate-800 font-semibold py-2.5 px-4 text-xs transition shadow-2xs active:scale-98"
               >
                 <InstagramIcon className="h-4 w-4 shrink-0" />
-                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 bg-clip-text text-transparent font-extrabold">
+                <span className="bg-gradient-to-r from-pink-600 via-rose-600 to-amber-600 bg-clip-text text-transparent font-bold">
                   {copiedForIg ? 'Copied! Opening Instagram Chat...' : 'Chat on Instagram (@_lazypu)'}
                 </span>
               </button>
@@ -269,12 +270,15 @@ export default function FeedbackPage() {
           </div>
           <a
             href="mailto:support@lazyupdate.tech"
-            className="font-bold text-blue-600 hover:underline"
+            className="font-semibold text-emerald-700 hover:underline"
           >
             support@lazyupdate.tech
           </a>
         </div>
       </main>
+
+      {/* Persistent Bottom Nav */}
+      <BottomNav />
     </div>
   );
 }

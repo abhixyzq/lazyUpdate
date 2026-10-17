@@ -44,26 +44,19 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
           
           {/* Header */}
           <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3.5">
-            <div className="flex items-center gap-2.5">
-              <img
-                src="/lazy-pu-logo.png"
-                alt="Lazy PU Logo"
-                className="h-8 w-auto object-contain rounded-lg"
-              />
-              <div>
-                <h2 className="text-sm font-bold text-slate-900 leading-tight">
-                  Lazy PU
-                </h2>
-                <p className="text-[10px] text-slate-400">
-                  Student Portal
-                </p>
-              </div>
-            </div>
+            <Link href="/" onClick={onClose} className="flex flex-col">
+              <span className="text-base font-bold text-slate-900 leading-tight">
+                Lazy <span className="text-emerald-600 font-extrabold">PU</span>
+              </span>
+              <span className="text-[10px] text-slate-400 font-normal">
+                Patna University Companion
+              </span>
+            </Link>
 
             <button
               onClick={onClose}
               aria-label="Close menu"
-              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition cursor-pointer"
+              className="rounded-full p-1.5 text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition cursor-pointer"
             >
               <X className="h-4 w-4" />
             </button>
@@ -184,7 +177,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             >
               Privacy Policy
             </Link>
-            <span>v1.0.1</span>
+            <span>v1.0.3</span>
           </div>
 
         </div>

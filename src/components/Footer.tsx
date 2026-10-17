@@ -34,7 +34,7 @@ export const Footer: React.FC<FooterProps> = ({
                   className="h-6 w-auto object-contain hidden dark:block"
                 />
               </div>
-              <span className="rounded bg-blue-100 px-1.5 py-0.5 text-[9px] font-extrabold uppercase tracking-wider text-blue-700 dark:bg-blue-950/90 dark:text-blue-300 border border-blue-300/40 dark:border-blue-700/40 shadow-xs">
+              <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-emerald-800 dark:bg-emerald-950/90 dark:text-emerald-300 border border-emerald-300/40 dark:border-emerald-700/40 shadow-xs">
                 .tech
               </span>
             </div>
@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({
               </a>
               <button
                 onClick={onOpenUniversityModal}
-                className="flex items-center gap-1 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-2.5 py-1 text-[11px] font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100"
+                className="flex items-center gap-1 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 px-2.5 py-1 text-[11px] font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100"
               >
                 Switch Univ
               </button>
@@ -66,25 +66,25 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-1.5 text-[11px]">
               <li>
-                <a href="https://pup.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://pup.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Official University Website (pup.ac.in)</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://pup.ac.in/umis" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://pup.ac.in/umis" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>PU UMIS Student Portal Login</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://patnasciencecollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://patnasciencecollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Patna Science College Portal</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://patnacollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://patnacollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Patna College Official Portal</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
@@ -99,25 +99,25 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-1.5 text-[11px]">
               <li>
-                <a href="https://bncollegepatna.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://bncollegepatna.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>B.N. College, Patna</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://magadhmahilacollege.org" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://magadhmahilacollege.org" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Magadh Mahila College</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://vanijyamahavidyalaya.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://vanijyamahavidyalaya.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Vanijya Mahavidyalaya</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a href="https://patnalawcollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-1">
+                <a href="https://patnalawcollege.ac.in" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 dark:hover:text-emerald-400 flex items-center gap-1">
                   <span>Patna Law College</span>
                   <ExternalLink className="h-2.5 w-2.5 opacity-60" />
                 </a>
@@ -128,7 +128,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Disclaimer */}
           <div className="space-y-1.5 text-[11px] leading-relaxed">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-2.5 flex items-center gap-1">
-              <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
+              <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
               <span>Student Notice Disclaimer</span>
             </h4>
             <p className="text-slate-500 dark:text-slate-400">
@@ -149,7 +149,7 @@ export const Footer: React.FC<FooterProps> = ({
               <span>Contributors & Supporters</span>
             </Link>
             <span>•</span>
-            <Link href="/privacy" className="hover:text-blue-600 dark:hover:text-blue-400 transition">
+            <Link href="/privacy" className="hover:text-emerald-700 dark:hover:text-emerald-400 transition">
               Privacy Policy
             </Link>
             <span>•</span>

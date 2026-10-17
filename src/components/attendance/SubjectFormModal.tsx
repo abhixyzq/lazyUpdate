@@ -101,12 +101,12 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
               placeholder="e.g. Major: Classical Mechanics / Physics Lab"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-none"
+              className="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-hidden"
             />
           </div>
 
           <div>
-            <label className="text-[11px] font-black uppercase text-slate-700 block mb-1">
+            <label className="text-[11px] font-semibold uppercase text-slate-700 block mb-1">
               Paper Code (Optional)
             </label>
             <input
@@ -114,13 +114,13 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
               placeholder="e.g. MJC-1, MIC-1, AEC-1"
               value={code}
               onChange={(e) => setCode(e.target.value)}
-              className="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-bold text-slate-900 focus:bg-white focus:border-blue-500 focus:outline-none"
+              className="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 focus:bg-white focus:border-emerald-600 focus:outline-hidden"
             />
           </div>
 
           {/* Color Picker */}
           <div>
-            <label className="text-[11px] font-black uppercase text-slate-700 block mb-1">
+            <label className="text-[11px] font-semibold uppercase text-slate-700 block mb-1">
               Color Tag
             </label>
             <div className="flex items-center gap-2">
@@ -143,7 +143,7 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
           {/* Baseline Mid-Semester Counts */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-3 space-y-2">
             <div>
-              <span className="text-[11px] font-black text-slate-900 block">
+              <span className="text-[11px] font-bold text-slate-900 block">
                 Starting Baseline (Optional)
               </span>
               <span className="text-[10px] text-slate-500 font-medium">
@@ -153,7 +153,7 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
 
             <div className="grid grid-cols-2 gap-2 pt-1">
               <div>
-                <label className="text-[10px] font-bold text-slate-600 block mb-1">
+                <label className="text-[10px] font-semibold text-slate-600 block mb-1">
                   Classes Attended
                 </label>
                 <input
@@ -165,12 +165,12 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
                     setInitialAttended(val);
                     if (val > initialHeld) setInitialHeld(val);
                   }}
-                  className="w-full rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-900 focus:outline-none"
+                  className="w-full rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-900 focus:outline-hidden"
                 />
               </div>
 
               <div>
-                <label className="text-[10px] font-bold text-slate-600 block mb-1">
+                <label className="text-[10px] font-semibold text-slate-600 block mb-1">
                   Total Held So Far
                 </label>
                 <input
@@ -178,7 +178,7 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
                   min={initialAttended}
                   value={initialHeld}
                   onChange={(e) => setInitialHeld(Number(e.target.value))}
-                  className="w-full rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-900 focus:outline-none"
+                  className="w-full rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-900 focus:outline-hidden"
                 />
               </div>
             </div>
@@ -189,13 +189,13 @@ export const SubjectFormModal: React.FC<SubjectFormModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="flex-1 rounded-xl border border-slate-200 py-2 text-xs font-bold text-slate-600 hover:bg-slate-50 transition"
+              className="flex-1 rounded-xl border border-slate-200 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-50 transition"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="flex-1 rounded-xl bg-blue-600 py-2 text-xs font-black text-white hover:bg-blue-700 shadow-xs active:scale-95 transition"
+              className="flex-1 rounded-xl bg-emerald-700 py-2 text-xs font-semibold text-white hover:bg-emerald-800 shadow-xs active:scale-95 transition"
             >
               {initialSubject ? 'Update Subject' : 'Add Subject'}
             </button>
