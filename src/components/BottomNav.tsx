@@ -18,8 +18,9 @@ export const BottomNav: React.FC<BottomNavProps> = ({ onOpenDrawer }) => {
   const isTools = pathname.startsWith('/tools');
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-around border-t border-emerald-100/80 bg-white/90 px-2 py-1.5 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(16,185,129,0.07)] pb-[env(safe-area-inset-bottom,8px)]">
-      {/* 1. Home */}
+    <nav className="fixed bottom-0 inset-x-0 z-40 w-full border-t border-emerald-100/90 bg-white/95 backdrop-blur-md shadow-[0_-4px_24px_-2px_rgba(5,150,105,0.08)] transform-gpu will-change-transform pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+      <div className="mx-auto flex max-w-xl items-center justify-around px-2 py-1.5">
+        {/* 1. Home */}
       <Link
         href="/"
         className={`flex flex-col items-center justify-center py-1 px-3 transition rounded-2xl ${
@@ -98,6 +99,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ onOpenDrawer }) => {
         </div>
         <span className="text-[10px] tracking-tight mt-0.5 font-medium">More</span>
       </button>
+      </div>
     </nav>
   );
 };

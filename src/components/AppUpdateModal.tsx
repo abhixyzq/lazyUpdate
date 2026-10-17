@@ -21,7 +21,7 @@ const MARKET_URL = 'market://details?id=com.lazypu.app';
 
 export function AppUpdateModal() {
   const [updateInfo, setUpdateInfo] = useState<RemoteVersionConfig | null>(null);
-  const [currentVersion, setCurrentVersion] = useState<string>('1.0.3');
+  const [currentVersion, setCurrentVersion] = useState<string>('1.0.4');
   const [isOpen, setIsOpen] = useState(false);
   const [isCheckingManual, setIsCheckingManual] = useState(false);
 
@@ -30,8 +30,8 @@ export function AppUpdateModal() {
       if (isManual) setIsCheckingManual(true);
 
       let isNative = false;
-      let currentCode = 3;
-      let installedVersion = '1.0.3';
+      let currentCode = 4;
+      let installedVersion = '1.0.4';
 
       try {
         const { Capacitor } = await import('@capacitor/core');
@@ -40,8 +40,8 @@ export function AppUpdateModal() {
         if (isNative) {
           const { App } = await import('@capacitor/app');
           const info = await App.getInfo();
-          installedVersion = info.version || '1.0.3';
-          currentCode = parseInt(info.build || '3', 10);
+          installedVersion = info.version || '1.0.4';
+          currentCode = parseInt(info.build || '4', 10);
         }
       } catch {
         // Fallback for web or dev environment
@@ -146,85 +146,58 @@ export function AppUpdateModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pb-20 sm:pb-4 bg-slate-950/75 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="relative w-full max-w-sm rounded-3xl bg-white dark:bg-[#0c121e] border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden p-5 sm:p-6 transition-all text-slate-900 dark:text-white">
+    <div className={`fixed z-50 ${updateInfo.forceUpdate ? 'inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4' : 'bottom-20 sm:bottom-6 left-3 right-3 sm:left-auto sm:right-6 flex justify-center pointer-events-none'}`}>
+      <div className="pointer-events-auto relative w-full max-w-sm rounded-2xl bg-white/95 dark:bg-slate-900/95 border border-emerald-200/90 dark:border-emerald-800/80 shadow-[0_12px_36px_-6px_rgba(5,150,105,0.22)] p-3.5 transition-all animate-in slide-in-from-bottom-5 duration-300">
         
         {/* Close Button (only if not forced) */}
         {!updateInfo.forceUpdate && (
           <button
             onClick={handleDismiss}
-            className="absolute top-4 right-4 p-1.5 rounded-full text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
+            className="absolute top-2.5 right-2.5 p-1 rounded-full text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
             aria-label="Close update alert"
           >
-            <X className="h-5 w-5" />
+            <X className="h-4 w-4" />
           </button>
         )}
 
-        {/* Top Header Badge */}
-        <div className="flex items-center gap-3 mb-3.5">
-          <div className="h-12 w-12 rounded-2xl bg-gradient-to-tr from-emerald-500 to-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 shrink-0">
-            <Sparkles className="h-6 w-6 animate-pulse" />
+        {/* Compact Header: Icon + Version Details */}
+        <div className="flex items-center gap-2.5 pr-6">
+          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-xs shrink-0">
+            <Sparkles className="h-4.5 w-4.5 animate-pulse" />
           </div>
-          <div>
+          <div className="min-w-0 flex-1">
             <div className="flex items-center gap-1.5">
-              <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">
-                New v{updateInfo.version}
+              <span className="text-[11px] font-extrabold text-slate-900 dark:text-white">
+                New Update Available!
               </span>
-              <span className="text-[10px] text-slate-400 font-semibold">
-                Installed: v{currentVersion}
+              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
+                v{updateInfo.version}
               </span>
             </div>
-            <h3 className="text-base font-black text-slate-900 dark:text-white mt-1">
-              {updateInfo.title || 'New Update on Play Store! 🚀'}
-            </h3>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate mt-0.5">
+              {updateInfo.message || 'Latest notices & performance updates on Play Store.'}
+            </p>
           </div>
         </div>
 
-        {/* Message */}
-        <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3.5">
-          {updateInfo.message}
-        </p>
-
-        {/* Feature Highlights */}
-        {updateInfo.features && updateInfo.features.length > 0 && (
-          <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-100 dark:border-slate-800 p-3 mb-4 space-y-2">
-            <span className="text-[10px] font-black text-slate-700 dark:text-slate-300 uppercase tracking-wider block">
-              What&apos;s New:
-            </span>
-            <ul className="space-y-1.5">
-              {updateInfo.features.map((feature, idx) => (
-                <li
-                  key={idx}
-                  className="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-300"
-                >
-                  <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0 mt-0.5" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-2">
-          <button
-            onClick={handleOpenPlayStore}
-            className="w-full flex items-center justify-center gap-2.5 rounded-2xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 py-3 px-4 text-xs font-black text-white active:scale-98 shadow-md transition cursor-pointer"
-          >
-            {/* Authentic 4-Color Google Play Icon */}
-            <GooglePlayIcon className="h-4 w-4 shrink-0" />
-            <span>Update on Google Play</span>
-            <ExternalLink className="h-3.5 w-3.5 opacity-70" />
-          </button>
-
+        {/* Compact Action Buttons */}
+        <div className="mt-2.5 flex items-center gap-2">
           {!updateInfo.forceUpdate && (
             <button
               onClick={handleDismiss}
-              className="py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition cursor-pointer text-center"
+              className="flex-1 py-1.5 px-3 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition cursor-pointer text-center"
             >
-              Remind Later
+              Later
             </button>
           )}
+
+          <button
+            onClick={handleOpenPlayStore}
+            className="flex-2 flex items-center justify-center gap-1.5 rounded-xl bg-slate-900 hover:bg-black dark:bg-white dark:text-slate-900 py-2 px-3 text-[11px] font-bold text-white active:scale-98 shadow-xs transition cursor-pointer"
+          >
+            <GooglePlayIcon className="h-3.5 w-3.5 shrink-0" />
+            <span>Update Now</span>
+          </button>
         </div>
 
       </div>

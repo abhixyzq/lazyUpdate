@@ -11,8 +11,8 @@ export default function ToolsPage() {
   return (
     <div className="relative min-h-screen bg-[#f6faf7] text-slate-900 pb-24 overflow-x-hidden flex flex-col justify-between">
       {/* Ambient Emerald Glass Glow Orbs */}
-      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-emerald-200/40 via-teal-100/25 to-transparent blur-3xl rounded-full" />
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-200/25 blur-3xl rounded-full" />
+      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-emerald-200/40 via-teal-100/25 to-transparent blur-3xl rounded-full transform-gpu will-change-transform" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-200/25 blur-3xl rounded-full transform-gpu will-change-transform" />
 
       {/* Top Navbar */}
       <SubpageHeader title="Student Tools" />

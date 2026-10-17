@@ -1,9 +1,9 @@
 {
-  "version": "1.0.3",
-  "versionCode": 3,
+  "version": "1.0.4",
+  "versionCode": 4,
   "releaseDate": "2026-10-17",
-  "title": "Lazy PU v1.0.3 Update! 🚀",
-  "message": "Performance & content update: Instant reference textbooks on Amazon, offline syllabus improvements, real-time notices, and clean user experience.",
+  "title": "Lazy PU v1.0.4 Update! 🚀",
+  "message": "Smoother scrolling experience, permanently fixed navigation bars, and compact update notifications.",
   "features": [
     "Clean, ultra-fast modern design with zero clutter",
     "Direct Amazon India links for all syllabus reference books",

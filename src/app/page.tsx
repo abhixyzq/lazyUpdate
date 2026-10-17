@@ -20,10 +20,10 @@ export default function HomePage() {
 
   return (
     <div className="relative min-h-screen bg-[#f6faf7] text-slate-900 pb-24 overflow-x-hidden">
-      {/* Ambient Emerald Glass Glow Orbs */}
-      <div className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-emerald-200/40 via-teal-100/25 to-transparent blur-3xl rounded-full" />
-      <div className="pointer-events-none absolute top-[400px] -right-20 w-72 h-72 bg-emerald-200/25 blur-3xl rounded-full" />
-      <div className="pointer-events-none absolute top-[750px] -left-20 w-72 h-72 bg-teal-200/20 blur-3xl rounded-full" />
+      {/* Ambient Emerald Glass Glow Orbs (Hardware-accelerated) */}
+      <div className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-emerald-200/40 via-teal-100/25 to-transparent blur-3xl rounded-full transform-gpu will-change-transform" />
+      <div className="pointer-events-none absolute top-[400px] -right-20 w-72 h-72 bg-emerald-200/25 blur-3xl rounded-full transform-gpu will-change-transform" />
+      <div className="pointer-events-none absolute top-[750px] -left-20 w-72 h-72 bg-teal-200/20 blur-3xl rounded-full transform-gpu will-change-transform" />
 
       {/* 1. Minimal Header */}
       <LightHeader
