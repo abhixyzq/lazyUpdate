@@ -1,0 +1,228 @@
+{
+  "success": true,
+  "source": "live_samarth",
+  "count": 20,
+  "lastUpdated": "2026-10-17T09:14:45.654Z",
+  "notices": [
+    {
+      "id": "samarth-39",
+      "title": "NOTICE\r\nThe candidates in the published merit list contain provisionally selected for Admission to LL.B. Session 2026-2029, if they fulfill the requisite eligibility Criteria.",
+      "date": "14 Oct 2026",
+      "rawDate": "14 Oct 2026 20:20:44 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17920425581979_admission_docs.pdf",
+      "category": "Merit List",
+      "isNew": true,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-40",
+      "title": "NOTICE\r\nThe candidates in the published merit list contain provisionally selected for Admission to LL.M. Session 2026-2028, if they fulfill the requisite eligibility Criteria.",
+      "date": "14 Oct 2026",
+      "rawDate": "14 Oct 2026 20:20:36 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17920426641979_admission_docs.jpeg",
+      "category": "Merit List",
+      "isNew": true,
+      "fileType": "image",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-38",
+      "title": "NOTICE \r\nCandidates who have submitted their application for admission in the constituent Colleges of Patna University in Spot Round are advised to visit the college concerned college for admission on 10.10.2026 (Saturday), 11.10.2026 (Sunday) and 12.10.2026(Monday). No request will be entertained after 12.10.2026.",
+      "date": "10 Oct 2026",
+      "rawDate": "10 Oct 2026 12:05:22 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17916147151979_admission_docs.jpeg",
+      "category": "Spot Round",
+      "isNew": true,
+      "fileType": "image",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-37",
+      "title": "Vacant seat in Undergraduate Programme-2026 Patna University",
+      "date": "07 Oct 2026",
+      "rawDate": "07 Oct 2026 07:45:20 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17913512641979_admission_docs.pdf",
+      "category": "Circulars",
+      "isNew": true,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-36",
+      "title": "Notice regarding Spot Round Admission in Undergraduate Program 2026",
+      "date": "06 Oct 2026",
+      "rawDate": "06 Oct 2026 17:10:00 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/406e14527e51f51326fab1f6db85f7bf71134a0f6a73d2feffe2af210119f9a42/17912895842_admission_docs.pdf",
+      "category": "Spot Round",
+      "isNew": true,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-32",
+      "title": "Link for re-admission (students admitted in session 2025-26) for PG Regular and UG Regular",
+      "date": "19 Sep 2026",
+      "rawDate": "19 Sep 2026 17:35:59 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17898197881979_admission_docs.jpeg",
+      "category": "Admissions",
+      "isNew": false,
+      "fileType": "image",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-31",
+      "title": "Notice for Spot Round Admission for PG Regular and PG Self Finance 2026",
+      "date": "11 Sep 2026",
+      "rawDate": "11 Sep 2026 18:00:17 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17891459811979_admission_docs.pdf",
+      "category": "Spot Round",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-30",
+      "title": "Notice for Second round counselling for admission in PG Self Finance 2026",
+      "date": "08 Sep 2026",
+      "rawDate": "08 Sep 2026 21:00:53 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17888881391979_admission_docs.pdf",
+      "category": "Counselling",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-29",
+      "title": "Notice for second round counselling for admission in PG Regular 2026",
+      "date": "05 Sep 2026",
+      "rawDate": "05 Sep 2026 16:00:41 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/406e14527e51f51326fab1f6db85f7bf71134a0f6a73d2feffe2af210119f9a42/17886720452_admission_docs.pdf",
+      "category": "Counselling",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-27",
+      "title": "Merit list for Second Round Counselling in PGD HRD, MA Rural Management and Development, MSc Environmental Science, MSc Biochemistry, MA Music, MJMC, MBA and MSW. Merit list for first Round Counselling in PG Diploma in Public Administration and Local Governance and PGD ISM. The Counselling will be from 01.09.2025 to 05.09.2026",
+      "date": "01 Sep 2026",
+      "rawDate": "01 Sep 2026 14:00:32 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17882575111979_admission_docs.pdf",
+      "category": "Merit List",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-26",
+      "title": "Notice for first merit list for PG Self Finance 2026",
+      "date": "31 Aug 2026",
+      "rawDate": "31 Aug 2026 13:45:16 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17881669491979_admission_docs.pdf",
+      "category": "Merit List",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-25",
+      "title": "Notice for extension of last date for first round counselling for admission in PG Regular and PG Self Finance",
+      "date": "19 Aug 2026",
+      "rawDate": "19 Aug 2026 13:10:06 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17871329051979_admission_docs.pdf",
+      "category": "Counselling",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-24",
+      "title": "Notice regarding Spot Round Admission UG regular and UG Self Finance",
+      "date": "13 Aug 2026",
+      "rawDate": "13 Aug 2026 08:05:15 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17866416991979_admission_docs.pdf",
+      "category": "Spot Round",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-23",
+      "title": "Notice regarding first round counselling of PG Regular and PG Self Finance.",
+      "date": "13 Aug 2026",
+      "rawDate": "13 Aug 2026 08:05:09 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17866415671979_admission_docs.pdf",
+      "category": "Counselling",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-22",
+      "title": "Notice regarding spot round admission in UG Regular and UG Self Finance 2026.",
+      "date": "11 Aug 2026",
+      "rawDate": "11 Aug 2026 20:00:01 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17864637371979_admission_docs.pdf",
+      "category": "Spot Round",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-21",
+      "title": "Notice for Viva-Voce for Admission in MSc Biotechnology.",
+      "date": "11 Aug 2026",
+      "rawDate": "11 Aug 2026 12:45:21 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17864365261979_admission_docs.pdf",
+      "category": "Admissions",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-20",
+      "title": "Notice for Admission under Sports Quota in BN College",
+      "date": "06 Aug 2026",
+      "rawDate": "06 Aug 2026 11:40:49 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17859971351979_admission_docs.pdf",
+      "category": "Admissions",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-19",
+      "title": "Induction meet for UG Self Finance 2026",
+      "date": "30 Jul 2026",
+      "rawDate": "30 Jul 2026 14:05:02 PM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17854244021979_admission_docs.pdf",
+      "category": "Circulars",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-18",
+      "title": "Important Notice \r\nThe counselling for UG Self Finance scheduled on 21.07.2026 is rescheduled to be held on 25.07.2026 due to unavoidable reasons",
+      "date": "22 Jul 2026",
+      "rawDate": "22 Jul 2026 10:05:55 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17847128541979_admission_docs.pdf",
+      "category": "Counselling",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    },
+    {
+      "id": "samarth-16",
+      "title": "Important Notice \r\nThe option for updating and correct the submitted profile is being enabled in admission portal for PG Regular, PG Self Finance, UG Regular and UG Self Finance 2026 for two days (22.07.2026 and 23.07.2026). Applicants are requested to update and correct their profile till 23.07.2026.",
+      "date": "22 Jul 2026",
+      "rawDate": "22 Jul 2026 10:05:10 AM",
+      "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17847127581979_admission_docs.pdf",
+      "category": "Admissions",
+      "isNew": false,
+      "fileType": "pdf",
+      "source": "Samarth Portal"
+    }
+  ]
+}

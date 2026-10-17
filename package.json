@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/fetch-notices.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "cap:sync": "next build && npx cap sync",
+    "cap:sync": "npm run build && npx cap sync",
     "cap:open": "npx cap open android",
-    "build:aab": "next build && npx cap sync android && cd android && .\\gradlew bundleRelease",
-    "build:apk": "next build && npx cap sync android && cd android && .\\gradlew assembleRelease"
+    "build:aab": "npm run build && npx cap sync android && cd android && .\\gradlew bundleRelease",
+    "build:apk": "npm run build && npx cap sync android && cd android && .\\gradlew assembleRelease"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.2",

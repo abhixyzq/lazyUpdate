@@ -18,6 +18,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { LiveNoticeItem, FALLBACK_NOTICES } from '@/data/liveNoticesFallback';
+import { parseSamarthHtml, isOlderThan6Months } from '@/utils/noticeParser';
 import { BottomNav } from '@/components/BottomNav';
 
 const CACHE_KEY = 'lazy_pu_notices_cache';
@@ -63,39 +64,76 @@ export default function NoticesPage() {
       const isLocalhostNoPort = window.location.hostname === 'localhost' && !window.location.port;
 
       // In Capacitor native app, relative '/api/notices/' fails because there's no local Node server.
-      // Must use absolute production domain: https://lazyupdate.tech/api/notices/
+      // Must use absolute production domain www.lazyupdate.tech (avoiding 308 apex redirect)
       if (isCapacitor || isLocalhostNoPort) {
-        return 'https://lazyupdate.tech/api/notices/';
+        return 'https://www.lazyupdate.tech/api/notices/';
       }
     }
     return '/api/notices/';
   };
 
-  // Fetch notices from API with resilient multi-tier fallback
+  // Fetch notices with resilient 4-tier fallback:
+  // Tier 1: Primary API route (/api/notices/ or https://www.lazyupdate.tech/api/notices/)
+  // Tier 2: In Capacitor native app, direct native fetch to Samarth portal (bypasses browser CORS)
+  // Tier 3: Static pre-scraped CDN file (/notices.json or https://www.lazyupdate.tech/notices.json)
+  // Tier 4: Offline localStorage cache or pre-bundled October 2026 FALLBACK_NOTICES
   const fetchNotices = async (isManualRefresh = false) => {
     if (isManualRefresh) setRefreshing(true);
     let data: any = null;
 
+    // Tier 1: Try resolved API route
     try {
-      // Tier 1: Try resolved endpoint (either relative for web, or lazyupdate.tech for app)
       const primaryUrl = getNoticeApiUrl();
       const res = await fetch(primaryUrl);
       if (res.ok) {
         data = await res.json();
       }
     } catch (err) {
-      console.warn('Primary notice fetch failed, trying direct remote endpoint:', err);
+      console.warn('Tier 1 notice fetch failed:', err);
     }
 
-    // Tier 2: If primary failed or returned error, try direct production URL
-    if (!data || !data.success) {
+    // Tier 2: In Capacitor Native App, execute direct native scrape (bypasses CORS completely)
+    if (!data || !data.success || !Array.isArray(data.notices) || data.notices.length === 0) {
       try {
-        const fallbackRes = await fetch('https://lazyupdate.tech/api/notices/');
-        if (fallbackRes.ok) {
-          data = await fallbackRes.json();
+        const isCap = typeof window !== 'undefined' && Boolean((window as any).Capacitor?.isNativePlatform?.());
+        if (isCap) {
+          const { CapacitorHttp } = await import('@capacitor/core');
+          const nativeRes = await CapacitorHttp.get({
+            url: 'https://pupadm.samarth.edu.in/index.php/notifications/index?page=1',
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            }
+          });
+          if (nativeRes.status === 200 && nativeRes.data) {
+            const rawHtml = typeof nativeRes.data === 'string' ? nativeRes.data : JSON.stringify(nativeRes.data);
+            const parsed = parseSamarthHtml(rawHtml);
+            if (parsed.length > 0) {
+              data = {
+                success: true,
+                source: 'live_samarth_native',
+                notices: parsed
+              };
+            }
+          }
         }
-      } catch (err2) {
-        console.warn('Direct remote notice fetch failed:', err2);
+      } catch (nativeErr) {
+        console.warn('Tier 2 native scrape failed:', nativeErr);
+      }
+    }
+
+    // Tier 3: Static pre-scraped CDN notices.json (always 200 OK from static hosting)
+    if (!data || !data.success || !Array.isArray(data.notices) || data.notices.length === 0) {
+      try {
+        const cdnUrl = typeof window !== 'undefined' && ((window as any).Capacitor?.isNativePlatform?.() || window.location.protocol === 'file:')
+          ? 'https://www.lazyupdate.tech/notices.json'
+          : '/notices.json';
+        const staticRes = await fetch(cdnUrl);
+        if (staticRes.ok) {
+          data = await staticRes.json();
+        }
+      } catch (cdnErr) {
+        console.warn('Tier 3 static notices.json fetch failed:', cdnErr);
       }
     }
 
@@ -113,7 +151,7 @@ export default function NoticesPage() {
           localStorage.setItem(CACHE_KEY, JSON.stringify(activeOnly));
           localStorage.setItem(CACHE_TIME_KEY, updateTime);
         } catch {
-          // ignore localstorage quota issue
+          // ignore quota
         }
 
         if (isManualRefresh) {
@@ -121,7 +159,7 @@ export default function NoticesPage() {
         }
       }
     } else {
-      // Tier 3: Network unavailable — use localStorage or keep pre-bundled fallback
+      // Tier 4: Offline fallback
       if (isManualRefresh) {
         showToast('Offline: Showing saved official notices');
       }
