@@ -252,7 +252,7 @@ export default function AttendancePage() {
             onClick={() => setActiveTab('daily')}
             className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'daily'
-                ? 'bg-white text-emerald-800 shadow-xs'
+                ? 'bg-white text-[#0a2558] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -265,7 +265,7 @@ export default function AttendancePage() {
             onClick={() => setActiveTab('subjects')}
             className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'subjects'
-                ? 'bg-white text-emerald-800 shadow-xs'
+                ? 'bg-white text-[#0a2558] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -278,7 +278,7 @@ export default function AttendancePage() {
             onClick={() => setActiveTab('calendar')}
             className={`flex-1 flex items-center justify-center gap-1.5 rounded-xl py-2 transition font-semibold ${
               activeTab === 'calendar'
-                ? 'bg-white text-emerald-800 shadow-xs'
+                ? 'bg-white text-[#0a2558] shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -315,9 +315,9 @@ export default function AttendancePage() {
                   setEditingSubject(null);
                   setIsSubjectModalOpen(true);
                 }}
-                className="flex items-center gap-1 rounded-xl bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-800 active:scale-95 transition shadow-2xs"
+                className="flex items-center gap-1 rounded-xl bg-[#0a2558] px-3 py-1.5 text-xs font-semibold text-white hover:bg-[#071b40] active:scale-95 transition shadow-2xs"
               >
-                <Plus className="h-3.5 w-3.5" />
+                <Plus className="h-3.5 w-3.5 text-[#fde047]" />
                 <span>Add Subject</span>
               </button>
             </div>
@@ -387,7 +387,7 @@ export default function AttendancePage() {
         {/* Patna University Attendance Policy Banner */}
         <div className="rounded-2xl border border-slate-200/90 bg-white p-4 text-xs text-slate-600 space-y-1.5 leading-relaxed shadow-xs">
           <div className="flex items-center gap-1.5 font-bold text-slate-900 text-xs">
-            <HelpCircle className="h-3.5 w-3.5 text-emerald-700" />
+            <HelpCircle className="h-3.5 w-3.5 text-[#0a2558]" />
             <span>Patna University 75% Rule Guide:</span>
           </div>
           <p>

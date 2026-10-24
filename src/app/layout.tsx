@@ -52,7 +52,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
-      <body className="min-h-screen bg-[#f8fafc] text-slate-900 transition-colors selection:bg-blue-600 selection:text-white flex flex-col antialiased">
+      <body className="min-h-screen bg-[#faf5ea] text-slate-900 transition-colors selection:bg-[#fde047] selection:text-[#0a2558] flex flex-col antialiased">
         <ThemeProvider>
           <Preloader />
           <TelemetryTracker />

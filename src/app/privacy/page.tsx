@@ -54,7 +54,7 @@ export default function PrivacyAndDisclaimerPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-slate-900 pb-28 sm:pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-20">
       {/* 1. Universal Top Navigation */}
       <SubpageHeader
         title="Privacy Policy & Legal"
@@ -67,7 +67,7 @@ export default function PrivacyAndDisclaimerPage() {
         <section id="overview" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
           <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
             <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200/60">
+              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-yellow-50 text-[#0a2558] border border-yellow-200/80">
                 <ShieldCheck className="h-5 w-5" />
               </span>
               <div>
@@ -79,15 +79,15 @@ export default function PrivacyAndDisclaimerPage() {
                 </p>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100/70 px-2.5 py-1 text-[11px] font-semibold text-emerald-800">
-              <CheckCircle2 className="h-3 w-3" /> Zero Data Collected
+            <span className="inline-flex items-center gap-1 rounded-full bg-yellow-100/80 border border-yellow-200 px-2.5 py-1 text-[11px] font-semibold text-amber-900">
+              <CheckCircle2 className="h-3 w-3 text-amber-700" /> Zero Data Collected
             </span>
           </div>
 
           <div className="mt-4 space-y-3 text-xs sm:text-[13px] text-slate-600 leading-relaxed">
             <p>
               Welcome to <strong>Lazy PU</strong> (accessible on the web at{' '}
-              <a href="https://lazyupdate.tech" target="_blank" rel="noreferrer" className="text-emerald-700 underline font-semibold">
+              <a href="https://lazyupdate.tech" target="_blank" rel="noreferrer" className="text-[#0a2558] underline font-semibold">
                 lazyupdate.tech
               </a>{' '}
               and as an Android application under package name{' '}
@@ -111,7 +111,7 @@ export default function PrivacyAndDisclaimerPage() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="rounded-lg border border-slate-200/80 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-700 transition"
+                  className="rounded-lg border border-slate-200/80 bg-slate-50 px-2.5 py-1 text-[11px] font-medium text-slate-600 hover:border-amber-300 hover:bg-yellow-50 hover:text-[#0a2558] transition"
                 >
                   {item.label}
                 </a>
@@ -140,19 +140,19 @@ export default function PrivacyAndDisclaimerPage() {
               <ul className="space-y-1.5 list-disc list-inside text-[11px] sm:text-xs">
                 <li>
                   Patna University Official Web Portal:{' '}
-                  <a href="https://pup.ac.in" target="_blank" rel="noreferrer" className="font-semibold text-emerald-800 underline inline-flex items-center gap-0.5">
+                  <a href="https://pup.ac.in" target="_blank" rel="noreferrer" className="font-semibold text-[#0a2558] underline inline-flex items-center gap-0.5">
                     pup.ac.in <ExternalLink className="h-3 w-3 inline" />
                   </a>
                 </li>
                 <li>
                   Samarth eGov Higher Education Portal:{' '}
-                  <a href="https://pupadm.samarth.edu.in" target="_blank" rel="noreferrer" className="font-semibold text-emerald-800 underline inline-flex items-center gap-0.5">
+                  <a href="https://pupadm.samarth.edu.in" target="_blank" rel="noreferrer" className="font-semibold text-[#0a2558] underline inline-flex items-center gap-0.5">
                     pupadm.samarth.edu.in <ExternalLink className="h-3 w-3 inline" />
                   </a>
                 </li>
                 <li>
                   Raj Bhavan Bihar Official Portal:{' '}
-                  <a href="https://governor.bih.nic.in" target="_blank" rel="noreferrer" className="font-semibold text-emerald-800 underline inline-flex items-center gap-0.5">
+                  <a href="https://governor.bih.nic.in" target="_blank" rel="noreferrer" className="font-semibold text-[#0a2558] underline inline-flex items-center gap-0.5">
                     governor.bih.nic.in <ExternalLink className="h-3 w-3 inline" />
                   </a>
                 </li>
@@ -164,7 +164,7 @@ export default function PrivacyAndDisclaimerPage() {
         {/* 2. Zero Personal Data Collection */}
         <section id="data-collection" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
-            <EyeOff className="h-5 w-5 text-emerald-600 shrink-0" />
+            <EyeOff className="h-5 w-5 text-[#0a2558] shrink-0" />
             <h2>Zero Personal Data Collection Policy</h2>
           </div>
 
@@ -258,7 +258,7 @@ export default function PrivacyAndDisclaimerPage() {
             </div>
 
             {clearedNotice && (
-              <div className="rounded-xl bg-emerald-50 border border-emerald-200 p-2.5 text-center text-xs font-semibold text-emerald-800 animate-in fade-in">
+              <div className="rounded-xl bg-yellow-50 border border-yellow-200 p-2.5 text-center text-xs font-semibold text-[#0a2558] animate-in fade-in">
                 ✓ All local cache, attendance, and saved records have been successfully wiped from this device.
               </div>
             )}
@@ -268,7 +268,7 @@ export default function PrivacyAndDisclaimerPage() {
         {/* 4. Android Device Permissions (Google Play Policy Compliance) */}
         <section id="permissions" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
-            <Smartphone className="h-5 w-5 text-indigo-600 shrink-0" />
+            <Smartphone className="h-5 w-5 text-[#0a2558] shrink-0" />
             <h2>Device & Android Application Permissions</h2>
           </div>
 
@@ -280,7 +280,7 @@ export default function PrivacyAndDisclaimerPage() {
             <div className="rounded-2xl border border-slate-100 bg-slate-50/70 p-3.5 space-y-1">
               <div className="flex items-center justify-between">
                 <code className="text-xs font-mono font-bold text-slate-800">android.permission.INTERNET</code>
-                <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Required</span>
+                <span className="text-[10px] font-semibold text-[#0a2558] bg-yellow-50 border border-yellow-200/60 px-2 py-0.5 rounded-full">Required</span>
               </div>
               <p className="text-[11px] text-slate-500 leading-normal">
                 Enables loading verified public notices, syllabus PDF documents, and academic updates over secure HTTPS.
@@ -290,7 +290,7 @@ export default function PrivacyAndDisclaimerPage() {
             <div className="rounded-2xl border border-slate-100 bg-slate-50/70 p-3.5 space-y-1">
               <div className="flex items-center justify-between">
                 <code className="text-xs font-mono font-bold text-slate-800">android.permission.ACCESS_NETWORK_STATE</code>
-                <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Required</span>
+                <span className="text-[10px] font-semibold text-[#0a2558] bg-yellow-50 border border-yellow-200/60 px-2 py-0.5 rounded-full">Required</span>
               </div>
               <p className="text-[11px] text-slate-500 leading-normal">
                 Detects whether the device is online or offline, allowing graceful offline caching without wasting cellular battery or data.
@@ -322,7 +322,7 @@ export default function PrivacyAndDisclaimerPage() {
         {/* 5. Zero-Ads & Anti-Tracking Policy */}
         <section id="zero-ads" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
-            <Cpu className="h-5 w-5 text-emerald-600 shrink-0" />
+            <Cpu className="h-5 w-5 text-[#0a2558] shrink-0" />
             <h2>100% Ad-Free, Tracker-Free Student Environment</h2>
           </div>
 
@@ -331,20 +331,20 @@ export default function PrivacyAndDisclaimerPage() {
               Students studying for examinations should never be bombarded by intrusive popups, banners, video interstitials, or predatory ad trackers.
             </p>
             <div className="grid gap-2 sm:grid-cols-2 pt-1 text-slate-700">
-              <div className="rounded-xl border border-slate-100 bg-emerald-50/40 p-3 flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+              <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                 <span className="text-xs"><strong>No Google AdMob</strong> or third-party programmatic ad SDKs.</span>
               </div>
-              <div className="rounded-xl border border-slate-100 bg-emerald-50/40 p-3 flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+              <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                 <span className="text-xs"><strong>No behavioral profiling</strong> or data broker sales.</span>
               </div>
-              <div className="rounded-xl border border-slate-100 bg-emerald-50/40 p-3 flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+              <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                 <span className="text-xs"><strong>No advertising cookies</strong> or cross-site tracking pixels.</span>
               </div>
-              <div className="rounded-xl border border-slate-100 bg-emerald-50/40 p-3 flex items-start gap-2">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+              <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
+                <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                 <span className="text-xs"><strong>Clean, distraction-free</strong> academic interface.</span>
               </div>
             </div>
@@ -416,7 +416,7 @@ export default function PrivacyAndDisclaimerPage() {
         {/* 9. User Rights & Data Erasure */}
         <section id="legal-rights" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
-            <Scale className="h-5 w-5 text-emerald-600 shrink-0" />
+            <Scale className="h-5 w-5 text-[#0a2558] shrink-0" />
             <h2>Your Rights & Control Over Your Data</h2>
           </div>
 
@@ -435,7 +435,7 @@ export default function PrivacyAndDisclaimerPage() {
         {/* 10. Developer Contact & Grievance Redressal */}
         <section id="contact" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
-            <Info className="h-5 w-5 text-emerald-600 shrink-0" />
+            <Info className="h-5 w-5 text-[#0a2558] shrink-0" />
             <h2>Grievance Redressal & Contact Information</h2>
           </div>
 
@@ -454,13 +454,13 @@ export default function PrivacyAndDisclaimerPage() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-slate-200/60 pb-2">
               <span className="font-semibold text-slate-500">Official Web Domain:</span>
-              <a href="https://lazyupdate.tech" target="_blank" rel="noreferrer" className="text-emerald-700 underline font-medium">
+              <a href="https://lazyupdate.tech" target="_blank" rel="noreferrer" className="text-[#0a2558] underline font-medium">
                 https://lazyupdate.tech
               </a>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-slate-200/60 pb-2">
               <span className="font-semibold text-slate-500">Official Support Email:</span>
-              <span className="font-mono text-emerald-800 font-semibold">support@lazyupdate.tech</span>
+              <span className="font-mono text-[#0a2558] font-bold">support@lazyupdate.tech</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <span className="font-semibold text-slate-500">Response Turnaround:</span>
@@ -471,9 +471,9 @@ export default function PrivacyAndDisclaimerPage() {
           <div className="flex flex-col sm:flex-row gap-2 pt-1">
             <a
               href="mailto:support@lazyupdate.tech"
-              className="flex-1 flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 px-4 text-xs transition shadow-2xs"
+              className="flex-1 flex items-center justify-center gap-2 rounded-2xl bg-[#0a2558] hover:bg-[#071b40] text-white font-semibold py-3 px-4 text-xs transition shadow-2xs"
             >
-              <Mail className="h-4 w-4" /> Send Email (support@lazyupdate.tech)
+              <Mail className="h-4 w-4 text-[#fde047]" /> Send Email (support@lazyupdate.tech)
             </a>
             <Link
               href="/"

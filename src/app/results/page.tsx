@@ -82,7 +82,7 @@ export default function ResultsPage() {
   const isPass = result?.semesterResult?.toLowerCase().includes('pass');
 
   return (
-    <div className="min-h-screen bg-slate-50/70 text-slate-900 pb-28 sm:pb-16 print:bg-white print:p-0 print:m-0">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16 print:bg-white print:p-0 print:m-0">
       {/* Top Header - hidden during print */}
       <div className="print:hidden">
         <SubpageHeader title="Results" />
@@ -92,7 +92,7 @@ export default function ResultsPage() {
         {/* Search & Lookup Section - hidden during print */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-2xs print:hidden space-y-4">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 border border-emerald-100">
+            <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-blue-50 text-[#0a2558] border border-blue-100">
               <GraduationCap className="h-5 w-5 stroke-[1.8]" />
             </span>
             <h1 className="text-base sm:text-lg font-bold text-slate-900 leading-tight">
@@ -122,7 +122,7 @@ export default function ResultsPage() {
                     if (e.key === 'Enter') handleFetch();
                   }}
                   placeholder="Enter 11-digit roll (e.g. 12602404033)"
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-hidden focus:ring-1 focus:ring-emerald-200 transition shadow-2xs"
+                  className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 placeholder:text-slate-400 focus:border-[#0a2558] focus:outline-hidden focus:ring-1 focus:ring-blue-100 transition shadow-2xs"
                 />
                 {rollInput && (
                   <button
@@ -143,7 +143,7 @@ export default function ResultsPage() {
                 type="button"
                 disabled={loading || !rollInput.trim()}
                 onClick={() => handleFetch()}
-                className="flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 active:scale-98 disabled:opacity-50 disabled:pointer-events-none px-6 py-3 text-sm font-semibold text-white shadow-2xs transition"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-[#0a2558] hover:bg-[#071d47] active:scale-98 disabled:opacity-50 disabled:pointer-events-none px-6 py-3 text-sm font-bold text-white shadow-xs transition"
               >
                 {loading ? (
                   <>
@@ -322,7 +322,7 @@ export default function ResultsPage() {
               <div
                 className={`rounded-2xl border p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left ${
                   isPass
-                    ? 'border-emerald-200 bg-emerald-50/80 text-emerald-950'
+                    ? 'border-blue-200 bg-blue-50/80 text-[#0a2558]'
                     : 'border-amber-200 bg-amber-50/80 text-amber-950'
                 }`}
               >
@@ -330,7 +330,7 @@ export default function ResultsPage() {
                   <span
                     className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl ${
                       isPass
-                        ? 'bg-emerald-600 text-white shadow-xs'
+                        ? 'bg-[#0a2558] text-white shadow-xs'
                         : 'bg-amber-600 text-white shadow-xs'
                     }`}
                   >
@@ -352,11 +352,11 @@ export default function ResultsPage() {
 
                 <div className="flex items-center gap-4">
                   {result.sgpa && (
-                    <div className="rounded-xl bg-white/90 px-3.5 py-1.5 border border-emerald-200 shadow-2xs">
-                      <span className="text-[10px] font-bold text-slate-500 uppercase block">
+                    <div className="rounded-xl bg-[#fef9c3] px-3.5 py-1.5 border border-amber-200/80 shadow-2xs">
+                      <span className="text-[10px] font-bold text-amber-900 uppercase block">
                         SGPA Score
                       </span>
-                      <span className="text-base font-black text-emerald-700">
+                      <span className="text-base font-black text-amber-900">
                         {result.sgpa}
                       </span>
                     </div>
@@ -427,8 +427,8 @@ export default function ResultsPage() {
                                   isFailGrade
                                     ? 'bg-red-100 text-red-700 border border-red-200'
                                     : sub.grade.includes('A')
-                                    ? 'bg-emerald-100 text-emerald-800'
-                                    : 'bg-indigo-50 text-indigo-700'
+                                    ? 'bg-amber-100 text-amber-900 border border-amber-200'
+                                    : 'bg-blue-50 text-[#0a2558]'
                                 }`}
                               >
                                 {sub.grade}

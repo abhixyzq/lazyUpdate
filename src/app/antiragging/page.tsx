@@ -39,7 +39,7 @@ export default function AntiRaggingPage() {
         {/* Mandatory Affidavit Card */}
         <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-3">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-emerald-600 stroke-[1.8]" />
+            <ShieldCheck className="h-5 w-5 text-blue-600 stroke-[1.8]" />
             <h3 className="text-sm sm:text-base font-bold text-slate-900">
               Mandatory Online Anti-Ragging Affidavit
             </h3>
@@ -59,9 +59,9 @@ export default function AntiRaggingPage() {
             href="https://antiragging.in"
             target="_blank"
             rel="noreferrer"
-            className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 py-2.5 px-4 text-xs font-semibold text-white transition shadow-2xs"
+            className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-[#0a2558] hover:bg-[#071b40] py-2.5 px-4 text-xs font-semibold text-white transition shadow-2xs"
           >
-            <ExternalLink className="h-4 w-4 stroke-[1.8]" /> Fill UGC Affidavit on antiragging.in
+            <ExternalLink className="h-4 w-4 stroke-[1.8] text-[#fde047]" /> Fill UGC Affidavit on antiragging.in
           </a>
         </div>
 
@@ -75,7 +75,7 @@ export default function AntiRaggingPage() {
             <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3 space-y-1">
               <div className="text-xs font-semibold text-slate-900">Office of the Chief Proctor</div>
               <div className="text-slate-500 font-normal">Patna University Central Office, Ashok Rajpath, Patna - 800005</div>
-              <div className="text-emerald-700 font-semibold pt-1">Email: proctor@pup.ac.in</div>
+              <div className="text-[#0a2558] font-bold pt-1">Email: proctor@pup.ac.in</div>
             </div>
 
             <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3 space-y-1">

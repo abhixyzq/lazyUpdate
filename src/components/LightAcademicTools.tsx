@@ -23,6 +23,8 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'CBCS (FYUGP)',
       href: '/syllabus',
       icon: BookOpen,
+      iconBg: 'bg-emerald-50 text-emerald-700 border-emerald-200/90',
+      activeHover: 'group-hover:border-emerald-500 group-hover:bg-emerald-600',
     },
     {
       id: 'pyqs',
@@ -30,6 +32,8 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'Past Year Papers',
       href: '/pyqs',
       icon: FileText,
+      iconBg: 'bg-blue-50 text-blue-700 border-blue-200/90',
+      activeHover: 'group-hover:border-blue-500 group-hover:bg-blue-600',
     },
     {
       id: 'notices',
@@ -37,6 +41,8 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'Live Circulars',
       href: '/notices',
       icon: Megaphone,
+      iconBg: 'bg-rose-50 text-rose-700 border-rose-200/90',
+      activeHover: 'group-hover:border-rose-500 group-hover:bg-rose-600',
     },
     {
       id: 'results',
@@ -44,6 +50,8 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'UMIS Online',
       href: '/results',
       icon: BarChart3,
+      iconBg: 'bg-amber-50 text-amber-800 border-amber-200/90',
+      activeHover: 'group-hover:border-amber-500 group-hover:bg-amber-600',
     },
     {
       id: 'sgpa',
@@ -51,6 +59,8 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'Score Predictor',
       href: '/sgpa',
       icon: Calculator,
+      iconBg: 'bg-purple-50 text-purple-700 border-purple-200/90',
+      activeHover: 'group-hover:border-purple-500 group-hover:bg-purple-600',
     },
     {
       id: 'calendar',
@@ -58,92 +68,96 @@ export const LightAcademicTools: React.FC = () => {
       tag: 'Exam Routines',
       href: '/calendar',
       icon: Calendar,
+      iconBg: 'bg-teal-50 text-teal-700 border-teal-200/90',
+      activeHover: 'group-hover:border-teal-500 group-hover:bg-teal-600',
     },
   ];
 
   return (
-    <section className="mx-auto max-w-xl px-3 pt-4 space-y-3">
+    <section className="mx-auto max-w-xl px-3 pt-4 space-y-2.5">
       {/* Section Header */}
       <div className="flex items-center justify-between px-1">
-        <h2 className="text-base font-bold text-slate-900 tracking-tight">
+        <h2 className="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight">
           Academic Tools
         </h2>
         <Link
           href="/tools"
-          className="text-xs font-normal text-slate-400 hover:text-emerald-700 flex items-center gap-0.5 transition"
+          className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 flex items-center gap-0.5 transition"
         >
           <span>View All</span>
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-3.5 w-3.5 stroke-[2.2]" />
         </Link>
       </div>
 
-      {/* 2x3 Grid of Glass Green Cards */}
-      <div className="grid grid-cols-3 gap-2.5">
+      {/* 2x3 Grid of Crisp High-Visibility Solid Cards */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-2.5">
         {tools.map((tool) => {
           const Icon = tool.icon;
           return (
             <Link
               key={tool.id}
               href={tool.href}
-              className="group relative flex flex-col justify-between rounded-2xl border border-emerald-200/75 bg-gradient-to-br from-white/90 via-emerald-50/45 to-white/70 backdrop-blur-md p-3 shadow-[0_3px_12px_-1px_rgba(16,185,129,0.07)] hover:border-emerald-400 hover:shadow-[0_8px_24px_-4px_rgba(16,185,129,0.18)] hover:-translate-y-0.5 transition active:scale-97"
+              className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-3 shadow-2xs hover:border-slate-300 hover:shadow-xs transition active:scale-97 cursor-pointer"
             >
               <div>
-                {/* Frosted Glass Emerald Icon Badge */}
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 border border-emerald-200/80 text-emerald-700 shadow-2xs group-hover:scale-105 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition mb-2">
-                  <Icon className="h-4.5 w-4.5 stroke-[1.9]" />
+                {/* Crisp Distinct Icon Badge */}
+                <div
+                  className={`flex h-9 w-9 items-center justify-center rounded-xl border ${tool.iconBg} shadow-2xs group-hover:scale-105 group-hover:text-white ${tool.activeHover} transition mb-2`}
+                >
+                  <Icon className="h-4.5 w-4.5 stroke-[2]" />
                 </div>
 
                 {/* Title & Tag */}
-                <h3 className="text-xs sm:text-[13px] font-semibold text-slate-900 group-hover:text-emerald-800 transition leading-tight">
+                <h3 className="text-xs sm:text-[13px] font-bold text-slate-900 group-hover:text-emerald-700 transition leading-tight">
                   {tool.label}
                 </h3>
-                <p className="text-[10px] text-slate-500 font-medium mt-0.5 truncate">
+                <p className="text-[10px] text-slate-600 font-semibold mt-0.5 truncate">
                   {tool.tag}
                 </p>
               </div>
 
               {/* Minimal Chevron */}
-              <div className="self-end mt-2 text-emerald-400/80 group-hover:text-emerald-700 group-hover:translate-x-0.5 transition">
-                <ChevronRight className="h-3.5 w-3.5 stroke-[2]" />
+              <div className="self-end mt-2 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-0.5 transition">
+                <ChevronRight className="h-3.5 w-3.5 stroke-[2.2]" />
               </div>
             </Link>
           );
         })}
       </div>
 
-      {/* Secondary Quick Action Row (3 Glass Pills) */}
+      {/* Secondary Quick Action Row (3 Solid Clean Pills) */}
       <div className="grid grid-cols-3 gap-2 pt-0.5">
         <Link
           href="/timetable"
-          className="flex items-center justify-between rounded-xl border border-emerald-200/70 bg-gradient-to-r from-emerald-50/60 via-white/85 to-emerald-50/40 backdrop-blur-md px-2.5 py-2 hover:border-emerald-400 hover:shadow-xs shadow-[0_2px_8px_-1px_rgba(16,185,129,0.06)] transition active:scale-98 group"
+          className="flex items-center justify-between rounded-xl border border-slate-200/90 bg-white px-2.5 py-2 shadow-2xs hover:border-emerald-300 hover:shadow-xs transition active:scale-98 group cursor-pointer"
         >
           <div className="flex items-center gap-1.5 min-w-0">
-            <Clock className="h-3.5 w-3.5 text-emerald-700 group-hover:text-emerald-800 shrink-0 stroke-[1.9]" />
-            <span className="text-[11px] font-semibold text-slate-800 truncate">Timetable</span>
+            <Clock className="h-3.5 w-3.5 text-emerald-700 shrink-0 stroke-[2.2]" />
+            <span className="text-[11px] font-bold text-slate-800 truncate">Timetable</span>
           </div>
-          <ChevronRight className="h-3 w-3 text-emerald-400 group-hover:text-emerald-700 shrink-0" />
+          <ChevronRight className="h-3 w-3 text-slate-400 group-hover:text-emerald-700 shrink-0" />
         </Link>
 
         <Link
           href="/attendance"
-          className="flex items-center justify-between rounded-xl border border-emerald-200/70 bg-gradient-to-r from-emerald-50/60 via-white/85 to-emerald-50/40 backdrop-blur-md px-2.5 py-2 hover:border-emerald-400 hover:shadow-xs shadow-[0_2px_8px_-1px_rgba(16,185,129,0.06)] transition active:scale-98 group"
+          className="flex items-center justify-between rounded-xl border border-slate-200/90 bg-white px-2.5 py-2 shadow-2xs hover:border-blue-300 hover:shadow-xs transition active:scale-98 group cursor-pointer"
         >
           <div className="flex items-center gap-1.5 min-w-0">
-            <Users className="h-3.5 w-3.5 text-emerald-700 group-hover:text-emerald-800 shrink-0 stroke-[1.9]" />
-            <span className="text-[11px] font-semibold text-slate-800 truncate">Attendance</span>
+            <Users className="h-3.5 w-3.5 text-blue-700 shrink-0 stroke-[2.2]" />
+            <span className="text-[11px] font-bold text-slate-800 truncate">Attendance</span>
           </div>
-          <ChevronRight className="h-3 w-3 text-emerald-400 group-hover:text-emerald-700 shrink-0" />
+          <ChevronRight className="h-3 w-3 text-slate-400 group-hover:text-blue-700 shrink-0" />
         </Link>
 
         <Link
           href="/contributors"
-          className="flex items-center justify-between rounded-xl border border-rose-200/80 bg-gradient-to-r from-rose-50/50 via-white/85 to-rose-50/30 backdrop-blur-md px-2.5 py-2 hover:border-rose-400 hover:shadow-xs shadow-[0_2px_8px_-1px_rgba(244,63,94,0.06)] transition active:scale-98 group"
+          className="flex items-center justify-between rounded-xl border border-slate-200/90 bg-white px-2.5 py-2 shadow-2xs hover:border-rose-300 hover:shadow-xs transition active:scale-98 group cursor-pointer"
         >
           <div className="flex items-center gap-1.5 min-w-0">
-            <Heart className="h-3.5 w-3.5 text-rose-600 shrink-0 stroke-[1.9]" />
-            <span className="text-[11px] font-semibold text-slate-800 truncate">Supporters</span>
+            <Heart className="h-3.5 w-3.5 text-rose-600 shrink-0 stroke-[2.2]" />
+            <span className="text-[11px] font-bold text-slate-800 truncate">Supporters</span>
           </div>
-          <ChevronRight className="h-3 w-3 text-rose-300 group-hover:text-rose-600 shrink-0" />
+          <ChevronRight className="h-3 w-3 text-slate-400 group-hover:text-rose-600 shrink-0" />
         </Link>
       </div>
     </section>

@@ -90,7 +90,7 @@ export default function SyllabusCoursesPage() {
   }, [selectedFaculty, searchQuery, SECTIONS_CONFIG]);
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-slate-900 pb-28 sm:pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-20">
       {/* 1. Universal Subpage Header */}
       <SubpageHeader title="PU Syllabus" />
 
@@ -103,7 +103,7 @@ export default function SyllabusCoursesPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search subject (e.g. History, Physics, Economics)..."
-            className="w-full rounded-2xl border border-slate-200/80 bg-white py-2.5 pl-10 pr-9 text-xs font-medium text-slate-900 placeholder-slate-400 shadow-2xs outline-hidden focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 transition"
+            className="w-full rounded-2xl border border-slate-200/80 bg-white py-2.5 pl-10 pr-9 text-xs font-medium text-slate-900 placeholder-slate-400 shadow-2xs outline-hidden focus:border-[#0a2558] focus:ring-1 focus:ring-[#0a2558] transition"
           />
           {searchQuery && (
             <button
@@ -126,7 +126,7 @@ export default function SyllabusCoursesPage() {
                 onClick={() => setSelectedFaculty(fac.id)}
                 className={`whitespace-nowrap rounded-xl px-3 py-1.5 text-xs font-semibold transition-all duration-150 shrink-0 ${
                   isSelected
-                    ? 'bg-emerald-700 text-white shadow-2xs'
+                    ? 'bg-[#0a2558] text-white shadow-2xs'
                     : 'bg-white text-slate-600 border border-slate-200/80 hover:bg-slate-50 hover:text-slate-900'
                 }`}
               >
@@ -146,14 +146,14 @@ export default function SyllabusCoursesPage() {
                   {/* Section Title Header */}
                   <div className="flex items-center justify-between px-1">
                     <div className="flex items-center gap-2">
-                      <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
+                      <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-blue-50 text-[#0a2558]">
                         <Icon className="h-3.5 w-3.5 stroke-[2.2]" />
                       </div>
                       <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
                         {sec.name}
                       </h3>
                     </div>
-                    <span className="rounded-full border border-emerald-200/60 bg-emerald-50/70 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-800">
+                    <span className="rounded-full border border-amber-200/80 bg-[#fef9c3] px-2.5 py-0.5 text-[10px] font-bold text-amber-900">
                       {sec.badge}
                     </span>
                   </div>
@@ -164,17 +164,17 @@ export default function SyllabusCoursesPage() {
                       <Link
                         key={course.id}
                         href={`/syllabus/${course.id}`}
-                        className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/70 bg-white p-3 shadow-2xs hover:border-emerald-500/50 hover:shadow-xs active:scale-98 transition duration-150"
+                        className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/70 bg-white p-3 shadow-2xs hover:border-[#0a2558]/40 hover:shadow-xs active:scale-98 transition duration-150"
                       >
                         <div className="flex items-start justify-between gap-1.5">
                           <div className="h-9 w-9 shrink-0 transition-transform duration-150 group-hover:scale-105">
                             {getCourseVectorIcon(course.id, 'h-4 w-4 sm:h-5 sm:w-5')}
                           </div>
-                          <ChevronRight className="h-3.5 w-3.5 text-slate-300 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition shrink-0 mt-0.5" />
+                          <ChevronRight className="h-3.5 w-3.5 text-slate-300 group-hover:text-[#0a2558] group-hover:translate-x-0.5 transition shrink-0 mt-0.5" />
                         </div>
 
                         <div className="mt-2.5 min-w-0">
-                          <h4 className="text-xs font-semibold text-slate-900 group-hover:text-emerald-700 transition line-clamp-2 leading-snug">
+                          <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#0a2558] transition line-clamp-2 leading-snug">
                             {stripHindiTranslations(course.name)}
                           </h4>
                           <div className="flex items-center gap-1 mt-1 text-[10px] text-slate-400 font-normal truncate">

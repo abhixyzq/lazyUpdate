@@ -130,7 +130,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search syllabus, PYQs, notices, SGPA..."
             autoFocus
-            className="w-full rounded-2xl border border-slate-200 bg-slate-50 py-2.5 pl-10 pr-9 text-xs sm:text-sm font-medium text-slate-900 placeholder-slate-400 focus:border-emerald-500 focus:bg-white focus:outline-hidden transition"
+            className="w-full rounded-2xl border border-slate-200 bg-slate-50 py-2.5 pl-10 pr-9 text-xs sm:text-sm font-medium text-slate-900 placeholder-slate-400 focus:border-[#0a2558] focus:bg-white focus:outline-hidden transition"
           />
           {query ? (
             <button
@@ -166,12 +166,12 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                   className="flex items-center justify-between gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition group pt-2.5"
                 >
                   <div className="flex items-center gap-3 min-w-0">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-700 border border-slate-200/80 group-hover:bg-emerald-50 group-hover:text-emerald-700 group-hover:border-emerald-200 transition">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-700 border border-slate-200/80 group-hover:bg-yellow-50 group-hover:text-[#0a2558] group-hover:border-yellow-300 transition">
                       <Icon className="h-4 w-4 stroke-[1.8]" />
                     </div>
                     <div className="min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className="text-xs sm:text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 transition truncate">
+                        <span className="text-xs sm:text-[13px] font-semibold text-slate-900 group-hover:text-[#0a2558] transition truncate">
                           {item.title}
                         </span>
                         <span className="rounded-md bg-slate-100 px-1.5 py-0.5 text-[9px] font-medium text-slate-500 uppercase">
@@ -183,7 +183,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                       </p>
                     </div>
                   </div>
-                  <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-emerald-600 shrink-0 transition" />
+                  <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-[#0a2558] shrink-0 transition" />
                 </Link>
               );
             })

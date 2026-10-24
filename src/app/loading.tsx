@@ -13,7 +13,7 @@ export default function Loading() {
         </div>
       </div>
       <div className="flex items-center gap-2 text-slate-500 text-xs font-semibold">
-        <div className="h-4 w-4 border-2 border-slate-200 border-t-blue-600 rounded-full animate-spin" />
+        <div className="h-4 w-4 border-2 border-slate-200 border-t-[#0a2558] rounded-full animate-spin" />
         <span>Loading...</span>
       </div>
     </div>

@@ -30,28 +30,28 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
   const totalPapers = course.semesters.reduce((sum, s) => sum + s.papers.length, 0);
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-slate-900 pb-28 sm:pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-20">
       {/* 1. Subpage Sticky Header */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-2.5">
+      <header className="sticky top-0 z-40 border-b border-[#0d2e6e] bg-[#0a2558] text-white px-4 py-2.5 shadow-sm">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
           <Link
             href="/syllabus"
-            className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-300 hover:text-emerald-700 transition active:scale-95 shrink-0"
+            className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-95 shrink-0"
             title="Back to All Subjects"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="h-4 w-4 stroke-[2.2]" />
           </Link>
           <div className="text-center min-w-0 flex-1">
-            <h1 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
+            <h1 className="text-xs sm:text-sm font-bold text-white truncate">
               {course.shortCode} Syllabus
             </h1>
-            <p className="text-[11px] font-medium text-emerald-700 truncate">
+            <p className="text-[11px] font-medium text-blue-200 truncate">
               {stripHindiTranslations(course.name)}
             </p>
           </div>
           <Link
             href="/syllabus"
-            className="rounded-xl border border-slate-200/80 bg-white px-3 py-1 text-[11px] font-semibold text-slate-600 hover:border-emerald-300 hover:text-emerald-700 transition shrink-0"
+            className="rounded-xl bg-white/10 hover:bg-white/20 text-white px-3 py-1 text-[11px] font-semibold transition shrink-0"
           >
             All Subjects
           </Link>
@@ -67,7 +67,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
             </div>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-1.5 flex-wrap mb-1">
-                <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-900 bg-[#fef9c3] px-2 py-0.5 rounded-full border border-amber-200/80">
                   {course.faculty}
                 </span>
                 <span className="text-[10px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
@@ -106,10 +106,10 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
                 <Link
                   key={sem.semester}
                   href={`/syllabus/${course.id}/sem-${sem.semester}`}
-                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/70 bg-white p-3.5 shadow-2xs hover:border-emerald-500/50 hover:shadow-xs active:scale-98 transition duration-150"
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200/70 bg-white p-3.5 shadow-2xs hover:border-[#0a2558]/40 hover:shadow-xs active:scale-98 transition duration-150"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50/80 text-emerald-700 transition group-hover:scale-105">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-[#0a2558] transition group-hover:scale-105">
                       <BookMarked className="h-4 w-4" />
                     </div>
                     <span className="text-[10px] font-semibold text-slate-400 bg-slate-50 px-2 py-0.5 rounded-md border border-slate-100">
@@ -118,7 +118,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
                   </div>
 
                   <div className="mt-3">
-                    <h4 className="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-emerald-700 transition">
+                    <h4 className="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[#0a2558] transition">
                       {getOrdinal(sem.semester)} Semester
                     </h4>
                     <p className="text-[11px] text-slate-400 mt-0.5 font-normal">
@@ -135,7 +135,7 @@ export const CourseSemesterView: React.FC<CourseSemesterViewProps> = ({ course }
         <div className="pt-2 text-center">
           <Link
             href="/syllabus"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-emerald-700 transition"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-[#0a2558] transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to All Subjects

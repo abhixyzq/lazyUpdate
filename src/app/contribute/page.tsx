@@ -11,7 +11,7 @@ export default function ContributeRedirect() {
   }, [router]);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-transparent flex items-center justify-center p-4">
       <div className="text-center space-y-2">
         <div className="h-6 w-6 border-2 border-slate-900 border-t-transparent rounded-full animate-spin mx-auto" />
         <p className="text-xs font-semibold text-slate-600">Redirecting to Contributors...</p>

@@ -84,7 +84,7 @@ export const UniversityModal: React.FC<UniversityModalProps> = ({
                         {univ.name}
                       </h4>
                       {isSelected && (
-                        <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-[#0a2558] shrink-0" />
                       )}
                     </div>
                     <div className="flex items-center gap-1 text-[11px] text-slate-500">
@@ -97,7 +97,7 @@ export const UniversityModal: React.FC<UniversityModalProps> = ({
                 <span
                   className={`rounded-full px-2 py-0.5 text-[10px] font-bold border ${
                     univ.isActive
-                      ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+                      ? 'bg-yellow-50 text-[#0a2558] border-yellow-200'
                       : 'bg-slate-100 text-slate-600 border-slate-200'
                   }`}
                 >

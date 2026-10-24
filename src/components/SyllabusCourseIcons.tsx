@@ -392,7 +392,7 @@ export const getCourseVectorIcon = (courseId: string, className = 'h-7 w-7'): Re
 
 // Ready-made Book Icon for Semester Buttons
 export const SemesterBookIcon: React.FC<{ className?: string }> = ({ className = 'h-5 w-5' }) => (
-  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
+  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-yellow-50 text-[#0a2558] border border-yellow-200/80 shadow-xs">
     <BookMarked className={className} strokeWidth={2.2} />
   </div>
 );

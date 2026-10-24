@@ -377,7 +377,7 @@ export const InteractiveMonthCalendar: React.FC<InteractiveMonthCalendarProps> =
                 Weekly Holiday
               </span>
             ) : (
-              <span className="rounded-md bg-emerald-50 text-emerald-800 px-2 py-0.5 text-[10px] font-black border border-emerald-200">
+              <span className="rounded-md bg-yellow-50 text-[#0a2558] px-2 py-0.5 text-[10px] font-black border border-yellow-200/80">
                 Academic Day
               </span>
             )}
@@ -419,7 +419,7 @@ export const InteractiveMonthCalendar: React.FC<InteractiveMonthCalendarProps> =
           </p>
         ) : (
           <div className="flex items-center gap-2 pt-0.5 text-xs text-slate-700">
-            <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+            <CheckCircle2 className="h-4 w-4 text-[#0a2558] shrink-0" />
             <span>
               Regular Academic & Teaching Day — Classes, laboratory practicals, and university office hours operational.
             </span>

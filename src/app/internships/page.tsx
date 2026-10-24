@@ -49,12 +49,12 @@ export default function InternshipsPage() {
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         
         {/* Banner */}
-        <div className="rounded-3xl border border-emerald-100/90 bg-[#f0fbf4] p-4 sm:p-5 shadow-2xs space-y-2">
-          <div className="flex items-center gap-2 text-emerald-700">
-            <Sparkles className="h-4 w-4 stroke-[1.8]" />
+        <div className="rounded-3xl border border-amber-200/80 bg-gradient-to-br from-amber-50/70 via-white/80 to-yellow-50/50 p-4 sm:p-5 shadow-2xs space-y-2">
+          <div className="flex items-center gap-2 text-amber-800">
+            <Sparkles className="h-4 w-4 stroke-[1.8] text-amber-600" />
             <span className="text-xs font-semibold uppercase tracking-wider">Government Certified Opportunities</span>
           </div>
-          <h2 className="text-base sm:text-lg font-bold text-slate-900">
+          <h2 className="text-base sm:text-lg font-bold text-[#0a2558]">
             Kickstart your Career with Paid Internships
           </h2>
           <p className="text-xs text-slate-500 leading-relaxed font-normal">
@@ -72,7 +72,7 @@ export default function InternshipsPage() {
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-800 border border-emerald-200/80">
+                    <span className="rounded-full bg-yellow-50 px-2.5 py-0.5 text-[10px] font-semibold text-[#0a2558] border border-yellow-200/80">
                       {item.org}
                     </span>
                     {item.isHot && (
@@ -88,7 +88,7 @@ export default function InternshipsPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3 text-xs space-y-1.5 text-slate-700">
-                <div className="text-emerald-700 font-semibold">{item.stipend}</div>
+                <div className="text-[#0a2558] font-bold">{item.stipend}</div>
                 <p className="text-[11px] leading-relaxed text-slate-500 font-normal">{item.description}</p>
                 <div className="text-[10px] text-slate-400 font-medium pt-1">
                   Status: {item.deadline}
@@ -99,9 +99,9 @@ export default function InternshipsPage() {
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-emerald-700 py-2.5 px-4 text-xs font-semibold text-white hover:bg-emerald-800 transition shadow-2xs"
+                className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-[#0a2558] py-2.5 px-4 text-xs font-semibold text-white hover:bg-[#071b40] transition shadow-2xs"
               >
-                <ExternalLink className="h-4 w-4 stroke-[1.8]" /> {item.actionLabel}
+                <ExternalLink className="h-4 w-4 stroke-[1.8] text-[#fde047]" /> {item.actionLabel}
               </a>
             </div>
           ))}

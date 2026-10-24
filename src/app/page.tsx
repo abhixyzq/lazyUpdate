@@ -1,71 +1,42 @@
 'use client';
 
 import React, { useState } from 'react';
-import { LightHeader } from '@/components/LightHeader';
-import { SearchInputBar } from '@/components/SearchInputBar';
-import { LightHeroBanner } from '@/components/LightHeroBanner';
-import { LightNoticeCard } from '@/components/LightNoticeCard';
-import { LightAcademicTools } from '@/components/LightAcademicTools';
-import { LightCommunityCards } from '@/components/LightCommunityCards';
-import { LightStudentPortals } from '@/components/LightStudentPortals';
+import dynamic from 'next/dynamic';
+import { StudentPortalHero } from '@/components/StudentPortalHero';
+import { PortalFeatureGrid } from '@/components/PortalFeatureGrid';
+import { PortalMoreLinks } from '@/components/PortalMoreLinks';
 import { BottomNav } from '@/components/BottomNav';
-import { SideDrawer } from '@/components/SideDrawer';
-import { SearchModal } from '@/components/SearchModal';
-import { ProfileModal } from '@/components/ProfileModal';
+
+// Dynamically loaded overlays for optimal performance
+const SideDrawer = dynamic(
+  () => import('@/components/SideDrawer').then((mod) => mod.SideDrawer),
+  { ssr: false }
+);
 
 export default function HomePage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#f6faf7] text-slate-900 pb-24 overflow-x-hidden">
-      {/* Ambient Emerald Glass Glow Orbs (Hardware-accelerated) */}
-      <div className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-emerald-200/40 via-teal-100/25 to-transparent blur-3xl rounded-full transform-gpu will-change-transform" />
-      <div className="pointer-events-none absolute top-[400px] -right-20 w-72 h-72 bg-emerald-200/25 blur-3xl rounded-full transform-gpu will-change-transform" />
-      <div className="pointer-events-none absolute top-[750px] -left-20 w-72 h-72 bg-teal-200/20 blur-3xl rounded-full transform-gpu will-change-transform" />
+    <div className="min-h-screen bg-[#faf5ea] text-slate-900 pb-24 overflow-x-hidden antialiased selection:bg-[#fde047] selection:text-[#0a2558]">
+      {/* 1. Deep Navy Hero Section */}
+      <StudentPortalHero onOpenDrawer={() => setIsDrawerOpen(true)} />
 
-      {/* 1. Minimal Header */}
-      <LightHeader
-        onOpenDrawer={() => setIsDrawerOpen(true)}
-      />
+      {/* 2. 6 Main Feature Cards (2x3 Grid on Warm Cream Background) */}
+      <PortalFeatureGrid />
 
-      {/* 2. Instant Search Input Pill */}
-      <SearchInputBar onOpenSearch={() => setIsSearchOpen(true)} />
+      {/* 3. More Services & Remaining Pages Links */}
+      <PortalMoreLinks />
 
-      {/* 3. Lightweight Hero Banner with Live Now Pill */}
-      <LightHeroBanner />
-
-      {/* 4. Latest Notice Notification Strip */}
-      <LightNoticeCard />
-
-      {/* 5. Minimal Academic Tools (Clean Line Icons, 2x3 Grid + 3 Quick Pills) */}
-      <LightAcademicTools />
-
-      {/* 6. Lightweight Community Channels (WhatsApp & Instagram) */}
-      <LightCommunityCards />
-
-      {/* 7. Student Portals (Internships, Scholarships, Anti-Ragging) */}
-      <LightStudentPortals />
-
-      {/* 8. Clean Bottom Navigation Bar */}
+      {/* 5. Deep Navy Bottom Navigation Bar (5-Tab with Yellow Active Indicator) */}
       <BottomNav onOpenDrawer={() => setIsDrawerOpen(true)} />
 
-      {/* 9. Interactive Modals */}
-      <SearchModal
-        isOpen={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-      />
-
-      <ProfileModal
-        isOpen={isProfileOpen}
-        onClose={() => setIsProfileOpen(false)}
-      />
-
-      <SideDrawer
-        isOpen={isDrawerOpen}
-        onClose={() => setIsDrawerOpen(false)}
-      />
+      {/* 6. On-Demand Lazy Side Drawer */}
+      {isDrawerOpen && (
+        <SideDrawer
+          isOpen={isDrawerOpen}
+          onClose={() => setIsDrawerOpen(false)}
+        />
+      )}
     </div>
   );
 }

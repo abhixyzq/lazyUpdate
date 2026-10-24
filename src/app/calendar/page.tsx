@@ -57,12 +57,12 @@ export default function CalendarPage() {
         <div className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-2xs space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-slate-700">
-              <CalendarIcon className="h-4 w-4 text-emerald-600 stroke-[1.8]" />
+              <CalendarIcon className="h-4 w-4 text-[#0a2558] stroke-[1.8]" />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
                 Patna University Official Gazette
               </span>
             </div>
-            <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-800 border border-emerald-200">
+            <span className="rounded-full bg-yellow-50 px-2.5 py-0.5 text-[10px] font-semibold text-[#0a2558] border border-yellow-200/80">
               Session 2026
             </span>
           </div>
@@ -85,11 +85,11 @@ export default function CalendarPage() {
               <span className="text-[10px] font-medium text-slate-400">कुल अवकाश (Days)</span>
             </div>
 
-            <div className="rounded-2xl border border-emerald-100/80 bg-[#f0fbf4] p-2.5">
-              <div className="text-lg sm:text-xl font-bold text-emerald-800">
+            <div className="rounded-2xl border border-amber-200/80 bg-amber-50/60 p-2.5">
+              <div className="text-lg sm:text-xl font-bold text-[#0a2558]">
                 {puCalendarMeta.excludingSundays}
               </div>
-              <span className="text-[10px] font-medium text-emerald-700">Working Day Offs</span>
+              <span className="text-[10px] font-bold text-amber-900">Working Day Offs</span>
             </div>
 
             <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5">
@@ -107,7 +107,7 @@ export default function CalendarPage() {
             onClick={() => setActiveTab('holidays')}
             className={`flex-1 rounded-xl py-2 px-3 text-xs font-semibold transition ${
               activeTab === 'holidays'
-                ? 'border border-emerald-700 bg-emerald-700 text-white shadow-2xs'
+                ? 'border border-[#0a2558] bg-[#0a2558] text-[#fde047] shadow-2xs'
                 : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -117,7 +117,7 @@ export default function CalendarPage() {
             onClick={() => setActiveTab('monthView')}
             className={`flex-1 rounded-xl py-2 px-3 text-xs font-semibold transition ${
               activeTab === 'monthView'
-                ? 'border border-emerald-700 bg-emerald-700 text-white shadow-2xs'
+                ? 'border border-[#0a2558] bg-[#0a2558] text-[#fde047] shadow-2xs'
                 : 'border border-slate-200 bg-white text-slate-600 hover:text-slate-900'
             }`}
           >
@@ -141,7 +141,7 @@ export default function CalendarPage() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search holiday (e.g., होली, Chhath, Durga Puja, Eid)..."
-                className="w-full rounded-2xl border border-slate-200 bg-white pl-10 pr-4 py-2 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:border-emerald-500 focus:outline-none shadow-2xs"
+                className="w-full rounded-2xl border border-slate-200 bg-white pl-10 pr-4 py-2 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:border-[#0a2558] focus:outline-none shadow-2xs"
               />
             </div>
 
@@ -153,7 +153,7 @@ export default function CalendarPage() {
                   onClick={() => setSelectedMonth(m.id)}
                   className={`shrink-0 rounded-xl px-3 py-1.5 text-xs font-medium transition ${
                     selectedMonth === m.id
-                      ? 'bg-emerald-700 text-white shadow-2xs font-semibold'
+                      ? 'bg-[#0a2558] text-[#fde047] shadow-2xs font-semibold'
                       : 'bg-white border border-slate-200 text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -188,7 +188,7 @@ export default function CalendarPage() {
                 filteredHolidays.map((h) => (
                   <div
                     key={h.id}
-                    className={`flex items-center justify-between rounded-2xl border p-3.5 shadow-2xs transition hover:border-emerald-200 ${
+                    className={`flex items-center justify-between rounded-2xl border p-3.5 shadow-2xs transition hover:border-amber-300 ${
                       h.isLongBreak
                         ? 'border-amber-200/90 bg-amber-50/40'
                         : 'border-slate-200/80 bg-white'
@@ -208,7 +208,7 @@ export default function CalendarPage() {
                       <p className="text-[11px] text-slate-400 font-normal">
                         {h.nameEnglish}
                       </p>
-                      <div className="text-[11px] text-emerald-700 font-semibold pt-0.5">
+                      <div className="text-[11px] text-[#0a2558] font-bold pt-0.5">
                         {h.dateStr}
                       </div>
                     </div>
@@ -232,7 +232,7 @@ export default function CalendarPage() {
             {/* Official University Footnote */}
             <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3.5 text-xs text-slate-600 space-y-1.5 leading-relaxed font-normal">
               <div className="flex items-center gap-1.5 font-semibold text-slate-900">
-                <Info className="h-4 w-4 text-emerald-600 shrink-0" />
+                <Info className="h-4 w-4 text-blue-600 shrink-0" />
                 <span>आधिकारिक विश्वविद्यालय टिप्पणी:</span>
               </div>
               <p>• {puCalendarMeta.noteHindi}</p>

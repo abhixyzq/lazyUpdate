@@ -60,10 +60,10 @@ export default function ScholarshipsPage() {
       <main className="mx-auto max-w-xl px-3 pt-4 space-y-4">
         
         {/* Banner */}
-        <div className="rounded-3xl border border-emerald-100/90 bg-[#f0fbf4] p-4 sm:p-5 shadow-2xs space-y-2">
-          <div className="flex items-center gap-2 text-emerald-700">
-            <Award className="h-4 w-4 stroke-[1.8]" />
-            <span className="text-xs font-semibold uppercase tracking-wider">Education Grants & Subsidies</span>
+        <div className="rounded-3xl border border-blue-100/90 bg-blue-50/60 p-4 sm:p-5 shadow-2xs space-y-2">
+          <div className="flex items-center gap-2 text-[#0a2558]">
+            <Award className="h-4 w-4 stroke-[2]" />
+            <span className="text-xs font-bold uppercase tracking-wider">Education Grants & Subsidies</span>
           </div>
           <h2 className="text-base sm:text-lg font-bold text-slate-900">
             100% Verified Government Scholarships
@@ -82,11 +82,11 @@ export default function ScholarshipsPage() {
             >
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-800 border border-emerald-200">
+                  <span className="rounded-full bg-[#fef9c3] px-2.5 py-0.5 text-[10px] font-bold text-amber-900 border border-amber-200/80">
                     {item.tag}
                   </span>
                   {item.isHot && (
-                    <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800 border border-amber-200">
+                    <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-bold text-amber-800 border border-amber-200">
                       HIGH DEMAND
                     </span>
                   )}
@@ -98,7 +98,7 @@ export default function ScholarshipsPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-3 text-xs space-y-1.5 text-slate-700">
-                <div className="text-emerald-700 font-semibold">{item.benefit}</div>
+                <div className="text-[#0a2558] font-bold">{item.benefit}</div>
                 <p className="text-[11px] leading-relaxed text-slate-500 font-normal">{item.description}</p>
               </div>
 
@@ -106,7 +106,7 @@ export default function ScholarshipsPage() {
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 py-2.5 px-4 text-xs font-semibold text-white transition shadow-2xs"
+                className="w-full flex items-center justify-center gap-1.5 rounded-xl bg-[#0a2558] hover:bg-[#071d47] py-2.5 px-4 text-xs font-bold text-white transition shadow-xs active:scale-98"
               >
                 <ExternalLink className="h-4 w-4 stroke-[1.8]" /> {item.actionLabel}
               </a>

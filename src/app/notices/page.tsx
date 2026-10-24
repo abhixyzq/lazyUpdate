@@ -279,9 +279,9 @@ export default function NoticesPage() {
       case 'Merit List':
         return 'bg-purple-50 text-purple-700 border-purple-200';
       case 'Spot Round':
-        return 'bg-emerald-50 text-emerald-800 border-emerald-200';
+        return 'bg-amber-50 text-amber-900 border-amber-200';
       case 'Counselling':
-        return 'bg-amber-50 text-amber-800 border-amber-200';
+        return 'bg-blue-50 text-blue-900 border-blue-200';
       case 'Exams':
         return 'bg-rose-50 text-rose-700 border-rose-200';
       default:
@@ -290,30 +290,30 @@ export default function NoticesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50/50 text-slate-900 pb-28 sm:pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader title="PU Official Notices" />
 
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 rounded-full bg-slate-900/95 text-white px-4 py-2 text-xs font-semibold shadow-lg backdrop-blur-sm animate-fade-in flex items-center gap-2">
-          <Check className="h-3.5 w-3.5 text-emerald-400" />
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 rounded-full bg-[#0a2558] text-white px-4 py-2 text-xs font-semibold shadow-lg backdrop-blur-sm animate-fade-in flex items-center gap-2">
+          <Check className="h-3.5 w-3.5 text-[#fde047]" />
           <span>{toastMessage}</span>
         </div>
       )}
 
       <main className="mx-auto max-w-xl px-3 pt-3 space-y-3.5">
         
-        {/* Status Strip & Live Sync Banner with Glass Green styling */}
-        <div className="flex items-center justify-between gap-2 rounded-2xl border border-emerald-200/80 bg-gradient-to-r from-emerald-50/60 via-white/85 to-emerald-50/40 backdrop-blur-md px-3.5 py-2.5 shadow-2xs">
+        {/* Status Strip & Live Sync Banner with Navy/Yellow theme */}
+        <div className="flex items-center justify-between gap-2 rounded-2xl border border-amber-200/80 bg-gradient-to-r from-amber-50/70 via-white/90 to-yellow-50/50 backdrop-blur-md px-3.5 py-2.5 shadow-2xs">
           <div className="flex items-center gap-2 min-w-0">
             <span className="relative flex h-2.5 w-2.5 shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
             </span>
             <div className="truncate text-xs font-medium text-slate-700 flex items-center gap-1.5 flex-wrap">
-              <span className="font-bold text-slate-900">PU Samarth eGov</span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100/90 text-emerald-800 font-semibold px-2 py-0.5 text-[10px]">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-600 animate-pulse" />
+              <span className="font-bold text-[#0a2558]">PU Samarth eGov</span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-amber-100/90 text-amber-900 border border-amber-200/60 font-semibold px-2 py-0.5 text-[10px]">
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
                 Auto-Sync Live
               </span>
               {lastUpdated && (
@@ -327,10 +327,10 @@ export default function NoticesPage() {
           <button
             onClick={() => fetchNotices(true)}
             disabled={refreshing}
-            className="flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-white border border-emerald-200 px-2.5 py-1.5 rounded-xl shadow-2xs hover:bg-emerald-50 transition active:scale-95 disabled:opacity-50 cursor-pointer shrink-0"
+            className="flex items-center gap-1 text-[11px] font-semibold text-[#0a2558] bg-white border border-amber-200 px-2.5 py-1.5 rounded-xl shadow-2xs hover:bg-amber-50 transition active:scale-95 disabled:opacity-50 cursor-pointer shrink-0"
             title="Refresh from official university portal"
           >
-            <RotateCw className={`h-3 w-3 ${refreshing ? 'animate-spin text-emerald-600' : ''}`} />
+            <RotateCw className={`h-3 w-3 ${refreshing ? 'animate-spin text-amber-600' : ''}`} />
             <span>{refreshing ? 'Syncing...' : 'Sync'}</span>
           </button>
         </div>
@@ -343,7 +343,7 @@ export default function NoticesPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by keyword, admission, merit, exam..."
-            className="w-full rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-9 text-xs font-normal text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-200 shadow-2xs"
+            className="w-full rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-9 text-xs font-normal text-slate-900 placeholder:text-slate-400 focus:border-[#0a2558] focus:outline-none focus:ring-1 focus:ring-yellow-300 shadow-2xs"
           />
           {searchQuery && (
             <button
@@ -368,7 +368,7 @@ export default function NoticesPage() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`whitespace-nowrap px-3 py-1.5 rounded-full font-semibold text-xs transition active:scale-95 shrink-0 border ${
                   isSelected
-                    ? 'bg-emerald-700 text-white border-emerald-700 shadow-2xs'
+                    ? 'bg-[#0a2558] text-[#fde047] border-[#0a2558] shadow-2xs'
                     : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                 }`}
               >
@@ -417,7 +417,7 @@ export default function NoticesPage() {
                 setSearchQuery('');
                 setSelectedCategory('All');
               }}
-              className="inline-flex items-center gap-1 rounded-xl bg-emerald-700 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-800 transition"
+              className="inline-flex items-center gap-1 rounded-xl bg-[#0a2558] px-4 py-2 text-xs font-semibold text-white hover:bg-[#071b40] transition"
             >
               Reset Filters
             </button>
@@ -427,7 +427,7 @@ export default function NoticesPage() {
             {filteredNotices.map((item, idx) => (
               <article
                 key={item.id || idx}
-                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs transition hover:border-emerald-200 hover:shadow-xs"
+                className="group relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-4 shadow-2xs transition hover:border-amber-300 hover:shadow-xs"
               >
                 {/* Top Row: Category + IsNew + Date */}
                 <div className="flex items-center justify-between gap-2 mb-2">
@@ -455,7 +455,7 @@ export default function NoticesPage() {
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xs sm:text-sm font-semibold text-slate-900 leading-snug tracking-tight mb-3 group-hover:text-emerald-800 transition">
+                <h2 className="text-xs sm:text-sm font-semibold text-slate-900 leading-snug tracking-tight mb-3 group-hover:text-[#0a2558] transition">
                   {item.title}
                 </h2>
 
@@ -468,7 +468,7 @@ export default function NoticesPage() {
                         PDF
                       </span>
                     ) : (
-                      <span className="flex items-center gap-1 text-emerald-700 font-semibold bg-emerald-50 border border-emerald-100 rounded-md px-1.5 py-0.5 text-[10px]">
+                      <span className="flex items-center gap-1 text-amber-800 font-semibold bg-amber-50 border border-amber-200 rounded-md px-1.5 py-0.5 text-[10px]">
                         <ImageIcon className="h-3 w-3" />
                         IMAGE
                       </span>
@@ -494,7 +494,7 @@ export default function NoticesPage() {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 rounded-xl bg-emerald-700 px-3.5 py-1.5 text-xs font-semibold text-white shadow-2xs hover:bg-emerald-800 active:scale-95 transition"
+                      className="flex items-center gap-1.5 rounded-xl bg-[#0a2558] px-3.5 py-1.5 text-xs font-semibold text-white shadow-2xs hover:bg-[#071b40] active:scale-95 transition"
                     >
                       <span>Read Notice</span>
                       <ExternalLink className="h-3 w-3 stroke-[2]" />
@@ -508,8 +508,8 @@ export default function NoticesPage() {
 
         {/* Official Source & Verification Footer Box */}
         <div className="rounded-2xl border border-slate-200 bg-white/80 p-3.5 text-slate-500 text-[11px] space-y-1.5 shadow-2xs">
-          <div className="flex items-center gap-1.5 font-semibold text-slate-700 text-xs">
-            <ShieldCheck className="h-4 w-4 text-emerald-600" />
+          <div className="flex items-center gap-1.5 font-semibold text-[#0a2558] text-xs">
+            <ShieldCheck className="h-4 w-4 text-blue-600" />
             <span>Official University Source Verified</span>
           </div>
           <p className="leading-relaxed text-slate-400">
@@ -520,7 +520,7 @@ export default function NoticesPage() {
               href="https://pupadm.samarth.edu.in/index.php/notifications/index"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-700 hover:underline flex items-center gap-1"
+              className="text-[#0a2558] hover:underline flex items-center gap-1"
             >
               <span>Visit Official Portal</span>
               <ExternalLink className="h-2.5 w-2.5" />

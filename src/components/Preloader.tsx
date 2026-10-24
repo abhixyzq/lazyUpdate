@@ -7,14 +7,14 @@ export const Preloader: React.FC = () => {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    // Show preloader briefly on initial app mount, then smoothly fade out
+    // Show preloader briefly on initial app mount, then swiftly fade out
     const timer = setTimeout(() => {
       setIsFading(true);
       const removeTimer = setTimeout(() => {
         setMounted(false);
-      }, 400); // Wait for fade-out transition to complete
+      }, 200); // Swift fade-out
       return () => clearTimeout(removeTimer);
-    }, 450);
+    }, 180);
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,7 +24,7 @@ export const Preloader: React.FC = () => {
   return (
     <div
       aria-hidden={isFading}
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#f8fafc] transition-opacity duration-400 ease-out ${
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#faf5ea] transition-opacity duration-200 ease-out ${
         isFading ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
     >
@@ -50,7 +50,7 @@ export const Preloader: React.FC = () => {
 
         {/* Clean Minimal Spinner */}
         <div className="pt-1">
-          <div className="h-5 w-5 border-2 border-slate-200 border-t-blue-600 rounded-full animate-spin" />
+          <div className="h-5 w-5 border-2 border-slate-200 border-t-[#0a2558] rounded-full animate-spin" />
         </div>
       </div>
     </div>

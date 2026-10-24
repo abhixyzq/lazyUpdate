@@ -73,7 +73,7 @@ export default function SGPAPage() {
         <div className="rounded-3xl border border-slate-200/90 bg-white p-5 shadow-2xs space-y-3 text-center">
           <div className="flex items-center justify-between px-2">
             <span className="text-xs font-medium text-slate-500">Graded Credits: <b className="text-slate-900 font-bold">{totalCredits}</b></span>
-            <span className="text-xs font-semibold text-emerald-700">{getDivision(sgpa)}</span>
+            <span className="text-xs font-bold text-[#0a2558]">{getDivision(sgpa)}</span>
           </div>
 
           <div className="grid grid-cols-2 gap-3 pt-1">
@@ -81,20 +81,20 @@ export default function SGPAPage() {
               <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider block">
                 Calculated SGPA
               </span>
-              <span className="text-3xl sm:text-4xl font-bold text-slate-900">
+              <span className="text-3xl sm:text-4xl font-bold text-[#0a2558]">
                 {sgpa}
               </span>
               <span className="text-[10px] text-slate-400 block mt-0.5 font-normal">Scale of 10.0</span>
             </div>
 
-            <div className="rounded-2xl border border-emerald-100/80 bg-[#f0fbf4] p-3">
-              <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider block">
+            <div className="rounded-2xl border border-amber-200/80 bg-[#fef9c3] p-3">
+              <span className="text-[10px] font-bold text-amber-900 uppercase tracking-wider block">
                 Equivalent Percentage
               </span>
-              <span className="text-3xl sm:text-4xl font-bold text-emerald-800">
+              <span className="text-3xl sm:text-4xl font-black text-amber-900">
                 {hasGrades ? `${percentage}%` : '--'}
               </span>
-              <span className="text-[10px] text-emerald-600 block mt-0.5 font-normal">Formula: SGPA × 9.5</span>
+              <span className="text-[10px] text-amber-800/80 block mt-0.5 font-medium">Formula: SGPA × 9.5</span>
             </div>
           </div>
           {!hasGrades && (
@@ -112,7 +112,7 @@ export default function SGPAPage() {
             </h3>
             <button
               onClick={addSubject}
-              className="flex items-center gap-1 rounded-xl bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 text-xs font-semibold text-white transition shadow-2xs"
+              className="flex items-center gap-1 rounded-xl bg-[#0a2558] hover:bg-[#071d47] px-3 py-1.5 text-xs font-bold text-white transition shadow-2xs active:scale-95"
             >
               <Plus className="h-3.5 w-3.5" /> Add Paper
             </button>
@@ -122,7 +122,7 @@ export default function SGPAPage() {
             {subjects.map((sub) => (
               <div
                 key={sub.id}
-                className="flex items-center gap-2 rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 hover:border-emerald-200 transition"
+                className="flex items-center gap-2 rounded-2xl border border-slate-200/80 bg-slate-50/70 p-2.5 hover:border-[#0a2558]/30 transition"
               >
                 <div className="flex-1 overflow-hidden">
                   <input
@@ -159,7 +159,7 @@ export default function SGPAPage() {
                     value={sub.gradePoint === null ? '' : sub.gradePoint}
                     onChange={(e) => updateSubject(sub.id, 'gradePoint', e.target.value === '' ? null : Number(e.target.value))}
                     className={`rounded-lg bg-white px-2 py-1 text-xs font-semibold border focus:outline-none transition ${
-                      sub.gradePoint === null ? 'border-slate-200 text-slate-400' : 'border-emerald-300 text-emerald-800 bg-emerald-50/40'
+                      sub.gradePoint === null ? 'border-slate-200 text-slate-400' : 'border-blue-300 text-[#0a2558] bg-blue-50/70 font-bold'
                     }`}
                   >
                     <option value="">None</option>

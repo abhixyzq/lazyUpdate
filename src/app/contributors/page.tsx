@@ -74,7 +74,7 @@ export default function ContributorsPage() {
   }, [contributors]);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-20">
       <SubpageHeader title="Contributors" />
 
       <main className="mx-auto max-w-2xl px-4 pt-6 space-y-5">
@@ -88,7 +88,7 @@ export default function ContributorsPage() {
             <div className="flex items-center gap-1.5">
               <span
                 className={`h-2 w-2 rounded-full ${
-                  isLiveDB ? 'bg-emerald-500' : 'bg-slate-400'
+                  isLiveDB ? 'bg-amber-500' : 'bg-slate-400'
                 }`}
               />
               <span className="text-[11px] font-medium text-slate-500">
@@ -119,7 +119,7 @@ export default function ContributorsPage() {
               <span className="font-bold text-slate-900">{totalColleges}</span> Colleges
             </div>
             <span className="text-slate-300">•</span>
-            <div className="text-emerald-700 font-bold">
+            <div className="text-[#0a2558] font-bold">
               100% Ad-Free
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function ContributorsPage() {
                     setSearchQuery('');
                     setSelectedCollege('All');
                   }}
-                  className="mt-2 text-xs text-emerald-700 hover:underline font-semibold"
+                  className="mt-2 text-xs text-[#0a2558] hover:underline font-semibold"
                 >
                   Clear all filters
                 </button>

@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f6faf7;
-  --foreground: #0f172a;
+  --background: #faf5ea;
+  --foreground: #0a2558;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #f6faf7;
+  background-color: #faf5ea;
   color: #0f172a;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;

@@ -73,7 +73,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
 
         {/* Header with Topic Details */}
         <div className="pb-3 border-b border-slate-100 pr-6">
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-700">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-[#0a2558]">
             {paperName}
           </span>
           <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug mt-0.5">
@@ -115,7 +115,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
           <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs space-y-2.5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-emerald-700 text-white shadow-2xs">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#0a2558] text-[#fde047] shadow-2xs">
                   <Sparkles className="h-4 w-4" />
                 </div>
                 <div>
@@ -147,9 +147,9 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
-                className="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200/70 bg-emerald-50/60 py-2 px-2.5 text-[11px] font-semibold text-emerald-800 hover:bg-emerald-100/60 active:scale-95 transition"
+                className="flex items-center justify-center gap-1.5 rounded-xl border border-amber-200 bg-amber-50/70 py-2 px-2.5 text-[11px] font-semibold text-amber-900 hover:bg-amber-100 active:scale-95 transition"
               >
-                <Bot className="h-3.5 w-3.5 text-emerald-700" />
+                <Bot className="h-3.5 w-3.5 text-amber-800" />
                 <span>ChatGPT</span>
               </a>
             </div>
@@ -162,8 +162,8 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
             >
               {copied ? (
                 <>
-                  <Check className="h-3 w-3 text-emerald-600" />
-                  <span className="text-emerald-600 font-black">AI Study Prompt Copied!</span>
+                  <Check className="h-3 w-3 text-amber-600" />
+                  <span className="text-amber-700 font-black">AI Study Prompt Copied!</span>
                 </>
               ) : (
                 <>
@@ -183,7 +183,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
             }}
             className={`w-full flex items-center justify-between rounded-2xl border p-3 active:scale-98 transition shadow-2xs ${
               isCompleted
-                ? 'border-emerald-300 bg-emerald-50/70 text-emerald-950'
+                ? 'border-amber-300 bg-amber-50/80 text-amber-950'
                 : 'border-slate-200/80 bg-white hover:bg-slate-50 text-slate-800'
             }`}
           >
@@ -191,7 +191,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
               <div
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border ${
                   isCompleted
-                    ? 'bg-emerald-700 border-emerald-700 text-white'
+                    ? 'bg-[#0a2558] border-[#0a2558] text-[#fde047]'
                     : 'bg-slate-50 border-slate-200 text-slate-400'
                 }`}
               >
@@ -211,7 +211,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
             <span
               className={`rounded-full px-2.5 py-0.5 text-[10px] font-semibold ${
                 isCompleted
-                  ? 'bg-emerald-100 text-emerald-800'
+                  ? 'bg-yellow-100 text-amber-900 border border-yellow-200'
                   : 'bg-slate-100 text-slate-600'
               }`}
             >

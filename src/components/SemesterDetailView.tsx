@@ -131,21 +131,21 @@ const TopicItem: React.FC<TopicItemProps> = ({
       }}
       className={`group relative flex items-start justify-between gap-2.5 rounded-xl p-2 select-none cursor-pointer transition-all duration-150 ${
         isCompleted
-          ? 'bg-emerald-50/60 border border-emerald-200/80'
+          ? 'bg-amber-50/70 border border-amber-200/80'
           : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/60'
       }`}
       title="Double-tap to mark complete • Long-press for YouTube & AI"
     >
       <div className="flex items-start gap-2.5 min-w-0 flex-1">
         {isCompleted ? (
-          <CheckCircle2 className="h-4 w-4 text-emerald-700 shrink-0 mt-0.5 stroke-[2.2]" />
+          <CheckCircle2 className="h-4 w-4 text-[#0a2558] shrink-0 mt-0.5 stroke-[2.2]" />
         ) : (
           <Circle className="h-4 w-4 text-slate-300 shrink-0 mt-0.5 stroke-[1.5] group-hover:text-slate-400" />
         )}
         <span
           className={`text-xs leading-relaxed transition-all ${
             isCompleted
-              ? 'text-emerald-950 font-medium line-through decoration-emerald-600/60'
+              ? 'text-slate-700 font-medium line-through decoration-amber-500/60'
               : 'text-slate-700 font-normal'
           }`}
         >
@@ -154,7 +154,7 @@ const TopicItem: React.FC<TopicItemProps> = ({
       </div>
 
       {isCompleted && (
-        <span className="rounded-full bg-emerald-100/80 px-2 py-0.2 text-[9px] font-semibold text-emerald-800 shrink-0 self-center border border-emerald-200">
+        <span className="rounded-full bg-yellow-100 px-2 py-0.2 text-[9px] font-semibold text-amber-900 shrink-0 self-center border border-yellow-300">
           Done ✓
         </span>
       )}
@@ -234,28 +234,28 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
   const nextSem = semesterNumber < course.totalSemesters ? semesterNumber + 1 : null;
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-slate-900 pb-28 sm:pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-20">
       {/* 1. Header */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur-md px-4 py-2.5">
+      <header className="sticky top-0 z-40 border-b border-[#0d2e6e] bg-[#0a2558] text-white px-4 py-2.5 shadow-sm">
         <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
           <Link
             href={`/syllabus/${course.id}`}
-            className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-300 hover:text-emerald-700 transition active:scale-95 shrink-0"
+            className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 text-white transition active:scale-95 shrink-0"
             title={`Back to ${course.shortCode} Semesters`}
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="h-4 w-4 stroke-[2.2]" />
           </Link>
           <div className="text-center min-w-0 flex-1">
-            <h1 className="text-xs sm:text-sm font-bold text-slate-900 truncate">
+            <h1 className="text-xs sm:text-sm font-bold text-white truncate">
               {course.shortCode} • {getOrdinal(semesterNumber)} Sem
             </h1>
-            <p className="text-[11px] font-medium text-emerald-700 truncate">
+            <p className="text-[11px] font-medium text-blue-200 truncate">
               {stripHindiTranslations(course.name)}
             </p>
           </div>
           <Link
             href={`/syllabus/${course.id}`}
-            className="rounded-xl border border-slate-200/80 bg-white px-2.5 py-1 text-[11px] font-semibold text-slate-600 hover:border-emerald-300 hover:text-emerald-700 transition shrink-0"
+            className="rounded-xl bg-white/10 hover:bg-white/20 text-white px-2.5 py-1 text-[11px] font-semibold transition shrink-0"
           >
             Semesters
           </Link>
@@ -267,7 +267,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         <div className="rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs">
           <div className="flex items-center justify-between gap-2">
             <div>
-              <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+              <span className="text-[10px] font-semibold uppercase tracking-wider text-[#0a2558] bg-yellow-50 px-2 py-0.5 rounded-full border border-yellow-200/70">
                 {getOrdinal(semesterNumber)} Semester
               </span>
               <h2 className="text-sm font-bold text-slate-900 mt-1">
@@ -286,7 +286,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
               Select Paper / Course
             </span>
-            <span className="text-[11px] text-emerald-700 font-medium">
+            <span className="text-[11px] text-[#0a2558] font-semibold">
               {activePaper?.code || ''}
             </span>
           </div>
@@ -302,7 +302,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                   onClick={() => setActivePaperId(paper.id)}
                   className={`whitespace-nowrap rounded-xl px-3.5 py-2 text-xs font-semibold transition-all duration-150 shrink-0 ${
                     isSelected
-                      ? 'bg-emerald-700 text-white shadow-2xs'
+                      ? 'bg-[#0a2558] text-[#fde047] shadow-xs'
                       : 'bg-white border border-slate-200/80 text-slate-700 hover:border-slate-300 hover:bg-slate-50'
                   }`}
                 >
@@ -320,7 +320,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             <div className="border-b border-slate-100 pb-3">
               <div className="flex items-center gap-2 flex-wrap mb-1">
                 {activePaper.code && (
-                  <span className="rounded-md bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-800 border border-emerald-200/60">
+                  <span className="rounded-md bg-yellow-50 px-2 py-0.5 text-[10px] font-bold text-[#0a2558] border border-yellow-200/70">
                     {activePaper.code}
                   </span>
                 )}
@@ -341,8 +341,8 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             </div>
 
             {/* Gesture Hint Strip (Lightweight) */}
-            <div className="rounded-xl border border-emerald-100 bg-emerald-50/50 py-2 px-3 flex items-center gap-2 text-[11px] font-medium text-emerald-900">
-              <Sparkles className="h-3.5 w-3.5 text-emerald-700 shrink-0" />
+            <div className="rounded-xl border border-yellow-200/80 bg-yellow-50/50 py-2 px-3 flex items-center gap-2 text-[11px] font-medium text-[#0a2558]">
+              <Sparkles className="h-3.5 w-3.5 text-amber-600 shrink-0" />
               <span>Double-tap any topic to mark complete • Long-press for AI explainer</span>
             </div>
 
@@ -355,7 +355,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
                     <div key={unit.unitNumber} className="space-y-2">
                       {/* Unit Title Header */}
                       <div className="flex items-center gap-2">
-                        <span className="flex h-5 w-5 items-center justify-center rounded-md bg-emerald-50 text-emerald-800 text-[10px] font-bold border border-emerald-200/50 shrink-0">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-md bg-yellow-50 text-[#0a2558] text-[10px] font-bold border border-yellow-200/70 shrink-0">
                           {unit.unitNumber}
                         </span>
                         <h4 className="font-semibold text-xs sm:text-sm text-slate-900">
@@ -445,7 +445,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           {prevSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${prevSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 shadow-2xs transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-[#0a2558] hover:border-yellow-400 shadow-2xs transition"
             >
               <ChevronLeft className="h-3.5 w-3.5" />
               <span>{getOrdinal(prevSem)} Semester</span>
@@ -457,7 +457,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
           {nextSem ? (
             <Link
               href={`/syllabus/${course.id}/sem-${nextSem}`}
-              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 shadow-2xs transition"
+              className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-[#0a2558] hover:border-yellow-400 shadow-2xs transition"
             >
               <span>{getOrdinal(nextSem)} Semester</span>
               <ChevronRight className="h-3.5 w-3.5" />
@@ -471,7 +471,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
         <div className="pt-2 text-center">
           <Link
             href={`/syllabus/${course.id}`}
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-emerald-700 transition"
+            className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-[#0a2558] transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to {course.shortCode} Semesters

@@ -51,7 +51,7 @@ export const FALLBACK_NOTICES: LiveNoticeItem[] = [
     "rawDate": "07 Oct 2026 07:45:20 AM",
     "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/27114d4eb53fabca75ea9b1b316f1047c0b588678573a96c8eccdeace5ab1c271979/17913512641979_admission_docs.pdf",
     "category": "Circulars",
-    "isNew": true,
+    "isNew": false,
     "fileType": "pdf",
     "source": "Samarth Portal"
   },
@@ -62,7 +62,7 @@ export const FALLBACK_NOTICES: LiveNoticeItem[] = [
     "rawDate": "06 Oct 2026 17:10:00 PM",
     "url": "https://samarth-notification.s3.ap-south-1.amazonaws.com/pup.samarth.ac.in/pupadm/2026/adm/april/admissionjan26/406e14527e51f51326fab1f6db85f7bf71134a0f6a73d2feffe2af210119f9a42/17912895842_admission_docs.pdf",
     "category": "Spot Round",
-    "isNew": true,
+    "isNew": false,
     "fileType": "pdf",
     "source": "Samarth Portal"
   },

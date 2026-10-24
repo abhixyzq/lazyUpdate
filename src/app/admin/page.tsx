@@ -378,7 +378,7 @@ export default function AdminPage() {
   // 1. Authentication Screen
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-[#f8fafc] text-slate-900 flex items-center justify-center p-4 pb-20">
+      <div className="min-h-screen bg-transparent text-slate-900 flex items-center justify-center p-4 pb-20">
         <div className="w-full max-w-sm rounded-3xl border border-slate-200/90 bg-white p-6 sm:p-7 shadow-xl space-y-4">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-200 shadow-2xs">
             <Shield className="h-7 w-7" />
@@ -448,7 +448,7 @@ export default function AdminPage() {
 
   // 2. Authenticated Admin Dashboard
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-24">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-24">
       <SubpageHeader
         title="Admin Control Center"
         subtitle="Manage contributors, announcements & live campus telemetry"
@@ -460,7 +460,7 @@ export default function AdminPage() {
           <div
             className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-2.5 rounded-2xl border px-4 py-3 text-xs font-bold shadow-xl animate-in slide-in-from-top-2 duration-200 ${
               inlineToast.type === 'success'
-                ? 'bg-emerald-50 border-emerald-300 text-emerald-900'
+                ? 'bg-yellow-50 border-yellow-300 text-[#0a2558]'
                 : 'bg-rose-50 border-rose-300 text-rose-900'
             }`}
           >
@@ -473,16 +473,16 @@ export default function AdminPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-2xs">
           <div className="flex flex-wrap items-center gap-2">
             <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500" />
             </span>
 
             <span className="text-xs font-black text-slate-900">
               {currentUser?.email || 'Admin Online'}
             </span>
 
-            <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold px-2 py-0.5">
-              <Radio className="h-3 w-3 animate-pulse" />
+            <span className="inline-flex items-center gap-1 rounded-md bg-yellow-50 border border-yellow-200 text-[#0a2558] text-[10px] font-bold px-2 py-0.5">
+              <Radio className="h-3 w-3 text-amber-600 animate-pulse" />
               <span>{presence.totalLive} Live Online</span>
             </span>
           </div>
@@ -764,7 +764,7 @@ export default function AdminPage() {
                       'Broadcasting...'
                     ) : tickerSavedSuccess ? (
                       <>
-                        <Check className="h-3.5 w-3.5 text-emerald-400" />
+                        <Check className="h-3.5 w-3.5 text-[#fde047]" />
                         <span>Saved Live!</span>
                       </>
                     ) : (
@@ -785,19 +785,19 @@ export default function AdminPage() {
             {/* 4 Hero KPI Cards */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
               {/* Card 1: Live Online Right Now */}
-              <div className="rounded-2xl border border-emerald-200/90 bg-emerald-50/40 p-4 shadow-2xs flex flex-col justify-between">
+              <div className="rounded-2xl border border-amber-200/90 bg-amber-50/40 p-4 shadow-2xs flex flex-col justify-between">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-black uppercase text-emerald-800 tracking-wider">
+                  <span className="text-[11px] font-black uppercase text-amber-900 tracking-wider">
                     Live Online Now
                   </span>
-                  <Radio className="h-4 w-4 text-emerald-600 animate-pulse" />
+                  <Radio className="h-4 w-4 text-amber-600 animate-pulse" />
                 </div>
                 <div className="py-2">
-                  <div className="text-2xl sm:text-3xl font-black text-emerald-950">
+                  <div className="text-2xl sm:text-3xl font-black text-amber-950">
                     {presence.totalLive}
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-[10px] font-bold text-emerald-800">
+                <div className="flex items-center gap-2 text-[10px] font-bold text-amber-900">
                   <span>📱 {presence.liveApp} App</span>
                   <span>•</span>
                   <span>🌐 {presence.liveWeb} Web</span>

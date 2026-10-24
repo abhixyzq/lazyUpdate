@@ -70,7 +70,7 @@ export default function FeedbackPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 pb-28 sm:pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
       <SubpageHeader
         title="Feedback & Reviews"
         subtitle="Help us make Lazy PU better for every student"
@@ -99,9 +99,9 @@ export default function FeedbackPage() {
         </div>
 
         {isSubmitted ? (
-          <div className="rounded-3xl border border-emerald-200 bg-white p-6 text-center shadow-xs space-y-3 animate-in zoom-in-95 duration-200">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 border border-emerald-200">
-              <CheckCircle2 className="h-8 w-8" />
+          <div className="rounded-3xl border border-amber-200 bg-white p-6 text-center shadow-xs space-y-3 animate-in zoom-in-95 duration-200">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-50 text-[#0a2558] border border-yellow-200">
+              <CheckCircle2 className="h-8 w-8 text-[#0a2558]" />
             </div>
             <h3 className="text-base font-black text-slate-900">
               Thank You for Your Feedback!
@@ -134,11 +134,11 @@ export default function FeedbackPage() {
             className="rounded-3xl border border-slate-200/90 bg-white p-4 sm:p-5 shadow-xs space-y-4"
           >
             {/* Header banner */}
-            <div className="flex items-center gap-3 rounded-2xl bg-emerald-50/80 border border-emerald-100 p-3">
-              <MessageSquareHeart className="h-6 w-6 text-emerald-700 shrink-0" />
+            <div className="flex items-center gap-3 rounded-2xl bg-yellow-50/70 border border-yellow-200/80 p-3">
+              <MessageSquareHeart className="h-6 w-6 text-[#0a2558] shrink-0" />
               <div>
-                <h4 className="text-xs font-bold text-emerald-950">We Value Your Review</h4>
-                <p className="text-[11px] text-emerald-800">
+                <h4 className="text-xs font-bold text-[#0a2558]">We Value Your Review</h4>
+                <p className="text-[11px] text-slate-600">
                   Tell us what you love or what we should add to Lazy PU.
                 </p>
               </div>
@@ -243,9 +243,9 @@ export default function FeedbackPage() {
               <button
                 type="submit"
                 disabled={!feedbackText.trim()}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 disabled:opacity-50 text-white font-semibold py-3 px-4 text-xs transition shadow-2xs active:scale-98"
+                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#0a2558] hover:bg-[#071b40] disabled:opacity-50 text-white font-semibold py-3 px-4 text-xs transition shadow-2xs active:scale-98"
               >
-                <Send className="h-4 w-4" /> Submit Review
+                <Send className="h-4 w-4 text-[#fde047]" /> Submit Review
               </button>
 
               <button
@@ -270,7 +270,7 @@ export default function FeedbackPage() {
           </div>
           <a
             href="mailto:support@lazyupdate.tech"
-            className="font-semibold text-emerald-700 hover:underline"
+            className="font-semibold text-[#0a2558] hover:underline"
           >
             support@lazyupdate.tech
           </a>
