@@ -10,6 +10,7 @@ import {
   EyeOff,
   FileText,
   Mail,
+  MessageSquare,
   ExternalLink,
   Info,
   Bell,
@@ -459,22 +460,22 @@ export default function PrivacyAndDisclaimerPage() {
               </a>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-slate-200/60 pb-2">
-              <span className="font-semibold text-slate-500">Official Support Email:</span>
-              <span className="font-mono text-[#0a2558] font-bold">support@lazyupdate.tech</span>
+              <span className="font-semibold text-slate-500">Support & Feedback:</span>
+              <span className="font-bold text-[#0a2558]">Direct In-App Feedback Form</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <span className="font-semibold text-slate-500">Response Turnaround:</span>
-              <span className="text-slate-700">Within 48 hours for verified requests</span>
+              <span className="text-slate-700">Within 24–48 hours for verified requests</span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 pt-1">
-            <a
-              href="mailto:support@lazyupdate.tech"
+            <Link
+              href="/feedback"
               className="flex-1 flex items-center justify-center gap-2 rounded-2xl bg-[#0a2558] hover:bg-[#071b40] text-white font-semibold py-3 px-4 text-xs transition shadow-2xs"
             >
-              <Mail className="h-4 w-4 text-[#fde047]" /> Send Email (support@lazyupdate.tech)
-            </a>
+              <MessageSquare className="h-4 w-4 text-[#fde047]" /> Send In-App Feedback / Grievance
+            </Link>
             <Link
               href="/"
               className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 font-semibold py-3 px-5 text-xs transition"

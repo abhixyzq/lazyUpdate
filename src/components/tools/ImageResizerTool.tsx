@@ -647,3 +647,4 @@ export const ImageResizerTool: React.FC = () => {
     </div>
   );
 };
+

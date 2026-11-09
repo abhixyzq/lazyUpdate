@@ -11,6 +11,7 @@ import {
   Bug,
   HelpCircle,
   FileText,
+  RefreshCw,
 } from 'lucide-react';
 import { InstagramIcon } from './OfficialBrandIcons';
 
@@ -47,34 +48,63 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   const [message, setMessage] = useState<string>('');
   const [nameAndCollege, setNameAndCollege] = useState<string>('');
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [copiedForIg, setCopiedForIg] = useState<boolean>(false);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!message.trim()) return;
+    if (!message.trim() || isSubmitting) return;
 
-    // Save to localStorage
+    setIsSubmitting(true);
+
     try {
-      const existing = JSON.parse(
-        localStorage.getItem('lazy_pu_feedbacks_v1') || '[]'
-      );
-      const newEntry = {
-        id: Date.now().toString(),
-        date: new Date().toISOString(),
-        category,
-        rating,
-        message: message.trim(),
-        nameAndCollege: nameAndCollege.trim(),
-      };
-      existing.push(newEntry);
-      localStorage.setItem('lazy_pu_feedbacks_v1', JSON.stringify(existing));
-    } catch {
-      // ignore localStorage errors
-    }
+      // Send directly to support@nainix.me via FormSubmit
+      await fetch('https://formsubmit.co/ajax/support@nainix.me', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `Lazy PU In-App Modal Feedback: [${category}] (${rating}★)`,
+          _template: 'table',
+          _captcha: 'false',
+          Category: category,
+          Rating: `${rating} / 5 Stars`,
+          Student: nameAndCollege.trim() || 'Anonymous Student',
+          Message: message.trim(),
+          Submitted_At: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        }),
+      });
 
-    setIsSubmitted(true);
+      // Save to localStorage backup
+      try {
+        const existing = JSON.parse(
+          localStorage.getItem('lazy_pu_feedbacks_v1') || '[]'
+        );
+        const newEntry = {
+          id: Date.now().toString(),
+          date: new Date().toISOString(),
+          category,
+          rating,
+          message: message.trim(),
+          nameAndCollege: nameAndCollege.trim(),
+        };
+        existing.push(newEntry);
+        localStorage.setItem('lazy_pu_feedbacks_v1', JSON.stringify(existing));
+      } catch {
+        // ignore localStorage errors
+      }
+
+      setIsSubmitted(true);
+    } catch (err) {
+      console.warn('Feedback modal submission error:', err);
+      setIsSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleSendInstagram = async () => {
@@ -275,10 +305,20 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
             <div className="space-y-2 pt-1">
               <button
                 type="submit"
-                disabled={!message.trim()}
-                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-emerald-700 hover:bg-emerald-800 disabled:opacity-50 text-white font-semibold py-2.5 px-4 text-xs transition shadow-xs active:scale-98"
+                disabled={!message.trim() || isSubmitting}
+                className="w-full flex items-center justify-center gap-2 rounded-2xl bg-[#0a2558] hover:bg-[#071b40] disabled:opacity-50 text-white font-semibold py-2.5 px-4 text-xs transition shadow-xs active:scale-98 cursor-pointer"
               >
-                <Send className="h-4 w-4" /> Submit Feedback
+                {isSubmitting ? (
+                  <>
+                    <RefreshCw className="h-4 w-4 animate-spin text-[#fde047]" />
+                    <span>Sending to Support...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="h-4 w-4 text-[#fde047]" />
+                    <span>Submit Feedback</span>
+                  </>
+                )}
               </button>
 
               <button

@@ -597,3 +597,4 @@ export const QrCodeTool: React.FC = () => {
     </div>
   );
 };
+
