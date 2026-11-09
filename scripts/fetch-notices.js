@@ -133,6 +133,6 @@ export const FALLBACK_NOTICES: LiveNoticeItem[] = ${JSON.stringify(notices, null
 }
 
 scrapeNotices().catch(err => {
-  console.error('Scrape error:', err);
-  process.exit(1);
+  console.warn('Scrape notice notice fetch error (keeping existing notices):', err.message || err);
+  process.exit(0);
 });

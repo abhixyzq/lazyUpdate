@@ -203,7 +203,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             >
               Privacy Policy
             </Link>
-            <span>v1.0.4</span>
+            <span>v1.0.5</span>
           </div>
         </div>
       </div>

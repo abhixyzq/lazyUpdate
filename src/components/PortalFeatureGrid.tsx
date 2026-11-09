@@ -8,8 +8,8 @@ import {
   Megaphone,
   Calculator,
   CalendarCheck,
-  Folder,
   ChevronRight,
+  BookSearch,
 } from 'lucide-react';
 
 export const PortalFeatureGrid: React.FC = () => {
@@ -61,10 +61,10 @@ export const PortalFeatureGrid: React.FC = () => {
     },
     {
       id: 'materials',
-      title: 'Study Material',
-      subtitle: 'Notes, Books & Resources',
+      title: 'Regular Results',
+      subtitle: 'Check results and marks',
       href: '/results', // Results & study portal
-      icon: Folder,
+      icon: BookSearch,
       iconBg: 'bg-[#fef3c7]', // Soft pastel amber
       iconColor: 'text-[#0a2558]',
     },

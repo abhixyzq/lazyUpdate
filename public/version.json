@@ -1,15 +1,15 @@
 {
-  "version": "1.0.4",
-  "versionCode": 4,
-  "releaseDate": "2026-10-17",
-  "title": "Lazy PU v1.0.4 Update! 🚀",
-  "message": "Smoother scrolling experience, permanently fixed navigation bars, and compact update notifications.",
+  "version": "1.0.5",
+  "versionCode": 5,
+  "releaseDate": "2026-11-09",
+  "title": "Lazy PU v1.0.5 Update Available! 🚀",
+  "message": "Exciting new update! Introducing the Student Tools suite (QR Code Maker, Image Resizer & PDF Maker), lightning fast launch speed, and single-tap syllabus tracker.",
   "features": [
-    "Clean, ultra-fast modern design with zero clutter",
-    "Direct Amazon India links for all syllabus reference books",
-    "Official Patna University real-time notice alerts",
-    "Full NEP 4-Year & Vocational Syllabi (Sem 1 to 8)",
-    "Student community directory and SGPA tools"
+    "New Student Tools Suite: QR Code Maker, Image Resizer & PDF Maker",
+    "Instant app startup speed with zero splash screen lag",
+    "Single-tap syllabus completion & hold to Ask AI",
+    "Image resizer for exam forms (<50KB photo, <20KB signature)",
+    "Full offline privacy for student documents and tools"
   ],
   "forceUpdate": false,
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.lazypu.app",
