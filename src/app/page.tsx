@@ -27,8 +27,8 @@ export default function HomePage() {
       {/* 3. More Services & Remaining Pages Links */}
       <PortalMoreLinks />
 
-      {/* 5. Deep Navy Bottom Navigation Bar (5-Tab with Yellow Active Indicator) */}
-      <BottomNav onOpenDrawer={() => setIsDrawerOpen(true)} />
+      {/* 5. Docked Bottom AdMob Banner */}
+      <BottomNav />
 
       {/* 6. On-Demand Lazy Side Drawer */}
       {isDrawerOpen && (

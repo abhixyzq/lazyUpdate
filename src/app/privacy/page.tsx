@@ -319,29 +319,29 @@ export default function PrivacyAndDisclaimerPage() {
           </div>
         </section>
 
-        {/* 5. Zero-Ads & Anti-Tracking Policy */}
+        {/* 5. Banner Ads & Anti-Tracking Policy */}
         <section id="zero-ads" className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs space-y-4">
           <div className="flex items-center gap-2 text-slate-900 font-bold text-sm sm:text-base border-b border-slate-100 pb-3">
             <Cpu className="h-5 w-5 text-[#0a2558] shrink-0" />
-            <h2>100% Ad-Free, Tracker-Free Student Environment</h2>
+            <h2>Non-Intrusive Banner Ads & Privacy Policy</h2>
           </div>
 
           <div className="space-y-3 text-xs sm:text-[13px] text-slate-600 leading-relaxed">
             <p>
-              Students studying for examinations should never be bombarded by intrusive popups, banners, video interstitials, or predatory ad trackers.
+              To keep Lazy PU 100% free for all students, standard non-intrusive banner advertisements may be served via <strong>Google AdMob</strong>. Students will never be subjected to intrusive popups or blocking video interstitials.
             </p>
             <div className="grid gap-2 sm:grid-cols-2 pt-1 text-slate-700">
               <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                <span className="text-xs"><strong>No Google AdMob</strong> or third-party programmatic ad SDKs.</span>
+                <span className="text-xs"><strong>Google AdMob Banner</strong> compliant with standard privacy policies.</span>
               </div>
               <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                <span className="text-xs"><strong>No behavioral profiling</strong> or data broker sales.</span>
+                <span className="text-xs"><strong>No behavioral profiling</strong> or private student data sales.</span>
               </div>
               <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                <span className="text-xs"><strong>No advertising cookies</strong> or cross-site tracking pixels.</span>
+                <span className="text-xs"><strong>No intrusive popups</strong> during examination reading sessions.</span>
               </div>
               <div className="rounded-xl border border-amber-100 bg-amber-50/40 p-3 flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />

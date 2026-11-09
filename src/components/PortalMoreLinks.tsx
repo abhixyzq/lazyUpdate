@@ -12,7 +12,6 @@ import {
   Heart,
   MessageSquare,
   ShieldCheck,
-  ExternalLink,
 } from 'lucide-react';
 import { WhatsAppIcon, InstagramIcon } from './OfficialBrandIcons';
 

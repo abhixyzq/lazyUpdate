@@ -72,7 +72,7 @@ export const PortalFeatureGrid: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-xl px-4 pt-3 pb-2">
-      <div className="grid grid-cols-2 gap-3 sm:gap-3.5">
+      <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5">
         {cards.map((card) => {
           const Icon = card.icon;
 
@@ -80,19 +80,19 @@ export const PortalFeatureGrid: React.FC = () => {
             <Link
               key={card.id}
               href={card.href}
-              className="group flex items-center justify-between gap-2.5 rounded-2xl bg-white p-3 sm:p-3.5 shadow-[0_2px_10px_rgba(10,37,88,0.04)] border border-slate-100/80 hover:border-slate-200 hover:shadow-xs active:scale-[0.98] transition cursor-pointer"
+              className="group flex items-center justify-between gap-1.5 sm:gap-2 rounded-2xl bg-white p-2.5 sm:p-3.5 shadow-[0_2px_10px_rgba(10,37,88,0.04)] border border-slate-100/80 hover:border-slate-200 hover:shadow-xs active:scale-[0.98] transition cursor-pointer"
             >
-              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+              <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1">
                 {/* Rounded Icon Box */}
                 <div
-                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl ${card.iconBg} ${card.iconColor}`}
+                  className={`flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl sm:rounded-2xl ${card.iconBg} ${card.iconColor}`}
                 >
                   <Icon className="h-5 w-5 stroke-[2.2]" />
                 </div>
 
                 {/* Title & Subtitle */}
-                <div className="min-w-0">
-                  <h3 className="text-xs sm:text-[13px] font-bold text-[#0a2558] group-hover:text-blue-900 leading-tight truncate">
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xs sm:text-[13px] font-bold text-[#0a2558] group-hover:text-blue-900 leading-snug">
                     {card.title}
                   </h3>
                   <p className="text-[10px] sm:text-[11px] text-slate-500 font-normal leading-tight mt-0.5 line-clamp-2">
@@ -102,7 +102,7 @@ export const PortalFeatureGrid: React.FC = () => {
               </div>
 
               {/* Chevron Right */}
-              <ChevronRight className="h-4 w-4 text-[#0a2558]/70 group-hover:text-[#0a2558] group-hover:translate-x-0.5 transition shrink-0" />
+              <ChevronRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#0a2558]/70 group-hover:text-[#0a2558] group-hover:translate-x-0.5 transition shrink-0" />
             </Link>
           );
         })}
