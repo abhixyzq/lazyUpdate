@@ -204,7 +204,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
                 <div className="text-[10px] text-slate-400 font-normal">
                   {isCompleted
                     ? 'Tap to unmark this topic'
-                    : 'Double-tap on topic also toggles completion'}
+                    : 'Single-tap on topic also toggles completion'}
                 </div>
               </div>
             </div>
@@ -223,7 +223,7 @@ export const TopicActionModal: React.FC<TopicActionModalProps> = ({
 
         {/* Footer Hint */}
         <div className="mt-4 pt-3 border-t border-slate-100 text-center text-[10px] text-slate-400 font-medium">
-          💡 Double-tap any topic anytime to toggle completion
+          💡 Single-tap topic to complete/uncomplete • Hold (long-press) for Ask AI
         </div>
 
       </div>

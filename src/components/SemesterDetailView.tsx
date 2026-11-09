@@ -46,12 +46,14 @@ const TopicItem: React.FC<TopicItemProps> = ({
 }) => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const startPosRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
-  const lastTapRef = useRef<number>(0);
   const isLongPressActiveRef = useRef<boolean>(false);
+  const isMovedRef = useRef<boolean>(false);
+  const ignoreClickRef = useRef<boolean>(false);
 
   // Touch handlers for mobile
   const handleTouchStart = (e: React.TouchEvent) => {
     isLongPressActiveRef.current = false;
+    isMovedRef.current = false;
     const touch = e.touches[0];
     startPosRef.current = { x: touch.clientX, y: touch.clientY };
 
@@ -69,6 +71,7 @@ const TopicItem: React.FC<TopicItemProps> = ({
     const dx = Math.abs(touch.clientX - startPosRef.current.x);
     const dy = Math.abs(touch.clientY - startPosRef.current.y);
     if (dx > 8 || dy > 8) {
+      isMovedRef.current = true;
       if (timerRef.current) {
         clearTimeout(timerRef.current);
         timerRef.current = null;
@@ -82,27 +85,36 @@ const TopicItem: React.FC<TopicItemProps> = ({
       timerRef.current = null;
     }
 
+    // If long press was triggered, do not trigger single tap
     if (isLongPressActiveRef.current) {
+      ignoreClickRef.current = true;
+      setTimeout(() => {
+        ignoreClickRef.current = false;
+      }, 400);
       return;
     }
 
-    // Detect double tap
-    const now = Date.now();
-    const timeSinceLast = now - lastTapRef.current;
-    if (timeSinceLast < 320 && timeSinceLast > 40) {
-      if (typeof window !== 'undefined' && window.navigator && window.navigator.vibrate) {
-        window.navigator.vibrate([25, 25]);
-      }
-      onToggleComplete();
-      lastTapRef.current = 0;
-    } else {
-      lastTapRef.current = now;
+    // If user was scrolling, do not trigger single tap
+    if (isMovedRef.current) {
+      return;
     }
+
+    // Single tap on mobile: toggle complete
+    ignoreClickRef.current = true;
+    setTimeout(() => {
+      ignoreClickRef.current = false;
+    }, 400);
+
+    if (typeof window !== 'undefined' && window.navigator && window.navigator.vibrate) {
+      window.navigator.vibrate(20);
+    }
+    onToggleComplete();
   };
 
   // Mouse handlers for desktop
   const handleMouseDown = () => {
     isLongPressActiveRef.current = false;
+    isMovedRef.current = false;
     timerRef.current = setTimeout(() => {
       isLongPressActiveRef.current = true;
       onLongPress();
@@ -116,6 +128,14 @@ const TopicItem: React.FC<TopicItemProps> = ({
     }
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (ignoreClickRef.current || isLongPressActiveRef.current) {
+      return;
+    }
+    onToggleComplete();
+  };
+
   return (
     <div
       onTouchStart={handleTouchStart}
@@ -124,7 +144,7 @@ const TopicItem: React.FC<TopicItemProps> = ({
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
-      onDoubleClick={onToggleComplete}
+      onClick={handleClick}
       onContextMenu={(e) => {
         e.preventDefault();
         onLongPress();
@@ -132,9 +152,9 @@ const TopicItem: React.FC<TopicItemProps> = ({
       className={`group relative flex items-start justify-between gap-2.5 rounded-xl p-2 select-none cursor-pointer transition-all duration-150 ${
         isCompleted
           ? 'bg-amber-50/70 border border-amber-200/80'
-          : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/60'
+          : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/60 active:scale-[0.99]'
       }`}
-      title="Double-tap to mark complete • Long-press for YouTube & AI"
+      title="Single-tap to mark complete/uncomplete • Hold (long-press) for Ask to AI"
     >
       <div className="flex items-start gap-2.5 min-w-0 flex-1">
         {isCompleted ? (
@@ -343,7 +363,7 @@ export const SemesterDetailView: React.FC<SemesterDetailViewProps> = ({
             {/* Gesture Hint Strip (Lightweight) */}
             <div className="rounded-xl border border-yellow-200/80 bg-yellow-50/50 py-2 px-3 flex items-center gap-2 text-[11px] font-medium text-[#0a2558]">
               <Sparkles className="h-3.5 w-3.5 text-amber-600 shrink-0" />
-              <span>Double-tap any topic to mark complete • Long-press for AI explainer</span>
+              <span>Single-tap topic to complete/uncomplete • Hold (long-press) for Ask AI</span>
             </div>
 
             {/* Units & Topics List */}
