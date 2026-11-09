@@ -74,7 +74,7 @@ export default function ContributorsPage() {
   }, [contributors]);
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-20">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-24">
       <SubpageHeader title="Contributors" />
 
       <main className="mx-auto max-w-2xl px-4 pt-6 space-y-5">

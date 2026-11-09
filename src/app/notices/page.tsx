@@ -290,7 +290,7 @@ export default function NoticesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-24">
       <SubpageHeader title="PU Official Notices" />
 
       {/* Toast Notification */}

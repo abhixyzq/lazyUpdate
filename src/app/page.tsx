@@ -17,7 +17,7 @@ export default function HomePage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#faf5ea] text-slate-900 pb-24 overflow-x-hidden antialiased selection:bg-[#fde047] selection:text-[#0a2558]">
+    <div className="min-h-screen bg-[#faf5ea] text-slate-900 pb-28 sm:pb-28 overflow-x-hidden antialiased selection:bg-[#fde047] selection:text-[#0a2558]">
       {/* 1. Deep Navy Hero Section */}
       <StudentPortalHero onOpenDrawer={() => setIsDrawerOpen(true)} />
 

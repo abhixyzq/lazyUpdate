@@ -9,7 +9,7 @@ import { WhatsAppMonoIcon } from '@/components/OfficialBrandIcons';
 
 export default function ToolsPage() {
   return (
-    <div className="relative min-h-screen bg-transparent text-slate-900 pb-24 overflow-x-hidden flex flex-col justify-between">
+    <div className="relative min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-24 overflow-x-hidden flex flex-col justify-between">
       {/* Ambient Blue Glass Glow Orbs */}
       <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[550px] h-[360px] bg-gradient-to-b from-blue-200/30 via-indigo-100/15 to-transparent blur-3xl rounded-full transform-gpu will-change-transform" />
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-200/20 blur-3xl rounded-full transform-gpu will-change-transform" />

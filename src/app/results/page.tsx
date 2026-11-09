@@ -82,7 +82,7 @@ export default function ResultsPage() {
   const isPass = result?.semesterResult?.toLowerCase().includes('pass');
 
   return (
-    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-16 print:bg-white print:p-0 print:m-0">
+    <div className="min-h-screen bg-transparent text-slate-900 pb-28 sm:pb-24 print:bg-white print:p-0 print:m-0">
       {/* Top Header - hidden during print */}
       <div className="print:hidden">
         <SubpageHeader title="Results" />
