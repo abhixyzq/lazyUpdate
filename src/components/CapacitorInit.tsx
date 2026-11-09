@@ -17,16 +17,24 @@ export function CapacitorInit() {
         const { Capacitor } = await import('@capacitor/core');
         if (!Capacitor.isNativePlatform()) return;
 
-        // 1. Configure Native Status Bar
+        // 1. Immediately dismiss native splash screen on app mount
+        try {
+          const { SplashScreen } = await import('@capacitor/splash-screen');
+          await SplashScreen.hide({ fadeOutDuration: 100 });
+        } catch {
+          // Splash screen hide failed or not active
+        }
+
+        // 2. Configure Native Status Bar matching Navy Hero
         try {
           const { StatusBar, Style } = await import('@capacitor/status-bar');
-          await StatusBar.setStyle({ style: Style.Light });
-          await StatusBar.setBackgroundColor({ color: '#ffffff' });
+          await StatusBar.setStyle({ style: Style.Dark });
+          await StatusBar.setBackgroundColor({ color: '#09204e' });
         } catch {
           // Status bar unavailable
         }
 
-        // 2. Configure Native Android Back Button
+        // 3. Configure Native Android Back Button
         try {
           const { App } = await import('@capacitor/app');
           const backListener = await App.addListener('backButton', () => {

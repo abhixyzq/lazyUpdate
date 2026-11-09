@@ -98,10 +98,10 @@ export function AppUpdateModal() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // Check version after initial app render (1.5s delay for smooth startup)
+    // Check version after initial app render (deferred to avoid network congestion at launch)
     const timer = setTimeout(() => {
       checkAppVersion(false);
-    }, 1500);
+    }, 3500);
 
     // Listen for manual trigger from SideDrawer or Settings
     const handleManualCheck = () => {

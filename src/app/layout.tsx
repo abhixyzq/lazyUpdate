@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { CapacitorInit } from '@/components/CapacitorInit';
 import { AppUpdateModal } from '@/components/AppUpdateModal';
-import { Preloader } from '@/components/Preloader';
 import { TelemetryTracker } from '@/components/TelemetryTracker';
 import './globals.css';
 
@@ -54,7 +53,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-[#faf5ea] text-slate-900 transition-colors selection:bg-[#fde047] selection:text-[#0a2558] flex flex-col antialiased">
         <ThemeProvider>
-          <Preloader />
           <TelemetryTracker />
           <CapacitorInit />
           <AppUpdateModal />

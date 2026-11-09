@@ -49,20 +49,28 @@ export const AdMobBanner: React.FC<AdMobBannerProps> = ({
       return false;
     };
 
-    // Load Google AdSense / AdMob script if not present
-    const existingScript = document.querySelector(
-      `script[src*="pagead2.googlesyndication.com"]`
-    );
+    // Defer Google AdSense / AdMob script injection until idle
+    const loadScript = () => {
+      const existingScript = document.querySelector(
+        `script[src*="pagead2.googlesyndication.com"]`
+      );
 
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`;
-      script.async = true;
-      script.crossOrigin = 'anonymous';
-      script.onerror = () => {
-        setIsAdLoaded(false);
-      };
-      document.head.appendChild(script);
+      if (!existingScript) {
+        const script = document.createElement('script');
+        script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`;
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+        script.onerror = () => {
+          setIsAdLoaded(false);
+        };
+        document.head.appendChild(script);
+      }
+    };
+
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(loadScript, { timeout: 2000 });
+    } else {
+      setTimeout(loadScript, 1000);
     }
 
     // Push the ad once mounted
