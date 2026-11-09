@@ -51,21 +51,27 @@ export const AdMobBanner: React.FC<AdMobBannerProps> = ({
     return (
       <aside
         aria-label="Advertisement Banner"
-        className={`fixed bottom-0 inset-x-0 z-40 w-full bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-[0_-4px_20px_rgba(10,37,88,0.06)] pb-[max(0.35rem,env(safe-area-inset-bottom))] pt-1.5 px-3 flex flex-col items-center justify-center ${className}`}
+        className={`fixed bottom-0 inset-x-0 z-30 w-full h-[62px] max-h-[62px] min-h-[62px] bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-[0_-4px_20px_rgba(10,37,88,0.06)] px-2 flex flex-col items-center justify-center overflow-hidden pointer-events-auto ${className}`}
       >
-        <div className="w-full max-w-[360px] sm:max-w-[468px] flex flex-col items-center justify-center">
-          <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none mb-1">
+        <div className="w-full max-w-[468px] h-[54px] max-h-[54px] flex flex-col items-center justify-center overflow-hidden">
+          <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none mb-0.5 select-none">
             Advertisement
           </span>
-          <div className="w-full flex items-center justify-center min-h-[50px] overflow-hidden">
+          <div className="w-full h-[50px] max-h-[50px] min-h-[50px] flex items-center justify-center overflow-hidden">
             <ins
               ref={adRef}
               className="adsbygoogle"
-              style={{ display: 'block', width: '100%', minHeight: '50px' }}
+              style={{
+                display: 'inline-block',
+                width: '320px',
+                maxWidth: '100%',
+                height: '50px',
+                maxHeight: '50px',
+              }}
               data-ad-client={adClient}
               data-ad-slot={adSlot}
               data-ad-format="horizontal"
-              data-full-width-responsive="true"
+              data-full-width-responsive="false"
             />
           </div>
         </div>
@@ -77,19 +83,25 @@ export const AdMobBanner: React.FC<AdMobBannerProps> = ({
     <div
       className={`w-full flex flex-col items-center justify-center my-2 transition-all ${className}`}
     >
-      <div className="w-full max-w-[340px] sm:max-w-[468px] min-h-[52px] sm:min-h-[60px] rounded-2xl bg-white border border-slate-200/80 shadow-[0_2px_10px_rgba(10,37,88,0.04)] p-1 flex flex-col items-center justify-center overflow-hidden">
-        <span className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-0.5">
+      <div className="w-full max-w-[340px] sm:max-w-[468px] h-[64px] max-h-[64px] rounded-2xl bg-white border border-slate-200/80 shadow-[0_2px_10px_rgba(10,37,88,0.04)] p-1 flex flex-col items-center justify-center overflow-hidden">
+        <span className="text-[8px] font-semibold text-slate-400 uppercase tracking-widest mb-0.5 select-none">
           Advertisement
         </span>
-        <div className="w-full flex items-center justify-center overflow-hidden min-h-[50px]">
+        <div className="w-full h-[50px] max-h-[50px] min-h-[50px] flex items-center justify-center overflow-hidden">
           <ins
             ref={adRef}
             className="adsbygoogle"
-            style={{ display: 'block', width: '100%', minHeight: '50px' }}
+            style={{
+              display: 'inline-block',
+              width: '320px',
+              maxWidth: '100%',
+              height: '50px',
+              maxHeight: '50px',
+            }}
             data-ad-client={adClient}
             data-ad-slot={adSlot}
             data-ad-format="horizontal"
-            data-full-width-responsive="true"
+            data-full-width-responsive="false"
           />
         </div>
       </div>
