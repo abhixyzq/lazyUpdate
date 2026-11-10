@@ -47,17 +47,34 @@ export function AppUpdateModal() {
         // Fallback for web or dev environment
       }
 
+      // Do NOT show Android update popup on desktop/mobile web browsers
+      if (!isNative) {
+        return;
+      }
+
       setCurrentVersion(installedVersion);
 
-      // Fetch remote version config
-      const response = await fetch(
+      // Fetch remote version config with resilient multi-endpoint fallback
+      const endpoints = [
+        `https://www.lazyupdate.tech/version.json?t=${Date.now()}`,
+        `https://lazyupdate.vercel.app/version.json?t=${Date.now()}`,
         `https://lazyupdate.tech/version.json?t=${Date.now()}`,
-        { cache: 'no-store' }
-      ).catch(() =>
-        fetch(`/version.json?t=${Date.now()}`, { cache: 'no-store' })
-      );
+      ];
 
-      if (!response.ok) {
+      let remoteConfig: RemoteVersionConfig | null = null;
+      for (const url of endpoints) {
+        try {
+          const res = await fetch(url, { cache: 'no-store' });
+          if (res.ok) {
+            remoteConfig = await res.json();
+            if (remoteConfig?.versionCode) break;
+          }
+        } catch {
+          // Continue to next endpoint
+        }
+      }
+
+      if (!remoteConfig) {
         if (isManual) {
           window.dispatchEvent(
             new CustomEvent('app-update-status', {
@@ -67,8 +84,6 @@ export function AppUpdateModal() {
         }
         return;
       }
-
-      const remoteConfig: RemoteVersionConfig = await response.json();
       const remoteCode = Number(remoteConfig.versionCode) || 0;
       const hasNewVersion = remoteCode > currentCode;
 
